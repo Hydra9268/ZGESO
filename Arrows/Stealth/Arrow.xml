@@ -1,0 +1,8 @@
+<GuiXml>
+    <Controls>
+        <TopLevelControl name="ZGVArrowFrame" mouseEnabled="false">
+			<Dimensions x="50" y="50" />
+            <OnUpdate></OnUpdate>
+        </TopLevelControl>
+    </Controls>
+</GuiXml>

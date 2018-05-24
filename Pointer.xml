@@ -1,0 +1,10 @@
+<GuiXml>
+	<Controls>
+		<TopLevelControl name="ZygorGuidesViewerPointerOverlay">
+			<OnUpdate></OnUpdate>
+		</TopLevelControl>
+		<TopLevelControl name="ZygorGuidesViewerPointer_ArrowCtrl">
+			<OnUpdate></OnUpdate>
+		</TopLevelControl>
+	</Controls>
+</GuiXml>
