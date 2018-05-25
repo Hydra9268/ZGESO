@@ -33,27 +33,27 @@ Retrieve current maxIndex, parent maxIndex, and zondexIndex for current player
 
 Retrieve current player's name
 ```lua
-/script d(ZGV.Utils.GetPlayerName())
+/run d(ZGV.Utils.GetPlayerName())
 ```
 
 Is current player in combat?
 ```lua
-/script d(ZGV.Utils:IsPlayerInCombat())
+/run d(ZGV.Utils:IsPlayerInCombat())
 ```
 
  Retrieve partial information from ZygorGuidesViewer.txt
 ```lua
-/script d(ZGV.Utils.GetMyAddonInfo())
+/run d(ZGV.Utils.GetMyAddonInfo())
 ```
 
 Retrieve map's x and y distance (i think?)
 ```lua
-/script d(ZGV.Parser.ParseMapXYDist)
+/run d(ZGV.Parser.ParseMapXYDist)
 ```
 
 Provides a status of all AddOn functions running
 ```lua
-/script d(ZGV.Testing)
+/run d(ZGV.Testing)
 ```
 *output*
 ```lua
@@ -91,7 +91,7 @@ Provides a status of all AddOn functions running
 
 Creates a list of all function available in BugReports
 ```lua
-/script d(ZGV.BugReport)
+/run d(ZGV.BugReport)
 ```
 *output*
 ```lua
@@ -105,12 +105,12 @@ Creates a list of all function available in BugReports
 
 Enables the debugger
 ```lua
-/zgv debug
+/zygor debug
 ```
 
 Creates a Bug Report
 ```lua
-/script d(ZGV.BugReport:ShowReport())
+/run d(ZGV.BugReport:ShowReport())
 ```
 *output*<br>
 <img src="https://i.imgur.com/2mqFlDw.png" width="800">
