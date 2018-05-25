@@ -1,11 +1,6 @@
 local ZGV = ZGV
 if not ZGV then return end
------------------------------------------
--- INFORMATION
------------------------------------------
---[[
 
---]]
 -----------------------------------------
 -- LOCAL REFERENCES
 -----------------------------------------
@@ -59,9 +54,9 @@ local GuideStatusColor = {
 	["SUGGESTED"]	= "ffcc40",
 	["VALID"]	= "40bf40",
 	["COMPLETE"]	= "808080",
-	["INVALID"] = "e60000",
-	["HEADER"] = "ffffff",
-	["FOLDER"] = "ffffff",
+	["INVALID"] 	= "e60000",
+	["HEADER"] 	= "ffffff",
+	["FOLDER"] 	= "ffffff",
 }
 
 -----------------------------------------
@@ -107,7 +102,6 @@ local function GetInlineDesc(parent,name)
 	local desc = CHAIN(ui:Create("Label",parent,name,11))
 		:SetCanWrap(true)
 	.__END
-
 	return desc
 end
 
@@ -119,7 +113,6 @@ end
 local function SetIcon(self,nh,nv,h,v,sec,big)
 	local icon = sec and self.iconover or self.icon
 	if nh>0 then icon:Show() else icon:Hide() end
-	--icon:SetTexture(ZGV.DIR..(big and "\\Skins\\guideicons-big" or "\\Skins\\Default\\Stealth\\guideicons-small") )
 	icon:SetTexture(ZGV.DIR.."/Viewer/Skins/Stealth/guideicons-small.dds")
 	SetTextureBlock(icon,nh,nv,h,v)
 end
@@ -167,13 +160,11 @@ function Menu:CreateBaseMenu()
 
 	frame.settings = CHAIN(ui:Create("GuideButton",frame,name.."_Settings","Settings"))
 		:SetPoint(BOTTOMRIGHT,frame,BOTTOMRIGHT,-5,-5)
-		--:SetScript("OnClick",function() ZygorGuidesViewer:OpenOptions("display") end)
 	.__END
 
 	frame.mainBackdrop = CHAIN(ui:Create("SecFrame", frame, name.. "_mainBackdrop"))
 		:SetPoint(TOPLEFT,frame,TOPLEFT,1,HEADER_HEIGHT)
 		:SetPoint(BOTTOMRIGHT,frame,BOTTOMRIGHT,-1,-FOOTER_HEIGHT)
-		--:SetScript("OnMouseUp",function(this,but) if but=="RightButton" then Menu:NavigateBack() end end)
 	.__END
 
 	self:SetTab(GUIDEMENU_TAB_ID)	-- Set the default tab
@@ -256,8 +247,6 @@ function GuideMenu:Create()
 			:SetHandler("OnClicked",function(me,but) GuideMenu:MenuButton_OnClick(me,but) end)
 			:SetHandler("OnMouseDoubleClick",function(me,but)
 				if me.target.type=="folder" then
-					--self.folder=me.target.title
-					--self:RefreshUI()
 				else
 					GuideMenu:SetCurrentGuide(me.target)
 				end
@@ -504,13 +493,9 @@ function GuideMenu:RefreshUI()
 		local g = self.selectedguide
 		frame.GuideTitle:SetText(g.title_short)
 		frame.GuideImage:SetTexture(g.image)
-		--local imageWidth, imageHeight = frame.GuideImage:GetTextureFileDimensions()
 		local imageWidth, imageHeight = GUIDE_IMAGE_WIDTH, GUIDE_IMAGE_HEIGHT
-		--print(frame.GuideImage:GetTextureFileDimensions(), frame.GuideImage:GetTextureFileName())
-		--Zgoo(frame.GuideImage)
 		
 		if imageWidth > GUIDE_IMAGE_WIDTH then
-			--local imageScale = GUIDE_IMAGE_WIDTH / imageWidth
 			local imageScale = frame.GuideImage:GetParent():GetWidth() / GUIDE_IMAGE_WIDTH
 			imageWidth = imageWidth * imageScale
 			imageHeight = imageHeight * imageScale
@@ -571,19 +556,11 @@ function GuideMenu:RefreshUI()
 		s = s .. (g.description or "")
 
 		frame.GuideData:SetText(s)
-		--	:ClearAllPoints() :SetPoint("TOPLEFT",VIEWLIST.GuideScroll.child) :SetPoint("TOPRIGHT",VIEWLIST.GuideScroll.child)
-		--	:SetWidth(VIEWLIST.GuideScroll:GetWidth()) -- I thinkF it's a bug in default UI: doing SetPoint doesn't update StringHeight ~aprotas
-
-		--VIEWLIST.GuideScroll.child:SetSize(VIEWLIST.GuideScroll:GetWidth(),VIEWLIST.GuideData:GetHeight() + ((g.model or g.image) and 203 or 0) + 10)
-
-		--VIEWLIST.GuideScroll:SetVerticalScroll(0)
-		--VIEWLIST.GuideScroll:Show()
-
 		frame.OkButton:Show()
+
 		if g.image then
 			CHAIN(frame.GuideImage)
 				:SetTexture(g.image)
-				--:SetHeight(GUIDE_IMAGE_HEIGHT)
 				:Show()
 		else
 			CHAIN(frame.GuideImage)
@@ -598,13 +575,6 @@ function GuideMenu:RefreshUI()
 		frame.OkButton:Hide()
 		frame.GuideImage:Hide()
 	end
-
-	--VIEWLIST.ViewInFolderButton:EnableIf((Menu.path=="SUGGESTED" or Menu.path=="RECENT" or Menu.path=="SEARCH") and Menu.selectedguide)
-
-	--VIEWLIST.ViewInFolderButton:ShowIf(VIEWLIST.ViewInFolderButton:IsEnabled())
-
-	--VIEWLIST.GuideScroll:SetVerticalScroll(1)
-	--VIEWLIST.GuideScroll:SetVerticalScroll(0)  -- enforce an OnVerticalScroll event, uglyyy
 
 	frame:Show()
 end
@@ -653,6 +623,7 @@ function Settings:Create()
 	------------------------------
 	-- Setup Left column buttons
 	-----------------------------
+
 	frame.buttons={}
 	local rows = MAX_LINES
 	local ROWHEIGHT = 22	-- TODO could calculate these based on height of Guide Menu?
@@ -696,7 +667,6 @@ function Settings:Create()
 
 
 		-- TODO blinking star on guide animation?
-
 		but.label = CHAIN(ui:Create("Label",but,butname.."_Label",15))
 			:SetPoint(LEFT,but.icon,RIGHT,5,0)
 			:SetPoint(RIGHT)
@@ -754,7 +724,6 @@ function Settings:Create()
 		:SetPoint(BOTTOMRIGHT,frame.guideInfoBox,BOTTOMRIGHT,-ButtonHortPad,-5)
 		:SetText("Accept")
 		:SetFontSize(14)
-		--:SetAttribute("tooltip",L['guidepicker_button_ok_desc'])
 		:SetHandler("OnClicked",function(but)
 			Menu:Hide()
 		end)
@@ -764,7 +733,6 @@ function Settings:Create()
 		:SetPoint(BOTTOMLEFT,frame.guideInfoBox,BOTTOMLEFT,ButtonHortPad,-5)
 		:SetText("Default")
 		:SetFontSize(14)
-		--:SetAttribute("tooltip",L['guidepicker_button_ok_desc'])
 		:SetHandler("OnClicked",function(but)
 			Settings:ShowDefaultPopup()
 		end)
@@ -781,7 +749,7 @@ function Settings:CreateDefaultPopup()
 
 	local popup = CHAIN(ZGV.Popup:New("Zygor_Settings_Reset_Default_Popup"))
 		:SetText(L['static_options'])
-		:SetDimensionConstraints(375)		-- Force minWidth to 375 for the buttons to fit nicely
+		:SetDimensionConstraints(375)				-- Force minWidth to 375 for the buttons to fit nicely
 	.__END
 
 	-- No settings button for settings popup. That would be silly
@@ -789,10 +757,10 @@ function Settings:CreateDefaultPopup()
 
 	-- Need a third button for cancel
 	popup.cancelbutton = CHAIN(ui:Create("Button",popup,popup:GetName().."_Cancel"))
-		:SetPoint(TOP,popup.text,BOTTOM,0,10)	-- 10 is BUT_Y_OFFSET from Popup.lua
+		:SetPoint(TOP,popup.text,BOTTOM,0,10)			-- 10 is BUT_Y_OFFSET from Popup.lua
 		:SetWidth(105)
 		:SetText(L['static_cancel'])
-		:SetFontSize(ZGV.db.profile.fontsize,true)	-- TODO change size dynamically?
+		:SetFontSize(ZGV.db.profile.fontsize,true)		-- TODO change size dynamically?
 		:SetHandler("OnClicked",function(me)
 			local pop = me:GetParent()			-- Just hide the popup
 			pop.private:Hide(pop)
@@ -850,9 +818,9 @@ function Settings:CreateOptionsUI(group)
 
 		local obj = self.OptionUI[typ](self,option,frame)	-- This obj is a frame that contains the actual option UI
 
-		if typ ~= "execute"	-- Execute buttons are dumb, they just run a function on clicked.
-		and typ ~= "header"	-- headers are dumber
-		and typ ~= "desc"		-- desc ^^^^
+		if typ ~= "execute"					-- Execute buttons are dumb, they just run a function on clicked.
+		and typ ~= "header"					-- headers are dumber
+		and typ ~= "desc"					-- desc ^^^^
 		then
 			assert(obj.SetValue,"All option objects must have a :SetValue method")
 			obj:SetValue(option:GetValue())
@@ -879,9 +847,9 @@ function Settings:CreateOptionsUI(group)
 			-- The lastobj was the obj at the front of the row. Half it's size.
 			local half = frameWidth/2
 			lastobj:SetWidth(half)
-
 			obj:SetPoint(TOPLEFT,lastobj,TOPRIGHT)
 			obj:SetWidth(half)
+
 		elseif data.column == "three" then
 			-- Need to make the first and second column 1/3 the full size.
 			local third = frameWidth/3
@@ -922,7 +890,7 @@ function Settings:RefreshUI()
 			but.group = group
 
 			but:SetIcon(1,1,2,2)
-			-- TODO icon stuffz
+			-- TODO icons
 			--[[
 			if g.icon and Menu.path == "RECENT" and Menu.simpleList then
 				if type(g.icon[3]) == "string" then -- icon in get_icon() format
@@ -974,14 +942,13 @@ function Settings:RefreshUI()
 		if group.frame then group.frame:Hide() end		-- Hide all the frames, then only show when needed
 	end
 
-	if self.selectedgroup then	-- Should always be a selectedgroup hopefully
+	if self.selectedgroup then					-- Should always be a selectedgroup hopefully
 		local g = self.selectedgroup
 		frame.OptionTitle:SetText(g.title)
 		frame.OptionDesc:SetText(g.desc or "")
 
 		if not g.frame then
-			-- Need to create the UI for this group from the options it has.
-			self:CreateOptionsUI(g)
+			self:CreateOptionsUI(g)				-- Need to create the UI for this group from the options it has.
 		end
 
 		g.frame:Show()
@@ -1208,7 +1175,7 @@ Settings.OptionUI["header"] = function(self,option,parent)
 	local opt_frame = GetOpinionFrame(parent, name, option, "true")
 
 	local label = CHAIN(ui:Create("Label",opt_frame,name.."_Label",14,"bold"))
-		:SetPoint(CENTER)--,OPTIONS_LEFT_OFFSET,0)
+		:SetPoint(CENTER)
 		:SetText(option.title)
 	.__END
 
@@ -1377,35 +1344,16 @@ function GuideMenu:Hide()
 end
 
 function GuideMenu:MenuButton_OnClick(but,button)
-	--if button=="LeftButton" then
-		if not but.target then return end
-		if but.target.type=="folder" then
-			self.folder=but.target.title
-			self:RefreshUI()
-			return
-		end
-		if false then-- GetTime()-lastclick<DOUBLECLICK_TIME and Menu.selectedguide.title==but.target then
-			-- TODO on doubleclick select guide
-			--ZGV_Menu_OKButton_OnClick(but)
-		else
-			--lastclick = GetTime()
-			GuideMenu:SelectGuide(but.target)
-		end
-		--[[
-		if but.isguide then
-			if GetTime()-lastclick<DOUBLECLICK_TIME and Menu.selectedguide.title==but.target then
-				ZGV_Menu_OKButton_OnClick(but)
-			else
-				lastclick = GetTime()
-				Menu:SelectGuide(but.target)
-			end
-		else
-			Menu:NavigateTo(but.target)
-		end
-		--]]
-	--else
-		--Menu:NavigateBack()
-	--end
+	if not but.target then return end
+	if but.target.type=="folder" then
+		self.folder=but.target.title
+		self:RefreshUI()
+		return
+	end
+	if false then
+	else
+		GuideMenu:SelectGuide(but.target)
+	end
 end
 
 function GuideMenu:SelectGuide(guide)
@@ -1437,7 +1385,7 @@ end
 
 function Settings:Show()
 	Menu:Show()
-	if Menu.Frame and Menu.Frame.tabhandler:GetCurrentTab() ~= SETTINGS_TAB_ID then Menu:SetTab(SETTINGS_TAB_ID) end		-- Make sure all other views are hidden
+	if Menu.Frame and Menu.Frame.tabhandler:GetCurrentTab() ~= SETTINGS_TAB_ID then Menu:SetTab(SETTINGS_TAB_ID) end 	-- Make sure all other views are hidden
 
 	if not self.Frame then self:Create() end
 	self.Frame:Show()
