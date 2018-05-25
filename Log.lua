@@ -8,7 +8,7 @@ local Log = {}
 ZGV.Log = Log
 
 Log.entries = {}
-Log.size = 100
+Log.size = 150
 Log.loud = false
 
 -- Common functions
@@ -36,7 +36,8 @@ function Log:Add(frm,...)
 	local debugms = (GetFrameTimeMilliseconds()*1000)%1000
 	local datestamp = ("%s.%03d.%03d"):format(GetTimeString(),(GetFrameTimeSeconds()%1)*1000,debugms)
 
-	tinsert(self.entries, datestamp .. "> "..s)
+	tinsert(self.entries, datestamp .. " >  "..s)
+
 	if #self.entries>self.size then
 		tremove(self.entries,1)
 	end
