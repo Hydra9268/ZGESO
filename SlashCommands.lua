@@ -19,11 +19,10 @@ local L = ZGV.L
 -----------------------------------------
 
 local help_string = [[	Options:
-
-reset - Reset Guide Viewer to original position, and settings.
-show - Show the Guide Viewer.
-hide - Hide the Guide Viewer.
-config - Show configuration.
+	reset - Reset Guide Viewer to original position, and settings.
+	show - Show the Guide Viewer.
+	hide - Hide the Guide Viewer.
+	config - Show configuration.
 ]]
 
 if ZGV.DEV then
