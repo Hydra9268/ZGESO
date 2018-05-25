@@ -125,6 +125,17 @@ Renders Bug Report inside Chat (only visible to you)
 
 ----
 
+#### Zygor Guide Travel Functions
+
+List all travel destinations by value/key pair
+```lua
+/run d(ZGV.Travel)
+```
+*output*<br>
+<img src="https://i.imgur.com/ENpv0MK.png" width="400">
+
+----
+
 #### Slash commands
 
 * `/zygor` = /zgv
