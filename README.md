@@ -10,7 +10,7 @@ The purpose of this project is to add Summerset to the levelling guide for the c
 
 ----
 
-#### LIBGPS2 Public Functions
+### LIBGPS2 Public Functions
 
 Retrieve current maxIndex, zoneIndex, offsetX, offsetY, scaleX, and scaleY
 ```lua
@@ -29,7 +29,7 @@ Retrieve current maxIndex, parent maxIndex, and zondexIndex for current player
 
 ----
 
-#### ZYGOR GUIDE PUBLIC FUNCTIONS
+### Zygor Guide Pulbic Functions
 
 Retrieve current player's name
 ```lua
@@ -116,8 +116,6 @@ Creates a Bug Report
 <img src="https://i.imgur.com/2mqFlDw.png" width="800">
 
 ----
-
-#### SlashCommands.lua
 
 * `/zygor` = /zgv
 * `/run` = /script
