@@ -12,7 +12,7 @@ The purpose of this project is to add Summerset to the levelling guide for the c
 
 ### LIBGPS2 Public Functions
 
-Retrieve current maxIndex, zoneIndex, offsetX, offsetY, scaleX, and scaleY
+Retrieve current maxIndex, zoneIndex, offsetX, offsetY, scaleX, and scaleY for the current map
 ```lua
 /run d(LibStub("LibGPS2"):GetCurrentMapMeasurements())
 ```
