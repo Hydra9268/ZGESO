@@ -93,7 +93,7 @@ Provides a status of all AddOn functions running
 
 ### Zygor Guide Bug Reporting Functions
 
-Creates a list of all function available in BugReports
+Creates a list of all available bug reporting functions
 ```lua
 /run d(ZGV.BugReport)
 ```
