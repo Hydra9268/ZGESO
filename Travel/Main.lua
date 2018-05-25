@@ -1,11 +1,6 @@
 local ZGV = ZGV
 if not ZGV then return end
------------------------------------------
--- INFORMATION
------------------------------------------
---[[
-	
---]]
+
 -----------------------------------------
 -- LOCAL REFERENCES
 -----------------------------------------
@@ -62,6 +57,8 @@ tinsert(ZGV.startups,function(self)
 end)
 
 --[[
+
+VARIOUS ESO API FUNCTIONS e.g. /run d(GetMapType())
 
 GetOfferedQuestInfo()
 AcceptOfferedwQuest
