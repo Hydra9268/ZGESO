@@ -15323,6 +15323,9 @@ turnin The One That Got Away
 ]])
 ZGV:RegisterGuide("LEVELING\\Summerset",[[
 step
+'This guide includes Guild quests along the way.
+|tip Manually skip to the next step.
+step
 talk Calibar
 accept The Queen's Decree
 step
@@ -15345,4 +15348,53 @@ step
 goto shimmerene_base 44.33,24.41
 step
 talk Rhanul
+step
+goto shimmerene_base 40.67,51.75
+step
+talk Aicessar
+accept Aicessar's Invitation
+|tip Adds Fighter's Guild's skill line.
+step
+goto shimmerene_base 39.63,62.08
+step
+talk Curinure
+accept Curinure's Invitation
+|tip Adds Mage's Guild's skill line.
+step
+goto shimmerene_base 35.75,72.01
+step
+talk Razum-dar
+step
+goto shimmerene_base 67.15,61.89
+talk Lanarie
+accept A Tale of Two Mothers
+step
+goto shimmerene_base 65.36,59.83
+'Enter Kinlady Avinisse's Mansion |q A Tale of Two Mothers/Talk to Talerion
+step
+goto shimmerene_base 64.18,58.13
+'Go down the stairs |q A Tale of Two Mothers/Talk to Talerion
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 61.97,58.80
+talk Talerion
+step
+'Go up the stairs |q A Tale of Two Mothers/Talk to Talerion
+step
+goto shimmerene_base 64.72,57.06
+click Arathel's Map
+'Take Arathel's Map
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 65.01,59.26
+'Exit Kinlady Avinisse's Mansion
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 63.00,51.26
+'Enter the Monastery of Serene Harmony |q The Queen's Decree
+step
+goto monasterysereneharmony_base 38.02,63.96
+click List of Sequestered Guests
+|tip Manually skip to the next step.
+step
 ]])
