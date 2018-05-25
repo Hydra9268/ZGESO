@@ -89,37 +89,46 @@ Provides a status of all AddOn functions running
 .(function): RunTestGroup = function: 000002560B5EB0A8
 ```
 
+----
+
+### Zygor Guide Bug Reporting Functions
+
 Creates a list of all function available in BugReports
 ```lua
 /run d(ZGV.BugReport)
 ```
 *output*
 ```lua
-.(function): ShowDump = function: 00000256ECA0CCD0
 .(function): Debug_GetLongReport = function: 000002568DA40988
 .(function): GetReport = function: 00000256730BFC08
-.(function): CalculatePagination = function: 000002568DA409E0
 .(function): ShowReport = function: 00000256730BFCD8
-.(function): AddToReport = function: 000002567B099108
 ```
 
-Enables the debugger
+Placeholder Bug Report
 ```lua
-/zygor debug
+/run d(ZGV.BugReport:Debug_GetLongReport())
 ```
+*output*<br>
+<img src="https://i.imgur.com/psJezQI.png" width="800">
 
-Creates a Bug Report
+Creates a Bug Report in a Dedicated Window
 ```lua
 /run d(ZGV.BugReport:ShowReport())
 ```
 *output*<br>
 <img src="https://i.imgur.com/2mqFlDw.png" width="800">
 
+Renders Bug Report inside Chat (only visible to you)
+```lua
+/run d(ZGV.BugReport:GetReport())
+```
+
 ----
 
 #### Slash commands
 
 * `/zygor` = /zgv
+* `/zygor debug` = debug mode
 * `/run` = /script
 * `/re` = /reloadui
 * `/dump` = outputs text
