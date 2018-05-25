@@ -1,11 +1,15 @@
+All maps
+mapIndex = 32
+zoneIndex = 641
+
+=============================
+
 Summerset
 
 offsetX = -0.0035352285793352
 offsetY = 0.60646441074991
 scaleY = 0.26354155912548
 scaleX = 0.26354164039408
-mapIndex = 32
-zoneIndex = 641
 
 ----
 
@@ -15,8 +19,6 @@ offsetX = 0.13651019277278
 offsetY = 0.70346567832109
 scaleX = 0.03906602479392
 scaleY = 0.039067244684405
-mapIndex = 32
-zoneIndex = 641
 
 ----
 
@@ -26,8 +28,6 @@ offsetX = 0.027778038963195
 offsetY = 0.69915922340375
 scaleX = 0.023632472233258
 scaleY = 0.023632674051079
-mapIndex = 32
-zoneIndex = 641
 
 ----
 
@@ -37,8 +37,6 @@ offsetX = 0.06035675104039
 offsetY = 0.75090383391464
 scaleX = 0.027322944989731
 scaleY = 0.027322585673017
-mapIndex = 32
-zoneIndex = 641
 
 ----
 
@@ -48,8 +46,6 @@ offsetX = 0.089077860247676
 offsetY = 0.78044268173993
 scaleX = 0.015432254571717
 scaleY = 0.015431841398846
-mapIndex = 32
-zoneIndex = 641
 
 ----
 
@@ -59,11 +55,16 @@ offsetX = 0.16078807091166
 offsetY = 0.71933247214334
 scaleX = 0.00090743099359669
 scaleY = 0.00090721006763765
-mapIndex = 32
-zoneIndex = 641
 
 (Secondary information)
 
 x = 0.16125599831488
 y = 0.72008081853978
 mapzoneindex = 32
+
+(Tierary Information)
+offsetX = 0.13650989202784
+offsetY = 0.70346488616736
+scaleX = 0.039066978717871
+scaleY = 0.039069491588251
+
