@@ -1,5 +1,5 @@
 # ZGESO
-A Public Domain ESO Guide produced by Zygor Guides ()
+A Public Domain ESO Guide produced by Zygor Guides
 
 No longer supported references:
 * Announcement: https://zygorguides.com/blog/zygor-guides-elder-scrolls-online-guides-going-free-use/
