@@ -27,6 +27,8 @@ Retrieve current maxIndex, parent maxIndex, and zondexIndex for current player
 /script d(LibStub("LibGPS2"):GetCurrentMapParentZoneIndices())
 ```
 
+----
+
 #### ZYGOR GUIDE PUBLIC FUNCTIONS
 
 Retrieve current player's name
@@ -112,6 +114,8 @@ Creates a Bug Report
 ```
 *output*<br>
 <img src="https://i.imgur.com/2mqFlDw.png" width="800">
+
+----
 
 #### SlashCommands.lua
 
