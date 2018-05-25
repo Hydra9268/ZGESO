@@ -545,34 +545,13 @@ ZGV.MapData = {
 	{
 
 		-- SUMMERSET CITIES
-					-- THIS ADDON'S LOGIC FOR MAP COORDINATES
-					-- xoffset = a x position offset. 
-					-- yoffset = a y position offset.
-					-- Scale   = Setting scale to 1 mean default scale.
-					-- Using the map id tells the UI to set the scale to the zone map. To hide the marker from appearing on the world map you need to set the scale to 2. This moves the marker on that map out of view.
-					-- If you set map=X then you don't need to mess with x and y offsets. It will be the standard X.X,Y.Y geo-coordinates.
-					-- If you don't use the map id, then you can set the marker wherever you wish. The scale tells the UI at which zoom depth to show the marker. Scale=2 hides the marker from the higher depth maps.
-					-- The goal here is to set the scale high enough for the marker not to appear at the map depth, and then use the offset coindinates to position the markers in place.
+		-- Go to the map, execute this in chat /script d(LibStub("LibGPS2"):GetCurrentMapMeasurements())
 
-		["summerset_base"] = 	{ name = "Summerset", 	id = 388, xoffset = 0, yoffset = 0, scale = 2, map = 32, },
-		["shimmerene_base"] = 	{ name = "Shimmerene", 	id = 394, xoffset = 0.100000, yoffset = 0.72000000, scale = 2, },
-		--["lillandril_base"] = { name = "Lillandril", 	id = 392, xoffset = -0.650000, yoffset = -0.20000000, scale = 1, },
-		--["lillandril_base"] = { name = "Lillandril", 	id = 392, xoffset = -0.190000, yoffset = 0.20000000, scale = 1, scale = 0.1, },
-		--["lillandril_base"] = { name = "Lillandril", 	id = 392, xoffset = 0.000000, yoffset = 0.00000000, scale = 0.50, scale = 2, },
-
-		["test_base1"] 	= 	{ name = "Test 1", 	id = 392, xoffset = 0.489955555, yoffset = 0.1765500, scale = 0.10957224, },
-		["test_base2"] 	= 	{ name = "Test 2", 	id = 392, xoffset = 0.228955555, yoffset = 0.4277500, scale = 0.10957224, },
-		["test_base3"] 	= 	{ name = "Test 3", 	id = 392, xoffset = 0.510555555, yoffset = 0.2279500, scale = 0.10957224, },
-		["test_base4"] 	= 	{ name = "Test 4", 	id = 392, xoffset = 0.578155555, yoffset = 0.3852500, scale = 0.10957224, },
-		["test_base5"] 	= 	{ name = "Test 5", 	id = 392, xoffset = 0.496355555, yoffset = 0.5445500, scale = 0.10957224, },
-		["test_base6"] 	= 	{ name = "Test 6", 	id = 392, xoffset = 0.106355555, yoffset = 0.5925000, scale = 0.10957224, }, -- working
-		["test_base7"] 	= 	{ name = "Test 7", 	id = 392, xoffset = 0.106355555, yoffset = 0.9923000, scale = 0.10957224, },
-		["test_base8"] 	= 	{ name = "Test 8", 	id = 392, xoffset = 0.106355555, yoffset = 0.9050000, scale = 0.10957224, },
-		["test_base9"] 	= 	{ name = "Test 9", 	id = 392, xoffset = 0.100000, yoffset = 0.72000000, scale = 2, },
-
-		--["greenshade_base"] = { name = "Greenshade", id = 18, xoffset = 0.271875186, yoffset = 0.635312407, scale = 0.117109186, map = 16, },
-		--["woodhearth_base"] = { name = "Woodhearth", xoffset = 0.275625184, yoffset = 0.6944532, scale = 0.030703195, },
-		
+		["summerset_base"] = 	{ name = "Summerset", 	id = 388, xoffset = -0.0035352285793352, yoffset = 0.60646441074991, scale = 0.26354155912548, yscale = 0.26354164039408, map = 32, },	-- working
+		["shimmerene_base"] = 	{ name = "Shimmerene", 	id = 394, xoffset = 0.13651019277278, yoffset = 0.70346567832109, xscale = 0.03906602479392, yscale = 0.039067244684405, },		-- working
+		["lillandril_base"] = 	{ name = "Lillandril", 	id = 392, xoffset = 0.027778038963195, yoffset = 0.69915922340375, xscale = 0.023632472233258, yscale = 0.023632674051079, },		-- not working? coordinates are correct.
+		["alinor_base"] = 	{ name = "Alinor", 	id = 389, xoffset = 0.06035675104039, yoffset = 0.75090383391464, xscale = 0.027322944989731, yscale = 0.027322585673017, },		-- working
+		["sunhold_base"] = 	{ name = "Sunhold", 	id = 395, xoffset = 0.089077860247676, yoffset = 0.78044268173993, xscale = 0.015432254571717, yscale = 0.015431841398846, },		-- working
 
 		-- EXISTING
 		[""] = { name = "", },
