@@ -29,7 +29,7 @@ Retrieve current maxIndex, parent maxIndex, and zondexIndex for current player
 
 ----
 
-### Zygor Guide Pulbic Functions
+### Zygor Guide Public Functions
 
 Retrieve current player's name
 ```lua
