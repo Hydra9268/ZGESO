@@ -12,17 +12,17 @@ The purpose of this project is to add Summerset to the levelling guide for the c
 
 ### LIBGPS2 Public Functions
 
-Retrieve current maxIndex, zoneIndex, offsetX, offsetY, scaleX, and scaleY for the current map
+Retrieve maxIndex, zoneIndex, offsetX, offsetY, scaleX, and scaleY for current map
 ```lua
 /run d(LibStub("LibGPS2"):GetCurrentMapMeasurements())
 ```
 
-Retrieve offsetX, offsetY, maxIndex for current player
+Retrieve offsetX, offsetY, maxIndex for player for current map
 ```lua
 /run d(LibStub("LibGPS2"):LocalToGlobal(GetMapPlayerPosition("player")))
 ```
 
-Retrieve current maxIndex, parent maxIndex, and zondexIndex for current player
+Retrieve maxIndex, parent maxIndex, and zondexIndex for current player for current map
 ``` lua
 /run d(LibStub("LibGPS2"):GetCurrentMapParentZoneIndices())
 ```
