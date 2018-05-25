@@ -15326,24 +15326,14 @@ step
 talk Calibar
 accept The Queen's Decree
 step
-goto test_base1 10.00,10.00
+goto summerset_base 50.00,50.00
 step
-goto test_base2 20.00,20.00
+goto shimmerene_base 31.46,81.38
 step
-goto test_base3 30.00,30.00
+goto lillandril_base 50,50
 step
-goto test_base4 40.00,40.00
+goto alinor_base 50,50
 step
-goto test_base5 50.00,50.00
+goto sunhold_base 50,50
 step
-goto test_base6 60.00,60.00
-step
-goto test_base7 60.00,60.00
-step
-goto test_base8 60.00,60.00
-step
-goto test_base9 30.00,80.00
 ]])
--- goto summerset_base 57.74,49.45
--- goto shimmerene_base 31.46,81.38
--- goto lillandril_base 50.00,50.00
