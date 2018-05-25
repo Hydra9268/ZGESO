@@ -15326,14 +15326,23 @@ step
 talk Calibar
 accept The Queen's Decree
 step
-goto summerset_base 50.00,50.00
-step
 goto shimmerene_base 31.46,81.38
+talk Razum-dar
 step
-goto lillandril_base 50,50
+goto summerset_base 60.56,49.10
 step
-goto alinor_base 50,50
+talk Olnewil
 step
-goto sunhold_base 50,50
+goto summerset_base 53.97,46.97
 step
+click Tsoxolza's Backpack
+step
+goto summerset_base 55.09,45.88
+step
+talk Linwenvar
+accept Old Wounds
+step
+goto shimmerene_base 44.33,24.41
+step
+talk Rhanul
 ]])
