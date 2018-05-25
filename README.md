@@ -117,6 +117,8 @@ Creates a Bug Report
 
 ----
 
+#### Slash commands
+
 * `/zygor` = /zgv
 * `/run` = /script
 * `/re` = /reloadui
