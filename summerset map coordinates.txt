@@ -56,15 +56,20 @@ offsetY = 0.71933247214334
 scaleX = 0.00090743099359669
 scaleY = 0.00090721006763765
 
-(Secondary information)
+(2nd Information attempt)
 
 x = 0.16125599831488
 y = 0.72008081853978
 mapzoneindex = 32
 
-(Tierary Information)
+(3rd Information attempt)
 offsetX = 0.13650989202784
 offsetY = 0.70346488616736
 scaleX = 0.039066978717871
 scaleY = 0.039069491588251
+
+(4th Information attempt)
+x = 0.35216045379639
+y = 4.4327273368835
+heading  = 0.029895782470703
 
