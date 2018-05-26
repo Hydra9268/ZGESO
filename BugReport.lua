@@ -157,6 +157,7 @@ end
 -- FUNCTION
 -----------------------------------------
 
+-- Circle back to this. Update to support any type of output
 function BugReport:ShowDump(text,title,editable,action,cursorpos)
 	local f
 
@@ -165,9 +166,7 @@ function BugReport:ShowDump(text,title,editable,action,cursorpos)
 	
 	assert(f,"Could not create a BasicFrame for BugReport")
 
-	self.text = text
-
-	f.display:SetText(text:gsub("|","||"))
+	f.display:SetText(text)
 	f.display:SetHidden(false)
 	f.copybox:SetHidden(true)
 	f.title:SetText(title or "Generic dump:")
@@ -318,9 +317,9 @@ function BugReport:CopyToClipboard()
 	self:CalculatePagination()
 end
 
-function BugReport:Debug_GetLongReport()
-	local long = ("Lorem ipsum dolor blabla. "):rep(200) -- length: 5200
-	self:ShowDump(long,"LONG Bug Report")
+function BugReport:CustomOutputWindow(output)
+	d(output)
+	self:ShowDump(output,"Custom Debug Window")
 end
 
 -----------------------------------------
