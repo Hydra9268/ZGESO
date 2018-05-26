@@ -29,6 +29,13 @@ Retrieve maxIndex, parent maxIndex, and zondexIndex for current player for curre
 
 ----
 
+### ESOUI Public Functions
+
+Outputs a message to the chat window. d is short for "debug" (equivilant of console.log in JavaScript)
+```lua
+d()
+```
+
 ### Zygor Guide Public Functions
 
 Retrieve current player's name
