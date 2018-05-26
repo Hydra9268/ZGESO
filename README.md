@@ -134,7 +134,7 @@ Renders Bug Report inside Chat (only visible to you)
 
 ----
 
-#### Zygor Guide Travel Functions
+### Zygor Guide Travel Functions
 
 List all travel destinations by value/key pair
 ```lua
@@ -145,10 +145,16 @@ List all travel destinations by value/key pair
 
 ----
 
-#### Slash commands
+### Slash commands
 
 * `/zygor` = /zgv
 * `/zygor debug` = debug mode
 * `/run` = /script
 * `/re` = /reloadui
 * `/dump` = outputs text
+
+----
+
+### Additional Resources
+
+https://wiki.esoui.com/API
