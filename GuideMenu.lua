@@ -2,6 +2,11 @@ local ZGV = ZGV
 if not ZGV then return end
 
 -----------------------------------------
+-- INFORMATION
+-- :SetPoint(POINT ORIGIN, UI reference, X, Y)
+-----------------------------------------
+
+-----------------------------------------
 -- LOCAL REFERENCES
 -----------------------------------------
 
@@ -38,8 +43,8 @@ local BUTTON_HIGHLIGHT_TEXTURE = {1,1,1,.2}
 
 local LEFT_COLUMN_WIDTH = 250
 local SCROLL_WIDTH = 15
-local GUIDE_IMAGE_HEIGHT = 256
 local GUIDE_IMAGE_WIDTH = 512
+local GUIDE_IMAGE_HEIGHT = 256
 
 local OPTIONS_LEFT_OFFSET = 15
 local OPTIONS_VERT_OFFSET = 5
@@ -51,12 +56,12 @@ local DEFAULT_ANCHOR= {
 local MAX_LINES = 18
 
 local GuideStatusColor = {
-	["SUGGESTED"]	= "ffcc40",
-	["VALID"]	= "40bf40",
+	["SUGGESTED"]	= "FFCC40",
+	["VALID"]	= "40BF40",
 	["COMPLETE"]	= "808080",
-	["INVALID"] 	= "e60000",
-	["HEADER"] 	= "ffffff",
-	["FOLDER"] 	= "ffffff",
+	["INVALID"] 	= "E60000",
+	["HEADER"] 	= "FFFFFF",
+	["FOLDER"] 	= "FFFFFF",
 }
 
 -----------------------------------------
@@ -319,21 +324,23 @@ function GuideMenu:Create()
 	-----------------------------
 
 	frame.GuideTitle = CHAIN(ui:Create("Label",frame.guideInfoBox,gmname.."_GuideTitle",17))
-		:SetPoint(TOPLEFT,frame.guideInfoBox,TOPLEFT,HEADER_PADDING,2)
-		:SetPoint(TOPRIGHT,frame.guideInfoBox,TOPRIGHT,-HEADER_PADDING,0)
+		:SetPoint(TOPLEFT,frame.guideInfoBox,20,20)
+		:SetWidth(GUIDE_IMAGE_WIDTH-20)
 		:SetText("Guides")
 	.__END
 
 	-- TODO scrollie for information panel on the right? Create a scrollbox for the rest of the information.
 
 	frame.GuideImage = CHAIN(ui:Create("Texture",frame.guideInfoBox,gmname.."_GuideTexture"))
-		:SetPoint(TOPLEFT,frame.GuideTitle,BOTTOMLEFT, 0, 5)
-		:SetSize(GUIDE_IMAGE_HEIGHT*2,GUIDE_IMAGE_HEIGHT)
+		:SetPoint(TOPLEFT,frame.GuideTitle,0,30)
+		:SetPoint(BOTTOMRIGHT,frame.GuideTitle,0,256)
+		:SetSize(GUIDE_IMAGE_WIDTH,GUIDE_IMAGE_HEIGHT)
+		:Hide()
 	.__END
 
-	frame.GuideData = CHAIN(ui:Create("Label",frame.guideInfoBox,gmname.."_GuideData",12))
+	frame.GuideData = CHAIN(ui:Create("Label",frame.guideInfoBox,gmname.."_GuideData",14))
 		:SetPoint(TOPLEFT,frame.GuideImage,BOTTOMLEFT)
-		:SetPoint(BOTTOMRIGHT)
+		:SetPoint(BOTTOMRIGHT,frame.GuideImage,0,100)
 		:SetVerticalAlignment(TEXT_ALIGN_TOP)
 		:SetText(string.rep("Description! ",50))
 	.__END
@@ -350,7 +357,7 @@ function GuideMenu:Create()
 	frame.OkButton = CHAIN(ui:Create("Button",frame.guideBox,gmname.."_OkButton"))
 		:SetPoint(BOTTOMRIGHT,frame.guideInfoBox,BOTTOMRIGHT,-10,-5)
 		:SetSize(80,20)
-		:SetText("Accept")
+		:SetText("Start Guide")
 		:SetFontSize(14)
 		--:SetAttribute("tooltip",L['guidepicker_button_ok_desc'])
 		:SetHandler("OnClicked",function(but)
@@ -405,7 +412,10 @@ function GuideMenu:RefreshUI()
 	for i,f in ipairs(folders) do table.insert(guides,i,f) end
 	
 	self.offset = self.offset and zo_min(#guides,zo_max(0,self.offset)) or 0
-	frame.guideBoxScroll:SetMinMax(0,#guides-MAX_LINES)
+
+	-- d(#guides)
+	-- d(#guides - MAX_LINES)
+	frame.guideBoxScroll:SetMinMax(0, #guides-MAX_LINES)		-- code works but there's no scrolling
 	
 	local hei = zo_min(1,MAX_LINES / #guides)  if hei==1 then hei=0 end
 	frame.guideBoxScroll:SetThumbTexture(tex,tex,tex,SCROLL_WIDTH,frame.guideBoxScroll:GetHeight() * hei,0,0,1,1)
@@ -425,9 +435,7 @@ function GuideMenu:RefreshUI()
 			but.target = guide
 
 			--but.isguide=true
-
 			local status = guide.GetStatus and guide:GetStatus() or ""
-
 
 			if guide.type=="folder" then
 				but:SetIcon(1,1,2,2)
@@ -490,21 +498,42 @@ function GuideMenu:RefreshUI()
 	-------------------------------
 
 	if self.selectedguide then
+
 		local g = self.selectedguide
+
 		frame.GuideTitle:SetText(g.title_short)
-		frame.GuideImage:SetTexture(g.image)
+		frame.GuideImage:SetTexture(image)
 		local imageWidth, imageHeight = GUIDE_IMAGE_WIDTH, GUIDE_IMAGE_HEIGHT
-		
-		if imageWidth > GUIDE_IMAGE_WIDTH then
+
+		--d(ZGV.BugReport:ShowDump(format(g),"Guide Information: " .. g.title_short))
+
+		--d(g)
+		d(g.title_short)
+		d(g.image)
+		d("raw " .. imageWidth .. " " .. GUIDE_IMAGE_WIDTH)
+		d("raw " .. imageHeight .. " " .. GUIDE_IMAGE_HEIGHT) 
+
+		--if imageWidth > GUIDE_IMAGE_WIDTH then
 			local imageScale = frame.GuideImage:GetParent():GetWidth() / GUIDE_IMAGE_WIDTH
+
+			d("--- imageScale " .. imageScale)
+
 			imageWidth = imageWidth * imageScale
 			imageHeight = imageHeight * imageScale
-		end
-		
-		frame.GuideImage:SetWidth(imageWidth)
-		frame.GuideImage:SetHeight(imageHeight)
+		--end
 
-		local s=""
+		d("pre-scale " .. imageWidth)
+		d("pre-scale " .. imageHeight)
+		
+		--frame.GuideImage:SetWidth(imageWidth)
+		--frame.GuideImage:SetHeight(imageHeight)
+
+		d("post-scale " .. imageWidth)
+		d("post-scale " .. imageHeight)
+		d("\n\n")
+
+		local s="\n"
+
 		if g.startlevel and g.startlevel>0 then
 			local formatLevel = ZGV.Utils.FormatLevel
 			if g.endlevel and g.endlevel>0 then
@@ -518,6 +547,7 @@ function GuideMenu:RefreshUI()
 		if g.next then s = s .. "|cffeebbNext guide:|r ".. g.next:match(".+/(.-)$") .."\n" end
 
 		s = s .. "\n"
+
 		local status,msg = g:GetStatus()
 		local color = GuideStatusColor[status]
 		if status=="COMPLETE" and g.type=="LEVELING" then status=status.."_lev" end
@@ -573,7 +603,7 @@ function GuideMenu:RefreshUI()
 		frame.GuideTitle:SetText("")
 		frame.GuideData:SetText("")
 		frame.OkButton:Hide()
-		frame.GuideImage:Hide()
+		frame.GuideImage:Show()
 	end
 
 	frame:Show()
@@ -798,7 +828,6 @@ end
 
 function Settings:ShowDefaultPopup()
 	if not self.DefaultPopup then self:CreateDefaultPopup() end
-
 	self.DefaultPopup:Show()
 end
 
