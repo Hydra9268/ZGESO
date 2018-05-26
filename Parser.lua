@@ -269,6 +269,8 @@ GuideCommands['image'] = function(guide,params)
 end
 
 GuideCommands['loadingimage'] = function(guide,params)
+	-- LoadingScreen Artwork 	1680 x 1050
+	-- LoadingScreen DDS		2000 x 2000
 	guide.image = "EsoUI/Art/LoadingScreens/"..params
 end
 
