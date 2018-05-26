@@ -265,7 +265,7 @@ GuideCommands['author'] = function(guide,params)
 end
 
 GuideCommands['image'] = function(guide,params)
-	guide.image = ZGV.DIR..params
+	guide.image = params
 end
 
 GuideCommands['description'] = function(guide,params)
