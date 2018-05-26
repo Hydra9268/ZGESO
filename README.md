@@ -12,7 +12,7 @@ The purpose of this project is to add Summerset to the levelling guide for the c
 
 ### ESOUI Public Functions of Note
 
-Outputs a message to the chat window. d is short for "debug" (equivilant of console.log in JavaScript)
+Outputs code to the chat window. d is short for "debug" (equivilant of console.log in JavaScript)
 ```lua
 d()
 ```
@@ -113,9 +113,9 @@ Creates a list of all available bug reporting functions
 .(function): ShowReport = function: 00000256730BFCD8
 ```
 
-Placeholder Bug Report
+Placeholder Bug Report [WIP]
 ```lua
-/run d(ZGV.BugReport:Debug_GetLongReport())
+/run d(ZGV.BugReport:CustomOutputWindow())
 ```
 *output*<br>
 <img src="https://i.imgur.com/psJezQI.png" width="800">
