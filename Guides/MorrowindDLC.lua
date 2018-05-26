@@ -15323,6 +15323,7 @@ turnin The One That Got Away
 ]])
 ZGV:RegisterGuide("LEVELING\\Summerset",[[
 loadingimage loadscreen_summerset_01.dds
+description The land called Summerset is the birthplace of civilization and magic as we know it in Tamriel. On its idyllic sea-kissed shores live the Altmer, the High Elves.
 step
 'This guide includes Guild quests along the way.
 |tip Manually skip to the next step.
