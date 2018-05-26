@@ -323,7 +323,7 @@ function GuideMenu:Create()
 	-- Setup Right information panel
 	-----------------------------
 
-	frame.GuideTitle = CHAIN(ui:Create("Label",frame.guideInfoBox,gmname.."_GuideTitle",17))
+	frame.GuideTitle = CHAIN(ui:Create("Label",frame.guideInfoBox,gmname.."_GuideTitle",17,"bold"))
 		:SetPoint(TOPLEFT,frame.guideInfoBox,20,20)
 		:SetWidth(GUIDE_IMAGE_WIDTH-20)
 		:SetText("Guides")
