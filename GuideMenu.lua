@@ -335,12 +335,13 @@ function GuideMenu:Create()
 		:SetPoint(TOPLEFT,frame.GuideTitle,0,30)
 		:SetPoint(BOTTOMRIGHT,frame.GuideTitle,0,256)
 		:SetSize(GUIDE_IMAGE_WIDTH,GUIDE_IMAGE_HEIGHT)
+		:SetTextureCoords(0,0.8,0,0.5)
 		:Hide()
 	.__END
 
 	frame.GuideData = CHAIN(ui:Create("Label",frame.guideInfoBox,gmname.."_GuideData",14))
-		:SetPoint(TOPLEFT,frame.GuideImage,BOTTOMLEFT)
-		:SetPoint(BOTTOMRIGHT,frame.GuideImage,0,100)
+		:SetPoint(TOPLEFT,frame.GuideImage,0,200)
+		:SetPoint(BOTTOMRIGHT,0,0)
 		:SetVerticalAlignment(TEXT_ALIGN_TOP)
 		:SetText(string.rep("Description! ",50))
 	.__END
@@ -355,11 +356,10 @@ function GuideMenu:Create()
 
 	-- Button isn't in the scrollframe either
 	frame.OkButton = CHAIN(ui:Create("Button",frame.guideBox,gmname.."_OkButton"))
-		:SetPoint(BOTTOMRIGHT,frame.guideInfoBox,BOTTOMRIGHT,-10,-5)
+		:SetPoint(BOTTOMRIGHT,frame.guideInfoBox,BOTTOMRIGHT,-20,-10)
 		:SetSize(80,20)
 		:SetText("Start Guide")
 		:SetFontSize(14)
-		--:SetAttribute("tooltip",L['guidepicker_button_ok_desc'])
 		:SetHandler("OnClicked",function(but)
 			GuideMenu:SetCurrentGuide(GuideMenu.selectedguide)
 		end)
@@ -503,34 +503,13 @@ function GuideMenu:RefreshUI()
 
 		frame.GuideTitle:SetText(g.title_short)
 		frame.GuideImage:SetTexture(image)
-		local imageWidth, imageHeight = GUIDE_IMAGE_WIDTH, GUIDE_IMAGE_HEIGHT
+		frame.GuideData:SetText(g.desc)
 
-		--d(ZGV.BugReport:ShowDump(format(g),"Guide Information: " .. g.title_short))
-
-		--d(g)
 		d(g.title_short)
 		d(g.image)
-		d("raw " .. imageWidth .. " " .. GUIDE_IMAGE_WIDTH)
-		d("raw " .. imageHeight .. " " .. GUIDE_IMAGE_HEIGHT) 
+		d(g.description)
 
-		--if imageWidth > GUIDE_IMAGE_WIDTH then
-			local imageScale = frame.GuideImage:GetParent():GetWidth() / GUIDE_IMAGE_WIDTH
-
-			d("--- imageScale " .. imageScale)
-
-			imageWidth = imageWidth * imageScale
-			imageHeight = imageHeight * imageScale
-		--end
-
-		d("pre-scale " .. imageWidth)
-		d("pre-scale " .. imageHeight)
-		
-		--frame.GuideImage:SetWidth(imageWidth)
-		--frame.GuideImage:SetHeight(imageHeight)
-
-		d("post-scale " .. imageWidth)
-		d("post-scale " .. imageHeight)
-		d("\n\n")
+		local imageWidth, imageHeight = GUIDE_IMAGE_WIDTH, GUIDE_IMAGE_HEIGHT
 
 		local s="\n"
 
