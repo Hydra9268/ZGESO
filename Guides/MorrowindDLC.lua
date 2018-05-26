@@ -3,6 +3,8 @@ if not ZGV then return end
 if ZGV:DoMutex("MorrowindDLC") then return end
 ZGV.GuideMenuTier = "MOR"
 ZGV:RegisterGuide("LEVELING\\DLC\\Clockwork City",[[
+loadingimage loadscreen_clockworkcity_zone_01.dds
+description The Clockwork City is a giant complex the size of a world, but it fits inside a glass dome no larger than a good-sized netch.
 step
 'Press _U_ to open your _Collections_
 'Click over to the _Stories_ tab and look under the _DLC_ section:
@@ -2391,6 +2393,8 @@ talk Brengolin
 turnin A Matter of Tenderness
 ]])
 ZGV:RegisterGuide("LEVELING\\DLC\\Dark Brotherhood",[[
+loadingimage loadscreen_dbsanctuary_01.dds
+description Sometimes the best way to deal with a troublesome person is permanent removal. As a Dark Brotherhood assassin, you'll be tasked to fill that need.
 step
 'Press _U_ to open your _Collections_
 'Click over to the _Stories_ tab and look under the _DLC_ section:
@@ -3491,6 +3495,8 @@ talk Speaker Terenus
 turnin Filling the Void
 ]])
 ZGV:RegisterGuide("LEVELING\\DLC\\Imperial City",[[
+loadingimage loadscreen_imperialcity_01.dds
+description Join with three other adventurers in a race to the top of the White-Gold Tower in pursuit of a stolen Elder Scroll.
 step
 'Press _U_ to open your _Collections_
 'Click over to the _Stories_ tab and look under the _DLC_ section:
@@ -6380,6 +6386,8 @@ step
 'Congratulations, you have completed the Imperial City guide!
 ]])
 ZGV:RegisterGuide("LEVELING\\Morrowind",[[
+loadingimage loadscreen_balfoyen_01.dds
+description Stop a meteor from crashing into Vivec City by helping a demi-god regain his lost powers.
 step
 'Press _U_ to open your _Collections_
 'Click over to the _Stories_ tab and look under the _Morrowind chapter_:
@@ -10560,6 +10568,8 @@ talk Lady Clarisse Laurent
 turnin A Web of Troubles
 ]])
 ZGV:RegisterGuide("LEVELING\\DLC\\Orsinium",[[
+loadingimage loadscreen_orsinium_keyart_01.dds
+description King Kurog has begun to rebuild the great city of Orsinium, the long-abandoned capital city of the Orcs. But already there are whispered plots from those who would seize power for themselves.
 step
 'Press _U_ to open your _Collections_
 'Click over to the _Stories_ tab and look under the _DLC_ section:
@@ -13312,6 +13322,8 @@ talk Sharela
 turnin The Ashes of Our Fathers
 ]])
 ZGV:RegisterGuide("LEVELING\\DLC\\Thieves Guild",[[
+loadingimage loadscreen_outlaw_refuge_nedic_01.dds
+description Help restore the Thieves Guild in Abah's Landing, currently besieged by the mercenary force known as the Iron Wheel.
 step
 'Press _U_ to open your _Collections_
 'Click over to the _Stories_ tab and look under the _DLC_ section:
