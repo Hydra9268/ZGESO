@@ -15322,6 +15322,7 @@ talk Zeira
 turnin The One That Got Away
 ]])
 ZGV:RegisterGuide("LEVELING\\Summerset",[[
+image EsoUI/Art/LoadingScreens/loadscreen_strosmkai_01.dds
 step
 'This guide includes Guild quests along the way.
 |tip Manually skip to the next step.
