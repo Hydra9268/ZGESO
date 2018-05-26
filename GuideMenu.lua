@@ -413,8 +413,6 @@ function GuideMenu:RefreshUI()
 	
 	self.offset = self.offset and zo_min(#guides,zo_max(0,self.offset)) or 0
 
-	-- d(#guides)
-	-- d(#guides - MAX_LINES)
 	frame.guideBoxScroll:SetMinMax(0, #guides-MAX_LINES)		-- code works but there's no scrolling
 	
 	local hei = zo_min(1,MAX_LINES / #guides)  if hei==1 then hei=0 end
@@ -504,10 +502,6 @@ function GuideMenu:RefreshUI()
 		frame.GuideTitle:SetText(g.title_short)
 		frame.GuideImage:SetTexture(image)
 		frame.GuideData:SetText(g.desc)
-
-		d(g.title_short)
-		d(g.image)
-		d(g.description)
 
 		local imageWidth, imageHeight = GUIDE_IMAGE_WIDTH, GUIDE_IMAGE_HEIGHT
 
