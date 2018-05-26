@@ -268,6 +268,10 @@ GuideCommands['image'] = function(guide,params)
 	guide.image = params
 end
 
+GuideCommands['loadingimage'] = function(guide,params)
+	guide.image = "EsoUI/Art/LoadingScreens/"..params
+end
+
 GuideCommands['description'] = function(guide,params)
 	guide.description=(guide.description and (guide.description.."\n") or "") .. params	-- If there is already a description then append it with a \n
 end
