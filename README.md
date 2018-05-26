@@ -10,7 +10,7 @@ The purpose of this project is to add Summerset to the levelling guide for the c
 
 ----
 
-### ESOUI Public Functions
+### ESOUI Public Functions of Note
 
 Outputs a message to the chat window. d is short for "debug" (equivilant of console.log in JavaScript)
 ```lua
