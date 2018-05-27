@@ -1,4 +1,4 @@
-ZGV.MapData = {
+﻿ZGV.MapData = {
 	["ZoneNameToTex"] =
 	{
 		[""] = [[]],
@@ -535,25 +535,29 @@ ZGV.MapData = {
 		["Alinor"] = [[alinor_base]],
 		["Cloudrest"] = [[cloudrest_base]],
 		["Crystal Tower"] = [[crystaltower_base]],
-		["Lillandril"] = [[lillandril_base]],
+		["Lillandril"] = [[lillandrill_base]],
 		["Rellenthil"] = [[rellenthil_base]],
 		["Shimmerene"] = [[shimmerene_base]],
 		["Sunhold"] = [[sunhold_base]],
-		["Monastery of Serene Harmony"] = [[monasterysereneharmony_base]],
+		["Monastery of Serene Harmony"] = [[monasteryoshfloor01_base]],
 
 	},
 	["Zones"] =
 	{
 
-		-- SUMMERSET CITIES
-		-- Go to the map, execute this in chat /script d(LibStub("LibGPS2"):GetCurrentMapMeasurements())
+		--[[
+		-- Go to the map, execute this in chat:
+		/script d(LibStub("LibGPS2"):GetCurrentMapMeasurements())
+		/script d(LibStub("LibGPS2"):LocalToGlobal(GetMapPlayerPosition("player")))
+		]]--
 
-		["summerset_base"] = 			{ name = "Summerset", 			id = 388, xoffset = -0.0035352285793352, yoffset = 0.60646441074991, scale = 0.26354155912548, yscale = 0.26354164039408, map = 32, },
-		["shimmerene_base"] = 			{ name = "Shimmerene", 			id = 394, xoffset = 0.13651019277278, yoffset = 0.70346567832109, xscale = 0.03906602479392, yscale = 0.039067244684405, },
-		["lillandril_base"] = 			{ name = "Lillandril", 			id = 392, xoffset = 0.027778038963195, yoffset = 0.69915922340375, xscale = 0.023632472233258, yscale = 0.023632674051079, },	-- not working? coordinates are correct.
-		["alinor_base"] = 			{ name = "Alinor", 			id = 389, xoffset = 0.06035675104039, yoffset = 0.75090383391464, xscale = 0.027322944989731, yscale = 0.027322585673017, },
-		["sunhold_base"] = 			{ name = "Sunhold", 			id = 395, xoffset = 0.089077860247676, yoffset = 0.78044268173993, xscale = 0.015432254571717, yscale = 0.015431841398846, },
-		["monasterysereneharmony_base"] = 	{ name = "Monastery of Serene Harmony", id = 396, xoffset = 0.16125599831488, yoffset = 0.72008081853978, xscale = 0.00090743099359669, yscale = 1, },
+		-- SUMMERSET CITIES
+		["summerset_base"] = 			{ name = "Summerset", 			id = 388, xoffset = -0.0035352285793352, yoffset = 0.60646441074991, scale = 0.26354155912548, map = 32, },
+		["shimmerene_base"] = 			{ name = "Shimmerene", 			id = 394, xoffset = 0.13651019277278, yoffset = 0.70346567832109, xscale = 0.03906602479392, },
+		["lillandrill_base"] = 			{ name = "Lillandrill",			id = 392, xoffset = 0.027778038963195, yoffset = 0.69915922340375, xscale = 0.023632472233258, },
+		["alinor_base"] = 			{ name = "Alinor", 			id = 389, xoffset = 0.06035675104039, yoffset = 0.75090383391464, xscale = 0.027322944989731, },
+		["sunhold_base"] = 			{ name = "Sunhold", 			id = 395, xoffset = 0.089077860247676, yoffset = 0.78044268173993, xscale = 0.015432254571717, },
+		["monasteryoshfloor01_base"] = 		{ name = "Monastery of Serene Harmony", id = 396, xoffset = 0.16078806889053, yoffset = 0.71933247407576, xscale = 0.00090745477168426, },
 
 		-- EXISTING
 		[""] = { name = "", },
