@@ -15407,7 +15407,7 @@ step
 goto shimmerene_base 63.00,51.26
 'Enter the Monastery of Serene Harmony |q The Queen's Decree
 step
-goto monasterysereneharmony_base 38.02,63.96
+goto monasteryoshfloor01_base 50.00,50.00
 click List of Sequestered Guests
 |tip Manually skip to the next step.
 step
