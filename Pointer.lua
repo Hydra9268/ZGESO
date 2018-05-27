@@ -1267,7 +1267,7 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 
 	-- labels
 
-	--Pointer:Debug(("dist %.2f  chg %.2f  speed %.2f  ela %.2f"):format(dist,last_distance-dist,speed,eta_elapsed))
+	-- Pointer:Debug(("dist %.2f  chg %.2f  speed %.2f  ela %.2f"):format(dist,last_distance-dist,speed,eta_elapsed))
 
 	local limit,minlimit=30,5
 
