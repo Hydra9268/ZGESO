@@ -15343,27 +15343,49 @@ step
 talk Calibar
 accept The Queen's Decree
 step
-goto shimmerene_base 31.46,81.38
+goto summerset_base 57.89,49.02
 talk Razum-dar
+|tip Manually skip to the next step.
 step
 goto summerset_base 60.56,49.10
 step
 talk Olnewil
+|tip Manually skip to the next step.
 step
 goto summerset_base 53.97,46.97
 step
 click Tsoxolza's Backpack
+|tip Manually skip to the next step.
 step
 goto summerset_base 55.09,45.88
 step
 talk Linwenvar
 accept Old Wounds
 step
+goto summerset_base 57.09,44.19
+'Follow the walking path
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 31.87,49.25
+'Cross the bridge
+|tip Manually skip to the next step.
+step
 goto shimmerene_base 44.33,24.41
 step
 talk Rhanul
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 29.92,38.93
+'Run along the pier and cross the bridge
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 32.31,50.24
+'Run up the stars
+|tip Manually skip to the next step.
 step
 goto shimmerene_base 40.67,51.75
+'Follow the path
+|tip Manually skip to the next step.
 step
 talk Aicessar
 accept Aicessar's Invitation
@@ -15378,6 +15400,7 @@ step
 goto shimmerene_base 35.75,72.01
 step
 talk Razum-dar
+|tip Manually skip to the next step.
 step
 goto shimmerene_base 67.15,61.89
 talk Lanarie
@@ -15393,8 +15416,6 @@ step
 goto shimmerene_base 61.97,58.80
 talk Talerion
 step
-'Go up the stairs |q A Tale of Two Mothers/Talk to Talerion
-step
 goto shimmerene_base 64.72,57.06
 click Arathel's Map
 'Take Arathel's Map
@@ -15407,8 +15428,110 @@ step
 goto shimmerene_base 63.00,51.26
 'Enter the Monastery of Serene Harmony |q The Queen's Decree
 step
-goto monasteryoshfloor01_base 50.00,50.00
+goto monasteryoshfloor01_base 38.24,64.14
 click List of Sequestered Guests
+|tip Manually skip to the next step.
+step
+goto monasteryoshfloor01_base 54.43,53.77
+click Kinlady's Letter
+|tip Manually skip to the next step.
+step
+goto monasteryoshfloor01_base 57.21,44.82
+talk Monastic Nuleros
+step
+goto monasteryoshfloor01_base 38.82,65.20
+'Go up the stairs
+|tip Manually skip to the next step.
+step
+goto monasteryoshfloor02_base 46.27,26.82
+'Run the along the hallway to this door way
+|tip Manually skip to the next step.
+step
+goto monasteryoshfloor02_base 41.51,22.54
+click Abyssal Pearl
+|tip Manually skip to the next step.
+step
+talk Valsirenn
+|tip Manually skip to the next step.
+step
+goto monasteryoshfloor02_base 40.85,52.60
+'Go down the stairs
+|tip Manually skip to the next step.
+step
+goto monasteryoshfloor01_base 59.11,72.83
+'Jump over the railing and continue down to the Monastery Undercroft
+|tip Manually skip to the next step.
+step
+goto monasteryoshfloor03_base 78.53,63.17
+talk Minone Aloette
+click Unlock cage
+|tip Manually skip to the next step.
+step
+goto monasteryoshfloor03_base 78.99,71.53
+talk Valsirenn
+|tip Manually skip to the next step.
+step
+goto monasteryoshfloor03_base 67.56,71.48
+'Continue the Undercroft Great Hall
+|tip Manually skip to the next step.
+step
+goto monasteryoshfloor03_base 48.47,70.68
+'Defend Valsirenn while she "contains" the Pearl
+|tip Manually skip to the next step.
+step
+goto monasteryoshfloor03_base 33.94,71.48
+'Continue Undercroft Labyrinth
+|tip Manually skip to the next step.
+step
+talk Valsirenn
+|tip Manually skip to the next step.
+step
+goto monasteryoshfloor03_base 07.87,24.71
+'Continue along the cooridors until you reach the exit to Summerset'
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 54.25,46.99
+'Run to here, make a sharp left
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 57.33,45.23
+click Note to Arathel
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 52.89,43.99
+'Exit the labyrinthine garden back to the main walkmain
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 51.44,49.93
+'Enter Anchors Aweigh Inn
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 53.52,51.13
+'Run up the stairs
+talk Razum-dar
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 55.13,48.90
+'Run down the stairs
+talk Riharai
+'Select _"I'm here for a Deathlands Ale."_
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 55.91,48.69
+'Run up the stairs
+talk Edgar Jend
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 52.01,50.58
+'Run down the stairs and exit the Anchors Aweigh Inn
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 45.14,50.63
+'Run down the stairs
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 52.21,43.16
+'Run along the pier and enter the Shimmerene Waterworks
 |tip Manually skip to the next step.
 step
 ]])
