@@ -539,7 +539,9 @@
 		["Rellenthil"] = [[rellenthil_base]],
 		["Shimmerene"] = [[shimmerene_base]],
 		["Sunhold"] = [[sunhold_base]],
-		["Monastery of Serene Harmony"] = [[monasteryoshfloor01_base]],
+		["Monastery of Serene Harmony"] = [[monasteryoshfloor01_base]],		-- Monastery ground floor
+		["Monastery of Serene Harmony"] = [[monasteryoshfloor02_base]],		-- Monastery second floor
+		["Monastery of Serene Harmony"] = [[monasteryoshfloor03_base]],		-- Monastery Undercroft
 
 	},
 	["Zones"] =
@@ -558,6 +560,8 @@
 		["alinor_base"] = 			{ name = "Alinor", 			id = 389, xoffset = 0.06035675104039, yoffset = 0.75090383391464, xscale = 0.027322944989731, },
 		["sunhold_base"] = 			{ name = "Sunhold", 			id = 395, xoffset = 0.089077860247676, yoffset = 0.78044268173993, xscale = 0.015432254571717, },
 		["monasteryoshfloor01_base"] = 		{ name = "Monastery of Serene Harmony", id = 396, xoffset = 0.16078806889053, yoffset = 0.71933247407576, xscale = 0.00090745477168426, },
+		["monasteryoshfloor02_base"] = 		{ name = "Monastery of Serene Harmony", id = 396, xoffset = 0.16078000135967, yoffset = 0.71929764758514, xscale = 0.00090579118289279, },
+		["monasteryoshfloor03_base"] = 		{ name = "Monastery of Serene Harmony", id = 396, xoffset = 0.15994063226311, yoffset = 0.71912021550126, xscale = 0.0015926468690025, },
 
 		-- EXISTING
 		[""] = { name = "", },
