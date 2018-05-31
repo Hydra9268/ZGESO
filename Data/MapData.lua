@@ -542,6 +542,8 @@
 		["Monastery of Serene Harmony"] = [[monasteryoshfloor01_base]],		-- Monastery ground floor
 		["Monastery of Serene Harmony"] = [[monasteryoshfloor02_base]],		-- Monastery second floor
 		["Monastery of Serene Harmony"] = [[monasteryoshfloor03_base]],		-- Monastery Undercroft
+		["Shimmerene Waterworks"] = [[shimmerenewaterworks01_base]],		-- Shimmerene Waterworks ground floor
+		["Shimmerene Waterworks"] = [[shimmerenewaterworks02_base]],		-- Shimmerene Waterworks second floor
 
 	},
 	["Zones"] =
@@ -551,17 +553,20 @@
 		-- Go to the map, execute this in chat:
 		/script d(LibStub("LibGPS2"):GetCurrentMapMeasurements())
 		/script d(LibStub("LibGPS2"):LocalToGlobal(GetMapPlayerPosition("player")))
+		/run d(GetMapFloorInfo())
 		]]--
 
 		-- SUMMERSET CITIES
 		["summerset_base"] = 			{ name = "Summerset", 			id = 388, xoffset = -0.0035352285793352, yoffset = 0.60646441074991, scale = 0.26354155912548, map = 32, },
 		["shimmerene_base"] = 			{ name = "Shimmerene", 			id = 394, xoffset = 0.13651019277278, yoffset = 0.70346567832109, xscale = 0.03906602479392, },
-		["lillandrill_base"] = 			{ name = "Lillandrill",			id = 392, xoffset = 0.027778038963195, yoffset = 0.69915922340375, xscale = 0.023632472233258, },
+		["lillandrill_base"] = 			{ name = "Lillandril",			id = 392, xoffset = 0.027778038963195, yoffset = 0.69915922340375, xscale = 0.023632472233258, },
 		["alinor_base"] = 			{ name = "Alinor", 			id = 389, xoffset = 0.06035675104039, yoffset = 0.75090383391464, xscale = 0.027322944989731, },
 		["sunhold_base"] = 			{ name = "Sunhold", 			id = 395, xoffset = 0.089077860247676, yoffset = 0.78044268173993, xscale = 0.015432254571717, },
 		["monasteryoshfloor01_base"] = 		{ name = "Monastery of Serene Harmony", id = 396, xoffset = 0.16078806889053, yoffset = 0.71933247407576, xscale = 0.00090745477168426, },
 		["monasteryoshfloor02_base"] = 		{ name = "Monastery of Serene Harmony", id = 396, xoffset = 0.16078000135967, yoffset = 0.71929764758514, xscale = 0.00090579118289279, },
 		["monasteryoshfloor03_base"] = 		{ name = "Monastery of Serene Harmony", id = 396, xoffset = 0.15994063226311, yoffset = 0.71912021550126, xscale = 0.0015926468690025, },
+		["shimmerenewaterworks01_base"] =	{ name = "Shimmerene Waterworks", 	id = 397, xoffset = 0.15685471843788, yoffset = 0.72048605808177, xscale = 0.0024150456740794, },
+
 
 		-- EXISTING
 		[""] = { name = "", },
