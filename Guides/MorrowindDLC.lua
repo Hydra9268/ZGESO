@@ -15534,4 +15534,8 @@ goto shimmerene_base 52.21,43.16
 'Run along the pier and enter the Shimmerene Waterworks
 |tip Manually skip to the next step.
 step
+goto shimmerenewaterworks02_base 50,50
+'This is test text
+step
+step
 ]])
