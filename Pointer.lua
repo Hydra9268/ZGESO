@@ -870,6 +870,7 @@ end
 
 -- /dump ZGV.Pointer:TranslateCoords("bleakrock_base_0",0.7,0.7,"bleakrockvillage_base_0")
 -- /dump ZGV.Pointer:TranslateCoords("deshaan_base",.4053,.7517,"kragenmoor_base")
+-- /dump ZGV.Pointer:GetDistToCoords("shimmerene_base",50.50,50.50,"shimmerenewaterworks01_base")
 function Pointer:TranslateCoords(map1,x,y,map2)
 	if map1==map2 or not (map1 and map2) then return x,y end
 
@@ -896,6 +897,7 @@ function Pointer:TranslateCoords(map1,x,y,map2)
 end
 
 --/dump ZGV.Pointer:GetDistToCoords(auridon_base 52.50,91.57)
+--/dump ZGV.Pointer:GetDistToCoords(shimmerenewaterworks01_base,50.50,50.50)
 --/dump ZGV.Pointer:TranslateCoords("auridon_base",52.50,91.57,"vulkhelguard_base")
 function Pointer:GetDistToCoords(m,x,y)
 	local px,py = GetMapPlayerPosition("player")
@@ -1751,7 +1753,7 @@ local function DEVd(s,...)
 	end
 end
 
-
+--/dump ZGV.Pointer:SurveyStats()
 function Pointer:SurveyStats()
 	local function stat(zones)
 		local total,surveyed=0,0
@@ -1896,6 +1898,7 @@ function Pointer:SurveyMap(specific,force,quiet)
 	if specific=="here" and quiet then SetMapToPlayerLocation() ZO_WorldMap_UpdateMap() end
 end
 
+--/dump ZGV.Pointer:SurveyClickAllOver(shimmerenewaterworks01_base)
 function Pointer:SurveyClickAllOver(map)
 	local starttex = self:GetMapTex()
 	for x=0,1,0.05 do
