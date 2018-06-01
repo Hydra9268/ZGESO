@@ -2,7 +2,7 @@
 
 A Public Domain ESO Leveling Guide produced by Zygor Guides
 
-**This is a work-in-progress project, meaning it is not a complete, ready to use project.**
+<img src="https://i.imgur.com/20i8hG9.png" alt="This is a work-in-progress project, meaning it is not a complete, ready to use project.">
 
 No longer supported references:
 * Announcement: https://zygorguides.com/blog/zygor-guides-elder-scrolls-online-guides-going-free-use/
