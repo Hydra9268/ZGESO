@@ -35,7 +35,7 @@ For example, 1.4.0.96.
 
 ### Zygor Guide Bug Reporting Functions
 
-Creates a Bug Report in a Dedicated Window
+Creates a Bug Report in a dedicated window for the current guide step
 ```lua
 /run d(ZGV.BugReport:ShowReport())
 ```
