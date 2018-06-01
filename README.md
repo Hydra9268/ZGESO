@@ -12,31 +12,24 @@ The purpose of this project is to add Summerset to the levelling guide for the c
 
 ----
 
-### ESOUI Public Functions of Note
+### Available ZG Map Data Slash Commands
 
-Outputs code to the chat window. d is short for "debug" (equivilant of console.log in JavaScript)
-```lua
-d()
-```
+* `/zgpos` - For city and delve data, and also to confirm DDS map filename is correct
+* `/zgpos gps` - For general map data. Works in any map.
+* `/zgpos floor` - Floor information. Not needed, but available for good measure.
+
+<img src="https://i.imgur.com/RKKO1AO.png">
 
 ----
 
-### LIBGPS2 Public Functions
+### Zygor Guide Bug Reporting Functions
 
-Retrieve maxIndex, zoneIndex, offsetX, offsetY, scaleX, and scaleY for current map
+Creates a Bug Report in a Dedicated Window
 ```lua
-/run d(LibStub("LibGPS2"):GetCurrentMapMeasurements())
+/run d(ZGV.BugReport:ShowReport())
 ```
-
-Retrieve offsetX, offsetY, maxIndex for player for current map
-```lua
-/run d(LibStub("LibGPS2"):LocalToGlobal(GetMapPlayerPosition("player")))
-```
-
-Retrieve maxIndex, parent maxIndex, and zondexIndex for current player for current map
-``` lua
-/run d(LibStub("LibGPS2"):GetCurrentMapParentZoneIndices())
-```
+*output*<br>
+<img src="https://i.imgur.com/fMOreQ8.png" width="800">
 
 ----
 
@@ -47,19 +40,9 @@ Retrieve current player's name
 /run d(ZGV.Utils.GetPlayerName())
 ```
 
-Is current player in combat?
-```lua
-/run d(ZGV.Utils:IsPlayerInCombat())
-```
-
  Retrieve partial information from ZygorGuidesViewer.txt
 ```lua
 /run d(ZGV.Utils.GetMyAddonInfo())
-```
-
-Retrieve map's x and y distance (i think?)
-```lua
-/run d(ZGV.Parser.ParseMapXYDist)
 ```
 
 Provides a status of all AddOn functions running
@@ -102,43 +85,9 @@ Provides a status of all AddOn functions running
 
 ----
 
-### Zygor Guide Bug Reporting Functions
-
-Creates a list of all available bug reporting functions
-```lua
-/run d(ZGV.BugReport)
-```
-*output*
-```lua
-.(function): Debug_GetLongReport = function: 000002568DA40988
-.(function): GetReport = function: 00000256730BFC08
-.(function): ShowReport = function: 00000256730BFCD8
-```
-
-Placeholder Bug Report [WIP]
-```lua
-/run d(ZGV.BugReport:CustomOutputWindow())
-```
-*output*<br>
-<img src="https://i.imgur.com/psJezQI.png" width="800">
-
-Creates a Bug Report in a Dedicated Window
-```lua
-/run d(ZGV.BugReport:ShowReport())
-```
-*output*<br>
-<img src="https://i.imgur.com/2mqFlDw.png" width="800">
-
-Renders Bug Report inside Chat (only visible to you)
-```lua
-/run d(ZGV.BugReport:GetReport())
-```
-
-----
-
 ### Zygor Guide Travel Functions
 
-List all travel destinations by value/key pair
+List all travel destinations by key/id pair
 ```lua
 /run d(ZGV.Travel)
 ```
@@ -150,10 +99,21 @@ List all travel destinations by value/key pair
 ### Slash commands
 
 * `/zygor` = /zgv
-* `/zygor debug` = debug mode
+* `/zygor debug` = toggles debug mode on and off
 * `/run` = /script
 * `/re` = /reloadui
-* `/dump` = outputs text
+* `/zgpos` - For city and delve data, and also to confirm DDS map filename is correct
+* `/zgpos gps` - For general map data. Works in any map.
+* `/zgpos floor` - Floor information. Not needed, but available for good measure.
+
+----
+
+### Miscellaneous
+
+Outputs code to the chat window. d is short for "debug" (equivilant of console.log in JavaScript)
+```lua
+d()
+```
 
 ----
 
