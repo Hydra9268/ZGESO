@@ -16,7 +16,7 @@ The purpose of this project is to add Summerset to the levelling guide for the c
 
 * `/zgpos` - For city and delve data, and also to confirm DDS map filename is correct
 * `/zgpos gps` - For general map data. Works in any map.
-* `/zgpos floor` - Floor information. Not needed, but available for good measure.
+* `/zgpos floor` - Retrieves floor information. First value is current floor. Second is total number of.
 
 <img src="https://i.imgur.com/vyJ1ZiL.png">
 
