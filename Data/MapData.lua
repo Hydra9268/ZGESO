@@ -543,7 +543,7 @@
 		["Monastery of Serene Harmony"] = [[monasteryoshfloor02_base]],		-- Monastery second floor
 		["Monastery of Serene Harmony"] = [[monasteryoshfloor03_base]],		-- Monastery Undercroft
 		["Shimmerene Waterworks"] = [[ShimmereneWaterworks01_base]],		-- Shimmerene Waterworks ground floor
-		["Shimmerene Waterworks"] = [[shimmerenewaterworks02_base]],		-- Shimmerene Waterworks second floor
+		["Shimmerene Waterworks"] = [[ShimmereneWaterworks02_base]],		-- Shimmerene Waterworks second floor
 
 	},
 	["Zones"] =
