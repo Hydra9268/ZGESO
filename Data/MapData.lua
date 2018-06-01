@@ -550,10 +550,10 @@
 	{
 
 		--[[
-		-- Go to the map, execute this in chat:
-		/script d(LibStub("LibGPS2"):GetCurrentMapMeasurements())
-		/script d(LibStub("LibGPS2"):LocalToGlobal(GetMapPlayerPosition("player")))
-		/run d(GetMapFloorInfo())
+		-- Go to a map, execute this in chat:
+			/zgpos gps - For general map data. Works in any map.
+			/zgpos - For city and delve data, and also to confirm DDS map filename is correct.
+			/zgpos floor - Floor information. Not needed, but available for good measure.
 		]]--
 
 		-- SUMMERSET CITIES
