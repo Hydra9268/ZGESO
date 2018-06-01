@@ -1625,11 +1625,7 @@ function Pointer:InitMaps()
 		end}
 	)
 
-
-
-
 	-- import hardcoded data
-
 	--[[
 		if Zones.version~=ZGV.MapData.version then
 
@@ -1784,6 +1780,7 @@ end
 
 local knownNoParent={}
 function Pointer:SurveyMap(specific,force,quiet)
+
 	if specific then
 		local map=specific:match("map (%d+)")
 		--local zone=specific:match("id (%d+)") or specific:match("zone (%d+)")
@@ -1796,6 +1793,7 @@ function Pointer:SurveyMap(specific,force,quiet)
 	local Z = Pointer.Zones[tex]
 
 	if Z.scale and not force and not Z.lx1 then  return  end
+
 	if ZGV.Utils.Delocalize(GetMapName())=="Tamriel" then qd("Can't survey Tamriel itself.") return end
 	if Z.noParent then
 		if not knownNoParent[Z] then  qd("Can't survey a non-parented map.")  end
@@ -1807,6 +1805,7 @@ function Pointer:SurveyMap(specific,force,quiet)
 		qd("|cff0000Surveying too fast?")
 		return
 	end
+
 
 	-- let's get serious.
 
@@ -1848,7 +1847,6 @@ function Pointer:SurveyMap(specific,force,quiet)
 	end
 
 	if Z.lx1 and Z.ly1 and Z.px1 and Z.py1 then
-
 		if specific then
 			local map=specific:match("map (%d+)")
 			--local zone=specific:match("id (%d+)") or specific:match("zone (%d+)")
@@ -1896,9 +1894,10 @@ function Pointer:SurveyMap(specific,force,quiet)
 	end
 
 	if specific=="here" and quiet then SetMapToPlayerLocation() ZO_WorldMap_UpdateMap() end
+
 end
 
---/dump ZGV.Pointer:SurveyClickAllOver(shimmerenewaterworks01_base)
+-- /dump ZGV.Pointer:SurveyClickAllOver(shimmerenewaterworks01_base)
 function Pointer:SurveyClickAllOver(map)
 	local starttex = self:GetMapTex()
 	for x=0,1,0.05 do
@@ -1920,17 +1919,21 @@ end
 
 SLASH_COMMANDS["/zgsurvey"] = function() ZGV.Pointer:SurveyMap(nil,"force") Pointer.do_autosurvey = true end
 
+SLASH_COMMANDS["/zgpos"] = function()
+	local tex = Pointer:GetMapTex()
+	local Z = Pointer.Zones[tex]
+	ZGV.sv.profile.Zones[tex]=Z
+	d(("|cffffff%s|r"):format(tex))
+	d(("xoffset: |c88ff88%.6f|r"):format(Z.xoffset))
+	d(("yoffset: |c88ff88%.6f|r"):format(Z.yoffset))
+	d(("xscale: |c88ff88%.6f|r"):format(Z.xscale))
+end
 
---[[
-MAP CLICKING SIMULATION PREP:
-
-/run for i=1,9 do _G['MapMouseoverBlob'..i]:SetHidden(false) end
-
-ProcessMapClick
---]]
+-- MAP CLICKING SIMULATION PREP:
+--/script for i=1,9 do _G['MapMouseoverBlob'..i]:SetHidden(false) end
+--ProcessMapClick()
 
 --local coord_to_m = 0
-
 local function dist_to_target()
 	local px,py = GetMapPlayerPosition("player")
 	local tx,ty = GetMapPlayerPosition("reticleover")
@@ -2300,3 +2303,4 @@ if ZGV.DEV then
 		return text,level,subtextinc,subtextcom
 	end
 end
+
