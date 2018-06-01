@@ -12,6 +12,17 @@ The purpose of this project is to add Summerset to the levelling guide for the c
 
 ----
 
+### ZGESO Version Breakdown
+
+For example, 1.4.0.96.
+
+* `1` = Major version (authored by Zygor)
+* `4` = Minor version (authored by Zygor)
+* `0` = Bug fix version (authored by Zygor)
+* `96` = Community version. Value is based on total number of Github commits. Periodic update.
+
+----
+
 ### Available ZG Map Data Slash Commands
 
 * `/zgpos` - For city and delve data, and also to confirm DDS map filename is correct
