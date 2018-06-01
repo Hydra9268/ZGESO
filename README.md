@@ -104,7 +104,7 @@ List all travel destinations by key/id pair
 * `/re` = /reloadui
 * `/zgpos` - For city and delve data, and also to confirm DDS map filename is correct
 * `/zgpos gps` - For general map data. Works in any map.
-* `/zgpos floor` - Floor information. Not needed, but available for good measure.
+* `/zgpos floor` - Retrieves floor information. First value is current floor. Second is total number of.
 
 ----
 
