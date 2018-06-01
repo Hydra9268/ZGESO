@@ -542,7 +542,7 @@
 		["Monastery of Serene Harmony"] = [[monasteryoshfloor01_base]],		-- Monastery ground floor
 		["Monastery of Serene Harmony"] = [[monasteryoshfloor02_base]],		-- Monastery second floor
 		["Monastery of Serene Harmony"] = [[monasteryoshfloor03_base]],		-- Monastery Undercroft
-		["Shimmerene Waterworks"] = [[shimmerenewaterworks01_base]],		-- Shimmerene Waterworks ground floor
+		["Shimmerene Waterworks"] = [[ShimmereneWaterworks01_base]],		-- Shimmerene Waterworks ground floor
 		["Shimmerene Waterworks"] = [[shimmerenewaterworks02_base]],		-- Shimmerene Waterworks second floor
 
 	},
@@ -565,7 +565,7 @@
 		["monasteryoshfloor01_base"] = 		{ name = "Monastery of Serene Harmony", id = 396, xoffset = 0.16078806889053, yoffset = 0.71933247407576, xscale = 0.00090745477168426, },
 		["monasteryoshfloor02_base"] = 		{ name = "Monastery of Serene Harmony", id = 396, xoffset = 0.16078000135967, yoffset = 0.71929764758514, xscale = 0.00090579118289279, },
 		["monasteryoshfloor03_base"] = 		{ name = "Monastery of Serene Harmony", id = 396, xoffset = 0.15994063226311, yoffset = 0.71912021550126, xscale = 0.0015926468690025, },
-		["shimmerenewaterworks01_base"] =	{ name = "Shimmerene Waterworks", 	id = 397, xoffset = 0.15685471843788, yoffset = 0.72048605808177, xscale = 0.0024150456740794, },
+		["ShimmereneWaterworks01_base"] =	{ name = "Shimmerene Waterworks", 	id = 397, xoffset = 0.15685471873136, yoffset = 0.72048606511502, xscale = 0.0024150422214115, },
 
 
 		-- EXISTING
