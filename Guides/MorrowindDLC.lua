@@ -15534,8 +15534,97 @@ goto shimmerene_base 52.21,43.16
 'Run along the pier and enter the Shimmerene Waterworks
 |tip Manually skip to the next step.
 step
-goto ShimmereneWaterworks01_base 59.16,37.49
-'This is test text
+goto ShimmereneWaterworks01_base 72.55,25.33
+'Run through the Waterworks to here
+|tip Manually skip to the next step.
 step
+goto ShimmereneWaterworks01_base 75.23,31.71
+'Enter the new cooridor here and continue
+|tip Manually skip to the next step.
+step
+goto ShimmereneWaterworks01_base 71.21,42.43
+'Run up to the rat here
+|tip Manually skip to the next step.
+step
+goto ShimmereneWaterworks01_base 70.18,47.90
+click Mother's Den
+|tip Manually skip to the next step.
+step
+goto ShimmereneWaterworks01_base 70.05,57.07
+talk Mother of Rats
+|tip Manually skip to the next step.
+step
+goto ShimmereneWaterworks01_base 70.06,49.37
+click Shimmerene Waterworks
+|tip Manually skip to the next step.
+step
+goto ShimmereneWaterworks01_base 52.30,56.36
+'Continue through this path
+|tip Manually skip to the next step.
+step
+goto ShimmereneWaterworks01_base 39.89,73.23
+talk Zan'hi
+|tip Manually skip to the next step.
+step
+goto ShimmereneWaterworks01_base 34.76,34.64
+'Continue along this path, cross the bridge, and keeping going
+click Mirulon's Chamber
+|tip Manually skip to the next step.
+step
+goto ShimmereneWaterworks01_base 47.48,35.02
+kill Mirulon
+|tip Manually skip to the next step.
+step
+goto ShimmereneWaterworks01_base 39.88,32.57
+'Run up the stairs
+click Mirulon's Letter
+|tip Manually skip to the next step.
+step
+goto ShimmereneWaterworks01_base 39.53,31.48
+click Shimmerene Aquaducts
+|tip Manually skip to the next step.
+step
+goto ShimmereneWaterworks01_base 50.70,24.64
+'Down here into the water below.
+|tip Manually skip to the next step.
+step
+goto ShimmereneWaterworks01_base 57.31,27.10
+talk Arathel
+|tip Manually skip to the next step.
+step
+goto ShimmereneWaterworks01_base 70.18,47.90
+'Escort Arathel safely back to Mother's Den
+click Mother's Den
+|tip Manually skip to the next step.
+step
+goto ShimmereneWaterworks01_base 68.97,57.46
+talk Talerion
+'Select _"I have proof. I found this among the captor's belongings."_
+|tip Manually skip to the next step.
+step
+goto ShimmereneWaterworks01_base 70.05,57.07
+talk Mother of Rats
+|tip Manually skip to the next step.
+step
+'Open your map:
+click Shimmerene Wayshrine
+'Travel to the Shimmerene Wayshrine
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 66.13,60.87
+'Press _E_ to use Elegant Outfit
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 65.36,59.83
+'Enter Kinlady Avinisse's Mansion
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 64.69,56.74
+talk Galmelor
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 64.67,56.31
+click Kinlady Avinisse's Garden
+|tip Manually skip to the next step.
 step
 ]])
