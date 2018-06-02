@@ -25,7 +25,7 @@ For example, 1.4.0.96.
 
 ### Available ZG Map Data Slash Commands
 
-* `/zgpos` - For city and delve data, and also to confirm DDS map filename is correct
+* `/zgpos` - For city and delve data, and also to confirm the map's DDS filename is correct.
 * `/zgpos gps` - For general map data. Works in any map.
 * `/zgpos floor` - Retrieves floor information. First value is current floor. Second is total number of.
 
@@ -113,7 +113,7 @@ List all travel destinations by key/id pair
 * `/zygor debug` = toggles debug mode on and off
 * `/run` = /script
 * `/re` = /reloadui
-* `/zgpos` - For city and delve data, and also to confirm DDS map filename is correct
+* `/zgpos` - For city and delve data, and also to confirm the map's DDS filename is correct.
 * `/zgpos gps` - For general map data. Works in any map.
 * `/zgpos floor` - Retrieves floor information. First value is current floor. Second is total number of.
 
