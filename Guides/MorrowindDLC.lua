@@ -15627,4 +15627,43 @@ goto shimmerene_base 64.67,56.31
 click Kinlady Avinisse's Garden
 |tip Manually skip to the next step.
 step
+goto shimmerene_base 60.75,56.93
+talk Aldarch Tilcalar
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 60.75,56.93
+talk Aldarch Tilcalar
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 61.65,57.91
+'Enter Kinlady Avinisse's Mansion
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 65.56,57.82
+'Run up the stairs
+talk to Kinlady Avinisse
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 65.08,59.27
+'Run down the stairs
+click Shimmerene
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 58.50,62.05
+talk Razum-dar
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 28.11,76.62
+'Follow the path
+|tip Manually skip to the next step.
+step
+goto summerset_base 59.58,52.03
+talk Celinar
+accept The Runaway's Tale
+step
+goto summerset_base 63.43,52.73
+talk to Valsirenn
+|tip Manually skip to the next step.
+step
+
 ]])
