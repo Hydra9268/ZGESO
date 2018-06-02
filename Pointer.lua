@@ -6,11 +6,9 @@ MEMORYSPAM=false
 local Pointer = {}
 ZGV.Pointer = Pointer
 
-local  _G,assert,table,string,tinsert,tonumber,tostring,type,ipairs,pairs,setmetatable,math,abs,ceil =
-	_G,assert,table,string,table.insert,tonumber,tostring,type,ipairs,pairs,setmetatable,math,abs,ceil
+local  _G,assert,table,string,tinsert,tonumber,tostring,type,ipairs,pairs,setmetatable,math,abs,ceil = _G,assert,table,string,table.insert,tonumber,tostring,type,ipairs,pairs,setmetatable,math,abs,ceil
 
 local min,max = math.min,math.max
-
 local wipe=function(tab) for k,v in pairs(tab) do tab[k]=nil end end
 
 local L=ZGV.L
@@ -18,21 +16,15 @@ local print = d
 
 local BZL=ZGV.BZL
 local BZR=ZGV.BZR
-
 local CHAIN = ZGV.Utils.ChainCall
 
 Pointer.nummanual = 0
-
-Pointer.waypoints = {}
-
 Pointer.antphase=0
 
---local Astrolabe = DongleStub("Astrolabe-ZGV")
-Astrolabe = {
-}
-
+Pointer.waypoints = {}
+Astrolabe = {}
+local profile={}
 local unusedMarkers = {}
-
 
 local last_distance=0
 local speed=0
@@ -43,12 +35,7 @@ local minimapcontrol_suspension=0
 local minimap_lastset = 0
 
 local cuedinged=nil
-
-local profile={}
-
 local submap_cache = nil
-
-
 
 local GetMapNameByID  --defined later
 
@@ -67,17 +54,8 @@ end
 Pointer.MapFloors = {}  setmetatable(Pointer.MapFloors,{__index=function(self,id) return rawget(self,id) or 0 end})
 
 function Pointer:Startup()
-	--todo profile = ZGV.db.profile
-
 	self:InitMaps()
-
 	self:SetArrowSkin(profile.arrowskin) -- stub for now
-
-	--[[ wow db
-	if ZGV.db.profile.frame_positions and ZGV.db.profile.frame_positions.ZygorGuidesViewerPointer_ArrowCtrl then
-		ZygorGuidesViewerPointer_ArrowCtrl:SetPoint(unpack(ZGV.db.profile.frame_positions.ZygorGuidesViewerPointer_ArrowCtrl))
-	end
-	--]]
 
 	if self.ArrowFrame then
 		CHAIN(self.ArrowFrame)
@@ -99,71 +77,8 @@ function Pointer:Startup()
 		Pointer:UpdateArrowPosition()
 	end
 
-	--[[
-
-		:SetHandler("OnMoveStop", function(me)
-			local isValidAnchor, point, relativeTo, relativePoint, offsetX, offsetY = me:GetAnchor()
-
-			if isValidAnchor then
-				profile.vieweranchor = {
-					point,
-					relativeTo:GetName(),		-- Can not store userdata. Just put a string in and it will be forced to GuiRoot when setting
-					relativePoint,
-					offsetX,
-					offsetY
-				}
-			end
-		end)
-	.__END
-
-	-- Lets set the point! Use either from Saved Vars or default
-	profile.vieweranchor = profile.vieweranchor and #profile.vieweranchor==5 and profile.vieweranchor or DEFAULT_ANCHOR
-	local point, relativeTo, relativePoint, offsetX, offsetY = unpack(profile.vieweranchor)
-	relativeTo = GuiRoot		-- Force to GuiRoot.
-	master:SetPoint(point, relativeTo, relativePoint, offsetX, offsetY)
-
-	--]]
-
-	--todo self.Icons:SetAntColorsFromOptions()
-
-	-- this should sit over the world map...
-
-	--hooksecurefunc("WorldMapButton_OnClick",ZGV.Pointer.hook_WorldMapButton_OnClick)
-
-	--wow ZGV:ScheduleRepeatingTimer(function()  if not WorldMapFrame:IsVisible() then SetMapToCurrentZone() end  end, 10.0)   -- to help the current zone cache
-
-	--[[todo
-	if ZGV.db.profile.debug then
-		self.OverlayFrame.LibRoverButton = ZGV.ChainCall(CreateFrame("BUTTON","ZGVLibRoverButton",WorldMapButton,"UIPanelButtonTemplate"))
-		:SetPoint("TOPLEFT",WorldMapButton,"TOPLEFT")
-		:SetSize(100,50)
-		:SetText("Travel nodes")
-		:SetFrameStrata("DIALOG")
-		:SetScript("OnClick",LibRover.ShowDebugMenu)
-		:RegisterForClicks("AnyUp")
-		:Show()
-		--:SetFrameLevel(WorldMapButton:GetFrameLevel()+1)
-		.__END
-	end
-	--]]
-
 	self:UpdateArrowVisibility()
-
-	--hooksecurefunc("WorldMapFrame_OnShow",ZGV.Pointer.hook_WorldMapFrame_OnShow)
-
-
-	--WorldMapFrame.PlayerCoord = WorldMapFrame:CreateFontString(nil,"ARTWORK","GameFontHighlightSmall")
-	--WorldMapFrame.CursorCoord = WorldMapFrame:CreateFontString(nil,"ARTWORK","GameFontHighlightSmall")
-
-	--WorldMapFrame.PlayerCoord:SetText("Player")
-	--WorldMapFrame.CursorCoord:SetText("Cursor")
-
-	--ZGV.ScheduleRepeatingTimer(self,"FixMapLevel", 1.0)
-
 	self.ready = true
-
-	--hooksecurefunc("WorldMapQuestPOI_OnClick",Pointer.QuestPOI_PointToMe)
-	--hooksecurefunc("WatchFrameQuestPOI_OnClick",Pointer.QuestWatchPOI_PointToMe)
 end
 
 function Pointer:UpdateArrowPosition()
@@ -198,18 +113,17 @@ __CLASS = __CLASS or {}
 
 
 Pointer.Icons = {
-	default="ESOdot",
-	ESOdot = { icon=ZGV.DIR.."/Arrows/Stealth/arrow-error.dds", size=40, minisize=25, rotates=false, edgeicon=ZGV.DIR.."\\Skins\\minimaparrow-green-edge", edgesize=60, spinner=true, onminimap=always },
-
-	greendot = { icon=ZGV.DIR.."\\Skins\\minimaparrow-green-dot", size=40, minisize=25, rotates=false, edgeicon=ZGV.DIR.."\\Skins\\minimaparrow-green-edge", edgesize=60, spinner=true, onminimap=always },
-	graydot = { icon=ZGV.DIR.."\\Skins\\minimaparrow-green-dot", size=40, minisize=25, rotates=false, edgeicon=ZGV.DIR.."\\Skins\\minimaparrow-green-edge", edgesize=60, spinner=true, desat=1, onminimap=always },
-	arrow = { icon=ZGV.DIR.."\\Skins\\minimaparrow-path", size=70, minisize=60, rotates=true, edgeicon=ZGV.DIR.."\\Skins\\minimaparrow-path", edgesize=50 },
-	ant =		   { icon=ZGV.DIR.."\\Skins\\minimaparrow-ant", alpha=0.8, size=30, minisize=25, rotates=false, edgeicon=nil, edgesize=1 },
-	ant_g = { icon=ZGV.DIR.."\\Skins\\minimaparrow-ant", r=0.4, g=1, b=0, alpha=0.8, size=30, minisize=25, rotates=false, edgeicon=nil, edgesize=1 },
-	ant_b =   { icon=ZGV.DIR.."\\Skins\\minimaparrow-ant", r=0, g=0.7, b=1, alpha=0.8, size=30, minisize=25, rotates=false, edgeicon=nil, edgesize=1 },
-	ant_p =   { icon=ZGV.DIR.."\\Skins\\minimaparrow-ant", r=0.8, g=0.3, b=1, alpha=0.8, size=30, minisize=25, rotates=false, edgeicon=nil, edgesize=1 },
-	ant_y =   { icon=ZGV.DIR.."\\Skins\\minimaparrow-ant", r=1, g=0.8, b=0, alpha=0.8, size=30, minisize=25, rotates=false, edgeicon=nil, edgesize=1 },
-	none = { icon="", alpha=0.0, size=1, minisize=1, rotates=false, edgeicon=nil, edgesize=1 },
+	default =	"ESOdot",
+	ESOdot = 	{ icon=ZGV.DIR.."/Arrows/Stealth/arrow-error.dds", size=40, minisize=25, rotates=false, edgeicon=ZGV.DIR.."\\Skins\\minimaparrow-green-edge", edgesize=60, spinner=true, onminimap=always },
+	greendot = 	{ icon=ZGV.DIR.."\\Skins\\minimaparrow-green-dot", size=40, minisize=25, rotates=false, edgeicon=ZGV.DIR.."\\Skins\\minimaparrow-green-edge", edgesize=60, spinner=true, onminimap=always },
+	graydot = 	{ icon=ZGV.DIR.."\\Skins\\minimaparrow-green-dot", size=40, minisize=25, rotates=false, edgeicon=ZGV.DIR.."\\Skins\\minimaparrow-green-edge", edgesize=60, spinner=true, desat=1, onminimap=always },
+	arrow = 	{ icon=ZGV.DIR.."\\Skins\\minimaparrow-path", size=70, minisize=60, rotates=true, edgeicon=ZGV.DIR.."\\Skins\\minimaparrow-path", edgesize=50 },
+	ant =		{ icon=ZGV.DIR.."\\Skins\\minimaparrow-ant", alpha=0.8, size=30, minisize=25, rotates=false, edgeicon=nil, edgesize=1 },
+	ant_g = 	{ icon=ZGV.DIR.."\\Skins\\minimaparrow-ant", r=0.4, g=1, b=0, alpha=0.8, size=30, minisize=25, rotates=false, edgeicon=nil, edgesize=1 },
+	ant_b =   	{ icon=ZGV.DIR.."\\Skins\\minimaparrow-ant", r=0, g=0.7, b=1, alpha=0.8, size=30, minisize=25, rotates=false, edgeicon=nil, edgesize=1 },
+	ant_p =   	{ icon=ZGV.DIR.."\\Skins\\minimaparrow-ant", r=0.8, g=0.3, b=1, alpha=0.8, size=30, minisize=25, rotates=false, edgeicon=nil, edgesize=1 },
+	ant_y =   	{ icon=ZGV.DIR.."\\Skins\\minimaparrow-ant", r=1, g=0.8, b=0, alpha=0.8, size=30, minisize=25, rotates=false, edgeicon=nil, edgesize=1 },
+	none = 		{ icon="", alpha=0.0, size=1, minisize=1, rotates=false, edgeicon=nil, edgesize=1 },
 
 	ant_g_default = { r=0.4, g=1, b=0, alpha=0.8 },
 	ant_b_default = { r=0, g=0.7, b=1, alpha=0.8 },
@@ -221,66 +135,13 @@ Pointer.Icons = {
 setmetatable(Pointer.Icons,{__index=function(k) return Pointer.Icons[Pointer.Icons.default] end})
 for k,v in pairs(Pointer.Icons) do if type(v)=="table" then __CLASS[v]="PointerIcon_"..k end end
 
---[[
-	data elements:
-	title - guess
-	type - 'way' 'poi' 'manual' 'corpse' 'path'
-	icon - texture path
-	onminimap - 'always' 'zone'
-	overworld - show on world map
-	persistent - don't hide when arrived at
---]]
-
---[[ ants: not yet
-	local waypoints_ants = {}
-	setmetatable(waypoints_ants,{__index=function(t,i)
-		local waypoint={}
-		waypoint.type="ant"
-		Pointer:MakeMarkerFrames(waypoint,"Ant")
-
-		waypoint.minimapFrame.waypoint = waypoint
-		waypoint.worldmapFrame.waypoint = waypoint
-		waypoint.taximapFrame.waypoint = waypoint
-
-		--waypoint.minimapFrame.icon:SetRotation(icon.rotates and data.angle or 0)
-		local icon=Pointer.Icons.ant
-		waypoint.minimapFrame.icon:SetSize(icon.minisize,icon.minisize)
-		waypoint.minimapFrame.icon:SetDesaturated(icon.desat)
-		waypoint.minimapFrame.icon:SetAlpha(icon.alpha or 1)
-		waypoint.minimapFrame.hide_on_minimap_edge=true
-		waypoint.minimapFrame.self_updating=true
-		waypoint.minimapFrame.arrow:SetTexture(icon.edgeicon)
-		waypoint.minimapFrame.arrow:SetSize(1,1) --hide?
-		--waypoint.worldmapFrame.icon:SetRotation(icon.rotates and data.angle or 0)
-		waypoint.worldmapFrame.icon:SetSize(icon.size,icon.size)
-		waypoint.worldmapFrame.icon:SetDesaturated(icon.desat)
-		waypoint.worldmapFrame.icon:SetAlpha(icon.alpha or 1)
-
-		waypoint.taximapFrame.icon:SetSize(icon.size*0.7,icon.size*0.7)
-		waypoint.taximapFrame.icon:SetDesaturated(icon.desat)
-		waypoint.taximapFrame.icon:SetAlpha(icon.alpha or 1)
-
-		waypoint.onminimap="always"
-		waypoint.overworld=true
-		waypoint.showonedge=false
-
-		__CLASS[waypoint]="WaypointAnt"
-
-		rawset(t,i,waypoint)
-		return waypoint
-	end})
-	Pointer.waypoints_ants = waypoints_ants
---]]
-
 -- SPECIAL setwaypoint, optimized for ants
 local icons=Pointer.Icons
-
-
 local tmp_data = {}
+
 local function add_default_data(data)
-	tmp_data={} --wipe(tmp_data)
+	tmp_data = {}
 	for k,v in pairs(data) do tmp_data[k]=v end
-	--if not data.title then data.title="Waypoint" end
 	if not tmp_data.type then tmp_data.type="way" end
 	if not tmp_data.icon then tmp_data.icon=Pointer.Icons[Pointer.Icons.default] end
 	return tmp_data
@@ -291,11 +152,6 @@ function Pointer:SetWaypoint (m,f,x,y,data,arrow)
 
 	if data.cleartype and data.type then  self:ClearWaypoints(data.type)  end
 
-	-- Let's see if this is evil. If current map is phased, remember it and use it to de-phase other maps of the same group.
-
-	--local mapm,mapf = GetCurrentMapAreaID(),GetCurrentMapDungeonLevel()
-	--self:SetBasePhase(mapm)  -- Assuming nobody in their right mind is viewing a wrong-phase map. Calling SetMapByID(phasedmap) WILL break this...
-
 	local tx,ty=Pointer:TranslateCoords(m,x,y,self:GetMapTex())
 	if tx and ty then
 		PingMap(88,MAP_TYPE_LOCATION_CENTERED,tx,ty)
@@ -304,37 +160,18 @@ function Pointer:SetWaypoint (m,f,x,y,data,arrow)
 	end
 
 	if not m then
-		--m,f=mapm,mapf  -- Use fresh values, NOT the cached crap. No map means put markers on CURRENTLY DISPLAYED map, not the player's current.
 		SetMapToPlayerLocation() ZO_WorldMap_UpdateMap() -- hey we trashed it already... why not just be obvious.
 		m,f = self:GetMapTex(),0
 	else
 		--m=self:SanitizePhase(m)  -- de-phase map!
 	end
 
-	--[[
-	local phased=self:IsEnvironmentPhased(m)
-	if not m or phased then
-		if data.type~="ant" then
-			--Pointer:Debug("The player and the target are in the same phased environment, putting a marker on the current map instead.")
-		end
-		--m,f=mm,ff
-	end
-	--]]
-
 	local waypoint = self:GetMapMarker (m,f or 0,x,y,data)
-
-	--Pointer:Debug("Adding waypoint type "..data.type.." in "..c..","..z..","..x..","..y)
 
 	if not waypoint then return end
 
 	waypoint.title=data.arrowtitle or data.title or ("%s %d,%d"):format(Pointer.Zones[waypoint.m].name,waypoint.x*100,waypoint.y*100)
-
-	--waypoint.type=data.type
-	--waypoint.angle=data.angle	-- not needed, as that's set in GetMapMarker from data
-
 	waypoint:SetIcon(waypoint.icon)
-
-	--Pointer.MinimapButton_OnUpdate(waypoint.minimapFrame,1000)
 
 	if waypoint.type=="manual" then
 		self.nummanual = self.nummanual + 1
@@ -346,15 +183,6 @@ function Pointer:SetWaypoint (m,f,x,y,data,arrow)
 	if arrow and (waypoint.type=="manual" or waypoint.type=="way" or waypoint.type=="route" or waypoint.type=="corpse") then
 		self:ShowArrow(waypoint)
 	end
-
-	--[[
-	if waypoint.find_path then
-		Pointer:Debug("Starting travel, since waypoint was find_path")
-		self:FindTravelPath(waypoint)
-	end
-	--]]
-
-	--if waypoint and waypoint.type~="ant" then Pointer:Debug("Waypoint set to map:"..waypoint.m.." floor:"..waypoint.f) end
 
 	if data.findpath then
 		self:FindTravelPath(waypoint)
@@ -368,54 +196,28 @@ function Pointer:ShowWaiting(phase)
 end
 
 function Pointer:GetMapMarker (m,f,x,y,data)
-	--Pointer:Debug("Internal GetMapMarker: "..tostring(c).." "..tostring(z).." "..tostring(x).." "..tostring(y).." "..tostring(title))
 	if not m and not f then
 		m,f = self:GetMapTex(),0
 	end
-	--Pointer:Debug("Internal GetMapMarker nums: "..tostring(c).." "..tostring(z).." "..tostring(x).." "..tostring(y).." "..tostring(title))
 
 	if not m or not f or not x or not y then
 		Pointer:Debug("GetMapMarker bailing out; map=%s/%d %.2f %.2f",m,f or -1,x or -99,y or -99)
 		return
 	end
 
-	--if x>1 or y>1 then x,y=x/100,y/100 end
-
 	local waypoint = self:GetUnusedMarker()
-	--local c = LibRover.ContinentsByID[m] or -1
-	--local c = Astrolabe.WorldMapSize[m].system
-	waypoint.m=m
-	waypoint.f=f
-	waypoint.x=x
-	waypoint.y=y
-	--waypoint.c=c
-	--[[ ESO: no frames!
-	waypoint.minimapFrame.waypoint = waypoint
-	waypoint.worldmapFrame.waypoint = waypoint
-	waypoint.taximapFrame.waypoint = waypoint
-	waypoint.minimapFrame:EnableMouse(not waypoint.passive)
-	waypoint.worldmapFrame:EnableMouse(not waypoint.passive)
-	--]]
+	waypoint.m = m
+	waypoint.f = f
+	waypoint.x = x
+	waypoint.y = y
 
 	ZGV.Utils.table_join(waypoint,data)
-	-- TODO: add callbacks for distance detection
-
-	--[[ ESO: no frames!
-	local lm,lf = GetCurrentMapAreaID(),GetCurrentMapDungeonLevel()
-	waypoint:UpdateWorldMapIcon(lm,lf)
-	waypoint:UpdateMiniMapIcon(lm,lf)
-	if TaxiFrame:IsShown() then waypoint:UpdateTaxiMapIcon() end
-	--]]
-
-	--if lc==c and lz==z then Astrolabe:PlaceIconOnMinimap(waypoint.minimapFrame, c, z, x, y) end
-
 	return waypoint
 end
 
 local dont_setwaypoint=false
 function Pointer:ClearWaypoints (waytype)
 	Pointer:Debug("ClearWaypoints %s",waytype or "all?")
-	--if waytype=="ant" then return Pointer:ClearWaypoints_ant(0) end
 	local n=0
 	local w=1
 	dont_setwaypoint=true
@@ -428,9 +230,6 @@ function Pointer:ClearWaypoints (waytype)
 		end
 	end
 	dont_setwaypoint=false
-	--if waytype=="path" then
-	--	Pointer.TempWaypath = nil
-	--end
 	return n
 end
 
@@ -442,18 +241,6 @@ function Pointer:RemoveWaypoint(waypoint)
 	if not wayn and type(waypoint)=="table" then for w=1,#self.waypoints do if self.waypoints[w]==waypoint then wayn=w end end end
 	if not wayn then return end -- let's just play nice assert(wayn,"No waypoint number found")
 
-	--Pointer:Debug("Removing waypoint %d=%d",waypoint.num,wayn)
-	--[[ ESO: no frames
-	Astrolabe:RemoveIconFromMinimap(waypoint.minimapFrame)
-	waypoint.minimapFrame:Hide()
-	waypoint.minimapFrame.waypoint=nil
-	waypoint.worldmapFrame:Hide()
-	waypoint.worldmapFrame.waypoint=nil
-	waypoint.taximapFrame:Hide()
-	--]]
-
-	--if waypoint.type~="ant" then print("Removing way "..waypoint.type) end
-
 	if waypoint.type=="manual" then
 		self.nummanual = max(0,self.nummanual - 1)
 	end
@@ -464,7 +251,6 @@ function Pointer:RemoveWaypoint(waypoint)
 	if self.DestinationWaypoint==waypoint then
 		Pointer:Debug("Removed DestinationWaypoint")
 		self.DestinationWaypoint=nil  self.TempWaypath=nil
-		--self:ClearSet("route")
 	end
 
 	for k,v in pairs(waypoint) do if not k:match(".+Frame") then waypoint[k]=nil end end
@@ -480,16 +266,12 @@ end
 
 function Pointer:HideArrow()
 	self.ArrowFrame.waypoint = nil
-	--self.ArrowFrame:Hide()
 end
 
 function Pointer:ShowArrow(waypoint)
 	self.initialdist = nil
 	if not waypoint then return self:HideArrow() end
 	assert(__CLASS[waypoint]=="Waypoint")
-	--if waypoint.type~="manual" then self:ClearWaypoints("manual") end
-
-	--todo Astrolabe:PlaceIconOnMinimap(waypoint.minimapFrame, waypoint.m, waypoint.f, waypoint.x, waypoint.y) -- if it's not already there, place it
 
 	self.ArrowFrame.waypoint = waypoint
 	self.ArrowFrame.WaitingPhase = nil
@@ -504,21 +286,8 @@ function Pointer:ShowArrow(waypoint)
 	local tx,ty=Pointer:TranslateCoords(waypoint.m,waypoint.x,waypoint.y,self:GetMapTex())
 	if tx and ty then
 		PingMap(88,MAP_TYPE_LOCATION_CENTERED,tx,ty)
-	--else
-	--	RemovePlayerWaypoint()
 	end
-
-	--self.ArrowFrame.temporarilyhidden = true
-	--self.ArrowFrame:Show()
 end
-
---[[
-function Pointer:GetWaypointBearings(way)
-	--local dx,dy =
-	if type(way)==number then way=self.waypoints[way] end
-
-end
---]]
 
 local markerproto = {}
 local markermeta = {__index=markerproto}
@@ -526,11 +295,7 @@ local nummarkers=0
 
 function Pointer:MakeMarkerFrames(marker,type)
 	setmetatable(marker,markermeta)
-
 	type=type or "Marker"
-	
-	--WOW_WAS_HERE: Here WoW used to build frames for the marker. ESO abuses built-in POI icons.
-
 	return marker
 end
 
@@ -594,9 +359,6 @@ function Pointer:CreateArrowFrame()
 	if not self.ArrowFrameCtrl then
 		self.ArrowFrameCtrl = ZygorGuidesViewerPointer_ArrowCtrl
 		self.ArrowFrameCtrl:SetHandler("OnUpdate",self.ArrowFrameControl_OnUpdate)
-		--self.ArrowFrameCtrl:SetPoint("CENTER",UIParent,"BOTTOMLEFT",ZGV.db.profile.arrowposx,ZGV.db.profile.arrowposy)
-		--self.ArrowFrameCtrl:SetMovable(1)
-		--self.ArrowFrameCtrl:Show()
 	end
 
 	if not self.CurrentArrowSkin then
@@ -607,65 +369,29 @@ function Pointer:CreateArrowFrame()
 end
 
 function Pointer:SetupArrow()
-	--assert(self.CurrentArrowSkin,"No CurrentArrowSkin in SetupArrow")
 	if not self.CurrentArrowSkin then
 		self:Debug("No CurrentArrowSkin in SetupArrow")
 		return
 	end
 
 	self.ArrowFrame = CHAIN(self.CurrentArrowSkin:CreateFrame())
-
-		--:SetScript("OnMouseUp",ZygorGuidesViewer.Pointer.ArrowFrame_OnMouseDown) -- messes with EnableMouse below! Do this first.
-		--:SetScript("OnMouseDown",ZygorGuidesViewer.Pointer.ArrowFrame_OnMouseUp)
 		:SetHandler("OnClick",ZygorGuidesViewer.Pointer.ArrowFrame_OnClick)
 
 		-- freeze?
 		:SetMovable(not ZGV.db.profile.arrowfreeze)
 		:SetMouseEnabled(not ZGV.db.profile.arrowfreeze)
-		--[[
-			:RegisterForDrag(not profile.arrowfreeze and "LeftButton")
-			:RegisterForClicks(not profile.arrowfreeze and "AnyUp")
-			:EnableMouseWheel(not profile.arrowfreeze)
-			:EnableMouse(not profile.arrowfreeze)
-		--]]
-
 	.__END
 
 	-- scale
 	local scale = ZGV.db.profile.arrowscale or 1.0
 
 	self.ArrowFrame:SetScale(scale)
-	--wow self:SetFontSize(profile.arrowfontsize or 10)
 
 	-- opacity
 	self.ArrowFrame:SetAlpha(ZGV.db.profile.arrowalpha or 1.0)
 
 	-- font
 	self:SetFontSize(ZGV.db.profile.arrowfontsize or 12)
-
-	--[[ todo
-	local iconScale = 38*profile.arrowscale
-	if not self.ArrowFrame.ArrowIcon then
-		self.ArrowFrame.ArrowIcon = CHAIN(CreateFrame("Button","ZygorGuidesViewerPointerArrow_Icon",self.ArrowFrameCtrl,"SecureActionButtonTemplate"))
-			:SetPoint("CENTER",self.ArrowFrame,"CENTER",0,-1)
-			:RegisterForClicks("LeftButtonUp")
-			:SetFrameLevel(self.ArrowFrame:GetFrameLevel()+2)
-			:RegisterForDrag(not profile.arrowfreeze and "LeftButton")
-			:Hide()
-			:SetScript("OnDragStart",self.ArrowFrame:GetScript("OnDragStart"))
-			:SetScript("OnDragStop",self.ArrowFrame:GetScript("OnDragStop"))
-			:SetHighlightTexture("Interface\\Buttons\\ButtonHilight-Square")
-			:SetPushedTexture("Interface\\Buttons\\CheckButtonHilight")
-			.__END
-		self.ArrowFrame.ArrowIcon:GetPushedTexture():SetBlendMode("ADD")
-		self.ArrowFrame.ArrowIcon.texture = self.ArrowFrame.ArrowIcon:CreateTexture("ZygorGuidesViewerPointerArrow_IconTexture","BACKGROUND")
-		self.ArrowFrame.ArrowIcon.cooldown = CHAIN(CreateFrame("Cooldown","",self.ArrowFrame.ArrowIcon,"CooldownFrameTemplate")) :SetAllPoints() :Show() .__END
-	end
-
-	--Set Scale and opacity of the icon over the arrow.
-	self.ArrowFrame.ArrowIcon:SetSize(iconScale,iconScale)
-	self.ArrowFrame.ArrowIcon.texture:SetAlpha(profile.arrowalpha)
-	--]]
 end
 
 function Pointer:UpdateWaypoints()
@@ -681,19 +407,8 @@ end
 
 function Pointer:SetFontSize(size)
 	if not self.ArrowFrame then return end
-	--local f=self.ArrowFrame.title:GetFont()
 	self.ArrowFrame.title:SetFontSize(size)
-	--[[
-	self.ArrowFrame.dist:SetFont(f,size)
-	self.ArrowFrame.eta:SetFont(f,size)
-
-	self.ArrowFrame.title:SetHeight(size)
-	self.ArrowFrame.dist:SetHeight(size)
-	self.ArrowFrame.eta:SetHeight(size)
-	--]]
 end
-
-
 
 function Pointer.WorldMapButton_OnMouseWheel(self,delta,...)
 	if ZGV.db.profile.debug then
@@ -708,17 +423,6 @@ function Pointer:IsCorpseArrowNeeded() -- small utility against bulky ifs, NB: w
 end
 
 ------------------------------------------- ARROW -----------------
-
-
---[[
-function Pointer.ArrowFrame_OnEvent(self,event,...)
-	if event=="WORLD_MAP_UPDATE" then
-		ZGV.Pointer:UpdateWaypoints()
-	end
-end
---]]
-
-
 
 local arrowctrl_fps = 1/30
 local arrowctrl_last=0
@@ -807,24 +511,7 @@ local function TableFind2(table,val1,val2)
 	return k1 or -1,k2 or -1
 end
 
--- Floor orderings:
--- 1 = "floors" (higher number is above lower)
--- -1 = "dungeons" (higher number is below lower)
--- table - order your floors from TOP to BOTTOM.
--- upstairs, downstairs
-local FloorUpDowns = {
-	[721] = 1, --Blackrock Spire
-	[753] = -1, --Blackrock Spire
-	[321] = -1, --Orgrimmar
-	[504] = -1, --Dalaran
-	[691] = -1, --Gnomeregan
-	[688] = {2,1,3},
-	[679] = 1, -- Gileas
-	[903] = 1,
-	[922] = -1,
-}
 -- For very specific crossing descriptions, see Localization/Core_enUS.lua, entries "pointer_floors_29_14_16" etc.
-
 local function L_or_nil(id)
 	local l = L[id]
 	if l==id then return nil else return l end
@@ -833,11 +520,9 @@ end
 function Pointer:GetDirectionToWaypoint(way)
 	local px,py = GetMapPlayerPosition("player")
 	local pmap = Pointer:GetMapTex()
-	--if pmap~=way.m then return false end  -- wrong map
 	local wx,wy,err = Pointer:TranslateCoords(way.m,way.x,way.y,pmap)
 	if pmap=="mundus_base" then return end --expected failure
 	if err then
-		--d("GetDirectionToWaypoint error: "..tostring(err))
 		return nil
 	end
 	if not (wx and wy) then return nil end
@@ -857,16 +542,6 @@ local noskip_time=0
 
 local dummy_waypoint = {DUMMY=1}
 
-
---[[
-function Pointer:SetMapOffsets(tex,xoff,yoff,scale)
-	local Z = Pointer.Zones[tex]
-	if not Z then d("Map "..tostring(tex).." unknown.") return end
-	Z.xoffset=xoff
-	Z.yoffset=yoff
-	Z.scale=scale
-end
---]]
 
 -- /dump ZGV.Pointer:TranslateCoords("bleakrock_base_0",0.7,0.7,"bleakrockvillage_base_0")
 -- /dump ZGV.Pointer:TranslateCoords("deshaan_base",.4053,.7517,"kragenmoor_base")
@@ -933,30 +608,16 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 	if not waypoint
 	or not ZGV.db.profile.arrowshow
 	or GuiRoot:IsHidden()
-	--or PetBattleFrame:IsVisible()
 	or ( (not ZGV.Frame or ZGV.Frame:IsHidden()) and ZGV.db.profile.hidearrowwithguide and waypoint.type~="manual")
 	then
 		if safe then
 			ArrowFrame:Hide()
 		end
-		--if not WorldMapFrame:IsVisible() and self.waypoints and #self.waypoints > 0 and not ZGV.Frame:IsVisible() then self:ClearSets() end -- Hide waypoints and ants if we are not looking at the world map.
 		return
 	end
 	if safe then ArrowFrame:Show() end
-	--if GetCurrentMapContinentAndZone()~=waypoint.c then end
 
-	--[[ todo? remove?
-	cache_throttle = cache_throttle + elapsed
-	if cache_throttle > 1.0 then
-		cache_throttle = 0
-		ZGV:CacheCurrentMapID()
-	end
-	--]]
-
-
-	-- adding icons over arrow for different types of teleports
-	-- sequential digging in, safe and pretty fast
-	--local node = (Pointer.TempWaypath and Pointer.TempWaypath.coords[2]) or (Pointer.pointsets.route and Pointer.pointsets.route.points[2])
+	-- adding icons over arrow for different types of teleports sequential digging in, safe and pretty fast
 	local icon = ArrowFrame.ArrowIcon
 	-- Handle spell icons
 	if icon then
@@ -971,43 +632,8 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 	end
 
 	-- normal operation...
-
-
 	local dist,x,y
 	local errortxt
-	--local cm,cf,cc = ZGV.CurrentMapID,ZGV.CurrentMapFloor,Astrolabe.WorldMapSize[ZGV.CurrentMapID or 0].system --,LibRover.ContinentsByID[ZGV.CurrentMapID]
-
-	--if IsInInstance() and cm~=waypoint.m then ArrowFrame:Hide() return end
-
-	-- If the Minimap is shown, then there is no need for overhead, just take what Astrolabe calculated for us this frame
-
-	--[[
-		if not Astrolabe:GetCurrentPlayerPosition() then
-			if GetUnitSpeed("player")>0 then
-			-- we're in an unknown location, and moving - our location is totally unknown now. DON'T display distances.
-				were_in_unknown_location = true
-			end
-		else
-			were_in_unknown_location = false
-		end
-	--]]
-
-
-	-- Calculate distance, or at least get a fake one
-
-	--[[
-		if Minimap:IsShown() then
-			dist,x,y = Astrolabe:GetDistanceToIcon(waypoint.minimapFrame)
-		else
-			-- When Minimap is hidden, Astrolabe ceases updating, so let us force calculation
-			local _x, _y=GetPlayerMapPosition("player")
-			local wp=waypoint.minimapFrame.waypoint
-			dist, x, y = Astrolabe:ComputeDistance(ZGV.CurrentMapID, ZGV.CurrentMapFloor, _x, _y, wp.m, wp.f, wp.x, wp.y)
-			-- Since Astrolabe does not update it when the minimap is hidden, let's do it on our own instead
-			waypoint.minimapFrame.dist=dist
-		end
-	--]]
-
 	local dist = Pointer:GetDistToCoords(waypoint.m,waypoint.x,waypoint.y)
 
 	if were_in_unknown_location then
@@ -1018,7 +644,6 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 			errortxt = "(current position unknown)"
 		end
 	end
-
 
 	dist=dist or 99999999  -- this means FAR or UNKNOWN or whatever. Causes "zone, continent" display.
 
@@ -1035,36 +660,17 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 	end
 
 
-
 	local show_stairs
 
-	--local samemap = (waypoint.m==cm or phasedMaps[waypoint.m]==phasedMaps[cm])   -- same map, just maybe different phase
 	local samemap=true --todo wtf workaround!
 
-	-- TODO: clean this shit up properly. Decide actions first, then strings to display, etc., not randomly like this. ~sinus
-
-	--if samemap or waypoint.c==cc then   -- why check dist here..?
-		-- same map, or at least same (sane) continent.
-		-- can point, but might be wrong map or floor.
-		if samemap and waypoint and waypoint.f~=cf then
-			errortxt = nil --ESO: no need for GetPreciseFloorCrossingText(cm,cf,waypoint.f)
-			show_stairs = nil --We are trying to enter a cave, point to the location inside the cave
-
-			--TODO show_stairs should show the special arrow for going up and down between floors,
-			--as of 12/5/12 it was not working properly for me(Erich) because it was not appearing at all.
-			--Instead of showing no arrow, pointing straight toward the location is better.
-
-			--if ZoneIsOutdoor(waypoint.m) then errortxt,show_stairs=nil end  -- Don't warn about floors on outdoor maps. TODO: remove later.
-				-- diff floor? prepare to do floor warnings.
-		end
-		-- Otherwise just point. No funny stuff here.
-	--else
-	--	errortxt = "far"
-	--end
+	if samemap and waypoint and waypoint.f~=cf then
+		errortxt = nil --ESO: no need for GetPreciseFloorCrossingText(cm,cf,waypoint.f)
+		show_stairs = nil --We are trying to enter a cave, point to the location inside the cave
+	end
 
 	-- Safety measure, make sure self.badfloortxt is updated to reflect current surroundings
 	ArrowFrame.errortxt = errortxt
-
 
 	-- okay, we're live. 3, 2, 1, action!
 
@@ -1079,105 +685,12 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 		if plusminus then  going_up=(plusminus=="+") and 1 or -1  errortxt=err2  end
 	end
 
-
 	-- ARRIVAL. MAJOR TODO.
 
-	if show_stairs
-	then
-		-- wrong floor, omg
-		if ArrowFrame.ShowStairs then ArrowFrame:ShowStairs(going_up) end
-
-		--[[
-			elseif dist <= (waypoint.radius or self:GetDefaultStepDist())
-			and not waypoint.player  -- don't ever "arrive" on player waypoint
-			and not (waypoint.pathnode and	(
-					(waypoint.pathnode.zone and waypoint.pathnode.zone~=BZR[GetZoneText()])
-				or	(waypoint.pathnode.realzone and waypoint.pathnode.realzone~=BZR[GetRealZoneText()])
-				or	(waypoint.pathnode.subzone and waypoint.pathnode.subzone~=BZR[GetSubZoneText()])
-				or	(waypoint.pathnode.minizone and waypoint.pathnode.minizone~=BZR[GetMinimapZoneText()])
-				or	(waypoint.pathnode.indoors and not Astrolabe.minimapOutside)
-				-- don't arrive on wrong map zone
-									)
-				)
-			then
-
-				if not waypoint.arrived then
-					-- ARRIVED!
-					waypoint.arrived = true
-				end
-
-				-- remove waypoint when standing on the destination for a bit
-				if waypoint.clearonarrival then
-					-- clear-on-arrival waypoints? who uses these?
-					self.heretime = (self.heretime or 0) + elapsed
-					if self.heretime>1 then
-						self:RemoveWaypoint(waypoint)
-						ZGV:SetWaypoint()
-						return
-					end
-				end
-				---------------------------------------------------
-
-				if waypoint.arrived then  -- last sanity check! avoid single-frame "arrived" blinks, when arriving and skipping to next.
-					ArrowFrame:ShowArrived()
-				end
-
-				-- pick next in path
-				if (waypoint.type=="path" and (self.pathfollow=="strict" or self.pathfollow=="pathfind"))
-				and not waypoint.noskip
-				then
-					if GetTime()<pathfindlockout then
-						self:Debug("Would skip to next point - but timeout...",pathfindlockout-GetTime())
-					else
-						local nextway = self:GetNextInPath()
-						if nextway and type(nextway)=="table" and nextway~=waypoint then
-							self:ShowArrow(nextway)
-							pathfindlockout = GetTime()+0.5  -- don't try to pathfind sooner than in 0.5 secs
-						end
-					end
-					--return
-					-----------------------------------------------
-
-				elseif waypoint.type=="route" then
-					if waypoint.noskip then
-						if GetTime()-noskip_time>3 then
-							self:Debug("Arrived, but point is route noskip.")
-							noskip_time = GetTime()
-						end
-					else
-						-- arrived on a route midpoint - recalculate path immediately. This might take time, so just drop the initial point first.
-						local nextway = self:GetNextInPath("route")
-						if type(nextway)=="table" then
-							self:RemoveWaypoint(waypoint)
-							self:ShowArrow(nextway)
-							if nextway.pathnode and not nextway.pathnode.dark then
-								-- If the next node is dark then updating will cause this node to be lost. Just continue using old path until a non-dark node is encountered.
-								self:Debug("Forcing LibRover to update quietly")
-								ZGV.LibRover:UpdateNow("quiet")
-							end
-							--return
-						end
-					end
-					-------------------------------------------------
-				end
-
-				-- removing returns; we DO still need to update the text, after all this just handles the icon. ~sinus 2013-02-27
-
-			elseif ArrowFrame.WaitingPhase then
-
-				if ArrowFrame.ShowWaiting then
-					ArrowFrame:ShowWaiting(ArrowFrame.WaitingPhase)
-				end
-
-		--]]
+	if show_stairs then
+		if ArrowFrame.ShowStairs then ArrowFrame:ShowStairs(going_up) end 		-- wrong floor, omg
 	else
-		--waypoint.arrived = false
-
 		self.heretime=0
-
-		--self.eta:Show()
-		--self.dist:Show()
-
 
 		--[[ angle ]]--
 
@@ -1193,15 +706,11 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 			angle = Pointer:GetDirectionToWaypoint(waypoint)
 
 			if not angle or errortxt=="far" then
-				--angle=3.1415
 				angle = (GetGameTimeMilliseconds()/500)%6.283
 			else
-				--local player = profile.arrowcam and cam_yaw - (is_moving and GetPlayerFacing() or 0) or GetPlayerFacing()
 				angle = angle - playerangle
 			end
 			while angle<0 do angle=angle+6.28319 end
-
-			--angle = angle + 2.356194  -- rad(135)
 
 			if profile.arrowsmooth and self.CurrentArrowSkin and self.CurrentArrowSkin.features.smooth then
 				local dif = angle-oldangle
@@ -1210,16 +719,8 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 					while dif<-3.14159 do dif=dif+6.28319 end
 
 					angle = angle-dif/(1+elapsed*20) --speed!
-
-					--local newdif = newangle-oldangle
-					--while newdif>3.14159 do newdif=newdif-6.28319 end
-					--while newdif<-3.14159 do newdif=newdif+6.28319 end
-
-					--if newdif*dif>0 then  -- no jittering
-					--	angle=newangle
 					while angle>6.28319 do angle=angle-6.28319 end
 					while angle<0 do angle=angle+6.28319 end
-					--end
 				end
 				oldangle=angle
 			end
@@ -1227,50 +728,10 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 			ArrowFrame:ShowTraveling(elapsed,angle,dist)
 
 		end
-
-		--
-
-
-		-------------
-
-		--[[
-		local perc = mabs(1-angle*0.3183)  -- 1/pi  ;  0=target backwards, 1=target ahead
-		local t1,t2,t3,t4,t5 = 0.7,0.75,0.95,1.0
-		if perc<t1 then perc=0
-		elseif perc<t2 then perc=(t2-perc)/(t2-t1)*0.5
-		elseif perc<t3 then perc=0.5
-		elseif perc<t4 then perc=(t4-perc)/(t4-t3)*0.5 + 0.5
-		else perc=1.0 end
-
-		ArrowFrame:ShowTraveling(elapsed,angle,dist)
-
-		local cell
-
-		local perc = math.abs((math.pi - math.abs(angle)) / math.pi)
-
-		local gr,gg,gb = unpack(TomTom.db.profile.arrow.goodcolor)
-		local mr,mg,mb = unpack(TomTom.db.profile.arrow.middlecolor)
-		local br,bg,bb = unpack(TomTom.db.profile.arrow.badcolor)
-		local r,g,b = ColorGradient(perc, br, bg, bb, mr, mg, mb, gr, gg, gb)
-		arrow:SetVertexColor(r,g,b)
-
-		cell = floor(angle / twopi * 108 + 0.5) % 108
-		local column = cell % 9
-		local row = floor(cell / 9)
-
-		local xstart = (column * 56) / 512
-		local ystart = (row * 42) / 512
-		local xend = ((column + 1) * 56) / 512
-		local yend = ((row + 1) * 42) / 512
-		arrow:SetTexCoord(xstart,xend,ystart,yend)
-		--]]
 	end
 
 
-	-- labels
-
 	-- Pointer:Debug(("dist %.2f  chg %.2f  speed %.2f  ela %.2f"):format(dist,last_distance-dist,speed,eta_elapsed))
-
 	local limit,minlimit=30,5
 
 	eta_elapsed = eta_elapsed + elapsed
@@ -1286,38 +747,13 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 		if last_distance == 0 then speed = 0 end
 		if last_distance==dist then stoptime=stoptime+eta_elapsed else stoptime=0 end
 
-		--speed=tonumber(("%.2f"):format(speed))
-		--ZGV:Print(("dist %.2f  chg %.2f  speed %.2f  thr %.2f"):format(dist,last_distance-dist,speed,eta_elapsed))
-
-
-		--self:Debug(stoptime)
-
 		if speed>=0 and stoptime<2 then
 			table.insert(speeds,1,speed)
 			if #speeds>limit then table.remove(speeds) end
 		else
-			--if stoptime>=10 then
 			speed=0
 			ZGV.Utils.table_wipe(speeds)
-			--end
 		end
-
-		-- Speed meter. Perhaps one day.
-		--[[
-		profile.arrowshowspeed = true
-		if profile.arrowshowspeed then
-			local spd
-			if profile.arrowmeters then
-				spd=("%.02f km/h"):format(speed) --*3.6
-			else
-				spd=("%.02f mph"):format(speed) --*2.0454
-			end
-			print(spd)
-			self.eta:SetText(spd)
-		end
-		--]]
-		--ZGV:Print(eta_elapsed)
-
 
 		if ZGV.db.profile.audiocues and IsFlying() then
 			local t=GetTime()
@@ -1327,23 +763,17 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 				-- if flying, basically.
 				-- and beelining for the last 3 seconds.
 
-				-- self:Debug(("will cue; dist=%d initial=%d lastbeep=%d"):format(dist,initialdist,GetTime()-lastbeeptime))
 				if dist<=100 and not cuedinged then
 					PlaySoundFile("Sound\\Doodad\\BoatDockedWarning.wav")
-					-- lastwayding=waypoint  -- DO NOT COMPARE WAYPOINTS. They come from a POOL and are REUSED!
 					cuedinged=true
-					--self:Debug("dinging")
 				else
-					--self:Debug("not dinging, dist="..dist..", lastway="..(lastwayding and lastwayding.t or "nil"))
 				end
-				--self:Debug("cuedinged "..tostring(cuedinged))
 
 				-- warning beeps
 				if ArrowFrame.arrow:IsVisible()  then
 					local perc = mabs(1-angle*0.3183)  -- 1/pi
 					if perc<=0.9 then
 						if t-lastbeeptime>2 then
-							--PlaySoundFile( [[Sound\Item\Weapons\Ethereal\Ethereal2H3.wav]] )
 							PlaySoundFile( [[Sound\Interface\RaidWarning.ogg]] )
 
 							if ArrowFrame.ShowWarning then ArrowFrame:ShowWarning() end
@@ -1356,13 +786,9 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 			lastplayerangle=playerangle
 		end
 
-
-
 		last_distance = dist
 		eta_elapsed = 0
 	end
-
-	--ZGV:Print(table.concat(speeds,"  "))
 
 	etadisp_elapsed = etadisp_elapsed + elapsed
 	if etadisp_elapsed >= 0.9 then
@@ -1371,12 +797,9 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 		for i=2,#speeds do avg=avg+speeds[i] end
 		avg=avg/max(#speeds,1)
 
-		--self:Debug("eta: #speeds="..#speeds)
 		if #speeds>=minlimit and avg>0 then
 			eta = math.abs(dist / avg)
 		else
-			--local spd,mntspd,flyspd,swimspd = GetUnitSpeed("player")
-			--spd = IsSwimming() and swimspd or (LibRover.maxspeedinzone[ZGV.CurrentMapID][1]*7) -- *7 is for recalc from multiplier to yds/s  -- or max(mntspd,flyspd)
 			local spd=1
 			eta = math.abs(dist / spd)
 		end
@@ -1384,7 +807,6 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 	end
 
 	-- spew it out.
-
 	ArrowFrame:ShowText(
 		waypoint.arrowtitle or waypoint.title,
 		dist,
@@ -1418,8 +840,6 @@ end
 
 function Pointer.ArrowFrame_Proto_GetETATxt(self,eta)
 	if eta and eta<7200 and eta>0 then
-		--local subsec=GetTime()%1
-		--local etacolor = (eta<10 and GetUnitSpeed("player")>0 and subsec>0.7) and "ffff7700" or "ffffbb00"
 		local etacolor = "ffbb00"
 		return ("  |c".. etacolor .. Pointer.FormatTime(eta) .. "|r")
 	end
@@ -1429,19 +849,10 @@ function Pointer.ArrowFrame_OnShow(frame)
 	lastturntime=GetTime()
 end
 
---[[
-function Pointer.ArrowFrame_OnMouseDown(frame,button)
-	--if button=="RightButton" then
-	--	ZGV.Pointer.prev_cameraYawMoveSpeed = GetCVar("cameraYawMoveSpeed")
-	--end
-end
---]]
-
 function Pointer.ArrowFrame_OnClick(frame,button)
 	if ZGV.db.profile.arrowfreeze then return end  -- how did we get the OnClick event, anyway?
 	if button=="LeftButton" then
 		if not frame.dragging then -- and ZGV.db.profile.pathfinding and ZGV.Pointer.pathfollow=="pathfind" then
-			--LibRover:UpdateNow()
 			ZGV:SetWaypoint()
 		end
 	elseif button=="RightButton" then
@@ -1456,8 +867,6 @@ end
 function Pointer.ArrowFrame_SetScale(but,v)
 	ZGV:SetOption("Arrow","arrowscale "..v)
 end
-
-
 
 Pointer.ArrowSkins = {}
 
@@ -1516,17 +925,11 @@ function Pointer:UpdateArrowVisibility()
 	if ZGV.db.profile.arrowshow then self.ArrowFrame:Show() else self.ArrowFrame:Hide() end
 end
 
-
-
-
-
 -- Access tables, actually fronts for using SV data for DEVs before hardcoded zone data before SV data again.
 Pointer.ZoneNameToTex = {}
 Pointer.Zones = {}
 
-
 Pointer.GetMapNameByID2 = function(tex) return Pointer.Zones[tex] and Pointer.Zones[tex].name or "zone "..tostring(tex).."?" end
-
 
 -- start with some cities hardcoded. That's mostly for testing before Data is loaded, or if that fails.
 local function AddMap(name,tex)
@@ -1548,14 +951,6 @@ function Pointer:InitMaps()
 		ZGV:Error("No Map Data. Please report this issue.")
 	end
 
-	-- try to localize some maps
-	--[[
-	for maptex,mapdata in pairs(ZGV.MapData.Zones) do
-		if mapdata.map then
-			mapdata.name = GetMapInfo(mapdata.map)
-		end
-	end
-	--]]
 	(function()
 		if GetCVar("language.2")=="en" then return end
 		local mapdata_local = ZGV.MapData.LocalizedMapNames[GetCVar("language.2")]
@@ -1568,7 +963,6 @@ function Pointer:InitMaps()
 			end
 		end
 	end)()
-
 
 	-- These are in MapData anyway, they're here just to make sure unit tests are passed.
 	AddMap("Dhalmora","dhalmora_base")
@@ -1585,7 +979,7 @@ function Pointer:InitMaps()
 	ZGV.MapData.Zones["coldharbour_base"].scale=1
 	ZGV.MapData.Zones["coldharbour_base"].parentWorld="coldharbour_base"
 
-	-- who the fuck accesses this before init!?  die, bitch.
+	-- this probably shouldn't be accessed before it is initalized
 	Pointer.ZoneNameToTex = {}
 	Pointer.Zones = {}
 
@@ -1625,39 +1019,11 @@ function Pointer:InitMaps()
 		end}
 	)
 
-	-- import hardcoded data
-	--[[
-		if Zones.version~=ZGV.MapData.version then
-
-			-- clear out
-			for k,v in pairs(Zones) do Zones[k]=nil end
-			for k,v in pairs(Pointer.ZoneNameToTex) do Pointer.ZoneNameToTex[k]=nil end
-
-			Zones.version = ZGV.MapData.version
-			if ZGV.DEV then d("|cffffffCleared ZGV map data. Now at mapdata version "..tostring(Zones.version)..".") end
-		end
-		for k,v in pairs(ZGV.MapData.Zones) do
-			Zones[k]=Zones[k] or v
-			if type(Zones[k])=="table" then
-				for kk,vv in pairs(v) do
-					Zones[k][kk]=Zones[k][kk] or vv
-				end
-				if v.notTamriel == nil then Zones[k].notTamriel = nil end							-- If our data has a zone has notTamriel then respect that.
-				if Zones[k].name then ZGV.MapData.ZoneNameToTex[Zones[k].name]=k end  -- share names both ways
-			end
-		end
-		for nm,tx in pairs(ZGV.MapData.ZoneNameToTex) do -- share names both ways
-			Pointer.ZoneNameToTex[nm]=Pointer.ZoneNameToTex[nm] or tx
-			Zones[tx].name = Zones[tx].name or nm
-		end
-	--]]
-
 	-- share names from tex into zones
 	for nm,tx in pairs(ZGV.MapData.ZoneNameToTex) do
 		ZGV.MapData.Zones[tx] = ZGV.MapData.Zones[tx] or {}
 		ZGV.MapData.Zones[tx].name = ZGV.MapData.Zones[tx].name or nm
 	end
-
 
 	-- clear redundant SV
 	for nm,tx in pairs(ZGV.MapData.ZoneNameToTex) do
@@ -1677,40 +1043,6 @@ function Pointer:InitMaps()
 		end
 	end end
 
-
-	-- grab real data
-	--[[ not now.
-		for id=2,GetNumZones() do  -- 1 is "Clean Test"
-			local name,name2 = GetZoneInfo(id)
-			SetMapToZone(id)
-			local tex = Pointer:GetMapTex()
-			if tex then
-				Pointer.ZoneNameToTex[name]=tex
-				Zones[tex]=Zones[tex] or {}
-				if not Zones[tex].name then
-					Zones[tex].name=name
-					Zones[tex].id=id
-				end
-				-- ignore duplicates, we only care about the texture
-			else d("No tex for zone "..id) end
-		end
-
-		for map=1,GetNumMaps() do
-			SetMapByMapListIndex(map)
-			local name = GetMapName()
-			local tex = Pointer:GetMapTex()
-			if tex then
-				Pointer.ZoneNameToTex[name]=tex
-				Zones[tex]=Zones[tex] or {}
-				if not Zones[tex].name then
-					Zones[tex].name=name
-				end
-				Zones[tex].map=map
-			else d("No tex for map "..map) end
-		end
-	--]]
-
-
 	-- clear recent scout timestamps, just in case.
 	for k,v in pairs(ZGV.db.profile.Zones) do if type(v)=="table" then v.scouttime,v.lx1,v.ly1,v.px1,v.py1=nil end end
 
@@ -1723,15 +1055,6 @@ end
 
 
 function Pointer:SurveyAllMaps(autoclick)
-	-- and now the scary thing
-
-	--[[
-	for id=2,GetNumZones() do  -- 1 is "Clean Test"
-		SetMapToZone(id)
-		self:SurveyMap("nochange","justupdate")
-	end
-	--]]
-
 	for map=1,GetNumMaps() do
 		SetMapToMapListIndex(map)
 		self:SurveyMap("nochange","justupdate")
@@ -1806,27 +1129,14 @@ function Pointer:SurveyMap(specific,force,quiet)
 		return
 	end
 
-
 	-- let's get serious.
-
 	local Z2={}  for k,v in pairs(Z) do Z2[k]=v end  Z=Z2  --clone
 	ZGV.sv.profile.Zones[tex]=Z  --save
 
 	if not Z.name then
 		DEVd(("Surveying |cffffff%s|r (|cffff88%s|r)"):format(tex,ZGV.Utils.Delocalize(GetMapName())))
-		-- New zone. Make sure it is in SV.
 		Z.name=ZGV.Utils.Delocalize(GetMapName())
 	end
-
-	--[[ getting parent... DON'T. Assume maps are on Tamriel.
-	if not Z.parent then
-		-- try to get parent
-		SetMapToPlayerLocation()
-		MapZoomOut()
-		Z.parent = Pointer:GetMapTex()
-		d(("Recording for |cffffff%s|r: parent is |cffffff%s|r"):format(tex,Z.parent))
-	end
-	--]]
 
 	if not (Z.lx1 and Z.ly1 and Z.px1 and Z.py1) then
 		-- first point
@@ -1849,7 +1159,6 @@ function Pointer:SurveyMap(specific,force,quiet)
 	if Z.lx1 and Z.ly1 and Z.px1 and Z.py1 then
 		if specific then
 			local map=specific:match("map (%d+)")
-			--local zone=specific:match("id (%d+)") or specific:match("zone (%d+)")
 			if map then SetMapToMapListIndex(tonumber(map)) end
 		else SetMapToPlayerLocation() ZO_WorldMap_UpdateMap() end
 
@@ -1939,7 +1248,6 @@ end
 --/script for i=1,9 do _G['MapMouseoverBlob'..i]:SetHidden(false) end
 --ProcessMapClick()
 
---local coord_to_m = 0
 local function dist_to_target()
 	local px,py = GetMapPlayerPosition("player")
 	local tx,ty = GetMapPlayerPosition("reticleover")
@@ -1974,51 +1282,7 @@ tinsert(ZGV.startups,function(self)
 	end
 end)
 
---[[
-EVENT_MANAGER:RegisterForEvent("ZGVPointer",EVENT_ZONE_CHANGED,function(a,b,c)
-	d(tostring(a).." "..tostring(b).." "..tostring(c))
-	ZG_GETMAPSIZE()
-end)
-
-EVENT_MANAGER:RegisterForEvent("ZGVPointer",EVENT_RETICLE_TARGET_CHANGED,function()
-	if GetUnitName("reticleover")=="" then return end
-	coord_to_m = Pointer.ZoneSizesByTex[Pointer:GetMapTex()] or 0
-	local dist = dist_to_target()*coord_to_m
-	if not dist then return end
-	d("Range: "..dist)
-end)
-
-local range=28
-EVENT_MANAGER:RegisterForEvent("ZGVPointer",EVENT_ABILITY_RANGE_CHANGED,function()
-	if GetUnitName("reticleover")=="" then return end
-	coord_to_m = Pointer.ZoneSizesByTex[Pointer:GetMapTex()] or 0
-	if IsShiftKeyDown() and IsControlKeyDown() then
-		local dist = dist_to_target()
-		if not dist then return end
-		coord_to_m = range/dist
-		d("Map width = "..coord_to_m)
-		Pointer.ZoneSizesByTex[Pointer:GetMapTex()]=coord_to_m
-		ZO_ChatWindowTextEntryEditBox:SetText("[\"".. Pointer:GetMapTex() .."\"]=".. coord_to_m ..",")
-	end
-	local dist = dist_to_target()*coord_to_m
-	d("Range: "..dist)
-end)
---]]
-
-
-
-
-
-
-
-
---[[
-/dump ZO_WorldMap_SetMapByIndex(11)
---]]
-
-
 local flash_interval=0.25
-
 local ant_interval=0.001
 local ant_speed = 1.7  -- ant steps per second
 
@@ -2044,12 +1308,8 @@ local max_ants_per_segment = 40
 
 Pointer.pointsets = {}
 
-
-
 local PATHFOUND_TO_MANUAL, PATHFINDING_TARGET
-
 local oldpathtarget
---local FAILED_PATH
 
 function Pointer:ResetFollowing()
 	local path = self.pointsets.route or self.pointsets.path
@@ -2062,13 +1322,8 @@ function Pointer:ResetFollowing()
 	end
 end
 
---local lastCycleMilli=GetFrameTimeMilliseconds()
---local lastCycles=0
-
 -- WAYPOINT CYCLING
 function Pointer:CycleWaypoint(delta,nocycle)
-	--if lastCycleMilli==GetFrameTimeMilliseconds() then lastCycles=lastCycles+1 end  if lastCycles>10 then return end
-	--lastCycleMilli=GetFrameTimeMilliseconds()  lastCycles=0
 
 	local CS=ZGV.CurrentStep
 	CS.current_waypoint_goal = CS.current_waypoint_goal or (delta>1 and 0 or #CS.goals)
@@ -2100,7 +1355,6 @@ function Pointer:CycleWaypoint(delta,nocycle)
 		end
 	end end
 
-	--ZGV:SetWaypoint(CS.current_waypoint_goal)
 	zo_callLater(function() ZGV.Viewer:Update() end,1)
 end
 
@@ -2120,176 +1374,133 @@ end
 
 -- ESO MAPLOCATIONS-BASED POINTERS ARE SO COOL.  ~sinus
 
-	_GetNumMapLocations = GetNumMapLocations
-	function GetNumMapLocations()
-		local num=_GetNumMapLocations()
-		local localways=0
+_GetNumMapLocations = GetNumMapLocations
+function GetNumMapLocations()
+	local num=_GetNumMapLocations()
+	local localways=0
+	for wi,way in ipairs(Pointer.waypoints) do
+		local tx,ty=Pointer:TranslateCoords(way.m,way.x,way.y,Pointer:GetMapTex())
+		if tx and ty and tx>0 and tx<1 and ty>0 and ty<1 then
+			localways=localways+1
+		end
+	end
+	if localways>0 then
+		return _GetNumMapLocations()+localways
+	else
+		return _GetNumMapLocations()
+	end
+end
+
+_GetMapLocation = GetMapLocation
+function GetMapLocation(num)
+end
+
+_IsMapLocationVisible = IsMapLocationVisible
+local localways__={}
+function IsMapLocationVisible(num)
+	local normal_num = _GetNumMapLocations()
+	if num<=normal_num then
+		return _IsMapLocationVisible(num)
+	else
+		local count=0
 		for wi,way in ipairs(Pointer.waypoints) do
 			local tx,ty=Pointer:TranslateCoords(way.m,way.x,way.y,Pointer:GetMapTex())
 			if tx and ty and tx>0 and tx<1 and ty>0 and ty<1 then
-				localways=localways+1
-			end
-		end
-		if localways>0 then
-			--d(("Lie in GetNumMapLocations()=|cffff88%s|r, saying |cffffff%s|r"):format(num,num+localways))
-			return _GetNumMapLocations()+localways
-		else
-			--d(("No lie in GetNumMapLocations()=|cffff88%s|r"):format(num))
-			return _GetNumMapLocations()
-		end
-	end
-
-	_GetMapLocation = GetMapLocation
-	function GetMapLocation(num)
-		--d(("GetMapLocation %s"):format(tostring(num)))
-		--return _GetMapLocation(num)
-	end
-
-	_IsMapLocationVisible = IsMapLocationVisible
-	local localways__={}
-	function IsMapLocationVisible(num)
-		local normal_num = _GetNumMapLocations()
-		if num<=normal_num then
-			--d(("GetMapLocationTooltipHeader(%d)=%s,%s,%s"):format(num,tostring(a),tostring(b),tostring(c)))
-			return _IsMapLocationVisible(num)
-		else
-			local count=0
-			for wi,way in ipairs(Pointer.waypoints) do
-				local tx,ty=Pointer:TranslateCoords(way.m,way.x,way.y,Pointer:GetMapTex())
-				if tx and ty and tx>0 and tx<1 and ty>0 and ty<1 then
-					count=count+1
-					if count==num-normal_num then
-						--d(("Lie in IsMapLocationVisible(|cffffff%s|r): |cfffffftrue"):format(num))
-						return true
-					end
+				count=count+1
+				if count==num-normal_num then
+					return true
 				end
 			end
-			return false
 		end
+		return false
 	end
+end
 
-	_GetMapLocationIcon = GetMapLocationIcon
-	function GetMapLocationIcon(num)
-		local normal_num = _GetNumMapLocations()
-		if num<=normal_num then
-			local a,b,c = _GetMapLocationIcon(num)
-			--d(("GetMapLocationIcon(%d)=%s,%s,%s"):format(num,tostring(a),tostring(b),tostring(c)))
-			return _GetMapLocationIcon(num)
-		else
-			--return "/esoui/art/icons/servicemappins/servicepin_vendor.dds",0.4,0.4
-			local localways
-			localways=localways__  while #localways>0 do table.remove(localways) end
-			--d(math.ceil(collectgarbage("count")).." KB in GMLI")
-			for wi,way in ipairs(Pointer.waypoints) do
-				local tx,ty=Pointer:TranslateCoords(way.m,way.x,way.y,Pointer:GetMapTex())
-				if tx and ty and tx>0 and tx<1 and ty>0 and ty<1 then
-					localways[#localways+1]=way
-				end
+_GetMapLocationIcon = GetMapLocationIcon
+function GetMapLocationIcon(num)
+	local normal_num = _GetNumMapLocations()
+	if num<=normal_num then
+		local a,b,c = _GetMapLocationIcon(num)
+		return _GetMapLocationIcon(num)
+	else
+		local localways
+		localways=localways__  while #localways>0 do table.remove(localways) end
+		for wi,way in ipairs(Pointer.waypoints) do
+			local tx,ty=Pointer:TranslateCoords(way.m,way.x,way.y,Pointer:GetMapTex())
+			if tx and ty and tx>0 and tx<1 and ty>0 and ty<1 then
+				localways[#localways+1]=way
 			end
-			local way=localways[num-normal_num]
-			if way then
-				local tx,ty=Pointer:TranslateCoords(way.m,way.x,way.y,Pointer:GetMapTex())
-				--d(("Lie in GetMapLocationIcon(|cffffff%s|r): |cffffff...%s|r, |cffffff%d,%d"):format(num,way.icon.icon:sub(-15),tx*100,ty*100))
-				return way.icon.icon,tx,ty
+		end
+		local way=localways[num-normal_num]
+		if way then
+			local tx,ty=Pointer:TranslateCoords(way.m,way.x,way.y,Pointer:GetMapTex())
+			return way.icon.icon,tx,ty
+		end
+		return "",nil,nil
+	end
+end
+
+_GetMapLocationTooltipHeader = GetMapLocationTooltipHeader
+function GetMapLocationTooltipHeader(num)
+	local normal_num = _GetNumMapLocations()
+	if num<=normal_num then
+		local a = _GetMapLocationTooltipHeader(num)
+		return _GetMapLocationTooltipHeader(num)
+	else
+		local localways
+		localways=localways__  while #localways>0 do table.remove(localways) end
+		for wi,way in ipairs(Pointer.waypoints) do
+			local tx,ty=Pointer:TranslateCoords(way.m,way.x,way.y,Pointer:GetMapTex())
+			if tx and ty and tx>0 and tx<1 and ty>0 and ty<1 then
+				localways[#localways+1]=way
 			end
-			--d(("No lie in GetMapLocationIcon(|cffffff%s|r)"))
-			return "",nil,nil
 		end
-	end
-
-	_GetMapLocationTooltipHeader = GetMapLocationTooltipHeader
-	function GetMapLocationTooltipHeader(num)
-		local normal_num = _GetNumMapLocations()
-		if num<=normal_num then
-			local a = _GetMapLocationTooltipHeader(num)
-			--d(("GetMapLocationTooltipHeader(%d)=%s,%s,%s"):format(num,tostring(a),tostring(b),tostring(c)))
-			return _GetMapLocationTooltipHeader(num)
-		else
-			--d(("GetMapLocationTooltipHeader(%s) fake!"):format(num))
-			local localways
-			localways=localways__  while #localways>0 do table.remove(localways) end
-			--d(math.ceil(collectgarbage("count")).." KB in GMLTH")
-			for wi,way in ipairs(Pointer.waypoints) do
-				local tx,ty=Pointer:TranslateCoords(way.m,way.x,way.y,Pointer:GetMapTex())
-				if tx and ty and tx>0 and tx<1 and ty>0 and ty<1 then
-					localways[#localways+1]=way
-				end
-			end
-			local way=localways[num-normal_num]
-			if way then
-				--d(("Lie in GetMapLocationTooltipHeader(|cffffff%s|r): |cffffff%s"):format(num,way.title or "Zygor Guides waypoint"))
-				return way.title or "Zygor Guides waypoint"
-			end
-			return ""
+		local way=localways[num-normal_num]
+		if way then
+			return way.title or "Zygor Guides waypoint"
 		end
+		return ""
 	end
+end
 
-	_GetNumMapLocationTooltipLines = GetNumMapLocationTooltipLines
-	function GetNumMapLocationTooltipLines(num)
-		local normal_num = _GetNumMapLocations()
-		if num<=normal_num then
-			return _GetNumMapLocationTooltipLines(num)
-		else
-			return 1
-		end
+_GetNumMapLocationTooltipLines = GetNumMapLocationTooltipLines
+function GetNumMapLocationTooltipLines(num)
+	local normal_num = _GetNumMapLocations()
+	if num<=normal_num then
+		return _GetNumMapLocationTooltipLines(num)
+	else
+		return 1
 	end
+end
 
-	_GetMapLocationTooltipLineInfo = GetMapLocationTooltipLineInfo
-	function GetMapLocationTooltipLineInfo(num,line)
-		local normal_num = _GetNumMapLocations()
-		if num<=normal_num then
-			--d(("GetMapLocationTooltipHeader(%d)=%s,%s,%s"):format(num,tostring(a),tostring(b),tostring(c)))
-			return _GetMapLocationTooltipLineInfo(num,line)
-		else
-			--d(("GetMapLocationTooltipLineInfo(%s) fake!"):format(num))
-			return "","",0
-		end
+_GetMapLocationTooltipLineInfo = GetMapLocationTooltipLineInfo
+function GetMapLocationTooltipLineInfo(num,line)
+	local normal_num = _GetNumMapLocations()
+	if num<=normal_num then
+		return _GetMapLocationTooltipLineInfo(num,line)
+	else
+		return "","",0
 	end
-
----------------
-
-
---[[
-	_GetMapTileTexture = GetMapTileTexture
-	function GetMapTileTexture(n)
-		n=tonumber(n or 1)
-		if Pointer.MAP_OVERRIDE then return "Art/maps/"..Pointer.MAP_OVERRIDE.."_"..(n-1)..".dds" else return _GetMapTileTexture(n) end
-	end
---]]
-
+end
 
 function Pointer:Debug(msg,...)
 	ZGV:Debug("&_SUB &pointer ".. msg, ...)
 end
 
-
 -- FOGLIGHT!!
 _GetPOIMapInfo_ORIG_ZGV=GetPOIMapInfo
 function GetPOIMapInfo(map,id,truthful)
 	if truthful
---	 or not ZGV.db or not ZGV.db.profile or not ZGV.db.profile.revealmappoi
 	  then return _GetPOIMapInfo_ORIG_ZGV(map,id) end
 	local x,y,typ,tex,_1 = _GetPOIMapInfo_ORIG_ZGV(map,id)
-	if tex:find("icon_missing") then tex=ZGV.DIR.."/Arrows/Stealth/mapmarker.dds" end  --/esoui/art/icons/poi/poi_town_incomplete.dds
+	if tex:find("icon_missing") then tex=ZGV.DIR.."/Arrows/Stealth/mapmarker.dds" end
 	if typ==MAP_PIN_TYPE_INVALID then typ=MAP_PIN_TYPE_POI_SEEN end
 	return x,y,typ,tex,_1
 end
 
---[[ -- removed in 1.5.2
-_GetPOIPinType_ORIG_ZGV=GetPOIPinType
-function GetPOIPinType(map,id,truthful)
-	if truthful
-	--	 or not ZGV.db or not ZGV.db.profile or not ZGV.db.profile.revealmappoi
-	  then return _GetPOIPinType_ORIG_ZGV(map,id) end
-	local pin = _GetPOIPinType_ORIG_ZGV(map,id)
-	if pin==MAP_PIN_TYPE_INVALID then pin=MAP_PIN_TYPE_POI_SEEN end
-	return pin
-end
---]]
 _GetFastTravelNodeInfo_ORIG_ZGV = GetFastTravelNodeInfo
 function GetFastTravelNodeInfo(index,truthful)
 	if truthful
-	-- or not ZGV.db or not ZGV.db.profile or not ZGV.db.profile.highlightwayshrine
 	  then return _GetFastTravelNodeInfo_ORIG_ZGV(index) end
 	local known,name,x,y,icon,glowIcon,typ,_1,_2,_3 = _GetFastTravelNodeInfo_ORIG_ZGV(index)
 	if ZGV.CurrentStep then
