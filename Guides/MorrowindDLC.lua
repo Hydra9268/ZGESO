@@ -15665,5 +15665,69 @@ goto summerset_base 63.43,52.73
 talk to Valsirenn
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 68.87,53.95
+click Message in a Bottle
+'Take Waterlogged Note
+|tip Manually skip to the next step.
+step
+goto summerset_base 68.62,55.45
+kill Earl of Clavicus Vile
+|tip Manually skip to the next step.
+step
+goto summerset_base 68.62,55.45
+'Press _E_ to destroy the Abyssal Pearl
+|tip Manually skip to the next step.
+step
+goto summerset_base 68.14,56.16
+talk Valsirenn
+|tip Manually skip to the next step.
+step
+goto summerset_base 67.05,56.36
+talk Razum-dar
+|tip Manually skip to the next step.
+step
+talk Kinlady Avinisse
+|tip Manually skip to the next step.
+step
+goto summerset_base 66.87,58.08
+wayshrine Sil-Var-Woad
+step
+goto summerset_base 67.50,60.43
+talk Talomar
+accept Untamed and Unleashed
+step
+goto summerset_base 68.83,61.23
+click Dead Mammoth
+'Take Mammoth Tusk Shards
+|tip Manually skip to the next step.
+step
+goto summerset_base 68.78,61.07
+talk Talomar
+|tip Manually skip to the next step.
+step
+goto summerset_base 68.59,62.83
+click Tainted Feed
+'Take Tainted Feed
+|tip Manually skip to the next step.
+step
+goto summerset_base 68.91,62.62
+talk Talomar
+|tip Manually skip to the next step.
+step
+goto summerset_base 66.40,62.29
+kill pack of lions
+|tip Manually skip to the next step.
+step
+goto summerset_base 65.67,62.58
+talk Elise Mallon
+|tip Manually skip to the next step.
+step
+goto summerset_base 69.94,63.44
+talk Conservator Vinelore
+|tip Manually skip to the next step.
+step
+goto summerset_base 69.96,62.98
+talk Talomar
+|tip Manually skip to the next step.
+step
 ]])
