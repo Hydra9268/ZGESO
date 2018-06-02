@@ -19,7 +19,7 @@ For example, 1.4.0.96.
 * `1` = Major version and authored by Zygor
 * `4` = Minor version authored by Zygor, or when a substantial amount of improvements are made by the Community
 * `0` = Bug fix version and authored by Zygor
-* `96` = Community version. Values are based on the total number of Github commits. These are periodic update.
+* `96` = Community version. Values are based on the total number of Github commits and updates periodically.
 
 ----
 
