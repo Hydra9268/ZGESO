@@ -15793,5 +15793,155 @@ talk Talomar
 'Select _"You should stay. You can make sure the animals are really cared for here."_
 |tip Manually skip to the next step.
 step
+goto summerset_base 62.55,66.16
+'Continue along the path to
+wayshrine Eastern Pass
+|tip Manually skip to the next step.
+step
+goto summerset_base 54.18,67.64
+talk Vinafwe
+accept The Forest Vandal
+step
+goto summerset_base 52.00,67.28
+click Abandoned Shovel
+'Take Abandoned Shovel
+|tip Manually skip to the next step.
+step
+goto summerset_base 50.52,67.76
+click Bear-Hide Pouch
+'Take Bear-Hide Pouch
+|tip Manually skip to the next step.
+step
+goto summerset_base 52.46,69.03
+click Recently Disturbed Soil
+'Take Recently Disturbed Soil
+|tip Manually skip to the next step.
+step
+kill the Three Stranglers
+'They appear one at a time
+|tip Manually skip to the next step.
+step
+goto summerset_base 51.96,68.72
+talk Eslion
+|tip Manually skip to the next step.
+step
+goto summerset_base 53.59,69.43
+click Water Source
+|tip Manually skip to the next step.
+step
+goto summerset_base 52.00,65.87
+click Water Source
+|tip Manually skip to the next step.
+step
+goto summerset_base 50.56,69.90
+click Water Source
+|tip Manually skip to the next step.
+step
+goto summerset_base 48.13,69.36
+click Water Source
+|tip Manually skip to the next step.
+step
+goto summerset_base 48.02,70.50
+wayshrine Sunhold
+|tip Manually skip to the next step.
+step
+goto summerset_base 46.50,73.47
+talk Kinlady Ilunsare
+accept Obedience Issues
+step
+goto summerset_base 49.75,71.62
+'Press _E_ to use console Eustasia
+'Press _E_ to use examine Durell
+'Take Durell's Locket
+|tip Manually skip to the next step.
+step
+goto summerset_base 46.50,73.47
+talk Kinlady Ilunsare
+|tip Manually skip to the next step.
+step
+goto summerset_base 54.26,67.60
+talk Eslion
+'Select _"I'll testify on your behalf. [Eslion Goes Free]"_
+|tip Manually skip to the next step.
+step
+goto summerset_base 54.23,67.62
+talk Justiciar Oradel
+|tip Manually skip to the next step.
+step
+'Open your map:
+'Travel to the Shrimmerene Wayshrine
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 20.97,67.16
+'Continue West along the path
+|tip Manually skip to the next step.
+step
+goto summerset_base 54.19,52.04
+'Press _E_ to examine To Chief Justiciar Carawen
+accept Pearls Before Traitors
+step
+goto summerset_base 49.77,54.40
+talk Captain Telomure
+'Cross the bridge back to the main path and then run up the stairs
+|tip Manually skip to the next step.
+step
+goto summerset_base 49.66,54.42
+click Tor-Hame-Khard Delve
+|tip Manually skip to the next step.
+step
+goto torhamekhard_01_base 42.36,60.78
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto torhamekhard_02_base 39.92,54.18
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto torhamekhard_02_base 58.38,54.13
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto torhamekhard_02_base 44.90,73.33
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto torhamekhard_01_base 29.54,45.67
+kill Justiciar Avanaire
+|tip Manually skip to the next step.
+step
+goto torhamekhard_01_base 30.00,44.12
+'Press _E_ to destroy the Abyssal Pearl
+|tip Manually skip to the next step.
+step
+goto torhamekhard_01_base 37.33,44.53
+click Tor-Hame-Khard
+'Run outside of the room and up the stairs
+|tip Manually skip to the next step.
+step
+goto torhamekhard_01_base 49.15,11.68
+click Summerset
+|tip Manually skip to the next step.
+step
+goto summerset_base 49.72,54.38
+talk Captain Telomure
+'Select _"I found Justiciar Avanaire's journal"_
+|tip Manually skip to the next step.
+step
+goto summerset_base 51.80,53.90
+'Jump down here
+|tip Manually skip to the next step.
+step
+goto summerset_base 58.51,55.52
+'Run up the hill here
+|tip Manually skip to the next step.
+step
+goto summerset_base 58.48,57.87
+talk Esterdel
+|tip Manually skip to the next step.
+step
+goto summerset_base 57.90,58.37
+click Archon's Grove Delve
+|tip Manually skip to the next step.
+step
 
 ]])
