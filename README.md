@@ -132,4 +132,7 @@ d()
 
 ### Additional Resources
 
-https://wiki.esoui.com/API
+* https://wiki.esoui.com/API
+* https://esomap.uesp.net/
+* https://game-maps.com/ESO/Summerset-Map.asp
+* http://esodata.uesp.net/100018/
