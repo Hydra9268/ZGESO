@@ -15730,4 +15730,68 @@ goto summerset_base 69.96,62.98
 talk Talomar
 |tip Manually skip to the next step.
 step
+goto summerset_base 69.94,62.50
+talk Elise Mallon
+|tip Manually skip to the next step.
+step
+goto summerset_base 69.94,62.50
+talk Talomar
+|tip Manually skip to the next step.
+step
+goto summerset_base 67.38,61.44
+click Dead Ranger
+'Take Conservatory Key
+|tip Manually skip to the next step.
+step
+goto summerset_base 67.03,63.54
+click Sil-Var-Woad Conservatory
+|tip Manually skip to the next step.
+step
+goto summerset_base 67.02,63.77
+talk Elise Mallon
+|tip Manually skip to the next step.
+step
+goto summerset_base 67.11,63.51
+'Run up the stairs to the third floor
+|tip Manually skip to the next step.
+step
+goto summerset_base 66.89,63.71
+click Conservatory Files
+|tip Manually skip to the next step.
+step
+goto summerset_base 67.12,63.74
+talk Elise Mallon
+|tip Manually skip to the next step.
+step
+goto summerset_base 67.23,63.87
+'Run down the stairs to the first floor
+click Sil-Var-Woad Paddocks
+|tip Manually skip to the next step.
+step
+goto summerset_base 67.34,64.60
+talk Conservator Vinelore
+|tip Manually skip to the next step.
+step
+goto summerset_base 67.34,64.53
+talk Elise Mallon
+|tip Manually skip to the next step.
+step
+goto summerset_base 69.37,63.83
+kill Conservator Vinelore and Speciman II
+|tip Manually skip to the next step.
+step
+goto summerset_base 68.85,64.12
+'Press _E_ to deactive Ward
+|tip Manually skip to the next step.
+step
+goto summerset_base 68.73,64.10
+click Portal to Menagerie Grounds
+|tip Manually skip to the next step.
+step
+goto summerset_base 66.15,64.27
+talk Talomar
+'Select _"You should stay. You can make sure the animals are really cared for here."_
+|tip Manually skip to the next step.
+step
+
 ]])
