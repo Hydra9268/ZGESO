@@ -1231,7 +1231,12 @@ SLASH_COMMANDS["/zgsurvey"] = function() ZGV.Pointer:SurveyMap(nil,"force") Poin
 SLASH_COMMANDS["/zgpos"] = function(checker)
 	local gps = LibStub("LibGPS2"):GetCurrentMapMeasurements();
 	if checker == "gps" then
-		d(gps)
+		d("zone index: "..gps.zoneIndex)
+		d("map index: "..gps.mapIndex)
+		d("xoffset: "..gps.offsetX)
+		d("yoffset: "..gps.offsetY)
+		d("xscale: "..gps.scaleX)
+		d("yscale: "..gps.scaleY)
 	elseif checker == "floor" then
 		d(GetMapFloorInfo())
 	else
