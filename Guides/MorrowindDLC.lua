@@ -15901,7 +15901,7 @@ talk Justiciar Oradel
 |tip Manually skip to the next step.
 step
 'Open your map:
-'Travel to the Shrimmerene Wayshrine
+'Travel to the Shimmerene Wayshrine
 |tip Manually skip to the next step.
 step
 goto shimmerene_base 20.97,67.16
@@ -15973,6 +15973,52 @@ talk Esterdel
 step
 goto summerset_base 57.90,58.37
 click Archon's Grove Delve
+|tip Manually skip to the next step.
+step
+goto archonsgrove_base 17.70,76.06
+talk Niralin
+'You have a moral decision to make here. Pick one.
+|tip Manually skip to the next step.
+step
+'Open your map:
+click Shimmerene Wayshrine
+'Travel to the Shimmerene Wayshrine
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 40.47,61.65
+talk Esterdel
+step
+goto shimmerene_base 34.41,70.35
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto summerset_base 55.93,52.92
+'Run up the stairs
+|tip Manually skip to the next step.
+step
+goto summerset_base 55.49,54.52
+click Portal to Artaeum
+|tip Manually skip to the next step.
+step
+'Open your map:
+click Arteum Wayshrine
+'Travel to the Arteum Wayshrine
+|tip Manually skip to the next step.
+step
+goto artaeum_base 64.49,27.12
+talk Ritemaster Iachesis
+|tip Manually skip to the next step.
+step
+goto artaeum_base 64.99,25.56
+click Portal to Ceporah Tower
+|tip Manually skip to the next step.
+step
+goto dreamingcave02_base 16.21,42.58
+click Portal to Sotha Sil's Study
+|tip Manually skip to the next step.
+step
+goto dreamingcave03_base 26.92,39.54
+talk Oriandra
 |tip Manually skip to the next step.
 step
 
