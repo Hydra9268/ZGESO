@@ -15798,6 +15798,38 @@ goto summerset_base 62.55,66.16
 wayshrine Eastern Pass
 |tip Manually skip to the next step.
 step
+goto summerset_base 71.90,73.20
+talk Igeke Rat-Bite
+accept Gjadil's Legacy
+step
+goto summerset_base 71.81,73.37
+click Gjadil's Treasure Map
+'take Gjadil's Treasure Map
+|tip Manually skip to the next step.
+step
+'1. Open inventory
+'2. Select Quest
+'3. Hover over Gjadil's Treasure Map
+'4. Press _E_ to use Gjadil's Treasure Map
+|tip Manually skip to the next step.
+step
+goto summerset_base 67.32,78.94
+'Continue up the path
+|tip Manually skip to the next step.
+step
+goto summerset_base 67.22,78.24
+'Press _E_ to Dig the Dirt Mound
+'Press _E_ to Take Gjadil's Treasure Chest
+|tip Manually skip to the next step.
+step
+goto summerset_base 71.86,73.26
+talk Igeke Rat-Bite
+|tip Manually skip to the next step.
+step
+'Open your map:
+'Travel to the Eastern Pass Wayshrine
+|tip Manually skip to the next step.
+step
 goto summerset_base 54.18,67.64
 talk Vinafwe
 accept The Forest Vandal
