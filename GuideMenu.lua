@@ -27,32 +27,24 @@ local Settings = {
 	OptionUI = {},
 }
 local GuideMenu = {}
-local name = "ZygorMenu"
-
-local GUIDEMENU_TAB_ID = "guides"
-local SETTINGS_TAB_ID = "settings"
-
--- TODO this file has a lot of UI in it.. These setting names are kinda crappy
-local DEFAULT_WIDTH = 800
-local DEFAULT_HEIGHT = 500
-
-local HEADER_HEIGHT = 60
-local FOOTER_HEIGHT = 25
 
 local BUTTON_HIGHLIGHT_TEXTURE = {1,1,1,.2}
 
+local name = "ZygorMenu"
+local GUIDEMENU_TAB_ID = "guides"
+local SETTINGS_TAB_ID = "settings"
+
+local DEFAULT_WIDTH = 800
+local DEFAULT_HEIGHT = 500
+local HEADER_HEIGHT = 60
+local FOOTER_HEIGHT = 25
 local LEFT_COLUMN_WIDTH = 250
 local SCROLL_WIDTH = 15
 local GUIDE_IMAGE_WIDTH = 512
 local GUIDE_IMAGE_HEIGHT = 256
-
 local OPTIONS_LEFT_OFFSET = 15
 local OPTIONS_VERT_OFFSET = 5
-
-local DEFAULT_ANCHOR= {
-	CENTER,
-}
-
+local DEFAULT_ANCHOR= {	CENTER, }
 local MAX_LINES = 18
 
 local GuideStatusColor = {
@@ -68,15 +60,19 @@ local GuideStatusColor = {
 -- METATABLE SETUP
 -----------------------------------------
 
-setmetatable(Settings.OptionUI, {__index = function(me,tab) error(("Option Type %s is not available."):format(tostring(tab))) end})
+setmetatable(Settings.OptionUI, {
+	__index = function(me,tab) 
+		error(("Option Type %s is not available."):format(tostring(tab)))
+	end
+	})
 
 -----------------------------------------
 -- SAVED REFERENCES
 -----------------------------------------
+
 ZGV.Menu = Menu
 ZGV.Settings = Settings
 ZGV.GuideMenu = GuideMenu
-
 Menu.Settings = Settings
 Menu.GuideMenu = GuideMenu
 
@@ -237,7 +233,7 @@ function GuideMenu:Create()
 	-----------------------------
 	frame.buttons={}
 	local rows = MAX_LINES
-	local ROWHEIGHT = 22	-- TODO could calculate these based on height of Guide Menu?
+	local ROWHEIGHT = 22	-- TODO calculate these based on height of Guide Menu?
 	for i=1,rows do
 		local butname = gmname.."_But"..i
 
@@ -267,7 +263,7 @@ function GuideMenu:Create()
 
 		if i == 1 then
 			CHAIN(but)
-				:SetPoint(RIGHT)		-- Set the right point first so it gets the width
+				:SetPoint(RIGHT) -- Set the right point first so it gets the width
 				:SetPoint(TOPLEFT,frame.header,BOTTOMLEFT,-HEADER_PADDING,0)
 		else
 			local prevBut = frame.buttons[i-1]
@@ -290,31 +286,6 @@ function GuideMenu:Create()
 			:SetText("No label?!!?")
 		.__END
 
-		--[[
-		-- We need this?
-		but.complabel = CHAIN(but:CreateFontString())
-		:SetPoint("TOPLEFT",but,"TOPRIGHT",-65,2)
-		:SetPoint("BOTTOMRIGHT",but,"BOTTOMRIGHT",0,0) :SetDrawLayer("ARTWORK")
-			:SetJustifyH("RIGHT") :SetJustifyV("CENTER") :SetFont(FONT,10) :SetTextColor(1.0,0.8,0.0)
-			:SetText("0%")
-		 .__END
-		if not show_completion then but.complabel:Hide() end
-
-		but.complabelover = CHAIN(CreateFrame("FRAME",nil,but))
-		:SetPoint("TOPLEFT",but,"TOPRIGHT",-65,2) :SetPoint("BOTTOMRIGHT",but,"BOTTOMRIGHT",0,0)
-			:SetScript("OnEnter",function(self)
-				if not self.tip then return end
-				GameTooltip:SetOwner(self,"ANCHOR_BOTTOM")
-				GameTooltip:ClearLines()
-				GameTooltip:SetText(self.tip)
-				GameTooltip:Show()
-			 end)
-			:SetScript("OnLeave",function(self) GameTooltip:Hide() end)
-			:Hide()
-			--:SetBackdrop({bgFile=ZGV.DIR.."\\Skins\\white",edgeFile=ZGV.DIR.."\\Skins\\midnight\\black\\roundcorners",tileSize=8,edgeSize=8,insets={top=8,bottom=8,left=8,right=8}}) :SetBackdropColor(0,0,0,0.50) :SetBackdropBorderColor(0,0,0,0.5)
-		.__END
-		--]]
-
 		but.SetIcon=SetIcon
 		frame.buttons[i]=but
 	end
@@ -329,7 +300,7 @@ function GuideMenu:Create()
 		:SetText("Guides")
 	.__END
 
-	-- TODO scrollie for information panel on the right? Create a scrollbox for the rest of the information.
+	-- TODO scrollbar for information panel on the right? Create a scrollbox for the rest of the information.
 
 	frame.GuideImage = CHAIN(ui:Create("Texture",frame.guideInfoBox,gmname.."_GuideTexture"))
 		:SetPoint(TOPLEFT,frame.GuideTitle,0,30)
@@ -345,14 +316,6 @@ function GuideMenu:Create()
 		:SetVerticalAlignment(TEXT_ALIGN_TOP)
 		:SetText(string.rep("Description! ",50))
 	.__END
-
-	--[[
-	VIEWLIST.GuidePercentage = CHAIN(VIEWLIST.GuideScroll.child:CreateFontString())
-		:SetPoint("TOPLEFT",VIEWLIST.GuideData,"BOTTOMLEFT",0,-3) :SetPoint("BOTTOMRIGHT")
-		:SetJustifyH("LEFT") :SetJustifyV("TOP") :SetWidth(150)
-		:SetFont(FONTBOLD,12)
-	 .__END
-	 --]]
 
 	-- Button isn't in the scrollframe either
 	frame.OkButton = CHAIN(ui:Create("Button",frame.guideBox,gmname.."_OkButton"))
@@ -418,8 +381,6 @@ function GuideMenu:RefreshUI()
 	local hei = zo_min(1,MAX_LINES / #guides)  if hei==1 then hei=0 end
 	frame.guideBoxScroll:SetThumbTexture(tex,tex,tex,SCROLL_WIDTH,frame.guideBoxScroll:GetHeight() * hei,0,0,1,1)
 
-	--if #guides > #buts then error("More guides than buttons in Guide Menu! Tell Dev Team. "..#guides..">"..#buts) end
-
 	-------------------------------
 	-- UPDATE THE BUTTONS
 	-------------------------------
@@ -480,12 +441,7 @@ function GuideMenu:RefreshUI()
 			end
 
 			but.label:SetText("|c"..statuscolor..(guide.title_short or "")..(guide.parse_error and "-|cff0000ERROR|r" or "") )
-
-			--local text,tip = g:GetCompletionText()
-			--but.complabel:SetText(text)
-			--but.complabelover.tip = tip
 			but:Show()
-			--but:GetFontString():SetTextColor(1,1,1)
 		else
 			but:Hide()
 		end
@@ -524,35 +480,6 @@ function GuideMenu:RefreshUI()
 		local status,msg = g:GetStatus()
 		local color = GuideStatusColor[status]
 		if status=="COMPLETE" and g.type=="LEVELING" then status=status.."_lev" end
-
-		--[[
-		local complete,cur,tot = g:GetCompletion()
-		if complete~="loading" then
-			if complete then
-				if g.completionmode=="quests" then
-					if g.type=="DAILIES" then
-						local qmin,qsome,qmax = unpack(g.completionparams)
-						qmin=tonumber(qmin)
-						qsome=tonumber(qsome)
-						qmax=tonumber(qmax)
-						if not qmin then
-							s = s .. ("|cffffeebbComplete:|r %d/%d quests\n"):format(cur,tot)
-						elseif cur<qmin then
-							s = s .. ("|cffffeebbDailies not started yet|r (%d/%d quests)\n"):format(cur,tot)
-						elseif cur<qsome then
-							s = s .. ("|cffffeebbToday: not done|r (%d/%d quests)\n"):format(cur,tot)
-						elseif cur<qmax then
-							s = s .. ("|cffffeebbToday: done partially|r (%d/%d quests)\n"):format(cur,tot)
-						elseif cur<=tot then
-							s = s .. ("|cffffeebbToday: done?|r (%d/%d quests)\n"):format(cur,tot)
-						end
-					else
-						s = s .. ("|cffffeebbComplete:|r %d/%d quests\n"):format(cur,tot)
-					end
-				end
-			end
-		end
-		--]]
 
 		s = s .. "\n"
 
@@ -605,7 +532,7 @@ function Settings:Create()
 		:SetWidth(LEFT_COLUMN_WIDTH)
 	.__END
 
-	frame.optionTypesScroll = CHAIN(ui:Create("SecFrame", frame, setname.. "_Scroll"))	-- TODO real scrollie? -- Scroll bar for the left Panel.
+	frame.optionTypesScroll = CHAIN(ui:Create("SecFrame", frame, setname.. "_Scroll"))	-- TODO A real scroll bar for the left Panel
 		:SetPoint(TOPLEFT,frame.optionTypesBox,TOPRIGHT)
 		:SetPoint(BOTTOMLEFT,frame.optionTypesBox,BOTTOMRIGHT)
 		:SetWidth(SCROLL_WIDTH)
@@ -623,13 +550,14 @@ function Settings:Create()
 		:SetPoint(TOPLEFT,frame,TOPLEFT,HEADER_PADDING,2)
 		:SetText("")
 	.__END
+
 	------------------------------
 	-- Setup Left column buttons
 	-----------------------------
 
 	frame.buttons={}
 	local rows = MAX_LINES
-	local ROWHEIGHT = 22	-- TODO could calculate these based on height of Guide Menu?
+	local ROWHEIGHT = 22	-- TODO calculate these based on height of Guide Menu?
 	for i=1,rows do
 		local butname = setname.."_But"..i
 
@@ -676,30 +604,6 @@ function Settings:Create()
 			:SetText("No label?!!?")
 		.__END
 
-		--[[
-		-- We need this?
-		but.complabel = CHAIN(but:CreateFontString())
-		:SetPoint("TOPLEFT",but,"TOPRIGHT",-65,2)
-		:SetPoint("BOTTOMRIGHT",but,"BOTTOMRIGHT",0,0) :SetDrawLayer("ARTWORK")
-			:SetJustifyH("RIGHT") :SetJustifyV("CENTER") :SetFont(FONT,10) :SetTextColor(1.0,0.8,0.0)
-			:SetText("0%")
-		 .__END
-		if not show_completion then but.complabel:Hide() end
-
-		but.complabelover = CHAIN(CreateFrame("FRAME",nil,but))
-		:SetPoint("TOPLEFT",but,"TOPRIGHT",-65,2) :SetPoint("BOTTOMRIGHT",but,"BOTTOMRIGHT",0,0)
-			:SetScript("OnEnter",function(self)
-				if not self.tip then return end
-				GameTooltip:SetOwner(self,"ANCHOR_BOTTOM")
-				GameTooltip:ClearLines()
-				GameTooltip:SetText(self.tip)
-				GameTooltip:Show()
-			 end)
-			:SetScript("OnLeave",function(self) GameTooltip:Hide() end)
-			:Hide()
-			--:SetBackdrop({bgFile=ZGV.DIR.."\\Skins\\white",edgeFile=ZGV.DIR.."\\Skins\\midnight\\black\\roundcorners",tileSize=8,edgeSize=8,insets={top=8,bottom=8,left=8,right=8}}) :SetBackdropColor(0,0,0,0.50) :SetBackdropBorderColor(0,0,0,0.5)
-		.__END
-		--]]
 		but.SetIcon = SetIcon
 		frame.buttons[i]=but
 	end
@@ -820,7 +724,7 @@ function Settings:CreateOptionsUI(group)
 
 		local obj = self.OptionUI[typ](self,option,frame)	-- This obj is a frame that contains the actual option UI
 
-		if typ ~= "execute"					-- Execute buttons are dumb, they just run a function on clicked.
+		if typ ~= "execute"					-- Execute buttons are unnecessary, they run a function on clicked
 		and typ ~= "header"					-- headers are dumber
 		and typ ~= "desc"					-- desc ^^^^
 		then
@@ -920,7 +824,7 @@ function Settings:RefreshUI()
 
 			if self.selectedgroup and self.selectedgroup==group then
 				local mult = 0.7
-				local r,g,b = .6,.6,.6-- HTMLColor("#0000ff")	-- TODO more interesting color.
+				local r,g,b = .6,.6,.6 -- HTMLColor("#0000ff")-- TODO more interesting color.
 				but:SetBackdropColor(r*mult,g*mult,b*mult,1)
 				but.bd:Show()
 
@@ -973,11 +877,6 @@ end
 -- VARIOUS DIFFERENT SETTINGS UIS
 -----------------------------------------
 
---[[
-	Relavant data values:
-			values = table or function that returns a table.
-				table is full of (value = "text") pairs for dropdown options.
---]]
 Settings.OptionUI["dropdown"] = function(self,option,parent)
 	local name = parent:GetName().."_Option"..option.num
 
@@ -1363,7 +1262,7 @@ function GuideMenu:SelectGuide(guide)
 		GuideMenu.selectedguide = guide
 	else
 		error("Selected Guide isn't a guide?!? It is a "..tostring(guide))
-		GuideMenu.selectedguide = guide-- and ZGV:GetGuideByTitle(path) or nil
+		GuideMenu.selectedguide = guide
 	end
 	self:Refresh()
 end
