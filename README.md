@@ -1,5 +1,7 @@
 # ZGESO
 
+<img src="https://i.imgur.com/pAyDGDJ.png">
+
 A Public Domain ESO Leveling Guide produced by Zygor Guides
 
 <img src="https://i.imgur.com/0tWEyU4.png" alt="At the moment, this project is work-in-progress. It is not ready for complete.">
