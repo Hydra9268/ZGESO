@@ -544,6 +544,8 @@
 		["Monastery of Serene Harmony"] = [[monasteryoshfloor03_base]],		-- Monastery Undercroft
 		["Shimmerene Waterworks"] = [[ShimmereneWaterworks01_base]],		-- Shimmerene Waterworks ground floor
 		["Shimmerene Waterworks"] = [[ShimmereneWaterworks02_base]],		-- Shimmerene Waterworks second floor
+		["Tor-Hame-Khard"] = [[torhamekhard_01_base]],
+		["Tor-Hame-Khard"] = [[torhamekhard_02_base]],
 
 	},
 	["Zones"] =
@@ -566,6 +568,8 @@
 		["monasteryoshfloor02_base"] = 		{ name = "Monastery of Serene Harmony", id = 396, xoffset = 0.16078000135967, yoffset = 0.71929764758514, xscale = 0.00090579118289279, },
 		["monasteryoshfloor03_base"] = 		{ name = "Monastery of Serene Harmony", id = 396, xoffset = 0.15994063226311, yoffset = 0.71912021550126, xscale = 0.0015926468690025, },
 		["ShimmereneWaterworks01_base"] =	{ name = "Shimmerene Waterworks", 	id = 397, xoffset = 0.15685471873136, yoffset = 0.72048606511502, xscale = 0.0024150422214115, },
+		["torhamekhard_01_base"] =		{ name = "Tor-Hame-Khard",		id = 398, xoffset = 0.12658396014232, yoffset = 0.75004362784684, xscale = 0.00086606256016733, },
+		["torhamekhard_02_base"] =		{ name = "Tor-Hame-Khard",		id = 398, xoffset = 0.12658395442321, yoffset = 0.75004365766084, xscale = 0.0008660688105551, },
 
 
 		-- EXISTING

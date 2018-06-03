@@ -435,6 +435,7 @@ Data.MapIdsByName = {
 	["Sunhold"] = 395,
 	["Monastery of Serene Harmony"] = 396,
 	["Shimmerene Waterworks"] = 397,
+	["Tor-Hame-Khard"] = 398,
 
 	[""] = 1000
 }
