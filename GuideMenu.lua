@@ -123,8 +123,10 @@ end
 -----------------------------------------
 
 function Menu:CreateBaseMenu()
+
 	if self.Frame then return end
 
+	-- main window
 	local frame =  CHAIN(ui:Create("Frame",GuiRoot,name))
 		:SetPoint(unpack(DEFAULT_ANCHOR))
 		:SetCanDrag(1)
@@ -134,16 +136,17 @@ function Menu:CreateBaseMenu()
 	.__END
 	self.Frame = frame
 
+	-- Guide version, lower left
 	frame.version = CHAIN(ui:Create("Label",frame,name.."_VerTitle",12,"bold"))
 		:SetPoint(BOTTOMLEFT,frame,BOTTOMLEFT,10,-8)	-- TODO y vert distance does not keep centered in footer if footer size changes.
 		:SetText("VER:")
 	.__END
-
 	frame.versionNum = CHAIN(ui:Create("Label",frame,name.."_VerNum",12))
 		:SetPoint(LEFT,frame.version,RIGHT,3,0)
 		:SetText(ZGV.version)
 	.__END
 
+	-- Close button, upper right
 	frame.close = CHAIN(ui:Create("GuideButton",frame,name.."_Close","Close"))
 		:SetPoint(TOPRIGHT, titlebar, -5, 5 )
 		:SetHandler("OnClicked",function(me)
@@ -151,14 +154,36 @@ function Menu:CreateBaseMenu()
 		end)
 	.__END
 
-	frame.tabhandler = CHAIN(ui:Create("Tabs",frame,name,
+	-- Guide title
+	frame.tabhandler = CHAIN(ui:Create(
+		"Tabs",
+		frame,
+		name,
 		{
-			{ id=GUIDEMENU_TAB_ID, name="Home", size = {120,40}, fontsize = 25, point = {TOPLEFT,-12,9}, handler=function() Menu:SetTab(GUIDEMENU_TAB_ID) end },
-			{ id=SETTINGS_TAB_ID, name="", size = {120,40}, fontsize = 25, handler=function() Menu:SetTab(SETTINGS_TAB_ID) end  },
+			{ 
+				id = GUIDEMENU_TAB_ID, 
+				name="Home", 
+				size = {120,40},
+				fontsize = 25, 
+				point = { TOPLEFT, -12, 9}, 
+				handler = function() 
+					Menu:SetTab(GUIDEMENU_TAB_ID) 
+				end 
+			},
+			{
+				id = SETTINGS_TAB_ID,
+				name="",
+				size = { 120, 40 },
+				fontsize = 25,
+				handler=function()
+					Menu:SetTab(SETTINGS_TAB_ID)
+				end
+			},
 		}
 	))
 	.__END
 
+	-- Settings Gear button, bottom right
 	frame.settings = CHAIN(ui:Create("GuideButton",frame,name.."_Settings","Settings"))
 		:SetPoint(BOTTOMRIGHT,frame,BOTTOMRIGHT,-5,-5)
 	.__END
@@ -297,10 +322,7 @@ function GuideMenu:Create()
 	frame.GuideTitle = CHAIN(ui:Create("Label",frame.guideInfoBox,gmname.."_GuideTitle",17,"bold"))
 		:SetPoint(TOPLEFT,frame.guideInfoBox,20,20)
 		:SetWidth(GUIDE_IMAGE_WIDTH-20)
-		:SetText("Guides")
 	.__END
-
-	-- TODO scrollbar for information panel on the right? Create a scrollbox for the rest of the information.
 
 	frame.GuideImage = CHAIN(ui:Create("Texture",frame.guideInfoBox,gmname.."_GuideTexture"))
 		:SetPoint(TOPLEFT,frame.GuideTitle,0,30)
@@ -310,11 +332,11 @@ function GuideMenu:Create()
 		:Hide()
 	.__END
 
+	-- TODO scrollbar for information panel on the right? Create a scrollbox for the rest of the information.
 	frame.GuideData = CHAIN(ui:Create("Label",frame.guideInfoBox,gmname.."_GuideData",14))
 		:SetPoint(TOPLEFT,frame.GuideImage,0,200)
 		:SetPoint(BOTTOMRIGHT,0,0)
 		:SetVerticalAlignment(TEXT_ALIGN_TOP)
-		:SetText(string.rep("Description! ",50))
 	.__END
 
 	-- Button isn't in the scrollframe either
@@ -327,6 +349,7 @@ function GuideMenu:Create()
 			GuideMenu:SetCurrentGuide(GuideMenu.selectedguide)
 		end)
 	.__END
+
 end
 
 function GuideMenu:RefreshUI()
@@ -500,10 +523,10 @@ function GuideMenu:RefreshUI()
 
 		if g.parse_error then ZGV:Print(g.parse_error) end
 	else
-		frame.GuideTitle:SetText("")
-		frame.GuideData:SetText("")
-		frame.OkButton:Hide()
+		frame.GuideTitle:SetText("Welcome to the Zygor Guide for ESO")
+		frame.GuideImage:SetTexture(ZGV.DIR.."/Viewer/Skins/Stealth/cbqpk-x7umv.dds")
 		frame.GuideImage:Show()
+		frame.OkButton:Hide()
 	end
 
 	frame:Show()
@@ -704,7 +727,9 @@ function Settings:CreateDefaultPopup()
 end
 
 function Settings:ShowDefaultPopup()
-	if not self.DefaultPopup then self:CreateDefaultPopup() end
+	if not self.DefaultPopup then 
+		self:CreateDefaultPopup()
+	end
 	self.DefaultPopup:Show()
 end
 
@@ -1185,6 +1210,7 @@ end
 
 -- Either SETTINGS_TAB_ID or GUIDEMENU_TAB_ID
 function Menu:SetTab(tab)
+
 	self:Show()
 
 	self.Frame.tabhandler:SetCurrentTab(tab,1)	-- Set the tab, block the handler so no infinite loop is started
@@ -1194,7 +1220,10 @@ function Menu:SetTab(tab)
 end
 
 function Menu:Show()
-	if not self.Frame then self:CreateBaseMenu() end
+	
+	if not self.Frame then 
+		self:CreateBaseMenu()
+	end
 
 	self.Frame:Show()
 end
@@ -1222,10 +1251,17 @@ end
 -----------------------------------------
 
 function GuideMenu:Show()
-	Menu:Show()
-	if Menu.Frame and Menu.Frame.tabhandler:GetCurrentTab() ~= GUIDEMENU_TAB_ID then Menu:SetTab(GUIDEMENU_TAB_ID) end		-- Make sure all other views are hidden
 
-	if not self.Frame then self:Create() end
+	Menu:Show()
+
+	if Menu.Frame and Menu.Frame.tabhandler:GetCurrentTab() ~= GUIDEMENU_TAB_ID then 
+		Menu:SetTab(GUIDEMENU_TAB_ID) 
+	end -- Make sure all other views are hidden
+
+	if not self.Frame then 
+		self:Create()
+	end
+
 	self.Frame:Show()
 	self:Refresh()
 end
