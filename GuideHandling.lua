@@ -20,7 +20,6 @@ local L = ZGV.L
 -----------------------------------------
 
 local Viewer
-
 local LONG_STEP_INTERVAL = 1
 local SHORT_STEP_INTERVAL = .1
 local completeionInterval = LONG_STEP_INTERVAL
@@ -119,32 +118,30 @@ function ZGV:SkipStep(fast,quiet)
 		-- last step! or something went wrong and GetNextValidStep couldn't find anything to hop onto.
 
 		--if self.CurrentStep.num == #self.CurrentGuide.steps then  -- never mind! assuming loss of next step = end of guide. Wondering if this is safe... ~sinus 2011-08-16
-			self.pause = true
-			self.fastforward = false
-			if self.CurrentGuide.next then
-				self:SetGuide(self.CurrentGuide.next,1)
-				return
-			elseif self.CurrentGuide.steps and #self.CurrentGuide.steps>1 then
-				if not self.EndGuidePopup then
-					local popup = ZGV.Popup:New("Zygor_EndGuide_Popup")
+		self.pause = true
+		self.fastforward = false
+		if self.CurrentGuide.next then
+			self:SetGuide(self.CurrentGuide.next,1)
+			return
+		elseif self.CurrentGuide.steps and #self.CurrentGuide.steps>1 then
+			if not self.EndGuidePopup then
+				local popup = ZGV.Popup:New("Zygor_EndGuide_Popup")
 
-					popup.declinebutton:Hide()
-					CHAIN(popup.acceptbutton)
-						:ClearAllPoints()
-						:SetPoint(BOTTOM,popup,BOTTOM,0,-5)
+				popup.declinebutton:Hide()
+				CHAIN(popup.acceptbutton)
+					:ClearAllPoints()
+					:SetPoint(BOTTOM,popup,BOTTOM,0,-5)
 
-					self.EndGuidePopup = popup
-
-					--self.EndGuidePopup.noMinimize = 1 --Can not minimize this one
-				end
-
-				if self.EndGuidePopup.lastguide ~= self.CurrentGuide then		-- Don't show this again if it has shown for this guide.
-					self.EndGuidePopup.lastguide = self.CurrentGuide
-
-					self.EndGuidePopup:SetText(L['static_endguide'])
-					self.EndGuidePopup:Show()
-				end
+				self.EndGuidePopup = popup
 			end
+
+			if self.EndGuidePopup.lastguide ~= self.CurrentGuide then		-- Don't show this again if it has shown for this guide.
+				self.EndGuidePopup.lastguide = self.CurrentGuide
+
+				self.EndGuidePopup:SetText(L['static_endguide'])
+				self.EndGuidePopup:Show()
+			end
+		end
 	end
 end
 
@@ -163,8 +160,6 @@ function ZGV:GetPreviousValidStep()
 
 		-- valid number?
 		if stepnum then
-			-- history popped 'pop'erly, hurr durr
-
 			-- get the step
 			s = self.CurrentGuide.steps[stepnum]
 			if s then
@@ -174,7 +169,6 @@ function ZGV:GetPreviousValidStep()
 		else
 			-- we broke history or it just ran out, whatever
 			ZGV:Debug("step history broken, omg")
-
 
 			-- TODO: Currently, when running out of history, we default to the first valid of the guide. Needs a message / confirmation.
 
@@ -210,9 +204,6 @@ function ZGV:FocusStep(num,quiet)
 	-- Record step into history
 	if self.LastSkip>0 and self.CurrentStep then
 		tinsert(self.sv.char.stephistory,self.CurrentStep.num)
-	--	if self.db.char.guides_history[1] and self.db.char.guides_history[1][1]==self.CurrentGuide.title then
-	--		self.db.char.guides_history[1][2]=self.CurrentStep.num
-	--	end
 	end
 
 	local step = self.CurrentGuide.steps[num]
@@ -224,15 +215,14 @@ function ZGV:FocusStep(num,quiet)
 	--self:ClearRecentActivities()
 
 	-- Whoa whoa. The step might load a different guide at this point! Play safe.
-	local cs=self.CurrentStep
-	local cg=self.CurrentGuide
-	if (cs~=self.CurrentStep) or (cg~=self.CurrentGuide) then self:Debug("FocusStep: guide or step changed! bailing.") return end
+	local cs = self.CurrentStep
+	local cg = self.CurrentGuide
+	if (cs ~= self.CurrentStep) or (cg ~= self.CurrentGuide) then 
+		self:Debug("FocusStep: guide or step changed! bailing.") 
+		return 
+	end
 
 	self.stepchanged = true
-
-	--for i,goal in ipairs(self.CurrentStep.goals) do
-	--	if goal:IsComplete() then self.recentlyCompletedGoals[goal]=true end
-	--end
 
 	local stepcomplete,steppossible = self.CurrentStep:IsComplete()
 	if self.pause then
@@ -288,7 +278,7 @@ function ZGV:SetWaypoint(what)
 		else
 			-- set up waypoints
 			for gi,goal in ipairs(self.CurrentStep.goals) do
-				if goal.x and goal.y and not goal.force_noway then --and not goal:IsComplete()
+				if goal.x and goal.y and not goal.force_noway then
 					ZGV.Pointer:SetWaypoint(goal.map or nil,goal.floor or 0,goal.x,goal.y,{title=goal:GetText(),goalnum=gi})
 					set=true
 					--break
@@ -396,14 +386,11 @@ function ZGV:TryToCompleteStep(force)
 		end
 	end
 
-	--self.lasttriedstep = ZGV.CurrentStep
-	--self.lastwascompleted = stepcomplete
-
 	-- TODO try to suggest next guide
 	--self:MaybeSuggestNextGuide()
 
-	Viewer:Update()		-- TODO does this need to be ran every time? Could it be only ran when a step is completed to minimize work done?
-		--~~ it makes the display update for 0/5 counts etc...
+	Viewer:Update()	-- TODO does this need to be ran every time? Could it be only ran when a step is completed to minimize work done?
+			--~~ it makes the display update for 0/5 counts etc...
 end
 
 -----------------------------------------
@@ -425,8 +412,6 @@ function ZGV:SanitizeGuideTitle(title)
 	-- fix old-style guide paths
 	title = title
 		:gsub("^Leveling.-/","LEVELING/")
-		--:gsub("^Profession.-/","PROFESSIONS/")
-		--:gsub("^Dungeon.-/","DUNGEONS/")
 
 	return title
 end
@@ -447,14 +432,11 @@ function ZGV:MaybeSuggestNextGuide()		-- TODO Assume all guides must be complete
 
 	-- If we are still suggested and not exclusive then we can try to suggest next guide. Might be better.
 	local nextguide = self.CurrentGuide.next
-	if nextguide and not ZGV.db.char.ignoredguides[nextguide] then --and not(ZGV.tempguideblock and ZGV.tempguideblock[nextguide])then
+	if nextguide and not ZGV.db.char.ignoredguides[nextguide] then
 		nextguide = self:GetGuideByTitle(nextguide)
 		if nextguide then
 			local nextsuggested = (nextguide:GetStatus()=="SUGGESTED")
-
-			--ZGV.suggesting = nextsuggested
-
-			if nextsuggested then --and self.db.profile.n_popup_sis then
+			if nextsuggested then
 				nextguide:AdvertiseWithPopup()
 			end
 
@@ -463,38 +445,18 @@ function ZGV:MaybeSuggestNextGuide()		-- TODO Assume all guides must be complete
 
 end
 
-
 function ZGV:FindSuggestedGuides()
 	local suggested={}
 	for i,guide in ipairs(self.registeredguides) do
 		if guide:GetStatus()=="SUGGESTED" then
 			if guide.condition_suggested_exclusive then
 				return {guide}
-				-- suggest-exclusive guides force their suggestion, if suggested.
 			else
-				if not suggested[guide.type] then suggested[guide.type]={} end
-
+				if not suggested[guide.type] then 
+					suggested[guide.type] = {}
+				end
 				tinsert(suggested[guide.type],guide)
 			end
-		--[[
-		elseif guide.sugGroup then
-			if not suggested[guide.type] then suggested[guide.type] = {} end
-
-			-- TODO can we do this without this work? Just look at registered_groups?
-
-			local found
-			-- Go through and see if this group has been added yet.
-			for i,group in ipairs(suggested[guide.type]) do
-				if group.name and group.name == guide.sugGroup then
-					found = true
-					break
-				end
-			end
-
-			if not found then
-				tinsert(suggested[guide.type],{groups={},guides={guide},name = guide.sugGroup, ord=1})
-			end
-		--]]
 		end
 	end
 	return suggested
@@ -579,8 +541,6 @@ function ZGV:SetGuide(name,step)
 				end
 
 				self.BadGuidePopup = popup
-
-				--self.BadGuidePopup.noMinimize = 1 --Can not minimize this one
 			end
 
 			self.BadGuidePopup:SetText(L['static_badguide']:format(guide.title_short,msg or ""))
@@ -606,24 +566,8 @@ function ZGV:SetGuide(name,step)
 			guide:SetAsCurrent()
 
 			self.sv.char.stephistory = {}
-
-			-- History: remove
-			--local history = self.db.char.guides_history
-			--local found
-			--for gi,guide_step in ipairs(history) do
-			--	if guide_step[1]==self.CurrentGuide.title then tremove(history,gi) break end
-			--end
-
-			--name=name:gsub(self.CurrentGuide.type,ZGV.GuideTitles[self.CurrentGuide.type]) -- make LEVELING-Leveling and such. -- TODO
 			self:Print(L["message_loadedguide"]:format(guide.title))
 			self:Debug("Guide loaded: "..name)
-
-				--self:SendMessage("ZYGORGV_GUIDE_LOADED",guide.title)
-
-				-- History: (re)instate at index 1
-				--if #self.db.char.guides_history>MAX_GUIDES_HISTORY then tremove(self.db.char.guides_history) end
-				--tinsert(self.db.char.guides_history,1,{guide.title,stepobj.num})
-
 			self:FocusStep(step)
 		else
 			err = "Guide not parsed"
@@ -635,8 +579,6 @@ function ZGV:SetGuide(name,step)
 
 	if err then
 		self:Error("Unable to load guide "..(guide and type(guide)=="table" and guide.title or name or "-")..": "..err)
-		--self.sv.char.guide = nil
-		--self.sv.char.step = nil
 		self.CurrentGuide = nil
 		self.CurrentGuideName = nil
 		self.CurrentStep = nil
@@ -653,7 +595,7 @@ function ZGV:GuideLoadStartup()
 	if not self.guidesloaded then return end -- let the OnGuidesLoaded func call us.
 	if self.guidestartcomplete then return end
 
-	local history = self.db.char.stephistory	-- Save step history. Gets reset in SetGuide, but at startup we don't want it reset
+	local history = self.db.char.stephistory -- Save step history. Gets reset in SetGuide, but at startup we don't want it reset
 
 	self:SetGuide(self.sv.char.guidename,self.sv.char.step)
 	self.db.char.stephistory = history
