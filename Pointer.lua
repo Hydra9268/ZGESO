@@ -1229,8 +1229,9 @@ end
 SLASH_COMMANDS["/zgsurvey"] = function() ZGV.Pointer:SurveyMap(nil,"force") Pointer.do_autosurvey = true end
 
 SLASH_COMMANDS["/zgpos"] = function(checker)
+	local gps = LibStub("LibGPS2"):GetCurrentMapMeasurements();
 	if checker == "gps" then
-		d(LibStub("LibGPS2"):GetCurrentMapMeasurements())
+		d(gps)
 	elseif checker == "floor" then
 		d(GetMapFloorInfo())
 	else
@@ -1238,9 +1239,9 @@ SLASH_COMMANDS["/zgpos"] = function(checker)
 		local Z = Pointer.Zones[tex]
 		ZGV.sv.profile.Zones[tex]=Z
 		d(("|cffffff%s|r"):format(tex))
-		d(("xoffset: |c88ff88%.6f|r"):format(Z.xoffset))
-		d(("yoffset: |c88ff88%.6f|r"):format(Z.yoffset))
-		d(("xscale: |c88ff88%.6f|r"):format(Z.xscale))
+		d(("xoffset: |c88ff88%.19f|r"):format(Z.xoffset))
+		d(("yoffset: |c88ff88%.19f|r"):format(Z.yoffset))
+		d(("xscale: |c88ff88%.19f|r"):format(gps.scaleX))
 	end
 end
 
