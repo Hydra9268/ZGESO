@@ -436,6 +436,9 @@ Data.MapIdsByName = {
 	["Monastery of Serene Harmony"] = 396,
 	["Shimmerene Waterworks"] = 397,
 	["Tor-Hame-Khard"] = 398,
+	["Archon's Grove"] = 399,
+	["Artaeum"] = 400,
+	["Ceporah Tower"] = 401,
 
 	[""] = 1000
 }

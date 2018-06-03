@@ -546,6 +546,10 @@
 		["Shimmerene Waterworks"] = [[ShimmereneWaterworks02_base]],		-- Shimmerene Waterworks second floor
 		["Tor-Hame-Khard"] = [[torhamekhard_01_base]],
 		["Tor-Hame-Khard"] = [[torhamekhard_02_base]],
+		["Archon's Grove"] = [[archonsgrove_base]],
+		["Artaeum"] = [[artaeum_base]],
+		["Ceporah Tower"] = [[dreamingcave02_base]],
+		["Ceporah Tower"] = [[dreamingcave03_base]],
 
 	},
 	["Zones"] =
@@ -570,7 +574,10 @@
 		["ShimmereneWaterworks01_base"] =	{ name = "Shimmerene Waterworks", 	id = 397, xoffset = 0.15685471873136, yoffset = 0.72048606511502, xscale = 0.0024150422214115, },
 		["torhamekhard_01_base"] =		{ name = "Tor-Hame-Khard",		id = 398, xoffset = 0.12658396014232, yoffset = 0.75004362784684, xscale = 0.00086606256016733, },
 		["torhamekhard_02_base"] =		{ name = "Tor-Hame-Khard",		id = 398, xoffset = 0.12658395442321, yoffset = 0.75004365766084, xscale = 0.0008660688105551, },
-
+		["archonsgrove_base"] =			{ name = "Archon's Grove",		id = 399, xoffset = 0.12106827494325, yoffset = 0.02426498113643, xscale = 0.024264981136431, },
+		["artaeum_base"] =			{ name = "Artaeum",			id = 400, xoffset = 0.7203422519217, yoffset = -0.13332651637321, xscale = 0.2170174138522, },
+		["dreamingcave02_base"] =		{ name = "Ceporah Tower",		id = 401, xoffset = 0.8595572067723, yoffset = -0.07751710441397, xscale = 0.0075637367659, },
+		["dreamingcave03_base"] =		{ name = "Ceporah Tower",		id = 401, xoffset = 0.8539167166648, yoffset = -0.07587681340776, xscale = 0.004695508970495, },
 
 		-- EXISTING
 		[""] = { name = "", },
