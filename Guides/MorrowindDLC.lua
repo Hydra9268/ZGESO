@@ -15922,19 +15922,19 @@ click Tor-Hame-Khard Delve
 |tip Manually skip to the next step.
 step
 goto torhamekhard_01_base 42.36,60.78
-'Continue to here
+'Continue from here
 |tip Manually skip to the next step.
 step
 goto torhamekhard_02_base 39.92,54.18
-'Continue to here
+'Continue from here
 |tip Manually skip to the next step.
 step
 goto torhamekhard_02_base 58.38,54.13
-'Continue to here
+'Continue from here
 |tip Manually skip to the next step.
 step
 goto torhamekhard_02_base 44.90,73.33
-'Continue to here
+'Continue from here
 |tip Manually skip to the next step.
 step
 goto torhamekhard_01_base 29.54,45.67
@@ -15989,7 +15989,7 @@ goto shimmerene_base 40.47,61.65
 talk Esterdel
 step
 goto shimmerene_base 34.41,70.35
-'Continue to here
+'Continue from here
 |tip Manually skip to the next step.
 step
 goto summerset_base 55.93,52.92
@@ -16021,5 +16021,50 @@ goto dreamingcave03_base 26.92,39.54
 talk Oriandra
 |tip Manually skip to the next step.
 step
-
+goto dreamingcave03_base 17.87,54.98
+'Press _E_ to Take the Amplification Elixir
+'Take the Amplification Elixir
+|tip Manually skip to the next step.
+step
+goto dreamingcave03_base 34.05,50.38
+click Portal to Ceporah Main Gallery
+|tip Manually skip to the next step.
+step
+goto dreamingcave02_base 42.79,38.43
+talk Ritemaster Iachesis
+|tip Manually skip to the next step.
+step
+goto dreamingcave02_base 42.53,40
+'Press _E_ to Use the Amplification Elixir
+|tip Manually skip to the next step.
+step
+goto dreamingcave02_base 42.79,38.43
+talk Ritemaster Iachesis
+|tip Manually skip to the next step.
+step
+goto dreamingcave02_base 36.70,32.77
+click Portal to Arteum
+|tip Manually skip to the next step.
+step
+'Open your map. Right click to bring up the World map. Select Tamirel. 
+click Shimmerene Wayshrine
+'Travel to the Shimmerene Wayshrine
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 20.98,67.07
+'Continue from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 49.93,45.75
+'Continue north from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 49.95,42.64
+talk Tarnamir
+|tip Manually skip to the next step.
+step
+goto summerset_base 49.39,42.60
+talk Jurisreeve Lorne
+|tip Manually skip to the next step.
+step
 ]])
