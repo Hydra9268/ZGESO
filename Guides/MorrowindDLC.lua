@@ -16149,6 +16149,112 @@ talk Celan
 |tip Manually skip to the next step.
 step
 'Press _E_ to Take the Hunting arrow
+'Take Hunting arrow
 |tip Manually skip to the next step.
 step
+goto russafeldredtemple01_base 52.66,26.09
+talk Jurisreeve Soravil
+|tip Manually skip to the next step.
+step
+goto russafeldredtemple01_base 50.89,15.13
+click Summerset
+|tip Manually skip to the next step.
+step
+goto summerset_base 49.29,42.97
+talk Jurisreeve Lorne
+|tip Manually skip to the next step.
+step
+goto summerset_base 46.50,41.41
+click Tarnamir's Manor
+|tip Manually skip to the next step.
+step
+goto summerset_base 46.24,41.19
+'Press _E_ to Examine the Scratches
+|tip Manually skip to the next step.
+step
+goto summerset_base 46.43,41.26
+talk Jurisreeve Lorne
+|tip Manually skip to the next step.
+step
+goto summerset_base 46.64,41.38
+click Summerset
+|tip Manually skip to the next step.
+step
+goto summerset_base 44.67,41.97
+talk Jurisreeve Lorne
+|tip Manually skip to the next step.
+step
+goto summerset_base 43.87,40.36
+click Red Temple Catacombs
+|tip Manually skip to the next step.
+step
+goto russafeldredtemple02_base 53.63,32.32
+'Continue from here, follow the path to Jurisreeve Soravil
+|tip Manually skip to the next step.
+step
+goto russafeldredtemple02_base 58.32,47.91
+kill Jurisreeve Lorne
+|tip Manually skip to the next step.
+step
+goto russafeldredtemple02_base 57.99,38.80
+click Red Temple Catacombs
+|tip Manually skip to the next step.
+step
+goto russafeldredtemple02_base 58.10,19.47
+talk Jurisreeve Lorne
+|tip Manually skip to the next step.
+step
+goto russafeldredtemple02_base 58.02,12.43
+click Summerset
+|tip Manually skip to the next step.
+step
+goto summerset_base 49.16,42.96
+talk Elsoreth
+|tip Manually skip to the next step.
+step
+goto summerset_base 44.78,46.12
+wayshrine Russafeld Heights
+|tip Manually skip to the next step.
+step
+goto summerset_base 40.42,47.48
+talk Razum-dar
+|tip Manually skip to the next step.
+step
+goto summerset_base 39.67,47.76
+talk Rinyde
+accept Manor of Masques
+step
+goto summerset_base 39.18,48.66
+talk Canonreeve Farmeldo
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.09,49.61
+'Press _E_ to Use Rinyde's Enchanted Daggers
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.05,50.13
+talk Alchemy
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.66,49.94
+'Continue up the stairs from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.83,50.64
+'Jump on top of this pillar's base and then to the ledge above
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.84,50.76
+'Continue up the hill from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.63,52.76
+'Continue along the bank of the river
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.63,52.76
+kill Gryphon
+
 ]])
+
+--- Include step to discover Cey-Tarn Keep Wayshrine
