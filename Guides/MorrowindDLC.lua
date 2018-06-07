@@ -16067,4 +16067,88 @@ goto summerset_base 49.39,42.60
 talk Jurisreeve Lorne
 |tip Manually skip to the next step.
 step
+goto summerset_base 49.42,42.42
+talk Aenthalor
+|tip Manually skip to the next step.
+step
+goto summerset_base 49.44,43.21
+talk Babblebrook
+|tip Manually skip to the next step.
+step
+goto summerset_base 48.85,42.89
+talk Felanwe
+|tip Manually skip to the next step.
+step
+goto summerset_base 48.51,43.96
+'Press _E_ to Use Whistle on Farril
+|tip Manually skip to the next step.
+step
+goto summerset_base 50.90,44.40
+'Press _E_ to Examine the Suspicious Sack
+'Take the Bloodstained Sickle
+|tip Manually skip to the next step.
+step
+goto summerset_base 48.53,44.01
+talk Jurisreeve Lorne
+|tip Manually skip to the next step.
+step
+goto summerset_base 46.46,45.50
+click Halimorion's Villa
+|tip Manually skip to the next step.
+step
+goto summerset_base 45.95,45.72
+'Run up the stairs and press _E_ to Take the Letter to Tarnamir
+|tip Manually skip to the next step.
+step
+goto summerset_base 46.44,45.55
+click Summerset
+|tip Manually skip to the next step.
+step
+goto summerset_base 46.81,45.84
+talk Jurisreeve Lorne
+|tip Manually skip to the next step.
+step
+goto summerset_base 52.07,48.13
+talk Jurisreeve Soravil
+|tip Manually skip to the next step.
+step
+goto summerset_base 51.80,48.22
+click Rethelmir's House
+|tip Manually skip to the next step.
+step
+goto summerset_base 51.82,48.38
+talk Elsoreth
+|tip Manually skip to the next step.
+step
+goto summerset_base 52.34,48.53
+'Run up to the stairs and press _E_ to Take Celan's Journal
+|tip Manually skip to the next step.
+step
+goto summerset_base 51.84,48.23
+click Summerset
+|tip Manually skip to the next step.
+step
+goto summerset_base 51.41,47.82
+talk Jurisreeve Soravil
+|tip Manually skip to the next step.
+step
+goto summerset_base 49.94,48.43
+click Red Temple Catacombs
+|tip Manually skip to the next step.
+step
+goto russafeldredtemple01_base 48.99,33.30
+'Wait for the Conversation with Jurisreeve Soravil to end.
+|tip Manually skip to the next step.
+step
+goto russafeldredtemple01_base 69.09,34.86
+'Continue from here
+|tip Manually skip to the next step.
+step
+goto russafeldredtemple01_base 51.01,79.90
+talk Celan
+|tip Manually skip to the next step.
+step
+'Press _E_ to Take the Hunting arrow
+|tip Manually skip to the next step.
+step
 ]])
