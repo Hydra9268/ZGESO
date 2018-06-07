@@ -550,6 +550,7 @@
 		["Artaeum"] = [[artaeum_base]],
 		["Ceporah Tower"] = [[dreamingcave02_base]],
 		["Ceporah Tower"] = [[dreamingcave03_base]],
+		["Red Temple Catacombs"] = [[russafeldredtemple01_base]],
 
 	},
 	["Zones"] =
@@ -578,6 +579,7 @@
 		["artaeum_base"] =			{ name = "Artaeum",			id = 400, xoffset = 0.7203422519217, yoffset = -0.13332651637321, xscale = 0.2170174138522, },
 		["dreamingcave02_base"] =		{ name = "Ceporah Tower",		id = 401, xoffset = 0.8595572067723, yoffset = -0.07751710441397, xscale = 0.0075637367659, },
 		["dreamingcave03_base"] =		{ name = "Ceporah Tower",		id = 401, xoffset = 0.8539167166648, yoffset = -0.07587681340776, xscale = 0.004695508970495, },
+		["russafeldredtemple01_base"] =		{ name = "Red Temple Catacombs",	id = 402, xoffset = 0.1281634468690, yoffset = 0.73381967966166, xscale = 0.0003170746732166, },
 
 		-- EXISTING
 		[""] = { name = "", },

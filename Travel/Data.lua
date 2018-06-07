@@ -439,6 +439,7 @@ Data.MapIdsByName = {
 	["Archon's Grove"] = 399,
 	["Artaeum"] = 400,
 	["Ceporah Tower"] = 401,
+	["Red Temple Catacombs"] = 402,
 
 	[""] = 1000
 }
