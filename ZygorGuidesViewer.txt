@@ -1,7 +1,7 @@
-## Title: Zygor Guides v1.4.0.114
+## Title: Zygor Guides v1.4.0.134
 ## Description: A Zygor Community addon updated for the Summerset DLC. Please be aware that this update is not complete. You can help by visiting github.com/Hydra9268/ZGESO.
 ## Author: Zygor Guides |c006600Community|r
-## Version: 1.4.0.114
+## Version: 1.4.0.134
 ## APIVersion: 100023
 ## SavedVariables: ZygorGuidesViewerSettings
 ## Disclaimer: This Add-on is not created by, affiliated with or sponsored by ZeniMax Media Inc. or its affiliates. The Elder Scrolls® and related logos are registered trademarks or trademarks of ZeniMax Media Inc. in the United States and/or other countries. All rights reserved.
