@@ -16252,9 +16252,168 @@ goto summerset_base 38.63,52.76
 'Continue along the bank of the river
 |tip Manually skip to the next step.
 step
-goto summerset_base 38.63,52.76
+goto summerset_base 37.04,54.10
 kill Gryphon
-
+'Skip this step if the Griffon was killed by another player.
+|tip Manually skip to the next step.
+step
+goto summerset_base 36.62,54.43
+'Press _E_ to search Gryphon Nest
+'Take Griffon Feather
+|tip Manually skip to the next step.
+step
+goto summerset_base 37.32,53.97
+'Continue along the river from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.33,50.95
+'Jump off this rock face to the architectural ledge below.
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.24,48.25
+talk Alchemy
+|tip Manually skip to the next step.
+step
+'Open your inventory:
+'Select the Quest tab, hover over Hopeful's Mask, and press _E_ to Use
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.70,48.57
+'Run down the stairs from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.12,47.89
+talk Rinyde
+|tip Manually skip to the next step.
+step
+'Press _E_ to Take Rinyde's Journal
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.91,48.28
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.25,48.60
+click Manor of Masques
+|tip Manually skip to the next step.
+step
+goto summerset_base 37.82,48.64
+talk Firebird
+|tip Manually skip to the next step.
+step
+'Press _E_ to Use Rinyde's Enchanted Daggers
+|tip Manually skip to the next step.
+step
+talk Firebird
+'Your choices to Firebird's questions don't really matter. Pick any.
+|tip Manually skip to the next step.
+step
+goto summerset_base 37.81,48.62
+'Run back out to the lobby, up the stairs to the second floor.
+talk Clever
+|tip Manually skip to the next step.
+step
+'Press _E_ to Use the Practice Podium
+|tip Manually skip to the next step.
+step
+talk Clever
+|tip Manually skip to the next step.
+step
+goto summerset_base 37.97,48.60
+click Dance Studio
+|tip Manually skip to the next step.
+step
+goto summerset_base 37.96,48.48
+talk Feathermoth
+|tip Manually skip to the next step.
+step
+'Press _E_ at the podiums to match Feathermoth's dance speed
+|tip Manually skip to the next step.
+step
+talk Feathermoth
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.03,48.57
+click Manor of Masques
+|tip Manually skip to the next step.
+step
+'Run downstairs
+click Rellenthil
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.70,48.57
+'Run down the stairs from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.13,47.89
+talk Alchemy
+'Select _"The Sapiarchs need talented mages."_
+'Select _"He's not Firebird."_
+'Select _"No, Larydel's not Clever."_
+'Select _"Yes, I believe Larydel is Feathermoth."_
+|tip Manually skip to the next step.
+step
+goto summerset_base 35.91,47.01
+talk Rinyde
+'Select _"I believe he's Feathermoth."_
+|tip Manually skip to the next step.
+step
+goto summerset_base 36.58,48.41
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.11,49.59
+talk Alchemy
+'Select _"[Warn Alchemy] Rinyde plans to unmask your Hopefuls during their performance."_
+|tip Manually skip to the next step.
+step
+goto summerset_base 37.96,49.75
+'Press _E_ to Use Rinyde's Enchanted Daggers
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.12,49.83
+'Press _E_ to Cheer on Podium
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.24,49.76
+'Press _E_ to Use Tribal Drum
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.25,48.60
+click Manor of Masques
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.37,48.85
+'Run up the stairs and into the study
+talk Alchemy
+'Select _"If you're worried she won't leave, let her join the Sapiarchs, then tell her."_
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.20,48.63
+'Run downstairs
+click Rellenthil
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.70,48.57
+'Run down the stairs from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 35.86,47.03
+talk Rinyde
+|tip Manually skip to the next step.
+step
+goto summerset_base 41.48,46.48
+'Continue down the path from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 43.11,45.75
+click Rellenthil Sinkhole
+|tip Manually skip to the next step.
+step
+goto sinkhole_base 20.35,59.24
+talk Valsirenn
+|tip Manually skip to the next step.
+step
 ]])
 
 --- Include step to discover Cey-Tarn Keep Wayshrine
