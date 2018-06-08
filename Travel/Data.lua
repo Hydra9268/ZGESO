@@ -440,6 +440,7 @@ Data.MapIdsByName = {
 	["Artaeum"] = 400,
 	["Ceporah Tower"] = 401,
 	["Red Temple Catacombs"] = 402,
+	["Rellenthil Sinkhole"] = 403,
 
 	[""] = 1000
 }

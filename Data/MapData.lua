@@ -539,11 +539,11 @@
 		["Rellenthil"] = [[rellenthil_base]],
 		["Shimmerene"] = [[shimmerene_base]],
 		["Sunhold"] = [[sunhold_base]],
-		["Monastery of Serene Harmony"] = [[monasteryoshfloor01_base]],		-- Monastery ground floor
-		["Monastery of Serene Harmony"] = [[monasteryoshfloor02_base]],		-- Monastery second floor
-		["Monastery of Serene Harmony"] = [[monasteryoshfloor03_base]],		-- Monastery Undercroft
-		["Shimmerene Waterworks"] = [[ShimmereneWaterworks01_base]],		-- Shimmerene Waterworks ground floor
-		["Shimmerene Waterworks"] = [[ShimmereneWaterworks02_base]],		-- Shimmerene Waterworks second floor
+		["Monastery of Serene Harmony"] = [[monasteryoshfloor01_base]],
+		["Monastery of Serene Harmony"] = [[monasteryoshfloor02_base]],
+		["Monastery of Serene Harmony"] = [[monasteryoshfloor03_base]],
+		["Shimmerene Waterworks"] = [[ShimmereneWaterworks01_base]],
+		["Shimmerene Waterworks"] = [[ShimmereneWaterworks02_base]],
 		["Tor-Hame-Khard"] = [[torhamekhard_01_base]],
 		["Tor-Hame-Khard"] = [[torhamekhard_02_base]],
 		["Archon's Grove"] = [[archonsgrove_base]],
@@ -552,6 +552,7 @@
 		["Ceporah Tower"] = [[dreamingcave03_base]],
 		["Red Temple Catacombs"] = [[russafeldredtemple01_base]],
 		["Red Temple Catacombs"] = [[russafeldredtemple02_base]],
+		["Rellenthil Sinkhole"] = [[sinkhole_base]],
 
 	},
 	["Zones"] =
@@ -582,7 +583,7 @@
 		["dreamingcave03_base"] =		{ name = "Ceporah Tower",		id = 401, xoffset = 0.8539167166648, yoffset = -0.07587681340776, xscale = 0.004695508970495, },
 		["russafeldredtemple01_base"] =		{ name = "Red Temple Catacombs",	id = 402, xoffset = 0.1281634468690, yoffset = 0.73381967966166, xscale = 0.0003170746732166, },
 		["russafeldredtemple02_base"] =		{ name = "Red Temple Catacombs",	id = 402, xoffset = 0.1110129872472, yoffset = 0.71155846965525, xscale = 0.0014330598521664, },
-
+		["sinkhole_base"] =			{ name = "Rellenthil Sinkhole",		id = 403, xoffset = 0.1096508866867, yoffset = 0.72523801716559, xscale = 0.0013634001925321, },
 
 		-- EXISTING
 		[""] = { name = "", },
