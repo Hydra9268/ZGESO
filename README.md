@@ -136,3 +136,4 @@ d()
 * https://esomap.uesp.net/
 * https://game-maps.com/ESO/Summerset-Map.asp
 * http://esodata.uesp.net/100018/
+* http://en.uesp.net/wiki
