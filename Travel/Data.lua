@@ -441,6 +441,8 @@ Data.MapIdsByName = {
 	["Ceporah Tower"] = 401,
 	["Red Temple Catacombs"] = 402,
 	["Rellenthil Sinkhole"] = 403,
+	["Cey-Tarn Keep"] = 404,
+	["The Vaults of Heinarwe"] = 405,
 
 	[""] = 1000
 }

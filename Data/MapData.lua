@@ -553,6 +553,12 @@
 		["Red Temple Catacombs"] = [[russafeldredtemple01_base]],
 		["Red Temple Catacombs"] = [[russafeldredtemple02_base]],
 		["Rellenthil Sinkhole"] = [[sinkhole_base]],
+		["Cey-Tarn Keep"] = [[ceytarn_dungeon01_base]],
+		["Cey-Tarn Keep"] = [[ceytarn_dungeon02_base]],
+		["Cey-Tarn Keep"] = [[ceytarn_dungeon03_base]],
+		["The Vaults of Heinarwe"] = [[ceytarncaveExt01_base]],
+		["The Vaults of Heinarwe"] = [[ceytarncaveInt02_base]],
+		["The Vaults of Heinarwe"] = [[ceytarncaveInt03_base]],
 
 	},
 	["Zones"] =
@@ -584,6 +590,12 @@
 		["russafeldredtemple01_base"] =		{ name = "Red Temple Catacombs",	id = 402, xoffset = 0.1281634468690, yoffset = 0.73381967966166, xscale = 0.0003170746732166, },
 		["russafeldredtemple02_base"] =		{ name = "Red Temple Catacombs",	id = 402, xoffset = 0.1110129872472, yoffset = 0.71155846965525, xscale = 0.0014330598521664, },
 		["sinkhole_base"] =			{ name = "Rellenthil Sinkhole",		id = 403, xoffset = 0.1096508866867, yoffset = 0.72523801716559, xscale = 0.0013634001925321, },
+		["ceytarn_dungeon01_base"] =		{ name = "Cey-Tarn Keep",		id = 404, xoffset = 0.0805590692240, yoffset = 0.74983159060835, xscale = 0.0006270275004708, },
+		["ceytarn_dungeon02_base"] =		{ name = "Cey-Tarn Keep",		id = 404, xoffset = 0.0809226800767, yoffset = 0.74983271795957, xscale = 0.0006222068321068, },
+		["ceytarn_dungeon03_base"] =		{ name = "Cey-Tarn Keep",		id = 404, xoffset = 0.0812204033136, yoffset = 0.75020557641983, xscale = 0.0006222300121701, },
+		["ceytarncaveExt01_base"] =		{ name = "The Vaults of Heinarwe",	id = 405, xoffset = 0.0828247454611, yoffset = 0.74831664477914, xscale = 0.0065276589485515, },
+		["ceytarncaveInt02_base"] =		{ name = "The Vaults of Heinarwe",	id = 405, xoffset = 0.0835586508665, yoffset = 0.75299923408926, xscale = 0.0015546930136171, },
+		["ceytarncaveInt03_base"] =		{ name = "The Vaults of Heinarwe",	id = 405, xoffset = 0.0835586550629, yoffset = 0.75299868162513, xscale = 0.0015546436445137, },
 
 		-- EXISTING
 		[""] = { name = "", },
