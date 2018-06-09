@@ -172,11 +172,6 @@ function BugReport:ShowDump(text,title,editable,action,cursorpos)
 	f.title:SetText(title or "Generic dump:")
 
 	f:Show()
-
-	--[[
-	self:CalculatePagination()
-	self:CopyToClipboard()
-	]]--
 end
 
 local lastreport
@@ -280,8 +275,6 @@ function BugReport:CopyToClipboard()
 	frame.copybox:SetHidden(false)
 	frame.copybox:TakeFocus()
 	frame.display:SetHidden(true)
-
-	--frame.copybox:CopyAllTextToClipboard()
 
 	-- Sanity check
 	if #frame.copybox:GetText()<#pagetext then
