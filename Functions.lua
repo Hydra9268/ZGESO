@@ -372,9 +372,9 @@ local lorem = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
 local shortem = MakeExcerpt(lorem)
 assert (shortem=="Lorem ipsum dolor sit amet, consectetur ___ id est laborum.",'Utils:MakeExcerpt cannot do lorem ipsum properly!')
 assert (shortem==MakeExcerpt(shortem),'Utils:MatchExcerpt can\'t eat its own tail!')
-assert(MatchExcerpt(shortem,lorem),'Utils:MatchExcerpt doesn\'t work on normal long texts')
-assert(MatchExcerpt("Blah___bleh___bloh","Blah, this is bleh because bloh"),'Utils:MatchShortText fails to do 3 parts')
-assert(not MatchExcerpt("Blah___bleh___bloh","bleh, this is bloh because Blah"),'Utils:MatchShortText is confused by order')
+assert (MatchExcerpt(shortem,lorem),'Utils:MatchExcerpt doesn\'t work on normal long texts')
+assert (MatchExcerpt("Blah___bleh___bloh","Blah, this is bleh because bloh"),'Utils:MatchShortText fails to do 3 parts')
+assert (not MatchExcerpt("Blah___bleh___bloh","bleh, this is bloh because Blah"),'Utils:MatchShortText is confused by order')
 
 function Utils.GetMyAddonInfo()
 	local AM=GetAddOnManager()
@@ -439,7 +439,7 @@ function Utils.GetVeteranFaction()
 			for si=1,GetJournalQuestNumSteps(ji) do
 				local steptext,visibility,steptype,tracker,numcond = GetJournalQuestStepInfo(ji,si)
 				if tracker and tracker:find(" to Cadwell") then return progression[prog_step+1],prog_step+1 end  -- "next" faction
-				for ci=1,numcond do --GetJournalQuestNumConditions(ji,si) do
+				for ci=1,numcond do
 					local conditionText,current,maxv,isFailCondition,isComplete,isCreditShared = GetJournalQuestConditionInfo(ji,si,ci)
 					if conditionText=="Experience the Daggerfall Covenant" then return "DC",prog_step+1 end  -- this is a bit of an assumption, but the player can't possibly be on anything but their "next" vet faction if they have this kind of goal.
 					if conditionText=="Experience the Ebonheart Pact" then return "EP",prog_step+1 end
@@ -466,7 +466,7 @@ function Utils.CheckVeteranFaction()
 end
 
 --[[
--- Not sure what this is. Leaving for posterity.
+-- NOT SURE WHAT THIS IS. LEAVING FOR POSTERITY.
 
 1. General							-- Always open, Don't hide
 2. User Interface Shortcuts					-- Hide
