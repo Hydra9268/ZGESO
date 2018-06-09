@@ -4,16 +4,12 @@ if not ZGV then return end
 -----------------------------------------
 -- INFORMATION
 -----------------------------------------
---[[
-
---]]
 
 -----------------------------------------
 -- LOCAL REFERENCES
 -----------------------------------------
 
 local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs,class = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs,class
---local create,resume,status,yield = coroutine.create,coroutine.resume,coroutine.status,coroutine.yield
 local print = ZGV.print
 local CHAIN = ZGV.Utils.ChainCall
 local ui = ZGV.UI
@@ -36,7 +32,7 @@ local MakeCondition = ZGV.Parser.MakeCondition
 local ParseQuest = ZGV.Parser.ParseQuest
 local ParseId = ZGV.Parser.ParseId
 
-local INDENT = "  "
+local INDENT = ""
 
 -----------------------------------------
 -- SAVED REFERENCES
@@ -49,24 +45,23 @@ ZGV.GOALTYPES = GOALTYPES
 -- LOAD TIME SETUP
 -----------------------------------------
 
-setmetatable(GOALTYPES,{__index=function() return empty_table end})
+setmetatable( GOALTYPES, { __index = function() return empty_table end })
 
 -----------------------------------------
 -- LOCAL FUNCTIONS
 -----------------------------------------
 
-local function COLOR_LOC(s)			return "|cffee77"..tostring(s).."|r" end
+local function COLOR_LOC(s)		return "|cffee77"..tostring(s).."|r" end
 local function COLOR_COUNT(s)		return "|cffffcc"..tostring(s).."|r" end
 local function COLOR_ITEM(s)		return "|caaeeff"..tostring(s).."|r" end
 local function COLOR_SKILL(s)		return "|caaeeff"..tostring(s).."|r" end
 local function COLOR_QUEST(s)		return "|ceebbff"..tostring(s).."|r" end
-local function COLOR_NPC(s)			return "|caaffaa"..tostring(s).."|r" end
-local function COLOR_MONSTER(s) return "|cffaaaa"..tostring(s).."|r" end
+local function COLOR_NPC(s)		return "|caaffaa"..tostring(s).."|r" end
+local function COLOR_MONSTER(s) 	return "|cffaaaa"..tostring(s).."|r" end
 local function COLOR_GOAL(s)		return "|cffcccc"..tostring(s).."|r" end
 local function COLOR_BOLD(s)		return "|cffee55"..tostring(s).."|r" end
-local function COLOR_TIP(s)			return "|ceeeecc"..tostring(s).."|r" end
-
-local function GetMapByID(id) return "(map "..id..")" end
+local function COLOR_TIP(s)		return "|ceeeecc"..tostring(s).."|r" end
+local function GetMapByID(id) 		return "(map "..id..")" end
 
 -----------------------------------------
 -- GOALHANDLERS
@@ -91,7 +86,6 @@ GOALTYPES['only'] = {  -- |only, |only if
 			return false,"cancel goal"
 		else
 			self.requirement = params
-			--params = params:gsub("%s*,%s*",",")
 		end
 	end,
 }
@@ -308,7 +302,7 @@ GOALTYPES['goto'] = {
 		local all_gotos=true
 
 		for i,goal in ipairs(step.goals) do
-			if goal.action~="goto"			-- A non-goto step or a goto step that is force_complete
+			if goal.action~="goto"		-- A non-goto step or a goto step that is force_complete
 			or goal.force_complete then
 				all_gotos=false
 				break
@@ -331,20 +325,13 @@ GOALTYPES['goto'] = {
 	end,
 }
 
-GOALTYPES['collect'] = {
-	parse = GOALTYPES['_item'].parse,
-	--iscomplete = function(self)	end,
-}
+GOALTYPES['buy'] = 		GOALTYPES['collect']
+GOALTYPES['gather'] = 		GOALTYPES['collect']
 
-GOALTYPES['buy'] = GOALTYPES['collect']
-GOALTYPES['gather'] = GOALTYPES['collect']
+GOALTYPES['collect'] = 		{ parse = GOALTYPES['_item'].parse, }
+GOALTYPES['kill'] = 		{ parse = GOALTYPES['_item'].parse, }
 
-GOALTYPES['kill'] = {
-	parse = GOALTYPES['_item'].parse,
-	--iscomplete = function(self)	end,
-}
-
-GOALTYPES['wayshrine'] = {
+GOALTYPES['wayshrine'] = 	{
 	parse = function(self,params,step,data)
 		local mapid, map = string.match(params,"([^/]+)/([^/]+)")
 		
@@ -397,7 +384,6 @@ GOALTYPES['wayshrine'] = {
 		if typ == MAP_PIN_TYPE_POI_COMPLETE then
 			return true,true
 		else
-			--"/esoui/art/icons/poi/poi_wayshrine_incomplete.dds"
 			return false,self.wayshrine_POIIndex>0
 		end
 
@@ -408,7 +394,6 @@ GOALTYPES['learnskill'] = {
 	parse = function(self,params,step,data)
 		self.skillname = params
 	end,
-	--iscomplete = function(self)	end,
 }
 
 GOALTYPES['click'] = {
@@ -421,10 +406,6 @@ GOALTYPES['accept'] = {
 		self.quest = ParseId(params)  -- legacy. Get rid of the ID.
 
 		if not self.quest then return "no quest parameter" end
-
-		--if self.questid then
-		--	ZGV.mentionedQuests[self.questid] = 1
-		--end
 	end,
 	iscomplete = function(self)
 		return (ZGV.Quests:HasQuest(self.quest) or ZGV.Quests:IsQuestComplete(self.quest)) , true
@@ -438,7 +419,6 @@ GOALTYPES['turnin'] = {
 		local hasQuest = ZGV.Quests:HasQuest(self.quest)
 		return completed,hasQuest
 	end,
-	--iscomplete = function(self)	end,,
 }
 
 GOALTYPES['talk'] = {
@@ -450,7 +430,6 @@ GOALTYPES['talk'] = {
 
 GOALTYPES['equip'] = {
 	parse = GOALTYPES['_item'].parse,
-	--iscomplete = function(self)	end,
 }
 
 GOALTYPES['confirm'] = {
@@ -476,15 +455,17 @@ GOALTYPES['confirm'] = {
 
 GOALTYPES['lorebook'] = {
 	parse = function(self,params,step,data)
-		if not params then return "no lorebook parameter" end
+		if not params then 
+			return "no lorebook parameter" 
+		end
 		local name,cat,col,book = params:match("^(.-)(%d+)/(%d+)/(%d+)$")
-		self.lorebook_cat=tonumber(cat)  self.lorebook_col=tonumber(col)  self.lorebook_book=tonumber(book)
+		self.lorebook_cat = tonumber(cat)
+		self.lorebook_col = tonumber(col)
+		self.lorebook_book = tonumber(book)
 		
-		if not self.lorebook_book then return "no lorebook cat/col/book parameter" end
-
-		--if self.questid then
-		--	ZGV.mentionedQuests[self.questid] = 1
-		--end
+		if not self.lorebook_book then 
+			return "no lorebook cat/col/book parameter" 
+		end
 	end,
 	iscomplete = function(self)
 		local title,icon,known = GetLoreBookInfo(self.lorebook_cat,self.lorebook_col,self.lorebook_book)
@@ -498,14 +479,18 @@ GOALTYPES['lorebook'] = {
 
 GOALTYPES['achieve'] = {
 	parse = function(self,params)
-		if not params then return "no achieve parameter" end
+		if not params then
+			return "no achieve parameter" 
+		end
 		self.achieve_id,self.achieve_crit = params:match("(%d+)/(%d+)$")
 		if not self.achieve_crit then
 			self.achieve_id = params:match("(%d+)$")
 		end
 		self.achieve_id = tonumber(self.achieve_id)
 		self.achieve_crit = tonumber(self.achieve_crit)
-		if not self.achieve_id then return "no achieve id" end
+		if not self.achieve_id then 
+			return "no achieve id" 
+		end
 	end,
 	iscomplete = function(self,override_achieve_id,override_achieve_crit)
 		local name,desc,points,icon,isCompleted,date,time = GetAchievementInfo(override_achieve_id or self.achieve_id)
@@ -553,7 +538,6 @@ function GoalProto:New()
 	return goal
 end
 
-
 -----------------------------------------
 -- GOAL CLASS FUNCTIONS
 -----------------------------------------
@@ -566,7 +550,6 @@ end
 function Goal:GetQuestGoalStatus()
 	if not self.quest then return false,"no quest" end
 	return ZGV.Quests:GetCompletionStatus(self.quest,self.questcondtxt)
-	-- complete,possible,expl,curv,maxv,expl2
 end
 
 function Goal:GetQuestGoalCounts()
@@ -582,7 +565,7 @@ function Goal:GetQuestGoalCounts()
 	remaining = goalcountneeded-goalcountnow
 
 	if remaining<=0 then remaining=goalcountneeded end
-	if goalcountneeded == 1 then remaining = nil end		-- If we only need 1 then don't need to explictly show a number. Nil this out to not show a num
+	if goalcountneeded == 1 then remaining = nil end	-- If we only need 1 then don't need to explictly show a number. Nil this out to not show a num
 
 	return goalcountnow,goalcountneeded,remaining
 end
@@ -757,7 +740,7 @@ function Goal:GetText()
 	end
 
 
-	--[[
+	--[[ TODO
 	-- trickiness: coordinates. Add (x,y) when needed
 	if self.x and self.y -- if there's a coordinate
 	and not (self.action=="goto" or self.action=="fly") -- but it's not a plain goto   --and not self.text
@@ -780,9 +763,12 @@ function Goal:GetText()
 	if progtext then
 		local col1,col2
 
-		if complete then	col1,col2=" ",""
-		elseif ext then		col1,col2=" |cffbbbb","|r"
-		else							col1,col2=" |caaaaaa","|r"
+		if complete then
+			col1,col2 = "",""
+		elseif ext then
+			col1,col2 = " |cffbbbb","|r"
+		else
+			col1,col2 = " |caaaaaa","|r"
 		end
 
 		text = text .. col1 .. progtext .. col2
@@ -806,7 +792,6 @@ function Goal:GetTipText()
 end
 
 function Goal:IsVisible()
---	if not self:IsFitting() then return false end
 	if self.hidden then return false end
 	if self.condition_visible then
 		if self.condition_visible_raw=="default" then
@@ -1000,7 +985,7 @@ function Goal:IsCompleteCheck()
 		if self.future then
 			return false,true
 		end
-		-- this is NOT how a .future is to work! It's to ALLOW natural completion of something.
+		-- this is NOT how a .future works. It's to ALLOW natural completion of something.
 		--]]
 	until false
 	end
@@ -1018,7 +1003,6 @@ function Goal:IsCompleteCheck()
 	-- Not quest related (or fell through) so time to resort to GOALTYPES
 	-- Use the individual goal completion routine
 
-	--if not self:IsCompletable() then return false,false end
 	local giscomplete,gispossible
 
 	local GOALTYPE = GOALTYPES[self.action]
