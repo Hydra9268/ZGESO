@@ -16414,6 +16414,224 @@ goto sinkhole_base 20.35,59.24
 talk Valsirenn
 |tip Manually skip to the next step.
 step
+goto sinkhole_base 27.95,66.16
+'Continue from here
+|tip Manually skip to the next step.
+step
+goto sinkhole_base 36.89,60.35
+'Continue up the path from here
+|tip Manually skip to the next step.
+step
+goto sinkhole_base 51.47,68.59
+talk Eldhon
+|tip Manually skip to the next step.
+step
+goto sinkhole_base 56.39,50.67
+talk Valsirenn
+|tip Manually skip to the next step.
+step
+goto sinkhole_base 64.93,51.26
+click Rellenthil Sinkhole
+|tip Manually skip to the next step.
+step
+goto sinkhole_base 56.66,47.86
+click Abyssal Pearl
+|tip Manually skip to the next step.
+step
+goto sinkhole_base 51.50,50.21
+click Abyssal Pearl
+|tip Manually skip to the next step.
+step
+goto sinkhole_base 51.55,45.63
+'Run up the path from here
+|tip Manually skip to the next step.
+step
+goto sinkhole_base 42.90,45.95
+talk Valsirenn
+|tip Manually skip to the next step.
+step
+goto sinkhole_base 36.56,37.33
+kill Yaghra Monstrosity
+|tip Manually skip to the next step.
+step
+goto sinkhole_base 35.60,30.79
+click Summerset
+|tip Manually skip to the next step.
+step
+goto summerset_base 43.16,43.43
+talk Razum-dar
+|tip Manually skip to the next step.
+step
+goto summerset_base 39.39,48.70
+click Canonreeve's House
+|tip Manually skip to the next step.
+step
+goto summerset_base 39.55,48.77
+talk Canonreeve Farmeldo
+|tip Manually skip to the next step.
+step
+goto summerset_base 39.61,48.83
+talk Razum-dar
+|tip Manually skip to the next step.
+step
+goto summerset_base 39.46,48.74
+click Rellenthil
+|tip Manually skip to the next step.
+step
+goto summerset_base 35.86,48.94
+'Continue past the Arch from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 34.35,51.86
+talk Silurie
+accept The Taste of Fear
+step
+goto summerset_base 33.21,52.68
+talk Revelator Lindafwe
+|tip Manually skip to the next step.
+step
+goto summerset_base 33.15,52.71
+click Cey-Tarn Keep
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.08,52.52
+talk Silurie
+|tip Manually skip to the next step.
+step
+goto summerset_base 32.36,53.65
+click Cey-Tarn Keep Barracks
+|tip Manually skip to the next step.
+step
+goto summerset_base 32.74,53.70
+'Press _E_ to Examine the Candelabra
+|tip Manually skip to the next step.
+step
+'Press _E_ to Examine the Smeared Footprints
+'Take Tracked Clay
+|tip Manually skip to the next step.
+step
+goto summerset_base 32.63,53.59
+'Press _E_ to Examine the Desiccated Corpse
+'Take Shriveled Cocoon
+|tip Manually skip to the next step.
+step
+goto summerset_base 32.54,53.52
+click The Insatiable
+|tip Manually skip to the next step.
+step
+goto summerset_base 32.67,53.64
+click Cey-Tarn Keep Barracks
+|tip Manually skip to the next step.
+step
+goto summerset_base 32.39,53.69
+click Cey-Tarn Keep 
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.94,53.85
+click Refectory
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.75,54.17
+talk Justiciar Hyircil
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.94,54.31
+'Follow the group down the staris and
+click Refectory Cellar
+|tip Manually skip to the next step.
+step
+goto ceytarn_dungeon01_base 49.90,31.30
+'Press _E_ to Use the Gorge
+|tip Manually skip to the next step.
+step
+goto ceytarn_dungeon02_base 59.20,28.03
+'Run down the stairs from here
+|tip Manually skip to the next step.
+step
+goto ceytarn_dungeon02_base 59.01,43.87
+'Press _E_ to Take Show Us Your worth
+|tip Manually skip to the next step.
+step
+goto ceytarn_dungeon03_base 47.85,59.85
+'Run down the stairs and
+talk Justiciar Hyircil
+|tip Manually skip to the next step.
+step
+goto ceytarn_dungeon03_base 48.88,64.40
+click The Gorge - Keep Cellar
+|tip Manually skip to the next step.
+step
+goto ceytarn_dungeon03_base 58.05,88.90
+'Run down the stairs and
+click Lair of the Insatiable
+|tip Manually skip to the next step.
+step
+goto ceytarn_dungeon03_base 48.74,89.06
+kill The Insatiable
+|tip Manually skip to the next step.
+step
+goto ceytarn_dungeon03_base 55.68,89.10
+click The Gorge - Keep Cellar
+|tip Manually skip to the next step.
+step
+goto ceytarn_dungeon03_base 68.57,89.54
+'Press _E_ to Use the Portal
+|tip Manually skip to the next step.
+step
+talk Revelator Lindafwe
+|tip Manually skip to the next step.
+step
+goto ceytarncaveExt01_base 25.32,61.79
+click The Vaults of Heinarwe
+|tip Manually skip to the next step.
+step
+goto ceytarncaveInt02_base 51.00,66.56
+talk Revelator Lindafwe
+|tip Manually skip to the next step.
+step
+goto ceytarncaveInt02_base 52.27,87.74
+'Run behind the alter and
+'Press _E_ to Examine The Gorge
+|tip Manually skip to the next step.
+step
+goto ceytarncaveInt02_base 52.83,76.39
+'The order to light the sconces is Anima, Ego, Incalescence, and Mortality
+|tip Manually skip to the next step.
+step
+goto ceytarncaveInt02_base 52,83,75.93
+'Press _E_ to Use the Gorge
+|tip Manually skip to the next step.
+step
+goto ceytarncaveInt03_base 50.50,56.42
+kill Teraniel
+|tip Manually skip to the next step.
+step
+goto ceytarncaveInt03_base 52.81,72.81
+click Summerset
+|tip Manually skip to the next step.
+step
+goto summerset_base 35.30,54.98
+talk Silurie
+|tip Manually skip to the next step.
+step
+goto summerset_base 35.63,54.52
+'Follow the path from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 35.88,53.53
+'Continue on the path west from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 34.98,53.36
+'Continue on the path north from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 34.46,49.14
+'Continue on the main road west from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 29.46,51.27
+wayshrine Cey-Tarn Keep
+|tip Manually skip to the next step.
+step
 ]])
-
---- Include step to discover Cey-Tarn Keep Wayshrine
