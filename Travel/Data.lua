@@ -443,6 +443,7 @@ Data.MapIdsByName = {
 	["Rellenthil Sinkhole"] = 403,
 	["Cey-Tarn Keep"] = 404,
 	["The Vaults of Heinarwe"] = 405,
+	["Wasten Coraldale"] = 406,
 
 	[""] = 1000
 }
