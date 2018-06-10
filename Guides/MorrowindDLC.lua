@@ -16634,4 +16634,75 @@ goto summerset_base 29.46,51.27
 wayshrine Cey-Tarn Keep
 |tip Manually skip to the next step.
 step
+goto summerset_base 26.88,52.12
+talk Hiranesse
+accept Lost at Sea
+step
+goto summerset_base 26.72,52.14
+'Press _E_ to Travel to Wasten Coraldale Delve
+|tip Manually skip to the next step.
+step
+goto wastencoraldale_base 37.18,40.22
+talk Curtaros
+|tip Manually skip to the next step.
+step
+goto wastencoraldale_base 49.11,39.56
+talk Aldortarel
+|tip Manually skip to the next step.
+step
+goto wastencoraldale_base 57.57,49.04
+'Press _E_ to Read Cartorrel's Last Words
+|tip Manually skip to the next step.
+step
+goto wastencoraldale_base 65.77,53.80
+talk Emdoline
+|tip Manually skip to the next step.
+step
+goto wastencoraldale_base 80.85,41.99
+talk Curtaros
+|tip Manually skip to the next step.
+step
+goto wastencoraldale_base 66.41,31.90
+'Kill the waves of NPCs until Commander Morteth appears.
+kill Commander Morteth
+|tip Manually skip to the next step.
+step
+goto wastencoraldale_base 52.76,52.49
+'Contunue into the cave from here
+|tip Manually skip to the next step.
+step
+goto wastencoraldale_base 20.14,67.51
+'Press _E_ to Travel to Summerset
+|tip Manually skip to the next step.
+step
+goto summerset_base 26.72,52.20
+talk Hiranesse
+|tip Manually skip to the next step.
+step
+goto summerset_base 28.28,53.46
+'Continue Southwest on the main road to Alinor
+|tip Manually skip to the next step.
+step
+goto summerset_base 27.09,56.00
+'Continue South from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 27.67,57.20
+'Continue into Alinor
+|tip Manually skip to the next step.
+step
+goto alinor_base 33.68,32.60
+'Press _E_ to Examine the Divine Prosecution Notification
+accept Divine Deputation
+step
+goto alinor_base 34.57,52.03
+'Continue Southeast from here
+|tip Manually skip to the next step.
+step
+goto alinor_base 43.67,57.64
+talk Justiciar Carawen
+'This unlocks Dailies. Speak to Justiciar Tanorian for single player contracts. Speak to Justiciar Farowel for group contracts.
+|tip Manually skip to the next step.
+step
+
 ]])
