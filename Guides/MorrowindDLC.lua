@@ -16701,8 +16701,42 @@ goto alinor_base 34.57,52.03
 step
 goto alinor_base 43.67,57.64
 talk Justiciar Carawen
-'This unlocks Dailies. Speak to Justiciar Tanorian for single player contracts. Speak to Justiciar Farowel for group contracts.
+'Unlocks Dailies. Speak to Justiciar Tanorian for single player contracts. Speak to Justiciar Farowel for group contracts.
 |tip Manually skip to the next step.
+step
+goto alinor_base 51.02,53.75
+'Press _E_ to Read the Housing Brochure
+accept Room to Spare
+'Unlocks player housing
+step
+goto alinor_base 54.64,56.96
+wayshrine Alinor
+step
+goto alinor_base 55.49,60.59
+talk Millenith
+accept Crafting Certification
+'Unlocks daily crafting quests
+step
+goto alinor_base 40.74,56.03
+'Continue West from here
+|tip Manually skip to the next step.
+step
+goto alinor_base 23.73,43.67
+talk Roguzog
+accept A Duelist's Dilemma
 step
 
 ]])
+
+---- INSERT THESE WHEN THE PROGRESSION LEADS TO THEM
+--[[
+goto alinor_base 49.94,70.35
+'Run up the stair from here
+|tip Manually skip to the next step.
+step
+goto alinor_base 64.95,51.50
+'Follow the path to
+talk Rigurt the Brash
+accept Culture Clash
+step
+]]--
