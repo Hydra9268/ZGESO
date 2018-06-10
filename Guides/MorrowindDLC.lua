@@ -15891,6 +15891,166 @@ goto summerset_base 46.50,73.47
 talk Kinlady Ilunsare
 |tip Manually skip to the next step.
 step
+
+goto summerset_base 46.86,71.04
+'Continue West to Sunhold from here 
+|tip Manually skip to the next step.
+step
+goto summerset_base 45.23,70.77
+'Press _E_ to Open the Sunhold Public Dungeon
+|tip Manually skip to the next step.
+step
+goto sunhold_base 73.32,78.10
+talk Kinlady Helenaere
+accept Sunhold Sundered
+step
+'This is a Public Dungeon and it will be challenging.
+'You can solo most it if you, but try and avoid groups of Snakeskin Bezerkers.
+'When you engage groups always kill the caster first.
+'You can move around undetected by sneaking
+|tip Manually skip to the next step.
+step
+goto sunhold_base 55.17,74.42
+'Press _E_ to Burn the Maormer Supplies
+|tip Manually skip to the next step.
+step
+goto sunhold_base 49.68,69.12
+'You can pull one of the Snakeskin Bezerkers by the crate you need to burn to here. The other Snakeskin Bezerkers pathing will glitch out.
+|tip Manually skip to the next step.
+step
+goto sunhold_base 48.23,66.90
+'Press _E_ to Burn the Maormer Supplies
+|tip Manually skip to the next step.
+step
+goto sunhold_base 49.99,58.76
+'Press _E_ to Burn the Maormer Supplies
+|tip Manually skip to the next step.
+step
+goto sunhold_base 44.87,61.19
+'Press _E_ to Burn the Maormer Supplies
+|tip Manually skip to the next step.
+step
+goto sunhold_base 43.56,70.58
+'Press _E_ to Burn the Maormer Supplies
+|tip Manually skip to the next step.
+step
+goto sunhold_base 38.90,75.80
+'Press _E_ to Burn the Maormer Supplies
+|tip Manually skip to the next step.
+step
+goto sunhold_base 38.61,80.16
+'Jump off the pier into the water here
+|tip Manually skip to the next step.
+step
+goto sunhold_base 62.10,85.77
+'Swim to here
+|tip Manually skip to the next step.
+step
+goto sunhold_base 67.59,74.99
+'Sneak to here
+|tip Manually skip to the next step.
+step
+goto sunhold_base 67.01,64.27
+'Run to here
+|tip Manually skip to the next step.
+step
+goto sunhold_base 62.91,52.13
+'Continue Northeast from here
+|tip Manually skip to the next step.
+step
+goto sunhold_base 63.68,46.86
+'Continue Northwest from here
+|tip Manually skip to the next step.
+step
+goto sunhold_base 60.76,42.35
+'Run up the stairs
+|tip Manually skip to the next step.
+step
+goto sunhold_base 64.68,42.93
+kill Kolondir the Demon
+|tip Manually skip to the next step.
+step
+goto sunhold_base 64.68,42.93
+'Press _E_ to Destroy the Prisoner Chains
+|tip Manually skip to the next step.
+step
+goto sunhold_base 60.06,38.40
+'Jump down from here. You likely fight Captain Quergura.
+|tip Manually skip to the next step.
+step
+goto sunhold_base 55.27,38.06
+'Press _E_ to Destroy the Prisoner Chains
+|tip Manually skip to the next step.
+step
+goto sunhold_base 53.91,39.45
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto sunhold_base 46.33,37.91
+'Sneak passed all the mobs to here
+|tip Manually skip to the next step.
+step
+goto sunhold_base 49.14,39.04
+'Press _E_ to Destroy the Prisoner Chains
+|tip Manually skip to the next step.
+step
+goto sunhold_base 47.06,40.24
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto sunhold_base 40.88,37.67
+'Sneak to here
+|tip Manually skip to the next step.
+step
+goto sunhold_base 38.13,34.85
+'Wait until both Strom Atronachs walk away
+'Sneak up the stairs
+|tip Manually skip to the next step.
+step 
+goto sunhold_base 25.75,29.15
+'Continue Northeast from here
+|tip Manually skip to the next step.
+step 
+goto sunhold_base 37.97,19.26
+'Continue Southeast from here
+|tip Manually skip to the next step.
+step 
+goto sunhold_base 43.94,25.36
+'Continue Southwest from here
+|tip Manually skip to the next step.
+step 
+goto sunhold_base 34.25,44.02
+'Jump down from here.
+|tip Manually skip to the next step.
+step 
+goto sunhold_base 36.80,43.63
+'Break the Chains holding Sunnawel
+|tip Manually skip to the next step.
+step
+goto sunhold_base 30.53,46.68
+'Run up the stairs and follow the path
+|tip Manually skip to the next step.
+step
+goto sunhold_base 43.83,24.82
+'Run down the stairs
+|tip Manually skip to the next step.
+step
+goto sunhold_base 38.39,20.18
+talk Khavid
+|tip Manually skip to the next step.
+step
+goto sunhold_base 28.59,19.74
+kill Admiral Viscarne
+|tip Manually skip to the next step.
+step
+goto sunhold_base 28.63,22.03
+talk Kinlady Helenaere
+|tip Manually skip to the next step.
+step
+'Open your map:
+'Travel to the Sunhold Wayshrine
+|tip Manually skip to the next step.
+step
 goto summerset_base 54.26,67.60
 talk Eslion
 'Select _"I'll testify on your behalf. [Eslion Goes Free]"_
@@ -16695,6 +16855,26 @@ goto alinor_base 33.68,32.60
 'Press _E_ to Examine the Divine Prosecution Notification
 accept Divine Deputation
 step
+goto alinor_base 23.73,43.67
+talk Roguzog
+accept A Duelist's Dilemma
+step
+goto alinor_base 36.10,35.12
+click The Golden Gryphon
+|tip Manually skip to the next step.
+step
+
+
+
+
+
+
+
+
+
+
+
+step
 goto alinor_base 34.57,52.03
 'Continue Southeast from here
 |tip Manually skip to the next step.
@@ -16720,10 +16900,6 @@ step
 goto alinor_base 40.74,56.03
 'Continue West from here
 |tip Manually skip to the next step.
-step
-goto alinor_base 23.73,43.67
-talk Roguzog
-accept A Duelist's Dilemma
 step
 
 ]])
