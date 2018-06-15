@@ -16639,7 +16639,7 @@ click Rellenthil
 |tip Manually skip to the next step.
 step
 goto summerset_base 35.86,48.94
-'Continue past the Arch from here
+'Continue past the archway from here
 |tip Manually skip to the next step.
 step
 goto summerset_base 34.35,51.86
@@ -16863,51 +16863,172 @@ goto alinor_base 36.10,35.12
 click The Golden Gryphon
 |tip Manually skip to the next step.
 step
-
-
-
-
-
-
-
-
-
-
-
-step
-goto alinor_base 34.57,52.03
-'Continue Southeast from here
+goto alinor_base 38.96,35.44
+'Run up to the third floor and
+talk Lirendel
 |tip Manually skip to the next step.
+step
+'Press _E_ to Take the Guide to Altmeri Culture (On Dueling)
+|tip Manually skip to the next step.
+step
+goto alinor_base 38.96,35.44
+talk Felande Demarie
+accept Room to Spare
+|tip You gain a new room for decorating
+step
+goto alinor_base 38.96,35.44
+'Run down to the first floor and
+click Alinor
+|tip Manually skip to the next step.
+step
+goto alinor_base 24.80,43.41
+talk Roguzog
+|tip Manually skip to the next step.
+step
+goto alinor_base 23.55,50.26
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto alinor_base 28.97,55.11
+talk Nahdahni
+'Select _"Will this be enough? [34 gold]"_
+|tip Manually skip to the next step.
+step
+'Open your map:
+click Shimmerene Wayshrine
+'Travel to the Shimmerene Wayshrine
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 21.27,66.35
+'Continue on the path West from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 53.53,45.94
+'At the fork, go left from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 52.61,47.02
+'At the fork, go left from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 53.25,51.75
+'At the fork, go right from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 49.69,54.19
+'Run up the stairs and 
+click Tor-Hame-Khard Delve
+|tip Manually skip to the next step.
+step
+goto torhamekhard_01_base 49.05,39.18
+'Press _E_ to Read Lirendel's Family Shrine
+|tip Manually skip to the next step.
+step
+'Open your map:
+click Alinor Wayshrine
+'Travel to the Alinor Wayshrine
+|tip Manually skip to the next step.
+step
+goto alinor_base 36.10,35.12
+click The Golden Gryphon
+|tip Manually skip to the next step.
+step
+goto alinor_base 38.96,35.44
+'Run up to the third floor and
+talk Fandilol
+|tip Manually skip to the next step.
+step
+goto alinor_base 38.96,35.44
+'Run down to the first floor and
+click Alinor
+|tip Manually skip to the next step.
+step
+goto alinor_base 28.60,44.52
+'Continue through the arches and out of the city from here
+|tip Manually skip to the next step.
+step
+goto alinor_base 11.11,54.94
+'At the fork, go right from here
+|tip Manually skip to the next step.
+step
+goto alinor_base 03.81,48.44
+'Continue on the path from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 24.19,59.58
+'Cross the bridge from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 23.09,60.14
+talk Roguzog
+|tip Manually skip to the next step.
+step
+goto summerset_base 23.09,60.14
+talk Fandilol
+'Select Option 2:_"Lirendel Rumilion 'len Inecil ..."_
+|tip Manually skip to the next step.
+step
+'Select Option 1: _"Culanarin Salolinwe 'ata Piryaden-Itelnoril ..."_
+|tip Manually skip to the next step.
+step
+'Select Option 2: _"Hilnore Firlamil 'cal Ternerben-Nivulirel!"_
+|tip Manually skip to the next step.
+step
+goto summerset_base 23.09,60.14
+talk Roguzog
+|tip Manually skip to the next step.
+step
+'Open your map:
+click Alinor Wayshrine
+'Travel to the Alinor Wayshrine
+|tip Manually skip to the next step.
+step
+goto alinor_base 55.49,60.59
+talk Millenith
+accept Crafting Certification
+'Unlocks daily crafting quests. Pick whichever crafting profession you would like to become certified at.
 step
 goto alinor_base 43.67,57.64
 talk Justiciar Carawen
 'Unlocks Dailies. Speak to Justiciar Tanorian for single player contracts. Speak to Justiciar Farowel for group contracts.
 |tip Manually skip to the next step.
 step
-goto alinor_base 51.02,53.75
-'Press _E_ to Read the Housing Brochure
-accept Room to Spare
-'Unlocks player housing
+goto alinor_base 34.62,70.00
+talk Felarian
+accept Jewelry Crafting Certification
 step
-goto alinor_base 54.64,56.96
-wayshrine Alinor
+goto alinor_base 29.61,64.82
+talk Vandoril
+accept Checking on Cloudrest
+'Cloudrest is a group Dungeon
 step
-goto alinor_base 55.49,60.59
-talk Millenith
-accept Crafting Certification
-'Unlocks daily crafting quests
-step
-goto alinor_base 40.74,56.03
-'Continue West from here
+goto alinor_base 33.90,65.47
+'Cross the bridge here and run up the stairs heading east
 |tip Manually skip to the next step.
 step
-
-]])
-
----- INSERT THESE WHEN THE PROGRESSION LEADS TO THEM
---[[
+goto alinor_base 43.57,70.23
+'Run up the stairs here
+|tip Manually skip to the next step.
+step
 goto alinor_base 49.94,70.35
 'Run up the stair from here
+|tip Manually skip to the next step.
+step
+goto alinor_base 47.01,74.16
+click Mages Guild
+|tip Manually skip to the next step.
+step
+goto alinor_base 49.81,73.18
+talk Adelle Montagne
+accept Long Lost Lore
+'These are Guild quests to find and retrieve lost books from various ruins. You may work on these quests at your leisure.
+step
+goto alinor_base 47.67,74.38
+click Alinor
+|tip Manually skip to the next step.
+step
+goto alinor_base 47.09,77.10
+'Run up the stairs from here and continue along the path until you reach the castle across the bridge.
 |tip Manually skip to the next step.
 step
 goto alinor_base 64.95,51.50
@@ -16915,4 +17036,98 @@ goto alinor_base 64.95,51.50
 talk Rigurt the Brash
 accept Culture Clash
 step
-]]--
+goto alinor_base 64.51,46.47
+click Alinor Royal Palace
+|tip Manually skip to the next step.
+step
+goto alinorroyalpalace1_base 44.77,37.49
+talk Courtier Vindilween
+|tip Manually skip to the next step.
+step
+'Open your map:
+click Alinor Wayshrine
+'Travel to the Alinor Wayshrine
+|tip Manually skip to the next step.
+step
+goto alinor_base 47.07,46.84
+talk Sapiarch Tandemen
+|tip Manually skip to the next step.
+step
+goto alinor_base 43.89,56.23
+talk Henri Ondare
+'Select _"Will this be enough? [34 gold]"_
+|tip Manually skip to the next step.
+step
+goto alinor_base 40.43,60.50
+'You have two options here. You can [Intimidate] to retrieve the item by force (requires Fighters Guild ability). Or, you will need to steal the Argonian Cultural Object from Grayscale's Backpack
+talk Grayscale
+'Select _"[Intimidate] Unless you want me to report you to the Divine Prosecution, let me have the aojee-sakka."_
+|tip Manually skip to the next step.
+step
+goto alinor_base 42.54,61.94
+'You have two options here. You can [Persuade] to obtain the item (requires Mages Guild ability). Or, you will need to steal the Khajiit Cultural Object from Urjurra's Backpack
+talk Urjurra
+'Select _"[Persuade] Sapiarch Tandemen would be extremely grateful if you let him have your navigation stone."_
+|tip Manually skip to the next step.
+step
+goto alinor_base 46.23,46.47
+talk Rigurt the Brash
+'Select any option
+|tip Manually skip to the next step.
+step
+goto alinor_base 54.97,57.27
+'Press _E_ to Use the Wayshrine
+click Russafeld Heights Wayshrine
+'Travel to the Russafeld Heights Wayshrine
+|tip Manually skip to the next step.
+step
+goto summerset_base 40.34,47.58
+'Cross the bridge here
+|tip Manually skip to the next step.
+step
+goto summerset_base 39.06,48.10
+'At the fork, go right from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.05,46.97
+talk Enigma
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.05,46.97
+talk Rigurt the Brash
+'Select any option
+|tip Manually skip to the next step.
+step
+'Open your map:
+click Shimmerene Wayshrine
+'Travel to the Shimmerene Wayshrine
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 21.19,66.08
+'Continue along the path from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 53.56,45.88
+'At the fork, go right from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 52.18,41.70
+'At the fork, go right from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 55.41,36.94
+wayshrine Eldbur Ruins
+step
+goto summerset_base 53.60,37.44
+'Cross the bridge and
+talk Oriandra
+accept Whispers from the Deep
+step
+goto summerset_base 52.82,37.48
+click Eldbur Ruins
+|tip Manually skip to the next step.
+step
+goto Eldbursanctuary01_base 50,50
+|tip Manually skip to the next step.
+step
+]])
