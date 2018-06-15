@@ -560,6 +560,8 @@
 		["The Vaults of Heinarwe"] = [[ceytarncaveInt02_base]],
 		["The Vaults of Heinarwe"] = [[ceytarncaveInt03_base]],
 		["Wasten Coraldale"] = [[wastencoraldale_base]],
+		["Alinor Royal Palace"] = [[alinorroyalpalace1_base]],
+		["Eldbur Ruins"] = [[Eldbursanctuary01_base]],
 
 	},
 	["Zones"] =
@@ -598,6 +600,9 @@
 		["ceytarncaveInt02_base"] =		{ name = "The Vaults of Heinarwe",	id = 405, xoffset = 0.0835586508665, yoffset = 0.75299923408926, xscale = 0.00155469301361, },
 		["ceytarncaveInt03_base"] =		{ name = "The Vaults of Heinarwe",	id = 405, xoffset = 0.0835586550629, yoffset = 0.75299868162513, xscale = 0.00155464364451, },
 		["wastencoraldale_base"] =		{ name = "Wasten Coraldale",		id = 406, xoffset = 0.0187237343826, yoffset = 0.74439726168378, xscale = 0.00343373370205, },
+		["alinorroyalpalace1_base"] =		{ name = "Alinor Royal Palace",		id = 407, xoffset = 0.0778643684339, yoffset = 0.76213240848568, xscale = 0.00071391525685, },
+		["Eldbursanctuary01_base"] =		{ name = "Eldbur Ruins",		id = 408, xoffset = 0.1344256741125, yoffset = 0.70496037624518, xscale = 0.00087438574098, },
+
 
 		-- EXISTING
 		[""] = { name = "", },

@@ -444,6 +444,8 @@ Data.MapIdsByName = {
 	["Cey-Tarn Keep"] = 404,
 	["The Vaults of Heinarwe"] = 405,
 	["Wasten Coraldale"] = 406,
+	["Alinor Royal Palace"] = 407,
+	["Eldbur Ruins"] = 408,
 
 	[""] = 1000
 }
