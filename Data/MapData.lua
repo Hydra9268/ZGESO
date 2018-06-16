@@ -562,6 +562,10 @@
 		["Wasten Coraldale"] = [[wastencoraldale_base]],
 		["Alinor Royal Palace"] = [[alinorroyalpalace1_base]],
 		["Eldbur Ruins"] = [[Eldbursanctuary01_base]],
+		["College of Psijics Ruins"] = [[collegeofpsijicsruins_base]],
+		["Psijic Relic Vaults"] = [[psijicrelicvaults01_base]],
+		["Psijic Relic Vaults"] = [[psijicrelicvaults02_base]],
+		["K'tora's Mindscape"] = [[sq3sloadmindscape_base]],
 
 	},
 	["Zones"] =
@@ -602,7 +606,10 @@
 		["wastencoraldale_base"] =		{ name = "Wasten Coraldale",		id = 406, xoffset = 0.0187237343826, yoffset = 0.74439726168378, xscale = 0.00343373370205, },
 		["alinorroyalpalace1_base"] =		{ name = "Alinor Royal Palace",		id = 407, xoffset = 0.0778643684339, yoffset = 0.76213240848568, xscale = 0.00071391525685, },
 		["Eldbursanctuary01_base"] =		{ name = "Eldbur Ruins",		id = 408, xoffset = 0.1344256741125, yoffset = 0.70496037624518, xscale = 0.00087438574098, },
-
+		["collegeofpsijicsruins_base"] = 	{ name = "College of Psijics Ruins",	id = 409, xoffset = 0.8412901197689, yoffset = -0.0285610717468, xscale = 0.00349489518501, },
+		["psijicrelicvaults01_base"] = 		{ name = "Psijic Relic Vaults",		id = 410, xoffset = 0.8509636410894, yoffset = 0.03925965236529, xscale = 0.00111017879036, },
+		["psijicrelicvaults02_base"] = 		{ name = "Psijic Relic Vaults",		id = 410, xoffset = 0.8509640263805, yoffset = 0.03925963282598, xscale = 0.00110901908042, },
+		["sq3sloadmindscape_base"] = 		{ name = "K'tora's Mindscape",		id = 411, xoffset = 0.8493349513900, yoffset = 0.03753974060692, xscale = 0.00145229464415, },
 
 		-- EXISTING
 		[""] = { name = "", },

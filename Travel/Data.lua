@@ -446,6 +446,9 @@ Data.MapIdsByName = {
 	["Wasten Coraldale"] = 406,
 	["Alinor Royal Palace"] = 407,
 	["Eldbur Ruins"] = 408,
+	["College of Psijics Ruins"] = 409,
+	["Psijic Relic Vaults"] = 410,
+	["K'Tora's Mindscape"] = 411,
 
 	[""] = 1000
 }
