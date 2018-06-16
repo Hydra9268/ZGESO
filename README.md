@@ -19,7 +19,7 @@ The purpose of this project is to add Summerset to the leveling guide for the co
 For example, 1.4.0.96.
 
 * `1` = Major version and authored by Zygor
-* `4` = Minor version authored by Zygor, or when a substantial amount of improvements are made by the Community
+* `4` = Minor version authored by Zygor, or when the Community makes a substantial amount of improvements
 * `0` = Bug fix version and authored by Zygor
 * `96` = Community version. Periodic updates based on the total number of Github commits.
 
@@ -28,8 +28,8 @@ For example, 1.4.0.96.
 ### Available ZG Map Data Slash Commands
 
 * `/zgpos` - For city and delve data, and also to confirm the map's DDS filename is correct.
-* `/zgpos gps` - For general map data. Works in any map.
-* `/zgpos floor` - Retrieves floor information. First value is current floor. Second is total number of.
+* `/zgpos gps` - For general map data. Works on any map.
+* `/zgpos floor` - Retrieves floor information. The first value is the current floor. Second is the total number.
 
 <img src="https://i.imgur.com/eDu5Hev.png">
 
@@ -123,7 +123,7 @@ List all travel destinations by key/id pair
 
 ### Miscellaneous
 
-Outputs code to the chat window. d is short for "debug" (equivilant of console.log in JavaScript)
+Outputs code to the chat window. d is short for "debug" (the equivalent of console.log in JavaScript)
 ```lua
 d()
 ```
