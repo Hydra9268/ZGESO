@@ -17445,19 +17445,23 @@ goto summerset_base 52.82,37.48
 click Eldbur Ruins
 |tip Manually skip to the next step.
 step
-goto Eldbursanctuary01_base 50,50
+goto Eldbursanctuary01_base 66.00,53.46
+'Drop down into the hole
 |tip Manually skip to the next step.
 step
-
+goto Eldbursanctuary02_base 62.79,53.32
+'Continue South from here
 |tip Manually skip to the next step.
 step
-
+goto Eldbursanctuary01_base 22.84,73.55
+'Jump down to the floor below
 |tip Manually skip to the next step.
 step
-
+goto Eldbursanctuary02_base 18.03,70.39
+click Cainar's Mind Trap
 |tip Manually skip to the next step.
 step
-
+goto Eldbursanctuary03_base 50,50
 |tip Manually skip to the next step.
 step
 
