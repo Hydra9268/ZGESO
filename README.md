@@ -31,7 +31,7 @@ For example, 1.4.0.96.
 * `/zgpos gps` - For general map data. Works in any map.
 * `/zgpos floor` - Retrieves floor information. First value is current floor. Second is total number of.
 
-<img src="https://i.imgur.com/vyJ1ZiL.png">
+<img src="https://i.imgur.com/eDu5Hev.png">
 
 ----
 
