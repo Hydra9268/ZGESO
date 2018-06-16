@@ -449,6 +449,7 @@ Data.MapIdsByName = {
 	["College of Psijics Ruins"] = 409,
 	["Psijic Relic Vaults"] = 410,
 	["K'Tora's Mindscape"] = 411,
+	["Cairnar's Mind Trap"] = 412,
 
 	[""] = 1000
 }
