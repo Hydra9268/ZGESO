@@ -16167,7 +16167,7 @@ click Arteum Wayshrine
 step
 goto artaeum_base 64.49,27.12
 talk Ritemaster Iachesis
-|tip Manually skip to the next step.
+accept A Pearl of Great Price
 step
 goto artaeum_base 64.99,25.56
 click Portal to Ceporah Tower
@@ -16904,15 +16904,15 @@ goto shimmerene_base 21.27,66.35
 |tip Manually skip to the next step.
 step
 goto summerset_base 53.53,45.94
-'At the fork, go left from here
+'At the fork in the road, go left from here
 |tip Manually skip to the next step.
 step
 goto summerset_base 52.61,47.02
-'At the fork, go left from here
+'At the fork in the road, go left from here
 |tip Manually skip to the next step.
 step
 goto summerset_base 53.25,51.75
-'At the fork, go right from here
+'At the fork in the road, go right from here
 |tip Manually skip to the next step.
 step
 goto summerset_base 49.69,54.19
@@ -16948,7 +16948,7 @@ goto alinor_base 28.60,44.52
 |tip Manually skip to the next step.
 step
 goto alinor_base 11.11,54.94
-'At the fork, go right from here
+'At the fork in the road, go right from here
 |tip Manually skip to the next step.
 step
 goto alinor_base 03.81,48.44
@@ -17086,7 +17086,7 @@ goto summerset_base 40.34,47.58
 |tip Manually skip to the next step.
 step
 goto summerset_base 39.06,48.10
-'At the fork, go right from here
+'At the fork in the road, go right from here
 |tip Manually skip to the next step.
 step
 goto summerset_base 38.05,46.97
@@ -17103,6 +17103,160 @@ click Shimmerene Wayshrine
 'Travel to the Shimmerene Wayshrine
 |tip Manually skip to the next step.
 step
+goto shimmerene_base 24.57,70.25
+'Continue along the path from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 57.81,48.91
+'At the fork in the road, continue left from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 58.51,49.37
+'At the fork in the road, continue right from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 59.33,51.60
+'At the fork in the road, continue right from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 55.95,52.93
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 55.50,54.51
+'Press _E_ to Use Portal to Artaeum
+|tip Manually skip to the next step.
+step
+'Open your map:
+click Arteum Wayshrine
+'Travel to the Arteum Wayshrine
+|tip Manually skip to the next step.
+step
+goto artaeum_base 64.96,26.72
+'Press _E_ to Use Portal to Ceporah Tower
+|tip Manually skip to the next step.
+step
+goto dreamingcave02_base 47.50,48.34
+talk Loremaster Celarus
+accept The Psijics' Calling
+'These are Guild quests to find and close breaches on Summerset Isle. You may work on these quests at your leisure.
+step
+goto dreamingcave02_base 53.55,68.08
+'Continue through the Southwest archway here
+|tip Manually skip to the next step.
+step
+goto dreamingcave02_base 25.26,74.02
+talk Josajeh
+'She walks around The Aurbis
+|tip Manually skip to the next step.
+step
+goto dreamingcave02_base 24.46,83.74
+click Psijic Map of Summerset
+'Take the Psijic Map of Summerset
+|tip Manually skip to the next step.
+step
+goto dreamingcave02_base 29.07,66.41
+'Head back out into the cooridor and go right
+|tip Manually skip to the next step.
+step
+goto dreamingcave02_base 55.60,66.33
+'Press _E_ to Use the Portal to Ritemaster's Study
+|tip Manually skip to the next step.
+step
+goto dreamingcave03_base 66.04,70.69
+talk Ritemaster Iachesis
+accept Buried Memories
+step
+goto dreamingcave03_base 64.06,67.87
+talk Oriandra
+|tip Manually skip to the next step.
+step
+goto dreamingcave03_base 58.40,70.18
+'Press _E_ to Use the Portal to Ceporah Main Gallery
+|tip Manually skip to the next step.
+step
+goto dreamingcave02_base 40.37,42.24
+'Watch the cutscene and then
+talk Ritemaster Iachesis
+|tip Manually skip to the next step.
+step
+goto dreamingcave02_base 36.27,32.34
+'Press _E_ to Use the Portal to Arteum
+|tip Manually skip to the next step.
+step
+goto artaeum_base 64.67,30.42
+'At the fork in the road, go right from here
+|tip Manually skip to the next step.
+step
+goto artaeum_base 55.94,40.14
+'At the fork in the road, go left from here
+|tip Manually skip to the next step.
+step
+goto artaeum_base 56.54,49.42
+click College of Psijics Ruins
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+
+]])
+
+
+-- CONTINUE FROM THE SHIMMERENE WAYSHRINE HEADING NORTHEAST
+--[[
 goto shimmerene_base 21.19,66.08
 'Continue along the path from here
 |tip Manually skip to the next step.
@@ -17130,4 +17284,4 @@ step
 goto Eldbursanctuary01_base 50,50
 |tip Manually skip to the next step.
 step
-]])
+]]--
