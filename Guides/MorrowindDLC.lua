@@ -17139,7 +17139,7 @@ step
 goto dreamingcave02_base 47.50,48.34
 talk Loremaster Celarus
 accept The Psijics' Calling
-'These are Guild quests to find and close breaches on Summerset Isle. You may work on these quests at your leisure.
+'These are Guild quests to find and close breaches on Summerset Isle. A few of the beginning quests are part of this guide. However, you can complete the entirety at your leisure.
 step
 goto dreamingcave02_base 53.55,68.08
 'Continue through the Southwest archway here
@@ -17194,6 +17194,279 @@ goto artaeum_base 55.94,40.14
 step
 goto artaeum_base 56.54,49.42
 click College of Psijics Ruins
+|tip Manually skip to the next step.
+step
+goto collegeofpsijicsruins_base 51.35,27.08
+'Run down the stairs
+|tip Manually skip to the next step.
+step
+goto collegeofpsijicsruins_base 73.79,59.05
+'Run up the stairs
+|tip Manually skip to the next step.
+step
+goto collegeofpsijicsruins_base 51.26,90.24
+click Arteum Beach
+|tip Manually skip to the next step.
+step
+goto artaeum_base 65.70,67.26
+talk Ritemaster Iachesis
+|tip Manually skip to the next step.
+step
+goto artaeum_base 66.94,73.75
+'Kill Yaghra along the beach
+|tip Manually skip to the next step.
+step
+goto artaeum_base 66.39,78.57
+'Press _E_ to Destroy the Abyssal Pearl
+|tip Manually skip to the next step.
+step
+goto artaeum_base 63.05,80.06
+'Run up the stairs here
+|tip Manually skip to the next step.
+step
+goto artaeum_base 60.27,79.22
+click Psijic Relic Vaults
+|tip Manually skip to the next step.
+step
+goto psijicrelicvaults01_base 62.26,94.05
+talk Ritemaster Iachesis
+|tip Manually skip to the next step.
+step
+goto psijicrelicvaults01_base 48.81,64.17
+'Kill the Daedra minions and then press _E_ to Burn Mephala's Barrier
+|tip Manually skip to the next step.
+step
+goto psijicrelicvaults01_base 49.10,63.41
+click Central Rotunda
+|tip Manually skip to the next step.
+step
+goto psijicrelicvaults01_base 49.60,59.88
+'Watch the cutscene
+click Psijic Relic Vaults
+|tip Manually skip to the next step.
+step
+goto psijicrelicvaults01_base 48.45,64.10
+talk Valsirenn
+|tip Manually skip to the next step.
+step
+goto psijicrelicvaults01_base 40.23,65.18
+click Western Wing Vaults
+|tip Manually skip to the next step.
+step
+goto psijicrelicvaults01_base 13.55,65.90
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto psijicrelicvaults02_base 14.17,16.65
+'Continue East from here
+|tip Manually skip to the next step.
+step
+goto psijicrelicvaults02_base 55.80,30.17
+'Continue along the interior balcony and enter the archway here
+|tip Manually skip to the next step.
+step
+goto psijicrelicvaults02_base 91.31,07.68
+'Press _E_ to Use the Wardkey, then
+'Press _E_ to Open the Relic Repository
+'Take The Ul'vor Staff
+|tip Manually skip to the next step.
+step
+goto psijicrelicvaults02_base 84.32,23.47
+'Continue South from here
+|tip Manually skip to the next step.
+step
+goto psijicrelicvaults01_base 87.38,65.50
+'Continue West from here
+|tip Manually skip to the next step.
+step
+goto psijicrelicvaults01_base 61.03,65.50
+click Psijic Relic Vaults
+|tip Manually skip to the next step.
+step
+goto psijicrelicvaults01_base 49.53,63.09
+click Central Rotunda
+|tip Manually skip to the next step.
+step
+goto psijicrelicvaults01_base 47.48,58.44
+talk Valsirenn
+|tip Manually skip to the next step.
+step
+goto psijicrelicvaults01_base 49.10,56.71
+'Press _E_ to Use the Ul'vor Staff
+|tip Manually skip to the next step.
+step
+goto sq3sloadmindscape_base 55.27,26.80
+kill Verdrangu
+'Watch the First Memory cutscene
+|tip Manually skip to the next step.
+step
+goto sq3sloadmindscape_base 29.32,41.06
+'Kill the mobs to watch the Second Memory cutscene
+|tip Manually skip to the next step.
+step
+goto sq3sloadmindscape_base 57.41,44.74
+'Continue along the path and
+kill Dissonance
+'Watch the Third Memory
+|tip Manually skip to the next step.
+step
+goto sq3sloadmindscape_base 45.61,57.35
+kill K'Tora
+|tip Manually skip to the next step.
+step
+goto sq3sloadmindscape_base 49.56,54.24
+'Press _E_ to Use the Ul'vor Staff
+|tip Manually skip to the next step.
+step
+goto psijicrelicvaults01_base 53.06,56.85
+talk Sotha Sil
+|tip Manually skip to the next step.
+step
+'Open your map:
+click Arteum Wayshrine
+'Travel to the Arteum Wayshrine
+|tip Manually skip to the next step.
+step
+goto artaeum_base 64.96,26.72
+'Press _E_ to Use Portal to Ceporah Tower
+|tip Manually skip to the next step.
+step
+goto dreamingcave02_base 56.25,64.66
+'Press _E_ to Use the Portal to Ritemaster's Study
+|tip Manually skip to the next step.
+step
+goto dreamingcave03_base 62.04,76.77
+talk Ritemaster Iachesis
+accept The Tower Sentinels
+step
+'Open your map:
+'Right click twice to view the Tamriel world map, then left click Tamriel. Click on the Island of Summerset.
+click Alinor Wayshrine
+'Travel to the Alinor Wayshrine
+|tip Manually skip to the next step.
+step
+goto alinor_base 52.87,59.08
+'Continue Southwest from here
+|tip Manually skip to the next step.
+step
+goto alinor_base 50.01,70.33
+'Continue up the stairs from here
+|tip Manually skip to the next step.
+step
+goto alinor_base 47.15,77.36
+'Continue up the stairs and follow the path across the bridge to the Alinor castle
+|tip Manually skip to the next step.
+step
+goto alinor_base 61.43,50.28
+talk Battlereeve Tanerline
+accept The Abyssal Cabal
+step
+goto alinor_base 64.50,46.25
+click Alinor's Royal Palace
+|tip Manually skip to the next step.
+step
+goto alinorroyalpalace1_base 39.56,30.61
+talk Proxy Queen Alwinarwe
+|tip Manually skip to the next step.
+step
+'Open your map:
+click Cey-Tarn Keep Wayshrine
+'Travel to the Cey-Tarn Keep Wayshrine
+|tip Manually skip to the next step.
+step
+goto summerset_base 26.71,52.16
+'Press _E_ to Travel to Wastern Coral Delve
+|tip Manually skip to the next step.
+step
+goto wastencoraldale_base 78.83,29.15
+'Press _E_ to Open the Augur of the Obscure
+'Select _"I have a few questions first"_ if you'd like to learn more, otherwise
+'Select _"Yes. Let's get moving."_
+|tip Manually skip to the next step.
+step
+'Press _E_ to Use the Psijic Map of Summerset
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Right click twice to view Summerset.
+click Shimmerene Wayshrine
+'Travel to the Shimmerene Wayshrine
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 21.19,66.08
+'Continue along the path from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 53.56,45.88
+'At the fork, go right from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 52.18,41.70
+'At the fork, go right from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 53.95,40.98
+'Press _E_ to Use the Augur of the Obscure
+|tip Manually skip to the next step.
+step
+goto summerset_base 56.71,42.64
+'Jump off this point into the water below
+|tip Manually skip to the next step.
+step
+goto summerset_base 56.28,43.17
+'Press _E_ to Use the Augur of the Obscure
+|tip Manually skip to the next step.
+step
+goto summerset_base 56.22,43.29
+'Press _E_ to Seal the Time Breach
+|tip Manually skip to the next step.
+step
+goto summerset_base 56.75,43.81
+'Swim to here and continue along the bank of the river heading slightly Southwest
+|tip Manually skip to the next step.
+step
+goto summerset_base 55.23,44.48
+'Cross the river here and head up the hill
+|tip Manually skip to the next step.
+step
+goto summerset_base 53.10,41.15
+'Continue on the road slightly Northeast from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 55.41,36.94
+wayshrine Eldbur Ruins
+step
+goto summerset_base 53.60,37.44
+'Cross the bridge and
+talk Oriandra
+accept Whispers from the Deep
+step
+goto summerset_base 52.82,37.48
+click Eldbur Ruins
+|tip Manually skip to the next step.
+step
+goto Eldbursanctuary01_base 50,50
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
 |tip Manually skip to the next step.
 step
 
@@ -17253,35 +17526,3 @@ step
 
 
 ]])
-
-
--- CONTINUE FROM THE SHIMMERENE WAYSHRINE HEADING NORTHEAST
---[[
-goto shimmerene_base 21.19,66.08
-'Continue along the path from here
-|tip Manually skip to the next step.
-step
-goto summerset_base 53.56,45.88
-'At the fork, go right from here
-|tip Manually skip to the next step.
-step
-goto summerset_base 52.18,41.70
-'At the fork, go right from here
-|tip Manually skip to the next step.
-step
-goto summerset_base 55.41,36.94
-wayshrine Eldbur Ruins
-step
-goto summerset_base 53.60,37.44
-'Cross the bridge and
-talk Oriandra
-accept Whispers from the Deep
-step
-goto summerset_base 52.82,37.48
-click Eldbur Ruins
-|tip Manually skip to the next step.
-step
-goto Eldbursanctuary01_base 50,50
-|tip Manually skip to the next step.
-step
-]]--
