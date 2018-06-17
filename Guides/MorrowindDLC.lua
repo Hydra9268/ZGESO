@@ -17824,31 +17824,42 @@ goto summerset_base 55.49,25.50
 talk Ethodan
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 57.35,25.83
+'Drop down from here and head Northwest on the road
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 54.70,25.10
+'Cut across the field here heading Southwest
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 54.24,26.53
+talk Miranrel
+'On the way to her, you'll discover the _King's Haven Pass Wayshrine_. If for whatever reason, you don't, it is close.
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 53.63,25.42
+'At the fork in the road, go left
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 52.81,25.36
+'Continue Southwest from here (Don't cross the bridge)
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 51.05,27.89
+'Run up the stairs here and head West
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 48.95,27.52
+click King's Haven Pass Delve
 |tip Manually skip to the next step.
 step
-
+goto kingshavenext_base 82.69,46.34
+talk Mehdze
+accept Savage Truths
 |tip Manually skip to the next step.
 step
-
+goto kingshavenext_base 70.74,34.28
+click Coral-Splitter Caves
 |tip Manually skip to the next step.
 step
 
