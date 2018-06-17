@@ -577,6 +577,7 @@
 		["Direnni Acropolis"] = [[karndar_05_base]],
 		["Direnni Acropolis"] = [[karndar_06_base]],
 		["Direnni Acropolis"] = [[karndar_03b_base]],
+		["King's Haven Pass"] = [[kingshavenext_base]],
 
 	},
 	["Zones"] =
@@ -632,6 +633,7 @@
 		["karndar_04_base"] = 			{ name = "Direnni Acropolis",		id = 415, xoffset = 0.1617104605047, yoffset = 0.69089707173410, xscale = 0.00114003977828, },
 		["karndar_05_base"] = 			{ name = "Direnni Acropolis",		id = 415, xoffset = 0.1617104323224, yoffset = 0.69089700738043, xscale = 0.00114007057858, },
 		["karndar_06_base"] = 			{ name = "Direnni Acropolis",		id = 415, xoffset = 0.1617125326014, yoffset = 0.69089340592644, xscale = 0.00115046153549, },
+		["kingshavenext_base"] = 		{ name = "King's Haven Pass",		id = 416, xoffset = 0.1056955451609, yoffset = 0.68397962170960, xscale = 0.00153009232097, },
 
 
 		-- EXISTING

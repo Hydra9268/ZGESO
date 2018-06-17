@@ -453,6 +453,7 @@ Data.MapIdsByName = {
 	["Miriya's Mind Trap"] = 413,
 	["Oriandra's Mind Trap"] = 414,
 	["Direnni Acropolis"] = 415,
+	["King's Haven Pass"] = 416,
 
 	[""] = 1000
 }
