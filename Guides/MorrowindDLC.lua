@@ -15904,7 +15904,7 @@ goto sunhold_base 73.32,78.10
 talk Kinlady Helenaere
 accept Sunhold Sundered
 step
-'This is a Public Dungeon and it will be challenging.
+'This is a Public Dungeon, and it will be challenging.
 'You can solo most it if you, but try and avoid groups of Snakeskin Bezerkers.
 'When you engage groups always kill the caster first.
 'You can move around undetected by sneaking
@@ -16003,7 +16003,7 @@ goto sunhold_base 40.88,37.67
 |tip Manually skip to the next step.
 step
 goto sunhold_base 38.13,34.85
-'Wait until both Strom Atronachs walk away
+'Wait until both Storm Atronachs walk away
 'Sneak up the stairs
 |tip Manually skip to the next step.
 step 
@@ -16696,7 +16696,7 @@ talk Justiciar Hyircil
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.94,54.31
-'Follow the group down the staris and
+'Follow the group down the stairs and
 click Refectory Cellar
 |tip Manually skip to the next step.
 step
@@ -16750,7 +16750,7 @@ talk Revelator Lindafwe
 |tip Manually skip to the next step.
 step
 goto ceytarncaveInt02_base 52.27,87.74
-'Run behind the alter and
+'Run behind the altar and
 'Press _E_ to Examine The Gorge
 |tip Manually skip to the next step.
 step
@@ -17461,7 +17461,460 @@ goto Eldbursanctuary02_base 18.03,70.39
 click Cainar's Mind Trap
 |tip Manually skip to the next step.
 step
-goto Eldbursanctuary03_base 50,50
+goto Eldbursanctuary03_base 63.83,59.63
+talk Cainar
+|tip Manually skip to the next step.
+step
+goto Eldbursanctuary03_base 51.85,52.22
+'Press _E_ to Take Spell Particle
+'Take Spell Particle
+|tip Manually skip to the next step.
+step
+goto Eldbursanctuary03_base 51.30,31.26
+'Press _E_ to Take Spell Particle
+'Take Spell Particle
+|tip Manually skip to the next step.
+step
+goto Eldbursanctuary03_base 33.80,55.03
+'Press _E_ to Take Spell Particle
+'Take Spell Particle
+|tip Manually skip to the next step.
+step
+goto Eldbursanctuary03_base 48.29,61.73
+'Jump down from here
+|tip Manually skip to the next step.
+step
+goto Eldbursanctuary03_base 62.51,60.04
+talk Cainar
+|tip Manually skip to the next step.
+step
+goto Eldbursanctuary02_base 22.52,33.14
+'Continue passed the archway here and head East
+|tip Manually skip to the next step.
+step
+goto Eldbursanctuary02_base 42.75,24.58
+'Continue pass the first archway here, and then head Northeast
+|tip Manually skip to the next step.
+step
+goto Eldbursanctuary02_base 62.97,14.97
+'Press _E_ to Examine the Bucket
+'Take Bucket
+|tip Manually skip to the next step.
+step
+goto Eldbursanctuary02_base 63.20,13.50
+'Press _E_ to Use Bucket
+|tip Manually skip to the next step.
+step
+goto Eldbursanctuary02_base 63.25,20.32
+'Continue passed the archway here and head South
+|tip Manually skip to the next step.
+step
+goto Eldbursanctuary02_base 69.84,79.77
+'Continue up the stairs West from here
+|tip Manually skip to the next step.
+step
+goto Eldbursanctuary01_base 42.84,81.42
+'Press _E_ to Enter Miriya's Mind Trap
+|tip Manually skip to the next step.
+step
+goto Eldbursanctuary04_base 57.48,40.55
+'Press _E_ to Search Miriya's Pack
+'Take Cowl of the Exile
+|tip Manually skip to the next step.
+step
+goto Eldbursanctuary04_base 43.74,39.94
+'Press _E_ to Take Regret
+'Take Regret
+|tip Manually skip to the next step.
+step
+goto Eldbursanctuary04_base 46.49,53.82
+'Press _E_ to Take Redemption
+'Take Redemption
+|tip Manually skip to the next step.
+step
+goto Eldbursanctuary04_base 61.05,55.68
+talk Miriya
+|tip Manually skip to the next step.
+step
+goto Eldbursanctuary01_base 51.72,80.05
+'Continue down the stairs here and head North
+|tip Manually skip to the next step.
+step
+goto Eldbursanctuary02_base 55.88,53.36
+click Oriandra's Mind Trap
+|tip Manually skip to the next step.
+step
+goto Eldbursanctuary05_base 47.40,60.30
+'Continue following the spiraling path up
+|tip Manually skip to the next step.
+step
+goto Eldbursanctuary05_base 65.64,46.16
+kill Oriandra's Anger
+kill Oriandra's Fear
+kill Oriandra's Rage
+'They appear one at a time after each is killed
+|tip Manually skip to the next step.
+step
+goto Eldbursanctuary05_base 66.41,41.29
+'Press _E_ to Use Cainar's Link
+|tip Manually skip to the next step.
+step
+goto Eldbursanctuary02_base 54.10,54.87
+talk Oriandra
+|tip Manually skip to the next step.
+step
+goto Eldbursanctuary02_base 62.65,53.36
+'Press _E_ to Climb Eldbur Ruins
+|tip Manually skip to the next step.
+step
+goto Eldbursanctuary01_base 85.31,39.68
+click Summerset
+|tip Manually skip to the next step.
+step
+goto summerset_base 53.62,37.19
+'Drop down here and follow the road North
+|tip Manually skip to the next step.
+step
+goto summerset_base 55.11,28.24
+talk Miranrel
+accept Gryphon Grievance
+|tip Manually skip to the next step.
+step
+goto summerset_base 55.24,28.64
+'Follow the road Southeast from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 58.64,30.20
+'Press _E_ to Use the Augur of the Obscure
+|tip Manually skip to the next step.
+step
+goto summerset_base 59.09,30.29
+talk Bailiff Erator
+accept Lauriel's Lament
+|tip Manually skip to the next step.
+step
+goto summerset_base 61.52,32.58
+'Press _E_ to Seal the Time Breach
+|tip Manually skip to the next step.
+step
+goto summerset_base 61.18,32.33
+click Keeper's Manor
+|tip Manually skip to the next step.
+step
+goto summerset_base 61.02,32.23
+'Run up the stairs from here to the third floor
+'Press _E_ to Examine to Keeper's Letter
+|tip Manually skip to the next step.
+step
+goto summerset_base 61.02,32.23
+'Press _E_ to Search the Keeper's Coffer
+'Take the Golden Seal and the Keeper's Key
+|tip Manually skip to the next step.
+step
+goto summerset_base 61.22,32.33
+'Run down the stairs to the first floor
+click Direnni Acropolis
+|tip Manually skip to the next step.
+step
+goto summerset_base 61.92,32.56
+'Continue through the archway here and head Southeast
+|tip Manually skip to the next step.
+step
+goto summerset_base 62.43,32.81
+'Continue down the stairs here
+|tip Manually skip to the next step.
+step
+goto summerset_base 62.69,32.00
+click Direnni Catacombs
+|tip Manually skip to the next step.
+step
+goto karndar_03_base 52.88,52.88
+'Jump down to the bottom floor
+|tip Manually skip to the next step.
+step
+goto karndar_01_base 39.90,52.94
+'Press _E_ to Examine the Keeper's Oath
+|tip Manually skip to the next step.
+step
+goto karndar_01_base 35.88,51.65
+'Press _E_ to Place the Golden Seal Recess
+|tip Manually skip to the next step.
+step
+goto karndar_01_base 37.06,49.28
+talk Lauriel
+|tip Manually skip to the next step.
+step
+goto karndar_01_base 36.65,47.53
+click The Shattered Halls
+|tip Manually skip to the next step.
+step
+goto karndar_01_base 46.91,41.55
+'Run down the stairs from here
+|tip Manually skip to the next step.
+step
+goto karndar_02_base 48.28,32.27
+'Continue North through the archway here
+|tip Manually skip to the next step.
+step
+goto karndar_02_base 53.36,23.45
+'Continue South through the archway from here, and continue South then East
+|tip Manually skip to the next step.
+step
+goto karndar_02_base 64.91,41.41
+'Continue South through the archway from here, and continue South then West
+|tip Manually skip to the next step.
+step
+goto karndar_02_base 61.62,61.36
+'Continue through the ruins from here
+|tip Manually skip to the next step.
+step
+goto karndar_02_base 49.26,67.42
+'Press _E_ to Search the Keeper's Remains
+'Take the Crimson Seal
+|tip Manually skip to the next step.
+step
+goto karndar_02_base 48.79,73.73
+'Run South behind the tree and continue through archway
+|tip Manually skip to the next step.
+step
+goto karndar_02_base 47.20,88.40
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto karndar_01_base 41.44,77.01
+'Continue East from here
+|tip Manually skip to the next step.
+step
+goto karndar_01_base 36.70,59.18
+'Drop down from here
+|tip Manually skip to the next step.
+step
+goto karndar_01_base 36.29,53.97
+'Press _E_ to Place the Crimson Seal
+|tip Manually skip to the next step.
+step
+goto karndar_01_base 31.34,53.09
+click Forsaken Undercroft
+|tip Manually skip to the next step.
+step
+goto karndar_04_base 05.23,44.76
+'Run down the stairs from here
+|tip Manually skip to the next step.
+step
+goto karndar_05_base 10.59,41.07
+'Continue South across the bridge from here
+|tip Manually skip to the next step.
+step
+goto karndar_05_base 15.33,51.39
+'Run down the stairs from here
+|tip Manually skip to the next step.
+step
+goto karndar_06_base 19.35,46.21
+'Continue East through the archway from here
+|tip Manually skip to the next step.
+step
+goto karndar_06_base 30.79,46.14
+click Lauriel's Crypt
+|tip Manually skip to the next step.
+step
+goto karndar_06_base 50.72,36.40
+kill Lady Adreana
+|tip Manually skip to the next step.
+step
+goto karndar_06_base 51.49,43.26
+'Cross the first bridge here
+|tip Manually skip to the next step.
+step
+goto karndar_06_base 59.17,55.73
+'Cross the second bridge here
+|tip Manually skip to the next step.
+step
+goto karndar_06_base 72.03,51.88
+talk Lauriel
+|tip Manually skip to the next step.
+step
+goto karndar_06_base 73.35,51.42
+'Press _E_ to Take the Keeper's Flame
+'Take Keeper's Flame
+|tip Manually skip to the next step.
+step
+'You must decide what you will do now. Do you free Lauriel or bind her to her prison? (We think burning her body is the right choice.)
+'Select _Burn Lauriel's Remains_, or
+'Select _Burn Santified Brazier_
+|tip Manually skip to the next step.
+step
+goto karndar_06_base 81.10,49.13
+'Continue slightly Southeast behind Lauriel's tomb and across the rock bridge
+|tip Manually skip to the next step.
+step
+goto karndar_06_base 88.81,42.81
+'Follow the passage way to the exit
+|tip Manually skip to the next step.
+step
+goto karndar_06_base 65.36,30.96
+click Direnni Catacombs
+|tip Manually skip to the next step.
+step
+goto karndar_03b_base 56.02,44.08
+'Run up the stairs
+|tip Manually skip to the next step.
+step
+goto karndar_03_base 36.77,46.60
+'Drop down from here from here
+|tip Manually skip to the next step.
+step
+goto karndar_01_base 40.93,48.71
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto karndar_03_base 54.69,52.78
+click Summerset
+|tip Manually skip to the next step.
+step
+goto summerset_base 63.16,32.13
+'Continue South from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 62.75,33.09
+'Continue Southeast from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 62.97,34.15
+'Jump down from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 63.57,34.84
+talk Bailiff Erator
+|tip Manually skip to the next step.
+step
+goto summerset_base 62.95,34.60
+'Run down the stairs here and follow the path West
+|tip Manually skip to the next step.
+step
+goto summerset_base 60.94,35.03
+'Run up the path from here and continue North
+|tip Manually skip to the next step.
+step
+goto summerset_base 60.11,32.52
+'At the fork in the path, go left
+|tip Manually skip to the next step.
+step
+goto summerset_base 58.86,31.57
+'Run North from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 58.69,30.19
+'Follow the road West
+|tip Manually skip to the next step.
+step
+goto summerset_base 56.22,28.99
+'At the Dominion Soldiers cut across the field heading North
+|tip Manually skip to the next step.
+step
+goto summerset_base 56.81,26.66
+'Press _E_ to Examine Aralem
+'Take Gryphon Egg
+|tip Manually skip to the next step.
+step
+goto summerset_base 56.93,25.56
+talk Gwinolas
+|tip Manually skip to the next step.
+step
+goto summerset_base 55.49,25.50
+talk Ethodan
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
 |tip Manually skip to the next step.
 step
 
