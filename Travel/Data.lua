@@ -450,6 +450,9 @@ Data.MapIdsByName = {
 	["Psijic Relic Vaults"] = 410,
 	["K'Tora's Mindscape"] = 411,
 	["Cairnar's Mind Trap"] = 412,
+	["Miriya's Mind Trap"] = 413,
+	["Oriandra's Mind Trap"] = 414,
+	["Direnni Acropolis"] = 415,
 
 	[""] = 1000
 }
