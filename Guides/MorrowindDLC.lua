@@ -17862,79 +17862,161 @@ goto kingshavenext_base 70.74,34.28
 click Coral-Splitter Caves
 |tip Manually skip to the next step.
 step
-
+goto kingshavenint1_base 40.30,29.95
+'Follow the path to here, then go Southeast
 |tip Manually skip to the next step.
 step
-
+goto kingshavenint1_base 45.18,33.18
+talk Naliara
 |tip Manually skip to the next step.
 step
-
+goto kingshavenint1_base 36.88,30.73
+'At the fork in the path, go right
 |tip Manually skip to the next step.
 step
-
+goto kingshavenint1_base 29.07,26.88
+'Run up the path along the rock face
 |tip Manually skip to the next step.
 step
-
+goto kingshavenint1_base 18.93,39.07
+'Press _E_ to Take Naliara's Notes, Day 8
 |tip Manually skip to the next step.
 step
-
+goto kingshavenint1_base 07.24,43.66
+click King's Haven Pass
 |tip Manually skip to the next step.
 step
-
+goto kingshavenext_base 33.76,40.79
+'Press _E_ to Take Naliara's Notes, Day 13
 |tip Manually skip to the next step.
 step
-
+goto kingshavenext_base 34.34,46.71
+'From here jump up to the wooden bridge
 |tip Manually skip to the next step.
 step
-
+goto kingshavenext_base 36.61,47.23
+'Carefully drop down to the right-side of the bridge. You shouldn't take any damage when you land on the ground floor below.
 |tip Manually skip to the next step.
 step
-
+goto kingshavenext_base 19.40,58.55
+'At the fork in the path, go left and continue to follow the path
 |tip Manually skip to the next step.
 step
-
+goto kingshavenext_base 37.03,63.23
+'Press _E_ to Take Naliara's Notes, Day 18
 |tip Manually skip to the next step.
 step
-
+goto kingshavenext_base 43.38,58.13
+'Drop down to the first ledge below
 |tip Manually skip to the next step.
 step
-
+goto kingshavenext_base 43.91,56.64
+'Drop down to the ledge below
 |tip Manually skip to the next step.
 step
-
+goto kingshavenext_base 44.85,55.31
+'Drop down to the bridge below
 |tip Manually skip to the next step.
 step
-
+goto kingshavenext_base 45.89,58.76
+click Coral-Splitter Caves
 |tip Manually skip to the next step.
 step
-
+goto kingshavenint1_base 22.15,62.35
+'Following the path through the cave
 |tip Manually skip to the next step.
 step
-
+goto kingshavenint1_base 41.58,54.19
+'Press _E_ to Take Naliara's Notes, Day 2
 |tip Manually skip to the next step.
 step
-
+goto kingshavenint1_base 35.96,33.03
+'At the fork in the path, go right
 |tip Manually skip to the next step.
 step
-
+goto kingshavenint1_base 45.18,33.18
+talk Naliara
 |tip Manually skip to the next step.
 step
-
+goto kingshavenint1_base 42.99,27.73
+talk Mehdze
 |tip Manually skip to the next step.
 step
-
+goto kingshavenint1_base 37.02,30.87
+'At the fork in the path, go left
 |tip Manually skip to the next step.
 step
-
+goto kingshavenint1_base 51.22,53.73
+click Ancient Ruins
 |tip Manually skip to the next step.
 step
-
+goto kingshavenint1_base 58.60,55.32
+'Press _E_ to Examine the King's Haven Trade Record
 |tip Manually skip to the next step.
 step
-
+goto kingshavenint1_base 58.81,64.64
+'Press _E_ to Examine the King's Haven Scout Record
 |tip Manually skip to the next step.
 step
-
+goto kingshavenint1_base 58.92,75.38
+'Press _E_ to Examine the King's Haven Territory Record
+|tip Manually skip to the next step.
+step
+goto kingshavenint1_base 58.92,75.38
+talk Mehdze
+'You must decide the choice. Do you encourage Mehdze to share the truth or a lie? (We think the truth is the right choice.)
+'Select _The truth should be heard..._, or
+'Select _I wouldn't stake my career..._
+|tip Manually skip to the next step.
+step
+goto kingshavenint1_base 55.88,55.70
+click Coral-Splitter Caves
+|tip Manually skip to the next step.
+step
+goto kingshavenint1_base 47.90,52.35
+'At the fork in the path, go left and follow the path
+|tip Manually skip to the next step.
+step
+goto kingshavenint1_base 22.08,61.67
+click King's Haven Pass
+|tip Manually skip to the next step.
+step
+goto kingshavenext_base 44.69,57.14
+'Follow the path from here across the bridge and head West
+|tip Manually skip to the next step.
+step
+goto kingshavenext_base 14.54,56.46
+click Summerset
+|tip Manually skip to the next step.
+step
+goto summerset_base 35.78,32.50
+'Cross the bridge
+|tip Manually skip to the next step.
+step
+goto summerset_base 34.68,32.45
+'Follow the path Southwest to the main road
+|tip Manually skip to the next step.
+step
+goto summerset_base 33.17,33.84
+'Run south on the main road
+|tip Manually skip to the next step.
+step
+goto summerset_base 32.65,35.84
+talk Merenfire
+accept Illusions of Grandeur
+|tip Manually skip to the next step.
+step
+goto summerset_base 32.65,35.84
+'Run here run Northeast on the main road
+|tip Manually skip to the next step.
+step
+goto summerset_base 34.82,36.23
+wayshrine Ebon Stadmont
+|tip Manually skip to the next step.
+step
+goto summerset_base 35.88,37.35
+talk Andewen
+accept The Ebon Sanctum
 |tip Manually skip to the next step.
 step
 
