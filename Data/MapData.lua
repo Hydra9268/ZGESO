@@ -578,6 +578,7 @@
 		["Direnni Acropolis"] = [[karndar_06_base]],
 		["Direnni Acropolis"] = [[karndar_03b_base]],
 		["King's Haven Pass"] = [[kingshavenext_base]],
+		["Coral-Splitter Caves"] = [[kingshavenint1_base]],
 
 	},
 	["Zones"] =
@@ -634,6 +635,7 @@
 		["karndar_05_base"] = 			{ name = "Direnni Acropolis",		id = 415, xoffset = 0.1617104323224, yoffset = 0.69089700738043, xscale = 0.00114007057858, },
 		["karndar_06_base"] = 			{ name = "Direnni Acropolis",		id = 415, xoffset = 0.1617125326014, yoffset = 0.69089340592644, xscale = 0.00115046153549, },
 		["kingshavenext_base"] = 		{ name = "King's Haven Pass",		id = 416, xoffset = 0.1056955451609, yoffset = 0.68397962170960, xscale = 0.00153009232097, },
+		["kingshavenint1_base"] =		{ name = "Coral-Splitter Caves",	id = 417, xoffset = 0.1060729033606, yoffset = 0.68307071688663, xscale = 0.00113291850582, },
 
 
 		-- EXISTING
