@@ -579,6 +579,9 @@
 		["Direnni Acropolis"] = [[karndar_03b_base]],
 		["King's Haven Pass"] = [[kingshavenext_base]],
 		["Coral-Splitter Caves"] = [[kingshavenint1_base]],
+		["Ebon Sanctum"] = [[ebonStadmont_base]],
+		["Ebon Sanctum"] = [[ebonStadmont03_base]],
+		["Ebon Sanctum"] = [[ebonStadmont02_base]],
 
 	},
 	["Zones"] =
@@ -636,6 +639,9 @@
 		["karndar_06_base"] = 			{ name = "Direnni Acropolis",		id = 415, xoffset = 0.1617125326014, yoffset = 0.69089340592644, xscale = 0.00115046153549, },
 		["kingshavenext_base"] = 		{ name = "King's Haven Pass",		id = 416, xoffset = 0.1056955451609, yoffset = 0.68397962170960, xscale = 0.00153009232097, },
 		["kingshavenint1_base"] =		{ name = "Coral-Splitter Caves",	id = 417, xoffset = 0.1060729033606, yoffset = 0.68307071688663, xscale = 0.00113291850582, },
+		["ebonStadmont_base"] =			{ name = "Ebon Sanctum",		id = 418, xoffset = 0.0993731188575, yoffset = 0.69193664162816, xscale = 0.00424183752580, },
+		["ebonStadmont02_base"] =		{ name = "Ebon Sanctum",		id = 418, xoffset = 0.0998417941988, yoffset = 0.69432848467322, xscale = 0.00109884872049, },
+		["ebonStadmont03_base"] =		{ name = "Ebon Sanctum",		id = 418, xoffset = 0.0986673969770, yoffset = 0.69432862062926, xscale = 0.00109884231168, },
 
 
 		-- EXISTING

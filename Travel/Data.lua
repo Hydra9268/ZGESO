@@ -455,6 +455,7 @@ Data.MapIdsByName = {
 	["Direnni Acropolis"] = 415,
 	["King's Haven Pass"] = 416,
 	["Coral-Splitter Caves"] = 417,
+	["Ebon Sanctum"] = 418,
 
 	[""] = 1000
 }
