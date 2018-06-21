@@ -18149,61 +18149,207 @@ click Ebon Stadmont
 |tip Manually skip to the next step.
 step
 goto summerset_base 35.36,36.99
-'From here travel North on the main road to Illumination Academy
+'From here travel North on the main road
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 32.67,35.72
+'From here travel North to Illumination Academy
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 30.71,33.47
+talk Erudil
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 30.71,33.47
+'Press _E_ to Examine Illuminus
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 30.71,33.47
+talk Erudil
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 31.21,33.59
+talk Glardir
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 31.21,33.59
+talk Erudil
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 31.85,33.66
+talk Pavo Maria
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 31.80,33.64
+'Press _E_ to Examine the Beggar Prince
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 31.85,33.66
+talk Pavo Maria
+'Select _"No, I refuse."_
+'Select _"[Lie] Yes, it is I, Daedric Price Namira. I have decided to reclaim my gifts from you."_
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 31.85,33.66
+'Press _E_ to "Bless" Pavo Maria
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 31.85,33.66
+talk Pavo Maria
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 31.26,33.54
+talk Erudil
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 31.21,33.58
+'Press _E_ to Examine Illuminus
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 31.21,33.58
+talk Erudil
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 30.93,31.72
+talk Tanelwen
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 31.00,31.86
+'Press _E_ to Examine Investigator Vale: The Locked Room Murder
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 30.98,31.74
+talk Tanelwen
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 30.99,31.71
+talk Maya
+|tip Manually skip to the next step.
+step
+goto summerset_base 30.97,31.69
+talk Hunrand
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.19,32.42
+'Press _E_ to Take Half-Eaten Pie
+|tip Manually skip to the next step.
+step
+goto summerset_base 30.98,31.75
+talk Tanelwen
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.21,33.52
+talk Erudil
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.21,33.53
+'Press _E_ to Examine Illuminus
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.21,33.53
+talk Erudil
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.67,34.22
+'Run up the stairs here
+|tip Manually skip to the next step.
+step
+goto summerset_base 32.10,33.94
+click Faculty Hall
+|tip Manually skip to the next step.
+step
+goto summerset_base 32.23,34.13
+'Run up the strairs to the second floor and then run past the archway on the left.
+|tip Manually skip to the next step.
+step
+goto summerset_base 32.19,34.33
+click Wall Access
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.64,34.66
+talk Selynia
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.71,34.68
+'Press _E_ to Examine Brave Little Scrib
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.64,34.66
+talk Selynia
+|tip Manually skip to the next step.
+step
+goto summerset_base 32.11,34.46
+click Illumination Academy
+|tip Manually skip to the next step.
+step
+goto summerset_base 32.16,34.01
+'Run down to the first floor and
+click Summerset
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.04,33.54
+'You can capture the spiders in this general area. They have arrows above for easy finding.
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.67,34.22
+'Run up the stairs here
+|tip Manually skip to the next step.
+step
+goto summerset_base 32.10,33.94
+click Faculty Hall
+|tip Manually skip to the next step.
+step
+goto summerset_base 32.23,34.13
+'Run up the strairs to the second floor and then run past the archway on the left.
+|tip Manually skip to the next step.
+step
+goto summerset_base 32.19,34.33
+click Wall Access
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.69,34.68
+'Press _E_ to Release Spider
+|tip Manually skip to the next step.
+step
+goto summerset_base 32.11,34.46
+click Illumination Academy
+|tip Manually skip to the next step.
+step
+goto summerset_base 32.37,34.38
+talk Selynia
+|tip Manually skip to the next step.
+step
+goto summerset_base 32.16,34.01
+'Run down to the first floor and
+click Summerset
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.25,33.57
+talk Erudil
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.21,33.58
+'Press _E_ to Examine Illuminus
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.21,33.58
+talk Glardir
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.21,33.58
+talk Erudil
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.36,32.79
+'Continue along the path and make a right through the archway up ahead
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.27,32.31
+click Hall of Illumination
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.72,32.32
+click Illumination Academy Stacks
 |tip Manually skip to the next step.
 step
 
