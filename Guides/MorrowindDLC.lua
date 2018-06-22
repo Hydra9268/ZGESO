@@ -15612,7 +15612,7 @@ click Shimmerene Wayshrine
 |tip Manually skip to the next step.
 step
 goto shimmerene_base 66.13,60.87
-'Press _E_ to use Elegant Outfit
+'Press _E_ to use _Elegant Outfit_
 |tip Manually skip to the next step.
 step
 goto shimmerene_base 65.36,59.83
@@ -15675,7 +15675,7 @@ kill Earl of Clavicus Vile
 |tip Manually skip to the next step.
 step
 goto summerset_base 68.62,55.45
-'Press _E_ to destroy the Abyssal Pearl
+'Press _E_ to Destroy _Abyssal Pearl_
 |tip Manually skip to the next step.
 step
 goto summerset_base 68.14,56.16
@@ -15781,7 +15781,7 @@ kill Conservator Vinelore and Speciman II
 |tip Manually skip to the next step.
 step
 goto summerset_base 68.85,64.12
-'Press _E_ to deactive Ward
+'Press _E_ to Deactive _Ward_
 |tip Manually skip to the next step.
 step
 goto summerset_base 68.73,64.10
@@ -15818,8 +15818,8 @@ goto summerset_base 67.32,78.94
 |tip Manually skip to the next step.
 step
 goto summerset_base 67.22,78.24
-'Press _E_ to Dig the Dirt Mound
-'Press _E_ to Take Gjadil's Treasure Chest
+'Press _E_ to Dig _Dirt Mound_
+'Press _E_ to Take _Gjadil's Treasure Chest_
 |tip Manually skip to the next step.
 step
 goto summerset_base 71.86,73.26
@@ -15882,8 +15882,8 @@ talk Kinlady Ilunsare
 accept Obedience Issues
 step
 goto summerset_base 49.75,71.62
-'Press _E_ to use console Eustasia
-'Press _E_ to use examine Durell
+'Press _E_ to Console _Eustasia_
+'Press _E_ to Examine _Durell_
 'Take Durell's Locket
 |tip Manually skip to the next step.
 step
@@ -15897,7 +15897,7 @@ goto summerset_base 46.86,71.04
 |tip Manually skip to the next step.
 step
 goto summerset_base 45.23,70.77
-'Press _E_ to Open the Sunhold Public Dungeon
+'Press _E_ to Open _Sunhold Public Dungeon_
 |tip Manually skip to the next step.
 step
 goto sunhold_base 73.32,78.10
@@ -15911,7 +15911,7 @@ step
 |tip Manually skip to the next step.
 step
 goto sunhold_base 55.17,74.42
-'Press _E_ to Burn the Maormer Supplies
+'Press _E_ to Burn _Maormer Supplies_
 |tip Manually skip to the next step.
 step
 goto sunhold_base 49.68,69.12
@@ -15919,23 +15919,23 @@ goto sunhold_base 49.68,69.12
 |tip Manually skip to the next step.
 step
 goto sunhold_base 48.23,66.90
-'Press _E_ to Burn the Maormer Supplies
+'Press _E_ to Burn _Maormer Supplies_
 |tip Manually skip to the next step.
 step
 goto sunhold_base 49.99,58.76
-'Press _E_ to Burn the Maormer Supplies
+'Press _E_ to Burn _Maormer Supplies_
 |tip Manually skip to the next step.
 step
 goto sunhold_base 44.87,61.19
-'Press _E_ to Burn the Maormer Supplies
+'Press _E_ to Burn _Maormer Supplies_
 |tip Manually skip to the next step.
 step
 goto sunhold_base 43.56,70.58
-'Press _E_ to Burn the Maormer Supplies
+'Press _E_ to Burn _Maormer Supplies_
 |tip Manually skip to the next step.
 step
 goto sunhold_base 38.90,75.80
-'Press _E_ to Burn the Maormer Supplies
+'Press _E_ to Burn _Maormer Supplies_
 |tip Manually skip to the next step.
 step
 goto sunhold_base 38.61,80.16
@@ -15971,7 +15971,7 @@ kill Kolondir the Demon
 |tip Manually skip to the next step.
 step
 goto sunhold_base 64.68,42.93
-'Press _E_ to Destroy the Prisoner Chains
+'Press _E_ to Destroy _Prisoner Chains_
 |tip Manually skip to the next step.
 step
 goto sunhold_base 60.06,38.40
@@ -15979,7 +15979,7 @@ goto sunhold_base 60.06,38.40
 |tip Manually skip to the next step.
 step
 goto sunhold_base 55.27,38.06
-'Press _E_ to Destroy the Prisoner Chains
+'Press _E_ to Destroy _Prisoner Chains_
 |tip Manually skip to the next step.
 step
 goto sunhold_base 53.91,39.45
@@ -15991,7 +15991,7 @@ goto sunhold_base 46.33,37.91
 |tip Manually skip to the next step.
 step
 goto sunhold_base 49.14,39.04
-'Press _E_ to Destroy the Prisoner Chains
+'Press _E_ to Destroy _Prisoner Chains_
 |tip Manually skip to the next step.
 step
 goto sunhold_base 47.06,40.24
@@ -16069,7 +16069,7 @@ goto shimmerene_base 20.97,67.16
 |tip Manually skip to the next step.
 step
 goto summerset_base 54.19,52.04
-'Press _E_ to examine To Chief Justiciar Carawen
+'Press _E_ to Examine _Chief Justiciar Carawen_
 accept Pearls Before Traitors
 step
 goto summerset_base 49.77,54.40
@@ -16102,7 +16102,7 @@ kill Justiciar Avanaire
 |tip Manually skip to the next step.
 step
 goto torhamekhard_01_base 30.00,44.12
-'Press _E_ to destroy the Abyssal Pearl
+'Press _E_ to Destroy _Abyssal Pearl_
 |tip Manually skip to the next step.
 step
 goto torhamekhard_01_base 37.33,44.53
@@ -16182,7 +16182,7 @@ talk Oriandra
 |tip Manually skip to the next step.
 step
 goto dreamingcave03_base 17.87,54.98
-'Press _E_ to Take the Amplification Elixir
+'Press _E_ to Take _Amplification Elixir_
 'Take the Amplification Elixir
 |tip Manually skip to the next step.
 step
@@ -16195,7 +16195,7 @@ talk Ritemaster Iachesis
 |tip Manually skip to the next step.
 step
 goto dreamingcave02_base 42.53,40
-'Press _E_ to Use the Amplification Elixir
+'Press _E_ to Use _Amplification Elixir_
 |tip Manually skip to the next step.
 step
 goto dreamingcave02_base 42.79,38.43
@@ -16240,11 +16240,11 @@ talk Felanwe
 |tip Manually skip to the next step.
 step
 goto summerset_base 48.51,43.96
-'Press _E_ to Use Whistle on Farril
+'Press _E_ to Use _Whistle on Farril_
 |tip Manually skip to the next step.
 step
 goto summerset_base 50.90,44.40
-'Press _E_ to Examine the Suspicious Sack
+'Press _E_ to Examine _Suspicious Sack_
 'Take the Bloodstained Sickle
 |tip Manually skip to the next step.
 step
@@ -16308,7 +16308,7 @@ goto russafeldredtemple01_base 51.01,79.90
 talk Celan
 |tip Manually skip to the next step.
 step
-'Press _E_ to Take the Hunting arrow
+'Press _E_ to Take _Hunting arrow_
 'Take Hunting arrow
 |tip Manually skip to the next step.
 step
@@ -16329,7 +16329,7 @@ click Tarnamir's Manor
 |tip Manually skip to the next step.
 step
 goto summerset_base 46.24,41.19
-'Press _E_ to Examine the Scratches
+'Press _E_ to Examine _Scratches_
 |tip Manually skip to the next step.
 step
 goto summerset_base 46.43,41.26
@@ -16389,7 +16389,7 @@ talk Canonreeve Farmeldo
 |tip Manually skip to the next step.
 step
 goto summerset_base 38.09,49.61
-'Press _E_ to Use Rinyde's Enchanted Daggers
+'Press _E_ to Use _Rinyde's Enchanted Daggers_
 |tip Manually skip to the next step.
 step
 goto summerset_base 38.05,50.13
@@ -16418,7 +16418,7 @@ kill Gryphon
 |tip Manually skip to the next step.
 step
 goto summerset_base 36.62,54.43
-'Press _E_ to search Gryphon Nest
+'Press _E_ to Search _Gryphon Nest_
 'Take Griffon Feather
 |tip Manually skip to the next step.
 step
@@ -16446,7 +16446,7 @@ goto summerset_base 38.12,47.89
 talk Rinyde
 |tip Manually skip to the next step.
 step
-'Press _E_ to Take Rinyde's Journal
+'Press _E_ to Take _Rinyde's Journal_
 |tip Manually skip to the next step.
 step
 goto summerset_base 38.91,48.28
@@ -16461,7 +16461,7 @@ goto summerset_base 37.82,48.64
 talk Firebird
 |tip Manually skip to the next step.
 step
-'Press _E_ to Use Rinyde's Enchanted Daggers
+'Press _E_ to Use _Rinyde's Enchanted Daggers_
 |tip Manually skip to the next step.
 step
 talk Firebird
@@ -16473,7 +16473,7 @@ goto summerset_base 37.81,48.62
 talk Clever
 |tip Manually skip to the next step.
 step
-'Press _E_ to Use the Practice Podium
+'Press _E_ to Use _Practice Podium_
 |tip Manually skip to the next step.
 step
 talk Clever
@@ -16528,15 +16528,15 @@ talk Alchemy
 |tip Manually skip to the next step.
 step
 goto summerset_base 37.96,49.75
-'Press _E_ to Use Rinyde's Enchanted Daggers
+'Press _E_ to Use _Rinyde's Enchanted Daggers_
 |tip Manually skip to the next step.
 step
 goto summerset_base 38.12,49.83
-'Press _E_ to Cheer on Podium
+'Press _E_ to Cheer _Podium_
 |tip Manually skip to the next step.
 step
 goto summerset_base 38.24,49.76
-'Press _E_ to Use Tribal Drum
+'Press _E_ to Use _Tribal Drum_
 |tip Manually skip to the next step.
 step
 goto summerset_base 38.25,48.60
@@ -16663,15 +16663,15 @@ click Cey-Tarn Keep Barracks
 |tip Manually skip to the next step.
 step
 goto summerset_base 32.74,53.70
-'Press _E_ to Examine the Candelabra
+'Press _E_ to Examine _Candelabra_
 |tip Manually skip to the next step.
 step
-'Press _E_ to Examine the Smeared Footprints
+'Press _E_ to Examine _Smeared Footprints_
 'Take Tracked Clay
 |tip Manually skip to the next step.
 step
 goto summerset_base 32.63,53.59
-'Press _E_ to Examine the Desiccated Corpse
+'Press _E_ to Examine _Desiccated Corpse_
 'Take Shriveled Cocoon
 |tip Manually skip to the next step.
 step
@@ -16701,7 +16701,7 @@ click Refectory Cellar
 |tip Manually skip to the next step.
 step
 goto ceytarn_dungeon01_base 49.90,31.30
-'Press _E_ to Use the Gorge
+'Press _E_ to Use _The Gorge_
 |tip Manually skip to the next step.
 step
 goto ceytarn_dungeon02_base 59.20,28.03
@@ -16709,7 +16709,7 @@ goto ceytarn_dungeon02_base 59.20,28.03
 |tip Manually skip to the next step.
 step
 goto ceytarn_dungeon02_base 59.01,43.87
-'Press _E_ to Take Show Us Your worth
+'Press _E_ to Take _Show Us Your Worth_
 |tip Manually skip to the next step.
 step
 goto ceytarn_dungeon03_base 47.85,59.85
@@ -16735,7 +16735,7 @@ click The Gorge - Keep Cellar
 |tip Manually skip to the next step.
 step
 goto ceytarn_dungeon03_base 68.57,89.54
-'Press _E_ to Use the Portal
+'Press _E_ to Use _Portal_
 |tip Manually skip to the next step.
 step
 talk Revelator Lindafwe
@@ -16751,7 +16751,7 @@ talk Revelator Lindafwe
 step
 goto ceytarncaveInt02_base 52.27,87.74
 'Run behind the altar and
-'Press _E_ to Examine The Gorge
+'Press _E_ to Examine _The Gorge_
 |tip Manually skip to the next step.
 step
 goto ceytarncaveInt02_base 52.83,76.39
@@ -16759,7 +16759,7 @@ goto ceytarncaveInt02_base 52.83,76.39
 |tip Manually skip to the next step.
 step
 goto ceytarncaveInt02_base 52,83,75.93
-'Press _E_ to Use the Gorge
+'Press _E_ to Use _The Gorge_
 |tip Manually skip to the next step.
 step
 goto ceytarncaveInt03_base 50.50,56.42
@@ -16799,7 +16799,7 @@ talk Hiranesse
 accept Lost at Sea
 step
 goto summerset_base 26.72,52.14
-'Press _E_ to Travel to Wasten Coraldale Delve
+'Press _E_ to Travel _Wasten Coraldale Delve_
 |tip Manually skip to the next step.
 step
 goto wastencoraldale_base 37.18,40.22
@@ -16811,7 +16811,7 @@ talk Aldortarel
 |tip Manually skip to the next step.
 step
 goto wastencoraldale_base 57.57,49.04
-'Press _E_ to Read Cartorrel's Last Words
+'Press _E_ to Read _Cartorrel's Last Words_
 |tip Manually skip to the next step.
 step
 goto wastencoraldale_base 65.77,53.80
@@ -16832,7 +16832,7 @@ goto wastencoraldale_base 52.76,52.49
 |tip Manually skip to the next step.
 step
 goto wastencoraldale_base 20.14,67.51
-'Press _E_ to Travel to Summerset
+'Press _E_ to Travel _Summerset_
 |tip Manually skip to the next step.
 step
 goto summerset_base 26.72,52.20
@@ -16852,7 +16852,7 @@ goto summerset_base 27.67,57.20
 |tip Manually skip to the next step.
 step
 goto alinor_base 33.68,32.60
-'Press _E_ to Examine the Divine Prosecution Notification
+'Press _E_ to Examine _Divine Prosecution Notification_
 accept Divine Deputation
 step
 goto alinor_base 23.73,43.67
@@ -16868,7 +16868,7 @@ goto alinor_base 38.96,35.44
 talk Lirendel
 |tip Manually skip to the next step.
 step
-'Press _E_ to Take the Guide to Altmeri Culture (On Dueling)
+'Press _E_ to Take _Guide to Altmeri Culture (On Dueling)_
 |tip Manually skip to the next step.
 step
 goto alinor_base 38.96,35.44
@@ -16921,7 +16921,7 @@ click Tor-Hame-Khard Delve
 |tip Manually skip to the next step.
 step
 goto torhamekhard_01_base 49.05,39.18
-'Press _E_ to Read Lirendel's Family Shrine
+'Press _E_ to Read _Lirendel's Family Shrine_
 |tip Manually skip to the next step.
 step
 'Open your map:
@@ -17076,7 +17076,7 @@ talk Rigurt the Brash
 |tip Manually skip to the next step.
 step
 goto alinor_base 54.97,57.27
-'Press _E_ to Use the Wayshrine
+'Press _E_ to Use _Wayshrine_
 click Russafeld Heights Wayshrine
 'Travel to the Russafeld Heights Wayshrine
 |tip Manually skip to the next step.
@@ -17124,7 +17124,7 @@ goto summerset_base 55.95,52.93
 |tip Manually skip to the next step.
 step
 goto summerset_base 55.50,54.51
-'Press _E_ to Use Portal to Artaeum
+'Press _E_ to Use _Portal to Artaeum_
 |tip Manually skip to the next step.
 step
 'Open your map:
@@ -17133,7 +17133,7 @@ click Arteum Wayshrine
 |tip Manually skip to the next step.
 step
 goto artaeum_base 64.96,26.72
-'Press _E_ to Use Portal to Ceporah Tower
+'Press _E_ to Use _Portal to Ceporah Tower_
 |tip Manually skip to the next step.
 step
 goto dreamingcave02_base 47.50,48.34
@@ -17160,7 +17160,7 @@ goto dreamingcave02_base 29.07,66.41
 |tip Manually skip to the next step.
 step
 goto dreamingcave02_base 55.60,66.33
-'Press _E_ to Use the Portal to Ritemaster's Study
+'Press _E_ to Use _Portal to Ritemaster's Study_
 |tip Manually skip to the next step.
 step
 goto dreamingcave03_base 66.04,70.69
@@ -17172,7 +17172,7 @@ talk Oriandra
 |tip Manually skip to the next step.
 step
 goto dreamingcave03_base 58.40,70.18
-'Press _E_ to Use the Portal to Ceporah Main Gallery
+'Press _E_ to Use _Portal to Ceporah Main Gallery_
 |tip Manually skip to the next step.
 step
 goto dreamingcave02_base 40.37,42.24
@@ -17181,7 +17181,7 @@ talk Ritemaster Iachesis
 |tip Manually skip to the next step.
 step
 goto dreamingcave02_base 36.27,32.34
-'Press _E_ to Use the Portal to Arteum
+'Press _E_ to Use _Portal to Arteum_
 |tip Manually skip to the next step.
 step
 goto artaeum_base 64.67,30.42
@@ -17217,7 +17217,7 @@ goto artaeum_base 66.94,73.75
 |tip Manually skip to the next step.
 step
 goto artaeum_base 66.39,78.57
-'Press _E_ to Destroy the Abyssal Pearl
+'Press _E_ to Destroy _Abyssal Pearl_
 |tip Manually skip to the next step.
 step
 goto artaeum_base 63.05,80.06
@@ -17266,8 +17266,8 @@ goto psijicrelicvaults02_base 55.80,30.17
 |tip Manually skip to the next step.
 step
 goto psijicrelicvaults02_base 91.31,07.68
-'Press _E_ to Use the Wardkey, then
-'Press _E_ to Open the Relic Repository
+'Press _E_ to Use _Wardkey_, then
+'Press _E_ to Open _Relic Repository_
 'Take The Ul'vor Staff
 |tip Manually skip to the next step.
 step
@@ -17292,7 +17292,7 @@ talk Valsirenn
 |tip Manually skip to the next step.
 step
 goto psijicrelicvaults01_base 49.10,56.71
-'Press _E_ to Use the Ul'vor Staff
+'Press _E_ to Use _Ul'vor Staff_
 |tip Manually skip to the next step.
 step
 goto sq3sloadmindscape_base 55.27,26.80
@@ -17315,7 +17315,7 @@ kill K'Tora
 |tip Manually skip to the next step.
 step
 goto sq3sloadmindscape_base 49.56,54.24
-'Press _E_ to Use the Ul'vor Staff
+'Press _E_ to Use _Ul'vor Staff_
 |tip Manually skip to the next step.
 step
 goto psijicrelicvaults01_base 53.06,56.85
@@ -17328,11 +17328,11 @@ click Arteum Wayshrine
 |tip Manually skip to the next step.
 step
 goto artaeum_base 64.96,26.72
-'Press _E_ to Use Portal to Ceporah Tower
+'Press _E_ to Use _Portal to Ceporah Tower_
 |tip Manually skip to the next step.
 step
 goto dreamingcave02_base 56.25,64.66
-'Press _E_ to Use the Portal to Ritemaster's Study
+'Press _E_ to Use _Portal to Ritemaster's Study_
 |tip Manually skip to the next step.
 step
 goto dreamingcave03_base 62.04,76.77
@@ -17375,16 +17375,16 @@ click Cey-Tarn Keep Wayshrine
 |tip Manually skip to the next step.
 step
 goto summerset_base 26.71,52.16
-'Press _E_ to Travel to Wastern Coral Delve
+'Press _E_ to Travel _Wastern Coral Delve_
 |tip Manually skip to the next step.
 step
 goto wastencoraldale_base 78.83,29.15
-'Press _E_ to Open the Augur of the Obscure
+'Press _E_ to Open _Augur of the Obscure_
 'Select _"I have a few questions first"_ if you'd like to learn more, otherwise
 'Select _"Yes. Let's get moving."_
 |tip Manually skip to the next step.
 step
-'Press _E_ to Use the Psijic Map of Summerset
+'Press _E_ to Use _Psijic Map of Summerset_
 |tip Manually skip to the next step.
 step
 'Open your map.
@@ -17406,7 +17406,7 @@ goto summerset_base 52.18,41.70
 |tip Manually skip to the next step.
 step
 goto summerset_base 53.95,40.98
-'Press _E_ to Use the Augur of the Obscure
+'Press _E_ to Use _Augur of the Obscure_
 |tip Manually skip to the next step.
 step
 goto summerset_base 56.71,42.64
@@ -17414,11 +17414,11 @@ goto summerset_base 56.71,42.64
 |tip Manually skip to the next step.
 step
 goto summerset_base 56.28,43.17
-'Press _E_ to Use the Augur of the Obscure
+'Press _E_ to Use _Augur of the Obscure_
 |tip Manually skip to the next step.
 step
 goto summerset_base 56.22,43.29
-'Press _E_ to Seal the Time Breach
+'Press _E_ to Seal _Time Breach_
 |tip Manually skip to the next step.
 step
 goto summerset_base 56.75,43.81
@@ -17466,17 +17466,17 @@ talk Cainar
 |tip Manually skip to the next step.
 step
 goto Eldbursanctuary03_base 51.85,52.22
-'Press _E_ to Take Spell Particle
+'Press _E_ to Take _Spell Particle_
 'Take Spell Particle
 |tip Manually skip to the next step.
 step
 goto Eldbursanctuary03_base 51.30,31.26
-'Press _E_ to Take Spell Particle
+'Press _E_ to Take _Spell Particle_
 'Take Spell Particle
 |tip Manually skip to the next step.
 step
 goto Eldbursanctuary03_base 33.80,55.03
-'Press _E_ to Take Spell Particle
+'Press _E_ to Take _Spell Particle_
 'Take Spell Particle
 |tip Manually skip to the next step.
 step
@@ -17497,12 +17497,12 @@ goto Eldbursanctuary02_base 42.75,24.58
 |tip Manually skip to the next step.
 step
 goto Eldbursanctuary02_base 62.97,14.97
-'Press _E_ to Examine the Bucket
+'Press _E_ to Examine _Bucket_
 'Take Bucket
 |tip Manually skip to the next step.
 step
 goto Eldbursanctuary02_base 63.20,13.50
-'Press _E_ to Use Bucket
+'Press _E_ to Use _Bucket_
 |tip Manually skip to the next step.
 step
 goto Eldbursanctuary02_base 63.25,20.32
@@ -17514,21 +17514,21 @@ goto Eldbursanctuary02_base 69.84,79.77
 |tip Manually skip to the next step.
 step
 goto Eldbursanctuary01_base 42.84,81.42
-'Press _E_ to Enter Miriya's Mind Trap
+'Press _E_ to Enter _Miriya's Mind Trap_
 |tip Manually skip to the next step.
 step
 goto Eldbursanctuary04_base 57.48,40.55
-'Press _E_ to Search Miriya's Pack
+'Press _E_ to Search _Miriya's Pack_
 'Take Cowl of the Exile
 |tip Manually skip to the next step.
 step
 goto Eldbursanctuary04_base 43.74,39.94
-'Press _E_ to Take Regret
+'Press _E_ to Take _Regret_
 'Take Regret
 |tip Manually skip to the next step.
 step
 goto Eldbursanctuary04_base 46.49,53.82
-'Press _E_ to Take Redemption
+'Press _E_ to Take _Redemption_
 'Take Redemption
 |tip Manually skip to the next step.
 step
@@ -17556,7 +17556,7 @@ kill Oriandra's Rage
 |tip Manually skip to the next step.
 step
 goto Eldbursanctuary05_base 66.41,41.29
-'Press _E_ to Use Cainar's Link
+'Press _E_ to Use _Cainar's Link_
 |tip Manually skip to the next step.
 step
 goto Eldbursanctuary02_base 54.10,54.87
@@ -17564,7 +17564,7 @@ talk Oriandra
 |tip Manually skip to the next step.
 step
 goto Eldbursanctuary02_base 62.65,53.36
-'Press _E_ to Climb Eldbur Ruins
+'Press _E_ to Climb _Eldbur Ruins_
 |tip Manually skip to the next step.
 step
 goto Eldbursanctuary01_base 85.31,39.68
@@ -17585,7 +17585,7 @@ goto summerset_base 55.24,28.64
 |tip Manually skip to the next step.
 step
 goto summerset_base 58.64,30.20
-'Press _E_ to Use the Augur of the Obscure
+'Press _E_ to Use _Augur of the Obscure_
 |tip Manually skip to the next step.
 step
 goto summerset_base 59.09,30.29
@@ -17594,7 +17594,7 @@ accept Lauriel's Lament
 |tip Manually skip to the next step.
 step
 goto summerset_base 61.52,32.58
-'Press _E_ to Seal the Time Breach
+'Press _E_ to Seal _Time Breach_
 |tip Manually skip to the next step.
 step
 goto summerset_base 61.18,32.33
@@ -17603,11 +17603,11 @@ click Keeper's Manor
 step
 goto summerset_base 61.02,32.23
 'Run up the stairs from here to the third floor
-'Press _E_ to Examine to Keeper's Letter
+'Press _E_ to Examine _Keeper's Letter_
 |tip Manually skip to the next step.
 step
 goto summerset_base 61.02,32.23
-'Press _E_ to Search the Keeper's Coffer
+'Press _E_ to Search _Keeper's Coffer_
 'Take the Golden Seal and the Keeper's Key
 |tip Manually skip to the next step.
 step
@@ -17633,11 +17633,11 @@ goto karndar_03_base 52.88,52.88
 |tip Manually skip to the next step.
 step
 goto karndar_01_base 39.90,52.94
-'Press _E_ to Examine the Keeper's Oath
+'Press _E_ to Examine _Keeper's Oath_
 |tip Manually skip to the next step.
 step
 goto karndar_01_base 35.88,51.65
-'Press _E_ to Place the Golden Seal Recess
+'Press _E_ to Place _Golden Seal Recess_
 |tip Manually skip to the next step.
 step
 goto karndar_01_base 37.06,49.28
@@ -17669,7 +17669,7 @@ goto karndar_02_base 61.62,61.36
 |tip Manually skip to the next step.
 step
 goto karndar_02_base 49.26,67.42
-'Press _E_ to Search the Keeper's Remains
+'Press _E_ to Search _Keeper's Remains_
 'Take the Crimson Seal
 |tip Manually skip to the next step.
 step
@@ -17690,7 +17690,7 @@ goto karndar_01_base 36.70,59.18
 |tip Manually skip to the next step.
 step
 goto karndar_01_base 36.29,53.97
-'Press _E_ to Place the Crimson Seal
+'Press _E_ to Place _Crimson Seal_
 |tip Manually skip to the next step.
 step
 goto karndar_01_base 31.34,53.09
@@ -17734,7 +17734,7 @@ talk Lauriel
 |tip Manually skip to the next step.
 step
 goto karndar_06_base 73.35,51.42
-'Press _E_ to Take the Keeper's Flame
+'Press _E_ to Take _Keeper's Flame_
 'Take Keeper's Flame
 |tip Manually skip to the next step.
 step
@@ -17812,7 +17812,7 @@ goto summerset_base 56.22,28.99
 |tip Manually skip to the next step.
 step
 goto summerset_base 56.81,26.66
-'Press _E_ to Examine Aralem
+'Press _E_ to Examine _Aralem_
 'Take Gryphon Egg
 |tip Manually skip to the next step.
 step
@@ -17879,7 +17879,7 @@ goto kingshavenint1_base 29.07,26.88
 |tip Manually skip to the next step.
 step
 goto kingshavenint1_base 18.93,39.07
-'Press _E_ to Take Naliara's Notes, Day 8
+'Press _E_ to Take _Naliara's Notes, Day 8_
 |tip Manually skip to the next step.
 step
 goto kingshavenint1_base 07.24,43.66
@@ -17887,7 +17887,7 @@ click King's Haven Pass
 |tip Manually skip to the next step.
 step
 goto kingshavenext_base 33.76,40.79
-'Press _E_ to Take Naliara's Notes, Day 13
+'Press _E_ to Take _Naliara's Notes, Day 13_
 |tip Manually skip to the next step.
 step
 goto kingshavenext_base 34.34,46.71
@@ -17903,7 +17903,7 @@ goto kingshavenext_base 19.40,58.55
 |tip Manually skip to the next step.
 step
 goto kingshavenext_base 37.03,63.23
-'Press _E_ to Take Naliara's Notes, Day 18
+'Press _E_ to Take _Naliara's Notes, Day 18_
 |tip Manually skip to the next step.
 step
 goto kingshavenext_base 43.38,58.13
@@ -17927,7 +17927,7 @@ goto kingshavenint1_base 22.15,62.35
 |tip Manually skip to the next step.
 step
 goto kingshavenint1_base 41.58,54.19
-'Press _E_ to Take Naliara's Notes, Day 2
+'Press _E_ to Take _Naliara's Notes, Day 2_
 |tip Manually skip to the next step.
 step
 goto kingshavenint1_base 35.96,33.03
@@ -17951,15 +17951,15 @@ click Ancient Ruins
 |tip Manually skip to the next step.
 step
 goto kingshavenint1_base 58.60,55.32
-'Press _E_ to Examine the King's Haven Trade Record
+'Press _E_ to Examine _King's Haven Trade Record_
 |tip Manually skip to the next step.
 step
 goto kingshavenint1_base 58.81,64.64
-'Press _E_ to Examine the King's Haven Scout Record
+'Press _E_ to Examine _King's Haven Scout Record_
 |tip Manually skip to the next step.
 step
 goto kingshavenint1_base 58.92,75.38
-'Press _E_ to Examine the King's Haven Territory Record
+'Press _E_ to Examine _King's Haven Territory Record_
 |tip Manually skip to the next step.
 step
 goto kingshavenint1_base 58.92,75.38
@@ -18024,7 +18024,7 @@ click Ebon Stadmont
 |tip Manually skip to the next step.
 step
 goto summerset_base 36.43,38.11
-'Press _E_ to Search the Inscribed Stonework
+'Press _E_ to Search _Inscribed Stonework_
 'Kill the three waves of mobs that appear
 |tip Manually skip to the next step.
 step
@@ -18033,7 +18033,7 @@ click Ebon Stadmont
 |tip Manually skip to the next step.
 step
 goto summerset_base 38.58,36.68
-'Press _E_ to Search the Inscribed Stonework
+'Press _E_ to Search _Inscribed Stonework_
 'Kill the three waves of mobs that appear
 |tip Manually skip to the next step.
 step
@@ -18047,11 +18047,11 @@ click Ebon Sanctum
 |tip Manually skip to the next step.
 step
 goto ebonStadmont03_base 70.78,39.05
-'Press _E_ to Examine Dear Escort
+'Press _E_ to Examine _Dear Escort_
 |tip Manually skip to the next step.
 step
 goto ebonStadmont03_base 70.93,34.64
-'Press _E_ to Activate the Enchanted Stone
+'Press _E_ to Activate _Enchanted Stone_
 |tip Manually skip to the next step.
 step
 goto ebonStadmont03_base 70.97,21.02
@@ -18064,7 +18064,7 @@ kill Nightstealer Sorina
 |tip Manually skip to the next step.
 step
 goto ebonStadmont02_base 72.68,32.35
-'Press _E_ to Bandage Fletch, then
+'Press _E_ to Bandage _Fletch_, then
 talk Fletch
 |tip Manually skip to the next step.
 step
@@ -18082,7 +18082,7 @@ click Northern Pass
 step
 goto ebonStadmont_base 41.06,32.92
 'Follow the path to the stone
-'Press _E_ to Activate the Enchanted Stone
+'Press _E_ to Activate _Enchanted Stone_
 |tip Manually skip to the next step.
 step
 goto ebonStadmont_base 41.06,32.92
@@ -18121,7 +18121,7 @@ click Southern Path
 step
 goto ebonStadmont_base 26.52,59.70
 'Follow the path to the stone
-'Press _E_ to Activate the Enchanted Stone
+'Press _E_ to Activate _Enchanted Stone_
 |tip Manually skip to the next step.
 step
 goto ebonStadmont_base 26.07,56.53
@@ -18161,7 +18161,7 @@ talk Erudil
 |tip Manually skip to the next step.
 step
 goto summerset_base 30.71,33.47
-'Press _E_ to Examine Illuminus
+'Press _E_ to Examine _Illuminus_
 |tip Manually skip to the next step.
 step
 goto summerset_base 30.71,33.47
@@ -18181,7 +18181,7 @@ talk Pavo Maria
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.80,33.64
-'Press _E_ to Examine the Beggar Prince
+'Press _E_ to Examine _Beggar Prince_
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.85,33.66
@@ -18191,7 +18191,7 @@ talk Pavo Maria
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.85,33.66
-'Press _E_ to "Bless" Pavo Maria
+'Press _E_ to "Bless" _Pavo Maria_
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.85,33.66
@@ -18203,7 +18203,7 @@ talk Erudil
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.21,33.58
-'Press _E_ to Examine Illuminus
+'Press _E_ to Examine _Illuminus_
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.21,33.58
@@ -18215,7 +18215,7 @@ talk Tanelwen
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.00,31.86
-'Press _E_ to Examine Investigator Vale: The Locked Room Murder
+'Press _E_ to Examine _Investigator Vale: The Locked Room Murder_
 |tip Manually skip to the next step.
 step
 goto summerset_base 30.98,31.74
@@ -18231,7 +18231,7 @@ talk Hunrand
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.19,32.42
-'Press _E_ to Take Half-Eaten Pie
+'Press _E_ to Take _Half-Eaten Pie_
 |tip Manually skip to the next step.
 step
 goto summerset_base 30.98,31.75
@@ -18243,7 +18243,7 @@ talk Erudil
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.21,33.53
-'Press _E_ to Examine Illuminus
+'Press _E_ to Examine _Illuminus_
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.21,33.53
@@ -18271,7 +18271,7 @@ talk Selynia
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.71,34.68
-'Press _E_ to Examine Brave Little Scrib
+'Press _E_ to Examine _Brave Little Scrib_
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.64,34.66
@@ -18308,7 +18308,7 @@ click Wall Access
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.69,34.68
-'Press _E_ to Release Spider
+'Press _E_ to Release _Spider_
 |tip Manually skip to the next step.
 step
 goto summerset_base 32.11,34.46
@@ -18329,7 +18329,7 @@ talk Erudil
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.21,33.58
-'Press _E_ to Examine Illuminus
+'Press _E_ to Examine _Illuminus_
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.21,33.58
@@ -18350,6 +18350,80 @@ click Hall of Illumination
 step
 goto summerset_base 31.72,32.32
 click Illumination Academy Stacks
+|tip Manually skip to the next step.
+step
+goto illuminationacademy_01_base 56.31,81.24
+talk Meredil the Archivist
+|tip Manually skip to the next step.
+step
+goto illuminationacademy_01_base 46.08,83.00
+'Run through the archway here and continue North
+|tip Manually skip to the next step.
+step
+goto illuminationacademy_01_base 38.06,67.87
+'Run down the stairs from here
+|tip Manually skip to the next step.
+step
+goto illuminationacademy_02_base 42.95,77.76
+'Run through the archway here and continue North
+|tip Manually skip to the next step.
+step
+goto illuminationacademy_02_base 55.86,50.77
+'Run down the stairs from here
+|tip Manually skip to the next step.
+step
+goto illuminationacademy_03_base 63.00,25.27
+'Press _E_ to Take _The Forest Dark_
+|tip Manually skip to the next step.
+step
+goto illuminationacademy_03_base 48.66,36.44
+'Press _E_ to Place book in _Nature Poetry_
+|tip Manually skip to the next step.
+step
+goto illuminationacademy_03_base 40.39,19.99
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto illuminationacademy_02_base 34.48,30.16
+'Run through the archway here and continue to the other side
+|tip Manually skip to the next step.
+step
+goto illuminationacademy_02_base 63.02,30.84
+'Press _E_ to Take _The Siege of Ald Marak_
+|tip Manually skip to the next step.
+step
+goto illuminationacademy_02_base 64.60,40.60
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
 |tip Manually skip to the next step.
 step
 
