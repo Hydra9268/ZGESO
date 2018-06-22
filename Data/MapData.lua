@@ -585,6 +585,7 @@
 		["Illumination Academy Stacks"] = [[illuminationacademy_01_base]],
 		["Illumination Academy Stacks"] = [[illuminationacademy_02_base]],
 		["Illumination Academy Stacks"] = [[illuminationacademy_03_base]],
+		["Illumination Academy Stacks"] = [[illuminationacademy_04_base]],
 
 	},
 	["Zones"] =
@@ -648,6 +649,7 @@
 		["illuminationacademy_01_base"] = 	{ name = "Illumination Academy Stacks",	id = 419, xoffset = 0.0806531980633, yoffset = 0.69163000583648, xscale = 0.00204574931794, },
 		["illuminationacademy_02_base"] = 	{ name = "Illumination Academy Stacks",	id = 419, xoffset = 0.0795827662640, yoffset = 0.68978052064162, xscale = 0.00204418627354, },
 		["illuminationacademy_03_base"] = 	{ name = "Illumination Academy Stacks",	id = 419, xoffset = 0.0795821170839, yoffset = 0.68978148190275, xscale = 0.00204567134021, },
+		["illuminationacademy_04_base"] = 	{ name = "Illumination Academy Stacks",	id = 419, xoffset = 0.0795829724589, yoffset = 0.68978091271530, xscale = 0.00204396092398, },
 
 
 		-- EXISTING
