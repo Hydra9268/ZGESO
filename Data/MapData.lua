@@ -582,6 +582,9 @@
 		["Ebon Sanctum"] = [[ebonStadmont_base]],
 		["Ebon Sanctum"] = [[ebonStadmont03_base]],
 		["Ebon Sanctum"] = [[ebonStadmont02_base]],
+		["Illumination Academy Stacks"] = [[illuminationacademy_01_base]],
+		["Illumination Academy Stacks"] = [[illuminationacademy_02_base]],
+		["Illumination Academy Stacks"] = [[illuminationacademy_03_base]],
 
 	},
 	["Zones"] =
@@ -642,6 +645,9 @@
 		["ebonStadmont_base"] =			{ name = "Ebon Sanctum",		id = 418, xoffset = 0.0993731188575, yoffset = 0.69193664162816, xscale = 0.00424183752580, },
 		["ebonStadmont02_base"] =		{ name = "Ebon Sanctum",		id = 418, xoffset = 0.0998417941988, yoffset = 0.69432848467322, xscale = 0.00109884872049, },
 		["ebonStadmont03_base"] =		{ name = "Ebon Sanctum",		id = 418, xoffset = 0.0986673969770, yoffset = 0.69432862062926, xscale = 0.00109884231168, },
+		["illuminationacademy_01_base"] = 	{ name = "Illumination Academy Stacks",	id = 419, xoffset = 0.0806531980633, yoffset = 0.69163000583648, xscale = 0.00204574931794, },
+		["illuminationacademy_02_base"] = 	{ name = "Illumination Academy Stacks",	id = 419, xoffset = 0.0795827662640, yoffset = 0.68978052064162, xscale = 0.00204418627354, },
+		["illuminationacademy_03_base"] = 	{ name = "Illumination Academy Stacks",	id = 419, xoffset = 0.0795821170839, yoffset = 0.68978148190275, xscale = 0.00204567134021, },
 
 
 		-- EXISTING
