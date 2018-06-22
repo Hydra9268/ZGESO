@@ -18396,70 +18396,95 @@ goto illuminationacademy_02_base 64.60,40.60
 'Run up the stairs from here
 |tip Manually skip to the next step.
 step
-
+goto illuminationacademy_01_base 42.42,23.90
+'Press _E_ to Place book in _Imperial History_
 |tip Manually skip to the next step.
 step
-
+goto illuminationacademy_01_base 42.01,17.93
+'Run up the stairs from here
 |tip Manually skip to the next step.
 step
-
+goto illuminationacademy_04_base 52.36,17.19
+'Press _E_ to Take _The Truth of Minotaurs_
 |tip Manually skip to the next step.
 step
-
+goto illuminationacademy_04_base 53.37,13.14
+'Press _E_ to Place book in _Beasts and Horrors_
 |tip Manually skip to the next step.
 step
-
+goto illuminationacademy_04_base 52.28,30.96
+'Kill the pair of Minotaurs on the bridge
 |tip Manually skip to the next step.
 step
-
+goto illuminationacademy_04_base 52.51,45.35
+'If you can, 
+talk Glardir
+'Otherwise
+kill The Illuminated One
 |tip Manually skip to the next step.
 step
-
+goto illuminationacademy_04_base 46.88,58.67
+'Run down the stairs from here
 |tip Manually skip to the next step.
 step
-
+goto illuminationacademy_01_base 52.18,53.39
+'Press _E_ to Take _Illuminus_
 |tip Manually skip to the next step.
 step
-
+goto illuminationacademy_01_base 53.26,50.54
+'Press _E_ to Place book in _Shrieking Tomes_
 |tip Manually skip to the next step.
 step
-
+goto illuminationacademy_01_base 52.43,73.97
+click Illumination Academy Stacks
 |tip Manually skip to the next step.
 step
-
+goto illuminationacademy_01_base 52.32,89.85
+click Hall of Illumination
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 31.39,32.38
+click Summerset
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 31.16,32.23
+talk Erudil
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 30.81,32.02
+'Run past the archway here and continue West outside of the Illumination Academy
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 29.47,31.91
+'Jump down from here
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 28.95,32.40
+'Follow the road South
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 29.20,34.37
+'Press _E_ to Use _Augur of the Obscure_
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 29.99,35.46
+'Cross the bridge from here
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 28.46,37.42
+'From here go East along the water
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 29.23,37.35
+'Press _E_ to Seal _Time Breach_
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 26.89,38.19
+'At the fork in the road, go left from here
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 26.22,41.82
+talk Pandermalion
 |tip Manually skip to the next step.
 step
 
