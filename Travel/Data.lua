@@ -457,6 +457,7 @@ Data.MapIdsByName = {
 	["Coral-Splitter Caves"] = 417,
 	["Ebon Sanctum"] = 418,
 	["Illumination Academy Stacks"] = 419,
+	["Sea Keep"] = 420,
 
 	[""] = 1000
 }

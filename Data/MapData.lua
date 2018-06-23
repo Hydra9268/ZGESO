@@ -586,6 +586,9 @@
 		["Illumination Academy Stacks"] = [[illuminationacademy_02_base]],
 		["Illumination Academy Stacks"] = [[illuminationacademy_03_base]],
 		["Illumination Academy Stacks"] = [[illuminationacademy_04_base]],
+		["Sea Keep"] = [[seakeep_01_base]],
+		["Sea Keep"] = [[seakeep_02_base]],
+		["Sea Keep"] = [[seakeep_03_base]],
 
 	},
 	["Zones"] =
@@ -650,6 +653,9 @@
 		["illuminationacademy_02_base"] = 	{ name = "Illumination Academy Stacks",	id = 419, xoffset = 0.0795827662640, yoffset = 0.68978052064162, xscale = 0.00204418627354, },
 		["illuminationacademy_03_base"] = 	{ name = "Illumination Academy Stacks",	id = 419, xoffset = 0.0795821170839, yoffset = 0.68978148190275, xscale = 0.00204567134021, },
 		["illuminationacademy_04_base"] = 	{ name = "Illumination Academy Stacks",	id = 419, xoffset = 0.0795829724589, yoffset = 0.68978091271530, xscale = 0.00204396092398, },
+		["seakeep_01_base"] =			{ name = "Sea Keep",			id = 420, xoffset = 0.0545115376472, yoffset = 0.72122556179799, xscale = 0.00372781185493, },
+		["seakeep_02_base"] =			{ name = "Sea Keep",			id = 420, xoffset = 0.0545136215913, yoffset = 0.72123652722848, xscale = 0.00371188792497, },
+		["seakeep_03_base"] =			{ name = "Sea Keep",			id = 420, xoffset = 0.0545122189846, yoffset = 0.72122606744271, xscale = 0.00372653466461, },
 
 
 		-- EXISTING
