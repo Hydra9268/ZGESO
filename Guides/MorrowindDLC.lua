@@ -18485,6 +18485,160 @@ goto summerset_base 26.89,38.19
 step
 goto summerset_base 26.22,41.82
 talk Pandermalion
+accept Storming the Walls
+step
+goto summerset_base 25.16,44.48
+talk Pandermalion
+|tip Manually skip to the next step.
+step
+goto summerset_base 25.13,44.50
+'Press _E_ to Enter _Underwater Passage_
+|tip Manually skip to the next step.
+step
+goto seakeep_01_base 50,50
+|tip Manually skip to the next step.
+step
+goto seakeep_01_base 71.93,77.42
+talk Pandermalion
+|tip Manually skip to the next step.
+step
+goto seakeep_01_base 35.94,44.90
+'Follow the path and then pass through the archway here and continue West
+|tip Manually skip to the next step.
+step
+goto seakeep_01_base 22.90,44.95
+click Sea Keep
+|tip Manually skip to the next step.
+step
+goto seakeep_01_base 17.34,40.89
+click Sea Keep
+|tip Manually skip to the next step.
+step
+goto seakeep_01_base 16.81,38.13
+talk Castire
+|tip Manually skip to the next step.
+step
+goto seakeep_01_base 16.81,38.13
+talk Pandermalion
+|tip Manually skip to the next step.
+step
+goto seakeep_01_base 17.37,37.52
+click Sea Keep
+|tip Manually skip to the next step.
+step
+goto seakeep_01_base 27.98,35.47
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto seakeep_01_base 37.52,23.11
+'Press _E_ to Seal _Magicka Font_
+|tip Manually skip to the next step.
+step
+goto seakeep_01_base 43.39,16.40
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto seakeep_02_base 46.09,22.33
+'From here run along the inside balcony to the opposite side
+|tip Manually skip to the next step.
+step
+goto seakeep_02_base 33.12,15.24
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto seakeep_03_base 42.00,09.73
+'Press _E_ to Seal _Magicka Font_
+|tip Manually skip to the next step.
+step
+goto seakeep_03_base 42.35,10.47
+'From here continue South across the bridge
+|tip Manually skip to the next step.
+step
+goto seakeep_03_base 54.85,29.91
+kill Tenerive
+|tip Manually skip to the next step.
+step
+goto seakeep_03_base 55.92,29.22
+'Press _E_ to Seal _Magicka Font_
+|tip Manually skip to the next step.
+step
+goto seakeep_03_base 62.34,28.14
+click Sea Keep Courtyard
+|tip Manually skip to the next step.
+step
+goto summerset_base 21.59,44.10
+'Run down the stairs from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 21.46,44.81
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 22.10,44.82
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 21.79,45.01
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 22.73,44.88
+click Sea Keep Inner Gate Tower
+|tip Manually skip to the next step.
+step
+goto summerset_base 22.92,44.72
+'Press _E_ to Use _Inner Gate Lever_
+|tip Manually skip to the next step.
+step
+goto summerset_base 22.78,44.92
+click Sea Keep Courtyard
+|tip Manually skip to the next step.
+step
+goto summerset_base 22.31,44.89
+'Drop down to the battlement below and then to the ground floor
+|tip Manually skip to the next step.
+step
+goto summerset_base 23.03,44.63
+talk Castire
+|tip Manually skip to the next step.
+step
+goto summerset_base 23.01,44.65
+talk Pandermalion
+|tip Manually skip to the next step.
+step
+goto summerset_base 23.11,44.72
+click Sea Keep
+|tip Manually skip to the next step.
+step
+goto summerset_base 25.33,46.00
+kill Urlsar
+|tip Manually skip to the next step.
+step
+goto summerset_base 23.92,44.26
+click Sea Keep
+|tip Manually skip to the next step.
+step
+goto summerset_base 24.17,43.91
+talk Castire
+'Select _You two are proof that the two can coexist._
+|tip Manually skip to the next step.
+step
+goto summerset_base 24.17,43.91
+talk Pandermalion
+|tip Manually skip to the next step.
+step
+goto summerset_base 23.57,41.75
+click Summerset
+|tip Manually skip to the next step.
+step
+goto summerset_base 23.93,41.31
+talk Battlereeve Farwenya
+'You must decide what you will do now. (We think telling the truth is a good choice.)
+'Select _The Maormer attack occurred because Panderlion was consorting with their captain._, or
+'Select _The Maormer may have gotten the best of him, but it was Panderlion's plan that saved the day._
+|tip Manually skip to the next step.
+step
+
 |tip Manually skip to the next step.
 step
 
