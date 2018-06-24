@@ -589,6 +589,9 @@
 		["Sea Keep"] = [[seakeep_01_base]],
 		["Sea Keep"] = [[seakeep_02_base]],
 		["Sea Keep"] = [[seakeep_03_base]],
+		["College of Sapiarchs Labyrinth"] = [[SQ4Sapiarch01_base]],
+		["College of Sapiarchs Labyrinth"] = [[SQ4Sapiarch02_base]],
+		["College of Sapiarchs Labyrinth"] = [[SQ4Sapiarch03_base]],
 
 	},
 	["Zones"] =
@@ -656,6 +659,9 @@
 		["seakeep_01_base"] =			{ name = "Sea Keep",			id = 420, xoffset = 0.0545115376472, yoffset = 0.72122556179799, xscale = 0.00372781185493, },
 		["seakeep_02_base"] =			{ name = "Sea Keep",			id = 420, xoffset = 0.0545136215913, yoffset = 0.72123652722848, xscale = 0.00371188792497, },
 		["seakeep_03_base"] =			{ name = "Sea Keep",			id = 420, xoffset = 0.0545122189846, yoffset = 0.72122606744271, xscale = 0.00372653466461, },
+		["SQ4Sapiarch01_base"] = 		{ name = "College of Sapiarchs Labyrinth",id = 421, xoffset = 0.022806082256507, yoffset = 0.71060167241732, xscale = 0.0012931538811916, },
+		["SQ4Sapiarch02_base"] = 		{ name = "College of Sapiarchs",	id = 421, xoffset = 0.022853746601356, yoffset = 0.70954911800067, xscale = 0.0008418061277109, },
+		["SQ4Sapiarch03_base"] = 		{ name = "College of Sapiarchs Labyrinth",id = 421, xoffset = 0.022806756854767, yoffset = 0.71060167892037, xscale = 0.0012918505667399, },
 
 
 		-- EXISTING

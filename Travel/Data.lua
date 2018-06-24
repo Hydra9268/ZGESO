@@ -458,6 +458,7 @@ Data.MapIdsByName = {
 	["Ebon Sanctum"] = 418,
 	["Illumination Academy Stacks"] = 419,
 	["Sea Keep"] = 420,
+	["College of Sapiarchs Labyrinth"] = 421,
 
 	[""] = 1000
 }
