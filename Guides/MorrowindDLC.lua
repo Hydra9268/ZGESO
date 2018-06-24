@@ -15608,7 +15608,7 @@ talk Mother of Rats
 step
 'Open your map:
 click Shimmerene Wayshrine
-'Travel to the Shimmerene Wayshrine
+'Travel to the _Shimmerene_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto shimmerene_base 66.13,60.87
@@ -15796,38 +15796,6 @@ step
 goto summerset_base 62.55,66.16
 'Continue along the path to
 wayshrine Eastern Pass
-|tip Manually skip to the next step.
-step
-goto summerset_base 71.90,73.20
-talk Igeke Rat-Bite
-accept Gjadil's Legacy
-step
-goto summerset_base 71.81,73.37
-click Gjadil's Treasure Map
-'take Gjadil's Treasure Map
-|tip Manually skip to the next step.
-step
-'1. Open inventory
-'2. Select Quest
-'3. Hover over Gjadil's Treasure Map
-'4. Press _E_ to use Gjadil's Treasure Map
-|tip Manually skip to the next step.
-step
-goto summerset_base 67.32,78.94
-'Continue up the path
-|tip Manually skip to the next step.
-step
-goto summerset_base 67.22,78.24
-'Press _E_ to Dig _Dirt Mound_
-'Press _E_ to Take _Gjadil's Treasure Chest_
-|tip Manually skip to the next step.
-step
-goto summerset_base 71.86,73.26
-talk Igeke Rat-Bite
-|tip Manually skip to the next step.
-step
-'Open your map:
-'Travel to the Eastern Pass Wayshrine
 |tip Manually skip to the next step.
 step
 goto summerset_base 54.18,67.64
@@ -16048,7 +16016,8 @@ talk Kinlady Helenaere
 |tip Manually skip to the next step.
 step
 'Open your map:
-'Travel to the Sunhold Wayshrine
+click Sunhold Wayshrine
+'Travel to the _Sunhold_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto summerset_base 54.26,67.60
@@ -16061,7 +16030,8 @@ talk Justiciar Oradel
 |tip Manually skip to the next step.
 step
 'Open your map:
-'Travel to the Shimmerene Wayshrine
+click Shimmerene Wayshrine
+'Travel to the _Shimmerene_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto shimmerene_base 20.97,67.16
@@ -16142,7 +16112,7 @@ talk Niralin
 step
 'Open your map:
 click Shimmerene Wayshrine
-'Travel to the Shimmerene Wayshrine
+'Travel to the _Shimmerene_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto shimmerene_base 40.47,61.65
@@ -16162,7 +16132,7 @@ click Portal to Artaeum
 step
 'Open your map:
 click Arteum Wayshrine
-'Travel to the Arteum Wayshrine
+'Travel to the _Arteum_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto artaeum_base 64.49,27.12
@@ -16208,7 +16178,7 @@ click Portal to Arteum
 step
 'Open your map. Right click to bring up the World map. Select Tamirel. 
 click Shimmerene Wayshrine
-'Travel to the Shimmerene Wayshrine
+'Travel to the _Shimmerene_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto shimmerene_base 20.98,67.07
@@ -16896,7 +16866,7 @@ talk Nahdahni
 step
 'Open your map:
 click Shimmerene Wayshrine
-'Travel to the Shimmerene Wayshrine
+'Travel to the _Shimmerene_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto shimmerene_base 21.27,66.35
@@ -16926,7 +16896,7 @@ goto torhamekhard_01_base 49.05,39.18
 step
 'Open your map:
 click Alinor Wayshrine
-'Travel to the Alinor Wayshrine
+'Travel to the _Alinor_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto alinor_base 36.10,35.12
@@ -16980,7 +16950,7 @@ talk Roguzog
 step
 'Open your map:
 click Alinor Wayshrine
-'Travel to the Alinor Wayshrine
+'Travel to the _Alinor_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto alinor_base 55.49,60.59
@@ -17046,7 +17016,7 @@ talk Courtier Vindilween
 step
 'Open your map:
 click Alinor Wayshrine
-'Travel to the Alinor Wayshrine
+'Travel to the _Alinor_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto alinor_base 47.07,46.84
@@ -17100,7 +17070,7 @@ talk Rigurt the Brash
 step
 'Open your map:
 click Shimmerene Wayshrine
-'Travel to the Shimmerene Wayshrine
+'Travel to the _Shimmerene_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto shimmerene_base 24.57,70.25
@@ -17129,7 +17099,7 @@ goto summerset_base 55.50,54.51
 step
 'Open your map:
 click Arteum Wayshrine
-'Travel to the Arteum Wayshrine
+'Travel to the _Arteum_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto artaeum_base 64.96,26.72
@@ -17324,7 +17294,7 @@ talk Sotha Sil
 step
 'Open your map:
 click Arteum Wayshrine
-'Travel to the Arteum Wayshrine
+'Travel to the _Arteum_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto artaeum_base 64.96,26.72
@@ -17342,7 +17312,7 @@ step
 'Open your map:
 'Right click twice to view the Tamriel world map, then left click Tamriel. Click on the Island of Summerset.
 click Alinor Wayshrine
-'Travel to the Alinor Wayshrine
+'Travel to the _Alinor_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto alinor_base 52.87,59.08
@@ -17371,7 +17341,7 @@ talk Proxy Queen Alwinarwe
 step
 'Open your map:
 click Cey-Tarn Keep Wayshrine
-'Travel to the Cey-Tarn Keep Wayshrine
+'Travel to the _Cey-Tarn Keep_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto summerset_base 26.71,52.16
@@ -17390,7 +17360,7 @@ step
 'Open your map.
 'Right click twice to view Summerset.
 click Shimmerene Wayshrine
-'Travel to the Shimmerene Wayshrine
+'Travel to the _Shimmerene_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto shimmerene_base 21.19,66.08
@@ -18636,6 +18606,536 @@ talk Battlereeve Farwenya
 'You must decide what you will do now. (We think telling the truth is a good choice.)
 'Select _The Maormer attack occurred because Panderlion was consorting with their captain._, or
 'Select _The Maormer may have gotten the best of him, but it was Panderlion's plan that saved the day._
+|tip Manually skip to the next step.
+step
+goto summerset_base 24.30,40.93
+'From here, go Northeast to the main road
+|tip Manually skip to the next step.
+step
+goto summerset_base 24.94,38.90
+'Travel West on the main road
+|tip Manually skip to the next step.
+step
+goto summerset_base 22.89,38.30
+'At the fork in the road, follow the road left from here
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 64.36,68.38
+'At the fork in the road, follow the road left from here
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 49.44,71.80
+wayshrine Lillandril
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 36.13,85.36
+talk Tindoria
+accept The Perils of Art
+step
+goto lillandrill_base 39.97,70.33
+talk Faralan
+accept Murder In Lillandril
+step
+goto lillandrill_base 39.97,70.33
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 50.04,53.80
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 50.36,39.51
+talk Justiciar Rolumdel
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 44.93,37.66
+talk Vivienne
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 30.80,48.49
+talk Valsirenn
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 27.73,50.57
+talk Portal Master Astirhil
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 26.24,50.07
+'Press _E_ to Use _Portal to the College of Sapiarchs_
+|tip Manually skip to the next step.
+step
+goto summerset_base 11.76,39.82
+talk Sapiarch Ellimil
+|tip Manually skip to the next step.
+step
+goto summerset_base 10.55,40.08
+click College of Sapiarchs' Labyrinth
+|tip Manually skip to the next step.
+step
+goto SQ4Sapiarch01_base 90.01,73.11
+talk Valsirenn
+|tip Manually skip to the next step.
+step
+goto SQ4Sapiarch01_base 59.03,52.35
+'Cross the bridge here
+|tip Manually skip to the next step.
+step
+goto SQ4Sapiarch01_base 58.14,21.91
+'Continue West from here
+|tip Manually skip to the next step.
+step
+goto SQ4Sapiarch01_base 46.57,23.89
+'Continue South through the archway from here
+|tip Manually skip to the next step.
+step
+goto SQ4Sapiarch01_base 40.22,74.63
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto SQ4Sapiarch03_base 15.50,52.26
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto SQ4Sapiarch03_base 27.29,41.40
+'Cross the bridge from here
+|tip Manually skip to the next step.
+step
+goto SQ4Sapiarch03_base 83.69,48.30
+'Pass through the archway here and continue South
+|tip Manually skip to the next step.
+step
+goto SQ4Sapiarch03_base 92.20,72.52
+click College of Sapiarchs
+|tip Manually skip to the next step.
+step
+goto SQ4Sapiarch02_base 71.32,76.26
+'Pass through this archway and continue North
+|tip Manually skip to the next step.
+step
+goto SQ4Sapiarch02_base 79.25,49.95
+'Pass through the archway from here
+|tip Manually skip to the next step.
+step
+goto SQ4Sapiarch02_base 37.42,49.05
+kill Hoarvor Draedra
+|tip Manually skip to the next step.
+step
+goto SQ4Sapiarch02_base 30.91,35.23
+click Sapiarch of Arcanology's Study
+|tip Manually skip to the next step.
+step
+goto SQ4Sapiarch02_base 68.80,24.22
+talk Sapiarch Larnatille
+|tip Manually skip to the next step.
+step
+goto SQ4Sapiarch02_base 68.80,24.22
+talk Earl Leythen
+|tip Manually skip to the next step.
+step
+goto SQ4Sapiarch02_base 68.80,24.22
+talk Valsirenn
+|tip Manually skip to the next step.
+step
+goto SQ4Sapiarch02_base 71.60,23.08
+'Pass through the archway from here
+|tip Manually skip to the next step.
+step
+goto SQ4Sapiarch02_base 84.66,32.27
+click College of Sapiarchs
+|tip Manually skip to the next step.
+step
+goto SQ4Sapiarch02_base 93.11,49.24
+click College of Sapiarchs' Courtyard
+|tip Manually skip to the next step.
+step
+'Open your map:
+click Cey-Tarn Keep Wayshrine
+'Travel to the _Cey-Tarn Keep_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto summerset_base 26.68,52.14
+'Press _E_ to Travel _Wastern Coraldale Delve_
+|tip Manually skip to the next step.
+step
+goto wastencoraldale_base 59.39,42.49
+'Jump down from here
+|tip Manually skip to the next step.
+step
+goto wastencoraldale_base 59.12,39.80
+'Press _E_ to Search _Backpack_
+'take The Royal Bowl
+|tip Manually skip to the next step.
+step
+goto wastencoraldale_base 60.26,38.87
+'Run East underneath the broken bridge
+|tip Manually skip to the next step.
+step
+goto wastencoraldale_base 68.79,31.21
+'Press _E_ to Search _Backpack_
+'take The Royal Cup
+|tip Manually skip to the next step.
+step
+'Open your map:
+click Russafeld Heights Wayshrine
+'Travel to the _Russafeld Heights_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto summerset_base 44.80,46.14
+'Continue Northwest from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 40.60,41.93
+'Continue North from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 40.01,39.97
+talk Haenamil
+|tip Manually skip to the next step.
+step
+goto summerset_base 40.01,39.97
+'Continue Northwest from here to the main road
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.63,38.57
+'Follow the main road South
+|tip Manually skip to the next step.
+step
+goto summerset_base 37.43,40.42
+'Press _E_ to Use _Augur of the Obscure_
+|tip Manually skip to the next step.
+step
+goto summerset_base 33.92,42.60
+'Press _E_ to Seal _Time Breach_
+|tip Manually skip to the next step.
+step
+'Open your map:
+click Ebon Stadmont Wayshrine
+'Travel to the _Ebon Stadmont_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto summerset_base 35.33,36.04
+'Follow the main road Northwest
+|tip Manually skip to the next step.
+step
+goto summerset_base 34.40,35.31
+'Continue Northwest up the hill from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.23,33.75
+talk Razum-dar
+|tip Manually skip to the next step.
+step
+goto summerset_base 30.04,33.49
+click Academy Guest Wing
+|tip Manually skip to the next step.
+step
+goto summerset_base 30.12,33.54
+talk Berwentha
+|tip Manually skip to the next step.
+step
+goto summerset_base 30.19,33.57
+click Hannayel's Room
+|tip Manually skip to the next step.
+step
+goto summerset_base 30.29,33.58
+'Press _E_ to Take _Letter to Imedril_
+|tip Manually skip to the next step.
+step
+goto summerset_base 30.29,33.58
+talk Razum-dar
+|tip Manually skip to the next step.
+step
+goto summerset_base 30.24,33.60
+click Academy Guest Wing
+|tip Manually skip to the next step.
+step
+goto summerset_base 30.16,33.48
+click Illumination Academy
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.71,32.73
+'Run across the Courtyard and
+click Hall of Illumination
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.75,32.82
+'Run up to the second floor
+'Press _E_ to Take _Further Notes on the Sload_ 
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.58,32.73
+'Press _E_ to Take _The Maormer of Pyandonea_
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.39,32.40
+'Press _E_ to Take _The Year 2920, Vol. 4_
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.75,32.33
+'Continue through the set of archways here
+|tip Manually skip to the next step.
+step
+goto summerset_base 32.03,32.57
+'Press _E_ to Take _Sages of the Crystal Tower_
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.79,32.75
+click Study Hall
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.90,32.76
+'Press _E_ to Place _Reading Podium_
+'Select _I place "Further Notes on the Sload."_
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.93,432.67
+'Press _E_ to Place _Reading Podium_
+'Select _I place "The Maormer of Pyandonea."_
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.96,32.64
+'Press _E_ to Place _Reading Podium_
+'Select _I place "Sages of the Crystal Tower."_
+|tip Manually skip to the next step.
+step
+goto summerset_base 32.02,32.65
+'Press _E_ to Place _Reading Podium_
+'Select _I place "The Year 2920, Vol 4."_
+|tip Manually skip to the next step.
+step
+goto summerset_base 32.16,32.73
+talk Sapiarch Hannayel
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.86,32.78
+click Illumination Academy
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.72,32.77
+'Run down to the first floor, and
+click Summerset
+|tip Manually skip to the next step.
+step
+'Open your map:
+click Sil-Var-Woad Wayshrine
+'Travel to the _Sil-Var-Woad_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto summerset_base 64.86,56.62
+'Continue West from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 61.62,56.73
+talk Brodran
+|tip Manually skip to the next step.
+step
+goto summerset_base 61.26,55.92
+'Press _E_ to Use _Augur of the Obscure_
+|tip Manually skip to the next step.
+step
+goto summerset_base 60.61,54.88
+talk Coreyon
+|tip Manually skip to the next step.
+step
+goto summerset_base 60.60,54.88
+'Press _E_ to Destroy _Fume Barrel_
+|tip Manually skip to the next step.
+step
+goto summerset_base 59.75,54.67
+'Continue Northwest along the platform
+|tip Manually skip to the next step.
+step
+goto summerset_base 59.36,54.32
+'Run through the gap here
+|tip Manually skip to the next step.
+step
+goto summerset_base 58.87,54.36
+'Press _E_ to Seal _Time Breach_
+|tip Manually skip to the next step.
+step
+goto summerset_base 59.62,54.36
+'Run back through the gap in the wall, jump down from here, and continue Southeast
+|tip Manually skip to the next step.
+step
+goto summerset_base 61.62,56.73
+talk Brodran
+|tip Manually skip to the next step.
+step
+'Open your map:
+click Eastern Pass Wayshrine
+'Travel to the _Eastern Pass_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto summerset_base 62.88,65.89
+'Continue across the field heading East towards the island
+|tip Manually skip to the next step.
+step
+goto summerset_base 70.50,68.40
+'Swim to the island
+|tip Manually skip to the next step.
+step
+goto summerset_base 71.16,68.53
+'Press _E_ to Use _Augur of the Obscure_
+|tip Manually skip to the next step.
+step
+goto summerset_base 71.67,68.92
+'Continue South from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 72.16,70.68
+'Continue up the hill and Northeast from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 73.47,71.11
+'Jump over to the slanted rockface from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 73.61,71.30
+'Run down the slanted rockface to the ground
+|tip Manually skip to the next step.
+step
+goto summerset_base 74.02,71.45
+'Press _E_ to Seal _Time Breach_
+|tip Manually skip to the next step.
+step
+goto summerset_base 73.76,71.39
+'Run up the slanted rockface from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 73.48,71.26
+'Continue Northwest from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 72.08,70.91
+'Continue South from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 71.90,73.20
+talk Igeke Rat-Bite
+accept Gjadil's Legacy
+step
+goto summerset_base 71.81,73.37
+click Gjadil's Treasure Map
+'take Gjadil's Treasure Map
+|tip Manually skip to the next step.
+step
+'1. Open inventory
+'2. Select Quest
+'3. Hover over Gjadil's Treasure Map
+'4. Press _E_ to use Gjadil's Treasure Map
+|tip Manually skip to the next step.
+step
+goto summerset_base 71.14,75.40
+talk Ingarlas
+|tip Manually skip to the next step.
+step
+goto summerset_base 71.02,75.36
+'Press _E_ to Examine _Cultivated Plants_
+|tip Manually skip to the next step.
+step
+goto summerset_base 71.02,75.36
+talk Ingarlas
+'Select _[Intimidate] I think you're hiding an aurialis. Show me where it is, or I'll rip your garden apart._
+'Select _Conservation is important. I'll spare the plant._
+|tip Manually skip to the next step.
+step
+goto summerset_base 67.32,78.94
+'Continue up the path
+|tip Manually skip to the next step.
+step
+goto summerset_base 67.22,78.24
+'Press _E_ to Dig _Dirt Mound_
+'Press _E_ to Take _Gjadil's Treasure Chest_
+|tip Manually skip to the next step.
+step
+goto summerset_base 71.86,73.26
+talk Igeke Rat-Bite
+|tip Manually skip to the next step.
+step
+'Open your map:
+click King's Haven Pass Wayshrine
+'Travel to the _King's Haven Pass_ Wayshrine
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
 |tip Manually skip to the next step.
 step
 
