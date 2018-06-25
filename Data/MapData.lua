@@ -592,6 +592,7 @@
 		["College of Sapiarchs Labyrinth"] = [[SQ4Sapiarch01_base]],
 		["College of Sapiarchs Labyrinth"] = [[SQ4Sapiarch02_base]],
 		["College of Sapiarchs Labyrinth"] = [[SQ4Sapiarch03_base]],
+		["Saltbreeze Cave"] = [[lillandrilcave_base]],
 
 	},
 	["Zones"] =
@@ -662,6 +663,7 @@
 		["SQ4Sapiarch01_base"] = 		{ name = "College of Sapiarchs Labyrinth",id = 421, xoffset = 0.022806082256507, yoffset = 0.71060167241732, xscale = 0.0012931538811916, },
 		["SQ4Sapiarch02_base"] = 		{ name = "College of Sapiarchs",	id = 421, xoffset = 0.022853746601356, yoffset = 0.70954911800067, xscale = 0.0008418061277109, },
 		["SQ4Sapiarch03_base"] = 		{ name = "College of Sapiarchs Labyrinth",id = 421, xoffset = 0.022806756854767, yoffset = 0.71060167892037, xscale = 0.0012918505667399, },
+		["lillandrilcave_base"] = 		{ name = "Saltbreeze Cave",		id = 422, xoffset = 0.0451437118668, yoffset = 0.72403169553595, xscale = 0.00109515293093, },
 
 
 		-- EXISTING
