@@ -16131,8 +16131,8 @@ click Portal to Artaeum
 |tip Manually skip to the next step.
 step
 'Open your map:
-click Arteum Wayshrine
-'Travel to the _Arteum_ Wayshrine
+click Artaeum Wayshrine
+'Travel to the _Artaeum_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto artaeum_base 64.49,27.12
@@ -16173,7 +16173,7 @@ talk Ritemaster Iachesis
 |tip Manually skip to the next step.
 step
 goto dreamingcave02_base 36.70,32.77
-click Portal to Arteum
+click Portal to Artaeum
 |tip Manually skip to the next step.
 step
 'Open your map. Right click to bring up the World map. Select Tamirel. 
@@ -17068,38 +17068,9 @@ talk Rigurt the Brash
 'Select any option
 |tip Manually skip to the next step.
 step
-'Open your map:
-click Shimmerene Wayshrine
-'Travel to the _Shimmerene_ Wayshrine
-|tip Manually skip to the next step.
-step
-goto shimmerene_base 24.57,70.25
-'Continue along the path from here
-|tip Manually skip to the next step.
-step
-goto summerset_base 57.81,48.91
-'At the fork in the road, continue left from here
-|tip Manually skip to the next step.
-step
-goto summerset_base 58.51,49.37
-'At the fork in the road, continue right from here
-|tip Manually skip to the next step.
-step
-goto summerset_base 59.33,51.60
-'At the fork in the road, continue right from here
-|tip Manually skip to the next step.
-step
-goto summerset_base 55.95,52.93
-'Run up the stairs from here
-|tip Manually skip to the next step.
-step
-goto summerset_base 55.50,54.51
-'Press _E_ to Use _Portal to Artaeum_
-|tip Manually skip to the next step.
-step
-'Open your map:
-click Arteum Wayshrine
-'Travel to the _Arteum_ Wayshrine
+'Open your map. Right click three times to bring up the World map. Select Artaeum in the upper-right corner. 
+click Artaeum Wayshrine
+'Travel to the _Artaeum_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto artaeum_base 64.96,26.72
@@ -17151,7 +17122,7 @@ talk Ritemaster Iachesis
 |tip Manually skip to the next step.
 step
 goto dreamingcave02_base 36.27,32.34
-'Press _E_ to Use _Portal to Arteum_
+'Press _E_ to Use _Portal to Artaeum_
 |tip Manually skip to the next step.
 step
 goto artaeum_base 64.67,30.42
@@ -17175,7 +17146,7 @@ goto collegeofpsijicsruins_base 73.79,59.05
 |tip Manually skip to the next step.
 step
 goto collegeofpsijicsruins_base 51.26,90.24
-click Arteum Beach
+click Artaeum Beach
 |tip Manually skip to the next step.
 step
 goto artaeum_base 65.70,67.26
@@ -17293,8 +17264,8 @@ talk Sotha Sil
 |tip Manually skip to the next step.
 step
 'Open your map:
-click Arteum Wayshrine
-'Travel to the _Arteum_ Wayshrine
+click Artaeum Wayshrine
+'Travel to the _Artaeum_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto artaeum_base 64.96,26.72
@@ -19057,31 +19028,300 @@ click King's Haven Pass Wayshrine
 'Travel to the _King's Haven Pass_ Wayshrine
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 53.63,25.42
+'At the fork in the road, go left
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 52.81,25.36
+'Continue Southwest from here (Don't cross the bridge)
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 51.05,27.89
+'Run up the stairs here and head West
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 48.95,27.52
+click King's Haven Pass Delve
 |tip Manually skip to the next step.
 step
-
+goto kingshavenext_base 70.74,34.28
+click Coral-Splitter Caves
 |tip Manually skip to the next step.
 step
-
+goto kingshavenint1_base 37.12,30.73
+'At the fork in the path, go left and follow the path Southeast
 |tip Manually skip to the next step.
 step
-
+goto kingshavenint1_base 51.40,53.80
+click Ancient Ruins
 |tip Manually skip to the next step.
 step
-
+goto kingshavenint1_base 58.04,56.55
+'Continue South from here
 |tip Manually skip to the next step.
 step
-
+goto kingshavenint1_base 60.54,69.13
+'Continue East through the archway here 
+|tip Manually skip to the next step.
+step
+goto kingshavenint1_base 82.54,50.66
+kill Keetas the Weaver
+|tip Manually skip to the next step.
+step
+goto kingshavenint1_base 72.84,49.83
+'Press _E_ to Burn _Webbed Barrier_
+|tip Manually skip to the next step.
+step
+goto kingshavenint1_base 72.48,49.24
+click Ancient Ruins
+|tip Manually skip to the next step.
+step
+goto kingshavenint1_base 64.11,35.43
+'Press _E_ to Burn _Mephala's Webs_
+|tip Manually skip to the next step.
+step
+goto kingshavenint1_base 64.78,37.12
+'Press _E_ to Take _Dawnstar Gem_
+'Take Dawnstar Gem
+|tip Manually skip to the next step.
+step
+goto kingshavenint1_base 64.61,36.88
+talk Sapiarch Imedril
+|tip Manually skip to the next step.
+step
+goto kingshavenint1_base 60.30,36.52
+click Coral-Splitter Caves
+|tip Manually skip to the next step.
+step
+'Open your map:
+click Lillandril Wayshrine
+'Travel to the _Lillandril_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 41.66,76.81
+talk Vaerelel
+'Select _I'm going to complete my contract with Tindoria._
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 36.06,85.51
+talk Tindoria
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 40.54,69.35
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 49.95,53.73
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 49.25,38.92
+talk Rigurt the Brash
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 45.65,39.90
+click Fighters Guild
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 44.13,45.29
+talk Emile Oncent
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 45.56,44.15
+talk Calawende
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 44.79,41.78
+click Lillandril
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 53.69,40.94
+'Run down the stairs from here
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 52.36,50.47
+click The Shrewd Brew
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 58.12,51.58
+'Pass through this archway and run up the stairs to the third floor
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 56.00,51.39
+'Pass through the archway here
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 54.76,51.35
+'Press _E_ to Examine _Galidor's Love Poem_
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 53.86,50.14
+'Press _E_ to Examine _Galidor's Scribbled Note_
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 54.86,50.45
+'Press _E_ to Examine _Galidor's Grocery List_
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 53.64,53.52
+'Press _E_ to Use _Galidor's Warded Ledger_
+'Select _Mischief._
+'Select _For._
+'Select _Money._
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 53.64,53.52
+'Press _E_ to Take _Galidor's Ledger_
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 53.27,51.00
+'Run down to the first floor and
+click Lillandril
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 51.12,50.17
+talk Calawende
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 51.12,50.17
+'Run down the stairs from here and continue to docks
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 42.00,77.51
+talk Milerond
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 50.81,78.89
+'Continue to the end of the pier
+|tip Manually skip to the next step.
+step
+goto summerset_base 16.74,42.63
+'Run along the beach to you reach Saltbreeze Cave
+|tip Manually skip to the next step.
+step
+goto summerset_base 18.49,44.82
+click Saltbreeze Cave
+|tip Manually skip to the next step.
+step
+goto lillandrilcave_base 55.72,34.89
+'At the fork in the path, go right
+|tip Manually skip to the next step.
+step
+goto lillandrilcave_base 28.35,29.89
+'Continue into the cave through here
+|tip Manually skip to the next step.
+step
+goto lillandrilcave_base 22.91,53.93
+'Cross the bridge here
+|tip Manually skip to the next step.
+step
+goto lillandrilcave_base 45.28,80.45
+kill Gerwerdel
+|tip Manually skip to the next step.
+step
+goto lillandrilcave_base 45.38,82.13
+'Press _E_ to Search _Sapiarch's Chest_
+'Take Sapiarch's Key
+|tip Manually skip to the next step.
+step
+goto lillandrilcave_base 57.18,77.31
+click Sapiarch's Lab
+|tip Manually skip to the next step.
+step
+goto lillandrilcave_base 55.02,66.06
+talk Norasea
+|tip Manually skip to the next step.
+step
+goto lillandrilcave_base 54.00,67.30
+'Press _E_ to Take _Haladan's Journal Entry_
+|tip Manually skip to the next step.
+step
+goto lillandrilcave_base 63.46,67.85
+'Press _E_ to Take _To Haladan, My Dearest Friend_
+|tip Manually skip to the next step.
+step
+goto lillandrilcave_base 63.46,67.85
+'Press _E_ to Take _Letter to Norasea_
+|tip Manually skip to the next step.
+step
+'Open your map:
+click Lillandril Wayshrine
+'Travel to the _Lillandril_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 40.48,69.49
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 50.19,53.90
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 45.75,39.97
+click Fighters Guild
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 44.05,45.25
+talk Emile Oncent
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 44.05,45.25
+talk Vivienne Muric
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 44.05,45.25
+talk Calawende
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 44.05,45.25
+talk Emile Oncent
+'Select _I'll respect your wishes..._
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 45.46,42.05
+talk Sapiarch Soraturil
+|tip Manually skip to the next step.
+step
+'Open your map:
+click Alinor Wayshrine
+'Travel to the _Alinor_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto alinor_base 52.98,58.50
+'Continue South through the archway from here
+|tip Manually skip to the next step.
+step
+goto alinor_base 49.82,70.17
+'Run up the stairs from here and continue along the path until you reach the castle across the bridge.
+|tip Manually skip to the next step.
+step
+goto alinor_base 64.53,46.37
+click Alinor Royal Palace
+|tip Manually skip to the next step.
+step
+goto alinorroyalpalace1_base 63.07,64.58
+click Council Chamber
+|tip Manually skip to the next step.
+step
+goto alinorroyalpalace1_base 76.83,71.52
+talk Courtier Vindilween
+|tip Manually skip to the next step.
+step
+goto alinorroyalpalace1_base 69.67,63.51
+talk Rigurt the Brash
+|tip Manually skip to the next step.
+step
+goto alinorroyalpalace1_base 76.83,71.52
+talk Courtier Vindilween
+|tip Manually skip to the next step.
+step
+goto alinorroyalpalace1_base 69.67,63.51
+talk Rigurt the Brash
+|tip Manually skip to the next step.
+step
+'Open your map. Right click three times to bring up the World map. Select Artaeum in the upper-right corner. 
+click Artaeum Wayshrine
+'Travel to the _Artaeum_ Wayshrine
 |tip Manually skip to the next step.
 step
 
