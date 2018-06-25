@@ -2,7 +2,7 @@
 
 <img src="https://i.imgur.com/pAyDGDJ.png">
 
-A Public Domain ESO Leveling Guide produced by Zygor Guides
+A Public Domain ESO Leveling Guide produced by Zygor Guides, updated by the community (well, mostly Hydra9268/alterego9268).
 
 <img src="https://i.imgur.com/0tWEyU4.png" alt="At the moment, this project is work-in-progress. It is not ready for complete.">
 
