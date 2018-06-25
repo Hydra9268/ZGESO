@@ -548,6 +548,7 @@
 		["Tor-Hame-Khard"] = [[torhamekhard_02_base]],
 		["Archon's Grove"] = [[archonsgrove_base]],
 		["Artaeum"] = [[artaeum_base]],
+		["The Dreaming Cave"] = [[dreamingcave01_base]],
 		["Ceporah Tower"] = [[dreamingcave02_base]],
 		["Ceporah Tower"] = [[dreamingcave03_base]],
 		["Red Temple Catacombs"] = [[russafeldredtemple01_base]],
@@ -593,6 +594,13 @@
 		["College of Sapiarchs Labyrinth"] = [[SQ4Sapiarch02_base]],
 		["College of Sapiarchs Labyrinth"] = [[SQ4Sapiarch03_base]],
 		["Saltbreeze Cave"] = [[lillandrilcave_base]],
+		["Eton Nir Grotto"] = [[etonnir_01_base]],
+		["Eton Nir Grotto"] = [[etonnir_02_base]],
+		["The Spiral Skein"] = [[sq5mephalaint01_base]],
+		["The Spiral Skein"] = [[sq5mephalaint01b_base]],
+		["The Spiral Skein"] = [[sq5mephalaext01_base]],
+		["The Spiral Skein"] = [[sq5mephalaint02_base]],
+		["The Spiral Skein"] = [[sq5mephalaint03_base]],
 
 	},
 	["Zones"] =
@@ -619,6 +627,7 @@
 		["torhamekhard_02_base"] =		{ name = "Tor-Hame-Khard",		id = 398, xoffset = 0.1265839544232, yoffset = 0.75004365766084, xscale = 0.00086606881055, },
 		["archonsgrove_base"] =			{ name = "Archon's Grove",		id = 399, xoffset = 0.1210682749432, yoffset = 0.02426498113643, xscale = 0.02426498113643, },
 		["artaeum_base"] =			{ name = "Artaeum",			id = 400, xoffset = 0.7203422519217, yoffset = -0.1333265163732, xscale = 0.21701741385220, },
+		["dreamingcave01_base"] = 		{ name = "The Dreaming Cave",		id = 423, xoffset = 0.8591652810663, yoffset = -0.0778817039006, xscale = 0.00349846693007, },
 		["dreamingcave02_base"] =		{ name = "Ceporah Tower",		id = 401, xoffset = 0.8595572067723, yoffset = -0.0775171044139, xscale = 0.00756373676590, },
 		["dreamingcave03_base"] =		{ name = "Ceporah Tower",		id = 401, xoffset = 0.8539167166648, yoffset = -0.0758768134077, xscale = 0.00469550897040, },
 		["russafeldredtemple01_base"] =		{ name = "Red Temple Catacombs",	id = 402, xoffset = 0.1281634468690, yoffset = 0.73381967966166, xscale = 0.00031707467321, },
@@ -664,6 +673,13 @@
 		["SQ4Sapiarch02_base"] = 		{ name = "College of Sapiarchs",	id = 421, xoffset = 0.022853746601356, yoffset = 0.70954911800067, xscale = 0.0008418061277109, },
 		["SQ4Sapiarch03_base"] = 		{ name = "College of Sapiarchs Labyrinth",id = 421, xoffset = 0.022806756854767, yoffset = 0.71060167892037, xscale = 0.0012918505667399, },
 		["lillandrilcave_base"] = 		{ name = "Saltbreeze Cave",		id = 422, xoffset = 0.0451437118668, yoffset = 0.72403169553595, xscale = 0.00109515293093, },
+		["etonnir_01_base"] =			{ name = "Eton Nir Grotto",		id = 424, xoffset = 0.1292513191373, yoffset = 0.69172073945607, xscale = 0.00123150246775, },
+		["etonnir_02_base"] =			{ name = "Eton Nir Grotto",		id = 424, xoffset = 0.1289913734307, yoffset = 0.69194613817564, xscale = 0.00031791421642, },
+		["sq5mephalaint01_base"] = 		{ name = "The Spiral Skein",		id = 425, xoffset = -0.109792396426, yoffset = 0.16014160215854, xscale = 0.00419411889589, },
+		["sq5mephalaint01b_base"] = 		{ name = "The Spiral Skein",		id = 425, xoffset = -0.113479630367, yoffset = 0.15733875383236, xscale = 0.00419413263475, },
+		["sq5mephalaint02_base"] = 		{ name = "The Spiral Skein",		id = 425, xoffset = -0.114835237253, yoffset = 0.15810717331774, xscale = 0.00840045411504, },
+		["sq5mephalaint03_base"] = 		{ name = "The Spiral Skein",		id = 425, xoffset = -0.122735280690, yoffset = 0.15810552059910, xscale = 0.01102208387640, },
+		["sq5mephalaext01_base"] = 		{ name = "The Spiral Skein",		id = 425, xoffset = -0.124896367829, yoffset = 0.14673044180610, xscale = 0.01708196590053, },
 
 
 		-- EXISTING

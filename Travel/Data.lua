@@ -460,6 +460,9 @@ Data.MapIdsByName = {
 	["Sea Keep"] = 420,
 	["College of Sapiarchs Labyrinth"] = 421,
 	["Saltbreeze Cave"] = 422,
+	["The Dreaming Cave"] = 423,
+	["Eton Nir Grotto"] = 424,
+	["The Spiral Skein"] = 425,
 
 	[""] = 1000
 }
