@@ -16176,7 +16176,7 @@ goto dreamingcave02_base 36.70,32.77
 click Portal to Artaeum
 |tip Manually skip to the next step.
 step
-'Open your map. Right click to bring up the World map. Select Tamirel. 
+'Open your map. Right click to bring up the Universe map. Select Tamirel. 
 click Shimmerene Wayshrine
 'Travel to the _Shimmerene_ Wayshrine
 |tip Manually skip to the next step.
@@ -17068,7 +17068,7 @@ talk Rigurt the Brash
 'Select any option
 |tip Manually skip to the next step.
 step
-'Open your map. Right click three times to bring up the World map. Select Artaeum in the upper-right corner. 
+'Open your map. Right click three times to bring up the Universe map. Select Artaeum in the upper-right corner. 
 click Artaeum Wayshrine
 'Travel to the _Artaeum_ Wayshrine
 |tip Manually skip to the next step.
@@ -19319,9 +19319,353 @@ goto alinorroyalpalace1_base 69.67,63.51
 talk Rigurt the Brash
 |tip Manually skip to the next step.
 step
-'Open your map. Right click three times to bring up the World map. Select Artaeum in the upper-right corner. 
+'Open your map. Right click three times to bring up the Universe map. Select Artaeum in the upper-right corner. 
 click Artaeum Wayshrine
 'Travel to the _Artaeum_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto artaeum_base 64.90,26.62
+'Press _E_ to Use _Portal to Ceporah Tower_
+|tip Manually skip to the next step.
+step
+goto dreamingcave02_base 55.80,64.14
+'Press _E_ to Use _Portal to Ritemaster's Study_
+|tip Manually skip to the next step.
+step
+goto dreamingcave03_base 66.69,70.36
+talk Ritemaster Iachesis
+accept The Dreaming Cave
+step
+goto dreamingcave03_base 59.50,70.89
+'Press _E_ to Use _Portal to Ceporah Main Gallery_
+|tip Manually skip to the next step.
+step
+goto dreamingcave02_base 36.28,31.94
+'Press _E_ to Use _Portal to Artaeum_
+|tip Manually skip to the next step.
+step
+goto artaeum_base 65.92,27.03
+'Follow the steps down from the Portal
+click The Dreaming Cave
+|tip Manually skip to the next step.
+step
+goto dreamingcave01_base 43.35,54.10
+'Press _E_ to _Use Dawnstar Gem_
+|tip Manually skip to the next step.
+step
+goto dreamingcave01_base 40.90,53.70
+talk Ritemaster Iachesis
+|tip Manually skip to the next step.
+step
+goto dreamingcave01_base 45.29,23.58
+click Artaeum
+|tip Manually skip to the next step.
+step
+goto artaeum_base 64.09,28.10
+'Continue Southwest from here
+|tip Manually skip to the next step.
+step
+goto artaeum_base 54.60,31.49
+talk Earl Leythen
+|tip Manually skip to the next step.
+step
+goto artaeum_base 54.60,31.49
+talk Valsirenn
+|tip Manually skip to the next step.
+step
+'Open your map. Right click twice to bring up the Universe map. Select Tamriel. 
+click Shimmerene Wayshrine
+'Travel to the _Shimmerene_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 30.48,69.83
+'Run up the stairs from here and continue into Shimmerene
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 47.27,63.58
+talk Bailiff Roland
+'Select _I'll pay for someone to clean this up if you tell me where to find Raz. [207 gold]_
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 58.28,49.30
+talk Razum-dar
+|tip Manually skip to the next step.
+step
+'Open your map:
+click Eldbur Ruins Wayshrine
+'Travel to the _Eldbur Ruins_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto summerset_base 55.36,37.05
+'Continue Northwest to the main road and cross the bridge
+|tip Manually skip to the next step.
+step
+goto summerset_base 53.89,34.64
+'Continue Northwest up to the hill from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 51.56,32.41
+talk Sadara-do
+|tip Manually skip to the next step.
+step
+goto summerset_base 50.97,32.72
+click Eton Nir Grotto Delve
+|tip Manually skip to the next step.
+step
+goto etonnir_01_base 91.85,37.78
+talk Seeks-the-Dark
+accept Looting the Light
+step
+'Kill random mobs until you obtain the 3 _Tokens of Meridia_
+'Or loot the backpacks in the area
+goto etonnir_01_base 43.31,32.16
+|tip Manually skip to the next step.
+step
+goto etonnir_01_base 30.18,43.92
+'Continue Southwest through this passage
+|tip Manually skip to the next step.
+step
+goto etonnir_01_base 13.71,65.24
+'Continue Southwest through this passage
+|tip Manually skip to the next step.
+step
+goto etonnir_01_base 13.46,78.26
+kill Kayliriax the Spinner
+|tip Manually skip to the next step.
+step
+goto etonnir_01_base 13.06,81.12
+'Press _E_ to Destroy _Spiderweb Cocoon_
+|tip Manually skip to the next step.
+step
+goto etonnir_01_base 12.15,69.49
+'Continue North through the passage
+|tip Manually skip to the next step.
+step
+goto etonnir_01_base 17.02,34.99
+click Meridia Shrine
+|tip Manually skip to the next step.
+step
+goto etonnir_02_base 34.17,50.57
+'Run over to Meridia's statue and look up
+talk Meridia
+|tip Manually skip to the next step.
+step
+goto etonnir_02_base 36.70,51.70
+talk Razum-dar
+|tip Manually skip to the next step.
+step
+goto etonnir_02_base 86.25,50.44
+click Eton Nir Grotto
+|tip Manually skip to the next step.
+step
+goto etonnir_01_base 26.77,37.23
+'From here head East back to Seeks-the-Dark
+|tip Manually skip to the next step.
+step
+goto etonnir_01_base 90.97,38.17
+talk Seeks-the-Dark
+|tip Manually skip to the next step.
+step
+'Open your map. Right click three times to bring up the Universe map. Select Artaeum in the upper-right corner. 
+click Artaeum Wayshrine
+'Travel to the _Artaeum_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto artaeum_base 64.44,26.54
+'Drop down here and continue following the staircase down
+|tip Manually skip to the next step.
+step
+goto artaeum_base 66.03,27.02
+click The Dreaming Cave
+|tip Manually skip to the next step.
+step
+goto dreamingcave01_base 66.04,55.01
+talk Ritemaster Iachesis
+|tip Manually skip to the next step.
+step
+goto dreamingcave01_base 52.38,51.11
+'Press _E_ to Enter _The Dreaming Cave Portal_
+|tip Manually skip to the next step.
+step
+goto sq5mephalaint01_base 78.31,16.19
+'Press _E_ to Burn _Webbing_
+|tip Manually skip to the next step.
+step
+goto sq5mephalaint01_base 78.31,16.19
+'Exit the cave
+|tip Manually skip to the next step.
+step
+goto sq5mephalaext01_base 70.99,61.58
+'Continue up the path here and head South
+|tip Manually skip to the next step.
+step
+goto sq5mephalaext01_base 72.38,68.33
+'Enter this cave
+|tip Manually skip to the next step.
+step
+goto sq5mephalaint01b_base 23.88,52.27
+'Press _E_ to Burn _Webbing_
+|tip Manually skip to the next step.
+step
+goto sq5mephalaint01b_base 41.77,81.72
+'Press _E_ to _Use Dawnstar Gem_
+|tip Manually skip to the next step.
+step
+goto sq5mephalaint01b_base 59.83,82.36
+'Press _E_ to Enter _Revealed Path_
+|tip Manually skip to the next step.
+step
+goto sq5mephalaint02_base 81.27,28.90
+'Run up the path along the web wall
+|tip Manually skip to the next step.
+step
+goto sq5mephalaint02_base 49.54,25.39
+'Continue Northeast from here
+|tip Manually skip to the next step.
+step
+goto sq5mephalaint02_base 58.11,16.02
+'Exit the cave form here
+|tip Manually skip to the next step.
+step
+goto sq5mephalaext01_base 70.56,78.62
+'Enter the cave from here
+|tip Manually skip to the next step.
+step
+goto sq5mephalaint02b_base 48.93,55.74
+'Continue following the path South
+|tip Manually skip to the next step.
+step
+goto sq5mephalaint02b_base 49.19,75.56
+'Press _E_ to _Use Dawnstar Gem_
+|tip Manually skip to the next step.
+step
+goto sq5mephalaint02b_base 39.07,81.26
+'Press _E_ to Enter _Revealed Path_
+|tip Manually skip to the next step.
+step
+goto sq5mephalaint03_base 82.65,55.28
+'Follow the path up from here
+|tip Manually skip to the next step.
+step
+goto sq5mephalaint03_base 68.24,56.55
+'Follow the path South from here
+|tip Manually skip to the next step.
+step
+goto sq5mephalaint03_base 62.32,73.80
+'Press _E_ to Open _Web Cocoon_
+|tip Manually skip to the next step.
+step
+goto sq5mephalaint03_base 62.32,73.80
+talk Valsirenn
+|tip Manually skip to the next step.
+step
+goto sq5mephalaint03_base 63.72,72.77
+'Follow the path North from here, and then head West
+|tip Manually skip to the next step.
+step
+goto sq5mephalaint03_base 49.37,55.71
+'Press _E_ to _Use Dawnstar Gem_
+|tip Manually skip to the next step.
+step
+goto sq5mephalaint03_base 38.89,56.46
+'Press _E_ to Enter _Revealed Path_
+|tip Manually skip to the next step.
+step
+goto sq5mephalaint03_base 09.17,41.16
+'Continue North from here
+|tip Manually skip to the next step.
+step
+goto sq5mephalaext01_base 19.35,89.50
+'Follow the path East
+|tip Manually skip to the next step.
+step
+goto sq5mephalaext01_base 40.57,75.59
+'Cross the bridge from here
+|tip Manually skip to the next step.
+step
+goto sq5mephalaext01_base 46.27,61.74
+kill Gwarchodwyr
+|tip Manually skip to the next step.
+step
+goto sq5mephalaext01_base 46.63,55.60
+'Press _E_ to Burn _Webbing_
+|tip Manually skip to the next step.
+step
+goto sq5mephalaext01_base 46.63,55.60
+'Cross the bridge from here
+|tip Manually skip to the next step.
+step
+goto sq5mephalaext01_base 27.91,29.63
+'Continue further inside the compound from here
+|tip Manually skip to the next step.
+step
+goto sq5mephalaext01_base 18.62,17.19
+kill Zikal-zun
+|tip Manually skip to the next step.
+step
+goto sq5mephalaext01_base 19.36,17.47
+'Press _E_ to _Use Dawnstar Gem_
+|tip Manually skip to the next step.
+step
+goto sq5mephalaext01_base 18.72,16.70
+talk Darien Gautier
+|tip Manually skip to the next step.
+step
+goto sq5mephalaext01_base 24.01,17.20
+click The Spiral Skein
+|tip Manually skip to the next step.
+step
+goto sq5mephalaext01_base 35.87,19.08
+talk Valsirenn
+|tip Manually skip to the next step.
+step
+goto sq5mephalaext01_base 35.87,19.08
+'Kill the multiple waves on incoming mobs, and finally
+kill Brevorra Poisonclaw
+|tip Manually skip to the next step.
+step
+goto sq5mephalaext01_base 36.52,20.13
+'Press _E_ to Use _Portal to the Dreaming Cave_
+|tip Manually skip to the next step.
+step
+goto dreamingcave01_base 57.52,54.10
+talk Ritemaster Iachesis
+accept Lost in Translation
+step
+goto dreamingcave01_base 47.25,23.02
+click Artaeum
+|tip Manually skip to the next step.
+step
+goto artaeum_base 65.06,26.59
+'Run up the stairs and
+click Portal to Ceporah Tower
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
 |tip Manually skip to the next step.
 step
 
