@@ -17280,8 +17280,7 @@ goto dreamingcave03_base 62.04,76.77
 talk Ritemaster Iachesis
 accept The Tower Sentinels
 step
-'Open your map:
-'Right click twice to view the Tamriel world map, then left click Tamriel. Click on the Island of Summerset.
+'Open your map. Right click twice to view the Tamriel world map, then left click Tamriel. Click on the Island of Summerset.
 click Alinor Wayshrine
 'Travel to the _Alinor_ Wayshrine
 |tip Manually skip to the next step.
@@ -19763,48 +19762,70 @@ goto summerset_base 39.26,35.76
 click Ebon Stadmont
 |tip Manually skip to the next step.
 step
-
-
-
-
-
-
+'Open your map. Right click twice to view the Tamriel world map, then left click Artaeum in the upper-right corner.
+click Artaeum Wayshrine
+'Travel to the _Artaeum_ Wayshrine
 |tip Manually skip to the next step.
 step
-
+goto artaeum_base 64.99,25.56
+click Portal to Ceporah Tower
 |tip Manually skip to the next step.
 step
-
+goto dreamingcave02_base 24.69,41.34
+'Pass through the archway from here and follow the hallway
 |tip Manually skip to the next step.
 step
-
+goto dreamingcave02_base 28.27,66.48
+'Pass through the archway from here
 |tip Manually skip to the next step.
 step
-
+goto dreamingcave02_base 22.98,74.43
+talk Ritemaster Iachesis
+'Select _We need to be cautious. I wouldn't take anything the Court of Bedlam tells us at face value._
 |tip Manually skip to the next step.
 step
-
+goto dreamingcave02_base 16.17,73.45
+talk Cinucil
+accept Half-Formed Understandings
+step
+'Open your map:
+click Artaeum Wayshrine
+'Travel to the _Artaeum_ Wayshrine
 |tip Manually skip to the next step.
 step
-
+goto artaeum_base 64.94,34.01
+'Continue West to the main road from here
 |tip Manually skip to the next step.
 step
-
+goto artaeum_base 60.27,33.91
+'Continue Southwest on the main road from here
 |tip Manually skip to the next step.
 step
-
+goto artaeum_base 55.74,38.85
+talk Andiryewen
+accept The Vault of Moawita
+step
+goto artaeum_base 55.74,38.85
+'Continue Southwest on the main road from here
 |tip Manually skip to the next step.
 step
-
+goto artaeum_base 46.11,41.01
+'At the fork in the road, go right from here
 |tip Manually skip to the next step.
 step
-
+goto artaeum_base 42.87,40.59
+'At the fork in the road, go left from here
 |tip Manually skip to the next step.
 step
-
+goto artaeum_base 39.94,44.51
+talk Ulliceta gra-Kogg
 |tip Manually skip to the next step.
 step
-
+goto artaeum_base 39.88,44.68
+click Traitor's Vault Delve
+|tip Manually skip to the next step.
+step
+goto TraitorsVault04_base 50,50
 |tip Manually skip to the next step.
 step
 
