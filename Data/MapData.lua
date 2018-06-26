@@ -601,6 +601,7 @@
 		["The Spiral Skein"] = [[sq5mephalaext01_base]],
 		["The Spiral Skein"] = [[sq5mephalaint02_base]],
 		["The Spiral Skein"] = [[sq5mephalaint03_base]],
+		["Traitor's Vault"] = [[TraitorsVault04_base]],
 
 	},
 	["Zones"] =
@@ -680,6 +681,7 @@
 		["sq5mephalaint02_base"] = 		{ name = "The Spiral Skein",		id = 425, xoffset = -0.114835237253, yoffset = 0.15810717331774, xscale = 0.00840045411504, },
 		["sq5mephalaint03_base"] = 		{ name = "The Spiral Skein",		id = 425, xoffset = -0.122735280690, yoffset = 0.15810552059910, xscale = 0.01102208387640, },
 		["sq5mephalaext01_base"] = 		{ name = "The Spiral Skein",		id = 425, xoffset = -0.124896367829, yoffset = 0.14673044180610, xscale = 0.01708196590053, },
+		["TraitorsVault04_base"] =		{ name = "Traitor's Vault",		id = 426, xoffset = 0.8063133244997, yoffset = -0.0363903556104, xscale = 0.00160314839750, },
 
 
 		-- EXISTING

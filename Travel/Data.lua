@@ -463,6 +463,7 @@ Data.MapIdsByName = {
 	["The Dreaming Cave"] = 423,
 	["Eton Nir Grotto"] = 424,
 	["The Spiral Skein"] = 425,
+	["Traitor's Vault"] = 426,
 
 	[""] = 1000
 }
