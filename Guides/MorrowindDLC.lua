@@ -17955,140 +17955,6 @@ goto summerset_base 34.82,36.23
 wayshrine Ebon Stadmont
 |tip Manually skip to the next step.
 step
-goto summerset_base 35.88,37.35
-talk Andewen
-accept The Ebon Sanctum
-|tip Manually skip to the next step.
-step
-goto summerset_base 36.03,37.51
-click Ebon Stadmont
-|tip Manually skip to the next step.
-step
-goto summerset_base 36.43,38.11
-'Press _E_ to Search _Inscribed Stonework_
-'Kill the three waves of mobs that appear
-|tip Manually skip to the next step.
-step
-goto summerset_base 37.13,38.82
-click Ebon Stadmont
-|tip Manually skip to the next step.
-step
-goto summerset_base 38.58,36.68
-'Press _E_ to Search _Inscribed Stonework_
-'Kill the three waves of mobs that appear
-|tip Manually skip to the next step.
-step
-goto summerset_base 37.83,37.57
-click Ebon Stadmont
-|tip Manually skip to the next step.
-step
-goto summerset_base 38.74,34.68
-'Follow the path to the Ruins
-click Ebon Sanctum
-|tip Manually skip to the next step.
-step
-goto ebonStadmont03_base 70.78,39.05
-'Press _E_ to Examine _Dear Escort_
-|tip Manually skip to the next step.
-step
-goto ebonStadmont03_base 70.93,34.64
-'Press _E_ to Activate _Enchanted Stone_
-|tip Manually skip to the next step.
-step
-goto ebonStadmont03_base 70.97,21.02
-click Ebon Sanctum
-|tip Manually skip to the next step.
-step
-goto ebonStadmont02_base 72.22,72.55
-kill Nightstealer Sorina
-'This is a challenging fight. Make sure you interrupt and block her attacks. Also bring healing potions and spells.
-|tip Manually skip to the next step.
-step
-goto ebonStadmont02_base 72.68,32.35
-'Press _E_ to Bandage _Fletch_, then
-talk Fletch
-|tip Manually skip to the next step.
-step
-goto ebonStadmont02_base 83.75,33.01
-click Ebon Sanctum Garden
-|tip Manually skip to the next step.
-step
-goto ebonStadmont_base 34.06,47.87
-talk Maestro Forte
-|tip Manually skip to the next step.
-step
-goto ebonStadmont_base 51.08,42.44
-click Northern Pass
-|tip Manually skip to the next step.
-step
-goto ebonStadmont_base 41.06,32.92
-'Follow the path to the stone
-'Press _E_ to Activate _Enchanted Stone_
-|tip Manually skip to the next step.
-step
-goto ebonStadmont_base 41.06,32.92
-talk Andewen
-|tip Manually skip to the next step.
-step
-goto ebonStadmont_base 36.89,33.60
-click Ebon Sanctum
-|tip Manually skip to the next step.
-step
-goto ebonStadmont_base 29.56,33.79
-talk Andewen
-'Watch cutscene
-talk Andewen, again
-|tip Manually skip to the next step.
-step
-goto ebonStadmont_base 28.17,38.47
-click Ebon Sanctum Halls
-|tip Manually skip to the next step.
-step
-goto ebonStadmont02_base 52.24,33.44
-click Ebon Sanctum
-|tip Manually skip to the next step.
-step
-goto ebonStadmont02_base 71.40,37.49
-kill Fletch
-|tip Manually skip to the next step.
-step
-goto ebonStadmont02_base 84.48,33.41
-click Ebon Sanctum Garden
-|tip Manually skip to the next step.
-step
-goto ebonStadmont_base 39.85,52.53
-click Southern Path
-|tip Manually skip to the next step.
-step
-goto ebonStadmont_base 26.52,59.70
-'Follow the path to the stone
-'Press _E_ to Activate _Enchanted Stone_
-|tip Manually skip to the next step.
-step
-goto ebonStadmont_base 26.07,56.53
-click Ebon Sanctum
-|tip Manually skip to the next step.
-step
-goto ebonStadmont03_base 70.71,30.05
-talk Fletch
-|tip Manually skip to the next step.
-step
-goto ebonStadmont03_base 71.44,84.52
-click Ebon Stadmont
-|tip Manually skip to the next step.
-step
-goto summerset_base 38.65,34.97
-talk Andewen
-|tip Manually skip to the next step.
-step
-goto summerset_base 38.78,35.15
-'Jump down from here
-|tip Manually skip to the next step.
-step
-goto summerset_base 39.26,35.76
-click Ebon Stadmont
-|tip Manually skip to the next step.
-step
 goto summerset_base 35.36,36.99
 'From here travel North on the main road
 |tip Manually skip to the next step.
@@ -19641,27 +19507,267 @@ goto artaeum_base 65.06,26.59
 click Portal to Ceporah Tower
 |tip Manually skip to the next step.
 step
-
+goto dreamingcave02_base 55.60,66.33
+'Press _E_ to Use _Portal to Ritemaster's Study_
+|tip Manually skip to the next step.
+step
+goto dreamingcave03_base 65.52,69.35
+talk Oriandra
+|tip Manually skip to the next step.
+step
+goto dreamingcave03_base 67.02,66.29
+'Press _E_ to Take  _Grand Maestro Forte's Research_
+|tip Manually skip to the next step.
+step
+goto dreamingcave03_base 58.34,70.87
+'Press _E_ to Use _Portal to Ceporah Main Gallery_
+|tip Manually skip to the next step.
+step
+goto dreamingcave02_base 51.37,55.24
+'From here run to the room in the Northeast corner
+|tip Manually skip to the next step.
+step
+goto dreamingcave02_base 56.44,20.30
+'Press _E_ to Use _Portal to Valsirenn's Study_
+|tip Manually skip to the next step.
+step
+goto dreamingcave03_base 62.45,35.82
+talk Earl Leythen
+|tip Manually skip to the next step.
+step
+'Open your map. Right click twice to bring up the Universe map. Select Tamriel. 
+click Ebon Stadmont Wayshrine
+'Travel to the _Ebon Stadmont_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto summerset_base 35.08,37.70
+'From here continue on the main road South until you reached the bridge
+|tip Manually skip to the next step.
+step
+goto summerset_base 36.69,39.78
+'Follow the river Northeast from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 37.69,38.39
+'Press _E_ to _Use Leythen's Rune_
+|tip Manually skip to the next step.
+step
+goto summerset_base 37.76,38.24
+talk Earl Leythen
+|tip Manually skip to the next step.
+step
+goto summerset_base 37.76,38.24
+'From here follow the river Southwest until you reached the bridge
+|tip Manually skip to the next step.
+step
+goto summerset_base 36.61,39.74
+'Continue on the main road Northwest back to Ebon Stadmont
+|tip Manually skip to the next step.
+step
+goto summerset_base 35.88,37.35
+talk Andewen
+accept The Ebon Sanctum
+|tip Manually skip to the next step.
+step
+goto summerset_base 36.03,37.51
+click Ebon Stadmont
+|tip Manually skip to the next step.
+step
+goto summerset_base 36.43,38.11
+'Press _E_ to Search _Inscribed Stonework_
+'Kill the three waves of mobs that appear
+|tip Manually skip to the next step.
+step
+goto summerset_base 37.13,38.82
+click Ebon Stadmont
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.58,36.68
+'Press _E_ to Search _Inscribed Stonework_
+'Kill the three waves of mobs that appear
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.82,37.36
+click Ebon Stadmont
+|tip Manually skip to the next step.
+step
+goto summerset_base 36.20,36.67
+'Follow the path up to the fork
+|tip Manually skip to the next step.
+step
+goto summerset_base 36.53,36.33
+'At the fork in the path, go right from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 37.40,36.32
+click Ebon Stadmont
+|tip Manually skip to the next step.
+step
+goto ebonStadmont_base 61.09,59.69
+'Press _E_ to _Use Leythen's Rune_
+|tip Manually skip to the next step.
+step
+goto ebonStadmont_base 61.09,59.69
+'Continue following the path Southeast
+|tip Manually skip to the next step.
+step
+goto ebonStadmont_base 67.54,75.67
+'Continue following the path East
+|tip Manually skip to the next step.
+step
+goto ebonStadmont_base 78.57,71.63
+'Continue following the path North
+|tip Manually skip to the next step.
+step
+goto ebonStadmont_base 70.70,52.53
+'Press _E_ to _Use Leythen's Rune_
+|tip Manually skip to the next step.
+step
+goto ebonStadmont_base 68.86,52.69
+talk Earl Tundilwen
+|tip Manually skip to the next step.
+step
+goto ebonStadmont_base 72.16,53.73
+talk Earl Leythen
+|tip Manually skip to the next step.
+step
+goto ebonStadmont_base 74.52,54.46
+'Run up the double set of stairs from here
+|tip Manually skip to the next step.
+step
+goto ebonStadmont_base 68.28,46.35
+click Summerset
+|tip Manually skip to the next step.
+step
+'Open your map:
+click Ebon Stadmont Wayshrine
+'Travel to the _Ebon Stadmont_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto summerset_base 36.03,37.51
+click Ebon Stadmont
+|tip Manually skip to the next step.
+step
+goto summerset_base 37.13,38.82
+click Ebon Stadmont
+|tip Manually skip to the next step.
+step
+goto summerset_base 37.86,37.55
+click Ebon Stadmont
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.74,34.68
+'Follow the path to the Ruins
+click Ebon Sanctum
+|tip Manually skip to the next step.
+step
+goto ebonStadmont03_base 70.78,39.05
+'Press _E_ to Examine _Dear Escort_
+|tip Manually skip to the next step.
+step
+goto ebonStadmont03_base 70.93,34.64
+'Press _E_ to Activate _Enchanted Stone_
+|tip Manually skip to the next step.
+step
+goto ebonStadmont03_base 70.97,21.02
+click Ebon Sanctum
+|tip Manually skip to the next step.
+step
+goto ebonStadmont02_base 72.22,72.55
+kill Nightstealer Sorina
+'This is a challenging fight. Make sure you interrupt and block her attacks. Also bring healing potions and spells.
+|tip Manually skip to the next step.
+step
+goto ebonStadmont02_base 72.68,32.35
+'Press _E_ to Bandage _Fletch_, then
+talk Fletch
+|tip Manually skip to the next step.
+step
+goto ebonStadmont02_base 83.75,33.01
+click Ebon Sanctum Garden
+|tip Manually skip to the next step.
+step
+goto ebonStadmont_base 34.06,47.87
+talk Maestro Forte
+|tip Manually skip to the next step.
+step
+goto ebonStadmont_base 51.08,42.44
+click Northern Pass
+|tip Manually skip to the next step.
+step
+goto ebonStadmont_base 41.06,32.92
+'Follow the path to the stone
+'Press _E_ to Activate _Enchanted Stone_
+|tip Manually skip to the next step.
+step
+goto ebonStadmont_base 41.06,32.92
+talk Andewen
+|tip Manually skip to the next step.
+step
+goto ebonStadmont_base 36.89,33.60
+click Ebon Sanctum
+|tip Manually skip to the next step.
+step
+goto ebonStadmont_base 29.56,33.79
+talk Andewen
+'Watch cutscene
+talk Andewen, again
+|tip Manually skip to the next step.
+step
+goto ebonStadmont_base 28.17,38.47
+click Ebon Sanctum Halls
+|tip Manually skip to the next step.
+step
+goto ebonStadmont02_base 52.24,33.44
+click Ebon Sanctum
+|tip Manually skip to the next step.
+step
+goto ebonStadmont02_base 71.40,37.49
+kill Fletch
+|tip Manually skip to the next step.
+step
+goto ebonStadmont02_base 84.48,33.41
+click Ebon Sanctum Garden
+|tip Manually skip to the next step.
+step
+goto ebonStadmont_base 39.85,52.53
+click Southern Path
+|tip Manually skip to the next step.
+step
+goto ebonStadmont_base 26.52,59.70
+'Follow the path to the stone
+'Press _E_ to Activate _Enchanted Stone_
+|tip Manually skip to the next step.
+step
+goto ebonStadmont_base 26.07,56.53
+click Ebon Sanctum
+|tip Manually skip to the next step.
+step
+goto ebonStadmont03_base 70.71,30.05
+talk Fletch
+|tip Manually skip to the next step.
+step
+goto ebonStadmont03_base 71.44,84.52
+click Ebon Stadmont
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.65,34.97
+talk Andewen
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.78,35.15
+'Jump down from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 39.26,35.76
+click Ebon Stadmont
 |tip Manually skip to the next step.
 step
 
-|tip Manually skip to the next step.
-step
 
-|tip Manually skip to the next step.
-step
 
-|tip Manually skip to the next step.
-step
 
-|tip Manually skip to the next step.
-step
 
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
 
 |tip Manually skip to the next step.
 step
