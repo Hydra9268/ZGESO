@@ -568,6 +568,7 @@
 		["Miriya's Mind Trap"] = [[Eldbursanctuary04_base]],
 		["Oriandra's Mind Trap"] = [[Eldbursanctuary05_base]],
 		["College of Psijics Ruins"] = [[collegeofpsijicsruins_base]],
+		["College of Psijics Ruins"] = [[collegeofpsijicsruins_btm_base]],
 		["Psijic Relic Vaults"] = [[psijicrelicvaults01_base]],
 		["Psijic Relic Vaults"] = [[psijicrelicvaults02_base]],
 		["K'tora's Mindscape"] = [[sq3sloadmindscape_base]],
@@ -601,7 +602,10 @@
 		["The Spiral Skein"] = [[sq5mephalaext01_base]],
 		["The Spiral Skein"] = [[sq5mephalaint02_base]],
 		["The Spiral Skein"] = [[sq5mephalaint03_base]],
+		["Traitor's Vault"] = [[TraitorsVault01_base]],
+		["Traitor's Vault"] = [[TraitorsVault02_base]],
 		["Traitor's Vault"] = [[TraitorsVault04_base]],
+		["Evergloam"] = [[sq6evergloam_base]],
 
 	},
 	["Zones"] =
@@ -648,6 +652,7 @@
 		["Eldbursanctuary04_base"] =		{ name = "Miriya's Mind Trap",		id = 413, xoffset = 0.1341721015541, yoffset = 0.70569575719197, xscale = 0.00117994129828, },
 		["Eldbursanctuary05_base"] =		{ name = "Oriandra's Mind Trap",	id = 414, xoffset = 0.1349778930611, yoffset = 0.70470261171803, xscale = 0.00120928918657, },
 		["collegeofpsijicsruins_base"] = 	{ name = "College of Psijics Ruins",	id = 409, xoffset = 0.8412901197689, yoffset = -0.0285610717468, xscale = 0.00349489518501, },
+		["collegeofpsijicsruins_btm_base"] =	{ name = "College of Psijics Ruins",	id = 409, xoffset = 0.8412901197689, yoffset = -0.0285600900920, xscale = 0.00349489518501, },
 		["psijicrelicvaults01_base"] = 		{ name = "Psijic Relic Vaults",		id = 410, xoffset = 0.8509636410894, yoffset = 0.03925965236529, xscale = 0.00111017879036, },
 		["psijicrelicvaults02_base"] = 		{ name = "Psijic Relic Vaults",		id = 410, xoffset = 0.8509640263805, yoffset = 0.03925963282598, xscale = 0.00110901908042, },
 		["sq3sloadmindscape_base"] = 		{ name = "K'tora's Mindscape",		id = 411, xoffset = 0.8493349513900, yoffset = 0.03753974060692, xscale = 0.00145229464415, },
@@ -681,7 +686,10 @@
 		["sq5mephalaint02_base"] = 		{ name = "The Spiral Skein",		id = 425, xoffset = -0.114835237253, yoffset = 0.15810717331774, xscale = 0.00840045411504, },
 		["sq5mephalaint03_base"] = 		{ name = "The Spiral Skein",		id = 425, xoffset = -0.122735280690, yoffset = 0.15810552059910, xscale = 0.01102208387640, },
 		["sq5mephalaext01_base"] = 		{ name = "The Spiral Skein",		id = 425, xoffset = -0.124896367829, yoffset = 0.14673044180610, xscale = 0.01708196590053, },
+		["TraitorsVault01_base"] =		{ name = "Traitor's Vault",		id = 426, xoffset = 0.8063161445241, yoffset = -0.0363906781312, xscale = 0.00159802088364, },
+		["TraitorsVault02_base"] =		{ name = "Traitor's Vault",		id = 426, xoffset = 0.8063188687887, yoffset = -0.0363824985810, xscale = 0.00158981257035, },
 		["TraitorsVault04_base"] =		{ name = "Traitor's Vault",		id = 426, xoffset = 0.8063133244997, yoffset = -0.0363903556104, xscale = 0.00160314839750, },
+		["sq6evergloam_base"] = 		{ name = "Evergloam",			id = 427, xoffset = 0.8597021034124, yoffset = -0.0773727148871, xscale = 0.00254905602153, },
 
 
 		-- EXISTING

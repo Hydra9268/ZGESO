@@ -464,6 +464,7 @@ Data.MapIdsByName = {
 	["Eton Nir Grotto"] = 424,
 	["The Spiral Skein"] = 425,
 	["Traitor's Vault"] = 426,
+	["Evergloam"] = 427,
 
 	[""] = 1000
 }
