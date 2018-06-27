@@ -17137,7 +17137,7 @@ goto artaeum_base 56.54,49.42
 click College of Psijics Ruins
 |tip Manually skip to the next step.
 step
-goto collegeofpsijicsruins_base 51.35,27.08
+goto collegeofpsijicsruins_base 55.46,28.90
 'Run down the stairs
 |tip Manually skip to the next step.
 step
@@ -19793,10 +19793,6 @@ click Artaeum Wayshrine
 'Travel to the _Artaeum_ Wayshrine
 |tip Manually skip to the next step.
 step
-goto artaeum_base 64.94,34.01
-'Continue West to the main road from here
-|tip Manually skip to the next step.
-step
 goto artaeum_base 60.27,33.91
 'Continue Southwest on the main road from here
 |tip Manually skip to the next step.
@@ -19825,7 +19821,554 @@ goto artaeum_base 39.88,44.68
 click Traitor's Vault Delve
 |tip Manually skip to the next step.
 step
-goto TraitorsVault04_base 50,50
+goto TraitorsVault04_base 57.45,15.61
+'Run down both stairs from here and through the archway
+|tip Manually skip to the next step.
+step
+goto TraitorsVault02_base 56.58,33.58
+'Press _E_ to Use _Library Eye Pedestal_
+|tip Manually skip to the next step.
+step
+goto TraitorsVault02_base 56.36,35.99
+'Continue South through the Archway from here and continue East through the next archway
+|tip Manually skip to the next step.
+step
+goto TraitorsVault02_base 72.41,34.71
+'Continue through this archway from here 
+|tip Manually skip to the next step.
+step
+goto TraitorsVault02_base 79.16,27.31
+'Run down the stairs from here
+|tip Manually skip to the next step.
+step
+goto TraitorsVault01_base 83.32,39.34
+'Continue through the archway from here
+|tip Manually skip to the next step.
+step
+goto TraitorsVault01_base 66.79,38.12
+'Press _E_ to Use _Library Eye Pedestal_
+|tip Manually skip to the next step.
+step
+goto TraitorsVault01_base 72.20,43.40
+'Continue through the archway from here
+|tip Manually skip to the next step.
+step
+goto TraitorsVault01_base 64.29,51.24
+'Continue through the archway from here
+|tip Manually skip to the next step.
+step
+goto TraitorsVault01_base 56.50,55.80
+'Continue through the archway from here
+|tip Manually skip to the next step.
+step
+goto TraitorsVault01_base 44.60,58.20
+'Run up both set of stairs from here
+|tip Manually skip to the next step.
+step
+goto TraitorsVault02_base 36.77,46.24
+'Continue North through the archway from here
+|tip Manually skip to the next step.
+step
+goto TraitorsVault02_base 36.85,34.48
+'Continue North through the archway from here
+|tip Manually skip to the next step.
+step
+goto TraitorsVault02_base 36.70,26.73
+'Press _E_ to Use _Library Eye Pedestal_
+|tip Manually skip to the next step.
+step
+goto TraitorsVault02_base 36.62,32.12
+'Continue South through the archway from here
+|tip Manually skip to the next step.
+step
+goto TraitorsVault02_base 36.85,43.27
+'Continue South through the archway from here
+|tip Manually skip to the next step.
+step
+goto TraitorsVault02_base 38.38,50.79
+'Run down both set of stairs from here
+|tip Manually skip to the next step.
+step
+goto TraitorsVault01_base 47.08,63.01
+'Press _E_ to Use _Library Eye Pedestal_
+|tip Manually skip to the next step.
+step
+goto TraitorsVault01_base 44.80,63.94
+click Sealed Hall
+|tip Manually skip to the next step.
+step
+goto TraitorsVault01_base 31.86,74.91
+click Secret Chamber
+|tip Manually skip to the next step.
+step
+goto TraitorsVault01_base 18.61,74.93
+kill Vessel of Worms
+|tip Manually skip to the next step.
+step
+'Open your map:
+click Artaeum Wayshrine
+'Travel to the _Artaeum_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto artaeum_base 60.27,33.91
+'Continue Southwest on the main road from here
+|tip Manually skip to the next step.
+step
+goto artaeum_base 46.11,41.01
+'At the fork in the road, go right from here
+|tip Manually skip to the next step.
+step
+goto artaeum_base 42.87,40.59
+'At the fork in the road, go left from here
+|tip Manually skip to the next step.
+step
+goto artaeum_base 39.58,43.83
+talk Ulliceta gra-Kogg
+|tip Manually skip to the next step.
+step
+goto artaeum_base 54.98,41.74
+'Travel Southwest on the main road from here
+|tip Manually skip to the next step.
+step
+goto artaeum_base 53.81,45.29
+'At the fork in the road, go left from here
+|tip Manually skip to the next step.
+step
+goto artaeum_base 56.20,46.30
+'At the fork in the road, go right from here and run up the stairs
+|tip Manually skip to the next step.
+step
+goto artaeum_base 56.52,49.45
+click College of Psijics Ruins
+|tip Manually skip to the next step.
+step
+goto collegeofpsijicsruins_base 55.46,28.90
+'Run down the stairs
+|tip Manually skip to the next step.
+step
+goto collegeofpsijicsruins_base 64.70,43.05
+click Vault of Moawita
+|tip Manually skip to the next step.
+step
+goto collegeofpsijicsruins_btm_base 59.97,43.95
+talk Relicmaster Glenadir
+|tip Manually skip to the next step.
+step
+goto collegeofpsijicsruins_btm_base 51.18,47.39
+'Press _E_ to Examine _Psijic Codex: List of Dead Drops_
+|tip Manually skip to the next step.
+step
+goto collegeofpsijicsruins_btm_base 51.18,47.39
+'Press _E_ to _Use Paper and Quill_
+|tip Manually skip to the next step.
+step
+goto collegeofpsijicsruins_btm_base 57.15,44.00
+talk Relicmaster Glenadir
+|tip Manually skip to the next step.
+step
+'Open your map:
+click Artaeum Wayshrine
+'Travel to the _Artaeum_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto artaeum_base 68.31,34.24
+talk Darien Gautier
+|tip Manually skip to the next step.
+step
+goto artaeum_base 64.52,26.54
+'Drop down from here and run down the stairs
+|tip Manually skip to the next step.
+step
+goto artaeum_base 65.92,27.03
+click The Dreaming Cave
+|tip Manually skip to the next step.
+step
+goto dreamingcave01_base 39.06,54.50
+talk Ritemaster Iachesis
+|tip Manually skip to the next step.
+step
+goto dreamingcave01_base 44.55,52.82
+'Press _E_ to Enter _The Dreaming Cave Portal_
+|tip Manually skip to the next step.
+step
+goto sq6evergloam_base 54.31,80.50
+talk Ritemaster Iachesis
+|tip Manually skip to the next step.
+step
+goto sq6evergloam_base 41.68,76.32
+kill Wraith of Crows
+|tip Manually skip to the next step.
+step
+goto sq6evergloam_base 41.71,61.37
+'Follow the path Southeast from here
+|tip Manually skip to the next step.
+step
+goto sq6evergloam_base 60.32,68.87
+talk Ritemaster Iachesis
+|tip Manually skip to the next step.
+step
+goto sq6evergloam_base 65.29,63.36
+'Run up both set of stairs from here
+|tip Manually skip to the next step.
+step
+goto sq6evergloam_base 73.92,62.58
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto sq6evergloam_base 79.98,64.63
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto sq6evergloam_base 84.69,62.47
+'Follow the path Northwest from here
+|tip Manually skip to the next step.
+step
+goto sq6evergloam_base 49.33,44.01
+kill Wraith of Crows
+|tip Manually skip to the next step.
+step
+goto sq6evergloam_base 39.21,46.60
+talk Ritemaster Iachesis
+|tip Manually skip to the next step.
+step
+goto sq6evergloam_base 35.31,47.32
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto sq6evergloam_base 27.84,46.43
+'Run up both set of stairs from here
+|tip Manually skip to the next step.
+step
+goto sq6evergloam_base 15.96,36.81
+'Run up both set of stairs from here
+|tip Manually skip to the next step.
+step
+goto sq6evergloam_base 18.91,29.44
+'Run up both set of stairs from here
+|tip Manually skip to the next step.
+step
+goto sq6evergloam_base 26.82,34.44
+talk Ritemaster Iachesis
+|tip Manually skip to the next step.
+step
+goto sq6evergloam_base 26.91,35.34
+'Press _E_ to Use _Portal to Mountain Top_
+|tip Manually skip to the next step.
+step
+goto sq6evergloam_base 44.36,38.51
+'Run up both set of stairs from here
+|tip Manually skip to the next step.
+step
+goto sq6evergloam_base 47.07,26.61
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto sq6evergloam_base 52.94,30.61
+talk Ritemaster Iachesis
+|tip Manually skip to the next step.
+step
+goto sq6evergloam_base 52.94,30.61
+'During this fight defeat the waves of mobs.
+'Uses Dawnbreaker's abilities.
+'The final fight are twin bosses.
+kill Aaderyna
+kill Ddynedan
+|tip Manually skip to the next step.
+step
+goto dreamingcave01_base 37.86,35.46
+talk Oriandra
+accept A Necessary Alliance
+step
+goto dreamingcave01_base 46.60,22.86
+click Artaeum
+|tip Manually skip to the next step.
+step
+goto artaeum_base 64.96,26.63
+'Run up the stairs and press _E_ to Use _Portal to Ceporah Tower_
+|tip Manually skip to the next step.
+step
+goto dreamingcave02_base 15.77,42.63
+'Press _E_ to Use _Portal to Sotha Sil's Study_
+|tip Manually skip to the next step.
+step
+goto dreamingcave03_base 19.86,49.48
+talk Sotha Sil
+|tip Manually skip to the next step.
+step
+goto dreamingcave03_base 34.84,49.78
+'Press _E_ to Use _Portal to Ceporah Main Gallery_
+|tip Manually skip to the next step.
+step
+goto dreamingcave02_base 19.53,42.79
+'Continue East passed the archway from here
+|tip Manually skip to the next step.
+step
+goto dreamingcave02_base 52.66,26.32
+'Continue Northeast passed the archway from here
+|tip Manually skip to the next step.
+step
+goto dreamingcave02_base 56.04,21.02
+'Press _E_ to Use _Portal to Valsirenn's Study_
+|tip Manually skip to the next step.
+step
+goto dreamingcave03_base 68.22,39.11
+talk Earl Leythen
+|tip Manually skip to the next step.
+step
+goto dreamingcave03_base 66.93,40.50
+talk Valsirenn
+|tip Manually skip to the next step.
+step
+'Open your map. Right click twice to bring up the Universe map. Select Tamriel.
+click Ebon Stadmont Wayshrine
+'Travel to the _Ebon Stadmont_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto summerset_base 34.35,35.43
+'Continue West on the main road from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 32.75,35.76
+'At the fork in the road, continue West from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 30.19,35.49
+'At the fork in the road, go right from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 28.81,31.95
+'At the fork in the road, continue North from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 27.93,29.23
+'Continue West from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 27.39,29.16
+talk Ruliel
+accept Wasting Away
+step
+goto summerset_base 27.39,29.16
+talk Faidur
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
 |tip Manually skip to the next step.
 step
 
