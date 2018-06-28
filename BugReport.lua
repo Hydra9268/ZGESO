@@ -27,7 +27,7 @@ ZGV.BugReport = BugReport
 
 -----------------------------------------
 -- PUBLIC FUNCTIONS
--- /script d(ZGV.BugReport:ShowReport())
+-- /run d(ZGV.BugReport:ShowReport())
 -----------------------------------------
 
 -----------------------------------------
