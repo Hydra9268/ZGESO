@@ -1,7 +1,6 @@
 ﻿ZGV.MapData = {
 	["ZoneNameToTex"] =
 	{
-		[""] = [[]],
 		["Aba-Loria"] = [[aba-loria_base]],
 		["Abagarlas"] = [[abagarlas_base]],
 		["Abamath Ruins"] = [[abamath_base]],
@@ -701,7 +700,6 @@
 
 
 		-- EXISTING
-		[""] = { name = "", },
 		["aba-loria_base"] = { name = "Aba-Loria", id = 212, xoffset = 0.403340, yoffset = 0.529272, scale = 0.016623, },
 		["abahslanding_base"] = { xoffset = 0.233167, yoffset = 0.486680, scale = 0.031971, },
 		["abahslanding_sulima_base"] = { xoffset = 0.233167, yoffset = 0.486680, scale = 0.031971, },

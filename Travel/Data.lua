@@ -467,8 +467,6 @@ Data.MapIdsByName = {
 	["Evergloam"] = 427,
 	["Corgrad Wastes"] = 428,
 	["Karnwasten"] = 429,
-
-	[""] = 1000
 }
 
 -----------------------------------------
