@@ -505,7 +505,6 @@ function GuideMenu:RefreshUI()
 		if status=="COMPLETE" and g.type=="LEVELING" then status=status.."_lev" end
 
 		s = s .. "\n"
-
 		s = s .. (g.description or "")
 
 		frame.GuideData:SetText(s)
@@ -525,6 +524,8 @@ function GuideMenu:RefreshUI()
 	else
 		frame.GuideTitle:SetText("Welcome to the Zygor Community Guide for ESO")
 		frame.GuideImage:SetTexture(ZGV.DIR.."/Viewer/Skins/Stealth/cbqpk-x7umv.dds")
+		frame.GuideData:SetPoint(TOPLEFT,frame.GuideImage,0,255)
+		frame.GuideData:SetText("Original guide authored by Zygor Guides\nSummerset guide authored by Hydra9268\nMinor bug fixes and improvements by Hydra9268")
 		frame.GuideImage:Show()
 		frame.OkButton:Hide()
 	end

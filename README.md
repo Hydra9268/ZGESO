@@ -1,6 +1,6 @@
 # ZGESO
 
-<img src="https://i.imgur.com/pAyDGDJ.png">
+<img src="https://i.imgur.com/KrnhwuP.png">
 
 A Public Domain ESO Leveling Guide produced by Zygor Guides, updated by Hydra9268 (aka alterego9268 on ZG forums).
 

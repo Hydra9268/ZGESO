@@ -1,4 +1,4 @@
-## Title: Zygor Guides |c006600Community|r
+## Title: Zygor Guides |c006600Community|r v1.4.0.196
 ## Description: A Zygor Community addon updated for the Summerset DLC. Please be aware that this update is not complete. You can help by visiting github.com/Hydra9268/ZGESO.
 ## Author: Zygor Guides |c006600Community|r
 ## Version: 1.4.0.196

@@ -356,7 +356,6 @@ function Utils.MatchExcerpt(exc,text)
 			if not zo_plainstrfind(safetext,part) then return false,safetext,part end
 		end
 
-		--local txt,len = short:match("(.*)%s+<(%d+)>$")
 		if len and (len~=#text) then return false,len,#text end
 
 		return true
@@ -377,10 +376,12 @@ assert (MatchExcerpt("Blah___bleh___bloh","Blah, this is bleh because bloh"),'Ut
 assert (not MatchExcerpt("Blah___bleh___bloh","bleh, this is bloh because Blah"),'Utils:MatchShortText is confused by order')
 
 function Utils.GetMyAddonInfo()
-	local AM=GetAddOnManager()
-	for i=1,AM:GetNumAddOns() do
-		local dir,title,author,_1,_2,_3,_4 = AM:GetAddOnInfo(i)
-		if dir==ZGV.DIR then return dir,title,_1,_2,_3,_4 end
+	local AM = GetAddOnManager()
+	for i = 1, AM:GetNumAddOns() do
+		local dir, title, author, _1, _2, _3, _4 = AM:GetAddOnInfo(i)
+		if dir == ZGV.DIR then
+			return dir, title, _1, _2, _3, _4
+		end
 	end
 	error("Can't find addon info!")
 end
