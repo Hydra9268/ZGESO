@@ -16,8 +16,8 @@ The purpose of this project is to add Summerset to the leveling guide for the co
 
 ### Map Coverage
 
-Updated 2018/06/24
-<img src="https://i.imgur.com/V0kvXD5.png" width="800">
+Updated 2018/06/28
+<img src="https://i.imgur.com/dntY0LX.png" width="800">
 
 ----
 
