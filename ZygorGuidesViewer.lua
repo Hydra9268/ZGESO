@@ -5,8 +5,6 @@ assert(not ZGV, "Two ZGV loaded.")
 -----------------------------------------
 
 local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs
---local create,resume,status,yield = coroutine.create,coroutine.resume,coroutine.status,coroutine.yield
-
 local GetGameTimeMilliseconds = GetGameTimeMilliseconds
 
 -----------------------------------------
@@ -73,7 +71,6 @@ function ZGV:StartupStep()
 	if not last_gettime then last_gettime=GetFrameTimeSeconds() end
 	if last_gettime==GetFrameTimeSeconds() then return false,"same frame" end  -- ah-ha, NOT loaded then!
 	if not self.player_activated then return false,"not player_activated" end
-	--if not self.db.char.maint_startguides then return end
 
 	if not self.startup_log['1_initialized'] then
 		self.loading="Loading..."
@@ -141,9 +138,6 @@ function ZGV:StartupStep()
 		self.guidesloaded=true  -- completely disable the startup thread
 
 		self:Print(L['welcome_guides']:format(#self.registeredguides))
-
-		--ZGV.Licence:CheckExpirationPopup()
-
 		self:GuideLoadStartup()
 
 		--if ZGV.ERROR_GETDISPLAYNAME_FAIL then
@@ -159,7 +153,6 @@ function ZGV.MasterFrameOnUpdate()
 	local self = ZGV
 	self.startup_log.startup_time_initial = self.startup_log.startup_time_initial or (GetGameTimeMilliseconds()/1000)
 	if self.initialized and self.loading and self.sv then
-	--and ZGV.sv.char.maint_startguides then
 		collectgarbage("collect")
 		local m1,t1 = collectgarbage("count"),GetGameTimeMilliseconds()/1000
 		local complete,step,ext = self:StartupStep()
@@ -178,7 +171,6 @@ function ZGV.MasterFrameOnUpdate()
 			self:Debug("Loading time: %.3fs in files + %.3fs cpu / %.3fs real in startup.", ZGV.startup_log['load_time_total'], total_t, t2-ZGV.startup_log['startup_time_initial'])
 			self:Debug("Memory usage: %d KB in files + %d KB in startup. Total in Lua now: %d KB.", ZGV.startup_log['load_memory_total'], total_m, collectgarbage("count"))
 		end
-		--ZGV:UpdateFrame(true)	-- Update the Guide Viewer. All of it...
 	end
 end
 

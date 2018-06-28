@@ -395,7 +395,6 @@ function SavedVars:InitializeOptions()
 	do
 		AddOption('arrowshow',{
 			type = 'toggle',
-			--width="full",
 			set = function(i,v) ZGV.Pointer:UpdateArrowVisibility() end,
 			_default=true,
 		})
@@ -403,7 +402,6 @@ function SavedVars:InitializeOptions()
 		AddOption('arrowfreeze',{
 			type = 'toggle',
 			set = function(i,v) ZGV.Pointer:SetupArrow() end,
-			--width = "single",
 			_default=false,
 			column = "two",
 		})
@@ -413,7 +411,6 @@ function SavedVars:InitializeOptions()
 
 		AddOption('arrowcolordist',{
 			type = 'toggle',
-			--disabled = function() return not ZGV.Pointer.CurrentArrowSkin.features['colordist'] end,
 			_default = false,
 		})
 
@@ -456,66 +453,9 @@ function SavedVars:InitializeOptions()
 		
 		AddOption('hidearrowwithguide',{
 			type = 'toggle',
-			--disabled = function() return self.db.profile.waypointaddon=="none" end,
-			--width="full",
 			_default = true,
 		})
 
-		--[[
-
-
-
-		AddOption('arrowskin',{
-			type = "select",
-			values = function()
-				local t={}
-				for id,skin in pairs(self.Pointer.ArrowSkins) do  t[id]=skin.name  end
-				return t
-			end,
-			set = function(_,n)
-				self.Pointer:SetArrowSkin(n)
-			      end,
-			_default = "stealth",
-		})
-		AddOptionSep()
-
-		AddOption('arrowsmooth',{  type = 'toggle', disabled = function() return not ZGV.Pointer.CurrentArrowSkin.features['smooth'] end,  width = "single", _default=true, })
-
-		AddOptionSep()
-
-		AddOptionSep()
-		AddOption('arrowmeters',{ type = 'toggle', width = "full", _default=false, })
-
-		AddOption('',{ type="header", name=L["opt_arrow_extras"] })
-
-		AddOption('corpsearrow',{
-			type = 'toggle',
-			disabled = function() return self.db.profile.waypointaddon=="none" end,
-			_default = true,
-		})
-		AddOption('corpsearrowjokes',{
-			type = 'toggle',
-			disabled = function() return not self.db.profile.corpsearrow or self.db.profile.waypointaddon=="none" end,
-			_default = true,
-		})
-		AddOption('minimapzoom',{ type = 'toggle', width = "full", set = function(i,v) Setter_Simple(i,v)  self.Pointer:MinimapZoomChanged() end, _default = false, })
-		AddOption('audiocues',{ type = 'toggle', width = "full", _default = false, })
-
-		AddOption('waypoints',{
-			type = 'select',
-			values={
-				[2]=L["opt_group_addons_internal"],
-				--[3]=(ZGV.WaypointFunctions['cart2']:isready() and "" or "|cff888888") .. L["opt_group_addons_cart2"],
-				[4]=(ZGV.WaypointFunctions['carbonite']:isready() and "" or "|cff888888") .. L["opt_group_addons_carbonite"],
-				--[5]=(ZGV.WaypointFunctions['tomtom']:isready() and "" or "|cff888888") .. L["opt_group_addons_tomtom"],
-				--cart3=L["opt_group_addons_cart3"],
-				--metamap=L["opt_group_addons_metamap"],
-			},
-			get = "GetWaypointAddon",
-			set = "SetWaypointAddon",
-		})
-		AddOptionSep()
-		--]]
 	end
 
 	-- EXTRAS
@@ -529,18 +469,12 @@ function SavedVars:InitializeOptions()
 		})
 
 		--[[
-		AddOption("revealmappoi",{
-			type = "toggle",
-			set = function(i,v) if not ZGV.Viewer.MinimapButton then return end ZGV.Viewer.MinimapButton:ShowIf(v) end,
-			_default = false,
-		})
-		--]]
-
 		-- What is this?? ~Jeremiah
-		--AddOption(nil,{
-		--	type = "desc",
-		--	width = 150,
-		--})
+		AddOption(nil,{
+			type = "desc",
+			width = 150,
+		})
+		]]--
 
 		AddOption("bugreports",{
 			type = "toggle",
@@ -989,8 +923,8 @@ function SavedVars:SetCurrentProfile(name)
 
 	prof = raw.profiles[name]
 
-	if not prof or							-- This does not exist, make it...
-	not prof.version or					-- Profile not properly versioned
+	if not prof or				-- This does not exist, make it...
+	not prof.version or			-- Profile not properly versioned
 	(prof.version < PROFILE_VERSION)	-- Outdated profile TODO probably shouldn't just overwrite this... Let user copy settings out of the old profile into new? meh
 	then
 		prof = self:CreateNewProfile(name)
@@ -1002,8 +936,8 @@ function SavedVars:SetCurrentProfile(name)
 	-- After we are initalized then we are changing a profile so make sure we update every properly.
 	if self.initialized then
 		SavedVars:SetupAllOptionGroups()
-		ZGV.Viewer:UpdateViewer()						-- Update Viewer options
-		ZGV.Pointer:UpdateArrowPosition()		-- Update Waypointer
+		ZGV.Viewer:UpdateViewer()		-- Update Viewer options
+		ZGV.Pointer:UpdateArrowPosition()	-- Update Waypointer
 	end
 end
 
@@ -1067,8 +1001,8 @@ function SavedVars:SetCurrentCharacterProfile()
 
 	charProf = raw.characters[name]
 
-	if not charProf or							-- This does not exist, make it...
-	not charProf.version or					-- Profile not properly versioned
+	if not charProf or			-- This does not exist, make it...
+	not charProf.version or			-- Profile not properly versioned
 	(charProf.version < CHAR_VERSION)	-- Outdated profile TODO probably shouldn't just overwrite this... Let user copy settings out of the old profile into new? meh
 	then
 		charProf = self:CreateNewCharProfile(name)
@@ -1098,20 +1032,7 @@ function SavedVars:GetOptionObject(optname,title)
 	end
 end
 
-
-
-
-
-
-
-
-
-
-
-
-
 -- TODO update these. There are options.
-
 function SavedVars:TableToDefault(tab,defaults)
 	tab = getmetatable(tab) and getmetatable(tab).__index or tab
 	if not tab then return end
@@ -1147,9 +1068,7 @@ function MyObject:Debug(...)
 	local str = ...
 	ZGV:Debug("&myobj "..str, select(2,...) )
 end
-
-
---]]
+]]--
 
 function copySvOldToNew()
 	local raw = _G[SvName]

@@ -3,9 +3,9 @@ if not ZGV then return end
 
 --[[
 	:AddEvent(EVENT,function() end)		- > Calls function
-	:AddEvent(Event,"Name")				- > Calls Events:Name or ZGV:Name
-	:AddEvent(EVENT,table)				- > Calls table:EVENT
-	:AddEvent(EVENT)					- > Calls Events:EVENT or ZGV:EVENT
+	:AddEvent(Event,"Name")			- > Calls Events:Name or ZGV:Name
+	:AddEvent(EVENT,table)			- > Calls table:EVENT
+	:AddEvent(EVENT)			- > Calls Events:EVENT or ZGV:EVENT
 --]]
 
 -----------------------------------------

@@ -13,7 +13,6 @@ if not ZGV then return end
 -----------------------------------------
 
 local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs,class = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs,class
---local create,resume,status,yield = coroutine.create,coroutine.resume,coroutine.status,coroutine.yield
 local print = ZGV.print
 local CHAIN = ZGV.Utils.ChainCall
 local ui = ZGV.UI
@@ -28,7 +27,6 @@ local GuideProto = {}
 local Guide = ZGV.Class:New("Guide")
 local Guide_mt = { __index=Guide }
 
-
 -----------------------------------------
 -- SAVED REFERENCES
 -----------------------------------------
@@ -36,19 +34,19 @@ local Guide_mt = { __index=Guide }
 ZGV.GuideProto = GuideProto
 
 GuideProto.Types = {
-	LEVELING = 1,
-	TEST = 99,
-	}
+			LEVELING = 1,
+			TEST = 99,
+		}
 GuideProto.SubTypes = {
-	TRI = 0,
-	TAM = 1,
-	MOR = 2,
-	}
+			TRI = 0,
+			TAM = 1,
+			MOR = 2,
+		}
 GuideProto.Sides = {
-	AD = 1,
-	DC = 2,
-	EP = 3,
-	}
+			AD = 1,
+			DC = 2,
+			EP = 3,
+		}
 
 -----------------------------------------
 -- LOCAL FUNCTIONS
@@ -112,7 +110,6 @@ function Guide:Parse(fully)
 	if fully then GuideProto:Debug("Parsing guide: "..self.title) end
 
 	local lastparsed = {linenum=-2,linedata="-?-"}
-	--local success,parsed,err,line,stepnum,linedata = coroutine_safe_pcall(function() return ZGV.Parser:ParseEntry(self,fully,lastparsed) end)
 	local success,parsed,err,linenum,stepnum,linedata = pcall(ZGV.Parser.ParseEntry,ZGV.Parser,self,fully,lastparsed)
 
 	if not success then linenum,stepnum,linedata = lastparsed.linenum or -1, -1, lastparsed.linedata or "--" end
@@ -258,7 +255,8 @@ function Guide:Load(step)
 	ZGV:SetGuide(self,step)
 end
 
-function Guide:Unload()		-- TODO allow unloading of guides. It so few guides atm don't need to save on memory
+-- TODO allow unloading of guides. It so few guides atm don't need to save on memory
+function Guide:Unload()
 	--self.steps=nil
 	--self.fully_parsed=nil
 	--collectgarbage("step",100)

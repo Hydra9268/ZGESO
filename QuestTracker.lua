@@ -53,9 +53,6 @@ function QuestTracker:CacheCompletedQuests()  -- t=1ms for 300+ quests
 	local t=GetFrameTimeMilliseconds()
 	if t==last_CCQ then  return self.CompletedQuests  else  last_CCQ=t  end
 	
-	--local m1 = math.ceil(collectgarbage("count"))
-	--local t1 = GetGameTimeMilliseconds()
-	
 	ZGV.Utils.table_wipe_keys(self.CompletedQuests)
 	repeat
 		id = GetNextCompletedQuestId(id)
@@ -68,8 +65,6 @@ function QuestTracker:CacheCompletedQuests()  -- t=1ms for 300+ quests
 		count=count+1  if count>1000000 then return false end
 	until not id
 	local ever_cached=true
-	
-	--if MEMORYSPAM then  	local t2 = GetGameTimeMilliseconds()  m2=math.ceil(collectgarbage("count"))  d("CCQ: "..(m2-m1).." KB, "..(t2-t1).." ms on "..count.." quests") end
 	
 	return self.CompletedQuests
 end
@@ -122,23 +117,17 @@ end
 -----------------------------------------
 -- STARTUP
 -----------------------------------------
-
--- quest completion is working already! at load time! woo!
-	QuestTracker:CacheCompletedQuests()
-	ZGV.Utils.CheckVeteranFaction()  -- IMMEDIATELY. Because... we can!
-
+QuestTracker:CacheCompletedQuests()		-- quest completion is working already! at load time! woo!
+ZGV.Utils.CheckVeteranFaction()  		-- IMMEDIATELY. Because... we can!
 
 tinsert(ZGV.startups,function(self)
 	QuestTracker:RegisterEvents()
 	QuestTracker:GatherAllCurrentQuests()
-
-	--QuestTracker:CacheCompletedQuests()
 end)
 
 
 local _RequestJournalQuestConditionAssistance = RequestJournalQuestConditionAssistance
 function RequestJournalQuestConditionAssistance(journalIndex,stepnum,condnum,boo,baa)
-	--d(("|cff00ffRequestJournalQuestConditionAssistance %s,%s,%s,%s"):format(tostring(journalindex),tostring(condnum),tostring(boo),tostring(baa)))
 	local reqid = _RequestJournalQuestConditionAssistance(journalIndex,stepnum,condnum,boo)
 	if not reqid then return end
 	QuestTracker.questpositionrequests[reqid]={journalIndex=journalIndex,stepnum=stepnum,condnum=condnum}

@@ -115,9 +115,6 @@ function ZGV:SkipStep(fast,quiet)
 
 		self:FocusStep(step,quiet)
 	else
-		-- last step! or something went wrong and GetNextValidStep couldn't find anything to hop onto.
-
-		--if self.CurrentStep.num == #self.CurrentGuide.steps then  -- never mind! assuming loss of next step = end of guide. Wondering if this is safe... ~sinus 2011-08-16
 		self.pause = true
 		self.fastforward = false
 		if self.CurrentGuide.next then
@@ -211,7 +208,6 @@ function ZGV:FocusStep(num,quiet)
 	step:SetAsCurrent()
 
 	--TODO what else needs to be done on FocusStep
-
 	--self:ClearRecentActivities()
 
 	-- Whoa whoa. The step might load a different guide at this point! Play safe.

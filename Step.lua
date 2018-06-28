@@ -13,7 +13,6 @@ if not ZGV then return end
 -----------------------------------------
 
 local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs,class = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs,class
---local create,resume,status,yield = coroutine.create,coroutine.resume,coroutine.status,coroutine.yield
 local print = ZGV.print
 local CHAIN = ZGV.Utils.ChainCall
 local ui = ZGV.UI
@@ -26,8 +25,8 @@ local L = ZGV.L
 local StepProto = {}
 local Step = ZGV.Class:New("Step")
 local StepProto_mt = { __index=Step }
-
 local STEPTAGS = {}
+
 ZGV.STEPTAGS = STEPTAGS
 -- for the future, just in case
 
@@ -118,7 +117,6 @@ function Step:IsComplete(cache)
 		return complete,completable
 	end
 
-
 	-- check for ORs!
 	local status
 	for i,goal in ipairs(self.goals) do
@@ -198,7 +196,6 @@ function Step:GetJumpDestination(jump)
 
 			return tag,guide
 		else
-			-- "label","+label","-label"
 
 			local labs = self.parentGuide.steplabels and self.parentGuide.steplabels[jump]
 
@@ -248,7 +245,7 @@ function Step:GetNextStep(nextlabel)
 	if not guide then
 		-- normal next
 		local stepobj = self.parentGuide:GetStep(step)
-	-- step is not validated, validate now
+		-- step is not validated, validate now
 		if not stepobj and nextlabel~="+1" then
 			ZGV:Print("|cff4400ERROR!|r Cannot jump from step |cffff88"..self.num.."|r to label '|cffff88"..tostring(nextlabel).."|r'. This is guide |cffff88"..self.parentGuide.title_short.."|r. Please report this.") --, providing a generated Bug Report.")
 			ZGV:Print("Meanwhile, try to navigate to the next step manually, by holding |c55ff00CTRL+ALT|r and skipping the step.")
@@ -311,7 +308,6 @@ function Step:GetNextCompletableStep()
 	visited_steps[step]=1
 	repeat
 		step, stepnum,guide = step:GetNextStep()
-		--numskips=numskips+1  assert(numskips<2000,"2000 skips and no completable step found!")
 		if step then
 			assert(not visited_steps[step],"LOOPING! started in step ".. self.num..", detected in ".. step.num .." , see ZGV.debug_VPATH")
 			stepcomplete,steppossible = step:IsComplete()

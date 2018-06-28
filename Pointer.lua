@@ -354,7 +354,6 @@ local function FormatDistance(dist)
 end
 ZGV.FormatDistance=FormatDistance
 
----------------
 function Pointer:CreateArrowFrame()
 	if not self.ArrowFrameCtrl then
 		self.ArrowFrameCtrl = ZygorGuidesViewerPointer_ArrowCtrl
@@ -435,7 +434,7 @@ local autosurvey_last = 0
 
 function Pointer.ArrowFrameControl_OnUpdate(self,msec)
 	if msec-arrowctrl_last >= arrowctrl_fps then
-		-- update skin IF WE HAVE ONE ON only, dammit
+		-- update skin IF WE HAVE ONE ON only
 		if Pointer.ArrowFrame then Pointer.ArrowFrame_OnUpdate_Common(Pointer.ArrowFrame,msec) end
 		arrowctrl_last=msec
 	end
@@ -852,7 +851,7 @@ end
 function Pointer.ArrowFrame_OnClick(frame,button)
 	if ZGV.db.profile.arrowfreeze then return end  -- how did we get the OnClick event, anyway?
 	if button=="LeftButton" then
-		if not frame.dragging then -- and ZGV.db.profile.pathfinding and ZGV.Pointer.pathfollow=="pathfind" then
+		if not frame.dragging then
 			ZGV:SetWaypoint()
 		end
 	elseif button=="RightButton" then
@@ -1106,7 +1105,6 @@ function Pointer:SurveyMap(specific,force,quiet)
 
 	if specific then
 		local map=specific:match("map (%d+)")
-		--local zone=specific:match("id (%d+)") or specific:match("zone (%d+)")
 		if map then SetMapToMapListIndex(tonumber(map)) end
 	else SetMapToPlayerLocation() ZO_WorldMap_UpdateMap() end
 

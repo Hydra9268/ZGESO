@@ -45,12 +45,10 @@ function ZGV.SlashCommandHandler(text)		--TODO
 
 	if text=="debug" then
 		self.sv.profile.debug = not self.sv.profile.debug
-
 		ZGV:Print(("Debug is %s"):format(self.sv.profile.debug and "on" or "off"))
 	elseif text=="error" then
 		self.sv.profile.ignoreErrors = not self.sv.profile.ignoreErrors
 		ZGV:Print("Please reload for errors to get handled properly.")
-		--ReloadUI()	-- Evil?
 	elseif text=="report" or text=="bug" then
 		if not ZGV.BugReport then ZGV:Print("BugReport feature not loaded. Sorry!") return end
 		ZGV.BugReport:ShowReport()
@@ -62,7 +60,7 @@ function ZGV.SlashCommandHandler(text)		--TODO
 		ZGV.Viewer:Hide_GuideViewer()
 	elseif text == "config" then
 		ZGV.Settings:OpenSettings()
-	else -- text == help or nothing
+	else
 		ZGV:Print(help_string)
 	end
 

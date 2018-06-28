@@ -523,7 +523,7 @@ function GuideMenu:RefreshUI()
 
 		if g.parse_error then ZGV:Print(g.parse_error) end
 	else
-		frame.GuideTitle:SetText("Welcome to the Zygor Guide for ESO")
+		frame.GuideTitle:SetText("Welcome to the Zygor Community Guide for ESO")
 		frame.GuideImage:SetTexture(ZGV.DIR.."/Viewer/Skins/Stealth/cbqpk-x7umv.dds")
 		frame.GuideImage:Show()
 		frame.OkButton:Hide()

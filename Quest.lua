@@ -311,8 +311,6 @@ end
 function Quest:Dump_OLD_StageSnapshot(strict)
 	local snap = {}
 	
-	--tinsert(snap,("STAGE %d"):format(zo_floor(self:GetLastStageNum())+1))
-
 	tinsert(snap,("Q1 %s"):format(MakeExcerpt(self.bgtext)))
 	local ji = self:GetJournalIndex()
 	local trackered

@@ -96,82 +96,6 @@ local ConditionEnv = {
 		if y>1 then y=y/100 end
 		return ZGV.Pointer:GetDistToCoords(map,x,y)
 	end,
-	--[[
-		rep = function(faction)
-			if ZGV:GetReputation(faction).friendship then --dummy proof this.
-				return ZGV:GetReputation(faction).friendship
-			end
-			return ZGV:GetReputation(faction).standing
-		end,
-		friend = function(faction)
-			return ZGV:GetReputation(faction).friendship
-		end,
-		repval = function(faction,baselevel)
-			baselevel = ZGV.StandingNamesEngRev[baselevel]
-			local standing =  ZGV:GetReputation(faction).standing
-			if standing < baselevel then return -99999 --We are under the needed standing fo sho
-			elseif standing > baselevel then return 99999 --We are over the standing
-			else return ZGV:GetReputation(faction).val-ZGV:GetReputation(faction).min
-			end
-		end,
-		skill = function(skill)
-			return ZGV:GetSkill(skill).level
-		end,
-		skillmax = function(skill)
-			return ZGV:GetSkill(skill).max
-		end,
-		raceclass = function(raceclass)
-			return ZGV:RaceClassMatch(raceclass,true)
-		end,
-		hasprof = function(hasprof,minlevel,maxlevel)
-			return ZGV:MatchProfs(hasprof,minlevel,maxlevel)
-		end,
-		isevent = function(eventname)
-			return ZGV:FindEvent(eventname)
-		end,
-		achieved = function(achieveid)
-			return select(4,GetAchievementInfo(achieveid))
-		end,
-		knowspell = function(spellid)
-			return IsSpellKnown(spellid)
-		end,
-		haspet = function(speciesId)
-			local numCollected, limit = C_PetJournal.GetNumCollectedInfo(speciesId)
-			return ((numCollected or 0) > 0)
-		end,
-		thunderstage = function()
-			return ZGV:GetThunderStage()
-		end,
-		thunderprogress = function()
-			return math.floor(select(2,ZGV:GetThunderStage())*100)
-		end,
-		hasmount = function(mountspell)
-			local id,name,spell
-			for i=1,GetNumCompanions("MOUNT") do
-				 id,name,spell = GetCompanionInfo("MOUNT",i)
-				 if spell==mountspell then return true end
-			end
-		end,
-		itemcount = function(...)
-			local total = 0
-			local count = select("#", ...)
-			for i = 1, count do
-				total = total + GetItemCount(select(i, ...))
-			end
-			return total
-		end,
-		curcount = function(curid)
-			return (select(2,GetCurrencyInfo(curid)))
-		end,
-		heroic_dung = function(diff)
-			diff = diff or 2
-			return GetDungeonDifficultyID()==diff
-		end,
-		heroic_raid = function(diff)
-			diff = diff or 3
-			return GetCurrentRaidDifficulty()==diff
-		end,
-	--]]
 }
 Parser.ConditionEnv=ConditionEnv  --DEBUG
 
@@ -350,7 +274,6 @@ StepCommands['only'] = function(step,params)
 		step.condition_visible=fun
 	else
 		step.requirement = params
-		--params = params:gsub("%s*,%s*",",")
 	end
 end
 
@@ -445,14 +368,8 @@ function Parser.ParseMapXYDist(text)
 	x = tonumber(x)  x=x and x*0.01
 	y = tonumber(y)  y=y and y*0.01
 	dist=tonumber(dist)
-	if dist and disttype==">" then dist=-dist end   -- distance written as <40 is usual; >40 = reverse distance check: "leave the area".
 
-	--[[
-	if type(map)=="string" then
-		local mapid = ZGV.Travel.Data.MapIdsByName[map]
-		if mapid then map=mapid else err="ERROR: map '"..map.."' unknown." map=0 end
-	end
-	--]]
+	if dist and disttype==">" then dist=-dist end   -- distance written as <40 is usual; >40 = reverse distance check: "leave the area".
 
 	if map and not map:find("_") and not ZGV.Pointer.Zones[map] then err="ERROR: map '"..map.."' unknown." map=nil end  -- _ in map name means it might be a raw texture, just accept it raw
 
@@ -516,8 +433,6 @@ function Parser.OLD_ParseQuest(text)
 	end
 
 	if steptxt and stepnum and not condtxt and not condnum then steptxt,stepnum,condtxt,condnum=nil,nil,steptxt,stepnum end
-
-	--if not (steptxt or stepnum) and condnum and condtxt then condnum=nil end  -- no step, but condnum given? bullshit.
 
 	return questtxt,questid, stagetxt,stagenum, steptxt,stepnum, condtxt,condnum
 
