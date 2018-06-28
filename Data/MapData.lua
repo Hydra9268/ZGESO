@@ -606,6 +606,10 @@
 		["Traitor's Vault"] = [[TraitorsVault02_base]],
 		["Traitor's Vault"] = [[TraitorsVault04_base]],
 		["Evergloam"] = [[sq6evergloam_base]],
+		["Corgrad Wastes"] = [[corgradwastehigher2_base]],
+		["Corgrad Wastes"] = [[corgradwasteslower_base]],
+		["Corgrad Wastes"] = [[corgradwasteshigher_base]],
+		["Karnwasten"] = [[Sum_Karnwasten_base]],
 
 	},
 	["Zones"] =
@@ -690,6 +694,10 @@
 		["TraitorsVault02_base"] =		{ name = "Traitor's Vault",		id = 426, xoffset = 0.8063188687887, yoffset = -0.0363824985810, xscale = 0.00158981257035, },
 		["TraitorsVault04_base"] =		{ name = "Traitor's Vault",		id = 426, xoffset = 0.8063133244997, yoffset = -0.0363903556104, xscale = 0.00160314839750, },
 		["sq6evergloam_base"] = 		{ name = "Evergloam",			id = 427, xoffset = 0.8597021034124, yoffset = -0.0773727148871, xscale = 0.00254905602153, },
+		["corgradwastehigher2_base"] =		{ name = "Corgrad Wastes",		id = 428, xoffset = 0.0628888674971, yoffset = 0.67911202161442, xscale = 0.00215904869046, },
+		["corgradwasteslower_base"] = 		{ name = "Corgrad Wastes",		id = 428, xoffset = 0.0628888763730, yoffset = 0.67911203290864, xscale = 0.00215903899004, },
+		["corgradwasteshigher_base"] = 		{ name = "Corgrad Wastes",		id = 428, xoffset = 0.0628892479133, yoffset = 0.67911120059280, xscale = 0.00215863293506, },
+		["Sum_Karnwasten_base"] =		{ name = "Karnwasten",			id = 429, xoffset = 0.0757704105501, yoffset = 0.63358013538260, xscale = 0.04118424984871, },
 
 
 		-- EXISTING

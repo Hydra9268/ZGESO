@@ -465,6 +465,8 @@ Data.MapIdsByName = {
 	["The Spiral Skein"] = 425,
 	["Traitor's Vault"] = 426,
 	["Evergloam"] = 427,
+	["Corgrad Wastes"] = 428,
+	["Karnwasten"] = 429,
 
 	[""] = 1000
 }
