@@ -20152,142 +20152,437 @@ goto summerset_base 27.39,29.16
 talk Faidur
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 27.47,28.27
+'Continue West from here
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 25.70,28.26
+'Press _E_ to Use _Broken Window_
 |tip Manually skip to the next step.
 step
-
+goto corgradwastehigher2_base 12.34,43.21
+talk Faidur
 |tip Manually skip to the next step.
 step
-
+goto corgradwastehigher2_base 11.37,40.64
+'Press _E_ to Examine _Worn Statue Inscription_
 |tip Manually skip to the next step.
 step
-
+goto corgradwastehigher2_base 12.04,41.73
+talk Faidur
 |tip Manually skip to the next step.
 step
-
+goto corgradwastehigher2_base 14.35,40.58
+'Press _E_ to Take _Rultari's Journal_
 |tip Manually skip to the next step.
 step
-
+goto corgradwastehigher2_base 14.35,40.58
+talk Faidur
 |tip Manually skip to the next step.
 step
-
+goto corgradwastehigher2_base 17.21,42.69
+'Press _E_ to Take _Please Respond, Your Beloved Aunt_
 |tip Manually skip to the next step.
 step
-
+goto corgradwastehigher2_base 13.98,43.77
+'Run down the stairs from here
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteslower_base 15.02,43.49
+talk Faidur
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteslower_base 14.37,38.32
+'Follow the path North from here and exit into a large chamber
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteslower_base 30.99,28.52
+'Press _E_ to Take _Karnhar's Journal_
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteslower_base 30.99,28.52
+talk Faidur
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteslower_base 35.99,31.14
+'Continue Southeast through the passage from here
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteslower_base 39.14,31.95
+'At the fork in the path, go right from here
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteslower_base 48.75,42.97
+'Exit the passage from here into a large chamber
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteslower_base 69.03,36.69
+talk Arillas
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteslower_base 69.22,37.04
+talk Faidur
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteslower_base 69.22,37.04
+talk Arillas
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteslower_base 73.01,21.41
+'Press _E_ to Use _Narrow Passage_
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteslower_base 87.85,21.10
+'Press _E_ to Take _Karnhar's Letter_
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteslower_base 78.09,18.23
+'Press _E_ to Use _Buried Vaults_
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteslower_base 70.90,47.97
+'Press _E_ to Use _Corgrad Warrens_
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteslower_base 86.85,76.38
+'Continue Southwest from here
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteslower_base 76.87,81.24
+'Continue Northwest from here
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteslower_base 69.31,73.46
+click Buried Vaults
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteslower_base 61.12,64.77
+'Continue West passed the archway from here
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteslower_base 49.25,62.18
+'Continue North through the archway here and run up the stairs
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteshigher_base 43.30,68.07
+'Continue South passed the archway from here
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteshigher_base 44.23,71.20
+talk Henrigg
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteshigher_base 43.47,77.05
+'Continue South passed the archway from here
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteshigher_base 46.53,83.22
+'Continue East passed the archway here and run down the stairs
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteslower_base 55.27,77.29
+'Continue South passed the archway from here
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteslower_base 56.97,81.81
+'Press _E_ to Use _Rusty Lockbox_
+'Take Arillas's Keys
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteslower_base 55.66,79.77
+'Continue North passed the archway here and run up the stairs
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteshigher_base 48.75,83.29
+'Continue West passed the archway here
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteshigher_base 44.55,76.61
+'Press _E_ to Use Key _Shackles_
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteshigher_base 44.90,72.40
+'Press _E_ to Use Key _Shackles_
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteshigher_base 45.01,73.27
+talk Henrigg
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteshigher_base 39.49,74.09
+click Savoirs' Crypt
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteshigher_base 34.49,75.01
+talk Kinlord Nemfarion
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteshigher_base 33.71,73.05
+talk Kinlady Taanwae
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteshigher_base 32.08,73.35
+talk Rultarion
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteshigher_base 32.01,74.44
+talk Murderil
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteshigher_base 33.80,74.20
+'Press _E_ to Break _Embalming Stone_
 |tip Manually skip to the next step.
 step
-
+goto corgradwasteshigher_base 35.90,72.87
+talk Faidur
+|tip Manually skip to the next step.
+step
+goto corgradwasteshigher_base 34.10,70.92
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto corgradwasteshigher_base 23.99,74.16
+click Corgrad Wastes
+|tip Manually skip to the next step.
+step
+goto corgradwasteshigher_base 18.41,64.46
+kill Arillas
+|tip Manually skip to the next step.
+step
+goto corgradwasteshigher_base 20.28,58.64
+'Continue Northeast through this passage
+|tip Manually skip to the next step.
+step
+goto corgradwasteslower_base 22.73,46.77
+'Continue North through the archway here and run up the stairs
+|tip Manually skip to the next step.
+step
+goto corgradwastehigher2_base 25.34,47.51
+click Corgrad Wastes
+|tip Manually skip to the next step.
+step
+goto summerset_base 25.46,28.38
+'Press _E_ to Open _Thieves Guild Dead Drop_
+'Take The Inescapable Helm
+'This is a _RELIC OF SUMMERSET_
+|tip Manually skip to the next step.
+step
+goto summerset_base 26.05,28.87
+'Continue East from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 27.35,29.17
+talk Ruliel
+|tip Manually skip to the next step.
+step
+goto summerset_base 27.35,29.17
+talk Faidur
+|tip Manually skip to the next step.
+step
+goto summerset_base 28.05,28.58
+'At the fork in the road, go North from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 28.27,24.81
+wayshrine The Crystal Tower
+|tip Manually skip to the next step.
+step
+goto summerset_base 29.26,23.25
+'Follow the path North from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 29.77,21.13
+talk Renzir
+accept An Unexpected Betrayal
+step
+goto summerset_base 30.11,20.88
+'Press _E_ to Enter _Karnwasten Public Dungeon_
+'I recommend _Crown Fortified Meal_. Also, you must _have lockpicks_.
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 10.17,60.23
+'Exit the passage Northeast from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 11.44,57.72
+'Cross the bridge from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 14.89,54.83
+'Continue through the passage Northeast from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 19.11,52.13
+'Continue Southeast into the passage from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 26.10,60.99
+'Continue Southeast from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 32.88,69.61
+'Continue Southwest from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 20.12,71.52
+'Continue Northwest from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 18.45,68.16
+kill Gilleruk the Viscous
+'This is a fairly difficulty fight solo. Use health spells and potions and you'll be fine.
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 17.42,64.16
+'Press _E_ to Open _Trade Shipment_
+'Take Valenwood Perfume
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 19.43,70.63
+'Enter the passage from here and continue East
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 31.52,71.07
+'Enter the passage from here and continue Northwest
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 26.96,61.96
+'Continue Northwest from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 24.42,58.56
+'Enter the passage from here and continue Northwest
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 17.08,48.55
+'Continue North to the wooden planks from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 17.84,45.84
+'Run down the wooden planks from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 22.35,49.60
+'Run down the wooden planks from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 26.49,43.04
+'Press _E_ to Open _Trade Shipment_
+'Take Azura Idol
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 24.88,44.79
+'Run up the wooden planks from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 19.94,49.82
+'Run up the wooden planks from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 17.46,45.83
+'Continue Southeast from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 19.08,51.75
+'Enter the passage and continue Southeast from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 27.37,59.19
+'Enter the passage and continue Northeast from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 33.86,55.51
+'Continue Southeast from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 37.34,60.25
+'Continue East from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 48.60,59.65
+'Continue East from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 51.81,58.34
+'Skip _Nolore Stieve_ (unless you're in a group). This is a difficult fight solo.
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 58.90,58.47
+'Follow the pier Northwest from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 52.38,57.86
+kill Madja
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 51.90,52.77
+'Run on the pier North from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 51.86,46.25
+talk Cainar
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 52.08,53.83
+'Follow the pier Southeast from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 61.68,60.44
+'Follow the path Southeast from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 67.10,62.08
+'Press _E_ to Open _Trade Shipment_
+'Take Book of Tamriel Religions
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 70.25,64.22
+'Go through this passage from here and continue Southeast
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 76.17,67.29
+'Continue East from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 85.32,69.35
+talk Grog
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 85.25,69.47
+'Press _E_ to use lockpicks to Unlock _Grog's Chains_
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 85.25,69.47
+talk Grog
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 85.51,68.62
+'Continue Northwest from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 75.98,67.32
+'Continue Northwest from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 61.39,60.97
+'Continue West from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 58.15,58.01
+'Continue Northwest on the pier from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 55.92,55.64
+'Follow the dock North from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 55.74,49.25
+'Board the ship from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 57.79,48.05
+talk Nubani
+'Select _"No. I made a deal with Renzir, and I'm going to honor that."_
 |tip Manually skip to the next step.
 step
 
