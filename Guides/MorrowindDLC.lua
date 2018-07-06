@@ -21103,3 +21103,7 @@ step
 
 
 ]])
+ZGV:RegisterGuide("LEVELING\\Craglorn",[[
+loadingimage loadscreen_craglorn_01.dds
+description COMING SOON.
+]])
