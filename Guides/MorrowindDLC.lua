@@ -20585,6 +20585,389 @@ talk Nubani
 'Select _"No. I made a deal with Renzir, and I'm going to honor that."_
 |tip Manually skip to the next step.
 step
+goto Sum_Karnwasten_base 57.27,49.35
+'Exit the ship to the dock from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 55.72,49.28
+'Jump into the water here and swim Northwest
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 52.12,46.09
+talk Cainar
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 52.20,46.01
+'Jump in the water from here and swim East
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 61.39,48.26
+'Follow the dock South from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 61.77,60.62
+'Continue Southeast from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 68.32,62.16
+'Continue Northeast from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 70.25,58.11
+'Continue Northwest from here
+|tip Manually skip to the next step.
+step
+goto Sum_Karnwasten_base 69.95,51.09
+click Summerset
+|tip Manually skip to the next step.
+step
+goto summerset_base 44.33,13.80
+wayshrine Veyond Wyte
+|tip Manually skip to the next step.
+step
+goto summerset_base 44.69,13.55
+'Follow the path Northeast from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 45.86,12.94
+'Follow the path East from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 46.97,13.52
+'Follow the path Southwest from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 46.77,14.39
+'Cross the river from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 46.92,15.28
+'Press _E_ to Read _Nafarion's Note_
+accept His Final Gift
+step
+goto summerset_base 47.01,15.27
+'Press _E_ to Take _Nafarion's Pack_
+'Take Nafarion's Pendant
+|tip Manually skip to the next step.
+step
+'Open your map:
+click Lillandril Wayshrine
+'Travel to the _Lillandril_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 40.54,69.11
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 50.29,53.70
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 53.51,43.19
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 43.20,39.59
+'From this point, search in the area in the circle for Felanwen. When you locate her
+talk Feldawen
+|tip Manually skip to the next step.
+step
+'Open your map:
+click The Crystal Tower Wayshrine
+'Travel to the _The Crystal Tower_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto summerset_base 29.34,22.92
+'Continue to follow the path North from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 29.79,21.17
+talk Renzir
+'Select _"[Persuade] Nubani wanted me to destroy them so you'd have to sell your ship."_
+|tip Manually skip to the next step.
+step
+goto summerset_base 29.34,22.92
+'Continue to follow the path Sotuh from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 28.62,25.08
+'Run up both sets the stairs from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 29.12,25.69
+click Watchtower
+|tip Manually skip to the next step.
+step
+goto summerset_base 28.81,25.86
+'Run up the stairs and press _E_ to Climb _Watchtower Turret_
+|tip Manually skip to the next step.
+step
+goto summerset_base 28.93,25.72
+talk Razum-dar
+|tip Manually skip to the next step.
+step
+goto summerset_base 28.86,25.84
+click Watchtower
+|tip Manually skip to the next step.
+step
+goto summerset_base 28.87,25.66
+'Run down the stairs and
+click Summerset
+|tip Manually skip to the next step.
+step
+goto summerset_base 29.53,25.43
+'Run up three sets the stairs from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.08,25.09
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.97,24.77
+talk Valsirenn
+|tip Manually skip to the next step.
+step
+goto summerset_base 32.05,25.75
+'Kill the three waves of mobs. Note: You must survive all three or else the event with reset.
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.44,24.03
+'As before, kill the three waves of mobs. Note: You must survive all three or else the event with reset.
+|tip Manually skip to the next step.
+step
+goto summerset_base 31.96,24.78
+talk Valsirenn
+'Select either choice.
+|tip Manually skip to the next step.
+step
+'Open your map:
+click Alinor Wayshrine
+'Travel to the _Alinor_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto alinor_base 48.16,49.27
+'Follow the road Northwest from here
+|tip Manually skip to the next step.
+step
+goto alinor_base 41.49,44.52
+'Follow the road North from here
+|tip Manually skip to the next step.
+step
+goto alinor_base 40.74,31.65
+'Run down the stairs from here
+|tip Manually skip to the next step.
+step
+goto alinor_base 36.49,32.65
+talk Razum-dar
+|tip Manually skip to the next step.
+step
+goto alinor_base 34.75,33.45
+'Follow the road South from here
+|tip Manually skip to the next step.
+step
+goto alinor_base 35.14,52.74
+'Run up the three sets of stairs from here
+|tip Manually skip to the next step.
+step
+goto alinor_base 46.38,60.39
+'Run up to the Talking Dog and follow it
+|tip Manually skip to the next step.
+step
+goto alinor_base 45.71,68.51
+talk Barbas
+|tip Manually skip to the next step.
+step
+'Open your map:
+click Cey-Tarn Keep Wayshrine
+'Travel to the _Cey-Tarn Keep_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto summerset_base 30.71,51.28
+'Continue Southeast up the hill from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 32.51,51.70
+'Continue Southeast across the landscape from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 34.50,52.17
+'Continue Southeast across the landscape from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 34.83,52.46
+'Continue South across the landscape from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 35.30,54.31
+'Continue South across the landscape from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 34.95,55.18
+click The Vaults of Heinarwe
+|tip Manually skip to the next step.
+step
+goto ceytarncaveExt01_base 81.22,50.29
+'Follow the path of the cave until you exit
+|tip Manually skip to the next step.
+step
+goto ceytarncaveExt01_base 60.84,47.63
+'Continue Southwest from here
+|tip Manually skip to the next step.
+step
+goto ceytarncaveExt01_base 51.60,60.50
+'Continue across the bridge
+|tip Manually skip to the next step.
+step
+goto ceytarncaveExt01_base 26.29,35.10
+click The Vaults of Heinarwe
+|tip Manually skip to the next step.
+step
+goto ceytarncaveInt02_base
+|tip Manually skip to the next step.
+step
+goto ceytarncaveInt01_base 20.84,55.50
+'Continue Southeast through the archway from here
+|tip Manually skip to the next step.
+step
+goto ceytarncaveInt01_base 16.34,67.24
+talk Clavicus Vile
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
 
 |tip Manually skip to the next step.
 step
