@@ -610,6 +610,14 @@
 		["Corgrad Wastes"] = [[corgradwasteslower_base]],
 		["Corgrad Wastes"] = [[corgradwasteshigher_base]],
 		["Karnwasten"] = [[Sum_Karnwasten_base]],
+		["Cathedral of Webs"] = [[sq7courtofbedlamruins_base]],
+		["Crystal Tower"] = [[crystaltower_approach_base]],
+		["Crystal Tower"] = [[crystaltower_entryway_base]],
+		["Crystal Tower"] = [[crystaltower_entryway02_base]],
+		["Crystal Tower"] = [[crystaltower_unfolding_base]],
+		["Crystal Tower"] = [[crystaltower_trophy01_base]],
+		["Crystal Tower"] = [[crystaltower_trophy02_base]],
+		["Crystal Tower"] = [[crystaltower_library_base]],
 
 	},
 	["Zones"] =
@@ -699,7 +707,14 @@
 		["corgradwasteslower_base"] = 		{ name = "Corgrad Wastes",		id = 428, xoffset = 0.0628888763730, yoffset = 0.67911203290864, xscale = 0.00215903899004, },
 		["corgradwasteshigher_base"] = 		{ name = "Corgrad Wastes",		id = 428, xoffset = 0.0628892479133, yoffset = 0.67911120059280, xscale = 0.00215863293506, },
 		["Sum_Karnwasten_base"] =		{ name = "Karnwasten",			id = 429, xoffset = 0.0757704105501, yoffset = 0.63358013538260, xscale = 0.04118424984871, },
-
+		["sq7courtofbedlamruins_base"] = 	{ name = "Cathedral of Webs",		id = 430, xoffset = 0.0487694297885, yoffset = 0.68360240589469, xscale = 0.00094788371907, },
+		["crystaltower_approach_base"] =	{ name = "Crystal Tower",		id = 431, xoffset = 0.0067556002177298069, yoffset = 1.1906572580337524414, xscale = 0.0166468978664258138, },
+		["crystaltower_entryway_base"] =	{ name = "Crystal Tower",		id = 431, xoffset = 0.0081089674548852, yoffset = 1.1973679456421, xscale = 0.0080356757237077, },
+		["crystaltower_entryway02_base"] =	{ name = "Crystal Tower",		id = 431, xoffset = 0.0093191539682672, yoffset = 1.1990859028625, xscale = 0.0059440690364019, },
+		["crystaltower_unfolding_base"] =	{ name = "Crystal Tower",		id = 431, xoffset = 0.03029464182188, yoffset = 1.2102775814112, xscale = 0.0080207210428518, },
+		["crystaltower_trophy01_base"] =	{ name = "Crystal Tower",		id = 431, xoffset = 0.0066469651506607, yoffset = 1.2167006222743, xscale = 0.0073580566033846, },
+		["crystaltower_trophy02_base"] =	{ name = "Crystal Tower",		id = 431, xoffset = 0.0066470183242932, yoffset = 1.2167005026687, xscale = 0.0073580126500114, },
+		["crystaltower_library_base"] =		{ name = "Crystal Tower",		id = 431, xoffset = 0.0048889303964931, yoffset = 1.2359117529542, xscale = 0.0097537573061061, },
 
 		-- EXISTING
 		["aba-loria_base"] = { name = "Aba-Loria", id = 212, xoffset = 0.403340, yoffset = 0.529272, scale = 0.016623, },
