@@ -20833,183 +20833,365 @@ goto ceytarncaveInt01_base 16.34,67.24
 talk Clavicus Vile
 |tip Manually skip to the next step.
 step
-
+goto ceytarncaveInt01_base 16.64,59.10
+'Continue Northeast through the archway here
 |tip Manually skip to the next step.
 step
-
+goto ceytarncaveInt01_base 40.87,35.58
+'Run up the stairs from here
 |tip Manually skip to the next step.
 step
-
+goto ceytarncaveInt01_base 88.70,42.86
+'Press _E_ to Examine _Fields of Regret Safebox_
+'Take Fields of Regret Key
 |tip Manually skip to the next step.
 step
-
+goto ceytarncaveInt01_base 75.89,42.94
+talk Valsirenn
 |tip Manually skip to the next step.
 step
-
+'Open your map:
+click Lillandril Wayshrine
+'Travel to the _Lillandril_ Wayshrine
 |tip Manually skip to the next step.
 step
-
+goto lillandrill_base 64.39,67.93
+'Cross the bridge from here
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 18.52,41.18
+'Follow the road Northeast from here until you reach the fork
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 22.30,38.38
+'At the fork in the road, go left from here
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 22.22,34.28
+'The road will disappear here but can be found Northwest from here
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 21.97,33.25
+'Follow the road from here until you reach the Cathedral of Webs ruins
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 20.18,30.61
+'Follow the path off the main road Northwest from here
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 20.38,29.29
+talk Darien Gautier
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 20.28,29.15
+talk Earl Leythen
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 20.28,29.15
+click Cathedral of Webs
 |tip Manually skip to the next step.
 step
-
+goto sq7courtofbedlamruins_base 47.61,09.21
+'Run down the stairs from here
 |tip Manually skip to the next step.
 step
-
+goto sq7courtofbedlamruins_base 47.74,24.71
+'Continue West from here
 |tip Manually skip to the next step.
 step
-
+goto sq7courtofbedlamruins_base 35.23,29.78
+'Run down the stairs from here
 |tip Manually skip to the next step.
 step
-
+goto sq7courtofbedlamruins_base 37.39,36.92
+'Continue South through the archway
 |tip Manually skip to the next step.
 step
-
+goto sq7courtofbedlamruins_base 37.47,42.21
+talk Earl Leythen
 |tip Manually skip to the next step.
 step
-
+goto sq7courtofbedlamruins_base 45.80,43.60
+click Cathedral of Webs
 |tip Manually skip to the next step.
 step
-
+goto sq7courtofbedlamruins_base 59.86,40.05
+'Continue East passed the archway
 |tip Manually skip to the next step.
 step
-
+goto sq7courtofbedlamruins_base 69.88,37.39
+'Continue South from here
 |tip Manually skip to the next step.
 step
-
+goto sq7courtofbedlamruins_base 62.27,50.23
+'Continue West from here
 |tip Manually skip to the next step.
 step
-
+goto sq7courtofbedlamruins_base 37.43,54.29
+'Continue South from here
 |tip Manually skip to the next step.
 step
-
+goto sq7courtofbedlamruins_base 35.87,61.01
+'Run down both sets of stairs from here
 |tip Manually skip to the next step.
 step
-
+goto sq7courtofbedlamruins_base 37.85,77.36
+talk Earl Tundilwen
 |tip Manually skip to the next step.
 step
-
+goto sq7courtofbedlamruins_base 37.85,77.36
+talk Earl Leythen
 |tip Manually skip to the next step.
 step
-
+goto sq7courtofbedlamruins_base 40.94,83.82
+'Enter the cave entrance here and follow it until you can exit
 |tip Manually skip to the next step.
 step
-
+goto sq7courtofbedlamruins_base 63.67,76.05
+click Leythen's Chambers
 |tip Manually skip to the next step.
 step
-
+goto sq7courtofbedlamruins_base 69.58,75.24
+kill Krezzinlor
+'Fairly easy fight with Leythan and Darien
 |tip Manually skip to the next step.
 step
-
+goto sq7courtofbedlamruins_base 73.30,71.31
+click Cathedral of Webs
 |tip Manually skip to the next step.
 step
-
+goto sq7courtofbedlamruins_base 80.57,56.61
+click Summerset
 |tip Manually skip to the next step.
 step
-
+goto summerset_base 21.66,30.88
+talk Mephala
 |tip Manually skip to the next step.
 step
-
+'Open your map. Right click twice to bring up the Universe map. Select Artaeum in the upper-right corner. 
+click Artaeum Wayshrine
+'Travel to the _Artaeum_ Wayshrine
 |tip Manually skip to the next step.
 step
-
+goto artaeum_base 64.85,26.66
+click Portal to Ceporah Tower
 |tip Manually skip to the next step.
 step
-
+goto dreamingcave02_base 40.88,43.35
+talk Valsirenn
+accept The Crystal Tower
+step
+goto dreamingcave02_base 16.34,42.74
+'Press _E_ to Use _Portal to Sotha Sil's Study_
 |tip Manually skip to the next step.
 step
-
+goto dreamingcave03_base 29.92,40.13
+talk Sotha Sil
 |tip Manually skip to the next step.
 step
-
+goto dreamingcave03_base 36.46,48.92
+'Press _E_ to Use _Portal to Ceporah Main Gallery_
 |tip Manually skip to the next step.
 step
-
+goto dreamingcave02_base 14.78,47.22
+'Continue passed this archway until you reach the first room on the right
 |tip Manually skip to the next step.
 step
-
+goto dreamingcave02_base 24.12,76.49
+talk Darien Gautier
 |tip Manually skip to the next step.
 step
-
+'Open your map:
+click Artaeum Wayshrine
+'Travel to the _Artaeum_ Wayshrine
 |tip Manually skip to the next step.
 step
-
+goto artaeum_base 67.72,35.10
+talk Razum-dar
 |tip Manually skip to the next step.
 step
-
+goto artaeum_base 65.88,38.55
+'Continue Southwest from here
 |tip Manually skip to the next step.
 step
-
+goto artaeum_base 61.99,48.47
+'Run up the stairs from here
 |tip Manually skip to the next step.
 step
-
+goto artaeum_base 60.81,49.64
+talk Valsirenn
 |tip Manually skip to the next step.
 step
-
+goto artaeum_base 60.81,49.64
+talk Earl Leythen
 |tip Manually skip to the next step.
 step
-
+'Open your map:
+click Artaeum Wayshrine
+'Travel to the _Artaeum_ Wayshrine
 |tip Manually skip to the next step.
 step
-
+goto artaeum_base 64.53,26.52
+'Drop here and continue down the stairs
 |tip Manually skip to the next step.
 step
-
+goto artaeum_base 66.04,27.02
+click The Dreaming Cave
 |tip Manually skip to the next step.
 step
-
+goto dreamingcave01_base 55.38,62.35
+talk Sotha Sil
 |tip Manually skip to the next step.
 step
-
+goto dreamingcave01_base 55.38,62.35
+talk Mephala
 |tip Manually skip to the next step.
 step
-
+goto dreamingcave01_base 51.73,51.27
+'Press _E_ to Enter _The Dreaming Cave Portal_
 |tip Manually skip to the next step.
 step
-
+goto crystaltower_approach_base 25.11,32.69
+'Follow the path to the Crystal Tower
 |tip Manually skip to the next step.
 step
-
+goto crystaltower_approach_base 67.19,59.58
+talk Barbas
 |tip Manually skip to the next step.
 step
-
+goto crystaltower_approach_base 68.10,60.54
+click The Crystal Tower
 |tip Manually skip to the next step.
 step
-
+goto crystaltower_entryway_base 49.05,47.72
+'Run up the stairs from here
 |tip Manually skip to the next step.
 step
-
+goto crystaltower_entryway_base 59.38,74.78
+'Run up both sets of stairs from here
 |tip Manually skip to the next step.
 step
-
+goto crystaltower_entryway02_base 49.87,48.59
+click Tower Walkway
 |tip Manually skip to the next step.
 step
-
+goto crystaltower_unfolding_base 49.99,89.53
+click Tower Artifact Vault
+|tip Manually skip to the next step.
+step
+goto crystaltower_trophy01_base 51.59,34.09
+kill Guardian Atronach
+'Not too difficult to kill. Just stay out of the red circles.
+|tip Manually skip to the next step.
+step
+goto crystaltower_trophy01_base 51.14,20.84
+talk Sapiarch Nolyemal
+|tip Manually skip to the next step.
+step
+goto crystaltower_trophy01_base 49.03,46.88
+'Run up both sets of stairs from here
+|tip Manually skip to the next step.
+step
+goto crystaltower_trophy02_base 52.04,48.55
+'Press _E_ to Examine _Ancient Ballista_
+|tip Manually skip to the next step.
+step
+goto crystaltower_trophy02_base 52.04,48.55
+'Run down both sets of stairs from here
+|tip Manually skip to the next step.
+step
+goto crystaltower_trophy01_base 42.84,60.76
+'Continue West through this archway
+|tip Manually skip to the next step.
+step
+goto crystaltower_trophy01_base 29.48,86.83
+'Press _E_ to Take _Ballista Crank_
+'Take Ballista Crank
+|tip Manually skip to the next step.
+step
+goto crystaltower_trophy01_base 58.74,60.45
+'Continue East through this archway
+|tip Manually skip to the next step.
+step
+goto crystaltower_trophy01_base 68.74,82.45
+'Press _E_ to Take _Ballista Bolts_
+'Take Ballista Bolts
+|tip Manually skip to the next step.
+step
+goto crystaltower_trophy01_base 59.08,46.73
+'Continue East through this archway
+|tip Manually skip to the next step.
+step
+goto crystaltower_trophy01_base 74.61,35.21
+'Press _E_ to Take _Coil of Rope_
+'Take Coil of Rope
+|tip Manually skip to the next step.
+step
+goto crystaltower_trophy01_base 49.03,46.88
+'Run up both sets of stairs from here
+|tip Manually skip to the next step.
+step
+goto crystaltower_trophy02_base 52.80,47.45
+talk Darien Gautier
+|tip Manually skip to the next step.
+step
+goto crystaltower_trophy02_base 52.80,47.45
+'Press _E_ to Use _Repaired Ballista_
+'Aim and fire the Ballista towards the rubble on the far end of the bridge. Afterward, aim and shoot at the Wraith of Crows that'll appear. Press ESC to leave Ballista.
+|tip Manually skip to the next step.
+step
+goto crystaltower_trophy02_base 51.63,70.09
+click Tower Library
+|tip Manually skip to the next step.
+step
+goto crystaltower_library_base 55.07,93.02
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto crystaltower_library_base 53.51,71.64
+'Continue North through this archway
+|tip Manually skip to the next step.
+step
+goto crystaltower_library_base 43.20,62.25
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto crystaltower_library_base 42.94,21.42
+'Press _E_ to Use _Key Pedestal_
+|tip Manually skip to the next step.
+step
+goto crystaltower_library_base 42.94,21.42
+'Jump down from here to the floor below
+|tip Manually skip to the next step.
+step
+goto crystaltower_library_base 48.41,12.49
+'Press _E_ to Take _Library Gate Key_
+'Upcoming mini boss fight:
+kill Gloam Minotaur
+kill Custodian Simohil
+'Not a hard fight, but you'll need to pay attention to the moving AOE circles from the custodian. Meanwhile, try and stay behind the Minotaur. Its blows are strong. The best strategy is to focus on Minotaur first, then the custodian.
+|tip Manually skip to the next step.
+step
+goto crystaltower_library_base 43.20,62.25
+'Make your way South through the bookcase maze (of sorts) and run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto crystaltower_library_base 42.94,21.42
+'Press _E_ to Use _Key Pedestal_
 |tip Manually skip to the next step.
 step
+goto crystaltower_library_base 42.94,21.42
+talk Earl Leythen
+|tip Manually skip to the next step.
+step
+goto crystaltower_library_base 54.80,19.54
+'Run through the gate
+|tip Manually skip to the next step.
+step
+goto crystaltower_library_base 56.62,19.66
+talk Earl Leythen
+|tip Manually skip to the next step.
+step
 
 |tip Manually skip to the next step.
 step
@@ -21101,6 +21283,8 @@ step
 |tip Manually skip to the next step.
 step
 
+|tip Manually skip to the next step.
+step
 
 ]])
 ZGV:RegisterGuide("LEVELING\\Craglorn",[[
