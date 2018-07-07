@@ -478,12 +478,12 @@ function GuideMenu:RefreshUI()
 	if self.selectedguide then
 
 		local g = self.selectedguide
+		local imageWidth, imageHeight = GUIDE_IMAGE_WIDTH, GUIDE_IMAGE_HEIGHT
 
 		frame.GuideTitle:SetText(g.title_short)
 		frame.GuideImage:SetTexture(image)
 		frame.GuideData:SetText(g.desc)
-
-		local imageWidth, imageHeight = GUIDE_IMAGE_WIDTH, GUIDE_IMAGE_HEIGHT
+		frame.GuideData:SetPoint(TOPLEFT,frame.GuideImage,0,200)
 
 		local s="\n"
 
