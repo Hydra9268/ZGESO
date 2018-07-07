@@ -18,7 +18,6 @@ local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs,class = table.insert,
 
 local COLOR_TIP_MOUSE = "|cddff00"
 
-
 local plurals = {
 	Ballista="Ballistae",
 	Bark=1,
@@ -27,7 +26,6 @@ local plurals = {
 	Bruiseweed=1,
 	Cargo=1,
 	Child="Children",
-	--Citizen="Citizens",
 	Chutney=1,
 	Dirt=1,
 	Down=1,
@@ -86,7 +84,6 @@ local plurals = {
 	Witchban=1,
 	Worgen=1,
 	Wood=1
-	--Wolf="Wolves",
 }
 
 local specials = {
@@ -116,7 +113,7 @@ local wordspecials = {
 ZygorGuidesViewer_L("Main", "enUS", function() local f = {
 
 	-- GENERAL
-	["name"] = "|cff8800Zygor Guides|r",
+	["name"] = "|cff8800Leveling Guides|r",
 
 	-- STARTUP
 	['welcome_guides'] = "%d guides are loaded.",
@@ -126,7 +123,7 @@ ZygorGuidesViewer_L("Main", "enUS", function() local f = {
 	["message_errorloading_critical"] = "|cff4444CRITICAL Error|r loading guide |caaffaa%s|r\nError: %s\nLine: %d\nData: %s",
 	["message_loadedguide"] = "Activated guide: |caaffaa%s|r",
 	["message_missingguide"] = "|cff4444Missing|r guide: |caaffaa%s|r",
-	["title_noguide"] = "Zygor Guides Viewer (no guide loaded)",
+	["title_noguide"] = "Leveling Guides Viewer (no guide loaded)",
 
 	-- GUIDE VIEWER
 	['guide_notselected'] = "- select a guide -",
@@ -144,7 +141,6 @@ ZygorGuidesViewer_L("Main", "enUS", function() local f = {
 	-- GUIDE MESSAGES
 	['guide_level_req'] = "Level %s or higher is required.",
 	['guide_level_reached'] = "Level %s reached",
-
 	['guide_next_ready'] = "Next guide is ready. Just finish your combat.",
 
 	-- GOAL STRINGS
@@ -190,7 +186,7 @@ ZygorGuidesViewer_L("Main", "enUS", function() local f = {
 
 	-- BINDINGS
 	["bind_tog"] = "Toggle Guide Viewer",
-	["bind_next"] = "Advance Step",
+	["bind_next"] = "Next Step",
 	["bind_prev"] = "Previous Step",
 	["bind_waypointcycle_next"] = "Cycle multiple waypoints",
 	["bind_waypointcycle_prev"] = "Cycle multiple waypoints backwards",
@@ -213,15 +209,14 @@ ZygorGuidesViewer_L("Main", "enUS", function() local f = {
 	['static_profile'] = "Switch to profile %s?",
 	['static_deleteprofile'] = "Delete profile %s?",
 	['static_reset_profile'] = "Reset profile %s?",
-	['static_newprofile'] = "Select a name for a new profile.",			['static_newprofile_error'] = "|cff0000Name can only contain letters, numbers, and spaces.",
-
-
+	['static_newprofile'] = "Select a name for a new profile.",
+	['static_newprofile_error'] = "|cff0000Name can only contain letters, numbers, and spaces.",
 
 	-- MINIMAP BUTTON
 	["minimap_tooltip"] = COLOR_TIP_MOUSE.."Click|r to toggle guide window\n"..COLOR_TIP_MOUSE.."Right-click|r to configure\n",
 
-	['tip_header'] = "Zygor Guides Tips",
-	['tip_keybind'] = "Did you know you can bind keys to control the Zygor Guides Viewer?\n\nIt's far easier to navigate between steps by pressing keys, rather than have to click the buttons with your mouse.\n\nWould you like to set up your keybinds now?",
+	['tip_header'] = "Leveling Guides Tips",
+	['tip_keybind'] = "Did you know you can bind keys to control the Level Guides Viewer?\n\nIt's far easier to navigate between steps by pressing keys, rather than have to click the buttons with your mouse.\n\nWould you like to set up your keybinds now?",
 
 
 	}
@@ -266,23 +261,28 @@ ZygorGuidesViewer_L("Option", "enUS", function() local f = {
 	["opt_reset_desc"] = "Reset Guide Viewer to original position and size.",
 
 	------ ARROW -------
-	['opt_arrow'] = "Waypoint Arrow",									['opt_arrow_desc'] = "",--"These settings control the direction arrow",-- and map markers.",
-
-	['opt_arrowshow'] = "Enable waypoint arrow",			['opt_arrowshow_desc'] = "Display a rotating arrow, indicating the direction towards the current waypoint.",
-
+	['opt_arrow'] = "Waypoint Arrow",
+	['opt_arrow_desc'] = "",				--"These settings control the direction arrow",-- and map markers.",
+	['opt_arrowshow'] = "Enable waypoint arrow",
+	['opt_arrowshow_desc'] = "Display a rotating arrow, indicating the direction towards the current waypoint.",
 	['opt_arrow_display'] = "Arrow look and feel:",
-	['opt_arrowfreeze'] = "Lock arrow in place",				['opt_arrowfreeze_desc'] = "Make the pointer arrow transparent to mouse clicks.",
-	['opt_arrowcolordist'] = "Color by distance",		['opt_arrowcolordist_desc'] = "Color the arrow by distance, instead of by direction.",
-	['opt_arrowscale'] = "Scale",										['opt_arrowscale_desc'] = "Set the size of the waypointing arrow.",
-	['opt_arrowalpha'] = "Opacity",									['opt_arrowalpha_desc'] = "Set the opacity of the waypointing arrow.",
-	['opt_arrowfontsize'] = "Arrow font size",			['opt_arrowfontsize_desc'] = "Set the size of the labels under the arrow.",
-	['opt_arrowmeters'] = "Use metric system",			['opt_arrowmeters_desc'] = "Use meters and kilometers instead of yards and miles.",
-
-	['opt_arrow_reset'] = "Reset Waypointer",				['opt_arrow_reset_desc'] = "Reseting the Waypointer to it's original position and size.",
-
+	['opt_arrowfreeze'] = "Lock arrow in place",
+	['opt_arrowfreeze_desc'] = "Make the pointer arrow transparent to mouse clicks.",
+	['opt_arrowcolordist'] = "Color by distance",
+	['opt_arrowcolordist_desc'] = "Color the arrow by distance, instead of by direction.",
+	['opt_arrowscale'] = "Scale",
+	['opt_arrowscale_desc'] = "Set the size of the waypointing arrow.",
+	['opt_arrowalpha'] = "Opacity",
+	['opt_arrowalpha_desc'] = "Set the opacity of the waypointing arrow.",
+	['opt_arrowfontsize'] = "Arrow font size",
+	['opt_arrowfontsize_desc'] = "Set the size of the labels under the arrow.",
+	['opt_arrowmeters'] = "Use metric system",
+	['opt_arrowmeters_desc'] = "Use meters and kilometers instead of yards and miles.",
+	['opt_arrow_reset'] = "Reset Waypointer",
+	['opt_arrow_reset_desc'] = "Reseting the Waypointer to it's original position and size.",
 	['opt_additional_arrow_functions'] = "Additional arrow functions:",
-
-	['opt_hidearrowwithguide'] = "Hide waypoint arrow when viewer is closed",	['opt_hidearrowwithguide_desc'] = "Select this to make the arrow follow the guide window's visibility.\nLeave unchecked if you want the arrow to stay visible when you hide the guides.",
+	['opt_hidearrowwithguide'] = "Hide waypoint arrow when viewer is closed",
+	['opt_hidearrowwithguide_desc'] = "Select this to make the arrow follow the guide window's visibility.\nLeave unchecked if you want the arrow to stay visible when you hide the guides.",
 	
 	------ EXTRAS -------
 	["opt_extras"] = "Extras",
@@ -298,19 +298,24 @@ ZygorGuidesViewer_L("Option", "enUS", function() local f = {
 	["opt_bugreports_desc"] = "Allow generating of Bug Reports to help us improve the addon and guides.\nBug Reports are generated by clicking the 'bug' icon on the addon.",
 
 	------ PROFILE --------
-	['opt_profile'] = "Profiles",										['opt_profile_desc'] = "You can change the active database profile, so you can have different settings for every character.",
+	['opt_profile'] = "Profiles",
+	['opt_profile_desc'] = "You can change the active database profile, so you can have different settings for every character.",
 
 	['opt_new_profile'] = "You can either create a new profile by entering a name in the editbox, or choose one of the already existing profiles.",
 	['opt_existing_profiles'] = "Current Profile",	['opt_existing_profiles_desc'] = "You can select a profile to change to it. Some settings may require you to reload to be shown properly.",
 
-	['opt_newprof'] = "New Profile",								['opt_newprof_desc'] = "Create a new Profile",
+	['opt_newprof'] = "New Profile",
+	['opt_newprof_desc'] = "Create a new Profile",
 
 	['opt_delete_profiles_default'] = "Profiles",
-	['opt_delete_profiles'] = "Delete Profiles",		['opt_delete_profiles_desc'] = "Select a profile to delete. Can not delete your current profile.",
+	['opt_delete_profiles'] = "Delete Profiles",
+	['opt_delete_profiles_desc'] = "Select a profile to delete. Can not delete your current profile.",
 
-	['opt_profile_reset'] = "Reset Profile",				['opt_profile_reset_desc'] = "Reset this profile to original settings.",
+	['opt_profile_reset'] = "Reset Profile",
+	['opt_profile_reset_desc'] = "Reset this profile to original settings.",
 
-	['opt_char_profiles'] = "Character Profile-DEV ONLY",		['opt_char_profiles_desc'] = "Copy the history from another character. Things like quest history. REQUIRES A RELOAD",
+	['opt_char_profiles'] = "Character Profile-DEV ONLY",
+	['opt_char_profiles_desc'] = "Copy the history from another character. Things like quest history. REQUIRES A RELOAD",
 
 	------ DEVELOPER/DEBUG -------
 	["opt_dev"] = "Developer/Debug",

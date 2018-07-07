@@ -1,0 +1,13 @@
+<GuiXml>
+	<Controls>
+		<TopLevelControl name="ZGVOnUpdate">
+			<OnUpdate>
+				if not (ZGV and ZGV.MasterFrame) then return end
+				local update = ZGV.MasterFrame:GetHandler("OnUpdate")
+				if update then
+					update()
+				end
+			</OnUpdate>
+		</TopLevelControl>
+	</Controls>
+</GuiXml>

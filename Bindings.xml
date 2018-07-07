@@ -1,6 +1,6 @@
 <Bindings>
   <Layer name="SI_KEYBINDINGS_LAYER_GENERAL">
-    <Category name="Zygor Guides Viewer">
+    <Category name="Leveling Guides Viewer">
       <Action name="ZYGOR_TOGGLE_GUIDE_VIEWER">
         <Down>
           ZGV.Viewer:Toggle_GuideViewer()

@@ -21,7 +21,10 @@ local O = ZGV.O
 -- LOCAL VARIABLES
 -----------------------------------------
 
-local SvName = "ZygorGuidesViewerSettings"    if ZGV.DEV_SV_SUFFIX then SvName=SvName..ZGV.DEV_SV_SUFFIX end
+local SvName = "ZGESOSettings"
+if ZGV.DEV_SV_SUFFIX then 
+	SvName = SvName..ZGV.DEV_SV_SUFFIX
+end
 local PROFILE_VERSION = 1
 local CHAR_VERSION = 1
 local SavedVars = {}
