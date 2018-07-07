@@ -1,9 +1,5 @@
 # ZGESO
 
-<img src="https://i.imgur.com/WnfLf4W.png">
-
-Install through the excellent add-on manager <a href="https://minion.mmoui.com/" target="blank">Minion</a>
-
 <img src="https://i.imgur.com/KrnhwuP.png">
 
 A Public Domain ESO Leveling Guide produced by Zygor Guides, updated by Hydra9268 (aka alterego9268 on ZG forums). The purpose of this project is to add a Summerset leveling guide.
@@ -11,6 +7,10 @@ A Public Domain ESO Leveling Guide produced by Zygor Guides, updated by Hydra926
 No longer supported references:
 * Announcement: https://zygorguides.com/blog/zygor-guides-elder-scrolls-online-guides-going-free-use/
 * Admin okaying community development: http://zygorguides.com/forum/showthread.php?21769-Summerset-Question&p=121501&viewfull=1#post121501
+
+<img src="https://i.imgur.com/WnfLf4W.png">
+
+Install through the excellent add-on manager <a href="https://minion.mmoui.com/" target="blank">Minion</a>
 
 ----
 
