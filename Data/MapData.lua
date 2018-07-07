@@ -618,6 +618,10 @@
 		["Crystal Tower"] = [[crystaltower_trophy01_base]],
 		["Crystal Tower"] = [[crystaltower_trophy02_base]],
 		["Crystal Tower"] = [[crystaltower_library_base]],
+		["Crystal Tower"] = [[crystaltower_mausoleum_base]],
+		["Crystal Tower"] = [[crystaltower_barrier_base]],
+		["Crystal Tower"] = [[crystaltower_top_base]],
+		["Crystal Tower"] = [[crystaltower_top02_base]],
 
 	},
 	["Zones"] =
@@ -715,6 +719,10 @@
 		["crystaltower_trophy01_base"] =	{ name = "Crystal Tower",		id = 431, xoffset = 0.0066469651506607, yoffset = 1.2167006222743, xscale = 0.0073580566033846, },
 		["crystaltower_trophy02_base"] =	{ name = "Crystal Tower",		id = 431, xoffset = 0.0066470183242932, yoffset = 1.2167005026687, xscale = 0.0073580126500114, },
 		["crystaltower_library_base"] =		{ name = "Crystal Tower",		id = 431, xoffset = 0.0048889303964931, yoffset = 1.2359117529542, xscale = 0.0097537573061061, },
+		["crystaltower_mausoleum_base"] =	{ name = "Crystal Tower",		id = 431, xoffset = 0.047002039068728, yoffset = 1.1921147052157, xscale = 0.0058395551257337, },
+		["crystaltower_barrier_base"] =		{ name = "Crystal Tower",		id = 431, xoffset = 0.047887563787485, yoffset = 1.2382621839147, xscale = 0.0037150141074741, },
+		["crystaltower_top_base"] =		{ name = "Crystal Tower",		id = 431, xoffset = 0.05134798911924, yoffset = 1.2377155161369, xscale = 0.0051252589773524, },
+		["crystaltower_top02_base"] =		{ name = "Crystal Tower",		id = 431, xoffset = 0.049143334864553, yoffset = 1.2354932773058, xscale = 0.0093490102831546, },
 
 		-- EXISTING
 		["aba-loria_base"] = { name = "Aba-Loria", id = 212, xoffset = 0.403340, yoffset = 0.529272, scale = 0.016623, },
