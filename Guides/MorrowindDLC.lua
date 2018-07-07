@@ -17285,10 +17285,6 @@ click Alinor Wayshrine
 'Travel to the _Alinor_ Wayshrine
 |tip Manually skip to the next step.
 step
-goto alinor_base 52.87,59.08
-'Continue Southwest from here
-|tip Manually skip to the next step.
-step
 goto alinor_base 50.01,70.33
 'Continue up the stairs from here
 |tip Manually skip to the next step.
@@ -21192,100 +21188,156 @@ goto crystaltower_library_base 56.62,19.66
 talk Earl Leythen
 |tip Manually skip to the next step.
 step
-
+goto crystaltower_library_base 69.53,31.52
+click Tower Mausoleum
 |tip Manually skip to the next step.
 step
-
+goto crystaltower_mausoleum_base 50.33,40.56
+'Run up the stairs from here and circle around up to the third floor
 |tip Manually skip to the next step.
 step
-
+goto crystaltower_mausoleum_base 43.96,57.95
+'Continue West through the archway from here and up the stairs
 |tip Manually skip to the next step.
 step
-
+goto crystaltower_mausoleum_base 10.58,37.15
+click Tower Summit Approach
 |tip Manually skip to the next step.
 step
-
+goto crystaltower_barrier_base 16.84,75.41
+'Run up the stairs from here
 |tip Manually skip to the next step.
 step
-
+goto crystaltower_barrier_base 58.29,50.11
+'Upcoming mini boss fight:
+kill Earl Tundilwen
+'For this fight, avoid her AOE circles. They travel out of Tundilwen in random patterns. Interrupt her red telegraphs. Block her yellow telegraphs. Get behind Darien when he yells this. Failure will result in an instant kill from Duskbringer; the weapon Tundilwen wields.
 |tip Manually skip to the next step.
 step
-
+goto crystaltower_barrier_base 86.02,51.28
+talk Darien Gautier
 |tip Manually skip to the next step.
 step
-
+goto crystaltower_barrier_base 86.02,51.28
+'Press _E_ to Take _Restored Dawnbreaker_
 |tip Manually skip to the next step.
 step
-
+goto crystaltower_barrier_base 89.52,50.96
+click Pinnacle of Transparent Law
 |tip Manually skip to the next step.
 step
-
+goto crystaltower_top_base 80.47,64.08
+'Press _E_ to Use _Portal to the Crystal Summit_
 |tip Manually skip to the next step.
 step
-
+goto crystaltower_top02_base 30.70,40.00
+'Run around the parameter walkway and up the stairs from here
 |tip Manually skip to the next step.
 step
-
+goto crystaltower_top02_base 48.56,49.76
+'Press _E_ to _Use Dawnbreaker_
+'Upcoming mini boss fight:
+kill Shadow Tundilwen
+'This fight happens in two phases:
+'_PHASE 1._ Two-Handed Shadow Tundilwen has several single-focus attacks that are easy to avoid.
+'_PHASE 2._ After you kill her, Nocturnal will raise her up as a more powerful Six-Handed version where she has even greater AOE damage abilities. The most powerful of these is Singularity.
+'Meanwhile, use the Dawnbreaker's abilities when waves of mobs appear.
 |tip Manually skip to the next step.
 step
-
+goto crystaltower_top02_base 54.85,55.68
+'Press _E_ to Use _Transparent Law_
 |tip Manually skip to the next step.
 step
-
+goto crystaltower_top02_base 50.01,49.56
+talk Valsirenn
 |tip Manually skip to the next step.
 step
-
+goto crystaltower_top02_base 47.89,47.98
+'Press _E_ to Use _Portal to Artaeum_
 |tip Manually skip to the next step.
 step
-
+goto dreamingcave01_base 58.25,40.31
+talk Sotha Sil
 |tip Manually skip to the next step.
 step
-
+goto dreamingcave01_base 75.61,49.08
+talk Valsirenn
+accept A New Alliance
+step
+goto dreamingcave01_base 44.84,23.45
+click Artaeum
 |tip Manually skip to the next step.
 step
-
+goto artaeum_base 64.98,26.62
+'Run up the stairs and Press _E_ to Use _Portal to Ceporah Tower_
 |tip Manually skip to the next step.
 step
-
+goto dreamingcave02_base 42.93,59.36
+talk Oriandra
 |tip Manually skip to the next step.
 step
-
+goto dreamingcave02_base 15.94,42.47
+'Press _E_ to Use _Portal to Sotha Sil's Study_
 |tip Manually skip to the next step.
 step
-
+goto dreamingcave03_base 25.24,49.52
+talk Sotha Sil
 |tip Manually skip to the next step.
 step
-
+'Open your map. Right click twice to bring up the Universe map. Select Tamriel. Select Summerset.
+click Alinor Wayshrine
+'Travel to the _Alinor_ Wayshrine
 |tip Manually skip to the next step.
 step
-
+goto alinor_base 50.01,70.33
+'Continue up the stairs from here
 |tip Manually skip to the next step.
 step
-
+goto alinor_base 47.15,77.36
+'Continue up the stairs and follow the path across the bridge to the Alinor castle
 |tip Manually skip to the next step.
 step
-
+goto alinor_base 64.50,46.25
+click Alinor's Royal Palace
 |tip Manually skip to the next step.
 step
-
+goto alinor_base 64.35,46.95
+talk Oriandra
 |tip Manually skip to the next step.
 step
-
+goto alinor_base 64.49,46.29
+click Alinor Royal Palace
 |tip Manually skip to the next step.
 step
-
+goto alinorroyalpalace1_base 63.12,64.13
+click Council Chamber
 |tip Manually skip to the next step.
 step
-
+goto alinorroyalpalace1_base 77.17,67.94
+talk Sapiarch Larnatille
+'Select either option
 |tip Manually skip to the next step.
 step
-
+goto alinorroyalpalace1_base 77.17,67.94
+talk Sapiarch Larnatille
 |tip Manually skip to the next step.
 step
-
+goto alinorroyalpalace1_base 80.53,62.67
+talk Valsirenn
 |tip Manually skip to the next step.
 step
-
+goto alinorroyalpalace1_base 67.77,64.86
+'Press _E_ to Open _Palace Throne Room_
+|tip Manually skip to the next step.
+step
+'The throne room will be filled with many of those you've helped on your Summerset adventure. Talk with them to see how they're doing. When you're ready, proceed to the next step.
+|tip Manually skip to the next step.
+step
+goto alinorroyalpalace1_base 41.24,27.70
+talk Razum-dar
+|tip Manually skip to the next step.
+step
+'Congratulations, you have completed the Summerset guide!
 ]])
 ZGV:RegisterGuide("LEVELING\\Craglorn",[[
 loadingimage loadscreen_craglorn_01.dds
