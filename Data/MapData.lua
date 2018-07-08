@@ -724,6 +724,8 @@
 		["crystaltower_top_base"] =		{ name = "Crystal Tower",		id = 431, xoffset = 0.05134798911924, yoffset = 1.2377155161369, xscale = 0.0051252589773524, },
 		["crystaltower_top02_base"] =		{ name = "Crystal Tower",		id = 431, xoffset = 0.049143334864553, yoffset = 1.2354932773058, xscale = 0.0093490102831546, },
 
+		["belkarth_base"] = 			{ name = "Belkarth", 			id = 432, xoffset = 0.4077199670000000165, yoffset = 0.0181195625883955463, scale = 0.0181195625883955463, },
+
 		-- EXISTING
 		["aba-loria_base"] = { name = "Aba-Loria", id = 212, xoffset = 0.403340, yoffset = 0.529272, scale = 0.016623, },
 		["abahslanding_base"] = { xoffset = 0.233167, yoffset = 0.486680, scale = 0.031971, },
@@ -784,7 +786,6 @@
 		["basilica_02_base"] = { xoffset = 0.463889, yoffset = 0.260824, scale = 0.067577, },
 		["basilica_03_base"] = { xoffset = 0.462511, yoffset = 0.244986, scale = 0.029776, },
 		["bearclawmine_base"] = { name = "Bearclaw Mine", id = 131, xoffset = 0.247268, yoffset = 0.307036, scale = 0.010078, },
-		["belkarth_base"] = { name = "Belkarth", xoffset = 0.407719967, yoffset = 0.372040031, scale = 0.018119997, },
 		["bergama_base"] = { name = "Bergama", xoffset = 0.178710791, yoffset = 0.414530409, scale = 0.021367199, },
 		["betnihk_base"] = { name = "Betnikh", id = 293, xoffset = 0.069153582, yoffset = 0.423473586, scale = 0.026843601, map = 20, },
 		["bewan_base"] = { name = "Bewan", id = 196, xoffset = 0.204782, yoffset = 0.658392, scale = 0.010664, },

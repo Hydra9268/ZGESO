@@ -469,6 +469,9 @@ Data.MapIdsByName = {
 	["Karnwasten"]                     = 429,
 	["Cathedral of Webs"]              = 430,
 	["Crystal Tower"]                  = 431,
+
+	-- CRAGLOG
+	["Belkarth"]			   = 432,
 }
 
 -----------------------------------------
