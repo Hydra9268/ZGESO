@@ -1,7 +1,7 @@
-## Title: Leveling Guides v1.4.0.212
+## Title: Leveling Guides v1.4.0.217
 ## Description: A Zygor addon updated by Hydra9268/AlterEgo9268 for the Summerset DLC.
 ## Author: Hydra9268/AlterEgo9268
-## Version: 1.4.0.212
+## Version: 1.4.0.217
 ## APIVersion: 100023
 ## SavedVariables: ZGESOSettings
 ## Disclaimer: This Add-on is not created by, affiliated with or sponsored by ZeniMax Media Inc. or its affiliates. The Elder Scrolls® and related logos are registered trademarks or trademarks of ZeniMax Media Inc. in the United States and/or other countries. All rights reserved. This Add-on is not sponsored by Zygor Guides.
