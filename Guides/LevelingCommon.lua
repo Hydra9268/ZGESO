@@ -59856,3 +59856,36 @@ step
 'Congratulations, you've explored the Daggerfall Covenant! |only if ZGV.QuestTracker:IsQuestComplete("Cadwell's Silver")
 |only if ZGV.Utils.GetFaction("player","notvet")=="EP"
 ]])
+ZGV:RegisterGuide("Common Leveling Guides\\Craglorn",[[
+loadingimage loadscreen_craglorn_01.dds
+description Though crossed by caravans and Covenant troops going to and from Cyrodiil, this wild region of eastern Hammerfell is a virtual no-man's-land. It's anchored on the east and west by the towns of Elinhir and Dragonstar.
+step
+'Open your map:
+click Vulkhel Guard Wayshrine
+'Travel to the _Vulkhel Guard_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto vulkhelguard_base 54.77,55.25
+'Follow the road South to the docks
+|tip Manually skip to the next step.
+step
+goto vulkhelguard_base 53.82,63.49
+talk Selandilween
+'Select _I'd like to travel within the Aldmeri Dominion._
+'Select _Grahtwood, please._
+|tip Manually skip to the next step.
+step
+goto eldenrootgroundfloor_base 66.27,44.87
+talk Star-Gazer Herald
+accept The Star-Gazers
+step
+goto eldenrootgroundfloor_base 66.65,44.32
+'Press _E_ to Use _Cart to Belkarth_
+|tip Manually skip to the next step.
+step
+goto belkarth_base 52.18,39.67
+'Continue Southwest from here
+|tip Manually skip to the next step.
+step
+
+]])

@@ -21339,7 +21339,3 @@ talk Razum-dar
 step
 'Congratulations, you have completed the Summerset guide!
 ]])
-ZGV:RegisterGuide("LEVELING\\Craglorn",[[
-loadingimage loadscreen_craglorn_01.dds
-description COMING SOON.
-]])
