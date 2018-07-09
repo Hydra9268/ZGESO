@@ -387,27 +387,6 @@ Data.MapIdsByName = {
 	["Elden Root"]                     = 349,
 	["Mournhold"]                      = 350,
 	["Wayrest"]                        = 351,
-	["Craglorn"]                       = 352,
-	["Craglorn_DD_001"]                = 353,
-	["Craglorn_DD_002"]                = 354,
-	["Craglorn_DD_003"]                = 355,
-	["Craglorn_DD_004"]                = 356,
-	["Craglorn_DD_005"]                = 357,
-	["Craglorn_DD_006"]                = 358,
-	["zTest_AnchorProtoSmall"]         = 359,
-	["zTest_AnchorProtoLarger"]        = 360,
-	["Craglorn_DD_007"]                = 361,
-	["Craglorn_DD_008"]                = 362,
-	["Craglorn_DD_009"]                = 363,
-	["Craglorn_DD_010"]                = 364,
-	["Craglorn_DD_011"]                = 365,
-	["Craglorn_DD_012"]                = 366,
-	["Craglorn_DD_013"]                = 367,
-	["Craglorn_DD_014"]                = 368,
-	["Craglorn_DD_015"]                = 369,
-	["Craglorn_DD_016"]                = 370,
-	["Craglorn_DD_017"]                = 371,
-	["Craglorn_DD_018"]                = 372,
 	["Rahni'Za School"]                = 373,
 	["Craglorn_Story_reg3"]            = 374,
 	["Doomcrag"]                       = 375,
@@ -471,7 +450,9 @@ Data.MapIdsByName = {
 	["Crystal Tower"]                  = 431,
 
 	-- CRAGLOG
+	["Craglorn"]                       = 352,
 	["Belkarth"]			   = 432,
+	["Apex Stone Room"]		   = 433,
 }
 
 -----------------------------------------
