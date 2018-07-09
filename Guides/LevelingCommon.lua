@@ -59884,8 +59884,232 @@ goto eldenrootgroundfloor_base 66.65,44.32
 |tip Manually skip to the next step.
 step
 goto belkarth_base 52.18,39.67
-'Continue Southwest from here
+'Follow the road Southwest from here
+|tip Manually skip to the next step.
+step
+goto belkarth_base 44.92,63.61
+talk Slonn Clod-Kicker
+|tip Manually skip to the next step.
+step
+goto belkarth_base 40.28,67.87
+'Follow the road to the Star-Gazers' Observatory
+|tip Manually skip to the next step.
+step
+goto belkarth_base 25.01,56.78
+click Star-Gazers' Observatory
+|tip Manually skip to the next step.
+step
+goto belkarth_base 24.83,43.94
+talk Hara
+|tip Manually skip to the next step.
+step
+goto belkarth_base 24.86,44.76
+'Press _E_ to _Use Ritual Circle_
+|tip Manually skip to the next step.
+step
+goto belkarth_base 24.87,44.18
+talk The Thief
+step
+goto belkarth_base 25.28,43.93
+'Press _E_ to Use _Portal to Belkarth_
+|tip Manually skip to the next step.
+step
+goto belkarth_base 24.83,43.94
+turnin The Star-Gazers
+step
+'Open your map:
+click Belkarth Wayshrine
+'Travel to the _Belkarth_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto belkarth_base 62.87,25.74
+talk Qasna at-Toura
+accept The Corrupted Stone
+step
+goto belkarth_base 66.59,37.21
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto belkarth_base 71.50,54.19
+talk Star-Gazer Nudryn
+accept The Shattered and the Lost
+step
+goto belkarth_base 72.35,54.02
+click Crossroads Tavern
+|tip Manually skip to the next step.
+step
+goto belkarth_base 76.49,48.06
+'Watch the cutscene
+|tip Manually skip to the next step.
+step
+goto belkarth_base 76.34,47.51
+talk Valla
+|tip Manually skip to the next step.
+step
+goto elinhirmagevision_base 58.89,50.55
+'Watch the cutscene
+|tip Manually skip to the next step.
+step
+goto belkarth_base 76.61,47.80
+talk Valla
+|tip Manually skip to the next step.
+step
+goto belkarth_base 69.58,56.01
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto belkarth_base 77.46,49.45
+talk Erold
+|tip Manually skip to the next step.
+step
+goto belkarth_base 77.93,51.80
+'Jump down from here
+|tip Manually skip to the next step.
+step
+goto belkarth_base 75.36,50.98
+click Belkarth
+|tip Manually skip to the next step.
+step
+goto belkarth_base 66.00,39.81
+'Run down the stairs from here
+|tip Manually skip to the next step.
+step
+goto belkarth_base 66.44,23.31
+'Continue Northwest to the start of the bridge
+|tip Manually skip to the next step.
+step
+goto belkarth_base 60.00,15.69
+'Continue Northeast along the river from here
+|tip Manually skip to the next step.
+step
+goto craglorn_base 57.90,58.87
+wayshrine Spellscar
+|tip Manually skip to the next step.
+step
+goto craglorn_base 56.22,57.17
+'Drop down from here and follow the river North
+|tip Manually skip to the next step.
+step
+goto craglorn_base 54.76,56.06
+'Press _E_ to Take _Gem of Frost_
+'Take Gem of Frost
+|tip Manually skip to the next step.
+step
+goto craglorn_base 55.54,57.11
+'Run up the hill from here
+|tip Manually skip to the next step.
+step
+goto craglorn_base 55.15,48.05
+'Race North across the Group Area to here
+|tip Manually skip to the next step.
+step
+goto craglorn_base 56.41,48.09
+'Continue North along the rocks from here
+|tip Manually skip to the next step.
+step
+goto craglorn_base 56.30,46.63
+'Press _E_ to Take _Gem of Thunder_
+'Take Gem of Thunder
+|tip Manually skip to the next step.
+step
+goto craglorn_base 56.10,45.74
+'Continue North along the rocks to here
+|tip Manually skip to the next step.
+step
+goto craglorn_base 58.36,45.66
+'Race Northeast to here to the main road
+|tip Manually skip to the next step.
+step
+goto craglorn_base 62.93,44.41
+'Follow the road Southwest from here
+|tip Manually skip to the next step.
+step
+goto craglorn_base 66.07,47.15
+wayshrine Mountain Overlook
 |tip Manually skip to the next step.
 step
 
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
 ]])
