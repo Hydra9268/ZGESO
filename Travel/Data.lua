@@ -448,11 +448,6 @@ Data.MapIdsByName = {
 	["Karnwasten"]                     = 429,
 	["Cathedral of Webs"]              = 430,
 	["Crystal Tower"]                  = 431,
-
-	-- CRAGLOG
-	["Craglorn"]                       = 352,
-	["Belkarth"]			   = 432,
-	["Apex Stone Room"]		   = 433,
 }
 
 -----------------------------------------
