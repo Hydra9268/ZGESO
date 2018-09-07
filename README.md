@@ -134,6 +134,6 @@ d()
 
 * https://wiki.esoui.com/API
 * https://esomap.uesp.net/
-* https://game-maps.com/ESO/Summerset-Map.asp
+* https://game-maps.com/ESO/The-Elder-Scrolls-Online.asp
 * http://esodata.uesp.net/100018/
 * http://en.uesp.net/wiki
