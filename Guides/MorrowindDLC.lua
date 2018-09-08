@@ -21339,3 +21339,19 @@ talk Razum-dar
 step
 'Congratulations, you have completed the Summerset guide!
 ]])
+ZGV:RegisterGuide("LEVELING\\DLC\\XXXXXXXX",[[
+loadingimage charload_01.dds
+description They will pursue you. The hunt is all they know. They have your scent, and nothing will stand in their way. They fight with fang and claw, bow and shield, sword and spell, and you think you can triumph against them? Very well, let the hunt begin. Face Hircine’s legacy in the Wolfhunter DLC.
+step
+'Press _U_ to open your _Collections_
+'Click over to the _Stories_ tab and look under the _Dungeon DLC_ section:
+'Select _Moon Hunter Keep_ in the list of Dungeon DLCs
+'Click the _Accept Quest_ button at the bottom
+accept Moonlight Ascent
+step
+'Open your map. Right click until you see the Tamirel map.
+'Travel to the _Moon Hunter Keep_ dungeon
+|tip It can be found in the Reaper's March
+|tip Manually skip to the next step.
+step
+]])

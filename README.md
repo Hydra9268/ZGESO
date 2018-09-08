@@ -14,7 +14,6 @@ Install through the excellent add-on manager <a href="https://minion.mmoui.com/"
 
 ### Coming Soon Guides
 
-* Wolfhunter
 * Dragon Bones
 * Horns of the Reach
 * Shadows of the Hist
