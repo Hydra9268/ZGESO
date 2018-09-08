@@ -21341,7 +21341,7 @@ step
 ]])
 ZGV:RegisterGuide("LEVELING\\DLC\\XXXXXXXX",[[
 loadingimage charload_01.dds
-description They will pursue you. The hunt is all they know. They have your scent, and nothing will stand in their way. They fight with fang and claw, bow and shield, sword and spell, and you think you can triumph against them? Very well, let the hunt begin. Face Hircine’s legacy in the Wolfhunter DLC.
+description description goes here
 step
 'Press _U_ to open your _Collections_
 'Click over to the _Stories_ tab and look under the _Dungeon DLC_ section:

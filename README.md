@@ -16,7 +16,6 @@ Install through the excellent add-on manager <a href="https://minion.mmoui.com/"
 
 * Dragon Bones
 * Horns of the Reach
-* Shadows of the Hist
 
 # Development Guide
 
