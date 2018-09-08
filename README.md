@@ -12,6 +12,13 @@ No longer supported references:
 
 Install through the excellent add-on manager <a href="https://minion.mmoui.com/" target="blank">Minion</a>
 
+# Coming Soon Guides
+
+* Wolfhunter
+* Dragon Bones
+* Horns of the Reach
+* Shadows of the Hist
+
 # Development Guide
 
 ### ZGESO Version Breakdown
