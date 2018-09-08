@@ -140,7 +140,8 @@ d()
 ### Additional Resources
 
 * https://wiki.esoui.com/API
+* https://wiki.esoui.com/Texture_List
 * https://esomap.uesp.net/
 * https://game-maps.com/ESO/The-Elder-Scrolls-Online.asp
-* http://esodata.uesp.net/100018/
+* http://esodata.uesp.net/100023/
 * http://en.uesp.net/wiki
