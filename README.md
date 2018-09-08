@@ -12,7 +12,7 @@ No longer supported references:
 
 Install through the excellent add-on manager <a href="https://minion.mmoui.com/" target="blank">Minion</a>
 
-# Coming Soon Guides
+### Coming Soon Guides
 
 * Wolfhunter
 * Dragon Bones
