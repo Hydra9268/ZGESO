@@ -1067,23 +1067,23 @@ end
 function Viewer:HandleActionLayer()
 	local isActive = IsActionLayerActiveByName
 
-	if (( isActive("GameMenu")			-- GameMenu
+	if (( isActive("GameMenu")							-- GameMenu
 		or isActive("User Interface Shortcuts")			-- User Interface Shortcuts
-		or isActive("Notifications")			-- Notifications			TODO wtf is this layer? Sounds like we should hide here
-		or isActive("Siege")			-- Siege							TODO wtf is this layer? Sounds like we should hide here
-		or isActive("Dialogs") )		-- Dialogs						TODO wtf is this layer? Sounds like we should hide here
+		or isActive("Notifications")					-- Notifications			TODO wtf is this layer? Sounds like we should hide here
+		or isActive("Siege")							-- Siege							TODO wtf is this layer? Sounds like we should hide here
+		or isActive("Dialogs") )						-- Dialogs						TODO wtf is this layer? Sounds like we should hide here
 		and ZGV.sv.profile.hideoninventory
 	)
-	or (isActive("Conversation")			-- Conversation
-		and (ZGV.sv.profile.hideonguideconv		-- Hide when convo with guide person starts, hide with anyone.
+	or (isActive("Conversation")						-- Conversation
+		and (ZGV.sv.profile.hideonguideconv				-- Hide when convo with guide person starts, hide with anyone.
 		or 	(ZGV.sv.profile.hideoninventory and (ZGV.Pointer.curdist and ZGV.Pointer.curdist or 0) > 10) )	-- Don't hide if talking to someone directed by the guide. >10 yd away means they are not in the guide.
 	)
 	then
 		if Viewer:GuideViewer_IsShown() then
 			self.hiddeninlayer = true
 
-			ZGV.Menu:Hide()						-- Hide guide menu. Don't worry about reopening
-			self:Hide_GuideViewer(1)	-- Don't toggle the hide/show viewer option
+			ZGV.Menu:Hide()								-- Hide guide menu. Don't worry about reopening
+			self:Hide_GuideViewer(1)					-- Don't toggle the hide/show viewer option
 		end
 	else
 		if self.hiddeninlayer then
@@ -1093,7 +1093,7 @@ function Viewer:HandleActionLayer()
 		end
 	end
 
---	ZO_WorldMap_UpdateMap()	-- TODO temp fix for world map sometimes not updating properly
+	-- ZO_WorldMap_UpdateMap()							-- TODO temp fix for world map sometimes not updating properly
 end
 
 -----------------------------------------
@@ -1143,7 +1143,7 @@ function Viewer:EVENT_PLAYER_COMBAT_STATE(event,state)
 		self.hiddenincombat = true
 
 		ZGV.Menu:Hide()						-- Hide guide menu. Don't worry about reopening
-		self:Hide_GuideViewer(1)	-- Don't toggle the hide/show viewer option
+		self:Hide_GuideViewer(1)			-- Don't toggle the hide/show viewer option
 	elseif self.hiddenincombat then
 		self.hiddenincombat = nil
 

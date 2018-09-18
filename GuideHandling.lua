@@ -168,7 +168,6 @@ function ZGV:GetPreviousValidStep()
 			ZGV:Debug("step history broken, omg")
 
 			-- TODO: Currently, when running out of history, we default to the first valid of the guide. Needs a message / confirmation.
-
 			s = self.CurrentGuide:GetFirstValidStep()  -- always returns something, or breaks.
 			if s then
 				backed = hlen
@@ -284,7 +283,7 @@ function ZGV:SetWaypoint(what)
 			ZGV.Pointer:SetArrowToFirstCompletableGoal()
 		end
 	end
-	ZO_WorldMap_UpdateMap()
+	-- ZO_WorldMap_UpdateMap() // Disabled the addon from displaying the map to show where the next x is
 	return set
 end
 

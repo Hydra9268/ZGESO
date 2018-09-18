@@ -590,9 +590,6 @@
 		["Belkarth"] = [[belkarth_base]],
 		["Apex Stone Room"] = [[elinhirmagevision_base]],
 
-		-- WOLFHUNTER DLC
-		["Moon Hunter Keep"] = [[MHKmoonHunterKeep_base]],
-
 	},
 	["Zones"] =
 	{

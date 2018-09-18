@@ -1497,7 +1497,7 @@ function GetPOIMapInfo(map,id,truthful)
 	if truthful
 	  then return _GetPOIMapInfo_ORIG_ZGV(map,id) end
 	local x,y,typ,tex,_1 = _GetPOIMapInfo_ORIG_ZGV(map,id)
-	if tex:find("icon_missing") then tex=ZGV.DIR.."/Arrows/Stealth/mapmarker.dds" end
+	if tex:find("icon_missing") then tex=ZGV.DIR.."/Arrows/Stealth/cbni0-o1egp.dds" end
 	if typ==MAP_PIN_TYPE_INVALID then typ=MAP_PIN_TYPE_POI_SEEN end
 	return x,y,typ,tex,_1
 end
