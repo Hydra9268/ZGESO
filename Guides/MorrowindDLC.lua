@@ -21339,7 +21339,7 @@ talk Razum-dar
 step
 'Congratulations, you have completed the Summerset guide!
 ]])
-ZGV:RegisterGuide("LEVELING\\DLC\\Murkmire",[[
+ZGV:RegisterGuide("LEVELING\\Murkmire",[[
 loadingimage charload_01.dds
 description Delve into the treacherous swamps and jungles of Argonia and discover a hidden world as dangerous as it is beautiful.
 step
