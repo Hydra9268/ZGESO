@@ -470,6 +470,9 @@ Data.MapIdsByName = {
 	["Cathedral of Webs"]              	= 430,
 	["Crystal Tower"]                  	= 431,
 
+	-- MURKMIRE
+	["Lilmoth"]							= 432,
+
 }
 
 -----------------------------------------

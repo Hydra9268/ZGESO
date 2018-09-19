@@ -585,10 +585,8 @@
 		["Crystal Tower"] = [[crystaltower_top_base]],
 		["Crystal Tower"] = [[crystaltower_top02_base]],
 
-		-- CRAGLORN
-		["Craglorn"] = [[craglorn_base]],
-		["Belkarth"] = [[belkarth_base]],
-		["Apex Stone Room"] = [[elinhirmagevision_base]],
+		-- MURKMIRE
+		["Lilmoth"] = [[lilmothcity_base]],
 
 	},
 	["Zones"] =
@@ -690,6 +688,9 @@
 		["crystaltower_barrier_base"] =		{ name = "Crystal Tower",					id = 431, xoffset = 0.047887563787485, yoffset = 1.2382621839147, xscale = 0.0037150141074741, },
 		["crystaltower_top_base"] =			{ name = "Crystal Tower",					id = 431, xoffset = 0.05134798911924, yoffset = 1.2377155161369, xscale = 0.0051252589773524, },
 		["crystaltower_top02_base"] =		{ name = "Crystal Tower",					id = 431, xoffset = 0.049143334864553, yoffset = 1.2354932773058, xscale = 0.0093490102831546, },
+
+		-- MURKMIRE
+		["lilmothcity_base"] =				{ name = "Lilmoth",							id = 432, xoffset = 0.75634778522693, yoffset = 0.78623790373687, xscale = 0.026152813768529, },
 
 		-- EXISTING
 		["aba-loria_base"] = { name = "Aba-Loria", id = 212, xoffset = 0.403340, yoffset = 0.529272, scale = 0.016623, },

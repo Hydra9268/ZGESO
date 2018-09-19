@@ -21339,19 +21339,29 @@ talk Razum-dar
 step
 'Congratulations, you have completed the Summerset guide!
 ]])
-ZGV:RegisterGuide("LEVELING\\DLC\\XXXXXXXX",[[
+ZGV:RegisterGuide("LEVELING\\DLC\\Murkmire",[[
 loadingimage charload_01.dds
-description description goes here
+description Delve into the treacherous swamps and jungles of Argonia and discover a hidden world as dangerous as it is beautiful.
 step
 'Press _U_ to open your _Collections_
-'Click over to the _Stories_ tab and look under the _Dungeon DLC_ section:
-'Select _Moon Hunter Keep_ in the list of Dungeon DLCs
+'Click over to the _Stories_ tab and look under the _Zone DLC_ section:
+'Select _Murkmire_ in the list of Zone DLCs
 'Click the _Accept Quest_ button at the bottom
-accept Moonlight Ascent
+accept Sunken Treasure
 step
 'Open your map. Right click until you see the Tamirel map.
-'Travel to the _Moon Hunter Keep_ dungeon
-|tip It can be found in the Reaper's March
+'Travel to the _Lilmoth_ wayshrine
+|tip It can be found in the new Murkmire map in the southeast of Tamriel
 |tip Manually skip to the next step.
 step
+goto lilmothcity_base 46.67,45.69
+talk Famia Mercius
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 44.82,53.76
+'Press _E_ to Examine _Death-Hunts Await_
+accept Death-Hunts
+|tip Manually skip to the next step.
+step
+
 ]])
