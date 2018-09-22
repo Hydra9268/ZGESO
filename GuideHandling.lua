@@ -283,7 +283,7 @@ function ZGV:SetWaypoint(what)
 			ZGV.Pointer:SetArrowToFirstCompletableGoal()
 		end
 	end
-	-- ZO_WorldMap_UpdateMap() // Disabled the addon from displaying the map to show where the next x is
+	ZO_WorldMap_UpdateMap() -- Was disabled due to conflicts with other addons. Investigate further.
 	return set
 end
 
