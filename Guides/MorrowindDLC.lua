@@ -21497,13 +21497,13 @@ goto sunkenxanmeer02_base 22.18,66.73
 'The objective here is to match the height of the symbols with the guidestones by the bridge.
 |tip Manually skip to the next step.
 step
-'On the left use the Pulley Levels to match the height:
+'On the left use the Pulley Levers to match the height:
 '1. Highest height: _Anchor_
 '2. Medium height: _Clouds_
 '3. Lowest height: _Hook_
 |tip Manually skip to the next step.
 step
-'On the right use the Pulley Levels to match the height:
+'On the right use the Pulley Levers to match the height:
 '1. Highest height: _Dagger Point_
 '2. Medium height: _Egg_
 '3. Lowest height: _Lizard Creature_
