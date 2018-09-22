@@ -587,6 +587,9 @@
 
 		-- MURKMIRE
 		["Lilmoth"] = [[lilmothcity_base]],
+		["Murkmire"] = [[murkmire_base]],
+		["Ixtaxh Xanmeer"] = [[sunkenxanmeer01_base]],
+		["Bright-Throat Village"] = [[brightthroatvillage_base]],
 
 	},
 	["Zones"] =
@@ -690,7 +693,11 @@
 		["crystaltower_top02_base"] =		{ name = "Crystal Tower",					id = 431, xoffset = 0.049143334864553, yoffset = 1.2354932773058, xscale = 0.0093490102831546, },
 
 		-- MURKMIRE
-		["lilmothcity_base"] =				{ name = "Lilmoth",							id = 432, xoffset = 0.75634778522693, yoffset = 0.78623790373687, xscale = 0.026152813768529, },
+		["lilmothcity_base"] =				{ name = "Lilmoth",							id = 432, xoffset = 0.7563477852269300250, yoffset = 0.7862379037368699697, xscale = 0.0261528519678925070, },
+		["murkmire_base"] = 				{ name = "Murkmire",						id = 433, xoffset = 0.691203232511, yoffset = 0.72229825671541, xscale = 0.097839972530323, },
+		["sunkenxanmeer01_base"] = 			{ name = "Ixtaxh Xanmeer",					id = 434, xoffset = 0.75317410932876, yoffset = 0.79408174597145, xscale = 0.0029336743135806, },
+		["sunkenxanmeer02_base"] = 			{ name = "Ixtaxh Xanmeer",					id = 434, xoffset = 0.75317409682782, yoffset = 0.79408173509366, xscale = 0.0029336879758033, },
+		["brightthroatvillage_base"] = 		{ name = "Bright-Throat Village",			id = 435, xoffset = 0.75737614087669, yoffset = 0.77139828757502, xscale = 0.010395498957489, },
 
 		-- EXISTING
 		["aba-loria_base"] = { name = "Aba-Loria", id = 212, xoffset = 0.403340, yoffset = 0.529272, scale = 0.016623, },

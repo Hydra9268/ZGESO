@@ -21361,7 +21361,460 @@ step
 goto lilmothcity_base 44.82,53.76
 'Press _E_ to Examine _Death-Hunts Await_
 accept Death-Hunts
+step
+goto lilmothcity_base 44.96,63.60
+talk Bolu
+accept Grave Circumstances
+'Unlocks Dailies
+step
+goto lilmothcity_base 44.59,63.79
+talk Varo Hosidias
+accept Sacred Candles
+'Unlocks Dailies
+step
+goto lilmothcity_base 40.60,64.80
+'Press _E_ to Open _Guild Hall_
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 37.48,68.04
+talk Tia Doran
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 36.16,67.89
+'Press _E_ to Open _Lilmoth_
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Travel to the _Lilmoth_ wayshrine
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 45.44,33.60
+talk Chuxu
+accept The Assassin's Arbitration
+step
+goto lilmothcity_base 41.90,33.98
+'Press _E_ to Open _The Lusty Argonian Footman_
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 40.74,33.54
+talk Sulahkeesh
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 36.55,34.45
+'Press _E_ to Open _Lilmoth_
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 49.31,56.34
+talk Nurhei
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 19.43,42.31
+talk Paheiza
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Travel to the _Lilmoth_ wayshrine
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 60.22,47.34
+'Press _E_ to Examine _Keema-Ru's Grave-Stake_
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 51.42,61.60
+'Press _E_ to Open _Nurhei's Warehouse_
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 52.42,61.05
+'Press _E_ to Take _Letter from Paheiza_
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 51.65,61.59
+'Press _E_ to Open _Lilmoth_
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Travel to the _Lilmoth_ wayshrine
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 22.41,38.85
+talk Zadaza
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 23.20,39.41
+talk Famia Mercius
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 10.91,25.44
+'Coninute North from here
+|tip Manually skip to the next step.
+step
+goto murkmire_base 70.34,67.77
+'Press _E_ to Search _Eshraf's Backpack_
+'Take Vakka Stone
+|tip Manually skip to the next step.
+step
+goto murkmire_base 63.44,67.12
+'Either kill Haj Mota or wait for the creature to patrol away
+'Press _E_ to Take _Dinia's Sword_
+Take Dinia's Sword
+|tip Manually skip to the next step.
+step
+goto murkmire_base 61.70,65.04
+talk Tseedasi
+accept Empty Nest
+step
+goto murkmire_base 57.38,74.64
+'Press _E_ to Examine _Eshraf's Journal_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 57.38,74.51
+'Press _E_ to Search _Dinia's Bag_
+'Take Vakka Stone
+|tip Manually skip to the next step.
+step
+goto murkmire_base 57.39,75.46
+talk Xukas
+|tip Manually skip to the next step.
+step
+goto murkmire_base 57.39,75.46
+talk Famia Mercius
+|tip Manually skip to the next step.
+step
+goto murkmire_base 64.43,76.71
+click Ixtaxh Xanmeer
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer01_base 27.98,85.19
+click Hidden Lever
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 28.92,81.75
+click Xanmeer Depths
+'Note: this is a simply lockpicking challenge
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 22.18,66.73
+'The objective here is to match the height of the symbols with the guidestones by the bridge.
+|tip Manually skip to the next step.
+step
+'On the left use the Pulley Levels to match the height:
+'1. Highest height: _Anchor_
+'2. Medium height: _Clouds_
+'3. Lowest height: _Hook_
+|tip Manually skip to the next step.
+step
+'On the right use the Pulley Levels to match the height:
+'1. Highest height: _Dagger Point_
+'2. Medium height: _Egg_
+'3. Lowest height: _Lizard Creature_
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 40.56,45.63
+'Continue North past the archway from here
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 35.76,37.48
+'Dodge roll forward to avoid the first fire trap
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 29.16,37.41
+'Dodge roll forward to avoid the second fire trap
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 29.97,36.86
+'Facing North, dodge roll forward to avoid the third fire trap
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 25.64,27.86
+kill River Troll
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 25.52,24.85
+click Flint Vine
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 34.03,24.19
+click Flint Vine
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 36.50,24.25
+'Drop down here and continue South
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 46.31,60.42
+'Dodge roll forward to avoid the first dart trap
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 50.50,62.92
+'Dodge roll forward to avoid the second dart trap
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 56.03,61.43
+'Avoid the last dart trap
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 56.22,47.92
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 45.04,50.31
+click Flint Vine
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 44.44,49.94
+'Drop down here and continue South
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 45.55,73.51
+'Make your way here
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 45.58,81.20
+kill The Strangler
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 45.26,80.19
+click Flint Vine
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 39.26,58.00
+'Press _E_ to Place _Stone Outcropping_
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 40.49,45.70
+'Continue North past the archway from here
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 45.25,37.40
+click Skittering Cavern
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 58.84,34.76
+'Defeat 4 waves of low-level mobs, then
+kill Websnare Spider Matriarch
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 61.87,34.63
+click Stone Furnace
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 66.22,34.91
+'Drop down from here and _immediately avoid the telegraphing traps_
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 70.40,30.31
+click Kajin-Jat Vault
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 70.17,15.91
+kill Ixtaxh Voriplasm
+'This is a simple fight. Pull the boss to the firepits that have fire tossed into them by the NPC. The fire telegraph is large enough to damage both the boss and adds. You can also do range damage.
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 70.17,15.91
+'Stay in the room so that you pass out from the gas and quickly move the final room
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 77.93,45.39
+click Murkmire
+|tip Manually skip to the next step.
+step
+goto murkmire_base 66.58,70.32
+talk Xukas
+|tip Manually skip to the next step.
+step
+goto murkmire_base 66.58,70.32
+talk Famia Mercius
+|tip Manually skip to the next step.
+step
+goto murkmire_base 69.88,61.34
+wayshrine Bright-Throat Wayshrine
+|tip Manually skip to the next step.
+step
+goto murkmire_base 69.87,61.59
+'Press _E_ to Use _Bright-Throat Wayshrine_
+'Travel to Lilmoth Wayshrine
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 48.77,26.41
+click Cyrodilic Collections
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 49.34,24.46
+talk Famia Mercius
+accept Missing in Murkmire
+step
+'Open your map. Right click to bring up the Murkmire map.
+'Travel to the _Bright-Throat_ wayshrine
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 29.76,54.81
+click Tree-Minder Pavu's House
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 29.39,47.14
+talk Tree-Minder Pavu
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 29.97,52.62
+click Bright-Throat Village
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 48.29,56.26
+click Egg-Tenders' Quarters
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 54.59,54.32
+talk Keenam
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 55.53,54.96
+talk Mimme
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 53.70,56.91
+'Press _E_ to Examine _Over-turned Basket_
+'Take Wilting Dragonthorn
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 58.61,56.00
+'Press _E_ to Examine _Egg-Tender's Unfinished Letter_
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 53.84,55.83
+talk Iskenaaz
+'Select _Hold a moment. I think I should speak with the egg-tenders again._
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 55.53,54.96
+talk Mimme
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 53.84,55.83
+talk Iskenaaz
+'Select _Mimme said it has some unsavory uses, but she didn't have specifics._
+'Select _Agreed. Let's go._
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 50.06,56.21
+click Bright-Throat Village
 |tip Manually skip to the next step.
 step
 
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
 ]])

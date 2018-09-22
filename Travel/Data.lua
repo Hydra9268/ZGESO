@@ -472,6 +472,9 @@ Data.MapIdsByName = {
 
 	-- MURKMIRE
 	["Lilmoth"]							= 432,
+	["Murkmire"]						= 433,
+	["Ixtaxh Xanmeer"]					= 434,
+	["Bright-Throat Village"]			= 435,
 
 }
 
