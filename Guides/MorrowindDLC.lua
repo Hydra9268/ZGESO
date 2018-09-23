@@ -21700,7 +21700,162 @@ goto brightthroatvillage_base 50.06,56.21
 click Bright-Throat Village
 |tip Manually skip to the next step.
 step
-
+goto brightthroatvillage_base 37.29,54.52
+'Continue down the ramp from here
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 23.82,63.65
+'Continue down the ramp from here
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 06.76,56.52
+'Continue across the bridge from here
+|tip Manually skip to the next step.
+step
+goto murkmire_base 64.43,56.17
+talk Egg-Tender Meena
+'Select the truth or lie, it doesn't matter.
+|tip Manually skip to the next step.
+step
+goto murkmire_base 63.99,56.62
+talk Haxara
+|tip Manually skip to the next step.
+step
+goto murkmire_base 63.77,56.71
+'Press _E_ to Examine _Empty Egg Bed_
+'Take Mashed Dragonthorn Leaves
+|tip Manually skip to the next step.
+step
+goto murkmire_base 64.26,56.44
+talk Iskenaaz
+|tip Manually skip to the next step.
+step
+goto murkmire_base 64.00,56.03
+'Continue up and down the ramps from here
+|tip Manually skip to the next step.
+step
+goto murkmire_base 64.02,55.22
+'Continue Northwest from here (head towards the quest marker on the compass)
+|tip Manually skip to the next step.
+step
+goto murkmire_base 59.15,49.40
+'Press _E_ to Take _Ree-Nakal's Orders_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 59.20,49.29
+'Press _E_ to Take _Egg-Tender's Journal_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 58.79,49.44
+talk Iskenaaz
+|tip Manually skip to the next step.
+step
+goto murkmire_base 58.26,49.64
+'Press _E_ to Examine _Dead Aberration_
+'Take Malformed Scales
+|tip Manually skip to the next step.
+step
+goto murkmire_base 58.56,49.51
+talk Iskenaaz
+|tip Manually skip to the next step.
+step
+goto murkmire_base 57.18,52.42
+'Run to the first Malformed Scales
+|tip Manually skip to the next step.
+step
+goto murkmire_base 55.23,56.44
+'Run to the second Malformed Scales
+|tip Manually skip to the next step.
+step
+goto murkmire_base 54.90,56.91
+'Press _E_ to Examine _Romantic Argonian Poem_
+accept Frog Totem Turnaround
+step
+goto murkmire_base 54.90,56.91
+'Press _E_ to Search _Muddy Pack_
+'Take Frog Totem
+|tip Manually skip to the next step.
+step
+'Press _J_ to open your Quest Journal and select _Empty Nest_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 50.61,58.09
+'Run to the third Malformed Scales
+|tip Manually skip to the next step.
+step
+goto murkmire_base 49.94,60.21
+click Keema-Ru's Farmhouse
+|tip Manually skip to the next step.
+step
+goto murkmire_base 50.14,60.30
+'Press _E_ to Take _Threatening Letter to Paheiza_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 50.03,59.97
+'Press _E_ to Take _Shooma Bottle_
+'Take Shooma Bottle
+|tip Manually skip to the next step.
+step
+goto murkmire_base 50.00,60.19
+click Murkmire
+|tip Manually skip to the next step.
+step
+goto murkmire_base 49.40,58.56
+'Continue to the compass Quest marker
+|tip Manually skip to the next step.
+step
+goto murkmire_base 47.85,58.51
+'Run to the fourth Malformed Scales
+|tip Manually skip to the next step.
+step
+goto murkmire_base 46.67,58.74
+'Run to the fifth Malformed Scales
+|tip Manually skip to the next step.
+step
+goto murkmire_base 48.36,62.65
+'Run to the main road here
+|tip Manually skip to the next step.
+step
+goto murkmire_base 49.74,68.23
+talk Xukas
+|tip Manually skip to the next step.
+step
+goto murkmire_base 50.00,68.05
+talk Lozwug
+|tip Manually skip to the next step.
+step
+goto murkmire_base 49.75,68.97
+talk Xukas
+|tip Manually skip to the next step.
+step
+goto murkmire_base 51.52,70.88
+talk Hands-That-Heal
+accept The Burnt Branch
+step
+goto murkmire_base 50.48,71.46
+'Cross the river West from here
+|tip Manually skip to the next step.
+step
+goto murkmire_base 49.23,71.43
+'Continue Northwest towards the quest marker
+|tip Manually skip to the next step.
+step
+goto murkmire_base 45.73,67.07
+'Press _E_ to Examine _Neexi_
+'Take Root Pendant
+|tip Manually skip to the next step.
+step
+goto murkmire_base 45.66,67.05
+'Press _E_ to Take _Discard Arrow_
+'Take Discard Arrow
+|tip Manually skip to the next step.
+step
+goto murkmire_base 51.59,70.91
+talk Hands-That-Heal
+|tip Manually skip to the next step.
+step
+goto murkmire_base 53.51,69.70
+'At the fork in the road, go left from here
 |tip Manually skip to the next step.
 step
 
@@ -21791,30 +21946,4 @@ step
 |tip Manually skip to the next step.
 step
 
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
 ]])
