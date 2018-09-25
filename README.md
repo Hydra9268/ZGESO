@@ -2,7 +2,7 @@
 
 <img src="https://i.imgur.com/KrnhwuP.png">
 
-A Public Domain leveling guide produced by Zygor Guides, updated by Hydra9268 (aka alterego9268 on ZG's forums). The purpose of this project is to add Summerset leveling guide and beyond.
+A Public Domain leveling guide produced by Zygor Guides, updated by Hydra9268 (aka alterego9268 on ZG's forums). The purpose of this project is to add a leveling guide for Summerset. Now working on a guide for Murkmire and continuing to support.
 
 No longer supported references:
 * Announcement: https://zygorguides.com/blog/zygor-guides-elder-scrolls-online-guides-going-free-use/
