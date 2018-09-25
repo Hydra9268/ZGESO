@@ -15,7 +15,7 @@ Install through the excellent add-on manager <a href="https://minion.mmoui.com/"
 ### Coming Soon
 
 * Murkmire Guide
-<img src="https://i.imgur.com/bXnOMJW.jpg">
+<img src="https://i.imgur.com/jf7hoV2.jpg">
 
 # Development Guide
 
