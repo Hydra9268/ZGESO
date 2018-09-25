@@ -21350,7 +21350,7 @@ step
 accept Sunken Treasure
 step
 'Open your map. Right click until you see the Tamirel map.
-'Travel to the _Lilmoth_ wayshrine
+'Travel to the _Lilmoth_ Wayshrine
 |tip It can be found in the new Murkmire map in the southeast of Tamriel
 |tip Manually skip to the next step.
 step
@@ -21365,7 +21365,7 @@ step
 goto lilmothcity_base 44.96,63.60
 talk Bolu
 accept Grave Circumstances
-'Unlocks Dailies
+'Unlocks Dailies. However, this is group content that won't be part of the guide.
 step
 goto lilmothcity_base 44.59,63.79
 talk Varo Hosidias
@@ -21385,7 +21385,7 @@ goto lilmothcity_base 36.16,67.89
 |tip Manually skip to the next step.
 step
 'Open your map.
-'Travel to the _Lilmoth_ wayshrine
+'Travel to the _Lilmoth_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto lilmothcity_base 45.44,33.60
@@ -21413,7 +21413,7 @@ talk Paheiza
 |tip Manually skip to the next step.
 step
 'Open your map.
-'Travel to the _Lilmoth_ wayshrine
+'Travel to the _Lilmoth_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto lilmothcity_base 60.22,47.34
@@ -21433,7 +21433,7 @@ goto lilmothcity_base 51.65,61.59
 |tip Manually skip to the next step.
 step
 'Open your map.
-'Travel to the _Lilmoth_ wayshrine
+'Travel to the _Lilmoth_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto lilmothcity_base 22.41,38.85
@@ -21456,7 +21456,7 @@ step
 goto murkmire_base 63.44,67.12
 'Either kill Haj Mota or wait for the creature to patrol away
 'Press _E_ to Take _Dinia's Sword_
-Take Dinia's Sword
+'Take Dinia's Sword
 |tip Manually skip to the next step.
 step
 goto murkmire_base 61.70,65.04
@@ -21645,7 +21645,7 @@ talk Famia Mercius
 accept Missing in Murkmire
 step
 'Open your map. Right click to bring up the Murkmire map.
-'Travel to the _Bright-Throat_ wayshrine
+'Travel to the _Bright-Throat_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto brightthroatvillage_base 29.76,54.81
@@ -21856,6 +21856,249 @@ talk Hands-That-Heal
 step
 goto murkmire_base 53.51,69.70
 'At the fork in the road, go left from here
+|tip Manually skip to the next step.
+step
+goto murkmire_base 42.69,59.65
+'Follow the path until you discover
+wayshrine Blackrose
+|tip Manually skip to the next step.
+step
+goto murkmire_base 47.89,62.43
+'Continue Northeast from here towards the quest marker
+|tip Manually skip to the next step.
+step
+goto murkmire_base 53.99,58.04
+talk Tem-Tei
+|tip Manually skip to the next step.
+step
+'Press _J_ to open your Quest Journal and select _Empty Nest_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 53.50,58.15
+'Continue west from here towards the quest marker
+|tip Manually skip to the next step.
+step
+goto murkmire_base 45.54,57.43
+click Blight Bog Sump
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 28.90,47.36
+talk Haxara
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 28.09,43.51
+'Press _E_ to Examine _Xoxoctic Extract_
+'Take Xoxoctic Extract
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 29.60,45.97
+'Press _E_ to Examine _Hatched Egg Shell_
+'Take Hatched Egg Shell
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 30.86,51.13
+'Press _E_ to Take _Development of the Hollow_
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 34.07,50.60
+'Press _E_ to Examine _Xochipalli Extract_
+'Take Xochipalli Extract
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 34.07,50.60
+talk Iskenaaz
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 30.16,46.54
+talk Haxara
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 32.75,47.04
+'Cross the bridge and follow the path
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 43.64,43.07
+'Follow the steps down from here
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 43.32,52.33
+'At the fork in the path go left
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 43.45,61.15
+'At the fork in the path go left
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 48.17,62.72
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 61.15,50.25
+click Xuat-Matun - Council Chamber
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 58.21,38.97
+kill Xul-Mot
+'DPS the mini-boss and occasionally stand in the Haxara's green protection circle when the boss telegraphs.
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 60.96,48.93
+click Blight Bog Sump
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 60.33,59.70
+'Run down the stairs from here
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 58.25,67.19
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 62.09,71.16
+'Continue East from here
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 72.10,68.64
+click Xuat-Matun - Worship Chamber
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 72.31,58.29
+kill Ojei
+'DPS the mini-boss and occasionally run to Haxara to press X to use the healing potions.
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 72.29,67.51
+click Blight Bog Sump
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 72.36,70.65
+talk Haxara
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 60.14,69.27
+'Run down the stairs from here
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 59.01,62.72
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 63.41,52.14
+'Follow the path Northeast from here
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 70.09,31.49
+click Xuat-Matun - Audience Chamber
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 70.09,31.49
+kill Krona
+'A hybrid of both mini-bosses. DPS Krona while avoiding its telegraphing charges (it runs in a straight line). Occasionally run to Haxara to press X to use the healing potions.
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 80.29,21.41
+click Xuat-Matun - Antechamber
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 84.45,19.33
+talk Haxara
+|tip Manually skip to the next step.
+step
+goto blightedbogcavern_base 87.09,20.40
+click Murkmire
+|tip Manually skip to the next step.
+step
+'Press _J_ to open your Quest Journal and select _The Burnt Branch_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 54.44,52.22
+'Run up the hill and continue West from here towards the quest marker
+|tip Manually skip to the next step.
+step
+goto murkmire_base 49.36,51.35
+'To avoid mobs, drop down from here and follow the river West
+|tip Manually skip to the next step.
+step
+goto murkmire_base 46.64,51.66
+'Continue South from here
+|tip Manually skip to the next step.
+step
+goto murkmire_base 46.67,52.73
+'Press _E_ to Take _Hunting Bow_
+'Take Hunting Bow
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Travel to the _Blackrose_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto murkmire_base 42.76,59.80
+'Cross both bridges Southeast from here
+|tip Manually skip to the next step.
+step
+goto murkmire_base 47.93,62.22
+'Continue Northeast through the Saltrice farm to the quest marker
+|tip Manually skip to the next step.
+step
+goto murkmire_base 54.10,58.05
+talk Tem-Tei
+|tip Manually skip to the next step.
+step
+goto murkmire_base 53.93,58.03
+'Press _E_ to Search _Wooden Box_
+'Take Burnt Branch
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Travel to the _Blackrose_ Wayshrine
+|tip Manually skip to the next step.
+step
+'Press _J_ to open your Quest Journal and select _Sacred Candles_
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
 |tip Manually skip to the next step.
 step
 
