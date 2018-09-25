@@ -2,7 +2,7 @@
 
 <img src="https://i.imgur.com/KrnhwuP.png">
 
-A Public Domain ESO Leveling Guide produced by Zygor Guides, updated by Hydra9268 (aka alterego9268 on ZG forums). The purpose of this project is to add a Summerset leveling guide.
+A Public Domain leveling guide produced by Zygor Guides, updated by Hydra9268 (aka alterego9268 on ZG's forums). The purpose of this project is to add a Summerset leveling guide and beyond.
 
 No longer supported references:
 * Announcement: https://zygorguides.com/blog/zygor-guides-elder-scrolls-online-guides-going-free-use/
