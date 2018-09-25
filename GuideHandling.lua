@@ -283,7 +283,7 @@ function ZGV:SetWaypoint(what)
 			ZGV.Pointer:SetArrowToFirstCompletableGoal()
 		end
 	end
-	ZO_WorldMap_UpdateMap() -- Was disabled due to conflicts with other addons. Investigate further.
+	ZO_WorldMap_UpdateMap() -- Was disabled due to conflicts with other addons (Bandits UI). Investigate further.
 	return set
 end
 
