@@ -14,8 +14,8 @@ Install through the excellent add-on manager <a href="https://minion.mmoui.com/"
 
 ### Coming Soon Guides
 
-* Dragon Bones
-* Horns of the Reach
+* Murkmire
+<img src="https://i.imgur.com/bXnOMJW.jpg">
 
 # Development Guide
 
