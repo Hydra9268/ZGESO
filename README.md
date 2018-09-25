@@ -16,6 +16,7 @@ Install through the excellent add-on manager <a href="https://minion.mmoui.com/"
 
 * Murkmire Guide
 <img src="https://i.imgur.com/jf7hoV2.jpg">
+<i>artwork &copy; ZeniMax Media</i>
 
 # Development Guide
 
