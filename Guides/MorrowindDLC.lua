@@ -22056,85 +22056,119 @@ step
 'Press _J_ to open your Quest Journal and select _Sacred Candles_
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 42.47,59.52
+'Follow the road Northwest until you come to a fork
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 37.20,56.56
+'At the fork in the road, follow the road left from here
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 34.80,55.69
+'Cross the bridge from here
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 32.74,54.13
+'At the fork here, follow the road right
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 31.01,51.03
+'At the fork here, follow the road left and head towards the quest marker
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 20.42,51.23
+talk Dradeiva
+accept The Lost Legion
+step
+goto murkmire_base 20.31,51.51
+click Tsofeer Cavern
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_tsofeercavern01 48.16,22.91
+'Press _E_ to Examine _Legion Officer's Notebook_
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_tsofeercavern01 42.48,22.29
+'At the fork here, follow the path right
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_tsofeercavern01 32.72,29.06
+kill Wamasu
+'Not a difficult mini-boss fight. Just avoid its telegraphs.
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_tsofeercavern01 20.24,27.64
+'Press _E_ to Examine _Legion Officer's Notebook_
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_tsofeercavern01 18.00,35.85
+'Follow the path South
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_tsofeercavern01 18.09,53.84
+'Follow the water South to avoid the Wamasu
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_tsofeercavern01 22.43,63.82
+'Run up from here
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_tsofeercavern01 28.74,66.16
+'Continue Southeast from here
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_tsofeercavern01 34.94,69.21
+'At the fork here, follow the path right
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_tsofeercavern01 29.74,83.10
+'Follow the path up and to its end
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_tsofeercavern01 21.34,86.44
+'Press _E_ to Examine _Note from the Last Legionnaire_
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_tsofeercavern01 37.52,70.84
+'Follow the path back and drop down here 
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_tsofeercavern01 43.44,63.58
+'At the fork here, follow the path right
+'In the open area above be careful not to pull too many Voidplasms. They can entrap you and drain your HP, effectively being a one-shot. Be very aware of their AOE telegraph attacks.
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_tsofeercavern01 60.86,62.15
+'Press _E_ to Examine _Tsofeer Ritual Dagger_
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_tsofeercavern01 62.77,72.12
+'Run up from here
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_tsofeercavern01 68.31,66.25
+'Press _E_ to Place _Sacred Candle_
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_tsofeercavern01 72.03,67.59
+'Follow the path North from here
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_tsofeercavern01 75.27,53.26
+'Press _E_ to Examine _Sacred Altar_
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_tsofeercavern01 75.27,53.26
+talk Dradeiva
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_tsofeercavern01 73.89,52.51
+'From here cross the bridge and run up the step
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_tsofeercavern01 77.35,35.64
+kill Wuju-Ka Guardian
+'Boss Fight. Use _Crown Fortifying Meal_ to buff your stats. Like its lessers, avoid the Guardian's AOE telegraph attacks. Focus on the Boss and use AOE attacks to kill the random spawning adds. Range is best.
 |tip Manually skip to the next step.
 step
 

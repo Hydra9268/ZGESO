@@ -476,6 +476,7 @@ Data.MapIdsByName = {
 	["Ixtaxh Xanmeer"]					= 434,
 	["Bright-Throat Village"]			= 435,
 	["Blight Bog Sump"]					= 436,
+	["Tsofeer Cavern"]					= 437,
 
 }
 
