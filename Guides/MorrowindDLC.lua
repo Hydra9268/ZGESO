@@ -21364,25 +21364,7 @@ accept Death-Hunts
 step
 goto lilmothcity_base 44.96,63.60
 talk Bolu
-accept Grave Circumstances
 'Unlocks Dailies. However, this is group content that won't be part of the guide.
-step
-goto lilmothcity_base 44.59,63.79
-talk Varo Hosidias
-accept Sacred Candles
-'Unlocks Dailies
-step
-goto lilmothcity_base 40.60,64.80
-'Press _E_ to Open _Guild Hall_
-|tip Manually skip to the next step.
-step
-goto lilmothcity_base 37.48,68.04
-talk Tia Doran
-|tip Manually skip to the next step.
-step
-goto lilmothcity_base 36.16,67.89
-'Press _E_ to Open _Lilmoth_
-|tip Manually skip to the next step.
 step
 'Open your map.
 'Travel to the _Lilmoth_ Wayshrine
@@ -21400,8 +21382,16 @@ goto lilmothcity_base 40.74,33.54
 talk Sulahkeesh
 |tip Manually skip to the next step.
 step
+goto lilmothcity_base 38.94,35.46
+talk Jasudei
+'Be sure to stock up on lockpicks
+step
 goto lilmothcity_base 36.55,34.45
-'Press _E_ to Open _Lilmoth_
+click Lilmoth
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Travel to the _Lilmoth_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto lilmothcity_base 49.31,56.34
@@ -21441,6 +21431,7 @@ talk Zadaza
 |tip Manually skip to the next step.
 step
 goto lilmothcity_base 23.20,39.41
+'Wait a second and...
 talk Famia Mercius
 |tip Manually skip to the next step.
 step
@@ -21478,6 +21469,7 @@ talk Xukas
 step
 goto murkmire_base 57.39,75.46
 talk Famia Mercius
+'Note: There is a bug where she may not be available. If so, skip to next step.
 |tip Manually skip to the next step.
 step
 goto murkmire_base 64.43,76.71
