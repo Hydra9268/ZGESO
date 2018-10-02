@@ -21454,6 +21454,10 @@ goto murkmire_base 61.70,65.04
 talk Tseedasi
 accept Empty Nest
 step
+goto murkmire_base 56.71,69.35
+'Continue South from here towards the quest marker on the compass
+|tip Manually skip to the next step.
+step
 goto murkmire_base 57.38,74.64
 'Press _E_ to Examine _Eshraf's Journal_
 |tip Manually skip to the next step.
@@ -21499,6 +21503,10 @@ step
 '1. Highest height: _Dagger Point_
 '2. Medium height: _Egg_
 '3. Lowest height: _Lizard Creature_
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 40.20,52.20
+'Watch the dialog scene
 |tip Manually skip to the next step.
 step
 goto sunkenxanmeer02_base 40.56,45.63
@@ -21600,7 +21608,7 @@ click Kajin-Jat Vault
 step
 goto sunkenxanmeer02_base 70.17,15.91
 kill Ixtaxh Voriplasm
-'This is a simple fight. Pull the boss to the firepits that have fire tossed into them by the NPC. The fire telegraph is large enough to damage both the boss and adds. You can also do range damage.
+'This is a simple fight. Pull the boss to the fire-traps that have fire tossed into them by the NPC. The fire traps with the rising smoke have the AOE telegraph damage attack. The telegraph is large enough to damage both the boss and adds.
 |tip Manually skip to the next step.
 step
 goto sunkenxanmeer02_base 70.17,15.91
@@ -21727,7 +21735,7 @@ goto murkmire_base 64.00,56.03
 |tip Manually skip to the next step.
 step
 goto murkmire_base 64.02,55.22
-'Continue Northwest from here (head towards the quest marker on the compass)
+'Continue Northwest from here towards the quest marker on the compass
 |tip Manually skip to the next step.
 step
 goto murkmire_base 59.15,49.40
@@ -21793,7 +21801,7 @@ click Murkmire
 |tip Manually skip to the next step.
 step
 goto murkmire_base 49.40,58.56
-'Continue to the compass Quest marker
+'Continue Northwest to the compass Quest marker
 |tip Manually skip to the next step.
 step
 goto murkmire_base 47.85,58.51
@@ -21824,10 +21832,6 @@ goto murkmire_base 51.52,70.88
 talk Hands-That-Heal
 accept The Burnt Branch
 step
-goto murkmire_base 50.48,71.46
-'Cross the river West from here
-|tip Manually skip to the next step.
-step
 goto murkmire_base 49.23,71.43
 'Continue Northwest towards the quest marker
 |tip Manually skip to the next step.
@@ -21851,7 +21855,7 @@ goto murkmire_base 53.51,69.70
 |tip Manually skip to the next step.
 step
 goto murkmire_base 42.69,59.65
-'Follow the path until you discover
+'Follow the road until you
 wayshrine Blackrose
 |tip Manually skip to the next step.
 step
@@ -21864,10 +21868,6 @@ talk Tem-Tei
 |tip Manually skip to the next step.
 step
 'Press _J_ to open your Quest Journal and select _Empty Nest_
-|tip Manually skip to the next step.
-step
-goto murkmire_base 53.50,58.15
-'Continue west from here towards the quest marker
 |tip Manually skip to the next step.
 step
 goto murkmire_base 45.54,57.43
