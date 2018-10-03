@@ -21375,7 +21375,7 @@ talk Chuxu
 accept The Assassin's Arbitration
 step
 goto lilmothcity_base 41.90,33.98
-'Press _E_ to Open _The Lusty Argonian Footman_
+click The Lusty Argonian Footman
 |tip Manually skip to the next step.
 step
 goto lilmothcity_base 40.74,33.54
@@ -22039,6 +22039,399 @@ step
 goto murkmire_base 53.93,58.03
 'Press _E_ to Search _Wooden Box_
 'Take Burnt Branch
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Travel to the _Lilmoth_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 38.00,46.53
+'At the fork in the road, go left from here
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 31.63,57.10
+'Cross the bridge from here
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 32.30,70.68
+talk Chal-Maht
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Travel to the _Lilmoth_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 39.07,37.20
+click The Lusty Argonian Footman
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 40.65,33.55
+talk Sulahkeesh
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 38.80,31.95
+click Lilmoth
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 60.26,32.70
+click Dragonstar Stockade
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 64.01,34.88
+'Press _E_ to Search _Dragonstar Chest_
+'Take Dossier: Zadaza
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 61.35,27.75
+'Follow the Stoackade's perimeter Northeast
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 67.70,24.92
+click Sunken House
+'Avoid the patrol if possible
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 65.82,24.81
+'Press _E_ to Search _Dragonstar Chest_
+'Take Cracked Dead-Water Knife
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 66.76,24.65
+click Dragonstar Stoackade
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 72.94,25.43
+'Continue Southeast along the Stockade's perimeter. Be careful to avoid patrols.
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 73.88,34.00
+'Carefully make you way up the ramp to this spot. 
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 74.76,33.60
+'Press _E_ to Search _Dragonstar Chest_
+'Take Dossier: Varo Hosidias
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 74.28,37.03
+'Carefully drop down here
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 77.73,39.53
+click Dragonstar Hut
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 79.55,39.62
+'Press _E_ to Search _Dragonstar Chest_
+'Take Dossier: The Newcomer
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 78.00,39.61
+click Dragonstar Stockade
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Travel to the _Lilmoth_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 53.67,33.81
+talk Xukas
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 48.77,26.41
+click Cyrodilic Collections
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 49.34,24.46
+talk Famia Mercius
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 49.46,24.93
+talk Kassandra
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 48.91,26.01
+click Lilmoth
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 45.31,27.44
+'Follow the road North out of Lilmoth
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
 |tip Manually skip to the next step.
 step
 
