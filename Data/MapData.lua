@@ -591,7 +591,6 @@
 		["Ixtaxh Xanmeer"] = [[sunkenxanmeer01_base]],
 		["Bright-Throat Village"] = [[brightthroatvillage_base]],
 		["Blight Bog Sump"] = [[blightedbogcavern_base]],
-		["Tsofeer Cavern"] = [[UI_Map_tsofeercavern01]],
 
 	},
 	["Zones"] =
@@ -701,7 +700,6 @@
 		["sunkenxanmeer02_base"] = 			{ name = "Ixtaxh Xanmeer",					id = 434, xoffset = 0.75317409682782, yoffset = 0.79408173509366, xscale = 0.0029336879758033, },
 		["brightthroatvillage_base"] = 		{ name = "Bright-Throat Village",			id = 435, xoffset = 0.75737614087669, yoffset = 0.77139828757502, xscale = 0.010395498957489, },
 		["blightedbogcavern_base"] =		{ name = "Blight Bog Sump",					id = 436, xoffset = 0.73578689124467, yoffset = 0.77812594268062, xscale = 0.00063463609854889, },
-		["UI_Map_tsofeercavern01"] =		{ name = "Tsofeer Cavern",					id = 436, xoffset = 0.71095551554457, yoffset = 0.77330767602877, xscale = 0.00083724978955857, },
 
 
 		-- EXISTING
