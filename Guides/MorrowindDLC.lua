@@ -21444,6 +21444,11 @@ goto murkmire_base 70.34,67.77
 'Take Vakka Stone
 |tip Manually skip to the next step.
 step
+goto murkmire_base 66.22,67.02
+'Press _E_ to Take _Thtithil Tablet_
+'Take Thtithil Tablet
+|tip Manually skip to the next step.
+step
 goto murkmire_base 63.44,67.12
 'Either kill Haj Mota or wait for the creature to patrol away
 'Press _E_ to Take _Dinia's Sword_
@@ -22075,6 +22080,7 @@ click Lilmoth
 step
 goto lilmothcity_base 60.26,32.70
 click Dragonstar Stockade
+'Note: You will be trespassing where the guards will attack if they catch you.
 |tip Manually skip to the next step.
 step
 goto lilmothcity_base 64.01,34.88
@@ -22156,6 +22162,165 @@ click Lilmoth
 step
 goto lilmothcity_base 45.31,27.44
 'Follow the road North out of Lilmoth
+|tip Manually skip to the next step.
+step
+goto murkmire_base 72.52,65.96
+'Press _E_ to Take _Mature Bog Willow_
+'Take Bog Willow Bark Oil
+|tip Manually skip to the next step.
+step
+goto murkmire_base 82.83,60.28
+'Press _E_ to Use _Perfumed Snapper Pool_
+'Take Perfumed Snapper Pool
+|tip Manually skip to the next step.
+step
+goto murkmire_base 84.45,62.96
+'Enter the Xinchei-Konu Monument from here
+|tip Manually skip to the next step.
+step
+goto murkmire_base 85.55,60.62
+talk Jekka-Wass Vozei
+accept Monument of Change
+step
+goto murkmire_base 85.54,60.51
+'Press _E_ to Take _The Broken Xinchei-Konu_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 86.41,61.36
+'Press _E_ to Place _Thtithil Indentation_
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Travel to the _Lilmoth_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 49.16,56.23
+talk Nurhei
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 21.27,44.05
+talk Nesh-Deeka
+accept The Sounds of Home
+step
+goto lilmothcity_base 19.72,33.17
+talk Paheiza
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 13.80,26.12
+'Follow the outside perimeter of Lilmoth to the Eastern gate
+|tip Manually skip to the next step.
+step
+goto murkmire_base 77.72,69.77
+'Watch the cut scene
+talk Sulahkeesh
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Travel to the _Lilmoth_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 31.21,43.56
+click Lilmoth Courtinghouse
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 28.73,42.39
+talk Ruja-Wan
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 30.92,43.36
+click Lilmoth
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 31.85,53.30
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 29.86,49.26
+click Marshland Market
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 25.03,55.37
+talk Tolwin Bordier
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 27.62,56.08
+click Lilmoth
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 31.59,57.07
+'Cross the bridge from here
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 36.41,64.13
+click Guild Hall
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 36.66,65.88
+talk Claws-the-Ghosts
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 36.77,65.25
+talk Nesh-Deeka
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 36.69,64.71
+click Lilmoth
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 41.58,64.04
+'Run down the ramp from here
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 55.81,60.94
+'Follow the road East from here
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 85.25,49.42
+'Run up to 3 of the hopping markers to pick up Moss-Footed Croaker
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 50.43,74.94
+'Run to this area and try and catch the Ruby Hopper. They move fast so you may need to use your mount to catch them. If you miss the little guy, it can be picked up at (next step).
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 36.36,43.57
+'The Ruby Hopper will stop here in case you could not catch it in its previous location.
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 46.07,40.88
+'Follow the road north out of Lilmoth
+|tip Manually skip to the next step.
+step
+goto murkmire_base 74.10,70.03
+'Go here to trigger the quest's follow-up step
+|tip Manually skip to the next step.
+step
+goto murkmire_base 75.46,68.03
+'Press _E_ to Take _Fleshflies_
+'Take Fleshflies
+|tip Manually skip to the next step.
+step
+goto murkmire_base 73.65,69.32
+'Press _E_ to _Use Fleshflies_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 73.37,69.48
+'Press _E_ to Take 2 _Indigo Tree Frog_
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 41.33,21.93
+'Press _E_ to Take _Joymallow_
+'Take Joymallow
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 44.29,21.00
+talk Nesh-Deeka
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
 |tip Manually skip to the next step.
 step
 
