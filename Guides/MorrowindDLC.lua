@@ -21806,7 +21806,7 @@ click Murkmire
 |tip Manually skip to the next step.
 step
 goto murkmire_base 49.40,58.56
-'Continue Northwest to the compass Quest marker
+'Continue Northwest to the compass marker
 |tip Manually skip to the next step.
 step
 goto murkmire_base 47.85,58.51
@@ -21838,7 +21838,7 @@ talk Hands-That-Heal
 accept The Burnt Branch
 step
 goto murkmire_base 49.23,71.43
-'Continue Northwest towards the quest marker
+'Continue Northwest towards the compass marker
 |tip Manually skip to the next step.
 step
 goto murkmire_base 45.73,67.07
@@ -21865,7 +21865,7 @@ wayshrine Blackrose
 |tip Manually skip to the next step.
 step
 goto murkmire_base 47.89,62.43
-'Continue Northeast from here towards the quest marker
+'Continue Northeast from here towards the compass marker
 |tip Manually skip to the next step.
 step
 goto murkmire_base 53.99,58.04
@@ -21961,7 +21961,7 @@ click Xuat-Matun - Worship Chamber
 step
 goto blightedbogcavern_base 72.31,58.29
 kill Ojei
-'Pull the mini-boss to the stairs so that you don't pull the alchemists. Periodically run to Haxara to press X to use the healing potions when poisoned.
+'Pull the mini-boss to the stairs to avoid pulling the alchemists mobs. Periodically run to Haxara to press X to use the healing potions when poisoned.
 |tip Manually skip to the next step.
 step
 goto blightedbogcavern_base 72.29,67.51
