@@ -22317,85 +22317,169 @@ goto lilmothcity_base 44.29,21.00
 talk Nesh-Deeka
 |tip Manually skip to the next step.
 step
-
+goto lilmothcity_base 44.86,17.04
+'Head Northwest to the _Gather Stench Sedge_
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 79.02,67.87
+'Press _E_ to Take _Stench Sedge_
+'Take Stench Sedge
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 81.30,69.73
+'Press _E_ to Take _Salt Rush_
+'Take Salt Rush
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 81.30,69.73
+'Press _E_ to _Use Argonian Bowl_
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 80.39,65.23
+'Press _E_ to _Use Toad Musk_
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 80.14,65.05
+'Press _E_ to Use _Croak-Wheel_
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 80.14,65.05
+'Press _E_ to Take _Sun-Blessed Toad_
 |tip Manually skip to the next step.
 step
-
+'Open your map.
+'Travel to the _Lilmoth_ Wayshrine
 |tip Manually skip to the next step.
 step
-
+goto lilmothcity_base 21.23,44.76
+talk Nesh-Deeka
 |tip Manually skip to the next step.
 step
-
+goto lilmothcity_base 20.97,45.27
+click Nesh-Deeka's Music Shop
 |tip Manually skip to the next step.
 step
-
+goto lilmothcity_base 20.35,46.20
+'Press _E_ to Take _Vossa-Satl_
+'Take Vossa-Satl
 |tip Manually skip to the next step.
 step
-
+goto lilmothcity_base 20.13,46.77
+talk Nesh-Deeka
 |tip Manually skip to the next step.
 step
-
+goto lilmothcity_base 20.77,45.55
+click Lilmoth
 |tip Manually skip to the next step.
 step
-
+goto lilmothcity_base 36.14,34.35
+click The Lusty Argonian Footman
 |tip Manually skip to the next step.
 step
-
+goto lilmothcity_base 38.07,34.53
+talk Captain Jimila
 |tip Manually skip to the next step.
 step
-
+goto lilmothcity_base 36.62,34.41
+click Lilmoth
 |tip Manually skip to the next step.
 step
-
+goto lilmothcity_base 20.97,45.27
+click Nesh-Deeka's Music Shop
 |tip Manually skip to the next step.
 step
-
+goto lilmothcity_base 20.58,46.53
+talk Nesh-Deeka
 |tip Manually skip to the next step.
 step
-
+goto lilmothcity_base 20.88,45.57
+click Lilmoth
 |tip Manually skip to the next step.
 step
-
+goto lilmothcity_base 45.01,43.71
+'Press _E_ to Use _Lilmoth Wayshrine_
+'Travel to the _Blackrose_ Wayshrine
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 38.65,55.33
+kill Swallows-the-Sun
+'Press _E_ to Search _Swallows-the-Sun_
+'Loot the Vakka Tablet
+|tip Manually skip to the next step.
+step 
+goto murkmire_base 42.63,59.16
+'Press _E_ to Use _Blackrose Wayshrine_
+'Travel to the _Bright-Throat_ Wayshrine
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 86.31,61.53
+'Press _E_ to Place _Vakka Indentation_
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 85.58,60.57
+talk Jekka-Wass Vozei
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 69.92,61.12
+'Make you way back to the Wayshrine
 |tip Manually skip to the next step.
 step
-
+goto brightthroatvillage_base 29.95,54.62
+click Tree-Minder Pavu's House
 |tip Manually skip to the next step.
 step
-
+goto brightthroatvillage_base 29.57,47.77
+talk Tree-Minder Pavu
 |tip Manually skip to the next step.
 step
-
+goto brightthroatvillage_base 28.99,46.37
+talk Haxara
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 29.60,45.78
+talk Iskenaaz
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 29.44,46.30
+talk Tree-Minder Pavu
+'Here you can decide the fates of Haxara and her daughter. For the sake of this guide, choose _You should accept them back to the tribe._
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 30.14,52.77
+click Bright-Throat Village
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 32.26,54.54
+'Follow the deck North
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 50.12,38.98
+'Jump on top of the crate here and then over the fence
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 56.99,30.90
+talk Hands-That-Heal
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 55.15,32.89
+'Press _E_ to Dig _Dirt Mound_
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 57.51,30.83
+talk Hands-That-Heal
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 22.38,92.70
+talk Xukas
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 22.38,92.70
+'Follow the road Southwest past the Wayshrine
+|tip Manually skip to the next step.
+step
+goto murkmire_base 62.57,62.91
+'Watch the dialog cutscene
+talk Xukas
 |tip Manually skip to the next step.
 step
 
