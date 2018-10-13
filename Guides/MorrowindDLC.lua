@@ -22832,6 +22832,29 @@ goto deadwatervillage_base 57.98,59.11
 talk Jaxsik-Orrn
 |tip Manually skip to the next step.
 step
+goto deadwatervillage_base 39.87,84.04
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto deadwatervillage_base 28.79,80.47
+talk Nisswo Uaxal
+accept Art of the Nisswo
+step
+goto deadwatervillage_base 33.72,91.56
+talk Beel-Ranu
+accept Death Among the Dead-Water
+step
+goto deadwatervillage_base 42.01,73.94
+click Bhoki's House
+|tip Manually skip to the next step.
+step
+
+-- left off here
+
+
+
+|tip Manually skip to the next step.
+step
 goto deadwatervillage_base 80.21,41.05
 'Follow the road East from here to the quest marker
 |tip Manually skip to the next step.
