@@ -591,6 +591,8 @@
 		["Ixtaxh Xanmeer"] = [[sunkenxanmeer01_base]],
 		["Bright-Throat Village"] = [[brightthroatvillage_base]],
 		["Blight Bog Sump"] = [[blightedbogcavern_base]],
+		["Wither-Vault"] = [[withervault_base]],
+		["Swallowed Grove"] = [[UI_Map_swallowedgrove_base]],
 
 	},
 	["Zones"] =
@@ -700,7 +702,8 @@
 		["sunkenxanmeer02_base"] = 			{ name = "Ixtaxh Xanmeer",					id = 434, xoffset = 0.75317409682782, yoffset = 0.79408173509366, xscale = 0.0029336879758033, },
 		["brightthroatvillage_base"] = 		{ name = "Bright-Throat Village",			id = 435, xoffset = 0.75737614087669, yoffset = 0.77139828757502, xscale = 0.010395498957489, },
 		["blightedbogcavern_base"] =		{ name = "Blight Bog Sump",					id = 436, xoffset = 0.73578689124467, yoffset = 0.77812594268062, xscale = 0.00063463609854889, },
-
+		["withervault_base"] =				{ name = "Wither-Vault",					id = 437, xoffset = 0.75657372474803, yoffset = 0.75227456342656, xscale = 0.0040876163999758, },
+		["UI_Map_swallowedgrove_base"] =	{ name = "Swallowed Grove",					id = 438, xoffset = 0.73365114593995, yoffset = 0.76398494838986, xscale = 0.00079220474209164, },
 
 		-- EXISTING
 		["aba-loria_base"] = { name = "Aba-Loria", id = 212, xoffset = 0.403340, yoffset = 0.529272, scale = 0.016623, },
