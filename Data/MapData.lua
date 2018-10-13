@@ -593,6 +593,7 @@
 		["Blight Bog Sump"] = [[blightedbogcavern_base]],
 		["Wither-Vault"] = [[withervault_base]],
 		["Swallowed Grove"] = [[UI_Map_swallowedgrove_base]],
+		["Dead-Water Village"] = [[deadwatervillage_base]],
 
 	},
 	["Zones"] =
@@ -704,6 +705,7 @@
 		["blightedbogcavern_base"] =		{ name = "Blight Bog Sump",					id = 436, xoffset = 0.73578689124467, yoffset = 0.77812594268062, xscale = 0.00063463609854889, },
 		["withervault_base"] =				{ name = "Wither-Vault",					id = 437, xoffset = 0.75657372474803, yoffset = 0.75227456342656, xscale = 0.0040876163999758, },
 		["UI_Map_swallowedgrove_base"] =	{ name = "Swallowed Grove",					id = 438, xoffset = 0.73365114593995, yoffset = 0.76398494838986, xscale = 0.00079220474209164, },
+		["deadwatervillage_base"] = 		{ name = "Dead-Water Village",				id = 439, xoffset = 0.70536139290757, yoffset = 0.75210657580792, xscale = 0.015875559083699, },
 
 		-- EXISTING
 		["aba-loria_base"] = { name = "Aba-Loria", id = 212, xoffset = 0.403340, yoffset = 0.529272, scale = 0.016623, },

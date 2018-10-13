@@ -478,6 +478,7 @@ Data.MapIdsByName = {
 	["Blight Bog Sump"]					= 436,
 	["Wither-Vault"]					= 437,
 	["Swallowed Grove"]					= 438,
+	["Dead-Water Village"]				= 439,
 
 }
 
