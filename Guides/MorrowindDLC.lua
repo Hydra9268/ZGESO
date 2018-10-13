@@ -22759,65 +22759,85 @@ goto murkmire_base 40.35,47.12
 click Swallowed Grove
 |tip Manually skip to the next step.
 step
-goto UI_Map_swallowedgrove_base 50,50
-
+goto UI_Map_swallowedgrove_base 28.54,79.93
+'Continue Southeast from here
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_swallowedgrove_base 35.50,87.85
+talk Many-Whispers
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_swallowedgrove_base 38.48,86.94
+'Pass through this opening
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_swallowedgrove_base 46.14,86.43
+'Follow the path North from here
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_swallowedgrove_base 65.31,65.71
+'Follow the path Northeast from here
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_swallowedgrove_base 69.29,53.76
+'Follow the stream West from here to the quest marker
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_swallowedgrove_base 61.78,53.45
+'Press _E_ to Examine _Mirdamir_
+'Take Ornate Key
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_swallowedgrove_base 61.78,53.45
+'Run up the stairs from here
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_swallowedgrove_base 62.18,59.61
+'Pass through this opening
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_swallowedgrove_base 67.37,60.67
+'Pass through this opening in the rock wall
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_swallowedgrove_base 64.75,65.36
+'Follow the path back to Many-Whispers
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_swallowedgrove_base 35.50,87.85
+talk Many-Whispers
 |tip Manually skip to the next step.
 step
-
+goto UI_Map_swallowedgrove_base 31.82,94.70
+click Murkmire
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 39.23,46.44
+'Follow the path North back to the road 
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 38.97,42.21
+'Follow the road Northwest
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 28.25,36.88
+'Continue past the Black-Water Village gate
 |tip Manually skip to the next step.
 step
-
+goto deadwatervillage_base 72.52,62.82
+wayshrine Dead-Water
 |tip Manually skip to the next step.
 step
-
+goto deadwatervillage_base 57.98,59.11
+talk Jaxsik-Orrn
 |tip Manually skip to the next step.
 step
-
+goto deadwatervillage_base 80.21,41.05
+'Follow the road East from here to the quest marker
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 34.44,37.70
+talk Jaxsik-Orrn
 |tip Manually skip to the next step.
 step
 
