@@ -22442,7 +22442,7 @@ talk Iskenaaz
 step
 goto brightthroatvillage_base 29.44,46.30
 talk Tree-Minder Pavu
-'Here you can decide the fates of Haxara and her daughter. For the sake of this guide, choose _You should accept them back to the tribe._
+'Here you decide the fates of Haxara and her daughter. For the sake of this guide, choose _You should accept them back to the tribe._
 |tip Manually skip to the next step.
 step
 goto brightthroatvillage_base 30.14,52.77
@@ -22482,45 +22482,284 @@ goto murkmire_base 62.57,62.91
 talk Xukas
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 60.07,57.10
+'Crouch and follow the hidden damaged plants to here
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 57.57,53.98
+'Crouch and follow the hidden damaged plants to here
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 52.14,52.92
+'Crouch and follow the hidden damaged plants to here
+talk Jaxsik-Orrn
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 51.89,55.12
+'Press _E_ to Destroy _Supply Crate_
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 51.92,56.07
+'Press _E_ to Burn _Blackguard Supply Wagon_
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 50.40,55.10
+'Press _E_ to Burn _Blackguard Supply Wagon_
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 49.98,54.78
+'Press _E_ to Destroy _Supply Crate_
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 49.18,54.54
+'Press _E_ to Burn _Blackguard Supply Wagon_
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 50.19,53.15
+'Press _E_ to Destroy _Supply Crate_
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 46.71,52.54
+'Press _E_ to Destroy _Supply Crate_
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 47.42,53.84
+'Press _E_ to Burn _Blackguard Supply Wagon_
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 46.90,57.43
+'Press _E_ to Open _Paddock Gate_
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 48.50,56.09
+'Press _E_ to Destroy _Supply Crate_
 |tip Manually skip to the next step.
 step
+goto murkmire_base 48.83,57.19
+'Press _E_ to Destroy _Supply Crate_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 47.57,56.99
+'At the fork in the path, go right from here
+|tip Manually skip to the next step.
+step
+goto murkmire_base 42.73,55.95
+talk Jaxsik-Orrn
+|tip Manually skip to the next step.
+step
+goto murkmire_base 42.73,55.95
+talk Xukas
+|tip Manually skip to the next step.
+step
+goto murkmire_base 42.61,56.06
+talk Captain Hostia
+|tip Manually skip to the next step.
+step
+'Here you decide the fate of Captain Hostia. For the sake of this guide, have Jaxsik-Orrn kill her.
+talk Jaxsik-Orrn
+|tip Manually skip to the next step.
+step
+goto murkmire_base 42.61,56.06
+talk Jaxsik-Orrn
+|tip Manually skip to the next step.
+step
+goto murkmire_base 42.62,59.18
+'Press _E_ to Use _Blackrose Wayshrine_
+'Travel to Lilmoth Wayshrine
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 48.70,26.31
+click Cyrodilic Collections
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 50.30,26.53
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 49.66,24.70
+talk Famia Mercius
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 49.59,25.56
+talk Kassandra
+accept Whispers in the Wood
+step
+'Open your map.
+'Travel to the _Bright-Throat_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto murkmire_base 70.13,60.19
+'Cross the bridge inside Bright-Throat Village from here
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 24.64,75.74
+'At the fork follow the path left
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 14.21,59.17
+'Continue North from here towards the quest marker on the compass
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 18.43,35.76
+talk Xukas
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 16.77,33.47
+'Cross the bridge from here
+|tip Manually skip to the next step.
+step
+goto murkmire_base 66.28,49.49
+talk Chime-Maker Shuvu
+|tip Manually skip to the next step.
+step
+goto murkmire_base 70.22,45.54
+'Run up the stairs here
+|tip Manually skip to the next step.
+step
+goto murkmire_base 71.25,43.62
+talk Overseer Shiralas
+accept Lost in Murkmire
+step
+goto murkmire_base 66.80,41.87
+'Press _E_ to _Use Drooler's Whistle_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 66.80,41.87
+'Press _E_ to Pet _Drooler_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 71.49,38.88
+'Follow Drooler and
+talk Varona Beloren
+|tip Manually skip to the next step.
+step
+goto murkmire_base 69.52,34.48
+'Make to way past this stone archway
+|tip Manually skip to the next step.
+step
+goto murkmire_base 70.36,33.95
+click Wither-Vault
+|tip Manually skip to the next step.
+step
+goto withervault_base 36.70,36.57
+'Press _E_ to Take _The Remnant Chime_
+'Take The Remnant Chime
+|tip Manually skip to the next step.
+step
+goto withervault_base 85.80,78.20
+click Murkmire
+|tip Manually skip to the next step.
+step
+goto murkmire_base 70.74,34.55
+'The safest path is to drop down here and continue directly South
+|tip Manually skip to the next step.
+step
+goto murkmire_base 72.47,40.16
+'Follow the path South from here
+|tip Manually skip to the next step.
+step
+goto murkmire_base 70.50,44.32
+'Run down the stairs from here
+|tip Manually skip to the next step.
+step
+goto murkmire_base 69.64,46.37
+'Drop down from here
+|tip Manually skip to the next step.
+step
+goto murkmire_base 66.17,49.40
+talk Chime-Maker Shuvu
+|tip Manually skip to the next step.
+step
+goto murkmire_base 65.59,49.41
+'Press _E_ to Use _Listening-Tree Branch_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 66.32,49.88
+'Press _E_ to _Use Argonian Prayer-Stone_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 66.18,49.56
+talk Xukas
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Travel to the _Blackrose_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto murkmire_base 42.74,59.77
+'Cross both bridges Southeast
+|tip Manually skip to the next step.
+step
+goto murkmire_base 47.49,62.36
+'At the fork in the road, go right from here
+|tip Manually skip to the next step.
+step
+goto murkmire_base 50.72,71.96
+talk Famia Mercius
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Travel to the _Blackrose_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto murkmire_base 37.15,56.43
+'Continue Southwest from here
+|tip Manually skip to the next step.
+step
+goto murkmire_base 32.89,64.37
+talk Lady Clarisse Laurent
+accept Something About Stibbons
+step
+goto murkmire_base 33.12,63.26
+'Press _E_ to Examine _Lady Laurent's Hand-Mirror_
+'Take Lady Laurent's Hand-Mirror
+|tip Manually skip to the next step.
+step
+goto murkmire_base 32.89,64.37
+'Press _E_ to Rescue _Stibbons_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 32.89,64.37
+talk Lady Clarisse Laurent
+|tip Manually skip to the next step.
+step
+goto murkmire_base 31.84,62.20
+talk Kassandra
+|tip Manually skip to the next step.
+step
+goto murkmire_base 32.06,62.08
+'Press _E_ to Examine _Heetzasi's Journal, Page 1_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 32.06,61.95
+'Press _E_ to Examine _Heetzasi's Journal, Page 3_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 31.85,61.75
+'Press _E_ to Examine _Heetzasi's Journal, Page 2_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 31.80,62.06
+talk Kassandra
+|tip Manually skip to the next step.
+step
+goto murkmire_base 32.40,61.38
+'Drop down here and continue Northeast until you reach the main road
+|tip Manually skip to the next step.
+step
+goto murkmire_base 36.90,56.47
+'Follow the road Northwest from here
+|tip Manually skip to the next step.
+step
+goto murkmire_base 35.41,51.39
+'Continue Northeast from here towards to the quest marker
+|tip Manually skip to the next step.
+step
+goto murkmire_base 40.35,47.12
+click Swallowed Grove
+|tip Manually skip to the next step.
+step
+goto UI_Map_swallowedgrove_base 50,50
 
 |tip Manually skip to the next step.
 step
