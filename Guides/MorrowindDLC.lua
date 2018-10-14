@@ -23024,7 +23024,7 @@ talk Kishi
 step
 goto murkmire_base 07.51,37.27
 kill Deroh-Zah 
-'Situational awareness is vital on this boss fight. Avoid its smaller localized telegraphs. When Deroh-Zah initiates a wide-area AOE telegraph, quickly aim for one of the Tamed Vine-Tongue on top of the surrounding walls. You have 2-3 seconds. After this, Deroh-Zah is weakened for a few seconds.
+'Situational awareness is vital on this boss fight. Avoid its smaller localized telegraphs and avoid the quicksand. When Deroh-Zah initiates a wide-area AOE telegraph, quickly aim for one of the Tamed Vine-Tongue on top of the surrounding walls. You have 2-3 seconds. After this, Deroh-Zah is weakened for a few seconds.
 |tip Manually skip to the next step.
 step
 goto murkmire_base 07.47,34.61
