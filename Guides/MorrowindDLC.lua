@@ -22836,10 +22836,6 @@ goto deadwatervillage_base 39.87,84.04
 'Run up the stairs from here
 |tip Manually skip to the next step.
 step
-goto deadwatervillage_base 28.79,80.47
-talk Nisswo Uaxal
-accept Art of the Nisswo
-step
 goto deadwatervillage_base 33.72,91.56
 talk Beel-Ranu
 accept Death Among the Dead-Water
@@ -22848,11 +22844,212 @@ goto deadwatervillage_base 42.01,73.94
 click Bhoki's House
 |tip Manually skip to the next step.
 step
-
--- left off here
-
-
-
+goto deadwatervillage_base 38.62,76.46
+'Press _E_ to Examine _Letter to Bhoki_
+|tip Manually skip to the next step.
+step
+goto deadwatervillage_base 41.60,74.10
+click Dead-Water Village
+|tip Manually skip to the next step.
+step
+goto deadwatervillage_base 62.67,55.27
+talk Bhoki
+|tip Manually skip to the next step.
+step
+goto deadwatervillage_base 62.92,47.67
+'Follow the road Northwest
+|tip Manually skip to the next step.
+step
+goto deadwatervillage_base 28.12,26.07
+kill Bogshell
+'Simple boss fight. You'll spot the mechanics very quickly.
+|tip Manually skip to the next step.
+step
+goto deadwatervillage_base 27.94,26.12
+'Press _E_ to Untie _Kishi's Bindings_
+|tip Manually skip to the next step.
+step
+goto deadwatervillage_base 40.85,26.48
+talk Kishi
+|tip Manually skip to the next step.
+step
+goto deadwatervillage_base 47.68,32.34
+'Follow the path East and then SouthEast from here
+|tip Manually skip to the next step.
+step
+goto deadwatervillage_base 42.01,73.94
+click Bhoki's House
+|tip Manually skip to the next step.
+step
+goto deadwatervillage_base 39.65,75.95
+talk Bhoki
+|tip Manually skip to the next step.
+step
+goto deadwatervillage_base 38.55,78.32
+'Press _E_ to Take _Bag of Fire Stones_
+'Take Fire Stones
+|tip Manually skip to the next step.
+step
+goto deadwatervillage_base 39.52,84.27
+'Run up the stairs
+|tip Manually skip to the next step.
+step
+goto deadwatervillage_base 36.15,88.55
+'Run down the stairs
+|tip Manually skip to the next step.
+step
+goto murkmire_base 17.98,48.15
+'Aim for the Tamed Vine-Tongue up on the perch
+'Press _E_ to Use Fire Stones _Tamed Vine-Tongue_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 17.32,49.24
+'Aim for the Tamed Vine-Tongue across the quicksand
+'Press _E_ to Use Fire Stones _Tamed Vine-Tongue_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 17.50,50.52
+'Aim for the Tamed Vine-Tongue across the quicksand
+'Press _E_ to Use Fire Stones _Tamed Vine-Tongue_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 16.35,51.71
+talk Kishi
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Travel to the _Black-Water_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto deadwatervillage_base 44.58,81.64
+talk Raj-Kaal Seelan
+|tip Manually skip to the next step.
+step
+goto deadwatervillage_base 39.52,84.27
+'Run up the stairs
+|tip Manually skip to the next step.
+step
+goto deadwatervillage_base 36.15,88.55
+'Run down the stairs
+|tip Manually skip to the next step.
+step
+goto deadwatervillage_base 31.73,92.42
+'Follow the path Northwest from here to the quest marker
+|tip Manually skip to the next step.
+step
+goto murkmire_base 11.51,40.09
+talk Kishi
+|tip Manually skip to the next step.
+step
+goto murkmire_base 11.29,40.39
+click The Path of the Lily
+|tip Manually skip to the next step.
+step
+goto murkmire_base 11.03,41.59
+'Aim for the Tamed Vine-Tongue across the quicksand
+'Press _E_ to Use Kishi's Arrow _Tamed Vine-Tongue_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 10.80,42.97
+'Aim for the Tamed Vine-Tongue across the quicksand
+'Press _E_ to Use Kishi's Arrow _Tamed Vine-Tongue_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 10.30,44.28
+'Aim for the Tamed Vine-Tongue across the quicksand
+'Press _E_ to Use Kishi's Arrow _Tamed Vine-Tongue_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 10.91,45.26
+'Aim for the Tamed Vine-Tongue across the quicksand
+'Press _E_ to Use Kishi's Arrow _Tamed Vine-Tongue_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 10.43,46.46
+'Aim for the Tamed Vine-Tongue across the quicksand
+'Press _E_ to Use Kishi's Arrow _Tamed Vine-Tongue_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 11.33,48.93
+'Aim for the Path Signal Totem
+'Press _E_ to Use Kishi's Arrow _Path Signal Totem_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 11.33,48.93
+talk Kishi
+'For this part of the Trial best to _SNEAK_ through so that you can avoid the plants. You will likely need to fight the beasts.
+|tip Manually skip to the next step.
+step
+goto murkmire_base 14.83,49.88
+'Continue following the path in _SNEAK_ mode
+|tip Manually skip to the next step.
+step
+goto murkmire_base 13.60,48.05
+'_SNEAK_ passed this archway
+|tip Manually skip to the next step.
+step
+goto murkmire_base 14.26,47.62
+'Wait for the _Haj Mota_ to pass before continuing forward
+|tip Manually skip to the next step.
+step
+goto murkmire_base 15.50,47.09
+'Aim for the The Path's Totem
+'Press _E_ to Use Kishi's Arrow _The Path's Totem_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 15.36,46.45
+'_SNEAK_ passed this wall opening
+|tip Manually skip to the next step.
+step
+goto murkmire_base 13.87,45.83
+'_SNEAK_ Northwest along the left side to avoid the _Haj Mota_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 13.05,44.70
+'_SNEAK_ passed this wall opening
+|tip Manually skip to the next step.
+step
+goto murkmire_base 13.05,44.42
+'Jump over the wall here 
+|tip Manually skip to the next step.
+step
+goto murkmire_base 12.43,43.92
+'Aim for the The Path's Totem
+'Press _E_ to Use Kishi's Arrow _The Path's Totem_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 08.84,40.80
+talk Kishi
+|tip Manually skip to the next step.
+step
+goto murkmire_base 07.51,37.27
+kill Deroh-Zah 
+'Situational awareness is vital on this boss fight. Avoid its smaller localized telegraphs. When Deroh-Zah initiates a wide-area AOE telegraph, quickly aim for one of the Tamed Vine-Tongue on top of the surrounding walls. You have 2-3 seconds. After this, Deroh-Zah is weakened for a few seconds.
+|tip Manually skip to the next step.
+step
+goto murkmire_base 07.47,34.61
+'Press _E_ to Take _Sacred Lily_
+'Take Sacred Lily
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Travel to the _Dead-Water_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto deadwatervillage_base 44.53,83.92
+talk Raj-Kaal Seelan
+|tip Manually skip to the next step.
+step
+goto deadwatervillage_base 42.09,73.76
+click Bhoki's House
+|tip Manually skip to the next step.
+step
+goto deadwatervillage_base 37.74,78.20
+talk Kishi
+|tip Manually skip to the next step.
+step
+goto deadwatervillage_base 41.60,74.18
+click Dead-Water Village
 |tip Manually skip to the next step.
 step
 goto deadwatervillage_base 80.21,41.05
