@@ -23060,145 +23060,201 @@ goto murkmire_base 34.44,37.70
 talk Jaxsik-Orrn
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 36.63,37.30
+'Press _E_ to Destroy _Bog-Blight Fumer_
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 38.57,32.02
+'Press _E_ to Search _Blackguard Ranger_
+'Take Hist Wood Grave-Stake
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 35.50,33.08
+'Press _E_ to Destroy _Bog-Blight Fumer_
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 34.60,35.92
+'Press _E_ to Search _Blackguard Ranger_
+'Take Hist Wood Grave-Stake
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 30.43,34.07
+'Press _E_ to Destroy _Bog-Blight Fumer_
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 27.50,33.11
+'Press _E_ to Search _Blackguard Chemist_
+'Take Hist Wood Grave-Stake
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 28.45,28.99
+'_Sneak_ up the hill. Avoid the patrolling _Haj Mota_.
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 30.40,28.35
+'Follow the rocks North. Ignore the Pewter Seam. It'll pull mobs.
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 30.83,27.58
+talk Jaxsik-Orrn
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 29.92,27.17
+'Drop down here. Continuing West, avoid the patrolling _Haj Mota_, and the _Argonian Behemoth_ a few yards away.
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 22.39,28.24
+click Tomb of Many Spears
 |tip Manually skip to the next step.
 step
-
+goto Tombofspears_base 39.85,60.94
+kill Etra of the Many Spears
+'Fairly simple boss fight. Avoid it's slime pools. When Etra's health drops to a certain percentage, it will become unattackable and sent out slime to create four mobs. Later in the fight, when its health reaches another percentage, the Etra will do the same thing, but this time it will join the battle with the adds.
 |tip Manually skip to the next step.
 step
-
+goto Tombofspears_base 39.85,60.94
+'Press _E_ to Take _Etra's Grave-Stake_
+'Take Etra's Grave-Stake
+'Do so quickly. The Etra respawns reasonably quickly.
 |tip Manually skip to the next step.
 step
-
+goto Tombofspears_base 44.02,58.72
+'Open your map.
+'Travel to the _Dead-Water_ Wayshrine
 |tip Manually skip to the next step.
 step
-
+goto deadwatervillage_base 54.74,77.37
+click Grave-Singer's Lodge
 |tip Manually skip to the next step.
 step
-
+goto deadwatervillage_base 56.25,78.05
+talk Jaxsik-Orrn
 |tip Manually skip to the next step.
 step
-
+goto deadwatervillage_base 55.23,78.06
+click Dead-Water Village
 |tip Manually skip to the next step.
 step
-
+goto deadwatervillage_base 71.13,48.92
+'Following the road Northeast past this archway and out of Dead-Water Village
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 55.08,40.43
+'At the fork in the road, go left from here
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 61.07,34.44
+'At the fork in the road, take the path left from here
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 64.06,38.35
+'At the fork in the path, take the path left from here
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 66.64,37.63
+talk Ux-Deelith Mezatil
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 67.10,37.14
+'Drop down here
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 71.23,36.95
+'Continue Southeast from here. Stay in _Sneak_ mode to avoid high-level mobs.
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 76.41,40.49
+'Press _E_ to Read _Vanthongar's Letter_
+accept A Life in Carvings
+step
+goto murkmire_base 76.41,40.49
+'Press _E_ to Take _Argonian Grave-Stake_
+'Take Argonian Grave-Stake
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 75.17,42.88
+'Continue South from here towards the quest marker on the compass
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 75.74,45.43
+'Go here to trigger the quest's follow-up step
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 75.33,46.53
+'Press _E_ to Kick _Hummerwing Hive_
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 74.29,44.05
+'Follow the path South from here
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 72.93,46.33
+'Follow the path West from here
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 70.24,45.54
+'Run up the stairs from here
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 70.60,44.02
+'Follow the path North from here
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 70.71,42.06
+'Follow the path Northwest from here
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 56.54,37.88
+'Race across the swamp Northwest to here to trigger the quest's follow-up step
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 59.39,36.54
+'Press _E_ to Signal Stibbons _Snake Den_
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 53.57,37.05
+talk Stibbons
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 56.69,37.24
+'Follow the road Northeast from here
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 61.14,34.36
+'At the fork in the road, take the path right from here
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 63.65,37.58
+'Continue East from here towards the quest marker on the compass
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 66.59,37.60
+Watch the dialog cutscene, then
+talk Lady Clarisse Laurent
 |tip Manually skip to the next step.
 step
-
+'Open your map.
+'Travel to the _Bright-Throat_ Wayshrine
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 70.10,60.33
+'Cross the bridge into Bright-Throat Village
 |tip Manually skip to the next step.
 step
-
+goto brightthroatvillage_base 29.15,75.90
+'Run up this ramp from here towards the quest marker on the compass
 |tip Manually skip to the next step.
 step
-
+goto brightthroatvillage_base 22.69,37.58
+'Run up this ramp from here towards the quest marker on the compass
 |tip Manually skip to the next step.
 step
-
+goto brightthroatvillage_base 40.73,37.50
+talk Grave-Singer Xaleez
 |tip Manually skip to the next step.
 step
-
-|tip Manually skip to the next step.
-step
-
+goto brightthroatvillage_base 16.30,33.29
+'Cross the bridge out of Bright-Throat Village
 |tip Manually skip to the next step.
 step
 
