@@ -479,6 +479,7 @@ Data.MapIdsByName = {
 	["Wither-Vault"]					= 437,
 	["Swallowed Grove"]					= 438,
 	["Dead-Water Village"]				= 439,
+	["Tomb of Many Spears"]				= 440,
 
 }
 

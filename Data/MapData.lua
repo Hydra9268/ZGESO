@@ -594,6 +594,7 @@
 		["Wither-Vault"] = [[withervault_base]],
 		["Swallowed Grove"] = [[UI_Map_swallowedgrove_base]],
 		["Dead-Water Village"] = [[deadwatervillage_base]],
+		["Tomb of Many Spears"] = [[Tombofspears_base]],
 
 	},
 	["Zones"] =
@@ -706,6 +707,7 @@
 		["withervault_base"] =				{ name = "Wither-Vault",					id = 437, xoffset = 0.75657372474803, yoffset = 0.75227456342656, xscale = 0.0040876163999758, },
 		["UI_Map_swallowedgrove_base"] =	{ name = "Swallowed Grove",					id = 438, xoffset = 0.73365114593995, yoffset = 0.76398494838986, xscale = 0.00079220474209164, },
 		["deadwatervillage_base"] = 		{ name = "Dead-Water Village",				id = 439, xoffset = 0.70536139290757, yoffset = 0.75210657580792, xscale = 0.015875559083699, },
+		["Tombofspears_base"] = 			{ name = "Tomb of Many Spears",				id = 440, xoffset = 0.71285101844229, yoffset = 0.74899462924402, xscale = 0.00075977533963856, },
 
 		-- EXISTING
 		["aba-loria_base"] = { name = "Aba-Loria", id = 212, xoffset = 0.403340, yoffset = 0.529272, scale = 0.016623, },
