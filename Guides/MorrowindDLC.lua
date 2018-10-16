@@ -23241,20 +23241,370 @@ goto murkmire_base 70.10,60.33
 'Cross the bridge into Bright-Throat Village
 |tip Manually skip to the next step.
 step
-goto brightthroatvillage_base 29.15,75.90
-'Run up this ramp from here towards the quest marker on the compass
-|tip Manually skip to the next step.
-step
-goto brightthroatvillage_base 22.69,37.58
-'Run up this ramp from here towards the quest marker on the compass
-|tip Manually skip to the next step.
-step
 goto brightthroatvillage_base 40.73,37.50
 talk Grave-Singer Xaleez
 |tip Manually skip to the next step.
 step
 goto brightthroatvillage_base 16.30,33.29
 'Cross the bridge out of Bright-Throat Village
+|tip Manually skip to the next step.
+step
+goto murkmire_base 63.79,45.41
+'Run up all three flights of stairs
+|tip Manually skip to the next step.
+step
+goto murkmire_base 63.28,35.50
+'Continue Northeast from here towards the quest marker on the compass
+|tip Manually skip to the next step.
+step
+goto murkmire_base 67.39,30.28
+'Press _E_ to Place _Dirt Mound_
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Travel to the _Bright-Throat_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto murkmire_base 70.10,60.33
+'Cross the bridge into Bright-Throat Village
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 40.73,37.50
+talk Grave-Singer Xaleez
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Travel to the _Lilmoth_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 48.77,26.41
+click Cyrodilic Collections
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 49.56,25.15
+talk Famia Mercius
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 49.38,24.99
+talk Kassandra
+accept Death and Dreaming
+step
+goto lilmothcity_base 48.96,25.88
+click Lilmoth
+|tip Manually skip to the next step.
+step
+goto lilmothcity_base 40.33,52.63
+'Press _E_ to Travel _Kassandra's Boat_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 40.37,47.13
+click Swallowed Grove
+|tip Manually skip to the next step.
+step
+goto UI_Map_swallowedgrove_base 28.54,79.93
+'Continue Southeast from here
+|tip Manually skip to the next step.
+step
+goto UI_Map_swallowedgrove_base 38.48,86.94
+'Pass through this opening
+|tip Manually skip to the next step.
+step
+goto UI_Map_swallowedgrove_base 46.14,86.43
+'Follow the path North from here
+|tip Manually skip to the next step.
+step
+goto UI_Map_swallowedgrove_base 70.35,61.17
+'Meet Xukas here
+|tip Manually skip to the next step.
+step
+goto UI_Map_swallowedgrove_base 61.27,59.96
+talk Xukas
+|tip Manually skip to the next step.
+step
+goto UI_Map_swallowedgrove_base 68.94,58.09
+'Drop down here
+|tip Manually skip to the next step.
+step
+goto UI_Map_swallowedgrove_base 63.09,43.42
+'Meet Jaxsik-Orrn here
+|tip Manually skip to the next step.
+step
+goto UI_Map_swallowedgrove_base 58.70,44.83
+talk Jaxsik-Orrn
+|tip Manually skip to the next step.
+step
+goto UI_Map_swallowedgrove_base 70.45,43.97
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto UI_Map_swallowedgrove_base 76.80,41.81
+kill Aki-Kahz, Bringer of Dust
+'Simple boss fight. DPS and avoid AOE telegraphs. Note: Loot and move. Aki-Kahz is on a fast respawn timer.
+|tip Manually skip to the next step.
+step
+goto UI_Map_swallowedgrove_base 67.52,30.06
+click The Dreaming Nest
+|tip Manually skip to the next step.
+step
+goto themists01_base 63.01,31.51
+'Press _E_ to Inhale _Ceremonial Brazier_
+|tip Manually skip to the next step.
+step
+goto themists01_base 56.16,26.03
+'Press _E_ to Examine _Hunting Party Mural_
+|tip Manually skip to the next step.
+step
+goto themists02_base 27.17,55.09
+'Go here to trigger the quest's follow-up step
+|tip Manually skip to the next step.
+step
+goto themists02_base 44.15,38.11
+'Follow the river Southeast from here. Stay on this side to avoid the _Haj Mota_
+|tip Manually skip to the next step.
+step
+goto themists02_base 57.74,46.04
+'Go here to trigger the quest's follow-up step
+|tip Manually skip to the next step.
+step
+goto themists02_base 65.66,58.49
+kill Fat Gixthi
+'Simple boss fight. DPS and avoid front-funnel telegraphs.
+|tip Manually skip to the next step.
+step
+goto themists02_base 86.27,20.35
+'Following the river to the end and watch the cut-scene
+|tip Manually skip to the next step.
+step
+goto themists01_base 71.23,27.40
+'Press _E_ to Examine _Burned Village Mural_
+|tip Manually skip to the next step.
+step
+goto themists03_base 38.78,42.45
+'Go here to trigger the quest's follow-up step
+|tip Manually skip to the next step.
+step
+goto themists03_base 35.51,57.96
+'Douse the flames three times
+|tip Manually skip to the next step.
+step
+goto themists03_base 36.33,58.78
+'Press _E_ to Free _Anash_
+|tip Manually skip to the next step.
+step
+goto themists03_base 48.57,50.61
+'Go here to trigger the quest's follow-up step
+|tip Manually skip to the next step.
+step
+goto themists03_base 34.69,43.67
+click Sap-Speaker's Lodge
+|tip Manually skip to the next step.
+step
+goto themists03_base 32.24,37.55
+'Press _E_ to Search _ Sap-Speaker's Chest_
+'Take Storehouse Key
+|tip Manually skip to the next step.
+step
+goto themists03_base 34.29,42.86
+click Murkmire
+|tip Manually skip to the next step.
+step
+goto themists03_base 48.57,50.61
+click Storehouse
+|tip Manually skip to the next step.
+step
+goto themists03_base 50.20,50.20
+'Press _E_ to Bandage _Peexalt_
+|tip Manually skip to the next step.
+step
+goto themists03_base 49.39,50.20
+click Murkmire
+|tip Manually skip to the next step.
+step
+goto themists03_base 69.80,58.37
+'Go here to kill the Ayleids to trigger the quest's follow-up step
+|tip Manually skip to the next step.
+step
+goto themists03_base 63.27,55.10
+'Run up onto the bank here
+|tip Manually skip to the next step.
+step
+goto themists03_base 62.04,40.00
+talk Kasa-Jeen
+|tip Manually skip to the next step.
+step
+goto themists03_base 49.39,28.16
+'Press _E_ to Search _Honei_
+'Take Honei's Charm
+|tip Manually skip to the next step.
+step
+goto themists03_base 62.04,39.59
+talk Kasa-Jeen
+|tip Manually skip to the next step.
+step
+goto themists01_base 63.01,23.29
+'Press _E_ to Examine _Hist Tree Mural_
+|tip Manually skip to the next step.
+step
+goto themists04_base 48.44,39.06
+'Go here to trigger the quest's follow-up step
+|tip Manually skip to the next step.
+step
+goto themists04_base 48.44,60.94
+'Defeat the waves of mobs, then fight _Myndhal_. Simple boss fight.
+|tip Manually skip to the next step.
+step
+goto themists04_base 48.44,64.06
+talk Sap-Speaker Kuzei
+|tip Manually skip to the next step.
+step
+goto themists04_base 48.44,64.06
+'Press _E_ to Take _Sap-Speaker's Staff_
+|tip Manually skip to the next step.
+step
+'Exit The Dreaming Nest back to the Swallowed Grove
+|tip Manually skip to the next step.
+step
+goto UI_Map_swallowedgrove_base 56.23,42.61
+'Drop down here
+|tip Manually skip to the next step.
+step
+goto UI_Map_swallowedgrove_base 56.23,48.26
+click Murkmire
+|tip Manually skip to the next step.
+step
+goto murkmire_base 42.21,48.89
+talk Xukas
+accept The Swamp and the Serpent
+step
+goto murkmire_base 40.83,48.45
+'Follow the path North from here to the main road
+|tip Manually skip to the next step.
+step
+goto murkmire_base 38.67,42.10
+'Follow the road East from here towards the quest marker on the compass
+|tip Manually skip to the next step.
+step
+goto murkmire_base 61.29,33.75
+'Continue North passed this passageway
+|tip Manually skip to the next step.
+step
+goto murkmire_base 54.15,29.13
+talk Jaxsik-Orrn
+|tip Manually skip to the next step.
+step
+goto murkmire_base 53.94,29.06
+talk Xukas
+|tip Manually skip to the next step.
+step
+goto murkmire_base 52.50,27.60
+'Continue following the swamp North from here
+|tip Manually skip to the next step.
+step
+goto murkmire_base 54.36,23.08
+'Continue East from here
+|tip Manually skip to the next step.
+step
+goto murkmire_base 58.14,24.81
+'Continue East from here
+|tip Manually skip to the next step.
+step
+goto murkmire_base 60.61,23.84
+'Continue East from here
+|tip Manually skip to the next step.
+step
+goto murkmire_base 63.35,23.78
+click Xul-Thuxis
+|tip Manually skip to the next step.
+step
+goto DeepMire01_base 50,50
+'
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
+|tip Manually skip to the next step.
+step
+
 |tip Manually skip to the next step.
 step
 
