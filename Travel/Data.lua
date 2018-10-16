@@ -480,6 +480,9 @@ Data.MapIdsByName = {
 	["Swallowed Grove"]					= 438,
 	["Dead-Water Village"]				= 439,
 	["Tomb of Many Spears"]				= 440,
+	["The Dreaming Nest"]				= 441,
+	["The Mists"]						= 442,
+	["Xul-Thuxis"]						= 443,
 
 }
 

@@ -595,6 +595,11 @@
 		["Swallowed Grove"] = [[UI_Map_swallowedgrove_base]],
 		["Dead-Water Village"] = [[deadwatervillage_base]],
 		["Tomb of Many Spears"] = [[Tombofspears_base]],
+		["The Dreaming Nest"] = [[themists01_base]],
+		["The Mists"] = [[themists02_base]],
+		["The Mists"] = [[themists03_base]],
+		["The Mists"] = [[themists04_base]],
+		["Xul-Thuxis"] = [[DeepMire01_base]],
 
 	},
 	["Zones"] =
@@ -708,6 +713,11 @@
 		["UI_Map_swallowedgrove_base"] =	{ name = "Swallowed Grove",					id = 438, xoffset = 0.73365114593995, yoffset = 0.76398494838986, xscale = 0.00079220474209164, },
 		["deadwatervillage_base"] = 		{ name = "Dead-Water Village",				id = 439, xoffset = 0.70536139290757, yoffset = 0.75210657580792, xscale = 0.015875559083699, },
 		["Tombofspears_base"] = 			{ name = "Tomb of Many Spears",				id = 440, xoffset = 0.71285101844229, yoffset = 0.74899462924402, xscale = 0.00075977533963856, },
+		["themists01_base"] =				{ name = "The Dreaming Nest",				id = 441, xoffset = 0.73417371247333, yoffset = 0.76420226419663, xscale = 2.8730371153157e-05, },
+		["themists02_base"] =				{ name = "The Mists",						id = 442, xoffset = 0.7341687785178, yoffset = 0.76409854577478, xscale = 0.00010493168744258, },
+		["themists03_base"] =				{ name = "The Mists",						id = 442, xoffset = 0.73428046791495, yoffset = 0.76409044117194, xscale = 9.6995010389015e-05, },
+		["themists04_base"] =				{ name = "The Mists",						id = 442, xoffset = 0.73426037512513, yoffset = 0.76426446080645, xscale = 5.1951607963921e-05, },
+		["DeepMire01_base"] =				{ name = "Xul-Thuxis",						id = 443, xoffset = 0.75298583082112, yoffset = 0.74548884073989, xscale = 0.0020728892260689, },
 
 		-- EXISTING
 		["aba-loria_base"] = { name = "Aba-Loria", id = 212, xoffset = 0.403340, yoffset = 0.529272, scale = 0.016623, },
