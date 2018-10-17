@@ -21341,7 +21341,7 @@ step
 ]])
 ZGV:RegisterGuide("LEVELING\\Murkmire",[[
 loadingimage charload_01.dds
-description Delve into the treacherous swamps and jungles of Argonia and discover a hidden world as dangerous as it is beautiful.
+description Investigate Murkmire's long-forgotten past and help an Imperial scholar recover a mysterious and powerful relic take will take you deep into Black Marsh, its history, and its people. 
 step
 'Press _U_ to open your _Collections_
 'Click over to the _Stories_ tab and look under the _Zone DLC_ section:
