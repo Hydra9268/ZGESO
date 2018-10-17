@@ -22797,7 +22797,7 @@ goto UI_Map_swallowedgrove_base 62.18,59.61
 |tip Manually skip to the next step.
 step
 goto UI_Map_swallowedgrove_base 67.37,60.67
-'Pass through this opening in the rock wall
+'Pass through the breach in the wall
 |tip Manually skip to the next step.
 step
 goto UI_Map_swallowedgrove_base 64.75,65.36
@@ -23516,8 +23516,434 @@ goto murkmire_base 63.35,23.78
 click Xul-Thuxis
 |tip Manually skip to the next step.
 step
-goto DeepMire01_base 50,50
-'
+goto DeepMire01_base 36.93,19.07
+'Run down the stairs from here
+|tip Manually skip to the next step.
+step
+goto DeepMire01_base 43.47,40.81
+'Sneak East past this passage way
+|tip Manually skip to the next step.
+step
+goto DeepMire01_base 68.47,40.15
+'Press _E_ to Examine _Letter to Kassandra_
+|tip Manually skip to the next step.
+step
+goto DeepMire01_base 69.25,41.54
+'Press _E_ to Examine _Crumbled Wall_
+'Watch the dialog cutscene
+|tip Manually skip to the next step.
+step
+goto DeepMire01_base 56.33,44.92
+'Sneak up the stairs from here
+|tip Manually skip to the next step.
+step
+goto DeepMire01_base 47.86,52.57
+'Drop down here
+|tip Manually skip to the next step.
+step
+goto DeepMire01_base 45.41,60.98
+'Sneak to here
+|tip Manually skip to the next step.
+step
+goto DeepMire01_base 48.98,77.93
+click Xul-Thuxis Temple
+|tip Manually skip to the next step.
+step
+goto DeepMire02_base 83.11,53.11
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto DeepMire02_base 73.01,68.08
+click Xul-Thuxis Antechamber
+|tip Manually skip to the next step.
+step
+goto DeepMire02_base 60.10,63.31
+'After the cutscene...
+click Xul-Thuxis Passage
+|tip Manually skip to the next step.
+step
+goto DeepMire02_base 40.62,48.30
+'Continue following the corridor from here
+|tip Manually skip to the next step.
+step
+goto DeepMire02_base 20.33,40.49
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto DeepMire02_base 23.46,25.14
+click Xul-Thuxis Overlook
+|tip Manually skip to the next step.
+step
+goto DeepMire01_base 24.58,52.88
+click Hall of Shadows
+|tip Manually skip to the next step.
+step
+goto DeepMire03_base 81.83,54.77
+'Sneak past this swamp gas flora
+|tip Manually skip to the next step.
+step
+goto DeepMire03_base 68.40,65.07
+'Sneak past this swamp gas flora
+|tip Manually skip to the next step.
+step
+goto DeepMire03_base 59.82,61.48
+'Sneak past this swamp gas flora
+|tip Manually skip to the next step.
+step
+goto DeepMire03_base 53.47,53.61
+'Sneak past this swamp gas flora
+|tip Manually skip to the next step.
+step
+goto DeepMire03_base 32.31,27.01
+kill Whiptail
+'Fairly challenging boss fight. Whiptail is a rogue. He deploys guile tactics that involve teleporting behind you. He hits hards and can kill you quickly if you're not careful (plus the surrounding planets can too). As such it is recommended to use stat boosters and have health potions on the ready. The key is to avoid his localized telegraphs, while simultaneously attempting to poison him from the surrounding gas plants. One plant can drop his health pool by 50%.
+|tip Manually skip to the next step.
+step
+goto DeepMire03_base 18.81,21.83
+'Continue Southeast along the perimeter
+|tip Manually skip to the next step.
+step
+goto DeepMire03_base 27.08,49.02
+click Hall of Memories
+|tip Manually skip to the next step.
+step
+goto DeepMire03_base 37.40,61.83
+talk Xukas
+|tip Manually skip to the next step.
+step
+goto DeepMire03_base 61.51,91.28
+click Root-Whisper Village
+|tip Manually skip to the next step.
+step
+goto rootwhisper_base 43.25,52.04
+talk Jaxsik-Orrn
+|tip Manually skip to the next step.
+step
+goto rootwhisper_base 42.04,49.42
+talk Famia Mercius
+accept The Remnant of Argon
+step
+goto rootwhisper_base 77.26,34.59
+click Vakka-Bok Xanmeer
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka01_base 25.08,42.58
+'Run down the stairs South from here
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka01_base 29.45,51.82
+'Sneak to this point
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka01_base 30.38,54.59
+'Sneak to this point
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka01_base 44.73,55.51
+'Sneak to this point
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka01_base 46.03,51.20
+'Sneak to this point
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka01_base 52.31,50.96
+'Run down the stairs from here
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka01_base 52.31,50.96
+'The next area is a square-grid maze filled with high-level mobs. Here's the route to navigate safely. Wait for patrols to pass.
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka01_base 62.48,56.67
+'Safely continue South from here
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka01_base 63.08,67.69
+'Safely continue East from here
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka01_base 85.13,68.12
+'Safely continue North from here
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka01_base 85.30,62.82
+'Safely continue West from here
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka01_base 79.91,62.74
+'Safely continue North from here
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka01_base 79.91,57.01
+'Safely continue East from here
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka01_base 88.05,57.49
+'Pass through the breach in the wall
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka02_base 45.04,53.50
+'Go here to trigger the quest's follow-up step
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka02_base 48.16,53.64
+'Drop down here
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka02_base 56.11,57.50
+'_Sneak_ to this point
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka02_base 57.38,66.71
+'_Sneak_ to this point
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka02_base 73.45,68.45
+'_Sneak_ to this point
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka02_base 67.18,58.21
+kill Guardian of the Blue Stone
+'Simple boss fight. DPS and avoid it's AOE telegraphs.
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka02_base 64.54,59.60
+'Drop down here while in _sneak_ mode
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka02_base 48.04,55.27
+'_Sneak_ to this point
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka02_base 44.01,59.72
+'_Sneak_ along the rock wall's perimeter to this point
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka02_base 39.98,61.41
+'_Sneak_ around these stalagmites
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka02_base 45.88,51.66
+'Press _E_ to Place _Ayleid Sconce_
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka02_base 45.94,52.98
+'Press _E_ to Use _Nexus Gate_
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka03_base 73.18,51.28
+talk Famia Mercius
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka03_base 25.90,29.58
+'Press _E_ to Use _Nexus Gate_
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka04_base 78.73,43.18
+'Listen to the Lore dialog
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka04_base 69.18,43.18
+'Press _E_ to Use _Nexus Gate_
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka05_base 52.39,68.63
+'_Sneak_ around the Miregaunt to this point
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka05_base 52.28,75.97
+'Listen to the Lore dialog
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka05_base 52.39,79.53
+'Press _E_ to Use _Nexus Gate_
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka05_base 73.86,44.72
+'_Sneak_ in a zig-zag pattern, careful to avoid the Miregaunt near the Nexus Gate.
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka05_base 76.08,43.94
+'Press _E_ to Use _Nexus Gate_
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka05_base 21.91,42.71
+'_Sneak_ to this spot. Be careful to avoid the patroling Miregaunt near the opening leading to the Nexus Gate.
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka05_base 23.92,35.93
+'Press _E_ to Use _Nexus Gate_
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka04_base 64.04,28.97
+'Listen to the Lore dialog
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka04_base 64.21,39.49
+'Press _E_ to Use _Nexus Gate_
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka06_base 24.26,65.98
+'Reach this point (kill the mobs)
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka06_base 46.21,66.88
+'_Sneak_ directly East to this point
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka06_base 58.15,57.89
+'_Sneak_ up the stairs from here
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka06_base 60.59,50.83
+'Listen to the Lore dialog
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka06_base 69.19,43.65
+'Wait for the _Frost Astronach_ to patrol away from stairs and _sneak_ to this point
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka06_base 87.55,41.85
+'_Sneak_ up the stairs and to this point
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka06_base 86.01,64.44
+'Press _E_ to Use _Nexus Gate_
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka04_base 68.54,18.30
+'Follow and listen to the Lore dialog. When complete...
+'Press _E_ to Use _Nexus Gate_
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka07_base 50.00,46.67
+kill Myndhal
+'Simple boss fight. Avoid the two swirling orbs of energy that constantly target you. They do quite a lot of damage. Meanwhile, avoid Myndhal's telegraphs. Use health potions and healing abilities when needed principally to counter orb damage.
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka07_base 48.48,84.63
+'Press _E_ to Use _Nexus Gate_
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka04_base 08.27,80.42
+'Press _E_ to Use _Nexus Gate_
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka09_base 49.35,55.22
+'Press _E_ to Take _Vakka Stone_
+'Take Vakka Stone
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka09_base 49.35,81.96
+'Press _E_ to Use _Nexus Gate_
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka03_base 33.37,75.64
+'Drop down here
+|tip Manually skip to the next step.
+step
+goto UI_Map_Xal-Vakka03_base 76.56,48.72
+'Press _E_ to Use _Grand Nexus Gate_
+|tip Manually skip to the next step.
+step
+goto UI_Map_DeepRoot_base01 40.93,22.73
+'_Sneak_ to this point
+|tip Manually skip to the next step.
+step
+goto UI_Map_DeepRoot_base01 35.65,31.05
+'Drop down here while in _sneak_ mode
+|tip Manually skip to the next step.
+step
+goto UI_Map_DeepRoot_base01 33.82,37.52
+'Drop down here while in _sneak_ mode
+|tip Manually skip to the next step.
+step
+goto UI_Map_DeepRoot_base01 34.99,42.03
+'_Sneak_ to this point
+|tip Manually skip to the next step.
+step
+goto UI_Map_DeepRoot_base01 58.59,52.11
+'Avoid Kassandra's damage rays by sprinting across the opening to safety here
+|tip Manually skip to the next step.
+step
+goto UI_Map_DeepRoot_base01 58.56,63.21
+click Remnant Chamber
+|tip Manually skip to the next step.
+step
+goto UI_Map_DeepRoot_base01 52.91,87.78
+kill Colossal Miregaunt (aka Kassandra)
+'As final Boss fights go this one will be lengthy. The priority is to destroy the pair of stationary Totems that spawn. If you don't kill them, Kassandra will heal herself. The next mechanic to pay attention to are the three concentric telegraphing rings. The RANGE path is to avoid them whether active or not. The MELEE route involves not standing in the inner-most circle while active, then when the middle ring is active, move to the inner ring and DPS. Lastly, avoid the misc telegraphs.
+|tip Manually skip to the next step.
+step
+goto UI_Map_DeepRoot_base01 54.29,87.34
+click Root-Whisper Village
+|tip Manually skip to the next step.
+step
+goto rootwhisper_base 48.75,53.60
+talk Famia Mercius
+|tip Manually skip to the next step.
+step
+goto rootwhisper_base 60.32,62.48
+wayshrine Root-Whisper
+|tip Manually skip to the next step.
+step
+goto rootwhisper_base 33.41,54.35
+talk Xukas
+|tip Manually skip to the next step.
+step
+goto rootwhisper_base 51.30,32.89
+talk Jaxsik-Orrn
+|tip Manually skip to the next step.
+step
+goto rootwhisper_base 43.62,53.04
+'Press _E_ to Use _Remnant of Argon_
+|tip Manually skip to the next step.
+step
+goto remnantofargon_base 54.95,44.92
+talk Sap-Speaker Kuzei
+|tip Manually skip to the next step.
+step
+goto remnantofargon_base 54.95,44.92
+talk Jaxsik-Orrn
+|tip Manually skip to the next step.
+step
+goto remnantofargon_base 54.95,44.92
+talk Xukas
+|tip Manually skip to the next step.
+step
+goto remnantofargon_base 54.95,44.92
+talk Sap-Speaker Kuzei
+'Here you decide the fates of Jaxsik-Orrn and Xukas. For the sake of this guide, choose Jaxsik-Orrn.
+|tip Manually skip to the next step.
+step
+goto remnantofargon_base 57.98,37.10
+click Murkmire
+|tip Manually skip to the next step.
+step
+goto rootwhisper_base 49.42,69.74
+talk Famia Mercius
+|tip Manually skip to the next step.
+step
+goto rootwhisper_base 44.12,54.63
+talk Xukas
+|tip Manually skip to the next step.
+step
+goto rootwhisper_base 29.83,60.10
+talk Listens-By-Smell
+accept Swamp Jelly Sonata
+step
+goto rootwhisper_base 26.33,65.23
+click Murkmire
+|tip Manually skip to the next step.
+step
+goto murkmire_base 67.43,28.11
+'Make your way to this point
+|tip Manually skip to the next step.
+step
+goto murkmire_base 72.31,34.96
+'Press _E_ to Use Swamp Jelly Net _Melodic Green Jelly_
+'You'll likely need to kill the _Argonian Behemoth_
 |tip Manually skip to the next step.
 step
 
