@@ -21366,10 +21366,6 @@ goto lilmothcity_base 44.96,63.60
 talk Bolu
 'Unlocks Dailies. However, this is group content that won't be part of the guide.
 step
-'Open your map.
-'Travel to the _Lilmoth_ Wayshrine
-|tip Manually skip to the next step.
-step
 goto lilmothcity_base 45.44,33.60
 talk Chuxu
 accept The Assassin's Arbitration
@@ -21390,20 +21386,12 @@ goto lilmothcity_base 36.55,34.45
 click Lilmoth
 |tip Manually skip to the next step.
 step
-'Open your map.
-'Travel to the _Lilmoth_ Wayshrine
-|tip Manually skip to the next step.
-step
 goto lilmothcity_base 49.31,56.34
 talk Nurhei
 |tip Manually skip to the next step.
 step
 goto lilmothcity_base 19.43,42.31
 talk Paheiza
-|tip Manually skip to the next step.
-step
-'Open your map.
-'Travel to the _Lilmoth_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto lilmothcity_base 60.22,47.34
@@ -21420,10 +21408,6 @@ goto lilmothcity_base 52.42,61.05
 step
 goto lilmothcity_base 51.65,61.59
 'Press _E_ to Open _Lilmoth_
-|tip Manually skip to the next step.
-step
-'Open your map.
-'Travel to the _Lilmoth_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto lilmothcity_base 22.41,38.85
@@ -21514,10 +21498,6 @@ goto sunkenxanmeer02_base 40.20,52.20
 'Watch the dialog scene
 |tip Manually skip to the next step.
 step
-goto sunkenxanmeer02_base 40.56,45.63
-'Continue North past the archway from here
-|tip Manually skip to the next step.
-step
 goto sunkenxanmeer02_base 35.76,37.48
 'Dodge roll forward to avoid the first fire trap
 |tip Manually skip to the next step.
@@ -21526,7 +21506,7 @@ goto sunkenxanmeer02_base 29.16,37.41
 'Dodge roll forward to avoid the second fire trap
 |tip Manually skip to the next step.
 step
-goto sunkenxanmeer02_base 29.97,36.86
+goto sunkenxanmeer02_base 25.96,37.27
 'Facing North, dodge roll forward to avoid the third fire trap
 |tip Manually skip to the next step.
 step
@@ -21584,10 +21564,6 @@ click Flint Vine
 step
 goto sunkenxanmeer02_base 39.26,58.00
 'Press _E_ to Place _Stone Outcropping_
-|tip Manually skip to the next step.
-step
-goto sunkenxanmeer02_base 40.49,45.70
-'Continue North past the archway from here
 |tip Manually skip to the next step.
 step
 goto sunkenxanmeer02_base 45.25,37.40
