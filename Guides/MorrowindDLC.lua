@@ -21341,7 +21341,7 @@ step
 ]])
 ZGV:RegisterGuide("LEVELING\\Murkmire",[[
 loadingimage charload_01.dds
-description Investigate Murkmire's long-forgotten past and help an Imperial scholar recover a mysterious and powerful relic take will take you deep into Black Marsh, its history, and its people. 
+description Investigate Murkmire's long-forgotten past and help an Imperial scholar recover a mysterious and powerful relic that will take you deep into Black Marsh, its history, and its people.
 step
 'Press _U_ to open your _Collections_
 'Click over to the _Stories_ tab and look under the _Zone DLC_ section:
@@ -23946,155 +23946,30 @@ goto murkmire_base 72.31,34.96
 'You'll likely need to kill the _Argonian Behemoth_
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 73.96,38.51
+'Press _E_ to Use Swamp Jelly Net _Melodic Amber Jelly_
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 73.65,40.02
+'Press _E_ to Use Swamp Jelly Net _Melodic Violet Jelly_
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 77.28,42.31
+'Drop down here
 |tip Manually skip to the next step.
 step
-
+goto murkmire_base 77.88,43.53
+'Press _E_ to Use Swamp Jelly Net _Melodic Blue Jelly_
 |tip Manually skip to the next step.
 step
-
+'Open your map.
+'Travel to the _Root-Whisper_ Wayshrine
 |tip Manually skip to the next step.
 step
-
+goto rootwhisper_base 49.69,67.12
+talk Listens-By-Smell
 |tip Manually skip to the next step.
 step
-
-|tip Manually skip to the next step.
+'Congratulations, you have completed the Murkmire guide!
 step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
-|tip Manually skip to the next step.
-step
-
 ]])
