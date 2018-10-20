@@ -21895,7 +21895,7 @@ goto blightedbogcavern_base 34.07,50.60
 talk Iskenaaz
 |tip Manually skip to the next step.
 step
-goto blightedbogcavern_base 30.16,46.54
+goto blightedbogcavern_base 30.16,47.54
 talk Haxara
 |tip Manually skip to the next step.
 step
@@ -21950,7 +21950,7 @@ click Xuat-Matun - Worship Chamber
 step
 goto blightedbogcavern_base 72.31,58.29
 kill Ojei
-'Pull the mini-boss to the stairs to avoid pulling the alchemists mobs. Periodically run to Haxara to press X to use the healing potions when poisoned.
+'Pull the mini-boss to the stairs to avoid pulling the alchemists mobs, then periodically run to Haxara to press X to use the healing potions when poisoned. The alchemists mobs should not attack.
 |tip Manually skip to the next step.
 step
 goto blightedbogcavern_base 72.29,67.51
@@ -21979,11 +21979,11 @@ click Xuat-Matun - Audience Chamber
 step
 goto blightedbogcavern_base 70.09,31.49
 kill Krona
-'A hybrid of both mini-bosses. DPS Krona while avoiding its telegraphing charges (it runs in a straight line). Occasionally run to Haxara to press X to use the healing potions.
+'A hybrid of both mini-bosses. DPS Krona while avoiding its telegraphing charges (it runs in a straight line). Occasionally run to Haxara to press X to use the healing potions. Ranged DPS is the best option for this fight.
 |tip Manually skip to the next step.
 step
 goto blightedbogcavern_base 80.29,21.41
-click Xuat-Matun - Antechamber
+click Xuat-Matun Antechamber
 |tip Manually skip to the next step.
 step
 goto blightedbogcavern_base 84.45,19.33
@@ -22018,10 +22018,6 @@ step
 'Travel to the _Blackrose_ Wayshrine
 |tip Manually skip to the next step.
 step
-goto murkmire_base 42.76,59.80
-'Cross both bridges Southeast from here
-|tip Manually skip to the next step.
-step
 goto murkmire_base 47.93,62.22
 'Continue Northeast through the Saltrice farm to the quest marker
 |tip Manually skip to the next step.
@@ -22051,10 +22047,6 @@ goto lilmothcity_base 32.30,70.68
 talk Chal-Maht
 |tip Manually skip to the next step.
 step
-'Open your map.
-'Travel to the _Lilmoth_ Wayshrine
-|tip Manually skip to the next step.
-step
 goto lilmothcity_base 39.07,37.20
 click The Lusty Argonian Footman
 |tip Manually skip to the next step.
@@ -22069,7 +22061,7 @@ click Lilmoth
 step
 goto lilmothcity_base 60.26,32.70
 click Dragonstar Stockade
-'Note: You will be trespassing where the guards will attack if they catch you.
+'Note: You will be trespassing. If the guards catch you, they will attack. In other words, slow and undetected win the day. (Note: If caught, you'll still be able to continue, you'll only fail this option within the quest.)
 |tip Manually skip to the next step.
 step
 goto lilmothcity_base 64.01,34.88
@@ -22121,10 +22113,6 @@ goto lilmothcity_base 79.55,39.62
 'Take Dossier: The Newcomer
 |tip Manually skip to the next step.
 step
-goto lilmothcity_base 78.00,39.61
-click Dragonstar Stockade
-|tip Manually skip to the next step.
-step
 'Open your map.
 'Travel to the _Lilmoth_ Wayshrine
 |tip Manually skip to the next step.
@@ -22149,8 +22137,8 @@ goto lilmothcity_base 48.91,26.01
 click Lilmoth
 |tip Manually skip to the next step.
 step
-goto lilmothcity_base 45.31,27.44
-'Follow the road North out of Lilmoth
+goto lilmothcity_base 42.77,18.14
+'Follow the road North
 |tip Manually skip to the next step.
 step
 goto murkmire_base 72.52,65.96
@@ -22220,8 +22208,8 @@ goto lilmothcity_base 30.92,43.36
 click Lilmoth
 |tip Manually skip to the next step.
 step
-goto lilmothcity_base 31.85,53.30
-'Run up the stairs from here
+goto lilmothcity_base 30.49,45.88
+'Jump up to the platform from here
 |tip Manually skip to the next step.
 step
 goto lilmothcity_base 29.86,49.26
@@ -22234,10 +22222,6 @@ talk Tolwin Bordier
 step
 goto lilmothcity_base 27.62,56.08
 click Lilmoth
-|tip Manually skip to the next step.
-step
-goto lilmothcity_base 31.59,57.07
-'Cross the bridge from here
 |tip Manually skip to the next step.
 step
 goto lilmothcity_base 36.41,64.13
@@ -22269,15 +22253,15 @@ goto lilmothcity_base 85.25,49.42
 |tip Manually skip to the next step.
 step
 goto lilmothcity_base 50.43,74.94
-'Run to this area and try and catch the Ruby Hopper. They move fast so you may need to use your mount to catch them. If you miss the little guy, it can be picked up at (next step).
+'Go here to trigger the quest's follow-up step
 |tip Manually skip to the next step.
 step
 goto lilmothcity_base 36.36,43.57
-'The Ruby Hopper will stop here in case you could not catch it in its previous location.
+'Press _E_ to Take _Ruby Hopper_
 |tip Manually skip to the next step.
 step
-goto lilmothcity_base 46.07,40.88
-'Follow the road north out of Lilmoth
+goto lilmothcity_base 42.69,18.15
+'Go to this spot
 |tip Manually skip to the next step.
 step
 goto murkmire_base 74.10,70.03
@@ -22294,7 +22278,7 @@ goto murkmire_base 73.65,69.32
 |tip Manually skip to the next step.
 step
 goto murkmire_base 73.37,69.48
-'Press _E_ to Take 2 _Indigo Tree Frog_
+'Press _E_ to Take _Indigo Tree Frog_ twice
 |tip Manually skip to the next step.
 step
 goto lilmothcity_base 41.33,21.93
