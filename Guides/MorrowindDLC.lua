@@ -23073,28 +23073,28 @@ goto UI_Map_swallowedgrove_base 35.50,87.85
 talk Many-Whispers
 |tip Manually skip to the next step.
 step
-goto UI_Map_swallowedgrove_base 31.82,94.70
-click Murkmire
+'Open your map.
+'Travel to the _Bright-Through_ Wayshrine
 |tip Manually skip to the next step.
 step
-goto murkmire_base 39.23,46.44
-'Follow the path North back to the road 
+goto murkmire_base 70.13,60.19
+'Cross the bridge into Bright-Throat Village from here
 |tip Manually skip to the next step.
 step
-goto murkmire_base 38.97,42.21
-'Follow the road Northwest
+goto brightthroatvillage_base 40.73,37.50
+talk Grave-Singer Xaleez
 |tip Manually skip to the next step.
 step
-goto murkmire_base 55.08,40.43
-'At the fork in the road, go left from here
+goto brightthroatvillage_base 16.30,33.29
+'Cross the bridge out of Bright-Throat Village
 |tip Manually skip to the next step.
 step
-goto murkmire_base 61.07,34.44
-'At the fork in the road, take the path left from here
+goto murkmire_base 63.79,45.41
+'Run up all three flights of stairs
 |tip Manually skip to the next step.
 step
 goto murkmire_base 64.06,38.35
-'At the fork in the path, take the path left from here
+'At the fork in the path, take the path right from here
 |tip Manually skip to the next step.
 step
 goto murkmire_base 66.64,37.63
@@ -23106,7 +23106,7 @@ goto murkmire_base 67.10,37.14
 |tip Manually skip to the next step.
 step
 goto murkmire_base 71.23,36.95
-'Continue Southeast from here. Stay in _Sneak_ mode to avoid high-level mobs.
+'Continue Southeast from here
 |tip Manually skip to the next step.
 step
 goto murkmire_base 75.17,42.88
@@ -23133,14 +23133,6 @@ goto murkmire_base 70.24,45.54
 'Run up the stairs from here
 |tip Manually skip to the next step.
 step
-goto murkmire_base 70.60,44.02
-'Follow the path North from here
-|tip Manually skip to the next step.
-step
-goto murkmire_base 70.71,42.06
-'Follow the path Northwest from here
-|tip Manually skip to the next step.
-step
 goto murkmire_base 56.54,37.88
 'Race across the swamp Northwest to here to trigger the quest's follow-up step
 |tip Manually skip to the next step.
@@ -23153,49 +23145,25 @@ goto murkmire_base 53.57,37.05
 talk Stibbons
 |tip Manually skip to the next step.
 step
-goto murkmire_base 56.69,37.24
-'Follow the road Northeast from here
-|tip Manually skip to the next step.
-step
 goto murkmire_base 61.14,34.36
 'At the fork in the road, take the path right from here
 |tip Manually skip to the next step.
 step
-goto murkmire_base 63.65,37.58
-'Continue East from here towards the quest marker on the compass
+goto murkmire_base 63.08,35.22
+'Reach this spot
+|tip Manually skip to the next step.
+step
+goto murkmire_base 67.39,30.28
+'Press _E_ to Place _Dirt Mound_
+|tip Manually skip to the next step.
+step
+goto murkmire_base 66.44,35.31
+'Drop down here
 |tip Manually skip to the next step.
 step
 goto murkmire_base 66.59,37.60
 'Watch the dialog cutscene, then
 talk Lady Clarisse Laurent
-|tip Manually skip to the next step.
-step
-'Open your map.
-'Travel to the _Bright-Throat_ Wayshrine
-|tip Manually skip to the next step.
-step
-goto murkmire_base 70.10,60.33
-'Cross the bridge into Bright-Throat Village
-|tip Manually skip to the next step.
-step
-goto brightthroatvillage_base 40.73,37.50
-talk Grave-Singer Xaleez
-|tip Manually skip to the next step.
-step
-goto brightthroatvillage_base 16.30,33.29
-'Cross the bridge out of Bright-Throat Village
-|tip Manually skip to the next step.
-step
-goto murkmire_base 63.79,45.41
-'Run up all three flights of stairs
-|tip Manually skip to the next step.
-step
-goto murkmire_base 63.28,35.50
-'Continue Northeast from here towards the quest marker on the compass
-|tip Manually skip to the next step.
-step
-goto murkmire_base 67.39,30.28
-'Press _E_ to Place _Dirt Mound_
 |tip Manually skip to the next step.
 step
 'Open your map.
