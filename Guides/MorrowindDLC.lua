@@ -22281,6 +22281,10 @@ goto murkmire_base 73.37,69.48
 'Press _E_ to Take _Indigo Tree Frog_ twice
 |tip Manually skip to the next step.
 step
+goto murkmire_base 76.45,70.02
+'Go to this spot
+|tip Manually skip to the next step.
+step
 goto lilmothcity_base 41.33,21.93
 'Press _E_ to Take _Joymallow_
 'Take Joymallow
@@ -22290,8 +22294,8 @@ goto lilmothcity_base 44.29,21.00
 talk Nesh-Deeka
 |tip Manually skip to the next step.
 step
-goto lilmothcity_base 44.86,17.04
-'Head Northwest to the _Gather Stench Sedge_
+goto lilmothcity_base 45.14,16.95
+'Go to this spot
 |tip Manually skip to the next step.
 step
 goto murkmire_base 79.02,67.87
@@ -22308,11 +22312,11 @@ goto murkmire_base 81.30,69.73
 'Press _E_ to _Use Argonian Bowl_
 |tip Manually skip to the next step.
 step
-goto murkmire_base 80.39,65.23
+goto murkmire_base 80.25,65.09
 'Press _E_ to _Use Toad Musk_
 |tip Manually skip to the next step.
 step
-goto murkmire_base 80.14,65.05
+goto murkmire_base 80.22,65.08
 'Press _E_ to Use _Croak-Wheel_
 |tip Manually skip to the next step.
 step
@@ -22393,8 +22397,8 @@ goto murkmire_base 85.58,60.57
 talk Jekka-Wass Vozei
 |tip Manually skip to the next step.
 step
-goto murkmire_base 69.92,61.12
-'Make you way back to the Wayshrine
+goto murkmire_base 75.32,60.28
+'From this point, enter Bright-Throat Village
 |tip Manually skip to the next step.
 step
 goto brightthroatvillage_base 29.95,54.62
@@ -22422,10 +22426,6 @@ goto brightthroatvillage_base 30.14,52.77
 click Bright-Throat Village
 |tip Manually skip to the next step.
 step
-goto brightthroatvillage_base 32.26,54.54
-'Follow the deck North
-|tip Manually skip to the next step.
-step
 goto brightthroatvillage_base 50.12,38.98
 'Jump on top of the crate here and then over the fence
 |tip Manually skip to the next step.
@@ -22446,17 +22446,13 @@ goto brightthroatvillage_base 22.38,92.70
 talk Xukas
 |tip Manually skip to the next step.
 step
-goto brightthroatvillage_base 22.38,92.70
-'Follow the road Southwest past the Wayshrine
-|tip Manually skip to the next step.
-step
 goto murkmire_base 62.57,62.91
 'Watch the dialog cutscene
 talk Xukas
 |tip Manually skip to the next step.
 step
 goto murkmire_base 60.07,57.10
-'Crouch and follow the hidden damaged plants to here
+'Crouch and follow the hidden damaged plants to here (they appear as glowing plants)
 |tip Manually skip to the next step.
 step
 goto murkmire_base 57.57,53.98
@@ -22466,6 +22462,10 @@ step
 goto murkmire_base 52.14,52.92
 'Crouch and follow the hidden damaged plants to here
 talk Jaxsik-Orrn
+|tip Manually skip to the next step.
+step
+goto murkmire_base 50.32,53.23
+'Press _E_ to Destroy _Supply Crate_
 |tip Manually skip to the next step.
 step
 goto murkmire_base 51.89,55.12
@@ -22488,10 +22488,6 @@ goto murkmire_base 49.18,54.54
 'Press _E_ to Burn _Blackguard Supply Wagon_
 |tip Manually skip to the next step.
 step
-goto murkmire_base 50.19,53.15
-'Press _E_ to Destroy _Supply Crate_
-|tip Manually skip to the next step.
-step
 goto murkmire_base 46.71,52.54
 'Press _E_ to Destroy _Supply Crate_
 |tip Manually skip to the next step.
@@ -22510,10 +22506,6 @@ goto murkmire_base 48.50,56.09
 step
 goto murkmire_base 48.83,57.19
 'Press _E_ to Destroy _Supply Crate_
-|tip Manually skip to the next step.
-step
-goto murkmire_base 47.57,56.99
-'At the fork in the path, go right from here
 |tip Manually skip to the next step.
 step
 goto murkmire_base 42.73,55.95
@@ -22562,15 +22554,11 @@ step
 |tip Manually skip to the next step.
 step
 goto murkmire_base 70.13,60.19
-'Cross the bridge inside Bright-Throat Village from here
+'Cross the bridge into Bright-Throat Village from here
 |tip Manually skip to the next step.
 step
 goto brightthroatvillage_base 24.64,75.74
 'At the fork follow the path left
-|tip Manually skip to the next step.
-step
-goto brightthroatvillage_base 14.21,59.17
-'Continue North from here towards the quest marker on the compass
 |tip Manually skip to the next step.
 step
 goto brightthroatvillage_base 18.43,35.76
@@ -22592,6 +22580,15 @@ step
 goto murkmire_base 71.25,43.62
 talk Overseer Shiralas
 accept Lost in Murkmire
+step
+goto murkmire_base 76.41,40.49
+'Press _E_ to Read _Vanthongar's Letter_
+accept A Life in Carvings
+step
+goto murkmire_base 76.41,40.49
+'Press _E_ to Take _Argonian Grave-Stake_
+'Take Argonian Grave-Stake
+|tip Manually skip to the next step.
 step
 goto murkmire_base 66.80,41.87
 'Press _E_ to _Use Drooler's Whistle_
@@ -22659,10 +22656,6 @@ step
 'Travel to the _Blackrose_ Wayshrine
 |tip Manually skip to the next step.
 step
-goto murkmire_base 42.74,59.77
-'Cross both bridges Southeast
-|tip Manually skip to the next step.
-step
 goto murkmire_base 47.49,62.36
 'At the fork in the road, go right from here
 |tip Manually skip to the next step.
@@ -22676,7 +22669,7 @@ step
 |tip Manually skip to the next step.
 step
 goto murkmire_base 37.15,56.43
-'Continue Southwest from here
+'Reach this point
 |tip Manually skip to the next step.
 step
 goto murkmire_base 32.89,64.37
@@ -22721,81 +22714,12 @@ goto murkmire_base 32.40,61.38
 |tip Manually skip to the next step.
 step
 goto murkmire_base 36.90,56.47
-'Follow the road Northwest from here
+'Follow the fork in the road North from here
 |tip Manually skip to the next step.
 step
-goto murkmire_base 35.41,51.39
-'Continue Northeast from here towards to the quest marker
-|tip Manually skip to the next step.
-step
-goto murkmire_base 40.35,47.12
-click Swallowed Grove
-|tip Manually skip to the next step.
-step
-goto UI_Map_swallowedgrove_base 28.54,79.93
-'Continue Southeast from here
-|tip Manually skip to the next step.
-step
-goto UI_Map_swallowedgrove_base 35.50,87.85
-talk Many-Whispers
-|tip Manually skip to the next step.
-step
-goto UI_Map_swallowedgrove_base 38.48,86.94
-'Pass through this opening
-|tip Manually skip to the next step.
-step
-goto UI_Map_swallowedgrove_base 46.14,86.43
-'Follow the path North from here
-|tip Manually skip to the next step.
-step
-goto UI_Map_swallowedgrove_base 65.31,65.71
-'Follow the path Northeast from here
-|tip Manually skip to the next step.
-step
-goto UI_Map_swallowedgrove_base 69.29,53.76
-'Follow the stream West from here to the quest marker
-|tip Manually skip to the next step.
-step
-goto UI_Map_swallowedgrove_base 61.78,53.45
-'Press _E_ to Examine _Mirdamir_
-'Take Ornate Key
-|tip Manually skip to the next step.
-step
-goto UI_Map_swallowedgrove_base 61.78,53.45
-'Run up the stairs from here
-|tip Manually skip to the next step.
-step
-goto UI_Map_swallowedgrove_base 62.18,59.61
-'Pass through this opening
-|tip Manually skip to the next step.
-step
-goto UI_Map_swallowedgrove_base 67.37,60.67
-'Pass through the breach in the wall
-|tip Manually skip to the next step.
-step
-goto UI_Map_swallowedgrove_base 64.75,65.36
-'Follow the path back to Many-Whispers
-|tip Manually skip to the next step.
-step
-goto UI_Map_swallowedgrove_base 35.50,87.85
-talk Many-Whispers
-|tip Manually skip to the next step.
-step
-goto UI_Map_swallowedgrove_base 31.82,94.70
-click Murkmire
-|tip Manually skip to the next step.
-step
-goto murkmire_base 39.23,46.44
-'Follow the path North back to the road 
-|tip Manually skip to the next step.
-step
-goto murkmire_base 38.97,42.21
-'Follow the road Northwest
-|tip Manually skip to the next step.
-step
-goto murkmire_base 28.25,36.88
-'Continue past the Black-Water Village gate
-|tip Manually skip to the next step.
+goto murkmire_base 27.63,43.92
+talk Beel-Ranu
+accept Death Among the Dead-Water
 step
 goto deadwatervillage_base 72.52,62.82
 wayshrine Dead-Water
@@ -22804,14 +22728,6 @@ step
 goto deadwatervillage_base 57.98,59.11
 talk Jaxsik-Orrn
 |tip Manually skip to the next step.
-step
-goto deadwatervillage_base 39.87,84.04
-'Run up the stairs from here
-|tip Manually skip to the next step.
-step
-goto deadwatervillage_base 33.72,91.56
-talk Beel-Ranu
-accept Death Among the Dead-Water
 step
 goto deadwatervillage_base 42.01,73.94
 click Bhoki's House
@@ -22829,10 +22745,6 @@ goto deadwatervillage_base 62.67,55.27
 talk Bhoki
 |tip Manually skip to the next step.
 step
-goto deadwatervillage_base 62.92,47.67
-'Follow the road Northwest
-|tip Manually skip to the next step.
-step
 goto deadwatervillage_base 28.12,26.07
 kill Bogshell
 'Simple boss fight. You'll spot the mechanics very quickly.
@@ -22846,7 +22758,7 @@ goto deadwatervillage_base 40.85,26.48
 talk Kishi
 |tip Manually skip to the next step.
 step
-goto deadwatervillage_base 47.68,32.34
+goto deadwatervillage_base 37.52,39.04
 'Follow the path East and then SouthEast from here
 |tip Manually skip to the next step.
 step
@@ -22863,12 +22775,12 @@ goto deadwatervillage_base 38.55,78.32
 'Take Fire Stones
 |tip Manually skip to the next step.
 step
-goto deadwatervillage_base 39.52,84.27
-'Run up the stairs
+goto deadwatervillage_base 41.49,74.30
+click Dead-Water Village
 |tip Manually skip to the next step.
 step
-goto deadwatervillage_base 36.15,88.55
-'Run down the stairs
+goto deadwatervillage_base 32.13,92.80
+'Continue Southwest from this point.
 |tip Manually skip to the next step.
 step
 goto murkmire_base 17.98,48.15
@@ -22898,16 +22810,8 @@ goto deadwatervillage_base 44.58,81.64
 talk Raj-Kaal Seelan
 |tip Manually skip to the next step.
 step
-goto deadwatervillage_base 39.52,84.27
-'Run up the stairs
-|tip Manually skip to the next step.
-step
-goto deadwatervillage_base 36.15,88.55
-'Run down the stairs
-|tip Manually skip to the next step.
-step
-goto deadwatervillage_base 31.73,92.42
-'Follow the path Northwest from here to the quest marker
+goto deadwatervillage_base 33.05,91.91
+'Follow the path Northwest from here
 |tip Manually skip to the next step.
 step
 goto murkmire_base 11.51,40.09
@@ -22950,7 +22854,7 @@ goto murkmire_base 11.33,48.93
 step
 goto murkmire_base 11.33,48.93
 talk Kishi
-'For this part of the Trial best to _SNEAK_ through so that you can avoid the plants. You will likely need to fight the beasts.
+'For this part of the Trial it is best to _SNEAK_ through so that you can avoid the plants. You will likely need to fight the beasts.
 |tip Manually skip to the next step.
 step
 goto murkmire_base 14.83,49.88
@@ -22997,7 +22901,7 @@ talk Kishi
 step
 goto murkmire_base 07.51,37.27
 kill Deroh-Zah 
-'Situational awareness is vital on this boss fight. Avoid its smaller localized telegraphs and avoid the quicksand. When Deroh-Zah initiates a wide-area AOE telegraph, quickly aim for one of the Tamed Vine-Tongue on top of the surrounding walls. You have 2-3 seconds. After this, Deroh-Zah is weakened for a few seconds.
+'Situational awareness is vital on this boss fight. Avoid its localized telegraphs and the quicksand. When Deroh-Zah initiates a wide-area AOE telegraph, you have 2-3 seconds to quickly aim for one of the Tamed Vine-Tongue on top of the surrounding walls. After this, Deroh-Zah is weakened for a few seconds.
 |tip Manually skip to the next step.
 step
 goto murkmire_base 07.47,34.61
@@ -23065,7 +22969,7 @@ goto murkmire_base 28.45,28.99
 |tip Manually skip to the next step.
 step
 goto murkmire_base 30.40,28.35
-'Follow the rocks North. Ignore the Pewter Seam. It'll pull mobs.
+'Follow the rocks North.
 |tip Manually skip to the next step.
 step
 goto murkmire_base 30.83,27.58
@@ -23082,16 +22986,15 @@ click Tomb of Many Spears
 step
 goto Tombofspears_base 39.85,60.94
 kill Etra of the Many Spears
-'Fairly simple boss fight. Avoid it's slime pools. When Etra's health drops to a certain percentage, it will become unattackable and sent out slime to create four mobs. Later in the fight, when its health reaches another percentage, the Etra will do the same thing, but this time it will join the battle with the adds.
+'Fairly simple boss fight. Avoid it's slime pools. When Etra's health drops to a certain percentages (~66% and ~33%), it becomes unattackable and passive. It will also send out slime to the surrounding totems to create four mobs.
 |tip Manually skip to the next step.
 step
 goto Tombofspears_base 39.85,60.94
 'Press _E_ to Take _Etra's Grave-Stake_
 'Take Etra's Grave-Stake
-'Do so quickly. The Etra respawns reasonably quickly.
 |tip Manually skip to the next step.
 step
-goto Tombofspears_base 44.02,58.72
+goto Tombofspears_base 39.85,60.94
 'Open your map.
 'Travel to the _Dead-Water_ Wayshrine
 |tip Manually skip to the next step.
@@ -23108,8 +23011,78 @@ goto deadwatervillage_base 55.23,78.06
 click Dead-Water Village
 |tip Manually skip to the next step.
 step
-goto deadwatervillage_base 71.13,48.92
-'Following the road Northeast past this archway and out of Dead-Water Village
+goto deadwatervillage_base 81.89,40.05
+'Reach this point and follow the road East
+|tip Manually skip to the next step.
+step
+goto murkmire_base 40.28,43.46
+'Reach this point.
+|tip Manually skip to the next step.
+step
+goto murkmire_base 40.35,47.12
+click Swallowed Grove
+|tip Manually skip to the next step.
+step
+goto UI_Map_swallowedgrove_base 28.54,79.93
+'Continue Southeast from here
+|tip Manually skip to the next step.
+step
+goto UI_Map_swallowedgrove_base 35.50,87.85
+talk Many-Whispers
+'If you have the [Intimidate] skill you can skip several steps.
+|tip Manually skip to the next step.
+step
+goto UI_Map_swallowedgrove_base 38.48,86.94
+'Pass through this opening
+|tip Manually skip to the next step.
+step
+goto UI_Map_swallowedgrove_base 46.14,86.43
+'Follow the path North from here
+|tip Manually skip to the next step.
+step
+goto UI_Map_swallowedgrove_base 65.31,65.71
+'Follow the path Northeast from here
+|tip Manually skip to the next step.
+step
+goto UI_Map_swallowedgrove_base 69.29,53.76
+'Follow the stream West from here to the quest marker
+|tip Manually skip to the next step.
+step
+goto UI_Map_swallowedgrove_base 61.78,53.45
+'Press _E_ to Examine _Mirdamir_
+'Take Ornate Key
+|tip Manually skip to the next step.
+step
+goto UI_Map_swallowedgrove_base 61.78,53.45
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto UI_Map_swallowedgrove_base 62.18,59.61
+'Pass through this opening
+|tip Manually skip to the next step.
+step
+goto UI_Map_swallowedgrove_base 67.37,60.67
+'Pass through the breach in the wall
+|tip Manually skip to the next step.
+step
+goto UI_Map_swallowedgrove_base 64.75,65.36
+'Go to this point.
+|tip Manually skip to the next step.
+step
+goto UI_Map_swallowedgrove_base 35.50,87.85
+talk Many-Whispers
+|tip Manually skip to the next step.
+step
+goto UI_Map_swallowedgrove_base 31.82,94.70
+click Murkmire
+|tip Manually skip to the next step.
+step
+goto murkmire_base 39.23,46.44
+'Follow the path North back to the road 
+|tip Manually skip to the next step.
+step
+goto murkmire_base 38.97,42.21
+'Follow the road Northwest
 |tip Manually skip to the next step.
 step
 goto murkmire_base 55.08,40.43
@@ -23134,15 +23107,6 @@ goto murkmire_base 67.10,37.14
 step
 goto murkmire_base 71.23,36.95
 'Continue Southeast from here. Stay in _Sneak_ mode to avoid high-level mobs.
-|tip Manually skip to the next step.
-step
-goto murkmire_base 76.41,40.49
-'Press _E_ to Read _Vanthongar's Letter_
-accept A Life in Carvings
-step
-goto murkmire_base 76.41,40.49
-'Press _E_ to Take _Argonian Grave-Stake_
-'Take Argonian Grave-Stake
 |tip Manually skip to the next step.
 step
 goto murkmire_base 75.17,42.88
@@ -23202,7 +23166,7 @@ goto murkmire_base 63.65,37.58
 |tip Manually skip to the next step.
 step
 goto murkmire_base 66.59,37.60
-Watch the dialog cutscene, then
+'Watch the dialog cutscene, then
 talk Lady Clarisse Laurent
 |tip Manually skip to the next step.
 step
