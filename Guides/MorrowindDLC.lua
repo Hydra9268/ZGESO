@@ -21538,6 +21538,14 @@ goto sunkenxanmeer02_base 56.03,61.43
 'Avoid the last dart trap
 |tip Manually skip to the next step.
 step
+goto sunkenxanmeer02_base 60.46,58.15
+'Continue North along the wall passed the first pool of water 
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 60.27,52.71
+'Dodge roll forward to avoid the second dart trap
+|tip Manually skip to the next step.
+step
 goto sunkenxanmeer02_base 56.22,47.92
 'Run up the stairs from here
 |tip Manually skip to the next step.
@@ -21554,12 +21562,20 @@ goto sunkenxanmeer02_base 45.55,73.51
 'Make your way here
 |tip Manually skip to the next step.
 step
+goto sunkenxanmeer02_base 41.54,78.12
+'Continue South along this walkway
+|tip Manually skip to the next step.
+step
 goto sunkenxanmeer02_base 45.58,81.20
 kill The Strangler
 |tip Manually skip to the next step.
 step
 goto sunkenxanmeer02_base 45.26,80.19
 click Flint Vine
+|tip Manually skip to the next step.
+step
+goto sunkenxanmeer02_base 48.66,75.77
+'Continue to here
 |tip Manually skip to the next step.
 step
 goto sunkenxanmeer02_base 39.26,58.00
@@ -21629,6 +21645,10 @@ step
 'Travel to the _Bright-Throat_ Wayshrine
 |tip Manually skip to the next step.
 step
+goto murkmire_base 70.06,60.36
+'Continue to here
+|tip Manually skip to the next step.
+step
 goto brightthroatvillage_base 29.76,54.81
 click Tree-Minder Pavu's House
 |tip Manually skip to the next step.
@@ -21658,17 +21678,18 @@ goto brightthroatvillage_base 53.70,56.91
 'Take Wilting Dragonthorn
 |tip Manually skip to the next step.
 step
-goto brightthroatvillage_base 58.61,56.00
-'Press _E_ to Examine _Egg-Tender's Unfinished Letter_
-|tip Manually skip to the next step.
-step
-goto brightthroatvillage_base 53.84,55.83
-talk Iskenaaz
-'Select _Hold a moment. I think I should speak with the egg-tenders again._
+goto brightthroatvillage_base 54.59,54.32
+talk Keenam
+'Select _I found this plant mixed in with the fruit. Is it supposed to be there?_
 |tip Manually skip to the next step.
 step
 goto brightthroatvillage_base 55.53,54.96
 talk Mimme
+'Select _I found this plant mixed in with the fruit. Is it supposed to be there?_
+|tip Manually skip to the next step.
+step
+goto brightthroatvillage_base 58.61,56.00
+'Press _E_ to Examine _Egg-Tender's Unfinished Letter_
 |tip Manually skip to the next step.
 step
 goto brightthroatvillage_base 53.84,55.83
@@ -21679,10 +21700,6 @@ talk Iskenaaz
 step
 goto brightthroatvillage_base 50.06,56.21
 click Bright-Throat Village
-|tip Manually skip to the next step.
-step
-goto brightthroatvillage_base 37.29,54.52
-'Continue down the ramp from here
 |tip Manually skip to the next step.
 step
 goto brightthroatvillage_base 23.82,63.65
@@ -21713,10 +21730,6 @@ talk Iskenaaz
 step
 goto murkmire_base 64.00,56.03
 'Continue up and down the ramps from here
-|tip Manually skip to the next step.
-step
-goto murkmire_base 64.02,55.22
-'Continue Northwest from here towards the quest marker on the compass
 |tip Manually skip to the next step.
 step
 goto murkmire_base 59.15,49.40
@@ -21789,7 +21802,7 @@ goto murkmire_base 47.85,58.51
 'Run to the fourth Malformed Scales
 |tip Manually skip to the next step.
 step
-goto murkmire_base 46.67,58.74
+goto murkmire_base 45.60,58.72
 'Run to the fifth Malformed Scales
 |tip Manually skip to the next step.
 step
@@ -23947,5 +23960,6 @@ talk Listens-By-Smell
 |tip Manually skip to the next step.
 step
 'Congratulations, you have completed the Murkmire guide!
+'You can still seek out the remaining pieces for the Xinchei-Konu at the Xinchei-Konu Monument.
 step
 ]])
