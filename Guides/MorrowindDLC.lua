@@ -23602,7 +23602,7 @@ goto UI_Map_Xal-Vakka02_base 57.38,66.71
 |tip Manually skip to the next step.
 step
 goto UI_Map_Xal-Vakka02_base 73.45,68.45
-'_Sneak_ to this point
+'Reach this point
 |tip Manually skip to the next step.
 step
 goto UI_Map_Xal-Vakka02_base 67.18,58.21
@@ -23706,7 +23706,7 @@ goto UI_Map_Xal-Vakka06_base 69.19,43.65
 'Wait for the _Frost Astronach_ to patrol away from stairs and _sneak_ to this point
 |tip Manually skip to the next step.
 step
-goto UI_Map_Xal-Vakka06_base 87.55,41.85
+goto UI_Map_Xal-Vakka06_base 87.55,46.34
 '_Sneak_ up the stairs and to this point
 |tip Manually skip to the next step.
 step
@@ -23721,7 +23721,7 @@ goto UI_Map_Xal-Vakka04_base 68.54,18.30
 step
 goto UI_Map_Xal-Vakka07_base 50.00,46.67
 kill Myndhal
-'Simple boss fight. Avoid the two swirling orbs of energy that constantly target you. They do quite a lot of damage. Meanwhile, avoid Myndhal's telegraphs. Use health potions and healing abilities when needed principally to counter orb damage.
+'Simple boss fight. Avoid the two swirling orbs of energy that constantly target you. Meanwhile, avoid Myndhal's telegraphs and interrupt his "ray-beam" attacks. Use health potions and healing abilities when needed principally to counter orb damage.
 |tip Manually skip to the next step.
 step
 goto UI_Map_Xal-Vakka07_base 48.48,84.63
@@ -23775,7 +23775,7 @@ click Remnant Chamber
 step
 goto UI_Map_DeepRoot_base01 52.91,87.78
 kill Colossal Miregaunt (aka Kassandra)
-'As final Boss fights go this one will be lengthy. The priority is to destroy the pair of stationary Totems that spawn. If you don't kill them, Kassandra will heal herself. The next mechanic to pay attention to are the three concentric telegraphing rings. The RANGE path is to avoid them whether active or not. The MELEE route involves not standing in the inner-most circle while active, then when the middle ring is active, move to the inner ring and DPS. Lastly, avoid the misc telegraphs.
+'As final Boss fights go this one will be lengthy. The priority is to destroy the pair of stationary Totems that spawn. If you don't kill them, Kassandra will heal herself. The next mechanic to pay attention to are the three concentric telegraphing rings. The RANGE path is to avoid them altogether. The MELEE route involves not standing in the inner-most circle while active, then when the middle ring is active, move to the inner ring and DPS. Lastly, avoid the misc telegraphs.
 |tip Manually skip to the next step.
 step
 goto UI_Map_DeepRoot_base01 54.29,87.34
@@ -23784,7 +23784,7 @@ click Root-Whisper Village
 step
 goto rootwhisper_base 48.75,53.60
 talk Famia Mercius
-|tip Manually skip to the next step.
+accept By River and Root
 step
 goto rootwhisper_base 60.32,62.48
 wayshrine Root-Whisper
@@ -23872,7 +23872,6 @@ goto rootwhisper_base 49.69,67.12
 talk Listens-By-Smell
 |tip Manually skip to the next step.
 step
-'Congratulations, you have completed the Murkmire guide!
-'You can still seek out the remaining pieces for the Xinchei-Konu at the Xinchei-Konu Monument.
-step
+'_Congratulations, you have completed the Murkmire guide!_
+'You can still seek out the remaining Xinchei-Konu pieces for the Xinchei-Konu at the Xinchei-Konu Monument
 ]])
