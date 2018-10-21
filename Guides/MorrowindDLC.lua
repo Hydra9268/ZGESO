@@ -23276,8 +23276,8 @@ kill Fat Gixthi
 'Simple boss fight. DPS and avoid front-funnel telegraphs.
 |tip Manually skip to the next step.
 step
-goto themists02_base 86.27,20.35
-'Following the river to the end and watch the cut-scene
+goto themists02_base 87.17,30.19
+'Follow the river to the end and watch the cut-scene
 |tip Manually skip to the next step.
 step
 goto themists01_base 71.23,27.40
@@ -23325,7 +23325,7 @@ goto themists03_base 49.39,50.20
 click Murkmire
 |tip Manually skip to the next step.
 step
-goto themists03_base 69.80,58.37
+goto themists03_base 70.20,58.37
 'Go here to kill the Ayleids to trigger the quest's follow-up step
 |tip Manually skip to the next step.
 step
@@ -23344,6 +23344,10 @@ goto themists03_base 49.39,28.16
 step
 goto themists03_base 62.04,39.59
 talk Kasa-Jeen
+|tip Manually skip to the next step.
+step
+goto themists03_base 37.55,39.59
+'Go here to trigger the quest's follow-up step
 |tip Manually skip to the next step.
 step
 goto themists01_base 63.01,23.29
@@ -23366,7 +23370,8 @@ goto themists04_base 48.44,64.06
 'Press _E_ to Take _Sap-Speaker's Staff_
 |tip Manually skip to the next step.
 step
-'Exit The Dreaming Nest back to the Swallowed Grove
+goto themists01_base 20.55,80.82
+click Swallowed Grove
 |tip Manually skip to the next step.
 step
 goto UI_Map_swallowedgrove_base 56.23,42.61
@@ -23537,26 +23542,26 @@ goto UI_Map_Xal-Vakka01_base 25.08,42.58
 |tip Manually skip to the next step.
 step
 goto UI_Map_Xal-Vakka01_base 29.45,51.82
-'Sneak to this point
+'_Sneak_ to this point
 |tip Manually skip to the next step.
 step
 goto UI_Map_Xal-Vakka01_base 30.38,54.59
-'Sneak to this point
+'_Sneak_ to this point
 |tip Manually skip to the next step.
 step
 goto UI_Map_Xal-Vakka01_base 44.73,55.51
-'Sneak to this point
+'_Sneak_ to this point
 |tip Manually skip to the next step.
 step
 goto UI_Map_Xal-Vakka01_base 46.03,51.20
-'Sneak to this point
+'_Sneak_ to this point
 |tip Manually skip to the next step.
 step
 goto UI_Map_Xal-Vakka01_base 52.31,50.96
 'Run down the stairs from here
 |tip Manually skip to the next step.
 step
-goto UI_Map_Xal-Vakka01_base 52.31,50.96
+goto UI_Map_Xal-Vakka01_base 72.93,57.18
 'The next area is a square-grid maze filled with high-level mobs. Here's the route to navigate safely. Wait for patrols to pass.
 |tip Manually skip to the next step.
 step
@@ -23568,15 +23573,7 @@ goto UI_Map_Xal-Vakka01_base 63.08,67.69
 'Safely continue East from here
 |tip Manually skip to the next step.
 step
-goto UI_Map_Xal-Vakka01_base 85.13,68.12
-'Safely continue North from here
-|tip Manually skip to the next step.
-step
-goto UI_Map_Xal-Vakka01_base 85.30,62.82
-'Safely continue West from here
-|tip Manually skip to the next step.
-step
-goto UI_Map_Xal-Vakka01_base 79.91,62.74
+goto UI_Map_Xal-Vakka01_base 79.48,68.02
 'Safely continue North from here
 |tip Manually skip to the next step.
 step
