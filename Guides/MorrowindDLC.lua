@@ -21340,7 +21340,7 @@ step
 'Congratulations, you have completed the Summerset guide!
 ]])
 ZGV:RegisterGuide("LEVELING\\Murkmire",[[
-loadingimage charload_01.dds
+loadingimage loadscreen_murkmire_01.dds
 description Investigate Murkmire's long-forgotten past and help an Imperial scholar recover a mysterious and powerful relic that will take you deep into Black Marsh, its history, and its people.
 step
 'Press _U_ to open your _Collections_
