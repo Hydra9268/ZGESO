@@ -12,7 +12,7 @@ No longer supported references:
 
 Install through the excellent add-on manager <a href="https://minion.mmoui.com/" target="blank">Minion</a>
 
-### Coming Soon
+### Out Now!
 
 * Murkmire Guide
 <img src="https://i.imgur.com/jf7hoV2.jpg">
