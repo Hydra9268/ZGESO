@@ -163,7 +163,8 @@ function Data:GetIdByNameAndType(typ,name)
 			id = 6660000+lamehash(name)   -- fake hashy ID
 		else
 			-- Create a new id for it. and stow it in SV
-			SetMapToPlayerLocation() ZO_WorldMap_UpdateMap()
+			SetMapToPlayerLocation()
+			ZO_WorldMap_UpdateMap()
 			local zone = abs(GetCurrentMapZoneIndex())
 			if zone>999 then zone=999 end
 			local zoneid = ("%03d"):format(zone)

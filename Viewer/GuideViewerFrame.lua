@@ -39,8 +39,8 @@ local DEFAULT_MINIMAP_ANCHOR = { -- Set point using Top so that goals grow downw
 }
 local MINIMAP_BUTTON_SIZE = 25
 
-local UPDATETIME = .1		-- Try to update only 10 times/s
-local PROG_UPDATETIME = 10		-- Progress bar updates nicely for step based whenever a step is advanced, but try to update periodically too for level based.
+local UPDATETIME = .1				-- Try to update only 10 times/s
+local PROG_UPDATETIME = 10			-- Progress bar updates nicely for step based whenever a step is advanced, but try to update periodically too for level based.
 local ARROW_DOWN_STARTTIMER = 0.5	-- Wait 0.5 second before going forward/backwards steps.
 local ARROW_DOWN_REPETITION = 0.05	-- 20/sec repetition
 
@@ -53,7 +53,7 @@ local TITLE_BAR_HEIGHT = 55
 local GUIDE_BAR_HEIGHT = 20
 local PROGRESS_BAR_HEIGHT = 7
 
-local CUR_STEP_WIDTH = 32	-- 3 digits
+local CUR_STEP_WIDTH = 32			-- 3 digits
 local VIEWER_BOT_PADDING = 5
 
 local SMALL_PADDING = 5
@@ -159,11 +159,11 @@ function Viewer:CreateZGVF()
 	local fwidth = ZGV.sv.profile.viewerwidth or DEFAULT_WIDTH
 	local frame =  CHAIN(ui:Create("Frame",master,name,"true"))	-- Not toplevel
 		:SetPoint(TOP)
-		:SetSize(fwidth,DEFAULT_HEIGHT)		-- Height doesn't need to be saved because that is based on goals
+		:SetSize(fwidth,DEFAULT_HEIGHT)						-- Height doesn't need to be saved because that is based on goals
 		:SetDimensionConstraints(MIN_WIDTH,nil,MAX_WIDTH,nil)
 		:SetResizeHandleSize(4)
-		:SetMouseEnabled(true)	-- Just enable mouse so it can drag master
-		:SetHandler("OnMouseDown",function(me)			-- TODO while draggin all of the OnResizedToFit handlers fire, not a big deal likely, but strange and not needed.
+		:SetMouseEnabled(true)								-- Just enable mouse so it can drag master
+		:SetHandler("OnMouseDown",function(me)				-- TODO while draggin all of the OnResizedToFit handlers fire, not a big deal likely, but strange and not needed.
 			Viewer.moving = master:StartMoving()			-- Blocking in stepbox:OnResizedToFit so that viewer isn't resized without need
 		end)
 		:SetHandler("OnMouseUp",function(me)
@@ -171,7 +171,7 @@ function Viewer:CreateZGVF()
 			Viewer.moving = nil
 		end)
 		:SetHandler("OnResizeStop",function(me)
-			Viewer:ResizeToFitSteps()	-- Can't prevent vertical resizing, just make it look normal again when they stop.
+			Viewer:ResizeToFitSteps()						-- Can't prevent vertical resizing, just make it look normal again when they stop.
 			Viewer:UpdateProgressBar()
 			ZGV.sv.profile.viewerwidth = me:GetWidth()
 		end)
@@ -1069,9 +1069,9 @@ function Viewer:HandleActionLayer()
 
 	if (( isActive("GameMenu")							-- GameMenu
 		or isActive("User Interface Shortcuts")			-- User Interface Shortcuts
-		or isActive("Notifications")					-- Notifications			TODO wtf is this layer? Sounds like we should hide here
-		or isActive("Siege")							-- Siege							TODO wtf is this layer? Sounds like we should hide here
-		or isActive("Dialogs") )						-- Dialogs						TODO wtf is this layer? Sounds like we should hide here
+		or isActive("Notifications")					-- Notifications		TODO wtf is this layer? Sounds like we should hide here
+		or isActive("Siege")							-- Siege				TODO wtf is this layer? Sounds like we should hide here
+		or isActive("Dialogs") )						-- Dialogs				TODO wtf is this layer? Sounds like we should hide here
 		and ZGV.sv.profile.hideoninventory
 	)
 	or (isActive("Conversation")						-- Conversation
@@ -1093,7 +1093,7 @@ function Viewer:HandleActionLayer()
 		end
 	end
 
-	-- ZO_WorldMap_UpdateMap()							-- TODO temp fix for world map sometimes not updating properly
+	ZO_WorldMap_UpdateMap()								-- TODO temp fix for world map sometimes not updating properly
 end
 
 -----------------------------------------
@@ -1101,7 +1101,7 @@ end
 -----------------------------------------
 
 --[[
-	1. General							-- Always open, Don't hide
+	1. General						-- Always open, Don't hide
 	2. User Interface Shortcuts	-- Hide
 	3. Siege
 	4. Dialogs
@@ -1109,10 +1109,10 @@ end
 	6. MouseUIMode					-- Nupe
 	7. Conversation					-- Hide
 	8. Guild
-	9. RadialMenu						-- Don't hide
-	10. Death								-- Don't hide
-	11. Loot								-- Don't hide
-	12. GameMenu						-- Hide
+	9. RadialMenu					-- Don't hide
+	10. Death						-- Don't hide
+	11. Loot						-- Don't hide
+	12. GameMenu					-- Hide
 	13. Keybind Window
 	14. Addons
 	15. OptionsWindow

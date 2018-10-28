@@ -386,21 +386,25 @@ function Utils.GetMyAddonInfo()
 	error("Can't find addon info!")
 end
 
-function Utils.IsPOIComplete(map,poi)
-	if type(map)=="string" or (type(map)=="number" and map>1000) then
-		poi = map%1000
-		map = math.floor(map/1000)
+function Utils.IsPOIComplete( map, poi )
+
+	if type( map ) == "string" or ( type( map ) == "number" and map > 1000 ) then
+		poi = map % 1000
+		map = math.floor( map / 1000 )
 	end
-	if not map then map=GetCurrentMapZoneIndex() end
-	if type(poi)=="string" then
-		for i=1,GetNumPOIs(map) do
-			local text,level,subtextinc,subtextcom = GetPOIInfo(map,i)
-			if text==poi then poi=i break end
+
+	if not map then map = GetCurrentMapZoneIndex() end
+
+	if type(poi) == "string" then
+		for i = 1, GetNumPOIs( map ) do
+			local text, level, subtextinc, subtextcom = GetPOIInfo( map, i )
+			if text == poi then poi = i break end
 		end
 	end
-	if type(poi)=="number" then
-		local x,y,typ,tex = GetPOIMapInfo(map,poi)
-		return typ==MAP_PIN_TYPE_POI_COMPLETE
+	
+	if type(poi) == "number" then
+		local x, y, typ, tex = GetPOIMapInfo( map, poi )
+		return typ == MAP_PIN_TYPE_POI_COMPLETE
 	end
 end
 

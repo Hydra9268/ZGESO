@@ -57,7 +57,6 @@ tinsert(ZGV.startups,function(self)
 end)
 
 --[[
-
 VARIOUS ESO API FUNCTIONS e.g. /run d(GetMapType())
 
 GetOfferedQuestInfo()
@@ -132,5 +131,4 @@ GetUnitClass
 GetUnitXPMax
 GetUnitName
 DoesUnitExist
-
 --]]

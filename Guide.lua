@@ -283,7 +283,6 @@ end
 
 function Guide:AddStep(step)
 	-- TODO type(step)~=Step
-
 	step.parentGuide = self
 	step.num = #self.steps+1
 
@@ -326,9 +325,13 @@ function Guide:GetCompletion(mode)
 
 	if mode=="none" then
 		return "none"
+
 	elseif mode=="level" then
-		if not self.startlevel or not self.endlevel then return "error","no starting/ending level set" end
-		return min(1,max(0,(Utils.GetPlayerPreciseLevel()-self.startlevel)/(self.endlevel-self.startlevel)))
+		if not self.startlevel or not self.endlevel then 
+			return "error","no starting/ending level set"
+		end
+		return min( 1, max( 0, ( Utils.GetPlayerPreciseLevel() - self.startlevel ) / ( self.endlevel - self.startlevel ) ) )
+
 	elseif mode=="steps" then
 		local count,comp = 0,0
 		local prevStepComp = true	-- Start as true, there is no previous step to the first step.
@@ -344,16 +347,14 @@ function Guide:GetCompletion(mode)
 			else
 				nextStepComp = nextstep:IsComplete(1)
 			end
-
-			if step:AreRequirementsMet()	-- Valid step?
-			and not step.finish						-- Not last step
+			if step:AreRequirementsMet() -- Valid step?
+			and not step.finish	-- Not last step
 			then
-				count=count+1
-
-				if curStepComp then		-- If this step is complete, easy
-					comp=comp+1
+				count = count + 1
+				if curStepComp then	-- If this step is complete, easy
+					comp = comp + 1
 				elseif (prevStepComp and nextStepComp) then -- If the steps on both sides of this step are complete, lets say this step is complete. Rough, but for progress bar.
-					comp=comp+1
+					comp = comp + 1
 				end
 			end
 
@@ -362,7 +363,7 @@ function Guide:GetCompletion(mode)
 			curStepComp = nextStepComp
 		end
 
-		return count>0 and comp/count or 0, comp,count
+		return count > 0 and comp / count or 0, comp,count
 	end
 	-- other completions might not need a full parse.
 	return "error","we don't know if this guide completes or not"

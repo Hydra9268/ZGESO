@@ -283,7 +283,7 @@ function ZGV:SetWaypoint(what)
 			ZGV.Pointer:SetArrowToFirstCompletableGoal()
 		end
 	end
-	ZO_WorldMap_UpdateMap() -- Was disabled due to conflicts with other addons (Bandits UI). Investigate further.
+	ZO_WorldMap_UpdateMap()
 	return set
 end
 
@@ -312,11 +312,11 @@ function ZGV:TryToCompleteStep(force)
 
 	-- TODO skip non-completable steps
 	--[[ smart skipping: treat invalid or impossible or skippable as completed
-	if not self.CurrentStep:AreRequirementsMet()
-	or (self.db.profile.skipimpossible and not steppossible)
-	or (self.db.profile.skipauxsteps and self.CurrentStep:IsAuxiliarySkippable()) then
-		completing=true
-	end
+		if not self.CurrentStep:AreRequirementsMet()
+		or (self.db.profile.skipimpossible and not steppossible)
+		or (self.db.profile.skipauxsteps and self.CurrentStep:IsAuxiliarySkippable()) then
+			completing=true
+		end
 	--]]
 
 	if not completing then

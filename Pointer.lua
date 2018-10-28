@@ -160,7 +160,8 @@ function Pointer:SetWaypoint (m,f,x,y,data,arrow)
 	end
 
 	if not m then
-		SetMapToPlayerLocation() ZO_WorldMap_UpdateMap() -- hey we trashed it already... why not just be obvious.
+		SetMapToPlayerLocation() 
+		ZO_WorldMap_UpdateMap() -- hey we trashed it already... why not just be obvious.
 		m,f = self:GetMapTex(),0
 	else
 		--m=self:SanitizePhase(m)  -- de-phase map!
@@ -1047,7 +1048,8 @@ function Pointer:InitMaps()
 
 	if ZGV.DEV then Pointer:SurveyStats() end
 
-	SetMapToPlayerLocation() ZO_WorldMap_UpdateMap()
+	SetMapToPlayerLocation()
+	ZO_WorldMap_UpdateMap()
 
 	Pointer:ZONE_CHANGED()
 end
@@ -1060,7 +1062,8 @@ function Pointer:SurveyAllMaps(autoclick)
 		if autoclick then self:SurveyClickAllOver(map) end
 	end
 
-	SetMapToPlayerLocation() ZO_WorldMap_UpdateMap()
+	SetMapToPlayerLocation()
+	ZO_WorldMap_UpdateMap()
 end
 
 
@@ -1106,7 +1109,10 @@ function Pointer:SurveyMap(specific,force,quiet)
 	if specific then
 		local map=specific:match("map (%d+)")
 		if map then SetMapToMapListIndex(tonumber(map)) end
-	else SetMapToPlayerLocation() ZO_WorldMap_UpdateMap() end
+	else 
+		SetMapToPlayerLocation()
+		ZO_WorldMap_UpdateMap()
+	end
 
 	local qd=function(txt) if not quiet then DEVd(txt) end end
 
@@ -1158,7 +1164,10 @@ function Pointer:SurveyMap(specific,force,quiet)
 		if specific then
 			local map=specific:match("map (%d+)")
 			if map then SetMapToMapListIndex(tonumber(map)) end
-		else SetMapToPlayerLocation() ZO_WorldMap_UpdateMap() end
+		else 
+			SetMapToPlayerLocation() 
+			ZO_WorldMap_UpdateMap()
+		end
 
 		-- second point
 		local lx2,ly2 = GetMapPlayerWaypoint()  if lx2==0 then lx2,ly2=GetMapPlayerPosition("player") end
@@ -1200,7 +1209,10 @@ function Pointer:SurveyMap(specific,force,quiet)
 		Pointer.do_autosurvey = false
 	end
 
-	if specific=="here" and quiet then SetMapToPlayerLocation() ZO_WorldMap_UpdateMap() end
+	if specific=="here" and quiet then 
+		SetMapToPlayerLocation() 
+		ZO_WorldMap_UpdateMap() 
+	end
 
 end
 

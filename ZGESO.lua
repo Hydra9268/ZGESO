@@ -53,8 +53,7 @@ ZGV.WM = WINDOW_MANAGER
 -- LOAD TIME SETUP
 -----------------------------------------
 
--- Embed AceTimer into ZGV
-LibStub("AceTimer-3.0"):Embed(ZGV)
+LibStub("AceTimer-3.0"):Embed(ZGV)					-- Embed AceTimer into ZGV
 
 -----------------------------------------
 -- STARTUP

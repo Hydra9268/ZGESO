@@ -4,6 +4,7 @@ if not ZGV then return end
 -----------------------------------------
 -- INFORMATION
 -----------------------------------------
+-- Guide events and actions (e.g. "goto")
 
 -----------------------------------------
 -- LOCAL REFERENCES
@@ -45,22 +46,22 @@ ZGV.GOALTYPES = GOALTYPES
 -- LOAD TIME SETUP
 -----------------------------------------
 
-setmetatable( GOALTYPES, { __index = function() return empty_table end })
+setmetatable( GOALTYPES, { __index = function() return empty_table end } )
 
 -----------------------------------------
 -- LOCAL FUNCTIONS
 -----------------------------------------
 
-local function COLOR_LOC(s)		return "|cffee77"..tostring(s).."|r" end
+local function COLOR_LOC(s)			return "|cffee77"..tostring(s).."|r" end
 local function COLOR_COUNT(s)		return "|cffffcc"..tostring(s).."|r" end
 local function COLOR_ITEM(s)		return "|caaeeff"..tostring(s).."|r" end
 local function COLOR_SKILL(s)		return "|caaeeff"..tostring(s).."|r" end
 local function COLOR_QUEST(s)		return "|ceebbff"..tostring(s).."|r" end
-local function COLOR_NPC(s)		return "|caaffaa"..tostring(s).."|r" end
+local function COLOR_NPC(s)			return "|caaffaa"..tostring(s).."|r" end
 local function COLOR_MONSTER(s) 	return "|cffaaaa"..tostring(s).."|r" end
 local function COLOR_GOAL(s)		return "|cffcccc"..tostring(s).."|r" end
 local function COLOR_BOLD(s)		return "|cffee55"..tostring(s).."|r" end
-local function COLOR_TIP(s)		return "|ceeeecc"..tostring(s).."|r" end
+local function COLOR_TIP(s)			return "|ceeeecc"..tostring(s).."|r" end
 local function GetMapByID(id) 		return "(map "..id..")" end
 
 -----------------------------------------
@@ -311,12 +312,12 @@ GOALTYPES['goto'] = {
 
 		return (self.force_complete or all_gotos)		-- If the goto has a |c then it is completable. Or if there are only gotos present in this step.
 	end,
-	iscomplete = function(self)
+	iscomplete = function(self)	-- look into this. see if there's a way to autocomplete these steps
 		local dist = ZGV.Pointer:GetDistToCoords(self.map,self.x,self.y)
 
 		if self.dist and (
-			 (self.dist>0 and dist < self.dist)
-		or (self.dist<0 and dist > self.dist)
+			 (self.dist > 0 and dist < self.dist)
+		or (self.dist < 0 and dist > self.dist)
 		) then
 			return true,true
 		end
@@ -325,7 +326,7 @@ GOALTYPES['goto'] = {
 	end,
 }
 
-GOALTYPES['buy'] = 		GOALTYPES['collect']
+GOALTYPES['buy'] = 			GOALTYPES['collect']
 GOALTYPES['gather'] = 		GOALTYPES['collect']
 
 GOALTYPES['collect'] = 		{ parse = GOALTYPES['_item'].parse, }
@@ -333,6 +334,7 @@ GOALTYPES['kill'] = 		{ parse = GOALTYPES['_item'].parse, }
 
 GOALTYPES['wayshrine'] = 	{
 	parse = function(self,params,step,data)
+
 		local mapid, map = string.match(params,"([^/]+)/([^/]+)")
 		
 		if tonumber(mapid) then
@@ -345,6 +347,7 @@ GOALTYPES['wayshrine'] = 	{
 			self.wayshrine = params
 		end
 	end,
+
 	iscomplete = function(self)
 		
 		if not self.wayshrine_POIIndex then
@@ -379,8 +382,8 @@ GOALTYPES['wayshrine'] = 	{
 			
 		end
 
-		local x,y,typ,tex = GetPOIMapInfo(self.wayshrine_zoneid,self.wayshrine_POIIndex,true) --true=truthful call! don't be fooled by our own Pointer.lua and its foglight!
-		
+		local x, y, typ, tex = GetPOIMapInfo( self.wayshrine_zoneid, self.wayshrine_POIIndex, true ) --true=truthful call! don't be fooled by our own Pointer.lua and its foglight!
+
 		if typ == MAP_PIN_TYPE_POI_COMPLETE then
 			return true,true
 		else
