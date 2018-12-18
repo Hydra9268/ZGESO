@@ -34,9 +34,8 @@ For example, 1.4.96.
 
 * `/zgpos` - For city and delve data, and also to confirm the map's DDS filename is correct.
 * `/zgpos gps` - For general map data. Works on any map.
-* `/zgpos floor` - Retrieves floor information. The first value is the current floor. Second is the total number.
 
-<img src="https://i.imgur.com/eDu5Hev.png">
+<img src="https://i.imgur.com/82pKr03.png">
 
 ----
 
