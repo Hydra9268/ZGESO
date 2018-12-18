@@ -1,3 +1,7 @@
+-----------------------------------------
+-- TODO: Break this up into smaller files
+-----------------------------------------
+
 local ZGV = ZygorGuidesViewer
 if not ZGV then return end
 if ZGV:DoMutex("MorrowindDLC") then return end

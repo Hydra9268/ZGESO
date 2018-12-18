@@ -1,3 +1,7 @@
+-----------------------------------------
+-- TODO: This may not be used. At least it doesn't appear in the guide's menu. Investigate.
+-----------------------------------------
+
 local ZGV = ZygorGuidesViewer
 if not ZGV then return end
 ZGV.GuideMenuTier = "TAM"
