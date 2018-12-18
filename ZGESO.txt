@@ -11,9 +11,9 @@
 Libs/LibStub/LibStub.lua
 Libs/LibMapPing/LibMapPing.lua
 Libs/LibGPS/LibGPS.lua
+Libs/lua-bit-numberlua/lua-bit-numberlua.lua
 Libs/AceTimer-3.0/AceTimer-3.0.xml
 Libs/AceTimer-3.0/AceTimer-3.0.lua
-Libs/lua-bit-numberlua/lua-bit-numberlua.lua
 
 -- Localization
 Localization/Main.lua
@@ -23,14 +23,11 @@ Localization/Core_US.lua
 ZGESO.lua
 ZGESO.xml
 Functions.lua
-Licence.lua
-Dev/Dev.lua
 
 -- Main Utilities?
 UiWidgets/Main.lua
 Class.lua
 Globals.lua
-Ver.lua
 SlashCommands.lua
 Log.lua
 Debug.lua
@@ -105,34 +102,13 @@ Viewer/GuideViewerFrame.lua
 Viewer/GuideViewerFrame.xml
 GuideMenu.lua
 
-Dev/TestingFunctions.lua
-
 Guides/ZygorIncludeCommon.lua
-Guides/ZygorIncludesAldmeriDominion.lua
-Guides/ZygorIncludesDaggerfallCovenant.lua
-Guides/ZygorIncludesEbonheartPact.lua
-
-Guides/LevelingCommon_MASTER.lua
 Guides/LevelingCommon.lua
-Guides/LevelingCommonTrial.lua
-Guides/LevelingAldmeriDominion_MASTER.lua
 Guides/LevelingAldmeriDominion.lua
-Guides/LevelingAldmeriDominionTrial.lua
-Guides/LevelingDaggerfallCovenant_MASTER.lua
 Guides/LevelingDaggerfallCovenant.lua
-Guides/LevelingDaggerfallCovenantTrial.lua
-Guides/LevelingEbonheartPact_MASTER.lua
 Guides/LevelingEbonheartPact.lua
-Guides/LevelingEbonheartPactTrial.lua
-
 Guides/Skyshards.lua
-Guides/Lorebooks.lua
-
-Guides/MorrowindDLC_MASTER.lua
 Guides/MorrowindDLC.lua
-Guides/MorrowindDLCTrial.lua
-
-Guides/Tests.lua
 
 Testing/Main.lua
 Testing/UI.lua
