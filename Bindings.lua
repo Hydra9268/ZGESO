@@ -25,7 +25,7 @@ end
 -- STARTUP
 -----------------------------------------
 
--- Since this is the final file that loads... I'm very sorry for this being crammed here. It ties off the memory/timing of file loading, started in ZygorGuidesViewer.lua startup area.
+-- Since this is the final file that loads... I'm very sorry for this being crammed here. It ties off the memory/timing of file loading, started in ZGESO.lua startup area.
 collectgarbage("collect")
 ZGV.startup_log.load_memory_final = collectgarbage("count")
 ZGV.startup_log.load_memory_total = ZGV.startup_log.load_memory_final - ZGV.startup_log.load_memory_initial

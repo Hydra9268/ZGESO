@@ -67,19 +67,27 @@ ZGV.startup_log.load_memory_initial = collectgarbage("count")
 -- This gets called every frame on startup, by MasterFrame.
 local last_gettime
 function ZGV:StartupStep()
-	if not last_gettime then last_gettime=GetFrameTimeSeconds() end
-	if last_gettime==GetFrameTimeSeconds() then return false,"same frame" end  -- ah-ha, NOT loaded then!
-	if not self.player_activated then return false,"not player_activated" end
+	if not last_gettime then 
+		last_gettime = GetFrameTimeSeconds()
+	end
+
+	if last_gettime==GetFrameTimeSeconds() then 
+		return false,"same frame"
+	end  -- ah-ha, NOT loaded then!
+	
+	if not self.player_activated then 
+		return false,"not player_activated"
+	end
 
 	if not self.startup_log['1_initialized'] then
 		self.loading="Loading..."
-
 		return false,"1_initialized"
 	end
 	
 	if not self.startup_log['2_parsedguides'] then
 		self.loading = "Loading Guides"
 		self.startup_log['2_parsedguides_n'] = (self.startup_log['2_parsedguides_n'] or 0) + 1
+
 		--[[
 		-- TODO use this to timeout guides for users?
 		local newreg = {}

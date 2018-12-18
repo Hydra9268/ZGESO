@@ -487,7 +487,6 @@ Data.MapIdsByName = {
 	["Vakka-Bok Village"]				= 445,
 	["Deep-Root"]						= 446,
 	["Remnant of Argon"]				= 447,
-
 }
 
 -----------------------------------------

@@ -46,12 +46,12 @@ local LOGO_Y_OFFSET = 10
 local BUT_Y_OFFSET = 10
 local TEXT_Y_OFFSET = 5
 
-local TEXT_MAX_WIDTH = 225
+local TEXT_MAX_WIDTH = 375
 
-local MIN_HEIGHT = nil-- 85
-local MAX_HEIGHT = nil		-- No max
-local MIN_WIDTH = 250
-local MAX_WIDTH = 250
+local MIN_HEIGHT = nil	-- 85
+local MAX_HEIGHT = nil	-- No max
+local MIN_WIDTH = 400
+local MAX_WIDTH = 200
 
 local RESIZE_X_PADDING = 30
 local RESIZE_Y_PADDING = LOGO_Y_OFFSET + 5 --+ BUT_Y_OFFSET + TEXT_Y_OFFSET-- + 5

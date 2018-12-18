@@ -148,8 +148,6 @@ local getglobalbyprefix = function(prefix,value)
 	for k,v in globalprefixes(prefix) do if v==value then return k end end
 end
 
-
-
 Events.eventList = {}
 for k,v in globalprefixes("EVENT_") do
 	if type(v)=="number"

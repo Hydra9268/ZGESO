@@ -1221,14 +1221,14 @@ function Pointer:SurveyClickAllOver(map)
 	local starttex = self:GetMapTex()
 	for x=0,1,0.05 do
 		for y=0,1,0.05 do
-
-			if map then SetMapToMapListIndex(map) end
-
+			if map then
+				SetMapToMapListIndex(map)
+			end
 			if WouldProcessMapClick(x,y) then
 				local r=ProcessMapClick(x,y)
 				if r==SET_MAP_RESULT_MAP_CHANGED then
 					local tex = self:GetMapTex()
-					DEVd(("Clicked on %s at %d,%d, got %s"):format(starttex,x*100,y*100,tex))
+					DEVd(("Clicked on %s at %d,%d, got %s"):format( starttex, x * 100, y * 100, tex ))
 					self:SurveyMap("here",nil,"quiet")
 				end
 			end
@@ -1247,8 +1247,6 @@ SLASH_COMMANDS["/zgpos"] = function(checker)
 		d("yoffset: "..gps.offsetY)
 		d("xscale: "..gps.scaleX)
 		d("yscale: "..gps.scaleY)
-	elseif checker == "floor" then
-		d(GetMapFloorInfo())
 	else
 		local tex = Pointer:GetMapTex()
 		local Z = Pointer.Zones[tex]
