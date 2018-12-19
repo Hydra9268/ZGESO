@@ -1,25 +1,14 @@
-local ZGV = ZygorGuidesViewer	if not ZGV then return end
+local ZGV = ZGV
 local Pointer = ZGV.Pointer	if not Pointer then return end
 
 local arrowskindir,arrowskinlc,arrowskinname = "Stealth","stealth","Stealth"
-
-local arrowframeproto = {}
-
-local CHAIN=ZGV.Utils.ChainCall
-
+local ArrowFrameProto = {}
+local CHAIN = ZGV.Utils.ChainCall
 local arrowskin = ZGV.Pointer:AddArrowSkin(arrowskinlc,arrowskinname)
 
-arrowskin.features={colordist=false,smooth=true}
+arrowskin.features = {colordist=false,smooth=true}
 
-local sprite_angles_base = {[0]=0,0.5,1.1,2.6,4.5,6.9,9.7,13.0,16.7,20.8,25.3,30.1,35.3,40.7,46.4,52.4,58.7,65.2,71.9,78.8,85.9,93.1,100.5,108.1,115.7,123.5,131.4,139.4,147.4,155.5,163.6,168,173,180}
-local sprite_angles={}
-
-local min,max = math.min,math.max
-
-DEBUGSPRITE1= sprite_angles_base
-DEBUGSPRITE2= sprite_angles
-
-local WM=WINDOW_MANAGER
+local WM = WINDOW_MANAGER
 
 function arrowskin:CreateFrame()
   if not self.frame then
@@ -29,7 +18,7 @@ function arrowskin:CreateFrame()
     :SetAnchor(TOP,GuiRoot,TOP,0,100)
     :SetMovable(true)
     :SetMouseEnabled(true)
-    :SetHandler("OnUpdate",function(self,elapsed) end)
+    :SetHandler("OnUpdate",function(...) end)
     .__END
 
     -- Have to inherit base to allow :Hide and :Show
@@ -89,14 +78,14 @@ function arrowskin:CreateFrame()
 
   self.frame.style = self.id
 
-  for f,fu in pairs(arrowframeproto) do self.frame[f] = fu end
+  for f,fu in pairs(ArrowFrameProto) do self.frame[f] = fu end
 
   if self.frame.OnLoad then self.frame:OnLoad() end
 
   return self.frame
 end
 
-function arrowframeproto:ShowText (title,dist,eta)
+function ArrowFrameProto:ShowText (title,dist,eta)
   self.stairs=false
 
   Pointer.ArrowFrame_Proto_ShowText(self)
@@ -105,8 +94,6 @@ function arrowframeproto:ShowText (title,dist,eta)
 
   local distcolor
   if type(dist)=="number" then
-    --local perc=max(0,1-(dist/min(max(100,Pointer.initialdist or 0),500)))
-    --local r,g,b = ZGV.gradient3(perc, 1.0,0.5,0.4, 1.0,0.9,0.5, 0.7,1.0,0.6, 0.7)
     local r,g,b=1,1,1
     distcolor = ("|c%02x%02x%02x"):format(r*255,g*255,b*255)
   else
@@ -116,35 +103,18 @@ function arrowframeproto:ShowText (title,dist,eta)
   self.title:SetText( (title and "|cffffff"..title.."|r\n" or "") .. (disttxt and distcolor..disttxt.."|r" or "") .. (etatxt or "") )
 end
 
-
-local function BetterTexCoord(obj,x,w,y,h)  -- aka  n,w,h
-  if not h then  x,w,y,h=(x or 0),w,nil,y  y=math.floor(x/w)+1  x=(x%w)+1  end
-  obj:SetTexCoord((x-1)/w,x/w,(y-1)/h,y/h)
-end
-
-
------------- color
-local ar,ag,ab = 0.60,0.60,0.60
-local br,bg,bb = 0.95,0.95,0.95
-local cr,cg,cb = 1.00,1.00,1.00
-
-local msin,mcos,mabs,mfloor=math.sin,math.cos,math.abs,math.floor
+local mcos,mabs=math.cos,math.abs
 local rad2deg = 180/math.pi
 
 local mfloor=math.floor
 local mround=zo_round
 
-function arrowframeproto:OnLoad()
+function ArrowFrameProto:OnLoad()
   local skindir = ZGV.DIR.."/Arrows/".. arrowskindir
   self.arrow:SetTexture(skindir.."/arrow.dds")
   self.spec:SetTexture(skindir.."/arrow-specular.dds")
-  --self.arrow.arrspecular:SetTexture(true)
-  --self.arrow.arrspecular:SetTexture(skindir.."\\arrow-specular",false)
-  --self.arrow.arrspecular:SetDrawLayer("ARTWORK",2)
   self.arrow:Hide()
   self.spec:Hide()
-  --self.special:SetTexture(skindir.."\\specials",false)
-  --self.special:Hide()
 
   local spr_w,spr_h = 102,68
   local imgw,imgh = 1024,1024
@@ -169,105 +139,62 @@ function arrowframeproto:OnLoad()
       else
         frac_angle=0
       end
-
-      --self.turn.anim:SetRadians(frac_angle/rad2deg)  self.turn:Play()
     end
 
-    --angle=(angle+(step/2))%360  -- shift step/2 forward
     local num = mround(angle/step)%total
     local row,col = mfloor(num/inrow),num%inrow
     self.arrow:SetTextureCoords(col*w,(col+1)*w,row*h,(row+1)*h)
     self.spec:SetTextureCoords(col*w,(col+1)*w,row*h,(row+1)*h)
-    --self.arrspecular:SetAlpha(0.7)
 
     -- precision!
     if num==0 or num==1 or num==total-1 then
       if ZGV.db.profile.arrowcolordist then
-        local r,g,b,a = 1,1,1,1 --self.arr:GetVertexColor()
+        local r,g,b,a = 1,1,1,1
         r = r + (1-r)*0.5
         g = g + (1-g)*0.5
         b = b + (1-b)*0.5
         self.arrow:SetVertexColors(15,r,g,b,a)
       else
         self.arrow:SetVertexColors(15,0.6,1.0,0.4,1.0)
-        --self.arrspecular:SetAlpha(1.0)
       end
     end
     self.arrow:SetVertexColors(15,0.3,0.8,0.0,1.0)
 
   end
   self:Hide()
-  --self.back:SetTexture(skindir.."\\shadow",false)
-  --self.title:SetFont(ZGV.Font,9)
 end
 
-function arrowframeproto:OnUpdate (elapsed)
+function ArrowFrameProto:OnUpdate (elapsed)
 end
 
-function arrowframeproto:ShowArrived()
+function ArrowFrameProto:ShowArrived()
   self.arrow:Hide()
-
   self.here:Show()
-  --self.back:SetTexCoord(0,0,0,1,1,0,1,1)
-
-  --self.arrow.upstairs:Stop()
-  --self.arrow.downstairs:Stop()
 end
 
-function arrowframeproto:ShowNothing()
+function ArrowFrameProto:ShowNothing()
   self.arrow:Hide()
   self.here:Hide()
 end
 
-local precspan = 0.2
-
-function arrowframeproto:ShowTraveling (elapsed,angle,dist)
+function ArrowFrameProto:ShowTraveling (elapsed,angle,dist)
   self.here:Hide()
-
   self.arrow:Show()
   self.spec:Show()
-  --self.precise:Show()
-  --self.title:Show()
-
-  local profile=ZGV.db.profile
 
   local perc,tier
-
   local spangood,spanperf=0.10,0.02
-  --if dist<500 then local mul=1-(dist/500)  mul=mul*mul*mul*mul*mul  spangood,spanperf = spangood+spangood*mul,spanperf+spanperf*mul  end
 
   Pointer.initialdist = Pointer.initialdist or dist
 
   perc = mabs(1-angle*0.3183)  -- 1/pi  ;  0=target backwards, 1=target ahead
   perc,tier = Pointer.CalculateDirectionTiers(perc,1-spangood,1-spangood+0.02,1-spanperf,1)
 
-  --local r,g,b = ZGV.gradient3(perc, ar,ag,ab, br,bg,bb, cr,cg,cb, 1)
-  --self.arrow:SetVertexColor(r,g,b)
-
-
   ------------ rotation of elements
-
   self:SetAngle(angle)
-
-  --[[
-	if perc>0.5 and self.precise.turn then
-		-- precision dot
-		local precangle = angle
-		if precangle>3.141592 then precangle=precangle-6.283185 end
-		precangle = precangle * 8  -- precision!
-		while precangle>6.283185 do precangle=precangle-6.283185 end
-		while precangle<0 do precangle=precangle+6.283185 end
-
-		self.precise:SetAlpha((perc-0.5)*4)
-		self.precise.turn.anim:SetRadians(precangle)
-		self.precise.turn:Play()
-	else
-		self.precise:SetAlpha(0)
-	end
-	--]]
 end
 
-function arrowframeproto:ShowStairs(up)
+function ArrowFrameProto:ShowStairs(up)
   self.precise:Hide()
   self.here:Hide()
   self.arrow:Show()
@@ -280,7 +207,7 @@ function arrowframeproto:ShowStairs(up)
   end
 end
 
-function arrowframeproto:ShowWaiting(phase)
+function ArrowFrameProto:ShowWaiting(phase)
   self.precise:Show()
   self.here:Hide()
   self.arrow:Hide()
@@ -289,11 +216,11 @@ function arrowframeproto:ShowWaiting(phase)
   self.precise.turn:Play()
 end
 
-function arrowframeproto:ShowWarning()
+function ArrowFrameProto:ShowWarning()
   UIFrameFlash(self.arrow,0.2,0.2,0.2, true,0,0)
 end
 
-function arrowframeproto:OnMouseWheel(delta)
+function ArrowFrameProto:OnMouseWheel(delta)
   if IsControlKeyDown() then
     ZGV.db.profile.arrowscale = ZGV.db.profile.arrowscale + delta * 0.2
     if ZGV.db.profile.arrowscale<0.4 then ZGV.db.profile.arrowscale=0.4 end
