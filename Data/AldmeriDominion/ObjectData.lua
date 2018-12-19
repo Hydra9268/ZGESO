@@ -1,5 +1,4 @@
-local ZGV = ZygorGuidesViewer
-if not ZGV then return end
+local ZGV = ZGV
 
 ZGV._ObjectDataAD = [[
 
