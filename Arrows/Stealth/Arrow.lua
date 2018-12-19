@@ -1,4 +1,3 @@
-local ZGV = ZGV
 local Pointer = ZGV.Pointer	if not Pointer then return end
 
 local arrowskindir,arrowskinlc,arrowskinname = "Stealth","stealth","Stealth"
