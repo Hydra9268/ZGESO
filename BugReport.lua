@@ -1,16 +1,11 @@
 local ZGV = ZGV
-if not ZGV then return end
-
 -----------------------------------------
 -- LOCAL REFERENCES
 -----------------------------------------
 
-local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs,class = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs,class
-local print = ZGV.print
+local tinsert,type,pairs,ipairs = table.insert,type,pairs,ipairs
 local CHAIN = ZGV.Utils.ChainCall
 local ui = ZGV.UI
-local L = ZGV.L
-
 local WM = WINDOW_MANAGER
 
 -----------------------------------------
@@ -146,7 +141,7 @@ local function CreateDumpFrameBasic()
   :SetSize(100,25)
   :SetText("Close")
   :SetPoint(BOTTOMRIGHT, frame,-5,-5)
-  :SetHandler("OnClicked",function(me,but)
+  :SetHandler("OnClicked",function(...)
       frame:Hide()
       BugReport.report = ""
     end)
@@ -158,7 +153,7 @@ end
 -----------------------------------------
 
 -- Circle back to this. Update to support any type of output
-function BugReport:ShowDump(text,title,editable,action,cursorpos)
+function BugReport:ShowDump(text,title)
   local f
 
   if not self.BasicFrame then CreateDumpFrameBasic() end
