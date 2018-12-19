@@ -34,26 +34,26 @@ ui:RegisterWidget("EditBox",EditBox)
 
 -- But with a border
 function EditBox:New(parent,name)
-	local edit = CHAIN(ui:CreateControlFromVirtual(name,parent,"ZO_DefaultEdit",EditBox))
-		:ClearAnchors()
-		:SetDimensions(DEFAULT_WIDTH,DEFAULT_HEIGHT)
-		:SetFontSize(13)				-- Default size, also setsfont
-		:SetMaxInputChars(20)
-		:SetEditEnabled(true)
-		:SetMouseEnabled(true)
-	--	:SetHandler("OnTextChanged",function(self)
-		-- Input whitelisting
-	--		local text = self:GetText()
-	--		hi2:ShowIf(ZGV.Utils.IsAlphanumeric(text))
-	--	end)
-	.__END
+  local edit = CHAIN(ui:CreateControlFromVirtual(name,parent,"ZO_DefaultEdit",EditBox))
+  :ClearAnchors()
+  :SetDimensions(DEFAULT_WIDTH,DEFAULT_HEIGHT)
+  :SetFontSize(13)				-- Default size, also setsfont
+  :SetMaxInputChars(20)
+  :SetEditEnabled(true)
+  :SetMouseEnabled(true)
+  --	:SetHandler("OnTextChanged",function(self)
+  -- Input whitelisting
+  --		local text = self:GetText()
+  --		hi2:ShowIf(ZGV.Utils.IsAlphanumeric(text))
+  --	end)
+  .__END
 
-	edit.bd = ui:Create("Backdrop",edit,name and name.."_BD")
+  edit.bd = ui:Create("Backdrop",edit,name and name.."_BD")
 
-	CHAIN(edit)
-		:SetBackdropColor(unpack(SECBACKDROP_CENTER_COLOR))
+  CHAIN(edit)
+  :SetBackdropColor(unpack(SECBACKDROP_CENTER_COLOR))
 
-	return edit
+  return edit
 end
 
 -----------------------------------------

@@ -13,9 +13,9 @@ local print = ZGV.print
 -----------------------------------------
 
 local Testing = {
-	results = {},
-	testgroups = {},
-	testdata = {},
+  results = {},
+  testgroups = {},
+  testdata = {},
 }
 local AllTestsRan = false
 
@@ -30,101 +30,101 @@ ZGV.Testing = Testing
 -----------------------------------------
 
 function Testing:RunAllTests()
-	if AllTestsRan then return end
-	AllTestsRan = true
+  if AllTestsRan then return end
+  AllTestsRan = true
 
-	self:RunTests(self.testgroups,"All")
+  self:RunTests(self.testgroups,"All")
 end
 
 function Testing:RunTestGroup(group)
-	assert(self.testgroups[group],"Test group - "..group.." doesn't exist")
+  assert(self.testgroups[group],"Test group - "..group.." doesn't exist")
 
-	self:RunTests(self.testgroups[group],group)
+  self:RunTests(self.testgroups[group],group)
 end
 
 function Testing:RunTests(testgroup,testgroupname)
-	assert(testgroup, "No Test Group given")
-	testgroupname = testgroupname or "No Name"
+  assert(testgroup, "No Test Group given")
+  testgroupname = testgroupname or "No Name"
 
-	-- Local variables
-	local numTestFailed = 0
-	local numTestRan = 0
-	local testsFailed = {}
-	local testsPassed = {}
+  -- Local variables
+  local numTestFailed = 0
+  local numTestRan = 0
+  local testsFailed = {}
+  local testsPassed = {}
 
-	-- Save failed/passed for finding them again
-	self.results.testsFailed = testsFailed
-	self.results.testsPassed = testsPassed
+  -- Save failed/passed for finding them again
+  self.results.testsFailed = testsFailed
+  self.results.testsPassed = testsPassed
 
-	-- Local functions
+  -- Local functions
 
-	-- Runs a single test and reports back t/f after placing it in the correct tables.
-	local function testFunction(func,name)
-		local pass,reason = func()
+  -- Runs a single test and reports back t/f after placing it in the correct tables.
+  local function testFunction(func,name)
+    local pass,reason = func()
 
-		numTestRan = numTestRan + 1
+    numTestRan = numTestRan + 1
 
-		if not pass then
-			numTestFailed = numTestFailed + 1
-			testsFailed[name] = reason or "noreason"
-			return false
-		else
-			testsPassed[name] = "ok"
+    if not pass then
+      numTestFailed = numTestFailed + 1
+      testsFailed[name] = reason or "noreason"
+      return false
+    else
+      testsPassed[name] = "ok"
 
-			return true
-		end
-	end
+      return true
+    end
+  end
 
-	-- Recurse through the testgroup to find the bottom of each group with the functions.
-	local function splitTestGroup(group,name)
-		-- TODO this could recurse forever if there is a table reference to something above it. Don't do it or add a fix.
-		if type(group)=="table" then
-			for n,funcs in pairs(group) do
-				splitTestGroup(funcs,name.."."..n)
-			end
-		elseif type(group)=="function" then
-			testFunction(group,name)
-		else
-			error("Invalid test type - "..type(group))
-		end
-	end
+  -- Recurse through the testgroup to find the bottom of each group with the functions.
+  local function splitTestGroup(group,name)
+    -- TODO this could recurse forever if there is a table reference to something above it. Don't do it or add a fix.
+    if type(group)=="table" then
+      for n,funcs in pairs(group) do
+        splitTestGroup(funcs,name.."."..n)
+      end
+    elseif type(group)=="function" then
+      testFunction(group,name)
+    else
+      error("Invalid test type - "..type(group))
+    end
+  end
 
-	-- Set off the recursion!
-	splitTestGroup(testgroup,testgroupname)
+  -- Set off the recursion!
+  splitTestGroup(testgroup,testgroupname)
 
-	-- Report results
-	if numTestFailed == 0 then
-		self:Debug(("All %d tests |c00ff00PASSED|r. Clear Captain."):format(numTestRan))
+  -- Report results
+  if numTestFailed == 0 then
+    self:Debug(("All %d tests |c00ff00PASSED|r. Clear Captain."):format(numTestRan))
 
-		return true
-	else
-		self:Debug(("%d tests ran. %d tests |cff0000FAILED|r."):format(numTestRan,numTestFailed))
-		local errorstring = "\nTESTS FAILED:\n"
-		for func,txt in pairs(testsFailed) do
-			errorstring = errorstring..func.." - "..txt.."\n"
-		end
+    return true
+  else
+    self:Debug(("%d tests ran. %d tests |cff0000FAILED|r."):format(numTestRan,numTestFailed))
+    local errorstring = "\nTESTS FAILED:\n"
+    for func,txt in pairs(testsFailed) do
+      errorstring = errorstring..func.." - "..txt.."\n"
+    end
 
-		error(errorstring)
+    error(errorstring)
 
-		return false
-	end
+    return false
+  end
 end
 
 -- Register a full group of tests under a single name
 function Testing:RegisterTestGroup(groupName,group)
-	assert(type(groupName) == "string" and type(group) == "table", "Invalid Register Test Group")
+  assert(type(groupName) == "string" and type(group) == "table", "Invalid Register Test Group")
 
-	Testing.testgroups[groupName] = group
+  Testing.testgroups[groupName] = group
 end
 
 -- Register a single test
 function Testing:RegisterTest(testType,testFunc)
-	assert(type(testType) == "string" and type(testFunc) == "function", "Invalid Register Test")
+  assert(type(testType) == "string" and type(testFunc) == "function", "Invalid Register Test")
 
-	Testing.tests[testType] = Testing.tests[testType] or {}
-	local testgroup = Testing.tests[testType]
+  Testing.tests[testType] = Testing.tests[testType] or {}
+  local testgroup = Testing.tests[testType]
 
-	tinsert(testFunc,testgroup)
+  tinsert(testFunc,testgroup)
 end
 --[[
 /dump #ZGV.BugReport.BasicFrame.edit:GetText()
@@ -140,13 +140,13 @@ end
 -----------------------------------------
 
 function Testing:DumpMissingData()
-	local str = "--==NPC DATA==--\n" .. self.testdata.npcDataString ..
-	"\n--==OBJECT DATA==--\n" .. self.testdata.objDataString ..
-	"\n--==QUEST DATA==--\n" .. self.testdata.questDataString
+  local str = "--==NPC DATA==--\n" .. self.testdata.npcDataString ..
+  "\n--==OBJECT DATA==--\n" .. self.testdata.objDataString ..
+  "\n--==QUEST DATA==--\n" .. self.testdata.questDataString
 
-	print(str)
+  print(str)
 
-	ZGV:Dump(str,"Missing Data")
+  ZGV:Dump(str,"Missing Data")
 end
 
 
@@ -155,6 +155,6 @@ end
 -----------------------------------------
 
 function Testing:Debug(...)
-	local str = ...
-	ZGV:Debug("&testing "..str, select(2,...) )
+  local str = ...
+  ZGV:Debug("&testing "..str, select(2,...) )
 end

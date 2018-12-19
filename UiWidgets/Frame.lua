@@ -36,25 +36,25 @@ ui:RegisterWidget("InvisFrame",InvisFrame)
 -- Frame is Top level. It should probably be parented to GuiRoot
 -- Pass a parameter to it if it should be a CT_CONTROL instead of TOPLEVEL 
 function Frame:New(parent,name,control)
-	local frame = CHAIN(ui:CreateControl(name,parent,control and CT_CONTROL or CT_TOPLEVELCONTROL,Frame))
-		:SetClampedToScreen(true)
-	.__END
+  local frame = CHAIN(ui:CreateControl(name,parent,control and CT_CONTROL or CT_TOPLEVELCONTROL,Frame))
+  :SetClampedToScreen(true)
+  .__END
 
-	frame.bd = ui:Create("Backdrop",frame,name and name.."_BD")
+  frame.bd = ui:Create("Backdrop",frame,name and name.."_BD")
 
-	return frame
+  return frame
 end
 
 function Frame:SetCanDrag(drag)
-	if drag then
-		self:SetMovable(true)
-		self:SetMouseEnabled(true)
+  if drag then
+    self:SetMovable(true)
+    self:SetMouseEnabled(true)
 
-		-- TODO drag parent?
-	else
-		self:SetMovable(false)
-		self:SetMouseEnabled(false)
-	end
+    -- TODO drag parent?
+  else
+    self:SetMovable(false)
+    self:SetMouseEnabled(false)
+  end
 end
 
 -----------------------------------------
@@ -64,14 +64,14 @@ end
 
 -- This is just a Control, not a top level so it has to go onto a top level
 function SecFrame:New(parent,name,control)
-	control = not control		-- These are CT_CONTROL by default, so if passed an extra arg change it
-	local frame = CHAIN(ui:CreateControl(name,parent,control and CT_CONTROL or CT_TOPLEVELCONTROL,SecFrame))
-		:SetClampedToScreen(true)
-	.__END
+  control = not control		-- These are CT_CONTROL by default, so if passed an extra arg change it
+  local frame = CHAIN(ui:CreateControl(name,parent,control and CT_CONTROL or CT_TOPLEVELCONTROL,SecFrame))
+  :SetClampedToScreen(true)
+  .__END
 
-	frame.bd = ui:Create("SecBackdrop",frame,name and name.."_BD")
+  frame.bd = ui:Create("SecBackdrop",frame,name and name.."_BD")
 
-	return frame
+  return frame
 end
 
 -----------------------------------------
@@ -80,12 +80,12 @@ end
 
 -- Frame without a backdrop
 function InvisFrame:New(parent,name,control)
-	control = not control		-- These are CT_CONTROL by default, so if passed an extra arg change it
-	local frame = CHAIN(ui:CreateControl(name,parent,control and CT_CONTROL or CT_TOPLEVELCONTROL,InvisFrame))
-		:SetClampedToScreen(true)
-	.__END
+  control = not control		-- These are CT_CONTROL by default, so if passed an extra arg change it
+  local frame = CHAIN(ui:CreateControl(name,parent,control and CT_CONTROL or CT_TOPLEVELCONTROL,InvisFrame))
+  :SetClampedToScreen(true)
+  .__END
 
-	return frame
+  return frame
 end
 
 -----------------------------------------

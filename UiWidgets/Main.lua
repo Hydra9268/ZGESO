@@ -27,13 +27,13 @@ local BOLD_FONTS = {}
 
 -- TODO don't actually do anything with the font.. Just create it because all SetFont functions just want the global name. So use that.
 local makeFont = function(size,font)
-	size = floor(size)	-- Only integers work.
-	local fontName = FontGName..tostring(size)..(font==FONT and "Reg" or "Bold")
-	local fontString = font.."|"..size.."|"..extras
-	
-	local font = CreateFont(fontName,fontString)
+  size = floor(size)	-- Only integers work.
+  local fontName = FontGName..tostring(size)..(font==FONT and "Reg" or "Bold")
+  local fontString = font.."|"..size.."|"..extras
 
-	return fontName
+  local font = CreateFont(fontName,fontString)
+
+  return fontName
 end
 
 
@@ -42,16 +42,16 @@ end
 -----------------------------------------
 
 setmetatable(REG_FONTS, { __index = function(me,size) 
-	local fname = makeFont(size,FONT)
-	me[size] = fname
-	return fname
-end })
+      local fname = makeFont(size,FONT)
+      me[size] = fname
+      return fname
+    end })
 
 setmetatable(BOLD_FONTS, { __index = function(me,size) 
-	local fname = makeFont(size,BOLD)
-	me[size] = fname
-	return fname
-end })
+      local fname = makeFont(size,BOLD)
+      me[size] = fname
+      return fname
+    end })
 
 -----------------------------------------
 -- SAVED REFERENCES
@@ -72,53 +72,53 @@ UI.savedwidgets = savedwidgets
 	@param name - Global name of the widget if possible.
 --]]
 function UI:Create(uiType,parent,name,...)
-	assert(type(uiType)=="string", "uiType must be a string not - "..type(uiType))
-	assert(type(parent)=="userdata", "All UI element must be parented to another UI element.")
-	assert(type(name)=="string", "All UI elements must have a name")
-	
-	local widgetClass = Classes[uiType]
-	assert(widgetClass and widgetClass.New, uiType.." is not a valid ui type.") 
+  assert(type(uiType)=="string", "uiType must be a string not - "..type(uiType))
+  assert(type(parent)=="userdata", "All UI element must be parented to another UI element.")
+  assert(type(name)=="string", "All UI elements must have a name")
 
-	local newWidget = widgetClass:New(parent,name,...)
+  local widgetClass = Classes[uiType]
+  assert(widgetClass and widgetClass.New, uiType.." is not a valid ui type.") 
 
-	-- Widgets are sorted in this table by class so that later we can change themes easy.
-	if not savedwidgets[uiType] then 
-		savedwidgets[uiType] = {} 
-	end
-	tinsert(savedwidgets[uiType],newWidget)
-	
-	-- If the class isn't the same then inherit the class. Example is dropdown
-	if newWidget.class ~= uiType then
-		self:InheritClass(newWidget,widgetClass,1)
-	end
+  local newWidget = widgetClass:New(parent,name,...)
 
-	return newWidget
+  -- Widgets are sorted in this table by class so that later we can change themes easy.
+  if not savedwidgets[uiType] then 
+    savedwidgets[uiType] = {} 
+  end
+  tinsert(savedwidgets[uiType],newWidget)
+
+  -- If the class isn't the same then inherit the class. Example is dropdown
+  if newWidget.class ~= uiType then
+    self:InheritClass(newWidget,widgetClass,1)
+  end
+
+  return newWidget
 end
 
 -- Used instead of calling WM:CreateControl directly so that inheritance can happen eariler.
 function UI:CreateControl(name,parent,ct_type,class)
-	local control = WM:CreateControl(name,parent,ct_type)
+  local control = WM:CreateControl(name,parent,ct_type)
 
-	-- Inherit all functions from the Base class because everyone gets those functions.
-	self:InheritClass(control,"Base")
+  -- Inherit all functions from the Base class because everyone gets those functions.
+  self:InheritClass(control,"Base")
 
-	-- Inherit all functions from the widget's class
-	self:InheritClass(control,class)
+  -- Inherit all functions from the widget's class
+  self:InheritClass(control,class)
 
-	return control
+  return control
 end
 
 -- Used instead of calling WM:CreateControl directly so that inheritance can happen eariler.
 function UI:CreateControlFromVirtual(name,parent,virt,class)
-	local control = WM:CreateControlFromVirtual(name,parent,virt)
+  local control = WM:CreateControlFromVirtual(name,parent,virt)
 
-	-- Inherit all functions from the Base class because everyone gets those functions.
-	self:InheritClass(control,"Base")
+  -- Inherit all functions from the Base class because everyone gets those functions.
+  self:InheritClass(control,"Base")
 
-	-- Inherit all functions from the widget's class
-	self:InheritClass(control,class)
+  -- Inherit all functions from the widget's class
+  self:InheritClass(control,class)
 
-	return control
+  return control
 end
 
 -----------------------------------------
@@ -132,10 +132,10 @@ end
 	@param widgetObj - The actual widget object
 --]]
 function UI:RegisterWidget(name,widgetProto,widgetObj)
-	widgetObj = widgetObj or widgetProto
-	if not (name and widgetObj) then return end
+  widgetObj = widgetObj or widgetProto
+  if not (name and widgetObj) then return end
 
-	Classes[name] = widgetObj
+  Classes[name] = widgetObj
 end
 
 --[[
@@ -144,15 +144,15 @@ end
 	@param class - Class object or a string
 --]]
 function UI:InheritClass(obj,class,force)
-	local classobj = type(class) == "string" and Classes[class] or class
-	assert(classobj, tostring(class).." - Class does not exist")
+  local classobj = type(class) == "string" and Classes[class] or class
+  assert(classobj, tostring(class).." - Class does not exist")
 
-	zginherits(obj,classobj)
+  zginherits(obj,classobj)
 
-	-- zginherits doesn't overwrite class, but sometimes it is needed
-	if force then
-		obj.class = classobj.class
-	end
+  -- zginherits doesn't overwrite class, but sometimes it is needed
+  if force then
+    obj.class = classobj.class
+  end
 end
 
 -----------------------------------------
@@ -160,9 +160,9 @@ end
 -----------------------------------------
 
 function UI:GetFont(size,bold)
-	local fonts = bold and BOLD_FONTS or REG_FONTS
-	local font = fonts[size]
-	assert(font, (bold and "Bold " or "").."Font size["..size.."] not available atm. Make it. It is easy.")
+  local fonts = bold and BOLD_FONTS or REG_FONTS
+  local font = fonts[size]
+  assert(font, (bold and "Bold " or "").."Font size["..size.."] not available atm. Make it. It is easy.")
 
-	return font
+  return font
 end

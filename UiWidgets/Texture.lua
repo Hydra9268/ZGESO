@@ -36,11 +36,11 @@ ui:RegisterWidget("LetterZ",LetterZ)
 
 -- Simple texture
 function Texture:New(parent,name)
-	local texture = CHAIN(ui:CreateControl(name,parent,CT_TEXTURE,Texture))
-		:SetColor(1,1,1,1)
-	.__END
+  local texture = CHAIN(ui:CreateControl(name,parent,CT_TEXTURE,Texture))
+  :SetColor(1,1,1,1)
+  .__END
 
-	return texture
+  return texture
 end
 
 -----------------------------------------
@@ -48,13 +48,13 @@ end
 -----------------------------------------
 
 function Logo:New(parent,name)
-	local logo = CHAIN(ui:CreateControl(name,parent,CT_TEXTURE,Logo))
-		:SetTexture(ZGV.DIR .. "/Viewer/Skins/Stealth/zygorlogo2.dds")
-		--:SetTextureCoords(0,1,0,1)
-		:SetSize(LOGO_WIDTH,LOGO_HEIGHT)
-	.__END
+  local logo = CHAIN(ui:CreateControl(name,parent,CT_TEXTURE,Logo))
+  :SetTexture(ZGV.DIR .. "/Viewer/Skins/Stealth/zygorlogo2.dds")
+  --:SetTextureCoords(0,1,0,1)
+  :SetSize(LOGO_WIDTH,LOGO_HEIGHT)
+  .__END
 
-	return logo
+  return logo
 end
 
 -----------------------------------------
@@ -62,13 +62,13 @@ end
 -----------------------------------------
 
 function LetterZ:New(parent,name)
-	local z = CHAIN(ui:CreateControl(name,parent,CT_TEXTURE,LetterZ))
-		:SetTexture(ZGV.DIR .. "/Viewer/Skins/Stealth/zglogo.dds")
-		:SetTextureCoords(.1,.9,.1,.9)
-		:SetSize(25,25)	-- Should be set by user.
-	.__END
+  local z = CHAIN(ui:CreateControl(name,parent,CT_TEXTURE,LetterZ))
+  :SetTexture(ZGV.DIR .. "/Viewer/Skins/Stealth/zglogo.dds")
+  :SetTextureCoords(.1,.9,.1,.9)
+  :SetSize(25,25)	-- Should be set by user.
+  .__END
 
-	return z
+  return z
 end
 
 -----------------------------------------

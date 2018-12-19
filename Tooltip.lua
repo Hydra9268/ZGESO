@@ -34,18 +34,18 @@ ZGV.Tooltip = Tooltip
 -----------------------------------------
 
 function Tooltip:Create()
-	local tooltip = ui:Create("Tooltip",GuiRoot,name)
+  local tooltip = ui:Create("Tooltip",GuiRoot,name)
 
-	Tooltip.Frame = tooltip
-	
-	-- Set metatable for ZGV.Tooltip to actual Tooltip.
-	setmetatable(self,{__index = function(me,func)
-		assert(me.Frame[func],func.." missing in Tooltip")
+  Tooltip.Frame = tooltip
 
-		return function(me,...)
-			me.Frame[func](me.Frame,...)
-		end
-	end})
+  -- Set metatable for ZGV.Tooltip to actual Tooltip.
+  setmetatable(self,{__index = function(me,func)
+        assert(me.Frame[func],func.." missing in Tooltip")
+
+        return function(me,...)
+          me.Frame[func](me.Frame,...)
+        end
+      end})
 end
 
 -----------------------------------------
@@ -53,8 +53,8 @@ end
 -----------------------------------------
 
 function Tooltip:Debug(...)
-	local str = ...
-	ZGV:Debug("&tooltip "..str, select(2,...) )
+  local str = ...
+  ZGV:Debug("&tooltip "..str, select(2,...) )
 end
 
 
@@ -63,6 +63,6 @@ end
 -----------------------------------------
 
 tinsert(ZGV.startups,function(self)
-	Tooltip:Create()
-end)
+    Tooltip:Create()
+  end)
 

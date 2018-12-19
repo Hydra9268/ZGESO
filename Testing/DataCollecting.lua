@@ -25,43 +25,43 @@ local DataCollecting = {}
 -- TODO could expand this to work for data based on faction and for objects and quests
 
 function DataCollecting.TestNpcData()
-	local function cleanUpTestAndReturn(pass,comment,...)
-		comment = string.format(tostring(comment),...)
+  local function cleanUpTestAndReturn(pass,comment,...)
+    comment = string.format(tostring(comment),...)
 
-		return pass,comment
-	end
-	
-	-- First npcid
+    return pass,comment
+  end
 
-	local nname = "The Prophet"
-	local nid = 3360001
+  -- First npcid
 
-	local name = Data:GetNpcNameById(nid)
-	if name~=nname then
-		return cleanUpTestAndReturn(false,"Npc name no match. %s~=%s",nname,tostring(name))
-	end
+  local nname = "The Prophet"
+  local nid = 3360001
 
-	local id = Data:GetNpcIdByName(nname)
-	if nid~=id then
-		return cleanUpTestAndReturn(false,"Npc id no match. %s~=%s",nid,tostring(id))
-	end
+  local name = Data:GetNpcNameById(nid)
+  if name~=nname then
+    return cleanUpTestAndReturn(false,"Npc name no match. %s~=%s",nname,tostring(name))
+  end
 
-	--Last npcid
+  local id = Data:GetNpcIdByName(nname)
+  if nid~=id then
+    return cleanUpTestAndReturn(false,"Npc id no match. %s~=%s",nid,tostring(id))
+  end
 
-	nname = "Gruzdash"
-	nid = 3360012
+  --Last npcid
 
-	name = Data:GetNpcNameById(nid)
-	if name~=nname then
-		return cleanUpTestAndReturn(false,"Npc name no match. %s~=%s",nname,tostring(name))
-	end
+  nname = "Gruzdash"
+  nid = 3360012
 
-	id = Data:GetNpcIdByName(nname)
-	if nid~=id then
-		return cleanUpTestAndReturn(false,"Npc id no match. %s~=%s",nid,tostring(id))
-	end
+  name = Data:GetNpcNameById(nid)
+  if name~=nname then
+    return cleanUpTestAndReturn(false,"Npc name no match. %s~=%s",nname,tostring(name))
+  end
 
-	return cleanUpTestAndReturn(true)
+  id = Data:GetNpcIdByName(nname)
+  if nid~=id then
+    return cleanUpTestAndReturn(false,"Npc id no match. %s~=%s",nid,tostring(id))
+  end
+
+  return cleanUpTestAndReturn(true)
 end
 
 -----------------------------------------
@@ -69,5 +69,5 @@ end
 -----------------------------------------
 
 tinsert(ZGV.startups,function(self)
-	Testing:RegisterTestGroup("DataCollecting",DataCollecting)
-end)
+    Testing:RegisterTestGroup("DataCollecting",DataCollecting)
+  end)

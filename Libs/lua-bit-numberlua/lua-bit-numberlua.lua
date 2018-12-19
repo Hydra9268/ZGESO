@@ -243,10 +243,10 @@ end
 local function make_bitop(t)
   local op1 = make_bitop_uncached(t,2^1)
   local op2 = memoize(function(a)
-    return memoize(function(b)
-      return op1(a, b)
+      return memoize(function(b)
+          return op1(a, b)
+        end)
     end)
-  end)
   return make_bitop_uncached(op2, 2^(t.n or 1))
 end
 

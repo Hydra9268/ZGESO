@@ -36,8 +36,8 @@ ZGV.Callback = Callback
 -----------------------------------------
 
 function Callback:Debug(...)
-	local str = ...
-	ZGV:Debug("&callback "..str, select(2,...) )
+  local str = ...
+  ZGV:Debug("&callback "..str, select(2,...) )
 end
 
 
@@ -47,4 +47,4 @@ end
 
 tinsert(ZGV.startups,function(self)
 
-end)
+  end)

@@ -28,14 +28,14 @@ ZGV.Travel = Travel
 -----------------------------------------
 
 function Travel:Function()
-	return
+  return
 end
 
 function Travel:GetMapNameById(zone)
-	if not zone then return "nomap" end
-	local z1,z2 = GetZoneInfo(zone)		-- TODO what is the difference in z1/z2. Likely one is localized.
+  if not zone then return "nomap" end
+  local z1,z2 = GetZoneInfo(zone)		-- TODO what is the difference in z1/z2. Likely one is localized.
 
-	return z1
+  return z1
 end
 
 -----------------------------------------
@@ -43,8 +43,8 @@ end
 -----------------------------------------
 
 function Travel:Debug(...)
-	local str = ...
-	ZGV:Debug("&travel "..str, select(2,...) )
+  local str = ...
+  ZGV:Debug("&travel "..str, select(2,...) )
 end
 
 
@@ -54,7 +54,7 @@ end
 
 tinsert(ZGV.startups,function(self)
 
-end)
+  end)
 
 --[[
 VARIOUS ESO API FUNCTIONS e.g. /run d(GetMapType())

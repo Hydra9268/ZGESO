@@ -45,56 +45,56 @@ ui:RegisterWidget("Tabs",Tabs)
 -----------------------------------------
 
 function Tabs:New(parent,name,tabs,defaulttab)
-	local tabgroup = { tabs = {}, }
+  local tabgroup = { tabs = {}, }
 
-	for i,tabinfo in ipairs(tabs) do
-		local tab = CHAIN(Tab:New(parent,name.."_"..(tabinfo.id),tabgroup,tabinfo.handler))
-			:SetSize(unpack(tabinfo.size))
-			:SetText(tabinfo.name)
-			:SetFontSize(tabinfo.fontsize or 13)
-		.__END
+  for i,tabinfo in ipairs(tabs) do
+    local tab = CHAIN(Tab:New(parent,name.."_"..(tabinfo.id),tabgroup,tabinfo.handler))
+    :SetSize(unpack(tabinfo.size))
+    :SetText(tabinfo.name)
+    :SetFontSize(tabinfo.fontsize or 13)
+    .__END
 
-		tab.id = tabinfo.id
-		
-		if tabinfo.point then	
-			tab:SetPoint(unpack(tabinfo.point))
-		elseif i == 1 then
-			tab:SetPoint(TOPLEFT)
-		else
-			tab:SetPoint(LEFT,tabgroup.tabs[i-1],RIGHT)
-		end
-	
-		tinsert(tabgroup.tabs,tab)
-	end
+    tab.id = tabinfo.id
 
-	-- Have not inherited Tabs yet
-	Tabs.SetCurrentTab(tabgroup,defaulttab)
+    if tabinfo.point then	
+      tab:SetPoint(unpack(tabinfo.point))
+    elseif i == 1 then
+      tab:SetPoint(TOPLEFT)
+    else
+      tab:SetPoint(LEFT,tabgroup.tabs[i-1],RIGHT)
+    end
 
-	return tabgroup
+    tinsert(tabgroup.tabs,tab)
+  end
+
+  -- Have not inherited Tabs yet
+  Tabs.SetCurrentTab(tabgroup,defaulttab)
+
+  return tabgroup
 end
 
 function Tabs:SetCurrentTab(id,blockclickhandler)
-	-- If no id then it will just set all to default color
-	local newtab
-	for i,tabobj in ipairs(self.tabs) do
-		if tabobj.id == id then
-			newtab = tabobj
-			tabobj:SetAllFontColor(unpack(TabSelectedColor))
-		else
-			tabobj:SetAllFontColor(unpack(TabDefaultColor))
-		end
-	end
+  -- If no id then it will just set all to default color
+  local newtab
+  for i,tabobj in ipairs(self.tabs) do
+    if tabobj.id == id then
+      newtab = tabobj
+      tabobj:SetAllFontColor(unpack(TabSelectedColor))
+    else
+      tabobj:SetAllFontColor(unpack(TabDefaultColor))
+    end
+  end
 
-	if newtab and newtab.clickhandler	-- Does this tab even have a handler?
-	and not blockclickhandler then	-- Is the handler blocked?
-		newtab:clickhandler()
-	end
+  if newtab and newtab.clickhandler	-- Does this tab even have a handler?
+  and not blockclickhandler then	-- Is the handler blocked?
+    newtab:clickhandler()
+  end
 
-	self.currentTab = newtab
+  self.currentTab = newtab
 end
 
 function Tabs:GetCurrentTab()
-	return self.currentTab and self.currentTab.id
+  return self.currentTab and self.currentTab.id
 end
 
 -----------------------------------------
@@ -103,22 +103,22 @@ end
 
 --TODO Making a Tab by itself doesn't really work. Must include them when the TabHandler is made
 function Tab:New(parent,name,group,func)
-	local tab = CHAIN(ui:Create("InvisButton",parent,name))
-		:SetAllFontColor(unpack(TabDefaultColor))
-		:SetHandler("OnClicked",function(me)
-			me.tabgroup:SetCurrentTab(me.id)
-		end)
-	.__END
+  local tab = CHAIN(ui:Create("InvisButton",parent,name))
+  :SetAllFontColor(unpack(TabDefaultColor))
+  :SetHandler("OnClicked",function(me)
+      me.tabgroup:SetCurrentTab(me.id)
+    end)
+  .__END
 
-	Tab.SetOnClickHandler(tab,func)
+  Tab.SetOnClickHandler(tab,func)
 
-	tab.tabgroup = group
+  tab.tabgroup = group
 
-	return tab
+  return tab
 end
 
 function Tab:SetOnClickHandler(hand)
-	self.clickhandler = hand
+  self.clickhandler = hand
 end
 
 -----------------------------------------

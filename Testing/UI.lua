@@ -22,24 +22,24 @@ local UI = {}
 -----------------------------------------
 
 function UI.TestCreation()
-	local frame =  ui:Create("Frame",GuiRoot,"TestFrame")
-	-- TODO there are still references to this over in UI.savedframes
+  local frame =  ui:Create("Frame",GuiRoot,"TestFrame")
+  -- TODO there are still references to this over in UI.savedframes
 
-	local function cleanUpTestAndReturn(pass,comment)
-		if TestFrame then TestFrame:Hide() TestFrame:SetHidden(true) end
-		TestFrame = nil
-		frame = nil
+  local function cleanUpTestAndReturn(pass,comment)
+    if TestFrame then TestFrame:Hide() TestFrame:SetHidden(true) end
+    TestFrame = nil
+    frame = nil
 
-		return pass,comment
-	end
+    return pass,comment
+  end
 
-	if type(frame)~="userdata" then
-		return cleanUpTestAndReturn(false, "Frame not userdata")
-	elseif not frame.Show then
-		return cleanUpTestAndReturn(false, "Frame did not have Frame.Show so Base did not get set.")
-	end
+  if type(frame)~="userdata" then
+    return cleanUpTestAndReturn(false, "Frame not userdata")
+  elseif not frame.Show then
+    return cleanUpTestAndReturn(false, "Frame did not have Frame.Show so Base did not get set.")
+  end
 
-	return cleanUpTestAndReturn(true)
+  return cleanUpTestAndReturn(true)
 end
 
 -----------------------------------------
@@ -47,5 +47,5 @@ end
 -----------------------------------------
 
 tinsert(ZGV.startups,function(self)
-	Testing:RegisterTestGroup("UI",UI)
-end)
+    Testing:RegisterTestGroup("UI",UI)
+  end)
