@@ -5,8 +5,6 @@ if not ZGV then return end
 -- LOCAL REFERENCES
 -----------------------------------------
 
-local tinsert, tremove, sort, min, max, floor, type, pairs, ipairs, class = table.insert, table.remove, table.sort, math.min, math.max, math.floor, type, pairs, ipairs, class
-local print = ZGV.print
 local L = ZGV.L
 
 -----------------------------------------
