@@ -1,10 +1,10 @@
-local ZGV = ZGV
+local ZGV = _G.ZGV
 
 -----------------------------------------
 -- LOCAL REFERENCES
 -----------------------------------------
 
-local tinsert,tremove,sort,zginherits,min,max,floor,type,pairs,ipairs,unpack = table.insert,table.remove,table.sort,table.zginherits,math.min,math.max,math.floor,type,pairs,ipairs,unpack
+local zginherits, type = table.zginherits, type
 
 -----------------------------------------
 -- LOCAL VARIABLES
