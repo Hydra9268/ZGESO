@@ -199,15 +199,14 @@ local function ZGV_Initialized(eventCode, addOnName)
 
   self.starttime = GetGameTimeMilliseconds()
 
-  self.sv:Setup()-- Get our saved variables set up first thing
+  self.sv:Setup() -- Get our saved variables set up first thing
 
-  self:RegisterKeyBindings()
+  self:RegisterKeyBindings() -- What appears in the ESO > CONTROLS > Keybindings window
 
   -- pre-startup 'modules', if anyone wants to run stuff at addon init, before the troo startups.
   for i, init in ipairs(self.inits) do
     init(self)
   end
-  -- self.startups = nil
 
   self.EM:UnregisterForEvent("ZGV", EVENT_ADD_ON_LOADED)
   self.EM:UnregisterForEvent("ZGV", EVENT_PLAYER_ACTIVATED)
