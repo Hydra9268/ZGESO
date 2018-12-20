@@ -17,49 +17,53 @@ local GetFrameTimeSeconds = GetFrameTimeSeconds
 local GetFrameTimeMilliseconds = GetFrameTimeMilliseconds
 
 function Log:SetSize(size)
-  self.size = size
-  self:Trim()
+	self.size = size
+	self:Trim()
 end
 
 function Log:Trim()
-  local len = #self.entries
-  if len>self.size then
-    for i=1,len-self.size,1 do
-      tremove(self.entries,1)
-    end
-  end
+	local len = #self.entries
+	if len>self.size then
+		for i=1,len-self.size,1 do
+			tremove(self.entries,1)
+		end
+	end
 end
 
 function Log:Add(frm,...)
-  local s = frm:format(...)
+	local s = frm:format(...)
 
-  local debugms = (GetFrameTimeMilliseconds()*1000)%1000
-  local datestamp = ("%s.%03d.%03d"):format(GetTimeString(),(GetFrameTimeSeconds()%1)*1000,debugms)
+	local debugms = (GetFrameTimeMilliseconds()*1000)%1000
+	local datestamp = ("%s.%03d.%03d"):format(GetTimeString(),(GetFrameTimeSeconds()%1)*1000,debugms)
 
-  tinsert(self.entries, datestamp .. " >  "..s)
+	tinsert(self.entries, datestamp .. " >  "..s)
 
-  if #self.entries>self.size then
-    tremove(self.entries,1)
-  end
-  if self.loud then
-    print("|c8888ff".. datestamp ..">|r |cccccff"..s.."|r")
-  end
+	if #self.entries>self.size then
+		tremove(self.entries,1)
+	end
+	if self.loud then
+		print("|c8888ff".. datestamp ..">|r |cccccff"..s.."|r")
+	end
 end
 
 function Log:Print(n)
-  local len = #self.entries
-  if not n or n>len then n=len end
-  for i=len-n+1,len,1 do
-    print(self.entries[i])
-  end
+	local len = #self.entries
+	if not n or n > len then
+		n = len
+	end
+	for i = len - n + 1, len, 1 do
+		print(self.entries[i])
+	end
 end
 
 function Log:Dump(n)
-  local s = ""
-  local len = #self.entries
-  if not n or n>len then n=len end
-  for i=len-n+1,len,1 do
-    s = s .. self.entries[i] .. "\n"
-  end
-  return s
+	local t = ""
+	local len = #self.entries
+	if not n or n > len then 
+		n = len
+	end
+	for i = len - n + 1, len, 1 do
+		t = t .. self.entries[i] .. "\n"
+	end
+	return t
 end
