@@ -55,7 +55,7 @@ Pointer.MapFloors = {}  setmetatable(Pointer.MapFloors,{__index=function(self,id
 
 function Pointer:Startup()
   self:InitMaps()
-  self:SetArrowSkin(profile.arrowskin) -- stub for now
+  self:SetArrowSkin(profile.Arrowskin) -- stub for now
 
   if self.ArrowFrame then
     CHAIN(self.ArrowFrame)
@@ -725,7 +725,7 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
         oldangle=angle
       end
 
-      ArrowFrame:ShowTraveling(elapsed,angle,dist)
+      ArrowFrame:ShowTraveling(angle,dist)
 
     end
   end
