@@ -1,5 +1,4 @@
-local ZGV = ZygorGuidesViewer
-if not ZGV then return end
+local ZGV = _G.ZGV
 if ZGV.Utils.GetFaction() ~= "EP" and not ZGV.CFG_LOAD_ALL_FACTIONS then return end
 
 ZGV._QuestDataEP = [[

@@ -1,4 +1,4 @@
-local ZGV = ZGV
+local ZGV = _G.ZGV
 
 ZGV._ObjectDataAD = [[
 
