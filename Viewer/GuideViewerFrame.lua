@@ -1165,10 +1165,10 @@ function Viewer:Update(full)
 -- STARTUP
 -----------------------------------------
 
-		tinsert(ZGV.startups,function(self)
-				self.Events:AddEvent(EVENT_ACTION_LAYER_POPPED, Viewer)
-				self.Events:AddEvent(EVENT_ACTION_LAYER_PUSHED, Viewer)
-				self.Events:AddEvent(EVENT_PLAYER_COMBAT_STATE, Viewer)
+tinsert(ZGV.startups,function(self)
+		self.Events:AddEvent(EVENT_ACTION_LAYER_POPPED, Viewer)
+		self.Events:AddEvent(EVENT_ACTION_LAYER_PUSHED, Viewer)
+		self.Events:AddEvent(EVENT_PLAYER_COMBAT_STATE, Viewer)
 
-				setupActionLayers()
-			end)
+		setupActionLayers()
+	end)
