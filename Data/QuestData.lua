@@ -1,5 +1,4 @@
-local ZGV = ZygorGuidesViewer
-if not ZGV then return end
+local ZGV = _G.ZGV
 
 -- 3 diget zone id then 4 diget uniqueid
 

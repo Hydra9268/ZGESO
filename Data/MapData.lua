@@ -1,4 +1,6 @@
-﻿ZGV.MapData = {
+﻿local ZGV = _G.ZGV
+
+ZGV.MapData = {
 	["ZoneNameToTex"] =
 	{
 		["Aba-Loria"] = [[aba-loria_base]],

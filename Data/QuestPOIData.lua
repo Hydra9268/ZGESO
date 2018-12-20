@@ -1,5 +1,4 @@
-local ZGV = ZygorGuidesViewer
-if not ZGV then return end
+local ZGV = _G.ZGV
 
 --POI:QUEST,QUEST,QUEST
 ZGV._QuestPOIData = [[
