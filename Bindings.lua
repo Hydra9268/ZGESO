@@ -4,7 +4,7 @@ local ZGV = _G.ZGV
 -----------------------------------------
 
 local L = ZGV.L
-local getGameTimeMS = _G.GetGameTimeMilliseconds
+local getGameTimeMS, ZO_CreateStringId = _G.GetGameTimeMilliseconds, _G.ZO_CreateStringId
 
 -----------------------------------------
 -- LOCAL FUNCTIONS
