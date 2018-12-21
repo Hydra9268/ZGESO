@@ -178,19 +178,19 @@ function Data:UpdateLastIds(typ)
 
 	local p = '[^=]+=(%d+)\n?'
 
-	for i,loopdata in ipairs({comdata,data,saveddata}) do
+	for _,loopdata in ipairs({comdata,data,saveddata}) do
 		local s,e = loopdata:find(p)
 
 		while( e ) do
 			-- Get the id and then split it.
 			local id = loopdata:match(p,s)
-			local zoneid_fac,num = id:match("(%d%d%d%d)(%d+)")
-			num = tonumber(num)
+			local zoneid_fac, i = id:match("(%d%d%d%d)(%d+)")
+			i = tonumber(i)
 
 			-- Ids are all incremental so the highest one is the correct one.
 			if not lastIds[zoneid_fac] then lastIds[zoneid_fac] = 0 end
 
-			if num > lastIds[zoneid_fac] then lastIds[zoneid_fac] = num end
+			if i > lastIds[zoneid_fac] then lastIds[zoneid_fac] = i end
 
 			s,e = loopdata:find(p,e)
 		end

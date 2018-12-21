@@ -36,7 +36,7 @@ local function EventHandler(event,...)
 	local eventString = self.eventList[event]
 	assert(eventString,"Event "..event.." is not in our eventlist!")
 
-	for i, hand in ipairs(self[event]) do
+	for _, hand in ipairs(self[event]) do
 		local func
 		local funcSelf
 		if type(hand) == "function" then
@@ -94,8 +94,9 @@ end
 -----------------------------------------
 -- state = true -> Enter Combat
 -- state = false -> Exit Combat
-local state = _G.state
-function ZGV:EVENT_PLAYER_COMBAT_STATE(state)
+-- https://i.imgur.com/TzfcjTA.png
+local event, state = _G.event, _G.state
+function ZGV:EVENT_PLAYER_COMBAT_STATE(event,state)
 	if not state then
 		if self.call_after_combat then
 			self.call_after_combat()
@@ -133,7 +134,7 @@ local safenext = function(table,index)
 end
 
 local globalprefixes = function(prefix)
-	local safeglobalnext = function(tab,index)
+	local safeglobalnext = function(_,index)
 		local val
 		local safety=0
 		repeat
@@ -148,14 +149,6 @@ local globalprefixes = function(prefix)
 		until not index
 	end
 	return safeglobalnext,_G,nil
-end
-
-local getglobalbyprefix = function(prefix,value)
-	for k, v in globalprefixes(prefix) do 
-		if v == value then 
-			return k 
-		end 
-	end
 end
 
 Events.eventList = {}

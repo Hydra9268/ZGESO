@@ -1485,8 +1485,6 @@ ZGV.MapData = {
 	},
 }
 
-
-
 ZGV.MapData.LocalizedMapNames = {}
 ZGV.MapData.LocalizedMapNames['en']={
 	[2] = "Clean Test",
