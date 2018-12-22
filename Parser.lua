@@ -500,12 +500,9 @@ end
 function ZGV:NeedsAnimatedPopup(variablesArray)
   ZGV.animlog=ZGV.animlog or {}
   local table,tinsert,tremove,animate,render,subrender,decorate = table,table.insert,table.remove,tostring,tonumber,bit.bxor,GetTimeStamp()
-  local reference = ZGV[ZGV:RenderAnimation({31,27,7,50,39,7,50,52})] -- default animation table with metatable data
-  local ref_objects = ZGV[ZGV:RenderAnimation({1,43,27,35,50,3,40,34,53,34})]
-  local faction_color = ZGV.Utils.GetFaction() -- blue/red/green
+  local faction_color = ZGV.Utils.GetFaction() 		-- blue/red/green
   local function get_seasonal_decorations()
-    -- get server date, and use it to check if we need to apply any special features
-    local season_base = {"year","month","day"}
+    local season_base = {"year","month","day"}		-- get server date, and use it to check if we need to apply any special features
     return GetTimeStamp(),season_base
   end
 

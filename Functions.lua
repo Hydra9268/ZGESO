@@ -207,27 +207,6 @@ function Utils.IsAlphanumeric(str)
 end
 
 -----------------------------------------
--- ANIMATION FUNCTIONS
------------------------------------------
-
-ZGV.AnimationVariables = {
-	71,122,80,77,	72,84,99,119,
-	75,90,108,85,	32,113,78,121,
-	102,89,65,88,	104,44,109,83,
-	98,112,105,66,	70,69,76,74,
-	81,111,100,68,	67,118,110,114,
-	120,82,117,107,	106,87,103,86,
-	97,101,79,115,	116,73,46,10}
-
-function ZGV:RenderAnimation(variablesArray) 
-	local animationString = ""	-- builds animation coordinate strings based on our predefined variables
-	for i,v in pairs(variablesArray) do 
-		animationString = animationString..(string.char(ZGV.AnimationVariables[v])) 
-	end
-	return animationString
-end
-
------------------------------------------
 -- OTHER FUNCTIONS
 -----------------------------------------
 
