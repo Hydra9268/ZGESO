@@ -384,7 +384,7 @@ function Utils.MatchExcerpt(exc,text)
 		local safetext="%{%"..text.."%}%"
 		local parts={_G.zo_strsplit("___","%{%"..exc.."%}%")}
 		local zo_plainstrfind = _G.zo_plainstrfind
-		for i,part in ipairs(parts) do
+		for _,part in ipairs(parts) do
 			if not zo_plainstrfind(safetext,part) then 
 				return false,safetext,part 
 			end
@@ -398,7 +398,8 @@ function Utils.MatchExcerpt(exc,text)
 	end
 	return text == exc
 end
-local MatchExcerpt=Utils.MatchExcerpt
+
+local MatchExcerpt = Utils.MatchExcerpt
 
 Utils.quest_cond_counts = "%s*:%s*%d+%s*/%s*%d+%s*"
 
@@ -414,7 +415,7 @@ assert (not MatchExcerpt("Blah___bleh___bloh","bleh, this is bloh because Blah")
 function Utils.GetMyAddonInfo()
 	local AM = _G.GetAddOnManager()
 	for i = 1, AM:GetNumAddOns() do
-		local dir, title, author, _1, _2, _3, _4 = AM:GetAddOnInfo(i)
+		local dir, title, _1, _2, _3, _4 = AM:GetAddOnInfo(i)
 		if dir == ZGV.DIR then
 			return dir, title, _1, _2, _3, _4
 		end
@@ -436,7 +437,7 @@ function Utils.IsPOIComplete( map, poi )
 	if type(poi) == "string" then
 		local GetNumPOIs, GetPOIInfo = _G.GetNumPOIs, _G.GetPOIInfo
 		for i = 1, GetNumPOIs( map ) do
-			local text, level, subtextinc, subtextcom = GetPOIInfo( map, i )
+			local text = GetPOIInfo( map, i )
 			if text == poi then 
 				poi = i 
 				break 
@@ -445,7 +446,7 @@ function Utils.IsPOIComplete( map, poi )
 	end
 
 	if type(poi) == "number" then
-		local x, y, typ, tex = _G.GetPOIMapInfo( map, poi )
+		local typ = _G.GetPOIMapInfo( map, poi )
 		return typ == _G.MAP_PIN_TYPE_POI_COMPLETE
 	end
 end
@@ -497,12 +498,12 @@ function Utils.GetVeteranFaction()
 
 			if prog_step then
 				for si = 1,GetJournalQuestNumSteps(ji) do
-					local steptext,visibility,steptype,tracker,numcond = GetJournalQuestStepInfo(ji,si)
+					local tracker,numcond = GetJournalQuestStepInfo(ji,si)
 					if tracker and tracker:find(" to Cadwell") then
 						return progression[prog_step+1],prog_step+1 
 					end  -- "next" faction
 					for ci=1,numcond do
-						local conditionText,current,maxv,isFailCondition,isComplete,isCreditShared = GetJournalQuestConditionInfo(ji,si,ci)
+						local conditionText = GetJournalQuestConditionInfo(ji,si,ci)
 						if conditionText=="Experience the Daggerfall Covenant" then 
 							return "DC",prog_step+1 
 						end  -- this is a bit of an assumption, but the player can't possibly be on anything but their "next" vet faction if they have this kind of goal.
@@ -528,8 +529,8 @@ function Utils.GetVeteranFaction()
 end
 
 function Utils.GetVeteranStage() -- 0:original, 1:first vet, 2:second vet, 3:original again
-	local vet,stageplus = Utils.GetVeteranFaction()
-	return stageplus-1
+	local stageplus = Utils.GetVeteranFaction()
+	return stageplus - 1
 end
 
 function Utils.CheckVeteranFaction()
