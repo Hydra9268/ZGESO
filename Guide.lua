@@ -1,12 +1,8 @@
-local ZGV = ZygorGuidesViewer
-if not ZGV then return end
+local ZGV = _G.ZGV
 
 -----------------------------------------
 -- INFORMATION
 -----------------------------------------
---[[
-
---]]
 
 -----------------------------------------
 -- LOCAL REFERENCES
