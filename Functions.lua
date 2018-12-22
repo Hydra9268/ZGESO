@@ -157,44 +157,44 @@ function Utils.serialize(tab,indent)
 	if type(tab)~="table" then 
 		return tab 
 	end
-	local s = ""
+	local t = ""
 	indent = indent or 0
 	local keys={}
 	for k,v in pairs(tab) do 
 		tinsert(keys,k) 
 	end
 	table.sort(keys)
-	s = s .. strrep("    ",indent) .. "{\n"
+	t = t .. strrep("    ",indent) .. "{\n"
 	for ki,key in ipairs(keys) do 
 		while 1 do
 			local val = tab[key]
-			s = s .. strrep("    ",indent+1)
+			t = t .. strrep("    ",indent+1)
 			if tonumber(key) then
-				s = s .. "[" .. key .. "]"
+				t = t .. "[" .. key .. "]"
 			else
-				s = s .. "[\"" .. esc(key) .. "\"]"
+				t = t .. "[\"" .. esc(key) .. "\"]"
 			end
-			s = s .. " = "
+			t = t .. " = "
 			if type(val)=="string" then 
-				s = s .. "\"" .. val .. "\""
+				t = t .. "\"" .. val .. "\""
 			elseif type(val)=="number" then 
-				s = s .. val
+				t = t .. val
 			elseif type(val)=="function" then 
-				s = s .. "nil --function"
+				t = t .. "nil --function"
 			elseif type(val)=="userdata" then 
-				s = s .. "nil --userdata"
+				t = t .. "nil --userdata"
 			elseif type(val)=="nil" then 
-				s = s .. "nil"
+				t = t .. "nil"
 			elseif type(val)=="table" then
-				s = s .. "\n"
-				s = s .. Utils.serialize(val,indent+1)
+				t = t .. "\n"
+				t = t .. Utils.serialize(val,indent+1)
 			end
-			s = s .. ",\n"
+			t = t .. ",\n"
 			break 
 		end 
 	end
-	s = s .. strrep("    ",indent) .. "}\n"
-	return s
+	t = t .. strrep("    ",indent) .. "}\n"
+	return t
 end
 
 -- Letters, numbers or spaces
