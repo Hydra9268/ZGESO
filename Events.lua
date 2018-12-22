@@ -132,10 +132,6 @@ local safenext = function(table,index)
 	end  -- k has the error message, important
 end
 
-local safepairs = function(table)
-	return safenext,table,nil
-end
-
 local globalprefixes = function(prefix)
 	local safeglobalnext = function(tab,index)
 		local val
@@ -154,15 +150,8 @@ local globalprefixes = function(prefix)
 	return safeglobalnext,_G,nil
 end
 
-local getglobalbyprefix = function(prefix,value)
-	for k,v in globalprefixes(prefix) do 
-		if v == value then 
-			return k 
-		end 
-	end
-end
-
 Events.eventList = {}
+
 for k,v in globalprefixes("EVENT_") do
 	if type(v)=="number"
 	and k~="EVENT_GLOBAL_MOUSE_DOWN" 
