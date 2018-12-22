@@ -5,7 +5,6 @@ local ZGV = _G.ZGV
 -----------------------------------------
 
 local tinsert, max, type, pairs, ipairs = table.insert, math.max, type, pairs, ipairs
-local print = ZGV.print
 
 -----------------------------------------
 -- LOCAL VARIABLES
@@ -144,6 +143,7 @@ function Utils.ShowFloatingMessage(msg,event,font,sound,publicfloat,publictext)
 		_G.CENTER_SCREEN_ANNOUNCE:AddMessage(event or _G.EVENT_OBJECTIVE_COMPLETED,font or _G.CSA_EVENT_SMALL_TEXT,sound or _G.SOUNDS.QUEST_OBJECTIVE_STARTED,"|cffaa00[|cf8fbffZ|cffaa00]|r "..msg)
 	end
 	if ZGV.DEV or publictext then	
+		local print = ZGV.print
 		print(msg) 
 	end
 end
@@ -666,33 +666,6 @@ function ZGV.Licence:CheckExpirationPopup()
 
 		dialog:SetText(text1,text2) 
 		dialog:Show()
-	end
-end
-
-function ZGV.Licence:CheckExpirationWarning()
-	if not ZGV.Licences then return end
-
-	local exptime = ZGV.Licences.DATE_E
-	if exptime and not ZGV.Licence.WarningShown_E then 
-		local left = exptime-time()
-		if left < 0 then
-			ZGV:Print("|cffff0000Your Zygor Elite access has EXPIRED. Please update your guides or renew your subscription.")
-			ZGV.Licence.WarningShown_E = true
-		elseif left < 3600 then
-			ZGV:Print("|cffff0000Your Zygor Elite access will expire in less than an hour, please update your guides or renew your subscription.")
-			ZGV.Licence.WarningShown_E = true
-		end
-	end
-	local exptime = ZGV.Licences.DATE_S
-	if exptime and not ZGV.Licence.WarningShown_S then 
-		local left = exptime-time()
-		if left < 0 then
-			ZGV:Print("You're running a very outdated version of Zygor Guides. Please update your guides to the latest version.")
-			ZGV.Licence.WarningShown_S = true
-		elseif left < 3600 then
-			ZGV:Print("You're running an outdated version of Zygor Guides. Please update your guides to the latest version.")
-			ZGV.Licence.WarningShown_S = true
-		end
 	end
 end
 
