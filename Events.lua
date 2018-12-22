@@ -59,7 +59,6 @@ local function EventHandler(event,...)
 	end
 end
 
-
 -----------------------------------------
 -- FUNCTIONS
 -----------------------------------------
@@ -119,9 +118,9 @@ tinsert(ZGV.startups,function(self)
 -- EVENT LIST  - now dynamic.
 -----------------------------------------
 local safenext = function(table,index)
-	local ok, k, v = pcall(next,table,index)
+	local ok,k,v = pcall(next,table,index)
 	if ok then
-		return k, v
+		return k,v
 	else
 		-- when pcall fails, it gives an error message. The failing index will be there!
 		local newk = k:match(" function '(.-)'")
@@ -133,8 +132,12 @@ local safenext = function(table,index)
 	end  -- k has the error message, important
 end
 
+local safepairs = function(table)
+	return safenext,table,nil
+end
+
 local globalprefixes = function(prefix)
-	local safeglobalnext = function(_,index)
+	local safeglobalnext = function(tab,index)
 		local val
 		local safety=0
 		repeat
@@ -151,19 +154,27 @@ local globalprefixes = function(prefix)
 	return safeglobalnext,_G,nil
 end
 
+local getglobalbyprefix = function(prefix,value)
+	for k,v in globalprefixes(prefix) do 
+		if v == value then 
+			return k 
+		end 
+	end
+end
+
 Events.eventList = {}
-for k, v in globalprefixes("EVENT_") do
-	if type(v) == "number"
-	and k ~= "EVENT_GLOBAL_MOUSE_DOWN" 
-	and k ~= "EVENT_GLOBAL_MOUSE_UP" 
-	then 
-		Events.eventList[v] = k
+for k,v in globalprefixes("EVENT_") do
+	if type(v)=="number"
+	and k~="EVENT_GLOBAL_MOUSE_DOWN" 
+	and k~="EVENT_GLOBAL_MOUSE_UP" 
+	then Events.eventList[v]=k
 	end
 end
 
 setmetatable(Events.eventList,{__index = "NO EVENT IN LIST!?!?"})
 
 Events.eventListR = {}
-for k, v in pairs(Events.eventList) do 
+
+for k,v in pairs(Events.eventList) do 
 	Events.eventListR[v]=k 
 end

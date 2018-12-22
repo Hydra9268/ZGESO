@@ -228,7 +228,7 @@ end
 function table.zgclone(self)
 	local t={}
 	if type(self)=="table" then 
-		for k,v in pairs(self) do 
+		for k in self do 
 			t[k]=rawget(self,k) 
 		end  
 	end
@@ -303,7 +303,7 @@ end
 -- NOTE: use zo_insecurePairs for a pairs implementation that SKIPS private/protected members.
 
 Safe_G.prefixpairs = function(prefix)  -- iterator
-	local safeglobalnext = function(tab,index)
+	local safeglobalnext = function(index)
 		local val
 		local safety = 0
 		repeat
