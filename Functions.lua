@@ -125,7 +125,6 @@ function Utils.GetPlayerPreciseLevel()
 	if ZGV.db.char.fakelevel and ZGV.db.char.fakelevel>0 then
 		return ZGV.db.char.fakelevel
 	else
-		local GetUnitLevel, GetUnitXP, GetUnitXPMax = _G.GetUnitLevel, _G.GetUnitXP, _G.GetUnitXPMax
 		return GetUnitLevel("player") + GetUnitXP("player")/max(GetUnitXPMax("player"),1)
 	end
 end
@@ -142,9 +141,11 @@ end
 
 function Utils.ShowFloatingMessage(msg,event,font,sound,publicfloat,publictext)
 	if ZGV.DEV or publicfloat then
-		CENTER_SCREEN_ANNOUNCE:AddMessage(event or EVENT_OBJECTIVE_COMPLETED,font or CSA_EVENT_SMALL_TEXT,sound or SOUNDS.QUEST_OBJECTIVE_STARTED,"|cffaa00[|cf8fbffZ|cffaa00]|r "..msg)
+		_G.CENTER_SCREEN_ANNOUNCE:AddMessage(event or _G.EVENT_OBJECTIVE_COMPLETED,font or _G.CSA_EVENT_SMALL_TEXT,sound or _G.SOUNDS.QUEST_OBJECTIVE_STARTED,"|cffaa00[|cf8fbffZ|cffaa00]|r "..msg)
 	end
-	if ZGV.DEV or publictext then	print(msg) end
+	if ZGV.DEV or publictext then	
+		print(msg) 
+	end
 end
 
 function Utils.escape(s)
@@ -200,7 +201,7 @@ end
 -- Letters, numbers or spaces
 function Utils.IsAlphanumeric(str)
 	if not str then return end
-
+	local zo_strfind = _G.zo_strfind
 	return not zo_strfind(str,"[^%w ]")
 end
 
@@ -357,25 +358,27 @@ end
 
 local HEADLEN=40
 local TAILLEN=20
-local LIMIT=HEADLEN+TAILLEN+12  -- making a buffer, so that texts cannot be (accidentally) excerpted twice.
+local LIMIT = HEADLEN + TAILLEN + 12  -- making a buffer, so that texts cannot be (accidentally) excerpted twice.
 function Utils.MakeExcerpt(text)
-	if not text then return "" end
-	if #text>LIMIT then
-		local n=HEADLEN/2
+	if not text then 
+		return "" 
+	end
+	if #text > LIMIT then
+		local n = HEADLEN / 2
 		local head = text:sub(1,HEADLEN)
-		while head:sub(-1)~=" " and n>0 do 
-			head = head:sub(1,-2) n=n-1 
+		while head:sub(-1)~=" " and n > 0 do
+			head = head:sub(1,-2) n = n - 1
 		end
-		if #head==0 then 
-			head=text:sub(1,HEADLEN) 
+		if #head == 0 then
+			head = text:sub(1,HEADLEN)
 		end -- oh well
-		local n=TAILLEN/2
+		local n = TAILLEN / 2
 		local tail = text:sub(-TAILLEN)
-		while tail:sub(1,1)~=" " and n>0 do 
-			tail=tail:sub(2) n=n-1 
+		while tail:sub(1,1)~=" " and n > 0 do
+			tail = tail:sub(2) n = n - 1
 		end
-		if #tail==0 then 
-			tail=text:sub(-TAILLEN) 
+		if #tail == 0 then
+			tail = text:sub(-TAILLEN)
 		end -- oh well
 
 		text=head.."___"..tail -- .."<"..#text..">"
@@ -397,7 +400,8 @@ function Utils.MatchExcerpt(exc,text)
 
 		-- First try parts.
 		local safetext="%{%"..text.."%}%"
-		local parts={zo_strsplit("___","%{%"..exc.."%}%")}
+		local parts={_G.zo_strsplit("___","%{%"..exc.."%}%")}
+		local zo_plainstrfind = _G.zo_plainstrfind
 		for i,part in ipairs(parts) do
 			if not zo_plainstrfind(safetext,part) then 
 				return false,safetext,part 
@@ -426,7 +430,7 @@ assert (MatchExcerpt("Blah___bleh___bloh","Blah, this is bleh because bloh"),'Ut
 assert (not MatchExcerpt("Blah___bleh___bloh","bleh, this is bloh because Blah"),'Utils:MatchShortText is confused by order')
 
 function Utils.GetMyAddonInfo()
-	local AM = GetAddOnManager()
+	local AM = _G.GetAddOnManager()
 	for i = 1, AM:GetNumAddOns() do
 		local dir, title, author, _1, _2, _3, _4 = AM:GetAddOnInfo(i)
 		if dir == ZGV.DIR then
@@ -444,10 +448,11 @@ function Utils.IsPOIComplete( map, poi )
 	end
 
 	if not map then 
-		map = GetCurrentMapZoneIndex() 
+		map = _G.GetCurrentMapZoneIndex() 
 	end
 
 	if type(poi) == "string" then
+		local GetNumPOIs = _G.GetNumPOIs
 		for i = 1, GetNumPOIs( map ) do
 			local text, level, subtextinc, subtextcom = GetPOIInfo( map, i )
 			if text == poi then 
