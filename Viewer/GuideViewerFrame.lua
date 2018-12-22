@@ -1141,7 +1141,6 @@ function Viewer:Update(full)
 
 			if state then
 				self.hiddenincombat = true
-
 				ZGV.Menu:Hide()						-- Hide guide menu. Don't worry about reopening
 				self:Hide_GuideViewer(1)			-- Don't toggle the hide/show viewer option
 			elseif self.hiddenincombat then
