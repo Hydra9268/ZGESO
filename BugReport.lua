@@ -171,18 +171,18 @@ end
 
 function BugReport:GetReport()
 
-	local getUnitLevel, getMapPlayerPosition, getMapTileTexture, getCurrentMapZoneIndex = _G.GetUnitLevel, _G.GetMapPlayerPosition, _G.GetMapTileTexture, _G.GetCurrentMapZoneIndex
-	local playerX, playerY = getMapPlayerPosition("player")
+	local GetUnitLevel, GetMapPlayerPosition, GetMapTileTexture, GetCurrentMapZoneIndex = _G.GetUnitLevel, _G.GetMapPlayerPosition, _G.GetMapTileTexture, _G.GetCurrentMapZoneIndex
+	local playerX, playerY = GetMapPlayerPosition("player")
 	local step = ZGV.CurrentStep
 	local t = "" -- text
 
 	t = t .. ("VERSION: %s\n"):format(ZGV.version)
 	t = t .. ("FACTION: %s\n"):format(ZGV.Utils.GetFaction())
-	t = t .. ("LEVEL: %s\n"):format(getUnitLevel("player"))
+	t = t .. ("LEVEL: %s\n"):format(GetUnitLevel("player"))
 	t = t .. ("GUIDE: %s\n"):format(ZGV.CurrentGuide and ZGV.CurrentGuide.title or "NONE")
 	t = t .. "\n"
 	t = t .. ("CURRENT LOCATION:\n")
-	t = t .. ("ARTMAP: %s\n MAP ZONE INDEX: #%d\n COORDINATES: %.3f,%.3f\n"):format( getMapTileTexture(), getCurrentMapZoneIndex(), playerX * 100, playerY * 100 )
+	t = t .. ("ARTMAP: %s\n MAP ZONE INDEX: #%d\n COORDINATES: %.3f,%.3f\n"):format( GetMapTileTexture(), GetCurrentMapZoneIndex(), playerX * 100, playerY * 100 )
 	t = t .. "\n"
 	if not step then
 		t = t .. ("STEP: NONE\n")
@@ -195,7 +195,8 @@ function BugReport:GetReport()
 			for goalIn, goalOut in ipairs(step.goals) do
 				t = t .. (" - %d. %s  <%s> [%s]"):format( goalIn, goalOut:GetText():gsub("|c......",""):gsub("|r",""), goalOut.action, goalOut:GetStatus() )
 				if goalOut.x then  t = t .. (" [%s %.2f,%.2f <%d]"):format( goalOut.map or "?", goalOut.x * 100, goalOut.y * 100, goalOut.dist )  end
-				if goalOut.quest then  t = t .. (" [quest %s##%s/%s/%s/%s]"):format( goalOut.quest, goalOut.questid, goalOut.queststagenum or "-", goalOut.queststepnum or "-", goalOut.questcondnum or "-" )  end
+				-- Investigate why no workie
+				-- if goalOut.quest then  t = t .. (" [quest %s##%s/%s/%s/%s]"):format( goalOut.quest, goalOut.questid, goalOut.queststagenum or "-", goalOut.queststepnum or "-", goalOut.questcondnum or "-" )  end
 				for k,v in pairs(goalOut) do
 					if type(v)~="function" 
 					and type(v)~="table"
