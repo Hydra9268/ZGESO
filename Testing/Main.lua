@@ -94,7 +94,7 @@ function Testing:RunTests(testgroup,testgroupname)
 
   -- Report results
   if numTestFailed == 0 then
-    self:Debug(("All %d tests |c00ff00PASSED|r. Clear Captain."):format(numTestRan))
+    self:Debug(("All %d tests |c00ff00PASSED. Clear Captain|r."):format(numTestRan))
 
     return true
   else
