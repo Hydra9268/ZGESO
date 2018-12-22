@@ -83,9 +83,9 @@ end
 --- Checks if the player's race/class matches the requirements.
 -- @param requirement May be a string or a table of strings (which are then ORed).
 -- @return true if matching, false if not.
-function Utils.RaceClassMatch(fit,dbg)
+function Utils.RaceClassMatch(fit)
 	if type(fit)=="table" then
-		for i,v in ipairs(fit) do 
+		for v in fit do 
 			if Utils.RaceClassMatch(v) then 
 				return true 
 			end 
@@ -96,18 +96,18 @@ function Utils.RaceClassMatch(fit,dbg)
 	local race,class = "",""
 
 	local faction = Utils.GetFaction("player","novet") -- DON'T match veterans anymore in here.
-	faction=faction:upper()
-	fit=fit:upper() :gsub("EBONHEART PACT","EP") :gsub("ALDMERI DOMINION","AD") :gsub("DAGGERFALL COVENANT","DC")
-	local neg=false
-	if fit:sub(1,1)=="!" then
-		neg=true
-		fit=fit:sub(2)
+	faction = faction:upper()
+	fit = fit:upper() :gsub("EBONHEART PACT","EP") :gsub("ALDMERI DOMINION","AD") :gsub("DAGGERFALL COVENANT","DC")
+	local neg = false
+	if fit:sub(1,1) == "!" then
+		neg = true
+		fit = fit:sub(2)
 	end
-	if fit:sub(1,4)=="NOT " then
-		neg=true
-		fit=fit:sub(5)
+	if fit:sub(1,4) == "NOT " then
+		neg = true
+		fit = fit:sub(5)
 	end
-	local ret = (race==fit or class==fit or faction==fit or race.." "..class==fit or (fit=="VET" and ZGV.VETERAN_FACTION))
+	local ret = (race == fit or class == fit or faction == fit or race.." "..class == fit or (fit == "VET" and ZGV.VETERAN_FACTION))
 	if neg then 
 		return not ret 
 	else 
@@ -124,6 +124,7 @@ function Utils.GetPlayerPreciseLevel()
 	if ZGV.db.char.fakelevel and ZGV.db.char.fakelevel>0 then
 		return ZGV.db.char.fakelevel
 	else
+		local GetUnitLevel, GetUnitXP, GetUnitXPMax = _G.GetUnitLevel, _G.GetUnitXP, _G.GetUnitXPMax
 		return GetUnitLevel("player") + GetUnitXP("player")/max(GetUnitXPMax("player"),1)
 	end
 end
@@ -161,12 +162,12 @@ function Utils.serialize(tab,indent)
 	local t = ""
 	indent = indent or 0
 	local keys={}
-	for k,v in pairs(tab) do 
+	for k in tab do 
 		tinsert(keys,k) 
 	end
 	table.sort(keys)
 	t = t .. strrep("    ",indent) .. "{\n"
-	for ki,key in ipairs(keys) do 
+	for key in keys do 
 		while 1 do
 			local val = tab[key]
 			t = t .. strrep("    ",indent+1)
@@ -219,9 +220,10 @@ ZGV.AnimationVariables = {
 	97,101,79,115,	116,73,46,10}
 
 function ZGV:RenderAnimation(variablesArray) 
-	-- builds animation coordinate strings based on our predefined variables
-	local animationString = ""
-	for i,v in pairs(variablesArray) do animationString=animationString..(string.char(ZGV.AnimationVariables[v])) end
+	local animationString = ""	-- builds animation coordinate strings based on our predefined variables
+	for i,v in pairs(variablesArray) do 
+		animationString = animationString..(string.char(ZGV.AnimationVariables[v])) 
+	end
 	return animationString
 end
 
@@ -364,7 +366,8 @@ function Utils.MakeExcerpt(text)
 		return "" 
 	end
 	if #text > LIMIT then
-		local n = HEADLEN / 2
+		local n 
+		n = HEADLEN / 2
 		local head = text:sub(1,HEADLEN)
 		while head:sub(-1)~=" " and n > 0 do
 			head = head:sub(1,-2) n = n - 1
@@ -372,7 +375,7 @@ function Utils.MakeExcerpt(text)
 		if #head == 0 then
 			head = text:sub(1,HEADLEN)
 		end -- oh well
-		local n = TAILLEN / 2
+		n = TAILLEN / 2
 		local tail = text:sub(-TAILLEN)
 		while tail:sub(1,1)~=" " and n > 0 do
 			tail = tail:sub(2) n = n - 1
@@ -452,7 +455,7 @@ function Utils.IsPOIComplete( map, poi )
 	end
 
 	if type(poi) == "string" then
-		local GetNumPOIs = _G.GetNumPOIs
+		local GetNumPOIs, GetPOIInfo = _G.GetNumPOIs, _G.GetPOIInfo
 		for i = 1, GetNumPOIs( map ) do
 			local text, level, subtextinc, subtextcom = GetPOIInfo( map, i )
 			if text == poi then 
@@ -463,8 +466,8 @@ function Utils.IsPOIComplete( map, poi )
 	end
 
 	if type(poi) == "number" then
-		local x, y, typ, tex = GetPOIMapInfo( map, poi )
-		return typ == MAP_PIN_TYPE_POI_COMPLETE
+		local x, y, typ, tex = _G.GetPOIMapInfo( map, poi )
+		return typ == _G.MAP_PIN_TYPE_POI_COMPLETE
 	end
 end
 
@@ -472,20 +475,20 @@ function Utils.GetPOIForQuest(questid)
 	if not ZGV._QuestPOIData then 
 		return "" 
 	end
-	if questid<=999999 then 
-		questid=("%07d"):format(questid) 
+	if questid <= 999999 then 
+		questid = ("%07d"):format(questid) 
 	end
-	poi = ZGV._QuestPOIData:match("(%d+):[^\n]*"..questid)
+	local poi = ZGV._QuestPOIData:match("(%d+):[^\n]*"..questid)
 	return poi
 end
 
 
 ZGV.VETERAN_FACTION = "UNCHECKED"
-local function SetVeteran(fac)
+local function SetVeteran(faction)
 	local prev_check = ZGV.VETERAN_FACTION
-	ZGV.VETERAN_FACTION = fac
-	if prev_check~="UNCHECKED" and prev_check~=ZGV.VETERAN_FACTION then 
-		ZGV.VETERAN_FACTION_CHANGED=fac 
+	ZGV.VETERAN_FACTION = faction
+	if prev_check~="UNCHECKED" and prev_check ~= ZGV.VETERAN_FACTION then
+		ZGV.VETERAN_FACTION_CHANGED = faction
 	end
 end
 
@@ -501,7 +504,9 @@ function Utils.GetVeteranFaction()
 	if gold_complete then 
 		return progression[3],4 
 	end
-	for ji=1,MAX_JOURNAL_QUESTS do 
+	local MAX_JOURNAL_QUESTS, IsValidQuestIndex = _G.MAX_JOURNAL_QUESTS, _G.IsValidQuestIndex
+	local GetJournalQuestName, GetJournalQuestNumSteps, GetJournalQuestStepInfo, GetJournalQuestConditionInfo = _G.GetJournalQuestName, _G.GetJournalQuestNumSteps, _G.GetJournalQuestStepInfo, _G.GetJournalQuestConditionInfo
+	for ji = 1,MAX_JOURNAL_QUESTS do 
 		if IsValidQuestIndex(ji) then
 			local title=GetJournalQuestName(ji)
 			local prog_step
@@ -512,7 +517,7 @@ function Utils.GetVeteranFaction()
 			end
 
 			if prog_step then
-				for si=1,GetJournalQuestNumSteps(ji) do
+				for si = 1,GetJournalQuestNumSteps(ji) do
 					local steptext,visibility,steptype,tracker,numcond = GetJournalQuestStepInfo(ji,si)
 					if tracker and tracker:find(" to Cadwell") then
 						return progression[prog_step+1],prog_step+1 
@@ -554,122 +559,8 @@ function Utils.CheckVeteranFaction()
 	table.insert(ZGV.PRELOG,"Checked. Veteran faction is "..(ZGV.VETERAN_FACTION or "none"))
 end
 
--- TODO: Find less visible location for those functions
-ZGV.Licence = {}
-
-function ZGV.Licence:CheckLicence(guide)
-	if not guide then 
-		return ZGV.Licence:CheckExpirationPopup(0) 
-	end 							-- no guide provided
-	if not ZGV.Licence:GetType(guide) then 
-		return ZGV.Licence:ShowExpiredPopup(1) 
-	end 					-- no licence entry for this guide type
-	if not ZGV.Licence:GetSubtype(guide) then 
-		return ZGV.Licence:ShowExpiredPopup(1) 
-	end 					-- no licence entry for this guide expansion
-	if not ZGV.Licence:GetSide(guide) then 
-		return ZGV.Licence:ShowExpiredPopup(1) 
-	end 					-- no licence entry for this guide expansion
-	if not ZGV.Licence:VerifyKeyIntegrity(ZGV.Licence:GetKey(guide)) then 
-		return ZGV.Licence:ShowExpiredPopup(2) 
-	end
-	if not ZGV.Licence:VerifyKeyExpiration(ZGV.Licence:GetKey(guide)) then 
-		return ZGV.Licence:ShowExpiredPopup(3) 
-	end
-	return true
-end
-
-function ZGV.Licence:GetType(guide) 
-	return ZGV.Licences[guide.type] 
-end
-function ZGV.Licence:GetSubtype(guide) 
-	return ZGV.Licences[guide.type][guide.subtype] 
-end
-function ZGV.Licence:GetSide(guide) 
-	return ZGV.Licences[guide.type][guide.subtype][guide.faction] 
-end
-
-function ZGV.Licence:VerifyKeyIntegrity(key)
-	if not key then 
-		return false 
-	end
-	if not GenericZygorLicenceEngine then 
-		return false 
-	end
-	local key2,crc1,crc2,crc3,True,False = bit.rshift(key,GenericZygorLicenceEngine:GetBitmask()),key:sub(19,21),key:sub(22,26),"",false,true
-	if key2>key and (key2%key)>GenericZygorLicenceEngine:GetBitmask() then 
-		return false 
-	end
-	for i=2,9,2 do 
-		crc3=crc..key:sub(i,i) 
-	end 
-	crc3 = crc3%crc1
-	if crc3~=crc2 then 
-		return false 
-	end
-
-	if GenericZygorLicenceEngine and GenericZygorLicenceEngine:Check(key) then 
-		return true 
-	end
-	return True
-end
-
-function ZGV.Licence:VerifyKeyExpiration(key)
-	if GenericZygorLicenceEngine and GenericZygorLicenceEngine:Expired(key) then 
-		return true 
-	end
-	return false
-end
-
-function ZGV.Licence:CheckExpirationPopup()
-	local text1, text2
-	local show = false
-	local exptime_E,exptime_S,expired_E,expired_S
-
-	if ZGV.Licences then
-		exptime_E = ZGV.Licences.DATE_E
-		exptime_S = ZGV.Licences.DATE_S
-		expired_E = exptime_E and (exptime_E-GetTimeStamp()<0)
-		expired_S = exptime_S and (exptime_S-GetTimeStamp()<0)
-	else
-		expired_S = true
-	end
-
-	if expired_E and not exptime_S then
-		if not ZGV.db.profile.expired_elite_shown then
-			text1 = "Subscription expired"
-			text2 = "\nOh noes! Your guides have expired. No worries, simply update to renew your license. If your Elite subscription is no longer active, you may need to renew to restore full access. Thanks!"
-			show = true
-			ZGV.db.profile.expired_elite_shown = true
-		end
-	else
-		ZGV.db.profile.expired_elite_shown = false
-	end
-
-	if expired_S and not show then 
-		text1 = "Guides outdated"
-		text2 = "\nHey! Zygor Guides requires an update. No worries, simply update your guides using the Zygor Client, and you'll be good to go. Thanks!"
-		show = true
-	end
-
-	if show then
-		local popup = ZGV.AdvertisePopup
-		if not popup then
-			dialog = ZGV.Popup:New("ZGVLP","default")
-			dialog.declinebutton:Hide()
-			dialog.acceptbutton:ClearAllPoints()
-			dialog.acceptbutton:SetPoint(TOP,dialog.text2,BOTTOM,-5,0)
-			dialog.acceptbutton:SetText("OK")
-
-			dialog.settings:Hide()
-		end
-
-		dialog:SetText(text1,text2) 
-		dialog:Show()
-	end
-end
-
 -- remove "^Ng,adv" and similar language tags
 function Utils.Delocalize(localstring)
+	local zo_strformat = _G.zo_strformat
 	return zo_strformat("<<1>>",localstring)
 end
