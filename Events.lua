@@ -95,8 +95,8 @@ end
 -- state = true -> Enter Combat
 -- state = false -> Exit Combat
 -- https://i.imgur.com/TzfcjTA.png
-local event, state = _G.event, _G.state
-function ZGV:EVENT_PLAYER_COMBAT_STATE(event,state)
+local state = _G.state
+function ZGV:EVENT_PLAYER_COMBAT_STATE(_,state)
 	if not state then
 		if self.call_after_combat then
 			self.call_after_combat()

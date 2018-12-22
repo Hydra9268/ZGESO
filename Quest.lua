@@ -1,5 +1,4 @@
-local ZGV = ZygorGuidesViewer
-if not ZGV then return end
+local ZGV = _G.ZGV
 
 -----------------------------------------
 -- INFORMATION
@@ -15,10 +14,7 @@ if not ZGV then return end
 -- LOCAL REFERENCES
 -----------------------------------------
 
-local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs
-local print = ZGV.print
-local CHAIN = ZGV.Utils.ChainCall
-local ui = ZGV.UI
+local tinsert,type, ipairs = table.insert, type, ipairs
 local Data = ZGV.Data
 
 local MakeExcerpt=ZGV.Utils.MakeExcerpt
