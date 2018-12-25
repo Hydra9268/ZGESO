@@ -227,9 +227,10 @@ end
 
 function table.zgclone(self)
 	local t={}
-	if type(self)=="table" then 
-		for k in self do 
-			t[k]=rawget(self,k) 
+	if type(self)=="table" then
+		-- Note: Be very careful about convert ipairs or pairs into standard for loops
+		for k,v in pairs(self) do
+			t[k]=rawget(self,k)
 		end  
 	end
 	return t
