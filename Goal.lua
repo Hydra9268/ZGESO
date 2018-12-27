@@ -208,6 +208,7 @@ GOALTYPES['_item'] = {
 			local tar, tarid = ParseId(str)
 
 			if plural and tar then
+				local ZygorGuidesViewer_L = _G.ZygorGuidesViewer_L
 				tar = ZygorGuidesViewer_L("Specials").plural(tar)
 			end
 
@@ -237,8 +238,8 @@ GOALTYPES['_item'] = {
 		self.target,self.targetid = obj,objid
 
 		-- something missing?
-		if not self.targetid and not self.target then 
-			return "no parameter" 
+		if not self.targetid and not self.target then
+			return "no parameter"
 		end
 	end
 }
@@ -256,13 +257,13 @@ GOALTYPES['goto'] = {
 	parse = function(self,params,step,data)
 		local prevmap = data.prevmap
 		local params2,title = params:match('^(.-)%s*"(.*)"')
-		if title then 
-			params = params2 
+		if title then
+			params = params2
 		end
 
 		local map,x,y,dist, err = ParseMapXYDist(params)
-		if err then 
-			return err 
+		if err then
+			return err
 		end
 
 		self.map = (map or self.map or step.map or prevmap)
@@ -329,6 +330,7 @@ GOALTYPES['wayshrine'] = 	{
 		if not self.wayshrine_POIIndex then
 
 			local zoneid = self.wayshrine_zoneid
+			local GetNumPOIs, IsPOIWayshrine, GetPOIInfo, zo_plainstrfind = _G.GetNumPOIs, _G.IsPOIWayshrine, _G.GetPOIInfo, _G.zo_plainstrfind
 
 			-- screw it, search them all if there's none given.
 			for zid=(zoneid or 1),(zoneid or 999) do  -- oh whatever, less code is good.
@@ -339,8 +341,8 @@ GOALTYPES['wayshrine'] = 	{
 						if fb and fi==1 then
 							self.wayshrine_zoneid = zid
 							self.wayshrine_POIIndex = i
-							if ZGV.db.profile.debug_wayshrines then 
-								ZGV:Debug("Found wayshrine '%s' on map id %d. POI %d.", self.wayshrine, self.wayshrine_zoneid, self.wayshrine_POIIndex) 
+							if ZGV.db.profile.debug_wayshrines then
+								ZGV:Debug("Found wayshrine '%s' on map id %d. POI %d.", self.wayshrine, self.wayshrine_zoneid, self.wayshrine_POIIndex)
 							end
 							break -- out of 2 loops
 						end
@@ -358,6 +360,7 @@ GOALTYPES['wayshrine'] = 	{
 		end
 
 		local x, y, typ, tex = GetPOIMapInfo( self.wayshrine_zoneid, self.wayshrine_POIIndex, true ) --true=truthful call! don't be fooled by our own Pointer.lua and its foglight!
+		local MAP_PIN_TYPE_POI_COMPLETE = _G.MAP_PIN_TYPE_POI_COMPLETE
 
 		if typ == MAP_PIN_TYPE_POI_COMPLETE then
 			return true,true
@@ -379,13 +382,13 @@ GOALTYPES['click'] = {
 
 GOALTYPES['accept'] = {
 	parse = function(self,params,step,data)
-		if not params then 
-			return "no quest parameter" 
+		if not params then
+			return "no quest parameter"
 		end
 		self.quest = ParseId(params)  -- legacy. Get rid of the ID.
 
-		if not self.quest then 
-			return "no quest parameter" 
+		if not self.quest then
+			return "no quest parameter"
 		end
 	end,
 	iscomplete = function(self)
@@ -405,8 +408,8 @@ GOALTYPES['turnin'] = {
 GOALTYPES['talk'] = {
 	parse = function(self,params,step,data)
 		self.npc,self.npcid = ParseId(params)
-		if not self.npc and not self.npcid then 
-			return "no npc" 
+		if not self.npc and not self.npcid then
+			return "no npc"
 		end
 	end,
 }
@@ -438,20 +441,20 @@ GOALTYPES['confirm'] = {
 
 GOALTYPES['lorebook'] = {
 	parse = function(self,params,step,data)
-		if not params then 
-			return "no lorebook parameter" 
+		if not params then
+			return "no lorebook parameter"
 		end
 		local name,cat,col,book = params:match("^(.-)(%d+)/(%d+)/(%d+)$")
 		self.lorebook_cat = tonumber(cat)
 		self.lorebook_col = tonumber(col)
 		self.lorebook_book = tonumber(book)
 
-		if not self.lorebook_book then 
-			return "no lorebook cat/col/book parameter" 
+		if not self.lorebook_book then
+			return "no lorebook cat/col/book parameter"
 		end
 	end,
 	iscomplete = function(self)
-		local title,icon,known = GetLoreBookInfo(self.lorebook_cat,self.lorebook_col,self.lorebook_book)
+		local title,icon,known = _G.GetLoreBookInfo(self.lorebook_cat,self.lorebook_col,self.lorebook_book)
 		return known , true
 	end,
 	gettext = function(self)
@@ -463,7 +466,7 @@ GOALTYPES['lorebook'] = {
 GOALTYPES['achieve'] = {
 	parse = function(self,params)
 		if not params then
-			return "no achieve parameter" 
+			return "no achieve parameter"
 		end
 		self.achieve_id,self.achieve_crit = params:match("(%d+)/(%d+)$")
 		if not self.achieve_crit then
@@ -471,8 +474,8 @@ GOALTYPES['achieve'] = {
 		end
 		self.achieve_id = tonumber(self.achieve_id)
 		self.achieve_crit = tonumber(self.achieve_crit)
-		if not self.achieve_id then 
-			return "no achieve id" 
+		if not self.achieve_id then
+			return "no achieve id"
 		end
 	end,
 	iscomplete = function(self,override_achieve_id,override_achieve_crit)
@@ -486,10 +489,10 @@ GOALTYPES['achieve'] = {
 	end,
 	gettext = function(self)
 		local name
-		if not self.achieve_crit then 
+		if not self.achieve_crit then
 			name = GetAchievementInfo(self.achieve_id)
-		else 
-			name = GetAchievementCriterion(self.achieve_id,self.achieve_crit) 
+		else
+			name = GetAchievementCriterion(self.achieve_id,self.achieve_crit)
 		end
 		return L['stepgoal_achieve']:format(name)
 	end
@@ -534,8 +537,8 @@ function Goal:GetQuest()
 end
 
 function Goal:GetQuestGoalStatus()
-	if not self.quest then 
-		return false,"no quest" 
+	if not self.quest then
+		return false,"no quest"
 	end
 	return ZGV.Quests:GetCompletionStatus(self.quest,self.questcondtxt)
 end
@@ -552,11 +555,11 @@ function Goal:GetQuestGoalCounts()
 	goalcountneeded = min(self.count or 9999,maxv or 9999)	-- If limit is < maxvalue then prefer that to allow guide to dictate only collecting a certain number in a single area.
 	remaining = goalcountneeded-goalcountnow
 
-	if remaining <= 0 then 
-		remaining = goalcountneeded 
+	if remaining <= 0 then
+		remaining = goalcountneeded
 	end
-	if goalcountneeded == 1 then 
-		remaining = nil 
+	if goalcountneeded == 1 then
+		remaining = nil
 	end	-- If we only need 1 then don't need to explictly show a number. Nil this out to not show a num
 
 	return goalcountnow,goalcountneeded,remaining
@@ -585,8 +588,8 @@ function Goal:GetText()
 		-- Generates a parser proc with said behaviour, to evade calling loadstring too much
 		local function make_parser(parser) -- function to generate code
 			return function(s)
-				if not self.textsubs then 
-					self.textsubs={} 
+				if not self.textsubs then
+					self.textsubs={}
 				end
 				local f = self.textsubs[nsub]
 				if not f then
@@ -776,10 +779,10 @@ function Goal:IsVisible()
 		else
 			ZGV.Parser.ConditionEnv._SetLocal(self.parentStep.parentGuide,self.parentStep,self)
 			local ok,ret = pcall(self.condition_visible)
-			if ok then 
-				return ret 
-			else 
-				ZGV:Error("Error in step %s, goal %s, only if %s: %s", self.parentStep.num, self.num, self.condition_visible_raw or "", ret:gsub("\n.*","")) 
+			if ok then
+				return ret
+			else
+				ZGV:Error("Error in step %s, goal %s, only if %s: %s", self.parentStep.num, self.num, self.condition_visible_raw or "", ret:gsub("\n.*",""))
 			end
 		end
 	end
@@ -793,12 +796,12 @@ end
 -- second return: true = completable, false = incompletable
 function Goal:IsComplete()
 	-- is now a wrapper for sticky reasons.
-	if self.sticky_complete then 
-		return true,true 
+	if self.sticky_complete then
+		return true,true
 	end
 	local iscomplete,ispossible,v1,v2,v3 = self:IsCompleteCheck()
-	if iscomplete and self.sticky then 
-		self.sticky_complete=true 
+	if iscomplete and self.sticky then
+		self.sticky_complete=true
 	end
 	if self:IsCompletable() then
 		if iscomplete and not self.was_complete then
@@ -809,15 +812,15 @@ function Goal:IsComplete()
 		self.was_complete=iscomplete
 	end
 
-	if self.map then 
-		self:CheckVisited() 
+	if self.map then
+		self:CheckVisited()
 	end  -- TODO: this is a bad place to call other checks.
 
 	return iscomplete,ispossible,v1,v2,v3
 end
 
 function Goal:OnComplete()
-	if self.parentStep.current_waypoint_goal == self.num then 
+	if self.parentStep.current_waypoint_goal == self.num then
 		ZGV.Pointer:CycleWaypoint(1,"no cycle")
 	end
 end
@@ -915,8 +918,8 @@ function Goal:IsCompleteCheck()
 						iscomplete = true
 					end
 				end
-				if iscomplete then 
-					return true, ispossible, (curv and curv/(self.count or maxv or 1)) 
+				if iscomplete then
+					return true, ispossible, (curv and curv/(self.count or maxv or 1))
 				end
 				if self:IsCompletable("by type") then break end -- let the goto complete it!
 				return false, ispossible, (curv and curv/(self.count or maxv or 1))
@@ -941,22 +944,22 @@ function Goal:IsCompleteCheck()
 
 	if self.achieve_id then
 		iscomplete,ispossible = GOALTYPES['achieve'].iscomplete(self)
-		if iscomplete then 
-			return true,true 
+		if iscomplete then
+			return true,true
 		end
 	end
 
 	if self.lorebook_book then  -- it's lore-based, then?
 		iscomplete,ispossible = GOALTYPES['lorebook'].iscomplete(self)
-		if iscomplete then 
-			return true,true 
+		if iscomplete then
+			return true,true
 		end
 	end
 
 	local giscomplete,gispossible
 	local GOALTYPE = GOALTYPES[self.action]
-	if GOALTYPE and GOALTYPE.iscomplete then 
-		giscomplete,gispossible = GOALTYPE.iscomplete(self) 
+	if GOALTYPE and GOALTYPE.iscomplete then
+		giscomplete,gispossible = GOALTYPE.iscomplete(self)
 	end
 
 	return giscomplete or iscomplete,gispossible or ispossible
@@ -969,13 +972,13 @@ function Goal:IsCompletable(by_type)
 	if self.condition_complete then return true end  -- we have a script, so obey
 
 	if not by_type and self.action~="goto" then
-		if self.quest or self.lorebook or self.achieve_id then 
-			return true 
+		if self.quest or self.lorebook or self.achieve_id then
+			return true
 		end	-- there is a quest/lore/achieve associated with this goal so can be completed. Unless it's a goto. These are only completed by |c.
 	end
 
-	if GOALTYPE.iscompletable then 
-		return GOALTYPE.iscompletable(self) 
+	if GOALTYPE.iscompletable then
+		return GOALTYPE.iscompletable(self)
 	end		-- This may or maynot be there if it is only sometimes completable.
 	if GOALTYPE.iscomplete then return true end	-- There is a way to complete this goal
 
@@ -989,8 +992,8 @@ function Goal:UpdateStatus()
 end
 
 function Goal:GetQuest()
-	if self.quest then 
-		return ZGV.Quests:GetQuest(self.quest) 
+	if self.quest then
+		return ZGV.Quests:GetQuest(self.quest)
 	end
 end
 
@@ -1012,15 +1015,15 @@ function Goal:GetStatus()
 		end
 	end
 
-	if not self:IsVisible() then 
-		return "hidden" 
+	if not self:IsVisible() then
+		return "hidden"
 	end
-	if not self:IsCompletable() then 
-		return "passive" 
+	if not self:IsCompletable() then
+		return "passive"
 	end
 	local iscomplete,ispossible,progress,warn = self:IsComplete()
-	if iscomplete then 
-		return "complete" 
+	if iscomplete then
+		return "complete"
 	end
 	-- FIRST impossible (gray), THEN obsolete (blue).
 	--if warn then return "warning" end
@@ -1030,8 +1033,8 @@ function Goal:GetStatus()
 end
 
 function Goal:OnClick()
-	if GOALTYPES[self.action].onclick then 
-		return GOALTYPES[self.action].onclick(self) 
+	if GOALTYPES[self.action].onclick then
+		return GOALTYPES[self.action].onclick(self)
 	end
 end
 
