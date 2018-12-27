@@ -1,14 +1,14 @@
 local LIB_IDENTIFIER = "LibMapPing"
-local lib = LibStub:NewLibrary(LIB_IDENTIFIER, 7)
+local lib = _G.LibStub:NewLibrary(LIB_IDENTIFIER, 7)
+local EVENT_MANAGER = _G.EVENT_MANAGER
 
 if not lib then
     return -- already loaded and no upgrade necessary
 end
 
 local function Log(message, ...)
-    df("[%s] %s", LIB_IDENTIFIER, message:format(...))
+    _G.df("[%s] %s", LIB_IDENTIFIER, message:format(...))
 end
-
 
 -- emulate how the game calculates when a player should get kicked for sending too many pings and prevent it
 
@@ -20,7 +20,28 @@ local SAFETY_THRESHOLD = 10
 local TIME_FRAME = 3
 local RESOLUTION = 10
 
+local ZO_Object = _G.ZO_Object
 local RollingAverage = ZO_Object:Subclass()
+local GetMapRallyPoint = _G.GetMapRallyPoint
+
+local PING_EVENT_ADDED = _G.PING_EVENT_ADDED
+local PING_EVENT_REMOVED = _G.PING_EVENT_REMOVED
+local EVENT_MAP_PING = _G.EVENT_MAP_PING
+local PingMap = _G.PingMap
+local GetMapPing = _G.etMapPing
+local GetGameTimeMilliseconds = _G.GetGameTimeMilliseconds
+
+local PlaySound = _G.PlaySound
+local SOUNDS = _G.SOUNDS
+
+local GetCurrentMapZoneIndex = _G.GetCurrentMapZoneIndex
+local GetMapPlayerWaypoint = _G.GetMapPlayerWaypoint
+local RemovePlayerWaypoint = _G.RemovePlayerWaypoint
+local RemoveRallyPoint = _G.RemoveRallyPoint
+
+local EVENT_ADD_ON_LOADED = _G.EVENT_ADD_ON_LOADED
+
+local ZO_WorldMapPins = _G.ZO_WorldMapPins
 
 function RollingAverage:New(...)
     local obj = ZO_Object.New(self)
@@ -86,7 +107,7 @@ end
 function LeakyBucket:GetTokensLeft()
     local now = GetGameTimeMilliseconds()
     local average = self.average:GetAverage()
-    local modifier = IsUnitInCombat("player") and COMBAT_MODIFIER or DEFAULT_MODIFIER
+    local modifier = _G.IsUnitInCombat("player") and COMBAT_MODIFIER or DEFAULT_MODIFIER
     local burstRate = average * modifier
 
     local delta = (now - self.lastCheck) / 1000
@@ -109,9 +130,9 @@ function LeakyBucket:Take()
 end
 
 
-local MAP_PIN_TYPE_PLAYER_WAYPOINT = MAP_PIN_TYPE_PLAYER_WAYPOINT
-local MAP_PIN_TYPE_PING = MAP_PIN_TYPE_PING
-local MAP_PIN_TYPE_RALLY_POINT = MAP_PIN_TYPE_RALLY_POINT
+local MAP_PIN_TYPE_PLAYER_WAYPOINT = _G.MAP_PIN_TYPE_PLAYER_WAYPOINT
+local MAP_PIN_TYPE_PING = _G.MAP_PIN_TYPE_PING
+local MAP_PIN_TYPE_RALLY_POINT = _G.MAP_PIN_TYPE_RALLY_POINT
 
 local MAP_PIN_TAG_PLAYER_WAYPOINT = "waypoint"
 local MAP_PIN_TAG_RALLY_POINT = "rally"
@@ -139,11 +160,13 @@ lib.mutePing = lib.mutePing or {}
 lib.suppressPing = lib.suppressPing or {}
 lib.pingState = lib.pingState or {}
 lib.pendingPing = lib.pendingPing or {}
-lib.cm = lib.cm or ZO_CallbackObject:New()
+lib.cm = lib.cm or _G.ZO_CallbackObject:New()
 lib.bucket = LeakyBucket:New()
 local g_mapPinManager = lib.mapPinManager
 
 local function GetPingTagFromType(pingType)
+	local GetGroupUnitTagByIndex = _G.GetGroupUnitTagByIndex
+	local GetGroupIndexByUnitTag = _G.GetGroupIndexByUnitTag
     return MAP_PIN_TAG[pingType] or GetGroupUnitTagByIndex(GetGroupIndexByUnitTag("player")) or ""
 end
 
@@ -206,7 +229,7 @@ local function ResetEventWatchdog(key, ...)
 end
 
 local function CustomPingMap(pingType, mapType, x, y)
-    if(pingType == MAP_PIN_TYPE_PING and not IsUnitGrouped("player")) then return end
+    if(pingType == MAP_PIN_TYPE_PING and not _G.IsUnitGrouped("player")) then return end
     if(pingType == MAP_PIN_TYPE_PLAYER_WAYPOINT or lib.bucket:Take()) then
         local key = GetKey(pingType)
         lib.pingState[key] = lib.MAP_PING_SET_PENDING
@@ -245,7 +268,7 @@ end
 
 local function CustomRemoveMapPing()
     -- there is no such function for group pings, but we can set it to 0, 0 which effectively hides it
-    PingMap(MAP_PIN_TYPE_PING, MAP_TYPE_LOCATION_CENTERED, 0, 0)
+    PingMap(MAP_PIN_TYPE_PING, _G.MAP_TYPE_LOCATION_CENTERED, 0, 0)
 end
 
 local function CustomRemoveRallyPoint()
@@ -306,7 +329,7 @@ end
 function lib:RefreshMapPin(pingType, pingTag)
     if(not g_mapPinManager) then
         Log("PinManager not available. Using ZO_WorldMap_UpdateMap instead.")
-        ZO_WorldMap_UpdateMap()
+        _G.ZO_WorldMap_UpdateMap()
         return true
     end
 
@@ -382,7 +405,7 @@ local function InterceptMapPinManager()
         g_mapPinManager = self
         lib.mapPinManager = self
     end
-    ZO_WorldMap_RefreshCustomPinsOfType()
+    _G.ZO_WorldMap_RefreshCustomPinsOfType()
     ZO_WorldMapPins.RefreshCustomPins = orgRefreshCustomPins
 end
 
