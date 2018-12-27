@@ -138,6 +138,7 @@ d()
 
 * https://wiki.esoui.com/API
 * https://wiki.esoui.com/Texture_List
+* https://mothereff.in/lua-minifier
 * https://esomap.uesp.net/
 * https://game-maps.com/ESO/The-Elder-Scrolls-Online.asp
 * http://esodata.uesp.net/100023/
