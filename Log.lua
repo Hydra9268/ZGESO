@@ -11,9 +11,9 @@ Log.size = 150
 Log.loud = false
 
 -- Common functions
-local GetTimeString = GetTimeString
-local GetFrameTimeSeconds = GetFrameTimeSeconds
-local GetFrameTimeMilliseconds = GetFrameTimeMilliseconds
+local GetTimeString = _G.GetTimeString
+local GetFrameTimeSeconds = _G.GetFrameTimeSeconds
+local GetFrameTimeMilliseconds = _G.GetFrameTimeMilliseconds
 
 function Log:SetSize(size)
 	self.size = size

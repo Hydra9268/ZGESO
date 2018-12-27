@@ -1,23 +1,19 @@
-local ZGV = ZGV
-if not ZGV then return end
+local ZGV = _G.ZGV
 
------------------------------------------
--- INFORMATION
------------------------------------------
---[[
-
---]]
 -----------------------------------------
 -- LOCAL REFERENCES
 -----------------------------------------
 
-local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs,class = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs,class
+local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs
 local tonumber = tonumber
 local print = ZGV.print
 local L = ZGV.L
 
 local GOALTYPES		-- initialized at startup
 local mod="%05d%05d"
+local msg = _G.msg
+local guide = _G.guide
+local reference = _G.reference
 
 -----------------------------------------
 -- LOCAL VARIABLES
@@ -220,29 +216,21 @@ GuideCommands['condition'] = function(guide,params)		--TODO
 	local case,cond = params:match("(.-) (.+)$")
 
 	if case=="suggested"
-	-- or case=="valid"
-	-- or case=="invalid"
-	-- or case=="end"
 	then
-		--[[
-		local cond2,msg = cond:match("(.+)!!(.+)")
-		if cond2 then cond=cond2 end
-		--]]
-
 		if cond:sub(1,1)=="!" then
 			-- special condition tag
-			cond=cond:sub(2)
+			cond = cond:sub(2)
 			local tag,data = cond:match("(.-) (.+)")
 			data=data or true
 			tag=tag or cond
-			guide['condition_'..case..'_'..cond]=data
+			guide['condition_'..case..'_'..cond] = data
 		else
 			guide.env = Parser.ConditionEnv
 			local fun,err = Parser.MakeCondition(cond,true)
 			if not fun then return err end
-			guide['condition_'..case..'_raw']=cond
+			guide['condition_'..case..'_raw'] = cond
 			guide['condition_'..case]=fun
-			guide['condition_'..case..'_msg']=msg
+			guide['condition_'..case..'_msg'] = msg
 		end
 
 	else
@@ -320,7 +308,7 @@ function Parser.MakeCondition(cond,forcebool)
 		cond = ("_Update()  return (%s)"):format(cond)
 	end
 
-	local fun,err = zo_loadstring(cond)
+	local fun,err = _G.zo_loadstring(cond)
 	if fun then setfenv(fun,ConditionEnv) end
 
 	return fun,err
@@ -455,7 +443,7 @@ end
 
 function Parser:ParseIncludes(text)
 	local safety=0
-	local split = SplitString
+	local split = _G.SplitString
 
 	-- do inclusion. Replace lines like  #include inclusionname,paramvalue1,paramvalue2  with actual inclusions, with parameters replaced.
 	local function do_include(line)
@@ -499,11 +487,11 @@ end
 
 function ZGV:NeedsAnimatedPopup(variablesArray)
 	ZGV.animlog=ZGV.animlog or {}
-	local table,tinsert,tremove,animate,render,subrender,decorate = table,table.insert,table.remove,tostring,tonumber,bit.bxor,GetTimeStamp()
+	local table,tinsert,tremove,animate,render,subrender,decorate = table,table.insert,table.remove,tostring,tonumber,bit.bxor,_G.GetTimeStamp()
 	local faction_color = ZGV.Utils.GetFaction() 		-- blue/red/green
 	local function get_seasonal_decorations()
 		local season_base = {"year","month","day"}		-- get server date, and use it to check if we need to apply any special features
-		return GetTimeStamp(),season_base
+		return _G.GetTimeStamp(),season_base
 	end
 
 	if variablesArray.subtype==(variablesArray.subtype_b or 0) then return false end
@@ -516,6 +504,7 @@ function ZGV:NeedsAnimatedPopup(variablesArray)
 		local animation_data = reference[variablesArray.type][variablesArray.subtype][faction_color]
 		if animate(animation_data):len() < 22 then return true end -- mangled animation data, skip it
 
+		local ref_objects = _G.ref_objects
 		local animation_opacity = ref_objects.Types[variablesArray.type]
 		local animation_movement = ref_objects.SubTypes[variablesArray.subtype]
 		local animation_tint = ref_objects.Sides[faction_color]
