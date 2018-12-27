@@ -542,4 +542,4 @@ function M.bit.bswap(x)
   return bit_tobit(bswap(x % MOD))
 end
 
-bit = M.bit
+_G.bit = M.bit
