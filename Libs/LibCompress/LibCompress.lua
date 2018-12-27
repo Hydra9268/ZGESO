@@ -9,9 +9,9 @@
 -- Date: $Date: 2015-08-23 12:09:36 +0000 (Sun, 23 Aug 2015) $
 ----------------------------------------------------------------------------------
 
+local sort = _G.sort
 
-local LibCompress = LibStub:NewLibrary("LibCompress", 90000 + tonumber(("$Revision: 65 $"):match("%d+")))
-
+local LibCompress = _G.LibStub:NewLibrary("LibCompress", 90000 + tonumber(("$Revision: 65 $"):match("%d+")))
 if not LibCompress then return end
 
 -- list of codecs in this file:
@@ -20,9 +20,8 @@ if not LibCompress then return end
 -- \002 - LZW
 -- \003 - Huffman
 
-
 -- local is faster than global
-local CreateFrame = CreateFrame
+local CreateFrame = _G.CreateFrame
 local type = type
 local tostring = tostring
 local select = select
@@ -70,6 +69,10 @@ local function onUpdate(frame, elapsed)
     cleanup()
   end
 end
+
+local LIBCOMPRESS_ESO_FRAME_IMPLEMENTED = _G.LIBCOMPRESS_ESO_FRAME_IMPLEMENTED
+local GetAddOnMemoryUsage = _G.GetAddOnMemoryUsage
+local UIParent = _G.UIParent
 
 if LIBCOMPRESS_ESO_FRAME_IMPLEMENTED then -- we're in ESO
 
@@ -516,7 +519,7 @@ local function getCode(bitfield, field_len)
       b = bit_band(bitfield, lshiftMask[i])
       if not (p == 0) and not (b == 0) then
         -- found 2 bits set right after each other (stop bits)
-        return bit_band( bitfield, lshiftMinusOneMask[i - 1]), i - 1, 
+        return bit_band( bitfield, lshiftMinusOneMask[i - 1]), i - 1,
         bit_rshift(bitfield, i + 1), field_len -  i - 1
       end
       p = b
@@ -624,7 +627,7 @@ function LibCompress:DecompressHuffman(compressed)
   local mt = {}
   setmetatable(map, {
       __index = function (t, k)
-        return mt 
+        return mt
       end
     })
 
@@ -641,7 +644,7 @@ function LibCompress:DecompressHuffman(compressed)
   temp_limit = temp_limit > orig_size and orig_size or temp_limit
 
   while true do
-    if test_code_len <= bitfield_len then 
+    if test_code_len <= bitfield_len then
       test_code = bit_band( bitfield, lshiftMinusOneMask[test_code_len])
       symbol = map[test_code_len][test_code]
 
@@ -747,29 +750,29 @@ end
 	Howto: Encode and Decode:
 
 	3 functions are supplied, 2 of them are variants of the first.  They return a table with functions to encode and decode text.
-	
+
 	table, msg = LibCompress:GetEncodeTable(reservedChars, escapeChars,  mapChars)
-	
+
 		reservedChars: The characters in this string will not appear in the encoded data.
 		escapeChars: A string of characters used as escape-characters (don't supply more than needed). #escapeChars >= 1
 		mapChars: First characters in reservedChars maps to first characters in mapChars.  (#mapChars <= #reservedChars)
-	
+
 	return value:
 		table
 			if nil then msg holds an error message, otherwise use like this:
-	
+
 			encoded_message = table:Encode(message)
 			message = table:Decode(encoded_message)
-			
+
 	GetAddonEncodeTable: Sets up encoding for the addon channel (\000 is encoded)
 	GetChatEncodeTable: Sets up encoding for the chat channel (many bytes encoded, see the function for details)
-	
+
 	Except for the mapped characters, all encoding will be with 1 escape character followed by 1 suffix, i.e. 2 bytes.
 ]]
 -- to be able to match any requested byte value, the search string must be preprocessed
 -- characters to escape with %:
 -- ( ) . % + - * ? [ ] ^ $
--- "illegal" byte values: 
+-- "illegal" byte values:
 -- 0 is replaces %z
 local gsub_escape_table = {
   ['\000'] = "%z",
@@ -814,7 +817,7 @@ function LibCompress:GetEncodeTable(reservedChars, escapeChars, mapChars)
 
   -- build list of bytes not available as a suffix to a prefix byte
   local taken = {}
-  for i = 1, string_len(encodeBytes) do 
+  for i = 1, string_len(encodeBytes) do
     taken[string_sub(encodeBytes, i, i)] = true
   end
 
@@ -913,7 +916,7 @@ function LibCompress:GetEncodeTable(reservedChars, escapeChars, mapChars)
   return codecTable
 end
 
--- Addons: Call this only once and reuse the returned table for all encodings/decodings. 
+-- Addons: Call this only once and reuse the returned table for all encodings/decodings.
 function LibCompress:GetAddonEncodeTable(reservedChars, escapeChars, mapChars )
   reservedChars = reservedChars or ""
   escapeChars = escapeChars or ""
@@ -936,13 +939,13 @@ function LibCompress:GetChatEncodeTable(reservedChars, escapeChars, mapChars)
   -- Because SendChatMessage will error if an UTF8 multibyte character is incomplete,
   -- all character values above 127 have to be encoded to avoid this. This costs quite a bit of bandwidth (about 13-14%)
   -- Also, because drunken status is unknown for the received, strings used with SendChatMessage should be terminated with
-  -- an identifying byte value, after which the server MAY add "...hic!" or as much as it can fit(!). 
+  -- an identifying byte value, after which the server MAY add "...hic!" or as much as it can fit(!).
   -- Pass the identifying byte as a reserved character to this function to ensure the encoding doesn't contain that value.
   --  or use this: local message, match = arg1:gsub("^(.*)\029.-$", "%1")
   --  arg1 is message from channel, \029 is the string terminator, but may be used in the encoded datastream as well. :-)
   -- This encoding will expand data anywhere from:
   -- 0% (average with pure ascii text)
-  -- 53.5% (average with random data valued zero to 255) 
+  -- 53.5% (average with random data valued zero to 255)
   -- 100% (only encoding data that encodes to two bytes)
   local i
   local r = {}
@@ -1060,7 +1063,7 @@ and/or fitness for purpose.
 --// FCS-16 algorithm implemented as described in RFC 1331
 local FCSINIT16 = 65535
 --// Fast 16 bit FCS lookup table
-local fcs16tab = { [0]=0, 4489, 8978, 12955, 17956, 22445, 25910, 29887, 
+local fcs16tab = { [0]=0, 4489, 8978, 12955, 17956, 22445, 25910, 29887,
   35912, 40385, 44890, 48851, 51820, 56293, 59774, 63735,
   4225, 264, 13203, 8730, 22181, 18220, 30135, 25662,
   40137, 36160, 49115, 44626, 56045, 52068, 63999, 59510,
