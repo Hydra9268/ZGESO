@@ -1,8 +1,3 @@
--- LibStub is a simple versioning stub meant for use in Libraries.  http://www.wowace.com/wiki/LibStub for more info
--- LibStub is hereby placed in the Public Domain Credits: Kaelten, Cladhaire, ckknight, Mikk, Ammo, Nevcairiel, joshborke
--- LibStub developed for World of Warcraft by above members of the WowAce community.
--- Ported to Elder Scrolls Online by Seerah
-
 local LIBSTUB_MAJOR, LIBSTUB_MINOR = "LibStub", 4
 local LibStub = _G[LIBSTUB_MAJOR]
 local zo_strmatch = _G.zo_strmatch
