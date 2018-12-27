@@ -9,12 +9,16 @@ local ZGV = _G.ZGV
 -- LOCAL REFERENCES
 -----------------------------------------
 
-local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs,class = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs,class
+local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs,class = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs,_G.class
 local print = ZGV.print
 local CHAIN = ZGV.Utils.ChainCall
 local ui = ZGV.UI
-local wm = WINDOW_MANAGER
+local wm = _G.WINDOW_MANAGER
 local L = ZGV.L
+local GuiRoot = _G.GuiRoot
+local titlebar = _G.titlebar
+local TOPLEFT, TOPRIGHT, BOTTOMLEFT, BOTTOMRIGHT, CENTER = _G.TOPLEFT, _G.TOPRIGHT, _G.BOTTOMLEFT, _G.BOTTOMRIGHT, _G.CENTER
+local TOP, RIGHT, BOTTOM, LEFT = _G.TOP, _G.RIGHT, _G.BOTTOM, _G.LEFT
 
 -----------------------------------------
 -- LOCAL VARIABLES
@@ -194,7 +198,7 @@ function Menu:CreateBaseMenu()
 	.__END
 
 	frame.mainBackdrop = CHAIN(ui:Create("SecFrame", frame, name.. "_mainBackdrop"))
-	:SetPoint(TOPLEFT,frame,TOPLEFT,1,HEADER_HEIGHT)
+	:SetPoint( TOPLEFT,frame, TOPLEFT,1,HEADER_HEIGHT)
 	:SetPoint(BOTTOMRIGHT,frame,BOTTOMRIGHT,-1,-FOOTER_HEIGHT)
 	.__END
 
@@ -226,16 +230,16 @@ function GuideMenu:Create()
 	:SetWidth(LEFT_COLUMN_WIDTH)
 	.__END
 
-	frame.guideBoxScroll = CHAIN(wm:CreateControl(name.."_Slider",frame,CT_SLIDER))
+	frame.guideBoxScroll = CHAIN(wm:CreateControl(name.."_Slider",frame,_G.CT_SLIDER))
 	:SetMouseEnabled(true)
-	:SetThumbTexture(tex,tex,tex,SCROLL_WIDTH,50,0,0,1,1)
+	:SetThumbTexture(_G.tex,_G.tex,_G.tex,SCROLL_WIDTH,50,0,0,1,1)
 	:SetThumbFlushWithExtents(true)
 	:SetValue(0)
 	:SetValueStep(1)
 	:SetWidth(SCROLL_WIDTH)
 	:SetAnchor(TOPLEFT,frame.guideBox,TOPRIGHT)
 	:SetAnchor(BOTTOMLEFT,frame.guideBox,BOTTOMRIGHT)
-	:SetOrientation(ORIENTATION_VERTICAL)
+	:SetOrientation(_G.ORIENTATION_VERTICAL)
 	:SetHandler("OnValueChanged",function(self,value,eventReason)
 			GuideMenu.offset = value
 			GuideMenu:RefreshUI()
@@ -257,7 +261,7 @@ function GuideMenu:Create()
 
 	frame.header = CHAIN(ui:Create("Label",frame,gmname.."_Header",15,"bold"))
 	:SetPoint(TOPLEFT,frame,TOPLEFT,HEADER_PADDING,6)
-	:SetText ( ZGV.Utils.faction_names_short[ZGV.Utils.GetFaction()]:upper() .. (ZGV.VETERAN_FACTION and " VETERAN" or "") .. " LEVELING" )
+	:SetText (ZGV.Utils.faction_names_short[ZGV.Utils.GetFaction()]:upper() .. (ZGV.VETERAN_FACTION and " VETERAN" or "") .. " LEVELING")
 	.__END
 
 	------------------------------
@@ -344,7 +348,7 @@ function GuideMenu:Create()
 	frame.GuideData = CHAIN(ui:Create("Label",frame.guideInfoBox,gmname.."_GuideData",14))
 	:SetPoint(TOPLEFT,frame.GuideImage,0,200)
 	:SetPoint(BOTTOMRIGHT,0,0)
-	:SetVerticalAlignment(TEXT_ALIGN_TOP)
+	:SetVerticalAlignment(_G.TEXT_ALIGN_TOP)
 	.__END
 
 	-- Button isn't in the scrollframe either
@@ -413,6 +417,7 @@ function GuideMenu:RefreshUI()
 		table.insert(guides,i,f)
 	end
 
+	local zo_min, zo_max = _G.zo_min, _G.zo_max
 	self.offset = self.offset and zo_min(#guides,zo_max(0,self.offset)) or 0
 
 	frame.guideBoxScroll:SetMinMax(0, #guides-MAX_LINES)		-- code works but there's no scrolling
@@ -420,6 +425,7 @@ function GuideMenu:RefreshUI()
 	local hei = zo_min(1,MAX_LINES / #guides)  if hei==1 then
 		hei = 0
 	end
+	local tex = _G.tex
 	frame.guideBoxScroll:SetThumbTexture(tex,tex,tex,SCROLL_WIDTH,frame.guideBoxScroll:GetHeight() * hei,0,0,1,1)
 
 	-------------------------------
@@ -472,7 +478,7 @@ function GuideMenu:RefreshUI()
 
 			local statuscolor = GuideStatusColor[status] or "ffffff"
 			if self.selectedguide and self.selectedguide==guide then
-				local r,g,b = HTMLColor("#"..statuscolor)
+				local r,g,b = _G.HTMLColor("#"..statuscolor)
 				but:SetBackdropColor(r,g,b,1)
 				but.bd:Show()
 
@@ -496,9 +502,10 @@ function GuideMenu:RefreshUI()
 
 		local g = self.selectedguide
 		local imageWidth, imageHeight = GUIDE_IMAGE_WIDTH, GUIDE_IMAGE_HEIGHT
+		local formatLevel = _G.formatLevel
 
 		frame.GuideTitle:SetText(g.title_short)
-		frame.GuideImage:SetTexture(image)
+		frame.GuideImage:SetTexture(_G.image)
 		frame.GuideData:SetText(g.desc)
 		frame.GuideData:SetPoint(TOPLEFT,frame.GuideImage,0,200)
 
@@ -621,7 +628,7 @@ function Settings:Create()
 		:SetHandler("OnMouseExit",function(me)
 				me.highlight:Hide()
 			end)
-		:SetHandler("OnClicked",function(me,but) Settings:MenuButton_OnClick(me,but) 
+		:SetHandler("OnClicked",function(me,but) Settings:MenuButton_OnClick(me,but)
 			end)
 		.__END
 
@@ -700,7 +707,7 @@ function Settings:Create()
 
 	frame.OptionsScrollBase = CHAIN(ui:Create("InvisFrame", frame.optionsBox, setname.. "_OptionsScrollChild"))	-- Base for the option UI for each individual group
 	:SetPoint(TOPLEFT,frame.OptionDesc,BOTTOMLEFT,-HEADER_PADDING,0)
-	:SetPoint(BOTTOMRIGHT,frame.OkButton,TOPRIGHT,OkButtonHortPad,0)
+	:SetPoint(BOTTOMRIGHT,frame.OkButton,TOPRIGHT,_G.OkButtonHortPad,0)
 	.__END
 end
 
@@ -757,7 +764,7 @@ function Settings:CreateDefaultPopup()
 end
 
 function Settings:ShowDefaultPopup()
-	if not self.DefaultPopup then 
+	if not self.DefaultPopup then
 		self:CreateDefaultPopup()
 	end
 	self.DefaultPopup:Show()
@@ -832,16 +839,16 @@ function Settings:CreateOptionsUI(group)
 end
 
 function Settings:RefreshUI()
-	if not self.Frame then 
-		self:Create() 
+	if not self.Frame then
+		self:Create()
 	end
 	local frame = self.Frame
 	local buts = frame.buttons
 
 	local opt_groups = self.opt_groups
 
-	if #opt_groups > #buts then 
-		error("More option groups than buttons in Settings! Tell Dev Team") 
+	if #opt_groups > #buts then
+		error("More option groups than buttons in Settings! Tell Dev Team")
 	end
 
 	-------------------------------
@@ -905,8 +912,8 @@ function Settings:RefreshUI()
 -------------------------------
 
 	for i,group in ipairs(opt_groups) do
-		if group.frame then 
-			group.frame:Hide() 
+		if group.frame then
+			group.frame:Hide()
 		end		-- Hide all the frames, then only show when needed
 	end
 
@@ -930,8 +937,8 @@ function Settings:RefreshUI()
 		frame.OkButton:Hide()
 	end
 
-	if self.DefaultPopup and self.DefaultPopup:IsShown() then 
-		self.DefaultPopup:Hide() 
+	if self.DefaultPopup and self.DefaultPopup:IsShown() then
+		self.DefaultPopup:Hide()
 	end	-- Hide popup if it is visible
 
 	frame:Show()
@@ -957,8 +964,8 @@ Settings.OptionUI["dropdown"] = function(self,option,parent)
 	:SetDefaultText(option.data.defaultext)
 	.__END
 
-	if option.data.width then 
-		dropdown:SetWidth(option.data.width) 
+	if option.data.width then
+		dropdown:SetWidth(option.data.width)
 	end
 
 	-- Change the parent of the pullout so that the opt_frame doesn't resize when it is opened. If the pullout is parented to the dropdown then opt_frame will resize when it is opened.
@@ -988,8 +995,8 @@ Settings.OptionUI["dropdown"] = function(self,option,parent)
 	end
 
 	local valuetbl = option.data.values
-	if type(valuetbl)=="function" then 
-		valuetbl = valuetbl(dropdown) 
+	if type(valuetbl)=="function" then
+		valuetbl = valuetbl(dropdown)
 	end
 	assert(type(valuetbl)=="table", "Dropdown values must be a table or a function. Not: "..type(valuetbl))
 
@@ -1264,7 +1271,7 @@ end
 
 function Menu:Show()
 
-	if not self.Frame then 
+	if not self.Frame then
 		self:CreateBaseMenu()
 	end
 
@@ -1297,11 +1304,11 @@ function GuideMenu:Show()
 
 	Menu:Show()
 
-	if Menu.Frame and Menu.Frame.tabhandler:GetCurrentTab() ~= GUIDEMENU_TAB_ID then 
-		Menu:SetTab(GUIDEMENU_TAB_ID) 
+	if Menu.Frame and Menu.Frame.tabhandler:GetCurrentTab() ~= GUIDEMENU_TAB_ID then
+		Menu:SetTab(GUIDEMENU_TAB_ID)
 	end -- Make sure all other views are hidden
 
-	if not self.Frame then 
+	if not self.Frame then
 		self:Create()
 	end
 
@@ -1365,12 +1372,12 @@ end
 
 function Settings:Show()
 	Menu:Show()
-	if Menu.Frame and Menu.Frame.tabhandler:GetCurrentTab() ~= SETTINGS_TAB_ID then 
-		Menu:SetTab(SETTINGS_TAB_ID) 
+	if Menu.Frame and Menu.Frame.tabhandler:GetCurrentTab() ~= SETTINGS_TAB_ID then
+		Menu:SetTab(SETTINGS_TAB_ID)
 	end 	-- Make sure all other views are hidden
 
-	if not self.Frame then 
-		self:Create() 
+	if not self.Frame then
+		self:Create()
 	end
 	self.Frame:Show()
 	self:Refresh()
@@ -1387,17 +1394,17 @@ end
 function Settings:Hide()
 	if not self.Frame then return end
 
-	if self.DefaultPopup and self.DefaultPopup:IsShown() then 
-		self.DefaultPopup:Hide() 
+	if self.DefaultPopup and self.DefaultPopup:IsShown() then
+		self.DefaultPopup:Hide()
 	end	-- Hide popup if it is visible
 
 	self.Frame:Hide()
 end
 
 function Settings:Refresh()
-	if not self.selectedgroup then 
-		self:OpenSettings() 
-		return 
+	if not self.selectedgroup then
+		self:OpenSettings()
+		return
 	end		-- If no group to open to then open to the main group and let it recall refresh
 
 	self:RefreshUI()
