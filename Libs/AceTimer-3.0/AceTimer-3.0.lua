@@ -212,7 +212,7 @@ if oldminor and oldminor < 10 then
 				if timer.delay then
 					id = AceTimer.ScheduleRepeatingTimer(timer.object, timer.callback, timer.delay, timer.arg)
 				else
-					id = AceTimer.ScheduleTimer(timer.object, timer.callback, timer.when - GetTime(), timer.arg)
+					id = AceTimer.ScheduleTimer(timer.object, timer.callback, timer.when - _G.GetTime(), timer.arg)
 				end
 				-- change id to the old handle
 				local t = activeTimers[id]
