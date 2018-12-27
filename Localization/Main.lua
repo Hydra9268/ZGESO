@@ -27,7 +27,7 @@ local mt = {__index = function(self, key)
 -- FUNCTIONS
 -----------------------------------------
 
-function ZygorGuidesViewer_L(name, locale, translations)
+function GuideViewer(name, locale, translations)
   if type(translations) == "function" then translations = translations() end
   if type(translations) == "string" then
     -- oh crap, parse the monster.

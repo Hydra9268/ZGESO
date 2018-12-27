@@ -26,8 +26,8 @@ ZGV.inits = {}
 
 ZGV.DIR = "ZGESO"
 
-ZGV.L = ZygorGuidesViewer_L("Main")
-ZGV.O = ZygorGuidesViewer_L("Option")
+ZGV.L = GuideViewer("Main")
+ZGV.O = GuideViewer("Option")
 
 local print = ZGV.print
 local L = ZGV.L

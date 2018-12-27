@@ -208,8 +208,8 @@ GOALTYPES['_item'] = {
 			local tar, tarid = ParseId(str)
 
 			if plural and tar then
-				local ZygorGuidesViewer_L = _G.ZygorGuidesViewer_L
-				tar = ZygorGuidesViewer_L("Specials").plural(tar)
+				local GuideViewer = _G.GuideViewer
+				tar = GuideViewer("Specials").plural(tar)
 			end
 
 			return tar,tarid

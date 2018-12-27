@@ -10,7 +10,7 @@
 -- LOCAL REFERENCES
 -----------------------------------------
 
-local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs,class = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs,class
+local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs
 
 -----------------------------------------
 -- LOCAL VARIABLES
@@ -110,7 +110,7 @@ local wordspecials = {
 -----------------------------------------
 -- FUNCTIONS
 -----------------------------------------
-ZygorGuidesViewer_L("Main", "enUS", function() local f = {
+GuideViewer("Main", "enUS", function() local f = {
 
       -- GENERAL
       ["name"] = "|cff8800Leveling Guides|r",
@@ -226,7 +226,7 @@ ZygorGuidesViewer_L("Main", "enUS", function() local f = {
     return f
   end)
 
-ZygorGuidesViewer_L("Option", "enUS", function() local f = {
+GuideViewer("Option", "enUS", function() local f = {
 
       ------ VIEWER -------
       ["opt_viewer"] = "Guide Viewer",
@@ -331,7 +331,7 @@ ZygorGuidesViewer_L("Option", "enUS", function() local f = {
     return f
   end)
 
-ZygorGuidesViewer_L("Specials", "enUS", function() return {
+GuideViewer("Specials", "enUS", function() return {
       ['plural'] = function (word)
         if not word then return end
         -- one-shot special cases
@@ -435,7 +435,7 @@ ZygorGuidesViewer_L("Specials", "enUS", function() return {
         end
 
         if lastcommon then
-          return ZygorGuidesViewer_L("Specials")['contract_mobs_start'](lastcommon)
+          return GuideViewer("Specials")['contract_mobs_start'](lastcommon)
         end
 
         -- start failed? let's try end.
@@ -458,7 +458,7 @@ ZygorGuidesViewer_L("Specials", "enUS", function() return {
         end
 
         if lastcommon then
-          return ZygorGuidesViewer_L("Specials")['contract_mobs_end'](lastcommon)
+          return GuideViewer("Specials")['contract_mobs_end'](lastcommon)
         end
 
         --else
@@ -466,7 +466,7 @@ ZygorGuidesViewer_L("Specials", "enUS", function() return {
       end,
 
       ['contract_mobs_start'] = function(s) return s.." mobs" end,
-      ['contract_mobs_end'] = function(s) return ZygorGuidesViewer_L("Specials")['plural'](s) end,
+      ['contract_mobs_end'] = function(s) return GuideViewer("Specials")['plural'](s) end,
       } end)
 
 

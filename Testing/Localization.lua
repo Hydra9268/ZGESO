@@ -22,15 +22,15 @@ local Localization = {}
 -----------------------------------------
 
 function Localization.TestLocalization()
-  local ZygorGuidesViewer_L = ZygorGuidesViewer_L
+  local GuideViewer = GuideViewer
 
-  local stringL = ZygorGuidesViewer_L("testing","enUS",[[
-	qwerty === zxczxc  
+  local stringL = GuideViewer("testing","enUS",[[
+	qwerty === zxczxc
 	dupa dupa === sratatata //qwe //QWEQWW Q //  ] [
 	]])
 
   local function cleanUpTestAndReturn(pass,comment)
-    ZygorGuidesViewer_L("testing","enUS")	-- nils it out
+    GuideViewer("testing","enUS")	-- nils it out
 
     return pass,comment
   end
@@ -45,18 +45,18 @@ function Localization.TestLocalization()
 end
 
 function Localization.TestPlural()
-  local ZygorGuidesViewer_L = ZygorGuidesViewer_L
+  local GuideViewer = GuideViewer
 
   local function cleanUpTestAndReturn(pass,comment)
-    ZygorGuidesViewer_L("testing","enUS")	-- nils it out
+    GuideViewer("testing","enUS")	-- nils it out
 
     return pass,comment
   end
 
   function test(s,p)
-    local sp = ZygorGuidesViewer_L("Specials").plural(s)
-    if sp~=p then 
-      return cleanUpTestAndReturn(false,"Pluralization failed: '"..s.."' -> '"..sp.."', should be '"..p.."'") 
+    local sp = GuideViewer("Specials").plural(s)
+    if sp~=p then
+      return cleanUpTestAndReturn(false,"Pluralization failed: '"..s.."' -> '"..sp.."', should be '"..p.."'")
     end
   end
 
