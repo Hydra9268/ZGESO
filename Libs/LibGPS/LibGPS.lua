@@ -163,7 +163,7 @@ end
 
 local function CalculateMeasurements(mapId, localX, localY)
     local wpX, wpY = POSITION_MIN, POSITION_MIN
-	
+
     if (localX < 0.5) then wpX = POSITION_MAX end
     if (localY < 0.5) then wpY = POSITION_MAX end
 
@@ -252,7 +252,7 @@ local function RestoreCurrentWaypoint()
 
     local wasSet = false
     if (currentWaypointX ~= 0 or currentWaypointY ~= 0) then
-		
+
         local measurements = mapMeasurements[currentWaypointMapId]
         local x = currentWaypointX * measurements.scaleX + measurements.offsetX
         local y = currentWaypointY * measurements.scaleY + measurements.offsetY
