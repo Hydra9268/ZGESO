@@ -1,16 +1,10 @@
-local ZGV = ZGV
-if not ZGV then return end
------------------------------------------
--- INFORMATION
------------------------------------------
---[[
+local ZGV = _G.ZGV
 
---]]
 -----------------------------------------
 -- LOCAL REFERENCES
 -----------------------------------------
 
-local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs,class = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs,class
+local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs,class = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs,_G.class
 local print = ZGV.print
 local CHAIN = ZGV.Utils.ChainCall
 local ui = ZGV.UI
@@ -38,6 +32,9 @@ local Option = ZGV.Class:New("Option")
 local Option_meta = {__index = Option}
 
 local mostRecentOptGroup
+
+local TOP, BOTTOM = _G.TOP, _G.BOTTOM
+local GetDisplayName = _G.GetDisplayName
 
 -----------------------------------------
 -- SAVED REFERENCES
@@ -514,7 +511,7 @@ function SavedVars:InitializeOptions()
                 me:AddItem(name,name,function(item,value)
                     if SavedVars.raw.curprofile == value then return end
 
-                    SavedVars.ProfilePopup = SavedVars.ProfilePopup or ZGV.Popup:New("Zygor_Change_Profile_Popup")
+                    SavedVars.ProfilePopup = SavedVars.ProfilePopup or ZGV.Popup:New("ZGESO_Change_Profile_Popup")
 
                     SavedVars.ProfilePopup.OnAccept = function(me)
                       SavedVars:SetCurrentProfile(value)
@@ -561,12 +558,12 @@ function SavedVars:InitializeOptions()
         desc = O["opt_newprof_desc"],
         func = function()
           if not SavedVars.NewProfilePopup then
-            local popup = Zygor_New_Profile_Popup or ZGV.Popup:New("Zygor_New_Profile_Popup")
+            local popup = _G.ZGESO_New_Profile_Popup or ZGV.Popup:New("ZGESO_New_Profile_Popup")
 
-            d(popup or "no popup")
+            _G.d(popup or "no popup")
 
             -- Only allow alphanumeric characters... Don't want to let users screw up their SV files by naming it with strange characters.
-            popup.edit = CHAIN(Zygor_New_Profile_Popup_Edit or ui:Create("EditBox",popup,"Zygor_New_Profile_Popup_Edit"))
+            popup.edit = CHAIN(_G.ZGESO_New_Profile_Popup_Edit or ui:Create("EditBox",popup,"ZGESO_New_Profile_Popup_Edit"))
             :SetPoint(TOP,popup.text,BOTTOM,0,5)
             :SetText("Set Name")
             :HookHandler("OnMouseDown",function(me) me:SelectAll() end)
@@ -789,7 +786,7 @@ function SavedVars:InitializeOptions()
     end
   end
 
-  --[[
+	--[[
 	-- TESTING
 	AddOptionGroup("TESTING",{name = "TESTING",desc = "Settings to just show testing of various option types and positionings."})
 	do
@@ -807,7 +804,7 @@ function SavedVars:InitializeOptions()
 		})
 		AddOption("accent2",{
 			type = "color",
-			name = "Color Picker!!>",
+			name = "Color Picker!!",
 			column = "three",
 			desc = "In line descriptions! With Some word wrapping",
 			descStyle = "inline",
@@ -846,7 +843,7 @@ function SavedVars:Setup()
 
   -- If SV does not exist then use ZOS function to create it.
   if not _G[SvName] then
-    ZO_SavedVars:New(SvName, 100007, nil, {})
+    _G.ZO_SavedVars:New(SvName, 100007, nil, {})
     ZGV:Debug("&startup SV: Created a new sv file")
   else
     ZGV:Debug("&startup SV: loaded SV file properly")
@@ -883,8 +880,8 @@ function SavedVars:Setup()
   -- Store some character information at startup
   self.char.info.level = ZGV.Utils.GetPlayerPreciseLevel()
   self.char.info.faction = fac
-  self.char.info.date = GetDate()	-- TODO format this in a more helpful way?
-  self.char.info.time = GetFormattedTime()	-- TODO format this in a more helpful way?
+  self.char.info.date = _G.GetDate()	-- TODO format this in a more helpful way?
+  self.char.info.time = _G.GetFormattedTime()	-- TODO format this in a more helpful way?
 
   --[[
 	if self.char.savedquests then
