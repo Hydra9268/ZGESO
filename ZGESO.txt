@@ -4,16 +4,16 @@
 ## Version: 1.4.362 dev
 ## APIVersion: 100025 100024
 ## SavedVariables: ZGESOSettings
-## Disclaimer: This Add-on is not created by, affiliated with or sponsored by ZeniMax Media Inc. or its affiliates. The Elder Scrolls® and related logos are registered trademarks or trademarks of ZeniMax Media Inc. in the United States and/or other countries. All rights reserved. This Add-on is not sponsored by Zygor Guides.
+## Disclaimer: This Add-on is not created by, affiliated with or sponsored by ZeniMax Media Inc. or its affiliates. The Elder Scrollsï¿½ and related logos are registered trademarks or trademarks of ZeniMax Media Inc. in the United States and/or other countries. All rights reserved. This Add-on is not sponsored by Zygor Guides.
 ## License: MIT
 
 -- Libs
-Libs/LibStub/LibStub.lua
-Libs/LibMapPing/LibMapPing.lua
-Libs/LibGPS/LibGPS.lua
-Libs/lua-bit-numberlua/lua-bit-numberlua.lua
+Libs/LibStub/LibStub.min.lua
+Libs/LibMapPing/LibMapPing.min.lua
+Libs/LibGPS/LibGPS.min.lua
+Libs/lua-bit-numberlua/lua-bit-numberlua.min.lua
 Libs/AceTimer-3.0/AceTimer-3.0.xml
-Libs/AceTimer-3.0/AceTimer-3.0.lua
+Libs/AceTimer-3.0/AceTimer-3.0.min.lua
 
 -- Localization
 Localization/Main.lua
