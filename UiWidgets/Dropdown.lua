@@ -1,5 +1,5 @@
-local ZGV = ZygorGuidesViewer
-if not (ZGV and ZGV.UI) then return end
+local ZGV = _G.ZGV
+
 -----------------------------------------
 -- INFORMATION
 -----------------------------------------
