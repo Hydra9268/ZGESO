@@ -57,7 +57,7 @@ Retrieve current player's name
 /run d(ZGV.Utils.GetPlayerName())
 ```
 
- Retrieve partial information from ZygorGuidesViewer.txt
+Retrieve partial information from ZGESO.txt
 ```lua
 /run d(ZGV.Utils.GetMyAddonInfo())
 ```
