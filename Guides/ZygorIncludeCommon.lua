@@ -1,3 +1,2 @@
-local ZGV = ZygorGuidesViewer
-if not ZGV then return end
+local ZGV = _G.ZGV
 if ZGV:DoMutex("IncludesCommon") then return end

@@ -2,8 +2,7 @@
 -- TODO: Break this up into smaller files
 -----------------------------------------
 
-local ZGV = ZygorGuidesViewer
-if not ZGV then return end
+local ZGV = _G.ZGV
 if ZGV:DoMutex("MorrowindDLC") then return end
 ZGV.GuideMenuTier = "MOR"
 ZGV:RegisterGuide("LEVELING\\DLC\\Clockwork City",[[

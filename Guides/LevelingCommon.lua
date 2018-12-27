@@ -2,8 +2,7 @@
 -- TODO: Break this up into smaller files
 -----------------------------------------
 
-local ZGV = ZygorGuidesViewer
-if not ZGV then return end
+local ZGV = _G.ZGV
 if ZGV:DoMutex("LevelingCommon") then return end
 ZGV.GuideMenuTier = "TAM"
 ZGV:RegisterGuide("Common Leveling Guides\\The Wailing Prison",[[
