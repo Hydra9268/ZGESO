@@ -51,6 +51,7 @@ local currentWaypointX, currentWaypointY, currentWaypointMapId = 0, 0, nil
 local GetCurrentMapZoneIndex = _G.GetCurrentMapZoneIndex
 local GetMapTileTexture = _G.GetMapTileTexture
 local GetCurrentMapIndex = _G.GetCurrentMapIndex
+local GetMapType = _G.GetMapType
 local WouldProcessMapClick = _G.WouldProcessMapClick
 local ProcessMapClick = _G.ProcessMapClick
 
@@ -183,6 +184,8 @@ local function CalculateMeasurements(mapId, localX, localY)
     local x1, y1, x2, y2
 	local MAP_CONTENT_DUNGEON = _G.MAP_CONTENT_DUNGEON
 	local MapZoomOut = _G.MapZoomOut
+	local MAPTYPE_ZONE = _G.MAPTYPE_ZONE
+	local GetMapContentType = _G.GetMapContentType
     while not(GetMapType() == MAPTYPE_ZONE and GetMapContentType() ~= MAP_CONTENT_DUNGEON) do
         if (MapZoomOut() ~= SET_MAP_RESULT_MAP_CHANGED) then break end
         -- collect measurements for all maps we come through on our way to the zone map
@@ -644,6 +647,7 @@ local FakeCALLBACK_MANAGER = { FireCallbacks = function() end }
 function lib:SetPlayerChoseCurrentMap()
     -- replace the original functions
     local oldIsChangingAllowed = _G.ZO_WorldMap_IsMapChangingAllowed
+	local ZO_WorldMap_IsMapChangingAllowed = _G.ZO_WorldMap_IsMapChangingAllowed
     ZO_WorldMap_IsMapChangingAllowed = FakeZO_WorldMap_IsMapChangingAllowed
 
     local oldSetMapToMapListIndex = SetMapToMapListIndex
