@@ -3,12 +3,11 @@
 ------------------------------------------------------------------
 
 local LIB_NAME = "LibGPS2"
+
+local LibStub = _G.LibStub
 local lib = LibStub:NewLibrary(LIB_NAME, 16)
 
-if not lib then
-    return
-    -- already loaded and no upgrade necessary
-end
+if not lib then return end	-- already loaded and no upgrade necessary
 
 local LMP = LibStub("LibMapPing", true)
 if(not LMP) then
@@ -30,23 +29,48 @@ local TAMRIEL_MAP_INDEX = 1
 
 local rootMaps = lib.rootMaps or {}
 lib.rootMaps = rootMaps
-
---lib.debugMode = 1 -- TODO
 lib.mapMeasurements = lib.mapMeasurements or {}
-local mapMeasurements = lib.mapMeasurements
-lib.mapStack = lib.mapStack or {}
-local mapStack = lib.mapStack
 lib.suppressCount = lib.suppressCount or 0
+lib.mapStack = lib.mapStack or {}
 
-local MAP_PIN_TYPE_PLAYER_WAYPOINT = MAP_PIN_TYPE_PLAYER_WAYPOINT
+local mapMeasurements = lib.mapMeasurements
+local mapStack = lib.mapStack
+
+local MAP_PIN_TYPE_PLAYER_WAYPOINT = _G.MAP_PIN_TYPE_PLAYER_WAYPOINT
+local MAP_TYPE_LOCATION_CENTERED = _G.MAP_TYPE_LOCATION_CENTERED
+local SET_MAP_RESULT_MAP_CHANGED = _G.SET_MAP_RESULT_MAP_CHANGED
+local SET_MAP_RESULT_FAILED = _G.SET_MAP_RESULT_FAILED
+local SET_MAP_RESULT_MAP_FAILED = _G.SET_MAP_RESULT_MAP_FAILED
+local SET_MAP_RESULT_CURRENT_MAP_UNCHANGED = _G.SET_MAP_RESULT_CURRENT_MAP_UNCHANGED
+
+local SetMapToPlayerLocation = _G.SetMapToPlayerLocation
+local SetMapToMapListIndex = _G.SetMapToMapListIndex
+local SetMapFloor = _G.SetMapFloor
+
 local currentWaypointX, currentWaypointY, currentWaypointMapId = 0, 0, nil
+local GetCurrentMapZoneIndex = _G.GetCurrentMapZoneIndex
+local GetMapTileTexture = _G.GetMapTileTexture
+local GetCurrentMapIndex = _G.GetCurrentMapIndex
+local WouldProcessMapClick = _G.WouldProcessMapClick
+local ProcessMapClick = _G.ProcessMapClick
+
 local needWaypointRestore = false
+
 local orgSetMapToMapListIndex = nil
 local orgSetMapToPlayerLocation = nil
 local orgSetMapFloor = nil
 local orgProcessMapClick = nil
 local orgFunctions = {}
+
+local DoesUnitExist = _G.DoesUnitExist
 local measuring = false
+
+local SLASH_COMMANDS = _G.SLASH_COMMANDS
+local CALLBACK_MANAGER = _G.CALLBACK_MANAGER
+local EVENT_MANAGER = _G.EVENT_MANAGER
+
+local df = _G.df
+local zo_strjoin = _G.zo_strjoin
 
 SLASH_COMMANDS["/libgpsdebug"] = function(value)
     lib.debugMode = (tonumber(value) == 1)
@@ -89,6 +113,7 @@ local function HandlePingEvent(pingType, pingTag, x, y, isPingOwner)
 end
 
 local function GetPlayerPosition()
+	local GetMapPlayerPosition = _G.GetMapPlayerPosition
     return GetMapPlayerPosition("player")
 end
 
@@ -156,6 +181,8 @@ local function CalculateMeasurements(mapId, localX, localY)
 
     -- switch to zone map in order to get the mapIndex for the current location
     local x1, y1, x2, y2
+	local MAP_CONTENT_DUNGEON = _G.MAP_CONTENT_DUNGEON
+	local MapZoomOut = _G.MapZoomOut
     while not(GetMapType() == MAPTYPE_ZONE and GetMapContentType() ~= MAP_CONTENT_DUNGEON) do
         if (MapZoomOut() ~= SET_MAP_RESULT_MAP_CHANGED) then break end
         -- collect measurements for all maps we come through on our way to the zone map
@@ -220,8 +247,8 @@ local function GetExtraMapMeasurement(extraMapIndex)
         -- calculate the measurements of map without worrying about the waypoint
         local mapIndex = CalculateMeasurements(extraMapId, GetPlayerPosition())
         if (mapIndex ~= extraMapIndex) then
-            local name = GetMapInfo(extraMapIndex)
-            name = zo_strformat("<<C:1>>", name)
+            local name = _G.GetMapInfo(extraMapIndex)
+            name = _G.zo_strformat("<<C:1>>", name)
             LogMessage(LOG_WARNING, "CalculateMeasurements returned different index while measuring ", name, " map. expected:", extraMapIndex, "actual:", mapIndex)
             if (not IsMapMeasured(extraMapId)) then
                 LogMessage(LOG_WARNING, "Failed to measure ", name, " map.")
@@ -279,6 +306,10 @@ local function RestoreCurrentWaypoint()
 end
 
 local function ConnectToWorldMap()
+	local ZO_WorldMap_GetPanAndZoom = _G.ZO_WorldMap_GetPanAndZoom
+	local ZO_WorldMap_GetPinManager = _G.ZO_WorldMap_GetPinManager
+	local ZO_WorldMap_AddCustomPin = _G.ZO_WorldMap_AddCustomPin
+	local ZO_WorldMap_SetCustomPinEnabled = _G.ZO_WorldMap_SetCustomPinEnabled
     lib.panAndZoom = ZO_WorldMap_GetPanAndZoom()
     lib.mapPinManager = ZO_WorldMap_GetPinManager()
     if (_G[DUMMY_PIN_TYPE]) then return end
@@ -385,6 +416,11 @@ local function HookSetMapFloor()
 end
 
 local function Initialize() -- wait until we have defined all functions
+
+	local EVENT_PLAYER_DEACTIVATED = _G.EVENT_PLAYER_DEACTIVATED
+	local EVENT_PLAYER_ACTIVATED = _G.EVENT_PLAYER_ACTIVATED
+	local EVENT_MAP_PING = _G.EVENT_MAP_PING
+
     --- Unregister handler from older libGPS ( < 3)
     EVENT_MANAGER:UnregisterForEvent("LibGPS2_SaveWaypoint", EVENT_PLAYER_DEACTIVATED)
     EVENT_MANAGER:UnregisterForEvent("LibGPS2_RestoreWaypoint", EVENT_PLAYER_ACTIVATED)
@@ -398,6 +434,7 @@ local function Initialize() -- wait until we have defined all functions
         -- Undo action from older libGPS ( >= 5.2)
         lib:Unload()
         if (lib.suppressCount > 0) then
+			local zo_callLater = _G.zo_callLater
             if lib.debugMode then zo_callLater(function() LogMessage(LOG_WARNING, "There is a measure in progress before loading is completed.") end, 2000) end
             FinalizeMeasurement()
         end
@@ -428,7 +465,7 @@ local function Initialize() -- wait until we have defined all functions
     StoreTamrielMapMeasurements()
 
     local function addRootMap(zoneId)
-        local mapIndex = GetMapIndexByZoneId(zoneId)
+        local mapIndex = _G.GetMapIndexByZoneId(zoneId)
         if mapIndex then rootMaps[mapIndex] = false end
     end
     addRootMap(347) -- Coldhabour
@@ -501,6 +538,7 @@ end
 --- return[2] SetMapResultCode - Specifies if the map has changed or failed during measurement (independent of the actual result of the measurement)
 function lib:CalculateMapMeasurements(returnToInitialMap)
     -- cosmic map cannot be measured (GetMapPlayerWaypoint returns 0,0)
+	local MAPTYPE_COSMIC = _G.MAPTYPE_COSMIC
     if (GetMapType() == MAPTYPE_COSMIC) then return false, SET_MAP_RESULT_CURRENT_MAP_UNCHANGED end
 
     -- no need to take measurements more than once
@@ -605,7 +643,7 @@ local FakeCALLBACK_MANAGER = { FireCallbacks = function() end }
 --- This function sets the current map as player chosen so it won't switch back to the previous map.
 function lib:SetPlayerChoseCurrentMap()
     -- replace the original functions
-    local oldIsChangingAllowed = ZO_WorldMap_IsMapChangingAllowed
+    local oldIsChangingAllowed = _G.ZO_WorldMap_IsMapChangingAllowed
     ZO_WorldMap_IsMapChangingAllowed = FakeZO_WorldMap_IsMapChangingAllowed
 
     local oldSetMapToMapListIndex = SetMapToMapListIndex
@@ -615,7 +653,7 @@ function lib:SetPlayerChoseCurrentMap()
     CALLBACK_MANAGER = FakeCALLBACK_MANAGER
 
     -- make our rigged call to set the player chosen flag
-    ZO_WorldMap_SetMapByIndex()
+    _G.ZO_WorldMap_SetMapByIndex()
 
     -- cleanup
     ZO_WorldMap_IsMapChangingAllowed = oldIsChangingAllowed
@@ -664,6 +702,7 @@ function lib:MapZoomInMax(x, y)
 end
 
 local SetCurrentZoom, GetCurrentZoom -- TODO remove
+local GetAPIVersion = _G.GetAPIVersion
 if(GetAPIVersion() >= 100025) then
     function SetCurrentZoom(zoom)
         return lib.panAndZoom:SetCurrentNormalizedZoom(zoom)
@@ -683,16 +722,16 @@ end
 --- Stores information about how we can back to this map on a stack.
 -- There is no panAndZoom:GetCurrentOffset(), yet
 local function CalculateContainerAnchorOffsets()
-    local containerCenterX, containerCenterY = ZO_WorldMapContainer:GetCenter()
-    local scrollCenterX, scrollCenterY = ZO_WorldMapScroll:GetCenter()
+    local containerCenterX, containerCenterY = _G.ZO_WorldMapContainer:GetCenter()
+    local scrollCenterX, scrollCenterY = _G.ZO_WorldMapScroll:GetCenter()
     return containerCenterX - scrollCenterX, containerCenterY - scrollCenterY
 end
 function lib:PushCurrentMap()
     local wasPlayerLocation, targetMapTileTexture, currentMapFloor, currentMapFloorCount, currentMapIndex, zoom, offsetX, offsetY
     currentMapIndex = GetCurrentMapIndex()
-    wasPlayerLocation = DoesCurrentMapMatchMapForPlayerLocation()
+    wasPlayerLocation = _G.DoesCurrentMapMatchMapForPlayerLocation()
     targetMapTileTexture = GetMapTileTexture()
-    currentMapFloor, currentMapFloorCount = GetMapFloorInfo()
+    currentMapFloor, currentMapFloorCount = _G.GetMapFloorInfo()
     zoom = GetCurrentZoom()
     offsetX, offsetY = CalculateContainerAnchorOffsets()
 
