@@ -31,7 +31,7 @@ ZGV.BugReport = BugReport
 -- CREATE FUNCTION
 -----------------------------------------
 function BugReport:CreateDumpFrameBasic()
-	local name = "ZygorGuidesViewer_DumpFrameBasic"
+	local name = "ZGESO_DumpFrameBasic"
 
 	local frame = CHAIN(UI:Create("Frame",guiRoot,name))
 	:SetSize(1024,700)
