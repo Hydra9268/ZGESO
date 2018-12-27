@@ -359,7 +359,7 @@ GOALTYPES['wayshrine'] = 	{
 			end
 		end
 
-		local x, y, typ, tex = GetPOIMapInfo( self.wayshrine_zoneid, self.wayshrine_POIIndex, true ) --true=truthful call! don't be fooled by our own Pointer.lua and its foglight!
+		local x, y, typ, tex = _G.GetPOIMapInfo( self.wayshrine_zoneid, self.wayshrine_POIIndex, true ) --true=truthful call! don't be fooled by our own Pointer.lua and its foglight!
 		local MAP_PIN_TYPE_POI_COMPLETE = _G.MAP_PIN_TYPE_POI_COMPLETE
 
 		if typ == MAP_PIN_TYPE_POI_COMPLETE then
@@ -458,7 +458,7 @@ GOALTYPES['lorebook'] = {
 		return known , true
 	end,
 	gettext = function(self)
-		local title = GetLoreBookInfo(self.lorebook_cat,self.lorebook_col,self.lorebook_book)
+		local title = _G.GetLoreBookInfo(self.lorebook_cat,self.lorebook_col,self.lorebook_book)
 		return L['stepgoal_lorebook']:format(title)
 	end
 }
@@ -479,20 +479,21 @@ GOALTYPES['achieve'] = {
 		end
 	end,
 	iscomplete = function(self,override_achieve_id,override_achieve_crit)
-		local name,desc,points,icon,isCompleted,date,time = GetAchievementInfo(override_achieve_id or self.achieve_id)
+		local name,desc,points,icon,isCompleted,date,time = _G.GetAchievementInfo(override_achieve_id or self.achieve_id)
 		if isCompleted or not (override_achieve_crit or self.achieve_crit) then
 			return isCompleted , true
 		else
-			local desc,numcom,numreq = GetAchievementCriterion(override_achieve_id or self.achieve_id,override_achieve_crit or self.achieve_crit)
-			return numcom==numreq , true , (numcom/zo_max(1,(numreq or 1)))
+			local desc,numcom,numreq = _G.GetAchievementCriterion(override_achieve_id or self.achieve_id,override_achieve_crit or self.achieve_crit)
+			local zo_max = _G.zo_max
+			return numcom == numreq, true, (numcom/zo_max(1,(numreq or 1)))
 		end
 	end,
 	gettext = function(self)
 		local name
 		if not self.achieve_crit then
-			name = GetAchievementInfo(self.achieve_id)
+			name = _G.GetAchievementInfo(self.achieve_id)
 		else
-			name = GetAchievementCriterion(self.achieve_id,self.achieve_crit)
+			name = _G.GetAchievementCriterion(self.achieve_id,self.achieve_crit)
 		end
 		return L['stepgoal_achieve']:format(name)
 	end
@@ -607,7 +608,7 @@ function Goal:GetText()
 		end
 
 		local function parser_simple(s)
-			local fun,err = zo_loadstring(s:find("return") and s or "return "..s)
+			local fun,err = _G.zo_loadstring(s:find("return") and s or "return "..s)
 			if fun then
 				setfenv(fun,ZGV.Parser.ConditionEnv)
 				return fun
@@ -619,7 +620,7 @@ function Goal:GetText()
 		local function parser_ternary(s)
 			local condcode,a,b = s:match("(.*)%?%?(.*)::(.*)")
 			if condcode and a and b then
-				local condfun,err = zo_loadstring(condcode:find("return") and condcode or "return "..condcode)
+				local condfun,err = _G.zo_loadstring(condcode:find("return") and condcode or "return "..condcode)
 				if condfun then
 					local fun = function() -- Generating a real worker function
 						return condfun() and a or b
@@ -691,7 +692,7 @@ function Goal:GetText()
 		data = COLOR_NPC(self.wayshrine)
 
 	elseif self.action=="goto" then
-		local curZone = GetMapName()
+		local curZone = _G.GetMapName()
 		local mapname = ZGV.Pointer.Zones[self.map] and ZGV.Pointer.Zones[self.map].name or self.map or curZone.."(?)"
 
 		if mapname~=curZone then

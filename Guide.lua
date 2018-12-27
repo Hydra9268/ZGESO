@@ -8,7 +8,7 @@ local ZGV = _G.ZGV
 -- LOCAL REFERENCES
 -----------------------------------------
 
-local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs,class = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs,class
+local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs,class = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs,_G.class
 local print = ZGV.print
 local CHAIN = ZGV.Utils.ChainCall
 local ui = ZGV.UI
@@ -49,9 +49,10 @@ GuideProto.Sides = {
 -----------------------------------------
 
 local function coroutine_safe_pcall(f,arg)
-  local co = create(f)
+  local co = _G.create(f)
   while true do
-    local state, a,b,c,d,e = resume(co,arg)
+    local state, a,b,c,d,e = _G.resume(co,arg)
+	local status, yield = _G.status, _G.yield
     if status(co) == "suspended" then
       arg = yield(a)   -- suspend across `mypcall'
     else
@@ -133,6 +134,7 @@ function Guide:Parse(fully)
 
   elseif not parsed then  -- just failed
     local errortext
+	local line = _G.line
     if err then
       errortext = L["message_errorloading_full"]:format(self.title,line or 0,stepnum or "?",linedata or "???",err)
     else
@@ -323,7 +325,7 @@ function Guide:GetCompletion(mode)
     return "none"
 
   elseif mode=="level" then
-    if not self.startlevel or not self.endlevel then 
+    if not self.startlevel or not self.endlevel then
       return "error","no starting/ending level set"
     end
     return min( 1, max( 0, ( Utils.GetPlayerPreciseLevel() - self.startlevel ) / ( self.endlevel - self.startlevel ) ) )
