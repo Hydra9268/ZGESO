@@ -9,6 +9,7 @@ local print = ZGV.print
 local CHAIN = ZGV.Utils.ChainCall
 local ui = ZGV.UI
 local Testing = ZGV.Testing
+local GuideViewer = _G.GuideViewer
 
 -----------------------------------------
 -- LOCAL VARIABLES
@@ -21,8 +22,6 @@ local Localization = {}
 -----------------------------------------
 
 function Localization.TestLocalization()
-  local GuideViewer = GuideViewer
-
   local stringL = GuideViewer("testing","enUS",[[
 	qwerty === zxczxc
 	dupa dupa === sratatata //qwe //QWEQWW Q //  ] [
@@ -44,8 +43,6 @@ function Localization.TestLocalization()
 end
 
 function Localization.TestPlural()
-  local GuideViewer = GuideViewer
-
   local function cleanUpTestAndReturn(pass,comment)
     GuideViewer("testing","enUS")	-- nils it out
 
@@ -54,7 +51,7 @@ function Localization.TestPlural()
 
   function test(s,p)
     local sp = GuideViewer("Specials").plural(s)
-    if sp~=p then
+    if sp ~= p then
       return cleanUpTestAndReturn(false,"Pluralization failed: '"..s.."' -> '"..sp.."', should be '"..p.."'")
     end
   end
