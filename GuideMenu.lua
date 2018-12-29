@@ -273,7 +273,7 @@ function GuideMenu:Create()
 	for i=1,rows do
 		local butname = gmname.."_But"..i
 
-		-- Copy ZygorGuidesViewer_DumpFrameBasic layout. Has working scrollbar.
+		-- Copy ZGESO_DumpFrameBasic layout. Has working scrollbar.
 		local but = CHAIN(ui:Create("SecButton",frame.guideBox,butname))
 		:SetHeight(ROWHEIGHT)
 		:SetHandler("OnMouseEnter",function(me)
