@@ -42,7 +42,7 @@ end
 
 function ZGV:Debug (msg,...)
 	local GetFrameTimeSeconds, GetGameTimeMilliseconds = _G.GetFrameTimeSeconds, _G.GetGameTimeMilliseconds
-	
+
 	if not msg or type(msg)~="string" then error("Debug msg type error") end
 	SetDebugFlags()
 	local flagsmsg

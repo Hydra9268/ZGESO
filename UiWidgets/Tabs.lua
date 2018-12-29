@@ -56,7 +56,7 @@ function Tabs:New(parent,name,tabs,defaulttab)
 
     tab.id = tabinfo.id
 
-    if tabinfo.point then	
+    if tabinfo.point then
       tab:SetPoint(unpack(tabinfo.point))
     elseif i == 1 then
       tab:SetPoint(TOPLEFT)

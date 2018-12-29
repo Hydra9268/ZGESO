@@ -16,7 +16,7 @@ local O = ZGV.O
 -----------------------------------------
 
 local SvName = "ZGESOSettings"
-if ZGV.DEV_SV_SUFFIX then 
+if ZGV.DEV_SV_SUFFIX then
   SvName = SvName..ZGV.DEV_SV_SUFFIX
 end
 local PROFILE_VERSION = 1

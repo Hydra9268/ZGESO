@@ -33,7 +33,7 @@ ui:RegisterWidget("InvisFrame",InvisFrame)
 -----------------------------------------
 
 -- Frame is Top level. It should probably be parented to GuiRoot
--- Pass a parameter to it if it should be a CT_CONTROL instead of TOPLEVEL 
+-- Pass a parameter to it if it should be a CT_CONTROL instead of TOPLEVEL
 function Frame:New(parent,name,control)
   local frame = CHAIN(ui:CreateControl(name,parent,control and CT_CONTROL or CT_TOPLEVELCONTROL,Frame))
   :SetClampedToScreen(true)

@@ -58,7 +58,7 @@ end
 function Log:Dump(n)
 	local t = ""
 	local len = #self.entries
-	if not n or n > len then 
+	if not n or n > len then
 		n = len
 	end
 	for i = len - n + 1, len, 1 do

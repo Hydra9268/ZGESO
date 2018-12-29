@@ -18,7 +18,7 @@ local Classes = {}						-- Not available in UI
 
 local FontGName = "ZygorFont"--..size..Reg/Bold
 local FONT = ZGV.DIR.."/Viewer/opensans.ttf"
-local BOLD = ZGV.DIR.."/Viewer/opensansb.ttf" 
+local BOLD = ZGV.DIR.."/Viewer/opensansb.ttf"
 local extras = "soft-shadow-thin"
 
 local REG_FONTS = {}
@@ -40,13 +40,13 @@ end
 -- LOAD TIME SETUP
 -----------------------------------------
 
-setmetatable(REG_FONTS, { __index = function(me,size) 
+setmetatable(REG_FONTS, { __index = function(me,size)
       local fname = makeFont(size,FONT)
       me[size] = fname
       return fname
     end })
 
-setmetatable(BOLD_FONTS, { __index = function(me,size) 
+setmetatable(BOLD_FONTS, { __index = function(me,size)
       local fname = makeFont(size,BOLD)
       me[size] = fname
       return fname
@@ -76,13 +76,13 @@ function UI:Create(uiType,parent,name,...)
   assert(type(name)=="string", "All UI elements must have a name")
 
   local widgetClass = Classes[uiType]
-  assert(widgetClass and widgetClass.New, uiType.." is not a valid ui type.") 
+  assert(widgetClass and widgetClass.New, uiType.." is not a valid ui type.")
 
   local newWidget = widgetClass:New(parent,name,...)
 
   -- Widgets are sorted in this table by class so that later we can change themes easy.
-  if not savedwidgets[uiType] then 
-    savedwidgets[uiType] = {} 
+  if not savedwidgets[uiType] then
+    savedwidgets[uiType] = {}
   end
   tinsert(savedwidgets[uiType],newWidget)
 

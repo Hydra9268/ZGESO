@@ -146,9 +146,9 @@ function BugReport:ShowDump(text,title)
 	local frame
 
 	if not self.BasicFrame then
-		self:CreateDumpFrameBasic() 
+		self:CreateDumpFrameBasic()
 	end
-	
+
 	frame = self.BasicFrame
 
 	assert(frame,"Could not create a BasicFrame for BugReport")
@@ -198,22 +198,22 @@ function BugReport:GetReport()
 				-- Investigate why no workie
 				-- if goalOut.quest then  t = t .. (" [quest %s##%s/%s/%s/%s]"):format( goalOut.quest, goalOut.questid, goalOut.queststagenum or "-", goalOut.queststepnum or "-", goalOut.questcondnum or "-" )  end
 				for k,v in pairs(goalOut) do
-					if type(v)~="function" 
+					if type(v)~="function"
 					and type(v)~="table"
-					and k ~= "x" 
-					and k ~= "y" 
-					and k ~= "map" 
+					and k ~= "x"
+					and k ~= "y"
+					and k ~= "map"
 					and k ~= "dist"
-					and k ~= "indent" 
-					and k ~= "text" 
-					and k ~= "action" 
-					and k ~= "num" 
+					and k ~= "indent"
+					and k ~= "text"
+					and k ~= "action"
+					and k ~= "num"
 					and k ~= "status"
-					and k ~= "quest" 
-					and k ~= "questid" 
-					and k ~= "queststagenum" 
-					and k ~= "queststepnum" 
-					and k ~= "questcondnum" 
+					and k ~= "quest"
+					and k ~= "questid"
+					and k ~= "queststagenum"
+					and k ~= "queststepnum"
+					and k ~= "questcondnum"
 					and k ~= "questcondtxt"
 					then
 						t = t .. " " .. k .. "=" .. tostring(v)

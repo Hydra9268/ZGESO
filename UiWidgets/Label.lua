@@ -4,7 +4,7 @@ local ZGV = ZGV
 -----------------------------------------
 --[[
 	Extra parameters when creating a label can dictate size/boldness
-	
+
 	CHAIN(ui:Create("Label",frame,name.."_VerTitle",12,"bold"))
 
 	is the same as

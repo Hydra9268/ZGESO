@@ -4,7 +4,7 @@ if not ZGV then return end
 -- INFORMATION
 -----------------------------------------
 --[[
-	All percent values are integers. 
+	All percent values are integers.
 --]]
 
 -----------------------------------------

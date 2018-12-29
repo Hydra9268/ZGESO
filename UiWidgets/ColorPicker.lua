@@ -1,11 +1,8 @@
-local ZGV = ZGV
-if not ZGV then return end
+local ZGV = _G.ZGV
+
 -----------------------------------------
 -- INFORMATION
 -----------------------------------------
---[[
-	
---]]
 
 -----------------------------------------
 -- LOCAL REFERENCES
@@ -60,7 +57,7 @@ function ColorPicker:SetValue(r,g,b,a)
     elseif r.r then
       r,g,b,a = r.r, r.g, r.b, r.a
     end
-  end		
+  end
   self:SetBackdropColor(r,g,b,a)
 
   if self.callbacks then

@@ -33,7 +33,7 @@ ZGV:RegisterGuide("TEST\\Skyshards",[[
 		.' Go around the rock _across the field_ |goto dhalmora_base 32.08,55.09 < 20
 		.click Skyshard##3360010 |achieve 405/1 |goto dhalmora_base 32.40,46.00
 	step
-		'Open your map, and teleport to the _Fort Zeren Wayshrine_ in the southwest corner of Bal Foyen |goto balfoyen_base 27.08,72.73 
+		'Open your map, and teleport to the _Fort Zeren Wayshrine_ in the southwest corner of Bal Foyen |goto balfoyen_base 27.08,72.73
 		goto balfoyen_base 24.69,74.25
 		.click Skyshard##3360010 |achieve 405/2
 	step
@@ -50,12 +50,12 @@ ZGV:RegisterGuide("TEST\\Skyshards",[[
 		.' _Enter the Stonefalls_ |goto balfoyen_base 18.49,56.21
 		.click Skyshard##3360010 |achieve 397/2 |goto Stonefalls 94.35,47.15
 	step
-		.' Enter _Davon's Watch_ through the walkway |goto davonswatch_base 68.95,68.83 < 20 
-		.' Follow the _path around the town_ and _up the stairs_ |goto davonswatch_base 67.73,53.30 < 10 
-		.' Follow the path _around the Fish Stink Tavern_ |goto davonswatch_base 81.18,47.08 < 20 
-		.' Enter the _tunnel in the mountain_ |goto davonswatch_base 87.79,53.33 < 20 
+		.' Enter _Davon's Watch_ through the walkway |goto davonswatch_base 68.95,68.83 < 20
+		.' Follow the _path around the town_ and _up the stairs_ |goto davonswatch_base 67.73,53.30 < 10
+		.' Follow the path _around the Fish Stink Tavern_ |goto davonswatch_base 81.18,47.08 < 20
+		.' Enter the _tunnel in the mountain_ |goto davonswatch_base 87.79,53.33 < 20
 		.' Use the _Strange Chest_ to enter Crow's Wood |goto Stonefalls 93.35,36
-		.' _Swim out around the large rock_ to the skyshard |goto crowswood_base 29.28,90.03 < 20 
+		.' _Swim out around the large rock_ to the skyshard |goto crowswood_base 29.28,90.03 < 20
 		.click Skyshard##3360010 |achieve 397/16 |goto crowswood_base 24.5,96.3
 	step
 		'Open your map, and teleport to the _Davon's Watch Wayshrine_ in the northeastern corner of Stonefalls |goto davonswatch_base 57.03,78.00 < 5 

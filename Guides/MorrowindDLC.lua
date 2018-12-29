@@ -15864,7 +15864,7 @@ talk Kinlady Ilunsare
 step
 
 goto summerset_base 46.86,71.04
-'Continue West to Sunhold from here 
+'Continue West to Sunhold from here
 |tip Manually skip to the next step.
 step
 goto summerset_base 45.23,70.77
@@ -15977,23 +15977,23 @@ goto sunhold_base 38.13,34.85
 'Wait until both Storm Atronachs walk away
 'Sneak up the stairs
 |tip Manually skip to the next step.
-step 
+step
 goto sunhold_base 25.75,29.15
 'Continue Northeast from here
 |tip Manually skip to the next step.
-step 
+step
 goto sunhold_base 37.97,19.26
 'Continue Southeast from here
 |tip Manually skip to the next step.
-step 
+step
 goto sunhold_base 43.94,25.36
 'Continue Southwest from here
 |tip Manually skip to the next step.
-step 
+step
 goto sunhold_base 34.25,44.02
 'Jump down from here.
 |tip Manually skip to the next step.
-step 
+step
 goto sunhold_base 36.80,43.63
 'Break the Chains holding Sunnawel
 |tip Manually skip to the next step.
@@ -16179,7 +16179,7 @@ goto dreamingcave02_base 36.70,32.77
 click Portal to Artaeum
 |tip Manually skip to the next step.
 step
-'Open your map. Right click to bring up the Universe map. Select Tamirel. 
+'Open your map. Right click to bring up the Universe map. Select Tamirel.
 click Shimmerene Wayshrine
 'Travel to the _Shimmerene_ Wayshrine
 |tip Manually skip to the next step.
@@ -16657,7 +16657,7 @@ click Cey-Tarn Keep Barracks
 |tip Manually skip to the next step.
 step
 goto summerset_base 32.39,53.69
-click Cey-Tarn Keep 
+click Cey-Tarn Keep
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.94,53.85
@@ -16889,7 +16889,7 @@ goto summerset_base 53.25,51.75
 |tip Manually skip to the next step.
 step
 goto summerset_base 49.69,54.19
-'Run up the stairs and 
+'Run up the stairs and
 click Tor-Hame-Khard Delve
 |tip Manually skip to the next step.
 step
@@ -17071,7 +17071,7 @@ talk Rigurt the Brash
 'Select any option
 |tip Manually skip to the next step.
 step
-'Open your map. Right click three times to bring up the Universe map. Select Artaeum in the upper-right corner. 
+'Open your map. Right click three times to bring up the Universe map. Select Artaeum in the upper-right corner.
 click Artaeum Wayshrine
 'Travel to the _Artaeum_ Wayshrine
 |tip Manually skip to the next step.
@@ -18222,7 +18222,7 @@ goto illuminationacademy_04_base 52.28,30.96
 |tip Manually skip to the next step.
 step
 goto illuminationacademy_04_base 52.51,45.35
-'If you can, 
+'If you can,
 talk Glardir
 'Otherwise
 kill The Illuminated One
@@ -18695,7 +18695,7 @@ click Hall of Illumination
 step
 goto summerset_base 31.75,32.82
 'Run up to the second floor
-'Press _E_ to Take _Further Notes on the Sload_ 
+'Press _E_ to Take _Further Notes on the Sload_
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.58,32.73
@@ -18925,7 +18925,7 @@ goto kingshavenint1_base 58.04,56.55
 |tip Manually skip to the next step.
 step
 goto kingshavenint1_base 60.54,69.13
-'Continue East through the archway here 
+'Continue East through the archway here
 |tip Manually skip to the next step.
 step
 goto kingshavenint1_base 82.54,50.66
@@ -19183,7 +19183,7 @@ goto alinorroyalpalace1_base 69.67,63.51
 talk Rigurt the Brash
 |tip Manually skip to the next step.
 step
-'Open your map. Right click three times to bring up the Universe map. Select Artaeum in the upper-right corner. 
+'Open your map. Right click three times to bring up the Universe map. Select Artaeum in the upper-right corner.
 click Artaeum Wayshrine
 'Travel to the _Artaeum_ Wayshrine
 |tip Manually skip to the next step.
@@ -19237,7 +19237,7 @@ goto artaeum_base 54.60,31.49
 talk Valsirenn
 |tip Manually skip to the next step.
 step
-'Open your map. Right click twice to bring up the Universe map. Select Tamriel. 
+'Open your map. Right click twice to bring up the Universe map. Select Tamriel.
 click Shimmerene Wayshrine
 'Travel to the _Shimmerene_ Wayshrine
 |tip Manually skip to the next step.
@@ -19330,7 +19330,7 @@ goto etonnir_01_base 90.97,38.17
 talk Seeks-the-Dark
 |tip Manually skip to the next step.
 step
-'Open your map. Right click three times to bring up the Universe map. Select Artaeum in the upper-right corner. 
+'Open your map. Right click three times to bring up the Universe map. Select Artaeum in the upper-right corner.
 click Artaeum Wayshrine
 'Travel to the _Artaeum_ Wayshrine
 |tip Manually skip to the next step.
@@ -19533,7 +19533,7 @@ goto dreamingcave03_base 62.45,35.82
 talk Earl Leythen
 |tip Manually skip to the next step.
 step
-'Open your map. Right click twice to bring up the Universe map. Select Tamriel. 
+'Open your map. Right click twice to bring up the Universe map. Select Tamriel.
 click Ebon Stadmont Wayshrine
 'Travel to the _Ebon Stadmont_ Wayshrine
 |tip Manually skip to the next step.
@@ -19833,7 +19833,7 @@ goto TraitorsVault02_base 56.36,35.99
 |tip Manually skip to the next step.
 step
 goto TraitorsVault02_base 72.41,34.71
-'Continue through this archway from here 
+'Continue through this archway from here
 |tip Manually skip to the next step.
 step
 goto TraitorsVault02_base 79.16,27.31
@@ -20967,7 +20967,7 @@ goto summerset_base 21.66,30.88
 talk Mephala
 |tip Manually skip to the next step.
 step
-'Open your map. Right click twice to bring up the Universe map. Select Artaeum in the upper-right corner. 
+'Open your map. Right click twice to bring up the Universe map. Select Artaeum in the upper-right corner.
 click Artaeum Wayshrine
 'Travel to the _Artaeum_ Wayshrine
 |tip Manually skip to the next step.
@@ -21542,7 +21542,7 @@ goto sunkenxanmeer02_base 56.03,61.43
 |tip Manually skip to the next step.
 step
 goto sunkenxanmeer02_base 60.46,58.15
-'Continue North along the wall passed the first pool of water 
+'Continue North along the wall passed the first pool of water
 |tip Manually skip to the next step.
 step
 goto sunkenxanmeer02_base 60.27,52.71
@@ -22095,7 +22095,7 @@ goto lilmothcity_base 72.94,25.43
 |tip Manually skip to the next step.
 step
 goto lilmothcity_base 73.88,34.00
-'Carefully make you way up the ramp to this spot. 
+'Carefully make you way up the ramp to this spot.
 |tip Manually skip to the next step.
 step
 goto lilmothcity_base 74.76,33.60
@@ -22386,7 +22386,7 @@ kill Swallows-the-Sun
 'Press _E_ to Search _Swallows-the-Sun_
 'Loot the Vakka Tablet
 |tip Manually skip to the next step.
-step 
+step
 goto murkmire_base 42.63,59.16
 'Press _E_ to Use _Blackrose Wayshrine_
 'Travel to the _Bright-Throat_ Wayshrine
@@ -22890,7 +22890,7 @@ goto murkmire_base 13.05,44.70
 |tip Manually skip to the next step.
 step
 goto murkmire_base 13.05,44.42
-'Jump over the wall here 
+'Jump over the wall here
 |tip Manually skip to the next step.
 step
 goto murkmire_base 12.43,43.92
@@ -22903,7 +22903,7 @@ talk Kishi
 |tip Manually skip to the next step.
 step
 goto murkmire_base 07.51,37.27
-kill Deroh-Zah 
+kill Deroh-Zah
 'Situational awareness is vital on this boss fight. Avoid its localized telegraphs and the quicksand. When Deroh-Zah initiates a wide-area AOE telegraph, you have 2-3 seconds to quickly aim for one of the Tamed Vine-Tongue on top of the surrounding walls. After this, Deroh-Zah is weakened for a few seconds.
 |tip Manually skip to the next step.
 step

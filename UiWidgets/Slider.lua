@@ -4,7 +4,7 @@ if not ZGV then return end
 -- INFORMATION
 -----------------------------------------
 --[[
-	
+
 --]]
 
 -----------------------------------------
@@ -119,7 +119,7 @@ function Slider:SetSize(x,y)
   self.bgTex:SetWidth(x)		-- Bar is as wide as the slider
 
   self:SetThumbTextureHeight(y)	-- Thumb is as tall as the slider.
-  self:savedSetSize(x,y)	
+  self:savedSetSize(x,y)
 end
 
 function Slider:SetWidth(x)
