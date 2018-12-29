@@ -1,9 +1,9 @@
 <GuiXml>
 	<Controls>
-		<TopLevelControl name="ZygorGuidesViewerPointerOverlay">
+		<TopLevelControl name="ZGESO_Pointer_Overlay">
 			<OnUpdate></OnUpdate>
 		</TopLevelControl>
-		<TopLevelControl name="ZygorGuidesViewerPointer_ArrowCtrl">
+		<TopLevelControl name="ZGESO_Pointer_ArrowCtrl">
 			<OnUpdate></OnUpdate>
 		</TopLevelControl>
 	</Controls>
