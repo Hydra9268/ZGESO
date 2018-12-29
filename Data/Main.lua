@@ -103,8 +103,8 @@ local function lamehash(s)
 end
 
 local function faction_to_num(fac)
-	if not fac then 
-		fac = ZGV.Utils.GetFaction() 
+	if not fac then
+		fac = ZGV.Utils.GetFaction()
 	end
 	if fac == "AD" then return 1
 	elseif fac == "DC" then return 2
@@ -296,10 +296,10 @@ tinsert(ZGV.startups,function(self)
 		local datatypes={"_QuestStepData","_QuestData","_NpcData","_ObjectData","_ItemData"}
 
 		-- old style, temporary
-		for v in pairs(datatypes) do 
-			if ZGV[v] then 
+		for v in pairs(datatypes) do
+			if ZGV[v] then
 				ZGV[v..fac]=ZGV[v] ZGV[v] = nil
-			end 
+			end
 		end
 
 		-- faction data: store directly
@@ -315,22 +315,22 @@ tinsert(ZGV.startups,function(self)
 		-- weed out wrong-faction data
 		if GetUnitLevel("player")<48 then
 			-- surely no veteran content, trash all factions now
-			for k in pairs(datatypes) do 
-				for fa in ipairs{'AD','DC','EP'} do 
-					ZGV[k..fa]=nil 
-				end 
+			for k in pairs(datatypes) do
+				for fa in ipairs{'AD','DC','EP'} do
+					ZGV[k..fa] = nil
+				end
 			end
 		end
 
 		-- add other factions to this one (if there are any left, after the massacre above.)
-		for fa in ipairs{'AD','DC','EP'} do 
+		for fa in ipairs{'AD','DC','EP'} do
 			if fa ~= fac then
 				npcData = npcData .. 		(ZGV['_NpcData'..fa] or "")  		ZGV['_NpcData'..fa] = nil
 				objectData = objectData .. 	(ZGV['_ObjectData'..fa] or "")  	ZGV['_ObjectData'..fa] = nil
 				questData = questData .. 	(ZGV['_QuestData'..fa] or "")  		ZGV['_QuestData'..fa] = nil
 				itemData = itemData .. 		(ZGV['_ItemDataAD'..fa] or "")  	ZGV['_ItemDataAD'..fa] = nil
 				ZGV.Utils.table_join(questStepData,ZGV['_QuestStepData'..fa])  	ZGV['_QuestStepData'..fa] = nil
-			end 
+			end
 		end
 
 		-- All these references aren't needed. Just for testing

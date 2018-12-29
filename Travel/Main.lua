@@ -1,5 +1,4 @@
-local ZGV = ZGV
-if not ZGV then return end
+local ZGV = _G.ZGV
 
 -----------------------------------------
 -- LOCAL REFERENCES

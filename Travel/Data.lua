@@ -8,7 +8,7 @@ local ZGV = _G.ZGV
 -- LOCAL REFERENCES
 -----------------------------------------
 
-local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs,class = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs,class
+local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs
 local print = ZGV.print
 local CHAIN = ZGV.Utils.ChainCall
 local ui = ZGV.UI
@@ -496,7 +496,7 @@ function Data:CollectMapIds()
 	sv.mapids = {}
 
 	for i=0,1000 do
-		local loczone, zone = GetZoneInfo(i)
+		local loczone, zone = _G.GetZoneInfo(i)
 		sv.mapids[loczone] = i
 	end
 end
