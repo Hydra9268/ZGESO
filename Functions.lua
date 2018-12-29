@@ -44,14 +44,14 @@ function Utils.GetFaction(unitTag,novet,onlyvet)
 	unitTag = unitTag or "player"
 
 	if unitTag=="player" then
-		if ZGV.FAKE_FACTION then 
-			return ZGV.FAKE_FACTION 
+		if ZGV.FAKE_FACTION then
+			return ZGV.FAKE_FACTION
 		end
-		if ZGV.VETERAN_FACTION and not novet then 
-			return ZGV.VETERAN_FACTION 
+		if ZGV.VETERAN_FACTION and not novet then
+			return ZGV.VETERAN_FACTION
 		end
-		if onlyvet then return 
-			ZGV.VETERAN_FACTION or "NOTVET" 
+		if onlyvet then return
+			ZGV.VETERAN_FACTION or "NOTVET"
 		end
 	end
 
@@ -85,10 +85,10 @@ end
 -- @return true if matching, false if not.
 function Utils.RaceClassMatch(fit)
 	if type(fit)=="table" then
-		for v in fit do 
-			if Utils.RaceClassMatch(v) then 
-				return true 
-			end 
+		for v in fit do
+			if Utils.RaceClassMatch(v) then
+				return true
+			end
 		end
 		return false --otherwise
 	end
@@ -108,10 +108,10 @@ function Utils.RaceClassMatch(fit)
 		fit = fit:sub(5)
 	end
 	local ret = (race == fit or class == fit or faction == fit or race.." "..class == fit or (fit == "VET" and ZGV.VETERAN_FACTION))
-	if neg then 
-		return not ret 
-	else 
-		return ret 
+	if neg then
+		return not ret
+	else
+		return ret
 	end
 end
 
@@ -143,9 +143,9 @@ function Utils.ShowFloatingMessage(msg,event,font,sound,publicfloat,publictext)
 	if ZGV.DEV or publicfloat then
 		_G.CENTER_SCREEN_ANNOUNCE:AddMessage(event or _G.EVENT_OBJECTIVE_COMPLETED,font or _G.CSA_EVENT_SMALL_TEXT,sound or _G.SOUNDS.QUEST_OBJECTIVE_STARTED,"|cffaa00[|cf8fbffZ|cffaa00]|r "..msg)
 	end
-	if ZGV.DEV or publictext then	
+	if ZGV.DEV or publictext then
 		local print = ZGV.print
-		print(msg) 
+		print(msg)
 	end
 end
 
@@ -156,18 +156,18 @@ local esc=Utils.escape
 
 local strrep=string.rep
 function Utils.serialize(tab,indent)
-	if type(tab)~="table" then 
-		return tab 
+	if type(tab)~="table" then
+		return tab
 	end
 	local t = ""
 	indent = indent or 0
 	local keys={}
-	for k in tab do 
-		tinsert(keys,k) 
+	for k in tab do
+		tinsert(keys,k)
 	end
 	table.sort(keys)
 	t = t .. strrep("    ",indent) .. "{\n"
-	for key in keys do 
+	for key in keys do
 		while 1 do
 			local val = tab[key]
 			t = t .. strrep("    ",indent+1)
@@ -177,23 +177,23 @@ function Utils.serialize(tab,indent)
 				t = t .. "[\"" .. esc(key) .. "\"]"
 			end
 			t = t .. " = "
-			if type(val)=="string" then 
+			if type(val)=="string" then
 				t = t .. "\"" .. val .. "\""
-			elseif type(val)=="number" then 
+			elseif type(val)=="number" then
 				t = t .. val
-			elseif type(val)=="function" then 
+			elseif type(val)=="function" then
 				t = t .. "nil --function"
-			elseif type(val)=="userdata" then 
+			elseif type(val)=="userdata" then
 				t = t .. "nil --userdata"
-			elseif type(val)=="nil" then 
+			elseif type(val)=="nil" then
 				t = t .. "nil"
 			elseif type(val)=="table" then
 				t = t .. "\n"
 				t = t .. Utils.serialize(val,indent+1)
 			end
 			t = t .. ",\n"
-			break 
-		end 
+			break
+		end
 	end
 	t = t .. strrep("    ",indent) .. "}\n"
 	return t
@@ -231,7 +231,7 @@ function table.zgclone(self)
 		-- Note: Be very careful about convert ipairs or pairs into standard for loops
 		for k,v in pairs(self) do
 			t[k]=rawget(self,k)
-		end  
+		end
 	end
 	return t
 end
@@ -251,8 +251,8 @@ end
 function Utils.table_join (target,source)
 	if type(source)~="table" then return end
 	if type(target)~="table" then return end
-	for k,v in pairs(source) do 
-		target[k] = v 
+	for k,v in pairs(source) do
+		target[k] = v
 	end
 end
 
@@ -279,9 +279,6 @@ function HTMLColor(code)
 	return r,g,b,a or 1
 end
 
---------------------
-Safe_G = {}  -- set of safe _G traversals
-
 local safenext = function(table,index)
 	local ok,k,v = pcall(next,table,index)
 	if ok then
@@ -297,42 +294,42 @@ local safenext = function(table,index)
 	end  -- k has the error message, important
 end
 
-Safe_G.pairs = function(table)  -- iterator
+pairs = function(table)  -- iterator
 	return safenext,table,nil
 end
 
 -- NOTE: use zo_insecurePairs for a pairs implementation that SKIPS private/protected members.
 
-Safe_G.prefixpairs = function(prefix)  -- iterator
+PrefixPairs = function(prefix)  -- iterator
 	local safeglobalnext = function(index)
 		local val
 		local safety = 0
 		repeat
 			index,val = safenext(_G,index)
-			if index and index:find("^"..prefix) then 
-				return index,val 
+			if index and index:find("^"..prefix) then
+				return index,val
 			end
-			safety=safety+1  
-			if safety>100000 then 
-				return "ERR","ERR" 
+			safety=safety+1
+			if safety>100000 then
+				return "ERR","ERR"
 			end
 		until not index
 	end
 	return safeglobalnext,_G,nil
 end
 
-Safe_G.getbyprefix = function(prefix,value,strip)  -- lookup func
+GetByPrefix = function(prefix,value,strip)  -- lookup func
 	local ret
-	for k,v in Safe_G.prefixpairs(prefix) do 
-		if v == value then 
-			ret = k 
-			break 
-		end 
+	for k,v in PrefixPairs(prefix) do
+		if v == value then
+			ret = k
+			break
+		end
 	end
 	if strip then
 		ret = ret:gsub(prefix,"")
-		if ret:sub(1,1)=="_" then 
-			ret = ret:sub(2) 
+		if ret:sub(1,1)=="_" then
+			ret = ret:sub(2)
 		end
 	end
 	return ret
@@ -342,11 +339,11 @@ local HEADLEN=40
 local TAILLEN=20
 local LIMIT = HEADLEN + TAILLEN + 12  -- making a buffer, so that texts cannot be (accidentally) excerpted twice.
 function Utils.MakeExcerpt(text)
-	if not text then 
-		return "" 
+	if not text then
+		return ""
 	end
 	if #text > LIMIT then
-		local n 
+		local n
 		n = HEADLEN / 2
 		local head = text:sub(1,HEADLEN)
 		while head:sub(-1)~=" " and n > 0 do
@@ -376,8 +373,8 @@ function Utils.MatchExcerpt(exc,text)
 	if not exc or not text then return false end
 	if exc:find("___") then -- this is an excerpt all right
 		local txt,len = exc:match("^(.-)%s*<(%d+)>$")
-		if txt then 
-			exc=txt 
+		if txt then
+			exc = txt
 		end
 		len = len and tonumber(len)
 
@@ -386,13 +383,13 @@ function Utils.MatchExcerpt(exc,text)
 		local parts={_G.zo_strsplit("___","%{%"..exc.."%}%")}
 		local zo_plainstrfind = _G.zo_plainstrfind
 		for _,part in ipairs(parts) do
-			if not zo_plainstrfind(safetext,part) then 
-				return false,safetext,part 
+			if not zo_plainstrfind(safetext,part) then
+				return false,safetext,part
 			end
 		end
 
-		if len and (len~=#text) then 
-			return false,len,#text 
+		if len and (len ~= #text) then
+			return false,len,#text
 		end
 
 		return true
@@ -431,17 +428,17 @@ function Utils.IsPOIComplete( map, poi )
 		map = math.floor( map / 1000 )
 	end
 
-	if not map then 
-		map = _G.GetCurrentMapZoneIndex() 
+	if not map then
+		map = _G.GetCurrentMapZoneIndex()
 	end
 
 	if type(poi) == "string" then
 		local GetNumPOIs, GetPOIInfo = _G.GetNumPOIs, _G.GetPOIInfo
 		for i = 1, GetNumPOIs( map ) do
 			local text = GetPOIInfo( map, i )
-			if text == poi then 
-				poi = i 
-				break 
+			if text == poi then
+				poi = i
+				break
 			end
 		end
 	end
@@ -453,11 +450,11 @@ function Utils.IsPOIComplete( map, poi )
 end
 
 function Utils.GetPOIForQuest(questid)
-	if not ZGV._QuestPOIData then 
-		return "" 
+	if not ZGV._QuestPOIData then
+		return ""
 	end
-	if questid <= 999999 then 
-		questid = ("%07d"):format(questid) 
+	if questid <= 999999 then
+		questid = ("%07d"):format(questid)
 	end
 	local poi = ZGV._QuestPOIData:match("(%d+):[^\n]*"..questid)
 	return poi
@@ -482,18 +479,18 @@ function Utils.GetVeteranFaction()
 	local silver_complete = ZGV.QuestTracker:IsQuestComplete("Cadwell's Silver")
 	local gold_complete = silver_complete and ZGV.QuestTracker:IsQuestComplete("Cadwell's Gold")
 	table.insert(ZGV.PRELOG,"silver "..tostring(silver_complete)..", gold "..tostring(gold_complete))
-	if gold_complete then 
-		return progression[3],4 
+	if gold_complete then
+		return progression[3],4
 	end
 	local MAX_JOURNAL_QUESTS, IsValidQuestIndex = _G.MAX_JOURNAL_QUESTS, _G.IsValidQuestIndex
 	local GetJournalQuestName, GetJournalQuestNumSteps, GetJournalQuestStepInfo, GetJournalQuestConditionInfo = _G.GetJournalQuestName, _G.GetJournalQuestNumSteps, _G.GetJournalQuestStepInfo, _G.GetJournalQuestConditionInfo
-	for ji = 1,MAX_JOURNAL_QUESTS do 
+	for ji = 1,MAX_JOURNAL_QUESTS do
 		if IsValidQuestIndex(ji) then
 			local title=GetJournalQuestName(ji)
 			local prog_step
-			if title=="Cadwell's Silver" then 
+			if title=="Cadwell's Silver" then
 				prog_step = 1
-			elseif title=="Cadwell's Gold" then 
+			elseif title=="Cadwell's Gold" then
 				prog_step = 2
 			end
 
@@ -501,30 +498,30 @@ function Utils.GetVeteranFaction()
 				for si = 1,GetJournalQuestNumSteps(ji) do
 					local tracker,numcond = GetJournalQuestStepInfo(ji,si)
 					if tracker and tracker:find(" to Cadwell") then
-						return progression[prog_step+1],prog_step+1 
+						return progression[prog_step + 1],prog_step + 1
 					end  -- "next" faction
-					for ci=1,numcond do
+					for ci = 1,numcond do
 						local conditionText = GetJournalQuestConditionInfo(ji,si,ci)
-						if conditionText=="Experience the Daggerfall Covenant" then 
-							return "DC",prog_step+1 
+						if conditionText=="Experience the Daggerfall Covenant" then
+							return "DC", prog_step + 1
 						end  -- this is a bit of an assumption, but the player can't possibly be on anything but their "next" vet faction if they have this kind of goal.
-						if conditionText=="Experience the Ebonheart Pact" then 
-							return "EP",prog_step+1 
+						if conditionText=="Experience the Ebonheart Pact" then
+							return "EP", prog_step + 1
 						end
-						if conditionText=="Experience the Aldmeri Dominion" then 
-							return "AD",prog_step+1 
+						if conditionText=="Experience the Aldmeri Dominion" then
+							return "AD", prog_step + 1
 						end
-						if conditionText:find("Light of Meridia") then 
-							return progression[prog_step],prog_step 
+						if conditionText:find("Light of Meridia") then
+							return progression[prog_step],prog_step
 						end  -- still "current" faction
 					end
 				end
 				break
 			end
-		end 
+		end
 	end
-	if silver_complete then 
-		return progression[2],2 
+	if silver_complete then
+		return progression[2],2
 	end
 	return nil,1
 end
