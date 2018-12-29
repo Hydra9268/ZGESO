@@ -24,16 +24,20 @@ local UI = {}
 function UI.TestCreation()
   local frame =  ui:Create("Frame",GuiRoot,"TestFrame")
   -- TODO there are still references to this over in UI.savedframes
+local TestFrame = _G.TestFrame
 
   local function cleanUpTestAndReturn(pass,comment)
-    if TestFrame then TestFrame:Hide() TestFrame:SetHidden(true) end
+    if TestFrame then
+      TestFrame:Hide()
+      TestFrame:SetHidden(true)
+    end
     TestFrame = nil
     frame = nil
 
     return pass,comment
   end
 
-  if type(frame)~="userdata" then
+  if type(frame) ~= "userdata" then
     return cleanUpTestAndReturn(false, "Frame not userdata")
   elseif not frame.Show then
     return cleanUpTestAndReturn(false, "Frame did not have Frame.Show so Base did not get set.")
