@@ -4,7 +4,7 @@ local ZGV = _G.ZGV
 -- LOCAL REFERENCES
 -----------------------------------------
 
-local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs,class = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs,class
+local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs
 local print = ZGV.print
 local CHAIN = ZGV.Utils.ChainCall
 local ui = ZGV.UI
@@ -27,14 +27,16 @@ ZGV.Travel = Travel
 -----------------------------------------
 
 function Travel:Function()
-  return
+	return
 end
 
 function Travel:GetMapNameById(zone)
-  if not zone then return "nomap" end
-  local z1,z2 = GetZoneInfo(zone)		-- TODO what is the difference in z1/z2. Likely one is localized.
+	if not zone then
+		return "nomap"
+	end
+	local z1,z2 = _G.GetZoneInfo(zone)		-- TODO what is the difference in z1/z2. Likely one is localized.
 
-  return z1
+	return z1
 end
 
 -----------------------------------------
@@ -42,8 +44,8 @@ end
 -----------------------------------------
 
 function Travel:Debug(...)
-  local str = ...
-  ZGV:Debug("&travel "..str, select(2,...) )
+	local str = ...
+	ZGV:Debug("&travel "..str, select(2,...) )
 end
 
 
@@ -53,7 +55,7 @@ end
 
 tinsert(ZGV.startups,function(self)
 
-  end)
+	end)
 
 --[[
 VARIOUS ESO API FUNCTIONS e.g. /run d(GetMapType())
@@ -78,7 +80,7 @@ GetMapName
 GetMapContentType
 	- 0?
 GetMapType
-	- Num 
+	- Num
 		5 - cosmic!?
 		4 - continent (by faction)
 		3 - World
@@ -87,7 +89,7 @@ GetMapType
 GetMapInfo(int mapnum)
 	- name
 	- type?
-	- 0?	
+	- 0?
 GetMapFloorInfo
 SetMapFloor
 GetMapLocation
