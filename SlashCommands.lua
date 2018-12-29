@@ -8,7 +8,7 @@ local ZGV = _G.ZGV
 -- LOCAL REFERENCES
 -----------------------------------------
 
-local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs,class = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs,class
+local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs
 local print = ZGV.print
 local L = ZGV.L
 
@@ -72,6 +72,7 @@ end
 -----------------------------------------
 
 local function registerSlashCommands()
+	local SLASH_COMMANDS, zo_loadstring = _G.SLASH_COMMANDS, _G.zo_loadstring
 	SLASH_COMMANDS["/zgv"] = ZGV.SlashCommandHandler
 	SLASH_COMMANDS["/zygor"] = SLASH_COMMANDS["/zgv"]
 	SLASH_COMMANDS["/run"] = SLASH_COMMANDS["/script"]
@@ -81,6 +82,7 @@ local function registerSlashCommands()
 		if f then
 			f()
 		else
+			local d = _G.d
 			d("|cffff0000Error:|r "..err)
 		end
 	end
