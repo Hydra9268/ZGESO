@@ -52,7 +52,7 @@ function Arrowskin:CreateFrame()
 		.__END
 
 		-- Have to inherit base to allow :Hide and :Show
-		UI:InheritClass(self.frame.arrow,"Base")	
+		UI:InheritClass(self.frame.arrow,"Base")
 
 		self.frame.spec = CHAIN(WM:CreateControl(self.frame:GetName().."_Spec", self.frame, ctTexture))
 		:SetTexture("arrow.dds")
@@ -88,8 +88,8 @@ function Arrowskin:CreateFrame()
 		self.frame[f] = fu
 	end
 
-	if self.frame.OnLoad then 
-		self.frame:OnLoad() 
+	if self.frame.OnLoad then
+		self.frame:OnLoad()
 	end
 
 	return self.frame
