@@ -15,6 +15,7 @@ local Testing = ZGV.Testing
 -----------------------------------------
 
 local QuestsTest = {}
+local Parser = _G.Parser
 
 -----------------------------------------
 -- SAVED REFERENCES

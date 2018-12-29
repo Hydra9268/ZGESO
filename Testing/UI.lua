@@ -9,6 +9,7 @@ local print = ZGV.print
 local CHAIN = ZGV.Utils.ChainCall
 local ui = ZGV.UI
 local Testing = ZGV.Testing
+local GuiRoot = _G.GuiRoot
 
 -----------------------------------------
 -- LOCAL VARIABLES
