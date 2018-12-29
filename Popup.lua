@@ -1,5 +1,5 @@
-local ZGV = ZGV
-if not ZGV then return end
+local ZGV = _G.ZGV
+
 -----------------------------------------
 -- INFORMATION
 -----------------------------------------
@@ -39,6 +39,9 @@ local Popup_mt = { __index = Popup }
 
 local PopupHandler = {}
 local Queue = {}
+
+local TOP, TOPLEFT, TOPRIGHT, BOTTOM, BOTTOMRIGHT = _G.TOP, _G.TOPLEFT, _G.TOPRIGHT, _G.BOTTOM, _G.BOTTOMRIGHT
+local TEXT_ALIGN_CENTER = _G.TEXT_ALIGN_CENTER
 
 local DEFAULT_ANCHOR = { TOP, 0, 75 }
 
