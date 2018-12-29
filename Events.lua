@@ -64,13 +64,13 @@ end
 -----------------------------------------
 
 function Events:AddEvent(event,func)
-	if not self[event] then 
-		self[event] = {} 
+	if not self[event] then
+		self[event] = {}
 	end
 
 	tinsert(self[event],func or true)
-	if #self[event] == 1 then 
-		eventFrame:RegisterForEvent(event,EventHandler) 
+	if #self[event] == 1 then
+		eventFrame:RegisterForEvent(event,EventHandler)
 	end
 end
 
@@ -81,8 +81,8 @@ function Events:RemoveEvent(event,removefunc)
 		if func == removefunc then
 			tremove(self[event],num)
 
-			if #self[event]==0 then 
-				eventFrame:UnregisterForEvent(event) 
+			if #self[event] == 0 then
+				eventFrame:UnregisterForEvent(event)
 			end
 		end
 	end
@@ -138,12 +138,12 @@ local globalprefixes = function(prefix)
 		local safety=0
 		repeat
 			index,val = safenext(_G,index)
-			if index and index:find("^"..prefix) then 
-				return index,val 
+			if index and index:find("^"..prefix) then
+				return index,val
 			end
 			safety=safety + 1
-			if safety > 20000 then 
-				return "ERR","ERR" 
+			if safety > 20000 then
+				return "ERR","ERR"
 			end
 		until not index
 	end
@@ -154,8 +154,8 @@ Events.eventList = {}
 
 for k,v in globalprefixes("EVENT_") do
 	if type(v)=="number"
-	and k~="EVENT_GLOBAL_MOUSE_DOWN" 
-	and k~="EVENT_GLOBAL_MOUSE_UP" 
+	and k~="EVENT_GLOBAL_MOUSE_DOWN"
+	and k~="EVENT_GLOBAL_MOUSE_UP"
 	then Events.eventList[v]=k
 	end
 end
@@ -164,6 +164,6 @@ setmetatable(Events.eventList,{__index = "NO EVENT IN LIST!?!?"})
 
 Events.eventListR = {}
 
-for k,v in pairs(Events.eventList) do 
-	Events.eventListR[v]=k 
+for k,v in pairs(Events.eventList) do
+	Events.eventListR[v] = k
 end
