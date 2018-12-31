@@ -15340,28 +15340,30 @@ ZGV:RegisterGuide("LEVELING\\Summerset",[[
 loadingimage loadscreen_summerset_01.dds
 description The land called Summerset is the birthplace of civilization and magic as we know it in Tamriel. On its idyllic sea-kissed shores live the Altmer, the High Elves.
 step
-'This guide includes Guild quests along the way.
-|tip Manually skip to the next step.
-step
-talk Calibar
+'Press _U_ to open your _Collections_
+'Click over to the _Stories_ tab and look under the _Chapter_ section:
+'Select _Summerset_ in the list of Chapters
+'Click the _Accept Quest_ button at the bottom
 accept The Queen's Decree
 step
-goto summerset_base 57.89,49.02
+'Open your map. Right click until you see the Tamirel map.
+'Travel to the _Shimmerene_ Wayshrine
+|tip Summerset is the large island in the southwest of Tamriel
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 31.46,81.55
 talk Razum-dar
 |tip Manually skip to the next step.
 step
 goto summerset_base 60.56,49.10
-step
 talk Olnewil
 |tip Manually skip to the next step.
 step
 goto summerset_base 53.97,46.97
-step
 click Tsoxolza's Backpack
 |tip Manually skip to the next step.
 step
 goto summerset_base 55.09,45.88
-step
 talk Linwenvar
 accept Old Wounds
 step
