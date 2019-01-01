@@ -337,29 +337,19 @@ end
 
 local HEADLEN=40
 local TAILLEN=20
-local LIMIT = HEADLEN + TAILLEN + 12  -- making a buffer, so that texts cannot be (accidentally) excerpted twice.
+local LIMIT=HEADLEN+TAILLEN+12  -- making a buffer, so that texts cannot be (accidentally) excerpted twice.
 function Utils.MakeExcerpt(text)
-	if not text then
-		return ""
-	end
-	if #text > LIMIT then
-		local n
-		n = HEADLEN / 2
+	if not text then return "" end
+	if #text>LIMIT then
+		local n=HEADLEN/2
 		local head = text:sub(1,HEADLEN)
-		while head:sub(-1)~=" " and n > 0 do
-			head = head:sub(1,-2) n = n - 1
-		end
-		if #head == 0 then
-			head = text:sub(1,HEADLEN)
-		end -- oh well
-		n = TAILLEN / 2
+		while head:sub(-1)~=" " and n>0 do head=head:sub(1,-2) n=n-1 end
+		if #head==0 then head=text:sub(1,HEADLEN) end -- oh well
+
+		local n=TAILLEN/2
 		local tail = text:sub(-TAILLEN)
-		while tail:sub(1,1)~=" " and n > 0 do
-			tail = tail:sub(2) n = n - 1
-		end
-		if #tail == 0 then
-			tail = text:sub(-TAILLEN)
-		end -- oh well
+		while tail:sub(1,1)~=" " and n>0 do tail=tail:sub(2) n=n-1 end
+		if #tail==0 then tail=text:sub(-TAILLEN) end -- oh well
 
 		text=head.."___"..tail -- .."<"..#text..">"
 	end
@@ -368,36 +358,29 @@ end
 local MakeExcerpt=Utils.MakeExcerpt
 
 -- /zgoo {ZGV.Utils.MatchExcerpt(shortem,lorem)}
+
 function Utils.MatchExcerpt(exc,text)
 	if exc==text then return true end
 	if not exc or not text then return false end
 	if exc:find("___") then -- this is an excerpt all right
 		local txt,len = exc:match("^(.-)%s*<(%d+)>$")
-		if txt then
-			exc = txt
-		end
-		len = len and tonumber(len)
+		if txt then exc=txt end
+		len=len and tonumber(len)
 
 		-- First try parts.
 		local safetext="%{%"..text.."%}%"
-		local parts={_G.zo_strsplit("___","%{%"..exc.."%}%")}
-		local zo_plainstrfind = _G.zo_plainstrfind
-		for _,part in ipairs(parts) do
-			if not zo_plainstrfind(safetext,part) then
-				return false,safetext,part
-			end
+		local parts={zo_strsplit("___","%{%"..exc.."%}%")}
+		for i,part in ipairs(parts) do
+			if not zo_plainstrfind(safetext,part) then return false,safetext,part end
 		end
 
-		if len and (len ~= #text) then
-			return false,len,#text
-		end
+		if len and (len~=#text) then return false,len,#text end
 
 		return true
 	end
-	return text == exc
+	return text==exc
 end
-
-local MatchExcerpt = Utils.MatchExcerpt
+local MatchExcerpt=Utils.MatchExcerpt
 
 Utils.quest_cond_counts = "%s*:%s*%d+%s*/%s*%d+%s*"
 
@@ -411,9 +394,9 @@ assert (MatchExcerpt("Blah___bleh___bloh","Blah, this is bleh because bloh"),'Ut
 assert (not MatchExcerpt("Blah___bleh___bloh","bleh, this is bloh because Blah"),'Utils:MatchShortText is confused by order')
 
 function Utils.GetMyAddonInfo()
-	local AM = _G.GetAddOnManager()
+	local AM = GetAddOnManager()
 	for i = 1, AM:GetNumAddOns() do
-		local dir, title, _1, _2, _3, _4 = AM:GetAddOnInfo(i)
+		local dir, title, author, _1, _2, _3, _4 = AM:GetAddOnInfo(i)
 		if dir == ZGV.DIR then
 			return dir, title, _1, _2, _3, _4
 		end
@@ -421,53 +404,37 @@ function Utils.GetMyAddonInfo()
 	error("Can't find addon info!")
 end
 
-function Utils.IsPOIComplete( map, poi )
-
-	if type( map ) == "string" or ( type( map ) == "number" and map > 1000 ) then
-		poi = map % 1000
-		map = math.floor( map / 1000 )
+function Utils.IsPOIComplete(map,poi)
+	if type(map)=="string" or (type(map)=="number" and map>1000) then
+		poi = map%1000
+		map = math.floor(map/1000)
 	end
-
-	if not map then
-		map = _G.GetCurrentMapZoneIndex()
-	end
-
-	if type(poi) == "string" then
-		local GetNumPOIs, GetPOIInfo = _G.GetNumPOIs, _G.GetPOIInfo
-		for i = 1, GetNumPOIs( map ) do
-			local text = GetPOIInfo( map, i )
-			if text == poi then
-				poi = i
-				break
-			end
+	if not map then map=GetCurrentMapZoneIndex() end
+	if type(poi)=="string" then
+		for i=1,GetNumPOIs(map) do
+			local text,level,subtextinc,subtextcom = GetPOIInfo(map,i)
+			if text==poi then poi=i break end
 		end
 	end
-
-	if type(poi) == "number" then
-		local typ = _G.GetPOIMapInfo( map, poi )
-		return typ == _G.MAP_PIN_TYPE_POI_COMPLETE
+	if type(poi)=="number" then
+		local x,y,typ,tex = GetPOIMapInfo(map,poi)
+		return typ==MAP_PIN_TYPE_POI_COMPLETE
 	end
 end
 
 function Utils.GetPOIForQuest(questid)
-	if not ZGV._QuestPOIData then
-		return ""
-	end
-	if questid <= 999999 then
-		questid = ("%07d"):format(questid)
-	end
-	local poi = ZGV._QuestPOIData:match("(%d+):[^\n]*"..questid)
+	if not ZGV._QuestPOIData then return "" end
+	if questid<=999999 then questid=("%07d"):format(questid) end
+	poi = ZGV._QuestPOIData:match("(%d+):[^\n]*"..questid)
 	return poi
 end
 
 
 ZGV.VETERAN_FACTION = "UNCHECKED"
-local function SetVeteran(faction)
+local function SetVeteran(fac)
 	local prev_check = ZGV.VETERAN_FACTION
-	ZGV.VETERAN_FACTION = faction
-	if prev_check~="UNCHECKED" and prev_check ~= ZGV.VETERAN_FACTION then
-		ZGV.VETERAN_FACTION_CHANGED = faction
-	end
+	ZGV.VETERAN_FACTION = fac
+	if prev_check~="UNCHECKED" and prev_check~=ZGV.VETERAN_FACTION then ZGV.VETERAN_FACTION_CHANGED=fac end
 end
 
 Utils.VETERAN_PROGRESSION={ ['AD']={'AD','EP','DC'}, ['EP']={'EP','DC','AD'}, ['DC']={'DC','AD','EP'} }
@@ -479,56 +446,36 @@ function Utils.GetVeteranFaction()
 	local silver_complete = ZGV.QuestTracker:IsQuestComplete("Cadwell's Silver")
 	local gold_complete = silver_complete and ZGV.QuestTracker:IsQuestComplete("Cadwell's Gold")
 	table.insert(ZGV.PRELOG,"silver "..tostring(silver_complete)..", gold "..tostring(gold_complete))
-	if gold_complete then
-		return progression[3],4
-	end
-	local MAX_JOURNAL_QUESTS, IsValidQuestIndex = _G.MAX_JOURNAL_QUESTS, _G.IsValidQuestIndex
-	local GetJournalQuestName, GetJournalQuestNumSteps, GetJournalQuestStepInfo, GetJournalQuestConditionInfo = _G.GetJournalQuestName, _G.GetJournalQuestNumSteps, _G.GetJournalQuestStepInfo, _G.GetJournalQuestConditionInfo
-	for ji = 1,MAX_JOURNAL_QUESTS do
-		if IsValidQuestIndex(ji) then
-			local title=GetJournalQuestName(ji)
-			local prog_step
-			if title=="Cadwell's Silver" then
-				prog_step = 1
-			elseif title=="Cadwell's Gold" then
-				prog_step = 2
-			end
-
-			if prog_step then
-				for si = 1,GetJournalQuestNumSteps(ji) do
-					local tracker,numcond = GetJournalQuestStepInfo(ji,si)
-					if tracker and tracker:find(" to Cadwell") then
-						return progression[prog_step + 1],prog_step + 1
-					end  -- "next" faction
-					for ci = 1,numcond do
-						local conditionText = GetJournalQuestConditionInfo(ji,si,ci)
-						if conditionText=="Experience the Daggerfall Covenant" then
-							return "DC", prog_step + 1
-						end  -- this is a bit of an assumption, but the player can't possibly be on anything but their "next" vet faction if they have this kind of goal.
-						if conditionText=="Experience the Ebonheart Pact" then
-							return "EP", prog_step + 1
-						end
-						if conditionText=="Experience the Aldmeri Dominion" then
-							return "AD", prog_step + 1
-						end
-						if conditionText:find("Light of Meridia") then
-							return progression[prog_step],prog_step
-						end  -- still "current" faction
-					end
-				end
-				break
-			end
+	if gold_complete then return progression[3],4 end
+	for ji=1,MAX_JOURNAL_QUESTS do if IsValidQuestIndex(ji) then
+		local title=GetJournalQuestName(ji)
+		local prog_step
+		if title=="Cadwell's Silver" then prog_step = 1
+		elseif title=="Cadwell's Gold" then prog_step = 2
 		end
-	end
-	if silver_complete then
-		return progression[2],2
-	end
+
+		if prog_step then
+			for si=1,GetJournalQuestNumSteps(ji) do
+				local steptext,visibility,steptype,tracker,numcond = GetJournalQuestStepInfo(ji,si)
+				if tracker and tracker:find(" to Cadwell") then return progression[prog_step+1],prog_step+1 end  -- "next" faction
+				for ci=1,numcond do
+					local conditionText,current,maxv,isFailCondition,isComplete,isCreditShared = GetJournalQuestConditionInfo(ji,si,ci)
+					if conditionText=="Experience the Daggerfall Covenant" then return "DC",prog_step+1 end  -- this is a bit of an assumption, but the player can't possibly be on anything but their "next" vet faction if they have this kind of goal.
+					if conditionText=="Experience the Ebonheart Pact" then return "EP",prog_step+1 end
+					if conditionText=="Experience the Aldmeri Dominion" then return "AD",prog_step+1 end
+					if conditionText:find("Light of Meridia") then return progression[prog_step],prog_step end  -- still "current" faction
+				end
+			end
+			break
+		end
+	end end
+	if silver_complete then return progression[2],2 end
 	return nil,1
 end
 
 function Utils.GetVeteranStage() -- 0:original, 1:first vet, 2:second vet, 3:original again
-	local stageplus = Utils.GetVeteranFaction()
-	return stageplus - 1
+	local vet,stageplus = Utils.GetVeteranFaction()
+	return stageplus-1
 end
 
 function Utils.CheckVeteranFaction()
