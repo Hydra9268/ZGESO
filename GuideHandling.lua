@@ -11,6 +11,7 @@ local ZGV = _G.ZGV
 local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs,class = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs,_G.class
 local print = ZGV.print
 local CHAIN = ZGV.Utils.ChainCall
+local GetMapNameByTexture = ZGV.Utils.GetMapNameByTexture
 local L = ZGV.L
 
 -----------------------------------------
@@ -231,21 +232,6 @@ function ZGV:FocusStep(num,quiet)
 		end
 	end
 
-	-- TODO guide history
-	-- add to last-guides history
-	--[[
-	local history = self.db.char.guides_history
-	local found
-	for gi,guidestep in ipairs(history) do
-		if guidestep[1]==self.CurrentGuide.title then guidestep[2]=self.CurrentStepNum found=1 break end
-	end
-
-	if not found then
-		tinsert(history,{self.CurrentGuide.title,self.CurrentStepNum})
-	end
-	if #history>20 then tremove(history,1) end
-	--]]
-
 	if step:AreRequirementsMet() then
 		self.stepMatchedReqs = step
 	end
@@ -358,18 +344,7 @@ function ZGV:TryToCompleteStep(force)
 			end
 			self:Debug("Skipped goals were: %s",s)
 
-			-- TODO flashage
-			--[[
-			if self.lasttriedstep and self.lasttriedstep==ZGV.CurrentStep and not self.lastwascompleted then
-				--newly completed!
-				if self.db.profile.flashborder then
-					self.delayFlash=1
-				end
-			end
-			--]]
-
 			-- do, do, do the SKIP!
-
 			if self.LastSkip < 0 then
 				self:PreviousStep(true)
 			else
@@ -478,7 +453,7 @@ function ZGV:RegisterGuide(title,data,extra)
 	title = self:SanitizeGuideTitle(title)
 
 	local guide = ZGV.GuideProto:New(title,data,extra)
-
+	
 	if guide then
 		guide:Parse(false)
 	end
@@ -510,6 +485,7 @@ end
 -----------------------------------------
 
 function ZGV:SetGuide(name,step)
+
 	if not name then
 		self.pause = nil Viewer:Update(true)
 		return
@@ -608,7 +584,7 @@ function ZGV:SetGuide(name,step)
 end
 
 function ZGV:GuideLoadStartup()
-	self:Debug("&startup GuideLoadStartup starts, SV are" .. (self.sv.char and "" or " NOT") .. " loaded")
+	--self:Debug("&startup GuideLoadStartup starts, SV are" .. (self.sv.char and "" or " NOT") .. " loaded")
 	if not self.guidesloaded then return end -- let the OnGuidesLoaded func call us.
 	if self.guidestartcomplete then return end
 
@@ -618,14 +594,14 @@ function ZGV:GuideLoadStartup()
 	self.db.char.stephistory = history
 
 	if not self.CurrentGuide then
-		self:Print("Finding proper starter section.")
+		-- self:Print("Finding proper starter section.")
 		local gs = _G.gs
 		gs = self:FindSuggestedGuides()
 		if gs['LEVELING'] then
 			gs = gs['LEVELING']
 		end
-		if not gs or #gs==0 then
-			self:Print("Cannot find a proper section for you! What are you..??")
+		if not gs or #gs == 0 then
+			self:SetGuide(ZGV:SanitizeGuideTitle("LEVELING/"..GetZoneNameByIndex(GetCurrentMapZoneIndex())))
 			return
 		elseif #gs==1 then
 			local g=gs[1]
