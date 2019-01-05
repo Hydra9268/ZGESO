@@ -1355,7 +1355,6 @@ end
 
 function GuideMenu:SetCurrentGuide(guide)
 	local g = (class(guide) == "Guide" and guide) or (class(self.selectedguide) == "Guide" and self.selectedguide)
-	print(g)
 	if g then
 		ZGV:SetGuide(g,g.CurrentStepNum)
 		Menu:Hide()
