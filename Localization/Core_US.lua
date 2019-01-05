@@ -117,7 +117,7 @@ GuideViewer("Main", "enUS", function() local f = {
 			["name"] = "|cff8800Leveling Guides|r",
 
 			-- STARTUP
-			['welcome_guides'] = "%d guides are loaded. Please select a guide.",
+			['welcome_guides'] = "%d guides are loaded.",
 
 			["message_errorloading_full"] = "|cff4444Error|r loading guide |caaffaa%s|r\nline: %d   step: %s\ncode:|cffeeaa%s |cff0000<=====|cff8800 %s|r",
 			["message_errorloading_brief"] = "|cff4444Error|r loading guide |caaffaa%s|r",
