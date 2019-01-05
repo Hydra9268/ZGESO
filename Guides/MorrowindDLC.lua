@@ -6388,9 +6388,9 @@ turnin The Sublime Brazier
 step
 'Congratulations, you have completed the Imperial City guide!
 ]])
-ZGV:RegisterGuide("LEVELING\\Morrowind",[[
+ZGV:RegisterGuide("LEVELING\\Vvardenfell",[[
 loadingimage loadscreen_balfoyen_01.dds
-description Stop a meteor from crashing into Vivec City by helping a demi-god regain his lost powers.
+description Stop a meteor from crashing into Vivec City by helping a demi-god regain his lost powers in this Morrowind expansion.
 step
 'Press _U_ to open your _Collections_
 'Click over to the _Stories_ tab and look under the _Morrowind chapter_:
