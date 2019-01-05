@@ -1332,8 +1332,8 @@ end
 
 function GuideMenu:MenuButton_OnClick(but,button)
 	if not but.target then return end
-	if but.target.type=="folder" then
-		self.folder=but.target.title
+	if but.target.type == "folder" then
+		self.folder = but.target.title
 		self:RefreshUI()
 		return
 	end
@@ -1344,7 +1344,7 @@ function GuideMenu:MenuButton_OnClick(but,button)
 end
 
 function GuideMenu:SelectGuide(guide)
-	if type(guide)=="table" and class(guide)=="Guide" then
+	if type(guide) == "table" and class(guide) == "Guide" then
 		GuideMenu.selectedguide = guide
 	else
 		error("Selected Guide isn't a guide?!? It is a "..tostring(guide))
@@ -1354,7 +1354,8 @@ function GuideMenu:SelectGuide(guide)
 end
 
 function GuideMenu:SetCurrentGuide(guide)
-	local g = (class(guide)=="Guide" and guide) or (class(self.selectedguide)=="Guide" and self.selectedguide)
+	local g = (class(guide) == "Guide" and guide) or (class(self.selectedguide) == "Guide" and self.selectedguide)
+	print(g)
 	if g then
 		ZGV:SetGuide(g,g.CurrentStepNum)
 		Menu:Hide()

@@ -134,6 +134,12 @@ function Utils.GetPlayerName()
 	return name
 end
 
+function Utils.GetMapNameByTexture()
+	local _, _, word = string.find( GetMapTileTexture(), "%a+/%a+/(%a+)/" ) -- pattern "Art/maps/mapname <- we want this
+	local name = zo_strformat("<<C:1>>", word) -- Uppercase first letter
+	return name
+end
+
 function Utils:IsPlayerInCombat()
 	local IsUnitInCombat = _G.IsUnitInCombat
 	return ZGV.db.profile.fakecombat or IsUnitInCombat("player")
