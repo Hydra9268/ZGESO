@@ -24,9 +24,9 @@ local name = "ZGVF"
 local DEFAULT_ANCHOR = { -- Set point using Top so that goals grow downward properly
 	TOPRIGHT,
 	_G['GuiRoot'],
-	BOTTOMRIGHT,
-	-100,
-	-300,
+	LEFT,
+	100,
+	225,
 }
 
 local DEFAULT_MINIMAP_ANCHOR = { -- Set point using Top so that goals grow downward properly
@@ -152,6 +152,9 @@ function Viewer:CreateZGVF()
 	-- Lets set the point! Use either from Saved Vars or default
 	ZGV.sv.profile.vieweranchor = ZGV.sv.profile.vieweranchor and #ZGV.sv.profile.vieweranchor==5 and ZGV.sv.profile.vieweranchor or DEFAULT_ANCHOR
 	local point, relativeTo, relativePoint, offsetX, offsetY = unpack(ZGV.sv.profile.vieweranchor)
+	
+	print(point, relativeTo, relativePoint, offsetX, offsetY)
+	
 	relativeTo = GuiRoot		-- Force to GuiRoot.
 	master:SetPoint(point, relativeTo, relativePoint, offsetX, offsetY)
 
