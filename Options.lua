@@ -372,7 +372,7 @@ function SavedVars:InitializeOptions()
     AddOption("hideoninventory",{
         type = "toggle",
         set = function(i,v) ZGV.Viewer:HandleActionLayer() end,
-        _default = true,
+        _default = false,
       })
     AddOption("hideonguideconv",{
         type = "toggle",
