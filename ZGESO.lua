@@ -245,7 +245,6 @@ function ZGV:Startup()
 
   if self.Viewer then self.Viewer:CreateZGVF() end
   if self.Pointer then self.Pointer:Startup() end
-  if self.Foglight then self.Foglight:Startup() end
 
   self.LastSkip = 1
 

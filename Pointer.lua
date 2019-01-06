@@ -1378,6 +1378,7 @@ end
 
 -- ESO MAPLOCATIONS-BASED POINTERS ARE SO COOL.  ~sinus
 
+-- THESE ARE GLOBAL OVERRIDES! AT LEAST ONE BREAKS THE UI: _GetPOIMapInfo_ORIG_ZGV AND function GetPOIMapInfo
 _GetNumMapLocations = GetNumMapLocations
 function GetNumMapLocations()
 	local num=_GetNumMapLocations()
@@ -1491,17 +1492,6 @@ function Pointer:Debug(msg,...)
 	ZGV:Debug("&_SUB &pointer ".. msg, ...)
 end
 
--- FOGLIGHT!!
-_GetPOIMapInfo_ORIG_ZGV=GetPOIMapInfo
-function GetPOIMapInfo(map,id,truthful)
-	if truthful
-	  then return _GetPOIMapInfo_ORIG_ZGV(map,id) end
-	local x,y,typ,tex,_1 = _GetPOIMapInfo_ORIG_ZGV(map,id)
-	if tex:find("icon_missing") then tex=ZGV.DIR.."/Arrows/Stealth/cbni0-o1egp.dds" end
-	if typ==MAP_PIN_TYPE_INVALID then typ=MAP_PIN_TYPE_POI_SEEN end
-	return x,y,typ,tex,_1
-end
-
 _GetFastTravelNodeInfo_ORIG_ZGV = GetFastTravelNodeInfo
 function GetFastTravelNodeInfo(index,truthful)
 	if truthful
@@ -1515,6 +1505,7 @@ function GetFastTravelNodeInfo(index,truthful)
 	return known,name,x,y,icon,glowIcon,typ,_1,_2,_3
 end
 
+
 if ZGV.DEV then
 	_GetPOIInfo_ORIG_ZGV=GetPOIInfo
 	function GetPOIInfo(map,id,truthful)
@@ -1524,4 +1515,3 @@ if ZGV.DEV then
 		return text,level,subtextinc,subtextcom
 	end
 end
-
