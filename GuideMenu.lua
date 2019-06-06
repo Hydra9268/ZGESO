@@ -340,7 +340,6 @@ function GuideMenu:Create()
 	:SetPoint(TOPLEFT,frame.GuideTitle,0,30)
 	:SetPoint(BOTTOMRIGHT,frame.GuideTitle,0,256)
 	:SetSize(GUIDE_IMAGE_WIDTH,GUIDE_IMAGE_HEIGHT)
-	:SetTextureCoords(0,0.8,0,0.5)
 	:Hide()
 	.__END
 
@@ -556,9 +555,9 @@ function GuideMenu:RefreshUI()
 		end
 	else
 		frame.GuideTitle:SetText("Welcome to the Zygor Community Guide for ESO")
-		frame.GuideImage:SetTexture(ZGV.DIR.."/Viewer/Skins/Stealth/cbqpk-x7umv.dds")
-		frame.GuideData:SetPoint(TOPLEFT,frame.GuideImage,0,255)
-		frame.GuideData:SetText("Original guide authored by Zygor Guides\nSummerset guide authored by Hydra9268\nMinor bug fixes and improvements by Hydra9268")
+		frame.GuideImage:SetTexture(ZGV.DIR.."/Viewer/Skins/Stealth/zgeso-summerset.dds")
+		frame.GuideData:SetText("Original guide authored by Zygor Guides\nSummerset and Murkmire guides authored by Hydra9268\nMinor bug fixes and improvements by Hydra9268")
+		frame.GuideData:SetPoint(TOPLEFT,frame.GuideImage,0,265)
 		frame.GuideImage:Show()
 		frame.OkButton:Hide()
 	end
@@ -1330,6 +1329,7 @@ function GuideMenu:Hide()
 	self.Frame:Hide()
 end
 
+function GuideMenu:MenuButton_OnClick(but,button)
 function GuideMenu:MenuButton_OnClick(but,button)
 	if not but.target then return end
 	if but.target.type == "folder" then
