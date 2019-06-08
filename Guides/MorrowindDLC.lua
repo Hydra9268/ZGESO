@@ -23895,7 +23895,66 @@ step
 |tip It can be found in the new Elsweyr map in the southeast of Tamriel, just below Cyrodiil
 |tip Manually skip to the next step.
 step
+goto rimmen_base 08.14,55.18
 'Make your way to the western edge of Rimmen
-goto rimmen_base 05.23,55.21
+step
+goto elsweyr_base 61.56,27.87
+talk Ghashugg
+accept Strange Messengers
+step
+goto elsweyr_base 51.33,20.80
+wayshrine Riverhold
+step
+goto elsweyr_base 50.08,19.46
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 56.21,68.67
+click K'har Zhab Hall
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 56.55,72.14
+talk Abnur Tharn
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 55.78,72.76
+talk Khamira
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 55.78,72.76
+talk Lord Gharesh-ri
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 56.93,69.09
+click Riverhold
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 46.62,58.50
+talk Mizzik Thunderboots
+accept The Riverhold Abduction
+step
+goto riverholdcity_base 33.82,51.12
+click House of Histories
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 38.93,50.36
+click The Kingdoms Exhibit
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 37.43,51.64
+talk Iraya
+accept The Song of Kingdoms
+step
+goto riverholdcity_base 42.14,49.17
+click House of Histories
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 36.05,51.70
+click Riverhold
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 44.70,68.14
+click Ishu's House
+|tip Manually skip to the next step.
 step
 ]])

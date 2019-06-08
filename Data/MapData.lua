@@ -617,7 +617,10 @@ ZGV.MapData = {
 		["Remnant of Argon"] = [[remnantofargon_base]],
 
 		-- ELSWEYR
+		["Elsweyr"] = [[elsweyr_base]],
 		["Rimmen"] = [[rimmen_base]],
+		["Riverhold City"] = [[riverholdcity_base]],
+
 	},
 	["Zones"] =
 	{
@@ -748,7 +751,10 @@ ZGV.MapData = {
 		["remnantofargon_base"] =			{ name = "Remnant of Argon",				id = 447, xoffset = 0.76284289412495, yoffset = 0.74563348419786, xscale = 0.00059357049039193, },
 
 		-- ELSWEYR
-		["rimmen_base"] =					{ name = "Rimmen",							id = 447, xoffset = 0.5673620104789733887, yoffset = 0.6207519769668579102, xscale = 0.0195800814447080231, },
+		["elsweyr_base"] =					{ name = "Elsweyr",							id = 448, xoffset = 0.45640256807954, yoffset = 0.57828674362147, xscale = 0.1449014005214, },
+		["rimmen_base"] =					{ name = "Rimmen",							id = 449, xoffset = 0.5673620104789733887, yoffset = 0.6207519769668579102, xscale = 0.0195800814447080231, },
+		["riverholdcity_base"] =			{ name = "Riverhold City",					id = 450, xoffset = 0.5673620104789733887, yoffset = 0.6207519769668579102, xscale = 0.0195800814447080231, },
+
 
 		-- EXISTING
 		["aba-loria_base"] = { name = "Aba-Loria", id = 212, xoffset = 0.403340, yoffset = 0.529272, scale = 0.016623, },
