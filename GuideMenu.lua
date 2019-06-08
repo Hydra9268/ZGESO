@@ -1330,7 +1330,6 @@ function GuideMenu:Hide()
 end
 
 function GuideMenu:MenuButton_OnClick(but,button)
-function GuideMenu:MenuButton_OnClick(but,button)
 	if not but.target then return end
 	if but.target.type == "folder" then
 		self.folder = but.target.title
