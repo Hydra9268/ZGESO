@@ -12,17 +12,17 @@ No longer supported references:
 
 Install through the excellent add-on manager <a href="https://minion.mmoui.com/" target="blank">Minion</a>
 
-### Out Now!
+### Coming soon
 
-* Murkmire Guide
-<img src="https://i.imgur.com/jf7hoV2.jpg">
+Eylweyr Guide
+<img src="https://i.imgur.com/3PSp7pg.png">
 <i>artwork &copy; ZeniMax Media</i>
 
 # Development Guide
 
 ### ZGESO Version Breakdown
 
-For example, 1.4.96.
+For example, 1.4.96
 
 * `1` = Major version and authored by Zygor
 * `4` = Minor version authored by Zygor, or with substantial improvements
