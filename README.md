@@ -12,9 +12,8 @@ No longer supported references:
 
 Install through the excellent add-on manager <a href="https://minion.mmoui.com/" target="blank">Minion</a>
 
-### Coming soon
+### Eylweyr Guide Coming Soon
 
-Eylweyr Guide
 <img src="https://i.imgur.com/3PSp7pg.png">
 <i>artwork &copy; ZeniMax Media</i>
 
