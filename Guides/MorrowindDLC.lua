@@ -23880,3 +23880,22 @@ step
 '_Congratulations, you have completed the Murkmire guide!_
 'You can still seek out the remaining Xinchei-Konu pieces for the Xinchei-Konu at the Xinchei-Konu Monument
 ]])
+ZGV:RegisterGuide("LEVELING\\Elsweyr",[[
+loadingimage loadscreen_elsweyr_zone_01.dds
+description Once thought lost to the mists of time, fearsome Dragons now soar the skies of Elsweyr, leaving scorched ruin in their wake. Discover the dark purpose behind their rampage in a new epic story and prevent the destruction of the Khajiiti homeland.
+step
+'Press _U_ to open your _Collections_
+'Click over to the _Stories_ tab and look under the _Chapter_ section:
+'Select _Elsweyr_ in the list of Zone(s)
+'Click the _Accept Quest_ button at the bottom
+accept A Rage of Dragons
+step
+'Open your map. Right click until you see the Tamirel map.
+'Travel to the _Rimmem_ Wayshrine
+|tip It can be found in the new Elsweyr map in the southeast of Tamriel, just below Cyrodiil
+|tip Manually skip to the next step.
+step
+'Make your way to the western edge of Rimmen
+goto rimmen_base 05.23,55.21
+step
+]])

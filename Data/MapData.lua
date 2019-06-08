@@ -616,6 +616,8 @@ ZGV.MapData = {
 		["Deep-Root"] = [[UI_Map_DeepRoot_base01]],
 		["Remnant of Argon"] = [[remnantofargon_base]],
 
+		-- ELSWEYR
+		["Rimmen"] = [[rimmen_base]],
 	},
 	["Zones"] =
 	{
@@ -744,6 +746,9 @@ ZGV.MapData = {
 		["UI_Map_Xal-Vakka09_base"] =		{ name = "Vakka-Bok Xanmeer",				id = 445, xoffset = 0.7625375792378, yoffset = 0.7474624745619, xscale = 0.00036722486854615, },
 		["UI_Map_DeepRoot_base01"] =		{ name = "Deep-Root",						id = 446, xoffset = 0.76208050261367, yoffset = 0.74632332557616, xscale = 0.0022949879744312, },
 		["remnantofargon_base"] =			{ name = "Remnant of Argon",				id = 447, xoffset = 0.76284289412495, yoffset = 0.74563348419786, xscale = 0.00059357049039193, },
+
+		-- ELSWEYR
+		["rimmen_base"] =					{ name = "Rimmen",							id = 447, xoffset = 0.5673620104789733887, yoffset = 0.6207519769668579102, xscale = 0.0195800814447080231, },
 
 		-- EXISTING
 		["aba-loria_base"] = { name = "Aba-Loria", id = 212, xoffset = 0.403340, yoffset = 0.529272, scale = 0.016623, },
