@@ -346,7 +346,7 @@ function GuideMenu:Create()
 	-- TODO scrollbar for information panel on the right? Create a scrollbox for the rest of the information.
 	frame.GuideData = CHAIN(ui:Create("Label",frame.guideInfoBox,gmname.."_GuideData",14))
 	:SetPoint(TOPLEFT,frame.GuideImage,0,200)
-	:SetPoint(BOTTOMRIGHT,0,0)
+	:SetPoint(BOTTOMRIGHT,-20,-10)
 	:SetVerticalAlignment(_G.TEXT_ALIGN_TOP)
 	.__END
 
