@@ -23957,4 +23957,116 @@ goto riverholdcity_base 44.70,68.14
 click Ishu's House
 |tip Manually skip to the next step.
 step
+goto riverholdcity_base 43.23,70.28
+talk Ishu
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 44.01,69.00
+click Riverhold
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 38.97,30.50
+talk Mell the Musical
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 60.53,79.49
+'Press _E_ to Examine _Tajirri's Note_
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 57.17,76.91
+talk Mizzik Thunderboots
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 55.11,92.65
+'Make your way to this spot
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 50.24,20.46
+'At the fork in the road, go right from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 49.31,21.67
+'At the fork in the road, go right from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 49.20,22.80
+'At the fork in the road, go right from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 45.36,23.59
+talk Asazeh
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 44.86,25.39
+talk Elianna Pevengius
+accept Ruddy Fang Retrieval
+step
+goto elsweyr_base 46.33,25.60
+'Press _E_ to Search _Coffer_
+'Take _Gold Necklace_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 46.59,25.41
+'Press _E_ to Search _Crate_
+'Take _Bottle of Skooma_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 46.59,25.41
+'Press _E_ to Take _Imperial Legion Backpack_
+'Take _Imperial Legion Backpack_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 46.63,23.41
+talk Mizzik Thunderboots
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 42.23,25.22
+talk Inalzin
+accept An Animal's Grim Abode
+step
+goto elsweyr_base 41.28,25.66
+wayshrine Star Haven
+step
+goto elsweyr_base 41.63,25.15
+'Jump up onto the ledge here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 40.83,22.35
+talk Narama-ko
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 40.53,22.50
+click Abode of Ignominy
+|tip Manually skip to the next step.
+step
+goto abodeofignominy_base 76.67,82.87
+step
+goto abodeofignominy_base 34.86,75.35
+step
+goto abodeofignominy_base 11.65,75.57
+step
+goto abodeofignominy_base 31.57,24.71
+step
+goto abodeofignominy_base 61.74,13.57
+step
+
+
+
+
+
+
+
+goto elsweyr_base 44.60,19.48
+'Press _E_ to Examine _Foul-Smelling Sack_
+'Take _Rotten Turkey Leg_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 44.68,14.14
+'Press _E_ to Examine _Discarded Orders_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 44.63,14.22
+talk Lharahad
+|tip Manually skip to the next step.
+step
 ]])

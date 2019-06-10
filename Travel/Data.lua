@@ -490,6 +490,7 @@ Data.MapIdsByName = {
 	["Elsweyr"]							= 448,
 	["Rimmen"]							= 449,
 	["Riverhold City"]					= 450,
+	["Adobe of Ignominy"]				= 451,
 }
 
 -----------------------------------------

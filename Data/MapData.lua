@@ -620,6 +620,7 @@ ZGV.MapData = {
 		["Elsweyr"] = [[elsweyr_base]],
 		["Rimmen"] = [[rimmen_base]],
 		["Riverhold City"] = [[riverholdcity_base]],
+		["Adobe of Ignominy"] = [[abodeofignominy_base]],
 
 	},
 	["Zones"] =
@@ -754,6 +755,8 @@ ZGV.MapData = {
 		["elsweyr_base"] =					{ name = "Elsweyr",							id = 448, xoffset = 0.45640256807954, yoffset = 0.57828674362147, xscale = 0.1449014005214, },
 		["rimmen_base"] =					{ name = "Rimmen",							id = 449, xoffset = 0.5673620104789733887, yoffset = 0.6207519769668579102, xscale = 0.0195800814447080231, },
 		["riverholdcity_base"] =			{ name = "Riverhold City",					id = 450, xoffset = 0.5673620104789733887, yoffset = 0.6207519769668579102, xscale = 0.0195800814447080231, },
+		["abodeofignominy_base"] =			{ name = "Adobe of Ignominy",				id = 451, xoffset = -0.052669004647919, yoffset = 1.051393300248, xscale = 0.61963534879905, },
+
 
 
 		-- EXISTING
