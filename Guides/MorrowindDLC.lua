@@ -23892,7 +23892,7 @@ accept A Rage of Dragons
 step
 'Open your map. Right click until you see the Tamirel map.
 'Travel to the _Rimmem_ Wayshrine
-|tip It can be found in the new Elsweyr map in the southeast of Tamriel, just below Cyrodiil
+|tip It can be found in the new Elsweyr map in the southeast of Tamriel, just below Cyrodiil. Once you're in Rimmem, I recommend buying a set of lockpicks.
 |tip Manually skip to the next step.
 step
 goto rimmen_base 08.14,55.18
@@ -24031,7 +24031,7 @@ goto elsweyr_base 41.63,25.15
 'Jump up onto the ledge here
 |tip Manually skip to the next step.
 step
-goto elsweyr_base 40.83,22.35
+goto elsweyr_base 40.78,22.39
 talk Narama-ko
 |tip Manually skip to the next step.
 step
@@ -24039,23 +24039,66 @@ goto elsweyr_base 40.53,22.50
 click Abode of Ignominy
 |tip Manually skip to the next step.
 step
-goto abodeofignominy_base 76.67,82.87
+goto abodeofignominy_base 74.87,80.37
+'Press _E_ to Take _Memory Stone_
+'Take _Marzula-jo's Memory Stone_
+|tip Manually skip to the next step.
 step
-goto abodeofignominy_base 34.86,75.35
+goto abodeofignominy_base 50.69,76.20
+'At the fork in the path, go left from here
+|tip Manually skip to the next step.
 step
-goto abodeofignominy_base 11.65,75.57
+goto abodeofignominy_base 34.54,75.69
+'Press _E_ to Take _Memory Stone_
+'Take _Marzula-jo's Memory Stone_
+|tip Manually skip to the next step.
 step
-goto abodeofignominy_base 31.57,24.71
+goto abodeofignominy_base 23.85,75.36
+'Continue South along the wall from here
+|tip Manually skip to the next step.
 step
-goto abodeofignominy_base 61.74,13.57
+goto abodeofignominy_base 23.67,78.53
+'Continue West along the wall from here
+|tip Manually skip to the next step.
 step
-
-
-
-
-
-
-
+goto abodeofignominy_base 20.96,81.42
+'Continue West along the wall from here
+|tip Manually skip to the next step.
+step
+goto abodeofignominy_base 14.18,80.99
+'Continue North along the wall from here
+|tip Manually skip to the next step.
+step
+goto abodeofignominy_base 12.36,75.97
+'Press _E_ to Examine _Marzula-jo's Notes_
+|tip Manually skip to the next step.
+step
+goto abodeofignominy_base 28.51,52.71
+'At the fork in the path, go left from here
+|tip Manually skip to the next step.
+step
+goto abodeofignominy_base 31.83,23.75
+'Press _E_ to Take _Memory Stone_
+'Take _Marzula-jo's Memory Stone_
+|tip Manually skip to the next step.
+step
+goto abodeofignominy_base 61.36,13.00
+'Press _E_ to Take _Memory Stone_
+'Take _Marzula-jo's Memory Stone_
+|tip Manually skip to the next step.
+step
+'Open your map. Right click to bring up the Elsweyr map.
+'Travel to the _Star Haven_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 41.63,25.15
+'Jump up onto the ledge here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 40.78,22.39
+talk Narama-ko
+|tip Manually skip to the next step.
+step
 goto elsweyr_base 44.60,19.48
 'Press _E_ to Examine _Foul-Smelling Sack_
 'Take _Rotten Turkey Leg_
@@ -24067,6 +24110,149 @@ goto elsweyr_base 44.68,14.14
 step
 goto elsweyr_base 44.63,14.22
 talk Lharahad
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Travel to the _Riverhold_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 52.66,23.54
+talk Cadwell
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 52.77,23.45
+'Press _E_ to Examine _Ancient Gravestone_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 52.77,23.45
+talk Cadwell
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 52.21,24.43
+'At the road, continue Southeast from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 60.70,28.43
+'At the fork in the road, follow the path Northeast from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 61.19,23.71
+talk Kiseravi
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 61.39,23.06
+click Tomb of the Serpents
+|tip Manually skip to the next step.
+step
+goto tombofserpents_base 34.81,66.30
+'Press _E_ to Search _Akaviri Chest_
+'Take _Akaviri Relic_
+|tip Manually skip to the next step.
+step
+goto tombofserpents_base 30.68,46.36
+'Continue West from here
+|tip Manually skip to the next step.
+step
+goto tombofserpents_base 06.87,39.64
+'Press _E_ to Examine _Anequina Fragment_
+|tip Manually skip to the next step.
+step
+goto tombofserpents_base 06.91,39.94
+talk Rajhin's Shadow
+|tip Manually skip to the next step.
+step
+goto tombofserpents_base 06.91,39.94
+'Press _E_ to Take _Anequina Fragment_
+'Take _Anequina Fragment_
+|tip Manually skip to the next step.
+step
+goto tombofserpents_base 17.25,32.01
+'Continue North from here
+|tip Manually skip to the next step.
+step
+goto tombofserpents_base 30.79,31.25
+'Press _E_ to Search _Akaviri Chest_
+'Take _Akaviri Relic_
+|tip Manually skip to the next step.
+step
+goto tombofserpents_base 74.34,31.17
+'Press _E_ to Search _Akaviri Chest_
+'Take _Akaviri Relic_
+|tip Manually skip to the next step.
+step
+goto tombofserpents_base 67.56,59.66
+'Continue West from here
+|tip Manually skip to the next step.
+step
+goto tombofserpents_base 50.34,82.69
+click Elsweyr
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 61.43,23.73
+talk Kiseravi
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Travel to the _Riverhold_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 50.08,19.46
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 60.33,53.60
+click Banished Regrets Inn
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 59.96,53.62
+talk Rideza
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 63.09,51.62
+talk Elianna Pevengius
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 65.77,52.69
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 64.61,49.94
+talk Mizzik Thunderboots
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 60.07,53.69
+'Run downstairs and...
+click Riverhold
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 60.07,53.69
+'Run downstairs and...
+click Riverhold
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 58.63,43.14
+'Press _E_ to Unlock _Tajirri's House_
+|tip You'll have to pick the lock.
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 59.31,42.63
+'Wait for the maid to face away from the main walkway, then sneak over to the stairs. Note: Do not do this when she is sweeping.
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 58.64,42.86
+'Press _E_ to Search _Hidden Panel_
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 59.63,38.84
+'As before wait for the maid to face away from the main walkway, then sneak over to the door. It might be best to wait until she is on the other side. Note: Do not do this when she is sweeping.
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 57.69,43.43
+click Riverhold
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 56.80,55.58
+talk Mizzik Thunderboots
 |tip Manually skip to the next step.
 step
 ]])

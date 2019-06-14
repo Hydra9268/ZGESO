@@ -491,6 +491,7 @@ Data.MapIdsByName = {
 	["Rimmen"]							= 449,
 	["Riverhold City"]					= 450,
 	["Adobe of Ignominy"]				= 451,
+	["Tomb of the Serpents"]			= 452,
 }
 
 -----------------------------------------

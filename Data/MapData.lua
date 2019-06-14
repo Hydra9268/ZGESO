@@ -621,6 +621,7 @@ ZGV.MapData = {
 		["Rimmen"] = [[rimmen_base]],
 		["Riverhold City"] = [[riverholdcity_base]],
 		["Adobe of Ignominy"] = [[abodeofignominy_base]],
+		["Tomb of the Serpents"] = [[tombofserpents_base]],
 
 	},
 	["Zones"] =
@@ -756,6 +757,7 @@ ZGV.MapData = {
 		["rimmen_base"] =					{ name = "Rimmen",							id = 449, xoffset = 0.5673620104789733887, yoffset = 0.6207519769668579102, xscale = 0.0195800814447080231, },
 		["riverholdcity_base"] =			{ name = "Riverhold City",					id = 450, xoffset = 0.5673620104789733887, yoffset = 0.6207519769668579102, xscale = 0.0195800814447080231, },
 		["abodeofignominy_base"] =			{ name = "Adobe of Ignominy",				id = 451, xoffset = -0.052669004647919, yoffset = 1.051393300248, xscale = 0.61963534879905, },
+		["tombofserpents_base"] =			{ name = "Tomb of the Serpents",			id = 452, xoffset = -0.1107980802902800016, yoffset = -0.0700489259590350022, xscale = 0.0010544355350735545, },
 
 
 
