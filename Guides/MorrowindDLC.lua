@@ -23937,7 +23937,7 @@ goto riverholdcity_base 33.82,51.12
 click House of Histories
 |tip Manually skip to the next step.
 step
-goto riverholdcity_base 38.93,50.36
+goto riverholdcity_base 38.66,50.59
 click The Kingdoms Exhibit
 |tip Manually skip to the next step.
 step
@@ -24200,7 +24200,7 @@ goto elsweyr_base 50.08,19.46
 'Continue to here
 |tip Manually skip to the next step.
 step
-goto riverholdcity_base 60.33,53.60
+goto riverholdcity_base 60.07,53.75
 click Banished Regrets Inn
 |tip Manually skip to the next step.
 step
@@ -24218,11 +24218,6 @@ goto riverholdcity_base 65.77,52.69
 step
 goto riverholdcity_base 64.61,49.94
 talk Mizzik Thunderboots
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 60.07,53.69
-'Run downstairs and...
-click Riverhold
 |tip Manually skip to the next step.
 step
 goto riverholdcity_base 60.07,53.69
@@ -24255,4 +24250,276 @@ goto riverholdcity_base 56.80,55.58
 talk Mizzik Thunderboots
 |tip Manually skip to the next step.
 step
+goto riverholdcity_base 33.82,51.12
+click House of Histories
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 38.66,50.59
+click The Kingdoms Exhibit
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 37.32,51.93
+talk Izanji
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 35.35,51.86
+'Press _E_ to Place _Rithana-di-Renada_
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 38.81,51.69
+talk Iraya
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 42.03,48.98
+click House of Histories
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 36.16,51.46
+click Riverhold
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 44.74,87.77
+'Press _E_ to Search _Barrel_
+'Take _Summerset Wine_
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 31.90,94.78
+'Make you way to here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 47.88,19.73
+'Press _E_ to Search _Barrel_
+'Take _Mammoth Cheese_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 51.58,20.47
+'Make you way to here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 52.90,19.47
+'Press _E_ to Search _Crate_
+'Take _Silken Scarf_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 52.72,18.78
+'Press _E_ to Search _Barrel_
+'Take _Rotten Moon-Sugar_
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Travel to the _Riverhold_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 50.08,19.46
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 44.87,67.84
+click Ishu's House
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 43.23,70.28
+talk Ishu
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 44.01,69.00
+click Riverhold
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 60.07,53.75
+click Banished Regrets Inn
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 65.77,52.69
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 63.01,48.88
+talk Rideza
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 63.01,48.88
+talk Mizzik Thunderboots
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 60.07,53.69
+'Run downstairs and...
+click Riverhold
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 73.58,54.33
+click Cellar
+|tip Manually skip to the next step.
+step
+goto smugglershideout_base 48.58,51.69
+kill Chirrdazi the Chopper
+kill Dhanril the Dangerous
+kill Mad Minurrum
+'Simple fight that isn't too difficult. You can pull 1-2 at a time.
+|tip Manually skip to the next step.
+step
+goto smugglershideout_base 55.37,52.22
+'Continue up ramp from here
+|tip Manually skip to the next step.
+step
+goto smugglershideout_base 46.69,38.01
+'Make you way here
+|tip Manually skip to the next step.
+step
+goto smugglershideout_base 43.80,13.63
+talk Mizzik Thunderboots
+|tip Manually skip to the next step.
+step
+goto smugglershideout_base 43.02,11.70
+click Riverhold
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Travel to the _Riverhold_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 50.08,19.46
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 60.07,53.75
+click Banished Regrets Inn
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 65.77,52.69
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 63.91,49.75
+talk Mizzik Thunderboots
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 60.07,53.69
+'Run downstairs and...
+click Riverhold
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 54.90,91.45
+'Make your way to the edge of Riverhold
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 48.11,25.63
+'Make your way to here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 49.79,26.34
+talk Abnur Tharn
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 49.84,26.60
+talk Khamira
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 49.44,26.76
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 49.61,28.51
+'Press _E_ to Search _Mail Sack_
+'Take _List of Sympathizers_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 49.98,28.72
+'Drop down here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 50.40,28.06
+'Press _E_ to Search _Mail Sack_
+'Take _List of Safehouses_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 50.92,29.96
+'Press _E_ to Search _Mail Sack_
+'Take _Spy Correspondence_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 52.18,28.97
+'Drop down from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 51.97,28.81
+'Press _E_ to Search _Mail Sack_
+'Take _Intelligence Reports_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 52.25,29.96
+talk Captain Nala-do
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 48.10,30.81
+talk Abnur Tharn
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 48.72,31.52
+'Follow the road Southwest from here. (_Note:_ From this point forward you will enter areas of Elsweyr with random Dragon appearances. Best to avoid them if you're solo.)
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 44.01,43.62
+'At the fork in the road, go right from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 36.81,48.58
+wayshrine The Stitches
+step
+goto elsweyr_base 50.11,16.21
+talk Tasnasi
+accept Thick as Thieves
+step
+goto stitches_base 34.21,27.01
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto stitches_base 52.36,35.94
+'Press _E_ to Unlock _Jubani's Junkshop_
+|tip You'll have to pick the lock. Try and do it when the guard is not around.
+|tip Manually skip to the next step.
+step
+goto stitches_base 53.55,33.12
+'Continue downstairs from here
+|tip Manually skip to the next step.
+step
+goto stitches_base 55.02,34.82
+'Press _E_ to Untie _Vole_
+|tip Manually skip to the next step.
+step
+goto stitches_base 55.67,38.07
+click Elsweyr
+|tip Manually skip to the next step.
+step
+goto stitches_base 58.20,35.58
+talk Vole
+|tip Manually skip to the next step.
+step
+goto stitches_base 48.49,37.41
+'Cross the bridge from here
+|tip Manually skip to the next step.
+step
+goto stitches_base 46.50,50.01
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto stitches_base 46.97,59.34
+'Press _E_ to Take _Odorous Bucket_
+'Take _Odorous Bucket_
+|tip Manually skip to the next step.
+step
+goto stitches_base 46.13,59.47
+'Press _E_ to Douse _Sereyne_
+|tip Manually skip to the next step.
+step
+goto stitches_base 46.13,59.47
+talk Sereyne
+|tip Manually skip to the next step.
+step
+goto stitches_base 59.53,53.35
+click The Goiter's Gulp
+|tip Manually skip to the next step.
+step
+
+
 ]])

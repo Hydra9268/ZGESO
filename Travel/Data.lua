@@ -492,6 +492,8 @@ Data.MapIdsByName = {
 	["Riverhold City"]					= 450,
 	["Adobe of Ignominy"]				= 451,
 	["Tomb of the Serpents"]			= 452,
+	["Smuggler's Hideout"]				= 453,
+	["The Stitches"]					= 454,
 }
 
 -----------------------------------------

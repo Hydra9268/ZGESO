@@ -622,6 +622,8 @@ ZGV.MapData = {
 		["Riverhold City"] = [[riverholdcity_base]],
 		["Adobe of Ignominy"] = [[abodeofignominy_base]],
 		["Tomb of the Serpents"] = [[tombofserpents_base]],
+		["Smuggler's Hideout"] = [[smugglershideout_base]],
+		["The Stitches"] = [[stitches_base]],
 
 	},
 	["Zones"] =
@@ -758,6 +760,8 @@ ZGV.MapData = {
 		["riverholdcity_base"] =			{ name = "Riverhold City",					id = 450, xoffset = 0.5673620104789733887, yoffset = 0.6207519769668579102, xscale = 0.0195800814447080231, },
 		["abodeofignominy_base"] =			{ name = "Adobe of Ignominy",				id = 451, xoffset = -0.052669004647919, yoffset = 1.051393300248, xscale = 0.61963534879905, },
 		["tombofserpents_base"] =			{ name = "Tomb of the Serpents",			id = 452, xoffset = -0.1107980802902800016, yoffset = -0.0700489259590350022, xscale = 0.0010544355350735545, },
+		["smugglershideout_base"] =			{ name = "Smuggler's Hideout",				id = 453, xoffset = -0.0737909785799060053, yoffset = -0.0645435687268910013, xscale = 0.0009725770818079637, },
+		["stitches_base"] =					{ name = "The Stitches",					id = 454, xoffset = 0.5115000010000000374, yoffset = 0.6492015719000000518, xscale = 0.0135041608801343277, },
 
 
 
