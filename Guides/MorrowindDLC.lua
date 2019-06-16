@@ -24520,6 +24520,35 @@ goto stitches_base 59.53,53.35
 click The Goiter's Gulp
 |tip Manually skip to the next step.
 step
-
+goto stitches_base 61.01,54.65
+talk Scipion Averno
+|tip Manually skip to the next step.
+step
+goto stitches_base 50.90,55.12
+'Press _E_ to Open _Jewelry Box_
+'Take _Sereyne's Focus_
+|tip Manually skip to the next step.
+step
+goto stitches_base 59.50,52.62
+click Elsweyr
+|tip Manually skip to the next step.
+step
+goto stitches_base 46.13,59.47
+talk Sereyne
+|tip Manually skip to the next step.
+step
+goto stitches_base 17.36,57.91
+talk Nazdar
+|tip Manually skip to the next step.
+step
+goto stitches_base 21.75,62.90
+talk Humble Zaham
+accept Beware the Purring Liar
+step
+goto stitches_base 60.03,54.64
+'Press _E_ to Unlock _Goiter's Gulp Cellar_
+|tip You'll have to pick the lock. Try and do it when no one is not around.
+|tip Manually skip to the next step.
+step
 
 ]])
