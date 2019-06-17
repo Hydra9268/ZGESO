@@ -24640,6 +24640,140 @@ goto elsweyr_base 19.59,61.30
 'Follow the path North from here
 |tip Manually skip to the next step.
 step
+goto elsweyr_base 19.17,59.04
+'Press _E_ to Take _Arkay's Lash_
+'Take _Arkay's Lash Blossom_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 19.59,61.30
+'Follow the path back to the main
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 16.70,64.11
+'At the fork in the road, go right from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 16.34,70.56
+wayshrine Scar's End
+step
+goto elsweyr_base 15.93,70.09
+'Drop down into the canyon from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 16.61,69.51
+'Press _E_ to Examine _Reward for Stolen Wine_
+accept The Connoisseur
+step
+goto elsweyr_base 16.61,69.51
+'Press _E_ to Take _White Wine_
+'Take _White Wine_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 15.18,75.10
+|tip Wait until Finnalir isn't looking or is out of way and sneak to
+'Press _E_ to Steal _Clothing Chest_
+'Take _Wood Elk Silk Clothing_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 17.01,70.94
+'Continue to this path
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 20.42,66.91
+'Drop down to the ledge from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 20.50,66.76
+'Drop down to the canyon floor from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 20.78,65.79
+'Press _E_ to Take _Red Wine_
+'Take _Red Wine_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 23.75,62.35
+'Press _E_ to Take _Obscure Wine_
+'Take _Obscure Wine_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 25.16,60.64
+'Follow the path up from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 27.00,58.53
+'Cross the bridge from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 23.49,56.78
+talk Iokkas
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 23.52,56.78
+'Press _E_ to Drink _Antidote_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 23.27,56.09
+'Follow the path East from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 27.54,59.27
+'Follow the path down from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 25.55,59.90
+'Drop down into the canyon from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 24.29,59.33
+click Cicatrice Caverns
+|tip Manually skip to the next step.
+step
+goto cicatriceoasis_base 50.53,66.53
+talk Lara-Tan
+|tip Manually skip to the next step.
+step
+goto cicatriceoasis_base 35.73,61.69
+'At the fork in the path, go left from here
+|tip Manually skip to the next step.
+step
+goto cicatriceoasis_base 23.36,61.43
+'Press _E_ to Give Antidote _Najirra_
+|tip Manually skip to the next step.
+step
+goto cicatriceoasis_base 17.88,35.31
+'Press _E_ to Examine _Nikussha's Research Note 2_
+|tip Manually skip to the next step.
+step
+goto cicatriceoasis_base 33.52,08.53
+'Press _E_ to Give Antidote _Pilazaz_
+|tip Manually skip to the next step.
+step
+goto cicatriceoasis_base 49.45,27.07
+'Press _E_ to Examine _Nikussha's Research Note 1_
+|tip Manually skip to the next step.
+step
+goto cicatriceoasis_base 60.30,33.66
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto cicatriceoasis_base 81.05,43.36
+'Press _E_ to Give Antidote _Raebanji_
+|tip Manually skip to the next step.
+step
+goto cicatriceoasis_base 77.26,50.79
+'Continue to here
+|tip Manually skip to the next step.
+step
+
+goto cicatriceoasisupperfloor_base 50,50
+|tip Manually skip to the next step.
+step
+
+'Open your map.
+'Travel to the _Rimmem_ Wayshrine
+|tip Manually skip to the next step.
+step
 
 
 ]])

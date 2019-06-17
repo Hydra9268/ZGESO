@@ -495,6 +495,7 @@ Data.MapIdsByName = {
 	["Smuggler's Hideout"]				= 453,
 	["The Stitches"]					= 454,
 	["Sleepy Senche Mine"]				= 455,
+	["Cicatrice Caverns"]				= 456,
 }
 
 -----------------------------------------

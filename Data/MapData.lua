@@ -625,6 +625,8 @@ ZGV.MapData = {
 		["Smuggler's Hideout"] = [[smugglershideout_base]],
 		["The Stitches"] = [[stitches_base]],
 		["Sleepy Senche Mine"] = [[mulaamnirslair_base]],
+		["Cicatrice Caverns"] = [[cicatriceoasis_base]],
+		["Cicatrice Caverns"] = [[cicatriceoasisupperfloor_base]],
 
 	},
 	["Zones"] =
@@ -764,6 +766,8 @@ ZGV.MapData = {
 		["smugglershideout_base"] =			{ name = "Smuggler's Hideout",				id = 453, xoffset = -0.0737909785799060053, yoffset = -0.0645435687268910013, xscale = 0.0009725770818079637, },
 		["stitches_base"] =					{ name = "The Stitches",					id = 454, xoffset = 0.5115000010000000374, yoffset = 0.6492015719000000518, xscale = 0.0135041608801343277, },
 		["mulaamnirslair_base"] =			{ name = "Sleepy Senche Mine",				id = 455, xoffset = -0.0872164758717030031, yoffset = 0.7112151397071400094, xscale = 0.0013111368190385189, },
+		["cicatriceoasis_base"] =			{ name = "Cicatrice Caverns",				id = 456, xoffset = -0.0020378450946176999, yoffset = -0.0167359827609490017, xscale = 0.0155296366481127886, },
+		["cicatriceoasisupperfloor_base"] =	{ name = "Cicatrice Caverns",				id = 456, xoffset = -0.0017628095026546999, yoffset = -0.0278907573691770001, xscale = 0.0155296235616841933, },
 
 
 		-- EXISTING
