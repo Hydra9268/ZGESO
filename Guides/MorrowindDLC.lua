@@ -24672,7 +24672,7 @@ step
 goto elsweyr_base 15.18,75.10
 |tip Wait until Finnalir isn't looking or is out of way and sneak to
 'Press _E_ to Steal _Clothing Chest_
-'Take _Wood Elk Silk Clothing_
+'Take _Wood Elf Silk Clothing_
 |tip Manually skip to the next step.
 step
 goto elsweyr_base 17.01,70.94
@@ -24765,10 +24765,39 @@ goto cicatriceoasis_base 77.26,50.79
 'Continue to here
 |tip Manually skip to the next step.
 step
-
-goto cicatriceoasisupperfloor_base 50,50
+goto cicatriceoasisupperfloor_base 51.20,66.65
+'Continue to here
 |tip Manually skip to the next step.
 step
+goto cicatriceoasis_base 24.83,83.21
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto cicatriceoasis_base 65.96,61.28
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto cicatriceoasis_base 67.27,79.54
+'Press _E_ to Examine _Nikussha's Research Note 3_
+|tip Manually skip to the next step.
+step
+goto cicatriceoasisupperfloor_base 51.31,80.74
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto cicatriceoasis_base 38.98,61.80
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto cicatriceoasis_base 50.75,66.22
+talk Iokkas
+|tip Manually skip to the next step.
+step
+goto cicatriceoasis_base 51.38,55.00
+click Central Chamber
+|tip Manually skip to the next step.
+step
+
 
 'Open your map.
 'Travel to the _Rimmem_ Wayshrine
