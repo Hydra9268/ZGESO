@@ -624,6 +624,7 @@ ZGV.MapData = {
 		["Tomb of the Serpents"] = [[tombofserpents_base]],
 		["Smuggler's Hideout"] = [[smugglershideout_base]],
 		["The Stitches"] = [[stitches_base]],
+		["Sleepy Senche Mine"] = [[mulaamnirslair_base]],
 
 	},
 	["Zones"] =
@@ -634,7 +635,7 @@ ZGV.MapData = {
 			/zgpos - For city and delve data, and also to confirm DDS map filename is correct.
 		]]--
 
-		-- SUMMERSET CITIES
+		-- SUMMERSET
 		["summerset_base"] = 				{ name = "Summerset", 						id = 388, xoffset = -0.003535228579, yoffset = 0.60646441074991, xscale = 0.26354155912548, map = 32, },
 		["shimmerene_base"] = 				{ name = "Shimmerene", 						id = 394, xoffset = 0.1365101927727, yoffset = 0.70346567832109, xscale = 0.03906602479392, },
 		["lillandrill_base"] = 				{ name = "Lillandril",						id = 392, xoffset = 0.0277780389631, yoffset = 0.69915922340375, xscale = 0.02363247223325, },
@@ -762,7 +763,7 @@ ZGV.MapData = {
 		["tombofserpents_base"] =			{ name = "Tomb of the Serpents",			id = 452, xoffset = -0.1107980802902800016, yoffset = -0.0700489259590350022, xscale = 0.0010544355350735545, },
 		["smugglershideout_base"] =			{ name = "Smuggler's Hideout",				id = 453, xoffset = -0.0737909785799060053, yoffset = -0.0645435687268910013, xscale = 0.0009725770818079637, },
 		["stitches_base"] =					{ name = "The Stitches",					id = 454, xoffset = 0.5115000010000000374, yoffset = 0.6492015719000000518, xscale = 0.0135041608801343277, },
-
+		["mulaamnirslair_base"] =			{ name = "Sleepy Senche Mine",				id = 455, xoffset = -0.0872164758717030031, yoffset = 0.7112151397071400094, xscale = 0.0013111368190385189, },
 
 
 		-- EXISTING

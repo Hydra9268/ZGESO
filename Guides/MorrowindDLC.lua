@@ -24227,7 +24227,7 @@ click Riverhold
 step
 goto riverholdcity_base 58.63,43.14
 'Press _E_ to Unlock _Tajirri's House_
-|tip You'll have to pick the lock.
+|tip You'll have to pick the simple lock.
 |tip Manually skip to the next step.
 step
 goto riverholdcity_base 59.31,42.63
@@ -24476,7 +24476,7 @@ goto stitches_base 34.21,27.01
 step
 goto stitches_base 52.36,35.94
 'Press _E_ to Unlock _Jubani's Junkshop_
-|tip You'll have to pick the lock. Try and do it when the guard is not around.
+|tip You'll have to pick the simple lock. Try and do it when the guard is not around.
 |tip Manually skip to the next step.
 step
 goto stitches_base 53.55,33.12
@@ -24547,8 +24547,99 @@ accept Beware the Purring Liar
 step
 goto stitches_base 60.03,54.64
 'Press _E_ to Unlock _Goiter's Gulp Cellar_
-|tip You'll have to pick the lock. Try and do it when no one is not around.
+|tip You'll have to pick the intermediate lock. The area should be clear of guards.
 |tip Manually skip to the next step.
 step
+goto stitches_base 56.12,60.29
+|tip Wait until the guard is out of way and sneak your way over
+'Press _E_ to Steal _Goiter's Gulp Ledger_
+'Take _Goiter's Gulp Ledger_
+|tip Manually skip to the next step.
+step
+goto stitches_base 59.79,53.81
+|tip Wait until the guard is out of way and sneak your way over
+click Elsweyr
+|tip Manually skip to the next step.
+step
+goto stitches_base 38.49,19.46
+'Make you way to the edge of The Stitches
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 33.56,49.24
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 26.41,53.11
+'Continue on the path Southeast from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 27.78,55.99
+'Follow the path down to here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 28.52,54.84
+'Press _E_ to Take _Nazdar's Flute_
+'Take _Nazdar's Flute_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 27.70,55.69
+'Follow the path up to the main road from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 25.99,51.82
+'Follow the path Northwest from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 25.03,50.11
+talk Khamira
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 24.89,50.15
+click Sleepy Senche Mine
+|tip Manually skip to the next step.
+step
+goto mulaamnirslair_base 71.73,61.91
+' Follw the path to here
+|tip Manually skip to the next step.
+step
+goto mulaamnirslair_base 73.76,53.90
+kill Gravestalker Gemmia
+'A simple boss fight. When the boss summons five bone cauldrons move away before they explode. Khamira will occasionally cast a green healing spell on the ground. Lastly, ignore the randomly summoned undead minions.
+|tip Manually skip to the next step.
+step
+goto mulaamnirslair_base 64.00,53.74
+click Elsweyr
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 22.93,50.02
+talk Mulaamnir
+'Here you decide to fight Mulaamnir or tell Abnur. For the sake of this guide, choose _I'll tell Abnur Tharn what you said._
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 22.93,50.02
+talk Khamira
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 25.99,51.82
+'Continue to the main road here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 22.49,56.60
+talk Iokkas
+accept Scars of the Past
+step
+goto elsweyr_base 21.76,55.73
+'Kill three random NPCs to obtain _Diseased Samples_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 23.45,56.78
+talk Iokkas
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 19.59,61.30
+'Follow the path North from here
+|tip Manually skip to the next step.
+step
+
 
 ]])
