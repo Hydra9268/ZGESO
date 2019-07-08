@@ -24797,10 +24797,201 @@ goto cicatriceoasis_base 51.38,55.00
 click Central Chamber
 |tip Manually skip to the next step.
 step
-
-
+goto cicatriceoasisbossroom_base 51.38,22.47
+kill Shavali the Befouled
+'A simple boss fight. When the minions appear, focus on Shavali as much as possible and heal as needed.
+step
+goto cicatriceoasisbossroom_base 51.46,50.89
+click Cicatrice Caverns
+|tip Manually skip to the next step.
+step
+goto cicatriceoasis_base 50.78,87.28
+click Elsweyr
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 24.57,58.73
+'At the path up to the encampment from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 23.49,56.81
+talk Iokkas
+|tip Manually skip to the next step.
+step
 'Open your map.
 'Travel to the _Rimmem_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto rimmen_base 23.62,35.43
+talk Tahara
+accept Scariest in Show
+step 
+goto rimmen_base 30.05,31.99
+|tip You'll have to pick the advanced lock. The area should be clear of guards.
+|tip Manually skip to the next step.
+step
+goto rimmen_base 28.48,30.43
+'Wait for the housemaid to walk away from the stairs, and sneak over 
+|tip If you don't care to sneak around, you can bee-line to the item and pay a fine later if you get caught.
+|tip If you have the Dark Brotherhood DLC you can sneak up behind the house maid and kill him.
+|tip Manually skip to the next step.
+step
+goto rimmen_base 26.08,29.10
+'Walk up the stairs from here
+|tip Manually skip to the next step.
+step
+goto rimmen_base 25.82,30.65
+'Press _E_ to Steal _Moon-Phase Decorations Storage_
+'Take _Golen Cathay Idol_
+|tip Manually skip to the next step.
+step
+goto rimmen_base 25.86,31.39
+'Wait until the housemaid finishes cleaning the upstairs bedroom and follow close behind downstairs.
+|tip Manually skip to the next step.
+step
+goto rimmen_base 30.09,31.69
+click Rimmen
+|tip Manually skip to the next step.
+step
+goto rimmen_base 33.53,51.37
+'Make your way to this spot
+|tip Manually skip to the next step.
+step
+goto rimmen_base 37.90,38.06
+'Make your way to this spot
+|tip Manually skip to the next step.
+step
+goto rimmen_base 48.51,37.71
+'Make your way to this spot
+|tip Manually skip to the next step.
+step
+goto rimmen_base 46.10,44.55
+'You can attempt to steal the food in the bag, or you can buy it for 68 gold from Jahlar. You also have the option to [Intimidate] Jahlar to obtain the food for free. It's your choice.
+|tip Manually skip to the next step.
+step
+goto rimmen_base 48.96,37.35
+'Press _E_ to Use Odoriferous Meal _Burtle_
+|tip Manually skip to the next step.
+step
+goto rimmen_base 36.44,39.20
+'Go down the stairs from here
+|tip Manually skip to the next step.
+step
+goto rimmen_base 23.79,35.37
+talk Tahara
+|tip Manually skip to the next step.
+step
+'Open your map. Right click to bring up the Elsweyr map.
+'Travel to _The Stitches_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto stitches_base 46.84,28.43
+'Cross the bridge from here
+|tip Manually skip to the next step.
+step
+goto stitches_base 47.95,55.95
+'Follow the path down from here
+|tip Manually skip to the next step.
+step
+goto stitches_base 35.15,55.94
+'Cross the bridge from here
+|tip Manually skip to the next step.
+step
+goto stitches_base 21.27,57.95
+talk Hofgrad Kjisorssen
+|tip Manually skip to the next step.
+step
+goto stitches_base 17.46,58.08
+talk Nazdar
+|tip Manually skip to the next step.
+step
+goto stitches_base 21.65,62.86
+talk Humble Zaham
+|tip Manually skip to the next step.
+step
+goto stitches_base 27.09,57.69
+'Cross the bridge from here
+|tip Manually skip to the next step.
+step
+goto stitches_base 48.31,46.20
+'Cross the bridge from here
+|tip Manually skip to the next step.
+step
+goto stitches_base 59.54,35.56
+'Drop down onto the ledge below
+|tip Manually skip to the next step.
+step
+goto stitches_base 61.22,38.81
+'Drop down onto the canyon floor below
+|tip Manually skip to the next step.
+step
+goto stitches_base 54.63,70.13
+'Enter the opening
+|tip You may have a train of mobs behind you. Keep running, most will retreat.
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 36.71,55.19
+talk Tasnasi
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 36.57,55.20
+click Meirvale Keep Dungeons
+|tip Manually skip to the next step.
+step
+goto khasdaskeep01_base 70.08,59.38
+click Upper Dungeons
+|tip Manually skip to the next step.
+step
+goto khasdaskeep01_base 46.60,75.79
+'Kill the easy wave of mobs that appear
+|tip Manually skip to the next step.
+step
+goto khasdaskeep01_base 46.60,75.79
+click Upper Dungeons
+|tip Manually skip to the next step.
+step
+goto khasdaskeep01_base 44.80,33.98
+'Kill the easy wave of mobs that appear
+|tip Manually skip to the next step.
+step
+goto khasdaskeep01_base 44.80,33.98
+click Upper Dungeons
+|tip Manually skip to the next step.
+step
+goto khasdaskeep01_base 20.79,23.45
+'Kill the easy wave of mobs that appear
+|tip Manually skip to the next step.
+step
+goto khasdaskeep01_base 20.79,23.45
+click Upper Dungeons
+|tip Manually skip to the next step.
+step
+goto khasdaskeep01_base 40.63,16.20
+click Meirvale Keep Courtyard
+|tip Manually skip to the next step.
+step
+goto khasdaskeep02_base 74.46,22.23
+talk Sereyne
+|tip Manually skip to the next step.
+step
+goto khasdaskeep02_base 63.96,22.59
+'Sneak your way to here (Remember to avoid patrols)
+|tip Manually skip to the next step.
+step
+goto khasdaskeep02_base 61.81,32.92
+'Sneak your way to here
+|tip Manually skip to the next step.
+step
+goto khasdaskeep02_base 61.76,63.13
+'Sneak your way to here
+|tip Tip: Wait until both patrols walk into the dirt area, then it'll be easier to sneak across the cement pavement.
+|tip Manually skip to the next step.
+step
+goto khasdaskeep02_base 54.12,75.93
+click Southern Close
+|tip Manually skip to the next step.
+step
+goto khasdaskeep02_base 41.13,72.79
+click Meirvale Keep Palace
 |tip Manually skip to the next step.
 step
 

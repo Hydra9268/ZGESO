@@ -496,6 +496,8 @@ Data.MapIdsByName = {
 	["The Stitches"]					= 454,
 	["Sleepy Senche Mine"]				= 455,
 	["Cicatrice Caverns"]				= 456,
+	["Meirvale Keep Dungeons"]			= 457,
+	["Meirvale Keep Courtyard"]			= 458,
 }
 
 -----------------------------------------

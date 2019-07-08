@@ -627,6 +627,9 @@ ZGV.MapData = {
 		["Sleepy Senche Mine"] = [[mulaamnirslair_base]],
 		["Cicatrice Caverns"] = [[cicatriceoasis_base]],
 		["Cicatrice Caverns"] = [[cicatriceoasisupperfloor_base]],
+		["Cicatrice Caverns"] = [[cicatriceoasisbossroom_base]],
+		["Meirvale Keep Dungeons"] = [[khasdaskeep01_base]],
+		["Meirvale Keep Courtyard"] = [[khasdaskeep02_base]],
 
 	},
 	["Zones"] =
@@ -768,6 +771,9 @@ ZGV.MapData = {
 		["mulaamnirslair_base"] =			{ name = "Sleepy Senche Mine",				id = 455, xoffset = -0.0872164758717030031, yoffset = 0.7112151397071400094, xscale = 0.0013111368190385189, },
 		["cicatriceoasis_base"] =			{ name = "Cicatrice Caverns",				id = 456, xoffset = -0.0020378450946176999, yoffset = -0.0167359827609490017, xscale = 0.0155296366481127886, },
 		["cicatriceoasisupperfloor_base"] =	{ name = "Cicatrice Caverns",				id = 456, xoffset = -0.0017628095026546999, yoffset = -0.0278907573691770001, xscale = 0.0155296235616841933, },
+		["cicatriceoasisbossroom_base"] = 	{ name = "Cicatrice Caverns",				id = 456, xoffset = -0.0020278142112772, yoffset = 0.023856637779732, xscale = 0.023856637779732, },
+		["khasdaskeep01_base"] = 			{ name = "Meirvale Keep Dungeons",			id = 457, xoffset = -0.070142374796999, yoffset = -0.10982660900852, xscale = 0.82520440937645, },
+		["khasdaskeep02_base"] = 			{ name = "Meirvale Keep Courtyard",			id = 458, xoffset = -0.065837152214287, yoffset = 0.8653351188227, xscale = 0.77455473193279, },
 
 
 		-- EXISTING
