@@ -489,7 +489,7 @@ Data.MapIdsByName = {
 	-- ELSWEYR
 	["Elsweyr"]							= 448,
 	["Rimmen"]							= 449,
-	["Riverhold City"]					= 450,
+	["Riverhold"]						= 450,
 	["Adobe of Ignominy"]				= 451,
 	["Tomb of the Serpents"]			= 452,
 	["Smuggler's Hideout"]				= 453,
@@ -498,6 +498,9 @@ Data.MapIdsByName = {
 	["Cicatrice Caverns"]				= 456,
 	["Meirvale Keep Dungeons"]			= 457,
 	["Meirvale Keep Courtyard"]			= 458,
+	["Meirvale Keep Palace"]			= 459,
+	["Meirvale Keep Dugout"]			= 460,
+	["Rimmen Palace Recesses"]			= 461,
 }
 
 -----------------------------------------

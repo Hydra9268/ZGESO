@@ -23891,8 +23891,8 @@ step
 accept A Rage of Dragons
 step
 'Open your map. Right click until you see the Tamirel map.
-'Travel to the _Rimmem_ Wayshrine
-|tip It can be found in the new Elsweyr map in the southeast of Tamriel, just below Cyrodiil. Once you're in Rimmem, I recommend buying a set of lockpicks.
+'Travel to the _Rimmen_ Wayshrine
+|tip It can be found in the new Elsweyr map in the southeast of Tamriel, just below Cyrodiil. Once you're in Rimmen, I recommend buying a set of lockpicks.
 |tip Manually skip to the next step.
 step
 goto rimmen_base 08.14,55.18
@@ -24818,7 +24818,7 @@ talk Iokkas
 |tip Manually skip to the next step.
 step
 'Open your map.
-'Travel to the _Rimmem_ Wayshrine
+'Travel to the _Rimmen_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto rimmen_base 23.62,35.43
@@ -24992,6 +24992,199 @@ click Southern Close
 step
 goto khasdaskeep02_base 41.13,72.79
 click Meirvale Keep Palace
+|tip Manually skip to the next step.
+step
+goto khasdaskeep03_base 66.87,83.26
+talk Tasnasi
+|tip Going forward you don't need to sneak around. You can kill anyone in the Palace with impunity.
+|tip Manually skip to the next step.
+step
+goto khasdaskeep03_base 42.53,48.73
+'Press _E_ to Take _Treasure Vault Key_
+'Take _Treasure Vault Key_
+|tip Manually skip to the next step.
+step
+goto khasdaskeep03_base 40.86,61.50
+'Go downstairs from here
+|tip Manually skip to the next step.
+step
+goto khasdaskeep05_base 31.82,17.67
+'Make you way to this spot
+|tip Manually skip to the next step.
+step
+goto khasdaskeep05_base 72.79,20.13
+'Press _E_ to Take _Treasure Vault Key_
+'Take _Treasure Vault Key_
+|tip Manually skip to the next step.
+step
+goto khasdaskeep05_base 77.08,14.37
+'Go up the stairs from here
+|tip Manually skip to the next step.
+step
+goto khasdaskeep03_base 76.93,47.14
+'Go up the stairs from here
+|tip Manually skip to the next step.
+step
+goto khasdaskeep04_base 70.11,50.31
+'Press _E_ to Take _Treasure Vault Key_
+'Take _Treasure Vault Key_
+|tip Manually skip to the next step.
+step
+goto khasdaskeep04_base 77.00,55.05
+'Go downstairs from here
+|tip Manually skip to the next step.
+step
+goto khasdaskeep03_base 40.86,61.50
+'Go downstairs from here
+|tip Manually skip to the next step.
+step
+goto khasdaskeep05_base 19.26,50.63
+click Meirvale Keep Dugout
+|tip Manually skip to the next step.
+step
+goto khasdaskeep06_base 23.87,41.33
+click Khasda's Torture Chamber
+|tip Note: When you see the patrol join the other two, know that the fight can be challenging. The best approach is to pull the two guards away from the patrol. If you somehow die and can resurrect on the spot do so and quickly run to the door to bypass all guards.
+|tip Manually skip to the next step.
+step
+goto khasdaskeep06_base 54.49,45.05
+kill Cud
+'A simple melee fight. Stay out of Cud's telegraphs and charges.
+|tip Manually skip to the next step.
+step
+goto khasdaskeep06_base 59.48,37.13
+'Press _E_ to Untie _Tasnasi_
+|tip Manually skip to the next step.
+step
+goto khasdaskeep06_base 61.07,26.24
+click Elsweyr
+|tip Manually skip to the next step.
+step
+goto stitches_base 45.03,80.05
+talk Tasnasi
+|tip Choice: You can suggest Tasnasi kill or spare Khasda's life. Killing Khasda leads to a sad ending for everyone while sparing his life leads to a happier ending.
+|tip Manually skip to the next step.
+step
+goto stitches_base 46.54,78.89
+'Drop down on to the path from here
+|tip Manually skip to the next step.
+step
+goto stitches_base 55.40,51.71
+talk Tasnasi
+|tip Manually skip to the next step.
+step
+'Open your map. Right click to bring up the Elsweyr map.
+'Travel to _Riverhold_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 50.08,19.46
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 53.69,68.68
+talk Cadwell
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 56.21,68.67
+click K'har Zhab Hall
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 55.12,70.90
+talk Abnur Tharn
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 54.97,71.06
+talk Captain Nala-do
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 54.26,71.78
+talk Lord Gharesh-ri
+|tip Manually skip to the next step.
+step
+'Open your map. Right click to bring up the Elsweyr map.
+'Travel to _Rimmen_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto rimmen_base 26.11,59.56
+talk Abnur Tharn
+|tip Choice: You can see Thorn's tour of Euraxia's tyranny or you can skip the tour. For the sake of this guide chose the tour.
+|tip Manually skip to the next step.
+step
+goto rimmen_base 43.17,59.51
+talk Abnur Tharn
+|tip Manually skip to the next step.
+step
+goto rimmen_base 48.47,52.17
+'Press _E_ to Examine _A Job Offer_
+accept In Defense of Elsweyr
+|tip Manually skip to the next step.
+step
+goto rimmen_base 46.32,47.94
+talk Abnur Tharn
+|tip Manually skip to the next step.
+step
+goto rimmen_base 61.92,45.17
+talk Abnur Tharn
+|tip Manually skip to the next step.
+step
+goto rimmen_base 73.42,38.40
+click Rimmen Palace
+|tip Manually skip to the next step.
+step
+goto rimmen_base 77.61,36.85
+talk Zumog Phoom
+|tip Manually skip to the next step.
+step
+goto rimmen_base 77.61,36.85
+click Rimmen Palace Throne Room
+|tip Manually skip to the next step.
+step
+talk Eyraxia Tharn
+|tip Note: The mapping coordinates in the Throne Room appear to be "broken."
+|tip Manually skip to the next step.
+step
+goto rimmensewer_base 54.07,95.67
+talk Abnur Tharn
+|tip Manually skip to the next step.
+step
+goto rimmensewer_base 49.98,90.05
+'Continue West from here
+|tip Manually skip to the next step.
+step
+goto rimmensewer_base 42.86,90.14
+'Continue North from here
+|tip Manually skip to the next step.
+step
+goto rimmensewer_base 42.95,71.13
+'Continue East from here
+|tip Manually skip to the next step.
+step
+goto rimmensewer_base 55.71,74.71
+'Continue North from here
+|tip Manually skip to the next step.
+step
+goto rimmensewer_base 56.02,62.16
+'Continue Northeast from here
+|tip Manually skip to the next step.
+step
+goto rimmensewer_base 40.24,52.96
+'Continue North from here
+|tip Manually skip to the next step.
+step
+goto rimmensewer_base 41.71,26.48
+'Continue Northwest from here
+|tip Manually skip to the next step.
+step
+goto rimmensewer_base 35.30,22.46
+'Continue North from here
+|tip Manually skip to the next step.
+step
+goto rimmensewer_base 39.66,04.55
+click Elsweyr
+|tip Manually skip to the next step.
+step
+goto rimmen_base 66.51,28.86
+talk Abnur Tharn
 |tip Manually skip to the next step.
 step
 

@@ -619,7 +619,7 @@ ZGV.MapData = {
 		-- ELSWEYR
 		["Elsweyr"] = [[elsweyr_base]],
 		["Rimmen"] = [[rimmen_base]],
-		["Riverhold City"] = [[riverholdcity_base]],
+		["Riverhold"] = [[riverholdcity_base]],
 		["Adobe of Ignominy"] = [[abodeofignominy_base]],
 		["Tomb of the Serpents"] = [[tombofserpents_base]],
 		["Smuggler's Hideout"] = [[smugglershideout_base]],
@@ -630,7 +630,12 @@ ZGV.MapData = {
 		["Cicatrice Caverns"] = [[cicatriceoasisbossroom_base]],
 		["Meirvale Keep Dungeons"] = [[khasdaskeep01_base]],
 		["Meirvale Keep Courtyard"] = [[khasdaskeep02_base]],
-
+		["Meirvale Keep Palace"] = [[khasdaskeep03_base]],
+		["Meirvale Keep Palace"] = [[khasdaskeep04_base]],
+		["Meirvale Keep Palace"] = [[khasdaskeep05_base]],
+		["Meirvale Keep Dugout"] = [[khasdaskeep06_base]],
+		["Rimmen Palace Recesses"] = [[rimmensewer_base]],
+		
 	},
 	["Zones"] =
 	{
@@ -763,7 +768,7 @@ ZGV.MapData = {
 		-- ELSWEYR
 		["elsweyr_base"] =					{ name = "Elsweyr",							id = 448, xoffset = 0.45640256807954, yoffset = 0.57828674362147, xscale = 0.1449014005214, },
 		["rimmen_base"] =					{ name = "Rimmen",							id = 449, xoffset = 0.5673620104789733887, yoffset = 0.6207519769668579102, xscale = 0.0195800814447080231, },
-		["riverholdcity_base"] =			{ name = "Riverhold City",					id = 450, xoffset = 0.5673620104789733887, yoffset = 0.6207519769668579102, xscale = 0.0195800814447080231, },
+		["riverholdcity_base"] =			{ name = "Riverhold",						id = 450, xoffset = 0.5673620104789733887, yoffset = 0.6207519769668579102, xscale = 0.0195800814447080231, },
 		["abodeofignominy_base"] =			{ name = "Adobe of Ignominy",				id = 451, xoffset = -0.052669004647919, yoffset = 1.051393300248, xscale = 0.61963534879905, },
 		["tombofserpents_base"] =			{ name = "Tomb of the Serpents",			id = 452, xoffset = -0.1107980802902800016, yoffset = -0.0700489259590350022, xscale = 0.0010544355350735545, },
 		["smugglershideout_base"] =			{ name = "Smuggler's Hideout",				id = 453, xoffset = -0.0737909785799060053, yoffset = -0.0645435687268910013, xscale = 0.0009725770818079637, },
@@ -774,6 +779,11 @@ ZGV.MapData = {
 		["cicatriceoasisbossroom_base"] = 	{ name = "Cicatrice Caverns",				id = 456, xoffset = -0.0020278142112772, yoffset = 0.023856637779732, xscale = 0.023856637779732, },
 		["khasdaskeep01_base"] = 			{ name = "Meirvale Keep Dungeons",			id = 457, xoffset = -0.070142374796999, yoffset = -0.10982660900852, xscale = 0.82520440937645, },
 		["khasdaskeep02_base"] = 			{ name = "Meirvale Keep Courtyard",			id = 458, xoffset = -0.065837152214287, yoffset = 0.8653351188227, xscale = 0.77455473193279, },
+		["khasdaskeep03_base"] = 			{ name = "Meirvale Keep Palace",			id = 459, xoffset = -0.07457031276868, yoffset = -0.075065157231929, xscale = 0.87729779727859, },
+		["khasdaskeep04_base"] = 			{ name = "Meirvale Keep Palace",			id = 459, xoffset = 0.5113008022308349609, yoffset = 0.6604316234588623047, xscale = 0.0034103781471636484, },
+		["khasdaskeep05_base"] = 			{ name = "Meirvale Keep Palace",			id = 459, xoffset = 0.77372010630502, yoffset = -0.10604920189521, xscale = -0.84559574459565, },
+		["khasdaskeep06_base"] = 			{ name = "Meirvale Keep Dugout",			id = 460, xoffset = -0.055645316762388, yoffset = -0.095929767216818, xscale = 0.65465078543986, },
+		["rimmensewer_base"] = 				{ name = "Rimmen Palace Recesses",			id = 461, xoffset = -0.10730242612595, yoffset = -0.060122322982268, xscale = 1.2623814838347, },
 
 
 		-- EXISTING
