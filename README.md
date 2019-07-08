@@ -29,107 +29,19 @@ For example, 1.4.96
 
 ----
 
-### Available ZG Map Data Slash Commands
-
-* `/zgpos` - For city and delve data, and also to confirm the map's DDS filename is correct.
-* `/zgpos gps` - For general map data. Works on any map.
-
-<img src="https://i.imgur.com/82pKr03.png">
-
-----
-
-### Zygor Guide Bug Reporting Functions
-
-Creates a Bug Report in a dedicated window for the current guide step
-```lua
-/run d(ZGV.BugReport:ShowReport())
-```
-*output*<br>
-<img src="https://i.imgur.com/fMOreQ8.png" width="800">
-
-----
-
-### Zygor Guide Public Functions
-
-Retrieve current player's name
-```lua
-/run d(ZGV.Utils.GetPlayerName())
-```
-
-Retrieve partial information from ZGESO.txt
-```lua
-/run d(ZGV.Utils.GetMyAddonInfo())
-```
-
-Provides a status of all AddOn functions running
-```lua
-/run d(ZGV.Testing)
-```
-*output*
-```lua
-.(table): testdata = table: 000002568FA173D8
-.(function): RunTests = function: 000002568FA172A0
-.(function): RunAllTests = function: 000002568FA17420
-.(function): RegisterTestGroup = function: 000002568FA18640
-.(table): results = table: 000002568FA17348
-.  (table): testsPassed = table: 00000256E0CC70B8
-.    (string): All.Localization.TestLocalization = ok
-.    (string): All.UI.TestCreation = ok
-.    (string): All.GuideParsing.TestQuestIds = ok
-.    (string): All.Localization.TestPlural = ok
-.    (string): All.DataCollecting.TestNpcData = ok
-.    (string): All.GuideParsing.TestMapParsing = ok
-.    (string): All.Quests.TestQuestIds = ok
-.  (table): testsFailed = table: 000002568F6D41E0
-.(function): RegisterTest = function: 000002560B5EBB90
-.(function): Debug = function: 000002560B5EA868
-.(function): DumpMissingData = function: 000002568FA186C8
-.(table): testgroups = table: 000002568FA17390
-.  (table): Quests = table: 000002568C1F2EA8
-.  (table): UI = table: 000002568EEF2A18
-.    (function): TestCreation = function: 000002568EEF2A60
-.  (table): DataCollecting = table: 000002568EEF49B8
-.    (function): TestNpcData = function: 000002569C551F08
-.  (table): GuideParsing = table: 000002569C5519E0
-.    (function): TestMapParsing = function: 000002569C551AD8
-.    (function): TestQuestIds = function: 000002569C551A28
-.  (table): Localization = table: 000002568EEF3FB0
-.    (function): TestLocalization = function: 000002560B5EA938
-.    (function): TestPlural = function: 000002568EEF3FF8
-.(function): RunTestGroup = function: 000002560B5EB0A8
-```
-
-----
-
-### Zygor Guide Travel Functions
-
-List all travel destinations by key/id pair
-```lua
-/run d(ZGV.Travel)
-```
-*output*<br>
-<img src="https://i.imgur.com/ENpv0MK.png" width="400">
-
-----
-
 ### Slash commands
 
 * `/zygor` = /zgv
-* `/zygor debug` = toggles debug mode on and off
-* `/run` = /script
 * `/re` = /reloadui
-* `/zgpos` - For city and delve data, and also to confirm the map's DDS filename is correct.
+* `/zgpos` - For city and delve data. Also displays the map's correct DDS filename.
 * `/zgpos gps` - For general map data. Works in any map.
-* `/zgpos floor` - Retrieves floor information. First value is current floor. Second is total number of.
 
 ----
 
-### Miscellaneous
+## Addon Resource
 
-Outputs code to the chat window. d is short for "debug" (the equivalent of console.log in JavaScript)
-```lua
-d()
-```
+* <a href="https://esoui.com/downloads/fileinfo.php?id=2062#info" target="_blank">Addon page on ESO UI</a>
+* <a href="https://www.zygorguides.com/forum/forumdisplay.php?84-Leveling-Guides" target="_blank">Discussion forum related to Zygor's original ESO</a> (Slightly deprecated, but I regularly visit)
 
 ----
 
