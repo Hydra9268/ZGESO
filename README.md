@@ -38,7 +38,7 @@ For example, 1.4.96
 
 ----
 
-## Addon Resource
+### Addon Resource
 
 * <a href="https://esoui.com/downloads/fileinfo.php?id=2062#info" target="_blank">Addon page on ESO UI</a>
 * <a href="https://www.zygorguides.com/forum/forumdisplay.php?84-Leveling-Guides" target="_blank">Discussion forum related to Zygor's original ESO</a> (Slightly deprecated, but I regularly visit)
