@@ -25316,6 +25316,217 @@ goto riverholdcity_base 57.11,69.14
 click Riverhold
 |tip Manually skip to the next step.
 step
+goto riverholdcity_base 54.57,79.91
+talk Khamira
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 54.57,79.91
+talk Zamarak
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 42.31,55.44
+'Make your way to here.
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 44.72,15.63
+'Follow the road North from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 45.50,12.43
+'Make your way to this spot.
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 46.05,11.66
+'Make your way to this spot.
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 46.78,11.52
+click Greenleaf Farmhouse
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 46.79,11.66
+talk Tsazii
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 46.80,11.76
+click Elsweyr
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 46.05,11.67
+'Make your way to this spot.
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 44.92,12.12
+'Drop down from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 43.04,12.53
+'Make your way to this spot.
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 42.18,11.92
+talk Kinaro
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 44.68,11.32
+'Run up the hill from here and immediately head east to avoid the wolf pack
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 46.02,11.68
+'Make you way to this spot
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 46.78,11.52
+click Greenleaf Farmhouse
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 46.83,11.62
+talk Tsazii
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 46.80,11.68
+talk Khamira
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 46.79,11.75
+click Elsweyr
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 46.05,11.66
+'Make you way to this spot
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 45.44,12.43
+'Make you way to this spot
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 42.33,14.19
+'Make you way to this spot
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 42.54,14.80
+'Press _E_ to Startle _Horses_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 42.57,15.00
+'Press _E_ to Burn _Euraxian Supply Cart_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 42.24,15.09
+'Press _E_ to Burn _Euraxian Supply Cart_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 43.50,17.26
+Swim to this spot
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 43.75,17.71
+'Press _E_ to Startle _Horses_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 43.61,17.80
+'Press _E_ to Burn _Euraxian Supply Cart_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 43.81,18.13
+'Press _E_ to Burn _Euraxian Supply Cart_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 45.96,18.30
+talk Captain Nala-do
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 49.27,22.72
+talk Cadwell
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 49.63,23.31
+'Press _E_ to Arm _Cadwell's Complex Trap_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 48.96,23.45
+'Press _E_ to Arm _Cadwell's Complex Trap_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 49.31,23.00
+talk Cadwell
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 50.34,20.06
+talk Khamira
+'Select I am Ready to Defend Riverhold
+|tip Manually skip to the next step.
+step
+goto riverholdinstance_base 53.61,78.33
+'Listen to the dialog
+|tip Manually skip to the next step.
+step
+goto riverholdinstance_base 48.96,55.38
+'Defend the town
+|tip Manually skip to the next step.
+step
+goto riverholdinstance_base 49.35,32.36
+click Temple of the Purifying Moons
+|tip Manually skip to the next step.
+step
+goto riverholdinstance_base 49.39,17.30
+'Run to Zamarak
+|tip Manually skip to the next step.
+step
+goto riverholdinstance_base 48.63,48.47
+click Elsweyr
+|tip Manually skip to the next step.
+step
+goto riverholdinstance_base 45.42,38.00
+'Jump over this wall
+|tip Manually skip to the next step.
+step
+goto riverholdinstance_base 35.21,30.25
+'Defend Zamarak from a couple waves of easy undead
+|tip Manually skip to the next step.
+step
+goto riverholdinstance_base 43.55,33.64
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto riverholdinstance_base 56.29,34.49
+'Follow the path Southeast from here
+|tip Manually skip to the next step.
+step
+goto riverholdinstance_base 65.58,46.80
+'Defend Zamarak from a few waves of easy undead
+|tip Manually skip to the next step.
+step
+goto riverholdinstance_base 63.19,63.95
+'Follow the path to this spot
+|tip Manually skip to the next step.
+step
+goto riverholdinstance_base 48.63,62.16
+'Press _E_ to Use _Ballista_
+'tip Tip: Aim the Ballista at the dragon and fire.
+|tip Manually skip to the next step.
+step
+goto riverholdinstance_base 48.41,55.21
+kill Bahlokdaan
+'This is a pretty tricky fight, but it has a pattern that is reasonably easy to follow. First, you'll need a ranged weapon. It's almost impossible to try and melee the dragon as it does a lot of damage in one melee hit. The trick is to use the walls in the courtyard to block various incoming telegraphs like fire breath and shouts (e.g., Skyrim stuff). When the dragon teleports you to its location immediately run back behind the wall. The best strategy to use is to strafe back and forth between two walls while firing at the dragon from the opening all-the-while paying attention to which telegraph the dragon uses. Depending on your range DPS this could take a while. But follow the pattern, and you'll bring the big guy down.
+|tip Manually skip to the next step.
+step
+goto riverholdinstance_base 56.21,68.67
+click K'har Zhab Hall
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 55.91,71.51
+talk Lord Gharesh-ri
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 57.90,72.32
+talk Abnur Tharn
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 55.76,71.94
+talk Lord Gharesh-ri
+|tip Manually skip to the next step.
+step
 
 
 ]])

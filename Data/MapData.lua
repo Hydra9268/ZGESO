@@ -619,7 +619,9 @@ ZGV.MapData = {
 		-- ELSWEYR
 		["Elsweyr"] = [[elsweyr_base]],
 		["Rimmen"] = [[rimmen_base]],
+		["Rimmen Palace Recesses"] = [[rimmensewer_base]],
 		["Riverhold"] = [[riverholdcity_base]],
+		["Riverhold"] = [[riverholdinstance_base]],
 		["Adobe of Ignominy"] = [[abodeofignominy_base]],
 		["Tomb of the Serpents"] = [[tombofserpents_base]],
 		["Smuggler's Hideout"] = [[smugglershideout_base]],
@@ -634,7 +636,6 @@ ZGV.MapData = {
 		["Meirvale Keep Palace"] = [[khasdaskeep04_base]],
 		["Meirvale Keep Palace"] = [[khasdaskeep05_base]],
 		["Meirvale Keep Dugout"] = [[khasdaskeep06_base]],
-		["Rimmen Palace Recesses"] = [[rimmensewer_base]],
 		["Desert Wind Caverns"]	= [[DesertWind_Base]],
 		["Desert Wind Caverns"]	= [[DesertWind2_Base]],
 
@@ -788,6 +789,7 @@ ZGV.MapData = {
 		["rimmensewer_base"] = 				{ name = "Rimmen Palace Recesses",			id = 461, xoffset = -0.10730242612595, yoffset = -0.060122322982268, xscale = 1.2623814838347, },
 		["DesertWind_Base"] = 				{ name = "Desert Wind Caverns",				id = 462, xoffset = 0.68027687106131, yoffset = -0.066091675309389, xscale = -0.74347199023094, },
 		["DesertWind2_Base"] = 				{ name = "Desert Wind Caverns",				id = 462, xoffset = 0.5151584148406982422, yoffset = 0.6403092145919799805, xscale = 0.0000707205842843252, },
+		["riverholdinstance_base"] =		{ name = "Riverhold",						id = 463, xoffset = 0.52198414728959, yoffset = 0.59472691660133, xscale = 0.012638437289914, },
 
 
 		-- EXISTING

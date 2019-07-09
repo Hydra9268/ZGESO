@@ -502,6 +502,7 @@ Data.MapIdsByName = {
 	["Meirvale Keep Dugout"]			= 460,
 	["Rimmen Palace Recesses"]			= 461,
 	["Desert Wind Caverns"]				= 462,
+	["Riverhold"]						= 463,
 }
 
 -----------------------------------------
