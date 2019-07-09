@@ -635,7 +635,9 @@ ZGV.MapData = {
 		["Meirvale Keep Palace"] = [[khasdaskeep05_base]],
 		["Meirvale Keep Dugout"] = [[khasdaskeep06_base]],
 		["Rimmen Palace Recesses"] = [[rimmensewer_base]],
-		
+		["Desert Wind Caverns"]	= [[DesertWind_Base]],
+		["Desert Wind Caverns"]	= [[DesertWind2_Base]],
+
 	},
 	["Zones"] =
 	{
@@ -784,6 +786,8 @@ ZGV.MapData = {
 		["khasdaskeep05_base"] = 			{ name = "Meirvale Keep Palace",			id = 459, xoffset = 0.77372010630502, yoffset = -0.10604920189521, xscale = -0.84559574459565, },
 		["khasdaskeep06_base"] = 			{ name = "Meirvale Keep Dugout",			id = 460, xoffset = -0.055645316762388, yoffset = -0.095929767216818, xscale = 0.65465078543986, },
 		["rimmensewer_base"] = 				{ name = "Rimmen Palace Recesses",			id = 461, xoffset = -0.10730242612595, yoffset = -0.060122322982268, xscale = 1.2623814838347, },
+		["DesertWind_Base"] = 				{ name = "Desert Wind Caverns",				id = 462, xoffset = 0.68027687106131, yoffset = -0.066091675309389, xscale = -0.74347199023094, },
+		["DesertWind2_Base"] = 				{ name = "Desert Wind Caverns",				id = 462, xoffset = 0.5151584148406982422, yoffset = 0.6403092145919799805, xscale = 0.0000707205842843252, },
 
 
 		-- EXISTING

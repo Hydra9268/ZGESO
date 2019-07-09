@@ -25187,6 +25187,135 @@ goto rimmen_base 66.51,28.86
 talk Abnur Tharn
 |tip Manually skip to the next step.
 step
+'Open your map.
+'Travel to _Rimmen_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto rimmen_base 30.14,71.70
+talk Jo'isi
+|tip Manually skip to the next step.
+step
+'Open your map. Right click until you see the Elsweyr map.
+'Travel to _The Stitches_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 41.55,44.61
+'Follow the road Northeast to here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 41.04,44.16
+'Sneak over to this spot
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 40.37,44.29
+'Sneak over to this spot (Wait until the guard patrols away)
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 40.54,43.81
+'Sneak over to this spot (Wait until the guard patrol passes south)
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 40.34,43.58
+'Sneak North along the rock wall here until you reach the Desert Wind Caverns entrance
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 39.66,43.09
+click Desert Wind Caverns
+|tip Manually skip to the next step.
+step
+goto DesertWind_Base 30.43,84.97
+'Dropdown from here
+|tip Manually skip to the next step.
+step
+goto DesertWind_Base 23.27,84.91
+'Sneak Northwest along the rock wall to here
+|tip Manually skip to the next step.
+step
+goto DesertWind_Base 21.93,80.43
+'Sneak North along the rock wall to here
+|tip Manually skip to the next step.
+step
+goto DesertWind_Base 23.08,75.13
+'Sneak North along the rock wall to here
+|tip Manually skip to the next step.
+step
+goto DesertWind_Base 29.03,69.63
+'Sneak Northeast along the rock wall to the stairs here
+|tip Manually skip to the next step.
+step
+goto DesertWind_Base 31.84,54.92
+'Sneak up into the hollow path from here
+|tip Manually skip to the next step.
+step
+goto DesertWind_Base 53.52,69.25
+'Sneak through the hollow to this spot underneath the tree
+|tip Manually skip to the next step.
+step
+goto DesertWind_Base 60.42,62.53
+'Sneak into the next hollow to this spot
+|tip Manually skip to the next step.
+step
+goto DesertWind_Base 57.23,57.74
+'Sneak to this spot
+|tip Manually skip to the next step.
+step
+goto DesertWind_Base 61.89,53.39
+'Sneak along the rock face to this spot
+|tip Manually skip to the next step.
+step
+goto DesertWind_Base 63.87,46.93
+talk Zamarak
+|tip Manually skip to the next step.
+step
+goto DesertWind_Base 64.32,46.93
+click Desert Wind Adeptorium
+|tip Manually skip to the next step.
+step
+goto DesertWind_Base 69.25,46.93
+'Press _E_ to Enter _Desert Wind Main Hall_
+|tip Manually skip to the next step.
+step
+goto DesertWind_Base 76.94,47.48
+kill Lieutenant Lepida
+'A simple boss fight. She's a lightning caster, so you want to avoid the cross-shaped pool of water as much as possible. Beyond that, try and interrupt her casts and DPS her down.
+|tip Manually skip to the next step.
+step
+goto DesertWind_Base 82.67,46.80
+click Grand Adept's Chambers
+|tip Manually skip to the next step.
+step
+goto DesertWind2_Base 37.08,49.44
+talk Lieutenant Lepida's Shade
+|tip Manually skip to the next step.
+step
+goto DesertWind2_Base 44.94,48.88
+talk Zamarak
+|tip Manually skip to the next step.
+step
+'Open your map. Right click until you see the Elsweyr map.
+'Travel to _Riverhold_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 50.08,19.46
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 56.21,68.67
+click K'har Zhab Hall
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 55.05,71.15
+talk Abnur Tharn
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 54.98,71.70
+talk Gharesh-ri
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 57.11,69.14
+click Riverhold
+|tip Manually skip to the next step.
+step
 
 
 ]])
