@@ -25527,6 +25527,147 @@ goto riverholdcity_base 55.76,71.94
 talk Lord Gharesh-ri
 |tip Manually skip to the next step.
 step
+'Open your map. Right click until you see the Elsweyr map.
+'Travel to _Rimmen_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto rimmen_base 33.07,85.67
+'Make your way to this spot, and follow the road south until you reach the tree up ahead.
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 71.66,38.34
+'Continue to this spot
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 70.69,39.75
+'Jump across the ravine here (watch out for the patroling Minotaur)
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 69.19,40.05
+'Continue to this spot
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 68.98,39.33
+'Continue to the road.
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 67.99,39.13
+talk Narayun
+accept In Sickness and In Health
+step
+goto elsweyr_base 68.98,39.33
+'Continue to here.
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 68.86,40.70
+'Continue to here.
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 68.21,40.78
+talk Aneshi the Shrine Keeper
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 68.20,40.75
+'Press _E_ to Examine _Aneshi's Note_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 71.15,41.58
+'Continue to this spot (watch out for the Minotaur patrol)
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 72.94,40.81
+talk Vazbi
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 73.22,41.76
+'Continue to this spot to trigger the next step in Vazbi's quest
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 73.28,42.88
+'Press _E_ to Examine _Aqueduct Sluice Gate_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 75.05,43.26
+'Continue to the road here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 75.97,42.69
+'Continue to this spot
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 77.33,44.29
+'Press _E_ to Examine _Aqueduct Sluice Gate_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 77.33,44.29
+'Press _E_ to Examine _Torn Habit_
+'Take _Torn Habit_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 77.33,44.29
+talk Vazbi
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 77.87,44.35
+'Press _E_ to Examine _Bloody Habit_
+'Take _Bloody Habit_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 77.80,43.58
+'Press _E_ to Examine _Weathered Cameo_
+'Take _Weathered Cameo_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 77.32,43.13
+'Press _E_ to Examine _Crumpled Nursery Rhyme_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 76.43,42.85
+'Press _E_ to Examine _Swaddling Cloth_
+'Take _Swaddling Cloth_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 75.61,42.36
+'Continue to this spot
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 76.18,42.02
+'Press _E_ to Examine _Scarred Coin_
+'Take _Scarred Coin_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 76.18,42.02
+talk Vazbi
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 78.13,41.84
+'Follow the ravine to this spot
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 79.42,40.82
+'Follow the ravine to this spot to trigger the next step in Vazbi's quest
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 81.40,41.96
+'Kill the four waves of easy mobs.
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 82.53,41.38
+talk Silhu-jo
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 83.48,39.95
+'Follow the ravine to this spot
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 85.01,42.16
+talk Silhu-jo
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 85.07,42.37
+talk Upper Baan Dar Caverns
+|tip Manually skip to the next step.
+step
 
 
 ]])
