@@ -25665,9 +25665,275 @@ talk Silhu-jo
 |tip Manually skip to the next step.
 step
 goto elsweyr_base 85.07,42.37
-talk Upper Baan Dar Caverns
+click Upper Baan Dar Caverns
+|tip Note: You'll encounter waves of mobs after entering.
 |tip Manually skip to the next step.
 step
-
+goto elsweyr_base 84.13,43.32
+talk Vazbi
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 84.00,43.14
+click Baan Dar Overlook
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 83.54,43.07
+kill Hulzar
+'This is a simple fight. However, note that Hulzar does hit hard, so you'll want to keep health potion on the ready. Kill Hulzar's minions when they appear (or include them in your AOE attacks) and avoid his telegraphs.
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 82.17,43.67
+'Continue to this spot
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 81.76,44.54
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 81.97,44.28
+'Press _E_ to Open _Baan-Dar Sluice Gate_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 81.56,44.80
+'Run underneath the Aquaduct West from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 78.95,44.64
+'Drop down from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 77.36,44.61
+'Continue to run underneath the Aquaduct West to here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 74.96,44.03
+'Drop down from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 73.57,42.74
+'Continue to run underneath the Aquaduct West to here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 72.57,40.24
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 72.86,40.10
+talk Vazbi
+|tip Choice: You can suggest Vazbi stay or leave. Telling her to go leads to a sad ending (Spoiler: She's carrying a disease. If she leaves, she will infect others) while telling her to stay leads to a happier ending (Spoiler: The monks can heal her).
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 71.20,41.55
+'Continue up the hill to this spot
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 69.24,39.94
+'Continue up the hill to this spot
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 68.94,39.31
+'Continue to the road here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 65.55,38.73
+'Follow the road West to here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 65.55,38.73
+'Reach this spot the trigger the next step of the Two Queens quest
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 62.14,38.42
+'Follow the dirt path to here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 59.97,38.73
+'Follow the dirt path to here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 59.99,39.16
+'Press _E_ to Dig _Aneshi's Mound_
+'Take _Rimmen Master Key_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 60.02,39.39
+'Drop down from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 59.98,40.64
+'Continue to the road here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 60.84,43.68
+'At the fork in the road, go left from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 67.26,44.23
+talk Ashur
+accept Descendant of the Potentate
+step
+goto elsweyr_base 67.36,44.29
+'Follow the road Southeast from here
+accept Descendant of the Potentate
+step
+goto elsweyr_base 70.45,45.85
+wayshrine Hakoshae
+step
+goto elsweyr_base 71.15,46.39
+'At the fork in the road, go right from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 71.83,47.48
+'At the fork in the road, go left from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 73.24,47.66
+talk Magnate Feina-Darak
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 71.79,48.79
+talk Domitia Nasica
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 71.65,48.68
+'Press _E_ to _Use Paper Lotus_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 71.77,48.76
+talk Domitia Nasica
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 70.51,48.67
+talk Vek-Drassi Secunia
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 71.75,47.53
+'At the fork in the road, go left from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 71.27,46.46
+'At the fork in the road, go left from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 69.06,46.10
+'At the fork in the road, go right from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 68.84,43.21
+'Continue to this point. Be sure to avoid the Minotaur.
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 68.55,42.72
+'Continue to up the hill to this point
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 67.59,42.18
+'Drop down from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 65.12,42.44
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 63.12,42.12
+kill Senche-Lion
+'Kill the waves of lions, and then kill the Senche-Lion boss. There are no range or telegraph attacks to look out for making this a simple melee fight.
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 63.19,42.35
+'Press _E_ to Take _Sugar Daisy_
+'Take _Sugar Daisy_
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Travel to the _Hakoshae_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 71.47,47.78
+'Cross the bridge here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 70.51,48.67
+talk Vek-Drassi Secunia
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 74.69,48.06
+talk Valoria Marius
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 74.55,47.84
+'Press _E_ to Take _Bowl_
+'Take _Bowl_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 74.69,48.06
+talk Valoria Marius
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 74.73,47.92
+talk Ashur
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 74.09,48.52
+talk Captain Verus
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 73.26,49.06
+click Manor Cellar
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 73.56,48.72
+'Press _E_ to Search _Chest_
+'Take all item
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 73.49,48.63
+'Press _E_ to Examine _Tale of the Elements_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 73.47,48.66
+'Press _E_ to Place _East Socket_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 73.47,48.66
+'Press _E_ to Place _West Socket_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 73.49,48.63
+'Press _E_ to Place _North Socket_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 73.47,48.66
+'Press _E_ to Place _South Socket_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 73.30,48.59
+click History Vault
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 73.10,48.46
+'Press _E_ to Examine _Letter to Feina-Darak_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 73.10,48.46
+talk Ashur
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 73.24,48.55
+click Manor Cellar
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 73.34,48.97
+click Hakoshae
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 75.31,48.60
+'Jump over the rock here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 76.73,46.80
+click Hakoshae Tombs
+|tip Manually skip to the next step.
+step
 
 ]])
