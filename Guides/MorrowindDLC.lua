@@ -25740,7 +25740,7 @@ goto elsweyr_base 65.55,38.73
 |tip Manually skip to the next step.
 step
 goto elsweyr_base 65.55,38.73
-'Reach this spot the trigger the next step of the Two Queens quest
+'Reaching this spot triggers the next step of the Two Queens quest
 |tip Manually skip to the next step.
 step
 goto elsweyr_base 62.14,38.42
@@ -25935,5 +25935,177 @@ goto elsweyr_base 76.73,46.80
 click Hakoshae Tombs
 |tip Manually skip to the next step.
 step
+goto hakoshaecrypts_base 15.76,69.42
+talk Ashur
+|tip Manually skip to the next step.
+step
+goto hakoshaecrypts_base 44.13,69.04
+'Continue North from here
+|tip Manually skip to the next step.
+step
+goto hakoshaecrypts_base 44.13,51.98
+'Continue East from here
+|tip Manually skip to the next step.
+step
+goto hakoshaecrypts_base 64.43,51.98
+'Continue North from here
+|tip Manually skip to the next step.
+step
+goto hakoshaecrypts_base 64.43,38.21
+'Continue West from here
+|tip Manually skip to the next step.
+step
+goto hakoshaecrypts_base 45.17,38.21
+kill Shade of the Founder
+'This is a simple fight. The Shade switches between ranged and melee attacks and occasionally summon minions. Kill the minions or include them in your AOE attacks and avoid the Shade's ranged telegraphs. Use health potion as needed.
+|tip Manually skip to the next step.
+step
+goto hakoshaecrypts_base 29.52,38.21
+click Founder Chamber
+|tip Manually skip to the next step.
+step
+goto hakoshaecrypts_base 18.80,37.75
+talk Proconsul Beloren-Kaie
+|tip Manually skip to the next step.
+step
+goto hakoshaecrypts_base 18.80,37.75
+talk Magnate Feina-Darak
+|tip Manually skip to the next step.
+step
+'Open your map. Right click to see the Elsweyr map.
+'Travel to the _Hakoshae_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 72.41,48.41
+'Enter the town of Hakoshae
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 74.56,47.21
+talk Ashur
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Travel to the _Rimmen_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto rimmen_base 37.32,82.39
+'Make your way to this spot
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 79.15,33.48
+talk Abnur Tharn
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 77.73,33.08
+'Make your way to the main road
+|tip Manually skip to the next step.
+step
+goto rimmen_base 45.38,49.46
+'Follow the road to here
+|tip Manually skip to the next step.
+step
+goto rimmen_base 46.10,47.51
+talk Rigurt the Brash
+accept Cross-cultural Confusion
+step
+'Open your map. Right click to see the Elsweyr map.
+'Travel to the _Riverhold_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 50.08,19.46
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto riverholdcity_base 45.62,58.29
+talk Thadarra
+|tip Choice: You can choose to pay Thadarra's delivery fee, or threaten to report her for extortion.
+|tip Manually skip to the next step.
+step
+'Open your map. Right click to bring up the Elsweyr map.
+'Travel to _The Stitches_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto stitches_base 46.84,28.43
+'Cross the bridge from here
+|tip Manually skip to the next step.
+step
+goto stitches_base 56.66,56.48
+talk Rigurt the Brash
+|tip Manually skip to the next step.
+step
+goto stitches_base 49.25,61.65
+'Cross the bridge from here
+|tip Manually skip to the next step.
+step
+goto stitches_base 48.78,74.29
+'Follow the path West from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 36.04,55.12
+'Follow the path South from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 37.23,58.45
+'Follow the path Southwest from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 37.91,60.47
+'Press _E_ to Talk _Help Wanted: Merryvale!_
+accept Home Sweet Home
+step
+goto elsweyr_base 37.87,62.17
+'Press _E_ to Take _Honey Flower_
+'Take _Honey Flower_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 36.51,62.53
+'Press _E_ to Take _Honey Flower_
+'Take _Honey Flower_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 37.00,64.64
+'Press _E_ to Take _Honey Flower_
+'Take _Honey Flower_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 38.82,64.06
+'Press _E_ to Take _Honey Flower_
+'Take _Honey Flower_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 39.83,65.60
+talk Rakhzargo
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 40.60,63.82
+talk Kideya
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 41.14,60.04
+talk Razum-dar
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 40.79,67.44
+talk Razum-dar
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 41.56,68.15
+talk Rigurt the Brash
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 39.84,67.00
+talk Asaldak
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 41.56,68.15
+talk Rigurt the Brash
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 40.61,68.61
+click Fragrant Moons Plantation
+'Note: You will be trespassing. If the guards catch you, they will attack. In other words, slow and undetected win the day. (Note: If caught, you'll still be able to continue, you'll only fail this option within the quest.)
+|tip Manually skip to the next step.
+step
+
 
 ]])

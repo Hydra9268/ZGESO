@@ -503,6 +503,7 @@ Data.MapIdsByName = {
 	["Rimmen Palace Recesses"]			= 461,
 	["Desert Wind Caverns"]				= 462,
 	["Riverhold"]						= 463,
+	["Hakoshae Tombs"]					= 464,
 }
 
 -----------------------------------------
