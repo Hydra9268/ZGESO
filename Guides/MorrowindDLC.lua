@@ -26103,9 +26103,108 @@ talk Rigurt the Brash
 step
 goto elsweyr_base 40.61,68.61
 click Fragrant Moons Plantation
-'Note: You will be trespassing. If the guards catch you, they will attack. In other words, slow and undetected win the day. (Note: If caught, you'll still be able to continue, you'll only fail this option within the quest.)
+'Note: You will be trespassing. If the guards catch you, they will attack. In other words, sneak carefully and remain undetected. (Note: If found, you'll still be able to continue, you'll only fail this option within the quest.)
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 41.24,68.66
+'Press _E_ to Spy _Vantage Point_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 40.73,70.56
+'Press _E_ to Examine _Terror Bird_
+'Take _Strange Claw_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 40.84,69.99
+click M'Zzum's Mansion
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 41.19,70.06
+'Sneak downstairs from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 40.40,70.61
+'Press _E_ to Examine _M'zum's Ledger_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 41.07,69.91
+'Run upstairs from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 40.87,69.85
+click Merryvale Farms
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 40.59,68.72
+click Merryvale Farms
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 40.01,62.17
+talk Razum-dar
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 38.10,66.04
+talk Itzi-Da
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 35.88,66.54
+talk J'dathal
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 36.50,67.92
+'Make your way here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 34.61,66.86
+'Run up the hill to here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 35.23,65.69
+talk Pashroni
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 35.34,67.71
+'Continue down the hill to here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 34.92,68.71
+talk Banji
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 34.09,67.09
+'Run up the hill to here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 34.04,69.07
+talk Nurra
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 34.02,67.44
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 32.86,66.33
+kill Dolor the Boorish
+'This is a simple fight. Dolor is a melee and AOE fighter, so avoid its telegraphs. Strafing attacks are the best strategy to avoid the telegraphs (or demolish it if you have enough DPS and health). Use health potion as needed.
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 33.61,66.66
+talk Razum-dar
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 36.78,68.05
+'Make your way to the main road here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 41.17,63.58
+click Storage Cellar
 |tip Manually skip to the next step.
 step
 
 
+
+
+goto elsweyr_base 58.56,65.80
+wayshrine Tenmar Template
+step
 ]])
