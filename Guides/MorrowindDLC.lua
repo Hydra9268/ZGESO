@@ -26200,11 +26200,128 @@ goto elsweyr_base 41.17,63.58
 click Storage Cellar
 |tip Manually skip to the next step.
 step
-
-
-
-
-goto elsweyr_base 58.56,65.80
-wayshrine Tenmar Template
+goto elsweyr_base 40.91,63.56
+'Press _E_ to Examine _Crates_
+|tip Manually skip to the next step.
 step
+goto elsweyr_base 40.77,63.81
+'Press _E_ to Examine _Urn_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 41.01,63.76
+'Press _E_ to Examine _Barrel_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 40.69,63.53
+'Press _E_ to Examine _Tapestry_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 40.69,63.53
+click Secret Tunnel
+|tip Manually skip to the next step.
+step
+goto merrivillesugarfarm_base 19.04,82.21
+talk Patia Cecia
+|tip Manually skip to the next step.
+step
+goto merrivillesugarfarm_base 78.02,36.80
+'Follow the path and
+click Skooma Workshop
+|tip Manually skip to the next step.
+step
+goto merrivillesugarfarm_base 78.02,36.80
+kill Saevus
+kill Timtem the Terrible
+'This is a simple fight. Neither are elite. Accordingly, they'll be effortless to dispatch. As before you'll encounter melee and AOE fighting, so avoid the telegraphs. Use health potion as needed.
+|tip Manually skip to the next step.
+step
+goto merrivillesugarfarm_base 42.84,21.80
+click Merryvale Farms
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 40.09,62.20
+talk Razum-dar
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 39.90,65.39
+'Make you way to the main road
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 58.85,65.96
+wayshrine Tenmar Temple
+step
+goto elsweyr_base 58.79,65.84
+talk Priest Haduras
+accept The Lunacy of Two Moons
+step
+goto elsweyr_base 55.06,66.35
+'Run up the hill from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 54.17,66.48
+'Enter the cavern here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 53.55,66.03
+kill Terro Bird Matriarch
+'This is a simple fight. The Matriarch uses melee and telegraph attacks. Use health potion as needed.
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 54.22,66.61
+talk Skooma Cat
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 54.94,67.64
+talk Priest Haduras
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 57.63,65.50
+'Run up the hill here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 58.50,63.28
+'Press _E_ to Take _Fork of Horripilation_
+'Take _The Fork of Horripilation_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 55.04,67.66
+talk Priest Haduras
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 54.84,67.87
+talk Skooma Cat
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 57.33,68.61
+'Go to this spot to trigger the next step in The Lunacy of Two Moons quest
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 58.30,68.54
+talk Moon-Priest Rilasu
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 59.06,68.60
+'Enter the temple
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 59.73,68.94
+'Run upstairs from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 59.33,68.61
+click Temple Balcony
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 59.03,68.62
+talk Moon-Bishop Sizenza
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 59.03,68.62
+talk Skooma Cat
+|tip Manually skip to the next step.
+step
+goto SkoomaCatsCloister1_base 50,50
+|tip Manually skip to the next step.
+step
+
 ]])

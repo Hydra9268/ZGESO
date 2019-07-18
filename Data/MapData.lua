@@ -639,6 +639,8 @@ ZGV.MapData = {
 		["Desert Wind Caverns"]	= [[DesertWind_Base]],
 		["Desert Wind Caverns"]	= [[DesertWind2_Base]],
 		["Hakoshae Tombs"] = [[hakoshaecrypts_base]],
+		["Merryvale Sugar Farm Caves"] = [[merrivillesugarfarm_base]],
+		["Skooma Cat's Cloister"] = [[SkoomaCatsCloister1_base]],
 
 	},
 	["Zones"] =
@@ -792,6 +794,8 @@ ZGV.MapData = {
 		["DesertWind2_Base"] = 				{ name = "Desert Wind Caverns",				id = 462, xoffset = 0.5151584148406982422, yoffset = 0.6403092145919799805, xscale = 0.0000707205842843252, },
 		["riverholdinstance_base"] =		{ name = "Riverhold",						id = 463, xoffset = 0.52198414728959, yoffset = 0.59472691660133, xscale = 0.012638437289914, },
 		["hakoshaecrypts_base"] =			{ name = "Hakoshae Tombs",					id = 464, xoffset = 0.62648280100757, yoffset = -0.089939457295248, xscale = -0.68468065683887, },
+		["merrivillesugarfarm_base"] =		{ name = "Merryvale Sugar Farm Caves",		id = 465, xoffset = 1.012512548987, yoffset = -0.075021835785277, xscale = -1.106571091789, },
+		["SkoomaCatsCloister1_base"] =		{ name = "Skooma Cat's Cloister",			id = 466, xoffset = 0.0033160001039505005, yoffset = 0.1430888026952743530, xscale = -0.0053979155195796004, },
 
 
 		-- EXISTING
