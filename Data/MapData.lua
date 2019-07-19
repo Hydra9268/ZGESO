@@ -641,6 +641,7 @@ ZGV.MapData = {
 		["Hakoshae Tombs"] = [[hakoshaecrypts_base]],
 		["Merryvale Sugar Farm Caves"] = [[merrivillesugarfarm_base]],
 		["Skooma Cat's Cloister"] = [[SkoomaCatsCloister1_base]],
+		["Skooma Cat's Cloister"] = [[SkoomaCatsCloister2_base]],
 
 	},
 	["Zones"] =
@@ -796,6 +797,7 @@ ZGV.MapData = {
 		["hakoshaecrypts_base"] =			{ name = "Hakoshae Tombs",					id = 464, xoffset = 0.62648280100757, yoffset = -0.089939457295248, xscale = -0.68468065683887, },
 		["merrivillesugarfarm_base"] =		{ name = "Merryvale Sugar Farm Caves",		id = 465, xoffset = 1.012512548987, yoffset = -0.075021835785277, xscale = -1.106571091789, },
 		["SkoomaCatsCloister1_base"] =		{ name = "Skooma Cat's Cloister",			id = 466, xoffset = 0.0033160001039505005, yoffset = 0.1430888026952743530, xscale = -0.0053979155195796004, },
+		["SkoomaCatsCloister2_base"] =		{ name = "Skooma Cat's Cloister",			id = 466, xoffset = 0.0028469154618319, yoffset = -0.023221453021521, xscale = -0.0031113830183955, },
 
 
 		-- EXISTING

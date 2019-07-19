@@ -26320,7 +26320,108 @@ goto elsweyr_base 59.03,68.62
 talk Skooma Cat
 |tip Manually skip to the next step.
 step
-goto SkoomaCatsCloister1_base 50,50
+goto SkoomaCatsCloister1_base 40.40,55.64
+'Make your way to here
+|tip Manually skip to the next step.
+step
+goto SkoomaCatsCloister1_base 59.54,40.55
+talk Moon-Bishop Sizenza
+|tip Manually skip to the next step.
+step
+goto SkoomaCatsCloister1_base 61.92,40.79
+'Press _E_ to Take _Milk-Toast Cream_
+'Take _Milk-Toast Cream_
+|tip Manually skip to the next step.
+step
+goto SkoomaCatsCloister1_base 59.56,40.42
+talk Skooma Cat
+|tip Manually skip to the next step.
+step
+goto SkoomaCatsCloister1_base 55.70,41.37
+'Press _E_ to Fill _Empty Bowl_
+|tip Manually skip to the next step.
+step
+goto SkoomaCatsCloister1_base 59.30,40.46
+talk Moon-Bishop Sizenza
+|tip Manually skip to the next step.
+step
+goto SkoomaCatsCloister1_base 64.53,51.18
+'Follow the path to here
+|tip Manually skip to the next step.
+step
+goto SkoomaCatsCloister1_base 50.93,61.41
+'Follow the path to here
+|tip Manually skip to the next step.
+step
+goto SkoomaCatsCloister1_base 67.95,64.10
+'Follow the path to here
+|tip Manually skip to the next step.
+step
+goto SkoomaCatsCloister1_base 69.46,55.70
+'Run upstairs from here
+|tip Manually skip to the next step.
+step
+goto SkoomaCatsCloister1_base 83.60,50.60
+'Press _E_ to Use _Delightfully Long Yarn_
+'Take _Delightfully Long Yarn_
+|tip Manually skip to the next step.
+step
+goto SkoomaCatsCloister1_base 84.22,54.54
+talk Skooma Cat
+|tip Manually skip to the next step.
+step
+goto SkoomaCatsCloister1_base 76.93,55.81
+'Press _E_ to Toss _Delightfully Long Yarn_
+|tip Manually skip to the next step.
+step
+goto SkoomaCatsCloister1_base 83.56,55.77
+talk Moon-Bishop Sizenza
+|tip Manually skip to the next step.
+step
+goto SkoomaCatsCloister1_base 86.87,57.71
+click Temple Cellar
+|tip Manually skip to the next step.
+step
+goto SkoomaCatsCloister2_base 09.96,62.14
+'Continue to this spot
+|tip Manually skip to the next step.
+step
+goto SkoomaCatsCloister2_base 24.67,43.72
+'Continue to this spot
+|tip Manually skip to the next step.
+step
+goto SkoomaCatsCloister2_base 37.47,53.75
+'Continue to this spot
+|tip Manually skip to the next step.
+step
+goto SkoomaCatsCloister2_base 63.44,54.42
+kill Mad Anchorite
+'After its health reaches a certain percentage, the Anchorite shifts into different forms and assumes that form's abilities. The final shape is a dragon-like creature. Because of its various types, it will use both melee and ranged telegraph attacks. Use health potion as needed.
+|tip Manually skip to the next step.
+step
+goto SkoomaCatsCloister2_base 75.82,55.30
+talk Sheogorath
+|tip Choice: Pick Htarogoehs, Htarogoehs, Htarogoehs!
+|tip Manually skip to the next step.
+step
+goto SkoomaCatsCloister2_base 77.16,54.74
+'Press _E_ to Eat _Aromatic Olroy Anchor_
+|tip Manually skip to the next step.
+step
+goto SkoomaCatsCloister2_base 80.63,55.02
+'Press _E_ to Exit _Portal to Elsweyr_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 59.69,68.62
+talk Moon-Bishop Sizenza
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Travel to the _Scar's End_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 13.94,74.42
+talk Brigette Stormsong
 |tip Manually skip to the next step.
 step
 
