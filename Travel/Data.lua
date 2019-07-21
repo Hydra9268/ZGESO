@@ -506,6 +506,9 @@ Data.MapIdsByName = {
 	["Hakoshae Tombs"]					= 464,
 	["Merryvale Sugar Farm Caves"]		= 465,
 	["Skooma Cat's Cloister"]			= 466,
+	["Rimmen Palace Crypts"]			= 467,
+	["Rimmen Palace"]					= 468,
+	["Rimmen Palace Courtyard"]			= 469,
 }
 
 -----------------------------------------

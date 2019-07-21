@@ -24355,7 +24355,7 @@ goto smugglershideout_base 48.58,51.69
 kill Chirrdazi the Chopper
 kill Dhanril the Dangerous
 kill Mad Minurrum
-'Simple fight that isn't too difficult. You can pull 1-2 at a time.
+|tip A simple fight that isn't too difficult. You can pull 1-2 at a time.
 |tip Manually skip to the next step.
 step
 goto smugglershideout_base 55.37,52.22
@@ -24604,7 +24604,7 @@ goto mulaamnirslair_base 71.73,61.91
 step
 goto mulaamnirslair_base 73.76,53.90
 kill Gravestalker Gemmia
-'A simple boss fight. When the boss summons five bone cauldrons move away before they explode. Khamira will occasionally cast a green healing spell on the ground. Lastly, ignore the randomly summoned undead minions.
+|tip A simple boss fight. When the boss summons five bone cauldrons move away before they explode. Khamira will occasionally cast a green healing spell on the ground. Lastly, ignore the randomly summoned undead minions.
 |tip Manually skip to the next step.
 step
 goto mulaamnirslair_base 64.00,53.74
@@ -24799,7 +24799,8 @@ click Central Chamber
 step
 goto cicatriceoasisbossroom_base 51.38,22.47
 kill Shavali the Befouled
-'A simple boss fight. When the minions appear, focus on Shavali as much as possible and heal as needed.
+|tip A simple boss fight. When the minions appear, focus on Shavali as much as possible and heal as needed.
+|tip Manually skip to the next step.
 step
 goto cicatriceoasisbossroom_base 51.46,50.89
 click Cicatrice Caverns
@@ -25049,7 +25050,7 @@ click Khasda's Torture Chamber
 step
 goto khasdaskeep06_base 54.49,45.05
 kill Cud
-'A simple melee fight. Stay out of Cud's telegraphs and charges.
+|tip A simple melee fight. Stay out of Cud's telegraphs and charges.
 |tip Manually skip to the next step.
 step
 goto khasdaskeep06_base 59.48,37.13
@@ -25277,7 +25278,7 @@ goto DesertWind_Base 69.25,46.93
 step
 goto DesertWind_Base 76.94,47.48
 kill Lieutenant Lepida
-'A simple boss fight. She's a lightning caster, so you want to avoid the cross-shaped pool of water as much as possible. Beyond that, try and interrupt her casts and DPS her down.
+|tip A simple boss fight. She's a lightning caster, so you want to avoid the cross-shaped pool of water as much as possible. Beyond that, try and interrupt her casts and DPS her down.
 |tip Manually skip to the next step.
 step
 goto DesertWind_Base 82.67,46.80
@@ -25508,7 +25509,7 @@ goto riverholdinstance_base 48.63,62.16
 step
 goto riverholdinstance_base 48.41,55.21
 kill Bahlokdaan
-'This is a pretty tricky fight, but it has a pattern that is reasonably easy to follow. First, you'll need a ranged weapon. It's almost impossible to try and melee the dragon as it does a lot of damage in one melee hit. The trick is to use the walls in the courtyard to block various incoming telegraphs like fire breath and shouts (e.g., Skyrim stuff). When the dragon teleports you to its location immediately run back behind the wall. The best strategy to use is to strafe back and forth between two walls while firing at the dragon from the opening all-the-while paying attention to which telegraph the dragon uses. Depending on your range DPS this could take a while. But follow the pattern, and you'll bring the big guy down.
+|tip This is a pretty tricky fight, but it has a pattern that is reasonably easy to follow. First, you'll need a ranged weapon. It's almost impossible to try and melee the dragon as it does a lot of damage in one melee hit. The trick is to use the walls in the courtyard to block various incoming telegraphs like fire breath and shouts (e.g., Skyrim stuff). When the dragon teleports you to its location immediately run back behind the wall. The best strategy to use is to strafe back and forth between two walls while firing at the dragon from the opening all-the-while paying attention to which telegraph the dragon uses. Depending on your range DPS this could take a while. But follow the pattern, and you'll bring the big guy down.
 |tip Manually skip to the next step.
 step
 goto riverholdinstance_base 56.21,68.67
@@ -25679,7 +25680,7 @@ click Baan Dar Overlook
 step
 goto elsweyr_base 83.54,43.07
 kill Hulzar
-'This is a simple fight. However, note that Hulzar does hit hard, so you'll want to keep health potion on the ready. Kill Hulzar's minions when they appear (or include them in your AOE attacks) and avoid his telegraphs.
+|tip This is a simple fight. However, note that Hulzar does hit hard, so you'll want to keep health potion on the ready. Kill Hulzar's minions when they appear (or include them in your AOE attacks) and avoid his telegraphs.
 |tip Manually skip to the next step.
 step
 goto elsweyr_base 82.17,43.67
@@ -25837,7 +25838,7 @@ goto elsweyr_base 65.12,42.44
 step
 goto elsweyr_base 63.12,42.12
 kill Senche-Lion
-'Kill the waves of lions, and then kill the Senche-Lion boss. There are no range or telegraph attacks to look out for making this a simple melee fight.
+|tip Kill the waves of lions, and then kill the Senche-Lion boss. There are no range or telegraph attacks to look out for making this a simple melee fight.
 |tip Manually skip to the next step.
 step
 goto elsweyr_base 63.19,42.35
@@ -25957,7 +25958,7 @@ goto hakoshaecrypts_base 64.43,38.21
 step
 goto hakoshaecrypts_base 45.17,38.21
 kill Shade of the Founder
-'This is a simple fight. The Shade switches between ranged and melee attacks and occasionally summon minions. Kill the minions or include them in your AOE attacks and avoid the Shade's ranged telegraphs. Use health potion as needed.
+|tip This is a simple fight. The Shade switches between ranged and melee attacks and occasionally summon minions. Kill the minions or include them in your AOE attacks and avoid the Shade's ranged telegraphs. Use health potion as needed.
 |tip Manually skip to the next step.
 step
 goto hakoshaecrypts_base 29.52,38.21
@@ -26185,7 +26186,7 @@ goto elsweyr_base 34.02,67.44
 step
 goto elsweyr_base 32.86,66.33
 kill Dolor the Boorish
-'This is a simple fight. Dolor is a melee and AOE fighter, so avoid its telegraphs. Strafing attacks are the best strategy to avoid the telegraphs (or demolish it if you have enough DPS and health). Use health potion as needed.
+|tip This is a simple fight. Dolor is a melee and AOE fighter, so avoid its telegraphs. Strafing attacks are the best strategy to avoid the telegraphs (or demolish it if you have enough DPS and health). Use health potion as needed.
 |tip Manually skip to the next step.
 step
 goto elsweyr_base 33.61,66.66
@@ -26232,7 +26233,7 @@ step
 goto merrivillesugarfarm_base 78.02,36.80
 kill Saevus
 kill Timtem the Terrible
-'This is a simple fight. Neither are elite. Accordingly, they'll be effortless to dispatch. As before you'll encounter melee and AOE fighting, so avoid the telegraphs. Use health potion as needed.
+|tip This is a simple fight. Neither are elite. Accordingly, they'll be effortless to dispatch. As before you'll encounter melee and AOE fighting, so avoid the telegraphs. Use health potion as needed.
 |tip Manually skip to the next step.
 step
 goto merrivillesugarfarm_base 42.84,21.80
@@ -26264,7 +26265,7 @@ goto elsweyr_base 54.17,66.48
 step
 goto elsweyr_base 53.55,66.03
 kill Terro Bird Matriarch
-'This is a simple fight. The Matriarch uses melee and telegraph attacks. Use health potion as needed.
+|tip This is a simple fight. The Matriarch uses melee and telegraph attacks. Use health potion as needed.
 |tip Manually skip to the next step.
 step
 goto elsweyr_base 54.22,66.61
@@ -26396,7 +26397,7 @@ goto SkoomaCatsCloister2_base 37.47,53.75
 step
 goto SkoomaCatsCloister2_base 63.44,54.42
 kill Mad Anchorite
-'After its health reaches a certain percentage, the Anchorite shifts into different forms and assumes that form's abilities. The final shape is a dragon-like creature. Because of its various types, it will use both melee and ranged telegraph attacks. Use health potion as needed.
+|tip After its health reaches a certain percentage, the Anchorite shifts into different forms and assumes that form's abilities. The final shape is a dragon-like creature. Because of its various types, it will use both melee and ranged telegraph attacks. Use health potion as needed.
 |tip Manually skip to the next step.
 step
 goto SkoomaCatsCloister2_base 75.82,55.30
@@ -26424,5 +26425,327 @@ goto elsweyr_base 13.94,74.42
 talk Brigette Stormsong
 |tip Manually skip to the next step.
 step
+goto elsweyr_base 13.87,74.43
+'Press _E_ to Open _The Screaming Mammoth's Chest_
+'Take All _The Giant's Lute_ and _Skullchucker's Drum_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 16.33,70.65
+'Press _E_ to Use _Scar's End Wayshrine_
+'Travel to the _Rimmen_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto rimmen_base 33.26,34.34
+'Continue to this spot
+|tip Manually skip to the next step.
+step
+goto rimmen_base 36.68,28.96
+talk Rigurt the Brash
+|tip Manually skip to the next step.
+step
+goto rimmen_base 36.61,28.91
+'Press _E_ to Use _Skullchucker's Drum_
+|tip Manually skip to the next step.
+step
+goto rimmen_base 37.18,29.48
+talk Lady Izza
+|tip Manually skip to the next step.
+step
+goto rimmen_base 37.18,29.48
+talk Rigurt the Brash
+|tip Manually skip to the next step.
+step
+goto rimmen_base 38.82,35.47
+'Continue to this spot
+|tip Manually skip to the next step.
+step
+goto rimmen_base 39.87,37.69
+'Continue to this spot
+|tip Manually skip to the next step.
+step
+goto rimmen_base 50.22,38.96
+'Run upstairs from here
+|tip Manually skip to the next step.
+step
+goto rimmen_base 55.75,36.07
+'Run up both set of stairs from here
+|tip Manually skip to the next step.
+step
+goto rimmen_base 62.33,43.62
+'Run upstairs from here
+|tip Manually skip to the next step.
+step
+goto rimmen_base 67.94,43.58
+talk Captain Nala-do
+|tip Manually skip to the next step.
+step
+goto rimmen_base 67.82,50.17
+click South Weapons Platform
+|tip Manually skip to the next step.
+step
+goto rimmen_base 66.71,55.55
+'Sneak to here
+|tip The best approach is to wait until the soldiers are by themselves then you can pull one to your location or assassinate that one from behind
+|tip Manually skip to the next step.
+step
+goto rimmen_base 65.11,59.07
+'Press _E_ to Burn _Siege Weapon_
+|tip Manually skip to the next step.
+step
+goto rimmen_base 61.85,56.67
+'Press _E_ to Burn _Siege Weapon_
+|tip Manually skip to the next step.
+step
+goto rimmen_base 63.01,54.18
+'Press _E_ to Burn _Siege Weapon_
+|tip Manually skip to the next step.
+step
+goto rimmen_base 67.38,50.65
+click Rimmen
+|tip Manually skip to the next step.
+step
+goto rimmen_base 62.65,33.60
+click North Weapons Platform
+|tip Manually skip to the next step.
+step
+goto rimmen_base 57.44,31.34
+'Press _E_ to Burn _Siege Weapon_
+|tip Manually skip to the next step.
+step
+goto rimmen_base 57.45,27.96
+'Press _E_ to Burn _Siege Weapon_
+|tip Manually skip to the next step.
+step
+goto rimmen_base 54.68,29.53
+'Press _E_ to Burn _Siege Weapon_
+|tip Manually skip to the next step.
+step
+goto rimmen_base 62.22,33.24
+click Rimmen
+|tip Manually skip to the next step.
+step
+goto rimmen_base 62.50,38.62
+'Drop down from here
+|tip Manually skip to the next step.
+step
+goto rimmen_base 58.12,36.51
+'Drop down from here
+|tip Manually skip to the next step.
+step
+goto rimmen_base 61.44,32.30
+talk Captain Nala-do
+|tip Manually skip to the next step.
+step
+goto rimmen_base 66.59,28.93
+click Rimmen Palace Recesses
+|tip Manually skip to the next step.
+step
+goto rimmensewer_base 43.89,11.85
+click Rimmen Palace Crypts
+|tip Manually skip to the next step.
+step
+goto rimmencrypts_base 36.47,49.35
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto rimmencrypts_base 57.11,60.89
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto rimmencrypts_base 57.83,34.79
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto rimmencrypts_base 78.57,28.06
+'Press _E_ to Examine _King Hemaker's Grave_
+|tip Manually skip to the next step.
+step
+goto rimmencrypts_base 78.57,28.06
+talk Zamarak
+|tip Manually skip to the next step.
+step
+goto rimmencrypts_base 91.00,35.58
+click Rimmen Palace
+|tip Manually skip to the next step.
+step
+goto rimmenpalaceinterior_base 43.33,41.10
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto rimmenpalaceinterior_base 49.52,14.40
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto rimmenpalaceinterior_base 23.78,28.06
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto rimmenpalaceinterior_base 29.41,42.09
+click Chapel of the Guiding Moons
+|tip Manually skip to the next step.
+step
+goto rimmenpalaceinterior_base 35.60,58.46
+'Kill the easy wave of mummies
+|tip Manually skip to the next step.
+step
+goto rimmenpalaceinterior_base 54.36,85.55
+click The Great Hall
+|tip Manually skip to the next step.
+step
+goto rimmenpalaceinterior_base 73.21,78.82
+'Press _E_ to Destroy _Necromantic Glass_
+|tip Manually skip to the next step.
+step
+goto rimmenpalaceinterior_base 73.12,75.85
+'Press _E_ to Destroy _Necromantic Glass_
+|tip Manually skip to the next step.
+step
+goto rimmenpalaceinterior_base 73.30,56.45
+click Royal Chambers
+|tip Manually skip to the next step.
+step
+goto rimmenpalaceinterior_base 75.22,44.54
+click Rimmen Palace Courtyard
+|tip Manually skip to the next step.
+step
+goto rimmenpalacecourtyard_base 56.04,47.15
+kill King Hemaker
+kill Queen Numara
+|tip Manually skip to the next step.
+step
+goto rimmenpalacecourtyard_base 56.04,47.15
+kill Euraxia Tharn
+|tip Euraxia is a straight-forward fight, but she has a lot of HP and mana. The main thing to evade is her large AOE telegraph and summoned Atronach. Beyond that, she's pretty easy to take down.
+|tip Manually skip to the next step.
+step
+goto rimmenpalacecourtyard_base 63.35,49.21
+talk Abnur Tharn
+|tip Manually skip to the next step.
+step
+goto rimmenpalacecourtyard_base 44.31,74.59
+click Palace Throne Room
+|tip Manually skip to the next step.
+step
+goto rimmen_base 77.61,36.85
+talk Khamira
+|tip Manually skip to the next step.
+step
+goto rimmen_base 77.61,36.85
+talk Lord Gharesh-ri
+accept The Final Order
+step
+goto rimmen_base 77.61,36.85
+click Royal Study
+|tip Manually skip to the next step.
+step
+goto rimmen_base 77.61,36.85
+talk Abnur Tharn
+|tip Manually skip to the next step.
+step
+goto rimmen_base 77.61,36.85
+'Press _E_ to Examine _Captain's Letter_
+|tip Manually skip to the next step.
+step
+goto rimmen_base 77.61,36.85
+'Press _E_ to Examine _Euraxia's Personal Journal_
+|tip Manually skip to the next step.
+step
+goto rimmen_base 77.61,36.85
+'Press _E_ to Examine _Dragons: A Report for the Queen_
+|tip Manually skip to the next step.
+step
+goto rimmen_base 77.61,36.85
+talk Abnur Tharn
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Travel to the _Rimmen_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto rimmen_base 08.14,55.18
+'Make your way to the western edge of Rimmen
+step
+goto elsweyr_base 71.39,26.66
+talk Hadamnargo
+accept Love and Guar
+step
+goto elsweyr_base 73.09,24.94
+'Press _E_ to Burn _Wasp Nest_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 74.01,26.30
+'Make you way to here
+|tip Manually skip to the next step.
+step
+goto rimmen_base 10.75,36.85
+'Press _E_ to Burn _Wasp Nest_
+|tip Manually skip to the next step.
+step
+goto rimmen_base 09.57,36.48
+'Make you way to here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 72.74,29.90
+'Press _E_ to Burn _Wasp Nest_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 72.63,33.10
+talk Sanzagh
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 71.39,26.66
+talk Hadamnargo
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 65.57,26.84
+talk Abnur Tharn
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 65.60,25.31
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 65.47,24.94
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 66.24,25.32
+'Press _E_ to Examine _Captain Saulinia's Instructions_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 65.47,24.94
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 64.03,24.87
+'Press _E_ to Search _Lieutenant Talia's Lockbox_
+'Take _Cellar Key_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 66.71,24.56
+'Press _E_ to Open _Sandswirl Manor Cellar_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 66.68,24.76
+talk Abnur Tharn
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 65.64,24.53
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 64.88,23.70
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 64.88,23.55
+'Press _E_ to Climb _Sandswirl Manor_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 65.64,23.84
+talk Prefect Calo
+|tip Manually skip to the next step.
+step
+
 
 ]])

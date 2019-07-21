@@ -642,6 +642,9 @@ ZGV.MapData = {
 		["Merryvale Sugar Farm Caves"] = [[merrivillesugarfarm_base]],
 		["Skooma Cat's Cloister"] = [[SkoomaCatsCloister1_base]],
 		["Skooma Cat's Cloister"] = [[SkoomaCatsCloister2_base]],
+		["Rimmen Palace Crypts"] = [[rimmencrypts_base]],
+		["Rimmen Palace"] = [[rimmenpalaceinterior_base]],
+		["Rimmen Palace Courtyard"] = [[rimmenpalacecourtyard_base]],
 
 	},
 	["Zones"] =
@@ -798,8 +801,12 @@ ZGV.MapData = {
 		["merrivillesugarfarm_base"] =		{ name = "Merryvale Sugar Farm Caves",		id = 465, xoffset = 1.012512548987, yoffset = -0.075021835785277, xscale = -1.106571091789, },
 		["SkoomaCatsCloister1_base"] =		{ name = "Skooma Cat's Cloister",			id = 466, xoffset = 0.0033160001039505005, yoffset = 0.1430888026952743530, xscale = -0.0053979155195796004, },
 		["SkoomaCatsCloister2_base"] =		{ name = "Skooma Cat's Cloister",			id = 466, xoffset = 0.0028469154618319, yoffset = -0.023221453021521, xscale = -0.0031113830183955, },
+		["rimmencrypts_base"] =				{ name = "Rimmen Palace Crypts",			id = 467, xoffset = 0.64701637912266, yoffset = 0.84794706849375, xscale = -0.70712172581712, },
+		["rimmenpalaceinterior_base"] =		{ name = "Rimmen Palace",					id = 468, xoffset = 1.0955542660934, yoffset = 1.1204880453499, xscale = -1.1973270667688, },
+		["rimmenpalacecourtyard_base"] =	{ name = "Rimmen Palace Courtyard",			id = 469, xoffset = 1.0229831774458, yoffset = -0.11731442881049, xscale = -1.1180144015801, },
 
 
+[""] = [[]],
 		-- EXISTING
 		["aba-loria_base"] = { name = "Aba-Loria", id = 212, xoffset = 0.403340, yoffset = 0.529272, scale = 0.016623, },
 		["abahslanding_base"] = { xoffset = 0.233167, yoffset = 0.486680, scale = 0.031971, },
