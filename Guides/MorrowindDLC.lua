@@ -26900,7 +26900,7 @@ click Training Chamber
 step
 goto dragonguardoutpost_base 30.53,55.05
 kill Captain Saulinia
-|tip Saulinia is a pretty tough fight. She has both melee and AOE telegraphs so you'll want to keep health potions on the ready. If you have a health augmenting drink, use it. She also has teleporting abilities to close the distance pretty quickly. The best tactic possible is to avoid a direct assault and instead rely on the trap plates to damage her as well as Zamarak to tank her.  He also sends out green telegraphs that heal if you stand in them.
+|tip Saulinia is a pretty tough fight. She has both melee and AOE telegraphs so you'll want to keep health potions on the ready. If you have a health augmenting drink, use it. She also has teleporting abilities to close the distance pretty quickly. The best tactic is to avoid a direct assault and instead rely on both the trap plates as well as Zamarak to tank her. He will, on occasion, send out green telegraphs that heal if you stand in them.
 |tip Manually skip to the next step.
 step
 goto dragonguardoutpost_base 30.38,51.54
