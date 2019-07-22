@@ -509,6 +509,7 @@ Data.MapIdsByName = {
 	["Rimmen Palace Crypts"]			= 467,
 	["Rimmen Palace"]					= 468,
 	["Rimmen Palace Courtyard"]			= 469,
+	["Dov-Vahl Shrine"]					= 470,
 }
 
 -----------------------------------------

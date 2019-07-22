@@ -645,6 +645,7 @@ ZGV.MapData = {
 		["Rimmen Palace Crypts"] = [[rimmencrypts_base]],
 		["Rimmen Palace"] = [[rimmenpalaceinterior_base]],
 		["Rimmen Palace Courtyard"] = [[rimmenpalacecourtyard_base]],
+		["Dov-Vahl Shrine"] = [[dragonguardoutpost_base]],
 
 	},
 	["Zones"] =
@@ -804,9 +805,9 @@ ZGV.MapData = {
 		["rimmencrypts_base"] =				{ name = "Rimmen Palace Crypts",			id = 467, xoffset = 0.64701637912266, yoffset = 0.84794706849375, xscale = -0.70712172581712, },
 		["rimmenpalaceinterior_base"] =		{ name = "Rimmen Palace",					id = 468, xoffset = 1.0955542660934, yoffset = 1.1204880453499, xscale = -1.1973270667688, },
 		["rimmenpalacecourtyard_base"] =	{ name = "Rimmen Palace Courtyard",			id = 469, xoffset = 1.0229831774458, yoffset = -0.11731442881049, xscale = -1.1180144015801, },
+		["dragonguardoutpost_base"] =		{ name = "Dov-Vahl Shrine",					id = 470, xoffset = 0.95722275990467, yoffset = 0.82568362667959, xscale = -1.046145092792, },
 
 
-[""] = [[]],
 		-- EXISTING
 		["aba-loria_base"] = { name = "Aba-Loria", id = 212, xoffset = 0.403340, yoffset = 0.529272, scale = 0.016623, },
 		["abahslanding_base"] = { xoffset = 0.233167, yoffset = 0.486680, scale = 0.031971, },

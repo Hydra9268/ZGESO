@@ -26746,6 +26746,268 @@ goto elsweyr_base 65.64,23.84
 talk Prefect Calo
 |tip Manually skip to the next step.
 step
+goto elsweyr_base 65.56,23.79
+'Make you way upstairs to the second floor
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 65.01,23.75
+'Make you way over to here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 65.00,23.57
+'Jump down to the floor below (you may need to fight a couple of NPCs)
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 65.21,23.55
+click Manor Main Hall
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 65.18,22.64
+'Press _E_ to Examine _Dragonguard Report_
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 65.22,22.87
+talk Prefect Calo
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Travel to _The Stitches_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto stitches_base 46.84,28.43
+'Cross the bridge from here
+|tip Manually skip to the next step.
+step
+goto stitches_base 42.48,58.41
+talk Zamarak
+|tip Manually skip to the next step.
+step
+goto stitches_base 47.69,55.45
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto stitches_base 35.08,55.95
+'Cross the bridge from here
+|tip Manually skip to the next step.
+step
+goto stitches_base 13.30,58.34
+'Continue to this spot
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 31.39,53.04
+'Continue to this spot to trigger the next step in The Final Order
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 31.16,54.65
+'Continue to this spot to trigger the next step in The Final Order
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 31.80,55.11
+'Continue through this ravine
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 32.34,56.09
+click Dov-Vahl Shrine
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 61.66,17.18
+'Press _E_ to Examine _Stone Pedestal_
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 61.30,29.29
+'At this spot, jump over the plate to avoid the fire trap
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 62.03,31.28
+'At this spot, roll forever to avoid the arrow traps
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 63.65,36.17
+'At this spot, jump over the plate to avoid the fire trap
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 63.83,37.79
+'At this spot, jump over the plates to avoid the arrow traps
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 62.03,42.68
+'Quickly roll forward to avoid the spike trap. You can listen to the order the traps happens and time your roll accordingly.
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 64.74,44.67
+'Quickly roll South to avoid the spike trap.
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 64.56,46.84
+'At this spot, jump over the plate to avoid the fire trap
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 64.01,48.28
+'Quickly roll South to avoid the spike trap.
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 63.65,49.91
+'Roll East to avoid the spike trap. Stop at the second trap and wait for the third trap to end. Roll forward and make your way into the southern room.
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 64.20,54.07
+'These traps are tricky, but you'll need to quickly roll forward as the second in each set lowers.
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 66.73,61.12
+'As before these traps are tricky, but observe the pattern and proceed accordingly.
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 66.73,61.12
+'As before, observe the trap's pattern and proceed accordingly.
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 61.66,65.64
+'Enter the opening here
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 49.19,84.63
+'Enter the maze here
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 47.56,87.34
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 45.03,86.08
+'At this spot, jump over the plate to avoid the fire trap
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 43.94,84.99
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 41.77,79.93
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 37.79,82.64
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 37.25,78.66
+'Run up both flight of stairs from here
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 36.65,62.21
+click Training Chamber
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 30.53,55.05
+kill Captain Saulinia
+|tip Saulinia is a pretty tough fight. She has both melee and AOE telegraphs so you'll want to keep health potions on the ready. If you have a health augmenting drink, use it. She also a teleporting ability so she can close the gap pretty quickly. The best tactic possible is to avoid a direct assault and instead rely on the trap plates to damage her as well as Zamarak to tank her.  He also sends out green telegraphs that heal if you stand in them.
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 30.38,51.54
+click Dov-Vahl Shrine
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 42.68,33.09
+talk Dragonguard Orland
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 53.98,22.78
+'Drop down from here
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 60.76,17.54
+talk Prefect Calo
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 61.66,17.18
+'Press _E_ to Insert Ring _Stone Pedastal_
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 63.47,16.64
+click Dov-Vahl Sanctuary
+|tip Manually skip to the next step.
+step
+goto dragonguardoutpost_base 90.78,15.19
+'Press _E_ to Take _Anequina Dragonhorn_
+'Take _Anequina Combat Dragonhorn_
+|tip Manually skip to the next step.
+step
+'Open your map. Right click until you see the Elsweyr map.
+'Travel to the _Rimmen_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto rimmen_base 36.94,51.38
+'Run upstairs from here
+|tip Manually skip to the next step.
+step
+goto rimmen_base 45.99,48.46
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto rimmen_base 52.29,34.71
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto rimmen_base 61.55,41.80
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto rimmen_base 72.38,39.35
+talk Cadwell
+|tip Manually skip to the next step.
+step
+goto rimmen_base 73.58,38.36
+click Rimmen Palace
+|tip Manually skip to the next step.
+step
+goto rimmen_base 77.61,36.85
+click Rimmen Palace Throne Room
+|tip Manually skip to the next step.
+step
+goto rimmen_base 77.61,36.85
+talk Khamira
+accept Cadwell the Betrayer
+step
+goto rimmen_base 77.61,36.85
+click Rimmen Palace
+|tip Manually skip to the next step.
+step
+goto rimmen_base 77.61,36.85
+'Follow this passage East
+|tip Manually skip to the next step.
+step
+goto rimmen_base 77.61,36.85
+talk Cadwell
+|tip Manually skip to the next step.
+step
+goto rimmen_base 77.61,36.85
+talk Abnur Tharn
+|tip Manually skip to the next step.
+step
+'Open your map. Right click until you see the Elsweyr map.
+'Travel to _The Stitches_ wayshrine
+|tip Manually skip to the next step.
+step
+goto stitches_base 46.84,28.43
+'Cross the bridge from here
+|tip Manually skip to the next step.
+step
+goto stitches_base 56.55,59.23
+'Slowly and carefully drop down to the wooden platform below
+|tip Manually skip to the next step.
+step
+goto stitches_base 77.24,51.50
+'Continue to this spot
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 42.05,51.47
+talk Abnur Tharn
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 42.17,51.50
+click Sepulcher of Mischance
+|tip Manually skip to the next step.
+step
 
 
 ]])
