@@ -27008,6 +27008,106 @@ goto elsweyr_base 42.17,51.50
 click Sepulcher of Mischance
 |tip Manually skip to the next step.
 step
-
+goto SepulcherofMischance00_base 32.19,50.68
+talk Cadwell
+|tip Manually skip to the next step.
+step
+goto SepulcherofMischance00_base 21.23,57.53
+click Lower Crypts
+|tip Manually skip to the next step.
+step
+goto SepulcherofMischance01_base 52.80,64.65
+kill Necromancer Otho
+|tip Simple fight. AOE Otho's minions as needed, but focus on killing Otho.
+|tip Manually skip to the next step.
+step
+goto SepulcherofMischance01_base 52.00,63.00
+'Press _E_ to Dispel _Cadwell's Stolen Energy_
+|tip Manually skip to the next step.
+step
+goto SepulcherofMischance01_base 69.00,66.00
+click Crpyt Library
+|tip Manually skip to the next step.
+step
+goto SepulcherofMischance02_base 52.53,67.68
+kill Skullguard Marama
+|tip Simple fight. When Marama's summons bone spires move away before they explode.
+|tip Manually skip to the next step.
+step
+goto SepulcherofMischance02_base 52.53,67.68
+'Press _E_ to Dispel _Cadwell's Stolen Energy_
+|tip Manually skip to the next step.
+step
+goto SepulcherofMischance02_base 53.54,86.87
+click Funerary Chamber
+|tip Manually skip to the next step.
+step
+goto SepulcherofMischance03_base 68.38,45.23
+kill Gravecaller Duvia
+kill Skullguard Grundu
+|tip Focus on Duvia and interrupt her when she heals Grundu. Ignore the minions as well. They will die when Duvia does. If you're using AOE attacks, Grundu should have lost some health when Duvia dies. When he summons the bone spires move away before they explode.
+|tip Manually skip to the next step.
+step
+goto SepulcherofMischance03_base 67.68,46.46
+'Press _E_ to Dispel _Cadwell's Stolen Energy_
+|tip Manually skip to the next step.
+step
+goto SepulcherofMischance03_base 69.70,61.62
+click Necromancer Workshop
+|tip Manually skip to the next step.
+step
+goto SepulcherofMischance04_base 40.40,51.52
+talk Captain Nala-do
+|tip Manually skip to the next step.
+step
+goto SepulcherofMischance04_base 32.32,68.69
+click Zumog Phoom's Lair
+|tip Manually skip to the next step.
+step
+goto SepulcherofMischance00B_base 53.62,50.61
+kill Zumog Phoom
+|tip As one of the seminal bosses of the expansion Zumog is a challenge but not difficult. During the first phase always fight him and use AOE attack to hit his minions. Avoid the bone spires that spawn. During phase one, he will summon a bone dragon that will telegraph a massive area flame blast that is easy to avoid. When Zumog reaches 30-40% health, he will transform into a bone colossus with massive frontal telegraph attacks. The best tactic during this phase is to stay behind the giant. Rinse and repeat, and Zumog will go down.
+|tip Manually skip to the next step.
+step
+goto SepulcherofMischance00B_base 52.05,50.00
+talk Cadwell
+|tip Manually skip to the next step.
+step
+goto SepulcherofMischance00B_base 52.05,50.00
+'Press _E_ to Use _Portal to Rimmen_
+|tip Manually skip to the next step.
+step
+goto rimmen_base 77.61,36.85
+click Rimmen Palace Throne Room
+|tip Manually skip to the next step.
+step
+goto rimmen_base 77.61,36.85
+talk Khamira
+|tip Manually skip to the next step.
+step
+goto rimmen_base 77.61,36.85
+click Royal Study
+|tip Manually skip to the next step.
+step
+goto rimmen_base 77.61,36.85
+talk Khamira
+|tip Manually skip to the next step.
+step
+'Open your map. Right click until you see the Elsweyr map.
+'Travel to _Hakoshae_ wayshrine
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 69.05,46.10
+'At the fork in the road, go left from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 66.32,49.07
+'Run up the hill from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 63.87,48.46
+click Shadow Dance Ruins
+|tip Manually skip to the next step.
+step
 
 ]])

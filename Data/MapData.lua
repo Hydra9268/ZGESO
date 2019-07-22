@@ -646,6 +646,13 @@ ZGV.MapData = {
 		["Rimmen Palace"] = [[rimmenpalaceinterior_base]],
 		["Rimmen Palace Courtyard"] = [[rimmenpalacecourtyard_base]],
 		["Dov-Vahl Shrine"] = [[dragonguardoutpost_base]],
+		["Sepulcher of Mischance"] = [[SepulcherofMischance00_base]],
+		["Sepulcher of Mischance"] = [[SepulcherofMischance01_base]],
+		["Sepulcher of Mischance"] = [[SepulcherofMischance02_base]],
+		["Sepulcher of Mischance"] = [[SepulcherofMischance03_base]],
+		["Sepulcher of Mischance"] = [[SepulcherofMischance04_base]],
+		["Sepulcher of Mischance"] = [[SepulcherofMischance00B_base]],
+
 
 	},
 	["Zones"] =
@@ -806,6 +813,12 @@ ZGV.MapData = {
 		["rimmenpalaceinterior_base"] =		{ name = "Rimmen Palace",					id = 468, xoffset = 1.0955542660934, yoffset = 1.1204880453499, xscale = -1.1973270667688, },
 		["rimmenpalacecourtyard_base"] =	{ name = "Rimmen Palace Courtyard",			id = 469, xoffset = 1.0229831774458, yoffset = -0.11731442881049, xscale = -1.1180144015801, },
 		["dragonguardoutpost_base"] =		{ name = "Dov-Vahl Shrine",					id = 470, xoffset = 0.95722275990467, yoffset = 0.82568362667959, xscale = -1.046145092792, },
+		["SepulcherofMischance00_base"] =	{ name = "Sepulcher of Mischance",			id = 471, xoffset = 0.58846763216253, yoffset = -0.13150828996107, xscale = -0.64313402422135, },
+		["SepulcherofMischance01_base"] =	{ name = "Sepulcher of Mischance",			id = 471, xoffset = -0.10121706880228, yoffset = 1.0760815614257, xscale = 1.1907890447327, },
+		["SepulcherofMischance02_base"] =	{ name = "Sepulcher of Mischance",			id = 471, xoffset = 0.76197126120966, yoffset = 0.95993181127937, xscale = -0.83275547673187, },
+		["SepulcherofMischance03_base"] =	{ name = "Sepulcher of Mischance",			id = 471, xoffset = 0.61270733308649, yoffset = -0.089188262392334, xscale = -0.66962550064097, },
+		["SepulcherofMischance04_base"] =	{ name = "Sepulcher of Mischance",			id = 471, xoffset = -0.056185192095416, yoffset = 0.91534425186734, xscale = 0.66100225994607, },
+		["SepulcherofMischance00B_base"] =	{ name = "Sepulcher of Mischance",			id = 471, xoffset = 0.58846763216253, yoffset = -0.13150828996107, xscale = -0.64313402422135, },
 
 
 		-- EXISTING

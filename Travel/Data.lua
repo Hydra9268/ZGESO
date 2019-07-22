@@ -510,6 +510,7 @@ Data.MapIdsByName = {
 	["Rimmen Palace"]					= 468,
 	["Rimmen Palace Courtyard"]			= 469,
 	["Dov-Vahl Shrine"]					= 470,
+	["Sepulcher of Mischance"]			= 471,
 }
 
 -----------------------------------------
