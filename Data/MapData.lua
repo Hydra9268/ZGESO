@@ -652,6 +652,8 @@ ZGV.MapData = {
 		["Sepulcher of Mischance"] = [[SepulcherofMischance03_base]],
 		["Sepulcher of Mischance"] = [[SepulcherofMischance04_base]],
 		["Sepulcher of Mischance"] = [[SepulcherofMischance00B_base]],
+		["Shadow Dance Temple"]	= [[dancingmoon01_base]],
+		["Shadow Dance Temple"]	= [[dancingmoon02_base]],
 
 
 	},
@@ -819,6 +821,8 @@ ZGV.MapData = {
 		["SepulcherofMischance03_base"] =	{ name = "Sepulcher of Mischance",			id = 471, xoffset = 0.61270733308649, yoffset = -0.089188262392334, xscale = -0.66962550064097, },
 		["SepulcherofMischance04_base"] =	{ name = "Sepulcher of Mischance",			id = 471, xoffset = -0.056185192095416, yoffset = 0.91534425186734, xscale = 0.66100225994607, },
 		["SepulcherofMischance00B_base"] =	{ name = "Sepulcher of Mischance",			id = 471, xoffset = 0.58846763216253, yoffset = -0.13150828996107, xscale = -0.64313402422135, },
+		["dancingmoon01_base"] =			{ name = "Shadow Dance Temple",				id = 472, xoffset = 0.68065453768268, yoffset = 1.355295455984, xscale = -0.74388474063681, },
+		["dancingmoon02_base"] =			{ name = "Shadow Dance Temple",				id = 472, xoffset = 0.59329230894772, yoffset = 1.0897541682938, xscale = -0.64840689502483, },
 
 
 		-- EXISTING

@@ -511,6 +511,7 @@ Data.MapIdsByName = {
 	["Rimmen Palace Courtyard"]			= 469,
 	["Dov-Vahl Shrine"]					= 470,
 	["Sepulcher of Mischance"]			= 471,
+	["Shadow Dance Temple"]				= 472,
 }
 
 -----------------------------------------

@@ -27109,5 +27109,19 @@ goto elsweyr_base 63.87,48.46
 click Shadow Dance Ruins
 |tip Manually skip to the next step.
 step
-
+goto elsweyr_base 63.96,48.36
+talk Khamira
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 63.90,48.22
+'Press _E_ to Use _Portal to Shadow Dance Temple_
+|tip Manually skip to the next step.
+step
+goto dancingmoon01_base 65.73,47.64
+click Shadow Dance Temple
+|tip Manually skip to the next step.
+step
+goto dancingmoon02_base 50,50
+|tip Manually skip to the next step.
+step
 ]])
