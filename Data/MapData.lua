@@ -654,6 +654,9 @@ ZGV.MapData = {
 		["Sepulcher of Mischance"] = [[SepulcherofMischance00B_base]],
 		["Shadow Dance Temple"]	= [[dancingmoon01_base]],
 		["Shadow Dance Temple"]	= [[dancingmoon02_base]],
+		["Vault of Heavenly Scourge"] = [[dancingmoon03_base]],
+		["Moon Gate of Anequina"] = [[moongate_base]],
+		["Jode's Core"]	= [[moonsurface_base]],
 
 
 	},
@@ -823,6 +826,10 @@ ZGV.MapData = {
 		["SepulcherofMischance00B_base"] =	{ name = "Sepulcher of Mischance",			id = 471, xoffset = 0.58846763216253, yoffset = -0.13150828996107, xscale = -0.64313402422135, },
 		["dancingmoon01_base"] =			{ name = "Shadow Dance Temple",				id = 472, xoffset = 0.68065453768268, yoffset = 1.355295455984, xscale = -0.74388474063681, },
 		["dancingmoon02_base"] =			{ name = "Shadow Dance Temple",				id = 472, xoffset = 0.59329230894772, yoffset = 1.0897541682938, xscale = -0.64840689502483, },
+		["dancingmoon03_base"] =			{ name = "Vault of Heavenly Scourge",		id = 473, xoffset = -0.11036531083406, yoffset = -0.069448933373347, xscale = 1.2984154215771, },
+		["moongate_base"] =					{ name = "Moon Gate of Anequina",			id = 474, xoffset = 0.90292587062169, yoffset = -0.076247444700743, xscale = -0.98680423018764, },
+		["moonsurface_base"] =				{ name = "Jode's Core",						id = 475, xoffset = 0.58902459270864, yoffset = 1.3638879949588, xscale = -0.64374272427174, },
+
 
 
 		-- EXISTING

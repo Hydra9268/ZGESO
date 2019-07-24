@@ -27121,7 +27121,295 @@ goto dancingmoon01_base 65.73,47.64
 click Shadow Dance Temple
 |tip Manually skip to the next step.
 step
-goto dancingmoon02_base 50,50
+goto dancingmoon02_base 12.24,37.19
+'Press _E_ to Examine _Temple Relic_
+|tip Manually skip to the next step.
+step
+goto dancingmoon02_base 28.61,37.38
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto dancingmoon02_base 39.31,32.27
+'Follow the rock wall south from here
+|tip Manually skip to the next step.
+step
+goto dancingmoon02_base 44.41,44.61
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto dancingmoon02_base 62.24,45.47
+'Press _E_ to Activate _Temple Relic_
+|tip Manually skip to the next step.
+step
+goto dancingmoon02_base 70.42,49.33
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto dancingmoon02_base 71.10,65.61
+'Follow the rock wall Southeast from here
+|tip Manually skip to the next step.
+step
+goto dancingmoon02_base 86.22,71.29
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto dancingmoon02_base 91.62,62.43
+'Press _E_ to Activate _Temple Relic_
+|tip Manually skip to the next step.
+step
+goto dancingmoon02_base 86.42,59.73
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto dancingmoon02_base 86.61,46.05
+talk Khamira
+|tip Manually skip to the next step.
+step
+goto dancingmoon02_base 86.42,45.38
+click Vault of the Heavenly Scourge
+|tip Manually skip to the next step.
+step
+goto dancingmoon03_base 50,50
+kill Cadwell the Betrayer
+|tip Cadwell is another of Elsweyr's seminal bosses and as such presents quite a challenge. You'll want to use a health-augmenting consumable before the fight and keep your health potions on the ready. Cadwell hits like a freight truck. Further, he casts an array of AOE telegraphs that spread out from his location like a pinwheel. At particular intervals, he'll cast a large AOE telegraph at your location. Standing in it will stun you and do lots of damage. However, you can easily avoid it if you listen for his "taste of oblivion" cry. In a group is the most efficient way to tackle Cadwell. However, if you're solo, ranged attacks are the best choice. The excellent news is excluding one ability in which Cadwell teleports to you most of the time he'll waste his time running around the room. So as long as you keep your distance, you can kill the ole chap. Jolly good and some such!
+|tip Manually skip to the next step.
+step
+goto dancingmoon03_base 50.12,32.85
+talk Khamira
+|tip Manually skip to the next step.
+step
+goto dancingmoon03_base 45.56,29.74
+'Press _E_ to Activate _Temple Relic_
+|tip Manually skip to the next step.
+step
+goto dancingmoon03_base 50.12,31.41
+talk Cadwell
+|tip Manually skip to the next step.
+step
+goto dancingmoon03_base 54.68,32.37
+'Press _E_ to Use _Portal to Rimmen_
+|tip Manually skip to the next step.
+step
+goto rimmen_base 77.61,36.85
+talk Khamira
+accept Jode's Core
+step
+'Open your map.
+'Travel to _Rimmen_ wayshrine
+|tip Manually skip to the next step.
+step
+goto rimmen_base 37.86,61.61
+talk Abnur Tharn
+|tip Manually skip to the next step.
+step
+goto rimmen_base 35.77,58.57
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto rimmen_base 39.99,56.91
+talk Cadwell
+|tip Manually skip to the next step.
+step
+goto rimmen_base 38.52,52.97
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto rimmen_base 29.00,49.55
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto rimmen_base 24.44,43.49
+talk Prefect Calo
+|tip Manually skip to the next step.
+step
+goto rimmen_base 28.76,45.59
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto rimmen_base 37.10,51.79
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto rimmen_base 37.56,47.20
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto rimmen_base 57.55,47.16
+talk Zamarak
+|tip Manually skip to the next step.
+step
+'Open your map. Right click until you see the Elsweyr map.
+'Travel to _Scar's End_ wayshrine
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 16.96,71.77
+'Drop down from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 18.65,73.99
+'Continue to the road
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 25.47,73.86
+'At the fork in the road, go left from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 25.46,72.25
+click Moon Gate of Anequina
+|tip Manually skip to the next step.
+step
+goto moongate_base 29.94,84.08
+talk Prefect Calo
+|tip Manually skip to the next step.
+step
+goto moongate_base 48.00,74.66
+'Run up the stairs in this tunnel
+|tip Manually skip to the next step.
+step
+goto moongate_base 70.40,64.94
+'Defeat the waves of easy Euraxian enemies here
+|tip Manually skip to the next step.
+step
+goto moongate_base 69.13,59.23
+'Enter the tunnel here
+|tip Manually skip to the next step.
+step
+goto moongate_base 52.08,54.77
+talk Zamarak
+|tip Manually skip to the next step.
+step
+goto moongate_base 42.89,60.16
+click Upper Moon Gate Landing
+|tip Manually skip to the next step.
+step
+goto moongate_base 31.28,53.58
+'Exit through here
+|tip Manually skip to the next step.
+step
+goto moongate_base 37.33,45.85
+'Defeat the waves of easy Euraxian enemies here
+|tip Manually skip to the next step.
+step
+goto moongate_base 36.81,39.34
+'Run up the stairs in this tunnel
+|tip Manually skip to the next step.
+step
+goto moongate_base 44.71,34.91
+'Exit through here
+|tip Manually skip to the next step.
+step
+goto moongate_base 54.63,31.96
+'Run up the stairs here
+|tip Manually skip to the next step.
+step
+goto moongate_base 57.54,22.94
+'Run up the stairs here
+|tip Manually skip to the next step.
+step
+goto moongate_base 62.46,22.73
+'Press _E_ to _Use Combat Dragonhorn_
+|tip Manually skip to the next step.
+step
+goto moongate_base 67.90,22.13
+talk Khamira
+|tip Manually skip to the next step.
+step
+goto moongate_base 67.90,22.13
+kill Lieutenant Herennius
+kill Lieutenant Artorius
+|tip Defeat a couple of waves of easy incoming Euraxian enemies. When both lieutenants appear, the best tactic is to move around using AOE attacks to kill Herennius as soon as possible. While inflicting damage you'll want to avoid her multiple summoned Atronachs, and once dispatched, finish off Artorius. Herennius's Atronachs don't have much health so they'll die fairly quickly. Try and stay inside Abnur Tharn's energy shield as much as possible. Use any health augmenting potions you have available and keep health potions on the ready as needed.
+|tip Manually skip to the next step.
+step
+goto moongate_base 76.91,21.95
+click Portal to the Plane of Jode
+|tip Manually skip to the next step.
+step
+goto moonsurface_base 16.12,42.48
+talk Khamira
+|tip Manually skip to the next step.
+step
+goto moonsurface_base 36.86,67.69
+'Defeat a couple of waves of easy incoming enemies. However, while that happens, you'll want to be careful to avoid Mulaamnir's telegraphed attack.
+|tip Manually skip to the next step.
+step
+goto moonsurface_base 40.06,53.16
+'In this area, avoid Mulaamnir's telegraphed attack
+|tip Manually skip to the next step.
+step
+goto moonsurface_base 39.74,32.23
+'As before, defeat a couple of waves of easy incoming enemies while avoiding Mulaamnir's telegraphed attack. This time the telegraphs will be a brighter red.
+|tip Manually skip to the next step.
+step
+goto moonsurface_base 55.12,42.93
+click Jode's Core
+|tip Manually skip to the next step.
+step
+goto moonsurface_base 60.83,43.08
+kill Mulaamnir
+|tip This is the expansion's dragon fight in all its glory and as such it will be difficult in the extreme. Ranged is the best attack for the fight, and being in a group is the best tactic. However, it is more likely you'll do it solo so if you have any health augmenting potions, you should consume one. Keep your healing potions on the ready. You'll likely need several resurrection gems and if you don't have a few, get them. The fight is divided up into three phases that repeat in sequence.
+|tip PHASE 1: Mulaamnir spits dragon fire and teleports you to his location until he reaches a certain health percentage. Immediately after he teleports you, run away as his melees can one-shot you much like Bahlokdaan could in Riverhold. You'll want to use either pillar in the back to block some of Mulaamnir's more deadlier dragon fire. However, it is okay to run up the stairs and duck behind a wall. The primary consideration is to keep away from the dragon's melee attack range. 
+|tip PHASE 2: Mulaamnir takes flight and summons various Atronachs and minions. During one of the later stages, he'll summon a couple of elite Atronachs including multiple lower leveled minions. The key here is to AOE them all down while avoiding the dragon's telegraphing attacks from above.
+|tip PHASE 3: Run into Abnur Tharn's energy shield to protect from Mulaamnir's shout and immediately after use the Dragonhorn. After this, the dragon will return to phase 1. That's the extent of the fight.
+|tip Manually skip to the next step.
+step
+goto moonsurface_base 73.36,43.35
+click Elsweyr
+|tip Manually skip to the next step.
+step
+goto rimmen_base 70.55,42.23
+talk Khamira
+accept The Heir of Anequina
+step
+'Open your map.
+'Travel to _Rimmen_ wayshrine
+|tip Manually skip to the next step.
+step
+goto rimmen_base 23.53,62.88
+talk Jakarn
+accept The Jewel of Baan Dar
+step
+goto rimmen_base 23.53,62.88
+talk Ak'an
+|tip Manually skip to the next step.
+step
+goto rimmen_base 18.68,55.51
+talk Lord Gharesh-ri
+|tip Manually skip to the next step.
+step
+goto rimmen_base 17.50,53.95
+talk Zamarak
+|tip Manually skip to the next step.
+step
+goto rimmen_base 17.39,56.41
+talk Prefect Calo
+|tip Manually skip to the next step.
+step
+goto rimmen_base 27.30,61.19
+'Run upstairs from here
+|tip Manually skip to the next step.
+step
+goto rimmen_base 31.32,63.41
+click The Sugar Bowl
+|tip Manually skip to the next step.
+step
+goto rimmen_base 32.61,62.92
+talk Jakarn
+|tip Manually skip to the next step.
+step
+goto rimmen_base 32.61,62.92
+'Run downstairs from here
+|tip Manually skip to the next step.
+step
+goto rimmen_base 32.61,62.92
+click Rimmen
+|tip Manually skip to the next step.
+step
+goto rimmen_base 43.18,59.42
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto rimmen_base 50.18,39.75
+talk Envoy Cashia
 |tip Manually skip to the next step.
 step
 ]])

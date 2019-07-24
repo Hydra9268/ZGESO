@@ -512,6 +512,9 @@ Data.MapIdsByName = {
 	["Dov-Vahl Shrine"]					= 470,
 	["Sepulcher of Mischance"]			= 471,
 	["Shadow Dance Temple"]				= 472,
+	["Vault of Heavenly Scourge"]		= 473,
+	["Moon Gate of Anequina"]			= 474,
+	["Jode's Core"]						= 475,
 }
 
 -----------------------------------------
