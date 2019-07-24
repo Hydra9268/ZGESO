@@ -27066,7 +27066,7 @@ click Zumog Phoom's Lair
 step
 goto SepulcherofMischance00B_base 53.62,50.61
 kill Zumog Phoom
-|tip As one of the seminal bosses of the expansion Zumog is a challenge but not difficult. During the first phase always fight him and use AOE attack to hit him and his minions. Avoid the bone spires that spawn. During phase one, he will summon a bone dragon that will telegraph a massive area flame blast that is easy to avoid. When Zumog reaches 30-40% health, he will transform into a bone colossus with massive frontal telegraph attacks. The best tactic during this phase is to stay behind the giant. Rinse and repeat, and Zumog will go down.
+|tip As one of the seminal bosses of the expansion Zumog is a challenge but not difficult. During the first phase always fight him and use AOE attacks to hit him and his minions. Avoid the bone spires that spawn. During phase one, he'll summon a bone dragon that will telegraph a massive area flame blast that is easy to avoid. When Zumog reaches 30-40% health, he will transform into a bone colossus with massive frontal telegraphing attacks. The best tactic during this phase is to stay behind the giant. Rinse and repeat, and Zumog will go down.
 |tip Manually skip to the next step.
 step
 goto SepulcherofMischance00B_base 52.05,50.00
