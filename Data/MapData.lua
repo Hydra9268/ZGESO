@@ -657,7 +657,7 @@ ZGV.MapData = {
 		["Vault of Heavenly Scourge"] = [[dancingmoon03_base]],
 		["Moon Gate of Anequina"] = [[moongate_base]],
 		["Jode's Core"]	= [[moonsurface_base]],
-
+		["Darkpool Mine"] = [[thescab_base]],
 
 	},
 	["Zones"] =
@@ -829,8 +829,7 @@ ZGV.MapData = {
 		["dancingmoon03_base"] =			{ name = "Vault of Heavenly Scourge",		id = 473, xoffset = -0.11036531083406, yoffset = -0.069448933373347, xscale = 1.2984154215771, },
 		["moongate_base"] =					{ name = "Moon Gate of Anequina",			id = 474, xoffset = 0.90292587062169, yoffset = -0.076247444700743, xscale = -0.98680423018764, },
 		["moonsurface_base"] =				{ name = "Jode's Core",						id = 475, xoffset = 0.58902459270864, yoffset = 1.3638879949588, xscale = -0.64374272427174, },
-
-
+		["thescab_base"] =					{ name = "Darkpool Mine",					id = 476, xoffset = -0.09350672985143, yoffset = -0.068329917242788, xscale = 1.1000791747227, },
 
 		-- EXISTING
 		["aba-loria_base"] = { name = "Aba-Loria", id = 212, xoffset = 0.403340, yoffset = 0.529272, scale = 0.016623, },

@@ -27412,4 +27412,201 @@ goto rimmen_base 50.18,39.75
 talk Envoy Cashia
 |tip Manually skip to the next step.
 step
+goto rimmen_base 52.23,34.87
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto rimmen_base 61.50,41.91
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto rimmen_base 71.76,38.87
+talk Abnur Tharn
+|tip Manually skip to the next step.
+step
+goto rimmen_base 73.45,38.35
+click Rimmen Palace
+|tip Manually skip to the next step.
+step
+goto rimmen_base 77.61,36.85
+'Continue down to the western hallway
+|tip Manually skip to the next step.
+step
+goto rimmen_base 77.61,36.85
+talk Khamira
+|tip Manually skip to the next step.
+step
+goto rimmen_base 77.61,36.85
+'Return the main lobby
+|tip Manually skip to the next step.
+step
+goto rimmen_base 77.61,36.85
+click Rimmen Palace Throne Room
+|tip Manually skip to the next step.
+step
+goto rimmen_base 77.61,36.85
+talk Lord Gharesh-ri
+|tip Manually skip to the next step.
+step
+goto rimmen_base 77.61,36.85
+talk Queen Khamira
+|tip Manually skip to the next step.
+step
+goto rimmen_base 77.61,36.85
+click Rimmen Palace
+|tip Manually skip to the next step.
+step
+goto rimmen_base 77.61,36.85
+click Rimmen
+|tip Manually skip to the next step.
+step
+goto rimmen_base 62.50,38.42
+'Drop down from here
+|tip Manually skip to the next step.
+step
+goto rimmen_base 58.12,36.59
+'Drop down from here
+|tip Manually skip to the next step.
+step
+goto rimmen_base 66.70,28.94
+click Rimmen Palace Recesses
+|tip Manually skip to the next step.
+step
+goto rimmensewer_base 35.44,22.10
+'Continue South to here
+|tip Manually skip to the next step.
+step
+goto rimmensewer_base 42.91,40.23
+'Continue East through this passageway
+|tip Manually skip to the next step.
+step
+goto rimmensewer_base 59.67,37.36
+'Press _E_ to Examine _Suspicious Barrel_
+|tip Manually skip to the next step.
+step
+'Open your map. Right click until you see the Elsweyr map.
+'Travel to _Rimmen_ wayshrine
+|tip Manually skip to the next step.
+step
+goto rimmen_base 32.65,62.03
+click The Sugar Bowl
+|tip Manually skip to the next step.
+step
+goto rimmen_base 32.61,62.92
+talk Jakarn
+|tip Manually skip to the next step.
+step
+'Open your map. Right click until you see the Elsweyr map.
+'Travel to _Scar's End_ wayshrine
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 15.39,70.54
+'Continue to the road
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 18.69,61.70
+'Follow the road to here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 18.50,59.85
+talk Tu'heiba
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 15.44,60.75
+talk Mara'dahni
+'Watch out for the elite Minotaur around the path
+accept Iron in the Blood
+step
+goto elsweyr_base 15.17,60.86
+click Darkpool Mine
+|tip Manually skip to the next step.
+step
+goto thescab_base 33.55,77.08
+'At the fork in the path, go right
+|tip Manually skip to the next step.
+step
+goto thescab_base 46.84,80.08
+'Press _E_ to Examine _Hadaz's Final Letter_
+|tip Manually skip to the next step.
+step
+goto thescab_base 24.78,73.48
+'Continue West to here
+|tip Manually skip to the next step.
+step
+goto thescab_base 24.68,49.97
+'At the fork in the path, go right
+|tip Manually skip to the next step.
+step
+goto thescab_base 35.23,52.59
+'Press _E_ to Burn _Oil Pool_
+|tip Manually skip to the next step.
+step
+goto thescab_base 54.04,49.40
+'Press _E_ to Burn _Oil Pool_
+|tip Manually skip to the next step.
+step
+goto thescab_base 77.78,58.96
+'Continue East to here
+|tip Manually skip to the next step.
+step
+goto thescab_base 79.89,40.85
+'Press _E_ to Burn _Oil Pool_
+|tip Manually skip to the next step.
+step
+goto thescab_base 84.19,37.06
+'Press _E_ to Take _Slavemaster's Bag_
+'Take _Slave Trader's Ledger_
+|tip Manually skip to the next step.
+step
+goto thescab_base 72.82,32.80
+'Continue West to here
+|tip Manually skip to the next step.
+step
+goto thescab_base 45.01,21.42
+kill Zadrahd the Iron Hearted
+kill Iron Heart Atronach
+|tip Simple straight-forward fight. Kill Zadrahd. After he dies the Atronach will appear. Zadrahd is a telegraphing caster while Atronach mostly does melee DPS. Neither present much a challege.
+|tip Manually skip to the next step.
+step
+goto thescab_base 47.51,20.42
+'Press _E_ to Take _Deadland Hammer_
+'Take _Deadland Hammer_
+|tip Manually skip to the next step.
+step
+goto thescab_base 41.32,24.31
+'Press _E_ to Burn _Oil Pool_
+|tip Manually skip to the next step.
+step
+goto thescab_base 24.02,49.81
+'Continue South to here
+|tip Manually skip to the next step.
+step
+goto thescab_base 50.92,90.53
+talk Mara'dahni
+|tip Manually skip to the next step.
+step
+goto thescab_base 51.86,91.32
+click Elsweyr
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 18.44,59.83
+talk Tu'heiba
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 17.52,59.78
+talk Jakarn
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Travel to _Tenmar Temple_ wayshrine
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 60.96,59.00
+'Follow the path up from here
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 62.34,58.42
+click The Tangle
+|tip Manually skip to the next step.
+step
 ]])

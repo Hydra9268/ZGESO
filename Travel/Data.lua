@@ -515,6 +515,7 @@ Data.MapIdsByName = {
 	["Vault of Heavenly Scourge"]		= 473,
 	["Moon Gate of Anequina"]			= 474,
 	["Jode's Core"]						= 475,
+	["Darkpool Mine"]					= 476,
 }
 
 -----------------------------------------
