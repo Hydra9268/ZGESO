@@ -31,7 +31,6 @@ For example, 1.4.96
 
 ### Slash commands
 
-* `/zygor` = /zgv
 * `/re` = /reloadui
 * `/zgpos` - For city and delve data. Also displays the map's correct DDS filename.
 * `/zgpos gps` - For general map data. Works in any map.
