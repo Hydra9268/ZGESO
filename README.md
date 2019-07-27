@@ -1,6 +1,6 @@
 # ZGESO
 
-<img src="https://i.imgur.com/F5k8YSs.png">
+<img src="https://i.imgur.com/WCpaGMC.png">
 
 A Public Domain leveling guide produced by Zygor Guides, updated and maintained by Hydra9268. The purpose of this project is to add leveling guides for new content and extend the life for as long as ESO is available. Now working on a guide for Elsweyr.
 
