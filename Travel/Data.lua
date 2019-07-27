@@ -516,6 +516,7 @@ Data.MapIdsByName = {
 	["Moon Gate of Anequina"]			= 474,
 	["Jode's Core"]						= 475,
 	["Darkpool Mine"]					= 476,
+	["The Tangle"]						= 477,
 }
 
 -----------------------------------------

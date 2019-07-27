@@ -27609,4 +27609,154 @@ goto elsweyr_base 62.34,58.42
 click The Tangle
 |tip Manually skip to the next step.
 step
+goto thetangle_base 46.69,28.60
+talk Mazdurr the Moonstruck
+accept Moonstruck in Manacles
+step
+goto thetangle_base 43.91,40.60
+talk Fez'skar
+|tip Manually skip to the next step.
+step
+goto thetangle_base 45.06,29.60
+'Continue South to here
+|tip Manually skip to the next step.
+step
+goto thetangle_base 70.00,31.83
+'Continue East to here
+|tip Manually skip to the next step.
+step
+goto thetangle_base 78.40,44.63
+'Continue Southeast to here
+|tip Manually skip to the next step.
+step
+goto thetangle_base 87.29,48.09
+'Press _E_ to Search _Slavers' Chest_
+'Take _Trapper's Key_
+|tip Manually skip to the next step.
+step
+goto thetangle_base 78.31,44.37
+'Continue West to here
+|tip Manually skip to the next step.
+step
+goto thetangle_base 67.11,50.80
+'Continue Southwest to here
+|tip Manually skip to the next step.
+step
+goto thetangle_base 65.91,60.51
+'Press _E_ to Search _Ruddy Fang Pack_
+'Take _Cage Key_
+|tip Manually skip to the next step.
+step
+goto thetangle_base 63.03,79.74
+'Continue South to here
+|tip Manually skip to the next step.
+step
+goto thetangle_base 46.69,71.91
+'Continue Northwest to here
+|tip Manually skip to the next step.
+step
+goto thetangle_base 45.06,63.50
+kill Zayreba Sharpclaw
+|tip Sharpclaw is a simple fight. Basically AOE her to kill off her minions and then focus attacks on her. 
+|tip Manually skip to the next step.
+step
+goto thetangle_base 45.66,62.40
+'Press _E_ to Search _Ruddy Fang Coffer_
+'Take _Amulet of Azurah_
+|tip Manually skip to the next step.
+step
+goto thetangle_base 44.63,52.14
+'Continue North to here
+|tip Manually skip to the next step.
+step
+goto thetangle_base 49.23,54.46
+'Carefully continue East to here
+|tip Manually skip to the next step.
+step
+goto thetangle_base 50.43,50.80
+'Carefully continue North to here
+|tip Manually skip to the next step.
+step
+goto thetangle_base 49.71,49.03
+'Carefully dropdown from here until the wooden platform below
+|tip Manually skip to the next step.
+step
+goto thetangle_base 50.03,44.69
+'Carefully continue North to here
+|tip Manually skip to the next step.
+step
+goto thetangle_base 46.57,47.63
+'Carefully continue South to the floor
+|tip Manually skip to the next step.
+step
+goto thetangle_base 19.23,53.14
+'Continue West to here
+|tip Manually skip to the next step.
+step
+goto thetangle_base 32.74,42.14
+'Continue Northeast to here
+|tip Manually skip to the next step.
+step
+goto thetangle_base 33.03,31.31
+'Continue North to here
+|tip Manually skip to the next step.
+step
+goto thetangle_base 46.46,29.09
+'Press _E_ to Unlock _Cage_
+|tip Manually skip to the next step.
+step
+goto thetangle_base 43.91,40.60
+talk Fez'skar
+|tip the choice doesn't matter. Pick either.
+|tip Manually skip to the next step.
+step
+goto thetangle_base 44.57,40.54
+'Press _E_ to Disarm _Spike Plate Chain_
+|tip Manually skip to the next step.
+step
+goto thetangle_base 44.11,40.26
+talk Jakarn
+|tip Manually skip to the next step.
+step
+goto thetangle_base 46.60,20.51
+click Elsweyr
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 62.17,58.36
+talk Mazdurr the Moonstruck
+|tip Manually skip to the next step.
+step
+'Open your map.
+'Travel to _The Stitches_ wayshrine
+|tip Manually skip to the next step.
+step
+goto stitches_base 46.84,28.43
+'Cross the bridge from here
+|tip Manually skip to the next step.
+step
+goto stitches_base 57.06,59.28
+'Carefully dropdown onto the tent cloth above the wooden platform below
+|tip Manually skip to the next step.
+step
+goto stitches_base 58.67,60.89
+talk Jakarn
+|tip Manually skip to the next step.
+step
+goto stitches_base 65.25,75.30
+'Continue South to here
+|tip Manually skip to the next step.
+step
+goto stitches_base 49.22,61.65
+'Continue North to here
+|tip Manually skip to the next step.
+step
+goto stitches_base 60.92,53.15
+talk Tu'heiba
+|tip Manually skip to the next step.
+step
+goto stitches_base 61.02,52.60
+talk Jakarn
+|tip Manually skip to the next step.
+step
+'Congratulations, you have completed the Elsweyr guide!
 ]])

@@ -658,6 +658,7 @@ ZGV.MapData = {
 		["Moon Gate of Anequina"] = [[moongate_base]],
 		["Jode's Core"]	= [[moonsurface_base]],
 		["Darkpool Mine"] = [[thescab_base]],
+		["The Tangle"] = [[thetangle_base]],
 
 	},
 	["Zones"] =
@@ -830,6 +831,8 @@ ZGV.MapData = {
 		["moongate_base"] =					{ name = "Moon Gate of Anequina",			id = 474, xoffset = 0.90292587062169, yoffset = -0.076247444700743, xscale = -0.98680423018764, },
 		["moonsurface_base"] =				{ name = "Jode's Core",						id = 475, xoffset = 0.58902459270864, yoffset = 1.3638879949588, xscale = -0.64374272427174, },
 		["thescab_base"] =					{ name = "Darkpool Mine",					id = 476, xoffset = -0.09350672985143, yoffset = -0.068329917242788, xscale = 1.1000791747227, },
+		["thetangle_base"] =				{ name = "The Tangle",						id = 477, xoffset = 1.1163170573778, yoffset = 0.85366619048082, xscale = 0.85366619048082, },
+
 
 		-- EXISTING
 		["aba-loria_base"] = { name = "Aba-Loria", id = 212, xoffset = 0.403340, yoffset = 0.529272, scale = 0.016623, },
