@@ -556,7 +556,7 @@ function GuideMenu:RefreshUI()
 	else
 		frame.GuideTitle:SetText("Welcome to the Zygor Community Guide for ESO")
 		frame.GuideImage:SetTexture(ZGV.DIR.."/Viewer/Skins/Stealth/zgeso-elsweyr.dds")
-		frame.GuideData:SetText("Original guide authored by Zygor Guides\nSummerset and Murkmire guides authored by Hydra9268\nMinor bug fixes and improvements by Hydra9268")
+		frame.GuideData:SetText("Original guide authored by Zygor Guides\nSummerset, Murkmire and Elsweyr guides authored by Hydra9268\nMinor bug fixes and improvements by Hydra9268")
 		frame.GuideData:SetPoint(TOPLEFT,frame.GuideImage,0,265)
 		frame.GuideImage:Show()
 		frame.OkButton:Hide()
