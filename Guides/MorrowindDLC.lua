@@ -6393,7 +6393,8 @@ loadingimage loadscreen_balfoyen_01.dds
 description Stop a meteor from crashing into Vivec City by helping a demi-god regain his lost powers in this Morrowind expansion.
 step
 'Press _U_ to open your _Collections_
-'Click over to the _Stories_ tab and look under the _Morrowind chapter_:
+'Click over to the _Stories_ tab and look under the _DLC_ section:
+'Select _Morrowind_ in the list of DLC
 'Click the _Accept Quest_ button at the bottom
 |tip If this is your first Morrowind character, you can also accept this quest by picking up the Invitation to Morrowind in your mail.
 accept Divine Conundrum
@@ -15341,7 +15342,7 @@ loadingimage loadscreen_summerset_01.dds
 description The land called Summerset is the birthplace of civilization and magic as we know it in Tamriel. On its idyllic sea-kissed shores live the Altmer, the High Elves.
 step
 'Press _U_ to open your _Collections_
-'Click over to the _Stories_ tab and look under the _Chapter_ section:
+'Click over to the _Stories_ tab and look under the _Zone DLC_ section:
 'Select _Summerset_ in the list of Chapters
 'Click the _Accept Quest_ button at the bottom
 accept The Queen's Decree
