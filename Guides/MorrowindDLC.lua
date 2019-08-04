@@ -15352,11 +15352,7 @@ step
 |tip Summerset is the large island in the southwest of Tamriel
 |tip Manually skip to the next step.
 step
-goto shimmerene_base 24.42,70.53
-'Follow the road Southwest to here
-|tip Manually skip to the next step.
-step
-goto summerset_base 57.71,48.82
+goto shimmerene_base 31.46,81.55
 talk Razum-dar
 |tip Manually skip to the next step.
 step
@@ -15368,8 +15364,16 @@ goto summerset_base 53.97,46.97
 click Tsoxolza's Backpack
 |tip Manually skip to the next step.
 step
+goto summerset_base 55.09,45.88
+talk Linwenvar
+accept Old Wounds
+step
 goto summerset_base 57.09,44.19
 'Follow the walking path
+|tip Manually skip to the next step.
+step
+goto shimmerene_base 31.87,49.25
+'Cross the bridge
 |tip Manually skip to the next step.
 step
 goto shimmerene_base 44.33,24.41
@@ -15378,10 +15382,16 @@ talk Rhanul
 |tip Manually skip to the next step.
 step
 goto shimmerene_base 29.92,38.93
+'Run along the pier and cross the bridge
+|tip Manually skip to the next step.
 step
 goto shimmerene_base 32.31,50.24
+'Run up the stars
+|tip Manually skip to the next step.
 step
 goto shimmerene_base 40.67,51.75
+'Follow the path
+|tip Manually skip to the next step.
 step
 talk Aicessar
 accept Aicessar's Invitation
@@ -15403,56 +15413,62 @@ talk Lanarie
 accept A Tale of Two Mothers
 step
 goto shimmerene_base 65.36,59.83
+'Enter Kinlady Avinisse's Mansion |q A Tale of Two Mothers/Talk to Talerion
 step
 goto shimmerene_base 64.18,58.13
-'Go down the stairs
+'Go down the stairs |q A Tale of Two Mothers/Talk to Talerion
 |tip Manually skip to the next step.
 step
 goto shimmerene_base 61.97,58.80
 talk Talerion
 step
 goto shimmerene_base 64.72,57.06
-'Press _E_ to Take _Arathel's Map_
-'Take _Arathel's Map_
+click Arathel's Map
+'Take Arathel's Map
 |tip Manually skip to the next step.
 step
 goto shimmerene_base 65.01,59.26
-click Shimmerene
+'Exit Kinlady Avinisse's Mansion
 |tip Manually skip to the next step.
 step
 goto shimmerene_base 63.00,51.26
-click Monastery of Serene Harmony
-|tip Manually skip to the next step.
+'Enter the Monastery of Serene Harmony |q The Queen's Decree
 step
 goto monasteryoshfloor01_base 38.24,64.14
-'Press _E_ to Take _List of Sequestered Guests_
+click List of Sequestered Guests
 |tip Manually skip to the next step.
 step
 goto monasteryoshfloor01_base 54.43,53.77
-'Press _E_ to Take _Kinlady's Letter_
+click Kinlady's Letter
 |tip Manually skip to the next step.
 step
 goto monasteryoshfloor01_base 57.21,44.82
 talk Monastic Nuleros
 step
 goto monasteryoshfloor01_base 38.82,65.20
+'Go up the stairs
+|tip Manually skip to the next step.
 step
 goto monasteryoshfloor02_base 46.27,26.82
+'Run the along the hallway to this door way
+|tip Manually skip to the next step.
 step
 goto monasteryoshfloor02_base 41.51,22.54
-'Pearl _E_ to Examine _Abyssal Pearl_
+click Abyssal Pearl
 |tip Manually skip to the next step.
 step
 talk Valsirenn
 |tip Manually skip to the next step.
 step
 goto monasteryoshfloor02_base 40.85,52.60
-step
-goto monasteryoshfloor01_base 57.26,72.74
-click Monastery Undercroft
+'Go down the stairs
 |tip Manually skip to the next step.
 step
-goto monasteryoshfloor03_base 79.52,62.46
+goto monasteryoshfloor01_base 59.11,72.83
+'Jump over the railing and continue down to the Monastery Undercroft
+|tip Manually skip to the next step.
+step
+goto monasteryoshfloor03_base 78.53,63.17
 talk Minone Aloette
 click Unlock cage
 |tip Manually skip to the next step.
@@ -15462,101 +15478,79 @@ talk Valsirenn
 |tip Manually skip to the next step.
 step
 goto monasteryoshfloor03_base 67.56,71.48
-click Undercroft Great Hall
+'Continue the Undercroft Great Hall
 |tip Manually skip to the next step.
 step
 goto monasteryoshfloor03_base 48.47,70.68
 'Defend Valsirenn while she "contains" the Pearl
 |tip Manually skip to the next step.
 step
-goto monasteryoshfloor03_base 33.62,71.38
-click Undercroft Labyrinth
+goto monasteryoshfloor03_base 33.94,71.48
+'Continue Undercroft Labyrinth
 |tip Manually skip to the next step.
 step
-goto monasteryoshfloor03_base 31.31,71.71
 talk Valsirenn
 |tip Manually skip to the next step.
 step
-goto monasteryoshfloor03_base 08.09,25.08
-click Summerset
+goto monasteryoshfloor03_base 07.87,24.71
+'Continue along the cooridors until you reach the exit to Summerset'
 |tip Manually skip to the next step.
 step
-goto shimmerene_base 54.03,46.99
-step
-goto shimmerene_base 56.55,47.97
-step
-goto shimmerene_base 57.24,45.32
-'Press _E_ to Take _Note to Arathel_
+goto shimmerene_base 54.25,46.99
+'Run to here, make a sharp left
 |tip Manually skip to the next step.
 step
-goto shimmerene_base 54.74,47.20
+goto shimmerene_base 57.33,45.23
+click Note to Arathel
+|tip Manually skip to the next step.
 step
-goto shimmerene_base 52.99,44.14
-step
-goto shimmerene_base 50.05,44.79
+goto shimmerene_base 52.89,43.99
+'Exit the labyrinthine garden back to the main walkmain
+|tip Manually skip to the next step.
 step
 goto shimmerene_base 51.44,49.93
-click Anchors Aweigh Inn
+'Enter Anchors Aweigh Inn
 |tip Manually skip to the next step.
 step
-goto shimmerene_base 53.44,48.51
-'Run upstairs
-|tip Manually skip to the next step.
-step
-goto shimmerene_base 53.40,51.29
+goto shimmerene_base 53.52,51.13
+'Run up the stairs
 talk Razum-dar
 |tip Manually skip to the next step.
 step
-goto shimmerene_base 54.14,49.04
+goto shimmerene_base 55.13,48.90
 'Run down the stairs
-|tip Manually skip to the next step.
-step
-goto shimmerene_base 55.28,48.92
 talk Riharai
-|tip Choice: Dialog option "I'm here for a Deathlands Ale."
+'Select _"I'm here for a Deathlands Ale."_
 |tip Manually skip to the next step.
 step
-goto shimmerene_base 53.44,48.51
-'Run upstairs
-|tip Manually skip to the next step.
-step
-goto shimmerene_base 55.93,48.72
+goto shimmerene_base 55.91,48.69
+'Run up the stairs
 talk Edgar Jend
 |tip Manually skip to the next step.
 step
-goto shimmerene_base 51.93,50.45
-click Shimmerene
+goto shimmerene_base 52.01,50.58
+'Run down the stairs and exit the Anchors Aweigh Inn
 |tip Manually skip to the next step.
-step
-goto shimmerene_base 46.79,49.40
 step
 goto shimmerene_base 45.14,50.63
-step
-goto shimmerene_base 43.53,47.92
-step
-goto shimmerene_base 45.83,44.50
-step
-goto shimmerene_base 49.90,42.71
-step
-goto shimmerene_base 52.21,43.16
-click Shimmerene Waterworks
+'Run down the stairs
 |tip Manually skip to the next step.
 step
-goto ShimmereneWaterworks01_base 73.13,19.42
+goto shimmerene_base 52.21,43.16
+'Run along the pier and enter the Shimmerene Waterworks
+|tip Manually skip to the next step.
 step
 goto ShimmereneWaterworks01_base 72.55,25.33
+'Run through the Waterworks to here
+|tip Manually skip to the next step.
 step
 goto ShimmereneWaterworks01_base 75.23,31.71
-step
-goto ShimmereneWaterworks01_base 75.27,34.43
-step
-goto ShimmereneWaterworks01_base 65.90,34.94
-step
-goto ShimmereneWaterworks01_base 62.46,40.54
-step
-goto ShimmereneWaterworks01_base 62.08,43.69
+'Enter the new cooridor here and continue
+|tip Manually skip to the next step.
 step
 goto ShimmereneWaterworks01_base 71.21,42.43
+'Run up to the rat here
+|tip Manually skip to the next step.
 step
 goto ShimmereneWaterworks01_base 70.18,47.90
 click Mother's Den
@@ -15570,105 +15564,65 @@ goto ShimmereneWaterworks01_base 70.06,49.37
 click Shimmerene Waterworks
 |tip Manually skip to the next step.
 step
-goto ShimmereneWaterworks01_base 67.63,44.90
-step
-goto ShimmereneWaterworks01_base 61.22,42.83
-step
-goto ShimmereneWaterworks01_base 56.28,47.37
-step
-goto ShimmereneWaterworks01_base 52.92,51.28
-step
-goto ShimmereneWaterworks01_base 52.73,67.33
+goto ShimmereneWaterworks01_base 52.30,56.36
+'Continue through this path
+|tip Manually skip to the next step.
 step
 goto ShimmereneWaterworks01_base 39.89,73.23
 talk Zan'hi
 |tip Manually skip to the next step.
 step
-goto ShimmereneWaterworks01_base 36.98,75.89
-step
-goto ShimmereneWaterworks01_base 37.71,79.85
-step
-goto ShimmereneWaterworks01_base 42.21,81.21
-step
-goto ShimmereneWaterworks01_base 39.61,79.61
-step
-goto ShimmereneWaterworks01_base 32.29,82.52
-step
-goto ShimmereneWaterworks01_base 29.65,77.98
-step
-goto ShimmereneWaterworks01_base 25.58,70.74
-step
-goto ShimmereneWaterworks01_base 26.96,51.65
-step
-goto ShimmereneWaterworks01_base 25.03,49.30
-step
-goto ShimmereneWaterworks01_base 24.82,37.49
-step
 goto ShimmereneWaterworks01_base 34.76,34.64
+'Continue along this path, cross the bridge, and keeping going
 click Mirulon's Chamber
 |tip Manually skip to the next step.
 step
-goto ShimmereneWaterworks01_base 45.74,34.76
+goto ShimmereneWaterworks01_base 47.48,35.02
 kill Mirulon
-|tip A simple boss fight. Telegraphing spells is Mirulon's primary attack. At certain intervals, he'll summon a clone of himself. Ignore the clone. He'll also cast moving telegraphs that you avoid as much as possible.
 |tip Manually skip to the next step.
 step
-goto ShimmereneWaterworks01_base 39.73,32.69
+goto ShimmereneWaterworks01_base 39.88,32.57
 'Run up the stairs
-'Press _E_ to Take _Mirulon's Letter_
+click Mirulon's Letter
 |tip Manually skip to the next step.
 step
 goto ShimmereneWaterworks01_base 39.53,31.48
 click Shimmerene Aquaducts
 |tip Manually skip to the next step.
 step
-goto ShimmereneWaterworks01_base 39.36,24.75
+goto ShimmereneWaterworks01_base 50.70,24.64
+'Down here into the water below.
+|tip Manually skip to the next step.
 step
-goto ShimmereneWaterworks01_base 50.35,24.57
-step
-goto ShimmereneWaterworks01_base 57.36,27.30
+goto ShimmereneWaterworks01_base 57.31,27.10
 talk Arathel
 |tip Manually skip to the next step.
 step
-goto ShimmereneWaterworks01_base 54.82,30.83
-step
-goto ShimmereneWaterworks01_base 54.82,44.41
-step
-goto ShimmereneWaterworks01_base 69.73,45.08
-step
 goto ShimmereneWaterworks01_base 70.18,47.90
+'Escort Arathel safely back to Mother's Den
 click Mother's Den
 |tip Manually skip to the next step.
 step
 goto ShimmereneWaterworks01_base 68.97,57.46
 talk Talerion
+'Select _"I have proof. I found this among the captor's belongings."_
 |tip Manually skip to the next step.
 step
-goto ShimmereneWaterworks01_base 69.72,57.29
+goto ShimmereneWaterworks01_base 70.05,57.07
 talk Mother of Rats
 |tip Manually skip to the next step.
 step
-'Open your map. Right click until you see the Summerset map.
+'Open your map:
 click Shimmerene Wayshrine
 'Travel to the _Shimmerene_ Wayshrine
 |tip Manually skip to the next step.
-step
-goto shimmerene_base 28.30,69.37
-step
-goto shimmerene_base 36.89,68.71
-step
-goto shimmerene_base 44.68,63.33
-step
-goto shimmerene_base 54.67,63.44
-step
-goto shimmerene_base 60.15,61.69
 step
 goto shimmerene_base 66.13,60.87
 'Press _E_ to use _Elegant Outfit_
 |tip Manually skip to the next step.
 step
-goto shimmerene_base 65.27,59.88
-click Kinlady Avinisse's Mansion
+goto shimmerene_base 65.36,59.83
+'Enter Kinlady Avinisse's Mansion
 |tip Manually skip to the next step.
 step
 goto shimmerene_base 64.69,56.74
@@ -15683,8 +15637,12 @@ goto shimmerene_base 60.75,56.93
 talk Aldarch Tilcalar
 |tip Manually skip to the next step.
 step
+goto shimmerene_base 60.75,56.93
+talk Aldarch Tilcalar
+|tip Manually skip to the next step.
+step
 goto shimmerene_base 61.65,57.91
-click Kinlady Avinisse's Mansion
+'Enter Kinlady Avinisse's Mansion
 |tip Manually skip to the next step.
 step
 goto shimmerene_base 65.56,57.82
@@ -15697,41 +15655,25 @@ goto shimmerene_base 65.08,59.27
 click Shimmerene
 |tip Manually skip to the next step.
 step
-goto shimmerene_base 65.01,62.24
-step
 goto shimmerene_base 58.50,62.05
 talk Razum-dar
 |tip Manually skip to the next step.
 step
-goto shimmerene_base 52.20,64.49
-step
-goto shimmerene_base 44.95,63.28
-step
-goto shimmerene_base 39.63,66.52
-step
-goto shimmerene_base 33.16,69.48
-step
-goto shimmerene_base 27.27,70.13
-step
-goto shimmerene_base 26.53,71.63
-step
-goto shimmerene_base 27.51,74.89
-step
-goto shimmerene_base 28.32,76.63
-step
-goto summerset_base 58.42,49.29
+goto shimmerene_base 28.11,76.62
+'Follow the path
+|tip Manually skip to the next step.
 step
 goto summerset_base 59.58,52.03
 talk Celinar
 accept The Runaway's Tale
 step
 goto summerset_base 63.43,52.73
-talk Valsirenn
+talk to Valsirenn
 |tip Manually skip to the next step.
 step
 goto summerset_base 68.87,53.95
-'Press _E_ to Take _Message in a Bottle_
-'Take _Waterlogged Note_
+click Message in a Bottle
+'Take Waterlogged Note
 |tip Manually skip to the next step.
 step
 goto summerset_base 68.62,55.45
@@ -15761,8 +15703,8 @@ talk Talomar
 accept Untamed and Unleashed
 step
 goto summerset_base 68.83,61.23
-'Press _E_ to Search _Dead Mammoth_
-'Take _Mammoth Tusk Shards_
+click Dead Mammoth
+'Take Mammoth Tusk Shards
 |tip Manually skip to the next step.
 step
 goto summerset_base 68.78,61.07
@@ -15770,17 +15712,13 @@ talk Talomar
 |tip Manually skip to the next step.
 step
 goto summerset_base 68.59,62.83
-'Press _E_ to Search _Tainted Feed_
-'Take _Tainted Feed_
+click Tainted Feed
+'Take Tainted Feed
 |tip Manually skip to the next step.
 step
 goto summerset_base 68.91,62.62
 talk Talomar
 |tip Manually skip to the next step.
-step
-goto summerset_base 68.20,62.71
-step
-goto summerset_base 67.25,62.78
 step
 goto summerset_base 66.40,62.29
 kill pack of lions
@@ -15789,18 +15727,6 @@ step
 goto summerset_base 65.67,62.58
 talk Elise Mallon
 |tip Manually skip to the next step.
-step
-goto summerset_base 66.74,63.54
-step
-goto summerset_base 66.27,64.33
-step
-goto summerset_base 66.99,65.19
-step
-goto summerset_base 68.18,65.17
-step
-goto summerset_base 69.47,64.59
-step
-goto summerset_base 70.05,63.91
 step
 goto summerset_base 69.94,63.44
 talk Conservator Vinelore
@@ -15818,16 +15744,10 @@ goto summerset_base 69.94,62.50
 talk Talomar
 |tip Manually skip to the next step.
 step
-goto summerset_base 69.67,61.54
-step
-goto summerset_base 68.26,62.00
-step
 goto summerset_base 67.38,61.44
-'Press _E_ to Search _Dead Ranger_
-'Take _Conservatory Key_
+click Dead Ranger
+'Take Conservatory Key
 |tip Manually skip to the next step.
-step
-goto summerset_base 67.05,62.02
 step
 goto summerset_base 67.03,63.54
 click Sil-Var-Woad Conservatory
@@ -15862,19 +15782,8 @@ goto summerset_base 67.34,64.53
 talk Elise Mallon
 |tip Manually skip to the next step.
 step
-goto summerset_base 67.49,64.41
-click Paddocks
-|tip Manually skip to the next step.
-step
-goto summerset_base 68.11,63.89
-step
-goto summerset_base 68.96,63.46
-step
-goto summerset_base 69.39,63.48
-step
 goto summerset_base 69.37,63.83
 kill Conservator Vinelore and Speciman II
-|tip A simple combo-boss fight. Focus your attacks on Vinelore, and then take out the Speciman. Simple, easy.
 |tip Manually skip to the next step.
 step
 goto summerset_base 68.85,64.12
@@ -15887,60 +15796,55 @@ click Portal to Menagerie Grounds
 step
 goto summerset_base 66.15,64.27
 talk Talomar
-|tip Choice: Dialog choice "You should stay. You can make sure the animals are really cared for here."
+'Select _"You should stay. You can make sure the animals are really cared for here."_
 |tip Manually skip to the next step.
-step
-goto summerset_base 64.67,66.44
 step
 goto summerset_base 62.55,66.16
 'Continue along the path to
 wayshrine Eastern Pass
 |tip Manually skip to the next step.
 step
-goto summerset_base 59.44,66.78
-step
-goto summerset_base 56.69,66.70
-step
 goto summerset_base 54.18,67.64
 talk Vinafwe
 accept The Forest Vandal
 step
 goto summerset_base 52.00,67.28
-'Press _E_ to Take _Abandoned Shovel_
-'Take _Abandoned Shovel_
+click Abandoned Shovel
+'Take Abandoned Shovel
 |tip Manually skip to the next step.
 step
 goto summerset_base 50.52,67.76
-'Press _E_ to Take _Bear-Hide Pouch_
-'Take _Bear-Hide Pouch_
+click Bear-Hide Pouch
+'Take Bear-Hide Pouch
 |tip Manually skip to the next step.
 step
 goto summerset_base 52.46,69.03
-'Press _E_ to Dig _Recently Disturbed Soil_
+click Recently Disturbed Soil
+'Take Recently Disturbed Soil
 |tip Manually skip to the next step.
 step
 kill the Three Stranglers
 'They appear one at a time
 |tip Manually skip to the next step.
 step
-goto summerset_base 51.94,68.74
+goto summerset_base 51.96,68.72
 talk Eslion
 |tip Manually skip to the next step.
 step
 goto summerset_base 53.59,69.43
-'Press _E_ to Poison _Water Source_
+click Water Source
 |tip Manually skip to the next step.
 step
 goto summerset_base 52.00,65.87
-'Press _E_ to Poison _Water Source_
+click Water Source
 |tip Manually skip to the next step.
 step
 goto summerset_base 50.56,69.90
-'Press _E_ to Poison _Water Source_
+click Water Source
 |tip Manually skip to the next step.
 step
 goto summerset_base 48.13,69.36
-'Press _E_ to Poison _Water Source_
+click Water Source
 |tip Manually skip to the next step.
 step
 goto summerset_base 48.02,70.50
@@ -15952,38 +15856,193 @@ talk Kinlady Ilunsare
 accept Obedience Issues
 step
 goto summerset_base 49.75,71.62
+'Press _E_ to Console _Eustasia_
 'Press _E_ to Examine _Durell_
-'Take _Durell's Locket_
-|tip Manually skip to the next step.
-step
-goto summerset_base 49.75,71.62
-'Press _E_ to Pet _Eustasia_
+'Take Durell's Locket
 |tip Manually skip to the next step.
 step
 goto summerset_base 46.50,73.47
 talk Kinlady Ilunsare
 |tip Manually skip to the next step.
 step
+
+goto summerset_base 46.86,71.04
+'Continue West to Sunhold from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 45.23,70.77
+'Press _E_ to Open _Sunhold Public Dungeon_
+|tip Manually skip to the next step.
+step
+goto sunhold_base 73.32,78.10
+talk Kinlady Helenaere
+accept Sunhold Sundered
+step
+'This is a Public Dungeon, and it will be challenging.
+'You can solo most it if you, but try and avoid groups of Snakeskin Bezerkers.
+'When you engage groups always kill the caster first.
+'You can move around undetected by sneaking
+|tip Manually skip to the next step.
+step
+goto sunhold_base 55.17,74.42
+'Press _E_ to Burn _Maormer Supplies_
+|tip Manually skip to the next step.
+step
+goto sunhold_base 49.68,69.12
+'You can pull one of the Snakeskin Bezerkers by the crate you need to burn to here. The other Snakeskin Bezerkers pathing will glitch out.
+|tip Manually skip to the next step.
+step
+goto sunhold_base 48.23,66.90
+'Press _E_ to Burn _Maormer Supplies_
+|tip Manually skip to the next step.
+step
+goto sunhold_base 49.99,58.76
+'Press _E_ to Burn _Maormer Supplies_
+|tip Manually skip to the next step.
+step
+goto sunhold_base 44.87,61.19
+'Press _E_ to Burn _Maormer Supplies_
+|tip Manually skip to the next step.
+step
+goto sunhold_base 43.56,70.58
+'Press _E_ to Burn _Maormer Supplies_
+|tip Manually skip to the next step.
+step
+goto sunhold_base 38.90,75.80
+'Press _E_ to Burn _Maormer Supplies_
+|tip Manually skip to the next step.
+step
+goto sunhold_base 38.61,80.16
+'Jump off the pier into the water here
+|tip Manually skip to the next step.
+step
+goto sunhold_base 62.10,85.77
+'Swim to here
+|tip Manually skip to the next step.
+step
+goto sunhold_base 67.59,74.99
+'Sneak to here
+|tip Manually skip to the next step.
+step
+goto sunhold_base 67.01,64.27
+'Run to here
+|tip Manually skip to the next step.
+step
+goto sunhold_base 62.91,52.13
+'Continue Northeast from here
+|tip Manually skip to the next step.
+step
+goto sunhold_base 63.68,46.86
+'Continue Northwest from here
+|tip Manually skip to the next step.
+step
+goto sunhold_base 60.76,42.35
+'Run up the stairs
+|tip Manually skip to the next step.
+step
+goto sunhold_base 64.68,42.93
+kill Kolondir the Demon
+|tip Manually skip to the next step.
+step
+goto sunhold_base 64.68,42.93
+'Press _E_ to Destroy _Prisoner Chains_
+|tip Manually skip to the next step.
+step
+goto sunhold_base 60.06,38.40
+'Jump down from here. You likely fight Captain Quergura.
+|tip Manually skip to the next step.
+step
+goto sunhold_base 55.27,38.06
+'Press _E_ to Destroy _Prisoner Chains_
+|tip Manually skip to the next step.
+step
+goto sunhold_base 53.91,39.45
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto sunhold_base 46.33,37.91
+'Sneak passed all the mobs to here
+|tip Manually skip to the next step.
+step
+goto sunhold_base 49.14,39.04
+'Press _E_ to Destroy _Prisoner Chains_
+|tip Manually skip to the next step.
+step
+goto sunhold_base 47.06,40.24
+'Run up the stairs from here
+|tip Manually skip to the next step.
+step
+goto sunhold_base 40.88,37.67
+'Sneak to here
+|tip Manually skip to the next step.
+step
+goto sunhold_base 38.13,34.85
+'Wait until both Storm Atronachs walk away
+'Sneak up the stairs
+|tip Manually skip to the next step.
+step
+goto sunhold_base 25.75,29.15
+'Continue Northeast from here
+|tip Manually skip to the next step.
+step
+goto sunhold_base 37.97,19.26
+'Continue Southeast from here
+|tip Manually skip to the next step.
+step
+goto sunhold_base 43.94,25.36
+'Continue Southwest from here
+|tip Manually skip to the next step.
+step
+goto sunhold_base 34.25,44.02
+'Jump down from here.
+|tip Manually skip to the next step.
+step
+goto sunhold_base 36.80,43.63
+'Break the Chains holding Sunnawel
+|tip Manually skip to the next step.
+step
+goto sunhold_base 30.53,46.68
+'Run up the stairs and follow the path
+|tip Manually skip to the next step.
+step
+goto sunhold_base 43.83,24.82
+'Run down the stairs
+|tip Manually skip to the next step.
+step
+goto sunhold_base 38.39,20.18
+talk Khavid
+|tip Manually skip to the next step.
+step
+goto sunhold_base 28.59,19.74
+kill Admiral Viscarne
+|tip Manually skip to the next step.
+step
+goto sunhold_base 28.63,22.03
+talk Kinlady Helenaere
+|tip Manually skip to the next step.
+step
+'Open your map:
+click Sunhold Wayshrine
+'Travel to the _Sunhold_ Wayshrine
+|tip Manually skip to the next step.
+step
 goto summerset_base 54.26,67.60
 talk Eslion
-|tip Choice: Dialog option "I'll testify on your behalf. [Eslion Goes Free]"
+'Select _"I'll testify on your behalf. [Eslion Goes Free]"_
 |tip Manually skip to the next step.
 step
 goto summerset_base 54.23,67.62
 talk Justiciar Oradel
 |tip Manually skip to the next step.
 step
-'Open your map.
+'Open your map:
+click Shimmerene Wayshrine
 'Travel to the _Shimmerene_ Wayshrine
 |tip Manually skip to the next step.
 step
-goto shimmerene_base 21.12,67.60
+goto shimmerene_base 20.97,67.16
 'Continue West along the path
 |tip Manually skip to the next step.
-step
-goto summerset_base 52.29,46.02
-step
-goto summerset_base 51.86,48.03
 step
 goto summerset_base 54.19,52.04
 'Press _E_ to Examine _Chief Justiciar Carawen_
@@ -15991,66 +16050,41 @@ accept Pearls Before Traitors
 step
 goto summerset_base 49.77,54.40
 talk Captain Telomure
+'Cross the bridge back to the main path and then run up the stairs
 |tip Manually skip to the next step.
 step
 goto summerset_base 49.66,54.42
 click Tor-Hame-Khard Delve
 |tip Manually skip to the next step.
 step
-goto torhamekhard_01_base 52.65,19.38
-step
-goto torhamekhard_01_base 51.68,25.10
-step
-goto torhamekhard_01_base 49.10,31.38
-step
-goto torhamekhard_01_base 40.33,44.67
-step
-goto torhamekhard_01_base 45.23,51.59
-step
-goto torhamekhard_01_base 49.07,59.03
-step
 goto torhamekhard_01_base 42.36,60.78
+'Continue from here
+|tip Manually skip to the next step.
 step
 goto torhamekhard_02_base 39.92,54.18
+'Continue from here
+|tip Manually skip to the next step.
 step
 goto torhamekhard_02_base 58.38,54.13
+'Continue from here
+|tip Manually skip to the next step.
 step
-goto torhamekhard_02_base 59.07,71.62
+goto torhamekhard_02_base 44.90,73.33
+'Continue from here
+|tip Manually skip to the next step.
 step
-goto torhamekhard_02_base 52.24,80.06
-step
-goto torhamekhard_02_base 44.62,72.45
-step
-goto torhamekhard_01_base 35.58,68.99
-step
-goto torhamekhard_01_base 30.69,60.32
-step
-goto torhamekhard_01_base 30.23,51.27
-step
-goto torhamekhard_01_base 29.26,45.22
+goto torhamekhard_01_base 29.54,45.67
 kill Justiciar Avanaire
-|tip A simple boss fight. Avanaire is a spell-chucker and uses a lot of AOE telegraphs that are easy to avoid. She is hard to reposition, so if you can go range for this fight do so.
 |tip Manually skip to the next step.
 step
 goto torhamekhard_01_base 30.00,44.12
 'Press _E_ to Destroy _Abyssal Pearl_
 |tip Manually skip to the next step.
 step
-goto torhamekhard_01_base 30.18,50.99
-step
-goto torhamekhard_01_base 34.59,48.96
-step
 goto torhamekhard_01_base 37.33,44.53
 click Tor-Hame-Khard
+'Run outside of the room and up the stairs
 |tip Manually skip to the next step.
-step
-goto torhamekhard_01_base 39.69,35.46
-step
-goto torhamekhard_01_base 49.40,30.64
-step
-goto torhamekhard_01_base 53.02,24.49
-step
-goto torhamekhard_01_base 56.96,52.94
 step
 goto torhamekhard_01_base 49.15,11.68
 click Summerset
@@ -16058,14 +16092,11 @@ click Summerset
 step
 goto summerset_base 49.72,54.38
 talk Captain Telomure
+'Select _"I found Justiciar Avanaire's journal"_
 |tip Manually skip to the next step.
 step
 goto summerset_base 51.80,53.90
 'Jump down here
-|tip Manually skip to the next step.
-step
-goto summerset_base 55.17,52.79
-'Continue to here
 |tip Manually skip to the next step.
 step
 goto summerset_base 58.51,55.52
@@ -16080,53 +16111,21 @@ goto summerset_base 57.90,58.37
 click Archon's Grove Delve
 |tip Manually skip to the next step.
 step
-goto archonsgrove_base 75.29,38.15
-step
-goto archonsgrove_base 65.53,39.19
-step
-goto archonsgrove_base 63.39,35.02
-step
-goto archonsgrove_base 55.38,37.77
-step
-goto archonsgrove_base 47.26,36.51
-step
-goto archonsgrove_base 41.77,41.00
-step
-goto archonsgrove_base 37.33,53.07
-step
-goto archonsgrove_base 31.57,54.99
-step
-goto archonsgrove_base 34.37,67.34
-step
-goto archonsgrove_base 27.33,73.54
-step
 goto archonsgrove_base 17.70,76.06
 talk Niralin
-|tip Choice: Dialog option "[Persuade] You can hide your true nature and return to Shimmerene. Control is possible."
+'You have a moral decision to make here. Pick one.
 |tip Manually skip to the next step.
 step
-'Open your map. Right click until you see the Summerset map.
+'Open your map:
+click Shimmerene Wayshrine
 'Travel to the _Shimmerene_ Wayshrine
 |tip Manually skip to the next step.
 step
-goto shimmerene_base 28.31,69.60
-step
-goto shimmerene_base 35.21,70.44
-step
-goto shimmerene_base 39.25,67.20
-step
 goto shimmerene_base 40.47,61.65
 talk Esterdel
-|tip Manually skip to the next step.
 step
-goto shimmerene_base 39.25,67.20
-step
-goto shimmerene_base 35.21,70.44
-step
-goto shimmerene_base 24.97,70.23
-step
-goto summerset_base 56.40,47.80
-'Follow the path up to here
+goto shimmerene_base 34.41,70.35
+'Continue from here
 |tip Manually skip to the next step.
 step
 goto summerset_base 55.93,52.92
@@ -16138,6 +16137,7 @@ click Portal to Artaeum
 |tip Manually skip to the next step.
 step
 'Open your map:
+click Artaeum Wayshrine
 'Travel to the _Artaeum_ Wayshrine
 |tip Manually skip to the next step.
 step
@@ -16159,14 +16159,14 @@ talk Oriandra
 step
 goto dreamingcave03_base 17.87,54.98
 'Press _E_ to Take _Amplification Elixir_
-'Take _Amplification Elixir_
+'Take the Amplification Elixir
 |tip Manually skip to the next step.
 step
 goto dreamingcave03_base 34.05,50.38
 click Portal to Ceporah Main Gallery
 |tip Manually skip to the next step.
 step
-goto dreamingcave02_base 41.12,39.64
+goto dreamingcave02_base 42.79,38.43
 talk Ritemaster Iachesis
 |tip Manually skip to the next step.
 step
@@ -16183,6 +16183,7 @@ click Portal to Artaeum
 |tip Manually skip to the next step.
 step
 'Open your map. Right click to bring up the Universe map. Select Tamirel.
+click Shimmerene Wayshrine
 'Travel to the _Shimmerene_ Wayshrine
 |tip Manually skip to the next step.
 step
@@ -16190,15 +16191,11 @@ goto shimmerene_base 20.98,67.07
 'Continue from here
 |tip Manually skip to the next step.
 step
-goto summerset_base 55.09,45.88
-talk Linwenvar
-accept Old Wounds
-step
 goto summerset_base 49.93,45.75
 'Continue north from here
 |tip Manually skip to the next step.
 step
-goto summerset_base 49.44,42.65
+goto summerset_base 49.95,42.64
 talk Tarnamir
 |tip Manually skip to the next step.
 step
@@ -16224,7 +16221,7 @@ goto summerset_base 48.51,43.96
 step
 goto summerset_base 50.90,44.40
 'Press _E_ to Examine _Suspicious Sack_
-'Take _Bloodstained Sickle_
+'Take the Bloodstained Sickle
 |tip Manually skip to the next step.
 step
 goto summerset_base 48.53,44.01
@@ -16245,10 +16242,6 @@ click Summerset
 step
 goto summerset_base 46.81,45.84
 talk Jurisreeve Lorne
-|tip Manually skip to the next step.
-step
-goto summerset_base 51.87,47.85
-'Go here to trigger the quest's follow-up step
 |tip Manually skip to the next step.
 step
 goto summerset_base 52.07,48.13
@@ -16283,25 +16276,17 @@ goto russafeldredtemple01_base 48.99,33.30
 'Wait for the Conversation with Jurisreeve Soravil to end.
 |tip Manually skip to the next step.
 step
-goto russafeldredtemple01_base 67.22,35.74
+goto russafeldredtemple01_base 69.09,34.86
+'Continue from here
+|tip Manually skip to the next step.
 step
-goto russafeldredtemple01_base 67.72,59.19
-step
-goto russafeldredtemple01_base 52.66,61.62
-step
-goto russafeldredtemple01_base 50.13,80.00
+goto russafeldredtemple01_base 51.01,79.90
 talk Celan
 |tip Manually skip to the next step.
 step
-'Press _E_ to Take _Hunting Arrow_
-'Take _Hunting Arrow_
+'Press _E_ to Take _Hunting arrow_
+'Take Hunting arrow
 |tip Manually skip to the next step.
-step
-goto russafeldredtemple01_base 52.66,61.62
-step
-goto russafeldredtemple01_base 67.72,59.19
-step
-goto russafeldredtemple01_base 67.22,35.74
 step
 goto russafeldredtemple01_base 52.66,26.09
 talk Jurisreeve Soravil
@@ -16339,29 +16324,12 @@ goto summerset_base 43.87,40.36
 click Red Temple Catacombs
 |tip Manually skip to the next step.
 step
-goto russafeldredtemple02_base 58.10,25.89
-step
-goto russafeldredtemple02_base 47.12,32.57
-step
-goto russafeldredtemple02_base 38.69,43.91
-step
-goto russafeldredtemple02_base 31.42,55.75
-step
-goto russafeldredtemple02_base 24.16,63.74
-step
-goto russafeldredtemple02_base 25.22,74.08
-step
-goto russafeldredtemple02_base 30.47,85.00
-step
-goto russafeldredtemple02_base 46.96,80.84
-step
-goto russafeldredtemple02_base 50.81,69.58
-step
-goto russafeldredtemple02_base 57.93,59.08
+goto russafeldredtemple02_base 53.63,32.32
+'Continue from here, follow the path to Jurisreeve Soravil
+|tip Manually skip to the next step.
 step
 goto russafeldredtemple02_base 58.32,47.91
-kill Soravil
-|tip A simple boss fight. Most of Soravil's a ranged telegraphs that can easily be side-stepped.
+kill Jurisreeve Lorne
 |tip Manually skip to the next step.
 step
 goto russafeldredtemple02_base 57.99,38.80
@@ -16376,7 +16344,7 @@ goto russafeldredtemple02_base 58.02,12.43
 click Summerset
 |tip Manually skip to the next step.
 step
-goto summerset_base 49.16,42.92
+goto summerset_base 49.16,42.96
 talk Elsoreth
 |tip Manually skip to the next step.
 step
@@ -16396,11 +16364,11 @@ goto summerset_base 39.18,48.66
 talk Canonreeve Farmeldo
 |tip Manually skip to the next step.
 step
-goto summerset_base 38.09,49.85
+goto summerset_base 38.09,49.61
 'Press _E_ to Use _Rinyde's Enchanted Daggers_
 |tip Manually skip to the next step.
 step
-goto summerset_base 38.05,50.15
+goto summerset_base 38.05,50.13
 talk Alchemy
 |tip Manually skip to the next step.
 step
@@ -16410,6 +16378,10 @@ goto summerset_base 38.66,49.94
 step
 goto summerset_base 38.83,50.64
 'Jump on top of this pillar's base and then to the ledge above
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.84,50.76
+'Continue up the hill from here
 |tip Manually skip to the next step.
 step
 goto summerset_base 38.63,52.76
@@ -16423,7 +16395,7 @@ kill Gryphon
 step
 goto summerset_base 36.62,54.43
 'Press _E_ to Search _Gryphon Nest_
-'Take _Griffon Feather_
+'Take Griffon Feather
 |tip Manually skip to the next step.
 step
 goto summerset_base 37.32,53.97
@@ -16450,7 +16422,6 @@ goto summerset_base 38.12,47.89
 talk Rinyde
 |tip Manually skip to the next step.
 step
-goto summerset_base 38.12,47.89
 'Press _E_ to Take _Rinyde's Journal_
 |tip Manually skip to the next step.
 step
@@ -16529,7 +16500,7 @@ goto summerset_base 36.58,48.41
 step
 goto summerset_base 38.11,49.59
 talk Alchemy
-|tip Choice: Dialog option "[Warn Alchemy] Rinyde plans to unmask your Hopefuls during their performance."
+'Select _"[Warn Alchemy] Rinyde plans to unmask your Hopefuls during their performance."_
 |tip Manually skip to the next step.
 step
 goto summerset_base 37.96,49.75
@@ -16551,7 +16522,7 @@ step
 goto summerset_base 38.37,48.85
 'Run up the stairs and into the study
 talk Alchemy
-|tip Choice: Dialog option "If you're worried she won't leave, let her join the Sapiarchs, then tell her."
+'Select _"If you're worried she won't leave, let her join the Sapiarchs, then tell her."_
 |tip Manually skip to the next step.
 step
 goto summerset_base 38.20,48.63
@@ -16579,37 +16550,25 @@ goto sinkhole_base 20.35,59.24
 talk Valsirenn
 |tip Manually skip to the next step.
 step
-goto sinkhole_base 21.82,64.52
+goto sinkhole_base 27.95,66.16
+'Continue from here
+|tip Manually skip to the next step.
 step
-goto sinkhole_base 28.18,65.45
-step
-goto sinkhole_base 28.65,58.74
-step
-goto sinkhole_base 36.45,60.59
-step
-goto sinkhole_base 46.13,60.47
-step
-goto sinkhole_base 48.09,67.21
+goto sinkhole_base 36.89,60.35
+'Continue up the path from here
+|tip Manually skip to the next step.
 step
 goto sinkhole_base 51.47,68.59
 talk Eldhon
 |tip Manually skip to the next step.
 step
-goto sinkhole_base 58.30,62.40
-step
 goto sinkhole_base 56.39,50.67
 talk Valsirenn
 |tip Manually skip to the next step.
 step
-goto sinkhole_base 64.90,51.11
+goto sinkhole_base 64.93,51.26
 click Rellenthil Sinkhole
 |tip Manually skip to the next step.
-step
-goto sinkhole_base 71.55,46.72
-step
-goto sinkhole_base 64.37,42.79
-step
-goto sinkhole_base 56.72,39.50
 step
 goto sinkhole_base 56.66,47.86
 click Abyssal Pearl
@@ -16619,22 +16578,23 @@ goto sinkhole_base 51.50,50.21
 click Abyssal Pearl
 |tip Manually skip to the next step.
 step
-goto sinkhole_base 51.91,45.31
+goto sinkhole_base 51.55,45.63
+'Run up the path from here
+|tip Manually skip to the next step.
 step
 goto sinkhole_base 42.90,45.95
 talk Valsirenn
 |tip Manually skip to the next step.
 step
-goto sinkhole_base 36.07,36.57
+goto sinkhole_base 36.56,37.33
 kill Yaghra Monstrosity
-|tip A simple boss fight. The Monstrosity summons a small hatchling. Ignore them and focus on the Monstrosity. The best tactic is to attack the Monstrosity while moving around it. It has a slow turn radius. When it summons a large telegraph at its location move away.
 |tip Manually skip to the next step.
 step
 goto sinkhole_base 35.60,30.79
 click Summerset
 |tip Manually skip to the next step.
 step
-goto summerset_base 43.17,43.44
+goto summerset_base 43.16,43.43
 talk Razum-dar
 |tip Manually skip to the next step.
 step
@@ -16679,20 +16639,20 @@ click Cey-Tarn Keep Barracks
 |tip Manually skip to the next step.
 step
 goto summerset_base 32.74,53.70
-'Run up to the second floor and press _E_ to Examine _Candelabra_
+'Press _E_ to Examine _Candelabra_
 |tip Manually skip to the next step.
 step
 'Press _E_ to Examine _Smeared Footprints_
-'Take _Tracked Clay_
+'Take Tracked Clay
 |tip Manually skip to the next step.
 step
 goto summerset_base 32.63,53.59
 'Press _E_ to Examine _Desiccated Corpse_
-'Take _Shriveled Cocoon_
+'Take Shriveled Cocoon
 |tip Manually skip to the next step.
 step
 goto summerset_base 32.54,53.52
-'Press _E_ to Take _The Insatiable_
+click The Insatiable
 |tip Manually skip to the next step.
 step
 goto summerset_base 32.67,53.64
@@ -16700,7 +16660,6 @@ click Cey-Tarn Keep Barracks
 |tip Manually skip to the next step.
 step
 goto summerset_base 32.39,53.69
-'Drop down to the first floor
 click Cey-Tarn Keep
 |tip Manually skip to the next step.
 step
@@ -16717,23 +16676,20 @@ goto summerset_base 31.94,54.31
 click Refectory Cellar
 |tip Manually skip to the next step.
 step
-goto ceytarn_dungeon01_base 49.84,31.74
+goto ceytarn_dungeon01_base 49.90,31.30
 'Press _E_ to Use _The Gorge_
 |tip Manually skip to the next step.
 step
 goto ceytarn_dungeon02_base 59.20,28.03
+'Run down the stairs from here
+|tip Manually skip to the next step.
 step
 goto ceytarn_dungeon02_base 59.01,43.87
 'Press _E_ to Take _Show Us Your Worth_
 |tip Manually skip to the next step.
 step
-goto ceytarn_dungeon02_base 58.18,52.66
-step
-goto ceytarn_dungeon02_base 53.50,54.62
-'Jump down to the bottom from here
-|tip Manually skip to the next step.
-step
 goto ceytarn_dungeon03_base 47.85,59.85
+'Run down the stairs and
 talk Justiciar Hyircil
 |tip Manually skip to the next step.
 step
@@ -16748,7 +16704,6 @@ click Lair of the Insatiable
 step
 goto ceytarn_dungeon03_base 48.74,89.06
 kill The Insatiable
-|tip A challenging but straightforward boss fight. The Insatiable does a lot of melee damage, and it occasionally puts you in the vice grip that temporarily disables you. Both of these hit hard, so you'll need healing spells or (and, depending on how much damage you take) potions on the ready.
 |tip Manually skip to the next step.
 step
 goto ceytarn_dungeon03_base 55.68,89.10
@@ -16759,7 +16714,6 @@ goto ceytarn_dungeon03_base 68.57,89.54
 'Press _E_ to Use _Portal_
 |tip Manually skip to the next step.
 step
-goto ceytarncaveInt02_base 54.30,62.82
 talk Revelator Lindafwe
 |tip Manually skip to the next step.
 step
@@ -16780,13 +16734,12 @@ goto ceytarncaveInt02_base 52.83,76.39
 'The order to light the sconces is Anima, Ego, Incalescence, and Mortality
 |tip Manually skip to the next step.
 step
-goto ceytarncaveInt02_base 52.91,75.49
-click The Gorge
+goto ceytarncaveInt02_base 52,83,75.93
+'Press _E_ to Use _The Gorge_
 |tip Manually skip to the next step.
 step
 goto ceytarncaveInt03_base 50.50,56.42
 kill Teraniel
-|tip A straightforward boss fight. Teraniel does much range and telegraphing attacks. Ignore the telegraphs as much as possible.
 |tip Manually skip to the next step.
 step
 goto ceytarncaveInt03_base 52.81,72.81
@@ -16822,24 +16775,8 @@ talk Hiranesse
 accept Lost at Sea
 step
 goto summerset_base 26.72,52.14
-'Press _E_ to Travel _Wasten Coraldale_
+'Press _E_ to Travel _Wasten Coraldale Delve_
 |tip Manually skip to the next step.
-step
-goto wastencoraldale_base 23.85,65.11
-step
-goto wastencoraldale_base 27.61,62.96
-step
-goto wastencoraldale_base 33.24,59.45
-step
-goto wastencoraldale_base 39.27,56.94
-step
-goto wastencoraldale_base 43.89,57.99
-step
-goto wastencoraldale_base 51.41,55.79
-step
-goto wastencoraldale_base 50.17,45.98
-step
-goto wastencoraldale_base 44.12,42.37
 step
 goto wastencoraldale_base 37.18,40.22
 talk Curtaros
@@ -16849,12 +16786,6 @@ goto wastencoraldale_base 49.11,39.56
 talk Aldortarel
 |tip Manually skip to the next step.
 step
-goto wastencoraldale_base 45.91,43.94
-step
-goto wastencoraldale_base 51.61,46.35
-step
-goto wastencoraldale_base 54.58,51.54
-step
 goto wastencoraldale_base 57.57,49.04
 'Press _E_ to Read _Cartorrel's Last Words_
 |tip Manually skip to the next step.
@@ -16863,36 +16794,18 @@ goto wastencoraldale_base 65.77,53.80
 talk Emdoline
 |tip Manually skip to the next step.
 step
-goto wastencoraldale_base 74.47,51.48
-step
 goto wastencoraldale_base 80.85,41.99
 talk Curtaros
 |tip Manually skip to the next step.
 step
-goto wastencoraldale_base 75.83,37.74
-step
 goto wastencoraldale_base 66.41,31.90
+'Kill the waves of NPCs until Commander Morteth appears.
 kill Commander Morteth
-|tip Kill the waves of NPCs until Commander Morteth appears, then continue to kill any remaining NPCs. Morteth is a simple boss. His only real ability is a ground slam from the sky, which is easy to avoid.
 |tip Manually skip to the next step.
 step
-goto wastencoraldale_base 62.43,33.17
-step
-goto wastencoraldale_base 62.39,46.79
-step
 goto wastencoraldale_base 52.76,52.49
-step
-goto wastencoraldale_base 51.54,55.68
-step
-goto wastencoraldale_base 43.89,57.99
-step
-goto wastencoraldale_base 39.27,56.94
-step
-goto wastencoraldale_base 33.24,59.45
-step
-goto wastencoraldale_base 27.61,62.96
-step
-goto wastencoraldale_base 23.85,65.11
+'Contunue into the cave from here
+|tip Manually skip to the next step.
 step
 goto wastencoraldale_base 20.14,67.51
 'Press _E_ to Travel _Summerset_
@@ -16902,8 +16815,12 @@ goto summerset_base 26.72,52.20
 talk Hiranesse
 |tip Manually skip to the next step.
 step
-goto summerset_base 27.63,54.53
-'Continue to here
+goto summerset_base 28.28,53.46
+'Continue Southwest on the main road to Alinor
+|tip Manually skip to the next step.
+step
+goto summerset_base 27.09,56.00
+'Continue South from here
 |tip Manually skip to the next step.
 step
 goto summerset_base 27.67,57.20
@@ -16917,23 +16834,6 @@ step
 goto alinor_base 23.73,43.67
 talk Roguzog
 accept A Duelist's Dilemma
-step
-goto alinor_base 29.58,44.46
-step
-goto alinor_base 34.79,52.57
-step
-goto alinor_base 43.03,56.99
-step
-goto alinor_base 49.07,53.94
-step
-goto alinor_base 54.89,57.32
-wayshrine Alinor
-step
-goto alinor_base 49.07,53.94
-step
-goto alinor_base 43.03,56.99
-step
-goto alinor_base 34.79,52.57
 step
 goto alinor_base 36.10,35.12
 click The Golden Gryphon
@@ -16951,7 +16851,6 @@ goto alinor_base 38.96,35.44
 talk Felande Demarie
 accept Room to Spare
 |tip You gain a new room for decorating
-|tip Manually skip to the next step.
 step
 goto alinor_base 38.96,35.44
 'Run down to the first floor and
@@ -16963,10 +16862,12 @@ talk Roguzog
 |tip Manually skip to the next step.
 step
 goto alinor_base 23.55,50.26
+'Run up the stairs from here
+|tip Manually skip to the next step.
 step
 goto alinor_base 28.97,55.11
 talk Nahdahni
-'Select _"Will this be enough? [29 gold]"_
+'Select _"Will this be enough? [34 gold]"_
 |tip Manually skip to the next step.
 step
 'Open your map:
@@ -16974,34 +16875,33 @@ click Shimmerene Wayshrine
 'Travel to the _Shimmerene_ Wayshrine
 |tip Manually skip to the next step.
 step
-goto shimmerene_base 22.38,70.26
-'Continue Southwest from here
+goto shimmerene_base 21.27,66.35
+'Continue on the path West from here
 |tip Manually skip to the next step.
 step
-goto summerset_base 54.35,52.08
-'Cross the bridge from here
+goto summerset_base 53.53,45.94
+'At the fork in the road, go left from here
 |tip Manually skip to the next step.
 step
-goto summerset_base 49.66,54.42
+goto summerset_base 52.61,47.02
+'At the fork in the road, go left from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 53.25,51.75
+'At the fork in the road, go right from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 49.69,54.19
 'Run up the stairs and
 click Tor-Hame-Khard Delve
 |tip Manually skip to the next step.
-step
-goto torhamekhard_01_base 52.38,24.92
-step
-goto torhamekhard_01_base 46.38,32.76
-step
-goto torhamekhard_01_base 39.41,35.90
-step
-goto torhamekhard_01_base 39.59,44.76
-step
-goto torhamekhard_01_base 42.87,38.21
 step
 goto torhamekhard_01_base 49.05,39.18
 'Press _E_ to Read _Lirendel's Family Shrine_
 |tip Manually skip to the next step.
 step
-'Open your map. Right click to go to the Summerset map.
+'Open your map:
+click Alinor Wayshrine
 'Travel to the _Alinor_ Wayshrine
 |tip Manually skip to the next step.
 step
@@ -18692,7 +18592,7 @@ click Cey-Tarn Keep Wayshrine
 |tip Manually skip to the next step.
 step
 goto summerset_base 26.68,52.14
-'Press _E_ to Travel _Wastern Coraldale_
+'Press _E_ to Travel _Wastern Coraldale Delve_
 |tip Manually skip to the next step.
 step
 goto wastencoraldale_base 59.39,42.49
