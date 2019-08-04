@@ -431,7 +431,7 @@ Data.MapIdsByName = {
 	["Rellenthil"]                     	= 393,
 	["Shimmerene"]                     	= 394,
 	["Sunhold"]                        	= 395,
-	["Monastery of Serene Harmony"]    	= 396,
+	["Monastery Of Serene Harmony"]    	= 396,
 	["Shimmerene Waterworks"]          	= 397,
 	["Tor-Hame-Khard"]                 	= 398,
 	["Archon's Grove"]                 	= 399,
@@ -467,6 +467,7 @@ Data.MapIdsByName = {
 	["Karnwasten"]                     	= 429,
 	["Cathedral of Webs"]              	= 430,
 	["Crystal Tower"]                  	= 431,
+	["Altar Room"]						= 478,
 
 	-- MURKMIRE
 	["Lilmoth"]							= 432,
