@@ -346,20 +346,20 @@ function Parser.ParseMapXYDist(text)
 
 	if not x then
 		-- new syntax, or just old without distance: 12.3,44.2 <150
-		_,disttype,dist = text:match("^(.-)%s*([<>])%s*([0-9%.]+)$")	text=_ or text
-		_,x,y = text:match("^(.-)%s*([0-9%.]+),([0-9%.]+)$")  text=_ or text
-		if #text>1 then map=text end
+		_,disttype,dist = text:match("^(.-)%s*([<>])%s*([0-9%.]+)$") 	text = _ or text
+		_,x,y = text:match("^(.-)%s*([0-9%.]+),([0-9%.]+)$")  			text = _ or text
+		if #text > 1 then map = text end
 	end
 
 	map = ZGV.Pointer.ZoneNameToTex[map] or map  -- give plain name, or texture in form blabla_base_0
-	if map=="" then map=nil end
-	x = tonumber(x)  x=x and x*0.01
-	y = tonumber(y)  y=y and y*0.01
-	dist=tonumber(dist)
+	if map == "" then map = nil end
+	x = tonumber(x) x = x and x * 0.01
+	y = tonumber(y) y = y and y * 0.01
+	dist = tonumber(dist)
 
-	if dist and disttype==">" then dist=-dist end   -- distance written as <40 is usual; >40 = reverse distance check: "leave the area".
+	if dist and disttype == ">" then dist =- dist end   -- distance written as <40 is usual; >40 = reverse distance check: "leave the area".
 
-	if map and not map:find("_") and not ZGV.Pointer.Zones[map] then err="ERROR: map '"..map.."' unknown." map=nil end  -- _ in map name means it might be a raw texture, just accept it raw
+	if map and not map:find("_") and not ZGV.Pointer.Zones[map] then err = "ERROR: map '"..map.."' unknown." map = nil end  -- _ in map name means it might be a raw texture, just accept it raw
 
 	return map,x,y,dist, err
 end
