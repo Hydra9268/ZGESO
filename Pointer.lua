@@ -1224,7 +1224,9 @@ function Pointer:SurveyClickAllOver(map)
 	end
 end
 
-SLASH_COMMANDS["/zgsurvey"] = function() ZGV.Pointer:SurveyMap(nil,"force") Pointer.do_autosurvey = true end
+SLASH_COMMANDS["/zgsurvey"] = function()
+	ZGV.Pointer:SurveyMap(nil,"force") Pointer.do_autosurvey = true
+end
 
 SLASH_COMMANDS["/zgpos"] = function(checker)
 	local gps = LibStub("LibGPS2"):GetCurrentMapMeasurements();
@@ -1235,8 +1237,6 @@ SLASH_COMMANDS["/zgpos"] = function(checker)
 		d("yoffset: "..gps.offsetY)
 		d("xscale: "..gps.scaleX)
 		d("yscale: "..gps.scaleY)
-	elseif checker == "floor" then
-		d(GetMapFloorInfo())
 	else
 		local tex = Pointer:GetMapTex()
 		local Z = Pointer.Zones[tex]
@@ -1247,6 +1247,21 @@ SLASH_COMMANDS["/zgpos"] = function(checker)
 		d(("xscale: |c88ff88%.19f|r"):format(gps.scaleX))
 	end
 end
+
+-- /dump ZGV.Pointer:GetDistToCoords(map,x,y)
+-- /dump ZGV.Pointer:GetDistToCoords(auridon_base 52.50,91.57)
+-- /dump ZGV.Pointer:GetDistToCoords(shimmerenewaterworks01_base,50.50,50.50)
+-- /dump ZGV.Pointer:TranslateCoords("auridon_base",52.50,91.57,"vulkhelguard_base")
+SLASH_COMMANDS["/dump"] = function(text)
+	local f,err = zo_loadstring( ("d(%s)"):format(text) )
+	if f then
+		f()
+	else
+		local d = _G.d
+		d("|cffff0000Error:|r "..err)
+	end
+end
+
 
 -- MAP CLICKING SIMULATION PREP:
 --/script for i=1,9 do _G['MapMouseoverBlob'..i]:SetHidden(false) end
@@ -1263,7 +1278,7 @@ local function dist_to_target()
 end
 
 function Pointer:ZONE_CHANGED(map)
-	if not map or map=="" then map=ZGV.Utils.Delocalize(GetMapName()) end
+	if not map or map == "" then map = ZGV.Utils.Delocalize(GetMapName()) end
 	local tex=Pointer:GetMapTex()
 	if map~="" and not Pointer.ZoneNameToTex[map] then
 		ZGV.sv.profile.ZoneNameToTex[map]=tex
@@ -1278,6 +1293,7 @@ function Pointer:ZONE_CHANGED(map)
 		Pointer.do_autosurvey = true
 	end
 end
+
 tinsert(ZGV.startups,function(self)
 	if ZGV.DEV then
 		EVENT_MANAGER:RegisterForEvent("ZGVPointer",EVENT_ZONE_CHANGED,function(a,map,c)
