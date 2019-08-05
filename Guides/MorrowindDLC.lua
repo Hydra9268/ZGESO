@@ -16966,7 +16966,7 @@ goto alinor_base 23.55,50.26
 step
 goto alinor_base 28.97,55.11
 talk Nahdahni
-'Select _"Will this be enough? [29 gold]"_
+'Select _"Will this be enough? [## gold]"_
 |tip Manually skip to the next step.
 step
 'Open your map:
@@ -17005,6 +17005,14 @@ step
 'Travel to the _Alinor_ Wayshrine
 |tip Manually skip to the next step.
 step
+goto alinor_base 42.48,46.10
+step
+goto alinor_base 42.77,34.99
+step
+goto alinor_base 40.77,31.70
+step
+goto alinor_base 35.03,31.70
+step
 goto alinor_base 36.10,35.12
 click The Golden Gryphon
 |tip Manually skip to the next step.
@@ -17020,20 +17028,14 @@ click Alinor
 |tip Manually skip to the next step.
 step
 goto alinor_base 28.60,44.52
-'Continue through the arches and out of the city from here
-|tip Manually skip to the next step.
 step
 goto alinor_base 11.11,54.94
-'At the fork in the road, go right from here
-|tip Manually skip to the next step.
+step
+goto alinor_base 04.46,53.25
 step
 goto alinor_base 03.81,48.44
-'Continue on the path from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 24.19,59.58
-'Cross the bridge from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 23.09,60.14
 talk Roguzog
@@ -17041,21 +17043,20 @@ talk Roguzog
 step
 goto summerset_base 23.09,60.14
 talk Fandilol
-'Select Option 2:_"Lirendel Rumilion 'len Inecil ..."_
+'Select dialog option 2: _"Lirendel Rumilion 'len Inecil ..."_
 |tip Manually skip to the next step.
 step
-'Select Option 1: _"Culanarin Salolinwe 'ata Piryaden-Itelnoril ..."_
+'Select dialog option 1: _"Culanarin Salolinwe 'ata Piryaden-Itelnoril ..."_
 |tip Manually skip to the next step.
 step
-'Select Option 2: _"Hilnore Firlamil 'cal Ternerben-Nivulirel!"_
+'Select dialog option 2: _"Hilnore Firlamil 'cal Ternerben-Nivulirel!"_
 |tip Manually skip to the next step.
 step
 goto summerset_base 23.09,60.14
 talk Roguzog
 |tip Manually skip to the next step.
 step
-'Open your map:
-click Alinor Wayshrine
+'Open your map.
 'Travel to the _Alinor_ Wayshrine
 |tip Manually skip to the next step.
 step
@@ -17064,14 +17065,20 @@ talk Millenith
 accept Crafting Certification
 'Unlocks daily crafting quests. Pick whichever crafting profession you would like to become certified at.
 step
+goto alinor_base 49.27,54.00
+step
 goto alinor_base 43.67,57.64
-talk Justiciar Carawen
+talk Chief Justiciar Carawen
 'Unlocks Dailies. Speak to Justiciar Tanorian for single player contracts. Speak to Justiciar Farowel for group contracts.
 |tip Manually skip to the next step.
+step
+goto alinor_base 38.59,59.83
 step
 goto alinor_base 34.62,70.00
 talk Felarian
 accept Jewelry Crafting Certification
+step
+goto alinor_base 34.00,65.04
 step
 goto alinor_base 29.61,64.82
 talk Vandoril
@@ -17079,16 +17086,20 @@ accept Checking on Cloudrest
 'Cloudrest is a group Dungeon
 step
 goto alinor_base 33.90,65.47
-'Cross the bridge here and run up the stairs heading east
-|tip Manually skip to the next step.
 step
-goto alinor_base 43.57,70.23
-'Run up the stairs here
-|tip Manually skip to the next step.
+goto alinor_base 34.06,69.24
 step
-goto alinor_base 49.94,70.35
-'Run up the stair from here
-|tip Manually skip to the next step.
+goto alinor_base 40.22,70.19
+step
+goto alinor_base 41.36,72.61
+step
+goto alinor_base 45.83,69.64
+step
+goto alinor_base 50.60,70.27
+step
+goto alinor_base 44.87,71.77
+step
+goto alinor_base 41.90,76.59
 step
 goto alinor_base 47.01,74.16
 click Mages Guild
@@ -17099,16 +17110,19 @@ talk Adelle Montagne
 accept Long Lost Lore
 'These are Guild quests to find and retrieve lost books from various ruins. You may work on these quests at your leisure.
 step
-goto alinor_base 47.67,74.38
+goto alinor_base 47.79,74.39
 click Alinor
 |tip Manually skip to the next step.
 step
-goto alinor_base 47.09,77.10
-'Run up the stairs from here and continue along the path until you reach the castle across the bridge.
-|tip Manually skip to the next step.
+goto alinor_base 44.76,77.41
+step
+goto alinor_base 50.35,79.04
+step
+goto alinor_base 51.15,86.01
+step
+goto alinor_base 56.67,85.58
 step
 goto alinor_base 64.95,51.50
-'Follow the path to
 talk Rigurt the Brash
 accept Culture Clash
 step
@@ -17120,8 +17134,7 @@ goto alinorroyalpalace1_base 44.77,37.49
 talk Courtier Vindilween
 |tip Manually skip to the next step.
 step
-'Open your map:
-click Alinor Wayshrine
+'Open your map. Right click to go to the Summerset map.
 'Travel to the _Alinor_ Wayshrine
 |tip Manually skip to the next step.
 step
@@ -17129,40 +17142,55 @@ goto alinor_base 47.07,46.84
 talk Sapiarch Tandemen
 |tip Manually skip to the next step.
 step
-goto alinor_base 43.89,56.23
+goto alinor_base 49.09,52.41
+step
+goto alinor_base 42.94,56.23
 talk Henri Ondare
-'Select _"Will this be enough? [34 gold]"_
+'Select _"Will this be enough? [## gold]"_
 |tip Manually skip to the next step.
 step
 goto alinor_base 40.43,60.50
-'You have two options here. You can [Intimidate] to retrieve the item by force (requires Fighters Guild ability). Or, you will need to steal the Argonian Cultural Object from Grayscale's Backpack
 talk Grayscale
+'You have two options here. You can [Intimidate] to retrieve the item by force (requires Fighters Guild ability). Or, you will need to steal the Argonian Cultural Object from Grayscale's Backpack
 'Select _"[Intimidate] Unless you want me to report you to the Divine Prosecution, let me have the aojee-sakka."_
 |tip Manually skip to the next step.
 step
-goto alinor_base 42.54,61.94
-'You have two options here. You can [Persuade] to obtain the item (requires Mages Guild ability). Or, you will need to steal the Khajiit Cultural Object from Urjurra's Backpack
+goto alinor_base 42.62,61.70
 talk Urjurra
+'You have two options here. You can [Persuade] to obtain the item (requires Mages Guild ability). Or, you will need to steal the Khajiit Cultural Object from Urjurra's Backpack
 'Select _"[Persuade] Sapiarch Tandemen would be extremely grateful if you let him have your navigation stone."_
 |tip Manually skip to the next step.
 step
-goto alinor_base 46.23,46.47
+goto alinor_base 48.80,54.64
+step
+goto alinor_base 46.72,46.55
 talk Rigurt the Brash
-'Select any option
+|tip Choice: Select any dialog option
 |tip Manually skip to the next step.
 step
 goto alinor_base 54.97,57.27
 'Press _E_ to Use _Wayshrine_
-click Russafeld Heights Wayshrine
 'Travel to the Russafeld Heights Wayshrine
 |tip Manually skip to the next step.
 step
-goto summerset_base 40.34,47.58
-'Cross the bridge here
+goto summerset_base 44.85,47.17
+'Continue to here
 |tip Manually skip to the next step.
 step
-goto summerset_base 39.06,48.10
-'At the fork in the road, go right from here
+goto summerset_base 43.91,48.19
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto summerset_base 42.33,49.01
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto summerset_base 40.31,47.56
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto summerset_base 39.47,47.77
+'Continue to here
 |tip Manually skip to the next step.
 step
 goto summerset_base 38.05,46.97
@@ -17171,7 +17199,7 @@ talk Enigma
 step
 goto summerset_base 38.05,46.97
 talk Rigurt the Brash
-'Select any option
+|tip Choice: Select any dialog option
 |tip Manually skip to the next step.
 step
 'Open your map. Right click three times to bring up the Universe map. Select Artaeum in the upper-right corner.
@@ -17186,27 +17214,29 @@ step
 goto dreamingcave02_base 47.50,48.34
 talk Loremaster Celarus
 accept The Psijics' Calling
-'These are Guild quests to find and close breaches on Summerset Isle. A few of the beginning quests are part of this guide. However, you can complete the entirety at your leisure.
+|tip These are Guild quests to find and close breaches on Summerset Isle. A few of the beginning quests are part of this guide. However, you can complete the entirety at your leisure.
 step
-goto dreamingcave02_base 53.55,68.08
-'Continue through the Southwest archway here
-|tip Manually skip to the next step.
+goto dreamingcave02_base 56.69,65.54
 step
-goto dreamingcave02_base 25.26,74.02
+goto dreamingcave02_base 41.90,70.26
+step
+goto dreamingcave02_base 28.90,66.43
+step
+goto dreamingcave02_base 22.05,76.91
 talk Josajeh
-'She walks around The Aurbis
+|tip She walks around The Aurbis
 |tip Manually skip to the next step.
 step
 goto dreamingcave02_base 24.46,83.74
-click Psijic Map of Summerset
-'Take the Psijic Map of Summerset
+'Press _E_ to Take _Psijic Map of Summerset_
+'Take _Psijic Map of Summerset_
 |tip Manually skip to the next step.
 step
-goto dreamingcave02_base 29.07,66.41
-'Head back out into the cooridor and go right
-|tip Manually skip to the next step.
+goto dreamingcave02_base 28.90,66.43
 step
-goto dreamingcave02_base 55.60,66.33
+goto dreamingcave02_base 41.98,70.45
+step
+goto dreamingcave02_base 56.32,65.95
 'Press _E_ to Use _Portal to Ritemaster's Study_
 |tip Manually skip to the next step.
 step
@@ -17214,7 +17244,7 @@ goto dreamingcave03_base 66.04,70.69
 talk Ritemaster Iachesis
 accept Buried Memories
 step
-goto dreamingcave03_base 64.06,67.87
+goto dreamingcave03_base 64.21,69.62
 talk Oriandra
 |tip Manually skip to the next step.
 step
@@ -17222,7 +17252,7 @@ goto dreamingcave03_base 58.40,70.18
 'Press _E_ to Use _Portal to Ceporah Main Gallery_
 |tip Manually skip to the next step.
 step
-goto dreamingcave02_base 40.37,42.24
+goto dreamingcave02_base 41.37,42.61
 'Watch the cutscene and then
 talk Ritemaster Iachesis
 |tip Manually skip to the next step.
@@ -17232,12 +17262,8 @@ goto dreamingcave02_base 36.27,32.34
 |tip Manually skip to the next step.
 step
 goto artaeum_base 64.67,30.42
-'At the fork in the road, go right from here
-|tip Manually skip to the next step.
 step
 goto artaeum_base 55.94,40.14
-'At the fork in the road, go left from here
-|tip Manually skip to the next step.
 step
 goto artaeum_base 56.54,49.42
 click College of Psijics Ruins
@@ -19351,7 +19377,7 @@ goto shimmerene_base 30.48,69.83
 step
 goto shimmerene_base 47.27,63.58
 talk Bailiff Roland
-'Select _I'll pay for someone to clean this up if you tell me where to find Raz. [207 gold]_
+'Select _I'll pay for someone to clean this up if you tell me where to find Raz. [### gold]_
 |tip Manually skip to the next step.
 step
 goto shimmerene_base 58.28,49.30
