@@ -34,6 +34,7 @@ For example, 1.4.96
 * `/re` = /reloadui
 * `/zgpos` - For city and delve data. Also displays the map's correct DDS filename.
 * `/zgpos gps` - For general map data. Works in any map.
+* `/dump ZGFunctionName(arguments)` - A way to execute ZGESO's public functions<br> (e.g. `/dump ZGV.Pointer:GetDistToCoords(alinor_base,48.80,54.64)`)
 
 ----
 
