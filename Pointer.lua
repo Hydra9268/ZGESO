@@ -1249,7 +1249,8 @@ SLASH_COMMANDS["/zgpos"] = function(checker)
 end
 
 -- /dump ZGV.Pointer:GetDistToCoords(map,x,y)
--- /dump ZGV.Pointer:GetDistToCoords(auridon_base 52.50,91.57)
+-- /dump ZGV.Pointer:GetDistToCoords(alinor_base,48.80,54.64)
+-- /dump ZGV.Pointer:GetDistToCoords(auridon_base,52.50,91.57)
 -- /dump ZGV.Pointer:GetDistToCoords(shimmerenewaterworks01_base,50.50,50.50)
 -- /dump ZGV.Pointer:TranslateCoords("auridon_base",52.50,91.57,"vulkhelguard_base")
 SLASH_COMMANDS["/dump"] = function(text)
