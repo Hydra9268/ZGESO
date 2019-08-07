@@ -31,12 +31,12 @@ For example, 1.4.96
 
 ### Guide HOW-TO
 
+##### Goal Types
+
 `goto wailingprison4_base 50.00,50.00` 
 * goto = ZGESO command that tells the arrow where to point
 * wailingprison4_base = the current map's dds reference (Note: only works in the current map)
 * 50.00,50.00 = the floating point x and y coordinates
-
-`|q` = Creates a step in ZGESO's progress bar
 
 `talk` = ZGESO command to talk to NPCs
 
@@ -45,6 +45,11 @@ For example, 1.4.96
 `wayshrine` = ZGESO command to discover wayshrines (auto-advances to next step)
 
 `click` = ZGESO command for clicking doors
+
+
+##### Goal Handlers - requires a pipe | in front to activate (e.g. |tip, |q, |count)
+
+`|q` = Creates a step in ZGESO's progress bar
 
 `|tip` = ZGESO command for providing small tips
 
@@ -55,6 +60,9 @@ For example, 1.4.96
 * Aldmeri Dominion Leveling Guides\\Khenarthi's Roost = the next RegisterGuide to load
 
 `|count #` = ZGESO command to track a sequence of objectives
+
+
+*To see a complete list of Types and Handlers review Goal.lua*
 
 ----
 
