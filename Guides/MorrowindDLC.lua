@@ -17270,12 +17270,14 @@ click College of Psijics Ruins
 |tip Manually skip to the next step.
 step
 goto collegeofpsijicsruins_base 55.46,28.90
-'Run down the stairs
-|tip Manually skip to the next step.
+step
+goto collegeofpsijicsruins_base 73.55,44.57
 step
 goto collegeofpsijicsruins_base 73.79,59.05
-'Run up the stairs
-|tip Manually skip to the next step.
+step
+goto collegeofpsijicsruins_base 62.65,72.74
+step
+goto collegeofpsijicsruins_base 51.47,74.23
 step
 goto collegeofpsijicsruins_base 51.26,90.24
 click Artaeum Beach
@@ -17290,11 +17292,16 @@ goto artaeum_base 66.94,73.75
 |tip Manually skip to the next step.
 step
 goto artaeum_base 66.39,78.57
+kill Yaghra Monstrosity
+|tip A simple boss fight. As before, the Monstrosity summons a small hatchling. Ignore them and focus on the Monstrosity. The best tactic is to attack the Monstrosity while moving around it. It has a slow turn radius. When it summons a large telegraph at its location move away.
+|tip Manually skip to the next step.
+step
+goto artaeum_base 66.39,78.57
 'Press _E_ to Destroy _Abyssal Pearl_
 |tip Manually skip to the next step.
 step
-goto artaeum_base 63.05,80.06
-'Run up the stairs here
+goto artaeum_base 63.89.80.07
+'Kill Yaghra along the beach
 |tip Manually skip to the next step.
 step
 goto artaeum_base 60.27,79.22
@@ -17304,6 +17311,8 @@ step
 goto psijicrelicvaults01_base 62.26,94.05
 talk Ritemaster Iachesis
 |tip Manually skip to the next step.
+step
+goto psijicrelicvaults01_base 53.29,88.19
 step
 goto psijicrelicvaults01_base 48.81,64.17
 'Kill the Daedra minions and then press _E_ to Burn Mephala's Barrier
@@ -17318,41 +17327,57 @@ goto psijicrelicvaults01_base 49.60,59.88
 click Psijic Relic Vaults
 |tip Manually skip to the next step.
 step
-goto psijicrelicvaults01_base 48.45,64.10
+goto psijicrelicvaults01_base 49.13,64.06
 talk Valsirenn
 |tip Manually skip to the next step.
 step
-goto psijicrelicvaults01_base 40.23,65.18
+goto psijicrelicvaults01_base 40.63,65.03
 click Western Wing Vaults
 |tip Manually skip to the next step.
 step
 goto psijicrelicvaults01_base 13.55,65.90
-'Run up the stairs from here
+'Continue up the stairs
 |tip Manually skip to the next step.
 step
-goto psijicrelicvaults02_base 14.17,16.65
-'Continue East from here
+goto psijicrelicvaults02_base 14.78,50.76
+step
+goto psijicrelicvaults02_base 14.62,23.61
+kill Yaghra Monstrosity
 |tip Manually skip to the next step.
 step
-goto psijicrelicvaults02_base 55.80,30.17
-'Continue along the interior balcony and enter the archway here
+goto psijicrelicvaults02_base 21.81,16.51
+step
+goto psijicrelicvaults02_base 42.36,16.55
+step
+goto psijicrelicvaults02_base 49.64,37.53
+step
+goto psijicrelicvaults02_base 59.05,30.46
+step
+goto psijicrelicvaults02_base 92.00,30.43
+'Sneak passed the Yaghra Monstrosity
 |tip Manually skip to the next step.
+step
+goto psijicrelicvaults02_base 91.60,24.69
+step
+goto psijicrelicvaults02_base 83.92,18.42
 step
 goto psijicrelicvaults02_base 91.31,07.68
 'Press _E_ to Use _Wardkey_, then
 'Press _E_ to Open _Relic Repository_
-'Take The Ul'vor Staff
+'Take _The Ul'vor Staff_
 |tip Manually skip to the next step.
 step
-goto psijicrelicvaults02_base 84.32,23.47
-'Continue South from here
+goto psijicrelicvaults02_base 83.92,18.42
+step
+goto psijicrelicvaults02_base 91.67,27.11
+step
+goto psijicrelicvaults02_base 84.03,40.27
+step
+goto psijicrelicvaults02_base 90.12,54.00
+'Continue downstairs
 |tip Manually skip to the next step.
 step
-goto psijicrelicvaults01_base 87.38,65.50
-'Continue West from here
-|tip Manually skip to the next step.
-step
-goto psijicrelicvaults01_base 61.03,65.50
+goto psijicrelicvaults01_base 61.61,65.21
 click Psijic Relic Vaults
 |tip Manually skip to the next step.
 step
@@ -17360,7 +17385,7 @@ goto psijicrelicvaults01_base 49.53,63.09
 click Central Rotunda
 |tip Manually skip to the next step.
 step
-goto psijicrelicvaults01_base 47.48,58.44
+goto psijicrelicvaults01_base 47.91,58.58
 talk Valsirenn
 |tip Manually skip to the next step.
 step
@@ -17370,21 +17395,33 @@ goto psijicrelicvaults01_base 49.10,56.71
 step
 goto sq3sloadmindscape_base 55.27,26.80
 kill Verdrangu
-'Watch the First Memory cutscene
+'After killing Verdrangu, watch the First Memory cutscene
+|tip A simple boss fight, but deadly. Verdrangu's primary attack is AOE telegraphs that are easy to avoid. The best tactic is to attack from a distance.
 |tip Manually skip to the next step.
 step
-goto sq3sloadmindscape_base 29.32,41.06
+goto sq3sloadmindscape_base 49.23,27.33
+step
+goto sq3sloadmindscape_base 30.91,37.25
 'Kill the mobs to watch the Second Memory cutscene
 |tip Manually skip to the next step.
 step
+goto sq3sloadmindscape_base 26.89,55.04
+step
+goto sq3sloadmindscape_base 36.78,69.97
+step
+goto sq3sloadmindscape_base 58.43,69.67
+step
 goto sq3sloadmindscape_base 57.41,44.74
-'Continue along the path and
 kill Dissonance
-'Watch the Third Memory
+|tip Another simple boss fight, but deadly all the same. Dissonance's primary attack is melee strikes with the occasionally AOE telegraph. Both are easy to avoid. The best tactic is to attack close and move away from Dissonance telegraphs.
+'After killing Dissonance, watch the Third Memory cutscene
 |tip Manually skip to the next step.
+step
+goto sq3sloadmindscape_base 45.56,43.14
 step
 goto sq3sloadmindscape_base 45.61,57.35
 kill K'Tora
+|tip A deadly boss fight. K'Tora is a ranged AOE who lobs telegraphs all over the place. He will continually teleport away after taking a couple of hits and leaves one-two minions in his wake. If you have health augmenting portions, use them. Keep your health potions and skills on the ready. The best tactic is always to focus your attacks on K'Tora and ignore the minions.
 |tip Manually skip to the next step.
 step
 goto sq3sloadmindscape_base 49.56,54.24
@@ -17395,8 +17432,7 @@ goto psijicrelicvaults01_base 53.06,56.85
 talk Sotha Sil
 |tip Manually skip to the next step.
 step
-'Open your map:
-click Artaeum Wayshrine
+'Open your map. Right click to bring up the Artaeum map.
 'Travel to the _Artaeum_ Wayshrine
 |tip Manually skip to the next step.
 step
@@ -17408,22 +17444,27 @@ goto dreamingcave02_base 56.25,64.66
 'Press _E_ to Use _Portal to Ritemaster's Study_
 |tip Manually skip to the next step.
 step
-goto dreamingcave03_base 62.04,76.77
+goto dreamingcave03_base 62.16,75.97
 talk Ritemaster Iachesis
 accept The Tower Sentinels
 step
-'Open your map. Right click twice to view the Tamriel world map, then left click Tamriel. Click on the Island of Summerset.
-click Alinor Wayshrine
+'Open your map. Right click twice to view the Tamriel world map, then left click Tamriel. On the Island of Summerset...
 'Travel to the _Alinor_ Wayshrine
 |tip Manually skip to the next step.
 step
-goto alinor_base 50.01,70.33
-'Continue up the stairs from here
-|tip Manually skip to the next step.
+goto alinor_base 51.62,63.60
 step
-goto alinor_base 47.15,77.36
-'Continue up the stairs and follow the path across the bridge to the Alinor castle
-|tip Manually skip to the next step.
+goto alinor_base 50.60,70.27
+step
+goto alinor_base 44.87,71.77
+step
+goto alinor_base 41.90,76.59
+step
+goto alinor_base 50.35,79.04
+step
+goto alinor_base 51.15,86.01
+step
+goto alinor_base 56.67,85.58
 step
 goto alinor_base 61.43,50.28
 talk Battlereeve Tanerline
@@ -17433,18 +17474,35 @@ goto alinor_base 64.50,46.25
 click Alinor's Royal Palace
 |tip Manually skip to the next step.
 step
-goto alinorroyalpalace1_base 39.56,30.61
+goto alinorroyalpalace1_base 40.24,30.89
 talk Proxy Queen Alwinarwe
 |tip Manually skip to the next step.
 step
-'Open your map:
-click Cey-Tarn Keep Wayshrine
+'Open your map. Right click to go to the Summerset map.
 'Travel to the _Cey-Tarn Keep_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto summerset_base 26.71,52.16
-'Press _E_ to Travel _Wastern Coral Delve_
+'Press _E_ to Travel _Wasten Coraldale_
 |tip Manually skip to the next step.
+step
+goto wastencoraldale_base 23.85,65.11
+step
+goto wastencoraldale_base 27.61,62.96
+step
+goto wastencoraldale_base 33.24,59.45
+step
+goto wastencoraldale_base 39.27,56.94
+step
+goto wastencoraldale_base 43.89,57.99
+step
+goto wastencoraldale_base 51.41,55.79
+step
+goto wastencoraldale_base 53.19,52.06
+step
+goto wastencoraldale_base 74.19,50.94
+step
+goto wastencoraldale_base 77.73,44.84
 step
 goto wastencoraldale_base 78.83,29.15
 'Press _E_ to Open _Augur of the Obscure_
@@ -17455,9 +17513,7 @@ step
 'Press _E_ to Use _Psijic Map of Summerset_
 |tip Manually skip to the next step.
 step
-'Open your map.
-'Right click twice to view Summerset.
-click Shimmerene Wayshrine
+'Open your map. Right click to go to the Summerset map.
 'Travel to the _Shimmerene_ Wayshrine
 |tip Manually skip to the next step.
 step
