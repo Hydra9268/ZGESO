@@ -31,6 +31,8 @@ For example, 1.4.96
 
 ### Guide HOW-TO
 
+
+
 ##### Goal Types
 
 `goto wailingprison4_base 50.00,50.00` 
@@ -46,14 +48,15 @@ For example, 1.4.96
 
 `click` = ZGESO command for clicking doors
 
+`'` = ZGESO command to add general information
+
+
 
 ##### Goal Handlers - requires a pipe | in front to activate (e.g. |tip, |q, |count)
 
 `|q` = Creates a step in ZGESO's progress bar
 
 `|tip` = ZGESO command for providing small tips
-
-`'` = ZGESO command to add general information
 
 `|next Aldmeri Dominion Leveling Guides\\Khenarthi's Roost` = ZGESO command to skip to another guide
 * next = ZGESO command that tells the guide to load another guide
