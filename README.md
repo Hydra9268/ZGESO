@@ -56,13 +56,13 @@ For example, 1.4.96
 
 `|q` = Creates a step in ZGESO's progress bar
 
-`|tip` = ZGESO command for providing small tips
+`|tip` = Handler for providing small tips
 
-`|next Aldmeri Dominion Leveling Guides\\Khenarthi's Roost` = ZGESO command to skip to another guide
-* next = ZGESO command that tells the guide to load another guide
+`|next Aldmeri Dominion Leveling Guides\\Khenarthi's Roost` = Instructs ZGESO to skip to another guide
+* next = Handler that tells the guide to load another guide
 * Aldmeri Dominion Leveling Guides\\Khenarthi's Roost = the next RegisterGuide to load
 
-`|count #` = ZGESO command to track a sequence of objectives
+`|count #` = Handler to track a sequence of objectives
 
 
 *To see a complete list of Types and Handlers review Goal.lua*
