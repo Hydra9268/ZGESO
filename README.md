@@ -37,7 +37,7 @@ For example, 1.4.96
 * wailingprison4_base = the current map's dds reference (Note: only works in the current map)
 * 50.00,50.00 = the floating point x and y coordinates
 
-`|q` = Creates a step in the guide progress bar
+`|q` = Creates a step in ZGESO's progress bar
 
 `talk` = ZGESO command for talking to NPCs
 
@@ -49,7 +49,7 @@ For example, 1.4.96
 
 `|tip` = ZGESO command for providing small tips
 
-`'`' = ZGESO command to add general information
+`'` = ZGESO command to add general information
 
 ----
 
