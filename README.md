@@ -60,7 +60,7 @@ For example, 1.4.96
 
 `|next Aldmeri Dominion Leveling Guides\\Khenarthi's Roost` = Instructs ZGESO to skip to another guide
 * next = Handler that tells the guide to load another guide
-* Aldmeri Dominion Leveling Guides\\Khenarthi's Roost = the next RegisterGuide to load
+* Aldmeri Dominion Leveling Guides\\Khenarthi's Roost = the RegisterGuide to load
 
 `|count #` = Handler to track a sequence of objectives
 
