@@ -179,7 +179,6 @@ GOALTYPES['tip'] = {
 	end,
 }
 
-
 GOALTYPES['q'] = {
 	parse = function(self,params,step,data)
 		self.quest, self.questcondtxt = ParseQuest(params)
@@ -1038,7 +1037,6 @@ function Goal:OnClick()
 		return GOALTYPES[self.action].onclick(self)
 	end
 end
-
 
 -----------------------------------------
 -- DEBUG
