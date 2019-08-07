@@ -29,6 +29,30 @@ For example, 1.4.96
 
 ----
 
+### Guide HOW-TO
+
+
+`goto wailingprison4_base 50.00,50.00` 
+* goto = ZGESO command that tells the arrow where to point
+* wailingprison4_base = the current map's dds reference (Note: only works in the current map)
+* 50.00,50.00 = the floating point x and y coordinates
+
+`|q` = Creates a step in the guide progress bar
+
+`talk` = ZGESO command for talking to NPCs
+
+`accept` = ZGESO command to accept quests (auto-advances to next step)
+
+`wayshrine` = ZGESO command to accept quests (auto-advances to next step)
+
+`click` = ZGESO command for clicking doors
+
+`|tip` = ZGESO command for providing small tips
+
+`'`' = ZGESO command to add general information
+
+----
+
 ### Slash commands
 
 * `/re` = /reloadui
