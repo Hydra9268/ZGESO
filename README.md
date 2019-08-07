@@ -39,11 +39,11 @@ For example, 1.4.96
 
 `|q` = Creates a step in ZGESO's progress bar
 
-`talk` = ZGESO command for talking to NPCs
+`talk` = ZGESO command to talk to NPCs
 
 `accept` = ZGESO command to accept quests (auto-advances to next step)
 
-`wayshrine` = ZGESO command to accept quests (auto-advances to next step)
+`wayshrine` = ZGESO command to discover wayshrines (auto-advances to next step)
 
 `click` = ZGESO command for clicking doors
 
