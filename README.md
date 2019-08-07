@@ -31,7 +31,6 @@ For example, 1.4.96
 
 ### Guide HOW-TO
 
-
 `goto wailingprison4_base 50.00,50.00` 
 * goto = ZGESO command that tells the arrow where to point
 * wailingprison4_base = the current map's dds reference (Note: only works in the current map)
@@ -50,6 +49,12 @@ For example, 1.4.96
 `|tip` = ZGESO command for providing small tips
 
 `'` = ZGESO command to add general information
+
+`|next Aldmeri Dominion Leveling Guides\\Khenarthi's Roost` = ZGESO command to skip to another guide
+* next = ZGESO command that tells the guide to load another guide
+* Aldmeri Dominion Leveling Guides\\Khenarthi's Roost = the next RegisterGuide to load
+
+`|count #` = ZGESO command to track a sequence of objectives
 
 ----
 
