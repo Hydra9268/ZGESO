@@ -970,7 +970,7 @@ function Viewer:Update(full)
 					end
 
 					-- GetCompletionText doesn't return useful information. Just use step info from GetCompletion.
-					tooltip = tooltip.."\n"..L['frame_guide_switch_level']
+					-- tooltip = tooltip.."\n"..L['frame_guide_switch_level']
 
 					progressbar:SetColor(PROG_BAR_COLOR_STEP)
 				elseif progBarType == PROG_BAR_TYPE_LEVEL then

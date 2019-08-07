@@ -367,13 +367,13 @@ function Guide:GetCompletion(mode)
   return "error","we don't know if this guide completes or not"
 end
 
--- Returns percentage in text form #%, a description, and a numeric percent for easy of use.
+-- Returns percentage in text form #%, a description, and a numeric percent for ease of use.
 function Guide:GetCompletionText(mode)
   mode = mode or self.completionmode
   local comp,a,b,c,d = self:GetCompletion(mode)
   assert(comp) -- Sanity!
-  if comp=="loading" then return "...","(loading)", 0 end
-  if comp=="error" or type(comp)~="number" then return "?",("(an error occurred: %s)"):format(a or "black magic"), 0 end
+  if comp == "loading" then return "...","(loading)", 0 end
+  if comp == "error" or type(comp) ~= "number" then return "?",("(an error occurred: %s)"):format(a or "black magic"), 0 end
 
   comp = floor(comp*100)
 

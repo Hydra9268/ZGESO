@@ -338,15 +338,15 @@ local function FormatDistance(dist)
 	if not dist then return "" end
 	if ZGV.db.profile.arrowmeters then -- only metric!
 		local mdist = dist
-		if mdist>1000 then
+		if mdist > 1000 then
 			return L['dist_km']:format(mdist/1000)
 		else
 			return L['dist_m']:format(mdist)
 		end
 	else
 		local ydist = dist / 0.9144
-		if dist>1760 then
-			return L['dist_mi']:format(dist/1760)
+		if dist > 1760 then
+			return L['dist_mi']:format(dist / 1760)
 		else
 			return L['dist_yd']:format(dist)
 		end

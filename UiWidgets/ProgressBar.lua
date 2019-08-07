@@ -72,7 +72,7 @@ end
 
 -- Percentages must be passed in integer form.
 function ProgressBar:SetPercent(num)
-  assert(num and num>=0 and num<=100, "Num 0-100 pls")
+  assert(num and num >= 0 and num <= 100, "Num 0-100 pls")
   local color
 
   if self.colorByPercent then		-- TODO this is not widely implemented yet.
@@ -134,7 +134,7 @@ end
 
 -- color is a table {r,g,b,a}
 function ProgressBar:SetColor(color)
-  assert(type(color)=="table" and #color==4, "Color must be a table with 4 values. {r,g,b,a}")
+  assert(type(color) == "table" and #color == 4, "Color must be a table with 4 values. {r,g,b,a}")
 
   self.color = color
 

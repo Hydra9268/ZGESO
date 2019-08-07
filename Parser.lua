@@ -37,20 +37,22 @@ ZGV.Parser = Parser
 local ConditionEnv = {
 	_G = _G,
 	-- variables needing update
-	level=1,
-	intlevel=1,
-	ZGV=ZGV,
-	print=ZGV.print,
+	level = 1,
+	intlevel = 1,
+	ZGV = ZGV,
+	print = ZGV.print,
 
 	-- these must be assigned in an _Update() call, if "local" scripts are to work. HORRIBLE local-faking.
-	guide=nil,
-	step=nil,
-	goal=nil,
+	guide = nil,
+	step = nil,
+	goal = nil,
 
 	_Update = function()
 		Parser.ConditionEnv.level = ZGV.Utils:GetPlayerPreciseLevel()
 		Parser.ConditionEnv.intlevel = floor(Parser.ConditionEnv.level)
-		if ZGV.db.char.fakelevel and ZGV.db.char.fakelevel>0 then Parser.ConditionEnv.level=ZGV.db.char.fakelevel end
+		if ZGV.db.char.fakelevel and ZGV.db.char.fakelevel > 0 then
+			Parser.ConditionEnv.level = ZGV.db.char.fakelevel
+		end
 	end,
 
 	--[[
@@ -62,14 +64,14 @@ local ConditionEnv = {
 	--]]
 
 	_SetLocal = function(guide,step,goal)
-		Parser.ConditionEnv.guide=guide
-		Parser.ConditionEnv.step=step
-		Parser.ConditionEnv.goal=goal
+		Parser.ConditionEnv.guide = guide
+		Parser.ConditionEnv.step = step
+		Parser.ConditionEnv.goal = goal
 	end,
 
 	-- independent data feeds
 	completedquest = function(id,stage) --stage can be omitted
-		local _  if type(id)=="string" then _,id,_,stage=Parser.ParseQuest(id) end
+		local _  if type(id) == "string" then _,id,_,stage = Parser.ParseQuest(id) end
 		return ZGV.Quests:IsQuestStageComplete(id,stage)
 	end,
 	havequest = function(title)
@@ -79,17 +81,28 @@ local ConditionEnv = {
 		return ZGV.GOALTYPES['achieve'].iscomplete(ZGV,id,cond)
 	end,
 	dist = function(map,x,y)
-		local step=Parser.ConditionEnv.step
-		local goal=Parser.ConditionEnv.goal
+		local step = Parser.ConditionEnv.step
+		local goal = Parser.ConditionEnv.goal
 		if not y then
 			map,x,y = ((goal and goal.map) or (step and step.map)),map,x
 		end
-		if not x and not y and goal and goal.x then x,y=goal.x,goal.y end
-		if not x and not y and step and step.goals then
-			for gi,go in ipairs(step.goals) do if go.x then map,x,y=go.map,go.x,go.y break end end
+		if not x and not y and goal and goal.x then 
+			x,y = goal.x,goal.y
 		end
-		if x>1 then x=x/100 end
-		if y>1 then y=y/100 end
+		if not x and not y and step and step.goals then
+			for gi,go in ipairs(step.goals) do 
+				if go.x then 
+					map,x,y = go.map,go.x,go.y 
+					break
+				end
+			end
+		end
+		if x > 1 then 
+			x = x / 100 
+		end
+		if y > 1 then 
+			y = y / 100
+		end
 		return ZGV.Pointer:GetDistToCoords(map,x,y)
 	end,
 }
