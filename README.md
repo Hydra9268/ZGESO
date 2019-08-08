@@ -35,10 +35,10 @@ For example, 1.4.96
 
 ##### Goal Types
 
-`goto wailingprison4_base 50.00,50.00` 
-* goto = ZGESO command that tells the arrow where to point
-* wailingprison4_base = the current map's dds reference (Note: only works in the current map)
-* 50.00,50.00 = the floating point x and y coordinates
+`goto wailingprison4_base 50.00,50.00`
+* `goto` = ZGESO command that tells the arrow where to point
+* `wailingprison4_base` = the current map's dds reference (Note: only works in the current map)
+* `50.00,50.00` = the floating point x and y coordinates
 
 `talk` = ZGESO command to talk to NPCs
 
@@ -59,11 +59,16 @@ For example, 1.4.96
 `|tip` = Handler for providing small tips
 
 `|next Aldmeri Dominion Leveling Guides\\Khenarthi's Roost` = Instructs ZGESO to skip to another guide
-* next = Handler that tells the guide to load another guide
-* Aldmeri Dominion Leveling Guides\\Khenarthi's Roost = the RegisterGuide to load
+* `next` = Handler that tells the guide to load another guide
+* `Aldmeri Dominion Leveling Guides\\Khenarthi's Roost` = the RegisterGuide to load
 
 `|count #` = Handler to track a sequence of objectives
 
+`|only if` = Conditional handler
+
+For example<br>
+`|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 712`<br>
+* Only allow this step if the player's precise level is less than 6 and the current map zone index equals 712 (which is Elsweyr)
 
 *To see a complete list of Types and Handlers review Goal.lua*
 
