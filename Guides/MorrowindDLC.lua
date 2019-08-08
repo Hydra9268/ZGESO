@@ -15347,29 +15347,36 @@ step
 'Click the _Accept Quest_ button at the bottom
 accept The Queen's Decree
 step
+goto elsweyr_base 40.81,25.95
+wayshrine Star Haven
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 712 or ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 647 -- Elsweyr is the new starting zone for new players, OR backup step once the player visits the destination
+step
+goto elsweyr_base 40.81,25.95
+click Star Haven Wayshrine
+'Open your map. Right click to go to the Tamriel map.
+'Travel to the Shimmerene Wayshrine |q The Queen's Decree/Travel to Shimmerene in Summerset
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 712 or ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 647 -- Elsweyr is the new starting zone for new players, OR backup step once the player visits the destination
+step
 'Open your map. Right click until you see the Tamirel map.
-'Travel to the _Shimmerene_ Wayshrine |q
+'Travel to the _Shimmerene_ Wayshrine |q The Queen's Decree/Travel to Shimmerene in Summerset
 |tip Summerset is the large island in the southwest of Tamriel
-|tip Manually skip to the next step.
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() ~= 712 or ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 647 -- If the player isn't new and not in the starting zone for new players, OR backup step once the player visits the destination
 step
 goto shimmerene_base 24.42,70.53
-'Follow the road Southwest to here |q
+'Follow the road Southeast of here |q The Queen's Decree
 |tip Manually skip to the next step.
 step
 goto summerset_base 57.71,48.82
-talk Razum-dar |q
-|tip Manually skip to the next step.
+talk Razum-dar |q The Queen's Decree/Talk to Razum-dar
 step
 goto summerset_base 60.56,49.10
-talk Olnewil |q
-|tip Manually skip to the next step.
+talk Olnewil |q The Queen's Decree/Talk to Olnewil
 step
 goto summerset_base 53.97,46.97
-click Tsoxolza's Backpack |q
-|tip Manually skip to the next step.
+'Press _E_ to Search _Tsoxolza's Backpack_ |q The Queen's Decree/Talk to Tsoxolza
 step
 goto summerset_base 57.09,44.19
-'Follow the walking path |q
+'Follow the walking path |q The Queen's Decree
 |tip Manually skip to the next step.
 step
 goto shimmerene_base 44.33,24.41
