@@ -64,7 +64,7 @@ For example, 1.4.96
 
 `|count #` = Handler to track a sequence of objectives
 
-`/` = Placed on the same line after |q, the slash checks for the completed task in the Quest Journal. Note: Must match word-for-word, space-for-space to register as completed
+`/` = Placed on the same line after `|q`, the slash checks for the completed task in the Quest Journal. Note: Must match word-for-word, space-for-space to register as completed
 
 `|only if` = Conditional handler
 
