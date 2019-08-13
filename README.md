@@ -13,6 +13,7 @@ No longer supported references:
 Install through the excellent add-on manager <a href="https://minion.mmoui.com/" target="blank">Minion</a>
 
 ### 7/27 Update: Elsweyr Guide Out Now!
+### 8/12 Update: Updated API version for Scalebreaker
 
 <img src="https://i.imgur.com/3PSp7pg.png">
 <i>artwork &copy; ZeniMax Media</i>
