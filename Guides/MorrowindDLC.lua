@@ -15389,20 +15389,36 @@ step
 goto shimmerene_base 32.31,50.24
 step
 goto shimmerene_base 40.67,51.75
+|only if not ZGV.Utils.CheckIfInSkillGuild(2) -- Only show if player isn't in the Fighters Guild
 step
-talk Aicessar |q
-accept Aicessar's Invitation
-|tip Adds Fighter's Guild's skill line.
+goto shimmerene_base 40.67,51.75
+talk Aicessar
+accept Aicessar's Invitation |q Aicessar's Invitation
+|only if not ZGV.Utils.CheckIfInSkillGuild(2) -- Only show if player isn't in the Fighters Guild
+step
+goto shimmerene_base 40.67,51.75
+talk Aicessar |q Aicessar's Invitation/Talk to Aicessar
+'Select _I'm ready to join the Fighters Guild._
+|tip Adds Fighters Guild skill line.
+|only if not ZGV.Utils.CheckIfInSkillGuild(2) -- Only show if player isn't in the Fighters Guild
 step
 goto shimmerene_base 39.63,62.08
+|only if not ZGV.Utils.CheckIfInSkillGuild(3) -- Only show if player isn't in the Mages Guild
 step
-talk Curinure |q
-accept Curinure's Invitation
-|tip Adds Mage's Guild's skill line.
+goto shimmerene_base 39.63,62.08
+talk Curinure
+accept Curinure's Invitation |q Curinure's Invitation 
+|only if not ZGV.Utils.CheckIfInSkillGuild(3) -- Only show if player isn't in the Mages Guild
+step
+goto shimmerene_base 39.63,62.08
+talk Curinure |q Curinure's Invitation/Talk to Curinure
+'Select _I'm ready to join the Mages Guild._
+|tip Adds Mages Guild skill line.
+|only if not ZGV.Utils.CheckIfInSkillGuild(3) -- Only show if player isn't in the Mages Guild
 step
 goto shimmerene_base 35.75,72.01
 step
-talk Razum-dar |q
+talk Razum-dar |q The Queen's Decree/Talk to Razum-dar
 |tip Manually skip to the next step.
 step
 goto shimmerene_base 67.15,61.89
