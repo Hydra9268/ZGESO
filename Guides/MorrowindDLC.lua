@@ -15417,7 +15417,6 @@ talk Curinure |q Curinure's Invitation/Talk to Curinure
 |only if not ZGV.Utils.CheckIfInSkillGuild(3) -- Only show if player isn't in the Mages Guild
 step
 goto shimmerene_base 35.75,72.01
-step
 talk Razum-dar |q The Queen's Decree/Talk to Razum-dar
 |tip Manually skip to the next step.
 step
