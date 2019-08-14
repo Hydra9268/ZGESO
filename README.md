@@ -49,7 +49,7 @@ For example, 1.4.96
 
 `wayshrine` = ZGESO command to discover wayshrines (auto-advances to next step)
 
-`click` = ZGESO command for clicking doors
+`click` = ZGESO command for clicking objects and doors
 
 `'` = ZGESO command to add general information
 
