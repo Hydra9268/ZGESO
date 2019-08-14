@@ -32,7 +32,7 @@ For example, 1.4.96
 
 ----
 
-### Guide HOW-TO
+### Development HOW-TO
 
 
 
