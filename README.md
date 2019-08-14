@@ -38,7 +38,7 @@ For example, 1.4.96
 
 `goto wailingprison4_base 50.00,50.00`
 * `goto` = ZGESO command that tells the arrow where to point
-* `wailingprison4_base` = the current map's dds reference (Note: only works in the current map)
+* `wailingprison4_base` = the current map's dds reference (Note: only works in map the user is currently in)
 * `50.00,50.00` = the floating point x and y coordinates
 
 `talk` = ZGESO command to talk to NPCs
