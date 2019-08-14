@@ -15349,18 +15349,22 @@ accept The Queen's Decree
 step
 goto elsweyr_base 40.81,25.95
 wayshrine Star Haven
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 712 or ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 647 -- Elsweyr is the new starting zone for new players, OR backup step once the player visits the destination
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 4 and _G.GetCurrentMapZoneIndex() == 712 or ZGV.Utils.GetPlayerPreciseLevel() < 4 and _G.GetCurrentMapZoneIndex() == 647 -- Elsweyr is the new starting zone for new players, OR backup step once the player visits the destination
 step
 goto elsweyr_base 40.81,25.95
 click Star Haven Wayshrine
 'Open your map. Right click to go to the Tamriel map.
 'Travel to the Shimmerene Wayshrine |q The Queen's Decree/Travel to Shimmerene in Summerset
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 712 or ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 647 -- Elsweyr is the new starting zone for new players, OR backup step once the player visits the destination
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 4 and _G.GetCurrentMapZoneIndex() == 712 or ZGV.Utils.GetPlayerPreciseLevel() < 4 and _G.GetCurrentMapZoneIndex() == 647 -- Elsweyr is the new starting zone for new players, OR backup step once the player visits the destination
 step
 'Open your map. Right click until you see the Tamirel map.
 'Travel to the _Shimmerene_ Wayshrine |q The Queen's Decree/Travel to Shimmerene in Summerset
 |tip Summerset is the large island in the southwest of Tamriel
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() ~= 712 or ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 647 -- If the player isn't new and not in the starting zone for new players, OR backup step once the player visits the destination
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 4 and _G.GetCurrentMapZoneIndex() ~= 712 or ZGV.Utils.GetPlayerPreciseLevel() > 4 and _G.GetCurrentMapZoneIndex() == 647 -- If the player isn't new and not in the starting zone for new players, OR backup step once the player visits the destination
+step
+goto shimmerene_base 26.19,69.92
+'Travel to the _Shimmerene_ Wayshrine |q The Queen's Decree/Travel to Shimmerene in Summerset
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 4 and _G.GetCurrentMapZoneIndex() == 615 -- If the player is new and somehow in Summerset. An edge case check for situations when a player created their character while Summerset was new and the default starting location, and the player forgot about that character until now.
 step
 goto shimmerene_base 24.42,70.53
 'Follow the road Southeast of here |q The Queen's Decree
@@ -15370,23 +15374,37 @@ goto summerset_base 57.71,48.82
 talk Razum-dar |q The Queen's Decree/Talk to Razum-dar
 step
 goto summerset_base 60.56,49.10
-talk Olnewil |q The Queen's Decree/Talk to Olnewil
+talk Olnewil|q The Queen's Decree/Talk to Olnewil
 step
 goto summerset_base 53.97,46.97
 'Press _E_ to Search _Tsoxolza's Backpack_ |q The Queen's Decree/Talk to Tsoxolza
 step
 goto summerset_base 57.09,44.19
-'Follow the walking path |q The Queen's Decree
+'Follow the walking path past the archway into Shimmerene |q The Queen's Decree
 |tip Manually skip to the next step.
+step
+goto shimmerene_base 31.89,49.51
+step
+goto shimmerene_base 30.31,38.66
+step
+goto shimmerene_base 36.25,36.41
+step
+goto shimmerene_base 42.14,28.61
 step
 goto shimmerene_base 44.33,24.41
+talk Rhanul |q The Queen's Decree/Talk to Rhanul
 step
-talk Rhanul |q
-|tip Manually skip to the next step.
+goto shimmerene_base 42.14,28.61
+step
+goto shimmerene_base 36.25,36.41
 step
 goto shimmerene_base 29.92,38.93
 step
 goto shimmerene_base 32.31,50.24
+step
+goto shimmerene_base 35.35,49.73
+step
+goto shimmerene_base 36.75,53.48
 step
 goto shimmerene_base 40.67,51.75
 |only if not ZGV.Utils.CheckIfInSkillGuild(2) -- Only show if player isn't in the Fighters Guild
@@ -15402,6 +15420,8 @@ talk Aicessar |q Aicessar's Invitation/Talk to Aicessar
 |tip Adds Fighters Guild skill line.
 |only if not ZGV.Utils.CheckIfInSkillGuild(2) -- Only show if player isn't in the Fighters Guild
 step
+goto shimmerene_base 39.15,57.16
+step
 goto shimmerene_base 39.63,62.08
 |only if not ZGV.Utils.CheckIfInSkillGuild(3) -- Only show if player isn't in the Mages Guild
 step
@@ -15416,88 +15436,108 @@ talk Curinure |q Curinure's Invitation/Talk to Curinure
 |tip Adds Mages Guild skill line.
 |only if not ZGV.Utils.CheckIfInSkillGuild(3) -- Only show if player isn't in the Mages Guild
 step
-goto shimmerene_base 35.75,72.01
+goto shimmerene_base 39.77,66.64
+step
+goto shimmerene_base 35.76,71.26
 talk Razum-dar |q The Queen's Decree/Talk to Razum-dar
-|tip Manually skip to the next step.
+step
+goto shimmerene_base 39.47,66.96
+step
+goto shimmerene_base 46.38,63.34
+step
+goto shimmerene_base 55.47,62.81
+step
+goto shimmerene_base 61.66,62.08
 step
 goto shimmerene_base 67.15,61.89
-talk Lanarie |q
-accept A Tale of Two Mothers
+talk Lanarie
+accept A Tale of Two Mothers |q A Tale of Two Mothers
 step
-goto shimmerene_base 65.36,59.83
-step
-goto shimmerene_base 64.18,58.13
-'Go down the stairs |q
+goto shimmerene_base 65.30,59.86
+click Kinlady Avinisse's Mansion |q A Tale of Two Mothers
 |tip Manually skip to the next step.
 step
-goto shimmerene_base 61.97,58.80
-talk Talerion |q
+goto shimmerene_base 61.94,58.85
+talk Talerion |q A Tale of Two Mothers/Talk to Talerion
+|tip Go down the stairs
 step
 goto shimmerene_base 64.72,57.06
 'Press _E_ to Take _Arathel's Map_ 
-'Take _Arathel's Map_ |q
+'Take _Arathel's Map_ |q A Tale of Two Mothers/Take the Map
 |tip Manually skip to the next step.
 step
 goto shimmerene_base 65.01,59.26
 click Shimmerene |q
 |tip Manually skip to the next step.
 step
-goto shimmerene_base 63.00,51.26
-click Monastery of Serene Harmony |q
+goto shimmerene_base 63.34,50.87
+click Monastery of Serene Harmony |q The Queen's Decree
 |tip Manually skip to the next step.
 step
 goto monasteryoshfloor01_base 38.24,64.14
-'Press _E_ to Take _List of Sequestered Guests_ |q
+'Press _E_ to Take _List of Sequestered Guests_ |q The Queen's Decree
 |tip Manually skip to the next step.
 step
-goto monasteryoshfloor01_base 54.43,53.77
-'Press _E_ to Take _Kinlady's Letter_ |q
+goto monasteryoshfloor01_base 54.46,55.80
+'Press _E_ to Take _Kinlady's Letter_ |q The Queen's Decree
 |tip Manually skip to the next step.
 step
-goto monasteryoshfloor01_base 57.21,44.82
-talk Monastic Nuleros |q
+goto monasteryoshfloor01_base 56.42,45.57
+talk Monastic Nuleros |q The Queen's Decree
+|tip Manually skip to the next step.
 step
-goto monasteryoshfloor01_base 38.82,65.20
+goto monasteryoshfloor01_base 39.92,64.62
+'Continue upstairs to the second floor
+|tip Manually skip to the next step.
 step
 goto monasteryoshfloor02_base 46.27,26.82
 step
 goto monasteryoshfloor02_base 41.51,22.54
-'Pearl _E_ to Examine _Abyssal Pearl_ |q
-|tip Manually skip to the next step.
+'Press _E_ to Examine _Abyssal Pearl_ |q The Queen's Decree/Investigate the Monastery
 step
-talk Valsirenn |q
-|tip Manually skip to the next step.
+goto monasteryoshfloor02_base 41.51,22.54
+talk Valsirenn |q The Queen's Decree/Talk to Valsirenn
 step
-goto monasteryoshfloor02_base 40.85,52.60
+goto monasteryoshfloor02_base 40.98,52.67
+'Continue downstairs to the first floor |q The Queen's Decree
+|tip Manually skip to the next step.
 step
 goto monasteryoshfloor01_base 57.26,72.74
-click Monastery Undercroft |q
+click Monastery Undercroft |q The Queen's Decree
 |tip Manually skip to the next step.
 step
 goto monasteryoshfloor03_base 79.52,62.46
-talk Minone Aloette |q
-click Unlock cage
-|tip Manually skip to the next step.
+talk Minone Aloette
+click Unlock cage |q The Queen's Decree/Free the Prisoner
 step
 goto monasteryoshfloor03_base 78.99,71.53
-talk Valsirenn |q
-|tip Manually skip to the next step.
+talk Valsirenn |q The Queen's Decree/Talk to Valsirenn
 step
 goto monasteryoshfloor03_base 67.56,71.48
 click Undercroft Great Hall |q
 |tip Manually skip to the next step.
 step
 goto monasteryoshfloor03_base 48.47,70.68
-'Defend Valsirenn while she "contains" the Pearl |q
-|tip Manually skip to the next step.
+'Defend Valsirenn while she "contains" the Pearl |q The Queen's Decree/Defend Valsirenn
 step
 goto monasteryoshfloor03_base 33.62,71.38
 click Undercroft Labyrinth |q
 |tip Manually skip to the next step.
 step
-goto monasteryoshfloor03_base 31.31,71.71
-talk Valsirenn |q
-|tip Manually skip to the next step.
+goto monasteryoshfloor03_base 31.11,71.38
+talk Valsirenn |q The Queen's Decree/Talk to Valsirenn
+step
+goto monasteryoshfloor03_base 22.81,71.13
+step
+goto monasteryoshfloor03_base 21.86,62.79
+step
+goto monasteryoshfloor03_base 13.74,62.69
+step
+goto monasteryoshfloor03_base 14.02,46.01
+step
+goto monasteryoshfloor03_base 21.86,46.41
+step
+goto monasteryoshfloor03_base 18.34,31.01
 step
 goto monasteryoshfloor03_base 08.09,25.08
 click Summerset |q
@@ -15508,10 +15548,14 @@ step
 goto shimmerene_base 56.55,47.97
 step
 goto shimmerene_base 57.24,45.32
-'Press _E_ to Take _Note to Arathel_ |q
-|tip Manually skip to the next step.
+'Find the Marked Location |q A Tale of Two Mothers/Find the Marked Location
 step
-goto shimmerene_base 54.74,47.20
+goto shimmerene_base 57.24,45.32
+'Press _E_ to Take _Note to Arathel_ |q A Tale of Two Mothers/Read the Scroll
+step
+goto shimmerene_base 56.55,47.97
+step
+goto shimmerene_base 54.03,46.99
 step
 goto shimmerene_base 52.99,44.14
 step
@@ -15522,29 +15566,25 @@ click Anchors Aweigh Inn |q
 |tip Manually skip to the next step.
 step
 goto shimmerene_base 53.44,48.51
-'Run upstairs |q
-|tip Manually skip to the next step.
+'Run upstairs |q A Tale of Two Mothers/Go to the Anchor's Aweigh Inn
 step
 goto shimmerene_base 53.40,51.29
-talk Razum-dar |q
-|tip Manually skip to the next step.
+talk Razum-dar |q The Queen's Decree/Talk to Razum-dar
 step
 goto shimmerene_base 54.14,49.04
 'Run down the stairs |q
 |tip Manually skip to the next step.
 step
 goto shimmerene_base 55.28,48.92
-talk Riharai |q
+talk Riharai |q A Tale of Two Mothers/Talk to Riharai
 |tip Choice: Dialog option "I'm here for a Deathlands Ale."
-|tip Manually skip to the next step.
 step
 goto shimmerene_base 53.44,48.51
 'Run upstairs |q
 |tip Manually skip to the next step.
 step
 goto shimmerene_base 55.93,48.72
-talk Edgar Jend |q
-|tip Manually skip to the next step.
+talk Edgar Jend |q A Tale of Two Mothers/Talk to the Hooded Man
 step
 goto shimmerene_base 51.93,50.45
 click Shimmerene |q
@@ -15564,7 +15604,7 @@ goto shimmerene_base 52.21,43.16
 click Shimmerene Waterworks |q
 |tip Manually skip to the next step.
 step
-goto ShimmereneWaterworks01_base 73.13,19.42
+goto ShimmereneWaterworks01_base 72.78,22.17
 step
 goto ShimmereneWaterworks01_base 72.55,25.33
 step
@@ -15578,21 +15618,23 @@ goto ShimmereneWaterworks01_base 62.46,40.54
 step
 goto ShimmereneWaterworks01_base 62.08,43.69
 step
-goto ShimmereneWaterworks01_base 71.21,42.43
+goto ShimmereneWaterworks01_base 69.81,43.54
+step
+goto ShimmereneWaterworks01_base 70.05,46.32
+'Follow the Rats |q A Tale of Two Mothers/Follow the Rats
 step
 goto ShimmereneWaterworks01_base 70.18,47.90
-click Mother's Den |q
+click Mother's Den |q A Tale of Two Mothers
 |tip Manually skip to the next step.
 step
 goto ShimmereneWaterworks01_base 70.05,57.07
-talk Mother of Rats |q
-|tip Manually skip to the next step.
+talk Mother of Rats |q A Tale of Two Mothers/Talk to the Mother of Rats
 step
 goto ShimmereneWaterworks01_base 70.06,49.37
 click Shimmerene Waterworks |q
 |tip Manually skip to the next step.
 step
-goto ShimmereneWaterworks01_base 67.63,44.90
+goto ShimmereneWaterworks01_base 69.52,45.26
 step
 goto ShimmereneWaterworks01_base 61.22,42.83
 step
@@ -15603,8 +15645,7 @@ step
 goto ShimmereneWaterworks01_base 52.73,67.33
 step
 goto ShimmereneWaterworks01_base 39.89,73.23
-talk Zan'hi |q
-|tip Manually skip to the next step.
+talk Zan'hi |q A Tale of Two Mothers/Talk to Zan'hi
 step
 goto ShimmereneWaterworks01_base 36.98,75.89
 step
@@ -15616,7 +15657,7 @@ goto ShimmereneWaterworks01_base 39.61,79.61
 step
 goto ShimmereneWaterworks01_base 32.29,82.52
 step
-goto ShimmereneWaterworks01_base 29.65,77.98
+goto ShimmereneWaterworks01_base 30.63,77.53
 step
 goto ShimmereneWaterworks01_base 25.58,70.74
 step
@@ -15624,21 +15665,23 @@ goto ShimmereneWaterworks01_base 26.96,51.65
 step
 goto ShimmereneWaterworks01_base 25.03,49.30
 step
-goto ShimmereneWaterworks01_base 24.82,37.49
+goto ShimmereneWaterworks01_base 25.27,40.95
 step
 goto ShimmereneWaterworks01_base 34.76,34.64
 click Mirulon's Chamber |q
 |tip Manually skip to the next step.
 step
 goto ShimmereneWaterworks01_base 45.74,34.76
-kill Mirulon |q
-|tip A simple boss fight. Telegraphing spells is Mirulon's primary attack. At certain intervals, he'll summon a clone of himself. Ignore the clone. He'll also cast moving telegraphs that you avoid as much as possible.
-|tip Manually skip to the next step.
+'Find Arathel |q A Tale of Two Mothers/Find Arathel
+step
+goto ShimmereneWaterworks01_base 45.74,34.76
+kill Mirulon
+'Defeat Mirulon |q A Tale of Two Mothers/Kill Mirulon
+|tip A simple boss fight. Telegraphing spells is Mirulon's primary attack. At certain intervals, he'll summon a clone of himself. Ignore the clone. He'll also cast moving telegraphs that you should avoid as much as possible.
 step
 goto ShimmereneWaterworks01_base 39.73,32.69
-'Run up the stairs |q
-'Press _E_ to Take _Mirulon's Letter_
-|tip Manually skip to the next step.
+'Press _E_ to Take _Mirulon's Letter_ |q A Tale of Two Mothers/Retrieve the Evidence
+'Run upstairs
 step
 goto ShimmereneWaterworks01_base 39.53,31.48
 click Shimmerene Aquaducts |q
@@ -15649,8 +15692,7 @@ step
 goto ShimmereneWaterworks01_base 50.35,24.57
 step
 goto ShimmereneWaterworks01_base 57.36,27.30
-talk Arathel |q
-|tip Manually skip to the next step.
+talk Arathel |q A Tale of Two Mothers/Talk to Arathel
 step
 goto ShimmereneWaterworks01_base 54.82,30.83
 step
@@ -15658,20 +15700,21 @@ goto ShimmereneWaterworks01_base 54.82,44.41
 step
 goto ShimmereneWaterworks01_base 69.73,45.08
 step
-goto ShimmereneWaterworks01_base 70.18,47.90
-click Mother's Den |q
+goto ShimmereneWaterworks01_base 70.08,48.23
+click Mother's Den |q A Tale of Two Mothers
 |tip Manually skip to the next step.
+step
+goto ShimmereneWaterworks01_base 70.13,51.71
+'Escort Arathel to Mother's Den |q A Tale of Two Mothers/Escort Arathel to Mother's Den 
 step
 goto ShimmereneWaterworks01_base 68.97,57.46
-talk Talerion |q
-|tip Manually skip to the next step.
+talk Talerion |q A Tale of Two Mothers/Give the Evidence to Talerion
 step
 goto ShimmereneWaterworks01_base 69.72,57.29
-talk Mother of Rats |q
-|tip Manually skip to the next step.
+talk Mother of Rats
+turnin A Tale of Two Mothers
 step
 'Open your map. Right click until you see the Summerset map.
-click Shimmerene Wayshrine |q
 'Travel to the _Shimmerene_ Wayshrine
 |tip Manually skip to the next step.
 step
