@@ -104,5 +104,5 @@ Only allow this step if the player's precise level is less than 6 and the curren
 * https://mothereff.in/lua-minifier
 * https://esomap.uesp.net/
 * https://game-maps.com/ESO/The-Elder-Scrolls-Online.asp
-* http://esodata.uesp.net/100023/
-* http://en.uesp.net/wiki
+* https://esodata.uesp.net/100023/
+* https://en.uesp.net/wiki
