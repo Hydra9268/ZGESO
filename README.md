@@ -73,7 +73,7 @@ For example, 1.4.96
 
 For example<br>
 `|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 712`<br>
-* Only allow this step if the player's precise level is less than 6 and the current map zone index equals 712 (which is Elsweyr)
+Only allow this step if the player's precise level is less than 6 and the current map zone index equals 712 (which is Elsweyr)
 
 *To see a complete list of Types and Handlers review Goal.lua*
 
