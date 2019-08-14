@@ -45,6 +45,8 @@ For example, 1.4.96
 
 `accept` = ZGESO command to accept quests (auto-advances to next step)
 
+`turnin` = ZGESO command to turn in quests (auto-advances to next step)
+
 `wayshrine` = ZGESO command to discover wayshrines (auto-advances to next step)
 
 `click` = ZGESO command for clicking doors
