@@ -18,6 +18,8 @@ Install through the excellent add-on manager <a href="https://minion.mmoui.com/"
 <img src="https://i.imgur.com/3PSp7pg.png">
 <i>artwork &copy; ZeniMax Media</i>
 
+### Coming Soon: Revamped and Remastered Summerset guide
+
 # Development Guide
 
 ### ZGESO Version Breakdown
