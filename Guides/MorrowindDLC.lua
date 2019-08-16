@@ -15917,36 +15917,31 @@ goto summerset_base 67.49,64.41
 click Paddocks
 |tip Manually skip to the next step.
 step
-goto summerset_base 68.11,63.89
-step
 goto summerset_base 68.96,63.46
 step
 goto summerset_base 69.39,63.48
 step
 goto summerset_base 69.37,63.83
-kill Conservator Vinelore and Speciman II
+kill Conservator Vinelore and Speciman II |q Untamed and Unleashed/Defeat Conservator Vinelore and Her Experiment
 |tip A simple combo-boss fight. Focus your attacks on Vinelore, and then take out the Speciman. Simple, easy.
-|tip Manually skip to the next step.
 step
 goto summerset_base 68.85,64.12
-'Press _E_ to Deactive _Ward_
-|tip Manually skip to the next step.
+'Press _E_ to Deactive _Ward_ |q Untamed and Unleashed/Disrupt Wards to Free Lotus
 step
 goto summerset_base 68.73,64.10
-click Portal to Menagerie Grounds
-|tip Manually skip to the next step.
+'Watch the short cutscene
+click Portal to Menagerie Grounds |q Untamed and Unleashed/Follow Lotus to Safety
 step
 goto summerset_base 66.15,64.27
 talk Talomar
-|tip Choice: Dialog choice "You should stay. You can make sure the animals are really cared for here."
-|tip Manually skip to the next step.
+turnin Untamed and Unleashed
+|tip Dialog choice: "You should stay. You can make sure the animals are really cared for here."
 step
 goto summerset_base 64.67,66.44
 step
 goto summerset_base 62.55,66.16
 'Continue along the path to
 wayshrine Eastern Pass
-|tip Manually skip to the next step.
 step
 goto summerset_base 59.44,66.78
 step
@@ -15958,71 +15953,71 @@ accept The Forest Vandal
 step
 goto summerset_base 52.00,67.28
 'Press _E_ to Take _Abandoned Shovel_
-'Take _Abandoned Shovel_
-|tip Manually skip to the next step.
+'Take _Abandoned Shovel_ |q The Forest Vandal/Investigate the First Arrangement
 step
 goto summerset_base 50.52,67.76
 'Press _E_ to Take _Bear-Hide Pouch_
-'Take _Bear-Hide Pouch_
-|tip Manually skip to the next step.
+'Take _Bear-Hide Pouch_ |q The Forest Vandal/Investigate the Second Arrangement
 step
 goto summerset_base 52.46,69.03
-'Press _E_ to Dig _Recently Disturbed Soil_
-|tip Manually skip to the next step.
+'Press _E_ to Dig _Recently Disturbed Soil_ |q The Forest Vandal/Investigate the Third Arrangement
 step
-kill the Three Stranglers
+goto summerset_base 52.46,69.03
+'Defeat the Stranglers |q The Forest Vandal/Defeat the Stranglers
 'They appear one at a time
-|tip Manually skip to the next step.
 step
 goto summerset_base 51.94,68.74
-talk Eslion
-|tip Manually skip to the next step.
+talk Eslion |q The Forest Vandal/Talk to Eslion
 step
 goto summerset_base 53.59,69.43
 'Press _E_ to Poison _Water Source_
+'Pour Strangler-Poison into Water Sources |q The Forest Vandal
 |tip Manually skip to the next step.
 step
 goto summerset_base 52.00,65.87
 'Press _E_ to Poison _Water Source_
+'Pour Strangler-Poison into Water Sources |q The Forest Vandal
 |tip Manually skip to the next step.
 step
 goto summerset_base 50.56,69.90
 'Press _E_ to Poison _Water Source_
+'Pour Strangler-Poison into Water Sources |q The Forest Vandal
 |tip Manually skip to the next step.
 step
 goto summerset_base 48.13,69.36
 'Press _E_ to Poison _Water Source_
-|tip Manually skip to the next step.
+'Pour Strangler-Poison into Water Sources |q The Forest Vandal/Pour Strangler-Poison into Water Sources
 step
 goto summerset_base 48.02,70.50
 wayshrine Sunhold
-|tip Manually skip to the next step.
 step
 goto summerset_base 46.50,73.47
 talk Kinlady Ilunsare
 accept Obedience Issues
 step
 goto summerset_base 49.75,71.62
-'Press _E_ to Examine _Durell_
-'Take _Durell's Locket_
-|tip Manually skip to the next step.
+'Find Durell and Eustasia |q Obedience Issues/Find Durell and Eustasia
 step
 goto summerset_base 49.75,71.62
-'Press _E_ to Pet _Eustasia_
-|tip Manually skip to the next step.
+'Press _E_ to Examine _Durell_
+'Take _Durell's Locket_ |q Obedience Issues/Identify Durell
+step
+goto summerset_base 49.75,71.62
+'Press _E_ to Pet _Eustasia_ |q Obedience Issues/Console Eustasia
 step
 goto summerset_base 46.50,73.47
 talk Kinlady Ilunsare
-|tip Manually skip to the next step.
+turnin Obedience Issues
 step
 goto summerset_base 54.26,67.60
-talk Eslion
-|tip Choice: Dialog option "I'll testify on your behalf. [Eslion Goes Free]"
-|tip Manually skip to the next step.
+talk Eslion |q The Forest Vandal/Talk to Eslion
+step
+goto summerset_base 54.26,67.60
+'Dialog choice: "I'll testify on your behalf. [Eslion Goes Free]" |q The Forest Vandal/Clear Eslion of Wrongdoing
 step
 goto summerset_base 54.23,67.62
 talk Justiciar Oradel
-|tip Manually skip to the next step.
+turnin The Forest Vandal
 step
 'Open your map.
 'Travel to the _Shimmerene_ Wayshrine
@@ -16032,20 +16027,19 @@ goto shimmerene_base 21.12,67.60
 'Continue West along the path
 |tip Manually skip to the next step.
 step
-goto summerset_base 52.29,46.02
+goto summerset_base 52.97,45.86
 step
-goto summerset_base 51.86,48.03
+goto summerset_base 52.35,47.27
 step
 goto summerset_base 54.19,52.04
 'Press _E_ to Examine _Chief Justiciar Carawen_
 accept Pearls Before Traitors
 step
 goto summerset_base 49.77,54.40
-talk Captain Telomure
-|tip Manually skip to the next step.
+talk Captain Telomure |q Pearls Before Traitors/Talk to Captain Telomure
 step
 goto summerset_base 49.66,54.42
-click Tor-Hame-Khard Delve
+click Tor-Hame-Khard
 |tip Manually skip to the next step.
 step
 goto torhamekhard_01_base 52.65,19.38
@@ -16061,6 +16055,7 @@ step
 goto torhamekhard_01_base 49.07,59.03
 step
 goto torhamekhard_01_base 42.36,60.78
+|tip Manually skip to the next step.
 step
 goto torhamekhard_02_base 39.92,54.18
 step
@@ -16079,13 +16074,11 @@ step
 goto torhamekhard_01_base 30.23,51.27
 step
 goto torhamekhard_01_base 29.26,45.22
-kill Justiciar Avanaire
+kill Justiciar Avanaire |q Pearls Before Traitors/Kill Justiciar Avanaire
 |tip A simple boss fight. Avanaire is a spell-chucker and uses a lot of AOE telegraphs that are easy to avoid. She is hard to reposition, so if you can go range for this fight do so.
-|tip Manually skip to the next step.
 step
 goto torhamekhard_01_base 30.00,44.12
-'Press _E_ to Destroy _Abyssal Pearl_
-|tip Manually skip to the next step.
+'Press _E_ to Destroy _Abyssal Pearl_ |q Pearls Before Traitors/Destroy the Pearl
 step
 goto torhamekhard_01_base 30.18,50.99
 step
@@ -16101,15 +16094,13 @@ goto torhamekhard_01_base 49.40,30.64
 step
 goto torhamekhard_01_base 53.02,24.49
 step
-goto torhamekhard_01_base 56.96,52.94
-step
 goto torhamekhard_01_base 49.15,11.68
 click Summerset
 |tip Manually skip to the next step.
 step
 goto summerset_base 49.72,54.38
 talk Captain Telomure
-|tip Manually skip to the next step.
+turnin Pearls Before Traitors
 step
 goto summerset_base 51.80,53.90
 'Jump down here
@@ -16124,11 +16115,10 @@ goto summerset_base 58.51,55.52
 |tip Manually skip to the next step.
 step
 goto summerset_base 58.48,57.87
-talk Esterdel
-|tip Manually skip to the next step.
+talk Esterdel |q The Runaway's Tale/Talk to Esterdel
 step
 goto summerset_base 57.90,58.37
-click Archon's Grove Delve
+click Archon's Grove
 |tip Manually skip to the next step.
 step
 goto archonsgrove_base 75.29,38.15
@@ -16149,12 +16139,12 @@ goto archonsgrove_base 31.57,54.99
 step
 goto archonsgrove_base 34.37,67.34
 step
-goto archonsgrove_base 27.33,73.54
+goto archonsgrove_base 30.17,70.91
+'Find Niralin |q The Runaway's Tale/Find Niralin
 step
 goto archonsgrove_base 17.70,76.06
-talk Niralin
-|tip Choice: Dialog option "[Persuade] You can hide your true nature and return to Shimmerene. Control is possible."
-|tip Manually skip to the next step.
+talk Niralin |q The Runaway's Tale/Talk to Niralin
+'Dialog choice: "[Persuade] You can hide your true nature and return to Shimmerene. Control is possible."
 step
 'Open your map. Right click until you see the Summerset map.
 'Travel to the _Shimmerene_ Wayshrine
@@ -16168,7 +16158,7 @@ goto shimmerene_base 39.25,67.20
 step
 goto shimmerene_base 40.47,61.65
 talk Esterdel
-|tip Manually skip to the next step.
+turnin The Runaway's Tale
 step
 goto shimmerene_base 39.25,67.20
 step
