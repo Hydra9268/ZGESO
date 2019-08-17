@@ -16184,9 +16184,13 @@ step
 step
 goto artaeum_base 64.49,27.12
 talk Ritemaster Iachesis
+turnin The Queen's Decree
+step
+goto artaeum_base 64.49,27.12
+talk Ritemaster Iachesis
 accept A Pearl of Great Price
 step
-goto artaeum_base 64.99,25.56
+goto artaeum_base 64.82,26.64
 click Portal to Ceporah Tower
 |tip Manually skip to the next step.
 step
@@ -16195,29 +16199,25 @@ click Portal to Sotha Sil's Study
 |tip Manually skip to the next step.
 step
 goto dreamingcave03_base 26.92,39.54
-talk Oriandra
-|tip Manually skip to the next step.
+talk Oriandra |q A Pearl of Great Price/Talk to Oriandra
 step
 goto dreamingcave03_base 17.87,54.98
 'Press _E_ to Take _Amplification Elixir_
-'Take _Amplification Elixir_
-|tip Manually skip to the next step.
+'Take _Amplification Elixir_ |q A Pearl of Great Price/Collect Amplification Elixir
 step
 goto dreamingcave03_base 34.05,50.38
 click Portal to Ceporah Main Gallery
 |tip Manually skip to the next step.
 step
-goto dreamingcave02_base 41.12,39.64
-talk Ritemaster Iachesis
-|tip Manually skip to the next step.
+goto dreamingcave02_base 42.70,39.42
+talk Ritemaster Iachesis |q A Pearl of Great Price/Talk to the Ritemaster
 step
-goto dreamingcave02_base 42.53,40
-'Press _E_ to Use _Amplification Elixir_
-|tip Manually skip to the next step.
+goto dreamingcave02_base 43.08,40.68
+'Press _E_ to Use _Amplification Elixir_ |q A Pearl of Great Price/Use the Amplification Elixir
+'Watch the cutscene
 step
-goto dreamingcave02_base 42.79,38.43
-talk Ritemaster Iachesis
-|tip Manually skip to the next step.
+goto dreamingcave02_base 43.08,40.68
+talk Ritemaster Iachesis |q A Pearl of Great Price/Talk to the Ritemaster
 step
 goto dreamingcave02_base 36.70,32.77
 click Portal to Artaeum
@@ -16235,108 +16235,110 @@ goto summerset_base 55.09,45.88
 talk Linwenvar
 accept Old Wounds
 step
-goto summerset_base 49.93,45.75
-'Continue north from here
-|tip Manually skip to the next step.
+goto summerset_base 49.55,45.77
 step
 goto summerset_base 49.44,42.65
-talk Tarnamir
-|tip Manually skip to the next step.
+talk Tarnamir |q Old Wounds/Talk to Tarnamir
 step
 goto summerset_base 49.39,42.60
-talk Jurisreeve Lorne
-|tip Manually skip to the next step.
+talk Jurisreeve Lorne |q Old Wounds/Talk to Lorne
 step
 goto summerset_base 49.42,42.42
-talk Aenthalor
+talk Aenthalor |q Old Wounds
 |tip Manually skip to the next step.
 step
 goto summerset_base 49.44,43.21
-talk Babblebrook
+talk Babblebrook |q Old Wounds
 |tip Manually skip to the next step.
 step
 goto summerset_base 48.85,42.89
-talk Felanwe
+talk Felanwe |q Old Wounds/Question Bystanders
 |tip Manually skip to the next step.
 step
 goto summerset_base 48.51,43.96
-'Press _E_ to Use _Whistle on Farril_
-|tip Manually skip to the next step.
+'Search the Fields |q Old Wounds/Search the Fields
+step
+goto summerset_base 48.51,43.96
+'Press _E_ to Use _Whistle on Farril_ |q Old Wounds/Use the Whistle
+step
+goto summerset_base 50.90,44.40
+'Search the Vineyard for Clues |q Old Wounds/Search the Vineyard for Clues
 step
 goto summerset_base 50.90,44.40
 'Press _E_ to Examine _Suspicious Sack_
-'Take _Bloodstained Sickle_
-|tip Manually skip to the next step.
+'Take _Bloodstained Sickle_ |q Old Wounds/Search the Suspicious Sack
 step
 goto summerset_base 48.53,44.01
-talk Jurisreeve Lorne
-|tip Manually skip to the next step.
+talk Jurisreeve Lorne |q Old Wounds/Talk to Lorne
 step
 goto summerset_base 46.46,45.50
 click Halimorion's Villa
 |tip Manually skip to the next step.
 step
 goto summerset_base 45.95,45.72
-'Run up the stairs and press _E_ to Take the Letter to Tarnamir
-|tip Manually skip to the next step.
+'Run upstairs
+'Press _E_ to Take _Letter to Tarnamir_ |q Old Wounds/Search Halimorion's Villa
 step
 goto summerset_base 46.44,45.55
 click Summerset
 |tip Manually skip to the next step.
 step
 goto summerset_base 46.81,45.84
-talk Jurisreeve Lorne
-|tip Manually skip to the next step.
+talk Jurisreeve Lorne |q Old Wounds/Talk to Lorne
 step
 goto summerset_base 51.87,47.85
 'Go here to trigger the quest's follow-up step
 |tip Manually skip to the next step.
 step
 goto summerset_base 52.07,48.13
-talk Jurisreeve Soravil
+talk Jurisreeve Soravil |q Old Wounds/Talk to Soravil
 |tip Manually skip to the next step.
 step
 goto summerset_base 51.80,48.22
-click Rethelmir's House
-|tip Manually skip to the next step.
+click Rethelmir's House |q Old Wounds/Investigate the Wood Elf Cottage
 step
 goto summerset_base 51.82,48.38
-talk Elsoreth
-|tip Manually skip to the next step.
+talk Elsoreth |q Old Wounds/Talk to Elsoreth
 step
 goto summerset_base 52.34,48.53
-'Run up to the stairs and press _E_ to Take Celan's Journal
-|tip Manually skip to the next step.
+'Run up to the stairs to this spot |q Old Wounds/Search Celan's Room
+step
+goto summerset_base 52.34,48.53
+'Press _E_ to Take _Celan's Journal_ |q Old Wounds/Examine Celan's Journal
 step
 goto summerset_base 51.84,48.23
 click Summerset
 |tip Manually skip to the next step.
 step
 goto summerset_base 51.41,47.82
-talk Jurisreeve Soravil
-|tip Manually skip to the next step.
+talk Jurisreeve Soravil |q Old Wounds/Talk to Soravil
 step
 goto summerset_base 49.94,48.43
 click Red Temple Catacombs
 |tip Manually skip to the next step.
 step
 goto russafeldredtemple01_base 48.99,33.30
+'Search the Red Temple |q Old Wounds/Search the Red Temple
+step
 'Wait for the Conversation with Jurisreeve Soravil to end.
+goto russafeldredtemple01_base 67.22,35.74
 |tip Manually skip to the next step.
 step
-goto russafeldredtemple01_base 67.22,35.74
+goto russafeldredtemple01_base 65.95,35.94
 step
-goto russafeldredtemple01_base 67.72,59.19
+goto russafeldredtemple01_base 67.97,59.90
 step
 goto russafeldredtemple01_base 52.66,61.62
 step
 goto russafeldredtemple01_base 50.13,80.00
-talk Celan
-|tip Manually skip to the next step.
+'Watch the cutscene
+'Search for Celan |q Old Wounds/Search for Celan
+step
+goto russafeldredtemple01_base 50.13,80.00
+talk Celan |q Old Wounds/Talk to Celan
 step
 'Press _E_ to Take _Hunting Arrow_
-'Take _Hunting Arrow_
-|tip Manually skip to the next step.
+'Take _Hunting Arrow_ |q Old Wounds/Take the Arrow That Killed Celan
 step
 goto russafeldredtemple01_base 52.66,61.62
 step
@@ -16345,40 +16347,44 @@ step
 goto russafeldredtemple01_base 67.22,35.74
 step
 goto russafeldredtemple01_base 52.66,26.09
-talk Jurisreeve Soravil
-|tip Manually skip to the next step.
+talk Jurisreeve Soravil |q Old Wounds/Talk to Soravil
 step
 goto russafeldredtemple01_base 50.89,15.13
 click Summerset
 |tip Manually skip to the next step.
 step
 goto summerset_base 49.29,42.97
-talk Jurisreeve Lorne
-|tip Manually skip to the next step.
+talk Jurisreeve Lorne |q Old Wounds/Talk to Lorne
 step
 goto summerset_base 46.50,41.41
 click Tarnamir's Manor
 |tip Manually skip to the next step.
 step
 goto summerset_base 46.24,41.19
-'Press _E_ to Examine _Scratches_
-|tip Manually skip to the next step.
+'Go to Tarnamir's Manor |q Old Wounds/Go to Tarnamir's Manor
+step
+goto summerset_base 46.24,41.19
+'Press _E_ to Examine _Scratches_ |q Old Wounds/Search the Area
 step
 goto summerset_base 46.43,41.26
-talk Jurisreeve Lorne
-|tip Manually skip to the next step.
+talk Jurisreeve Lorne |q Old Wounds/Talk to Lorne
+step
+goto summerset_base 46.43,41.26
+'Observe Lorne's Spell |q Old Wounds/Observe Lorne's Spell
 step
 goto summerset_base 46.64,41.38
 click Summerset
 |tip Manually skip to the next step.
 step
 goto summerset_base 44.67,41.97
-talk Jurisreeve Lorne
-|tip Manually skip to the next step.
+talk Jurisreeve Lorne |q Old Wounds/Talk to Lorne
 step
 goto summerset_base 43.87,40.36
 click Red Temple Catacombs
 |tip Manually skip to the next step.
+step
+goto russafeldredtemple02_base 58.13,22.93
+'Enter the Red Temple |q Old Wounds/Enter the Red Temple
 step
 goto russafeldredtemple02_base 58.10,25.89
 step
@@ -16401,17 +16407,15 @@ step
 goto russafeldredtemple02_base 57.93,59.08
 step
 goto russafeldredtemple02_base 58.32,47.91
-kill Soravil
+kill Soravil |q Old Wounds/Kill Soravil
 |tip A simple boss fight. Most of Soravil's a ranged telegraphs that can easily be side-stepped.
-|tip Manually skip to the next step.
 step
 goto russafeldredtemple02_base 57.99,38.80
 click Red Temple Catacombs
 |tip Manually skip to the next step.
 step
 goto russafeldredtemple02_base 58.10,19.47
-talk Jurisreeve Lorne
-|tip Manually skip to the next step.
+talk Jurisreeve Lorne |q Old Wounds/Talk to Lorne
 step
 goto russafeldredtemple02_base 58.02,12.43
 click Summerset
@@ -16419,31 +16423,33 @@ click Summerset
 step
 goto summerset_base 49.16,42.92
 talk Elsoreth
-|tip Manually skip to the next step.
+turnin Old Wounds
 step
 goto summerset_base 44.78,46.12
 wayshrine Russafeld Heights
-|tip Manually skip to the next step.
 step
 goto summerset_base 40.42,47.48
-talk Razum-dar
-|tip Manually skip to the next step.
+'Travel to Rellenthil |q A Pearl of Great Price/Travel to Rellenthil
+step
+goto summerset_base 40.42,47.48
+talk Razum-dar |q A Pearl of Great Price/Talk to Razum-dar
 step
 goto summerset_base 39.67,47.76
 talk Rinyde
 accept Manor of Masques
 step
+goto summerset_base 39.67,47.76
+talk Rinyde |q Manor of Masques/Talk to Rinyde
+step
 goto summerset_base 39.18,48.66
-talk Canonreeve Farmeldo
-|tip Manually skip to the next step.
+'Watch the cutscene
+talk Canonreeve Farmeldo |q A Pearl of Great Price/Talk to Canonreeve Farmeldo
 step
 goto summerset_base 38.09,49.85
-'Press _E_ to Use _Rinyde's Enchanted Daggers_
-|tip Manually skip to the next step.
+'Press _E_ to Use _Rinyde's Enchanted Daggers_ |q Manor of Masques/Perform for Alchemy
 step
 goto summerset_base 38.05,50.15
-talk Alchemy
-|tip Manually skip to the next step.
+talk Alchemy |q Manor of Masques/Talk to Alchemy
 step
 goto summerset_base 38.66,49.94
 'Continue up the stairs from here
@@ -16464,8 +16470,7 @@ kill Gryphon
 step
 goto summerset_base 36.62,54.43
 'Press _E_ to Search _Gryphon Nest_
-'Take _Griffon Feather_
-|tip Manually skip to the next step.
+'Take _Griffon Feather_ |q Manor of Masques/Collect a Gryphon Feather
 step
 goto summerset_base 37.32,53.97
 'Continue along the river from here
@@ -16476,8 +16481,7 @@ goto summerset_base 38.33,50.95
 |tip Manually skip to the next step.
 step
 goto summerset_base 38.24,48.25
-talk Alchemy
-|tip Manually skip to the next step.
+talk Alchemy |q Manor of Masques/Talk to Alchemy
 step
 'Open your inventory:
 'Select the Quest tab, hover over Hopeful's Mask, and press _E_ to Use
@@ -16488,12 +16492,10 @@ goto summerset_base 38.70,48.57
 |tip Manually skip to the next step.
 step
 goto summerset_base 38.12,47.89
-talk Rinyde
-|tip Manually skip to the next step.
+talk Rinyde |q Manor of Masques/Talk to Rinyde
 step
 goto summerset_base 38.12,47.89
-'Press _E_ to Take _Rinyde's Journal_
-|tip Manually skip to the next step.
+'Press _E_ to Take _Rinyde's Journal_ |q Manor of Masques/Read Rinyde's Journal
 step
 goto summerset_base 38.91,48.28
 'Run up the stairs from here
@@ -16504,45 +16506,55 @@ click Manor of Masques
 |tip Manually skip to the next step.
 step
 goto summerset_base 37.82,48.64
-talk Firebird
-|tip Manually skip to the next step.
+talk Firebird |q Manor of Masques/Talk to Firebird
 step
-'Press _E_ to Use _Rinyde's Enchanted Daggers_
-|tip Manually skip to the next step.
+goto summerset_base 37.82,48.64
+'Press _E_ to Use _Rinyde's Enchanted Daggers_ |q Manor of Masques/Perform with Firebird
 step
-talk Firebird
-'Your choices to Firebird's questions don't really matter. Pick any.
-|tip Manually skip to the next step.
+goto summerset_base 37.82,48.64
+'Watch the cutscene
+talk Firebird |q Manor of Masques/Talk to Firebird
+|tip Pick any choice to Firebird's questions.
 step
 goto summerset_base 37.81,48.62
-'Run back out to the lobby, up the stairs to the second floor.
-talk Clever
-|tip Manually skip to the next step.
+'Return to the lobby and upstairs to the second floor.
+talk Clever |q Manor of Masques/Talk to Clever
 step
-'Press _E_ to Use _Practice Podium_
-|tip Manually skip to the next step.
+goto summerset_base 37.81,48.62
+'Press _E_ to Use _Practice Podium_ |q Manor of Masques/Announce Clever's Performance
 step
-talk Clever
-|tip Manually skip to the next step.
+goto summerset_base 37.81,48.62
+talk Clever |q Manor of Masques/Talk to Clever
+|tip Pick any choice to Clever's questions.
 step
 goto summerset_base 37.97,48.60
 click Dance Studio
 |tip Manually skip to the next step.
 step
 goto summerset_base 37.96,48.48
-talk Feathermoth
+talk Feathermoth |q Manor of Masques/Talk to Feathermoth
+step
+goto summerset_base 38.01,48.50
+'Press _E_ at the podiums to Use _Medium Bosmer Rhythm_ |q Manor of Masques
 |tip Manually skip to the next step.
 step
-'Press _E_ at the podiums to match Feathermoth's dance speed
+goto summerset_base 37.99,48.54
+'Press _E_ at the podiums to Use _Slow Dunmer Rhythm_ |q Manor of Masques
 |tip Manually skip to the next step.
 step
-talk Feathermoth
+goto summerset_base 38.04,48.48
+'Press _E_ at the podiums to Use _Fast Orc Rhythm_ |q Manor of Masques
 |tip Manually skip to the next step.
+step
+goto summerset_base 37.96,48.48
+talk Feathermoth |q Manor of Masques/Talk to Feathermoth
+|tip Pick any choice to Feathermoth's questions.
 step
 goto summerset_base 38.03,48.57
 click Manor of Masques
 |tip Manually skip to the next step.
 step
+goto summerset_base 38.20,48.63
 'Run downstairs
 click Rellenthil
 |tip Manually skip to the next step.
@@ -16552,7 +16564,10 @@ goto summerset_base 38.70,48.57
 |tip Manually skip to the next step.
 step
 goto summerset_base 38.13,47.89
-talk Alchemy
+'Talk to Rinyde |q Manor of Masques/Talk to Rinyde
+step
+goto summerset_base 38.13,47.89
+talk Alchemy |q Manor of Masques
 'Select _"The Sapiarchs need talented mages."_
 'Select _"He's not Firebird."_
 'Select _"No, Larydel's not Clever."_
@@ -16560,18 +16575,24 @@ talk Alchemy
 |tip Manually skip to the next step.
 step
 goto summerset_base 35.91,47.01
-talk Rinyde
+talk Rinyde |q Manor of Masques/Talk to Rinyde
 'Select _"I believe he's Feathermoth."_
-|tip Manually skip to the next step.
 step
 goto summerset_base 36.58,48.41
-'Run up the stairs from here
+'Run upstairs from here
+|tip Manually skip to the next step.
+step
+goto summerset_base 37.37,49.44
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto summerset_base 37.76,49.19
+'Run upstairs from here
 |tip Manually skip to the next step.
 step
 goto summerset_base 38.11,49.59
-talk Alchemy
+talk Alchemy |q Manor of Masques/Warn Alchemy
 |tip Choice: Dialog option "[Warn Alchemy] Rinyde plans to unmask your Hopefuls during their performance."
-|tip Manually skip to the next step.
 step
 goto summerset_base 37.96,49.75
 'Press _E_ to Use _Rinyde's Enchanted Daggers_
