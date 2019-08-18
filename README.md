@@ -77,6 +77,19 @@ For example<br>
 `|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 712`<br>
 Only allow this step if the player's precise level is less than 6 and the current map zone index equals 712 (which is Elsweyr)
 
+`|or` = Handler for dialog choices (Note: you need to put the |or handler on eaach choice)
+
+For example<br>
+```
+'Choose either a Marine or Wizard to help you
+|tip It doesn't matter, just personal preference.
+'Talk to either _Sergeant Firion_ or _Gathwen_
+'Choose the Marine to help you |q The Tempest Unleashed/The Marine |or
+'_OR_
+'Choose the Wizard to help you |q The Tempest Unleashed/The Wizard |or
+step
+```
+
 *To see a complete list of Types and Handlers review Goal.lua*
 
 ----
