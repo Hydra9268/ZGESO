@@ -1,4 +1,8 @@
-ZGV:RegisterGuide("Aldmeri Dominion Leveling Guides\\Khenarthi's Roost - Main Quest Only",[[
+local ZGV = _G.ZGV
+if ZGV:DoMutex("MainQuestsOnly") then return end
+ZGV.GuideMenuTier = "MOR"
+
+ZGV:RegisterGuide("Aldmeri Dominion Leveling Guides\\MainQuestsOnly\Khenarthi's Roost",[[
 loadingimage loadscreen_kenathis_roost_01.dds
 description This island off the south coast of Elsweyr is named after the Khajiiti goddess of weather and the sky, who is usually represented as a great hawk. She finds many worshipers among the cat-folk's sailors and farmers, especially those who grow moon-sugar cane.
 step
@@ -605,7 +609,7 @@ click Prowler Skiff
 'Board the Skiff |q To Auridon/Board the Skiff |next Aldmeri Dominion Leveling Guides\\Auridon
 ]])
 
-ZGV:RegisterGuide("Daggerfall Covenant Leveling Guides\\Stros M'Kai MQ Only",[[
+ZGV:RegisterGuide("Daggerfall Covenant Leveling Guides\\Main Quests Only\\Stros M'Kai",[[
 loadingimage loadscreen_strosmkai_01.dds
 description One of the first landfalls settled by the Redguards when they sailed east from their lost homeland of Yokuda, the island of Stros M'Kai is now a haven for freebooters, sea-rovers, and other nautical entrepeneurs who roam the Abecean Sea.
 step
