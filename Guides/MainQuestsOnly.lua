@@ -286,26 +286,6 @@ step
 goto khenarthisroost_base 28.09,36.42
 click Skyshard |achieve 431/6
 step
-goto 28.95,35.38
-'Enter the Cave |q The Root of the Problem/Enter the Cave
-step
-goto themangroves_base 20.83,44.48
-talk Naarwe |q The Root of the Problem/Talk to Naarwe
-step
-goto themangroves_base 55.27,46.23
-'_Follow the Spirit and protect it_
-|tip The Spirit moves around the cave constantly, you may need to wait for her before you begin.
-'Protect the Spirit as It Heals the Roots |q The Root of the Problem/.*Protect the Spirit as It Heals the Roots.*
-step
-goto 14.42,45.07
-'Leave the cave |q The Root of the Problem/Talk to Spinner Benieth
-|tip Manually skip to the next step.
-step
-goto khenarthisroost_base 26.73,35.07
-|tip Leave the cave.
-talk Spinner Benieth
-turnin The Root of the Problem
-step
 goto mistral_base 26.33,65.23
 'Cross the bridge |wayshrine Mistral
 |tip Manually skip to the next step.
