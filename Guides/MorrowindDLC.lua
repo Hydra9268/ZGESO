@@ -17052,6 +17052,8 @@ goto alinor_base 38.96,35.44
 click Alinor
 |tip Manually skip to the next step.
 step
+goto alinor_base 31.00,43.53
+step
 goto alinor_base 24.80,43.41
 talk Roguzog |q A Duelist's Dilemma/Talk to Roguzog
 step
@@ -17059,11 +17061,9 @@ goto alinor_base 23.55,50.26
 step
 goto alinor_base 28.97,55.11
 talk Nahdahni
-'Select _"Will this be enough? [## gold]"_
-|tip Manually skip to the next step.
+'Select _"Will this be enough? [## gold]"_ |q A Duelist's Dilemma/Collect an Altmer Dueling Foil
 step
-'Open your map:
-click Shimmerene Wayshrine
+'Open your map. Right click to go to the Tamriel map.
 'Travel to the _Shimmerene_ Wayshrine
 |tip Manually skip to the next step.
 step
@@ -17077,8 +17077,10 @@ goto summerset_base 54.35,52.08
 step
 goto summerset_base 49.66,54.42
 'Run up the stairs and
-click Tor-Hame-Khard Delve
+click Tor-Hame-Khard
 |tip Manually skip to the next step.
+step
+goto torhamekhard_01_base 52.61,18.83
 step
 goto torhamekhard_01_base 52.38,24.92
 step
@@ -17091,8 +17093,7 @@ step
 goto torhamekhard_01_base 42.87,38.21
 step
 goto torhamekhard_01_base 49.05,39.18
-'Press _E_ to Read _Lirendel's Family Shrine_
-|tip Manually skip to the next step.
+'Press _E_ to Read _Lirendel's Family Shrine_ |q A Duelist's Dilemma/Learn Lirendel's Full Name
 step
 'Open your map. Right click to go to the Summerset map.
 'Travel to the _Alinor_ Wayshrine
@@ -17112,15 +17113,18 @@ click The Golden Gryphon
 step
 goto alinor_base 38.96,35.44
 'Run up to the third floor and
-talk Fandilol
-|tip Manually skip to the next step.
+talk Fandilol |q A Duelist's Dilemma/Talk to Fandilol
 step
 goto alinor_base 38.96,35.44
 'Run down to the first floor and
 click Alinor
 |tip Manually skip to the next step.
 step
+goto alinor_base 31.20,43.61
+step
 goto alinor_base 28.60,44.52
+step
+goto alinor_base 20.24,45.33
 step
 goto alinor_base 11.11,54.94
 step
@@ -17131,23 +17135,21 @@ step
 goto summerset_base 24.19,59.58
 step
 goto summerset_base 23.09,60.14
-talk Roguzog
-|tip Manually skip to the next step.
+talk Roguzog |q A Duelist's Dilemma/Talk to Roguzog
 step
 goto summerset_base 23.09,60.14
-talk Fandilol
+'Watch the cutscene
+talk Fandilol |q A Duelist's Dilemma/Talk to Fandilol
 'Select dialog option 2: _"Lirendel Rumilion 'len Inecil ..."_
-|tip Manually skip to the next step.
-step
 'Select dialog option 1: _"Culanarin Salolinwe 'ata Piryaden-Itelnoril ..."_
-|tip Manually skip to the next step.
-step
 'Select dialog option 2: _"Hilnore Firlamil 'cal Ternerben-Nivulirel!"_
-|tip Manually skip to the next step.
+step
+goto summerset_base 23.09,60.14
+'Witness the Duel |q A Duelist's Dilemma/Witness the Duel
 step
 goto summerset_base 23.09,60.14
 talk Roguzog
-|tip Manually skip to the next step.
+turnin A Duelist's Dilemma
 step
 'Open your map.
 'Travel to the _Alinor_ Wayshrine
@@ -17161,9 +17163,11 @@ step
 goto alinor_base 49.27,54.00
 step
 goto alinor_base 43.67,57.64
-talk Chief Justiciar Carawen
+talk Chief Justiciar Carawen |q Divine Deputation/Talk to Chief Justiciar Carawen
 'Unlocks Dailies. Speak to Justiciar Tanorian for single player contracts. Speak to Justiciar Farowel for group contracts.
-|tip Manually skip to the next step.
+step
+goto alinor_base 43.67,57.64
+turnin Divine Deputation
 step
 goto alinor_base 38.59,59.83
 step
@@ -17176,7 +17180,7 @@ step
 goto alinor_base 29.61,64.82
 talk Vandoril
 accept Checking on Cloudrest
-'Cloudrest is a group Dungeon
+|tip Cloudrest is a group Dungeon
 step
 goto alinor_base 33.90,65.47
 step
@@ -17201,7 +17205,7 @@ step
 goto alinor_base 49.81,73.18
 talk Adelle Montagne
 accept Long Lost Lore
-'These are Guild quests to find and retrieve lost books from various ruins. You may work on these quests at your leisure.
+|tip These are Mage Guild quests to find and retrieve lost books from various ruins. You may work on these quests at your leisure.
 step
 goto alinor_base 47.79,74.39
 click Alinor
@@ -17224,8 +17228,7 @@ click Alinor Royal Palace
 |tip Manually skip to the next step.
 step
 goto alinorroyalpalace1_base 44.77,37.49
-talk Courtier Vindilween
-|tip Manually skip to the next step.
+talk Courtier Vindilween |q Culture Clash/Talk to Courtier Vindilween
 step
 'Open your map. Right click to go to the Summerset map.
 'Travel to the _Alinor_ Wayshrine
@@ -17239,27 +17242,24 @@ goto alinor_base 49.09,52.41
 step
 goto alinor_base 42.94,56.23
 talk Henri Ondare
-'Select _"Will this be enough? [## gold]"_
-|tip Manually skip to the next step.
+'Select _"Will this be enough? [## gold]"_ |q Culture Clash/.*Acquire Cultural Objects.*: |count 1
 step
 goto alinor_base 40.43,60.50
 talk Grayscale
 'You have two options here. You can [Intimidate] to retrieve the item by force (requires Fighters Guild ability). Or, you will need to steal the Argonian Cultural Object from Grayscale's Backpack
-'Select _"[Intimidate] Unless you want me to report you to the Divine Prosecution, let me have the aojee-sakka."_
-|tip Manually skip to the next step.
+'Acquite Cultural Object |q Culture Clash/.*Acquire Cultural Objects.*: |count 2
 step
 goto alinor_base 42.62,61.70
 talk Urjurra
 'You have two options here. You can [Persuade] to obtain the item (requires Mages Guild ability). Or, you will need to steal the Khajiit Cultural Object from Urjurra's Backpack
-'Select _"[Persuade] Sapiarch Tandemen would be extremely grateful if you let him have your navigation stone."_
+'Acquite Cultural Object |q Culture Clash/.*Acquire Cultural Objects.*: |count 3
 |tip Manually skip to the next step.
 step
 goto alinor_base 48.80,54.64
 step
 goto alinor_base 46.72,46.55
-talk Rigurt the Brash
+talk Rigurt the Brash |q Culture Clash/Favor for Sapiarch Tandemen
 |tip Choice: Select any dialog option
-|tip Manually skip to the next step.
 step
 goto alinor_base 54.97,57.27
 'Press _E_ to Use _Wayshrine_
@@ -17291,12 +17291,10 @@ talk Enigma
 |tip Manually skip to the next step.
 step
 goto summerset_base 38.05,46.97
-talk Rigurt the Brash
+talk Rigurt the Brash |q Culture Clash/Talk to Rigurt the Brash about Enigma
 |tip Choice: Select any dialog option
-|tip Manually skip to the next step.
 step
 'Open your map. Right click three times to bring up the Universe map. Select Artaeum in the upper-right corner.
-click Artaeum Wayshrine
 'Travel to the _Artaeum_ Wayshrine
 |tip Manually skip to the next step.
 step
@@ -17304,10 +17302,10 @@ goto artaeum_base 64.96,26.72
 'Press _E_ to Use _Portal to Ceporah Tower_
 |tip Manually skip to the next step.
 step
-goto dreamingcave02_base 47.50,48.34
+goto dreamingcave02_base 47.86,47.07
 talk Loremaster Celarus
 accept The Psijics' Calling
-|tip These are Guild quests to find and close breaches on Summerset Isle. A few of the beginning quests are part of this guide. However, you can complete the entirety at your leisure.
+|tip These are Guild quests to find and close breaches in Summerset. A few of the beginning quests are part of this guide. However, you can complete the entirety at your leisure.
 step
 goto dreamingcave02_base 56.69,65.54
 step
@@ -17316,14 +17314,12 @@ step
 goto dreamingcave02_base 28.90,66.43
 step
 goto dreamingcave02_base 22.05,76.91
-talk Josajeh
+talk Josajeh |q The Psijics' Calling/Talk to Josajeh
 |tip She walks around The Aurbis
-|tip Manually skip to the next step.
 step
 goto dreamingcave02_base 24.46,83.74
 'Press _E_ to Take _Psijic Map of Summerset_
-'Take _Psijic Map of Summerset_
-|tip Manually skip to the next step.
+'Take _Psijic Map of Summerset_ |q The Psijics' Calling/Take the Psijic Map of Summerset
 step
 goto dreamingcave02_base 28.90,66.43
 step
@@ -17335,10 +17331,14 @@ goto dreamingcave02_base 56.32,65.95
 step
 goto dreamingcave03_base 66.04,70.69
 talk Ritemaster Iachesis
+turnin A Pearl of Great Price
+step
+goto dreamingcave03_base 66.04,70.69
+talk Ritemaster Iachesis
 accept Buried Memories
 step
-goto dreamingcave03_base 64.21,69.62
-talk Oriandra
+goto dreamingcave03_base 64.00,70.07
+talk Oriandra |q Buried Memories/Talk to Oriandra
 |tip Manually skip to the next step.
 step
 goto dreamingcave03_base 58.40,70.18
@@ -17346,9 +17346,8 @@ goto dreamingcave03_base 58.40,70.18
 |tip Manually skip to the next step.
 step
 goto dreamingcave02_base 41.37,42.61
-'Watch the cutscene and then
-talk Ritemaster Iachesis
-|tip Manually skip to the next step.
+'Watch the cutscene
+talk Ritemaster Iachesis |q Buried Memories/Talk to Ritemaster Iachesis
 step
 goto dreamingcave02_base 36.27,32.34
 'Press _E_ to Use _Portal to Artaeum_
@@ -17372,17 +17371,17 @@ goto collegeofpsijicsruins_base 62.65,72.74
 step
 goto collegeofpsijicsruins_base 51.47,74.23
 step
+goto artaeum_base 51.31,84.54
+'Go to the Southeast Beach |q Buried Memories/Go to the Southeast Beach
+step
 goto collegeofpsijicsruins_base 51.26,90.24
 click Artaeum Beach
 |tip Manually skip to the next step.
 step
 goto artaeum_base 65.70,67.26
-talk Ritemaster Iachesis
-|tip Manually skip to the next step.
+talk Ritemaster Iachesis |q Buried Memories/Talk to the Ritemaster
 step
 goto artaeum_base 66.94,73.75
-'Kill Yaghra along the beach
-|tip Manually skip to the next step.
 step
 goto artaeum_base 66.39,78.57
 kill Yaghra Monstrosity
@@ -17390,39 +17389,37 @@ kill Yaghra Monstrosity
 |tip Manually skip to the next step.
 step
 goto artaeum_base 66.39,78.57
-'Press _E_ to Destroy _Abyssal Pearl_
-|tip Manually skip to the next step.
+'Press _E_ to Destroy _Abyssal Pearl_ |q Buried Memories/Destroy the Abyssal Pearl
 step
-goto artaeum_base 63.89.80.07
-'Kill Yaghra along the beach
-|tip Manually skip to the next step.
+goto artaeum_base 63.89,80.07
 step
 goto artaeum_base 60.27,79.22
-click Psijic Relic Vaults
-|tip Manually skip to the next step.
+click Psijic Relic Vaults |q Buried Memories/Enter the Vaults
 step
 goto psijicrelicvaults01_base 62.26,94.05
-talk Ritemaster Iachesis
-|tip Manually skip to the next step.
+talk Ritemaster Iachesis |q Buried Memories/Talk to the Ritemaster
 step
 goto psijicrelicvaults01_base 53.29,88.19
 step
 goto psijicrelicvaults01_base 48.81,64.17
-'Kill the Daedra minions and then press _E_ to Burn Mephala's Barrier
-|tip Manually skip to the next step.
+'Go to the Central Rotunda |q Buried Memories/Go to the Central Rotunda
+step
+goto psijicrelicvaults01_base 48.81,64.17
+'Press _E_ to Burn Mephala's Barrier |q Buried Memories/Burn Mephala's Barrier
 step
 goto psijicrelicvaults01_base 49.10,63.41
-click Central Rotunda
-|tip Manually skip to the next step.
+click Central Rotunda |q Buried Memories/Enter the Central Rotunda
+step
+goto psijicrelicvaults01_base 49.60,59.88
+'Let the Ritemaster Confront the Sea Sload |q Buried Memories/Let the Ritemaster Confront the Sea Sload
 step
 goto psijicrelicvaults01_base 49.60,59.88
 'Watch the cutscene
 click Psijic Relic Vaults
 |tip Manually skip to the next step.
 step
-goto psijicrelicvaults01_base 49.13,64.06
-talk Valsirenn
-|tip Manually skip to the next step.
+goto psijicrelicvaults01_base 49.38,63.91
+talk Valsirenn |q Buried Memories/Talk to Valsirenn
 step
 goto psijicrelicvaults01_base 40.63,65.03
 click Western Wing Vaults
@@ -17435,7 +17432,7 @@ step
 goto psijicrelicvaults02_base 14.78,50.76
 step
 goto psijicrelicvaults02_base 14.62,23.61
-kill Yaghra Monstrosity
+'Kill or sneak around the Yaghra Monstrosity
 |tip Manually skip to the next step.
 step
 goto psijicrelicvaults02_base 21.81,16.51
@@ -17457,8 +17454,7 @@ step
 goto psijicrelicvaults02_base 91.31,07.68
 'Press _E_ to Use _Wardkey_, then
 'Press _E_ to Open _Relic Repository_
-'Take _The Ul'vor Staff_
-|tip Manually skip to the next step.
+'Take _The Ul'vor Staff_ |q Buried Memories/Find the Ul'vor Staff
 step
 goto psijicrelicvaults02_base 83.92,18.42
 step
@@ -17479,24 +17475,20 @@ click Central Rotunda
 |tip Manually skip to the next step.
 step
 goto psijicrelicvaults01_base 47.91,58.58
-talk Valsirenn
-|tip Manually skip to the next step.
+talk Valsirenn |q Buried Memories/Talk to Valsirenn
 step
 goto psijicrelicvaults01_base 49.10,56.71
-'Press _E_ to Use _Ul'vor Staff_
-|tip Manually skip to the next step.
+'Press _E_ to Use _Ul'vor Staff_ |q Buried Memories/Enter the Mindscape
 step
 goto sq3sloadmindscape_base 55.27,26.80
 kill Verdrangu
-'After killing Verdrangu, watch the First Memory cutscene
+'After killing Verdrangu, watch the First Memory cutscene |q Buried Memories/Reveal the First Memory
 |tip A simple boss fight, but deadly. Verdrangu's primary attack is AOE telegraphs that are easy to avoid. The best tactic is to attack from a distance.
-|tip Manually skip to the next step.
 step
 goto sq3sloadmindscape_base 49.23,27.33
 step
 goto sq3sloadmindscape_base 30.91,37.25
-'Kill the mobs to watch the Second Memory cutscene
-|tip Manually skip to the next step.
+'Kill the mobs to watch the Second Memory cutscene |q Buried Memories/Reveal the Second Memory
 step
 goto sq3sloadmindscape_base 26.89,55.04
 step
@@ -17507,23 +17499,19 @@ step
 goto sq3sloadmindscape_base 57.41,44.74
 kill Dissonance
 |tip Another simple boss fight, but deadly all the same. Dissonance's primary attack is melee strikes with the occasionally AOE telegraph. Both are easy to avoid. The best tactic is to attack close and move away from Dissonance telegraphs.
-'After killing Dissonance, watch the Third Memory cutscene
-|tip Manually skip to the next step.
+'After killing Dissonance, watch the Third Memory cutscene |q Buried Memories/Reveal the Third Memory
 step
 goto sq3sloadmindscape_base 45.56,43.14
 step
 goto sq3sloadmindscape_base 45.61,57.35
-kill K'Tora
+kill K'Tora |q Buried Memories/Defeat K'Tora
 |tip A deadly boss fight. K'Tora is a ranged AOE who lobs telegraphs all over the place. He will continually teleport away after taking a couple of hits and leaves one-two minions in his wake. If you have health augmenting portions, use them. Keep your health potions and skills on the ready. The best tactic is always to focus your attacks on K'Tora and ignore the minions.
-|tip Manually skip to the next step.
 step
 goto sq3sloadmindscape_base 49.56,54.24
-'Press _E_ to Use _Ul'vor Staff_
-|tip Manually skip to the next step.
+'Press _E_ to Use _Ul'vor Staff_ |q Buried Memories/Use the Staff to Exit the Mindscape
 step
 goto psijicrelicvaults01_base 53.06,56.85
-talk Sotha Sil
-|tip Manually skip to the next step.
+talk Sotha Sil |q Buried Memories/Talk to Sotha Sil
 step
 'Open your map. Right click to bring up the Artaeum map.
 'Travel to the _Artaeum_ Wayshrine
@@ -17536,6 +17524,10 @@ step
 goto dreamingcave02_base 56.25,64.66
 'Press _E_ to Use _Portal to Ritemaster's Study_
 |tip Manually skip to the next step.
+step
+goto dreamingcave03_base 62.16,75.97
+talk Ritemaster Iachesis
+turnin Buried Memories
 step
 goto dreamingcave03_base 62.16,75.97
 talk Ritemaster Iachesis
@@ -17568,8 +17560,10 @@ click Alinor's Royal Palace
 |tip Manually skip to the next step.
 step
 goto alinorroyalpalace1_base 40.24,30.89
-talk Proxy Queen Alwinarwe
-|tip Manually skip to the next step.
+'Go to Alinor's Royal Palace |q The Tower Sentinels/Go to Alinor's Royal Palace
+step
+goto alinorroyalpalace1_base 40.24,30.89
+talk Proxy Queen Alwinarwe |q The Tower Sentinels/Talk to Proxy Queen Alwinarwe
 step
 'Open your map. Right click to go to the Summerset map.
 'Travel to the _Cey-Tarn Keep_ Wayshrine
@@ -17598,13 +17592,15 @@ step
 goto wastencoraldale_base 77.73,44.84
 step
 goto wastencoraldale_base 78.83,29.15
-'Press _E_ to Open _Augur of the Obscure_
-'Select _"I have a few questions first"_ if you'd like to learn more, otherwise
-'Select _"Yes. Let's get moving."_
-|tip Manually skip to the next step.
+'Find The Augur of the Obscure |q The Psijics' Calling/Find The Augur of the Obscure
 step
-'Press _E_ to Use _Psijic Map of Summerset_
-|tip Manually skip to the next step.
+goto wastencoraldale_base 78.83,29.15
+'Press _E_ to Open _Augur of the Obscure_ |q The Psijics' Calling/Talk to The Augur of the Obscure
+step
+goto wastencoraldale_base 78.83,29.15
+'Talk to The Augur of the Obscure |q The Psijics' Calling/Talk to The Augur of the Obscure
+step
+'Press _E_ to Use _Psijic Map of Summerset_ |q The Psijics' Calling/Inspect the Psijic Map of Summerset
 step
 'Open your map. Right click to go to the Summerset map.
 'Travel to the _Shimmerene_ Wayshrine
@@ -17622,7 +17618,7 @@ goto summerset_base 52.18,41.70
 'At the fork, go right from here
 |tip Manually skip to the next step.
 step
-goto summerset_base 53.95,40.98
+goto summerset_base 53.32,41.13
 'Press _E_ to Use _Augur of the Obscure_
 |tip Manually skip to the next step.
 step
@@ -17630,13 +17626,8 @@ goto summerset_base 56.71,42.64
 'Jump off this point into the water below
 |tip Manually skip to the next step.
 step
-goto summerset_base 56.28,43.17
-'Press _E_ to Use _Augur of the Obscure_
-|tip Manually skip to the next step.
-step
-goto summerset_base 56.22,43.29
-'Press _E_ to Seal _Time Breach_
-|tip Manually skip to the next step.
+goto summerset_base 56.23,43.29
+'Press _E_ to Use _Augur of the Obscure_ |q The Psijics' Calling/.*Seal Time Breaches on Summerset Isle.*: |count 1
 step
 goto summerset_base 56.75,43.81
 'Swim to here and continue along the bank of the river heading slightly Southwest
@@ -17666,65 +17657,44 @@ goto Eldbursanctuary01_base 66.00,53.46
 'Drop down into the hole
 |tip Manually skip to the next step.
 step
-goto Eldbursanctuary02_base 62.79,53.32
-'Continue South from here
-|tip Manually skip to the next step.
-step
-goto Eldbursanctuary01_base 22.84,73.55
-'Jump down to the floor below
-|tip Manually skip to the next step.
+goto Eldbursanctuary02_base 27.19,53.55
 step
 goto Eldbursanctuary02_base 18.03,70.39
 click Cainar's Mind Trap
-|tip Manually skip to the next step.
 step
 goto Eldbursanctuary03_base 63.83,59.63
-talk Cainar
-|tip Manually skip to the next step.
+talk Cainar |q Whispers from the Deep/Find Cainar
 step
 goto Eldbursanctuary03_base 51.85,52.22
-'Press _E_ to Take _Spell Particle_
-'Take Spell Particle
-|tip Manually skip to the next step.
+'Press _E_ to Take _Spell Particle_ |q Whispers from the Deep/.*Gather Spell Particles.*: |count 1
 step
 goto Eldbursanctuary03_base 51.30,31.26
-'Press _E_ to Take _Spell Particle_
-'Take Spell Particle
-|tip Manually skip to the next step.
+'Press _E_ to Take _Spell Particle_ |q Whispers from the Deep/.*Gather Spell Particles.*: |count 2
 step
 goto Eldbursanctuary03_base 33.80,55.03
-'Press _E_ to Take _Spell Particle_
-'Take Spell Particle
-|tip Manually skip to the next step.
+'Press _E_ to Take _Spell Particle_ |q Whispers from the Deep/.*Gather Spell Particles.*: |count 3
 step
 goto Eldbursanctuary03_base 48.29,61.73
 'Jump down from here
 |tip Manually skip to the next step.
 step
 goto Eldbursanctuary03_base 62.51,60.04
-talk Cainar
-|tip Manually skip to the next step.
+talk Cainar |q Whispers from the Deep/Talk to Cainar
 step
-goto Eldbursanctuary02_base 22.52,33.14
-'Continue passed the archway here and head East
-|tip Manually skip to the next step.
+goto Eldbursanctuary02_base 22.56,27.09
 step
 goto Eldbursanctuary02_base 42.75,24.58
-'Continue pass the first archway here, and then head Northeast
-|tip Manually skip to the next step.
 step
 goto Eldbursanctuary02_base 62.97,14.97
 'Press _E_ to Examine _Bucket_
-'Take Bucket
-|tip Manually skip to the next step.
+'Take _Bucket_ |q Whispers from the Deep/Wake Grog Up
 step
 goto Eldbursanctuary02_base 63.20,13.50
-'Press _E_ to Use _Bucket_
-|tip Manually skip to the next step.
+'Press _E_ to Use _Bucket_ |q Whispers from the Deep/Use the Bucket
 step
-goto Eldbursanctuary02_base 63.25,20.32
-'Continue passed the archway here and head South
-|tip Manually skip to the next step.
+goto Eldbursanctuary02_base 63.20,26.64
+step
+goto Eldbursanctuary02_base 70.57,38.49
 step
 goto Eldbursanctuary02_base 69.84,79.77
 'Continue up the stairs West from here
@@ -17736,49 +17706,45 @@ goto Eldbursanctuary01_base 42.84,81.42
 step
 goto Eldbursanctuary04_base 57.48,40.55
 'Press _E_ to Search _Miriya's Pack_
-'Take Cowl of the Exile
-|tip Manually skip to the next step.
+'Take Cowl of the Exile |q Whispers from the Deep/Find Miriya
 step
 goto Eldbursanctuary04_base 43.74,39.94
 'Press _E_ to Take _Regret_
-'Take Regret
-|tip Manually skip to the next step.
+'Take Regret |q Whispers from the Deep/Follow Miriya's Path
 step
 goto Eldbursanctuary04_base 46.49,53.82
 'Press _E_ to Take _Redemption_
-'Take Redemption
-|tip Manually skip to the next step.
+'Take Redemption |q Whispers from the Deep/Follow Miriya's Path
 step
 goto Eldbursanctuary04_base 61.05,55.68
-talk Miriya
-|tip Manually skip to the next step.
+talk Miriya |q Whispers from the Deep/Talk to Miriya
 step
 goto Eldbursanctuary01_base 51.72,80.05
 'Continue down the stairs here and head North
 |tip Manually skip to the next step.
 step
 goto Eldbursanctuary02_base 55.88,53.36
+'Return to Oriandra |q Whispers from the Deep/Return to Oriandra
+step
+goto Eldbursanctuary02_base 55.88,53.36
 click Oriandra's Mind Trap
 |tip Manually skip to the next step.
 step
 goto Eldbursanctuary05_base 47.40,60.30
-'Continue following the spiraling path up
-|tip Manually skip to the next step.
 step
 goto Eldbursanctuary05_base 65.64,46.16
 kill Oriandra's Anger
 kill Oriandra's Fear
 kill Oriandra's Rage
-'They appear one at a time after each is killed
-|tip Manually skip to the next step.
+|tip They appear one at a time after each is killed
+'Defeat the Mind Traps and rescue Oriandra |q Whispers from the Deep/Rescue Oriandra
 step
 goto Eldbursanctuary05_base 66.41,41.29
 'Press _E_ to Use _Cainar's Link_
 |tip Manually skip to the next step.
 step
 goto Eldbursanctuary02_base 54.10,54.87
-talk Oriandra
-|tip Manually skip to the next step.
+turnin Whispers from the Deep
 step
 goto Eldbursanctuary02_base 62.65,53.36
 'Press _E_ to Climb _Eldbur Ruins_
@@ -17795,11 +17761,6 @@ step
 goto summerset_base 55.11,28.24
 talk Miranrel
 accept Gryphon Grievance
-|tip Manually skip to the next step.
-step
-goto summerset_base 55.24,28.64
-'Follow the road Southeast from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 58.64,30.20
 'Press _E_ to Use _Augur of the Obscure_
@@ -17808,11 +17769,9 @@ step
 goto summerset_base 59.09,30.29
 talk Bailiff Erator
 accept Lauriel's Lament
-|tip Manually skip to the next step.
 step
 goto summerset_base 61.52,32.58
-'Press _E_ to Seal _Time Breach_
-|tip Manually skip to the next step.
+'Press _E_ to Seal _Time Breach_ |q The Psijics' Calling/.*Seal Time Breaches on Summerset Isle.*: |count 2
 step
 goto summerset_base 61.18,32.33
 click Keeper's Manor
@@ -17820,16 +17779,15 @@ click Keeper's Manor
 step
 goto summerset_base 61.02,32.23
 'Run up the stairs from here to the third floor
-'Press _E_ to Examine _Keeper's Letter_
-|tip Manually skip to the next step.
+'Press _E_ to Examine _Keeper's Letter_ |q Lauriel's Lament/Search the Acropolis Grounds
 step
 goto summerset_base 61.02,32.23
 'Press _E_ to Search _Keeper's Coffer_
-'Take the Golden Seal and the Keeper's Key
-|tip Manually skip to the next step.
+'Take _Golden Seal_ |q Lauriel's Lament/Take the Golden Seal
+'Take _Keeper's Key_ |q Lauriel's Lament/Take the Keeper's Key
 step
 goto summerset_base 61.22,32.33
-'Run down the stairs to the first floor
+'Run downstairs to the first floor
 click Direnni Acropolis
 |tip Manually skip to the next step.
 step
@@ -17850,16 +17808,16 @@ goto karndar_03_base 52.88,52.88
 |tip Manually skip to the next step.
 step
 goto karndar_01_base 39.90,52.94
-'Press _E_ to Examine _Keeper's Oath_
-|tip Manually skip to the next step.
+'Explore the Catacombs |q Lauriel's Lament/Explore the Catacombs
+step
+goto karndar_01_base 39.90,52.94
+'Press _E_ to Examine _Keeper's Oath_ |q Lauriel's Lament/Examine the Inscription
 step
 goto karndar_01_base 35.88,51.65
-'Press _E_ to Place _Golden Seal Recess_
-|tip Manually skip to the next step.
+'Press _E_ to Place _Golden Seal Recess_ |q Lauriel's Lament/Place the Golden Seal
 step
 goto karndar_01_base 37.06,49.28
-talk Lauriel
-|tip Manually skip to the next step.
+talk Lauriel |q Lauriel's Lament/Talk to Lauriel
 step
 goto karndar_01_base 36.65,47.53
 click The Shattered Halls
@@ -17870,45 +17828,44 @@ goto karndar_01_base 46.91,41.55
 |tip Manually skip to the next step.
 step
 goto karndar_02_base 48.28,32.27
-'Continue North through the archway here
-|tip Manually skip to the next step.
+step
+goto karndar_02_base 41.00,32.38
+step
+goto karndar_02_base 40.58,24.17
 step
 goto karndar_02_base 53.36,23.45
-'Continue South through the archway from here, and continue South then East
-|tip Manually skip to the next step.
+step
+goto karndar_02_base 52.74,39.51
 step
 goto karndar_02_base 64.91,41.41
-'Continue South through the archway from here, and continue South then West
-|tip Manually skip to the next step.
 step
-goto karndar_02_base 61.62,61.36
-'Continue through the ruins from here
-|tip Manually skip to the next step.
+goto karndar_02_base 65.57,60.44
+step
+goto karndar_02_base 49.72,60.65
+step
+goto karndar_02_base 48.95,64.14
+'Search for the Crimson Seal |q Lauriel's Lament/Search for the Crimson Seal
 step
 goto karndar_02_base 49.26,67.42
 'Press _E_ to Search _Keeper's Remains_
-'Take the Crimson Seal
-|tip Manually skip to the next step.
+'Take the Crimson Seal |q Lauriel's Lament/Take the Crimson Seal
 step
 goto karndar_02_base 48.79,73.73
-'Run South behind the tree and continue through archway
-|tip Manually skip to the next step.
 step
 goto karndar_02_base 47.20,88.40
-'Run up the stairs from here
+'Run upstairs from here
 |tip Manually skip to the next step.
 step
 goto karndar_01_base 41.44,77.01
-'Continue East from here
-|tip Manually skip to the next step.
+step
+goto karndar_01_base 57.73,77.27
+step
+goto karndar_01_base 57.68,62.01
 step
 goto karndar_01_base 36.70,59.18
-'Drop down from here
-|tip Manually skip to the next step.
 step
 goto karndar_01_base 36.29,53.97
-'Press _E_ to Place _Crimson Seal_
-|tip Manually skip to the next step.
+'Press _E_ to Place _Crimson Seal_ |q Lauriel's Lament/Place the Crimson Seal
 step
 goto karndar_01_base 31.34,53.09
 click Forsaken Undercroft
@@ -17919,16 +17876,12 @@ goto karndar_04_base 05.23,44.76
 |tip Manually skip to the next step.
 step
 goto karndar_05_base 10.59,41.07
-'Continue South across the bridge from here
-|tip Manually skip to the next step.
 step
 goto karndar_05_base 15.33,51.39
 'Run down the stairs from here
 |tip Manually skip to the next step.
 step
 goto karndar_06_base 19.35,46.21
-'Continue East through the archway from here
-|tip Manually skip to the next step.
 step
 goto karndar_06_base 30.79,46.14
 click Lauriel's Crypt
@@ -17936,45 +17889,40 @@ click Lauriel's Crypt
 step
 goto karndar_06_base 50.72,36.40
 kill Lady Adreana
+'If she's not there, skip to the next step
 |tip Manually skip to the next step.
 step
 goto karndar_06_base 51.49,43.26
-'Cross the first bridge here
-|tip Manually skip to the next step.
 step
 goto karndar_06_base 59.17,55.73
-'Cross the second bridge here
-|tip Manually skip to the next step.
 step
 goto karndar_06_base 72.03,51.88
-talk Lauriel
-|tip Manually skip to the next step.
+'Find the Source of Lauriel's Binding |q Lauriel's Lament/Find the Source of Lauriel's Binding
+step
+goto karndar_06_base 72.03,51.88
+talk Lauriel |q Lauriel's Lament/Talk to Lauriel
 step
 goto karndar_06_base 73.35,51.42
 'Press _E_ to Take _Keeper's Flame_
-'Take Keeper's Flame
-|tip Manually skip to the next step.
+'Take Keeper's Flame |q Lauriel's Lament/Take the Keeper's Flame
 step
-'You must decide what you will do now. Do you free Lauriel or bind her to her prison? (We think burning her body is the right choice.)
-'Select _Burn Lauriel's Remains_, or
-'Select _Burn Santified Brazier_
-|tip Manually skip to the next step.
+'You must decide what you will do now.
+'Choose _Burn Lauriel's Remains_ (Free Lauriel) |q Lauriel's Lament/Burn the Remains to Free Lauriel |or
+'_OR_
+'Choose _Burn Sanctified Brazier_ (Imprison Lauriel) |q Lauriel's Lament/Light the Sanctified Brazier to Bind Lauriel |or
+|tip Note: If you burn her body and free Lauriel, she will seek revenge on her jailor's descendants.
 step
 goto karndar_06_base 81.10,49.13
-'Continue slightly Southeast behind Lauriel's tomb and across the rock bridge
-|tip Manually skip to the next step.
 step
 goto karndar_06_base 88.81,42.81
-'Follow the passage way to the exit
-|tip Manually skip to the next step.
+step
+goto karndar_06_base 88.95,35.79
 step
 goto karndar_06_base 65.36,30.96
 click Direnni Catacombs
 |tip Manually skip to the next step.
 step
-goto karndar_03b_base 56.02,44.08
-'Run up the stairs
-|tip Manually skip to the next step.
+goto karndar_03b_base 50.67,45.31
 step
 goto karndar_03_base 36.77,46.60
 'Drop down from here from here
@@ -18002,7 +17950,7 @@ goto summerset_base 62.97,34.15
 step
 goto summerset_base 63.57,34.84
 talk Bailiff Erator
-|tip Manually skip to the next step.
+turnin Lauriel's Lament
 step
 goto summerset_base 62.95,34.60
 'Run down the stairs here and follow the path West
@@ -18030,16 +17978,13 @@ goto summerset_base 56.22,28.99
 step
 goto summerset_base 56.81,26.66
 'Press _E_ to Examine _Aralem_
-'Take Gryphon Egg
-|tip Manually skip to the next step.
+'Take Gryphon Egg |q Gryphon Grievance/.*Find Miranrel's Companions.*: |count 1
 step
 goto summerset_base 56.93,25.56
-talk Gwinolas
-|tip Manually skip to the next step.
+talk Gwinolas |q Gryphon Grievance/.*Find Miranrel's Companions.*: |count 2
 step
 goto summerset_base 55.49,25.50
-talk Ethodan
-|tip Manually skip to the next step.
+talk Ethodan |q Gryphon Grievance/.*Find Miranrel's Companions.*: |count 3
 step
 goto summerset_base 57.35,25.83
 'Drop down from here and head Northwest on the road
@@ -18051,8 +17996,10 @@ goto summerset_base 54.70,25.10
 step
 goto summerset_base 54.24,26.53
 talk Miranrel
-'On the way to her, you'll discover the _King's Haven Pass Wayshrine_. If for whatever reason, you don't, it is close.
-|tip Manually skip to the next step.
+turnin Gryphon Grievance
+step
+goto summerset_base 54.16,26.50
+wayshrine King's Haven Pass
 step
 goto summerset_base 53.63,25.42
 'At the fork in the road, go left
@@ -18067,13 +18014,12 @@ goto summerset_base 51.05,27.89
 |tip Manually skip to the next step.
 step
 goto summerset_base 48.95,27.52
-click King's Haven Pass Delve
+click King's Haven Pass
 |tip Manually skip to the next step.
 step
 goto kingshavenext_base 82.69,46.34
 talk Mehdze
 accept Savage Truths
-|tip Manually skip to the next step.
 step
 goto kingshavenext_base 70.74,34.28
 click Coral-Splitter Caves
