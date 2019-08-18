@@ -2,7 +2,7 @@ local ZGV = _G.ZGV
 if ZGV:DoMutex("MainQuestsOnly") then return end
 ZGV.GuideMenuTier = "MOR"
 
-ZGV:RegisterGuide("Aldmeri Dominion Leveling Guides\\MainQuestsOnly\Khenarthi's Roost",[[
+ZGV:RegisterGuide("Aldmeri Dominion Leveling Guides\\MainQuestsOnly\\Khenarthi's Roost",[[
 loadingimage loadscreen_kenathis_roost_01.dds
 description This island off the south coast of Elsweyr is named after the Khajiiti goddess of weather and the sky, who is usually represented as a great hawk. She finds many worshipers among the cat-folk's sailors and farmers, especially those who grow moon-sugar cane.
 step
