@@ -16535,15 +16535,15 @@ goto summerset_base 37.96,48.48
 talk Feathermoth |q Manor of Masques/Talk to Feathermoth
 step
 goto summerset_base 38.01,48.50
-'Press _E_ at the podiums to Use _Medium Bosmer Rhythm_ |q Manor of Masques
+'Press _E_ at the podium to Use _Medium Bosmer Rhythm_ |q Manor of Masques
 |tip Manually skip to the next step.
 step
 goto summerset_base 37.99,48.54
-'Press _E_ at the podiums to Use _Slow Dunmer Rhythm_ |q Manor of Masques
+'Press _E_ at the podium to Use _Slow Dunmer Rhythm_ |q Manor of Masques
 |tip Manually skip to the next step.
 step
 goto summerset_base 38.04,48.48
-'Press _E_ at the podiums to Use _Fast Orc Rhythm_ |q Manor of Masques
+'Press _E_ at the podium to Use _Fast Orc Rhythm_ |q Manor of Masques
 |tip Manually skip to the next step.
 step
 goto summerset_base 37.96,48.48
@@ -16595,16 +16595,19 @@ talk Alchemy |q Manor of Masques/Warn Alchemy
 |tip Choice: Dialog option "[Warn Alchemy] Rinyde plans to unmask your Hopefuls during their performance."
 step
 goto summerset_base 37.96,49.75
-'Press _E_ to Use _Rinyde's Enchanted Daggers_
-|tip Manually skip to the next step.
+'Press _E_ to Use _Rinyde's Enchanted Daggers_ |q Manor of Masques/Juggle
+'Watch the cutscene
 step
 goto summerset_base 38.12,49.83
-'Press _E_ to Cheer _Podium_
-|tip Manually skip to the next step.
+'Press _E_ to Cheer _Podium_ |q Manor of Masques/Cheer
+'Watch the cutscene
 step
 goto summerset_base 38.24,49.76
-'Press _E_ to Use _Tribal Drum_
-|tip Manually skip to the next step.
+'Press _E_ to Use _Tribal Drum_ |q Manor of Masques/Drum
+'Watch the cutscene
+step
+goto summerset_base 38.24,49.76
+'Wait to Be Unmasked |q Manor of Masques/Wait to Be Unmasked
 step
 goto summerset_base 38.25,48.60
 click Manor of Masques
@@ -16612,9 +16615,11 @@ click Manor of Masques
 step
 goto summerset_base 38.37,48.85
 'Run up the stairs and into the study
-talk Alchemy
+talk Alchemy |q Manor of Masques/Talk to Alchemy
+step
+goto summerset_base 38.37,48.85
+talk Alchemy |q Manor of Masques/Suggest A Lie
 |tip Choice: Dialog option "If you're worried she won't leave, let her join the Sapiarchs, then tell her."
-|tip Manually skip to the next step.
 step
 goto summerset_base 38.20,48.63
 'Run downstairs
@@ -16622,12 +16627,16 @@ click Rellenthil
 |tip Manually skip to the next step.
 step
 goto summerset_base 38.70,48.57
-'Run down the stairs from here
+'Continue to here
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.98,48.16
+'Run downstairs from here
 |tip Manually skip to the next step.
 step
 goto summerset_base 35.86,47.03
 talk Rinyde
-|tip Manually skip to the next step.
+turnin Manor of Masques
 step
 goto summerset_base 41.48,46.48
 'Continue down the path from here
@@ -16638,8 +16647,7 @@ click Rellenthil Sinkhole
 |tip Manually skip to the next step.
 step
 goto sinkhole_base 20.35,59.24
-talk Valsirenn
-|tip Manually skip to the next step.
+talk Valsirenn |q A Pearl of Great Price/Talk to Valsirenn
 step
 goto sinkhole_base 21.82,64.52
 step
@@ -16652,16 +16660,19 @@ step
 goto sinkhole_base 46.13,60.47
 step
 goto sinkhole_base 48.09,67.21
+'Explore the Sinkhole Caverns |q A Pearl of Great Price/Explore the Sinkhole Caverns
 step
 goto sinkhole_base 51.47,68.59
-talk Eldhon
-|tip Manually skip to the next step.
+talk Eldhon |q A Pearl of Great Price/Talk to Eldhon
 step
 goto sinkhole_base 58.30,62.40
 step
 goto sinkhole_base 56.39,50.67
-talk Valsirenn
-|tip Manually skip to the next step.
+'Continue Exploring the Sinkhole Caverns |q A Pearl of Great Price/Continue Exploring the Sinkhole Caverns
+step
+goto sinkhole_base 56.39,50.67
+'Watch the cutscene
+talk Valsirenn |q A Pearl of Great Price/Talk to Valsirenn
 step
 goto sinkhole_base 64.90,51.11
 click Rellenthil Sinkhole
@@ -16674,43 +16685,44 @@ step
 goto sinkhole_base 56.72,39.50
 step
 goto sinkhole_base 56.66,47.86
-click Abyssal Pearl
+click Abyssal Pearl |q A Pearl of Great Price
 |tip Manually skip to the next step.
 step
 goto sinkhole_base 51.50,50.21
-click Abyssal Pearl
-|tip Manually skip to the next step.
+click Abyssal Pearl |q A Pearl of Great Price/Destroy Abyssal Pearls
 step
 goto sinkhole_base 51.91,45.31
 step
 goto sinkhole_base 42.90,45.95
-talk Valsirenn
+'Watch the cutscene
+talk Valsirenn |q A Pearl of Great Price/Talk to Valsirenn
 |tip Manually skip to the next step.
 step
 goto sinkhole_base 36.07,36.57
-kill Yaghra Monstrosity
+'Continue Exploring the Sinkhole Caverns |q A Pearl of Great Price/Continue Exploring the Sinkhole Caverns
+step
+goto sinkhole_base 36.07,36.57
+kill Yaghra Monstrosity |q A Pearl of Great Price/Destroy the Yaghra Monstrosity
 |tip A simple boss fight. The Monstrosity summons a small hatchling. Ignore them and focus on the Monstrosity. The best tactic is to attack the Monstrosity while moving around it. It has a slow turn radius. When it summons a large telegraph at its location move away.
-|tip Manually skip to the next step.
 step
 goto sinkhole_base 35.60,30.79
 click Summerset
 |tip Manually skip to the next step.
 step
 goto summerset_base 43.17,43.44
-talk Razum-dar
-|tip Manually skip to the next step.
+talk Razum-dar |q A Pearl of Great Price/Talk to Razum-dar
+step
+goto summerset_base 41.23,44.77
 step
 goto summerset_base 39.39,48.70
 click Canonreeve's House
 |tip Manually skip to the next step.
 step
 goto summerset_base 39.55,48.77
-talk Canonreeve Farmeldo
-|tip Manually skip to the next step.
+talk Canonreeve Farmeldo |q A Pearl of Great Price/Talk to Canonreeve Farmeldo
 step
 goto summerset_base 39.61,48.83
-talk Razum-dar
-|tip Manually skip to the next step.
+talk Razum-dar |q A Pearl of Great Price/Talk to Razum-dar
 step
 goto summerset_base 39.46,48.74
 click Rellenthil
@@ -16724,38 +16736,42 @@ goto summerset_base 34.35,51.86
 talk Silurie
 accept The Taste of Fear
 step
+goto summerset_base 34.35,51.86
+talk Silurie |q The Taste of Fear/Talk to Silurie
+step
 goto summerset_base 33.21,52.68
-talk Revelator Lindafwe
-|tip Manually skip to the next step.
+talk Revelator Lindafwe |q The Taste of Fear/Distract Revelator Lindafwe
 step
 goto summerset_base 33.15,52.71
 click Cey-Tarn Keep
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.08,52.52
-talk Silurie
-|tip Manually skip to the next step.
+talk Silurie |q The Taste of Fear/Talk to Silurie
+step
+goto summerset_base 31.08,52.52
+'Watch Silurie's Spell |q The Taste of Fear/Watch Silurie's Spell
 step
 goto summerset_base 32.36,53.65
 click Cey-Tarn Keep Barracks
 |tip Manually skip to the next step.
 step
 goto summerset_base 32.74,53.70
-'Run up to the second floor and press _E_ to Examine _Candelabra_
-|tip Manually skip to the next step.
+'Follow the light to the second floor |q The Taste of Fear/Follow the Light of Stendarr
 step
+goto summerset_base 32.74,53.70
+'Press _E_ to Examine _Candelabra_ |q The Taste of Fear/Examine the Candelabra
+step
+goto summerset_base 32.67,53.60
 'Press _E_ to Examine _Smeared Footprints_
-'Take _Tracked Clay_
-|tip Manually skip to the next step.
+'Take _Tracked Clay_ |q The Taste of Fear/Examine the Smeared Footprints
 step
 goto summerset_base 32.63,53.59
 'Press _E_ to Examine _Desiccated Corpse_
-'Take _Shriveled Cocoon_
-|tip Manually skip to the next step.
+'Take _Shriveled Cocoon_ |q The Taste of Fear/Examine the Desiccated Corpse
 step
 goto summerset_base 32.54,53.52
-'Press _E_ to Take _The Insatiable_
-|tip Manually skip to the next step.
+'Press _E_ to Take _The Insatiable_ |q The Taste of Fear/Examine the Book
 step
 goto summerset_base 32.67,53.64
 click Cey-Tarn Keep Barracks
@@ -16771,23 +16787,23 @@ click Refectory
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.75,54.17
-talk Justiciar Hyircil
-|tip Manually skip to the next step.
+talk Justiciar Hyircil |q The Taste of Fear/Talk to Justiciar Hyircil
 step
 goto summerset_base 31.94,54.31
-'Follow the group down the stairs and
+'Run downstairs
 click Refectory Cellar
 |tip Manually skip to the next step.
 step
+goto ceytarn_dungeon01_base 48.63,13.89
+'Explore the Cellar |q The Taste of Fear/Explore the Cellar
+step
 goto ceytarn_dungeon01_base 49.84,31.74
-'Press _E_ to Use _The Gorge_
-|tip Manually skip to the next step.
+'Press _E_ to Use _The Gorge_ |q The Taste of Fear/Chase the Insatiable
 step
 goto ceytarn_dungeon02_base 59.20,28.03
 step
 goto ceytarn_dungeon02_base 59.01,43.87
-'Press _E_ to Take _Show Us Your Worth_
-|tip Manually skip to the next step.
+'Press _E_ to Take _Show Us Your Worth_ |q The Taste of Fear/Search the Side Passage
 step
 goto ceytarn_dungeon02_base 58.18,52.66
 step
@@ -16796,8 +16812,7 @@ goto ceytarn_dungeon02_base 53.50,54.62
 |tip Manually skip to the next step.
 step
 goto ceytarn_dungeon03_base 47.85,59.85
-talk Justiciar Hyircil
-|tip Manually skip to the next step.
+talk Justiciar Hyircil |q The Taste of Fear/Talk to Justiciar Hyircil
 step
 goto ceytarn_dungeon03_base 48.88,64.40
 click The Gorge - Keep Cellar
@@ -16805,79 +16820,86 @@ click The Gorge - Keep Cellar
 step
 goto ceytarn_dungeon03_base 58.05,88.90
 'Run down the stairs and
-click Lair of the Insatiable
-|tip Manually skip to the next step.
+click Lair of the Insatiable |q The Taste of Fear/Find Revelator Lindafwe
 step
 goto ceytarn_dungeon03_base 48.74,89.06
-kill The Insatiable
+kill The Insatiable |q The Taste of Fear/Defeat the Insatiable and Save Revelator Lindafwe
 |tip A challenging but straightforward boss fight. The Insatiable does a lot of melee damage, and it occasionally puts you in the vice grip that temporarily disables you. Both of these hit hard, so you'll need healing spells or (and, depending on how much damage you take) potions on the ready.
-|tip Manually skip to the next step.
 step
 goto ceytarn_dungeon03_base 55.68,89.10
-click The Gorge - Keep Cellar
-|tip Manually skip to the next step.
+click The Gorge - Keep Cellar |q The Taste of Fear/Meet Your Allies Outside the Lair
 step
 goto ceytarn_dungeon03_base 68.57,89.54
-'Press _E_ to Use _Portal_
-|tip Manually skip to the next step.
+'Press _E_ to Use _Portal_ |q The Taste of Fear/Pursue Teraniel
 step
-goto ceytarncaveInt02_base 54.30,62.82
-talk Revelator Lindafwe
-|tip Manually skip to the next step.
+goto ceytarncaveExt01_base 52.50,36.56
+talk Revelator Lindafwe |q The Taste of Fear/Talk to Revelator Lindafwe
 step
 goto ceytarncaveExt01_base 25.32,61.79
 click The Vaults of Heinarwe
 |tip Manually skip to the next step.
 step
-goto ceytarncaveInt02_base 51.00,66.56
-talk Revelator Lindafwe
+goto ceytarncaveInt02b_base 33.86,31.75
+'Run downstairs
 |tip Manually skip to the next step.
+step
+goto ceytarncaveInt02_base 51.00,66.56
+'Find the Source of the Magicka Ripple |q The Taste of Fear/Find the Source of the Magicka Ripple
+step
+goto ceytarncaveInt02_base 51.00,66.56
+talk Revelator Lindafwe |q The Taste of Fear/Talk to Revelator Lindafwe
 step
 goto ceytarncaveInt02_base 52.27,87.74
 'Run behind the altar and
-'Press _E_ to Examine _The Gorge_
+'Press _E_ to Examine _The Gorge_ |q The Taste of Fear/Search for Clues Among Teraniel's Books
 |tip Manually skip to the next step.
 step
 goto ceytarncaveInt02_base 52.83,76.39
-'The order to light the sconces is Anima, Ego, Incalescence, and Mortality
-|tip Manually skip to the next step.
+'Light the sconces in order of Anima, Ego, Incalescence, and Mortality |q The Taste of Fear/Reverse Teraniel's Attunement Ritual
+step
+goto ceytarncaveInt02_base 52.83,76.39
+'Watch Lindafwe |q The Taste of Fear/Watch Lindafwe
 step
 goto ceytarncaveInt02_base 52.91,75.49
-click The Gorge
-|tip Manually skip to the next step.
+click The Gorge |q The Taste of Fear/Enter the Gorge
 step
 goto ceytarncaveInt03_base 50.50,56.42
-kill Teraniel
-|tip A straightforward boss fight. Teraniel does much range and telegraphing attacks. Ignore the telegraphs as much as possible.
-|tip Manually skip to the next step.
+kill Teraniel |q The Taste of Fear/Save Silurie and Justiciar Hyircil
+|tip A straightforward boss fight. Teraniel does much range and telegraphing attacks. She also summons a flame atronach. Ignore the atronach and telegraphs as much as possible.
 step
 goto ceytarncaveInt03_base 52.81,72.81
-click Summerset
-|tip Manually skip to the next step.
+click Summerset |q The Taste of Fear/Escape the Gorge
 step
 goto summerset_base 35.30,54.98
 talk Silurie
-|tip Manually skip to the next step.
+turnin The Taste of Fear
 step
 goto summerset_base 35.63,54.52
-'Follow the path from here
+'Follow the path to here
 |tip Manually skip to the next step.
 step
 goto summerset_base 35.88,53.53
-'Continue on the path west from here
+'Continue on the path west to here
 |tip Manually skip to the next step.
 step
 goto summerset_base 34.98,53.36
-'Continue on the path north from here
+'Continue on the path north to here
+|tip Manually skip to the next step.
+step
+goto summerset_base 34.81,52.32
+'Continue North to here
+|tip Manually skip to the next step.
+step
+goto summerset_base 34.22,52.17
+'Continue to road below
 |tip Manually skip to the next step.
 step
 goto summerset_base 34.46,49.14
-'Continue on the main road west from here
+'Continue on the main road North from here
 |tip Manually skip to the next step.
 step
 goto summerset_base 29.46,51.27
 wayshrine Cey-Tarn Keep
-|tip Manually skip to the next step.
 step
 goto summerset_base 26.88,52.12
 talk Hiranesse
@@ -16901,42 +16923,36 @@ goto wastencoraldale_base 51.41,55.79
 step
 goto wastencoraldale_base 50.17,45.98
 step
-goto wastencoraldale_base 44.12,42.37
+goto wastencoraldale_base 44.48,45.57
 step
 goto wastencoraldale_base 37.18,40.22
-talk Curtaros
-|tip Manually skip to the next step.
+talk Curtaros |q Lost at Sea/Locate Curtaros
 step
 goto wastencoraldale_base 49.11,39.56
-talk Aldortarel
-|tip Manually skip to the next step.
+talk Aldortarel |q Lost at Sea/.*Find the Missing Crewmembers.* |count 1
 step
 goto wastencoraldale_base 45.91,43.94
 step
-goto wastencoraldale_base 51.61,46.35
+goto wastencoraldale_base 49.58,47.18
 step
 goto wastencoraldale_base 54.58,51.54
 step
 goto wastencoraldale_base 57.57,49.04
-'Press _E_ to Read _Cartorrel's Last Words_
-|tip Manually skip to the next step.
+'Press _E_ to Read _Cartorrel's Last Words_ |q Lost at Sea/.*Find the Missing Crewmembers.* |count 2
 step
 goto wastencoraldale_base 65.77,53.80
-talk Emdoline
-|tip Manually skip to the next step.
+talk Emdoline |q Lost at Sea/.*Find the Missing Crewmembers.* |count 3
 step
 goto wastencoraldale_base 74.47,51.48
 step
 goto wastencoraldale_base 80.85,41.99
-talk Curtaros
-|tip Manually skip to the next step.
+talk Curtaros |q Lost at Sea/Talk to Curtaros
 step
 goto wastencoraldale_base 75.83,37.74
 step
 goto wastencoraldale_base 66.41,31.90
-kill Commander Morteth
+kill Commander Morteth |q Lost at Sea/Defend the Ballista
 |tip Kill the waves of NPCs until Commander Morteth appears, then continue to kill any remaining NPCs. Morteth is a simple boss. His only real ability is a ground slam from the sky, which is easy to avoid.
-|tip Manually skip to the next step.
 step
 goto wastencoraldale_base 62.43,33.17
 step
@@ -16957,12 +16973,12 @@ step
 goto wastencoraldale_base 23.85,65.11
 step
 goto wastencoraldale_base 20.14,67.51
-'Press _E_ to Travel _Summerset_
-|tip Manually skip to the next step.
+'Press _E_ to Travel _Summerset_ |q Lost at Sea/Leave Wasten Coraldale
 step
 goto summerset_base 26.72,52.20
+'Watch the cutscene
 talk Hiranesse
-|tip Manually skip to the next step.
+turnin Lost at Sea
 step
 goto summerset_base 27.63,54.53
 'Continue to here
@@ -16988,6 +17004,11 @@ goto alinor_base 43.03,56.99
 step
 goto alinor_base 49.07,53.94
 step
+goto alinor_base 50.52,53.63
+'Press _E_ to Read _Housing Brochure_
+accept Room to Spare.
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 15
+step
 goto alinor_base 54.89,57.32
 wayshrine Alinor
 step
@@ -17003,17 +17024,28 @@ click The Golden Gryphon
 step
 goto alinor_base 38.96,35.44
 'Run up to the third floor and
-talk Lirendel
-|tip Manually skip to the next step.
+talk Lirendel |q A Duelist's Dilemma/Talk to Lirendel
 step
-'Press _E_ to Take _Guide to Altmeri Culture (On Dueling)_
-|tip Manually skip to the next step.
+'Press _E_ to Take _Guide to Altmeri Culture (On Dueling)_ |q A Duelist's Dilemma/Collect the Altmer Cultural Guide
+step
+goto alinor_base 38.96,35.44
+talk Felande Demarie |q Room to Spare/Talk to Felande Demarie in Alinor
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 15
+step
+goto alinor_base 38.96,35.44
+talk Felande Demarie |q Room to Spare/Talk to Felande Demarie
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 15
+step
+goto alinor_base 38.96,35.44
+talk Felande Demarie
+turnin Room to Spare
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 15
 step
 goto alinor_base 38.96,35.44
 talk Felande Demarie
 accept Room to Spare
 |tip You gain a new room for decorating
-|tip Manually skip to the next step.
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15
 step
 goto alinor_base 38.96,35.44
 'Run down to the first floor and
@@ -17021,8 +17053,7 @@ click Alinor
 |tip Manually skip to the next step.
 step
 goto alinor_base 24.80,43.41
-talk Roguzog
-|tip Manually skip to the next step.
+talk Roguzog |q A Duelist's Dilemma/Talk to Roguzog
 step
 goto alinor_base 23.55,50.26
 step

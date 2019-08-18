@@ -468,6 +468,7 @@ Data.MapIdsByName = {
 	["Cathedral of Webs"]              	= 430,
 	["Crystal Tower"]                  	= 431,
 	["Altar Room"]						= 478,
+	["The Gorge - Cey-Tarn Keep"]		= 479,
 
 	-- MURKMIRE
 	["Lilmoth"]							= 432,
