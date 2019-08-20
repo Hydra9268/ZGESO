@@ -18025,135 +18025,179 @@ goto kingshavenext_base 70.74,34.28
 click Coral-Splitter Caves
 |tip Manually skip to the next step.
 step
+goto kingshavenint1_base 57.82,27.34
+step
 goto kingshavenint1_base 40.30,29.95
-'Follow the path to here, then go Southeast
-|tip Manually skip to the next step.
 step
 goto kingshavenint1_base 45.18,33.18
-talk Naliara
-|tip Manually skip to the next step.
+'Talk Naliara |q Savage Truths/Find Naliara
+step
+goto kingshavenint1_base 40.27,29.81
 step
 goto kingshavenint1_base 36.88,30.73
-'At the fork in the path, go right
-|tip Manually skip to the next step.
 step
 goto kingshavenint1_base 29.07,26.88
-'Run up the path along the rock face
-|tip Manually skip to the next step.
+step
+goto kingshavenint1_base 23.63,24.58
+step
+goto kingshavenint1_base 21.19,30.24
+step
+goto kingshavenint1_base 23.42,37.23
+step
+goto kingshavenint1_base 20.45,42.78
 step
 goto kingshavenint1_base 18.93,39.07
-'Press _E_ to Take _Naliara's Notes, Day 8_
-|tip Manually skip to the next step.
+'Press _E_ to Take _Naliara's Notes, Day 8_ |q Savage Truths/.*Recover Naliara's Notes.*: |count 1
+step
+goto kingshavenint1_base 10.88,37.05
 step
 goto kingshavenint1_base 07.24,43.66
 click King's Haven Pass
 |tip Manually skip to the next step.
 step
 goto kingshavenext_base 33.76,40.79
-'Press _E_ to Take _Naliara's Notes, Day 13_
-|tip Manually skip to the next step.
+'Press _E_ to Take _Naliara's Notes, Day 13_ |q Savage Truths/.*Recover Naliara's Notes.*: |count 2
 step
 goto kingshavenext_base 34.34,46.71
-'From here jump up to the wooden bridge
+step
+goto kingshavenext_base 37.13,47.15
+'Carefully jump over to the ledge on the left-side of the bridge.
 |tip Manually skip to the next step.
 step
-goto kingshavenext_base 36.61,47.23
-'Carefully drop down to the right-side of the bridge. You shouldn't take any damage when you land on the ground floor below.
+goto kingshavenext_base 39.33,46.63
+'Carefully drop down to the ledge above the broken crate.
 |tip Manually skip to the next step.
+step
+goto kingshavenext_base 40.72,47.93
+'Carefully drop down to the ledge with the broken crate.
+|tip Manually skip to the next step.
+step
+goto kingshavenext_base 38.42,49.01
+'Drop down to the canyon floor.
+|tip Manually skip to the next step.
+step
+goto kingshavenext_base 30.20,52.54
 step
 goto kingshavenext_base 19.40,58.55
-'At the fork in the path, go left and continue to follow the path
-|tip Manually skip to the next step.
+step
+goto kingshavenext_base 17.18,63.52
+step
+goto kingshavenext_base 22.20,68.02
+step
+goto kingshavenext_base 28.14,69.27
+step
+goto kingshavenext_base 35.02,67.65
 step
 goto kingshavenext_base 37.03,63.23
-'Press _E_ to Take _Naliara's Notes, Day 18_
-|tip Manually skip to the next step.
+'Press _E_ to Take _Naliara's Notes, Day 18_ |q Savage Truths/.*Recover Naliara's Notes.*: |count 3
 step
 goto kingshavenext_base 43.38,58.13
-'Drop down to the first ledge below
-|tip Manually skip to the next step.
 step
 goto kingshavenext_base 43.91,56.64
-'Drop down to the ledge below
-|tip Manually skip to the next step.
 step
 goto kingshavenext_base 44.85,55.31
-'Drop down to the bridge below
-|tip Manually skip to the next step.
+step
+goto kingshavenext_base 45.11,53.01
 step
 goto kingshavenext_base 45.89,58.76
 click Coral-Splitter Caves
 |tip Manually skip to the next step.
 step
-goto kingshavenint1_base 22.15,62.35
-'Following the path through the cave
-|tip Manually skip to the next step.
+goto kingshavenint1_base 21.87,68.46
+step
+goto kingshavenint1_base 27.52,71.78
+step
+goto kingshavenint1_base 31.30,72.06
+step
+goto kingshavenint1_base 35.46,73.37
+step
+goto kingshavenint1_base 41.12,69.62
 step
 goto kingshavenint1_base 41.58,54.19
-'Press _E_ to Take _Naliara's Notes, Day 2_
-|tip Manually skip to the next step.
+'Press _E_ to Take _Naliara's Notes, Day 2_ |q Savage Truths/.*Recover Naliara's Notes.*: |count 4
 step
-goto kingshavenint1_base 35.96,33.03
-'At the fork in the path, go right
-|tip Manually skip to the next step.
+goto kingshavenint1_base 46.34,50.87
+step
+goto kingshavenint1_base 42.71,44.05
+step
+goto kingshavenint1_base 42.03,38.43
+step
+goto kingshavenint1_base 36.42,36.71
+step
+goto kingshavenint1_base 35.92,31.68
+step
+goto kingshavenint1_base 40.30,29.95
 step
 goto kingshavenint1_base 45.18,33.18
-talk Naliara
-|tip Manually skip to the next step.
+talk Naliara |q Savage Truths/Talk to Naliara
+step
+goto kingshavenint1_base 40.30,29.95
 step
 goto kingshavenint1_base 42.99,27.73
-talk Mehdze
-|tip Manually skip to the next step.
+talk Mehdze |q Savage Truths/Talk to Mehdze
 step
-goto kingshavenint1_base 37.02,30.87
-'At the fork in the path, go left
-|tip Manually skip to the next step.
+goto kingshavenint1_base 35.92,31.68
+step
+goto kingshavenint1_base 36.42,36.71
+step
+goto kingshavenint1_base 42.03,38.43
+step
+goto kingshavenint1_base 42.71,44.05
+step
+goto kingshavenint1_base 46.34,50.87
 step
 goto kingshavenint1_base 51.22,53.73
-click Ancient Ruins
-|tip Manually skip to the next step.
+click Ancient Ruins |q Savage Truths/Escort Mehdze to the Ruins
 step
 goto kingshavenint1_base 58.60,55.32
-'Press _E_ to Examine _King's Haven Trade Record_
-|tip Manually skip to the next step.
+'Press _E_ to Examine _King's Haven Trade Record_ |q Savage Truths/.*Help Mehdze Find Clues.*: |count 1
 step
-goto kingshavenint1_base 58.81,64.64
-'Press _E_ to Examine _King's Haven Scout Record_
-|tip Manually skip to the next step.
+goto kingshavenint1_base 58.64,64.15
+'Press _E_ to Examine _King's Haven Scout Record_ |q Savage Truths/.*Help Mehdze Find Clues.*: |count 2
 step
 goto kingshavenint1_base 58.92,75.38
-'Press _E_ to Examine _King's Haven Territory Record_
-|tip Manually skip to the next step.
+'Press _E_ to Examine _King's Haven Territory Record_ |q Savage Truths/.*Help Mehdze Find Clues.*: |count 3
 step
-goto kingshavenint1_base 58.92,75.38
+goto kingshavenint1_base 58.95,75.31
 talk Mehdze
-'You must decide the choice. Do you encourage Mehdze to share the truth or a lie? (We think the truth is the right choice.)
-'Select _The truth should be heard..._, or
-'Select _I wouldn't stake my career..._
-|tip Manually skip to the next step.
+'You must decide the choice.
+'Choose _The truth should be heard..._ |q Savage Truths/Talk to Mehdze |or
+'_OR_
+'Choose _I wouldn't stake my career..._ |q Savage Truths/Talk to Mehdze |or
+step
+goto kingshavenint1_base 58.95,75.31
+turnin Savage Truths
 step
 goto kingshavenint1_base 55.88,55.70
 click Coral-Splitter Caves
 |tip Manually skip to the next step.
 step
-goto kingshavenint1_base 47.90,52.35
-'At the fork in the path, go left and follow the path
-|tip Manually skip to the next step.
+goto kingshavenint1_base 46.34,50.87
+step
+goto kingshavenint1_base 41.47,56.27
+step
+goto kingshavenint1_base 41.12,69.62
+step
+goto kingshavenint1_base 35.46,73.37
+step
+goto kingshavenint1_base 31.30,72.06
+step
+goto kingshavenint1_base 21.87,68.46
 step
 goto kingshavenint1_base 22.08,61.67
 click King's Haven Pass
 |tip Manually skip to the next step.
 step
-goto kingshavenext_base 44.69,57.14
-'Follow the path from here across the bridge and head West
-|tip Manually skip to the next step.
+goto kingshavenext_base 43.28,53.37
+step
+goto kingshavenext_base 37.13,51.26
+step
+goto kingshavenext_base 29.00,52.80
+step
+goto kingshavenext_base 19.19,57.98
 step
 goto kingshavenext_base 14.54,56.46
 click Summerset
-|tip Manually skip to the next step.
-step
-goto summerset_base 35.78,32.50
-'Cross the bridge
 |tip Manually skip to the next step.
 step
 goto summerset_base 34.68,32.45
