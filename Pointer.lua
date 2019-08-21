@@ -276,12 +276,13 @@ function Pointer:ShowArrow(waypoint)
 	self.ArrowFrame.waypoint = waypoint
 	self.ArrowFrame.WaitingPhase = nil
 
-	last_distance=0
-	speed=0
-	lastbeeptime=GetTimeStamp()+3
-	cuedinged=nil
+	last_distance = 0
+	speed = 0
+	--lastbeeptime = GetTimeStamp() + 3
+	lastbeeptime = GetGameTimeMilliseconds() + 250
+	cuedinged = nil
 
-	lastminimapdist=99999
+	lastminimapdist = 99999
 
 	local tx,ty=Pointer:TranslateCoords(waypoint.m,waypoint.x,waypoint.y,self:GetMapTex())
 	if tx and ty then
@@ -483,10 +484,11 @@ local avgspeed=0
 local eta_elapsed=0
 local etadisp_elapsed=0
 
-local lastbeeptime=GetTimeStamp()
-local lastturntime=lastbeeptime
-local laststoptime=lastbeeptime
-local lastmovetime=lastbeeptime
+-- local lastbeeptime=GetTimeStamp()
+local lastbeeptime = GetGameTimeMilliseconds()
+local lastturntime = lastbeeptime
+local laststoptime = lastbeeptime
+local lastmovetime = lastbeeptime
 
 local msin,mcos,mabs=math.sin,math.cos,math.abs
 
@@ -1117,12 +1119,13 @@ function Pointer:SurveyMap(specific,force,quiet)
 
 	if ZGV.Utils.Delocalize(GetMapName())=="Tamriel" then qd("Can't survey Tamriel itself.") return end
 	if Z.noParent then
-		if not knownNoParent[Z] then  qd("Can't survey a non-parented map.")  end
+		if not knownNoParent[Z] then qd("Can't survey a non-parented map.")  end
 		knownNoParent[Z]=true
 		return
 	end
 	local waymode = (GetMapPlayerWaypoint()~=0)
-	if not waymode and Z.scouttime and (GetTimeStamp()-Z.scouttime<4) then
+	-- if not waymode and Z.scouttime and (GetTimeStamp()-Z.scouttime<4) then
+	if not waymode and Z.scouttime and ( GetGameTimeMilliseconds() - Z.scouttime < 4 ) then
 		qd("|cff0000Surveying too fast?")
 		return
 	end
@@ -1147,7 +1150,8 @@ function Pointer:SurveyMap(specific,force,quiet)
 		Z.px1,Z.py1 = GetMapPlayerPosition("player")
 		DEVd(("Surveying |cffffff%s|r, point A: %.2f,%.2f is world %.2f,%.2f. Now start walking, or set a waypoint elsewhere on the map."):format(tex,Z.lx1*100,Z.ly1*100,Z.px1*100,Z.py1*100))
 
-		Z.scouttime=GetTimeStamp()
+		-- Z.scouttime = GetTimeStamp()
+		Z.scouttime = GetGameTimeMilliseconds()
 
 		Z.scale = nil
 		Z.lx2,Z.ly2,Z.px2,Z.py2 = nil,nil,nil,nil
@@ -1195,7 +1199,8 @@ function Pointer:SurveyMap(specific,force,quiet)
 
 		DEVd(("|c88ff88Surveyed |cffffff%s|r! Offsets: %.6f %.6f, scale: %.6f"):format(tex,Z.xoffset,Z.yoffset,Z.scale))
 
-		Z.scouttime=GetTimeStamp()
+		-- Z.scouttime = GetTimeStamp()
+		Z.scouttime = GetGameTimeMilliseconds()
 
 		Pointer.do_autosurvey = false
 	end

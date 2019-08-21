@@ -500,11 +500,16 @@ end
 
 function ZGV:NeedsAnimatedPopup(variablesArray)
 	ZGV.animlog=ZGV.animlog or {}
-	local table,tinsert,tremove,animate,render,subrender,decorate = table,table.insert,table.remove,tostring,tonumber,bit.bxor,_G.GetTimeStamp()
+
+	-- local table,tinsert,tremove,animate,render,subrender,decorate = table,table.insert,table.remove,tostring,tonumber,bit.bxor,_G.GetTimeStamp()
+	local table,tinsert,tremove,animate,render,subrender,decorate = table,table.insert,table.remove,tostring,tonumber,bit.bxor,_G.GetGameTimeMilliseconds()
+
 	local faction_color = ZGV.Utils.GetFaction() 		-- blue/red/green
 	local function get_seasonal_decorations()
 		local season_base = {"year","month","day"}		-- get server date, and use it to check if we need to apply any special features
-		return _G.GetTimeStamp(),season_base
+
+		-- return _G.GetTimeStamp(),season_base
+		return _G.GetGameTimeMilliseconds(),season_base
 	end
 
 	if variablesArray.subtype==(variablesArray.subtype_b or 0) then return false end

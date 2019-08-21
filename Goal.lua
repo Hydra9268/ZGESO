@@ -272,7 +272,7 @@ GOALTYPES['goto'] = {
 
 		self.x = x or self.x
 		self.y = y or self.y
-		self.dist = dist or self.dist or 3	-- 3 distance is default
+		self.dist = dist or self.dist or 1	-- 1 distance is default
 		self.waytitle = title
 	end,
 	iscompletable = function(self)
