@@ -17634,12 +17634,8 @@ goto summerset_base 56.75,43.81
 |tip Manually skip to the next step.
 step
 goto summerset_base 55.23,44.48
-'Cross the river here and head up the hill
-|tip Manually skip to the next step.
 step
 goto summerset_base 53.10,41.15
-'Continue on the road slightly Northeast from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 55.41,36.94
 wayshrine Eldbur Ruins
@@ -18200,132 +18196,107 @@ goto kingshavenext_base 14.54,56.46
 click Summerset
 |tip Manually skip to the next step.
 step
+-- This is where the Summerset map accuracy was improved. Return to the prior steps to clean up.
 goto summerset_base 34.68,32.45
-'Follow the path Southwest to the main road
-|tip Manually skip to the next step.
 step
 goto summerset_base 33.17,33.84
-'Run south on the main road
-|tip Manually skip to the next step.
 step
 goto summerset_base 32.65,35.84
 talk Merenfire
 accept Illusions of Grandeur
-|tip Manually skip to the next step.
 step
-goto summerset_base 32.65,35.84
-'Run here run Northeast on the main road
-|tip Manually skip to the next step.
+goto summerset_base 33.02,35.62
+step
+goto summerset_base 33.86,35.37
+step
+goto summerset_base 34.48,35.49
 step
 goto summerset_base 34.82,36.23
 wayshrine Ebon Stadmont
-|tip Manually skip to the next step.
 step
-goto summerset_base 35.36,36.99
-'From here travel North on the main road
-|tip Manually skip to the next step.
+goto summerset_base 34.48,35.49
 step
-goto summerset_base 32.67,35.72
-'From here travel North to Illumination Academy
-|tip Manually skip to the next step.
+goto summerset_base 33.86,35.37
 step
-goto summerset_base 30.71,33.47
-talk Erudil
-|tip Manually skip to the next step.
+goto summerset_base 33.02,35.62
 step
-goto summerset_base 30.71,33.47
-'Press _E_ to Examine _Illuminus_
-|tip Manually skip to the next step.
+goto summerset_base 32.66,35.72
+step
+goto summerset_base 32.67,35.03
+step
+goto summerset_base 33.18,33.86
+step
+goto summerset_base 32.94,33.19
 step
 goto summerset_base 30.71,33.47
-talk Erudil
-|tip Manually skip to the next step.
+talk Erudil |q Illusions of Grandeur/Talk to Erudil
+step
+goto summerset_base 30.71,33.47
+'Press _E_ to Examine _Illuminus_ |q Illusions of Grandeur/Read the Illuminus
+step
+goto summerset_base 30.71,33.47
+talk Erudil |q Illusions of Grandeur/Talk to Erudil
 step
 goto summerset_base 31.21,33.59
-talk Glardir
-|tip Manually skip to the next step.
+'Follow Erudil |q Illusions of Grandeur/Follow Erudil
+'Watch the cutscene
 step
 goto summerset_base 31.21,33.59
-talk Erudil
-|tip Manually skip to the next step.
+talk Erudil |q Illusions of Grandeur/Talk to Erudil
 step
-goto summerset_base 31.85,33.66
-talk Pavo Maria
-|tip Manually skip to the next step.
+goto summerset_base 31.46,32.71
 step
-goto summerset_base 31.80,33.64
-'Press _E_ to Examine _Beggar Prince_
-|tip Manually skip to the next step.
-step
-goto summerset_base 31.85,33.66
-talk Pavo Maria
-'Select _"No, I refuse."_
-'Select _"[Lie] Yes, it is I, Daedric Price Namira. I have decided to reclaim my gifts from you."_
-|tip Manually skip to the next step.
-step
-goto summerset_base 31.85,33.66
-'Press _E_ to "Bless" _Pavo Maria_
-|tip Manually skip to the next step.
-step
-goto summerset_base 31.85,33.66
-talk Pavo Maria
-|tip Manually skip to the next step.
-step
-goto summerset_base 31.26,33.54
-talk Erudil
-|tip Manually skip to the next step.
-step
-goto summerset_base 31.21,33.58
-'Press _E_ to Examine _Illuminus_
-|tip Manually skip to the next step.
-step
-goto summerset_base 31.21,33.58
-talk Erudil
-|tip Manually skip to the next step.
+goto summerset_base 30.50,32.34
 step
 goto summerset_base 30.93,31.72
-talk Tanelwen
-|tip Manually skip to the next step.
+'Locate Erudil's Friends |q Illusions of Grandeur/Locate Erudil's Friends
+step
+goto summerset_base 30.93,31.72
+talk Tanelwen |q Illusions of Grandeur/Talk to Tanelwen
 step
 goto summerset_base 31.00,31.86
-'Press _E_ to Examine _Investigator Vale: The Locked Room Murder_
-|tip Manually skip to the next step.
+'Press _E_ to Examine _Investigator Vale: The Locked Room Murder_ |q Illusions of Grandeur/Find Tanelwen's Story
 step
 goto summerset_base 30.98,31.74
-talk Tanelwen
-|tip Manually skip to the next step.
+talk Tanelwen |q Illusions of Grandeur/Talk to Tanelwen
 step
 goto summerset_base 30.99,31.71
-talk Maya
-|tip Manually skip to the next step.
+talk Maya Doran |q Illusions of Grandeur/.*Talk to Maya.*
 step
 goto summerset_base 30.97,31.69
-talk Hunrand
+talk Hunrand |q Illusions of Grandeur/Talk to Hunrand
 |tip Manually skip to the next step.
+step
+goto summerset_base 31.14,32.39
+'Follow the Pie Trail |q Illusions of Grandeur/Follow the Pie Trail
 step
 goto summerset_base 31.19,32.42
-'Press _E_ to Take _Half-Eaten Pie_
-|tip Manually skip to the next step.
+'Press _E_ to Take _Half-Eaten Pie_ |q Illusions of Grandeur/Gather the Evidence
 step
 goto summerset_base 30.98,31.75
-talk Tanelwen
-|tip Manually skip to the next step.
+talk Tanelwen |q Illusions of Grandeur/Talk to Tanelwen
+step
+goto summerset_base 30.98,31.75
+talk Tanelwen |q Illusions of Grandeur/Talk to Tanelwen
+step
+goto summerset_base 30.51,32.33
+step
+goto summerset_base 30.74,32.83
 step
 goto summerset_base 31.21,33.52
-talk Erudil
-|tip Manually skip to the next step.
+talk Erudil |q Illusions of Grandeur/Talk to Erudil
 step
 goto summerset_base 31.21,33.53
-'Press _E_ to Examine _Illuminus_
-|tip Manually skip to the next step.
+'Press _E_ to Examine _Illuminus_ |q Illusions of Grandeur/Read the Illuminus
 step
 goto summerset_base 31.21,33.53
-talk Erudil
-|tip Manually skip to the next step.
+talk Erudil |q Illusions of Grandeur/Talk to Erudil
 step
-goto summerset_base 31.67,34.22
-'Run up the stairs here
-|tip Manually skip to the next step.
+goto summerset_base 31.00,34.16
+step
+goto summerset_base 31.33,34.32
+step
+goto summerset_base 31.71,34.20
 step
 goto summerset_base 32.10,33.94
 click Faculty Hall
@@ -18340,16 +18311,13 @@ click Wall Access
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.64,34.66
-talk Selynia
-|tip Manually skip to the next step.
+talk Selynia |q Illusions of Grandeur/Talk to Selynia
 step
 goto summerset_base 31.71,34.68
-'Press _E_ to Examine _Brave Little Scrib_
-|tip Manually skip to the next step.
+'Press _E_ to Examine _Brave Little Scrib_ |q Illusions of Grandeur/Find Selynia's Story
 step
 goto summerset_base 31.64,34.66
-talk Selynia
-|tip Manually skip to the next step.
+talk Selynia |q Illusions of Grandeur/Talk to Selynia
 step
 goto summerset_base 32.11,34.46
 click Illumination Academy
@@ -18361,12 +18329,14 @@ click Summerset
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.04,33.54
-'You can capture the spiders in this general area. They have arrows above for easy finding.
-|tip Manually skip to the next step.
+'Collect a Spider to Scare Selynia |q Illusions of Grandeur/Collect a Spider to Scare Selynia
+|tip You can capture the spiders in this general area. They have arrows above for easy finding.
 step
-goto summerset_base 31.67,34.22
-'Run up the stairs here
-|tip Manually skip to the next step.
+goto summerset_base 31.00,34.16
+step
+goto summerset_base 31.33,34.32
+step
+goto summerset_base 31.71,34.20
 step
 goto summerset_base 32.10,33.94
 click Faculty Hall
@@ -18381,16 +18351,14 @@ click Wall Access
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.69,34.68
-'Press _E_ to Release _Spider_
-|tip Manually skip to the next step.
+'Press _E_ to Release _Spider_ |q Illusions of Grandeur/Scare Selynia
 step
 goto summerset_base 32.11,34.46
 click Illumination Academy
 |tip Manually skip to the next step.
 step
 goto summerset_base 32.37,34.38
-talk Selynia
-|tip Manually skip to the next step.
+talk Selynia |q Illusions of Grandeur/Talk to Selynia
 step
 goto summerset_base 32.16,34.01
 'Run down to the first floor and
@@ -18398,43 +18366,63 @@ click Summerset
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.25,33.57
-talk Erudil
-|tip Manually skip to the next step.
+talk Erudil |q Illusions of Grandeur/Talk to Erudil
 step
 goto summerset_base 31.21,33.58
-'Press _E_ to Examine _Illuminus_
-|tip Manually skip to the next step.
+'Press _E_ to Examine _Illuminus_ |q Illusions of Grandeur/Read the Illuminus
 step
 goto summerset_base 31.21,33.58
-talk Glardir
-|tip Manually skip to the next step.
+talk Erudil |q Illusions of Grandeur/Talk to Erudil
+step
+goto summerset_base 31.85,33.66
+talk Pavo Maria |q Illusions of Grandeur/Talk to Pavo
+step
+goto summerset_base 31.80,33.64
+'Press _E_ to Examine _Beggar Prince_ |q Illusions of Grandeur/Find Pavo's Story
+step
+goto summerset_base 31.85,33.66
+talk Pavo Maria |q Illusions of Grandeur/Talk to Pavo
+'Select _"No, I refuse."_
+'Select _"[Lie] Yes, it is I, Daedric Price Namira. I have decided to reclaim my gifts from you."_
+step
+goto summerset_base 31.85,33.66
+'Press _E_ to "Bless" _Pavo Maria_ |q Illusions of Grandeur/Lift Pavo's "Curse"
+step
+goto summerset_base 31.85,33.66
+talk Pavo Maria |q Illusions of Grandeur/Talk to Pavo
 step
 goto summerset_base 31.21,33.58
-talk Erudil
-|tip Manually skip to the next step.
+talk Erudil |q Illusions of Grandeur/Talk to Erudil
 step
-goto summerset_base 31.36,32.79
-'Continue along the path and make a right through the archway up ahead
-|tip Manually skip to the next step.
+goto summerset_base 31.21,33.58
+'Press _E_ to Examine _Illuminus_ |q Illusions of Grandeur/Read the Illuminus
+step
+goto summerset_base 31.20,33.56
+talk Glardir |q Illusions of Grandeur/Talk to Glardir
+step
+goto summerset_base 31.20,33.56
+talk Erudil |q Illusions of Grandeur/Talk to Erudil
+step
+goto summerset_base 31.46,32.71
+step
+goto summerset_base 30.52,32.34
+step
+goto summerset_base 30.81,32.01
 step
 goto summerset_base 31.27,32.31
 click Hall of Illumination
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.72,32.32
-click Illumination Academy Stacks
-|tip Manually skip to the next step.
+click Illumination Academy Stacks |q Illusions of Grandeur/Explore the Academy Stacks
 step
 goto illuminationacademy_01_base 56.31,81.24
-talk Meredil the Archivist
-|tip Manually skip to the next step.
+talk Meredil the Archivist |q Illusions of Grandeur/Talk to Meredil the Archivist
 step
 goto illuminationacademy_01_base 46.08,83.00
-'Run through the archway here and continue North
-|tip Manually skip to the next step.
 step
 goto illuminationacademy_01_base 38.06,67.87
-'Run down the stairs from here
+'Run downstairs from here
 |tip Manually skip to the next step.
 step
 goto illuminationacademy_02_base 42.95,77.76
