@@ -18419,82 +18419,79 @@ step
 goto illuminationacademy_01_base 56.31,81.24
 talk Meredil the Archivist |q Illusions of Grandeur/Talk to Meredil the Archivist
 step
-goto illuminationacademy_01_base 46.08,83.00
+goto illuminationacademy_01_base 42.34,83.10
 step
 goto illuminationacademy_01_base 38.06,67.87
 'Run downstairs from here
 |tip Manually skip to the next step.
 step
 goto illuminationacademy_02_base 42.95,77.76
-'Run through the archway here and continue North
-|tip Manually skip to the next step.
 step
 goto illuminationacademy_02_base 55.86,50.77
-'Run down the stairs from here
+'Run downstairs from here
 |tip Manually skip to the next step.
 step
 goto illuminationacademy_03_base 63.00,25.27
-'Press _E_ to Take _The Forest Dark_
+'Press _E_ to Take _The Forest Dark_ |q Illusions of Grandeur/Find the Cursed Book
 |tip Manually skip to the next step.
 step
 goto illuminationacademy_03_base 48.66,36.44
-'Press _E_ to Place book in _Nature Poetry_
-|tip Manually skip to the next step.
+'Press _E_ to Place book in _Nature Poetry_ |q Illusions of Grandeur/Dispel the Illusions
+step
+goto illuminationacademy_03_base 52.20,19.69
 step
 goto illuminationacademy_03_base 40.39,19.99
-'Run up the stairs from here
+'Run upstairs from here
 |tip Manually skip to the next step.
+step
+goto illuminationacademy_02_base 31.00,27.56
 step
 goto illuminationacademy_02_base 34.48,30.16
-'Run through the archway here and continue to the other side
-|tip Manually skip to the next step.
 step
-goto illuminationacademy_02_base 63.02,30.84
-'Press _E_ to Take _The Siege of Ald Marak_
+goto illuminationacademy_02_base 40.84,30.33
+step
+goto illuminationacademy_02_base 63.02,29.96
+'Press _E_ to Take _The Siege of Ald Marak_ |q Illusions of Grandeur/Find the Cursed Book
 |tip Manually skip to the next step.
 step
 goto illuminationacademy_02_base 64.60,40.60
-'Run up the stairs from here
+'Run upstairs from here
 |tip Manually skip to the next step.
 step
 goto illuminationacademy_01_base 42.42,23.90
-'Press _E_ to Place book in _Imperial History_
-|tip Manually skip to the next step.
+'Press _E_ to Place book in _Imperial History_ |q Illusions of Grandeur/Dispel the Illusions
 step
 goto illuminationacademy_01_base 42.01,17.93
-'Run up the stairs from here
+'Run upstairs from here
 |tip Manually skip to the next step.
 step
 goto illuminationacademy_04_base 52.36,17.19
-'Press _E_ to Take _The Truth of Minotaurs_
+'Press _E_ to Take _The Truth of Minotaurs_ |q Illusions of Grandeur/Find the Cursed Book
 |tip Manually skip to the next step.
 step
 goto illuminationacademy_04_base 53.37,13.14
-'Press _E_ to Place book in _Beasts and Horrors_
-|tip Manually skip to the next step.
+'Press _E_ to Place book in _Beasts and Horrors_ |q Illusions of Grandeur/Dispel the Illusions
 step
 goto illuminationacademy_04_base 52.28,30.96
 'Kill the pair of Minotaurs on the bridge
 |tip Manually skip to the next step.
 step
 goto illuminationacademy_04_base 52.51,45.35
-'If you can,
-talk Glardir
-'Otherwise
-kill The Illuminated One
-|tip Manually skip to the next step.
+talk Glardir |q Illusions of Grandeur/Talk to Glardir
+step
+goto illuminationacademy_04_base 52.51,45.35
+kill The Illuminated One |q Illusions of Grandeur/Kill the Illuminated One
 step
 goto illuminationacademy_04_base 46.88,58.67
-'Run down the stairs from here
+'Run downstairs from here
 |tip Manually skip to the next step.
 step
 goto illuminationacademy_01_base 52.18,53.39
 'Press _E_ to Take _Illuminus_
 |tip Manually skip to the next step.
 step
-goto illuminationacademy_01_base 53.26,50.54
-'Press _E_ to Place book in _Shrieking Tomes_
-|tip Manually skip to the next step.
+goto illuminationacademy_01_base 52.20,52.90
+'Press _E_ to Place book in _Shrieking Tomes_ |q Illusions of Grandeur/Shelve the Illuminus
 step
 goto illuminationacademy_01_base 52.43,73.97
 click Illumination Academy Stacks
@@ -18510,58 +18507,48 @@ click Summerset
 step
 goto summerset_base 31.16,32.23
 talk Erudil
-|tip Manually skip to the next step.
+turnin Illusions of Grandeur
 step
 goto summerset_base 30.81,32.02
-'Run past the archway here and continue West outside of the Illumination Academy
-|tip Manually skip to the next step.
 step
 goto summerset_base 29.47,31.91
-'Jump down from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 28.95,32.40
-'Follow the road South
-|tip Manually skip to the next step.
 step
 goto summerset_base 29.20,34.37
 'Press _E_ to Use _Augur of the Obscure_
 |tip Manually skip to the next step.
 step
 goto summerset_base 29.99,35.46
-'Cross the bridge from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 28.46,37.42
-'From here go East along the water
-|tip Manually skip to the next step.
+step
+goto summerset_base 28.50,37.77
 step
 goto summerset_base 29.23,37.35
-'Press _E_ to Seal _Time Breach_
-|tip Manually skip to the next step.
+'Press _E_ to Seal _Time Breach_ |q The Psijics' Calling/.*Seal Time Breaches on Summerset Isle.*: |count 3
 step
 goto summerset_base 26.89,38.19
-'At the fork in the road, go left from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 26.22,41.82
 talk Pandermalion
 accept Storming the Walls
 step
 goto summerset_base 25.16,44.48
-talk Pandermalion
-|tip Manually skip to the next step.
+'Meet Pandermalion at the Ruins |q Storming the Walls/Meet Pandermalion at the Ruins
+step
+goto summerset_base 25.16,44.48
+talk Pandermalion |q Storming the Walls/Talk to Pandermalion
 step
 goto summerset_base 25.13,44.50
 'Press _E_ to Enter _Underwater Passage_
 |tip Manually skip to the next step.
 step
-goto seakeep_01_base 50,50
-|tip Manually skip to the next step.
+goto seakeep_01_base 74.18,77.99
+'Infiltrate the Ruins |q Storming the Walls/Infiltrate the Ruins
 step
-goto seakeep_01_base 71.93,77.42
-talk Pandermalion
-|tip Manually skip to the next step.
+goto seakeep_01_base 74.18,77.99
+talk Pandermalion |q Storming the Walls/Talk to Pandermalion
 step
 goto seakeep_01_base 35.94,44.90
 'Follow the path and then pass through the archway here and continue West
