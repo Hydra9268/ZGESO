@@ -565,7 +565,7 @@ function Pointer:TranslateCoords(map1,x,y,map2)
 	return (x-Z2.xoffset)/Z2.scale,(y-Z2.yoffset)/Z2.scale
 end
 
---/dump ZGV.Pointer:GetDistToCoords(auridon_base 52.50,91.57)
+--/dump ZGV.Pointer:GetDistToCoords(auridon_base,52.50,91.57)
 --/dump ZGV.Pointer:GetDistToCoords(shimmerenewaterworks01_base,50.50,50.50)
 --/dump ZGV.Pointer:TranslateCoords("auridon_base",52.50,91.57,"vulkhelguard_base")
 function Pointer:GetDistToCoords(m,x,y)
