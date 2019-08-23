@@ -50,7 +50,6 @@ function ZGV:SanitizeMapFloor(map,flr)
 	do return map,flr end
 end
 
-
 Pointer.MapFloors = {}  setmetatable(Pointer.MapFloors,{__index=function(self,id) return rawget(self,id) or 0 end})
 
 function Pointer:Startup()
@@ -107,7 +106,6 @@ function Pointer:ResetWaypointerSettings()
 
 	self:UpdateArrowPosition()
 end
-
 
 __CLASS = __CLASS or {}
 
@@ -459,11 +457,9 @@ function Pointer.ArrowFrameControl_OnUpdate(self,msec)
 			autosurvey_last = msec
 		end
 	end
-
 end
 
 -- And we have an onupdating frame even if hidden. Yay!
-
 -- map perc as: t1..t2 to 0.0..0.5  t3..t4 to 0.5..1.0
 function Pointer.CalculateDirectionTiers(perc,t1,t2,t3,t4)
 	if perc<t1 then return 0 , 1
@@ -531,7 +527,6 @@ function Pointer:GetDirectionToWaypoint(way)
 	return dir
 end
 
-
 local cache_throttle=0
 local were_in_unknown_location
 
@@ -540,9 +535,7 @@ function Pointer.ArrowFrame_ShowSpellArrow(self,waypoint)
 end
 
 local noskip_time=0
-
 local dummy_waypoint = {DUMMY=1}
-
 
 -- /dump ZGV.Pointer:TranslateCoords("bleakrock_base_0",0.7,0.7,"bleakrockvillage_base_0")
 -- /dump ZGV.Pointer:TranslateCoords("deshaan_base",.4053,.7517,"kragenmoor_base")
@@ -594,8 +587,6 @@ function Pointer:GetDistToCoords(m,x,y)
 
 	return dist
 end
-
-
 
 function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 	-- NASTY. Replace master object, Indy Jones-style.
@@ -813,7 +804,6 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 		dist,
 		eta,
 		errortxt)
-
 end
 
 -- The function! It does nothing!
@@ -1054,7 +1044,6 @@ function Pointer:InitMaps()
 	Pointer:ZONE_CHANGED()
 end
 
-
 function Pointer:SurveyAllMaps(autoclick)
 	for map=1,GetNumMaps() do
 		SetMapToMapListIndex(map)
@@ -1064,7 +1053,6 @@ function Pointer:SurveyAllMaps(autoclick)
 
 	SetMapToPlayerLocation() ZO_WorldMap_UpdateMap()
 end
-
 
 local function DEVd(s,...)
 	if ZGV.DEV then
@@ -1206,7 +1194,6 @@ function Pointer:SurveyMap(specific,force,quiet)
 	end
 
 	if specific=="here" and quiet then SetMapToPlayerLocation() ZO_WorldMap_UpdateMap() end
-
 end
 
 -- /dump ZGV.Pointer:SurveyClickAllOver(shimmerenewaterworks01_base)
@@ -1268,7 +1255,6 @@ SLASH_COMMANDS["/dump"] = function(text)
 	end
 end
 
-
 -- MAP CLICKING SIMULATION PREP:
 --/script for i=1,9 do _G['MapMouseoverBlob'..i]:SetHidden(false) end
 --ProcessMapClick()
@@ -1322,7 +1308,6 @@ function Pointer:MinimapNodeFlashOff()
 end
 
 local q=0
-
 
 -- Some small utilities which may be useful to several waypointing backends
 -- Moved 'em out of Internal waypointer so that TomTom, for example,
@@ -1396,7 +1381,6 @@ function Pointer:SetArrowToFirstCompletableGoal()
 	ZGV.CurrentStep.current_waypoint_goal = self.waypoints[1].goalnum
 	return self:ShowArrow(self.waypoints[1])
 end
-
 
 -- ESO MAPLOCATIONS-BASED POINTERS ARE SO COOL.  ~sinus
 
