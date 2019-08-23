@@ -272,7 +272,15 @@ GOALTYPES['goto'] = {
 
 		self.x = x or self.x
 		self.y = y or self.y
-		self.dist = dist or self.dist or 1	-- 1 distance is default
+		-- Adjusting the speed between zone maps and non-zone maps
+		if (GetCurrentMapIndex() == nil) then
+			self.dist = dist or self.dist or 5
+			d("GetTimeStamp - self.dist = dist or self.dist or 5")
+		else
+			self.dist = dist or self.dist or 1
+			d("GetGameTimeMilliseconds - self.dist = dist or self.dist or 1")
+		end
+
 		self.waytitle = title
 	end,
 	iscompletable = function(self)

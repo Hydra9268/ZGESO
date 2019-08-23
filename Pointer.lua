@@ -276,8 +276,15 @@ function Pointer:ShowArrow(waypoint)
 
 	last_distance = 0
 	speed = 0
-	--lastbeeptime = GetTimeStamp() + 3
-	lastbeeptime = GetGameTimeMilliseconds() + 250
+
+	-- Adjusting the speed between zone maps and non-zone maps
+	if (GetCurrentMapIndex() == nil) then
+		lastbeeptime = GetTimeStamp() + 3
+		d("Pointer:ShowArrow() - GetTimeStamp")
+	else
+		lastbeeptime = GetGameTimeMilliseconds() + 250
+		d("Pointer:ShowArrow() - GetGameTimeMilliseconds")
+	end
 	cuedinged = nil
 
 	lastminimapdist = 99999

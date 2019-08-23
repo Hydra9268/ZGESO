@@ -501,15 +501,27 @@ end
 function ZGV:NeedsAnimatedPopup(variablesArray)
 	ZGV.animlog=ZGV.animlog or {}
 
-	-- local table,tinsert,tremove,animate,render,subrender,decorate = table,table.insert,table.remove,tostring,tonumber,bit.bxor,_G.GetTimeStamp()
-	local table,tinsert,tremove,animate,render,subrender,decorate = table,table.insert,table.remove,tostring,tonumber,bit.bxor,_G.GetGameTimeMilliseconds()
+	-- Adjusting the speed between zone maps and non-zone maps
+	if (GetCurrentMapIndex() == nil) then
+		local table,tinsert,tremove,animate,render,subrender,decorate = table,table.insert,table.remove,tostring,tonumber,bit.bxor,_G.GetTimeStamp()
+		d("ZGV:NeedsAnimatedPopup() - GetTimeStamp")
+	else
+		local table,tinsert,tremove,animate,render,subrender,decorate = table,table.insert,table.remove,tostring,tonumber,bit.bxor,_G.GetGameTimeMilliseconds()
+		d("ZGV:NeedsAnimatedPopup() - GetGameTimeMilliseconds")
+	end
 
 	local faction_color = ZGV.Utils.GetFaction() 		-- blue/red/green
 	local function get_seasonal_decorations()
 		local season_base = {"year","month","day"}		-- get server date, and use it to check if we need to apply any special features
 
-		-- return _G.GetTimeStamp(),season_base
-		return _G.GetGameTimeMilliseconds(),season_base
+		-- Adjusting the speed between zone maps and non-zone maps
+		if (GetCurrentMapIndex() == nil) then
+			d("get_seasonal_decorations() - GetTimeStamp")
+			return _G.GetTimeStamp(),season_base
+		else
+			d("get_seasonal_decorations() - GetGameTimeMilliseconds")
+			return _G.GetGameTimeMilliseconds(),season_base
+		end
 	end
 
 	if variablesArray.subtype==(variablesArray.subtype_b or 0) then return false end
