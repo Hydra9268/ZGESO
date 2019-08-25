@@ -18550,9 +18550,17 @@ step
 goto seakeep_01_base 74.18,77.99
 talk Pandermalion |q Storming the Walls/Talk to Pandermalion
 step
+goto seakeep_01_base 70.35,76.36
+step
+goto seakeep_01_base 65.01,80.33
+step
+goto seakeep_01_base 60.82,75.02
+step
+goto seakeep_01_base 54.04,59.95
+step
+goto seakeep_01_base 53.95,48.59
+step
 goto seakeep_01_base 35.94,44.90
-'Follow the path and then pass through the archway here and continue West
-|tip Manually skip to the next step.
 step
 goto seakeep_01_base 22.90,44.95
 click Sea Keep
@@ -18563,117 +18571,103 @@ click Sea Keep
 |tip Manually skip to the next step.
 step
 goto seakeep_01_base 16.81,38.13
-talk Castire
-|tip Manually skip to the next step.
+talk Castire |q Storming the Walls/Talk to Castire
 step
 goto seakeep_01_base 16.81,38.13
-talk Pandermalion
-|tip Manually skip to the next step.
+talk Pandermalion |q Storming the Walls/Talk to Pandermalion
 step
 goto seakeep_01_base 17.37,37.52
 click Sea Keep
 |tip Manually skip to the next step.
 step
 goto seakeep_01_base 27.98,35.47
-'Run up the stairs from here
+'Run upstairs from here
 |tip Manually skip to the next step.
 step
 goto seakeep_01_base 37.52,23.11
-'Press _E_ to Seal _Magicka Font_
-|tip Manually skip to the next step.
+'Press _E_ to Seal _Magicka Font_ |q Storming the Walls/.*Seal the Magicka Fonts.*: |count 1
 step
 goto seakeep_01_base 43.39,16.40
-'Run up the stairs from here
+'Run upstairs from here
 |tip Manually skip to the next step.
 step
 goto seakeep_02_base 46.09,22.33
-'From here run along the inside balcony to the opposite side
-|tip Manually skip to the next step.
+step
+goto seakeep_02_base 43.21,25.93
+step
+goto seakeep_02_base 31.85,25.95
+step
+goto seakeep_02_base 33.24,19.46
 step
 goto seakeep_02_base 33.12,15.24
-'Run up the stairs from here
+'Run upstairs from here
 |tip Manually skip to the next step.
 step
 goto seakeep_03_base 42.00,09.73
-'Press _E_ to Seal _Magicka Font_
-|tip Manually skip to the next step.
+'Press _E_ to Seal _Magicka Font_ |q Storming the Walls/.*Seal the Magicka Fonts.*: |count 2
 step
-goto seakeep_03_base 42.35,10.47
-'From here continue South across the bridge
-|tip Manually skip to the next step.
+goto seakeep_03_base 42.51,28.84
 step
 goto seakeep_03_base 54.85,29.91
 kill Tenerive
 |tip Manually skip to the next step.
 step
 goto seakeep_03_base 55.92,29.22
-'Press _E_ to Seal _Magicka Font_
-|tip Manually skip to the next step.
+'Press _E_ to Seal _Magicka Font_ |q Storming the Walls/.*Seal the Magicka Fonts.*: |count 3
 step
 goto seakeep_03_base 62.34,28.14
 click Sea Keep Courtyard
 |tip Manually skip to the next step.
 step
 goto summerset_base 21.59,44.10
-'Run down the stairs from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 21.46,44.81
-'Run up the stairs from here
-|tip Manually skip to the next step.
 step
-goto summerset_base 22.10,44.82
-'Run up the stairs from here
-|tip Manually skip to the next step.
+goto summerset_base 22.15,44.75
 step
 goto summerset_base 21.79,45.01
-'Run up the stairs from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 22.73,44.88
 click Sea Keep Inner Gate Tower
 |tip Manually skip to the next step.
 step
-goto summerset_base 22.92,44.72
-'Press _E_ to Use _Inner Gate Lever_
+goto summerset_base 22.89,44.88
+talk Pandermalion |q Storming the Walls
 |tip Manually skip to the next step.
+step
+goto summerset_base 22.92,44.72
+'Press _E_ to Use _Inner Gate Lever_ |q Storming the Walls/Raise the Inner Gate
 step
 goto summerset_base 22.78,44.92
 click Sea Keep Courtyard
 |tip Manually skip to the next step.
 step
-goto summerset_base 22.31,44.89
-'Drop down to the battlement below and then to the ground floor
-|tip Manually skip to the next step.
+goto summerset_base 22.05,44.72
+step
+goto summerset_base 22.56,44.38
 step
 goto summerset_base 23.03,44.63
 talk Castire
-|tip Manually skip to the next step.
-step
-goto summerset_base 23.01,44.65
-talk Pandermalion
-|tip Manually skip to the next step.
+talk Pandermalion |q Storming the Walls/Talk to Pandermalion and Talk to Castire
 step
 goto summerset_base 23.11,44.72
 click Sea Keep
 |tip Manually skip to the next step.
 step
 goto summerset_base 25.33,46.00
-kill Urlsar
-|tip Manually skip to the next step.
+kill Urlsar |q Storming the Walls/Defeat Urlsar
+|tip Urlsar is a ranged and AOE attacker who uses two primary attacks. The first is a summoned pattern of moving telegraph AOEs, and the second is a medium-sized AOE circle from his location. Both are simple to avoid.
 step
 goto summerset_base 23.92,44.26
 click Sea Keep
 |tip Manually skip to the next step.
 step
 goto summerset_base 24.17,43.91
-talk Castire
-'Select _You two are proof that the two can coexist._
-|tip Manually skip to the next step.
+talk Castire |q Storming the Walls/Talk to Castire
+|tip Select either choice
 step
 goto summerset_base 24.17,43.91
-talk Pandermalion
-|tip Manually skip to the next step.
+talk Pandermalion |q Storming the Walls/Talk to Pandermalion
 step
 goto summerset_base 23.57,41.75
 click Summerset
@@ -18681,30 +18675,27 @@ click Summerset
 step
 goto summerset_base 23.93,41.31
 talk Battlereeve Farwenya
-'You must decide what you will do now. (We think telling the truth is a good choice.)
-'Select _The Maormer attack occurred because Panderlion was consorting with their captain._, or
-'Select _The Maormer may have gotten the best of him, but it was Panderlion's plan that saved the day._
-|tip Manually skip to the next step.
+turnin Storming the Walls
+|tip Select either choice
 step
 goto summerset_base 24.30,40.93
-'From here, go Northeast to the main road
-|tip Manually skip to the next step.
 step
-goto summerset_base 24.94,38.90
-'Travel West on the main road
-|tip Manually skip to the next step.
+goto summerset_base 24.59,40.22
 step
 goto summerset_base 22.89,38.30
-'At the fork in the road, follow the road left from here
-|tip Manually skip to the next step.
+step
+goto summerset_base 22.02,38.61
+step
+goto summerset_base 20.67,39.62
+step
+goto summerset_base 19.06,40.65
+step
+goto summerset_base 18.06,41.27
 step
 goto lillandrill_base 64.36,68.38
-'At the fork in the road, follow the road left from here
-|tip Manually skip to the next step.
 step
 goto lillandrill_base 49.44,71.80
 wayshrine Lillandril
-|tip Manually skip to the next step.
 step
 goto lillandrill_base 36.13,85.36
 talk Tindoria
@@ -18714,33 +18705,34 @@ goto lillandrill_base 39.97,70.33
 talk Faralan
 accept Murder In Lillandril
 step
-goto lillandrill_base 39.97,70.33
-'Run up the stairs from here
-|tip Manually skip to the next step.
+goto lillandrill_base 40.13,64.45
 step
 goto lillandrill_base 50.04,53.80
-'Run up the stairs from here
-|tip Manually skip to the next step.
+step
+goto lillandrill_base 52.97,46.92
+step
+goto lillandrill_base 53.75,40.03
 step
 goto lillandrill_base 50.36,39.51
 talk Justiciar Rolumdel
 |tip Manually skip to the next step.
 step
 goto lillandrill_base 44.93,37.66
-talk Vivienne
-|tip Manually skip to the next step.
+talk Vivienne |q Murder In Lillandril/Talk to Vivienne
+step
+goto lillandrill_base 39.35,43.88
+step
+goto lillandrill_base 35.12,48.15
 step
 goto lillandrill_base 30.80,48.49
 talk Valsirenn
 |tip Manually skip to the next step.
 step
 goto lillandrill_base 27.73,50.57
-talk Portal Master Astirhil
-|tip Manually skip to the next step.
+talk Portal Master Astirhil |q The Tower Sentinels/Talk to the Portal Master in Lillandril
 step
 goto lillandrill_base 26.24,50.07
-'Press _E_ to Use _Portal to the College of Sapiarchs_
-|tip Manually skip to the next step.
+'Press _E_ to Use _Portal to the College of Sapiarchs_ |q The Tower Sentinels/Use the Portal Dais
 step
 goto summerset_base 11.76,39.82
 talk Sapiarch Ellimil
