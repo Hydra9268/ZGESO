@@ -18735,56 +18735,52 @@ goto lillandrill_base 26.24,50.07
 'Press _E_ to Use _Portal to the College of Sapiarchs_ |q The Tower Sentinels/Use the Portal Dais
 step
 goto summerset_base 11.76,39.82
-talk Sapiarch Ellimil
-|tip Manually skip to the next step.
+talk Sapiarch Ellimil |q The Tower Sentinels/Talk to Sapiarch Ellimil
+step
+goto summerset_base 11.40,40.35
+step
+goto summerset_base 10.60,40.59
 step
 goto summerset_base 10.55,40.08
-click College of Sapiarchs' Labyrinth
-|tip Manually skip to the next step.
+click College of Sapiarchs' Labyrinth |q The Tower Sentinels/Enter the Sapiarchs' Labyrinth
 step
 goto SQ4Sapiarch01_base 90.01,73.11
-talk Valsirenn
-|tip Manually skip to the next step.
+talk Valsirenn |q The Tower Sentinels/Talk to Valsirenn
+step
+goto SQ4Sapiarch01_base 65.72,72.37
 step
 goto SQ4Sapiarch01_base 59.03,52.35
-'Cross the bridge here
-|tip Manually skip to the next step.
 step
-goto SQ4Sapiarch01_base 58.14,21.91
-'Continue West from here
-|tip Manually skip to the next step.
+goto SQ4Sapiarch01_base 59.07,23.79
 step
 goto SQ4Sapiarch01_base 46.57,23.89
-'Continue South through the archway from here
-|tip Manually skip to the next step.
 step
 goto SQ4Sapiarch01_base 40.22,74.63
-'Run up the stairs from here
+'Run upstairs from here
 |tip Manually skip to the next step.
 step
+goto SQ4Sapiarch03_base 22.46,84.87
+step
+goto SQ4Sapiarch03_base 15.25,77.04
+step
 goto SQ4Sapiarch03_base 15.50,52.26
-'Run up the stairs from here
+'Run upstairs from here
 |tip Manually skip to the next step.
 step
 goto SQ4Sapiarch03_base 27.29,41.40
-'Cross the bridge from here
-|tip Manually skip to the next step.
 step
-goto SQ4Sapiarch03_base 83.69,48.30
-'Pass through the archway here and continue South
-|tip Manually skip to the next step.
+goto SQ4Sapiarch03_base 71.41,41.52
+step
+goto SQ4Sapiarch03_base 83.63,47.46
+step
+goto SQ4Sapiarch03_base 83.88,65.93
 step
 goto SQ4Sapiarch03_base 92.20,72.52
-click College of Sapiarchs
-|tip Manually skip to the next step.
+click College of Sapiarchs |q The Tower Sentinels/Navigate the Labyrinth
 step
 goto SQ4Sapiarch02_base 71.32,76.26
-'Pass through this archway and continue North
-|tip Manually skip to the next step.
 step
 goto SQ4Sapiarch02_base 79.25,49.95
-'Pass through the archway from here
-|tip Manually skip to the next step.
 step
 goto SQ4Sapiarch02_base 37.42,49.05
 kill Hoarvor Draedra
@@ -18795,20 +18791,16 @@ click Sapiarch of Arcanology's Study
 |tip Manually skip to the next step.
 step
 goto SQ4Sapiarch02_base 68.80,24.22
-talk Sapiarch Larnatille
-|tip Manually skip to the next step.
+'Find Sapiarch Larnatille |q The Tower Sentinels/Find Sapiarch Larnatille
 step
 goto SQ4Sapiarch02_base 68.80,24.22
-talk Earl Leythen
-|tip Manually skip to the next step.
+talk Sapiarch Larnatille |q The Tower Sentinels/Talk to Sapiarch Larnatille
 step
 goto SQ4Sapiarch02_base 68.80,24.22
-talk Valsirenn
-|tip Manually skip to the next step.
+talk Earl Leythen |q The Tower Sentinels/Talk to Earl Leythen
 step
-goto SQ4Sapiarch02_base 71.60,23.08
-'Pass through the archway from here
-|tip Manually skip to the next step.
+goto SQ4Sapiarch02_base 68.19,22.65
+talk Valsirenn |q The Tower Sentinels/Talk to Valsirenn
 step
 goto SQ4Sapiarch02_base 84.66,32.27
 click College of Sapiarchs
@@ -18818,82 +18810,85 @@ goto SQ4Sapiarch02_base 93.11,49.24
 click College of Sapiarchs' Courtyard
 |tip Manually skip to the next step.
 step
-'Open your map:
-click Cey-Tarn Keep Wayshrine
+'Open your map.
 'Travel to the _Cey-Tarn Keep_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto summerset_base 26.68,52.14
-'Press _E_ to Travel _Wastern Coraldale_
+'Press _E_ to Travel _Wasten Coraldale_
 |tip Manually skip to the next step.
 step
+goto wastencoraldale_base 23.85,65.11
+step
+goto wastencoraldale_base 27.61,62.96
+step
+goto wastencoraldale_base 33.24,59.45
+step
+goto wastencoraldale_base 39.27,56.94
+step
+goto wastencoraldale_base 43.89,57.99
+step
+goto wastencoraldale_base 51.41,55.79
+step
+goto wastencoraldale_base 62.80,50.70
+step
 goto wastencoraldale_base 59.39,42.49
-'Jump down from here
-|tip Manually skip to the next step.
 step
 goto wastencoraldale_base 59.12,39.80
 'Press _E_ to Search _Backpack_
-'take The Royal Bowl
-|tip Manually skip to the next step.
+'Take _The Royal Bowl_ |q Culture Clash/.*Retrieve Stolen Goods.*: |count 1
 step
 goto wastencoraldale_base 60.26,38.87
-'Run East underneath the broken bridge
-|tip Manually skip to the next step.
+step
+goto wastencoraldale_base 65.26,38.74
 step
 goto wastencoraldale_base 68.79,31.21
 'Press _E_ to Search _Backpack_
-'take The Royal Cup
-|tip Manually skip to the next step.
+'Take _The Royal Cup_ |q Culture Clash/Retrieve Stolen Goods
 step
-'Open your map:
-click Russafeld Heights Wayshrine
+'Open your map. Right click to go to the Summerset map.
 'Travel to the _Russafeld Heights_ Wayshrine
 |tip Manually skip to the next step.
 step
-goto summerset_base 44.80,46.14
-'Continue Northwest from here
-|tip Manually skip to the next step.
-step
 goto summerset_base 40.60,41.93
-'Continue North from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 40.01,39.97
-talk Haenamil
-|tip Manually skip to the next step.
-step
-goto summerset_base 40.01,39.97
-'Continue Northwest from here to the main road
-|tip Manually skip to the next step.
+talk Haenamil |q The Perils of Art/Talk to Haenamil
 step
 goto summerset_base 38.63,38.57
-'Follow the main road South
-|tip Manually skip to the next step.
+step
+goto summerset_base 37.87,39.61
+talk Telarniel
+accept The Ebon Sanctum
 step
 goto summerset_base 37.43,40.42
 'Press _E_ to Use _Augur of the Obscure_
 |tip Manually skip to the next step.
 step
 goto summerset_base 33.92,42.60
-'Press _E_ to Seal _Time Breach_
-|tip Manually skip to the next step.
+'Press _E_ to Seal _Time Breach_ |q The Psijics' Calling/.*Seal Time Breaches on Summerset Isle.*: |count 4
 step
 'Open your map:
-click Ebon Stadmont Wayshrine
 'Travel to the _Ebon Stadmont_ Wayshrine
 |tip Manually skip to the next step.
 step
-goto summerset_base 35.33,36.04
-'Follow the main road Northwest
-|tip Manually skip to the next step.
-step
 goto summerset_base 34.40,35.31
-'Continue Northwest up the hill from here
-|tip Manually skip to the next step.
+step
+goto summerset_base 33.01,34.38
+step
+goto summerset_base 33.15,33.65
+step
+goto summerset_base 32.78,33.17
+step
+goto summerset_base 31.99,33.20
+step
+goto summerset_base 31.74,33.45
+'Go to the Illumination Academy |q The Tower Sentinels/Go to the Illumination Academy
 step
 goto summerset_base 31.23,33.75
-talk Razum-dar
-|tip Manually skip to the next step.
+'talk Razum-dar |q The Tower Sentinels/Talk to Razum-dar
+step
+goto summerset_base 30.35,33.67
 step
 goto summerset_base 30.04,33.49
 click Academy Guest Wing
