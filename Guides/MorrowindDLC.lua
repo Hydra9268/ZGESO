@@ -18895,20 +18895,17 @@ click Academy Guest Wing
 |tip Manually skip to the next step.
 step
 goto summerset_base 30.12,33.54
-talk Berwentha
-|tip Manually skip to the next step.
+talk Berwentha |q The Tower Sentinels/Find the Tower Sentinels
 step
 goto summerset_base 30.19,33.57
 click Hannayel's Room
 |tip Manually skip to the next step.
 step
 goto summerset_base 30.29,33.58
-'Press _E_ to Take _Letter to Imedril_
-|tip Manually skip to the next step.
+'Press _E_ to Take _Letter to Imedril_ |q The Tower Sentinels/Search Hannayel's Room
 step
 goto summerset_base 30.29,33.58
-talk Razum-dar
-|tip Manually skip to the next step.
+talk Razum-dar |q The Tower Sentinels/Talk to Razum-dar
 step
 goto summerset_base 30.24,33.60
 click Academy Guest Wing
@@ -18919,12 +18916,11 @@ click Illumination Academy
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.71,32.73
-'Run across the Courtyard and
 click Hall of Illumination
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.75,32.82
-'Run up to the second floor
+'Take the stairs up to the second floor
 'Press _E_ to Take _Further Notes on the Sload_
 |tip Manually skip to the next step.
 step
@@ -18937,11 +18933,11 @@ goto summerset_base 31.39,32.40
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.75,32.33
-'Continue through the set of archways here
-|tip Manually skip to the next step.
+step
+goto summerset_base 31.85,32.37
 step
 goto summerset_base 32.03,32.57
-'Press _E_ to Take _Sages of the Crystal Tower_
+'Press _E_ to Take _Sages of the Crystal Tower_ |q The Tower Sentinels/Gather Hannayel's Books
 |tip Manually skip to the next step.
 step
 goto summerset_base 31.79,32.75
@@ -18965,198 +18961,164 @@ goto summerset_base 31.96,32.64
 step
 goto summerset_base 32.02,32.65
 'Press _E_ to Place _Reading Podium_
-'Select _I place "The Year 2920, Vol 4."_
-|tip Manually skip to the next step.
+'Select _I place "The Year 2920, Vol 4."_ |q The Tower Sentinels/Find Hannayel's Quiet Room
 step
 goto summerset_base 32.16,32.73
-talk Sapiarch Hannayel
-|tip Manually skip to the next step.
+talk Sapiarch Hannayel |q The Tower Sentinels/Talk to Sapiarch Hannayel
 step
 goto summerset_base 31.86,32.78
 click Illumination Academy
 |tip Manually skip to the next step.
+step
+goto summerset_base 31.80,32.41
 step
 goto summerset_base 31.72,32.77
 'Run down to the first floor, and
 click Summerset
 |tip Manually skip to the next step.
 step
-'Open your map:
-click Sil-Var-Woad Wayshrine
+'Open your map.
 'Travel to the _Sil-Var-Woad_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto summerset_base 64.86,56.62
-'Continue West from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 61.62,56.73
-talk Brodran
-|tip Manually skip to the next step.
+talk Brodran |q The Perils of Art/Talk to Brodran
 step
 goto summerset_base 61.26,55.92
 'Press _E_ to Use _Augur of the Obscure_
 |tip Manually skip to the next step.
 step
 goto summerset_base 60.61,54.88
-talk Coreyon
-|tip Manually skip to the next step.
+talk Coreyon |q The Perils of Art/Talk to Coreyon
 step
 goto summerset_base 60.60,54.88
-'Press _E_ to Destroy _Fume Barrel_
-|tip Manually skip to the next step.
+'Press _E_ to Destroy _Fume Barrel_ |q The Perils of Art/Destroy Fume Barrel
 step
 goto summerset_base 59.75,54.67
-'Continue Northwest along the platform
-|tip Manually skip to the next step.
 step
 goto summerset_base 59.36,54.32
-'Run through the gap here
-|tip Manually skip to the next step.
 step
 goto summerset_base 58.87,54.36
-'Press _E_ to Seal _Time Breach_
-|tip Manually skip to the next step.
+'Press _E_ to Seal _Time Breach_ |q The Psijics' Calling/.*Seal Time Breaches on Summerset Isle.*: |count 5
 step
-goto summerset_base 59.62,54.36
-'Run back through the gap in the wall, jump down from here, and continue Southeast
-|tip Manually skip to the next step.
+goto summerset_base 59.69,54.41
+step
+goto summerset_base 60.94,54.03
+step
+goto summerset_base 61.09,54.77
 step
 goto summerset_base 61.62,56.73
-talk Brodran
-|tip Manually skip to the next step.
+talk Brodran |q The Perils of Art/Talk to Brodran
 step
-'Open your map:
-click Eastern Pass Wayshrine
+'Open your map.
 'Travel to the _Eastern Pass_ Wayshrine
 |tip Manually skip to the next step.
 step
-goto summerset_base 62.88,65.89
-'Continue across the field heading East towards the island
-|tip Manually skip to the next step.
-step
 goto summerset_base 70.50,68.40
-'Swim to the island
-|tip Manually skip to the next step.
 step
 goto summerset_base 71.16,68.53
 'Press _E_ to Use _Augur of the Obscure_
 |tip Manually skip to the next step.
 step
 goto summerset_base 71.67,68.92
-'Continue South from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 72.16,70.68
-'Continue up the hill and Northeast from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 73.47,71.11
-'Jump over to the slanted rockface from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 73.61,71.30
-'Run down the slanted rockface to the ground
-|tip Manually skip to the next step.
 step
 goto summerset_base 74.02,71.45
-'Press _E_ to Seal _Time Breach_
-|tip Manually skip to the next step.
+'Press _E_ to Seal _Time Breach_ |q The Psijics' Calling/.*Seal Time Breaches on Summerset Isle.*: |count 6
 step
-goto summerset_base 73.76,71.39
-'Run up the slanted rockface from here
-|tip Manually skip to the next step.
+goto summerset_base 73.65,71.37
 step
-goto summerset_base 73.48,71.26
-'Continue Northwest from here
-|tip Manually skip to the next step.
-step
-goto summerset_base 72.08,70.91
-'Continue South from here
-|tip Manually skip to the next step.
+goto summerset_base 72.79,71.37
 step
 goto summerset_base 71.90,73.20
 talk Igeke Rat-Bite
 accept Gjadil's Legacy
 step
 goto summerset_base 71.81,73.37
-click Gjadil's Treasure Map
-'take Gjadil's Treasure Map
+'Press _E_ to Take _Gjadil's Treasure Map_
+'Take _Gjadil's Treasure Map_
 |tip Manually skip to the next step.
 step
-'1. Open inventory
-'2. Select Quest
-'3. Hover over Gjadil's Treasure Map
-'4. Press _E_ to use Gjadil's Treasure Map
-|tip Manually skip to the next step.
+goto summerset_base 71.81,73.38
+'4. Press _E_ to _Use Gjadil's Treasure Map_ |q Gjadil's Legacy/Examine Gjadil's Treasure Map
 step
 goto summerset_base 71.14,75.40
-talk Ingarlas
-|tip Manually skip to the next step.
+'Reach the Hilltop |q The Perils of Art/Reach the Hilltop
+step
+goto summerset_base 71.14,75.40
+talk Ingarlas |q The Perils of Art/Talk to Ingarlas
+step
+goto summerset_base 71.08,75.18
+'Press _E_ to Examine _Cultivated Plants_ |q The Perils of Art/Search the Garden
+step
+goto summerset_base 71.08,75.18
+'Press _E_ to Examine _Aurialis_ |q The Perils of Art/Examine the Plant
 step
 goto summerset_base 71.02,75.36
-'Press _E_ to Examine _Cultivated Plants_
-|tip Manually skip to the next step.
+talk Ingarlas |q The Perils of Art/Talk to Ingarlas
+|tip Select either choice
 step
 goto summerset_base 71.02,75.36
 talk Ingarlas
-'Select _[Intimidate] I think you're hiding an aurialis. Show me where it is, or I'll rip your garden apart._
-'Select _Conservation is important. I'll spare the plant._
-|tip Manually skip to the next step.
+'Choose _I agreed to collect aurialis. I'm keeping my word._ |q The Perils of Art/Take the Last Aurialis Plant |or
+'_OR_
+'Choose _Conservation is important. I'll spare the plant._ |q The Perils of Art/Leave the Last Aurialis Plant |or
 step
-goto summerset_base 67.32,78.94
-'Continue up the path
-|tip Manually skip to the next step.
+goto summerset_base 67.27,79.04
+step
+goto summerset_base 67.67,78.06
 step
 goto summerset_base 67.22,78.24
 'Press _E_ to Dig _Dirt Mound_
-'Press _E_ to Take _Gjadil's Treasure Chest_
-|tip Manually skip to the next step.
+'Press _E_ to Take _Gjadil's Treasure Chest_ |q Gjadil's Legacy/Find Gjadil's Chest
 step
 goto summerset_base 71.86,73.26
 talk Igeke Rat-Bite
-|tip Manually skip to the next step.
+turnin Gjadil's Legacy
 step
-'Open your map:
-click King's Haven Pass Wayshrine
+'Open your map.
 'Travel to the _King's Haven Pass_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto summerset_base 53.63,25.42
-'At the fork in the road, go left
-|tip Manually skip to the next step.
 step
 goto summerset_base 52.81,25.36
-'Continue Southwest from here (Don't cross the bridge)
-|tip Manually skip to the next step.
 step
 goto summerset_base 51.05,27.89
-'Run up the stairs here and head West
-|tip Manually skip to the next step.
 step
 goto summerset_base 48.95,27.52
-click King's Haven Pass Delve
+click King's Haven Pass
 |tip Manually skip to the next step.
 step
 goto kingshavenext_base 70.74,34.28
 click Coral-Splitter Caves
 |tip Manually skip to the next step.
 step
-goto kingshavenint1_base 37.12,30.73
-'At the fork in the path, go left and follow the path Southeast
-|tip Manually skip to the next step.
+goto kingshavenint1_base 57.82,27.34
+step
+goto kingshavenint1_base 40.30,29.95
+step
+goto kingshavenint1_base 36.88,30.73
+step
+goto kingshavenint1_base 36.42,36.71
+step
+goto kingshavenint1_base 42.03,38.43
+step
+goto kingshavenint1_base 42.71,44.05
+step
+goto kingshavenint1_base 46.34,50.87
 step
 goto kingshavenint1_base 51.40,53.80
-click Ancient Ruins
-|tip Manually skip to the next step.
-step
-goto kingshavenint1_base 58.04,56.55
-'Continue South from here
-|tip Manually skip to the next step.
+click Ancient Ruins |q The Tower Sentinels/Find the King's Haven Pass Ruins
 step
 goto kingshavenint1_base 60.54,69.13
-'Continue East through the archway here
-|tip Manually skip to the next step.
 step
 goto kingshavenint1_base 82.54,50.66
 kill Keetas the Weaver
