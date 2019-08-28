@@ -1,0 +1,122 @@
+## Title: Leveling Guides v1.4.469
+## Description: A Zygor addon updated by Hydra9268 for the Elsweyr expansion.
+## Author: Hydra9268
+## Version: 1.4.469
+## APIVersion: 100027
+## SavedVariables: ZGESOSettings
+## Disclaimer: This Add-on is not created by, affiliated with or sponsored by ZeniMax Media Inc. or its affiliates. The Elder Scrolls and related logos are registered trademarks or trademarks of ZeniMax Media Inc. in the United States and/or other countries. All rights reserved. This Add-on is not sponsored by Zygor Guides.
+## License: MIT
+
+-- Libs
+Libs/LibStub/LibStub.min.lua
+Libs/LibMapPing/LibMapPing.min.lua
+Libs/LibGPS/LibGPS.min.lua
+Libs/lua-bit-numberlua/lua-bit-numberlua.min.lua
+Libs/AceTimer-3.0/AceTimer-3.0.xml
+Libs/AceTimer-3.0/AceTimer-3.0.min.lua
+
+-- Localization
+Localization/Main.lua
+Localization/Core_US.lua
+
+-- Core
+ZGESO.lua
+ZGESO.xml
+Functions.lua
+
+-- Main Utilities?
+UiWidgets/Main.lua
+Class.lua
+Globals.lua
+SlashCommands.lua
+Log.lua
+Debug.lua
+Events.lua
+Callback.lua
+BugReport.lua
+
+Options.lua
+
+Pointer.xml
+Pointer.lua
+Arrows/Stealth/Arrow.lua
+Arrows/Stealth/Arrow.xml
+
+Travel/Main.lua
+Travel/Data.lua
+
+Data/NpcData.lua
+Data/QuestData.lua
+Data/QuestStepData.lua
+Data/QuestPOIData.lua
+Data/ObjectData.lua
+Data/ItemData.lua
+Data/MapData.lua
+
+Data/AldmeriDominion/NpcData.lua
+Data/AldmeriDominion/QuestData.lua
+Data/AldmeriDominion/QuestStepData.lua
+Data/AldmeriDominion/ObjectData.lua
+
+Data/DaggerfallCovenant/NpcData.lua
+Data/DaggerfallCovenant/QuestData.lua
+Data/DaggerfallCovenant/QuestStepData.lua
+Data/DaggerfallCovenant/ObjectData.lua
+
+Data/EbonheartPact/NpcData.lua
+Data/EbonheartPact/QuestData.lua
+Data/EbonheartPact/QuestStepData.lua
+Data/EbonheartPact/ObjectData.lua
+
+Data/Main.lua
+
+Parser.lua
+GuideHandling.lua
+Guide.lua
+Step.lua
+Goal.lua
+
+Quest.lua
+QuestTracker.lua
+
+UiWidgets/Base.lua
+UiWidgets/Label.lua
+UiWidgets/Backdrop.lua
+UiWidgets/Texture.lua
+UiWidgets/Frame.lua
+UiWidgets/Button.lua
+UiWidgets/Editbox.lua
+UiWidgets/Tooltip.lua
+UiWidgets/Slider.lua
+UiWidgets/ColorPicker.lua
+UiWidgets/ToggleButton.lua
+UiWidgets/GuideButton.lua
+UiWidgets/Dropdown.lua
+UiWidgets/Tabs.lua
+UiWidgets/ProgressBar.lua
+
+Tooltip.lua
+Popup.lua
+
+Viewer/GuideViewerFrame.lua
+Viewer/GuideViewerFrame.xml
+GuideMenu.lua
+
+Guides/ZygorIncludeCommon.lua
+Guides/LevelingCommon.lua
+Guides/LevelingAldmeriDominion.lua
+Guides/LevelingDaggerfallCovenant.lua
+Guides/LevelingEbonheartPact.lua
+Guides/Skyshards.lua
+Guides/MorrowindDLC.lua
+Guides/MainQuestsOnly.lua
+
+Testing/Main.lua
+Testing/UI.lua
+Testing/Localization.lua
+Testing/GuideParsing.lua
+Testing/DataCollecting.lua
+Testing/Quests.lua
+
+Bindings.xml
+Bindings.lua
