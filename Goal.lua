@@ -253,7 +253,7 @@ GOALTYPES['count'] = {
 -----------------------------------------
 
 GOALTYPES['goto'] = {
-	parse = function(self,params,step,data)
+	parse = function(self,params,step,data) -- Called on the game's initial load
 		local prevmap = data.prevmap
 		local params2,title = params:match('^(.-)%s*"(.*)"')
 		if title then
@@ -272,10 +272,16 @@ GOALTYPES['goto'] = {
 
 		self.x = x or self.x
 		self.y = y or self.y
-		self.dist = dist or self.dist or 3	-- 3 distance is default
+		-- Adjusting the speed between zone maps and non-zone maps
+		if (GetCurrentMapIndex() == nil) then
+			self.dist = dist or self.dist or 5
+		else
+			self.dist = dist or self.dist or 1
+		end
+
 		self.waytitle = title
 	end,
-	iscompletable = function(self)
+	iscompletable = function(self) -- Called repeatedly
 
 		local step = self.parentStep
 		local all_gotos = true
@@ -288,9 +294,13 @@ GOALTYPES['goto'] = {
 			end
 		end
 
-		return (self.force_complete or all_gotos)		-- If the goto has a |c then it is completable. Or if there are only gotos present in this step.
+		return (self.force_complete or all_gotos) -- If the goto has a |c then it is completable. Or if there are only gotos present in this step.
 	end,
-	iscomplete = function(self)	-- look into this. see if there's a way to autocomplete these steps
+	iscomplete = function(self) -- Called repeatedly
+		
+		-- if the player isn't in the zone map then adjust the distance (TernaryOperator ?:) -- GetGameTimeMilliseconds
+		self.dist = (GetCurrentMapIndex() == nil) and 5 or 1
+
 		local dist = ZGV.Pointer:GetDistToCoords(self.map,self.x,self.y)
 
 		if self.dist and (

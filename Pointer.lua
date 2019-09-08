@@ -50,7 +50,6 @@ function ZGV:SanitizeMapFloor(map,flr)
 	do return map,flr end
 end
 
-
 Pointer.MapFloors = {}  setmetatable(Pointer.MapFloors,{__index=function(self,id) return rawget(self,id) or 0 end})
 
 function Pointer:Startup()
@@ -107,7 +106,6 @@ function Pointer:ResetWaypointerSettings()
 
 	self:UpdateArrowPosition()
 end
-
 
 __CLASS = __CLASS or {}
 
@@ -276,12 +274,18 @@ function Pointer:ShowArrow(waypoint)
 	self.ArrowFrame.waypoint = waypoint
 	self.ArrowFrame.WaitingPhase = nil
 
-	last_distance=0
-	speed=0
-	lastbeeptime=GetTimeStamp()+3
-	cuedinged=nil
+	last_distance = 0
+	speed = 0
 
-	lastminimapdist=99999
+	-- Adjusting the speed between zone maps and non-zone maps
+	if (GetCurrentMapIndex() == nil) then
+		lastbeeptime = GetTimeStamp() + 3
+	else
+		lastbeeptime = GetGameTimeMilliseconds() + 250
+	end
+	cuedinged = nil
+
+	lastminimapdist = 99999
 
 	local tx,ty=Pointer:TranslateCoords(waypoint.m,waypoint.x,waypoint.y,self:GetMapTex())
 	if tx and ty then
@@ -458,11 +462,9 @@ function Pointer.ArrowFrameControl_OnUpdate(self,msec)
 			autosurvey_last = msec
 		end
 	end
-
 end
 
 -- And we have an onupdating frame even if hidden. Yay!
-
 -- map perc as: t1..t2 to 0.0..0.5  t3..t4 to 0.5..1.0
 function Pointer.CalculateDirectionTiers(perc,t1,t2,t3,t4)
 	if perc<t1 then return 0 , 1
@@ -483,10 +485,11 @@ local avgspeed=0
 local eta_elapsed=0
 local etadisp_elapsed=0
 
-local lastbeeptime=GetTimeStamp()
-local lastturntime=lastbeeptime
-local laststoptime=lastbeeptime
-local lastmovetime=lastbeeptime
+-- local lastbeeptime=GetTimeStamp()
+local lastbeeptime = GetGameTimeMilliseconds()
+local lastturntime = lastbeeptime
+local laststoptime = lastbeeptime
+local lastmovetime = lastbeeptime
 
 local msin,mcos,mabs=math.sin,math.cos,math.abs
 
@@ -529,7 +532,6 @@ function Pointer:GetDirectionToWaypoint(way)
 	return dir
 end
 
-
 local cache_throttle=0
 local were_in_unknown_location
 
@@ -538,9 +540,7 @@ function Pointer.ArrowFrame_ShowSpellArrow(self,waypoint)
 end
 
 local noskip_time=0
-
 local dummy_waypoint = {DUMMY=1}
-
 
 -- /dump ZGV.Pointer:TranslateCoords("bleakrock_base_0",0.7,0.7,"bleakrockvillage_base_0")
 -- /dump ZGV.Pointer:TranslateCoords("deshaan_base",.4053,.7517,"kragenmoor_base")
@@ -570,7 +570,7 @@ function Pointer:TranslateCoords(map1,x,y,map2)
 	return (x-Z2.xoffset)/Z2.scale,(y-Z2.yoffset)/Z2.scale
 end
 
---/dump ZGV.Pointer:GetDistToCoords(auridon_base 52.50,91.57)
+--/dump ZGV.Pointer:GetDistToCoords(auridon_base,52.50,91.57)
 --/dump ZGV.Pointer:GetDistToCoords(shimmerenewaterworks01_base,50.50,50.50)
 --/dump ZGV.Pointer:TranslateCoords("auridon_base",52.50,91.57,"vulkhelguard_base")
 function Pointer:GetDistToCoords(m,x,y)
@@ -592,8 +592,6 @@ function Pointer:GetDistToCoords(m,x,y)
 
 	return dist
 end
-
-
 
 function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 	-- NASTY. Replace master object, Indy Jones-style.
@@ -811,7 +809,6 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 		dist,
 		eta,
 		errortxt)
-
 end
 
 -- The function! It does nothing!
@@ -1052,7 +1049,6 @@ function Pointer:InitMaps()
 	Pointer:ZONE_CHANGED()
 end
 
-
 function Pointer:SurveyAllMaps(autoclick)
 	for map=1,GetNumMaps() do
 		SetMapToMapListIndex(map)
@@ -1062,7 +1058,6 @@ function Pointer:SurveyAllMaps(autoclick)
 
 	SetMapToPlayerLocation() ZO_WorldMap_UpdateMap()
 end
-
 
 local function DEVd(s,...)
 	if ZGV.DEV then
@@ -1117,12 +1112,13 @@ function Pointer:SurveyMap(specific,force,quiet)
 
 	if ZGV.Utils.Delocalize(GetMapName())=="Tamriel" then qd("Can't survey Tamriel itself.") return end
 	if Z.noParent then
-		if not knownNoParent[Z] then  qd("Can't survey a non-parented map.")  end
+		if not knownNoParent[Z] then qd("Can't survey a non-parented map.")  end
 		knownNoParent[Z]=true
 		return
 	end
 	local waymode = (GetMapPlayerWaypoint()~=0)
-	if not waymode and Z.scouttime and (GetTimeStamp()-Z.scouttime<4) then
+	-- if not waymode and Z.scouttime and (GetTimeStamp()-Z.scouttime<4) then
+	if not waymode and Z.scouttime and ( GetGameTimeMilliseconds() - Z.scouttime < 4 ) then
 		qd("|cff0000Surveying too fast?")
 		return
 	end
@@ -1147,7 +1143,8 @@ function Pointer:SurveyMap(specific,force,quiet)
 		Z.px1,Z.py1 = GetMapPlayerPosition("player")
 		DEVd(("Surveying |cffffff%s|r, point A: %.2f,%.2f is world %.2f,%.2f. Now start walking, or set a waypoint elsewhere on the map."):format(tex,Z.lx1*100,Z.ly1*100,Z.px1*100,Z.py1*100))
 
-		Z.scouttime=GetTimeStamp()
+		-- Z.scouttime = GetTimeStamp()
+		Z.scouttime = GetGameTimeMilliseconds()
 
 		Z.scale = nil
 		Z.lx2,Z.ly2,Z.px2,Z.py2 = nil,nil,nil,nil
@@ -1195,13 +1192,13 @@ function Pointer:SurveyMap(specific,force,quiet)
 
 		DEVd(("|c88ff88Surveyed |cffffff%s|r! Offsets: %.6f %.6f, scale: %.6f"):format(tex,Z.xoffset,Z.yoffset,Z.scale))
 
-		Z.scouttime=GetTimeStamp()
+		-- Z.scouttime = GetTimeStamp()
+		Z.scouttime = GetGameTimeMilliseconds()
 
 		Pointer.do_autosurvey = false
 	end
 
 	if specific=="here" and quiet then SetMapToPlayerLocation() ZO_WorldMap_UpdateMap() end
-
 end
 
 -- /dump ZGV.Pointer:SurveyClickAllOver(shimmerenewaterworks01_base)
@@ -1263,7 +1260,6 @@ SLASH_COMMANDS["/dump"] = function(text)
 	end
 end
 
-
 -- MAP CLICKING SIMULATION PREP:
 --/script for i=1,9 do _G['MapMouseoverBlob'..i]:SetHidden(false) end
 --ProcessMapClick()
@@ -1317,7 +1313,6 @@ function Pointer:MinimapNodeFlashOff()
 end
 
 local q=0
-
 
 -- Some small utilities which may be useful to several waypointing backends
 -- Moved 'em out of Internal waypointer so that TomTom, for example,
@@ -1391,7 +1386,6 @@ function Pointer:SetArrowToFirstCompletableGoal()
 	ZGV.CurrentStep.current_waypoint_goal = self.waypoints[1].goalnum
 	return self:ShowArrow(self.waypoints[1])
 end
-
 
 -- ESO MAPLOCATIONS-BASED POINTERS ARE SO COOL.  ~sinus
 

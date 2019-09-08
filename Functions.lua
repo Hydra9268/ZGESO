@@ -140,6 +140,61 @@ function Utils.GetMapNameByTexture()
 	return name
 end
 
+-- /dump d(ZGV.Utils.CheckIfInSkillGuild(1))
+-- 1: Dark Brotherhood
+-- 2: Fighters Guild
+-- 3: Mages Guild
+-- 4: Psijic Order
+-- 5: Thieves Guild
+-- 6: Undaunted
+function Utils.CheckIfInSkillGuild(guildSkillIndex)
+   if guildSkillIndex <= 0 then return end
+   local _, _, isActive, _ = GetSkillLineDynamicInfo(SKILL_TYPE_GUILD, guildSkillIndex)
+   return isActive
+end
+
+-- /dump d(ZGV.Utils.SkillLines(false,true,false,true,true))
+function Utils.SkillLines(showType,showLineInfo,showLineXP,showSkillAbilities,showAbilityInfo)
+    if showType then
+        d("Number of Skill Types: "..GetNumSkillTypes().."\n-----------------------------")
+    end
+    if showLineInfo then
+        for index = 0,GetNumSkillLines(SKILL_TYPE_GUILD) do
+            d(index..": "..GetSkillLineInfo(SKILL_TYPE_GUILD, index))
+        end
+        d("-----------------------------")
+    end
+    if showLineXP then
+        for index = 0,GetSkillLineXPInfo(SKILL_TYPE_GUILD) do
+            d(index..": "..GetSkillLineXPInfo(SKILL_TYPE_GUILD, index))
+        end
+        d("-----------------------------")
+    end
+    if showSkillAbilities then
+        for index = 0,GetNumSkillAbilities(SKILL_TYPE_GUILD) do
+            d(index..": "..GetNumSkillAbilities(SKILL_TYPE_GUILD, index))
+        end
+        d("-----------------------------")
+    end
+    if showAbilityInfo then
+        local hasProgression, progressionIndex, lastRankXP, nextRankXP, currentXP, atMorph = GetAbilityProgressionXPInfoFromAbilityId(abilityId)
+        local skillType, skillIndex, abilityIndex = GetSkillAbilityIndicesFromProgressionIndex(progressionIndex)
+        local abilityId2 = GetSkillAbilityId(skillType, skillIndex, abilityIndex)
+        d("GetSkillAbilityId: "..abilityId2)
+        d("skillType: "..skillType)
+        d("skillIndex: "..skillIndex)
+        d("abilityIndex: "..abilityIndex)
+        d("-----------------------------")
+        if hasProgression then d("hasProgression: true") else d("hasProgression: false") end
+        d("progressionIndex: "..progressionIndex)
+        d("lastRankXP: "..lastRankXP)
+        d("nextRankXP: "..nextRankXP)
+        d("currentXP: "..currentXP)
+        if atMorph then d("atMorph: true") else d("atMorph: false") end
+        d("-----------------------------")
+    end
+end
+
 function Utils:IsPlayerInCombat()
 	local IsUnitInCombat = _G.IsUnitInCombat
 	return ZGV.db.profile.fakecombat or IsUnitInCombat("player")

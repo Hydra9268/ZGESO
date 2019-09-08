@@ -13,9 +13,12 @@ No longer supported references:
 Install through the excellent add-on manager <a href="https://minion.mmoui.com/" target="blank">Minion</a>
 
 ### 7/27 Update: Elsweyr Guide Out Now!
+### 8/12 Update: API version now supports Scalebreaker
 
 <img src="https://i.imgur.com/3PSp7pg.png">
 <i>artwork &copy; ZeniMax Media</i>
+
+### Coming Soon: Revamped and Remastered Summerset guide
 
 # Development Guide
 
@@ -29,7 +32,7 @@ For example, 1.4.96
 
 ----
 
-### Guide HOW-TO
+### Development HOW-TO
 
 
 
@@ -37,16 +40,18 @@ For example, 1.4.96
 
 `goto wailingprison4_base 50.00,50.00`
 * `goto` = ZGESO command that tells the arrow where to point
-* `wailingprison4_base` = the current map's dds reference (Note: only works in the current map)
-* `50.00,50.00` = the floating point x and y coordinates
+* `wailingprison4_base` = the current map's dds reference (Note: only works in map the user is currently in)
+* `50.00,50.00` = the floating point x and y coordinates (Note: decimal values are optional, but recommended for precision)
 
 `talk` = ZGESO command to talk to NPCs
 
 `accept` = ZGESO command to accept quests (auto-advances to next step)
 
+`turnin` = ZGESO command to turn in quests (auto-advances to next step)
+
 `wayshrine` = ZGESO command to discover wayshrines (auto-advances to next step)
 
-`click` = ZGESO command for clicking doors
+`click` = ZGESO command for clicking objects and doors
 
 `'` = ZGESO command to add general information
 
@@ -70,7 +75,20 @@ For example, 1.4.96
 
 For example<br>
 `|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 712`<br>
-* Only allow this step if the player's precise level is less than 6 and the current map zone index equals 712 (which is Elsweyr)
+Only allow this step if the player's precise level is less than 6 and the current map zone index equals 712 (which is Elsweyr)
+
+`|or` = Handler for dialog choices (Note: you need to put the |or handler on eaach choice)
+
+For example<br>
+```
+'Choose either a Marine or Wizard to help you
+|tip It doesn't matter, just personal preference.
+'Talk to either _Sergeant Firion_ or _Gathwen_
+'Choose the Marine to help you |q The Tempest Unleashed/The Marine |or
+'_OR_
+'Choose the Wizard to help you |q The Tempest Unleashed/The Wizard |or
+step
+```
 
 *To see a complete list of Types and Handlers review Goal.lua*
 
@@ -94,10 +112,11 @@ For example<br>
 
 ### Additional Resources
 
+* https://esodata.uesp.net/100028/functioncalls.txt
+* https://esodata.uesp.net/100028/
 * https://wiki.esoui.com/API
 * https://wiki.esoui.com/Texture_List
 * https://mothereff.in/lua-minifier
 * https://esomap.uesp.net/
+* https://en.uesp.net/wiki
 * https://game-maps.com/ESO/The-Elder-Scrolls-Online.asp
-* http://esodata.uesp.net/100023/
-* http://en.uesp.net/wiki
