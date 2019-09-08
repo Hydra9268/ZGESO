@@ -38585,8 +38585,8 @@ step
 goto bleakrockvillage_base 78.61,47.55
 |tip Inside the building.
 talk Captain Rana
-'Tell her _"Let's leave now."_
-'Tell her _"Yes, I'm sure. It's time to leave."_
+'Tell her _"Ive gathered all the missing villagers."_
+'Tell her _"Lets get going."_
 turnin The Missing of Bleakrock
 accept Sparking the Flame
 step
