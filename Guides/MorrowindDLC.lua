@@ -19120,6 +19120,12 @@ click Ancient Ruins |q The Tower Sentinels/Find the King's Haven Pass Ruins
 step
 goto kingshavenint1_base 60.54,69.13
 step
+goto kingshavenint1_base 67.82,69.20
+'Kill the waves of spiders that appear
+|tip Manually skip to the next step.
+step
+goto kingshavenint1_base 80.61,66.20
+step
 goto kingshavenint1_base 82.54,50.66
 kill Keetas the Weaver
 |tip Manually skip to the next step.
@@ -19129,71 +19135,67 @@ goto kingshavenint1_base 72.84,49.83
 |tip Manually skip to the next step.
 step
 goto kingshavenint1_base 72.48,49.24
-click Ancient Ruins
-|tip Manually skip to the next step.
+click Ancient Ruins |q The Tower Sentinels/Find Sapiarch Imedril
 step
 goto kingshavenint1_base 64.11,35.43
-'Press _E_ to Burn _Mephala's Webs_
-|tip Manually skip to the next step.
+'Press _E_ to Burn _Mephala's Webs_ |q The Tower Sentinels/Help Save Sapiarch Imedril
 step
 goto kingshavenint1_base 64.78,37.12
 'Press _E_ to Take _Dawnstar Gem_
-'Take Dawnstar Gem
-|tip Manually skip to the next step.
+'Take Dawnstar Gem |q The Tower Sentinels/Take the Dawnstar Gem
 step
 goto kingshavenint1_base 64.61,36.88
-talk Sapiarch Imedril
-|tip Manually skip to the next step.
+talk Sapiarch Imedril |q The Tower Sentinels/Talk to Sapiarch Imedril
 step
 goto kingshavenint1_base 60.30,36.52
-click Coral-Splitter Caves
-|tip Manually skip to the next step.
+click Coral-Splitter Caves |q The Tower Sentinels/Leave the Ruins
 step
-'Open your map:
-click Lillandril Wayshrine
+'Open your map. Right click twice to bring up the Summerset map.
 'Travel to the _Lillandril_ Wayshrine
 |tip Manually skip to the next step.
 step
+goto lillandrill_base 46.34,74.68
+'Return to Tindoria |q The Perils of Art/Return to Tindoria
+step
 goto lillandrill_base 41.66,76.81
-talk Vaerelel
-'Select _I'm going to complete my contract with Tindoria._
-|tip Manually skip to the next step.
+talk Vaerelel |q The Perils of Art/Talk to Vaerelel
+step
+goto lillandrill_base 41.66,76.81
+talk Vaerelel 
+'Choose _I'm going to complete my contract with Tindoria._ |q The Perils of Art/Stay Loyal to Tindoria
 step
 goto lillandrill_base 36.06,85.51
 talk Tindoria
-|tip Manually skip to the next step.
+'Deliver Reagents to Tindoria |q The Perils of Art/Deliver Reagents to Tindoria
+step
+goto lillandrill_base 36.06,85.51
+talk Tindoria
+turnin The Perils of Art
 step
 goto lillandrill_base 40.54,69.35
-'Run up the stairs from here
-|tip Manually skip to the next step.
 step
 goto lillandrill_base 49.95,53.73
-'Run up the stairs from here
-|tip Manually skip to the next step.
+step
+goto lillandrill_base 53.71,40.02
 step
 goto lillandrill_base 49.25,38.92
-talk Rigurt the Brash
-|tip Manually skip to the next step.
+talk Rigurt the Brash |q Culture Clash/Favor for Justiciar Rolumdel
 step
 goto lillandrill_base 45.65,39.90
 click Fighters Guild
 |tip Manually skip to the next step.
 step
 goto lillandrill_base 44.13,45.29
-talk Emile Oncent
-|tip Manually skip to the next step.
+talk Emile Oncent |q Murder In Lillandril/Talk to Emile
 step
 goto lillandrill_base 45.56,44.15
-talk Calawende
-|tip Manually skip to the next step.
+talk Calawende |q Murder In Lillandril/Talk to Calawende
 step
 goto lillandrill_base 44.79,41.78
 click Lillandril
 |tip Manually skip to the next step.
 step
 goto lillandrill_base 53.69,40.94
-'Run down the stairs from here
-|tip Manually skip to the next step.
 step
 goto lillandrill_base 52.36,50.47
 click The Shrewd Brew
