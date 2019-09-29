@@ -589,7 +589,7 @@ click Prowler Skiff
 'Board the Skiff |q To Auridon/Board the Skiff |next Aldmeri Dominion Leveling Guides\\Main Quests Only\\Auridon
 ]])
 
-ZGV:RegisterGuide("Daggerfall Covenant Leveling Guides\\Main Quests Only\\Dragonfall Covenant\Stros M'Kai",[[
+ZGV:RegisterGuide("Daggerfall Covenant Leveling Guides\\Main Quests Only\\Daggerfall Covenant\\Stros M'Kai",[[
 loadingimage loadscreen_strosmkai_01.dds
 description One of the first landfalls settled by the Redguards when they sailed east from their lost homeland of Yokuda, the island of Stros M'Kai is now a haven for freebooters, sea-rovers, and other nautical entrepeneurs who roam the Abecean Sea.
 step
@@ -1017,7 +1017,7 @@ talk Captain Kaleen
 'Tell her _"I'm ready to leave now. Let's sail."_
 talk Captain Kaleen |q Tip of the Spearhead/Talk to Captain Kaleen |next Daggerfall Covenant Leveling Guides/Main Quests Only/Betnikh
 ]])
-ZGV:RegisterGuide("Daggerfall Covenant Leveling Guides\\Main Quests Only\\Daggerfall Covenant\Betnikh",[[
+ZGV:RegisterGuide("Daggerfall Covenant Leveling Guides\\Main Quests Only\\Daggerfall Covenant\\Betnikh",[[
 loadingimage loadscreen_betnikh_01.dds
 description Nine generations ago, the island of Betony was conquered by the Stonetooth Orcs, who renamed it Betnikh. A proud, self-reliant people, the Orcs fiercely protect their new home from incursion by outsiders.
 step
@@ -1465,7 +1465,7 @@ talk Sir Lanis Shaldon
 turnin On to Glenumbra |next Daggerfall Covenant Leveling Guides\\Main Quests Only\\Glenumbra
 ]])
 
-ZGV:RegisterGuide("Aldmeri Dominion Leveling Guides\\Main Quests Only\\Aldmeri Dominion\Auridon",[[
+ZGV:RegisterGuide("Aldmeri Dominion Leveling Guides\\Main Quests Only\\Aldmeri Dominion\\Auridon",[[
 loadingimage loadscreen_auridon_01.dds
 description The second largest of the Summerset Isles, Auridon has always served the High Elves as a buffer between their serene archipelago and the turmoil of Tamriel. The Altmer of Auridon have been hardened by generations of repelling invaders, pirates, and plagues.
 step
