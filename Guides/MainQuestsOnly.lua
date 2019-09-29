@@ -2,7 +2,7 @@ local ZGV = _G.ZGV
 if ZGV:DoMutex("MainQuestsOnly") then return end
 ZGV.GuideMenuTier = "MOR"
 
-ZGV:RegisterGuide("Aldmeri Dominion Leveling Guides\\Main Quests Only\\Khenarthi's Roost",[[
+ZGV:RegisterGuide("Aldmeri Dominion Leveling Guides\\Main Quests Only\\Aldmeri Dominion\\Khenarthi's Roost",[[
 loadingimage loadscreen_kenathis_roost_01.dds
 description This island off the south coast of Elsweyr is named after the Khajiiti goddess of weather and the sky, who is usually represented as a great hawk. She finds many worshipers among the cat-folk's sailors and farmers, especially those who grow moon-sugar cane.
 step
@@ -589,7 +589,7 @@ click Prowler Skiff
 'Board the Skiff |q To Auridon/Board the Skiff |next Aldmeri Dominion Leveling Guides\\Main Quests Only\\Auridon
 ]])
 
-ZGV:RegisterGuide("Daggerfall Covenant Leveling Guides\\Main Quests Only\\Stros M'Kai",[[
+ZGV:RegisterGuide("Daggerfall Covenant Leveling Guides\\Main Quests Only\\Dragonfall Covenant\Stros M'Kai",[[
 loadingimage loadscreen_strosmkai_01.dds
 description One of the first landfalls settled by the Redguards when they sailed east from their lost homeland of Yokuda, the island of Stros M'Kai is now a haven for freebooters, sea-rovers, and other nautical entrepeneurs who roam the Abecean Sea.
 step
@@ -1017,7 +1017,7 @@ talk Captain Kaleen
 'Tell her _"I'm ready to leave now. Let's sail."_
 talk Captain Kaleen |q Tip of the Spearhead/Talk to Captain Kaleen |next Daggerfall Covenant Leveling Guides/Main Quests Only/Betnikh
 ]])
-ZGV:RegisterGuide("Daggerfall Covenant Leveling Guides\\Main Quests Only\\Betnikh",[[
+ZGV:RegisterGuide("Daggerfall Covenant Leveling Guides\\Main Quests Only\\Daggerfall Covenant\Betnikh",[[
 loadingimage loadscreen_betnikh_01.dds
 description Nine generations ago, the island of Betony was conquered by the Stonetooth Orcs, who renamed it Betnikh. A proud, self-reliant people, the Orcs fiercely protect their new home from incursion by outsiders.
 step
@@ -1464,11 +1464,8 @@ goto daggerfall_base 71.79,65.73
 talk Sir Lanis Shaldon
 turnin On to Glenumbra |next Daggerfall Covenant Leveling Guides\\Main Quests Only\\Glenumbra
 ]])
-local ZGV = _G.ZGV
-if ZGV:DoMutex("MainQuestsOnly") then return end
-ZGV.GuideMenuTier = "MOR"
 
--ZGV:RegisterGuide("Aldmeri Dominion Leveling Guides\\Main Quests Only\\Auridon",[[
+ZGV:RegisterGuide("Aldmeri Dominion Leveling Guides\\Main Quests Only\\Aldmeri Dominion\Auridon",[[
 loadingimage loadscreen_auridon_01.dds
 description The second largest of the Summerset Isles, Auridon has always served the High Elves as a buffer between their serene archipelago and the turmoil of Tamriel. The Altmer of Auridon have been hardened by generations of repelling invaders, pirates, and plagues.
 step
@@ -1500,12 +1497,6 @@ step
 goto 46.93,63.70
 |tip Leave the building.
 talk Advisor Norion |q Ensuring Security/Talk to Advisor Norion
-step
-goto 14.51,59.05
-|tip She's inside the Fighters Guild.
-talk Millenith
-turnin Crafting Certification
-|only Aldmeri Dominion
 step
 goto 13.13,60.01
 |tip He's inside the Fighters Guild.
@@ -1561,7 +1552,7 @@ goto 15.49,52.47
 'Follow the road through the stone gate
 |tip Manually skip to the next step.
 step
-goto 51.12,91.32
+goto auridon_base51.12,91.32
 click History of the Fighters Guild Pt. 1
 lorebook History of the Fighters Guild Pt. 1/1/19/3
 step
@@ -1804,16 +1795,12 @@ kill Polinus
 'Explore Del's Claim |achieve 288
 step
 goto 76.87,29.98
-'Follow the path |q Repentant Son/Go to Mathiisen |future
+'Follow the path
 |tip Manually skip to the next step.
-step
-goto 60.90,50.49
-click Bloody Journal
-accept Repentant Son
 step
 goto 16.85,89.26
 click Auridon
-'Leave Del's Claim |q Repentant Son/Go to Mathiisen
+'Leave Del's Claim
 |tip Manually skip to the next step.
 step
 goto auridon_base 62.64,81.65
@@ -2016,7 +2003,7 @@ click Tanzelwil Wayshrine
 'Travel to the Tanzelwil Wayshrine |q To Tanzelwil/Find the Queen's Entourage at Tanzelwil
 |tip Manually skip to the next step.
 step
-goto 51.13,76.33
+goto auridon_base 51.13,76.33
 talk Prince Naemon
 turnin To Tanzelwil
 accept In the Name of the Queen
@@ -2380,13 +2367,6 @@ goto 62.67,56.32
 |tip Swim across the water.
 click Triumphs of a Monarch, Ch. 3
 lorebook Triumphs of a Monarch, Ch. 3/1/9/5
-step
-goto 53.27,53.14
-talk Lamolime
-accept Silent Village
-step
-goto 52.97,51.76
-'Enter Shattered Grove |q Silent Village/Enter Shattered Grove
 step
 goto 49.80,54.98
 click Triumphs of a Monarch, Ch. 10
