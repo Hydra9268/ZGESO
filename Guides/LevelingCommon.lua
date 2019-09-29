@@ -21837,7 +21837,7 @@ talk Gloria Fausta
 'Tell her _"No, not this way. We need you alive. I'll handle the Duke."_
 talk Gloria Fausta |q Lineage of Tooth and Claw/Talk to Gloria Fausta
 step
-goto 64.17,51.18
+goto glenumbra_base 64.17,51.18
 click The Illusion of Death
 lorebook The Illusion of Death/1/9/3
 step
