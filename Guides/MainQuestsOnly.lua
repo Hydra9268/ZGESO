@@ -2828,7 +2828,7 @@ click Auridon
 'Leave Wansalen
 |tip Manually skip to the next step.
 step
-goto 49.62,43.75
+goto auridon_base 49.62,43.75
 click Aedra and Daedra
 lorebook Aedra and Daedra/1/8/1
 step
@@ -2991,7 +2991,7 @@ click Mehrunes' Spite
 'Enter Mehrune's Spite |achieve 292
 |tip Manually skip to the next step.
 step
-goto 69.39,25.62
+goto mehrunesspite_base 69.39,25.62
 click Skyshard |achieve 695/13
 step
 goto 61.95,20.41
@@ -3007,7 +3007,7 @@ click College Wayshrine
 'Travel to the College Wayshrine
 |tip Manually skip to the next step.
 step
-goto 43.80,16.85
+goto auridon_base 43.80,16.85
 'Cross the bridge
 |tip Manually skip to the next step.
 step
@@ -3174,7 +3174,7 @@ click Skywatch Wayshrine
 'Travel to the Skywatch Wayshrine
 |tip Manually skip to the next step.
 step
-goto 35.63,51.07
+goto skywatch_base 35.63,51.07
 talk Captain Jimila
 'Talk to Captain Jimila in Skywatch |q The Great Tree/Talk to Captain Jimila in Skywatch
 step
