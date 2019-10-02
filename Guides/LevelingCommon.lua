@@ -22962,6 +22962,10 @@ goto 64.18,43.84
 'Follow the path |q The Labyrinth/Find the Remaining Knights
 |tip Manually skip to the next step.
 step
+goto 69.85,16.98
+talk Sir Thomas Kinlin
+|tip Manually skip to the next step
+step
 goto 70.19,24.44
 kill Vorthag
 'Collect the Rune of Release |q Angof the Gravesinger/Collect the Shard of the Lost
