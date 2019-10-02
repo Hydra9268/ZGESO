@@ -3298,3 +3298,2213 @@ talk Captain Jimila
 'Tell her _"I'm ready to leave for Haven."_
 'Talk to Captain Jamila in Vulkhel Guard |q The Great Tree/Talk to Captain Jimila in Vulkhel Guard |next Aldmeri Dominion Leveling Guides\\Grahtwood |only Aldmeri Dominion
 ]])
+ZGV:RegisterGuide("Daggerfall Covenant Leveling Guides\\Main Quests Only\\Daggerfall Covenant\Glenumbra",[[
+loadingimage loadscreen_glenumbra_01.dds
+description Glenumbra, the westernmost region of High Rock, contains the city-states of Daggerfall and Camlorn, the great cemetery of Cath Bedraud, and the wild areas of Hag Fen, Glenumbra Moors, and the forests of Daenia.
+step
+'Save 2 extra skill points, don't spend them yet |q On to Glenumbra
+|tip Don't spend them yet
+|tip You'll be able to invest them into the Intimidate and Persuade skills soon, which will save you a lot of time on certain quests as you level.
+|tip Manually skip to the next step.
+|only not VET
+step
+goto daggerfall_base 71.79,65.73
+'The Prophet appears:
+accept The Harborage
+|only not VET
+step
+goto glenumbra_base 35.51,79.29
+click The Harborage
+'Find the Harborage |q The Harborage/Find the Harborage |future
+|tip Manually skip to the next step.
+|only not VET
+step
+goto the_daggerfall_harborage 66.79,65.21
+talk The Prophet |q The Harborage/Talk to the Prophet
+|only not VET
+step
+goto 66.79,65.21
+'Wait for The Prophet |q The Harborage/Wait for the Prophet
+|only not VET
+step
+goto visionofthecompanions_base 39.21,55.56
+'Follow the Prophet |q The Harborage/Follow the Prophet
+|only not VET
+step
+goto 39.24,56.15
+talk The Prophet |q The Harborage/Talk to the Prophet
+|only not VET
+step
+goto 35.29,59.85
+'Listen to The Prophet
+'Learn about the Five Companions |q The Harborage/Learn about the Five Companions
+|only not VET
+step
+goto 35.29,59.85
+talk The Prophet |q The Harborage/Talk to the Prophet
+|only not VET
+step
+goto 48.23,54.53
+'Witness the Five Companions in Action |q The Harborage/Witness the Five Companions in Action
+|only not VET
+step
+goto 48.49,56.51
+talk The Prophet |q The Harborage/Talk to the Prophet
+|only not VET
+step
+goto 68.57,83.53
+'Follow the Prophet |q The Harborage/Follow the Prophet
+|only not VET
+step
+goto 67.95,81.74
+talk The Prophet |q The Harborage/Talk to the Prophet
+|tip Manually skip to the next step.
+|only not VET
+step
+goto the_daggerfall_harborage 66.35,65.29
+talk The Prophet
+turnin The Harborage
+|only not VET
+step
+goto the_daggerfall_harborage 25.58,27.22
+click Glenumbra
+'Leave the Harborage |q Blood and the Crescent Moon/Read the Note |future
+|tip Manually skip to the next step.
+|only not VET
+step
+goto daggerfall_base 69.09,64.60
+'Follow the path |q Blood and the Crescent Moon/Read the Note |future
+|tip Manually skip to the next step.
+step
+goto 66.87,51.07
+talk Corpse
+accept Blood and the Crescent Moon
+step
+goto 66.89,51.11
+click Daggerfall Market Shopping List
+'Read the Note |q Blood and the Crescent Moon/Read the Note
+step
+goto 63.12,64.51
+|tip Inside the building.
+talk Kareem Winvale
+'Talk to the Tailor |q Blood and the Crescent Moon/Talk to the Tailor
+step
+goto 48.82,52.69
+talk Diane Guissant
+'Talk to the Florist |q Blood and the Crescent Moon/Talk to the Florist
+step
+goto 50.20,50.42
+talk Christoph Lamont
+'Talk to the Grocer |q Blood and the Crescent Moon/Talk to the Grocer
+step
+goto 40.87,56.56
+'Follow the path |q Blood and the Crescent Moon/Talk to Captain Aresin
+|tip Manually skip to the next step.
+step
+goto 43.56,46.06
+talk Captain Aresin |q Blood and the Crescent Moon/Talk to Captain Aresin
+step
+goto 49.70,39.57
+|tip Inside the Mages Guild.
+talk Nemarc
+accept Nemarc's Invitation
+turnin Nemarc's Invitation
+|only not VET
+step
+'Use one of the Skill Points you Saved:
+|tip In the Mages Guild section of your skill page.
+'Learn the Persuasive Will Skill |q Back-Alley Murders/Talk to Lieutenant Dubois
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 44.76,38.84
+talk Valaste
+accept Long Lost Lore
+|only not VET
+step
+goto 55.60,33.71
+|tip Inside the Fighters Guild.
+talk Basile Fenandre
+accept Basile's Invitation
+turnin Basile's Invitation
+|only not VET
+step
+'Use one of the Skill Points you Saved:
+|tip In the Fighters Guild section of your skill page.
+'Learn the Intimidating Presence Skill |q Blood and the Crescent Moon/Talk to Grenna gra-Kush
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 55.85,33.61
+|tip Upstairs.
+talk Guildmaster Sees-All-Colors
+accept Anchors from the Harbour
+|only not VET
+step
+goto 48.89,26.12
+|tip Inside the building.
+talk Grenna gra-Kush |q Blood and the Crescent Moon/Talk to Grenna gra-Kush
+step
+goto 49.42,26.91
+|tip Upstairs.
+'Find Leveque |q Blood and the Crescent Moon/Find Leveque
+|tip You will be attacked.
+step
+goto 51.06,29.09
+talk Stephen Leveque
+'Confront Leveque |q Blood and the Crescent Moon/Confront Leveque
+step
+goto 51.25,28.83
+|tip In a room directly below Leveque.
+click A Warning to the Aldmeri Dominion
+lorebook A Warning to the Aldmeri Dominion/1/1/2
+step
+goto 48.89,26.04
+|tip Downstairs.
+talk Grenna gra-Kush |q Blood and the Crescent Moon/Talk to Grenna gra-Kush
+step
+goto 55.28,21.38
+|tip Upstairs inside the building.
+click Verrik's Note
+'Find Clues About the Plot |q Blood and the Crescent Moon/Find Clues About the Plot
+step
+goto 43.70,46.03
+|tip Up the stairs.
+talk Captain Aresin
+turnin Blood and the Crescent Moon
+accept Bloodthorn Assassins
+step
+goto 35.78,24.90
+|tip She walks around.
+talk Sasana at-Abbas |q Bloodthorn Assassins/Talk to Sasana at-Abbas
+step
+goto 23.44,12.86
+click Suspicious Cargo
+kill Bloodthorn Assassin
+'Search for Verrik and His Assassins |q Bloodthorn Assassins/Search for Verrik and His Assassins
+step
+goto 37.20,30.41
+'Go up the stairs |q Bloodthorn Assassins/Enter Daggerfall Castle
+|tip Manually skip to the next step.
+step
+goto 49.20,34.12
+'Follow the path |q Bloodthorn Assassins/Enter Daggerfall Castle
+|tip Manually skip to the next step.
+step
+goto 42.21,42.89
+'Run up the stairs |q Bloodthorn Assassins/Enter Daggerfall Castle
+|tip Manually skip to the next step.
+step
+goto 33.54,48.63
+click Daggerfall Castle
+'Enter Daggerfall Castle |q Bloodthorn Assassins/Enter Daggerfall Castle |future
+|tip Manually skip to the next step.
+step
+goto 29.36,48.77
+'Watch the dialogue
+'Find King Casimir |q Bloodthorn Assassins/Find King Casimir
+step
+goto 31.73,48.78
+|tip Go upstairs.
+kill Verrik
+'Protect King Casimir |q Bloodthorn Assassins/Protect King Casimir
+step
+goto 31.47,49.12
+'Watch the dialogue
+talk King Casimir
+turnin Bloodthorn Assassins
+step
+goto 33.66,48.70
+'Leave Daggerfall Castle |q Anchors from the Harbour/Find Merric and Aelif
+|tip Manually skip to the next step.
+step
+goto 64.12,39.77
+'Follow the path |achieve 409/1
+|tip Manually skip to the next step.
+step
+goto 69.44,44.71
+click Skyshard |achieve 409/1
+step
+goto glenumbra_base 34.34,75.40
+talk Merric at-Aswala
+'Find Merric and Aelif |q Anchors from the Harbour/Find Merric and Aelif
+|only not VET
+step
+goto 34.50,75.37
+talk Worm Cultists
+|tip Click all the Worm Cultists in the area.
+'Search the Worm Cultist |q Anchors from the Harbour/Search Worm Cultists
+|only not VET
+step
+goto 34.32,75.56
+talk Aelif |q Anchors from the Harbour/Talk to Aelif
+|only not VET
+step
+goto daggerfall_base 64.12,39.77
+'Follow the path |q Anchors from the Harbour/Return to Sees-All-Colors
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 55.80,33.69
+|tip Upstairs in the Fighters Guild.
+talk Guildmaster Sees-All-Colors
+'Return to Sees-All-Colors |q Anchors from the Harbour/Return to Sees-All-Colors
+|only not VET
+step
+goto daggerfall_base 64.12,39.77
+'Follow the path |wayshrine Baelborne Rock
+|tip Manually skip to the next step.
+|only not VET
+step
+goto glenumbra_base 37.42,73.01
+wayshrine Baelborne Rock
+step
+goto 35.99,71.53
+click True Heirs of the Empire
+lorebook True Heirs of the Empire/1/1/3
+step
+goto 34.78,72.60
+|tip Inside the crumbled building.
+click Ilessan Tower
+'Enter Ilessan Tower |achieve 215
+|tip Manually skip to the next step.
+step
+goto ilessantower_base 11.95,76.09
+'Follow the path |achieve 215
+|tip Manually skip to the next step.
+step
+goto 60.10,80.06
+'Follow the path up |achieve 215
+|tip Manually skip to the next step.
+step
+goto 84.12,31.21
+click Skyshard |achieve 409/10
+step
+goto 74.31,30.43
+'Run up the wooden ramp |achieve 215
+|tip Manually skip to the next step.
+step
+goto 55.48,39.99
+'Follow the path |achieve 215
+|tip Manually skip to the next step.
+step
+goto 37.01,37.89
+'Run down the wooden ramp |achieve 215
+|tip Manually skip to the next step.
+step
+goto 42.92,47.92
+kill Gaetane
+'Explore Ilessan Tower |achieve 215
+step
+goto 23.54,61.62
+'Follow the path |q Turning of the Trees/Talk to Wyress Helene |future
+|tip Manually skip to the next step.
+step
+goto 11.82,65.07
+click Glenumbra
+'Leave Ilessan Tower |q Turning of the Trees/Talk to Wyress Helene |future
+|tip Manually skip to the next step.
+step
+goto glenumbra_base 37.86,75.97
+talk Bernard Redain
+accept Turning of the Trees
+step
+goto 42.53,77.35
+talk Wyress Helene |q Turning of the Trees/Talk to Wyress Helene
+step
+goto 43.24,76.74
+|tip Inside of the building.
+talk Wyress Jehanne
+accept Ash and Reprieve
+step
+goto 42.69,76.07
+click Deleyn's Mill Well
+'Collect Water from the Well to Douse the Fires |q Ash and Reprieve/.*Rescue the Villagers.* |count 1
+|tip Manually skip to the next step.
+step
+goto 42.73,74.45
+'Press _E_ to use the Wyress Torchbug:
+|tip Follow the bug. Press E to summon the Wyress Torchbug again if it disappears.
+click Essences of Aetherius
+|tip It will eventually drop an Essence of Aetherius.
+'Collect an Essence of Aetherius for the Wyrd Ward |q Turning of the Trees/Collect the Essence of Aetherius for the Wyrd Ward
+|tip Manually skip to the next step.
+step
+goto 46.33,73.90
+'Press _E_ to use the Wyress Torchbug:
+|tip Follow the bug. Press E to summon the Wyress Torchbug again if it disappears.
+click Essences of Aetherius
+|tip It will eventually drop an Essence of Aetherius.
+'Collect an Essence of Aetherius for the Wyrd Ward |q Turning of the Trees/Collect the Essence of Aetherius for the Wyrd Ward
+|tip Manually skip to the next step.
+step
+goto 48.36,74.34
+|tip Standing on a pile of logs.
+talk Shawna Loghammer
+'Rescue a Villager |q Ash and Reprieve/.*Rescue the Villagers.* |count 1
+step
+goto 48.45,74.75
+click Wyresses: The Name-Daughters
+lorebook Wyresses: The Name-Daughters/1/1/9
+step
+goto 49.49,76.54
+click Raging Fires
+|tip Click all the fires in the building. Kill the imps outside the building to prevent the fires from coming back.
+'Extinguish the Fires in the Building |q Ash and Reprieve/.*Rescue the Villagers.* |count 4
+|tip Manually skip to the next step.
+step
+goto 49.49,76.54
+talk Wyress Olyna
+'Rescue 2 Villagers |q Ash and Reprieve/.*Rescue the Villagers.* |count 3
+step
+goto 49.95,77.81
+click Varieties of Faith: The Orcs
+lorebook Varieties of Faith: The Orcs/1/1/8
+step
+goto 47.78,78.92
+|tip Follow the wooden dock.
+talk Luzmash
+'Rescue a Villager |q Ash and Reprieve/.*Rescue the Villagers.* |count 4
+step
+goto 47.14,77.84
+talk Gailen Tramnil
+'Rescue a Villager |q Ash and Reprieve/.*Rescue the Villagers.* |count 5
+step
+goto 44.22,79.77
+'Press _E_ to use the Wyress Torchbug:
+|tip Follow the bug. Press E to summon the Wyress Torchbug again if it disappears.
+click Essences of Aetherius
+|tip It will eventually drop an Essence of Aetherius.
+'Collect an Essence of Aetherius for the Wyrd Ward |q Turning of the Trees/Collect the Essence of Aetherius for the Wyrd Ward
+step
+goto 45.13,74.82
+|tip Inside the house. Extinguish the fire to be able to enter.
+talk Mura
+'Rescue a Villager |q Ash and Reprieve/.*Rescue the Villagers.* |count 6
+step
+goto 43.24,76.74
+talk Wyress Jehanne
+turnin Ash and Reprieve
+step
+goto 42.55,77.49
+talk Wyress Helene |q Turning of the Trees/Talk to Wyress Helene
+step
+goto 43.48,77.15
+|tip Inside the building.
+talk Wyress Helene
+turnin Turning of the Trees
+step
+goto 43.24,76.74
+talk Wyress Jehanne
+accept The Wyrd Tree's Roots
+step
+goto 43.22,78.64
+kill Spriggans
+kill Imps
+kill Lurchers
+'Nourish the Wyrd Roots |q The Wyrd Tree's Roots/.*Nourish the Wyrd Roots.* |count 1
+step
+goto 41.97,74.45
+kill Spriggans
+kill Imps
+kill Lurchers
+'Nourish the Wyrd Roots |q The Wyrd Tree's Roots/.*Nourish the Wyrd Roots.* |count 2
+step
+goto 44.14,73.45
+kill Spriggans
+kill Imps
+kill Lurchers
+'Nourish the Wyrd Roots |q The Wyrd Tree's Roots/.*Nourish the Wyrd Roots.* |count 3
+step
+goto 43.38,77.10
+|tip Inside of the building.
+talk Wyress Jehanne
+turnin The Wyrd Tree's Roots
+step
+goto 43.48,77.15
+talk Wyress Helene
+accept The Wyrd Sisters
+step
+goto 47.88,70.66
+wayshrine Deleyn's Mill
+step
+goto 49.40,67.35
+|tip Inside the tent.
+click Schemes of the Reachmage
+lorebook Schemes of the Reachmage/1/1/10
+step
+goto 50.81,62.81
+'Find Merric and Aelif |q Anchors from the Harbour/Find Merric and Aelif
+|only not VET
+step
+goto 51.68,62.29
+'Kill the enemies that attack
+kill Spinesnap
+'Help Aelif Defeat the Daedra |q Anchors from the Harbour/Help Aelif Defeat Daedra
+|only not VET
+step
+goto 54.41,66.79
+'Find Merric |q Anchors from the Harbour/Find Merric
+|only not VET
+step
+goto 54.49,66.54
+talk Aelif |q Anchors from the Harbour/Speak with Aelif
+|only not VET
+step
+goto 55.46,71.28
+'Find the Island Tower |q Anchors from the Harbour/Find the Island Tower
+|only not VET
+step
+goto 55.78,71.80
+talk Jofnir Iceblade
+'Speak with the Ghost |q Anchors from the Harbour/Speak with the Ghost
+|only not VET
+step
+goto 56.53,72.34
+|tip Inside the tower.
+click Dourstone Vault
+'Enter Doshia's Lair |q Anchors from the Harbour/Enter Doshia's Lair |future
+|tip Manually skip to the next step.
+|only not VET
+step
+goto dourstonevault_base 48.94,86.70
+|tip Follow the path.
+kill Doshia
+'Defeat Doshia |q Anchors from the Harbour/Defeat Doshia
+|only not VET
+step
+goto 49.45,86.48
+talk Merric at-Aswala |q Anchors from the Harbour/Talk to Merric
+|only not VET
+step
+goto 51.49,89.49
+click Doshia's Journal
+'Retrieve Doshia's Journal |q Anchors from the Harbour/Retrieve Doshia's Journal
+|only not VET
+step
+goto 48.51,9.30
+|tip Follow the path.
+click Glenumbra
+'Leave Doshia's Lair |q Anchors from the Harbour/Report to Sees-All-Colors
+|tip Manually skip to the next step.
+|only not VET
+step
+goto glenumbra_base 56.11,72.99
+talk Guildmaster Sees-All-Colors
+turnin Anchors from the Harbour
+|only not VET
+step
+goto 58.86,60.69
+|tip Inside the building.
+click Great Harbingers of the Companions
+lorebook Great Harbingers of the Companions/1/9/2
+step
+'Open your map to Glenumbra:
+click Deleyn's Mill Wayshrine
+'Travel to the Deleyn's Mill Wayshrine
+|tip Manually skip to the next step.
+step
+goto 40.81,68.53
+talk Wyress Ileana
+turnin The Wyrd Sisters
+accept Seeking the Guardians
+step
+goto 41.79,68.60
+|tip All around this area.
+kill Lurchers
+'Collect 5 Lurcher Arms |q Seeking the Guardians/.*Collect Lurcher Arms.*
+step
+goto 43.11,67.10
+'Run up the stairs |q Seeking the Guardians/Summon an Elemental Guardian
+|tip Manually skip to the next step.
+step
+goto 43.28,66.41
+click Altar of the Ehlnofey
+'Summon an Elemental Guardian |q Seeking the Guardians/Summon an Elemental Guardian
+step
+goto 43.28,66.41
+talk Guardian of the Earth |q Seeking the Guardians/Talk to Guardian of the Earth
+step
+goto 38.88,66.91
+talk Wyress Ileana
+turnin Seeking the Guardians
+accept Champion of the Guardians
+step
+goto 39.21,64.49
+'Follow the road |q Champion of the Guardians/Defend Wyress Madenn
+|tip Manually skip to the next step.
+step
+goto 37.42,62.79
+talk Wyress Madenn
+'Kill the Deepwood Lurchers that attack
+'Defend Wyress Madenn |q Champion of the Guardians/Defend Wyress Madenn
+step
+goto 40.21,62.97
+talk Wyress Ofelia
+'Kill the Bloodthorn Cultists that attack
+'Defend Wyress Ofelia |q Champion of the Guardians/Defend Wyress Ofelia
+step
+goto 42.94,62.94
+talk Wyress Ashtah
+'Kill the Deepwood Lurchers that attack
+'Defend Wyress Ashtah |q Champion of the Guardians/Defend Wyress Ashtah
+step
+goto 41.33,60.05
+talk Wyress Shaelle
+'Kill the Bloodthorn Cultists that attack
+'Defend Wyress Shaelle |q Champion of the Guardians/Defend Wyress Shaelle
+step
+goto 39.62,61.55
+kill Lurcher
+|tip Don't kill it, just weaken it. Note that some of the Lurchers around this area may be Tainted Spriggan and will not allow you to capture them.
+'Use the Amulet on a Weakened Lurcher
+'Capture a Lurcher |q Champion of the Guardians/Capture a Lurcher
+step
+goto 37.23,62.34
+'Follow the path up |q Champion of the Guardians/Take the Lurcher to the Ritual Site
+|tip Manually skip to the next step.
+step
+goto 35.09,64.08
+'Take the Lurcher to the Ritual Site |q Champion of the Guardians/Take the Lurcher to the Ritual Site
+step
+goto 35.09,64.08
+'Watch the dialogue
+'Listen to the Spriggan Spirit |q Champion of the Guardians/Listen to the Spriggan Spirit
+step
+goto 35.04,64.15
+talk Wyress Ileana
+'Watch the dialogue
+talk Wyress Ileana |q Champion of the Guardians/Talk to Wyress Ileana
+step
+goto 34.91,64.23
+talk Guardian of the Water
+turnin Champion of the Guardians
+step
+goto 34.33,61.33
+|tip Inside the tent.
+click The True Nature of Orcs
+lorebook The True Nature of Orcs/1/1/6
+step
+goto 39.78,57.83
+wayshrine Wyrd Tree
+step
+goto 36.21,57.31
+talk Wyress Gwen
+turnin To the Wyrd Tree
+accept Reclaiming the Elements
+step
+goto 35.10,54.00
+click Guide to the Daggerfall Covenant
+lorebook Guide to the Daggerfall Covenant/1/1/5
+step
+goto 35.66,52.01
+|tip Inside the house.
+click East Hut Portal Cave
+'Enter the East Hut Portal Cave |q Reclaiming the Elements/.*Open Portals.* |count 1
+|tip Manually skip to the next step.
+step
+goto east_hut_portal_cave_base 64.94,58.84
+|tip Follow the path.
+click East Portal Stone
+'Open the Portal |q Reclaiming the Elements/.*Open Portals.* |count 1
+step
+goto 34.91,11.02
+|tip Follow the path.
+click East Hut
+'Leave the cave |q Reclaiming the Elements/.*Open Portals.* |count 2
+|tip Manually skip to the next step.
+step
+goto glenumbra_base 33.54,54.36
+|tip Inside the house.
+click South Hut Portal Cave
+'Enter the South Portal Cave |q Reclaiming the Elements/.*Open Portals.* |count 2
+|tip Manually skip to the next step.
+step
+goto south_hut_portal_cave_base 68.26,27.85
+|tip Follow the path.
+click South Portal Stone
+'Open the Portal |q Reclaiming the Elements/.*Open Portals.* |count 2
+step
+goto 31.00,43.57
+|tip Follow the path.
+click South Hut
+'Leave the cave |q Reclaiming the Elements/.*Open Portals.* |count 3
+|tip Manually skip to the next step.
+step
+goto glenumbra_base 31.50,52.49
+|tip Inside the house.
+click West Hut Portal Cave
+'Enter the West Portal Cave |q Reclaiming the Elements/.*Open Portals.* |count 3
+|tip Manually skip to the next step.
+step
+goto west_hut_portal_cave_base 26.32,68.50
+|tip Follow the path.
+click West Portal Stone
+'Open the Portal |q Reclaiming the Elements/.*Open Portals.* |count 3
+step
+goto 82.26,41.13
+|tip Follow the path.
+click West Hut
+'Leave the cave |q Reclaiming the Elements/.*Open Portals.* |count 4
+|tip Manually skip to the next step.
+step
+goto glenumbra_base 32.09,50.22
+|tip Inside the house.
+click North Hut Portal Cave
+'Enter the North Portal Cave |q Reclaiming the Elements/.*Open Portals.* |count 4
+|tip Manually skip to the next step.
+step
+goto north_hut_portal_cave_base 83.64,28.63
+|tip Follow the path.
+click North Portal Stone
+'Open the Portal |q Reclaiming the Elements/.*Open Portals.* |count 4
+step
+goto 18.50,68.50
+|tip Follow the path.
+click North Hut
+'Leave the cave |q Reclaiming the Elements/Open a Portal for Wyress Gwen
+|tip Manually skip to the next step.
+step
+goto glenumbra_base 33.68,52.78
+'Use Wyress Gwen's Portal Stone
+'Open a Portal for Wyress Gwen |q Reclaiming the Elements/Open a Portal for Wyress Gwen
+step
+goto 33.71,52.61
+talk Wyress Gwen |q Reclaiming the Elements/Talk to Wyress Gwen
+step
+goto 36.70,52.53
+'Follow the path up |q Reclaiming the Elements/Clear the Corruption of Air
+|tip Manually skip to the next step.
+step
+goto 37.29,53.28
+click Corrupted Vine of Air
+talk Guardian of the Air
+|tip Get next to the Guardian of Air when she tells you to, as she will shield you from a powerful attack.
+kill Corruption of Air
+'Clear the Corruption of Air |q Reclaiming the Elements/Clear the Corruption of Air
+step
+goto 34.02,49.39
+click Corrupted Vine of Water
+talk Guardian of the Water
+|tip Get next to the Guardian of Water when she tells you to, as she will shield you from a powerful attack.
+kill Corruption of Water
+'Clear Corruption of Water |q Reclaiming the Elements/Clear the Corruption of Water
+step
+goto 31.09,54.09
+click Corrupted Vine of Earth
+talk Guardian of the Earth
+kill Corruption of Earth
+|tip Get next to the Guardian of Earth when she tells you to, as she will shield you from a powerful attack.
+'Clear the Corruption of Earth |q Reclaiming the Elements/Clear the Corruption of Earth
+step
+goto 33.68,52.61
+talk Wyress Gwen
+turnin Reclaiming the Elements
+accept Purifying the Wyrd Tree
+step
+goto 33.63,52.36
+click Heart of the Wyrd Tree
+'Enter the Wyrd Tree |q Purifying the Wyrd Tree/Enter the Wyrd Tree |future
+|tip Manually skip to the next step.
+step
+goto 33.42,51.73
+kill Corruption of the Tree
+|tip One of the 3 Guardians around the edge of the pond will call you to them after the Corruption of the Tree pulls you to the center of the pond. Get next to the Guardian that called you when they tell you to, as they will shield you from a powerful attack.
+'Save the Wyrd Tree |q Purifying the Wyrd Tree/Save the Wyrd Tree
+step
+goto 33.62,52.32
+click Glenumbra
+'Exit the Wyrd Tree |q Purifying the Wyrd Tree/Return to Wyress Gwen
+|tip Manually skip to the next step.
+step
+goto 33.82,52.94
+talk Wyress Gwen
+turnin Purifying the Wyrd Tree
+accept Werewolves to the North
+step
+'Open your map to Glenumbra:
+click Baelborne Rock Wayshrine
+'Travel to the Baelborne Rock Wayshrine |q Werewolves to the North/Talk to Chamberlain Weller
+|tip Manually skip to the next step.
+step
+goto 33.63,66.09
+'Follow the path |achieve 216
+|tip Manually skip to the next step.
+step
+goto 28.53,65.55
+'Follow the path down the coast |achieve 216
+|tip Manually skip to the next step.
+step
+goto 27.23,67.81
+click Silumm
+'Enter Silumm |achieve 216
+|tip Manually skip to the next step.
+step
+goto silumm_base 29.15,50.19
+'Follow the path |achieve 216
+|tip Manually skip to the next step.
+step
+goto 14.99,22.02
+click The Hidden Twilight
+'Retrieve the Tome |q Long Lost Lore/.*Retrieve the Tomes.* |count 1
+|only not VET
+step
+goto 25.69,21.43
+click Skyshard |achieve 409/11
+step
+goto 33.38,29.46
+'Follow the path |achieve 216
+|tip Manually skip to the next step.
+step
+goto 58.72,25.91
+click Summoning Rituals of the Arch-Mage
+'Retrieve the Tome |q Long Lost Lore/.*Retrieve the Tomes.* |count 2
+step
+goto 72.63,22.23
+'Follow the path |achieve 216
+|tip Manually skip to the next step.
+step
+goto 81.48,48.64
+kill Sincano
+'Explore Silumm |achieve 216
+step
+goto 79.36,69.37
+click Untold Legends
+'Retrieve the Tome |q Long Lost Lore/.*Retrieve the Tomes.* |count 3
+|only not VET
+step
+goto 80.43,87.46
+'Follow the path |q Long Lost Lore/.*Retrieve the Tomes.* |count 4
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 44.01,84.39
+'Go down the stairs |q Long Lost Lore/.*Retrieve the Tomes.* |count 4
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 57.56,72.99
+click The Winds of Change
+'Retrieve the Tome |q Long Lost Lore/.*Retrieve the Tomes.* |count 4
+|only not VET
+step
+'Open your map to Glenumbra:
+click Daggerfall Wayshrine
+'Travel to the Daggerfall Wayshrine |q Long Lost Lore/Return to the Mages Guild
+|tip Manually skip to the next step.
+step
+'The Prophet Appears:
+|tip You need to be at least level 10.
+accept Daughter of Giants
+|only not VET
+step
+goto daggerfall_base 51.02,39.11
+click Mages Guild
+'Return to the Mages Guild |q Long Lost Lore/Return to the Mages Guild
+|only not VET
+step
+goto 46.93,38.33
+talk Valaste |q Long Lost Lore/Talk to Valaste
+|only not VET
+step
+goto 44.31,39.04
+click Arcane Brazier
+'Place the Tome on the Arcane Brazier |q Long Lost Lore/Place the Tome on the Arcane Brazier
+|only not VET
+step
+goto 46.93,38.33
+talk Valaste |q Long Lost Lore/Talk to Valaste
+|only not VET
+step
+goto 47.19,39.05
+|tip Wait for Valaste.
+click Ritual Orb
+'Summon Arch-Mage Shalidor |q Long Lost Lore/Summon Arch-Mage Shalidor
+|only not VET
+step
+goto 48.10,39.06
+talk Arch-Mage Shalidor |q Long Lost Lore/Talk to Arch-Mage Shalidor
+|only not VET
+step
+goto 46.83,39.95
+click Portal to Cheesemonger's Hollow
+'Enter the Portal to Sheogorath's Shrine |q Long Lost Lore/Enter the Portal to Sheogorath's Shrine |future
+|tip Manually skip to the next step.
+|only not VET
+step
+goto cheesemongershollow_base 13.29,62.58
+talk Haskill |q Long Lost Lore/Talk to Haskill
+|only not VET
+step
+goto 13.40,56.50
+click Daedric Portal
+'Kill the enemies that appear
+'Close the Portal |q Long Lost Lore/Close the Portal
+|only not VET
+step
+goto cheesemongershollow_base 13.29,62.58
+talk Haskill |q Long Lost Lore/Talk to Haskill
+|only not VET
+step
+goto 13.80,67.68
+|tip Follow Haskill up the stairs.
+'Wait for Haskill to Open the Door |q Long Lost Lore/Wait for Haskill to Open the Door
+|only not VET
+step
+goto 13.80,67.68
+talk Haskill |q Long Lost Lore/Explore the Hollow
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 69.89,35.54
+|tip Follow the path.
+'Explore the Hollow |q Long Lost Lore/Explore the Hollow
+|only not VET
+step
+goto 78.72,25.73
+kill Gutsripper |q Long Lost Lore/Kill Gutsripper
+|only not VET
+step
+goto 79.59,25.44
+click Tome
+|tip Click any of the 4 books, it doesn't matter.
+'Take the Tomes |q Long Lost Lore/Take the Tomes
+|only not VET
+step
+goto 76.87,27.16
+talk Sheogorath |q Long Lost Lore/Talk to Sheogorath
+|only not VET
+step
+goto 77.35,27.49
+'Watch the dialogue
+'Observe the Conversation |q Long Lost Lore/Observe the Conversation
+|only not VET
+step
+goto 77.53,27.97
+talk Arch-Mage Shalidor |q Long Lost Lore/Talk to Arch-Mage Shalidor
+|only not VET
+step
+goto daggerfall_base 44.85,38.81
+talk Valaste
+turnin Long Lost Lore
+|only not VET
+step
+'Open your map to Glenumbra:
+'Travel to the Harborage in Glenumbra |q Daughter of Giants/Go to the Harborage
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 35.49,79.28
+click The Harborage
+'Go to the Harborage |q Daughter of Giants/Go to the Harborage |future
+|tip Manually skip to the next step.
+|only not VET
+step
+goto the_daggerfall_harborage 66.89,65.07
+talk The Prophet |q Daughter of Giants/Talk to the Prophet
+|only not VET
+step
+goto 69.74,61.27
+click Portal to Coldharbour
+'Enter Coldharbour |q Daughter of Giants/Enter Coldharbour |future
+|tip Manually skip to the next step.
+|only not VET
+step
+goto foundryofwoe_base 7.68,32.73
+talk Lyris Titanborn |q Daughter of Giants/Talk to Lyris
+|only not VET
+step
+goto 9.68,43.50
+|tip Follow the path.
+click Cliffside Graveyard
+'Enter the Cliffside Graveyard |q Daughter of Giants/Enter the Foundry
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 14.03,48.54
+'Enter the Foundry |q Daughter of Giants/Enter the Foundry
+|only not VET
+step
+goto 20.40,55.40
+kill Manifestation of Regret
+talk Gjalder
+'Watch the dialogue
+'Settle Lyris's Regret |q Daughter of Giants/Settle Lyris's Regret
+|only not VET
+step
+goto 24.63,51.71
+click Imperial Encampment
+'Enter the Imperial Encampment |q Daughter of Giants/Advance into the Foundry
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 26.71,50.58
+'Advance into the Foundry |q Daughter of Giants/Advance into the Foundry
+|only not VET
+step
+goto 29.79,48.33
+click Imperial Footlocker
+'Find Lyris' Greaves |q Daughter of Giants/Assuage Lyris's Solitude
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 31.67,48.17
+click Imperial Footlocker
+'Find Lyris' Gauntlets |q Daughter of Giants/Assuage Lyris's Solitude
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 29.89,53.28
+'Find Lyris' Armor |q Daughter of Giants/Assuage Lyris's Solitude
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 26.81,49.89
+talk Lyris Titanborn
+'Assuage Lyris' Solitude |q Daughter of Giants/Assuage Lyris's Solitude
+|only not VET
+step
+goto 33.37,50.17
+click Paths of Toil
+'Enter the Path of Toil |q Daughter of Giants/Advance into the Foundry
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 36.03,61.61
+click Clannfear Roost
+'Enter Clannfear Roost |q Daughter of Giants/Advance into the Foundry
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 35.19,65.10
+'Advance into the Foundry |q Daughter of Giants/Advance into the Foundry
+|only not VET
+step
+goto 36.61,67.19
+'Watch the dialogue
+'Meet Abnur Tharn |q Daughter of Giants/Resolve Lyris's Uncertainty
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 39.68,69.44
+click Lyris' Axe
+'Resolve Lyris's Uncertainty |q Daughter of Giants/Resolve Lyris's Uncertainty
+|only not VET
+step
+'Next to you:
+talk Lyris Titanborn |q Daughter of Giants/Talk to Lyris
+|only not VET
+step
+goto 42.35,65.35
+'Go to the Rock Wall |q Daughter of Giants/Advance into the Foundry
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 40.88,47.99
+click Prison of Echoes
+'Enter the Prison of Echoes |q Daughter of Giants/Advance into the Foundry
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 41.34,44.51
+'Advance into the Foundry |q Daughter of Giants/Advance into the Foundry
+|only not VET
+step
+goto 46.72,42.03
+'Watch the dialogue
+talk Lyris Titanborn
+'Investigate the Chamber |q Daughter of Giants/Investigate the Chamber
+|only not VET
+step
+goto 47.61,39.33
+click Door Lever
+'Use the Door Lever |q Daughter of Giants/Advance into the Foundry
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 47.85,37.64
+'Go through the doorway |q Daughter of Giants/Advance into the Foundry
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 65.36,36.07
+click Crucible of Terror
+'Enter the Crucible of Terror |q Daughter of Giants/Advance into the Foundry
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 66.45,36.27
+'Advance into the Foundry |q Daughter of Giants/Advance into the Foundry
+|only not VET
+step
+goto 76.70,40.91
+kill Manifestation of Terror
+'Vanquish Lyris's Terror |q Daughter of Giants/Vanquish Lyris's Terror
+|only not VET
+step
+goto 78.87,42.42
+click Portal to the Harborage
+'Escape the Foundry of Woe |q Daughter of Giants/Escape the Foundry of Woe
+|only not VET
+step
+goto the_daggerfall_harborage 67.49,63.17
+'Watch to the dialogue
+'Watch the Exchange |q Daughter of Giants/Watch the Exchange
+|only not VET
+step
+goto 66.49,63.64
+talk The Prophet
+turnin Daughter of Giants
+|only not VET
+step
+'Open your map to Glenumbra:
+click Wyrd Tree Wayshrine
+'Travel to the Wyrd Tree Wayshrine
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 27.39,62.76
+click Skyshard |achieve 409/3
+step
+goto 20.88,58.99
+|tip Outside behind the house.
+click The Werewolf's Hide
+lorebook The Werewolf's Hide/1/1/4
+step
+goto 24.67,55.20
+'Follow the path up |q Signals of Dominion/Collect Dominion Messages |future
+|tip Manually skip to the next step.
+step
+goto 25.97,51.95
+'Follow the road up |q Signals of Dominion/Collect Dominion Messages |future
+|tip Manually skip to the next step.
+step
+goto 24.99,48.35
+wayshrine Farwatch
+step
+goto 29.39,41.74
+|tip Inside the tent.
+click Galerion the Mystic
+lorebook Galerion the Mystic/1/9/1
+step
+goto 32.21,34.21
+click The Anuad Paraphrased
+lorebook The Anuad Paraphrased/1/10/1
+step
+goto 34.30,33.29
+click Enduum
+'Enter Enduum |achieve 217
+|tip Manually skip to the next step.
+step
+goto enduum_base 47.53,77.03
+'Follow the path |achieve 217
+|tip Manually skip to the next step.
+step
+goto 40.65,86.14
+click Skyshard |achieve 409/13
+step
+goto 50.13,83.76
+'Follow the path down |achieve 217
+|tip Manually skip to the next step.
+step
+goto 69.06,78.43
+'Follow the path |achieve 217
+|tip Manually skip to the next step.
+step
+goto 65.62,49.80
+'Follow the path |achieve 217
+|tip Manually skip to the next step.
+step
+goto 57.44,34.14
+'Follow the path |achieve 217
+|tip Manually skip to the next step.
+step
+goto 70.06,8.42
+kill Odilon
+'Explore Enduum |achieve 217
+step
+'Open your map to Glenumbra:
+click Wyrd Tree Wayshrine
+'Travel to the Wyrd Tree Wayshrine
+|tip Manually skip to the next step.
+step
+goto glenumbra_base 42.61,57.66
+click Varieties of Faith: The Bretons
+lorebook Varieties of Faith: The Bretons/1/1/7
+step
+goto 45.42,54.01
+click Skyshard |achieve 409/2
+step
+goto 53.32,58.15
+'Go to Aldcroft
+|tip Manually skip to the next step.
+step
+goto aldcroft_base 33.00,53.27
+talk Chamberlain Weller
+turnin Werewolves to the North
+accept A Duke in Exile
+step
+goto 26.84,32.73
+wayshrine Aldcroft
+step
+goto 59.20,39.01
+talk Arch-Mage Shalidor
+accept Simply Misplaced
+|only not VET
+step
+goto glenumbra_base 55.41,60.90
+click Great Harbingers of the Companions
+lorebook Great Harbingers of the Companions/1/9/2
+step
+goto 55.11,61.76
+talk Lieutenant Harim |q A Duke in Exile/Talk to Lieutenant Harim
+step
+goto 58.22,62.61
+|tip At the top of the lighthouse.
+talk Duke Sebastien
+'Find Duke Sebastien |q A Duke in Exile/Find Duke Sebastien
+step
+goto 58.30,62.52
+click Crystal of Binding
+'Destroy a Crystal of Binding |q A Duke in Exile/.*Free Duke Sebastien by Destroying Crystals.* |count 1
+step
+goto 58.02,62.62
+click Crystal of Binding
+'Destroy a Crystal of Binding |q A Duke in Exile/.*Free Duke Sebastien by Destroying Crystals.* |count 2
+step
+goto 58.22,62.62
+talk Duke Sebastien |q A Duke in Exile/Talk to Duke Sebastien
+step
+goto 58.85,60.77
+|tip Inside the building.
+talk Gloria Fausta
+'Free the Second Prisoner |q A Duke in Exile/Free the Second Prisoner
+step
+goto aldcroft_base 30.29,52.81
+|tip Inside the building.
+talk Duke Sebastien
+turnin A Duke in Exile
+accept Wolves in the Fold
+step
+goto 28.69,52.87
+talk Gloria Fausta |q Wolves in the Fold/Talk to Gloria Fausta |future
+|tip Manually skip to the next step.
+step
+goto 45.80,50.39
+'Use Hircine's Amulet on Camlorn Refugees
+|tip You can find them all around on the docks.
+|tip Some of them will turn into Werewolves.
+kill Camlorn Refugees
+'Reveal and Defeat 5 Hidden Werewolves |q Wolves in the Fold/.*Reveal and Defeat Hidden Werewolves.*
+step
+goto 30.18,52.82
+|tip Inside the building.
+talk Duke Sebastien
+turnin Wolves in the Fold
+accept Lineage of Tooth and Claw
+step
+goto 28.78,52.90
+talk Gloria Fausta |q Lineage of Tooth and Claw/Talk to Sergeant Armoil Viranes
+|tip Manually skip to the next step.
+step
+goto 47.90,28.94
+talk Sergeant Armoil Viranes |q Lineage of Tooth and Claw/Talk to Sergeant Armoil Viranes
+step
+goto 57.68,49.46
+kill Werewolf
+'Use Lexi's Charm on wounded Werewolves
+|tip You can find Werewolves all around this area. Don't kill it, just wound it.  Hit the Werewolf a couple of times, then wait for your companion to capture it. Make sure to fight Werewolves in the designated quest circle on your map, or your companion won't try to capture them.  This will take 3 tries.
+'Capture a Werewolf |q Lineage of Tooth and Claw/Capture a Werewolf
+step
+goto 63.14,48.73
+'Follow the path |q Lineage of Tooth and Claw/Take the Werewolf to the Cave
+|tip Manually skip to the next step.
+step
+goto 61.62,51.14
+'Take the Captured Werewolf to the Cave |q Lineage of Tooth and Claw/Take the Werewolf to the Cave
+step
+goto 61.93,50.85
+'Enter the cave |q Lineage of Tooth and Claw/Find Gloria Fausta in the Cave
+|tip Manually skip to the next step.
+step
+goto 66.70,51.08
+'Find Gloria Fausta |q Lineage of Tooth and Claw/Find Gloria Fausta in the Cave
+step
+goto 66.76,51.08
+talk Gloria Fausta
+'Watch the dialogue
+'Perform the Ritual with Gloria Fausta |q Lineage of Tooth and Claw/Perform the Ritual with Gloria Fausta
+step
+goto 66.81,51.07
+talk Gloria Fausta |q Lineage of Tooth and Claw/Talk to Gloria Fausta
+step
+goto 66.81,51.07
+'Watch the dialogue
+'Listen to the Werewolf |q Lineage of Tooth and Claw/Listen to Werewolf
+step
+goto 66.89,51.05
+talk Gloria Fausta
+'Tell her _"No, not this way. We need you alive. I'll handle the Duke."_
+talk Gloria Fausta |q Lineage of Tooth and Claw/Talk to Gloria Fausta
+step
+'Leave the cave
+|tip manually skip to the next setep
+step
+goto glenumbra_base 64.17,51.18
+click The Illusion of Death
+lorebook The Illusion of Death/1/9/3
+step
+'Open your map to Glenumbra:
+click Aldcroft Wayshrine
+'Travel to the Aldcroft Wayshrine |q Lineage of Tooth and Claw/Talk to Duke Sebastien
+|tip Manually skip to the next step.
+step
+goto aldcroft_base 31.90,58.50
+talk Duke Sebastien
+'Tell him _"No. I can't risk it. But I won't kill you. Gloria, capture him!"_
+talk Duke Sebastien |q Lineage of Tooth and Claw/Talk to Duke Sebastien
+step
+goto 32.34,58.65
+talk Gloria Fausta
+turnin Lineage of Tooth and Claw
+accept The Glenumbra Moors
+step
+goto glenumbra_base 55.04,50.63
+click Boethiah's Proving
+lorebook Boethiah's Proving/1/8/2
+step
+goto 53.92,46.75
+'Follow the path |q The Glenumbra Moors/Go to Glenumbra Moors
+|tip Manually skip to the next step.
+step
+goto 51.79,48.62
+talk Conjurer Grahla
+turnin The Glenumbra Moors
+accept Ripple Effect
+step
+goto 48.22,49.49
+click Ancient Blade
+'Collect the Blade of Lauran |q Ripple Effect/Collect the Blades of the Alessian Generals
+|tip Manually skip to the next step.
+step
+goto 46.87,48.94
+click Ancient Blade
+'Collect the Blade of Elaric |q Ripple Effect/Collect the Blades of the Alessian Generals
+|tip Manually skip to the next step.
+step
+goto 46.23,48.81
+'Go up the path |q Ripple Effect/Collect the Blades of the Alessian Generals
+|tip Manually skip to the next step.
+step
+goto 45.88,48.50
+click Skyshard |achieve 409/5
+step
+goto 45.21,49.17
+click Ancient Blade
+'Collect the Blades of the Alessian Generals |q Ripple Effect/Collect the Blades of the Alessian Generals
+step
+goto 47.95,49.54
+'Go through the gate |q Ripple Effect/Bring Blades to Sarvith Yunlin
+|tip Manually skip to the next step.
+step
+goto 52.22,48.53
+'Watch the dialogue
+talk Sarvith Yunlin |q Ripple Effect/Bring Blades to Sarvith Yunlin
+|tip Manually skip to the next step.
+step
+goto 52.21,48.94
+|tip Follow Sarvith Yunlin.
+'Watch the dialogue
+'Bring the Blades to Sarvith Yunlin |q Ripple Effect/Bring Blades to Sarvith Yunlin
+step
+goto 52.28,48.86
+talk Sarvith Yunlin |q Ripple Effect/Talk to Sarvith Yunlin
+step
+goto 51.78,48.68
+talk Conjurer Grahla |q Ripple Effect/Talk to Grahla
+step
+goto 50.70,49.46
+click Time Ripple
+'Examine the Time Ripple |q Ripple Effect/.*Examine the Time Ripples.* |count 1
+|tip Manually skip to the next step.
+step
+goto 50.41,47.61
+click Time Ripple
+'Examine the Time Ripple |q Ripple Effect/.*Examine the Time Ripples.* |count 2
+|tip Manually skip to the next step.
+step
+goto 48.48,48.89
+click Time Ripple
+'Examine the Time Ripple |q Ripple Effect/.*Examine the Time Ripples.* |count 3
+|tip Manually skip to the next step.
+step
+goto 49.19,49.64
+click Time Ripple
+'Examine the Time Ripple |q Ripple Effect/.*Examine the Time Ripples.* |count 4
+step
+goto 49.25,50.58
+'Enter the crypt |q Ripple Effect/Find the Crypt
+|tip Manually skip to the next step.
+step
+goto 49.30,51.61
+'Find the Crypt |q Ripple Effect/Find the Crypt
+step
+goto 49.30,51.61
+talk Alana Relin
+turnin Ripple Effect
+accept A Step Back in Time
+step
+goto 49.33,51.70
+talk Direnni Armor
+'Put on the Direnni Armor |q A Step Back in Time/Put on the Direnni Armor
+step
+goto 49.31,51.48
+talk Alana Relin |q A Step Back in Time/Talk to Alana Relin
+step
+goto 46.89,48.95
+click Glenumbria: Alessian Orders
+'Find the Alessian Orders |q A Step Back in Time/Find Alessian Orders
+step
+goto 51.00,49.10
+'Go to the Direnni Camp |q A Step Back in Time/Go to the Direnni Camp
+step
+goto 51.83,48.51
+talk Commander Parmion |q A Step Back in Time/Talk to Commander Parmion
+step
+goto 52.22,48.60
+talk Alana Relin |q A Step Back in Time/Talk to Alana
+step
+goto 52.21,48.23
+talk King Laloriaran Dynar |q A Step Back in Time/Talk to King Laloriaran Dynar
+step
+goto 52.20,49.40
+'Watch the dialogue
+'Listen to Parmion's Speech |q A Step Back in Time/Listen to Parmion's Speech
+step
+goto 52.19,50.36
+kill Alessian Shadow Scout
+kill Alessian enemies
+|tip They spawn after killing the Shadow Scout.
+'Defeat the Alessian Shadow Scout |q A Step Back in Time/Defeat the Alessian Shadow Scouts
+|tip Manually skip to the next step.
+step
+goto 49.43,51.18
+kill Alessian Shadow Scout
+kill Alessian enemies
+|tip They spawn after killing the Shadow Scout.
+'Defeat the Alessian Shadow Scout |q A Step Back in Time/Defeat the Alessian Shadow Scouts
+|tip Manually skip to the next step.
+step
+goto 50.47,47.66
+kill Alessian Shadow Scout
+kill Alessian enemies
+|tip They spawn after killing the Shadow Scout.
+'Defeat the Alessian Shadow Scout |q A Step Back in Time/Defeat the Alessian Shadow Scouts
+step
+goto 47.96,49.51
+'Follow the path |q A Step Back in Time/Find Faolchu's Lair
+|tip Manually skip to the next step.
+step
+goto 46.15,49.07
+talk Scout Hanil
+turnin A Step Back in Time
+accept The Nameless Soldier
+step
+goto 46.15,49.07
+talk Scout Hanil
+'Tell him _"Take the soldiers and kill Faolchu. I'll rescue Alana"_
+'Choose to Rescue Alana |q The Nameless Soldier/Rescue Alana
+step
+goto 45.90,48.01
+'Follow the path up |q The Nameless Soldier/Find Alana In the Enemy Camp
+|tip Manually skip to the next step.
+step
+goto 45.51,49.71
+|tip Inside the crumbled tower.
+talk Alana Relin
+'Find Alana In the Enemy Camp |q The Nameless Soldier/Find Alana In the Enemy Camp
+step
+goto 45.90,49.01
+click Faolchu's Lair
+'Enter Faolchu's Lair |q The Nameless Soldier/Use Fire to Defeat Faolchu
+|tip Manually skip to the next step.
+step
+goto 49.61,48.80
+'Follow the path |q The Nameless Soldier/Use Fire to Defeat Faolchu
+|tip Manually skip to the next step.
+step
+goto 50.31,49.09
+'Go down the stairs |q The Nameless Soldier/Use Fire to Defeat Faolchu
+|tip Manually skip to the next step.
+step
+goto 50.93,49.27
+kill Alessian enemies
+|tip Faolchu the Changeling will attack once you kill all the enemies in the room.
+kill Faolchu the Changeling
+|tip While fighting him, position yourself so that he runs through the fires on the ground. This will change him from a werewolf to a human, making him much easier to kill.
+'Use Fire to Defeat Faolchu |q The Nameless Soldier/Use Fire to Defeat Faolchu
+step
+goto 50.80,49.60
+click Portal to the Present
+'Return to the Present |q The Nameless Soldier/Return to the Present |future
+|tip Manually skip to the next step.
+step
+goto 49.19,50.39
+talk Saravith Yunlin
+'Talk to the Mages Guild |q The Nameless Soldier/Talk to the Mages Guild
+step
+goto 51.52,48.96
+talk Alana Relin
+'Talk to Grahla |q The Nameless Soldier/Talk to Grahla
+step
+goto 51.52,48.96
+talk Alana Relin
+turnin The Nameless Soldier
+step
+goto 51.58,48.97
+talk Conjurer Grahla
+accept Retaking Camlorn
+step
+goto 53.96,46.69
+'Follow the path
+|tip Manually skip to the next step.
+step
+goto 67.61,44.24
+click Skyshard |achieve 409/6
+step
+goto 69.80,53.01
+click Mines of Khuras
+'Enter the Mines of Khuras |achieve 218
+|tip Manually skip to the next step.
+step
+goto minesofkhuras_base 61.95,69.81
+'Go down the ramp |achieve 218
+|tip Manually skip to the next step.
+step
+goto 40.84,71.70
+'Run up the wooden ramp |achieve 218
+|tip Manually skip to the next step.
+step
+goto 44.62,64.34
+click Skyshard |achieve 409/12
+step
+goto 38.28,56.95
+'Follow the path |achieve 218
+|tip Manually skip to the next step.
+step
+goto 28.27,40.84
+'Follow the path |achieve 218
+|tip Manually skip to the next step.
+step
+goto 11.49,35.37
+'Follow the path down |achieve 218
+|tip Manually skip to the next step.
+step
+goto 30.57,14.22
+kill Lilou
+'Explore the Mines of Khuras |achieve 218
+step
+goto 30.45,30.10
+'Follow the path
+|tip Manually skip to the next step.
+step
+goto 43.31,41.27
+'Go up the ramp
+|tip Manually skip to the next step.
+step
+goto 67.86,73.68
+'Follow the path up
+|tip Manually skip to the next step.
+step
+goto 86.74,92.87
+click Glenumbra
+'Leave the Mines of Khuras
+|tip Manually skip to the next step.
+step
+goto 69.25,41.36
+click Aedra and Daedra
+lorebook Aedra and Daedra/1/8/1
+step
+goto 73.58,41.12
+wayshrine Hag Fen
+step
+goto 75.49,40.63
+click Jorunn the Skald-King
+lorebook Jorunn the Skald-King/1/9/4
+step
+goto 75.36,30.09
+wayshrine Burial Tombs
+step
+goto 78.19,30.92
+click Skyshard |achieve 409/8
+step
+goto 75.36,30.09
+click Burial Tombs Wayshrine
+'Travel to the Aldcroft Wayshrine in Glenumbra
+|tip Manually skip to the next step.
+step
+goto 53.80,46.79
+'Follow the path |q Retaking Camlorn/Find the Lion Guard Soldiers at Camlorn
+|tip Manually skip to the next step.
+step
+goto 53.18,43.81
+'Follow the path |q Retaking Camlorn/Find the Lion Guard Soldiers at Camlorn
+|tip Manually skip to the next step.
+step
+goto 56.36,39.87
+talk General Gautier
+turnin Retaking Camlorn
+accept Rally Cry
+step
+goto 56.19,39.74
+click Outer Palisade Gate
+'Go through the gate |q Rally Cry/Help Shaza Reclaim the Siege Camp
+|tip Manually skip to the next step.
+step
+goto 55.87,39.42
+talk Shaza gra-Dasik
+|tip Follow her and help her kill werewolves. Let them attack her first.
+'Help Shaza Reclaim the Siege Camp |q Rally Cry/Help Shaza Reclaim the Siege Camp
+step
+goto 52.70,40.59
+click West Barricade Gate
+'Enter the West Barricade Gate |q Rally Cry/Talk to General Mandin
+|tip Manually skip to the next step.
+step
+goto 52.40,39.50
+talk General Mandin |q Rally Cry/Talk to General Mandin
+step
+goto 52.20,39.24
+click Outer Palisade Gate
+'Enter the Outer Palisade Gate |q Rally Cry/Talk to General Gautier
+|tip Manually skip to the next step.
+step
+goto 54.45,37.41
+talk General Gautier |q Rally Cry/Talk to General Gautier
+step
+goto 52.86,34.84
+click Watch Tower
+'Enter the Watch Tower |q Rally Cry/Lock the Main Camlorn Gate
+|tip Manually skip to the next step.
+step
+goto 52.43,34.97
+click Gate Control Chamber
+'Enter the Gate Control Chamber |q Rally Cry/Lock the Main Camlorn Gate
+|tip Manually skip to the next step.
+step
+goto 51.39,34.15
+click Gate Control
+'Lock the Main Camlorn Gate |q Rally Cry/Lock the Main Camlorn Gate
+step
+goto 52.05,34.50
+click Watch Tower
+'Leave the Gate Control Chamber |q Rally Cry/Talk to General Gautier
+|tip Manually skip to the next step.
+step
+goto 53.77,35.26
+talk General Gautier
+turnin Rally Cry
+accept A Lingering Hope
+step
+goto 53.38,36.21
+talk General Mandin
+accept Hidden in Flames
+step
+goto 53.19,36.19
+click Camlorn Side Gate
+'Enter the Camlorn Side Gate |q Hidden in Flames/.*Collect Werewolf Blood.* |count 1
+|tip Manually skip to the next step.
+step
+goto 51.28,35.64
+kill Werewolves
+'Collect 3 Werewolf Blood |q Hidden in Flames/.*Collect Werewolf Blood.*
+step
+goto 50.96,34.44
+|tip Inside the building.
+click Triumphs of a Monarch, Ch. 10
+lorebook Triumphs of a Monarch, Ch. 10/1/9/7
+step
+goto 48.86,33.04
+|tip Inside the building.
+talk Darien Gautier
+'Find Darien Gautier |q A Lingering Hope/Find Darien Gautier
+step
+goto 48.50,32.61
+talk Alinon the Alchemist
+'Bring the Ingredients to Alinon |q Hidden in Flames/Bring the Ingredients to Alinon
+step
+goto 51.28,33.78
+click Mauled Corpse
+'Find the Key to the Inn |q A Lingering Hope/Find the Key to the Inn
+step
+goto 51.60,32.72
+'Use the boxes to jump over the wall |q A Lingering Hope/Light the Candle in the Inn
+|tip Manually skip to the next step.
+step
+goto 51.99,32.92
+|tip Upstairs inside the building.
+click Signal Candle
+'Light the Candle in the Inn |q A Lingering Hope/Light the Candle in the Inn
+step
+goto 51.88,33.45
+|tip Downstairs.
+talk Alinon the Alchemist |q Hidden in Flames/Talk to Alinon
+step
+goto 52.16,33.36
+talk Darien Gautier |q A Lingering Hope/Talk to Darien
+step
+goto 53.71,33.10
+|tip Inside the crumbled house.
+click Camlorn Guard Supply Cache
+'Collect the Contents of the Supply Cache |q A Lingering Hope/.*Collect the Contents of the Supply Caches* |count 1
+step
+goto 54.35,32.27
+|tip Inside the crumbled house.
+click Camlorn Guard Supply Cache
+'Collect the Contents of the Supply Cache |q A Lingering Hope/.*Collect the Contents of the Supply Caches.* |count 2
+step
+goto 54.00,31.71
+|tip Inside the building.
+click Camlorn Guard Supply Cache
+'Collect the Contents of the Supply Cache |q A Lingering Hope/.*Collect the Contents of the Supply Caches.* |count 3
+step
+goto 53.92,31.45
+|tip Outside behind the building.
+click Camlorn Guard Supply Cache
+'Collect the Contents of the Supply Cache |q A Lingering Hope/.*Collect the Contents of the Supply Caches.* |count 4
+step
+goto 53.00,33.46
+|tip All around this area.
+kill Werewolves
+|tip Don't kill them, just weaken them.
+'Use the Elixir on Weakened Werewolves
+'Cure 4 Camlorn Citizens |q Hidden in Flames/.*Cure Camlorn Citizens.*
+step
+goto 52.16,33.36
+|tip Inside the building.
+talk Darien Gautier
+turnin A Lingering Hope
+step
+goto 51.96,33.44
+talk Alinon the Alchemist
+turnin Hidden in Flames
+step
+goto 52.16,33.35
+talk Darien Gautier
+accept The Fall of Faolchu
+step
+goto 52.27,31.69
+'Run up the stairs |q The Fall of Faolchu/.*Escort a Volunteer to the Towers.* |count 1
+|tip Manually skip to the next step.
+step
+goto 50.03,31.31
+click West Tower
+'Kill the werewolves that attack you
+'Escort a Volunteer to the Tower |q The Fall of Faolchu/.*Escort a Volunteer to the Towers.* |count 1
+step
+goto 53.71,30.09
+click East Tower
+'Kill the werewolves that attack you
+'Escort a Volunteer to the Tower |q The Fall of Faolchu/.*Escort a Volunteer to the Towers.* |count 2
+step
+goto 52.16,31.41
+'Run down the stairs |q The Fall of Faolchu/.*Escort a Volunteer to the Towers.* |count 3
+|tip Manually skip to the next step.
+step
+goto 53.92,33.98
+click South Tower
+'Kill the werewolves that attack you
+'Escort a Volunteer to the Tower |q The Fall of Faolchu/.*Escort a Volunteer to the Towers.* |count 3
+step
+goto 51.99,30.94
+click Camlorn Keep
+'Enter Camlorn Keep |q The Fall of Faolchu/Defeat Faolchu
+|tip Manually skip to the next step.
+step
+goto glenumbra_base 51.62,29.93
+kill Faolchu the Reborn
+|tip As you fight him, fire will fall from the ceiling onto the floor. Position yourself so that Faolchu runs through the fire.  He will be stunned and lose health.
+'Defeat Faolchu |q The Fall of Faolchu/Defeat Faolchu
+step
+goto glenumbracamlornkeep_base 51.97,30.94
+click Camlorn
+'Leave Camlorn Keep |q The Fall of Faolchu/Talk to General Gautier
+|tip Manually skip to the next step.
+step
+goto glenumbra_base 52.32,31.92
+talk General Gautier |q The Fall of Faolchu/Talk to General Gautier
+step
+goto 52.48,32.70
+talk Darien Gautier
+turnin The Fall of Faolchu
+accept Taking the Fight to the Enemy
+step
+goto 53.29,34.46
+click Camlorn Gate
+'Go through the gate
+|tip Manually skip to the next step.
+step
+goto 54.05,36.60
+'Follow the path |q The White Mask of Merien/Talk to Dame Clarique |future
+|tip Manually skip to the next step.
+step
+goto 53.49,38.52
+click Triumphs of a Monarch, Ch. 6
+lorebook Triumphs of a Monarch, Ch. 6/1/9/6
+step
+goto 49.34,39.41
+click Triumphs of a Monarch, Ch. 3
+lorebook Triumphs of a Monarch, Ch. 3/1/9/5
+step
+goto 48.00,37.11
+wayshrine Eagle's Brook
+step
+goto 44.07,34.68
+click Bloodthorn-Occupied House
+'Enter the Bloodthorn House
+step
+goto 43.91,34.84
+|tip Upstairs.
+click Trials of St. Alessia
+lorebook Trials of St. Alessia/1/9/8
+step
+goto 38.60,41.74
+click Skyshard |achieve 409/4
+step
+'Open your map to Glenumbra:
+click Hag Fen Wayshrine
+'Travel to the Hag Fen Wayshrine |q Garments by Odei/Collect the Sewing Box |future
+|tip Manually skip to the next step.
+step
+goto 62.16,26.17
+talk Commander Marone Ales
+turnin Taking the Fight to the Enemy
+accept The Lion Guard's Stand
+step
+goto 60.53,25.18
+wayshrine Lion Guard Redoubt
+step
+goto 58.14,25.18
+kill Zombies
+'Rescue the Patrol |q The Lion Guard's Stand/.*Rescue Patrols.* |count 1
+step
+goto 57.17,26.37
+|tip Upstairs inside the tower.
+click Origin of the Mages Guild
+lorebook Origin of the Mages Guild/1/19/5
+step
+goto 56.56,26.05
+'Follow the path
+|tip Manually skip to the next step.
+step
+goto 57.68,29.17
+kill Zombies
+'Rescue the Patrol |q The Lion Guard's Stand/.*Rescue Patrols.* |count 2
+step
+goto 57.70,30.06
+|tip Inside the building.
+click History of the Fighters Guild Pt. 2
+lorebook History of the Fighters Guild Pt. 2/1/19/4
+step
+goto 61.90,29.13
+kill Zombies
+'Rescue the Patrol |q The Lion Guard's Stand/.*Rescue Patrols.* |count 3
+step
+goto 63.67,25.01
+|tip At the top of the stairs.
+click Frontier, Conquest
+lorebook Frontier, Conquest/1/19/2
+step
+goto 60.59,24.93
+'Go to the Redoubt Wayshrine |q The Lion Guard's Stand/Go to the Redoubt Wayshrine
+step
+goto 60.59,24.93
+talk Blithe Croque |q The Lion Guard's Stand/Talk to Blithe Croque
+step
+goto 55.21,27.74
+click Gabrielle Benele's Journal
+'Search Gabrielle Benele's Campsite |q The Lion Guard's Stand/Search Gabrielle Benele's Campsite
+step
+goto 58.00,23.49
+'Find the Crypt |q The Lion Guard's Stand/Find the Crypt
+step
+goto 58.55,23.37
+'Enter the cave|q The Lion Guard's Stand/Talk to Gabrielle Benele
+|tip Manually skip to the next step.
+step
+goto 59.33,23.32
+talk Gabrielle Benele
+turnin The Lion Guard's Stand
+accept Mastering the Talisman
+step
+goto 58.49,23.37
+'Leave the cave |q Mastering the Talisman/Find the Ancient Wyrd Site
+|tip Manually skip to the next step.
+step
+goto 56.60,22.95
+'Jump down here |q Mastering the Talisman/Find the Ancient Wyrd Site
+|tip Manually skip to the next step.
+step
+goto 56.08,23.29
+'Jump down carefully here |q Mastering the Talisman/Find the Ancient Wyrd Site
+|tip Manually skip to the next step.
+step
+goto 54.78,23.42
+click The Lunar Lorkhan
+lorebook The Lunar Lorkhan/1/10/2
+step
+goto 55.06,19.47
+'Find the Ancient Wyrd Site |q Mastering the Talisman/Find the Ancient Wyrd Site
+step
+goto 54.93,19.05
+talk Gabrielle Benele |q Mastering the Talisman/Talk to Gabrielle Benele
+step
+goto 54.93,19.05
+'Watch the ritual
+talk Gabrielle Benele |q Mastering the Talisman/Destroy the Daedric Entity |future
+|tip Manually skip to the next step.
+step
+goto 57.58,15.34
+click Revelation Pool
+kill Kynreeve Erunas
+'Destroy the Daedric Entity |q Mastering the Talisman/Destroy the Daedric Entity
+step
+goto 57.78,15.92
+talk Gabrielle Benele |q Mastering the Talisman/Talk to Gabrielle Benele
+step
+goto 57.64,15.92
+click Portal to the Lion Guard Redoubt
+'Teleport to the Lion Guard Redoubt |q Mastering the Talisman/Talk to Gabrielle Benele at the Redoubt
+|tip Manually skip to the next step.
+step
+goto 62.28,25.99
+talk Gabrielle Benele
+turnin Mastering the Talisman
+step
+goto 62.34,26.09
+talk Sir Lanis Shaldon
+accept Mists of Corruption
+step
+goto 67.91,32.82
+wayshrine North Hag Fen
+step
+goto 67.88,32.82
+click North Hag Fen Wayshrine
+'Travel to the Lion Guard Redoubt Wayshrine in Glenumbra |q Mists of Corruption/Find Knights in Cath Bedraud
+|tip Manually skip to the next step.
+step
+goto 60.70,18.50
+click Ebon Crypt
+'Enter the Ebon Crypt |achieve 219
+|tip Manually skip to the next step.
+step
+goto eboncrypt_base 33.72,45.24
+'Follow the path |achieve 219
+|tip Manually skip to the next step.
+step
+goto 22.07,15.60
+'Follow the path |achieve 219
+|tip Manually skip to the next step.
+step
+goto 40.24,11.62
+click Skyshard |achieve 409/14
+step
+goto 59.46,17.86
+'Follow the path |achieve 219
+|tip Manually skip to the next step.
+step
+goto 66.40,50.11
+kill Shorrin Thorncastle
+kill The Ebon Lord
+'Explore the Ebon Crypt |achieve 219
+step
+goto 59.39,36.92
+'Follow the path |q Mists of Corruption/Find Knights in Cath Bedraud
+|tip Manually skip to thes nexts steps.
+step
+goto 54.47,15.52
+'Follow the path |q Mists of Corruption/Find Knights in Cath Bedraud
+|tip Manually skip to thes nexts steps.
+step
+goto 22.53,14.78
+'Follow the path |q Mists of Corruption/Find Knights in Cath Bedraud
+|tip Manually skip to thes nexts steps.
+step
+goto 29.98,50.55
+'Follow the path |q Mists of Corruption/Find Knights in Cath Bedraud
+|tip Manually skip to thes nexts steps.
+step
+goto 11.76,51.60
+click Glenumbra
+'Leave the Ebon Crypt |q Mists of Corruption/Find Knights in Cath Bedraud
+|tip Manually skip to thes nexts steps.
+step
+goto glenumbra_base 61.01,20.77
+'Follow the path |q Mists of Corruption/Find Knights in Cath Bedraud
+|tip Manually skip to the next step.
+step
+goto 64.67,21.21
+'Enter the cemetary |q Mists of Corruption/Find Knights in Cath Bedraud
+|tip Manually skip to the next step.
+step
+goto 65.61,20.15
+'Follow the path |q Mists of Corruption/Find Knights in Cath Bedraud
+|tip Manually skip to the next step.
+step
+goto 65.07,18.19
+talk Darien Gautier
+'Find the Knights in Cath Bedraud |q Mists of Corruption/Find Knights in Cath Bedraud
+step
+goto 65.81,17.31
+|tip All around this area.
+kill Bloodthorn enemies
+kill Skeletal enemies
+'Collect 5 Bloodthorn Amulets |q Mists of Corruption/.*Collect Bloodthorn Amulets.*
+step
+goto 65.06,18.08
+talk Gabrielle Benele
+'Return to the Injured Knights |q Mists of Corruption/Return to the Injured Knights
+step
+goto 67.41,18.55
+'Go to the Center of Cath Bedraud |q Mists of Corruption/Go to the Center of Cath Bedraud
+step
+goto 67.43,18.55
+talk Gabrielle Benele
+'Kill the enemies that attack
+'Defend Gabrielle During the Ritual |q Mists of Corruption/Defend Gabrielle During the Ritual
+step
+goto 69.02,17.42
+click Ayleid Inscriptions Translated
+lorebook Ayleid Inscriptions Translated/1/19/1
+step
+goto 69.50,19.06
+click Skyshard |achieve 409/7
+step
+goto 67.05,18.18
+'Enter the crypt |q Mists of Corruption/Talk to Gabrielle in the Crypts
+|tip Manually skip to the next step.
+step
+goto 66.63,17.70
+talk Gabrielle Benele
+turnin Mists of Corruption
+accept The Labyrinth
+step
+goto 66.51,17.65
+click Portal to Cath Bedraud Crypts
+'Teleport to the Cath Bedraud Crypts |q The Labyrinth/Find a Location to Use the Binding Stone
+|tip Manually skip to the next step.
+step
+goto cathbedraud_base 18.31,64.66
+'Run down the stairs |q The Labyrinth/Find a Location to Use the Binding Stone
+|tip Manually skip to the next step.
+step
+goto 25.84,66.18
+'Run up the stairs |q The Labyrinth/Find a Location to Use the Binding Stone
+|tip Manually skip to the next step.
+step
+goto 25.89,75.76
+click Warded Coffin Lid
+'Find a Location to Use the Binding Stone |q The Labyrinth/Find a Location to Use the Binding Stone
+step
+goto 26.62,77.32
+talk Gabrielle Benele |q The Labyrinth/Talk to Gabrielle Benele
+step
+goto 40.43,37.43
+talk Darien Gautier
+accept Angof the Gravesinger
+step
+goto 40.72,38.38
+talk Sir Lanis Shaldon
+'Find the Lost Knights |q The Labyrinth/Find the Lost Knights
+step
+goto 43.17,41.03
+'Follow the path |q Angof the Gravesinger/Collect the Shard of the Cunning
+|tip Manually skip to the next step.
+step
+goto 56.10,47.43
+click Trapped Statues
+|tip There will be 4 Trapped Statues in the room, you need to disarm them all.
+kill Untombed Tricksters
+|tip They spawn after you disarm each trap.
+click Chest of the Cunning
+'Collect the Shard of the Cunning |q Angof the Gravesinger/Collect the Shard of the Cunning
+step
+goto 51.25,50.66
+talk Sir Kalhot Nalskin
+'Find Sir Kalhot Nalskin |q The Labyrinth/Find the Remaining Knights
+|tip Manually skip to the next step.
+step
+goto 64.18,43.84
+'Follow the path |q The Labyrinth/Find the Remaining Knights
+|tip Manually skip to the next step.
+step
+goto 69.85,16.98
+talk Sir Thomas Kinlin
+|tip Manually skip to the next step
+step
+goto 70.19,24.44
+kill Vorthag
+'Collect the Rune of Release |q Angof the Gravesinger/Collect the Shard of the Lost
+|tip Manually skip to the next step.
+step
+goto 69.85,16.98
+talk Sir Thomas Kinlin
+'Tell him _"Release from slumber! Eternal darkness, come forth!"_
+'Collect the Shard of the Lost |q Angof the Gravesinger/Collect the Shard of the Lost
+step
+goto 70.86,16.26
+talk Sir Pierre Ginsen
+'Find Sir Pierre Ginsen |q The Labyrinth/Find Limren |future
+|tip Manually skip to the next step.
+step
+goto 63.98,51.07
+'Follow the path |q The Labyrinth/Find Limren
+|tip Manually skip to the next step.
+step
+goto 65.75,65.92
+'Follow the path |q The Labyrinth/Find Limren
+|tip Manually skip to the next step.
+step
+goto 63.39,82.65
+talk Dame Limren Richaut
+turnin The Labyrinth
+step
+goto 48.29,87.95
+kill Rottenroot
+'Collect the Shard of the Lurcher |q Angof the Gravesinger/Collect the Shard of the Lurcher
+step
+goto 62.73,84.20
+'Follow the path up |q Angof the Gravesinger/Enter Angof's Sanctum
+|tip Manually skip to the next step.
+step
+goto 69.07,34.04
+click Angof's Sanctum
+'Enter Angolof's Sanctum |q Angof the Gravesinger/Enter Angof's Sanctum |future
+|tip Manually skip to the next step.
+step
+goto 80.85,59.15
+|tip He will shield himself several times, so you will need to DPS down his shield in order to damage him again. While shielded, he will spawn zombies. Shortly after breaking his shield, he will do a large Area of Effect attack, so be careful. Move into the white circles that appear on the ground as fast as you can.
+kill Angof the Gravesinger |q Angof the Gravesinger/Kill Angof
+step
+goto 81.86,61.34
+click Portal to the Lion Guard Redoubt
+'Teleport to the Lion Guard Redoubt |q Angof the Gravesinger/Talk to Gabrielle at the Redoubt
+|tip Manually skip to the next step.
+step
+goto glenumbra_base 62.58,25.61
+talk Gabrielle Benele |q Angof the Gravesinger/Talk to Gabrielle at the Redoubt
+step
+goto 62.37,26.50
+talk Sir Lanis Shaldon
+turnin Angof the Gravesinger
+step
+goto 62.34,26.41
+|tip She walks up to you.
+talk Recruit Maelle
+accept A Dangerous Dream
+step
+goto 75.48,26.96
+click Monomyth: Dragon God & Missing God
+lorebook Monomyth: Dragon God & Missing God/1/10/3
+step
+goto 74.05,19.70
+click Ancient Scrolls of the Dwemer III
+lorebook Ancient Scrolls of the Dwemer III/1/12/3
+step
+goto 75.42,17.56
+click Ancient Scrolls of the Dwemer II
+lorebook Ancient Scrolls of the Dwemer II/1/12/2
+step
+goto 75.73,15.53
+wayshrine Crosswych
+step
+goto 76.10,13.57
+|tip Inside the tower.
+click Cryptwatch Fort
+'Enter Cryptwatch Fort |achieve 220
+|tip Manually skip to the next step.
+step
+goto cryptwatchfort_base 41.81,17.85
+'Follow the path |achieve 220
+|tip Manually skip to the next step.
+step
+goto 45.91,32.48
+'Follow the path |achieve 220
+|tip Manually skip to the next step.
+step
+goto 59.35,25.52
+'Follow the path |achieve 220
+|tip Manually skip to the next step.
+step
+goto 74.20,26.31
+click Skyshard |achieve 409/15
+step
+goto 67.84,57.99
+'Run up the stairs |achieve 220
+|tip Manually skip to the next step.
+step
+goto 46.00,80.25
+kill Valenwe
+'Explore Cryptwatch Fort |achieve 220/1
+step
+'Open your map to Glenumbra:
+click Lion Guard Redoubt Wayshrine
+'Travel to the Crosswych wayshrine
+|tip Manually skip to the next step.
+step
+goto crosswych_base 39.16,65.23
+click Ancient Scrolls of the Dwemer, I-A
+lorebook Ancient Scrolls of the Dwemer, I-A/1/12/1
+step
+'The Prophet will appear:
+accept Chasing Shadows
+|tip only not VET
+step
+goto crosswych_base 37.62,32.52
+click Skyshard |achieve 409/9
+step
+goto 76.58,62.50
+'Follow the road |q A Dangerous Dream/Find the Guard Captain
+|tip Manually skip to the next step.
+step
+goto glenumbra_base 90.24,15.33
+'Follow the road |q A Dangerous Dream/Find the Guard Captain
+|tip Manually skip to the next step.
+step
+goto stormhaven_base 8.02,33.05
+'Follow the path |q A Dangerous Dream/Find the Guard Captain
+|tip Manually skip to the next step.
+step
+goto 9.57,34.19
+'Find the Guard Captain |q A Dangerous Dream/Find the Guard Captain
+step
+goto 9.50,34.18
+click Supernal Dreamers' Brazier
+'Douse the Supernal Dreamer's Braziers |q A Dangerous Dream/Find a Way to Wake the Guard Captain
+|tip Manually skip to the next step.
+step
+goto 9.50,34.18
+'Kill the enemies that attack you from the portal
+'Repel the Daedra Attack |q A Dangerous Dream/Find a Way to Wake the Guard Captain
+|tip Manually skip to the next step.
+step
+goto 9.58,34.05
+talk Captain Jerick
+'Find a Way to Wake Captain Jerick |q A Dangerous Dream/Find a Way to Wake the Guard Captain
+step
+goto 9.46,33.50
+'Jump down here |q A Dangerous Dream/Talk to Captain Jerick in Koeglin Village
+|tip Manually skip to the next step.
+step
+goto stormhaven_base 14.70,33.43
+click The House of Troubles
+lorebook The House of Troubles/1/8/4
+step
+goto stormhaven_base 14.96,34.79
+click Skyshard |achieve 515/1
+step
+goto koeglinvillage_base 45.77,29.18
+|tip Inside the building.
+talk Captain Jerick
+turnin A Dangerous Dream |next Daggerfall Covenant Leveling Guides\\Main Quests Only\\Daggerfall Covenant\Stormhaven
+]])
