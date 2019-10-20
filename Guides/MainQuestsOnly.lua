@@ -4363,7 +4363,7 @@ click Wyrd Tree Wayshrine
 |tip Manually skip to the next step.
 |only not VET
 step
-goto auridon_base 27.39,62.76
+goto glenumbra_base 27.39,62.76
 click Skyshard |achieve 409/3
 step
 goto 20.88,58.99
@@ -5877,5 +5877,5 @@ talk Captain Rana |q Escape from Bleakrock/Talk to Captain Rana
 step
 goto balfoyen_base 72.87,57.75
 talk Captain Rana
-turnin Escape from Bleakrock |next Ebonheart Pact Leveling Guides\\Main Quests Only\\Ebenhart Pact\\Stonefalls
+turnin Escape from Bleakrock |next Ebonheart Pact Leveling Guides\\Main Quests Only\\Ebonheart Pact\\Stonefalls
 ]])
