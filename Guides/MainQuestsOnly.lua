@@ -5877,5 +5877,5 @@ talk Captain Rana |q Escape from Bleakrock/Talk to Captain Rana
 step
 goto balfoyen_base 72.87,57.75
 talk Captain Rana
-turnin Escape from Bleakrock |next Ebonheart Pact Leveling Guides\\Main Quests Only\\Ebenhart Pact\\Stonefalls
+turnin Escape from Bleakrock |next Ebonheart Pact Leveling Guides\\Main Quests Only\\Ebonheart Pact\\Stonefalls
 ]])
