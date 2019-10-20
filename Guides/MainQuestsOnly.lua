@@ -4363,7 +4363,7 @@ click Wyrd Tree Wayshrine
 |tip Manually skip to the next step.
 |only not VET
 step
-goto auridon_base 27.39,62.76
+goto glenumbra_base 27.39,62.76
 click Skyshard |achieve 409/3
 step
 goto 20.88,58.99
