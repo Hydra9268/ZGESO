@@ -5508,3 +5508,374 @@ goto koeglinvillage_base 45.77,29.18
 talk Captain Jerick
 turnin A Dangerous Dream |next Daggerfall Covenant Leveling Guides\\Main Quests Only\\Daggerfall Covenant\Stormhaven
 ]])
+ZGV:RegisterGuide("Ebonheart Pact Leveling Guides\\MainQuestsOnly\\Ebonheart Pact\\Bleakrock Isle",[[
+loadingimage loadscreen_bleakrock_01.dds
+description Bleakrock is an island off the northeast coast of Skyrim between Windhelm and Solstheim. The hardy Nords who inhabit Bleakrock are mostly farmers and fisherfolk. A small contingent of Pact soldiers keeps a sharp lookout for pirates and raiders.
+step
+'Save 2 Extra Skill Points as you Level |q A Beginning at Bleakrock/Talk to Liezl |future
+|tip Don't spend them yet.
+|tip You'll be able to invest them into the Intimidate and Persuade skills soon, which will save you a lot of time on certain quests as you level.
+|tip Manually skip to the next step.
+|only not VET
+step
+goto bleakrockvillage_base 78.70,44.08
+talk Captain Rana##1091003
+accept A Beginning at Bleakrock
+step
+goto bleakrockvillage_base 78.93,44.07
+talk Captain Rana##1091003
+'Talk to Rana |q A Beginning at Bleakrock/Talk to Rana
+step
+goto 78.79,47.18
+talk Captain Rana
+'Tell her _"What is Skyshroud Barrow?"_
+'Tell her _"I'll start at Skyshroud Barrow."_
+'Help Captain Rana |q A Beginning at Bleakrock/Find Darj |future
+|tip Manually skip to the next step.
+step
+goto 86.39,37.89
+'Follow the road |q A Beginning at Bleakrock/Find Darj
+|tip Manually skip to the next step.
+step
+goto 68.06,54.41
+|tip He runs up to you.
+talk Darj the Hunter
+turnin A Beginning at Bleakrock
+accept What Waits Beneath
+step
+goto 66.77,39.03
+click Brazier
+'Summon the Dragon Priest |q What Waits Beneath/Summon the Dragon Priest
+step
+goto 66.77,39.03
+talk Haldriin |q What Waits Beneath/Talk to Dragon Priest Haldriin
+step
+goto 78.48,32.81
+click Eagle Runestone
+'Collect the Eagle Runestone |q What Waits Beneath/Collect the Eagle Runestone
+step
+goto 76.40,37.31
+'Go up the stairs |q What Waits Beneath/Collect the Snake Runestone
+|tip Manually skip to the next step.
+step
+goto 69.49,40.31
+click Snake Runestone
+'Collect the Snake Runestone |q What Waits Beneath/Collect the Snake Runestone
+step
+goto 70.87,49.05
+'Cross the bridge |q What Waits Beneath/Collect the Whale Runestone
+|tip Manually skip to the next step.
+step
+goto 69.65,51.63
+click Whale Runestone
+'Collect the Whale Runestone |q What Waits Beneath/Collect the Whale Runestone
+step
+goto 71.59,47.34
+'Go up the stairs |q What Waits Beneath/Place the Eagle Runestone
+|tip Manually skip to the next step.
+step
+goto 77.45,43.87
+click Skyshard |achieve 398/1
+step
+goto 78.56,45.12
+click Eagle Runestone Column
+'Place the Eagle Runestone |q What Waits Beneath/Place the Eagle Runestone
+step
+goto 78.65,44.69
+click Whale Runestone Column
+'Place the Whale Runestone |q What Waits Beneath/Place the Whale Runestone
+step
+goto 78.93,44.22
+click Snake Runestone Column
+'Place the Snake Runestone |q What Waits Beneath/Place the Snake Runestone
+step
+goto 79.19,44.81
+click Skyshroud Barrow
+'Enter Skyshroud Barrow |q What Waits Beneath/Enter Skyshroud Barrow |future
+|tip Manually skip to the next step.
+step
+goto skyshroudbarrow_base 49.39,43.03
+talk Haldriin
+'Sanctify the Priest's Body |q What Waits Beneath/Sanctify the Priest's Body
+step
+goto 62.84,60.93
+click Scroll of Banishment
+'Search for Evidence |q What Waits Beneath/Search for Evidence
+step
+goto 49.29,96.29
+click Bleakrock Isle
+'Leave Skyshroud Barrow |q What Waits Beneath/Talk to Darj the Hunter
+|tip Manually skip to the next step.
+step
+goto bleakrock_base 78.58,44.74
+talk Darj the Hunter
+turnin What Waits Beneath
+accept The Missing of Bleakrock
+step
+goto 27.52,51.69
+talk Sergeant Seyne
+accept Hozzin's Folly
+step
+goto 26.81,52.18
+click Frostedge Brigand
+'Get a Disguise from a Corpse |q Hozzin's Folly/Get a Disguise from a Corpse
+step
+'Equip the Frostedge Bandit Disguise in your bags |q Hozzin's Folly/.*Investigate Hozzin's Folly.* |count 1
+|tip This will disguise you, but watch out for Frostedge Sentries, as they can see through your disguise.
+|tip Manually skip to the next step.
+step
+goto 26.26,45.73
+|tip Inside the building.
+click Contract Scroll
+'Inspect the Contract Scroll |q Hozzin's Folly/.*Investigate Hozzin's Folly.* |count 1
+step
+goto 30.49,42.53
+|tip Inside the building.
+click Cracked Rune Ward
+'Inspect the Cracked Rune Ward |q Hozzin's Folly/.*Investigate Hozzin's Folly.* |count 2
+step
+goto 33.93,44.78
+|tip Inside the building.
+click Dark Ministrations
+'Inspect the Dark Ministrations |q Hozzin's Folly/.*Investigate Hozzin's Folly.* |count 3
+step
+goto 25.46,39.66
+'Equip the _Frostedge Bandit Disguise_ in your inventory
+|tip You can get another disguise from killing enemies or from baskets around the area.
+click Mine Door
+'Tell him _"[Lie] The boss wants me to check on the relics we already found."_
+'Get Inside the Mine |q Hozzin's Folly/Get Inside the Mine
+step
+goto hozzinsfolley_base 32.92,80.98
+|tip Follow the main cave path.
+click Skyshard |achieve 398/3
+step
+goto 43.14,7.75
+'Find a Way into the Tomb |q Hozzin's Folly/Find a Way into the Tomb
+step
+goto 59.57,9.77
+'Follow the path around |q Hozzin's Folly/Bypass the Fire Traps
+|tip Manually skip to the next step.
+step
+goto 59.75,39.68
+'Bypass the Fire Traps |q Hozzin's Folly/Bypass the Fire Traps
+step
+goto 59.99,47.04
+click Portal to Oblivion
+'Use the Portal to Enter Oblivion |q Hozzin's Folly/Use the Portal to Enter Oblivion
+step
+'_In the cave:_
+|tip Follow the path into the open room and go down the stairs.
+click Unspeakable Sigil
+'Destroy the Unspeakable Sigil |q Hozzin's Folly/Destroy the Unspeakable Sigil
+step
+goto 73.37,71.77
+click Bleakrock Isle
+'Leave the Mine |q Hozzin's Folly/Leave the Mine |future
+|tip Manually skip to the next step.
+step
+goto bleakrock_base 25.99,39.69
+talk Sergeant Seyne
+turnin Hozzin's Folly
+step
+goto 33.79,43.04
+'Follow the path away from Hozzin's Folly |q Dangerous Webs/Save Tethis |future
+|tip Manually skip to the next step.
+step
+goto 49.08,22.77
+talk Rolunda
+accept The Frozen Man
+step
+goto 49.84,22.50
+click Skyshard |achieve 398/2
+step
+goto 51.01,18.45
+click Orkey's Hollow
+'Enter Orkey's Hollow |q The Frozen Man/Enter Orkey's Hollow |future
+|tip Manually skip to the next step.
+step
+goto orkeyshollow_base 36.25,82.06
+'Find Eiman |q The Frozen Man/Find Eiman
+step
+goto 83.10,69.93
+click Battered Chest
+|tip Use the platforms to reach the Battered Chest.
+'Search for Clues |q The Frozen Man/.*Find Clues to the Frozen Man's Identity.* |count 1
+step
+goto 62.15,41.40
+click My Journal
+'Search for Clues |q The Frozen Man/.*Find Clues to the Frozen Man's Identity.* |count 2
+step
+goto 35.37,43.18
+'Follow the path |q The Frozen Man/.*Find Clues to the Frozen Man's Identity.* |count 3
+|tip Manually skip to the next step.
+step
+goto 30.74,30.98
+'Follow the path |q The Frozen Man/.*Find Clues to the Frozen Man's Identity.* |count 3
+|tip Manually skip to the next step.
+step
+goto 16.78,56.91
+click Weathered Pack
+'Search for Clues |q The Frozen Man/.*Find Clues to the Frozen Man's Identity.* |count 3
+step
+goto 24.97,32.55
+'Follow the path back to the right |q The Frozen Man/Talk to the Frozen Man
+|tip Manually skip to the next step.
+step
+goto 45.53,46.96
+talk The Frozen Man |q The Frozen Man/Talk to the Frozen Man
+step
+goto 45.23,47.49
+click Frozen Man's Lair
+'Enter the Frozen Man's Lair |q The Frozen Man/Enter the Frozen Man's Lair
+step
+goto 48.59,58.49
+talk The Frozen Man
+'Find the Real Frozen Man |q The Frozen Man/Find the Real Frozen Man
+step
+goto 44.24,69.05
+talk The Frozen Man |q The Frozen Man/Talk to The Frozen Man
+step
+goto 44.24,69.05
+talk The Frozen Man
+'Convince the Frozen Man to Free Eiman |q The Frozen Man/Convince the Frozen Man to Free Eiman
+step
+goto 36.45,81.16
+|tip It is safe to drop down to the ledge here.
+talk Eiman
+'Free Eiman |q The Frozen Man/Free Eiman
+step
+goto 45.49,94.17
+click Bleakrock Isle
+'Exit Orkey's Hollow |q The Frozen Man/Talk to Rolunda
+|tip Manually skip to the next step.
+step
+goto bleakrock_base 49.87,20.80
+talk Rolunda
+turnin The Frozen Man
+step
+'Open your map to Bleakrock Isle:
+click Bleakrock Wayshrine
+'Travel to the Bleakrock Wayshrine
+|tip Manually skip to the next step.
+step
+goto bleakrockvillage_base 78.61,47.55
+|tip Inside the building.
+talk Captain Rana
+'Tell her _"Ive gathered all the missing villagers."_
+'Tell her _"Lets get going."_
+turnin The Missing of Bleakrock
+accept Sparking the Flame
+step
+goto 81.98,70.25
+'Follow the path up |q Sparking the Flame/Light the Signal Fire
+|tip Manually skip to the next step.
+step
+goto bleakrock_base 45.72,71.96
+click Signal Fire
+|tip It is at the top of the tower.
+'Light the Signal Fire |q Sparking the Flame/Light the Signal Fire
+step
+goto bleakrockvillage_base 74.86,64.94
+|tip Leave the tower.
+talk Tillrani Snow-Bourne |q Sparking the Flame/Talk to Tillrani Snow-Bourne
+step
+goto 68.66,39.29
+click Bucket of Water
+'Collect the Bucket of Water |q Sparking the Flame/Collect Bucket of Water
+step
+goto 57.03,28.18
+click Fire
+'Extinguish the House Fire |q Sparking the Flame/Extinguish the House Fire
+step
+goto 54.69,27.98
+talk Denskar Earth-Turner
+|tip He's inside the house.
+'Save Denskar |q Sparking the Flame/Save Denskar
+step
+goto 70.16,26.64
+click Fire
+'Extinguish the House Fire |q Sparking the Flame/Extinguish the House Fire
+step
+goto 70.76,24.31
+talk Aera Earth-Turner
+|tip She's inside the house.
+'Save Aera |q Sparking the Flame/Save Aera
+step
+goto 53.48,17.84
+talk Littrek Earth-Turner
+|tip He is inside the building.
+'Save Littrek |q Sparking the Flame/Save Littrek
+step
+goto 37.11,51.78
+talk Trynhild Earth-Turner
+'Save Trynhild |q Sparking the Flame/Save Trynhild
+step
+goto 61.89,62.92
+talk Captain Rana
+turnin Sparking the Flame
+accept Escape from Bleakrock
+step
+goto 62.50,68.65
+click Last Rest
+'Enter the Last Rest |q Escape from Bleakrock/Enter Last Rest |future
+|tip Manually skip to the next step.
+step
+goto lastresortbarrow_base 59.75,12.08
+talk Captain Rana |q Escape from Bleakrock/Talk to Captain Rana
+step
+goto 46.78,10.85
+click Switch
+'Use the Switch |q Escape from Bleakrock/Use the Switch
+step
+goto 46.78,11.18
+'Wait for the Refugees |q Escape from Bleakrock/Wait for Refugees
+|tip It takes a little while until they show up.
+step
+goto 47.56,11.99
+talk Captain Rana |q Escape from Bleakrock/Talk to Captain Rana
+step
+goto 47.75,40.14
+|tip Go through the Last Rest door and follow the main path.
+'Go down the stairs |q Escape from Bleakrock/Unlock the Door for Captain Rana
+|tip Manually skip to the next step.
+step
+goto 37.34,59.73
+click Door
+'Unlock the Door for Captain Rana |q Escape from Bleakrock/Unlock the Door for Captain Rana
+step
+goto 51.23,62.84
+talk Captain Rana |q Escape from Bleakrock/Talk to Captain Rana
+step
+goto 50.77,66.78
+click Lower Halls
+'Open the Door |q Escape from Bleakrock/Open the Door
+step
+goto 60.40,71.51
+click Switch
+'Use the Switch |q Escape from Bleakrock/Use the Switch
+step
+goto 50.83,75.85
+click Last Rest
+'Open the Door |q Escape from Bleakrock/Open the Door
+step
+goto 50.99,80.18
+talk Captain Rana |q Escape from Bleakrock/Talk to Captain Rana
+step
+goto 51.13,88.54
+'Wait for the Refugees |q Escape from Bleakrock/Wait for Refugees
+|tip It takes a little while until they show up.
+step
+goto 50.33,93.69
+click Bleakrock Isle
+'Leave Last Rest |q Escape from Bleakrock/Talk to Captain Rana
+|tip Manually skip to the next step.
+step
+goto bleakrock_base 46.85,88.75
+talk Captain Rana |q Escape from Bleakrock/Talk to Captain Rana
+|tip Manually skip to the next step.
+step
+goto balfoyen_base 72.87,57.75
+talk Captain Rana
+turnin Escape from Bleakrock |next Ebonheart Pact Leveling Guides\\Main Quests Only\\Ebenhart Pact\\Stonefalls
+]])
