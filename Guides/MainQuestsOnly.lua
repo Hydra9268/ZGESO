@@ -3298,7 +3298,7 @@ talk Captain Jimila
 'Tell her _"I'm ready to leave for Haven."_
 'Talk to Captain Jamila in Vulkhel Guard |q The Great Tree/Talk to Captain Jimila in Vulkhel Guard |next Aldmeri Dominion Leveling Guides\\Grahtwood |only Aldmeri Dominion
 ]])
-ZGV:RegisterGuide("Daggerfall Covenant Leveling Guides\\Main Quests Only\\Daggerfall Covenant\Glenumbra",[[
+ZGV:RegisterGuide("Daggerfall Covenant Leveling Guides\\Main Quests Only\\Daggerfall Covenant\\Glenumbra",[[
 loadingimage loadscreen_glenumbra_01.dds
 description Glenumbra, the westernmost region of High Rock, contains the city-states of Daggerfall and Camlorn, the great cemetery of Cath Bedraud, and the wild areas of Hag Fen, Glenumbra Moors, and the forests of Daenia.
 step
