@@ -4510,7 +4510,7 @@ step
 goto 47.90,28.94
 talk Sergeant Armoil Viranes |q Lineage of Tooth and Claw/Talk to Sergeant Armoil Viranes
 step
-goto 57.68,49.46
+goto glenumbra_base 57.68,49.46
 kill Werewolf
 'Use Lexi's Charm on wounded Werewolves
 |tip You can find Werewolves all around this area. Don't kill it, just wound it.  Hit the Werewolf a couple of times, then wait for your companion to capture it. Make sure to fight Werewolves in the designated quest circle on your map, or your companion won't try to capture them.  This will take 3 tries.
