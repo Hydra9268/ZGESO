@@ -4821,7 +4821,7 @@ click Glenumbra
 'Leave the Mines of Khuras
 |tip Manually skip to the next step.
 step
-goto 69.25,41.36
+goto glenumbra_base 69.25,41.36
 click Aedra and Daedra
 lorebook Aedra and Daedra/1/8/1
 step
