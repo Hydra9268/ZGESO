@@ -1,14 +1,16 @@
 local LIB_IDENTIFIER = "LibMapPing"
-local lib = _G.LibStub:NewLibrary(LIB_IDENTIFIER, 7)
-local EVENT_MANAGER = _G.EVENT_MANAGER
+local lib = LibStub:NewLibrary(LIB_IDENTIFIER, 9)
 
 if not lib then
-    return
+    return -- already loaded and no upgrade necessary
 end
 
 local function Log(message, ...)
-    _G.df("[%s] %s", LIB_IDENTIFIER, message:format(...))
+    df("[%s] %s", LIB_IDENTIFIER, message:format(...))
 end
+
+
+-- emulate how the game calculates when a player should get kicked for sending too many pings and prevent it
 
 local DEFAULT_MODIFIER = 2.15
 local COMBAT_MODIFIER = 39
@@ -18,28 +20,7 @@ local SAFETY_THRESHOLD = 10
 local TIME_FRAME = 3
 local RESOLUTION = 10
 
-local ZO_Object = _G.ZO_Object
 local RollingAverage = ZO_Object:Subclass()
-local GetMapRallyPoint = _G.GetMapRallyPoint
-
-local PING_EVENT_ADDED = _G.PING_EVENT_ADDED
-local PING_EVENT_REMOVED = _G.PING_EVENT_REMOVED
-local EVENT_MAP_PING = _G.EVENT_MAP_PING
-local PingMap = _G.PingMap
-local GetMapPing = _G.etMapPing
-local GetGameTimeMilliseconds = _G.GetGameTimeMilliseconds
-
-local PlaySound = _G.PlaySound
-local SOUNDS = _G.SOUNDS
-
-local GetCurrentMapZoneIndex = _G.GetCurrentMapZoneIndex
-local GetMapPlayerWaypoint = _G.GetMapPlayerWaypoint
-local RemovePlayerWaypoint = _G.RemovePlayerWaypoint
-local RemoveRallyPoint = _G.RemoveRallyPoint
-
-local EVENT_ADD_ON_LOADED = _G.EVENT_ADD_ON_LOADED
-
-local ZO_WorldMapPins = _G.ZO_WorldMapPins
 
 function RollingAverage:New(...)
     local obj = ZO_Object.New(self)
@@ -105,7 +86,7 @@ end
 function LeakyBucket:GetTokensLeft()
     local now = GetGameTimeMilliseconds()
     local average = self.average:GetAverage()
-    local modifier = _G.IsUnitInCombat("player") and COMBAT_MODIFIER or DEFAULT_MODIFIER
+    local modifier = IsUnitInCombat("player") and COMBAT_MODIFIER or DEFAULT_MODIFIER
     local burstRate = average * modifier
 
     local delta = (now - self.lastCheck) / 1000
@@ -128,42 +109,41 @@ function LeakyBucket:Take()
 end
 
 
-local MAP_PIN_TYPE_PLAYER_WAYPOINT = _G.MAP_PIN_TYPE_PLAYER_WAYPOINT
-local MAP_PIN_TYPE_PING = _G.MAP_PIN_TYPE_PING
-local MAP_PIN_TYPE_RALLY_POINT = _G.MAP_PIN_TYPE_RALLY_POINT
+local MAP_PIN_TYPE_PLAYER_WAYPOINT = MAP_PIN_TYPE_PLAYER_WAYPOINT
+local MAP_PIN_TYPE_PING = MAP_PIN_TYPE_PING
+local MAP_PIN_TYPE_RALLY_POINT = MAP_PIN_TYPE_RALLY_POINT
 
 local MAP_PIN_TAG_PLAYER_WAYPOINT = "waypoint"
 local MAP_PIN_TAG_RALLY_POINT = "rally"
 local PING_CATEGORY = "pings"
 
-local PING_EVENT_WATCHDOG_TIME = 400
+local PING_EVENT_WATCHDOG_TIME = 400 -- ms
 
 local MAP_PIN_TAG = {
     [MAP_PIN_TYPE_PLAYER_WAYPOINT] = MAP_PIN_TAG_PLAYER_WAYPOINT,
+    --[MAP_PIN_TYPE_PING] = group pings have individual tags for each member
     [MAP_PIN_TYPE_RALLY_POINT] = MAP_PIN_TAG_RALLY_POINT,
 }
 
 local originalPingMap, originalRemovePlayerWaypoint, originalRemoveRallyPoint
-local GET_MAP_PING_FUNCTION = {}
-local REMOVE_MAP_PING_FUNCTION = {}
+local GET_MAP_PING_FUNCTION = {} -- is initialized in Load()
+local REMOVE_MAP_PING_FUNCTION = {} -- also initialized in Load()
 
-
-lib.MAP_PING_NOT_SET = 0
-lib.MAP_PING_NOT_SET_PENDING = 1
-lib.MAP_PING_SET_PENDING = 2
-lib.MAP_PING_SET = 3
+--- MapPingState is an enumeration of the possible states of a map ping.
+lib.MAP_PING_NOT_SET = 0 --- There is no ping.
+lib.MAP_PING_NOT_SET_PENDING = 1 --- The ping has been removed, but EVENT_MAP_PING has not been processed.
+lib.MAP_PING_SET_PENDING = 2 --- A ping was added, but EVENT_MAP_PING has not been processed.
+lib.MAP_PING_SET = 3 --- There is a ping.
 
 lib.mutePing = lib.mutePing or {}
 lib.suppressPing = lib.suppressPing or {}
 lib.pingState = lib.pingState or {}
 lib.pendingPing = lib.pendingPing or {}
-lib.cm = lib.cm or _G.ZO_CallbackObject:New()
+lib.cm = lib.cm or ZO_CallbackObject:New()
 lib.bucket = LeakyBucket:New()
 local g_mapPinManager = lib.mapPinManager
 
 local function GetPingTagFromType(pingType)
-	local GetGroupUnitTagByIndex = _G.GetGroupUnitTagByIndex
-	local GetGroupIndexByUnitTag = _G.GetGroupIndexByUnitTag
     return MAP_PIN_TAG[pingType] or GetGroupUnitTagByIndex(GetGroupIndexByUnitTag("player")) or ""
 end
 
@@ -172,6 +152,8 @@ local function GetKey(pingType, pingTag)
     return string.format("%d_%s", pingType, pingTag)
 end
 
+-- TODO keep an eye on worldmap.lua for changes
+-- TODO test if SetPlayerWaypointByWorldLocation does anything different
 local function HandleMapPing(eventCode, pingEventType, pingType, pingTag, x, y, isPingOwner)
     local key = GetKey(pingType, pingTag)
     local data = lib.pendingPing[key]
@@ -205,8 +187,10 @@ local function HandleMapPingEventNotFired()
     for key, data in pairs(lib.pendingPing) do
         local pingEventType, pingType, x, y, zoneIndex = unpack(data)
         local pingTag = GetPingTagFromType(pingType)
+        -- The event is delayed and thus may not match the current map anymore.
         if GetCurrentMapZoneIndex() ~= zoneIndex then
-            lib:SuppressPing(pingType, pingTag)
+            -- The coords do not match the current map. Do not draw a pin.
+            lib:SuppressPing(pingType, pingTag) -- Will be set to zero afterwards, see below.
         end
         HandleMapPing(0, pingEventType, pingType, pingTag, x, y, true)
         lib.pendingPing[key] = nil
@@ -222,7 +206,7 @@ local function ResetEventWatchdog(key, ...)
 end
 
 local function CustomPingMap(pingType, mapType, x, y)
-    if(pingType == MAP_PIN_TYPE_PING and not _G.IsUnitGrouped("player")) then return end
+    if(pingType == MAP_PIN_TYPE_PING and not IsUnitGrouped("player")) then return end
     if(pingType == MAP_PIN_TYPE_PLAYER_WAYPOINT or lib.bucket:Take()) then
         local key = GetKey(pingType)
         lib.pingState[key] = lib.MAP_PING_SET_PENDING
@@ -260,7 +244,8 @@ local function CustomRemovePlayerWaypoint()
 end
 
 local function CustomRemoveMapPing()
-    PingMap(MAP_PIN_TYPE_PING, _G.MAP_TYPE_LOCATION_CENTERED, 0, 0)
+    -- there is no such function for group pings, but we can set it to 0, 0 which effectively hides it
+    PingMap(MAP_PIN_TYPE_PING, MAP_TYPE_LOCATION_CENTERED, 0, 0)
 end
 
 local function CustomRemoveRallyPoint()
@@ -270,16 +255,27 @@ local function CustomRemoveRallyPoint()
     originalRemoveRallyPoint()
 end
 
+--- Wrapper for PingMap.
+--- pingType is one of the three possible MapDisplayPinType for map pings (MAP_PIN_TYPE_PLAYER_WAYPOINT, MAP_PIN_TYPE_PING or MAP_PIN_TYPE_RALLY_POINT).
+--- mapType is usually MAP_TYPE_LOCATION_CENTERED.
+--- x and y are the normalized coordinates on the current map.
 function lib:SetMapPing(pingType, mapType, x, y)
     PingMap(pingType, mapType, x, y)
 end
 
+--- Wrapper for the different ping removal functions.
+--- For waypoints and rally points it calls their respective removal function
+--- For group pings it just sets the position to 0, 0 as there is no function to clear them
 function lib:RemoveMapPing(pingType)
     if(REMOVE_MAP_PING_FUNCTION[pingType]) then
         REMOVE_MAP_PING_FUNCTION[pingType]()
     end
 end
 
+--- Wrapper for the different get ping functions. Returns coordinates regardless of their suppression state.
+--- The game API functions return 0, 0 when the ping type is suppressed.
+--- pingType is the same as for SetMapPing.
+--- pingTag is optionally used if another group member's MAP_PIN_TYPE_PING should be returned (possible values: group1 .. group24).
 function lib:GetMapPing(pingType, pingTag)
     local x, y = 0, 0
     if(GET_MAP_PING_FUNCTION[pingType]) then
@@ -288,6 +284,7 @@ function lib:GetMapPing(pingType, pingTag)
     return x, y
 end
 
+--- Returns the MapPingState for the pingType and pingTag.
 function lib:GetMapPingState(pingType, pingTag)
     local key = GetKey(pingType, pingTag)
     local state = lib.pingState[key]
@@ -298,16 +295,18 @@ function lib:GetMapPingState(pingType, pingTag)
     end
     return lib.pingState[key]
 end
-
+--- Returns true if ping state is MAP_PING_SET_PENDING or MAP_PING_SET
 function lib:HasMapPing(pingType, pingTag)
     local state = lib:GetMapPingState(pingType, pingTag)
     return state == lib.MAP_PING_SET_PENDING or state == lib.MAP_PING_SET
 end
 
+--- Refreshes the pin icon for the pingType on the worldmap
+--- Returns true if the pin has been refreshed.
 function lib:RefreshMapPin(pingType, pingTag)
     if(not g_mapPinManager) then
         Log("PinManager not available. Using ZO_WorldMap_UpdateMap instead.")
-        _G.ZO_WorldMap_UpdateMap()
+        ZO_WorldMap_UpdateMap()
         return true
     end
 
@@ -322,16 +321,22 @@ function lib:RefreshMapPin(pingType, pingTag)
     return false
 end
 
+--- Returns true if the normalized position is within 0 and 1.
 function lib:IsPositionOnMap(x, y)
     return not (x < 0 or y < 0 or x > 1 or y > 1 or (x == 0 and y == 0))
 end
 
+--- Mutes the map ping of the specified type, so it does not make a sound when it is set.
+--- Do not forget to call UnmutePing later, otherwise the sound will be permanently muted!
 function lib:MutePing(pingType, pingTag)
     local key = GetKey(pingType, pingTag)
     local mute = lib.mutePing[key] or 0
     lib.mutePing[key] = mute + 1
 end
 
+--- Unmutes the map ping of the specified type.
+--- Do not call this more often than you called MutePing, or you might interfere with other addons.
+--- The sounds are played between the BeforePing* and AfterPing* callbacks are fired.
 function lib:UnmutePing(pingType, pingTag)
     local key = GetKey(pingType, pingTag)
     local mute = (lib.mutePing[key] or 0) - 1
@@ -339,17 +344,24 @@ function lib:UnmutePing(pingType, pingTag)
     lib.mutePing[key] = mute
 end
 
+--- Returns true if the map ping has been muted
 function lib:IsPingMuted(pingType, pingTag)
     local key = GetKey(pingType, pingTag)
     return lib.mutePing[key] and lib.mutePing[key] > 0
 end
 
+--- Suppresses the map ping of the specified type, so that it neither makes a sound nor shows up on the map.
+--- This also makes the API functions return 0, 0 for that ping.
+--- In order to access the actual coordinates lib:GetMapPing has to be used.
+--- Do not forget to call UnsuppressPing later, otherwise map pings won't work anymore for the user and other addons!
 function lib:SuppressPing(pingType, pingTag)
     local key = GetKey(pingType, pingTag)
     local suppress = lib.suppressPing[key] or 0
     lib.suppressPing[key] = suppress + 1
 end
 
+--- Unsuppresses the map ping so it shows up again
+--- Do not call this more often than you called SuppressPing, or you might interfere with other addons.
 function lib:UnsuppressPing(pingType, pingTag)
     local key = GetKey(pingType, pingTag)
     local suppress = (lib.suppressPing[key] or 0) - 1
@@ -357,6 +369,7 @@ function lib:UnsuppressPing(pingType, pingTag)
     lib.suppressPing[key] = suppress
 end
 
+--- Returns true if the map ping has been suppressed
 function lib:IsPingSuppressed(pingType, pingTag)
     local key = GetKey(pingType, pingTag)
     return lib.suppressPing[key] and lib.suppressPing[key] > 0
@@ -369,14 +382,18 @@ local function InterceptMapPinManager()
         g_mapPinManager = self
         lib.mapPinManager = self
     end
-    _G.ZO_WorldMap_RefreshCustomPinsOfType()
+    ZO_WorldMap_RefreshCustomPinsOfType()
     ZO_WorldMapPins.RefreshCustomPins = orgRefreshCustomPins
 end
 
+--- Register to callbacks from the library.
+--- Valid events are BeforePingAdded, AfterPingAdded, BeforePingRemoved and AfterPingRemoved.
+--- These are fired at certain points during handling EVENT_MAP_PING.
 function lib:RegisterCallback(eventName, callback)
     lib.cm:RegisterCallback(eventName, callback)
 end
 
+--- Unregister from callbacks. See lib:RegisterCallback.
 function lib:UnregisterCallback(eventName, callback)
     lib.cm:UnregisterCallback(eventName, callback)
 end
@@ -405,17 +422,20 @@ local function Load()
     GetMapPing = CustomGetMapPing
     GetMapRallyPoint = CustomGetMapRallyPoint
 
+    -- we want to use the altered versions in the library in order to set the correct ping state
+    -- so we need to also save the originals
     originalRemovePlayerWaypoint = RemovePlayerWaypoint
     originalRemoveRallyPoint = RemoveRallyPoint
     RemovePlayerWaypoint = CustomRemovePlayerWaypoint
     RemoveRallyPoint = CustomRemoveRallyPoint
     REMOVE_MAP_PING_FUNCTION[MAP_PIN_TYPE_PLAYER_WAYPOINT] = CustomRemovePlayerWaypoint
-    REMOVE_MAP_PING_FUNCTION[MAP_PIN_TYPE_PING] = CustomRemoveMapPing
+    REMOVE_MAP_PING_FUNCTION[MAP_PIN_TYPE_PING] = CustomRemoveMapPing -- has no real api equivalent
     REMOVE_MAP_PING_FUNCTION[MAP_PIN_TYPE_RALLY_POINT] = CustomRemoveRallyPoint
 
     EVENT_MANAGER:RegisterForEvent(LIB_IDENTIFIER, EVENT_ADD_ON_LOADED, function(_, addonName)
         if(addonName == "ZO_Ingame") then
             EVENT_MANAGER:UnregisterForEvent(LIB_IDENTIFIER, EVENT_ADD_ON_LOADED)
+            -- don't let worldmap do anything as we manage it instead
             EVENT_MANAGER:UnregisterForEvent("ZO_WorldMap", EVENT_MAP_PING)
             EVENT_MANAGER:RegisterForEvent(LIB_IDENTIFIER, EVENT_MAP_PING, HandleMapPing)
         end
@@ -426,3 +446,5 @@ end
 
 if(lib.Unload) then lib.Unload() end
 Load()
+
+LibMapPing = lib
