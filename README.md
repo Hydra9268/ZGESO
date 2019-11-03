@@ -19,8 +19,8 @@ Install through the excellent add-on manager <a href="https://minion.mmoui.com/"
 
 ### Recent Updates
 
-* 8/12 Update: API version now supports Scalebreaker
 * 11/2 Update: API version now supports Dragonhold
+* 8/12 Update: API version now supports Scalebreaker
 
 ### Coming Soon
 
