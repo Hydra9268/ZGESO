@@ -5508,7 +5508,7 @@ goto koeglinvillage_base 45.77,29.18
 talk Captain Jerick
 turnin A Dangerous Dream |next Daggerfall Covenant Leveling Guides\\Main Quests Only\\Daggerfall Covenant\Stormhaven
 ]])
-ZGV:RegisterGuide("Ebonheart Pact Leveling Guides\\MainQuestsOnly\\Ebonheart Pact\\Bleakrock Isle",[[
+ZGV:RegisterGuide("Ebonheart Pact Leveling Guides\\Main Quests Only\\Ebonheart Pact\\Bleakrock Isle",[[
 loadingimage loadscreen_bleakrock_01.dds
 description Bleakrock is an island off the northeast coast of Skyrim between Windhelm and Solstheim. The hardy Nords who inhabit Bleakrock are mostly farmers and fisherfolk. A small contingent of Pact soldiers keeps a sharp lookout for pirates and raiders.
 step
@@ -5537,7 +5537,7 @@ goto 86.39,37.89
 'Follow the road |q A Beginning at Bleakrock/Find Darj
 |tip Manually skip to the next step.
 step
-goto 68.06,54.41
+goto bleakrock_base 68.06,54.41
 |tip He runs up to you.
 talk Darj the Hunter
 turnin A Beginning at Bleakrock
@@ -5762,8 +5762,8 @@ step
 goto bleakrockvillage_base 78.61,47.55
 |tip Inside the building.
 talk Captain Rana
-'Tell her _"Ive gathered all the missing villagers."_
-'Tell her _"Lets get going."_
+'Tell her _"Let's leave now."_
+'Tell her _"Yes, I'm sure. It's time to leave."_
 turnin The Missing of Bleakrock
 accept Sparking the Flame
 step
