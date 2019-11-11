@@ -5879,3 +5879,1903 @@ goto balfoyen_base 72.87,57.75
 talk Captain Rana
 turnin Escape from Bleakrock |next Ebonheart Pact Leveling Guides\\Main Quests Only\\Ebonheart Pact\\Stonefalls
 ]])
+
+ZGV:RegisterGuide("Daggerfall Covenant Leveling Guides\\Main Quests Only\\Daggerfall Covenant\Stormhaven",[[
+loadingimage loadscreen_stormhaven_01.dds
+description I spent some time studying and painting in the Stormhaven countryside; a charming realm of rolling hills, lush flood plains, rocky outcrops, and copses of ancient woodland. The place would be idyllic were it not for the perpetual unsettled gloom, occasional crackles of thunder, and bolts of Kynareth’s rage that arc across the skies.
+step
+goto koeglinvillage_base 52.40,30.33
+|tip Outside behind the building.
+click Founding of the Spirit Wardens
+lorebook Founding of the Spirit Wardens/1/2/2
+step
+goto 38.01,32.77
+talk Dame Dabienne
+accept False Accusations
+step
+goto 30.39,51.33
+talk Constable Pascal |q False Accusations/Talk to the Constable
+step
+goto 48.47,58.02
+|tip Inside the building. You will have to walk through the building, up and down stairs to find him.
+talk Messenger Cordier
+'Find the Messenger |q False Accusations/Find the Messenger
+step
+goto 30.62,51.83
+talk Constable Pascal |q False Accusations/Talk to Constable Pascal
+step
+goto 39.61,71.87
+|tip He paces on the ship deck.
+talk Captain Currod |q False Accusations/Talk to the Ship Captain
+step
+goto 40.56,61.92
+|tip Inside the ship.
+click The Tava's Bounty Ledger
+'Find the Tava's Bounty Ledger |q False Accusations/Find The Tava's Bounty Ledger
+step
+goto 30.28,51.95
+|tip Leave the ship.
+talk Constable Pascal |q False Accusations/Talk to Constable Pascal
+step
+goto 27.49,29.65
+|tip Inside the building.
+talk Sabyssa the Blacksmith |q False Accusations/Talk to Sabyssa the Blacksmith
+step
+goto 29.42,38.12
+|tip Upstairs inside the building. You'll have to pick the lock to get in.
+click Constable Pascal's Bed
+'Search the Constable's House |q False Accusations/Search the Constable's House
+step
+goto 27.49,29.65
+|tip Inside the building.
+talk Sabyssa the Blacksmith |q False Accusations/Talk to Sabyssa the Blacksmith
+step
+goto 36.09,34.25
+talk Dame Dabienne
+turnin False Accusations
+accept To Alcaire Castle
+step
+goto 72.50,42.65
+click Koeglin Village Wayshrine
+'Travel to the Harborage in Glenumbra |q Chasing Shadows/Go to the Harborage
+|tip Manually skip to the next step.
+|only not VET
+step
+goto glenumbra_base 35.49,79.27
+click The Harborage
+'Go to the Harborage |q Chasing Shadows/Go to the Harborage |future
+|tip Manually skip to the next step.
+|only not VET
+step
+goto the_daggerfall_harborage 66.48,65.15
+talk The Prophet |q Chasing Shadows/Talk to the Prophet
+|only not VET
+step
+goto 25.65,26.61
+click Glenumbra
+'Leave the Harborage |q Chasing Shadows/Investigate Daggerfall
+|tip Manually skip to the next step.
+|only not VET
+step
+goto daggerfall_base 68.79,64.35
+'Follow the path |q Chasing Shadows/Investigate Daggerfall
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 60.08,40.01
+talk Maxelle
+|tip Persuade her.
+talk Maxelle |q Chasing Shadows/Investigate Daggerfall
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 50.90,28.16
+|tip Inside the building.
+talk Husniya
+|tip Intimidate her.
+talk Husniya |q Chasing Shadows/Investigate Daggerfall
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 65.79,65.04
+click Vachel's House
+'Investigate Daggerfall |q Chasing Shadows/Investigate Daggerfall
+|only not VET
+step
+goto 65.11,65.99
+click Abandoned Cellar
+'Enter the Cellar |q Chasing Shadows/Enter the Cellar |future
+|tip Manually skip to the next step.
+|only not VET
+step
+goto thewormsretreat_base 51.97,87.23
+click Orb of Discourse
+'Search the Underground Chamber |q Chasing Shadows/Search the Underground Chamber
+|only not VET
+step
+goto 51.97,87.23
+talk Abnur Tharn
+|tip Persuade him.
+talk Abnur Tharn |q Chasing Shadows/Talk to Abnur Tharn
+|only not VET
+step
+goto 60.57,64.23
+'Follow the path |q Chasing Shadows/Return to the Harborage
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 27.17,17.40
+click Vachel's House
+'Leave the Cellar |q Chasing Shadows/Return to the Harborage
+|tip Manually skip to the next step.
+|only not VET
+step
+goto daggerfall_base 68.79,64.35
+'Follow the path |q Chasing Shadows/Return to the Harborage
+|tip Manually skip to the next step.
+|only not VET
+step
+goto glenumbra_base 35.49,79.27
+click The Harborage
+'Return to the Harborage |q Chasing Shadows/Return to the Harborage |future
+|tip Manually skip to the next step.
+|only not VET
+step
+goto the_daggerfall_harborage 66.92,65.18
+talk The Prophet |q Chasing Shadows/Talk to the Prophet
+|only not VET
+step
+goto 63.93,65.98
+talk Lyris Titanborn
+turnin Chasing Shadows
+|only not VET
+step
+'Open your map to Stormhaven:
+click Koeglin Village Wayshrine
+'Travel to the Koeglin Village Wayshrine
+|tip Manually skip to the next step.
+|only not VET
+step
+goto stormhaven_base 25.64,36.29
+click The Dreamstride
+lorebook The Dreamstride/1/8/3
+step
+goto 20.72,29.77
+click Wayrest, Jewel of the Bay
+lorebook Wayrest, Jewel of the Bay/1/2/10
+step
+goto 20.15,28.96
+talk Sentry Rechiche
+accept Army at the Gates
+step
+goto alcairecastle_base 51.73,67.51
+talk Dame Falhut |q Army at the Gates/Talk to Dame Falhut
+step
+goto 47.20,48.76
+talk Messenger Cordier
+turnin To Alcaire Castle
+step
+goto 40.38,38.81
+|tip Inside the building.
+talk Sir Hughes |q Army at the Gates/Talk to Sir Hughes in Alcaire Castle
+step
+goto 45.67,37.99
+|tip Downstairs.
+talk Sir Gregory
+|tip Intimidate him.
+'Find a Way Into the Library |q Army at the Gates/Find a way into the Library
+step
+goto 45.78,38.63
+click Alcaire Castle Library
+'Enter the Alcaire Castle Library  |q Army at the Gates/Search for Clues to Identify "Almandine"
+|tip Manually skip to the next step.
+step
+goto 39.45,40.03
+click The Royal Lineage of Alik'r
+'Search for Clues to Identify "Almandine" |q Army at the Gates/Search for Clues to Identify "Almandine"
+step
+goto 45.11,39.11
+click Alcaire Keep
+'Leave the Alcaire Castle Library |q Army at the Gates/Inform Sir Hughes about the Duchess
+|tip Manually skip to the next step.
+step
+goto 47.52,36.45
+talk Sir Hughes
+turnin Army at the Gates
+accept Two Sides to Every Coin
+step
+goto 40.07,43.70
+|tip All the way upstairs.
+talk Duchess Lakana |q Two Sides to Every Coin/Talk to Duchess Lakana in Her Room
+step
+goto 74.61,62.56
+|tip All around this area.
+talk Alik'r soldiers
+|tip Fight them.
+'Challenge 5 Alik'r Soldiers |q Two Sides to Every Coin/.*Challenge Alik'r Soldiers.* |future
+|tip Manually skip to the next step.
+step
+goto 83.25,64.97
+|tip Inside the building.
+talk General Thoda |q Two Sides to Every Coin/Speak to General Thoda
+step
+goto 66.75,50.10
+'Follow the path |q Two Sides to Every Coin/Talk to Duchess Lakana
+|tip Manually skip to the next step.
+step
+goto 40.16,43.60
+|tip All the way upstairs inside the building.
+talk Duchess Lakana
+turnin Two Sides to Every Coin
+accept Life of the Duchess
+step
+goto 38.47,45.19
+|tip Downstairs.
+talk Sir Hughes |q Life of the Duchess/Talk to Sir Hughes
+step
+goto 26.22,51.08
+|tip Inside the building.
+kill Dame Falhut
+'Confront Dame Falhut |q Life of the Duchess/Confront Dame Falhut
+step
+goto 33.74,52.20
+talk Sir Hughes
+turnin Life of the Duchess
+accept The Safety of the Kingdom
+step
+goto 32.34,38.91
+'Follow the path |q The Safety of the Kingdom/Meet Sir Hughes at His House
+|tip Manually skip to the next step.
+step
+goto 44.64,28.17
+|tip Inside the building.
+talk Envoy Darima
+'Meet Sir Hughes at His House |q The Safety of the Kingdom/Meet Sir Hughes at His House
+step
+goto 45.82,28.69
+click Sir Hughes' Journal
+'Read Sir Hughes' Journal |q The Safety of the Kingdom/Find Duchess Lakana
+|tip Manually skip to the next step.
+step
+goto 40.22,43.55
+|tip All the way upstairs inside the building.
+talk Duchess Lakana
+'Find Duchess Lakana |q The Safety of the Kingdom/Find Duchess Lakana
+step
+goto 40.22,43.54
+talk Duke Nathaniel
+turnin The Safety of the Kingdom
+accept Tracking Sir Hughes
+step
+goto 60.13,35.22
+click Once
+lorebook Once/1/2/1
+step
+goto 66.96,50.13
+'Follow the path |q Legacy of the Three/Find the Windridge Caves |future
+|tip Manually skip to the next step.
+step
+goto stormhaven_base 24.34,24.02
+wayshrine Alcaire Castle
+step
+goto 21.98,21.05
+'Run up the stairs |achieve 515/2
+step
+goto 22.01,20.19
+click Skyshard |achieve 515/2
+step
+goto stormhaven_base 26.21,29.93
+click The Bretons: Mongrels or Paragons?
+lorebook The Bretons: Mongrels or Paragons?/1/2/4
+step
+goto 34.94,34.87
+click Sacred Rites of the Stonechewers
+lorebook Sacred Rites of the Stonechewers/1/2/5
+step
+goto 33.62,39.08
+wayshrine Firebrand Keep
+step
+goto 30.79,32.32
+|tip Inside the tower.
+click Portdun Watch
+'Enter Portdun Watch |achieve 515/15
+|tip Manually skip to the next step.
+step
+goto portdunwatch_base 23.73,15.92
+'Follow the path |achieve 515/15
+|tip Manually skip to the next step.
+step
+goto 24.01,78.03
+'Follow the path |achieve 515/15
+|tip Manually skip to the next step.
+step
+goto 60.47,45.08
+|tip Kill Ariane first, she heals.
+kill Ariane
+kill Birakh-do
+'Explore Portdun Watch |achieve 221/1
+step
+goto 70.99,44.47
+click Skyshard |achieve 515/15
+step
+goto 40.42,30.70
+click Portdun Watch
+'Go through the gate
+|tip Manually skip to the next step.
+step
+goto 37.63,15.85
+click Stormhaven
+'Leave Portdun Watch
+|tip Manually skip to the next step.
+step
+goto 29.10,31.16
+talk Dame Quirin
+turnin Tracking Sir Hughes
+step
+goto 29.67,30.43
+talk Sir Edmund
+accept The Flame of Dissent
+step
+goto 31.21,29.97
+|tip All around this area.
+talk Knight of the Flame
+|tip Some knights may attack you.
+'Convince 4 Knights to Join the Cause |q The Flame of Dissent/.*Convince Knights to Join the Cause.*
+step
+goto 31.23,29.99
+'Follow the path |q The Flame of Dissent/Talk to Sir Edmund
+|tip Manually skip to the next step.
+step
+goto 29.62,30.41
+talk Sir Edmund
+turnin The Flame of Dissent
+accept Retaking Firebrand Keep
+step
+goto 33.65,30.14
+|tip Inside the building.
+click Great Hall Battlements
+'Enter the Great Hall Battlements |q Retaking Firebrand Keep/Blow the Great Hall Siege Horn
+|tip Manually skip to the next step.
+step
+goto 33.38,29.71
+click Great Hall Siege Horn
+'Blow the Great Hall Siege Horn |q Retaking Firebrand Keep/Blow the Great Hall Siege Horn
+step
+goto 33.49,29.85
+click Great Hall
+'Leave the Great Hall Battlements |q Retaking Firebrand Keep/Talk to Sir Edmund
+|tip Manually skip to the next step.
+step
+goto 32.76,29.86
+talk Sir Edmund |q Retaking Firebrand Keep/Talk to Sir Edmund
+step
+goto 37.69,34.96
+|tip Inside the building.
+kill Sir Croix |q Retaking Firebrand Keep/Kill Sir Croix
+|tip Move away from him quickly when he starts to cast his spell, or you will be stunned.
+step
+goto 37.83,33.57
+click Garrison Tower
+'Enter the Garrison Tower |q Retaking Firebrand Keep/Blow Garrison Siege Horn
+|tip Manually skip to the next step.
+step
+goto 37.64,33.43
+click Garrison Siege Horn
+'Blow the Garrison Siege Horn |q Retaking Firebrand Keep/Blow Garrison Siege Horn
+step
+goto 37.62,33.32
+click Garrison
+'Leave the Garrison Tower |q Retaking Firebrand Keep/Talk to Sir Edmund
+|tip Manually skip to the next step.
+step
+goto 32.61,30.03
+talk Sir Edmund
+turnin Retaking Firebrand Keep
+accept Sir Hughes' Fate
+step
+goto 33.77,29.90
+|tip Inside the building.
+click Great Hall Infirmary
+'Enter the Great Hall Infirmary |q Sir Hughes' Fate/Visit the Infirmary
+|tip Manually skip to the next step.
+step
+goto 33.07,29.56
+'Visit the Infirmary |q Sir Hughes' Fate/Visit the Infirmary |future
+|tip Manually skip to the next step.
+step
+goto 33.06,29.59
+|tip She walks around.
+talk Odette Jerick |q Sir Hughes' Fate/Talk to Odette
+step
+goto 32.98,29.75
+talk Sir Hughes
+'Examine Sir Hughes |q Sir Hughes' Fate/Examine Sir Hughes |future
+|tip Manually skip to the next step.
+step
+'_Go up the stairs on the right:_
+'Watch the dialogue
+talk Sir Hughes
+'Explore the Castle's Upper Floor |q Sir Hughes' Fate/Explore the Castle's Upper Floor
+step
+'_Jump down from the balcony:_
+click Sword of Sir Hughes
+kill Omen of Fear |q Sir Hughes' Fate/Kill the Omen of Fear
+step
+'_Nearby:_
+talk Sir Hughes |q Sir Hughes' Fate/Talk to Sir Hughes
+step
+'_Go to the entry door:_
+click Infirmary
+'Leave the Dream |q Sir Hughes' Fate/Talk to Duke Nathaniel
+|tip Manually skip to the next step.
+step
+goto stormhaven_base 33.24,29.81
+talk Duke Nathaniel
+'Tell him _"Let him live. He wasn't in his right mind."_
+talk Duke Nathaniel |q Sir Hughes' Fate/Talk to Duke Nathaniel
+step
+goto 33.23,29.81
+'Watch the dialogue
+talk Duke Nathaniel
+turnin Sir Hughes' Fate
+accept Unanswered Questions
+step
+'Open your map to Stormhaven:
+click Koeglin Village Wayshrine
+'Travel to the Koeglin Village Wayshrine
+|tip Manually skip to the next step.
+step
+goto 22.25,46.63
+click Skyshard |achieve 515/3
+step
+|tip inside the Ship
+goto 13.54,57.96
+click The Knightly Orders of High Rock
+lorebook The Knightly Orders of High Rock/1/2/3
+step
+goto 23.68,49.43
+click Koeglin Mine
+'Enter Koeglin Mine |achieve 222
+|tip Manually skip to the next step.
+step
+goto koeglinmine_base 53.57,68.23
+'Follow the path |achieve 222
+|tip Manually skip to the next step.
+step
+goto 78.88,41.91
+'Follow the path |achieve 222
+|tip Manually skip to the next step.
+step
+goto 48.63,17.54
+'Follow the path |achieve 222
+|tip Manually skip to the next step.
+step
+goto 39.71,12.57
+click Skyshard |achieve 515/12
+step
+goto 30.65,16.09
+'Follow the path |achieve 222
+|tip Manually skip to the next step.
+step
+goto 45.15,34.00
+kill Girara
+'Explore Koeglin Mine |achieve 222
+step
+goto 48.73,44.17
+click Koeglin Mine
+'Go through the door
+|tip Manually skip to the next step.
+step
+goto 47.08,66.78
+'Follow the path
+|tip Manually skip to the next step.
+step
+goto 22.47,90.17
+click Stormhaven
+'Leave the Koeglin Mine
+|tip Manually skip to the next step.
+step
+goto stormhaven_base 25.05,48.89
+click Our Calling, Our Pledge
+lorebook Our Calling, Our Pledge/1/2/7
+step
+goto 29.57,48.18
+wayshrine Bonesnap Ruins
+step
+goto 27.28,43.42
+click Orcs: The Vermin Among Us
+lorebook Orcs: The Vermin Among Us/1/2/6
+step
+'Open your map to Stormhaven:
+click Koeglin Village Wayshrine
+'Travel to the Firebrand Keep Wayshrine in Stormhaven
+|tip Manually skip to the next step.
+step
+goto stormhaven_base 41.72,41.38
+click Ancient Scrolls of the Dwemer VI
+lorebook Ancient Scrolls of the Dwemer VI/1/12/5
+step
+goto 43.02,37.11
+talk Sister Safia
+accept Fire in the Fields
+step
+goto 44.05,37.99
+click Well
+'Fill the Bucket |q Fire in the Fields/Fill the Bucket
+step
+goto stormhaven_base 44.51,36.54
+click Flaming Debris
+'Put Out the Fire |q Fire in the Fields/.*Put Out Fires.* |count 1
+step
+goto 44.25,38.51
+click Flaming Debris
+'Put Out the Fire |q Fire in the Fields/.*Put Out Fires.* |count 2
+step
+goto 45.72,39.10
+click Flaming Debris
+'Put Out the Fire |q Fire in the Fields/.*Put Out Fires.* |count 3
+step
+goto 46.76,39.00
+'Cross the bridge |q Fire in the Fields/.*Put Out Fires.* |count 4
+|tip Manually skip to the next step.
+step
+goto 47.58,37.70
+click Flaming Debris
+'Put Out the Fire |q Fire in the Fields/.*Put Out Fires.* |count 4
+step
+goto 49.49,40.21
+click Before the Ages of Man: Dawn Era
+lorebook Before the Ages of Man: Dawn Era/1/16/1
+step
+goto 49.27,41.05
+wayshrine Pariah Abbey
+step
+goto 43.13,37.12
+talk Sister Safia
+turnin Fire in the Fields
+accept Azura's Guardian
+step
+goto 42.27,35.12
+click Ancient Scrolls of the Dwemer X
+lorebook Ancient Scrolls of the Dwemer X/1/12/6
+step
+goto 44.46,35.68
+'Run up here |q Azura's Guardian/Search for Brother Hakam
+|tip Manually skip to the next step.
+step
+goto 45.18,35.70
+'Search for Brother Hakam |q Azura's Guardian/Search for Brother Hakam
+step
+goto 45.22,35.71
+click Brother Hakam
+'Search Brother Hakam |q Azura's Guardian/Search Brother Hakam
+step
+goto 45.49,35.47
+'Enter the cave |q Azura's Guardian/Find Abbot Durak
+|tip Manually skip to the next step.
+step
+goto 43.23,32.85
+talk Master Altien
+'Find Abbot Durak |q Azura's Guardian/Find Abbot Durak
+step
+goto 45.49,35.47
+'Leave the cave |q Azura's Guardian/Use Scroll of Summoning Near Large Fire
+|tip Manually skip to the next step.
+step
+goto 45.09,37.33
+'Press _E_ to:
+'Watch the rain put out the fire
+'Use the Scroll of Summoning Near the Large Fire |q Azura's Guardian/Use Scroll of Summoning Near Large Fire
+step
+goto 44.78,39.44
+talk Master Altien
+turnin Azura's Guardian
+accept A Prison of Sleep
+step
+goto 44.60,39.64
+click Pariah Abbey
+'Enter Pariah Abbey |q Unanswered Questions/Talk to Muran at Pariah Abbey
+|tip Manually skip to the next step.
+step
+goto 44.45,41.74
+|tip Inside the building.
+talk Brother Muran
+turnin Unanswered Questions
+step
+goto 45.07,41.75
+talk Brother Frizwyr |q A Prison of Sleep/Talk to Frizwyr
+step
+goto 45.07,41.75
+'Press _E_ to:
+'Drink the Dreamstride Potion |q A Prison of Sleep/Drink Dreamstride Potion
+step
+goto 44.61,41.04
+talk Abbot Durak |q A Prison of Sleep/Talk to Durak
+step
+goto 44.58,40.22
+kill Nightmare enemies
+'Get Durak's Key |q A Prison of Sleep/Get Durak's Key
+step
+goto 44.65,40.99
+|tip Inside the building.
+talk Abbot Durak |q A Prison of Sleep/Talk to Durak
+step
+goto 44.65,40.99
+'Wake from the Dream |q A Prison of Sleep/Wake from the Dream
+step
+goto 45.08,41.73
+talk Abbot Durak
+turnin A Prison of Sleep
+accept Pursuing the Shard
+step
+goto 46.24,40.61
+click Pariah Abbey Grounds
+'Leave Pariah Abbey
+|tip Manually skip to the next step.
+step
+goto 55.30,37.64
+click Ebony Blade History
+lorebook Ebony Blade History/1/16/3
+step
+goto 53.29,45.98
+click Before the Ages of Man: Merethic Era
+lorebook Before the Ages of Man: Merethic Era/1/16/2
+step
+goto stormhaven_base 45.76,42.99
+click Pariah Catacombs
+'Enter the Pariah Catacombs |achieve 223
+|tip Manually skip to the next step.
+step
+goto pariahcatacombs_base 31.81,48.97
+'Follow the path |achieve 223
+|tip Manually skip to the next step.
+step
+goto 34.48,71.68
+'Follow the path |achieve 223
+|tip Manually skip to the next step.
+step
+goto 88.80,68.49
+'Follow the path |achieve 223
+|tip Manually skip to the next step.
+step
+goto 84.37,45.51
+'Follow the path |achieve 223
+|tip Manually skip to the next step.
+step
+goto 71.95,44.22
+'Follow the path |achieve 223
+|tip Manually skip to the next step.
+step
+goto 75.22,31.66
+click Skyshard |achieve 515/14
+step
+goto 52.36,19.52
+'Follow the path |achieve 223
+|tip Manually skip to the next step.
+step
+goto 31.49,22.51
+kill Uncle Bones
+'Explore the Pariah Catacombs |achieve 223
+step
+goto 30.18,35.25
+click Pariah Catacombs
+'Go through the doorway
+|tip Manually skip to the next step.
+step
+goto 7.42,43.24
+click Stormhaven
+'Leave the Pariah Catacombs
+|tip Manually skip to the next step.
+step
+goto 48.55,51.11
+click Ancient Scrolls of the Dwemer V
+lorebook Ancient Scrolls of the Dwemer V/1/12/4
+step
+goto stormhaven_base 46.05,55.31
+|tip As you walk, click Trapped Dreughsiders to Find Arcady Charnis.
+click Arcana Restored
+lorebook Arcana Restored/1/15/1
+step
+goto 39.62,59.34
+click Tower of Adamant
+lorebook Tower of Adamant/1/2/9
+step
+goto 38.43,60.02
+wayshrine Soulshriven
+step
+goto 39.42,64.03
+|tip At the top of the tower.
+click Skyshard |achieve 515/6
+step
+goto 36.78,61.74
+'Follow the path |achieve 224/1
+|tip Manually skip to the next step.
+step
+goto 38.35,65.60
+'Follow the path |achieve 224/1
+|tip Manually skip to the next step.
+step
+goto 38.88,65.33
+click Farangel's Delve
+'Enter Farangel's Delve |achieve 224/1
+|tip Manually skip to the next step.
+step
+goto farangelsdelve_base 68.82,81.89
+'Follow the path |achieve 224/1
+|tip Manually skip to the next step.
+step
+goto 75.35,8.69
+click Skyshard |achieve 515/11
+step
+goto 61.11,22.36
+'Follow the path |achieve 224/1
+|tip Manually skip to the next step.
+step
+goto 26.09,49.10
+kill Dimitri
+'Explore Farangel's Delve |achieve 224/1
+step
+'Open your map to Stormhaven:
+click Wayrest Wayshrine
+'Travel to the Wayrest Wayshrine
+|tip Manually skip to the next step.
+step
+goto 40.53,16.19
+'The Prophet appears:
+accept Castle of the Worm
+|only not VET
+step
+goto 37.41,32.34
+|tip Inside the Fighters Guild.
+talk Guildmaster Sees-All-Colors |q The Dangerous Past/Talk to Guildmaster Sees-All-Colors
+|only not VET
+step
+goto 37.16,32.38
+|tip She will open a portal.
+'Wait for Guildmaster Sees-All-Colors |q The Dangerous Past/Wait for Guildmaster Sees-All-Colors
+|only not VET
+step
+goto 36.70,32.70
+click Portal to Mzeneldt
+'Enter the Portal |q The Dangerous Past/Enter the Portal |future
+|tip Manually skip to the next step.
+|only not VET
+step
+'Next to you:
+talk Guildmaster Sees-All-Colors |q The Dangerous Past/Explore Mzeneldt
+|tip Manually skip to the next step.
+|only not VET
+step
+goto mzendeldt_base 18.24,50.22
+'Follow the path |q The Dangerous Past/Explore Mzeneldt
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 18.15,26.67
+|tip Go through the door.
+'Watch the dialogue
+click Curano's Journal
+'Read the Discarded Journal |q The Dangerous Past/Explore Mzeneldt
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 28.06,20.19
+click Heavy Door
+'Go through the door |q The Dangerous Past/Explore Mzeneldt
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 42.56,20.20
+click Heavy Door
+'Go through the door |q The Dangerous Past/Explore Mzeneldt
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 63.82,20.15
+click Heavy Door
+'Go through the door |q The Dangerous Past/Explore Mzeneldt
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 83.98,43.62
+|tip Follow the path.
+click Heavy Door
+'Explore Mzeneldt |q The Dangerous Past/Explore Mzeneldt
+|only not VET
+step
+goto 83.75,47.41
+'Watch the dialogue
+'Witness the Scene |q The Dangerous Past/Witness the Scene
+|only not VET
+step
+goto 83.49,47.77
+click Valasha's Journal
+'Examine Valasha's Journal |q The Dangerous Past/Examine Valasha's Journal
+|only not VET
+step
+goto 83.24,47.02
+talk Guildmaster Sees-All-Colors |q The Dangerous Past/Talk to Guildmaster Sees-All-Colors
+|only not VET
+step
+goto 83.86,64.71
+click Heavy Door
+'Go through the door |q The Dangerous Past/Search Mzeneldt
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 62.30,71.94
+click Heavy Door
+'Search Mzeneldt |q The Dangerous Past/Search Mzeneldt
+|only not VET
+step
+goto 51.80,71.30
+click Endarre's Log
+'Read Endarre's Log |q The Dangerous Past/Find a Way Through the Doors
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 44.87,65.55
+kill Dwarven Spiders
+'Collect 2 Red Crystals |q The Dangerous Past/Find a Way Through the Doors
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 44.87,65.55
+click Crystal Stand
+'Place the Crystal |q The Dangerous Past/Find a Way Through the Doors
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 44.74,71.65
+click Crystal Stand
+'Find a Way Through the Doors |q The Dangerous Past/Find a Way Through the Doors
+|only not VET
+step
+goto 37.05,70.47
+'Follow the path |q The Dangerous Past/Retrieve the Crystal and the Tome
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 37.06,62.85
+click Heavy Door
+'Go through the door |q The Dangerous Past/Retrieve the Crystal and the Tome
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 37.34,48.42
+click Dwarven Chest
+'Retrieve the Tome |q The Dangerous Past/Retrieve the Crystal and the Tome
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 37.25,45.41
+kill Dwarven Centurion
+'Retrieve the Crystal |q The Dangerous Past/Retrieve the Crystal and the Tome
+|only not VET
+step
+goto 37.14,47.01
+talk Guildmaster Sees-All-Colors |q The Dangerous Past/Talk to Guildmaster Sees-All-Colors
+|only not VET
+step
+goto 36.28,45.64
+|tip She opens a portal.
+'Wait for Sees-All-Colors |q The Dangerous Past/Wait for Sees-All-Colors
+|only not VET
+step
+goto 36.28,45.64
+talk Jofnir Iceblade |q The Dangerous Past/Talk to Jofnir Iceblade
+|only not VET
+step
+goto 37.04,45.50
+click Portal to the Guildhall
+'Meet Merric in the Guildhall |q The Dangerous Past/Talk to Merric at-Aswala |future
+|tip Manually skip to the next step.
+|only not VET
+step
+goto wayrest_base 37.25,32.64
+talk Merric at-Aswala
+turnin The Dangerous Past
+|only not VET
+step
+goto 40.50,28.98
+talk Bera Moorsmith
+accept The Prismatic Core
+|only not VET
+step
+goto 55.03,48.62
+|tip Inside the Mages Guild.
+talk Valaste |q Simply Misplaced/Talk to Valaste
+|only not VET
+step
+goto 59.67,51.94
+talk Arch-Mage Shalidor |q Simply Misplaced/Talk to Shalidor
+|only not VET
+step
+goto 59.76,52.01
+talk Arch-Mage Shalidor
+'Wait for Shalidor to Open the Portal |q Simply Misplaced/Wait for Shalidor to Open the Portal
+|only not VET
+step
+goto 59.09,52.84
+click Portal to the Shivering Isles
+'Enter the Portal |q Simply Misplaced/Enter Portal |future
+|tip Manually skip to the next step.
+|only not VET
+step
+goto gladeofthedivineshivering_base 50.15,56.46
+talk Haskill |q Simply Misplaced/Talk to Haskill
+|only not VET
+step
+goto gladeofthedivineshivering_base 49.48,57.57
+click Portal to Vuldngrav
+'Enter the Portal |q Simply Misplaced/Enter the Portal
+|only not VET
+step
+goto gladeofthedivinevuldngrav_base 58.94,64.02
+|tip Follow the path and go through the door.
+'Explore Vuldngrav |q Simply Misplaced/Explore Vuldngrav
+|only not VET
+step
+goto gladeofthedivinevuldngrav_base 60.97,64.09
+click Chest
+'Examine the Chest |q Simply Misplaced/Examine the Chest
+|only not VET
+step
+goto gladeofthedivinevuldngrav_base 53.75,64.08
+'Kill the enemies that attack in waves
+'Defeat the Draugr |q Simply Misplaced/Defeat the Draugr
+|only not VET
+step
+goto gladeofthedivinevuldngrav_base 49.65,31.47
+|tip Follow the path and go through the door.
+'Explore Vuldngrav |q Simply Misplaced/Explore Vuldngrav
+|only not VET
+step
+goto gladeofthedivinevuldngrav_base 50.06,25.32
+kill Korthor
+'Retrieve the Fork |q Simply Misplaced/Retrieve the Fork
+|only not VET
+step
+goto gladeofthedivinevuldngrav_base 49.46,15.54
+talk Haskill |q Simply Misplaced/Talk to Haskill
+|only not VET
+step
+goto gladeofthedivinevuldngrav_base 49.41,14.45
+click Portal to Asakala
+'Enter the Portal |q Simply Misplaced/Enter the Portal
+|only not VET
+step
+goto gladeofthedivineasakala_base 41.00,22.64
+talk Arch-Mage Shalidor |q Simply Misplaced/Talk to Shalidor
+|only not VET
+step
+goto 44.39,25.66
+'Run into Essences to collect them
+|tip They look like floating orbs of light all around this area.
+'Collect 4 Essences |q Simply Misplaced/.*Collect Essence.*
+|only not VET
+step
+goto 39.90,31.23
+click Scarab Seal
+'Activate the Scarab Seal |q Simply Misplaced/Activate a Scarab Seal
+|only not VET
+step
+goto 44.95,33.01
+'Run into Essences to collect them
+|tip They look like floating orbs of light all around this area.
+'Collect 4 Essences |q Simply Misplaced/.*Collect Essence.*
+|only not VET
+step
+goto 47.58,28.84
+click Scarab Seal
+'Activate the Scarab Seal |q Simply Misplaced/Activate a Scarab Seal
+|only not VET
+step
+'Next to you:
+talk Arch-Mage Shalidor |q Simply Misplaced/Talk to Shalidor
+|only not VET
+step
+goto 54.73,40.20
+'Follow the path down into the tomb |q Simply Misplaced/Activate the Spider Seal
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 63.38,38.27
+kill Rashomta the Spider
+|tip Run into the glowing orb after you him.
+'Collect Rashomta's Essence |q Simply Misplaced/Activate the Spider Seal
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 51.14,45.94
+click Spider Seal
+'Activate the Spider Seal |q Simply Misplaced/Activate the Spider Seal
+|only not VET
+step
+goto 38.67,44.49
+'Follow the path down into the tomb |q Simply Misplaced/Activate Scorpion Seal
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 30.23,46.39
+kill Sahdina the Scorpion
+|tip Run into the glowing orb after you kill him.
+'Collect Sahdina's Essence |q Simply Misplaced/Activate Scorpion Seal
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 44.05,47.80
+click Scorpion Seal
+'Activate the Scorpion Seal |q Simply Misplaced/Activate Scorpion Seal
+|only not VET
+step
+goto gladeofthedivineasakala_base 46.25,39.10
+click Key Ritual Orb
+'Use the Key Ritual Orb |q Simply Misplaced/Use the Key Ritual Orb
+|only not VET
+step
+goto gladeofthedivineasakala_base 51.28,64.81
+click Prince Maleel's Tomb
+'Enter the tomb |q Simply Misplaced/Retrieve the Staff
+|tip Manually skip to the next step.
+|only not VET
+step
+goto gladeofthedivineasakala_base 51.46,84.71
+kill Maleel al-Akir
+'Retreive the Staff |q Simply Misplaced/Retrieve the Staff
+|only not VET
+step
+goto gladeofthedivineasakala_base 49.38,55.09
+talk Haskill |q Simply Misplaced/Talk to Haskill
+|only not VET
+step
+goto gladeofthedivineasakala_base 49.23,54.26
+click Portal to the Shivering Isles
+'Return to the Shivering Isles|q Simply Misplaced/Return to the Shivering Isles
+|only not VET
+step
+goto gladeofthedivineshivering_base 50.34,56.04
+talk Sheogorath |q Simply Misplaced/Talk to Sheogorath
+|only not VET
+step
+goto 58.45,51.00
+|tip Equip the Wabbajack.
+'Left click on Temple Acolytes around this area
+|tip You must have the Wabbajack equipped.
+'Test the Wabbajack 5 Times |q Simply Misplaced/.*Test the Wabbajack.*
+|only not VET
+step
+goto gladeofthedivineshivering_base 50.34,55.84
+|tip Remember to re-equip your weapon again.
+talk Sheogorath |q Simply Misplaced/Talk to Sheogorath
+|only not VET
+step
+goto gladeofthedivineshivering_base 51.70,56.30
+click Circus of Cheerful Slaughter
+'Collect the Book |q Simply Misplaced/Collect the Book |future
+|tip Manually skip to the next step.
+|only not VET
+step
+goto wayrest_base 55.02,48.73
+talk Valaste
+turnin Simply Misplaced
+|only not VET
+step
+goto 39.93,50.36
+wayshrine Wayrest
+step
+goto 37.83,46.12
+|tip Inside the building.
+talk High King Emeric |q Pursuing the Shard/Talk to High King Emeric
+step
+goto 23.31,54.63
+'Follow the path |q A Ransom for Miranda/Collect Large Ruby |future
+|tip Manually skip to the next step.
+step
+goto stormhaven_base 47.66,63.27
+click Monomyth: The Myth of Aurbis
+lorebook Monomyth: The Myth of Aurbis/1/10/6
+step
+'Open your map to Stormhaven:
+'Travel to the Soulshriven Wayshrine in Stormhaven |q Pursuing the Shard/Talk to a Gate Guard at At-Tura Estate
+|tip Manually skip to the next step.
+step
+goto stormhaven_base 33.06,60.78
+talk Mercenary
+'Talk to a Gate Guard at At-Tura Estate |q Pursuing the Shard/Talk to a Gate Guard at At-Tura Estate
+step
+goto 32.98,60.83
+click At-Tura Estate Door
+'Enter The At-Tura Estate |q Pursuing the Shard/Enter the At-Tura Estate
+step
+goto 31.78,61.19
+|tip Standing in the courtyard.
+talk Hosni at-Tura
+turnin Pursuing the Shard
+accept The Signet Ring
+step
+goto 30.48,59.21
+|tip Inside the building.
+talk Lord Rihad at-Tura
+'Find Count Hosni's Father |q The Signet Ring/Find Count Hosni's Father
+step
+goto 30.28,58.83
+|tip Upstairs.
+click To Dream Beyond Dreams
+lorebook To Dream Beyond Dreams/1/2/8
+step
+goto 29.59,57.77
+|tip Inside the building.
+talk Lady Sirali at-Tura
+turnin The Signet Ring
+accept Evidence Against Adima
+step
+goto 28.30,58.76
+'Follow the road |q Evidence Against Adima/Find Evidence Incriminating Adima
+|tip Manually skip to the next step.
+step
+goto 28.95,65.54
+click Old Sea Chest
+'Find Evidence Incriminating Adima |q Evidence Against Adima/Find Evidence Incriminating Adima
+step
+goto 27.67,62.85
+'Follow the road |q Evidence Against Adima/Talk to Lady Sirali at-Tura
+|tip Manually skip to the next step.
+step
+goto 29.59,57.78
+|tip Inside the building.
+talk Lady Sirali at-Tura
+turnin Evidence Against Adima
+accept Saving Hosni
+step
+goto 29.48,61.33
+click At-Tura Estate
+'Enter the At-Tura Estate |q Saving Hosni/Talk to Destane the Bard
+|tip Manually skip to the next step.
+step
+goto 31.91,58.66
+talk Destane the Bard
+|tip Intimidate him.
+talk Destane the Bard |q Saving Hosni/Talk to Destane the Bard
+step
+goto 31.95,61.08
+|tip Inside the building.
+click Potion
+'Gain Access to Hosni's Dream |q Saving Hosni/Gain Access to Hosni's Dream |future
+|tip Manually skip to the next step.
+step
+goto 30.09,63.49
+talk Dream of Lady Sirali |q Saving Hosni/Talk to Sirali
+step
+goto 31.55,61.12
+|tip Inside the courtyard.
+kill Omen of Blood |q Saving Hosni/Kill Omen of Blood |future
+|tip Avoid the circles on the ground. The Omen will split into 3. When it does, attack the one that is missing health.
+|tip Manually skip to the next step.
+step
+goto 31.58,61.24
+click Dream Shard
+'Collect the Dream Shard to Free Hosni |q Saving Hosni/Collect the Dream Shard to Free Hosni
+step
+goto 31.60,61.42
+click Portal from the Dream
+'Enter the Portal |q Saving Hosni/Enter the Portal |future
+|tip Manually skip to the next step.
+step
+goto 30.98,61.46
+talk Hosni at-Tura
+turnin Saving Hosni
+accept The Return of the Dream Shard
+step
+'Open your map to Stormhaven:
+click Pariah Abbey Wayshrine
+'Travel to the Pariah Abbey Wayshrine |q The Return of the Dream Shard/Return the Dream Shard to Abbot Durak
+|tip Manually skip to the next step.
+step
+goto 46.30,40.61
+click Pariah Abbey
+'Enter Pariah Abbey |q The Return of the Dream Shard/Return the Dream Shard to Abbot Durak
+|tip Manually skip to the next step.
+step
+goto 45.06,41.72
+|tip Inside the building.
+talk Abbot Durak
+'Return the Dream Shard to Abbot Durak |q The Return of the Dream Shard/Return the Dream Shard to Abbot Durak
+step
+goto 44.80,41.96
+click Statue of Azura
+'Place the Shard Upon the Statue of Azura |q The Return of the Dream Shard/Place the Shard Upon the Statue of Azura
+step
+goto 45.07,41.73
+talk Abbot Durak
+turnin The Return of the Dream Shard
+accept Another Omen
+step
+goto 46.26,40.63
+click Pariah Abbey Grounds
+'Leave Pariah Abbey |q Another Omen/Talk to High King Emeric in Wayrest
+|tip Manually skip to the next step.
+step
+goto 49.27,41.05
+click Pariah Abbey Wayshrine
+'Travel to the Wayrest Wayshrine in Stormhaven |q Another Omen/Talk to High King Emeric in Wayrest
+|tip Manually skip to the next step.
+step
+goto wayrest_base 37.71,46.19
+|tip Inside the building.
+talk High King Emeric |q Another Omen/Talk to High King Emeric in Wayrest
+step
+goto 44.61,30.93
+talk Captain Ernele |q Another Omen/Talk to Captain Ernele
+step
+goto 55.91,14.75
+'Follow the path
+|tip Manually skip to the next step.
+step
+goto 73.98,19.22
+'Follow the path
+|tip Manually skip to the next step.
+step
+goto stormhaven_base 67.29,53.39
+wayshrine Dro-Dara Plantation Wayshrine
+step
+goto 65.94,53.90
+click On the Detachment of the Sheath
+lorebook On the Detachment of the Sheath/1/15/6
+step
+goto 70.35,51.33
+click Reality and Other Falsehoods
+lorebook Reality and Other Falsehoods/1/15/7
+step
+goto 73.77,47.23
+click The Old Ways
+|tip It is on a keg inside the tent.
+lorebook The Old Ways/1/15/5
+step
+goto 74.37,48.42
+|tip Inside the building.
+talk Abbot Durak
+turnin Another Omen
+step
+goto 74.31,48.53
+talk General Godrun
+accept General Godrun's Orders
+step
+goto 74.56,46.53
+talk Sergeant Olfin |q General Godrun's Orders/Talk to Sergeant Olfin
+step
+goto 73.60,43.75
+click Magic from the Sky
+lorebook Magic from the Sky/1/15/3
+step
+goto 73.60,43.12
+'Charge the Ogres at the ridge |q General Godrun's Orders/Charge the Ogres on the Ridge
+step
+goto 74.63,43.16
+|tip At the top of the tower.
+'Use Olfin's Warhorn
+'Climb the Tower and Blow Olfin's Warhorn |q General Godrun's Orders/Climb Tower and Blow Olfin's Warhorn
+step
+goto 75.22,43.07
+|tip Leave the tower.
+talk General Godrun
+turnin General Godrun's Orders
+accept Ending the Ogre Threat
+step
+goto 76.34,44.38
+'Follow the path |achieve 225
+|tip Manually skip to the next step.
+step
+goto 78.61,43.89
+'Enter the small cave |achieve 225
+|tip Manually skip to the next step.
+step
+goto 78.56,43.31
+click Bearclaw Mine
+'Enter Bearclaw Mine |achieve 225
+|tip Manually skip to the next step.
+step
+goto bearclawmine_base 66.45,50.98
+'Follow the path |achieve 225
+|tip Manually skip to the next step.
+step
+goto 33.57,22.29
+'Follow the path |achieve 225
+|tip Manually skip to the next step.
+step
+goto 17.79,47.89
+click Skyshard |achieve 515/10
+step
+goto 28.61,62.91
+kill Octavia
+'Explore Bearclaw Mine |achieve 225
+step
+goto 43.15,57.99
+click Bearclaw Mine
+'Go through the doorway
+|tip Manually skip to the next step.
+step
+goto 66.02,61.43
+'Follow the path
+|tip Manually skip to the next step.
+step
+goto 92.77,85.74
+click Stormhaven
+'Leave the Bearclaw Mine
+|tip Manually skip to the next step.
+step
+goto stormhaven_base 76.33,44.35
+'Follow the path
+|tip Manually skip to the next step.
+step
+goto 73.51,43.11
+'Run up the stairs
+|tip Manually skip to the next step.
+step
+goto 77.48,41.23
+click Manual of Spellcraft
+lorebook Manual of Spellcraft/1/15/4
+step
+goto 77.61,41.38
+click Skyshard |achieve 515/7
+step
+goto stormhaven_base 75.72,40.62
+'Run up the stairs |q Ending the Ogre Threat/Find the Missing Miners
+|tip Manually skip to the next step.
+step
+goto 71.12,38.72
+talk Ghashur
+'Find the Missing Miners |q Ending the Ogre Threat/Find the Missing Miners
+step
+goto 71.12,38.72
+talk Ghashur
+|tip Persuade him.
+'Get a Pickaxe |q Ending the Ogre Threat/Get a Pickaxe
+step
+goto 71.75,36.89
+click Mountain Cavern
+'Enter the Mountain Cavern |q Ending the Ogre Threat/Enter Mountain Cavern |future
+|tip Manually skip to the next step.
+step
+goto 70.91,34.27
+click Support Column
+'Destroy the Support Beam |q Ending the Ogre Threat/Destroy the Support Beams
+|tip Manually skip to the next step.
+step
+goto 70.33,34.16
+click Support Column
+'Destroy the Support Beam |q Ending the Ogre Threat/Destroy the Support Beams
+|tip Manually skip to the next step.
+step
+goto 70.02,33.94
+click Support Column
+'Destroy the Support Beam |q Ending the Ogre Threat/Destroy the Support Beams
+step
+goto 71.76,36.73
+click Shinji's Scarp
+'Escape the Mine |q Ending the Ogre Threat/Escape the Mine
+step
+goto 74.52,46.87
+talk Ghashur |q Ending the Ogre Threat/Talk to Ghashur
+step
+goto 74.32,48.46
+|tip Inside the building.
+talk Sergeant Olfin
+turnin Ending the Ogre Threat
+step
+goto 74.12,48.36
+|tip Upstairs.
+talk Abbot Durak
+accept Godrun's Dream
+step
+goto 74.15,48.34
+click General Godrun
+'Enter Godrun's Dream |q Godrun's Dream/Enter Godrun's Dream |future
+|tip Manually skip to the next step.
+step
+goto godrunsdream_base 20.65,29.76
+click Godrun's Orders
+'Watch the dialogue
+'Find Godrun |q Godrun's Dream/Find Godrun |future
+|tip Manually skip to the next step.
+step
+goto 24.52,31.00
+click Vaermina's Mirror
+'Enter Vaermina's Mirror |q Godrun's Dream/Follow Godrun through His Dream
+|tip Manually skip to the next step.
+step
+goto 81.49,20.65
+click Godrun's Rage
+'Watch the dialogue
+'Follow Godrun through His Dream |q Godrun's Dream/Follow Godrun through His Dream |future
+|tip Manually skip to the next step.
+step
+goto 80.64,19.49
+click Vaermina's Mirror
+'Enter Vaermina's Mirror |q Godrun's Dream/Continue to Follow Godrun through His Dream
+|tip Manually skip to the next step.
+step
+goto 50.41,56.42
+click Godrun's Bargain
+'Watch the dialogue
+'Continue to Follow Godrun through His Dream |q Godrun's Dream/Continue to Follow Godrun through His Dream |future
+|tip Manually skip to the next step.
+step
+goto 50.32,54.06
+talk General Godrun
+'Free Godrun |q Godrun's Dream/Free Godrun
+step
+goto 50.32,54.06
+kill Omen of Betrayal
+'Defeat the Omen |q Godrun's Dream/Defeat the Omen
+step
+goto 49.76,46.67
+click Statue of Vaermina
+'Talk to Vaermina's Statue |q Godrun's Dream/Talk to Vaermina's Statue
+step
+goto 49.55,46.80
+click Vaermina's Mirror
+'Escape the Quagmire |q Godrun's Dream/Escape Quagmire |future
+|tip Manually skip to the next step.
+step
+goto stormhaven_base 74.30,48.35
+talk Abbot Durak
+turnin Godrun's Dream
+accept Azura's Aid
+step
+goto 70.18,41.24
+wayshrine Wind Keep
+step
+goto 69.55,42.53
+click Noxiphilic Sanguivoria
+lorebook Noxiphilic Sanguivoria/1/16/4
+step
+goto 64.00,39.10
+click Liminal Bridges
+lorebook Liminal Bridges/1/15/2
+step
+goto 64.42,38.24
+click Skyshard |achieve 515/4
+step
+goto 60.51,36.70
+click Norvulk Ruins
+'Enter the Norvulk Ruins |achieve 226
+|tip Manually skip to the next step.
+step
+goto norvulkruins_base 46.45,35.32
+'Run down the stairs |achieve 226
+|tip Manually skip to the next step.
+step
+goto 35.16,53.67
+click Skyshard |achieve 515/13
+step
+goto 29.03,39.03
+'Run up the stairs |achieve 226
+|tip Manually skip to the next step.
+step
+goto 19.11,38.23
+'Follow the path |achieve 226
+|tip Manually skip to the next step.
+step
+goto 19.60,76.37
+'Follow the path |achieve 226
+|tip Manually skip to the next step.
+step
+goto 59.11,68.19
+kill Nariam
+'Explore the Norvulk Ruins |achieve 226
+step
+goto 76.45,62.18
+'Follow the path
+|tip Manually skip to the next step.
+step
+goto 58.19,40.81
+click Norvulk Ruins
+'Go through the door
+|tip Manually skip to the next step.
+step
+goto 84.64,15.44
+click Stormhaven
+'Leave the Norvulk Ruins
+|tip Manually skip to the next step.
+step
+goto 65.23,42.85
+'Follow the path |q King Aphren's Sword/Recover the Blade |future
+|tip Manually skip to the next step.
+step
+goto 70.11,41.25
+click Wind Keep Wayshrine
+'Travel to the Dro-Dara Plantation Wayshrine
+|tip Manually skip to the next step.
+step
+goto 68.40,49.23
+click Skyshard |achieve 515/5
+step
+goto 69.94,49.27
+|tip Inside of the tower.
+click A Werewolf's Confession
+lorebook A Werewolf's Confession/1/16/5
+step
+'Open your map to Stormhaven:
+click Wind Keep Wayshrine
+'Travel to the Wind Keep Wayshrine |q Azura's Aid/.*Collect Glow Dust from Wisps.* |count 1
+|tip Manually skip to the next step.
+step
+goto stormhaven_base 72.25,47.86
+'Follow the path |q Azura's Aid/.*Gather Azurite from the Hills.* |count 1
+|tip Manually skip to the next step.
+step
+goto 78.01,45.96
+|tip Around this area.
+click Azurite Deposits
+|tip They look like dark ore deposits with small blue crystals on them on the ground.
+'Gather 5 Azurite from the Hills |q Azura's Aid/.*Gather Azurite from the Hills.*
+step
+goto 80.30,52.17
+kill Wispmother
+|tip Around this area.
+kill Wisps
+'Collect 5 Glow Dust from Wisps |q Azura's Aid/.*Collect Glow Dust from Wisps.*
+step
+goto 81.48,48.40
+wayshrine Weeping Giant
+step
+goto 81.61,43.54
+'Run up the stairs
+|tip Manually skip to the next step.
+step
+goto 80.67,42.70
+'Run up the stairs
+|tip Manually skip to the next step.
+step
+goto 81.04,41.66
+'Run up the stairs
+|tip Manually skip to the next step.
+step
+goto 82.46,42.34
+click Skyshard |achieve 515/8
+step
+goto 83.85,46.38
+click Guild Memo on Soul Trapping
+lorebook Guild Memo on Soul Trapping/1/15/8
+step
+goto 81.63,43.55
+'Follow the path up
+|tip Manually skip to the next step.
+step
+goto 80.66,42.71
+'Run up the stairs
+|tip Manually skip to the next step.
+step
+goto 81.02,41.67
+'Run up the stairs
+|tip Manually skip to the next step.
+step
+goto 82.24,41.67
+'Follow the path up
+|tip Manually skip to the next step.
+step
+goto 83.41,41.11
+'Find Azura's Shrine |q Azura's Aid/Find Azura's Shrine
+step
+goto 84.36,41.20
+click Azura's Shrine
+'Cleanse Azura's Shrine |q Azura's Aid/Cleanse Azura's Shrine
+step
+goto 84.36,41.18
+talk Azura's Winged Twilight |q Azura's Aid/Talk to the Winged Twilight
+step
+goto 82.93,41.26
+'Go down the steps
+|tip Manually skip to the next step.
+step
+goto 81.35,48.08
+'Follow the path |achieve 515/9
+|tip Manually skip to the next step.
+step
+goto 85.04,48.52
+'Follow the path |achieve 515/9
+|tip Manually skip to the next step.
+step
+goto 86.49,47.75
+'Run up the stairs |achieve 515/9
+|tip Manually skip to the next step.
+step
+goto 86.71,46.38
+click Skyshard |achieve 515/9
+step
+'Open your map to Stormhaven:
+click Wayrest Wayshrine
+'Fast Travel to the Wayrest Wayshrine |q Azura's Aid/Talk to Abbot Durak
+|tip Manually skip to the next step.
+step
+goto wayrest_base 42.99,46.38
+|tip Upstairs inside the building.
+talk Abbot Durak
+turnin Azura's Aid
+accept Vaermina's Gambit
+step
+goto 43.08,46.43
+talk High King Emeric
+'Enter King Emeric's Dream |q Vaermina's Gambit/Enter High King Emeric's Dream |future
+|tip Manually skip to the next step.
+step
+goto emericsdream_base 46.09,51.78
+talk High King Emeric
+'Find the High King Emeric |q Vaermina's Gambit/Find High King Emeric
+step
+goto 46.31,51.99
+talk High King Emeric |q Vaermina's Gambit/Talk to High King Emeric
+step
+goto 31.03,51.84
+|tip Inside of the building.
+click Basket
+'Collect the Key of the Knight |q Vaermina's Gambit/Collect Key of the Knight
+step
+goto 48.98,61.12
+'Run up the stairs |q Vaermina's Gambit/Collect Key of the Thief
+|tip Manually skip to the next step.
+step
+goto 40.94,62.23
+click Chest
+'Collect the Key of the Thief |q Vaermina's Gambit/Collect Key of the Thief
+step
+goto 62.95,68.73
+click Sack
+'Collect the Key of the General |q Vaermina's Gambit/Collect Key of the General
+step
+goto 48.98,61.12
+'Run up the stairs |q Vaermina's Gambit/Enter High King Emeric's Palace
+|tip Manually skip to the next step.
+step
+goto 42.91,67.27
+click Wayrest Castle
+'Enter King Emeric's Palace |q Vaermina's Gambit/Enter High King Emeric's Palace |future
+|tip Manually skip to the next step.
+step
+goto 31.02,71.97
+kill High King Emeric
+|tip He morphs into other people, but they are all easy to defeat.
+kill Galthis
+'Kill the Night Terror |q Vaermina's Gambit/Kill the Night Terror
+step
+goto 45.90,52.51
+|tip Leave the building.
+talk High King Emeric
+'Free the King |q Vaermina's Gambit/Free the High King
+step
+goto 43.89,53.38
+click Quagmire
+'Enter Vaermina's Mirror |q Vaermina's Gambit/Enter Vaermina's Mirror |future
+|tip Manually skip to the next step.
+step
+goto emericsdquagmireportion_base 67.54,77.20
+click Statue of Vaermina
+talk Vaermina |q Vaermina's Gambit/Talk to Vaermina
+step
+goto 61.36,75.14
+click Tamriel
+'Fall Back Into the Quagmire |q Vaermina's Gambit/Escape Quagmire
+|tip Manually skip to the next step.
+step
+goto 52.81,24.64
+click Tamriel
+'Escape the Quagmire |q Vaermina's Gambit/Escape Quagmire |future
+|tip Manually skip to the next step.
+step
+goto wayrest_base 42.27,44.71
+talk High King Emeric |q Vaermina's Gambit/Talk to High King Emeric
+step
+goto 38.28,45.67
+|tip Downstairs.
+'Meet King Emeric in the Throne Room |q Vaermina's Gambit/Meet High King Emeric in the Throne Room
+step
+goto 37.75,46.27
+talk High King Emeric
+turnin Vaermina's Gambit
+accept The Road to Rivenspire
+step
+goto 44.56,30.88
+talk Captain Ernele |q The Road to Rivenspire/Talk to Captain Ernele
+step
+goto 40.07,50.16
+click Wayrest Wayshrine
+'Travel to the Harborage in Glenumbra |q Castle of the Worm/Go to the Harborage
+|tip Manually skip to the next step.
+|only not VET
+step
+goto glenumbra_base 35.49,79.27
+click The Harborage
+'Go to the Harborage |q Castle of the Worm/Go to the Harborage |future
+|tip Manually skip to the next step.
+|only not VET
+step
+goto the_daggerfall_harborage 66.75,64.93
+talk The Prophet |q Castle of the Worm/Talk to the Prophet
+|only not VET
+step
+goto 66.06,62.55
+talk Abnur Tharn |q Castle of the Worm/Talk to Abnur Tharn
+|only not VET
+step
+goto 69.96,61.29
+click Portal to Coldharbour
+'Enter Coldharbour |q Castle of the Worm/Enter Coldharbour |future
+|tip Manually skip to the next step.
+|only not VET
+step
+goto castleoftheworm1_base 44.32,76.82
+talk Abnur Tharn |q Castle of the Worm/Talk to Abnur Tharn
+|only not VET
+step
+goto 45.03,75.02
+talk Lyris Titanborn |q Castle of the Worm/Talk to Lyris
+|only not VET
+step
+goto 55.67,45.06
+|tip Inside the building.
+'Find a Way into the Castle |q Castle of the Worm/Find a Way into the Castle
+|only not VET
+step
+goto 59.24,41.20
+kill Warden Cornexius
+talk Cadwell |q Castle of the Worm/Talk to Cadwell
+|only not VET
+step
+goto 23.44,19.59
+click Castle Cistern
+'Go to the Cistern |q Castle of the Worm/Go to the Cistern
+|only not VET
+step
+goto castleoftheworm2_base 40.93,84.94
+talk Cadwell |q Castle of the Worm/Talk to Cadwell
+|only not VET
+step
+goto 55.51,26.09
+'Follow Cadwell and Protect Him |q Castle of the Worm/Follow Cadwell
+|tip Let him run ahead and attack things first.
+|only not VET
+step
+goto 55.51,26.09
+talk Cadwell |q Castle of the Worm/Talk to Cadwell
+|only not VET
+step
+goto 64.51,25.00
+click Inner Keep
+'Enter the Keep |q Castle of the Worm/Enter the Keep
+|only not VET
+step
+goto castleoftheworm3_base 45.97,25.45
+click Tower of Bones
+'Enter the Tower of Bones |q Castle of the Worm/Enter the Tower of Bones
+|only not VET
+step
+goto castleoftheworm4_base 84.77,40.45
+talk Abnur Tharn |q Castle of the Worm/Talk to Abnur Tharn
+|only not VET
+step
+goto 86.67,38.61
+click Chilled Flesh
+'Find Usable Atronach Parts |q Castle of the Worm/.*Find Usable Atronach Parts.* |count 1
+|only not VET
+step
+goto 87.19,34.55
+kill Flesh Atronach
+'Find Usable Atronach Parts |q Castle of the Worm/.*Find Usable Atronach Parts.* |count 2
+|only not VET
+step
+goto 77.65,35.38
+kill Flesh Atronach
+'Find Usable Atronach Parts |q Castle of the Worm/.*Find Usable Atronach Parts.* |count 3
+|only not VET
+step
+goto 71.37,36.36
+'Follow the path up |q Castle of the Worm/.*Find Usable Atronach Parts.*
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 71.36,40.86
+kill Flesh Atronach
+'Find Usable Atronach Parts |q Castle of the Worm/.*Find Usable Atronach Parts.* |count 4
+|only not VET
+step
+goto 66.37,41.35
+click Ritual Circle
+'Deliver the Atronach Parts to the Laboratory |q Castle of the Worm/Deliver the Atronach Parts to the Laboratory
+|only not VET
+step
+goto 66.77,41.98
+click Ritual of Atronach Binding
+'Read from the Ritual Book |q Castle of the Worm/Read from the Ritual Book
+|only not VET
+step
+goto 63.47,42.82
+'Wait for the Flesh Atronach |q Castle of the Worm/Wait for the Flesh Atronach
+|only not VET
+step
+goto 59.67,37.34
+click Tower Summit
+'Enter the Tower Summit |q Castle of the Worm/Find Abnur Tharn
+|tip Manually skip to the next step.
+|only not VET
+step
+goto 37.31,50.36
+'Find Abnur Tharn |q Castle of the Worm/Find Abnur Tharn
+|only not VET
+step
+goto 33.13,51.23
+talk Abnur Tharn |q Castle of the Worm/Talk to Abnur Tharn
+|only not VET
+step
+goto 32.59,50.71
+'Kill the waves of skeletons that attack
+'Watch the dialogue
+kill Mannimarco
+'Defeat Mannimarco |q Castle of the Worm/Defeat Mannimarco
+|only not VET
+step
+goto 34.72,50.89
+talk Abnur Tharn |q Castle of the Worm/Talk to Abnur Tharn
+|only not VET
+step
+goto 19.29,63.42
+'Flee the Tower Summit |q Castle of the Worm/Flee the Tower Summit
+|only not VET
+step
+goto 19.10,63.88
+|tip Wait for Cadwell to open the door.
+talk Cadwell
+'Tell him _"You should come along. It might be good for you."_
+talk Cadwell |q Castle of the Worm/Talk to Cadwell
+|only not VET
+step
+goto 11.57,66.59
+click Path of the Scorned
+'Flee the Tower Summit |q Castle of the Worm/Flee the Tower Summit
+|only not VET
+step
+goto 14.13,75.24
+'Traverse the Path of the Scorned |q Castle of the Worm/Traverse the Path of the Scorned
+|only not VET
+step
+goto 15.41,77.99
+click Portal to the Harborage
+'Return to the Harborage |q Castle of the Worm/Talk to Abnur Tharn |future
+|tip Manually skip to the next step.
+|only not VET
+step
+goto the_daggerfall_harborage 68.09,61.24
+talk Abnur Tharn |q Castle of the Worm/Talk to Abnur Tharn
+|only not VET
+step
+goto 68.09,61.24
+'Watch the dialogue
+'Observe the Scene |q Castle of the Worm/Observe the Scene
+|only not VET
+step
+goto 67.36,62.94
+talk Varen Aquilarios
+turnin Castle of the Worm
+|only not VET
+step
+'Open your map to Stormhaven:
+click Alcaire Castle Wayshrine
+'Travel to the Alcaire Castle Wayshrine |q The Road to Rivenspire/Go to Rivenspire
+|tip Manually skip to the next step.
+|only not VET
+step
+goto wayrest_base 40.07,50.16
+click Wayrest Wayshrine
+'Travel to the Alcaire Castle Wayshrine in Stormhaven |q The Road to Rivenspire/Go to Rivenspire
+|tip Manually skip to the next step.
+|only VET
+step
+goto stormhaven_base 23.01,19.57
+click Rivenspire
+'Go to Rivenspire |q The Road to Rivenspire/Go to Rivenspire |future
+|tip Manually skip to the next step.
+step
+goto rivenspire_base 45.90,73.89
+talk Darien Gautier
+turnin The Road to Rivenspire |next Daggerfall Covenant Leveling Guides\\Rivenspire
+]])
