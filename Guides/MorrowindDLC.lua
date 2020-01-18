@@ -19206,31 +19206,24 @@ goto lillandrill_base 58.12,51.58
 |tip Manually skip to the next step.
 step
 goto lillandrill_base 56.00,51.39
-'Pass through the archway here
+'Enter Galidor's Room
 |tip Manually skip to the next step.
 step
 goto lillandrill_base 54.76,51.35
-'Press _E_ to Examine _Galidor's Love Poem_
-|tip Manually skip to the next step.
+'Press _E_ to Examine _Galidor's Love Poem_ |q Murder In Lillandril/.*Search Galidor's Room.*: |count 1
 step
 goto lillandrill_base 53.86,50.14
-'Press _E_ to Examine _Galidor's Scribbled Note_
-|tip Manually skip to the next step.
+'Press _E_ to Examine _Galidor's Scribbled Note_ |q Murder In Lillandril/.*Search Galidor's Room.*: |count 2
 step
 goto lillandrill_base 54.86,50.45
-'Press _E_ to Examine _Galidor's Grocery List_
-|tip Manually skip to the next step.
+'Press _E_ to Examine _Galidor's Grocery List_ |q Murder In Lillandril/.*Search Galidor's Room.*: |count 3
 step
 goto lillandrill_base 53.64,53.52
-'Press _E_ to Use _Galidor's Warded Ledger_
-'Select _Mischief._
-'Select _For._
-'Select _Money._
-|tip Manually skip to the next step.
+'Press _E_ to Use _Galidor's Warded Ledger_ |q Murder In Lillandril/Unlock Galidor's Ledger
+'Select _Mischief._, then _For._, then _Money._
 step
 goto lillandrill_base 53.64,53.52
-'Press _E_ to Take _Galidor's Ledger_
-|tip Manually skip to the next step.
+'Press _E_ to Take _Galidor's Ledger_ |q Murder In Lillandril/Read Galidor's Ledger
 step
 goto lillandrill_base 53.27,51.00
 'Run down to the first floor and
@@ -19238,120 +19231,120 @@ click Lillandril
 |tip Manually skip to the next step.
 step
 goto lillandrill_base 51.12,50.17
-talk Calawende
-|tip Manually skip to the next step.
+talk Calawende |q Murder In Lillandril/Talk to Calawende
 step
-goto lillandrill_base 51.12,50.17
-'Run down the stairs from here and continue to docks
-|tip Manually skip to the next step.
+goto lillandrill_base 48.79,56.32
+step
+goto lillandrill_base 43.43,61.84
 step
 goto lillandrill_base 42.00,77.51
-talk Milerond
-|tip Manually skip to the next step.
+talk Milerond |q Murder In Lillandril/Talk to Milerond
 step
-goto lillandrill_base 50.81,78.89
-'Continue to the end of the pier
-|tip Manually skip to the next step.
+goto lillandrill_base 45.05,75.22
 step
-goto summerset_base 16.74,42.63
-'Run along the beach to you reach Saltbreeze Cave
-|tip Manually skip to the next step.
+goto lillandrill_base 51.49,79.27
+step
+goto summerset_base 16.83,43.11
 step
 goto summerset_base 18.49,44.82
 click Saltbreeze Cave
 |tip Manually skip to the next step.
 step
-goto lillandrilcave_base 55.72,34.89
-'At the fork in the path, go right
-|tip Manually skip to the next step.
+goto lillandrilcave_base 65.51,54.55
 step
-goto lillandrilcave_base 28.35,29.89
-'Continue into the cave through here
-|tip Manually skip to the next step.
+goto lillandrilcave_base 66.86,42.16
+step
+goto lillandrilcave_base 55.28,34.82
+step
+goto lillandrilcave_base 45.89,22.43
+step
+goto lillandrilcave_base 35.66,23.82
+step
+goto lillandrilcave_base 18.05,28.94
 step
 goto lillandrilcave_base 22.91,53.93
-'Cross the bridge here
-|tip Manually skip to the next step.
 step
-goto lillandrilcave_base 45.28,80.45
-kill Gerwerdel
-|tip Manually skip to the next step.
+goto lillandrilcave_base 48.25,75.51
+'Explore Saltbreeze Cave |q Murder In Lillandril/Explore Saltbreeze Cave
+step
+goto lillandrilcave_base 48.25,75.51
+kill Gerwerdel |q Murder In Lillandril/Kill Gerwerdel
 step
 goto lillandrilcave_base 45.38,82.13
-'Press _E_ to Search _Sapiarch's Chest_
-'Take Sapiarch's Key
-|tip Manually skip to the next step.
+'Press _E_ to Search _Sapiarch's Chest_ |q Murder In Lillandril/Collect the Laboratory Key
+'Take _Sapiarch's Key_
 step
 goto lillandrilcave_base 57.18,77.31
 click Sapiarch's Lab
 |tip Manually skip to the next step.
 step
 goto lillandrilcave_base 55.02,66.06
-talk Norasea
-|tip Manually skip to the next step.
+'Explore the Laboratory |q Murder In Lillandril/Explore the Laboratory
+step
+goto lillandrilcave_base 55.02,66.06
+talk Norasea |q Murder In Lillandril/Talk to Norasea
 step
 goto lillandrilcave_base 54.00,67.30
-'Press _E_ to Take _Haladan's Journal Entry_
-|tip Manually skip to the next step.
+'Press _E_ to Take _Haladan's Journal Entry_ |q Murder In Lillandril/.*Collect Haladan's Notes.*: |count 1
 step
 goto lillandrilcave_base 63.46,67.85
-'Press _E_ to Take _To Haladan, My Dearest Friend_
-|tip Manually skip to the next step.
+'Press _E_ to Take _To Haladan, My Dearest Friend_ |q Murder In Lillandril/.*Collect Haladan's Notes.*: |count 2
 step
 goto lillandrilcave_base 63.46,67.85
-'Press _E_ to Take _Letter to Norasea_
-|tip Manually skip to the next step.
+'Press _E_ to Take _Letter to Norasea_ |q Murder In Lillandril/.*Collect Haladan's Notes.*: |count 3
 step
 'Open your map:
 click Lillandril Wayshrine
 'Travel to the _Lillandril_ Wayshrine
 |tip Manually skip to the next step.
 step
-goto lillandrill_base 40.48,69.49
-'Run up the stairs from here
-|tip Manually skip to the next step.
+goto lillandrill_base 40.54,69.35
 step
-goto lillandrill_base 50.19,53.90
-'Run up the stairs from here
-|tip Manually skip to the next step.
+goto lillandrill_base 49.95,53.73
 step
-goto lillandrill_base 45.75,39.97
+goto lillandrill_base 53.71,40.02
+step
+goto lillandrill_base 45.65,39.90
 click Fighters Guild
 |tip Manually skip to the next step.
 step
 goto lillandrill_base 44.05,45.25
+talk Emile Oncent |q Murder In Lillandril/Talk to Emile
+step
+goto lillandrill_base 44.05,45.25
+talk Vivienne Muric |q Murder In Lillandril/Talk to Vivienne
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 44.05,45.25
+talk Calawende |q Murder In Lillandril/Talk to Calawende
+|tip Manually skip to the next step.
+step
+goto lillandrill_base 44.05,45.25
 talk Emile Oncent
-|tip Manually skip to the next step.
-step
-goto lillandrill_base 44.05,45.25
-talk Vivienne Muric
-|tip Manually skip to the next step.
-step
-goto lillandrill_base 44.05,45.25
-talk Calawende
-|tip Manually skip to the next step.
-step
-goto lillandrill_base 44.05,45.25
-talk Emile Oncent
-'Select _I'll respect your wishes..._
-|tip Manually skip to the next step.
+'Choose _Justice has to be served. I'm going to tell the Sapiarchs the truth. You're going free._ |q Murder In Lillandril/Prove Emile Innocent |or
+'_OR_
+'Choose _I'll respect your wishes. I won't share what I found with the Sapiarchs._ |q Murder In Lillandril/Respect Emile's Wishes |or
 step
 goto lillandrill_base 45.46,42.05
 talk Sapiarch Soraturil
-|tip Manually skip to the next step.
+turnin Murder In Lillandril
 step
-'Open your map:
+'Open your map. Right click to go to the Summerset map.
 click Alinor Wayshrine
 'Travel to the _Alinor_ Wayshrine
 |tip Manually skip to the next step.
 step
-goto alinor_base 52.98,58.50
-'Continue South through the archway from here
-|tip Manually skip to the next step.
+goto alinor_base 50.07,70.04
 step
-goto alinor_base 49.82,70.17
-'Run up the stairs from here and continue along the path until you reach the castle across the bridge.
-|tip Manually skip to the next step.
+goto alinor_base 42.21,76.54
+step
+goto alinor_base 44.76,77.41
+step
+goto alinor_base 50.35,79.04
+step
+goto alinor_base 51.15,86.01
+step
+goto alinor_base 56.67,85.58
 step
 goto alinor_base 64.53,46.37
 click Alinor Royal Palace
@@ -19362,20 +19355,17 @@ click Council Chamber
 |tip Manually skip to the next step.
 step
 goto alinorroyalpalace1_base 76.83,71.52
-talk Courtier Vindilween
-|tip Manually skip to the next step.
+talk Courtier Vindilween |q Culture Clash/Talk to Courtier Vindilween
 step
 goto alinorroyalpalace1_base 69.67,63.51
-talk Rigurt the Brash
-|tip Manually skip to the next step.
+talk Rigurt the Brash |q Culture Clash/Talk to Rigurt the Brash
 step
 goto alinorroyalpalace1_base 76.83,71.52
-talk Courtier Vindilween
-|tip Manually skip to the next step.
+talk Courtier Vindilween |q Culture Clash/Talk to Courtier Vindilween
 step
 goto alinorroyalpalace1_base 69.67,63.51
-talk Rigurt the Brash
-|tip Manually skip to the next step.
+talk Rigurt the Brash 
+turnin Culture Clash
 step
 'Open your map. Right click three times to bring up the Universe map. Select Artaeum in the upper-right corner.
 click Artaeum Wayshrine
@@ -19389,6 +19379,10 @@ step
 goto dreamingcave02_base 55.80,64.14
 'Press _E_ to Use _Portal to Ritemaster's Study_
 |tip Manually skip to the next step.
+step
+goto dreamingcave03_base 66.69,70.36
+talk Ritemaster Iachesis
+turnin The Tower Sentinels
 step
 goto dreamingcave03_base 66.69,70.36
 talk Ritemaster Iachesis
@@ -19407,64 +19401,59 @@ goto artaeum_base 65.92,27.03
 click The Dreaming Cave
 |tip Manually skip to the next step.
 step
-goto dreamingcave01_base 43.35,54.10
-'Press _E_ to _Use Dawnstar Gem_
-|tip Manually skip to the next step.
+goto dreamingcave01_base 39.50,54.50
+'Meet the Ritemaster in the Dreaming Cave |q The Dreaming Cave/Meet the Ritemaster in the Dreaming Cave
 step
-goto dreamingcave01_base 40.90,53.70
-talk Ritemaster Iachesis
-|tip Manually skip to the next step.
+goto dreamingcave01_base 39.50,54.50
+'Press _E_ to _Use Dawnstar Gem_ |q The Dreaming Cave/Use the Dawnstar Gem
+step
+goto dreamingcave01_base 39.50,54.50
+talk Ritemaster Iachesis |q The Dreaming Cave/Talk to Ritemaster Iachesis
 step
 goto dreamingcave01_base 45.29,23.58
 click Artaeum
 |tip Manually skip to the next step.
 step
-goto artaeum_base 64.09,28.10
-'Continue Southwest from here
-|tip Manually skip to the next step.
+goto artaeum_base 62.42,30.18
 step
 goto artaeum_base 54.60,31.49
-talk Earl Leythen
-|tip Manually skip to the next step.
+talk Earl Leythen |q The Dreaming Cave/Talk to Earl Leythen
 step
 goto artaeum_base 54.60,31.49
-talk Valsirenn
-|tip Manually skip to the next step.
+talk Valsirenn |q The Dreaming Cave/Talk to Valsirenn
 step
-'Open your map. Right click twice to bring up the Universe map. Select Tamriel.
+'Open your map. Right click to bring up the Universe map. Select Tamriel.
 click Shimmerene Wayshrine
 'Travel to the _Shimmerene_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto shimmerene_base 30.48,69.83
-'Run up the stairs from here and continue into Shimmerene
-|tip Manually skip to the next step.
+step
+goto shimmerene_base 47.71,63.68
+'Find Razum-dar in Shimmerene |q The Dreaming Cave/Find Razum-dar in Shimmerene
 step
 goto shimmerene_base 47.27,63.58
-talk Bailiff Roland
+talk Bailiff Roland |q The Dreaming Cave/Talk to Bailiff Roland
 'Select _I'll pay for someone to clean this up if you tell me where to find Raz. [### gold]_
-|tip Manually skip to the next step.
 step
 goto shimmerene_base 58.28,49.30
-talk Razum-dar
-|tip Manually skip to the next step.
+'Follow the Scribbles to Razum-dar |q The Dreaming Cave/Follow the Scribbles to Razum-dar
 step
-'Open your map:
+goto shimmerene_base 58.28,49.30
+talk Razum-dar |q The Dreaming Cave/Talk to Razum-dar
+step
+'Open your map. Right click to bring up the Summerset map.
 click Eldbur Ruins Wayshrine
 'Travel to the _Eldbur Ruins_ Wayshrine
 |tip Manually skip to the next step.
 step
-goto summerset_base 55.36,37.05
-'Continue Northwest to the main road and cross the bridge
-|tip Manually skip to the next step.
-step
 goto summerset_base 53.89,34.64
-'Continue Northwest up to the hill from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 51.56,32.41
-talk Sadara-do
-|tip Manually skip to the next step.
+'Meet Razum-dar at Eton Nir Grotto |q The Dreaming Cave/Meet Razum-dar at Eton Nir Grotto
+step
+goto summerset_base 51.56,32.41
+talk Sadara-do |q The Dreaming Cave/Talk to Sadara-do
 step
 goto summerset_base 50.97,32.72
 click Eton Nir Grotto Delve
