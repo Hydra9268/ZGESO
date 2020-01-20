@@ -19555,17 +19555,17 @@ goto sq5mephalaint01b_base 59.83,82.36
 'Press _E_ to Enter _Revealed Path_
 |tip Manually skip to the next step.
 step
-goto sq5mephalaint02_base 81.27,28.90
+goto sq5mephalaint02_base 79.94,28.84
 step
 goto sq5mephalaint02_base 49.54,25.39
 step
 goto sq5mephalaint02_base 58.11,16.02
+'Exit the cave
+|tip Manually skip to the next step.
 step
 goto sq5mephalaext01_base 70.56,78.62
 step
-goto sq5mephalaint02b_base 48.93,55.74
-step
-goto sq5mephalaint02b_base 49.19,75.56
+goto sq5mephalaint02b_base 49.07,75.57
 'Press _E_ to _Use Dawnstar Gem_
 |tip Manually skip to the next step.
 step
@@ -19573,25 +19573,17 @@ goto sq5mephalaint02b_base 39.07,81.26
 'Press _E_ to Enter _Revealed Path_
 |tip Manually skip to the next step.
 step
-goto sq5mephalaint03_base 82.65,55.28
-'Follow the path up from here
-|tip Manually skip to the next step.
+goto sq5mephalaint03_base 82.27,52.39
 step
 goto sq5mephalaint03_base 68.24,56.55
-'Follow the path South from here
-|tip Manually skip to the next step.
 step
 goto sq5mephalaint03_base 62.32,73.80
-'Press _E_ to Open _Web Cocoon_
-|tip Manually skip to the next step.
+'Press _E_ to Open _Web Cocoon_ |q The Dreaming Cave/Find Valsirenn
 step
 goto sq5mephalaint03_base 62.32,73.80
-talk Valsirenn
-|tip Manually skip to the next step.
+talk Valsirenn |q The Dreaming Cave/Talk to Valsirenn
 step
-goto sq5mephalaint03_base 63.72,72.77
-'Follow the path North from here, and then head West
-|tip Manually skip to the next step.
+goto sq5mephalaint03_base 60.17,58.05
 step
 goto sq5mephalaint03_base 49.37,55.71
 'Press _E_ to _Use Dawnstar Gem_
@@ -19602,64 +19594,61 @@ goto sq5mephalaint03_base 38.89,56.46
 |tip Manually skip to the next step.
 step
 goto sq5mephalaint03_base 09.17,41.16
-'Continue North from here
-|tip Manually skip to the next step.
 step
 goto sq5mephalaext01_base 19.35,89.50
-'Follow the path East
-|tip Manually skip to the next step.
+step
+goto sq5mephalaext01_base 25.29,85.29
+step
+goto sq5mephalaext01_base 35.80,85.59
 step
 goto sq5mephalaext01_base 40.57,75.59
-'Cross the bridge from here
-|tip Manually skip to the next step.
 step
 goto sq5mephalaext01_base 46.27,61.74
 kill Gwarchodwyr
+|tip Simple boss fight with Valsirenn's help. Gwarchodwyr doesn't hit hard so you can take a couple of melee telegraphs.
 |tip Manually skip to the next step.
 step
 goto sq5mephalaext01_base 46.63,55.60
 'Press _E_ to Burn _Webbing_
 |tip Manually skip to the next step.
 step
-goto sq5mephalaext01_base 46.63,55.60
-'Cross the bridge from here
-|tip Manually skip to the next step.
-step
 goto sq5mephalaext01_base 27.91,29.63
-'Continue further inside the compound from here
-|tip Manually skip to the next step.
+step
+goto sq5mephalaext01_base 25.36,25.88
+'Find Darien Gautier |q The Dreaming Cave/Find Darien Gautier
 step
 goto sq5mephalaext01_base 18.62,17.19
 kill Zikal-zun
+|tip Simple boss fight with Valsirenn's help. Zikal-zun is protected by minions plus a summoned minion when she reaches a certain health percentage. Focus on dispatching the guards, then take her down. Ignore the minion.
 |tip Manually skip to the next step.
 step
 goto sq5mephalaext01_base 19.36,17.47
-'Press _E_ to _Use Dawnstar Gem_
-|tip Manually skip to the next step.
+'Press _E_ to _Use Dawnstar Gem_ |q The Dreaming Cave/Rescue Darien Gautier
 step
-goto sq5mephalaext01_base 18.72,16.70
-talk Darien Gautier
-|tip Manually skip to the next step.
+goto sq5mephalaext01_base 18.77,16.73
+talk Darien Gautier |q The Dreaming Cave/Talk to Darien Gautier
 step
 goto sq5mephalaext01_base 24.01,17.20
 click The Spiral Skein
 |tip Manually skip to the next step.
 step
 goto sq5mephalaext01_base 35.87,19.08
-talk Valsirenn
-|tip Manually skip to the next step.
+talk Valsirenn |q The Dreaming Cave/Talk to Valsirenn
 step
 goto sq5mephalaext01_base 35.87,19.08
-'Kill the multiple waves on incoming mobs, and finally
-kill Brevorra Poisonclaw
-|tip Manually skip to the next step.
+kill Brevorra Poisonclaw |q The Dreaming Cave/Wait for the Portal to Open
+|tip Kill the multiple waves on incoming mobs, and finally Brevorra Poisonclaw. Brevorra is a simple boss fight. Her only powerful attack is a ranged poison cloud telegraph that follows you around for a little while. She also summons a minion. Ignore those and focus on Brevorra.
 step
 goto sq5mephalaext01_base 36.52,20.13
 'Press _E_ to Use _Portal to the Dreaming Cave_
 |tip Manually skip to the next step.
 step
 goto dreamingcave01_base 57.52,54.10
-talk Ritemaster Iachesis
+talk Ritemaster Iachesis 
+turnin The Dreaming Cave
+step
+goto dreamingcave01_base 57.52,54.10
+talk Ritemaster Iachesis 
 accept Lost in Translation
 step
 goto dreamingcave01_base 47.25,23.02
@@ -19671,13 +19660,12 @@ goto artaeum_base 65.06,26.59
 click Portal to Ceporah Tower
 |tip Manually skip to the next step.
 step
-goto dreamingcave02_base 55.60,66.33
+goto dreamingcave02_base 56.23,65.08
 'Press _E_ to Use _Portal to Ritemaster's Study_
 |tip Manually skip to the next step.
 step
 goto dreamingcave03_base 65.52,69.35
-talk Oriandra
-|tip Manually skip to the next step.
+talk Oriandra |q Lost in Translation/Talk to Oriandra in the Ritemaster's Study
 step
 goto dreamingcave03_base 67.02,66.29
 'Press _E_ to Take  _Grand Maestro Forte's Research_
