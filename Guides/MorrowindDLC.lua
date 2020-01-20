@@ -19465,7 +19465,7 @@ accept Looting the Light
 step
 goto etonnir_01_base 43.24,36.97
 kill Webmistress Xoraxia
-'Clear a path to Xoraxia. Pull her back into the path. Then focus on her and nothing else, while trying to avoid her summoned minions. Once she dies, they die.
+|tip Webmistress Xoraxia is a minion summoning boss. So the best strategy is to clear a path to her, pull her back into the trail. Then focus on her and nothing else, while trying to avoid her summoned minions. Once she dies, they die.
 'Press _E_ to _Loot Webmistress Xoraxia_ |q Looting the Light/.*Obtain Tokens of Meridia.*: |count 1
 step
 goto etonnir_01_base 43.24,36.97
@@ -19497,6 +19497,7 @@ goto etonnir_01_base 13.71,65.24
 step
 goto etonnir_01_base 13.46,78.26
 kill Kayliriax the Spinner
+|tip A straightforward boss fight. Kayliriax's most potent attack is occasionally webbing you and sucking away your health, so you'll want to heal right after that. She also telegraphs lightening blobs that do a lot of damage but are easy to avoid.
 |tip Manually skip to the next step.
 step
 goto etonnir_01_base 13.06,81.12
