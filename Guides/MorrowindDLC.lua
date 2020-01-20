@@ -19463,55 +19463,56 @@ goto etonnir_01_base 91.85,37.78
 talk Seeks-the-Dark
 accept Looting the Light
 step
-'Kill random mobs until you obtain the 3 _Tokens of Meridia_
-'Or loot the backpacks in the area
-goto etonnir_01_base 43.31,32.16
+goto etonnir_01_base 43.24,36.97
+kill Webmistress Xoraxia
+'Clear a path to Xoraxia. Pull her back into the path. Then focus on her and nothing else, while trying to avoid her summoned minions. Once she dies, they die.
+'Press _E_ to _Loot Webmistress Xoraxia_ |q Looting the Light/.*Obtain Tokens of Meridia.*: |count 1
+step
+goto etonnir_01_base 43.24,36.97
+'Press _E_ to _Loot the Backpack_ |q Looting the Light/.*Obtain Tokens of Meridia.*: |count 2
+step
+goto etonnir_01_base 39.25,41.46
+'Press _E_ to _Loot the Backpack_ |q Looting the Light/.*Obtain Tokens of Meridia.*: |count 3
+step
+goto etonnir_01_base 16.26,34.75
+'Search Eton Nir Grotto for the Meridia Shrine |q The Dreaming Cave/Search Eton Nir Grotto for the Meridia Shrine
+step
+goto etonnir_02_base 16.96,34.86
+click Merdia Shrine |q The Dreaming Cave/Investigate the Shrine
+step
+goto etonnir_02_base 36.70,51.70
+'Run over to Meridia's statue and look up to talk to Meridia |q The Dreaming Cave/Talk to Meridia
+step
+goto etonnir_02_base 36.70,51.70
+talk Razum-dar |q The Dreaming Cave/Talk to Razum-dar
+|tip Manually skip to the next step.
+step
+goto etonnir_02_base 85.37,50.44
+click Eton Nir Grotto
 |tip Manually skip to the next step.
 step
 goto etonnir_01_base 30.18,43.92
-'Continue Southwest through this passage
-|tip Manually skip to the next step.
 step
 goto etonnir_01_base 13.71,65.24
-'Continue Southwest through this passage
-|tip Manually skip to the next step.
 step
 goto etonnir_01_base 13.46,78.26
 kill Kayliriax the Spinner
 |tip Manually skip to the next step.
 step
 goto etonnir_01_base 13.06,81.12
-'Press _E_ to Destroy _Spiderweb Cocoon_
-|tip Manually skip to the next step.
+'Press _E_ to Destroy _Spiderweb Cocoon_ |q Looting the Light/Find Erilthel
 step
-goto etonnir_01_base 12.15,69.49
-'Continue North through the passage
-|tip Manually skip to the next step.
+goto etonnir_01_base 21.35,80.90
 step
-goto etonnir_01_base 17.02,34.99
-click Meridia Shrine
-|tip Manually skip to the next step.
+goto etonnir_01_base 41.72,76.28
 step
-goto etonnir_02_base 34.17,50.57
-'Run over to Meridia's statue and look up
-talk Meridia
-|tip Manually skip to the next step.
+goto etonnir_01_base 61.66,75.47
 step
-goto etonnir_02_base 36.70,51.70
-talk Razum-dar
-|tip Manually skip to the next step.
-step
-goto etonnir_02_base 86.25,50.44
-click Eton Nir Grotto
-|tip Manually skip to the next step.
-step
-goto etonnir_01_base 26.77,37.23
-'From here head East back to Seeks-the-Dark
-|tip Manually skip to the next step.
+goto etonnir_01_base 75.05,39.18
 step
 goto etonnir_01_base 90.97,38.17
 talk Seeks-the-Dark
-|tip Manually skip to the next step.
+turnin Looting the Light
 step
 'Open your map. Right click three times to bring up the Universe map. Select Artaeum in the upper-right corner.
 click Artaeum Wayshrine
@@ -19519,20 +19520,15 @@ click Artaeum Wayshrine
 |tip Manually skip to the next step.
 step
 goto artaeum_base 64.44,26.54
-'Drop down here and continue following the staircase down
-|tip Manually skip to the next step.
-step
-goto artaeum_base 66.03,27.02
+'Follow the staircase down
 click The Dreaming Cave
 |tip Manually skip to the next step.
 step
-goto dreamingcave01_base 66.04,55.01
-talk Ritemaster Iachesis
-|tip Manually skip to the next step.
+goto dreamingcave01_base 65.68,54.77
+talk Ritemaster Iachesis |q The Dreaming Cave/Tell the Ritemaster What You Learned
 step
 goto dreamingcave01_base 52.38,51.11
-'Press _E_ to Enter _The Dreaming Cave Portal_
-|tip Manually skip to the next step.
+'Press _E_ to Enter _The Dreaming Cave Portal_ |q The Dreaming Cave/Use the Dreaming Cave Portal
 step
 goto sq5mephalaint01_base 78.31,16.19
 'Press _E_ to Burn _Webbing_
@@ -19543,18 +19539,14 @@ goto sq5mephalaint01_base 78.31,16.19
 |tip Manually skip to the next step.
 step
 goto sq5mephalaext01_base 70.99,61.58
-'Continue up the path here and head South
-|tip Manually skip to the next step.
 step
 goto sq5mephalaext01_base 72.38,68.33
-'Enter this cave
-|tip Manually skip to the next step.
 step
 goto sq5mephalaint01b_base 23.88,52.27
 'Press _E_ to Burn _Webbing_
 |tip Manually skip to the next step.
 step
-goto sq5mephalaint01b_base 41.77,81.72
+goto sq5mephalaint01b_base 42.12,81.69
 'Press _E_ to _Use Dawnstar Gem_
 |tip Manually skip to the next step.
 step
@@ -19563,24 +19555,14 @@ goto sq5mephalaint01b_base 59.83,82.36
 |tip Manually skip to the next step.
 step
 goto sq5mephalaint02_base 81.27,28.90
-'Run up the path along the web wall
-|tip Manually skip to the next step.
 step
 goto sq5mephalaint02_base 49.54,25.39
-'Continue Northeast from here
-|tip Manually skip to the next step.
 step
 goto sq5mephalaint02_base 58.11,16.02
-'Exit the cave form here
-|tip Manually skip to the next step.
 step
 goto sq5mephalaext01_base 70.56,78.62
-'Enter the cave from here
-|tip Manually skip to the next step.
 step
 goto sq5mephalaint02b_base 48.93,55.74
-'Continue following the path South
-|tip Manually skip to the next step.
 step
 goto sq5mephalaint02b_base 49.19,75.56
 'Press _E_ to _Use Dawnstar Gem_
