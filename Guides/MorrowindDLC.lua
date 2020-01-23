@@ -19668,15 +19668,10 @@ goto dreamingcave03_base 65.52,69.35
 talk Oriandra |q Lost in Translation/Talk to Oriandra in the Ritemaster's Study
 step
 goto dreamingcave03_base 67.02,66.29
-'Press _E_ to Take  _Grand Maestro Forte's Research_
-|tip Manually skip to the next step.
+'Press _E_ to Take  _Grand Maestro Forte's Research_ |q Lost in Translation/Take the Notes on the Ancient Language
 step
 goto dreamingcave03_base 58.34,70.87
 'Press _E_ to Use _Portal to Ceporah Main Gallery_
-|tip Manually skip to the next step.
-step
-goto dreamingcave02_base 51.37,55.24
-'From here run to the room in the Northeast corner
 |tip Manually skip to the next step.
 step
 goto dreamingcave02_base 56.44,20.30
@@ -19684,51 +19679,39 @@ goto dreamingcave02_base 56.44,20.30
 |tip Manually skip to the next step.
 step
 goto dreamingcave03_base 62.45,35.82
-talk Earl Leythen
-|tip Manually skip to the next step.
+talk Earl Leythen |q Lost in Translation/Talk to Earl Leythen
 step
 'Open your map. Right click twice to bring up the Universe map. Select Tamriel.
 click Ebon Stadmont Wayshrine
 'Travel to the _Ebon Stadmont_ Wayshrine
 |tip Manually skip to the next step.
 step
-goto summerset_base 35.08,37.70
-'From here continue on the main road South until you reached the bridge
-|tip Manually skip to the next step.
+goto summerset_base 35.09,38.22
 step
 goto summerset_base 36.69,39.78
-'Follow the river Northeast from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 37.69,38.39
-'Press _E_ to _Use Leythen's Rune_
-|tip Manually skip to the next step.
+'Press _E_ to _Use Leythen's Rune_ |q Lost in Translation/Use Leythen's Rune in Ebon Stadmont
 step
 goto summerset_base 37.76,38.24
-talk Earl Leythen
-|tip Manually skip to the next step.
-step
-goto summerset_base 37.76,38.24
-'From here follow the river Southwest until you reached the bridge
-|tip Manually skip to the next step.
+talk Earl Leythen |q Lost in Translation/Talk to Earl Leythen
 step
 goto summerset_base 36.61,39.74
-'Continue on the main road Northwest back to Ebon Stadmont
-|tip Manually skip to the next step.
 step
-goto summerset_base 35.88,37.35
-talk Andewen
-accept The Ebon Sanctum
-|tip Manually skip to the next step.
+goto summerset_base 35.36,38.61
+step
+goto summerset_base 35.14,37.70
+step
+goto summerset_base 35.87,37.42
+talk Andewen |q The Ebon Sanctum/Talk to Andewen
 step
 goto summerset_base 36.03,37.51
 click Ebon Stadmont
 |tip Manually skip to the next step.
 step
 goto summerset_base 36.43,38.11
-'Press _E_ to Search _Inscribed Stonework_
+'Press _E_ to Search _Inscribed Stonework_ |q The Ebon Sanctum/Assist Andewen
 'Kill the three waves of mobs that appear
-|tip Manually skip to the next step.
 step
 goto summerset_base 37.13,38.82
 click Ebon Stadmont
