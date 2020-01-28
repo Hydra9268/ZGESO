@@ -19711,28 +19711,22 @@ click Ebon Stadmont
 step
 goto summerset_base 36.43,38.11
 'Press _E_ to Search _Inscribed Stonework_ |q The Ebon Sanctum/Assist Andewen
-'Kill the three waves of mobs that appear
+'Kill the three waves of mobs that appear then kill Nogral
+|tip Nogral is an easy boss that does slow melee and ranged telegraphing attacks, so it's easy to interrupt them.
 step
 goto summerset_base 37.13,38.82
-click Ebon Stadmont
-|tip Manually skip to the next step.
+click Ebon Stadmont |q The Ebon Sanctum/Find the Path to the Ruin
 step
 goto summerset_base 38.58,36.68
-'Press _E_ to Search _Inscribed Stonework_
-'Kill the three waves of mobs that appear
-|tip Manually skip to the next step.
+'Press _E_ to Search _Inscribed Stonework_ |q The Ebon Sanctum/Assist Andewen
+'Kill the three waves of mobs that appear then kill Nikalia the Beguiling
+|tip Nikalia is an easy boss that does melee and ranged telegraphing attacks. Not as slow as Nogral, but easy all the same.
 step
 goto summerset_base 38.82,37.36
 click Ebon Stadmont
 |tip Manually skip to the next step.
 step
-goto summerset_base 36.20,36.67
-'Follow the path up to the fork
-|tip Manually skip to the next step.
-step
-goto summerset_base 36.53,36.33
-'At the fork in the path, go right from here
-|tip Manually skip to the next step.
+goto summerset_base 36.48,36.42
 step
 goto summerset_base 37.40,36.32
 click Ebon Stadmont
@@ -19742,33 +19736,22 @@ goto ebonStadmont_base 61.09,59.69
 'Press _E_ to _Use Leythen's Rune_
 |tip Manually skip to the next step.
 step
-goto ebonStadmont_base 61.09,59.69
-'Continue following the path Southeast
-|tip Manually skip to the next step.
-step
 goto ebonStadmont_base 67.54,75.67
-'Continue following the path East
-|tip Manually skip to the next step.
 step
 goto ebonStadmont_base 78.57,71.63
-'Continue following the path North
-|tip Manually skip to the next step.
 step
-goto ebonStadmont_base 70.70,52.53
-'Press _E_ to _Use Leythen's Rune_
-|tip Manually skip to the next step.
+goto ebonStadmont_base 69.41,52.55
+'Press _E_ to _Use Leythen's Rune_ |q Lost in Translation/Locate the Inscribed Stone
 step
 goto ebonStadmont_base 68.86,52.69
-talk Earl Tundilwen
-|tip Manually skip to the next step.
+talk Earl Tundilwen |q Lost in Translation/Talk to Nocturnal's Earl
 step
 goto ebonStadmont_base 72.16,53.73
-talk Earl Leythen
-|tip Manually skip to the next step.
+talk Earl Leythen |q Lost in Translation/Talk to Earl Leythen
 step
 goto ebonStadmont_base 74.52,54.46
-'Run up the double set of stairs from here
-|tip Manually skip to the next step.
+step
+goto ebonStadmont_base 75.26,51.38
 step
 goto ebonStadmont_base 68.28,46.35
 click Summerset
@@ -19791,75 +19774,82 @@ goto summerset_base 37.86,37.55
 click Ebon Stadmont
 |tip Manually skip to the next step.
 step
+goto summerset_base 39.07,35.34
+step
+goto summerset_base 38.47,35.37
+step
 goto summerset_base 38.74,34.68
-'Follow the path to the Ruins
 click Ebon Sanctum
 |tip Manually skip to the next step.
 step
 goto ebonStadmont03_base 70.78,39.05
-'Press _E_ to Examine _Dear Escort_
-|tip Manually skip to the next step.
+'Search the Ruin |q The Ebon Sanctum/Search the Ruin
 step
-goto ebonStadmont03_base 70.93,34.64
-'Press _E_ to Activate _Enchanted Stone_
-|tip Manually skip to the next step.
+goto ebonStadmont03_base 71.40,37.96
+'Press _E_ to Examine _Dear Escort_ |q The Ebon Sanctum/Examine the Note
 step
-goto ebonStadmont03_base 70.97,21.02
-click Ebon Sanctum
-|tip Manually skip to the next step.
+goto ebonStadmont03_base 71.88,35.05
+'Press _E_ to Activate _Enchanted Stone_ |q The Ebon Sanctum/Examine the Stone
+step
+goto ebonStadmont03_base 71.73,21.89
+click Ebon Sanctum |q The Ebon Sanctum/Find Andewen
 step
 goto ebonStadmont02_base 72.22,72.55
-kill Nightstealer Sorina
-'This is a challenging fight. Make sure you interrupt and block her attacks. Also bring healing potions and spells.
-|tip Manually skip to the next step.
+kill Nightstealer Sorina |q The Ebon Sanctum/Kill the Daedra
+|tip Sorina is a challenging fight. Make sure you interrupt and block her attacks. Also bring healing potions and spells. If you have any HP buffs, use them.
 step
-goto ebonStadmont02_base 72.68,32.35
-'Press _E_ to Bandage _Fletch_, then
-talk Fletch
-|tip Manually skip to the next step.
+goto ebonStadmont02_base 70.71,32.17
+'Press _E_ to Bandage _Fletch_ |q The Ebon Sanctum/Help Andewen Heal Fletch
 step
-goto ebonStadmont02_base 83.75,33.01
+goto ebonStadmont02_base 71.00,31.73
+talk Fletch |q The Ebon Sanctum/Talk to Fletch
+step
+goto ebonStadmont02_base 83.53,33.55
 click Ebon Sanctum Garden
 |tip Manually skip to the next step.
 step
 goto ebonStadmont_base 34.06,47.87
-talk Maestro Forte
-|tip Manually skip to the next step.
+talk Maestro Forte |q The Ebon Sanctum/Talk to Maestro Forte
 step
 goto ebonStadmont_base 51.08,42.44
 click Northern Pass
 |tip Manually skip to the next step.
 step
-goto ebonStadmont_base 41.06,32.92
-'Follow the path to the stone
-'Press _E_ to Activate _Enchanted Stone_
-|tip Manually skip to the next step.
+goto ebonStadmont_base 57.17,37.54
 step
 goto ebonStadmont_base 41.06,32.92
-talk Andewen
-|tip Manually skip to the next step.
+'Press _E_ to Activate _Enchanted Stone_ |q The Ebon Sanctum/Investigate the Northern Stone
+step
+goto ebonStadmont_base 41.06,32.92
+talk Andewen |q The Ebon Sanctum/Talk to Andewen
 step
 goto ebonStadmont_base 36.89,33.60
-click Ebon Sanctum
-|tip Manually skip to the next step.
+click Ebon Sanctum |q The Ebon Sanctum/Travel Back to the Present
 step
-goto ebonStadmont_base 29.56,33.79
-talk Andewen
-'Watch cutscene
-talk Andewen, again
-|tip Manually skip to the next step.
+goto ebonStadmont_base 29.83,33.53
+talk Andewen |q The Ebon Sanctum/Talk to Andewen
+step
+goto ebonStadmont_base 29.83,33.53
+'Listen to Fletch |q The Ebon Sanctum/Listen to Fletch
+step
+goto ebonStadmont_base 29.60,33.68
+talk Andewen |q The Ebon Sanctum/Talk to Andewen
 step
 goto ebonStadmont_base 28.17,38.47
 click Ebon Sanctum Halls
 |tip Manually skip to the next step.
 step
 goto ebonStadmont02_base 52.24,33.44
-click Ebon Sanctum
+kill Hunger
+|tip Best to avoid these, but in case you're forced to only deal with one. They are vampire bosses who suck away your health. The best strategy is to lure it back to the door and fight it there so you can do the maximum amount of damage when it teleports around near the door.
 |tip Manually skip to the next step.
 step
+goto ebonStadmont02_base 52.42,33.77
+click Ebon Sanctum |q The Ebon Sanctum/Follow Fletch
+step
 goto ebonStadmont02_base 71.40,37.49
-kill Fletch
-|tip Manually skip to the next step.
+kill Fletch |q The Ebon Sanctum/Defeat Fletch
+|tip Fletch is the straight-forward fight. His only attacks are ranged telegraphs that are easy to avoid.
 step
 goto ebonStadmont02_base 84.48,33.41
 click Ebon Sanctum Garden
@@ -19869,34 +19859,24 @@ goto ebonStadmont_base 39.85,52.53
 click Southern Path
 |tip Manually skip to the next step.
 step
+goto ebonStadmont_base 36.44,63.27
+step
 goto ebonStadmont_base 26.52,59.70
-'Follow the path to the stone
-'Press _E_ to Activate _Enchanted Stone_
-|tip Manually skip to the next step.
+'Press _E_ to Activate _Enchanted Stone_ |q The Ebon Sanctum/Activate the Southern Stone
 step
 goto ebonStadmont_base 26.07,56.53
-click Ebon Sanctum
-|tip Manually skip to the next step.
+click Ebon Sanctum |q The Ebon Sanctum/Enter Portal
 step
-goto ebonStadmont03_base 70.71,30.05
-talk Fletch
-|tip Manually skip to the next step.
+goto ebonStadmont03_base 71.62,29.73
+talk Fletch |q The Ebon Sanctum/Talk to Fletch
 step
-goto ebonStadmont03_base 71.44,84.52
+goto ebonStadmont03_base 71.40,83.97
 click Ebon Stadmont
 |tip Manually skip to the next step.
 step
 goto summerset_base 38.65,34.97
 talk Andewen
-|tip Manually skip to the next step.
-step
-goto summerset_base 38.78,35.15
-'Jump down from here
-|tip Manually skip to the next step.
-step
-goto summerset_base 39.26,35.76
-click Ebon Stadmont
-|tip Manually skip to the next step.
+turnin The Ebon Sanctum
 step
 'Open your map. Right click twice to view the Tamriel world map, then left click Artaeum in the upper-right corner.
 click Artaeum Wayshrine
@@ -19907,13 +19887,9 @@ goto artaeum_base 64.99,25.56
 click Portal to Ceporah Tower
 |tip Manually skip to the next step.
 step
-goto dreamingcave02_base 24.69,41.34
-'Pass through the archway from here and follow the hallway
-|tip Manually skip to the next step.
+goto dreamingcave02_base 17.25,43.55
 step
 goto dreamingcave02_base 28.27,66.48
-'Pass through the archway from here
-|tip Manually skip to the next step.
 step
 goto dreamingcave02_base 22.98,74.43
 talk Ritemaster Iachesis
