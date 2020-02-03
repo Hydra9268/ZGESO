@@ -18156,7 +18156,7 @@ goto kingshavenint1_base 58.92,75.38
 step
 goto kingshavenint1_base 58.95,75.31
 talk Mehdze
-'You must decide the choice.
+'Decide a choice.
 'Choose _The truth should be heard..._ |q Savage Truths/Talk to Mehdze |or
 '_OR_
 'Choose _I wouldn't stake my career..._ |q Savage Truths/Talk to Mehdze |or
@@ -19892,9 +19892,8 @@ step
 goto dreamingcave02_base 28.27,66.48
 step
 goto dreamingcave02_base 22.98,74.43
-talk Ritemaster Iachesis
-'Select _We need to be cautious. I wouldn't take anything the Court of Bedlam tells us at face value._
-|tip Manually skip to the next step.
+talk Ritemaster Iachesis |q Lost in Translation/Talk to Ritemaster Iachesis in Ceporah Tower
+'Select either choice.
 step
 goto dreamingcave02_base 16.17,73.45
 talk Cinucil
@@ -19906,206 +19905,169 @@ click Artaeum Wayshrine
 |tip Manually skip to the next step.
 step
 goto artaeum_base 60.27,33.91
-'Continue Southwest on the main road from here
-|tip Manually skip to the next step.
 step
 goto artaeum_base 55.74,38.85
 talk Andiryewen
 accept The Vault of Moawita
 step
-goto artaeum_base 55.74,38.85
-'Continue Southwest on the main road from here
-|tip Manually skip to the next step.
-step
 goto artaeum_base 46.11,41.01
-'At the fork in the road, go right from here
-|tip Manually skip to the next step.
 step
 goto artaeum_base 42.87,40.59
-'At the fork in the road, go left from here
-|tip Manually skip to the next step.
 step
 goto artaeum_base 39.94,44.51
-talk Ulliceta gra-Kogg
-|tip Manually skip to the next step.
+talk Ulliceta gra-Kogg |q Half-Formed Understandings/Talk to Ulliceta
 step
 goto artaeum_base 39.88,44.68
 click Traitor's Vault Delve
 |tip Manually skip to the next step.
 step
-goto TraitorsVault04_base 57.45,15.61
-'Run down both stairs from here and through the archway
-|tip Manually skip to the next step.
+goto TraitorsVault04_base 56.28,20.22
 step
 goto TraitorsVault02_base 56.58,33.58
-'Press _E_ to Use _Library Eye Pedestal_
-|tip Manually skip to the next step.
+'Find the First Library Pedestal |q Half-Formed Understandings/Find the First Library Pedestal
 step
-goto TraitorsVault02_base 56.36,35.99
-'Continue South through the Archway from here and continue East through the next archway
-|tip Manually skip to the next step.
+goto TraitorsVault02_base 56.58,33.58
+'Press _E_ to Use _Library Eye Pedestal_ |q Half-Formed Understandings/Use the Eye on the Bridge
+step
+goto TraitorsVault02_base 56.43,40.20
 step
 goto TraitorsVault02_base 72.41,34.71
-'Continue through this archway from here
-|tip Manually skip to the next step.
+step
+goto TraitorsVault02_base 71.99,27.08
 step
 goto TraitorsVault02_base 79.16,27.31
 'Run down the stairs from here
 |tip Manually skip to the next step.
 step
 goto TraitorsVault01_base 83.32,39.34
-'Continue through the archway from here
-|tip Manually skip to the next step.
 step
 goto TraitorsVault01_base 66.79,38.12
-'Press _E_ to Use _Library Eye Pedestal_
-|tip Manually skip to the next step.
+'Find the Next Library Pedestal |q Half-Formed Understandings/Find the Next Library Pedestal
+step
+goto TraitorsVault01_base 66.79,38.12
+'Press _E_ to Use _Library Eye Pedestal_ |q Half-Formed Understandings/Use the Eye in the Presentation Chamber
 step
 goto TraitorsVault01_base 72.20,43.40
-'Continue through the archway from here
-|tip Manually skip to the next step.
 step
 goto TraitorsVault01_base 64.29,51.24
-'Continue through the archway from here
-|tip Manually skip to the next step.
 step
 goto TraitorsVault01_base 56.50,55.80
-'Continue through the archway from here
-|tip Manually skip to the next step.
+step
+goto TraitorsVault01_base 56.37,63.11
+step
+goto TraitorsVault01_base 44.58,62.68
 step
 goto TraitorsVault01_base 44.60,58.20
 'Run up both set of stairs from here
 |tip Manually skip to the next step.
 step
 goto TraitorsVault02_base 36.77,46.24
-'Continue North through the archway from here
-|tip Manually skip to the next step.
 step
 goto TraitorsVault02_base 36.85,34.48
-'Continue North through the archway from here
-|tip Manually skip to the next step.
 step
 goto TraitorsVault02_base 36.70,26.73
-'Press _E_ to Use _Library Eye Pedestal_
-|tip Manually skip to the next step.
+'Find the Next Library Pedestal |q Half-Formed Understandings/Find the Next Library Pedestal
+step
+goto TraitorsVault02_base 36.70,26.73
+'Press _E_ to Use _Library Eye Pedestal_ |q Half-Formed Understandings/Use the Eye in the Laboratory
 step
 goto TraitorsVault02_base 36.62,32.12
-'Continue South through the archway from here
-|tip Manually skip to the next step.
 step
 goto TraitorsVault02_base 36.85,43.27
-'Continue South through the archway from here
-|tip Manually skip to the next step.
 step
 goto TraitorsVault02_base 38.38,50.79
 'Run down both set of stairs from here
 |tip Manually skip to the next step.
 step
 goto TraitorsVault01_base 47.08,63.01
-'Press _E_ to Use _Library Eye Pedestal_
-|tip Manually skip to the next step.
+'Find the Fourth Library Pedestal |q Half-Formed Understandings/Find the Fourth Library Pedestal
+step
+goto TraitorsVault01_base 46.86,62.56
+'Press _E_ to Use _Library Eye Pedestal_ |q Half-Formed Understandings/Use the Eye Outside the Sealed Hall
+step
+goto TraitorsVault01_base 46.86,62.56
+'Observe the Scene |q Half-Formed Understandings/Observe the Scene
 step
 goto TraitorsVault01_base 44.80,63.94
 click Sealed Hall
 |tip Manually skip to the next step.
 step
 goto TraitorsVault01_base 31.86,74.91
-click Secret Chamber
-|tip Manually skip to the next step.
+click Secret Chamber |q Half-Formed Understandings/Enter Mannimarco's Secret Chamber
 step
 goto TraitorsVault01_base 18.61,74.93
-kill Vessel of Worms
-|tip Manually skip to the next step.
+'Search the Chamber |q Half-Formed Understandings/Search the Chamber
 step
-'Open your map:
+goto TraitorsVault01_base 18.61,74.93
+kill Vessel of Worms |q Half-Formed Understandings/Kill Vessel of Worms
+|tip The Vessel of Worms is a pretty simply boss fight. Ignore the minions it casts, and focus all your DPS on the Vassel.
+step
+'Open your map. Right click to go to the Artaeum map.
 click Artaeum Wayshrine
 'Travel to the _Artaeum_ Wayshrine
 |tip Manually skip to the next step.
 step
-goto artaeum_base 60.27,33.91
-'Continue Southwest on the main road from here
-|tip Manually skip to the next step.
+goto artaeum_base 59.77,34.76
 step
 goto artaeum_base 46.11,41.01
-'At the fork in the road, go right from here
-|tip Manually skip to the next step.
 step
 goto artaeum_base 42.87,40.59
-'At the fork in the road, go left from here
-|tip Manually skip to the next step.
 step
 goto artaeum_base 39.58,43.83
 talk Ulliceta gra-Kogg
-|tip Manually skip to the next step.
+turnin Half-Formed Understandings
 step
 goto artaeum_base 54.98,41.74
-'Travel Southwest on the main road from here
-|tip Manually skip to the next step.
 step
 goto artaeum_base 53.81,45.29
-'At the fork in the road, go left from here
-|tip Manually skip to the next step.
 step
 goto artaeum_base 56.20,46.30
-'At the fork in the road, go right from here and run up the stairs
-|tip Manually skip to the next step.
 step
 goto artaeum_base 56.52,49.45
 click College of Psijics Ruins
 |tip Manually skip to the next step.
 step
-goto collegeofpsijicsruins_base 55.46,28.90
-'Run down the stairs
-|tip Manually skip to the next step.
+goto collegeofpsijicsruins_base 52.26,26.68
 step
 goto collegeofpsijicsruins_base 64.70,43.05
 click Vault of Moawita
 |tip Manually skip to the next step.
 step
-goto collegeofpsijicsruins_btm_base 59.97,43.95
-talk Relicmaster Glenadir
-|tip Manually skip to the next step.
+goto collegeofpsijicsruins_base 59.97,43.95
+talk Relicmaster Glenadir |q The Vault of Moawita/Talk to Relicmaster Glenadir
 step
 goto collegeofpsijicsruins_btm_base 51.18,47.39
-'Press _E_ to Examine _Psijic Codex: List of Dead Drops_
-|tip Manually skip to the next step.
+'Press _E_ to Examine _Psijic Codex: List of Dead Drops_ |q The Vault of Moawita/Read the Psijic Codex
 step
 goto collegeofpsijicsruins_btm_base 51.18,47.39
-'Press _E_ to _Use Paper and Quill_
-|tip Manually skip to the next step.
+'Press _E_ to _Use Paper and Quill_ |q The Vault of Moawita/Copy the Psijic Codex
 step
-goto collegeofpsijicsruins_btm_base 57.15,44.00
+goto collegeofpsijicsruins_btm_base 57.84,43.46
 talk Relicmaster Glenadir
-|tip Manually skip to the next step.
+turnin The Vault of Moawita
 step
-'Open your map:
+'Open your map. Right click to go to the Artaeum map.
 click Artaeum Wayshrine
 'Travel to the _Artaeum_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto artaeum_base 68.31,34.24
-talk Darien Gautier
-|tip Manually skip to the next step.
+talk Darien Gautier |q Lost in Translation/Talk to Darien Gautier
 step
 goto artaeum_base 64.52,26.54
-'Drop down from here and run down the stairs
-|tip Manually skip to the next step.
 step
 goto artaeum_base 65.92,27.03
 click The Dreaming Cave
 |tip Manually skip to the next step.
 step
 goto dreamingcave01_base 39.06,54.50
-talk Ritemaster Iachesis
-|tip Manually skip to the next step.
+talk Ritemaster Iachesis |q Lost in Translation/Meet in the Dreaming Cave
 step
 goto dreamingcave01_base 44.55,52.82
-'Press _E_ to Enter _The Dreaming Cave Portal_
-|tip Manually skip to the next step.
+'Press _E_ to Enter _The Dreaming Cave Portal_ |q Lost in Translation/Use the Dreaming Cave Portal
 step
 goto sq6evergloam_base 54.31,80.50
-talk Ritemaster Iachesis
-|tip Manually skip to the next step.
+talk Ritemaster Iachesis |q Lost in Translation/Talk to Ritemaster Iachesis
 step
 goto sq6evergloam_base 41.68,76.32
 kill Wraith of Crows
