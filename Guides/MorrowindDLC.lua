@@ -20070,84 +20070,75 @@ goto sq6evergloam_base 54.31,80.50
 talk Ritemaster Iachesis |q Lost in Translation/Talk to Ritemaster Iachesis
 step
 goto sq6evergloam_base 41.68,76.32
-kill Wraith of Crows
-|tip Manually skip to the next step.
 step
-goto sq6evergloam_base 41.71,61.37
-'Follow the path Southeast from here
-|tip Manually skip to the next step.
+goto sq6evergloam_base 43.90,62.53
 step
 goto sq6evergloam_base 60.32,68.87
-talk Ritemaster Iachesis
-|tip Manually skip to the next step.
+'Follow the Path |q Lost in Translation/Follow the Path
+step
+goto sq6evergloam_base 60.32,68.87
+talk Ritemaster Iachesis |q Lost in Translation/Talk to Ritemaster Iachesis
 step
 goto sq6evergloam_base 65.29,63.36
-'Run up both set of stairs from here
-|tip Manually skip to the next step.
 step
 goto sq6evergloam_base 73.92,62.58
-'Run up the stairs from here
-|tip Manually skip to the next step.
 step
 goto sq6evergloam_base 79.98,64.63
-'Run up the stairs from here
-|tip Manually skip to the next step.
 step
 goto sq6evergloam_base 84.69,62.47
-'Follow the path Northwest from here
-|tip Manually skip to the next step.
+step
+goto sq6evergloam_base 67.34,49.45
 step
 goto sq6evergloam_base 49.33,44.01
-kill Wraith of Crows
-|tip Manually skip to the next step.
 step
 goto sq6evergloam_base 39.21,46.60
-talk Ritemaster Iachesis
-|tip Manually skip to the next step.
+'Follow the Path |q Lost in Translation/Follow the Path
+step
+goto sq6evergloam_base 39.21,46.60
+talk Ritemaster Iachesis |q Lost in Translation/Talk to Ritemaster Iachesis
 step
 goto sq6evergloam_base 35.31,47.32
-'Run up the stairs from here
-|tip Manually skip to the next step.
 step
 goto sq6evergloam_base 27.84,46.43
-'Run up both set of stairs from here
-|tip Manually skip to the next step.
 step
 goto sq6evergloam_base 15.96,36.81
-'Run up both set of stairs from here
-|tip Manually skip to the next step.
 step
 goto sq6evergloam_base 18.91,29.44
-'Run up both set of stairs from here
-|tip Manually skip to the next step.
 step
 goto sq6evergloam_base 26.82,34.44
-talk Ritemaster Iachesis
-|tip Manually skip to the next step.
+'Follow the Path |q Lost in Translation/Follow the Path
+step
+goto sq6evergloam_base 26.82,34.44
+talk Ritemaster Iachesis |q Lost in Translation/Talk to Ritemaster Iachesis
 step
 goto sq6evergloam_base 26.91,35.34
-'Press _E_ to Use _Portal to Mountain Top_
-|tip Manually skip to the next step.
+'Press _E_ to Use _Portal to Mountain Top_ |q Lost in Translation/Use the Portal
 step
 goto sq6evergloam_base 44.36,38.51
-'Run up both set of stairs from here
-|tip Manually skip to the next step.
 step
 goto sq6evergloam_base 47.07,26.61
-'Run up the stairs from here
-|tip Manually skip to the next step.
 step
 goto sq6evergloam_base 52.94,30.61
-talk Ritemaster Iachesis
-|tip Manually skip to the next step.
+'Approach the Mountain Top Ruin |q Lost in Translation/Approach the Mountain Top Ruin
 step
 goto sq6evergloam_base 52.94,30.61
-'During this fight defeat the waves of mobs.
-'Uses Dawnbreaker's abilities.
-'The final fight are twin bosses.
+talk Ritemaster Iachesis |q Lost in Translation/Talk to Ritemaster Iachesis
+step
+goto sq6evergloam_base 52.94,30.61
+'Defend Against the Daedric Attack |q Lost in Translation/Defend Against the Daedric Attack
+'During this fight defeat the waves of mobs periodically using Dawnbreaker's abilities. The final battle consists of twin bosses.
 kill Aaderyna
 kill Ddynedan
-|tip Manually skip to the next step.
+step
+goto sq6evergloam_base 52.94,30.61
+'Escape Nocturnal's Realm |q Lost in Translation/Escape Nocturnal's Realm
+step
+goto dreamingcave01_base 37.86,35.46
+talk Oriandra |q Lost in Translation/Talk to Oriandra
+step
+goto dreamingcave01_base 37.86,35.46
+talk Oriandra
+turnin Lost in Translation
 step
 goto dreamingcave01_base 37.86,35.46
 talk Oriandra
@@ -20166,32 +20157,24 @@ goto dreamingcave02_base 15.77,42.63
 |tip Manually skip to the next step.
 step
 goto dreamingcave03_base 19.86,49.48
-talk Sotha Sil
-|tip Manually skip to the next step.
+talk Sotha Sil |q A Necessary Alliance/Talk to Sotha Sil
 step
 goto dreamingcave03_base 34.84,49.78
 'Press _E_ to Use _Portal to Ceporah Main Gallery_
 |tip Manually skip to the next step.
 step
 goto dreamingcave02_base 19.53,42.79
-'Continue East passed the archway from here
-|tip Manually skip to the next step.
 step
 goto dreamingcave02_base 52.66,26.32
-'Continue Northeast passed the archway from here
-|tip Manually skip to the next step.
 step
 goto dreamingcave02_base 56.04,21.02
-'Press _E_ to Use _Portal to Valsirenn's Study_
-|tip Manually skip to the next step.
+'Press _E_ to Use _Portal to Valsirenn's Study_ |q A Necessary Alliance/Go to Valsirenn's Study
 step
 goto dreamingcave03_base 68.22,39.11
-talk Earl Leythen
-|tip Manually skip to the next step.
+talk Earl Leythen |q A Necessary Alliance/Interrogate Earl Leythen
 step
 goto dreamingcave03_base 66.93,40.50
-talk Valsirenn
-|tip Manually skip to the next step.
+talk Valsirenn |q A Necessary Alliance/Talk to Valsirenn
 step
 'Open your map. Right click twice to bring up the Universe map. Select Tamriel.
 click Ebon Stadmont Wayshrine
@@ -20199,36 +20182,25 @@ click Ebon Stadmont Wayshrine
 |tip Manually skip to the next step.
 step
 goto summerset_base 34.35,35.43
-'Continue West on the main road from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 32.75,35.76
-'At the fork in the road, continue West from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 30.19,35.49
-'At the fork in the road, go right from here
-|tip Manually skip to the next step.
+step
+goto summerset_base 29.19,34.60
 step
 goto summerset_base 28.81,31.95
-'At the fork in the road, continue North from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 27.93,29.23
-'Continue West from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 27.39,29.16
 talk Ruliel
 accept Wasting Away
 step
 goto summerset_base 27.39,29.16
-talk Faidur
-|tip Manually skip to the next step.
+talk Faidur |q Wasting Away/Talk to Faidur
 step
 goto summerset_base 27.47,28.27
-'Continue West from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 25.70,28.26
 'Press _E_ to Use _Broken Window_
