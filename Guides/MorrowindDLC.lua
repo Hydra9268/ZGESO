@@ -20197,74 +20197,70 @@ goto summerset_base 27.39,29.16
 talk Ruliel
 accept Wasting Away
 step
-goto summerset_base 27.39,29.16
+goto summerset_base 27.37,29.13
 talk Faidur |q Wasting Away/Talk to Faidur
 step
-goto summerset_base 27.47,28.27
+goto summerset_base 26.32,29.08
 step
 goto summerset_base 25.70,28.26
-'Press _E_ to Use _Broken Window_
+'Head to the Ruins of Corgrad |q Wasting Away/Head to the Ruins of Corgrad
+step
+goto summerset_base 25.70,28.26
+click 'Press _E_ to Use _Broken Window_
 |tip Manually skip to the next step.
 step
 goto corgradwastehigher2_base 12.34,43.21
-talk Faidur
-|tip Manually skip to the next step.
+talk Faidur |q Wasting Away/Talk to Faidur
 step
 goto corgradwastehigher2_base 11.37,40.64
-'Press _E_ to Examine _Worn Statue Inscription_
-|tip Manually skip to the next step.
+'Press _E_ to Examine _Worn Statue Inscription_ |q Wasting Away/Search the Buried Manor for Clues to Its Past
 step
 goto corgradwastehigher2_base 12.04,41.73
-talk Faidur
-|tip Manually skip to the next step.
+talk Faidur |q Wasting Away/Talk to Faidur
 step
 goto corgradwastehigher2_base 14.35,40.58
-'Press _E_ to Take _Rultari's Journal_
-|tip Manually skip to the next step.
+'Press _E_ to Take _Rultari's Journal_ |q Wasting Away/Search the Upstairs Landing
 step
 goto corgradwastehigher2_base 14.35,40.58
-talk Faidur
-|tip Manually skip to the next step.
+talk Faidur |q Wasting Away/Talk to Faidur
 step
 goto corgradwastehigher2_base 17.21,42.69
-'Press _E_ to Take _Please Respond, Your Beloved Aunt_
-|tip Manually skip to the next step.
+'Press _E_ to Take _Please Respond, Your Beloved Aunt_ |q Wasting Away/Search the Adjacent Room
 step
 goto corgradwastehigher2_base 13.98,43.77
 'Run down the stairs from here
 |tip Manually skip to the next step.
 step
-goto corgradwasteslower_base 15.02,43.49
-talk Faidur
-|tip Manually skip to the next step.
+goto corgradwasteslower_base 14.78,43.21
+talk Faidur |q Wasting Away/Talk to Faidur
 step
-goto corgradwasteslower_base 14.37,38.32
-'Follow the path North from here and exit into a large chamber
-|tip Manually skip to the next step.
+goto corgradwasteslower_base 15.38,28.72
 step
-goto corgradwasteslower_base 30.99,28.52
-'Press _E_ to Take _Karnhar's Journal_
-|tip Manually skip to the next step.
+goto corgradwasteslower_base 23.17,22.90
 step
 goto corgradwasteslower_base 30.99,28.52
-talk Faidur
-|tip Manually skip to the next step.
+'Search the Underground Passages |q Wasting Away/Search the Underground Passages
 step
-goto corgradwasteslower_base 35.99,31.14
-'Continue Southeast through the passage from here
+goto corgradwasteslower_base 30.99,28.52
+'Press _E_ to Take _Karnhar's Journal_ |q Wasting Away/Search Campsite
+step
+goto corgradwasteslower_base 30.99,28.52
+talk Faidur
 |tip Manually skip to the next step.
 step
 goto corgradwasteslower_base 39.14,31.95
-'At the fork in the path, go right from here
-|tip Manually skip to the next step.
 step
-goto corgradwasteslower_base 48.75,42.97
-'Exit the passage from here into a large chamber
-|tip Manually skip to the next step.
+goto corgradwasteslower_base 45.69,35.73
+step
+goto corgradwasteslower_base 44.95,39.45
+step
+goto corgradwasteslower_base 57.31,47.16
 step
 goto corgradwasteslower_base 69.03,36.69
-talk Arillas
-|tip Manually skip to the next step.
+'Search the Cavern |q Wasting Away/Search the Cavern
+step
+goto corgradwasteslower_base 69.03,36.69
+talk Arillas |q Wasting Away/Talk to Cavern Dwellers
 step
 goto corgradwasteslower_base 69.22,37.04
 talk Faidur
@@ -20279,8 +20275,10 @@ goto corgradwasteslower_base 73.01,21.41
 |tip Manually skip to the next step.
 step
 goto corgradwasteslower_base 87.85,21.10
-'Press _E_ to Take _Karnhar's Letter_
-|tip Manually skip to the next step.
+'Find Missing Persons |q Wasting Away/Find Missing Persons
+step
+goto corgradwasteslower_base 87.85,21.10
+'Press _E_ to Take _Karnhar's Letter_ |q Wasting Away/Search the Bodies
 step
 goto corgradwasteslower_base 78.09,18.23
 'Press _E_ to Use _Buried Vaults_
@@ -20291,109 +20289,91 @@ goto corgradwasteslower_base 70.90,47.97
 |tip Manually skip to the next step.
 step
 goto corgradwasteslower_base 86.85,76.38
-'Continue Southwest from here
-|tip Manually skip to the next step.
 step
 goto corgradwasteslower_base 76.87,81.24
-'Continue Northwest from here
-|tip Manually skip to the next step.
 step
 goto corgradwasteslower_base 69.31,73.46
-click Buried Vaults
-|tip Manually skip to the next step.
+click Buried Vaults |q Wasting Away/Find Faidur
 step
 goto corgradwasteslower_base 61.12,64.77
-'Continue West passed the archway from here
-|tip Manually skip to the next step.
 step
-goto corgradwasteslower_base 49.25,62.18
+goto corgradwasteslower_base 48.90,58.57
 'Continue North through the archway here and run up the stairs
 |tip Manually skip to the next step.
 step
 goto corgradwasteshigher_base 43.30,68.07
-'Continue South passed the archway from here
-|tip Manually skip to the next step.
 step
 goto corgradwasteshigher_base 44.23,71.20
-talk Henrigg
-|tip Manually skip to the next step.
+'Pursue Faidur's Abductors |q Wasting Away/Pursue Faidur's Abductors
 step
-goto corgradwasteshigher_base 43.47,77.05
-'Continue South passed the archway from here
-|tip Manually skip to the next step.
+goto corgradwasteshigher_base 44.49,71.46
+talk Henrigg |q Wasting Away/Talk to Henrigg
+step
+goto corgradwasteshigher_base 43.36,77.46
 step
 goto corgradwasteshigher_base 46.53,83.22
 'Continue East passed the archway here and run down the stairs
 |tip Manually skip to the next step.
 step
 goto corgradwasteslower_base 55.27,77.29
-'Continue South passed the archway from here
-|tip Manually skip to the next step.
 step
 goto corgradwasteslower_base 56.97,81.81
-'Press _E_ to Use _Rusty Lockbox_
-'Take Arillas's Keys
-|tip Manually skip to the next step.
+'Press _E_ to Use _Rusty Lockbox_ |q Wasting Away/Find Arillas's Keys
+'Take _Arillas's Keys_
 step
 goto corgradwasteslower_base 55.66,79.77
 'Continue North passed the archway here and run up the stairs
 |tip Manually skip to the next step.
 step
 goto corgradwasteshigher_base 48.75,83.29
-'Continue West passed the archway here
-|tip Manually skip to the next step.
+step
+goto corgradwasteshigher_base 43.30,83.39
 step
 goto corgradwasteshigher_base 44.55,76.61
-'Press _E_ to Use Key _Shackles_
-|tip Manually skip to the next step.
+'Press _E_ to Use Key _Shackles_ |q Wasting Away/.*Rescue the Prisoners.* |count 1
 step
 goto corgradwasteshigher_base 44.90,72.40
-'Press _E_ to Use Key _Shackles_
-|tip Manually skip to the next step.
+'Press _E_ to Use Key _Shackles_ |q Wasting Away/.*Rescue the Prisoners.* |count 2
 step
 goto corgradwasteshigher_base 45.01,73.27
-talk Henrigg
-|tip Manually skip to the next step.
+talk Henrigg |q Wasting Away/Talk to Henrigg
 step
 goto corgradwasteshigher_base 39.49,74.09
-click Savoirs' Crypt
-|tip Manually skip to the next step.
+click Savoirs' Crypt |q Wasting Away/Save Faidur
 step
-goto corgradwasteshigher_base 34.49,75.01
-talk Kinlord Nemfarion
-|tip Manually skip to the next step.
+goto corgradwasteshigher_base 34.23,74.92
+talk Kinlord Nemfarion |q Wasting Away/Talk to Nemfarion
 step
-goto corgradwasteshigher_base 33.71,73.05
-talk Kinlady Taanwae
-|tip Manually skip to the next step.
-step
-goto corgradwasteshigher_base 32.08,73.35
-talk Rultarion
-|tip Manually skip to the next step.
-step
-goto corgradwasteshigher_base 32.01,74.44
+goto corgradwasteshigher_base 32.17,74.85
 talk Murderil
 |tip Manually skip to the next step.
 step
-goto corgradwasteshigher_base 33.80,74.20
-'Press _E_ to Break _Embalming Stone_
+goto corgradwasteshigher_base 31.99,73.96
+talk Rultarion
 |tip Manually skip to the next step.
+step
+goto corgradwasteshigher_base 33.01,73.25
+talk Kinlady Taanwae
+|tip Manually skip to the next step.
+step
+goto corgradwasteshigher_base 33.56,73.42
+'Press _E_ to Break _Embalming Stone_ |q Wasting Away/Destroy the Embalming Stone
 step
 goto corgradwasteshigher_base 35.90,72.87
-talk Faidur
-|tip Manually skip to the next step.
+talk Faidur |q Wasting Away/Talk to Faidur
 step
 goto corgradwasteshigher_base 34.10,70.92
-'Run up the stairs from here
-|tip Manually skip to the next step.
 step
 goto corgradwasteshigher_base 23.99,74.16
 click Corgrad Wastes
 |tip Manually skip to the next step.
 step
 goto corgradwasteshigher_base 18.41,64.46
-kill Arillas
-|tip Manually skip to the next step.
+'Help the Prisoners Escape |q Wasting Away/Help the Prisoners Escape
+step
+goto corgradwasteshigher_base 18.41,64.46
+kill Arillas |q Wasting Away/Kill Arillas
+|tip The boss has two special attacks. The first is health siphoning, which can be interrupted, and a telegraphing charge that's easy to avoid. It is a simple fight otherwise.
 step
 goto corgradwasteshigher_base 20.28,58.64
 'Continue Northeast through this passage
@@ -20404,38 +20384,29 @@ goto corgradwasteslower_base 22.73,46.77
 |tip Manually skip to the next step.
 step
 goto corgradwastehigher2_base 25.34,47.51
-click Corgrad Wastes
-|tip Manually skip to the next step.
+click Corgrad Wastes |q Wasting Away/Escape to the Surface
 step
-goto summerset_base 25.46,28.38
+goto summerset_base 25.43,28.38
 'Press _E_ to Open _Thieves Guild Dead Drop_
 'Take The Inescapable Helm
 'This is a _RELIC OF SUMMERSET_
 |tip Manually skip to the next step.
 step
 goto summerset_base 26.05,28.87
-'Continue East from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 27.35,29.17
-talk Ruliel
-|tip Manually skip to the next step.
+talk Ruliel |q Wasting Away/Talk to Ruliel
 step
 goto summerset_base 27.35,29.17
 talk Faidur
-|tip Manually skip to the next step.
+turnin Wasting Away
 step
 goto summerset_base 28.05,28.58
-'At the fork in the road, go North from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 28.27,24.81
 wayshrine The Crystal Tower
-|tip Manually skip to the next step.
 step
 goto summerset_base 29.26,23.25
-'Follow the path North from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 29.77,21.13
 talk Renzir
