@@ -20402,53 +20402,54 @@ step
 goto summerset_base 28.27,24.81
 wayshrine The Crystal Tower
 step
-goto summerset_base 28.62,25.08
+goto summerset_base 28.58,25.12
+step
+goto summerset_base 29.09,25.01
+step
+goto summerset_base 29.47,25.36
+'Go to the Crystal Tower Gatehouse |q A Necessary Alliance/Go to the Crystal Tower Gatehouse
 step
 goto summerset_base 29.12,25.69
 click Watchtower
 |tip Manually skip to the next step.
 step
 goto summerset_base 28.81,25.86
-'Run up the stairs and press _E_ to Climb _Watchtower Turret_
-|tip Manually skip to the next step.
 step
 goto summerset_base 28.93,25.72
-talk Razum-dar
-|tip Manually skip to the next step.
+talk Razum-dar |q A Necessary Alliance/Talk to Razum-dar in the Watchtower
 step
 goto summerset_base 28.86,25.84
 click Watchtower
 |tip Manually skip to the next step.
 step
-goto summerset_base 28.87,25.66
-'Run down the stairs and
-click Summerset
-|tip Manually skip to the next step.
+goto summerset_base 29.60,25.26
 step
-goto summerset_base 29.53,25.43
-'Run up three sets the stairs from here
-|tip Manually skip to the next step.
+goto summerset_base 30.00,25.88
+step
+goto summerset_base 30.65,26.03
 step
 goto summerset_base 31.08,25.09
-'Run up the stairs from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 31.97,24.77
-talk Valsirenn
-|tip Manually skip to the next step.
+'Go to the Crystal Tower Gatehouse |q A Necessary Alliance/Go to the Crystal Tower Gatehouse
+step
+goto summerset_base 31.97,24.77
+talk Valsirenn |q A Necessary Alliance/Talk to Valsirenn
 step
 goto summerset_base 32.05,25.75
-'Kill the three waves of mobs. Note: You must survive all three or else the event with reset.
-|tip Manually skip to the next step.
+'Defend the South Ritual Platform |q A Necessary Alliance/Defend the South Ritual Platform
+|tip Kill the three waves of mobs. Note: You must survive all three or else the event with reset.
 step
 goto summerset_base 31.44,24.03
-'As before, kill the three waves of mobs. Note: You must survive all three or else the event with reset.
-|tip Manually skip to the next step.
+'Defend the North Ritual Platform |q A Necessary Alliance/Defend the North Ritual Platform
+|tip As before, kill the three waves of mobs. Note: You must survive all three or else the event with reset.
 step
 goto summerset_base 31.96,24.78
-talk Valsirenn
-'Select either choice.
-|tip Manually skip to the next step.
+'Check on the Tower Sentinels |q A Necessary Alliance/Check on the Tower Sentinels
+step
+goto summerset_base 31.96,24.78
+talk Valsirenn |q A Necessary Alliance/Talk to Valsirenn
+|tip Pick either choice. It doesn't matter which. Both lead to the same outcome.
 step
 'Open your map:
 click Alinor Wayshrine
@@ -20456,61 +20457,41 @@ click Alinor Wayshrine
 |tip Manually skip to the next step.
 step
 goto alinor_base 48.16,49.27
-'Follow the road Northwest from here
-|tip Manually skip to the next step.
 step
 goto alinor_base 41.49,44.52
-'Follow the road North from here
-|tip Manually skip to the next step.
 step
 goto alinor_base 40.74,31.65
-'Run down the stairs from here
-|tip Manually skip to the next step.
 step
 goto alinor_base 36.49,32.65
-talk Razum-dar
-|tip Manually skip to the next step.
+talk Razum-dar |q A Necessary Alliance/Talk to Razum-dar in Alinor
 step
 goto alinor_base 34.75,33.45
-'Follow the road South from here
-|tip Manually skip to the next step.
 step
 goto alinor_base 35.14,52.74
-'Run up the three sets of stairs from here
-|tip Manually skip to the next step.
 step
 goto alinor_base 46.38,60.39
-'Run up to the Talking Dog and follow it
-|tip Manually skip to the next step.
+'Meet the Dog in the Alinor Gardens |q A Necessary Alliance/Meet the Dog in the Alinor Gardens
 step
 goto alinor_base 45.71,68.51
-talk Barbas
-|tip Manually skip to the next step.
+'Follow the Strange Dog |q A Necessary Alliance/Follow the Strange Dog
 step
-'Open your map:
+goto alinor_base 45.71,68.51
+talk Barbas |q A Necessary Alliance/Talk to Barbas
+step
+'Open your map. Right click to bring up the Summerset map.
 click Cey-Tarn Keep Wayshrine
 'Travel to the _Cey-Tarn Keep_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto summerset_base 30.71,51.28
-'Continue Southeast up the hill from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 32.51,51.70
-'Continue Southeast across the landscape from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 34.50,52.17
-'Continue Southeast across the landscape from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 34.83,52.46
-'Continue South across the landscape from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 35.30,54.31
-'Continue South across the landscape from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 34.95,55.18
 click The Vaults of Heinarwe
