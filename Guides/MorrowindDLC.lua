@@ -20483,65 +20483,57 @@ click Cey-Tarn Keep Wayshrine
 'Travel to the _Cey-Tarn Keep_ Wayshrine
 |tip Manually skip to the next step.
 step
-goto summerset_base 30.71,51.28
+goto summerset_base 30.72,51.25
 step
 goto summerset_base 32.51,51.70
 step
-goto summerset_base 34.50,52.17
+goto summerset_base 33.72,51.81
 step
-goto summerset_base 34.83,52.46
+goto summerset_base 34.42,51.54
+step
+goto summerset_base 34.29,52.10
+step
+goto summerset_base 34.87,52.38
 step
 goto summerset_base 35.30,54.31
+step
+goto summerset_base 34.95,55.18
+'Find Clavicus Vile's Cave |q A Necessary Alliance/Find Clavicus Vile's Cave
 step
 goto summerset_base 34.95,55.18
 click The Vaults of Heinarwe
 |tip Manually skip to the next step.
 step
 goto ceytarncaveExt01_base 81.22,50.29
-'Follow the path of the cave until you exit
-|tip Manually skip to the next step.
 step
-goto ceytarncaveExt01_base 60.84,47.63
-'Continue Southwest from here
-|tip Manually skip to the next step.
+goto ceytarncaveExt01_base 65.07,47.49
 step
 goto ceytarncaveExt01_base 51.60,60.50
-'Continue across the bridge
-|tip Manually skip to the next step.
 step
 goto ceytarncaveExt01_base 26.29,35.10
 click The Vaults of Heinarwe
 |tip Manually skip to the next step.
 step
-goto ceytarncaveInt02_base
-|tip Manually skip to the next step.
-step
 goto ceytarncaveInt01_base 20.84,55.50
-'Continue Southeast through the archway from here
-|tip Manually skip to the next step.
 step
 goto ceytarncaveInt01_base 16.34,67.24
-talk Clavicus Vile
-|tip Manually skip to the next step.
+'Find Clavicus Vile |q A Necessary Alliance/Find Clavicus Vile
+step
+goto ceytarncaveInt01_base 16.34,67.24
+talk Clavicus Vile |q A Necessary Alliance/Talk to Clavicus Vile
 step
 goto ceytarncaveInt01_base 16.64,59.10
-'Continue Northeast through the archway here
-|tip Manually skip to the next step.
 step
 goto ceytarncaveInt01_base 40.87,35.58
-'Run up the stairs from here
-|tip Manually skip to the next step.
 step
 goto ceytarncaveInt01_base 88.70,42.86
-'Press _E_ to Examine _Fields of Regret Safebox_
-'Take Fields of Regret Key
-|tip Manually skip to the next step.
+'Press _E_ to Examine _Fields of Regret Safebox_ |q A Necessary Alliance/Gather Vile's Key
+'Take _Fields of Regret Key_
 step
 goto ceytarncaveInt01_base 75.89,42.94
-talk Valsirenn
-|tip Manually skip to the next step.
+talk Valsirenn |q A Necessary Alliance/Talk to Valsirenn
 step
-'Open your map:
+'Open your map. Right click to bring up the Summerset map.
 click Lillandril Wayshrine
 'Travel to the _Lillandril_ Wayshrine
 |tip Manually skip to the next step.
@@ -20551,101 +20543,85 @@ goto lillandrill_base 64.39,67.93
 |tip Manually skip to the next step.
 step
 goto summerset_base 18.52,41.18
-'Follow the road Northeast from here until you reach the fork
-|tip Manually skip to the next step.
 step
 goto summerset_base 22.30,38.38
-'At the fork in the road, go left from here
-|tip Manually skip to the next step.
+step
+goto summerset_base 22.36,38.00
+step
+goto summerset_base 21.25,36.72
 step
 goto summerset_base 22.22,34.28
-'The road will disappear here but can be found Northwest from here
-|tip Manually skip to the next step.
+step
+goto summerset_base 22.43,33.88
 step
 goto summerset_base 21.97,33.25
-'Follow the road from here until you reach the Cathedral of Webs ruins
-|tip Manually skip to the next step.
+step
+goto summerset_base 20.58,33.33
 step
 goto summerset_base 20.18,30.61
-'Follow the path off the main road Northwest from here
-|tip Manually skip to the next step.
 step
 goto summerset_base 20.38,29.29
-talk Darien Gautier
-|tip Manually skip to the next step.
+'Search for Darien and Leythen |q A Necessary Alliance/Search for Darien and Leythen
+step
+goto summerset_base 20.38,29.29
+talk Darien Gautier |q A Necessary Alliance/Talk to Darien Gautier
 step
 goto summerset_base 20.28,29.15
-talk Earl Leythen
-|tip Manually skip to the next step.
+talk Earl Leythen |q A Necessary Alliance/Talk to Earl Leythen
 step
 goto summerset_base 20.28,29.15
-click Cathedral of Webs
-|tip Manually skip to the next step.
+click Cathedral of Webs |q A Necessary Alliance/Enter the Cathedral of Webs
 step
 goto sq7courtofbedlamruins_base 47.61,09.21
-'Run down the stairs from here
-|tip Manually skip to the next step.
 step
 goto sq7courtofbedlamruins_base 47.74,24.71
-'Continue West from here
-|tip Manually skip to the next step.
 step
-goto sq7courtofbedlamruins_base 35.23,29.78
-'Run down the stairs from here
-|tip Manually skip to the next step.
+goto sq7courtofbedlamruins_base 29.78,36.54
 step
 goto sq7courtofbedlamruins_base 37.39,36.92
-'Continue South through the archway
-|tip Manually skip to the next step.
 step
 goto sq7courtofbedlamruins_base 37.47,42.21
-talk Earl Leythen
-|tip Manually skip to the next step.
+'Explore the Cathedral of Webs |q A Necessary Alliance/Explore the Cathedral of Webs
+step
+goto sq7courtofbedlamruins_base 37.47,42.21
+talk Earl Leythen |q A Necessary Alliance/Talk to Earl Leythen
 step
 goto sq7courtofbedlamruins_base 45.80,43.60
 click Cathedral of Webs
 |tip Manually skip to the next step.
 step
 goto sq7courtofbedlamruins_base 59.86,40.05
-'Continue East passed the archway
-|tip Manually skip to the next step.
 step
 goto sq7courtofbedlamruins_base 69.88,37.39
-'Continue South from here
-|tip Manually skip to the next step.
 step
 goto sq7courtofbedlamruins_base 62.27,50.23
-'Continue West from here
-|tip Manually skip to the next step.
 step
 goto sq7courtofbedlamruins_base 37.43,54.29
-'Continue South from here
-|tip Manually skip to the next step.
 step
 goto sq7courtofbedlamruins_base 35.87,61.01
-'Run down both sets of stairs from here
-|tip Manually skip to the next step.
 step
 goto sq7courtofbedlamruins_base 37.85,77.36
-talk Earl Tundilwen
-|tip Manually skip to the next step.
+'Follow Leythen and Nocturnal's Earl |q A Necessary Alliance/Follow Leythen and Nocturnal's Earl
 step
 goto sq7courtofbedlamruins_base 37.85,77.36
-talk Earl Leythen
-|tip Manually skip to the next step.
+talk Earl Tundilwen |q A Necessary Alliance/Talk to Nocturnal's Earl
 step
-goto sq7courtofbedlamruins_base 40.94,83.82
-'Enter the cave entrance here and follow it until you can exit
-|tip Manually skip to the next step.
+goto sq7courtofbedlamruins_base 37.85,77.36
+talk Earl Leythen |q A Necessary Alliance/Talk to Earl Leythen
+step
+goto sq7courtofbedlamruins_base 42.43,90.82
+step
+goto sq7courtofbedlamruins_base 50.83,93.23
+step
+goto sq7courtofbedlamruins_base 63.66,91.53
 step
 goto sq7courtofbedlamruins_base 63.67,76.05
 click Leythen's Chambers
 |tip Manually skip to the next step.
 step
 goto sq7courtofbedlamruins_base 69.58,75.24
-kill Krezzinlor
-'Fairly easy fight with Leythan and Darien
-|tip Manually skip to the next step.
+kill Krezzinlor |q A Necessary Alliance/Go to Leythen's Chamber
+|tip This is a fairly easy boss fight with Leythan and Darien's help
 step
 goto sq7courtofbedlamruins_base 73.30,71.31
 click Cathedral of Webs
@@ -20656,8 +20632,10 @@ click Summerset
 |tip Manually skip to the next step.
 step
 goto summerset_base 21.66,30.88
-talk Mephala
-|tip Manually skip to the next step.
+'Contact Mephala Outside the Ruins |q A Necessary Alliance/Contact Mephala Outside the Ruins
+step
+goto summerset_base 21.66,30.88
+talk Mephala |q A Necessary Alliance/Talk to Mephala
 step
 'Open your map. Right click twice to bring up the Universe map. Select Artaeum in the upper-right corner.
 click Artaeum Wayshrine
@@ -20669,6 +20647,13 @@ click Portal to Ceporah Tower
 |tip Manually skip to the next step.
 step
 goto dreamingcave02_base 40.88,43.35
+talk Valsirenn |q A Necessary Alliance/Talk to Valsirenn
+step
+goto dreamingcave02_base 40.88,43.35
+talk Valsirenn
+turnin A Necessary Alliance
+step
+goto dreamingcave02_base 40.88,43.35
 talk Valsirenn
 accept The Crystal Tower
 step
@@ -20677,16 +20662,13 @@ goto dreamingcave02_base 16.34,42.74
 |tip Manually skip to the next step.
 step
 goto dreamingcave03_base 29.92,40.13
-talk Sotha Sil
-|tip Manually skip to the next step.
+talk Sotha Sil |q The Crystal Tower/Talk to Sotha Sil
 step
 goto dreamingcave03_base 36.46,48.92
 'Press _E_ to Use _Portal to Ceporah Main Gallery_
 |tip Manually skip to the next step.
 step
 goto dreamingcave02_base 14.78,47.22
-'Continue passed this archway until you reach the first room on the right
-|tip Manually skip to the next step.
 step
 goto dreamingcave02_base 24.12,76.49
 talk Darien Gautier
