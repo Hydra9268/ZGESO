@@ -20674,7 +20674,7 @@ goto dreamingcave02_base 24.12,76.49
 talk Darien Gautier
 |tip Manually skip to the next step.
 step
-'Open your map:
+'Open your map. Right click to bring up Artaeum
 click Artaeum Wayshrine
 'Travel to the _Artaeum_ Wayshrine
 |tip Manually skip to the next step.
@@ -20684,64 +20684,61 @@ talk Razum-dar
 |tip Manually skip to the next step.
 step
 goto artaeum_base 65.88,38.55
-'Continue Southwest from here
-|tip Manually skip to the next step.
 step
 goto artaeum_base 61.99,48.47
-'Run up the stairs from here
-|tip Manually skip to the next step.
 step
 goto artaeum_base 60.81,49.64
 talk Valsirenn
 |tip Manually skip to the next step.
 step
 goto artaeum_base 60.81,49.64
-talk Earl Leythen
-|tip Manually skip to the next step.
+talk Earl Leythen |q The Crystal Tower/Talk to Your Companions
 step
-'Open your map:
+'Open your map.
 click Artaeum Wayshrine
 'Travel to the _Artaeum_ Wayshrine
 |tip Manually skip to the next step.
 step
 goto artaeum_base 64.53,26.52
-'Drop here and continue down the stairs
-|tip Manually skip to the next step.
 step
 goto artaeum_base 66.04,27.02
-click The Dreaming Cave
-|tip Manually skip to the next step.
+click The Dreaming Cave |q The Crystal Tower/Enter the Dreaming Cave
 step
 goto dreamingcave01_base 55.38,62.35
-talk Sotha Sil
-|tip Manually skip to the next step.
+talk Sotha Sil |q The Crystal Tower/Talk to Sotha Sil
 step
 goto dreamingcave01_base 55.38,62.35
-talk Mephala
-|tip Manually skip to the next step.
+'Attend the Meeting in the Dreaming Cave |q The Crystal Tower/Attend the Meeting in the Dreaming Cave
 step
-goto dreamingcave01_base 51.73,51.27
-'Press _E_ to Enter _The Dreaming Cave Portal_
+goto dreamingcave01_base 55.38,62.35
+talk Mephala |q The Crystal Tower/Talk to Mephala
+step
+goto dreamingcave01_base 55.38,62.35
+'Wait for the Portal to Reset |q The Crystal Tower/Wait for the Portal to Reset
+step
+goto dreamingcave01_base 50.99,53.02
+'Press _E_ to Enter _The Dreaming Cave Portal_ |q The Crystal Tower
 |tip Manually skip to the next step.
 step
 goto crystaltower_approach_base 25.11,32.69
-'Follow the path to the Crystal Tower
-|tip Manually skip to the next step.
+step
+goto crystaltower_approach_base 26.07,38.53
+step
+goto crystaltower_approach_base 67.39,31.68
 step
 goto crystaltower_approach_base 67.19,59.58
-talk Barbas
-|tip Manually skip to the next step.
+'Reach the Entrance of the Crystal Tower |q The Crystal Tower/Reach the Entrance of the Crystal Tower
+step
+goto crystaltower_approach_base 67.19,59.58
+talk Barbas |q The Crystal Tower/Talk to Barbas
 step
 goto crystaltower_approach_base 68.10,60.54
-click The Crystal Tower
-|tip Manually skip to the next step.
+click The Crystal Tower |q The Crystal Tower/Enter the Crystal Tower
 step
-goto crystaltower_entryway_base 49.05,47.72
-'Run up the stairs from here
-|tip Manually skip to the next step.
+goto crystaltower_entryway_base 54.60,48.14
 step
 goto crystaltower_entryway_base 59.38,74.78
-'Run up both sets of stairs from here
+'Continue up the stairs from here
 |tip Manually skip to the next step.
 step
 goto crystaltower_entryway02_base 49.87,48.59
@@ -20749,91 +20746,81 @@ click Tower Walkway
 |tip Manually skip to the next step.
 step
 goto crystaltower_unfolding_base 49.99,89.53
-click Tower Artifact Vault
-|tip Manually skip to the next step.
+click Tower Artifact Vault |q The Crystal Tower/Ascend the Crystal Tower
 step
 goto crystaltower_trophy01_base 51.59,34.09
-kill Guardian Atronach
-'Not too difficult to kill. Just stay out of the red circles.
-|tip Manually skip to the next step.
+kill Guardian Atronach |q The Crystal Tower/Find a Way Out of the Artifact Vault
+|tip The Guardian Atronach isn't too difficult to kill. Just stay out of the telegraphing circles.
 step
 goto crystaltower_trophy01_base 51.14,20.84
-talk Sapiarch Nolyemal
-|tip Manually skip to the next step.
+talk Sapiarch Nolyemal |q The Crystal Tower/Talk to the Sapiarch
 step
 goto crystaltower_trophy01_base 49.03,46.88
 'Run up both sets of stairs from here
 |tip Manually skip to the next step.
 step
 goto crystaltower_trophy02_base 52.04,48.55
-'Press _E_ to Examine _Ancient Ballista_
-|tip Manually skip to the next step.
+'Press _E_ to Examine _Ancient Ballista_ |q The Crystal Tower/Find the Broken Ballista
 step
 goto crystaltower_trophy02_base 52.04,48.55
 'Run down both sets of stairs from here
 |tip Manually skip to the next step.
 step
-goto crystaltower_trophy01_base 42.84,60.76
-'Continue West through this archway
-|tip Manually skip to the next step.
+goto crystaltower_trophy01_base 37.56,61.04
 step
 goto crystaltower_trophy01_base 29.48,86.83
 'Press _E_ to Take _Ballista Crank_
-'Take Ballista Crank
+'Take _Ballista Crank_
 |tip Manually skip to the next step.
 step
-goto crystaltower_trophy01_base 58.74,60.45
-'Continue East through this archway
-|tip Manually skip to the next step.
+goto crystaltower_trophy01_base 37.56,61.04
+step
+goto crystaltower_trophy01_base 64.99,60.71
 step
 goto crystaltower_trophy01_base 68.74,82.45
 'Press _E_ to Take _Ballista Bolts_
-'Take Ballista Bolts
+'Take _Ballista Bolts_
 |tip Manually skip to the next step.
+step
+goto crystaltower_trophy01_base 64.99,60.71
+step
+goto crystaltower_trophy01_base 57.14,59.30
 step
 goto crystaltower_trophy01_base 59.08,46.73
-'Continue East through this archway
-|tip Manually skip to the next step.
 step
 goto crystaltower_trophy01_base 74.61,35.21
-'Press _E_ to Take _Coil of Rope_
-'Take Coil of Rope
-|tip Manually skip to the next step.
+'Press _E_ to Take _Coil of Rope_ |q The Crystal Tower/Find the Missing Pieces to the Ballista
+'Take _Coil of Rope_
 step
 goto crystaltower_trophy01_base 49.03,46.88
 'Run up both sets of stairs from here
 |tip Manually skip to the next step.
 step
 goto crystaltower_trophy02_base 52.80,47.45
-talk Darien Gautier
-|tip Manually skip to the next step.
+talk Darien Gautier |q The Crystal Tower/Bring the Ballista Parts to Darien
 step
 goto crystaltower_trophy02_base 52.80,47.45
-'Press _E_ to Use _Repaired Ballista_
-'Aim and fire the Ballista towards the rubble on the far end of the bridge. Afterward, aim and shoot at the Wraith of Crows that'll appear. Press ESC to leave Ballista.
-|tip Manually skip to the next step.
+'Press _E_ to Use _Repaired Ballista_ |q The Crystal Tower/Use the Ballista on the Blocked Passage
+|tip Aim and fire the Ballista towards the rubble on the far end of the bridge.
 step
 goto crystaltower_trophy02_base 51.63,70.09
 click Tower Library
 |tip Manually skip to the next step.
 step
 goto crystaltower_library_base 55.07,93.02
-'Run up the stairs from here
-|tip Manually skip to the next step.
 step
 goto crystaltower_library_base 53.51,71.64
-'Continue North through this archway
-|tip Manually skip to the next step.
 step
 goto crystaltower_library_base 43.20,62.25
-'Run up the stairs from here
-|tip Manually skip to the next step.
+step
+goto crystaltower_library_base 42.94,21.42
+'Ascend the Crystal Tower |q The Crystal Tower/Ascend the Crystal Tower
 step
 goto crystaltower_library_base 42.94,21.42
 'Press _E_ to Use _Key Pedestal_
 |tip Manually skip to the next step.
 step
-goto crystaltower_library_base 42.94,21.42
+goto crystaltower_library_base 43.94,19.04
 'Jump down from here to the floor below
 |tip Manually skip to the next step.
 step
@@ -20842,62 +20829,67 @@ goto crystaltower_library_base 48.41,12.49
 'Upcoming mini boss fight:
 kill Gloam Minotaur
 kill Custodian Simohil
-'Not a hard fight, but you'll need to pay attention to the moving AOE circles from the custodian. Meanwhile, try and stay behind the Minotaur. Its blows are strong. The best strategy is to focus on Minotaur first, then the custodian.
+|tip Not a hard fight, but you'll need to pay attention to the moving AOE telegraphs from the Custodian. Meanwhile, try and stay behind the Minotaur as its blows are strong. The best strategy is to focus on Minotaur first, then the custodian.
 |tip Manually skip to the next step.
 step
 goto crystaltower_library_base 43.20,62.25
-'Make your way South through the bookcase maze (of sorts) and run up the stairs from here
-|tip Manually skip to the next step.
 step
 goto crystaltower_library_base 42.94,21.42
-'Press _E_ to Use _Key Pedestal_
-|tip Manually skip to the next step.
+'Press _E_ to Use _Key Pedestal_ |q The Crystal Tower/Open the Library Gate
 step
 goto crystaltower_library_base 42.94,21.42
-talk Earl Leythen
-|tip Manually skip to the next step.
+talk Earl Leythen |q The Crystal Tower/Talk to Earl Leythen
 step
 goto crystaltower_library_base 54.80,19.54
-'Run through the gate
-|tip Manually skip to the next step.
 step
 goto crystaltower_library_base 56.62,19.66
-talk Earl Leythen
-|tip Manually skip to the next step.
+'Get Through the Opened Gate |q The Crystal Tower/Get Through the Opened Gate
+step
+goto crystaltower_library_base 56.62,19.66
+talk Earl Leythen |q The Crystal Tower/Talk to Earl Leythen
+|tip Either choice is up to you.
 step
 goto crystaltower_library_base 69.53,31.52
 click Tower Mausoleum
 |tip Manually skip to the next step.
 step
 goto crystaltower_mausoleum_base 50.33,40.56
-'Run up the stairs from here and circle around up to the third floor
-|tip Manually skip to the next step.
+step
+goto crystaltower_mausoleum_base 44.98,27.74
+step
+goto crystaltower_mausoleum_base 54.50,21.90
+step
+goto crystaltower_mausoleum_base 63.00,29.65
+step
+goto crystaltower_mausoleum_base 63.00,69.15
+step
+goto crystaltower_mausoleum_base 54.89,74.64
+step
+goto crystaltower_mausoleum_base 45.23,70.52
 step
 goto crystaltower_mausoleum_base 43.96,57.95
-'Continue West through the archway from here and up the stairs
-|tip Manually skip to the next step.
 step
 goto crystaltower_mausoleum_base 10.58,37.15
 click Tower Summit Approach
 |tip Manually skip to the next step.
 step
 goto crystaltower_barrier_base 16.84,75.41
-'Run up the stairs from here
-|tip Manually skip to the next step.
 step
 goto crystaltower_barrier_base 58.29,50.11
-'Upcoming mini boss fight:
-kill Earl Tundilwen
-'For this fight, avoid her AOE circles. They travel out of Tundilwen in random patterns. Interrupt her red telegraphs. Block her yellow telegraphs. Get behind Darien when he yells this. Failure will result in an instant kill from Duskbringer; the weapon Tundilwen wields.
-|tip Manually skip to the next step.
+'Ascend the Tower |q The Crystal Tower/Ascend the Tower
+step
+goto crystaltower_barrier_base 58.29,50.11
+kill Veya Releth |q The Crystal Tower/Defeat Nocturnal's Champion
+|tip Hide behind any pillar to protect yourself from Tundilwen's AOE telegraphs. They travel out of her in random patterns. Interrupt her red telegraphs and block her yellow telegraphs whenever possible. Get behind Darien when he yells to do so as failure will result in an instant kill from Duskbringer (the weapon Tundilwen wields).
 step
 goto crystaltower_barrier_base 86.02,51.28
-talk Darien Gautier
-|tip Manually skip to the next step.
+talk Darien Gautier |q The Crystal Tower/Talk to Darien Gautier
 step
 goto crystaltower_barrier_base 86.02,51.28
-'Press _E_ to Take _Restored Dawnbreaker_
-|tip Manually skip to the next step.
+'Cleanse the Dawnbreaker |q The Crystal Tower/Cleanse the Dawnbreaker
+step
+goto crystaltower_barrier_base 86.02,51.28
+'Press _E_ to Take _Restored Dawnbreaker_ |q The Crystal Tower/Take the Restored Dawnbreaker
 step
 goto crystaltower_barrier_base 89.52,50.96
 click Pinnacle of Transparent Law
@@ -20907,35 +20899,41 @@ goto crystaltower_top_base 80.47,64.08
 'Press _E_ to Use _Portal to the Crystal Summit_
 |tip Manually skip to the next step.
 step
-goto crystaltower_top02_base 30.70,40.00
-'Run around the parameter walkway and up the stairs from here
-|tip Manually skip to the next step.
+goto crystaltower_top02_base 77.05,49.40
+step
+goto crystaltower_top02_base 70.53,36.50
+step
+goto crystaltower_top02_base 51.98,27.18
+step
+goto crystaltower_top02_base 37.21,29.77
+step
+goto crystaltower_top02_base 30.58,37.15
 step
 goto crystaltower_top02_base 48.56,49.76
-'Press _E_ to _Use Dawnbreaker_
-'Upcoming mini boss fight:
-kill Shadow Tundilwen
-'This fight happens in two phases:
+'Use the Dawnbreaker to Confront Nocturnal |q The Crystal Tower/Use the Dawnbreaker to Confront Nocturnal
+step
+goto crystaltower_top02_base 48.56,49.76
+kill Shadow Veya |q The Crystal Tower/Stop Nocturnal
 '_PHASE 1._ Two-Handed Shadow Tundilwen has several single-focus attacks that are easy to avoid.
-'_PHASE 2._ After you kill her, Nocturnal will raise her up as a more powerful Six-Handed version where she has even greater AOE damage abilities. The most powerful of these is Singularity.
 'Meanwhile, use the Dawnbreaker's abilities when waves of mobs appear.
-|tip Manually skip to the next step.
+step
+goto crystaltower_top02_base 48.56,49.76
+kill Shadow Veya |q The Crystal Tower/Stop Nocturnal
+'_PHASE 2._ After you kill her, Nocturnal will raise her as a more powerful Six-Handed version where she has greater AOE damage abilities. The most powerful of these is Singularity.
+'Meanwhile, use the Dawnbreaker's abilities when waves of mobs appear.
 step
 goto crystaltower_top02_base 54.85,55.68
-'Press _E_ to Use _Transparent Law_
-|tip Manually skip to the next step.
+'Press _E_ to Use _Transparent Law_ |q The Crystal Tower/Reforge Transparent Law
 step
 goto crystaltower_top02_base 50.01,49.56
-talk Valsirenn
-|tip Manually skip to the next step.
+talk Valsirenn |q The Crystal Tower/Talk to Valsirenn
 step
 goto crystaltower_top02_base 47.89,47.98
-'Press _E_ to Use _Portal to Artaeum_
-|tip Manually skip to the next step.
+'Press _E_ to Use _Portal to Artaeum_ |q The Crystal Tower/Leave the Crystal Tower
 step
-goto dreamingcave01_base 58.25,40.31
+goto dreamingcave01_base 57.18,40.95
 talk Sotha Sil
-|tip Manually skip to the next step.
+turnin The Crystal Tower
 step
 goto dreamingcave01_base 75.61,49.08
 talk Valsirenn
@@ -20950,58 +20948,59 @@ goto artaeum_base 64.98,26.62
 |tip Manually skip to the next step.
 step
 goto dreamingcave02_base 42.93,59.36
-talk Oriandra
-|tip Manually skip to the next step.
+talk Oriandra |q A New Alliance/Talk to Oriandra
 step
 goto dreamingcave02_base 15.94,42.47
 'Press _E_ to Use _Portal to Sotha Sil's Study_
 |tip Manually skip to the next step.
 step
 goto dreamingcave03_base 25.24,49.52
-talk Sotha Sil
-|tip Manually skip to the next step.
+talk Sotha Sil |q A New Alliance/Talk to Sotha Sil
 step
 'Open your map. Right click twice to bring up the Universe map. Select Tamriel. Select Summerset.
 click Alinor Wayshrine
 'Travel to the _Alinor_ Wayshrine
 |tip Manually skip to the next step.
 step
-goto alinor_base 50.01,70.33
-'Continue up the stairs from here
-|tip Manually skip to the next step.
+goto alinor_base 49.51,70.14
 step
-goto alinor_base 47.15,77.36
-'Continue up the stairs and follow the path across the bridge to the Alinor castle
-|tip Manually skip to the next step.
+goto alinor_base 42.27,76.34
+step
+goto alinor_base 50.35,79.04
+step
+goto alinor_base 51.15,86.01
+step
+goto alinor_base 56.67,85.58
+step
+goto alinor_base 64.50,46.25
+'Go to the Royal Palace in Alinor |q A New Alliance/Go to the Royal Palace in Alinor
+step
+goto alinor_base 64.35,46.95
+talk Oriandra |q A New Alliance/Talk to Oriandra
 step
 goto alinor_base 64.50,46.25
 click Alinor's Royal Palace
-|tip Manually skip to the next step.
-step
-goto alinor_base 64.35,46.95
-talk Oriandra
-|tip Manually skip to the next step.
-step
-goto alinor_base 64.49,46.29
-click Alinor Royal Palace
 |tip Manually skip to the next step.
 step
 goto alinorroyalpalace1_base 63.12,64.13
 click Council Chamber
 |tip Manually skip to the next step.
 step
-goto alinorroyalpalace1_base 77.17,67.94
-talk Sapiarch Larnatille
-'Select either option
-|tip Manually skip to the next step.
+goto alinorroyalpalace1_base 72.36,64.80
+'Attend the Palace Meeting |q A New Alliance/Attend the Palace Meeting
 step
 goto alinorroyalpalace1_base 77.17,67.94
-talk Sapiarch Larnatille
-|tip Manually skip to the next step.
+talk Sapiarch Larnatille |q A New Alliance/Talk to Sapiarch Larnatille
+'Select either option
+step
+goto alinorroyalpalace1_base 77.17,67.94
+'Listen to Your Allies |q A New Alliance/Listen to Your Allies
+step
+goto alinorroyalpalace1_base 77.17,67.94
+talk Sapiarch Larnatille |q A New Alliance/Talk to Sapiarch Larnatille
 step
 goto alinorroyalpalace1_base 80.53,62.67
-talk Valsirenn
-|tip Manually skip to the next step.
+talk Valsirenn |q A New Alliance/Talk to Valsirenn
 step
 goto alinorroyalpalace1_base 67.77,64.86
 'Press _E_ to Open _Palace Throne Room_
@@ -21012,7 +21011,7 @@ step
 step
 goto alinorroyalpalace1_base 41.24,27.70
 talk Razum-dar
-|tip Manually skip to the next step.
+turnin A New Alliance
 step
 'Congratulations, you have completed the Summerset guide!
 ]])
