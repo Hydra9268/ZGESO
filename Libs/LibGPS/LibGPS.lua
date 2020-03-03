@@ -3,17 +3,23 @@
 ------------------------------------------------------------------
 
 local LIB_NAME = "LibGPS2"
-local lib = LibStub:NewLibrary(LIB_NAME, 17)
 
-if not lib then
-    return
-    -- already loaded and no upgrade necessary
+local lib
+if(not LibStub) then
+    lib = {}
+else
+    lib = LibStub:NewLibrary(LIB_NAME, 21)
+    if not lib then
+        return -- already loaded and no upgrade necessary
+    end
 end
 
-local LMP = LibStub("LibMapPing", true)
+local LMP = LibMapPing
 if(not LMP) then
     error(string.format("[%s] Cannot load without LibMapPing", LIB_NAME))
 end
+
+LIB_NAME = "LibGPS"
 
 local DUMMY_PIN_TYPE = LIB_NAME .. "DummyPin"
 local LIB_IDENTIFIER_FINALIZE = LIB_NAME .. "_Finalize"
@@ -22,9 +28,6 @@ lib.LIB_EVENT_STATE_CHANGED = "OnLibGPS2MeasurementChanged"
 local LOG_WARNING = "Warning"
 local LOG_NOTICE = "Notice"
 local LOG_DEBUG = "Debug"
-
-local POSITION_MIN = 0.085
-local POSITION_MAX = 0.915
 
 local TAMRIEL_MAP_INDEX = 1
 
@@ -59,11 +62,7 @@ local function LogMessage(type, message, ...)
 end
 
 local function GetAddon()
-    local addOn
-    local function errornous() addOn = 'a' + 1 end
-    local function errorHandler(err) addOn = string.match(err, "'GetAddon'.+user:/AddOns/(.-:.-):") end
-    xpcall(errornous, errorHandler)
-    return addOn
+    return string.match(debug.traceback("", 2), "user:/AddOns/(.+)")
 end
 
 local function FinalizeMeasurement()
@@ -96,15 +95,64 @@ local function GetPlayerWaypoint()
     return LMP:GetMapPing(MAP_PIN_TYPE_PLAYER_WAYPOINT)
 end
 
-local function SetMeasurementWaypoint(x, y)
+local function ClearCurrentWaypoint()
+    currentWaypointX, currentWaypointY, currentWaypointMapId = 0, 0, nil
+end
+
+local function RestoreCurrentWaypoint()
+    if(not currentWaypointMapId) then
+        LogMessage(LOG_DEBUG, "Called RestoreCurrentWaypoint without stored waypoint.")
+        return
+    end
+
+    local wasSet = false
+    if (currentWaypointX ~= 0 or currentWaypointY ~= 0) then
+        wasSet = SetPlayerWaypointByWorldLocation(currentWaypointX, 1, currentWaypointY)
+        if (not wasSet) then
+            LogMessage(LOG_DEBUG, "Cannot reset waypoint")
+        end
+    end
+
+    if(wasSet) then
+        LogMessage(LOG_DEBUG, "Waypoint was restored, request pin update")
+        needWaypointRestore = true -- we need to update the pin on the worldmap afterwards
+    else
+        RemovePlayerWaypoint()
+    end
+
+    ClearCurrentWaypoint()
+end
+
+local function SetMeasurementWaypoint(localX, localY)
+    local hasWaypoint = LMP:HasMapPing(MAP_PIN_TYPE_PLAYER_WAYPOINT)
+    if hasWaypoint then
+        currentWaypointX, currentWaypointY = GetPlayerWaypoint()
+        currentWaypointMapId = GetMapTileTexture()
+    end
+
     -- this waypoint stays invisible for others
     lib.suppressCount = lib.suppressCount + 1
     LMP:SuppressPing(MAP_PIN_TYPE_PLAYER_WAYPOINT)
-    LMP:SetMapPing(MAP_PIN_TYPE_PLAYER_WAYPOINT, MAP_TYPE_LOCATION_CENTERED, x, y)
-end
 
-local function SetPlayerWaypoint(x, y)
-    LMP:SetMapPing(MAP_PIN_TYPE_PLAYER_WAYPOINT, MAP_TYPE_LOCATION_CENTERED, x, y)
+    local _, pwx, pwh, pwy = GetUnitWorldPosition("player")
+    local x, y = 1, 1
+    if(math.abs(pwx - x) < 10000) then x = pwx + 10000 end
+    if(math.abs(pwy - y) < 10000) then y = pwy + 10000 end
+    if not SetPlayerWaypointByWorldLocation(x, pwh, y) then
+        LogMessage(LOG_WARNING, "Cannot set reference waypoint")
+        ClearCurrentWaypoint()
+        return 0, 0, false
+    end
+    local wpX, wpY = GetPlayerWaypoint()
+
+    local dwx, dwy = x - pwx, y - pwy
+    local dnx, dny = wpX - localX, wpY - localY
+    local scale = math.sqrt((dwx*dwx+dwy*dwy)/(dnx*dnx+dny*dny))
+
+    if hasWaypoint then
+        currentWaypointX, currentWaypointY = (currentWaypointX-localX) * scale + pwx, (currentWaypointY-localY) * scale + pwy
+    end
+    return wpX, wpY, hasWaypoint
 end
 
 local function RemovePlayerWaypoint()
@@ -141,17 +189,11 @@ local function StoreTamrielMapMeasurements()
 end
 
 local function CalculateMeasurements(mapId, localX, localY)
-    -- select the map corner farthest from the player position
-    local wpX, wpY = POSITION_MIN, POSITION_MIN
-    -- on some maps we cannot set the waypoint to the map border (e.g. Aurdion)
-    -- Opposite corner:
-    if (localX < 0.5) then wpX = POSITION_MAX end
-    if (localY < 0.5) then wpY = POSITION_MAX end
-
-    SetMeasurementWaypoint(wpX, wpY)
+    local wpX, wpY, hasWaypoint = SetMeasurementWaypoint(localX, localY)
 
     -- add local points to seen maps
     local measurementPositions = {}
+    lib.measurementPositions = measurementPositions
     table.insert(measurementPositions, { mapId = mapId, pX = localX, pY = localY, wpX = wpX, wpY = wpY })
 
     -- switch to zone map in order to get the mapIndex for the current location
@@ -200,16 +242,7 @@ local function CalculateMeasurements(mapId, localX, localY)
             zoneIndex = zoneIndex
         }
     end
-    return mapIndex
-end
-
-local function StoreCurrentWaypoint()
-    currentWaypointX, currentWaypointY = GetPlayerWaypoint()
-    currentWaypointMapId = GetMapTileTexture()
-end
-
-local function ClearCurrentWaypoint()
-    currentWaypointX, currentWaypointY = 0, 0, nil
+    return mapIndex, hasWaypoint
 end
 
 local function GetExtraMapMeasurement(extraMapIndex)
@@ -232,52 +265,6 @@ local function GetExtraMapMeasurement(extraMapIndex)
     return mapMeasurements[extraMapId]
 end
 
-local function RestoreCurrentWaypoint()
-    if(not currentWaypointMapId) then
-        LogMessage(LOG_DEBUG, "Called RestoreCurrentWaypoint without calling StoreCurrentWaypoint.")
-        return
-    end
-
-    local wasSet = false
-    if (currentWaypointX ~= 0 or currentWaypointY ~= 0) then
-        -- calculate waypoint position on the worldmap
-        local measurements = mapMeasurements[currentWaypointMapId]
-        local x = currentWaypointX * measurements.scaleX + measurements.offsetX
-        local y = currentWaypointY * measurements.scaleY + measurements.offsetY
-
-        for rootMapIndex, measurements in pairs(rootMaps) do
-            if not measurements then
-                measurements = GetExtraMapMeasurement(rootMapIndex)
-                rootMaps[rootMapIndex] = measurements
-            end
-            if(measurements) then
-                if(x > measurements.offsetX and x < (measurements.offsetX + measurements.scaleX) and
-                    y > measurements.offsetY and y < (measurements.offsetY + measurements.scaleY)) then
-                    if(orgSetMapToMapListIndex(rootMapIndex) ~= SET_MAP_RESULT_FAILED) then
-                        -- calculate waypoint coodinates within root map
-                        x = (x - measurements.offsetX) / measurements.scaleX
-                        y = (y - measurements.offsetY) / measurements.scaleY
-                        SetPlayerWaypoint(x, y)
-                        wasSet = true
-                        break
-                    end
-                end
-            end
-        end
-        if (not wasSet) then
-            LogMessage(LOG_DEBUG, "Cannot reset waypoint because it was outside of our reach")
-        end
-    end
-
-    if(wasSet) then
-        LogMessage(LOG_DEBUG, "Waypoint was restored, request pin update")
-        needWaypointRestore = true -- we need to update the pin on the worldmap afterwards
-    else
-        RemovePlayerWaypoint()
-    end
-    ClearCurrentWaypoint()
-end
-
 local function ConnectToWorldMap()
     lib.panAndZoom = ZO_WorldMap_GetPanAndZoom()
     lib.mapPinManager = ZO_WorldMap_GetPinManager()
@@ -294,11 +281,9 @@ local function HookSetMapToFunction(funcName)
         if(result ~= SET_MAP_RESULT_MAP_FAILED and not IsMapMeasured()) then
             LogMessage(LOG_DEBUG, funcName)
 
-            local success, mapResult = lib:CalculateMapMeasurements(false)
-            if(mapResult ~= SET_MAP_RESULT_CURRENT_MAP_UNCHANGED) then
-                result = mapResult
-            end
+            lib:CalculateMapMeasurements(false)
             orgFunction(...)
+            result = SET_MAP_RESULT_MAP_CHANGED
         end
         -- All stuff is done before anyone triggers an "OnWorldMapChanged" event due to this result
         return result
@@ -315,11 +300,9 @@ local function HookSetMapToPlayerLocation()
         if(result ~= SET_MAP_RESULT_MAP_FAILED and not IsMapMeasured()) then
             LogMessage(LOG_DEBUG, "SetMapToPlayerLocation")
 
-            local success, mapResult = lib:CalculateMapMeasurements(false)
-            if(mapResult ~= SET_MAP_RESULT_CURRENT_MAP_UNCHANGED) then
-                result = mapResult
-            end
+            lib:CalculateMapMeasurements(false)
             orgSetMapToPlayerLocation(...)
+            result = SET_MAP_RESULT_MAP_CHANGED
         end
         -- All stuff is done before anyone triggers an "OnWorldMapChanged" event due to this result
         return result
@@ -335,11 +318,9 @@ local function HookSetMapToMapListIndex()
         if(result ~= SET_MAP_RESULT_MAP_FAILED and not IsMapMeasured()) then
             LogMessage(LOG_DEBUG, "SetMapToMapListIndex")
 
-            local success, mapResult = lib:CalculateMapMeasurements(false)
-            if(mapResult ~= SET_MAP_RESULT_CURRENT_MAP_UNCHANGED) then
-                result = mapResult
-            end
+            lib:CalculateMapMeasurements(false)
             orgSetMapToMapListIndex(mapIndex)
+            result = SET_MAP_RESULT_MAP_CHANGED
         end
 
         -- All stuff is done before anyone triggers an "OnWorldMapChanged" event due to this result
@@ -355,10 +336,7 @@ local function HookProcessMapClick()
         local result = orgProcessMapClick(...)
         if(result ~= SET_MAP_RESULT_MAP_FAILED and not IsMapMeasured()) then
             LogMessage(LOG_DEBUG, "ProcessMapClick")
-            local success, mapResult = lib:CalculateMapMeasurements(true)
-            if(mapResult ~= SET_MAP_RESULT_CURRENT_MAP_UNCHANGED) then
-                result = mapResult
-            end
+            lib:CalculateMapMeasurements(true)
             -- Returning is done via clicking already
         end
         return result
@@ -373,10 +351,7 @@ local function HookSetMapFloor()
         local result = orgSetMapFloor(...)
         if result ~= SET_MAP_RESULT_MAP_FAILED and not IsMapMeasured() then
             LogMessage(LOG_DEBUG, "SetMapFloor")
-            local success, mapResult = lib:CalculateMapMeasurements(true)
-            if(mapResult ~= SET_MAP_RESULT_CURRENT_MAP_UNCHANGED) then
-                result = mapResult
-            end
+            lib:CalculateMapMeasurements(true)
             orgSetMapFloor(...)
         end
         return result
@@ -420,6 +395,7 @@ local function Initialize() -- wait until we have defined all functions
     HookSetMapToFunction("SetMapToQuestCondition")
     HookSetMapToFunction("SetMapToQuestStepEnding")
     HookSetMapToFunction("SetMapToQuestZone")
+    HookSetMapToFunction("SetMapToAutoMapNavigationTargetPosition")
     HookSetMapToPlayerLocation()
     HookSetMapToMapListIndex()
     HookProcessMapClick()
@@ -435,8 +411,6 @@ local function Initialize() -- wait until we have defined all functions
     addRootMap(980) -- Clockwork City
     addRootMap(1027) -- Artaeum
     -- Any future extra dimension map here
-
-    SetMapToPlayerLocation() -- initial measurement so we can get back to where we are currently
 
     LMP:RegisterCallback("AfterPingAdded", HandlePingEvent)
     LMP:RegisterCallback("AfterPingRemoved", HandlePingEvent)
@@ -456,7 +430,7 @@ end
 
 --- Removes all cached measurement values.
 function lib:ClearMapMeasurements()
-    mapMeasurements = { }
+    ZO_ClearTable(mapMeasurements)
 end
 
 --- Removes the cached measurement values for the map that is currently active.
@@ -529,10 +503,7 @@ function lib:CalculateMapMeasurements(returnToInitialMap)
         lib:PushCurrentMap()
     end
 
-    local hasWaypoint = LMP:HasMapPing(MAP_PIN_TYPE_PLAYER_WAYPOINT)
-    if(hasWaypoint) then StoreCurrentWaypoint() end
-
-    local mapIndex = CalculateMeasurements(mapId, localX, localY)
+    local mapIndex, hasWaypoint = CalculateMeasurements(mapId, localX, localY)
 
     -- Until now, the waypoint was abused. Now the waypoint must be restored or removed again (not from Lua only).
     if(hasWaypoint) then
@@ -663,21 +634,11 @@ function lib:MapZoomInMax(x, y)
     return result
 end
 
-local SetCurrentZoom, GetCurrentZoom -- TODO remove
-if(GetAPIVersion() >= 100025) then
-    function SetCurrentZoom(zoom)
-        return lib.panAndZoom:SetCurrentNormalizedZoom(zoom)
-    end
-    function GetCurrentZoom()
-        return lib.panAndZoom:GetCurrentNormalizedZoom()
-    end
-else
-    function GetCurrentZoom()
-        return lib.panAndZoom:GetCurrentZoom()
-    end
-    function SetCurrentZoom(zoom)
-        return lib.panAndZoom:SetCurrentZoom(zoom)
-    end
+local function SetCurrentZoom(zoom)
+    return lib.panAndZoom:SetCurrentNormalizedZoom(zoom)
+end
+local function GetCurrentZoom()
+    return lib.panAndZoom:GetCurrentNormalizedZoom()
 end
 
 --- Stores information about how we can back to this map on a stack.
@@ -786,5 +747,35 @@ function lib:PopCurrentMap()
 end
 
 Initialize()
+
+local function InitializeSaveData()
+    local VERSION = 4
+    local apiVersion = GetAPIVersion()
+    LibGPS_Data = LibGPS_Data or {apiVersion = apiVersion, version = VERSION}
+    if #lib.mapMeasurements > 0 then LogMessage(LOG_DEBUG, "Measurements before loading") end
+    if LibGPS_Data.apiVersion ~= apiVersion or LibGPS_Data.version ~= VERSION then
+        LibGPS_Data.apiVersion = apiVersion
+        LibGPS_Data.version = VERSION
+    elseif LibGPS_Data.measurements then
+        ZO_ShallowTableCopy(LibGPS_Data.measurements, lib.mapMeasurements)
+    end
+    LibGPS_Data.measurements = lib.mapMeasurements
+
+    LogMessage(LOG_DEBUG, "Saved Variables loaded")
+end
+
+local function onLoad(eventCode, addonName)
+    if addonName ~= LIB_NAME then
+        return
+    end
+    EVENT_MANAGER:UnregisterForEvent(LIB_NAME, eventCode)
+
+    InitializeSaveData()
+
+    SetMapToPlayerLocation() -- initial measurement so we can get back to where we are currently
+end
+
+EVENT_MANAGER:UnregisterForEvent(LIB_NAME, EVENT_ADD_ON_LOADED)
+EVENT_MANAGER:RegisterForEvent(LIB_NAME, EVENT_ADD_ON_LOADED, onLoad)
 
 LibGPS2 = lib

@@ -1,14 +1,22 @@
 local LIB_IDENTIFIER = "LibMapPing"
-local lib = LibStub:NewLibrary(LIB_IDENTIFIER, 9)
 
-if not lib then
-    return -- already loaded and no upgrade necessary
+local lib
+if(not LibStub) then
+    lib = {}
+else
+    lib = LibStub:NewLibrary(LIB_IDENTIFIER, 12)
+    if not lib then
+        return -- already loaded and no upgrade necessary
+    end
 end
 
-local function Log(message, ...)
-    df("[%s] %s", LIB_IDENTIFIER, message:format(...))
+local logger
+if(LibDebugLogger) then
+    logger = LibDebugLogger.Create(LIB_IDENTIFIER)
+else
+    local function noop() end
+    logger = setmetatable({}, { __index = function() return noop end })
 end
-
 
 -- emulate how the game calculates when a player should get kicked for sending too many pings and prevent it
 
@@ -161,21 +169,26 @@ local function HandleMapPing(eventCode, pingEventType, pingType, pingTag, x, y, 
         lib.pendingPing[key] = nil
     end
     if(pingEventType == PING_EVENT_ADDED) then
+        logger:Debug("Ping added", key)
         lib.cm:FireCallbacks("BeforePingAdded", pingType, pingTag, x, y, isPingOwner)
         lib.pingState[key] = lib.MAP_PING_SET
         g_mapPinManager:RemovePins(PING_CATEGORY, pingType, pingTag)
         if(not lib:IsPingSuppressed(pingType, pingTag)) then
+            logger:Debug("Create pin")
             g_mapPinManager:CreatePin(pingType, pingTag, x, y)
             if(isPingOwner and not lib:IsPingMuted(pingType, pingTag)) then
+                logger:Debug("Play sound")
                 PlaySound(SOUNDS.MAP_PING)
             end
         end
         lib.cm:FireCallbacks("AfterPingAdded", pingType, pingTag, x, y, isPingOwner)
     elseif(pingEventType == PING_EVENT_REMOVED) then
+        logger:Debug("Ping removed", key)
         lib.cm:FireCallbacks("BeforePingRemoved", pingType, pingTag, x, y, isPingOwner)
         lib.pingState[key] = lib.MAP_PING_NOT_SET
         g_mapPinManager:RemovePins(PING_CATEGORY, pingType, pingTag)
         if (isPingOwner and not lib:IsPingSuppressed(pingType, pingTag) and not lib:IsPingMuted(pingType, pingTag)) then
+            logger:Debug("Play sound")
             PlaySound(SOUNDS.MAP_PING_REMOVE)
         end
         lib.cm:FireCallbacks("AfterPingRemoved", pingType, pingTag, x, y, isPingOwner)
@@ -305,7 +318,7 @@ end
 --- Returns true if the pin has been refreshed.
 function lib:RefreshMapPin(pingType, pingTag)
     if(not g_mapPinManager) then
-        Log("PinManager not available. Using ZO_WorldMap_UpdateMap instead.")
+        logger:Info("PinManager not available. Using ZO_WorldMap_UpdateMap instead.")
         ZO_WorldMap_UpdateMap()
         return true
     end
@@ -332,6 +345,7 @@ function lib:MutePing(pingType, pingTag)
     local key = GetKey(pingType, pingTag)
     local mute = lib.mutePing[key] or 0
     lib.mutePing[key] = mute + 1
+    logger:Debug("Mute ping %s - new count: %d", key, lib.mutePing[key])
 end
 
 --- Unmutes the map ping of the specified type.
@@ -342,6 +356,7 @@ function lib:UnmutePing(pingType, pingTag)
     local mute = (lib.mutePing[key] or 0) - 1
     if(mute < 0) then mute = 0 end
     lib.mutePing[key] = mute
+    logger:Debug("Unmute ping %s - new count: %d", key, lib.mutePing[key])
 end
 
 --- Returns true if the map ping has been muted
@@ -358,6 +373,7 @@ function lib:SuppressPing(pingType, pingTag)
     local key = GetKey(pingType, pingTag)
     local suppress = lib.suppressPing[key] or 0
     lib.suppressPing[key] = suppress + 1
+    logger:Debug("Suppress ping %s - new count: %d", key, lib.suppressPing[key])
 end
 
 --- Unsuppresses the map ping so it shows up again
@@ -367,6 +383,7 @@ function lib:UnsuppressPing(pingType, pingTag)
     local suppress = (lib.suppressPing[key] or 0) - 1
     if(suppress < 0) then suppress = 0 end
     lib.suppressPing[key] = suppress
+    logger:Debug("Unsuppress ping %s - new count: %d", key, lib.suppressPing[key])
 end
 
 --- Returns true if the map ping has been suppressed

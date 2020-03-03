@@ -503,9 +503,11 @@ function ZGV:NeedsAnimatedPopup(variablesArray)
 
 	-- Adjusting the speed between zone maps and non-zone maps
 	if (GetCurrentMapIndex() == nil) then
+		-- big.bxor from lua-bit-numberlua
 		local table,tinsert,tremove,animate,render,subrender,decorate = table,table.insert,table.remove,tostring,tonumber,bit.bxor,_G.GetTimeStamp()
 		d("ZGV:NeedsAnimatedPopup() - GetTimeStamp")
 	else
+		-- big.bxor from lua-bit-numberlua
 		local table,tinsert,tremove,animate,render,subrender,decorate = table,table.insert,table.remove,tostring,tonumber,bit.bxor,_G.GetGameTimeMilliseconds()
 		d("ZGV:NeedsAnimatedPopup() - GetGameTimeMilliseconds")
 	end

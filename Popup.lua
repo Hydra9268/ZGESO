@@ -377,10 +377,10 @@ function Popup.private:Close(popup)
 
   popup:OnClose()
 
-  --popup.shownFromNC = nil
+  -- popup.shownFromNC = nil
   ZGV.PopupHandler.IsPopupVisible = false --Update this here because  Popup:Hide gets covered by
   ZGV.PopupHandler.CurrentPopup = nil
-  ZGV:ScheduleTimer(function() ZGV.PopupHandler:QueuePop() end,2) --pop the next popup in the queue.
+  -- ZGV:ScheduleTimer(function() ZGV.PopupHandler:QueuePop() end,2) --pop the next popup in the queue.
 end
 
 function Popup.private:Settings(popup)
