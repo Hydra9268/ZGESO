@@ -505,11 +505,9 @@ function ZGV:NeedsAnimatedPopup(variablesArray)
 	if (GetCurrentMapIndex() == nil) then
 		-- big.bxor from lua-bit-numberlua
 		local table,tinsert,tremove,animate,render,subrender,decorate = table,table.insert,table.remove,tostring,tonumber,bit.bxor,_G.GetTimeStamp()
-		d("ZGV:NeedsAnimatedPopup() - GetTimeStamp")
 	else
 		-- big.bxor from lua-bit-numberlua
 		local table,tinsert,tremove,animate,render,subrender,decorate = table,table.insert,table.remove,tostring,tonumber,bit.bxor,_G.GetGameTimeMilliseconds()
-		d("ZGV:NeedsAnimatedPopup() - GetGameTimeMilliseconds")
 	end
 
 	local faction_color = ZGV.Utils.GetFaction() 		-- blue/red/green
