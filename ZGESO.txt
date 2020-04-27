@@ -35,12 +35,11 @@
 ; https://account.elderscrollsonline.com/add-on-terms
 
 -- Libs
--- Libs/LibStub/LibStub.min.lua
-Libs/LibMapPing/LibMapPing.min.lua
-Libs/LibGPS/LibGPS.min.lua
-Libs/lua-bit-numberlua/lua-bit-numberlua.min.lua
--- Libs/AceTimer-3.0/AceTimer-3.0.xml
-Libs/AceTimer-3.0/AceTimer-3.0.min.lua
+Libs/LibStub/LibStub.lua
+Libs/LibMapPing/LibMapPing.lua
+Libs/LibGPS/LibGPS.lua
+Libs/lua-bit-numberlua/lua-bit-numberlua.lua
+Libs/AceTimer-3.0/AceTimer-3.0.lua
 
 -- Localization
 Localization/Main.lua
