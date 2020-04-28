@@ -1,6 +1,8 @@
 local ZGV=ZygorGuidesViewer
 if not ZGV then return end
 
+local GPS = LibGPS2
+
 MEMORYSPAM=false
 
 local Pointer = {}
@@ -1226,7 +1228,7 @@ SLASH_COMMANDS["/zgsurvey"] = function()
 end
 
 SLASH_COMMANDS["/zgpos"] = function(checker)
-	local gps = LibStub("LibGPS2"):GetCurrentMapMeasurements();
+	local gps = GPS:GetCurrentMapMeasurements()
 	if checker == "gps" then
 		d("zone index: "..gps.zoneIndex)
 		d("map index: "..gps.mapIndex)
