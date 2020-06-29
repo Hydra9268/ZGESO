@@ -297,7 +297,7 @@ GOALTYPES['goto'] = {
 		return (self.force_complete or all_gotos) -- If the goto has a |c then it is completable. Or if there are only gotos present in this step.
 	end,
 	iscomplete = function(self) -- Called repeatedly
-		
+
 		-- if the player isn't in the zone map then adjust the distance (TernaryOperator ?:) -- GetGameTimeMilliseconds
 		self.dist = (GetCurrentMapIndex() == nil) and 5 or 1
 
@@ -362,9 +362,10 @@ GOALTYPES['wayshrine'] = 	{
 
 			-- Index wasn't found... okay well we don't want to spam looking through POI's because it isn't efficient. Assign the index to 0 which returns an empty POI (no match) then reset it every 10s to try to match again.
 			if not self.wayshrine_POIIndex then
-				ZGV:Debug("Wayshrine '%s' not found, will retry in 10s.", self.wayshrine)
+				--ZGV:Debug("Wayshrine '%s' not found, will retry in 10s.", self.wayshrine)
+				ZGV:Debug("Wayshrine '%s' not found.", self.wayshrine)
 				self.wayshrine_POIIndex = 0
-				ZGV:ScheduleTimer(function() self.wayshrine_POIIndex = nil end, 10)
+				-- ZGV:ScheduleTimer(function() self.wayshrine_POIIndex = nil end, 10)
 			end
 		end
 

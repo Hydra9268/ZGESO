@@ -1,8 +1,10 @@
-## Title: Leveling Guides v1.4.573
+## Title: Leveling Guides v1.4.574
 ## Description: A Zygor addon updated by Hydra9268 for the Elsweyr expansion.
 ## Author: Hydra9268
-## Version: 1.4.573
+## Version: 1.4.574
+## AddOnVersion: 14574
 ## APIVersion: 100030 100031
+;## DependsOn: LibGPS AceTimer-3.0>=146
 ## DependsOn: LibGPS
 ## SavedVariables: ZGESOSettings
 ## Disclaimer: This Add-on is not created by, affiliated with or sponsored by ZeniMax Media Inc. or its affiliates. The Elder Scrolls and related logos are registered trademarks or trademarks of ZeniMax Media Inc. in the United States and/or other countries. All rights reserved. This Add-on is not sponsored by Zygor Guides.
