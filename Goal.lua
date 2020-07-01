@@ -297,7 +297,7 @@ GOALTYPES['goto'] = {
 		return (self.force_complete or all_gotos) -- If the goto has a |c then it is completable. Or if there are only gotos present in this step.
 	end,
 	iscomplete = function(self) -- Called repeatedly
-		
+
 		-- if the player isn't in the zone map then adjust the distance (TernaryOperator ?:) -- GetGameTimeMilliseconds
 		self.dist = (GetCurrentMapIndex() == nil) and 5 or 1
 
