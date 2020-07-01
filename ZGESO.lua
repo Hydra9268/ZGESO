@@ -1,5 +1,7 @@
 assert(not ZGV, "Two ZGV loaded.")
 
+-- local LAT = AceTimer
+
 -----------------------------------------
 -- LOCAL REFERENCES
 -----------------------------------------
@@ -53,7 +55,7 @@ ZGV.WM = WINDOW_MANAGER
 -- LOAD TIME SETUP
 -----------------------------------------
 
--- LibStub("AceTimer-3.0"):Embed(ZGV)-- Embed AceTimer into ZGV
+-- LAT:Embed(ZGV)-- Embed AceTimer into ZGV
 
 -----------------------------------------
 -- STARTUP
