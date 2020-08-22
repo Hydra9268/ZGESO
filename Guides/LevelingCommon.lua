@@ -958,7 +958,7 @@ accept To Auridon
 step
 goto 61.53,29.33
 click Prowler Skiff
-'Board the Skiff |q To Auridon/Board the Skiff |next Aldmeri Dominion Leveling Guides\\Auridon 
+'Board the Skiff |q To Auridon/Board the Skiff |next Aldmeri Dominion Leveling Guides\\Auridon
 ]])
 ZGV:RegisterGuide("Aldmeri Dominion Leveling Guides\\Auridon",[[
 loadingimage loadscreen_auridon_01.dds
@@ -19596,7 +19596,7 @@ step
 goto 43.88,89.73
 talk Captain Kaleen
 'Tell her _"I'm ready to leave now. Let's sail."_
-talk Captain Kaleen |q Tip of the Spearhead/Talk to Captain Kaleen |next Daggerfall Covenant Leveling Guides/Betnikh  
+talk Captain Kaleen |q Tip of the Spearhead/Talk to Captain Kaleen |next Daggerfall Covenant Leveling Guides/Betnikh
 ]])
 ZGV:RegisterGuide("Daggerfall Covenant Leveling Guides\\Betnikh",[[
 loadingimage loadscreen_betnikh_01.dds
@@ -21810,10 +21810,6 @@ goto 63.14,48.73
 'Follow the path |q Lineage of Tooth and Claw/Take the Werewolf to the Cave
 |tip Manually skip to the next step.
 step
-goto 64.17,51.18
-click The Illusion of Death
-lorebook The Illusion of Death/1/9/3
-step
 goto 61.62,51.14
 'Take the Captured Werewolf to the Cave |q Lineage of Tooth and Claw/Take the Werewolf to the Cave
 step
@@ -21840,6 +21836,13 @@ goto 66.89,51.05
 talk Gloria Fausta
 'Tell her _"No, not this way. We need you alive. I'll handle the Duke."_
 talk Gloria Fausta |q Lineage of Tooth and Claw/Talk to Gloria Fausta
+step
+'Leave the cave
+|tip manually skip to the next setep
+step
+goto glenumbra_base 64.17,51.18
+click The Illusion of Death
+lorebook The Illusion of Death/1/9/3
 step
 'Open your map to Glenumbra:
 click Aldcroft Wayshrine
@@ -22958,6 +22961,10 @@ step
 goto 64.18,43.84
 'Follow the path |q The Labyrinth/Find the Remaining Knights
 |tip Manually skip to the next step.
+step
+goto 69.85,16.98
+talk Sir Thomas Kinlin
+|tip Manually skip to the next step
 step
 goto 70.19,24.44
 kill Vorthag
