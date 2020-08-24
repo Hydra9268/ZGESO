@@ -38336,15 +38336,7 @@ goto 58.95,58.86
 'Follow the road into town |q The Missing of Bleakrock/Find Missing Villagers
 |tip Manually skip to the next step.
 step
-goto bleakrockvillage_base 78.61,47.55
-|tip Inside the building.
-talk Captain Rana
-'Tell her _"Let's leave now."_
-'Tell her _"Yes, I'm sure. It's time to leave."_
-turnin The Missing of Bleakrock
-accept Sparking the Flame
-step
-goto 14.34,43.35
+goto bleakrockvillage_base 14.34,43.35
 talk Halmaera
 accept Lost on Bleakrock
 step
@@ -38596,6 +38588,14 @@ step
 goto bleakrockvillage_base 59.79,57.16
 talk Molla
 turnin Underfoot
+step
+goto bleakrockvillage_base 78.61,47.55
+|tip Inside the building.
+talk Captain Rana
+'Tell her _"Ive gathered all the missing villagers."_
+'Tell her _"Lets get going."_
+turnin The Missing of Bleakrock
+accept Sparking the Flame
 step
 goto 81.98,70.25
 'Follow the path up |q Sparking the Flame/Light the Signal Fire
