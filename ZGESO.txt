@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## Title: Leveling Guides v1.4.574
 ## Description: A Zygor addon updated by Hydra9268 for the Elsweyr expansion.
 ## Author: Hydra9268
