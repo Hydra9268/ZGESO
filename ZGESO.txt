@@ -134,6 +134,7 @@ Guides/LevelingDaggerfallCovenant.lua
 Guides/LevelingEbonheartPact.lua
 Guides/Skyshards.lua
 Guides/MorrowindDLC.lua
+Guides/MainQuestsOnly.lua
 
 Testing/Main.lua
 Testing/UI.lua
