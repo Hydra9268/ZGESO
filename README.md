@@ -19,17 +19,17 @@ Install through the excellent add-on manager <a href="https://minion.mmoui.com/"
 
 ### Recent Updates
 
-* 3/13 merge: Sharlikran: Misc changes and updates
+* 3/13/21 merge: Sharlikran: Misc changes and updates
 
-* 3/13 merge: Sharlikran: Removed embedded libraries. Fixed /zgpos output
+* 3/13/21 merge: Sharlikran: Removed embedded libraries. Fixed /zgpos output
 
-* 3/13 merge: Krandor1: Fix for the two glumbra bugs reported by AegonVI
+* 3/13/21 merge: Krandor1: Fix for the two glumbra bugs reported by AegonVI
 
-* 3/13 merge: Krandor1: Reorder bleakrock quests so hero of bleakrock achivement can be earned. Bug request from Cavanoskus on forums.
+* 3/13/21 merge: Krandor1: Reorder bleakrock quests so hero of bleakrock achivement can be earned. Bug request from Cavanoskus on forums.
 
-* 11/2: API version now supports Dragonhold
+* 11/2/20: API version now supports Dragonhold
 
-* 8/12: API version now supports Scalebreaker
+* 8/12/20: API version now supports Scalebreaker
 
 ### Coming Soon
 
