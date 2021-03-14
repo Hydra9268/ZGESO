@@ -1,9 +1,9 @@
-## Title: Leveling Guides v1.4.574
+## Title: Leveling Guides v1.4.575
 ## Description: A Zygor addon updated by Hydra9268 for the Elsweyr expansion.
 ## Author: Hydra9268
-## Version: 1.4.574
-## AddOnVersion: 14574
-## APIVersion: 100030 100031
+## Version: 1.4.575
+## AddOnVersion: 14575
+## APIVersion: 100031 100032
 ;## DependsOn: LibGPS AceTimer-3.0>=146
 ## DependsOn: LibGPS
 ## SavedVariables: ZGESOSettings
@@ -134,6 +134,7 @@ Guides/LevelingDaggerfallCovenant.lua
 Guides/LevelingEbonheartPact.lua
 Guides/Skyshards.lua
 Guides/MorrowindDLC.lua
+Guides/MainQuestsOnly.lua
 
 Testing/Main.lua
 Testing/UI.lua
