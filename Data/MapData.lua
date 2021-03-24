@@ -774,7 +774,7 @@ ZGV.MapData = {
 		["torhamekhard_01_base"] =			{ name = "Tor-Hame-Khard",					id = 398, xoffset = 0.1265839601423, yoffset = 0.75004362784684, xscale = 0.00086606256016, },
 		["torhamekhard_02_base"] =			{ name = "Tor-Hame-Khard",					id = 398, xoffset = 0.1265839544232, yoffset = 0.75004365766084, xscale = 0.00086606881055, },
 		["archonsgrove_base"] =				{ name = "Archon's Grove",					id = 399, xoffset = 0.1210682749432, yoffset = 0.02426498113643, xscale = 0.02426498113643, },
-		["artaeum_base"] =					{ nam4e = "Artaeum",							id = 400, xoffset = 0.7203422519217, yoffset = -0.1333265163732, xscale = 0.21701741385220, },
+		["artaeum_base"] =					{ name = "Artaeum",							id = 400, xoffset = 0.7203422519217, yoffset = -0.1333265163732, xscale = 0.21701741385220, },
 		["dreamingcave01_base"] = 			{ name = "The Dreaming Cave",				id = 423, xoffset = 0.8591652810663, yoffset = -0.0778817039006, xscale = 0.00349846693007, },
 		["dreamingcave02_base"] =			{ name = "Ceporah Tower",					id = 401, xoffset = 0.8595572067723, yoffset = -0.0775171044139, xscale = 0.00756373676590, },
 		["dreamingcave03_base"] =			{ name = "Ceporah Tower",					id = 401, xoffset = 0.8539167166648, yoffset = -0.0758768134077, xscale = 0.00469550897040, },
