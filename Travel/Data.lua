@@ -519,12 +519,12 @@ Data.MapIdsByName = {
 	["Jode's Core"]						= 475,
 	["Darkpool Mine"]					= 476,
 	["The Tangle"]						= 477,
-	
+
 	--Greymoor
 	["Riften Ratway"]                   = 478,
 	["Riften Ratway"]                   = 479,
 	["Blackreach: Mzark Cavern"]        = 480,
-	["Palace of Kings"]                 = 481, 
+	["Palace of Kings"]                 = 481,
 	["Palace of Kings"]                 = 482,
 	["Palace of Kings"]                 = 483,
 	["Western Skyrim"]                  = 484,
@@ -558,10 +558,10 @@ Data.MapIdsByName = {
 	["Greymoor Keep"]                   = 512,
 	["Greymoor Keep"]                   = 513,
 	["Gray Host Tunnels"]               = 514,
-			
+
 	--Markarth
 	["Gray Host Sanctuary"]             = 515,
-	["Grayhome"]                        = 516, 
+	["Grayhome"]                        = 516,
 	["Castle Grayhome"]                 = 517,
 	["Castle Grayhome"]                 = 518,
 	["Castle Grayhome"]                 = 519,
@@ -612,7 +612,7 @@ Data.MapIdsByName = {
 	["Grayhaven"]                       = 564,
 	["Understone Keep"]                 = 565,
 	["Bthar-Zel Repository"]            = 566,
-	
+
 }
 
 -----------------------------------------
