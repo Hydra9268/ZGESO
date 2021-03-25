@@ -617,7 +617,7 @@ ZGV.MapData = {
 		["Deep-Root"] = [[UI_Map_DeepRoot_base01]],
 		["Remnant of Argon"] = [[remnantofargon_base]],
 
-		-- ELSWEYR
+		-- NORTHERN ELSWEYR
 		["Elsweyr"] = [[elsweyr_base]],
 		["Rimmen"] = [[rimmen_base]],
 		["Rimmen Palace Recesses"] = [[rimmensewer_base]],
@@ -661,7 +661,7 @@ ZGV.MapData = {
 		["Darkpool Mine"] = [[thescab_base]],
 		["The Tangle"] = [[thetangle_base]],
 		
-		--Greymoor
+		-- WESTERN SKYRIM
 		["Riften Ratway"] = [[riftenratwaytop_base]],
 		["Riften Ratway"] = [[riftenratwaybottom_base]],
 		["Blackreach: Mzark Cavern"] = [[blackreach_teaser_base]],
@@ -700,7 +700,7 @@ ZGV.MapData = {
 		["Greymoor Keep"] = [[greymooreintsec03_base]],
 		["Gray Host Tunnels"] = [[solitudetemplecave]],
 		
-		--Markarth
+		-- THE REACH
 		["Gray Host Sanctuary"] = [[SecretHideout_base]],
 		["Grayhome"] = [[GrayHostBase_base]],
 		["Castle Grayhome"] = [[GrayHostBase1FloorPast_base]],
@@ -882,7 +882,7 @@ ZGV.MapData = {
 		["UI_Map_DeepRoot_base01"] =		{ name = "Deep-Root",						id = 446, xoffset = 0.76208050261367, yoffset = 0.74632332557616, xscale = 0.0022949879744312, },
 		["remnantofargon_base"] =			{ name = "Remnant of Argon",				id = 447, xoffset = 0.76284289412495, yoffset = 0.74563348419786, xscale = 0.00059357049039193, },
 
-		-- ELSWEYR
+		-- NORTHERN ELSWEYR
 		["elsweyr_base"] =					{ name = "Elsweyr",							id = 448, xoffset = 0.45640256807954, yoffset = 0.57828674362147, xscale = 0.1449014005214, },
 		["rimmen_base"] =					{ name = "Rimmen",							id = 449, xoffset = 0.5673620104789733887, yoffset = 0.6207519769668579102, xscale = 0.0195800814447080231, },
 		["riverholdcity_base"] =			{ name = "Riverhold",						id = 450, xoffset = 0.5673620104789733887, yoffset = 0.6207519769668579102, xscale = 0.0195800814447080231, },
@@ -926,7 +926,7 @@ ZGV.MapData = {
 		["thescab_base"] =					{ name = "Darkpool Mine",					id = 476, xoffset = -0.09350672985143, yoffset = -0.068329917242788, xscale = 1.1000791747227, },
 		["thetangle_base"] =				{ name = "The Tangle",						id = 477, xoffset = 1.1163170573778, yoffset = 0.85366619048082, xscale = 0.85366619048082, },
 		
-		--Greymoor
+		-- WESTERN SKYRIM
 		["riftenratwaytop_base"] =          { name = "Riften Ratway",                   id = 478, xoffset = 0.005464, yoffset = 0.144269, xscale = 0.010268, },
 		["riftenratwaybottom_base"] =       { name = "Riften Ratway",                   id = 479, xoffset = 0.005391, yoffset = 0.144266, xscale = 0.0103328, },
 		["blackreach_teaser_base"] =        { name = "Blackreach: Mzark Cavern",        id = 480, xoffset = 0.700414, yoffset = 1.551162, xscale = 0.021448, },
@@ -965,7 +965,7 @@ ZGV.MapData = {
 		["greymooreintsec03_base"] =        { name = "Greymoor Keep",                   id = 513, xoffset = 0.672208, yoffset = 1.511351, xscale = 0.004718, },
 		["solitudetemplecave"] =            { name = "Gray Host Tunnels",               id = 514, xoffset = 0.427004, yoffset = 0.209152, xscale = 0.005310, },
 		
-		--Markarth
+		-- THE REACH
 		["SecretHideout_base"] =           { name = "Gray Host Sanctuary",              id = 515, xoffset = 0.314608, yoffset = 0.323837, scale = 0.001967, },
 		["GrayHostBase_base"] =            { name = "Grayhome",                         id = 516, xoffset = 0.250000, yoffset = 0.124777, scale = 0.015706, },
 		["GrayHostBase1FloorPast_base"] =  { name = "Castle Grayhome",                  id = 517, xoffset = 0.254464, yoffset = 0.121001, scale = 0.004598, },
