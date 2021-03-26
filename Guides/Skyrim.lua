@@ -787,7 +787,7 @@ step
 goto westernskryim_base 34.88,47.11
 talk Lieutenant Korleva
 accept Crisis at Dragon Bridge
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 743 -- New players will have already accept the quest. Setting the level check at 15 ensures new player who passed level 6 can skip this step.
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 743 -- New players will have already accepted the quest. Setting the level check at 15 ensures new player who passed level 6 can skip this step.
 step
 goto 40.19,44.82
 talk Pilgrim Melda
