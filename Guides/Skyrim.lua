@@ -19,17 +19,17 @@ step
 goto westernskryim_base 28.58,46.84
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
 step
-goto westernskryim_base 29.39,46.97
+goto 29.39,46.97
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
 step
-goto westernskryim_base 32.09,47.31
+goto 32.09,47.31
 wayshrine Deepwood Vale
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
 step
-goto westernskryim_base 33.43,46.57
+goto 33.43,46.57
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
 step
-goto westernskryim_base 34.88,47.11
+goto 34.88,47.11
 talk Lieutenant Korleva
 accept Crisis at Dragon Bridge
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
@@ -784,7 +784,7 @@ goto 36.95,43.31
 step
 talk Fennorian |q The Gathering Storm/Talk to Fennorian
 step
-goto westernskryim_base 34.88,47.11
+goto 34.88,47.11
 talk Lieutenant Korleva
 accept Crisis at Dragon Bridge
 |only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 743 -- New players will have already accepted the quest. Setting the level check at 15 ensures new player who passed level 6 can skip this step.
