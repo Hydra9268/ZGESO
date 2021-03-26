@@ -662,13 +662,13 @@ ZGV.MapData = {
 		["The Tangle"] = [[thetangle_base]],
 		
 		-- WESTERN SKYRIM
+		["Western Skyrim"] = [[westernskryim_base]],
 		["Riften Ratway"] = [[riftenratwaytop_base]],
 		["Riften Ratway"] = [[riftenratwaybottom_base]],
 		["Blackreach: Mzark Cavern"] = [[blackreach_teaser_base]],
 		["Palace of Kings"] = [[palaceofkingsmain_base]],
 		["Palace of Kings"] = [[palaceofkingsback_base]],
 		["Palace of Kings"] = [[palaceofkingslower_base]],
-		["Western Skyrim"] = [[westernskryim_base]],
 		["Solitude"] = [[solitudecity_base]],
 		["Kilkreath"] = [[kilkreath_base]],
 		["Shadowgreen"] = [[shadowgreen_upper_base]],
