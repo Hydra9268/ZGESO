@@ -15354,25 +15354,6 @@ step
 'Click the _Accept Quest_ button at the bottom
 accept The Queen's Decree
 step
-goto elsweyr_base 40.81,25.95
-wayshrine Star Haven
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 4 and _G.GetCurrentMapZoneIndex() == 712 or ZGV.Utils.GetPlayerPreciseLevel() < 4 and _G.GetCurrentMapZoneIndex() == 647 -- Northern Elsweyr is the new starting zone for new players, OR backup step once the player visits the destination
-step
-goto elsweyr_base 40.81,25.95
-click Star Haven Wayshrine
-'Open your map. Right click to go to the Tamriel map.
-'Travel to the Shimmerene Wayshrine |q The Queen's Decree/Travel to Shimmerene in Summerset
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 4 and _G.GetCurrentMapZoneIndex() == 712 or ZGV.Utils.GetPlayerPreciseLevel() < 4 and _G.GetCurrentMapZoneIndex() == 647 -- Northern Elsweyr is the new starting zone for new players, OR backup step once the player visits the destination
-step
-'Open your map. Right click until you see the Tamirel map.
-'Travel to the _Shimmerene_ Wayshrine |q The Queen's Decree/Travel to Shimmerene in Summerset
-|tip Summerset is the large island in the southwest of Tamriel
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 4 and _G.GetCurrentMapZoneIndex() ~= 712 or ZGV.Utils.GetPlayerPreciseLevel() > 4 and _G.GetCurrentMapZoneIndex() == 647 -- If the player isn't new and not in the starting zone for new players, OR backup step once the player visits the destination
-step
-goto shimmerene_base 26.19,69.92
-'Travel to the _Shimmerene_ Wayshrine |q The Queen's Decree/Travel to Shimmerene in Summerset
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 4 and _G.GetCurrentMapZoneIndex() == 615 -- If the player is new and somehow in Summerset. An edge case check for situations when a player created their character while Summerset was new and the default starting location, and the player forgot about that character until now.
-step
 goto shimmerene_base 24.42,70.53
 'Follow the road Southeast of here |q The Queen's Decree
 |tip Manually skip to the next step.
