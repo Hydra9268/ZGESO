@@ -207,63 +207,200 @@ accept The Coven Conspiracy
 step
 goto grahtwood_base 64.07,40.00
 talk Lyris Titanborn |q The Coven Conspiracy/Talk to Lyris Titanborn
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 69.52,34.61
 talk Lyris
 |tip Turn around and use Icereach Coven Medallion
 'Follow the Magic Trail |q The Coven Conspiracy/Follow the Magic Trail
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 'Examine the Corpse |q The Coven Conspiracy/Examine the Corpse
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 talk Lyris Titanborn |q The Coven Conspiracy/Talk to Lyris Titanborn
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 61.83,39.61
 click Elden Root Temple Wayshrine
 'Travel to Ossuary in Grahtwood
 |tip Follow the road.
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 77.71,60.72
 'Use Icereach Coven Medallion
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
  goto 78.19,57.07
 'Follow the Magic Trail |q The Coven Conspiracy/Follow the Magic Trail
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 'Examine Harrowfiend
 'Examine the Corpse |q The Coven Conspiracy/Examine the Corpse
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 'Open Map Grahtwood
 click Fallinesti Winter Wayshrine
 'Travel to Fallinesti Winter in Grahtwood
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 'Jump down carefully to the ground
 'Use Icereach Coven Medallion
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 31.66,60.81
 'Follow the Magic Trail |q The Coven Conspiracy/Follow the Magic Trail
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 'Examine Witch Pike
 'Examine Ritual Object |q The Coven Conspiracy/Examine Ritual Object
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 34.04,59.99
 talk Lyris Titanborn |q The Coven Conspiracy/Talk to Lyris Titanborn
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
+-- End: Aldmeri Dominion Faction
+
+-- Start: Daggerfall Covenant Faction
+'Open your map. Right click until you see the Tamriel map.
+'Travel to _Daggerfall_ Wayshrine in Glenumbra
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto daggerfall_base 46.61,30.94
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto daggerfall_base 55.19,36.27
+click Fighters Guild
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto daggerfall_base 54.21,34.42
+talk Lyris Titanborn
+accept The Coven Conspiracy
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+-- *** AUTHORING GUIDE FOR DC FACTION PATH ***
+-- End: Daggerfall Covenant Faction
+
+-- Start: Ebonheart Pact Faction
+'Open your map. Right click until you see the Tamriel map.
+'Travel to _Davon's Watch_ Wayshrine in Stonefalls
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto davonswatch_base 70.32,76.86
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 67.08,65.73
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 71.65,59.58
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 69.39,53.85
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 71.52,52.32
+click Fighters Guild
+|tip Go Downstairs.
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 70.26,51.07
+talk Lyris Titanborn
+accept The Coven Conspiracy
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto deshaan_base 50.75,57.66
+talk Lyris Titanborn |q The Coven Conspiracy/Talk to Lyris Titanborn
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 50.75,57.66
+talk Lyris
+|tip Turn around and use Icereach Coven Medallion
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 55.73,55.88
+'Follow the Magic Trail |q The Coven Conspiracy/Follow the Magic Trail
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+'Examine the Corpse |q The Coven Conspiracy/Examine the Corpse
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 55.76,56.03
+talk Lyris Titanborn |q The Coven Conspiracy/Talk to Lyris Titanborn
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+'Open Deshaan Map
+click Eidolon's Hollow Wayshrine
+'Travel to Eidolon's Hollow in Deshaan
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 89.23,42.56
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 91.15,40.92
+'Use Icereach Coven Medallion
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 90.75,37.12
+'Follow the Magic Trail |q The Coven Conspiracy/Follow the Magic Trail
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 90.32,38.10
+'Follow the Magic Trail |q The Coven Conspiracy/Follow the Magic Trail
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+'Examine Harrowfiend
+'Examine the Corpse |q The Coven Conspiracy/Examine the Corpse
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+'Open Map Deshaan
+click Shad Astula Wayshrine
+'Travel to Shad Astula in Deshaan
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 55.68,38.65
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 52.31,41.65
+'Use Icereach Coven Medallion
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 53.57,37.98
+'Follow the Magic Trail |q The Coven Conspiracy/Follow the Magic Trail
+tip Manually skip to the next step
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+'Examine Witch Pike
+'Examine Ritual Object |q The Coven Conspiracy/Examine Ritual Object
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 53.80,38.43
+'Jump down carefully
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 54.19,40.02
+talk Lyris Titanborn |q The Coven Conspiracy/Talk to Lyris Titanborn
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+-- *** AUTHORING GUIDE FOR EP FACTION PATH ***
+-- End: Ebonheart Pact Faction
+
+-- Prologue: Finished for All Factions.
 goto riften_base 54.19,50.34
 click the Withered Tree
 'Enter the Withered Tree
@@ -554,63 +691,6 @@ click Windhelm Wayshrine
 'Travel to Solitude Docks in Western Skyrim
 |only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
--- End: Aldmeri Dominion Faction
-
--- Start: Daggerfall Covenant Faction
-'Open your map. Right click until you see the Tamriel map.
-'Travel to _Daggerfall_ Wayshrine in Glenumbra
-|tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC" and ZGV.Utils.GetPlayerPreciseLevel() > 10
-step
-goto daggerfall_base 46.61,30.94
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC" and ZGV.Utils.GetPlayerPreciseLevel() > 10
-step
-goto daggerfall_base 55.19,36.27
-click Fighters Guild
-|tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC" and ZGV.Utils.GetPlayerPreciseLevel() > 10
-step
-goto daggerfall_base 54.21,34.42
-talk Lyris Titanborn
-accept The Coven Conspiracy
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC" and ZGV.Utils.GetPlayerPreciseLevel() > 10
-step
--- *** AUTHORING GUIDE FOR DC FACTION PATH ***
--- End: Daggerfall Covenant Faction
-
--- Start: Ebonheart Pact Faction
-'Open your map. Right click until you see the Tamriel map.
-'Travel to _Davon's Watch_ Wayshrine in Stonefalls
-|tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
-step
-goto davonswatch_base 70.32,76.86
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
-step
-goto 67.08,65.73
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
-step
-goto 71.65,59.58
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
-step
-goto 69.39,53.85
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
-step
-goto 71.52,52.32
-click Fighters Guild
-|tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
-step
-goto 70.32,48.94
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
-step
-goto 70.26,51.07
-talk Lyris Titanborn
-accept The Coven Conspiracy
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
-step
--- *** AUTHORING GUIDE FOR EP FACTION PATH ***
--- End: Ebonheart Pact Faction
 
 -- END: WESTERN SKYRIM INTRO GUIDE FOR EXISTING PLAYERS
 
