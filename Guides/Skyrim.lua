@@ -205,62 +205,6 @@ talk Lyris Titanborn
 accept The Coven Conspiracy
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
--- End: Aldmeri Dominion Faction
-
--- Start: Daggerfall Covenant Faction
-'Open your map. Right click until you see the Tamriel map.
-'Travel to _Daggerfall_ Wayshrine in Glenumbra
-|tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC" and ZGV.Utils.GetPlayerPreciseLevel() > 10
-step
-goto daggerfall_base 46.61,30.94
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC" and ZGV.Utils.GetPlayerPreciseLevel() > 10
-step
-goto daggerfall_base 55.19,36.27
-click Fighters Guild
-|tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC" and ZGV.Utils.GetPlayerPreciseLevel() > 10
-step
-goto daggerfall_base 54.21,34.42
-talk Lyris Titanborn
-accept The Coven Conspiracy
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC" and ZGV.Utils.GetPlayerPreciseLevel() > 10
-step
--- End: Daggerfall Covenant Faction
-
--- Start: Ebonheart Pact Faction
-'Open your map. Right click until you see the Tamriel map.
-'Travel to _Davon's Watch_ Wayshrine in Stonefalls
-|tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
-step
-goto davonswatch_base 70.32,76.86
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
-step
-goto 67.08,65.73
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
-step
-goto 71.65,59.58
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
-step
-goto 69.39,53.85
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
-step
-goto 71.52,52.32
-click Fighters Guild
-|tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
-step
-goto 70.32,48.94
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
-step
-goto 70.26,51.07
-talk Lyris Titanborn
-accept The Coven Conspiracy
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
-step
--- End: Ebonheart Pact Faction
-
 goto grahtwood_base 64.07,40.00
 talk Lyris Titanborn |q The Coven Conspiracy/Talk to Lyris Titanborn
 |only if ZGV.Utils.GetPlayerPreciseLevel() > 10
@@ -610,6 +554,64 @@ click Windhelm Wayshrine
 'Travel to Solitude Docks in Western Skyrim
 |only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
+-- End: Aldmeri Dominion Faction
+
+-- Start: Daggerfall Covenant Faction
+'Open your map. Right click until you see the Tamriel map.
+'Travel to _Daggerfall_ Wayshrine in Glenumbra
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto daggerfall_base 46.61,30.94
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto daggerfall_base 55.19,36.27
+click Fighters Guild
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto daggerfall_base 54.21,34.42
+talk Lyris Titanborn
+accept The Coven Conspiracy
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+-- *** AUTHORING GUIDE FOR DC FACTION PATH ***
+-- End: Daggerfall Covenant Faction
+
+-- Start: Ebonheart Pact Faction
+'Open your map. Right click until you see the Tamriel map.
+'Travel to _Davon's Watch_ Wayshrine in Stonefalls
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto davonswatch_base 70.32,76.86
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 67.08,65.73
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 71.65,59.58
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 69.39,53.85
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 71.52,52.32
+click Fighters Guild
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 70.32,48.94
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 70.26,51.07
+talk Lyris Titanborn
+accept The Coven Conspiracy
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+-- *** AUTHORING GUIDE FOR EP FACTION PATH ***
+-- End: Ebonheart Pact Faction
+
 -- END: WESTERN SKYRIM INTRO GUIDE FOR EXISTING PLAYERS
 
 
