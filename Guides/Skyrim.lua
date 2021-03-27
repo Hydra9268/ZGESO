@@ -3944,7 +3944,7 @@ talk Gwendis
 accept The Ravenwatch Inquiry
 |only if ZGV.Utils.GetFaction("player","notvet")=="EP"
 step
-'Oepn Map Glenumbra
+'Open Map Glenumbra
 click Baelbourn Rock Wayshrine
 'Travel to Baelbourn Rock in Glenumbra
 goto glenumbra_base 74.90,45.97
