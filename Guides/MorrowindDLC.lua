@@ -23541,7 +23541,7 @@ step
 'You can still seek out the remaining Xinchei-Konu pieces for the Xinchei-Konu at the Xinchei-Konu Monument
 ]])
 
-ZGV:RegisterGuide("LEVELING\\Northern Elsweyr",[[
+ZGV:RegisterGuide("LEVELING\\Elsweyr",[[
 loadingimage loadscreen_elsweyr_zone_01.dds
 description Once thought lost to the mists of time, fearsome Dragons now soar the skies of Elsweyr, leaving scorched ruin in their wake. Discover the dark purpose behind their rampage in a new epic story and prevent the destruction of the Khajiiti homeland.
 step

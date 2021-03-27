@@ -179,377 +179,436 @@ step
 
 
 -- BEGIN: WESTERN SKYRIM INTRO GUIDE FOR EXISTING PLAYERS
-'Open Map Auridon
-click Vulkhel Guard Wayshrine
-'Travel to Vulkhel Guard in Audridon
-goto vulkhelguard_base 11.04,59.05
-|tip She's inside the Fighters Guild.
+
+-- Start: Aldmeri Dominion Faction
+'Open your map. Right click until you see the Tamriel map.
+'Travel to _Vulkhel Guard_ Wayshrine in Audridon
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
+goto vulkhelguard_base 49.43,44.72
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto vulkhelguard_base 37.62,45.37
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto vulkhelguard_base 26.54,56.90
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto vulkhelguard_base 16.34,59.53
+click Fighters Guild
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto vulkhelguard_base 11.15,59.01
 talk Lyris Titanborn
 accept The Coven Conspiracy
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
-'Open Map Glunumbra
-click Daggerfall Wayshrine
-'Travel to Daggerfall in Glunumbra
-goto daggerfall_base 45.51,29.44
+-- End: Aldmeri Dominion Faction
+
+-- Start: Daggerfall Covenant Faction
+'Open your map. Right click until you see the Tamriel map.
+'Travel to _Daggerfall_ Wayshrine in Glenumbra
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC" and ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC" and ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
-goto davonswatch_base 70.28,51.02
-|tip She's inside the Fighters Guild.
+goto daggerfall_base 46.61,30.94
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto daggerfall_base 55.19,36.27
+click Fighters Guild
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto daggerfall_base 54.21,34.42
 talk Lyris Titanborn
 accept The Coven Conspiracy
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC" and ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
+-- End: Daggerfall Covenant Faction
+
+-- Start: Ebonheart Pact Faction
+'Open your map. Right click until you see the Tamriel map.
+'Travel to _Davon's Watch_ Wayshrine in Stonefalls
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto davonswatch_base 70.32,76.86
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 67.08,65.73
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 71.65,59.58
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 69.39,53.85
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 71.52,52.32
+click Fighters Guild
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 70.32,48.94
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+goto 70.26,51.07
+talk Lyris Titanborn
+accept The Coven Conspiracy
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
+-- End: Ebonheart Pact Faction
+
 goto grahtwood_base 64.07,40.00
 talk Lyris Titanborn |q The Coven Conspiracy/Talk to Lyris Titanborn
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 69.52,34.61
 talk Lyris
 |tip Turn around and use Icereach Coven Medallion
 'Follow the Magic Trail |q The Coven Conspiracy/Follow the Magic Trail
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 'Examine the Corpse |q The Coven Conspiracy/Examine the Corpse
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 talk Lyris Titanborn |q The Coven Conspiracy/Talk to Lyris Titanborn
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 61.83,39.61
 click Elden Root Temple Wayshrine
 'Travel to Ossuary in Grahtwood
 |tip Follow the road.
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 77.71,60.72
 'Use Icereach Coven Medallion
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
  goto 78.19,57.07
 'Follow the Magic Trail |q The Coven Conspiracy/Follow the Magic Trail
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 'Examine Harrowfiend
 'Examine the Corpse |q The Coven Conspiracy/Examine the Corpse
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 'Open Map Grahtwood
 click Fallinesti Winter Wayshrine
 'Travel to Fallinesti Winter in Grahtwood
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 'Jump down carefully to the ground
 'Use Icereach Coven Medallion
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 31.66,60.81
 'Follow the Magic Trail |q The Coven Conspiracy/Follow the Magic Trail
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 'Examine Witch Pike
 'Examine Ritual Object |q The Coven Conspiracy/Examine Ritual Object
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 34.04,59.99
 talk Lyris Titanborn |q The Coven Conspiracy/Talk to Lyris Titanborn
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto riften_base 54.19,50.34
 click the Withered Tree
 'Enter the Withered Tree
 talk Lyris Titanborn |q The Coven Conspiracy/Talk to Lyris Titanborn
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 'Wait for Goharth Ironbelly |q The Coven Conspiracy/Wait for Goharth Ironbelly
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 55.72,65.53
 |tip He walks out of the bar. Keep him in your sight without him seeing you, and don't get too close.
 'Follow Goharth Ironbelly |q The Coven Conspiracy/Follow Goharth Ironbelly
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 55.76,65.40
 click The Ratway
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto riftenratwaytop_base 45.45,46.01
 talk Lyris Titanborn |q The Coven Conspiracy/Talk to Lyris Titanborn
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto riftenratwaytop_base 45.56,33.86
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 55.25,18.95
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 62.99,26.19
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 62.58,62.55
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 32.54,77.21
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 18.15,76.65
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto riftenratwaybottom_base 14.75,72.09
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 23.91,58.33
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto riftenratwaybottom_base 25.31,58.35
 'Take Goharth Ironbelly's Key |q The Coven Conspiracy/Take Goharth Ironbelly's Key
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto riftenratwaybottom_base 36.05,65.01
 click Upper Ratway
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto riftenratwaytop_base 25.88,69.74
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 25.77,59.69
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 click Lucrative Oppertunity in Eastmarch
 talk Lyris Titanborn |q The Coven Conspiracy/Talk to Lyris Titanborn
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 45.49,43.63
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 45.67,57.24
 click Riften
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto riften_base 55.58,68.08
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 50.67,68.07
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 57.55,66.76
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 44.64,87.58
 talk Lyris Titanborn
 turnin The Coven Conspiracy
 accept The Coven Conundrum
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 click Cart to Eastmarch
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto eastmarch_base 30.61,30.52
 click the Grinning Horker
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 talk Lyris Titanborn |q The Coven Conundrum/Talk to Lyris Titanborn
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 30.33,30.21
 'Examine Half-Eaten Dinner
 'Search the Grinning Horker |q The Coven Conundrum/.*Search the Grinning Horker.* |count 1
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 30.39,30.00
 |tip up the stairs.
 'Examine Used Bedroll
 'Search the Grinning Horker |q The Coven Conundrum/.*Search the Grinning Horker.* |count 2
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 30.12,30.55
 |tip Down the stairs.
 'Examine Blood Trail
 'Search the Grinning Horker |q The Coven Conundrum/.*Search the Grinning Horker.* |count 3
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 click Basement
 |tip Manually skip to the next step.
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
+step
 goto 30.14,30.30
 click Cabinet
 click Secret Passage
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto blackreach_teaser_base 75.81,77.58
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 talk Hrolt |q The Coven Conundrum/Talk to Hrolt
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 70.84,68.63
 talk Lyris Titanborn |q The Coven Conundrum/Talk to Lyris Titanborn
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 72.93,62.87
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 80.34,57.29
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 'Destroy the Witch Pike
 'Explore Blackreach |q The Coven Conundrum/.*Explore Blackreach.* |count 1
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 83.34,55.03
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 91.93,45.80
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 88.34,25.68
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 69.81,17.87
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 68.86,20.18
 'Examine icereach Coven Note
 'Explore Blackreach |q The Coven Conundrum/.*Explore Blackreach.* |count 2
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 44.25,24.80
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 32.44,22.32
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 30.59,17.23
 click cell gate
 talk Amberic Daigre
 'Explore Blackreach |q The Coven Conundrum/.*Explore Blackreach.* |count 3
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 21.87,31.02
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 14.36,35.50
 talk Lyris Titanborn |q The Coven Conundrum/Talk to Lyris Titanborn
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 click Kagalthar Ruins
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 13.09,34.60
 |tip glitch on ZeniMax side same coordinates from one end of tunnel to other so go to other end and talk.
 talk Sentry Darfal
 talk Lyris Titanborn |q The Coven Conundrum/Talk to Lyris Titanborn
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto windhelm_base 51.07,65.75
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 48.53,34.59
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 talk Housecarl Vaer |q The Coven Conundrum/Talk to Housecarl Vaer
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 click Palace of Kings
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto palaceofkingsmain_base 22.65,48.02
 click Skyrim Reconnaissance Map
 |tip Manually skip to the next step
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 31.46,33.00
 click Palace of Kings Inner Chambers
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto palaceofkingsback_base 35.00,32.90
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 46.67,20.96
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 63.92,08.39
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 60.76,21.58
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 72.27,32.06
 click Palace of Kings Lower Chambers
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto palaceofkingsmain_base 75.22,33.59
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 76.82,63.16
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 talk Sentry Alma |q The Coven Conundrum/Talk to Sentry Alma
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 click Palace of Kings Dungeon Stairs
 |tip Manually skip to thte next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto palaceofkingslower_base 69.60,21.88
 click Palace of Kings Dungeon
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 51.80,30.99
 click Palace of Kings Dungeon
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 46.78,45.12
 click Palace of Kings Dungeon
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto 45.71,71.26
 'Kill Sister Balra
 'Save Jorunn the Skald-King |q The Coven Conundrum/Save Jorunn the Skald-King
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 click Palace Throne Room
 talk Jorunn the Skald-King
 talk Lyris Titanborn
 turnin The Coven Conundrum
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 'Press _U_ to open your _Collections_
 'Click over to the _Stories_ tab and look under the _Chapter_ section:
 'Select _Greymoor_ in the list of Chapters
 'Click the _Accept Quest_ button at the bottom
 accept The Gathering Storm
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto palaceofkingsmain_base 48.02,76.05
 click Windhelm
 |tip Manually skip to next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 goto windhelm_base 45.72, 38.16
 click Windhelm Wayshrine
 'Travel to Solitude Docks in Western Skyrim
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
 -- END: WESTERN SKYRIM INTRO GUIDE FOR EXISTING PLAYERS
 
@@ -3885,9 +3944,9 @@ talk Gwendis
 accept The Ravenwatch Inquiry
 |only if ZGV.Utils.GetFaction("player","notvet")=="EP"
 step
-'Oepn Map Glunumbra
+'Oepn Map Glenumbra
 click Baelbourn Rock Wayshrine
-'Travel to Baelbourn Rock in Glunumbra
+'Travel to Baelbourn Rock in Glenumbra
 goto glenumbra_base 74.90,45.97
 talk Gwendis
 accept The Ravenwatch Inquiry
