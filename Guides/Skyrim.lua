@@ -8,7 +8,7 @@ description Sundered from Eastern Skyrim in years past, High King Svargrim rules
 step
 
 
--- BEGIN: WESTERN SKYRIM GUIDE FOR NEW PLAYERS
+-- BEGIN: WESTERN SKYRIM INTRO GUIDE FOR NEW PLAYERS
 'Press _U_ to open your _Collections_
 'Click over to the _Stories_ tab and look under the _Chapter_ section:
 'Select _Greymoor_ in the list of Chapters
@@ -34,10 +34,151 @@ talk Lieutenant Korleva
 accept Crisis at Dragon Bridge
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
 step
--- END: WESTERN SKYRIM GUIDE FOR NEW PLAYERS (GUIDE JUMPS TO BEGIN: WESTERN SKYRIM GUIDE FOR NEW AND EXISTING PLAYERS STEP)
+goto 36.59,50.80
+wayshrine Dragon Bridge
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
+step
+goto 37.58,50.79
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
+step
+goto 39.76,54.72
+|tip Find Captain Hingrid
+talk Captain Hingrid |q Crisis at Dragon Bridge/Talk to Captain Hingrid
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
+step
+goto 39.40,58.65
+'Examine Arrow
+'Find the Missing Caravan |q Crisis at Dragon Bridge/.*Find the Missing Caravan.* |count 1
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
+step
+goto 39.43,59.34
+'Examine Crate
+'Find the Missing Caravan |q Crisis at Dragon Bridge/.*Find the Missing Caravan.* |count 2
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
+step
+goto 37.59,59.64
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
+step
+goto 35.96,56.15
+|tip Meet Captain Hingrid at the Overlook
+talk Captain Hingrid |q Crisis at Dragon Bridge/Talk to Captain Hingrid
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
+step
+goto 38.22,55.86
+click Letter from Ena
+'Search the Overlook |q Crisis at Dragon Bridge/Search the Overlook
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
+step
+goto 35.99,56.09
+talk Captain Hingrid |q Crisis at Dragon Bridge/Talk to Captain Hingrid
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
+step
+goto 34.97,55.11
+|tip Drop down carefully
+|tip Manually skip to the next step
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
+step
+goto 33.83,54.05
+'Find the Waterfall Camp |q Crisis at Dragon Bridge/Find the Waterfall Camp
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
+step
+goto 32.24,53.60
+|tip Find Ena White-Eye
+'Free Ena White-Eye |q Crisis at Dragon Bridge/Free Ena White-Eye
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
+step
+goto 32.24,53.60
+talk Ena White-Eye |q Crisis at Dragon Bridge/Talk to Ena White-Eye
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
+step
+goto 37.22,50.45
+talk Captain Hingrid
+talk Ena White-Eye |q Crisis at Dragon Bridge/Talk to Ena White-Eye
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
+step
+goto 36.58,50.24
+|tip Search Crate
+'Retrieve the Kindlepitch |q Crisis at Dragon Bridge/Retrieve the Kindlepitch
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
+step
+goto 36.37,50.28
+click Barrel
+'Retrieve the Fire salts |q Crisis at Dragon Bridge/Retrieve the Fire Salts
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
+step
+goto 35.63,50.56
+|tip Leave barn
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
+step
+goto 33.97,50.52
+'Seal the Smuggler Bolt Holes |q Crisis at Dragon Bridge/.*Seal the Smuggler Bolt Holes.* |count 1
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
+step
+goto 34.35,52.30
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
+step
+goto 35.32,53.39
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
+step
+goto 36.40,54.71
+'Seal the Smuggler Bolt Holes |q Crisis at Dragon Bridge/.*Seal the Smuggler Bolt Holes.* |count 2
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
+step
+goto 35.77,53.85
+click the Smuggler Caves |q Crisis at Dragon Bridge/Enter the Smuggler Caves
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
+step
+goto Dragonbridge_base 53.64,82.93
+'Rescue Ulang |q Crisis at Dragon Bridge/Rescue Ulang
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 436
+step
+goto 22.07,75.28
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 436
+step
+goto 38.59,37.01
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 436
+step
+goto 48.18,24.36
+'Defuse the Reach Explosives |q Crisis at Dragon Bridge/.*Defuse the Reach Explosives.* |count 1
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 436
+step
+goto 55.80,37.44
+'Defuse the Reach Explosives |q Crisis at Dragon Bridge/.*Defuse the Reach Explosives.* |count 2
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 436
+step
+goto 61.99,26.45
+'Defuse the Reach Explosives |q Crisis at Dragon Bridge/.*Defuse the Reach Explosives.* |count 3
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 436
+step
+goto 82.51,32.04
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 436
+step
+goto 76.66,60.27
+|tip Jump down
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 436
+step
+goto 74.80,53.60
+click Western Skyrim
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 436
+step
+goto westernskryim_base 36.79,53.58
+talk Captain Hingrid
+turnin Crisis at Dragon Bridge
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
+step
+'Open your map.
+'Travel to the _Solitude Docks_ Wayshrine
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
+step
+-- END: WESTERN SKYRIM INTRO GUIDE FOR NEW PLAYERS (GUIDE JUMPS TO BEGIN: WESTERN SKYRIM GUIDE FOR NEW AND EXISTING PLAYERS STEP)
 
 
--- BEGIN: WESTERN SKYRIM GUIDE FOR EXISTING PLAYERS
+-- BEGIN: WESTERN SKYRIM INTRO GUIDE FOR EXISTING PLAYERS
 'Open Map Auridon
 click Vulkhel Guard Wayshrine
 'Travel to Vulkhel Guard in Audridon
@@ -400,18 +541,20 @@ step
 accept The Gathering Storm
 |only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
 step
--- END: WESTERN SKYRIM GUIDE FOR NEW AND EXISTING PLAYERS
-
-
--- BEGIN: WESTERN SKYRIM GUIDE FOR NEW AND EXISTING PLAYERS
 goto palaceofkingsmain_base 48.02,76.05
 click Windhelm
 |tip Manually skip to next step.
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
 step
 goto windhelm_base 45.72, 38.16
 click Windhelm Wayshrine
 'Travel to Solitude Docks in Western Skyrim
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 6 and _G.GetCurrentMapZoneIndex() == 743
 step
+-- END: WESTERN SKYRIM INTRO GUIDE FOR EXISTING PLAYERS
+
+
+-- BEGIN: WESTERN SKYRIM GUIDE FOR NEW AND EXISTING PLAYERS
 goto westernskryim_base 51.25,43.10
 talk Brondold
 talk Shield-Corporal Thjol |q The Gathering Storm/Talk to Shield-Corporal Thjol
@@ -903,8 +1046,8 @@ step
 goto 40.37,37.25
 step
 goto 44.70,32.14
-|tip Drop down carefully.
-|tip Manually skip to the next step.
+|tip Drop down carefully
+|tip Manually skip to the next step
 step
 goto 44.24,31.01
 step
@@ -1080,105 +1223,146 @@ step
 talk to Fennorian
 |tip Manually skip to the next step
 step
+-- END: WESTERN SKYRIM GUIDE FOR NEW AND EXISTING PLAYERS
+
+
+-- BEGIN: CRISIS AT DRAGON BRIDGE FOR EXISTING PLAYERS
+-- New players will have already completed quest. Increasing level check at 15 ensures new player who passed level 6 can skip this step.
 goto 39.89,54.96
 |tip Find Captain Hingrid
 talk Captain Hingrid |q Crisis at Dragon Bridge/Talk to Captain Hingrid
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 743
 step
 goto 39.40,58.65
 'Examine Arrow
 'Find the Missing Caravan |q Crisis at Dragon Bridge/.*Find the Missing Caravan.* |count 1
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 743
 step
 goto 39.43,59.34
 'Examine Crate
 'Find the Missing Caravan |q Crisis at Dragon Bridge/.*Find the Missing Caravan.* |count 2
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 743
 step
 goto 37.59,59.64
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 743
 step
 goto 35.96,56.15
 |tip Meet Captain Hingrid at the Overlook
 talk Captain Hingrid |q Crisis at Dragon Bridge/Talk to Captain Hingrid
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 743
 step
 goto 38.22,55.86
 click Letter from Ena
 'Search the Overlook |q Crisis at Dragon Bridge/Search the Overlook
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 743
 step
 goto 35.96,56.15
 talk Captain Hingrid |q Crisis at Dragon Bridge/Talk to Captain Hingrid
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 743
 step
 goto 34.97,55.11
 |tip Drop down carefully
+|tip Manually skip to the next step
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 743
 step
 goto 33.83,54.05
 'Find the Waterfall Camp |q Crisis at Dragon Bridge/Find the Waterfall Camp
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 743
 step
 goto 32.24,53.60
 |tip Find Ena White-Eye
 'Free Ena White-Eye |q Crisis at Dragon Bridge/Free Ena White-Eye
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 743
 step
 talk Ena White-Eye |q Crisis at Dragon Bridge/Talk to Ena White-Eye
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 743
 step
 goto 36.59,50.80
 wayshrine Dragon Bridge
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 743
 step
 goto 37.22,50.45
 talk Captain Hingrid
 talk Ena White-Eye |q Crisis at Dragon Bridge/Talk to Ena White-Eye
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 743
 step
 goto 36.58,50.24
 |tip Search Crate
 'Retrieve the Kindlepitch |q Crisis at Dragon Bridge/Retrieve the Kindlepitch
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 743
 step
 goto 36.37,50.28
 click Barrel
 'Retrieve the Fire salts |q Crisis at Dragon Bridge/Retrieve the Fire Salts
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 743
 step
 goto 35.63,50.56
 |tip Leave barn
 |tip Manually skip to the next step.
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 743
 step
 goto 33.97,50.52
 'Seal the Smuggler Bolt Holes |q Crisis at Dragon Bridge/.*Seal the Smuggler Bolt Holes.* |count 1
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 743
 step
 goto 34.35,52.30
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 743
 step
 goto 35.32,53.39
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 743
 step
 goto 36.40,54.71
 'Seal the Smuggler Bolt Holes |q Crisis at Dragon Bridge/.*Seal the Smuggler Bolt Holes.* |count 2
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 743
 step
 goto 35.77,53.85
 click the Smuggler Caves |q Crisis at Dragon Bridge/Enter the Smuggler Caves
 |tip Manually skip to the next step.
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 743
 step
 goto Dragonbridge_base 53.64,82.93
 'Rescue Ulang |q Crisis at Dragon Bridge/Rescue Ulang
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 436
 step
 goto 22.07,75.28
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 436
 step
 goto 38.59,37.01
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 436
 step
 goto 48.18,24.36
 'Defuse the Reach Explosives |q Crisis at Dragon Bridge/.*Defuse the Reach Explosives.* |count 1
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 436
 step
 goto 55.80,37.44
 'Defuse the Reach Explosives |q Crisis at Dragon Bridge/.*Defuse the Reach Explosives.* |count 2
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 436
 step
 goto 61.99,26.45
 'Defuse the Reach Explosives |q Crisis at Dragon Bridge/.*Defuse the Reach Explosives.* |count 3
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 436
 step
 goto 82.51,32.04
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 436
 step
 goto 76.66,60.27
 |tip Jump down
 |tip Manually skip to the next step.
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 436
 step
 goto 74.80,53.60
 click Western Skyrim
 |tip Manually skip to the next step.
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 436
 step
 goto westernskryim_base 36.79,53.58
 talk Captain Hingrid
 turnin Crisis at Dragon Bridge
+|only if ZGV.Utils.GetPlayerPreciseLevel() > 15 and _G.GetCurrentMapZoneIndex() == 743
+-- END: CRISIS AT DRAGON BRIDGE FOR EXISTING PLAYERS
+
+
+-- BEGIN: WESTERN SKYRIM GUIDE FOR NEW AND EXISTING PLAYERS
 step
 goto 38.84,52.66
 step
@@ -1737,7 +1921,7 @@ turnin The Blood of Old Karth
 step
 goto 39.65,68.98
 |tip Drop Down Carefully
-|tip Manually skip to the next step.
+|tip Manually skip to the next step
 step
 goto 43.07,71.37
 talk Lyris Titanborn |q Dark Clouds Over Solitude/Talk to Lyris Titanborn
@@ -2588,7 +2772,7 @@ click Blackreach: Greymoor Caverns
 step
 goto 35.08,79.86
 |tip Drop down carefully
-|tip Manually skip to the next step.
+|tip Manually skip to the next step
 step
 goto 37.46,72.91
 step
@@ -3326,7 +3510,7 @@ step
 goto 77.04,15.79
 click Blackreach: Lightless Hollow
 |tip Drop down carefully
-|tip Manually skip to the next step.
+|tip Manually skip to the next step
 step
 goto blackreach_base 82.57,31.04
 talk Alwyn
