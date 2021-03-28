@@ -345,7 +345,6 @@ goto 38.00,50.68
 talk Lyris Titanborn |q The Coven Conspiracy/Talk to Lyris Titanborn
 |only if ZGV.Utils.GetFaction("player","notvet")=="DC" and ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
--- *** AUTHORING GUIDE FOR DC FACTION PATH ***
 -- End: Daggerfall Covenant Faction
 
 -- Start: Ebonheart Pact Faction
@@ -457,10 +456,9 @@ goto 54.19,40.02
 talk Lyris Titanborn |q The Coven Conspiracy/Talk to Lyris Titanborn
 |only if ZGV.Utils.GetFaction("player","notvet")=="EP" and ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
--- *** AUTHORING GUIDE FOR EP FACTION PATH ***
 -- End: Ebonheart Pact Faction
 
--- Prologue: Finished for All Factions.
+-- Begin: All Factions converged to this Prologue step
 goto riften_base 54.19,50.34
 click the Withered Tree
 'Enter the Withered Tree |q The Coven Conspiracy/Enter the Withered Tree
@@ -753,7 +751,6 @@ click Windhelm Wayshrine
 'Travel to Solitude Docks in Western Skyrim
 |only if ZGV.Utils.GetPlayerPreciseLevel() > 10
 step
-
 -- END: WESTERN SKYRIM INTRO GUIDE FOR EXISTING PLAYERS
 
 
