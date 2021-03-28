@@ -130,8 +130,8 @@ step
 
 ### Additional Resources
 
-* https://esodata.uesp.net/100028/functioncalls.txt
-* https://esodata.uesp.net/100028/
+* https://esodata.uesp.net/100034/functioncalls.txt
+* https://esodata.uesp.net/100034/
 * https://wiki.esoui.com/API
 * https://wiki.esoui.com/Texture_List
 * https://mothereff.in/lua-minifier

@@ -627,14 +627,14 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 		if not endd then break end
 		index = endd + 1		-- next start of line will be after this line.
 
-		linecount=linecount+1
-		if linecount>100000 then
+		linecount = linecount + 1
+		if linecount > 100000 then
 			-- Something went wrong
 			return nil,linecount,"More than 100000 lines!?"
 		end
 
-		lastparsed.linenum=linecount
-		lastparsed.linedata=line
+		lastparsed.linenum = linecount
+		lastparsed.linedata = line
 
 		-- remove comments of the form // or --
 		line = line:gsub("%s*%-%-.*","",1) :gsub("%s*//.*","",1)
@@ -657,7 +657,7 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 
 		-- Process the line!
 		-- it's supposedly left- and right-trimmed by the find above..
-		for chunk in line:gmatch("%s*(.-)%s*|+") do if #chunk>0 then
+		for chunk in line:gmatch("%s*(.-)%s*|+") do if #chunk > 0 then
 
 			-- un-cloak escaped pipes
 			chunk = chunk:gsub("%%PIPE%%","|")
@@ -668,7 +668,7 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 
 			-- Get command and paramas n stuff
 			local cmd,params = chunk:match("^([^%s]*)%s*(.-)$")
-			params=params or ""
+			params = params or ""
 
 			if do_debug then self:Debug(": %s",chunk) end
 
@@ -697,7 +697,7 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 			-- new step line. Make a step then bail
 			if cmd=="step" and (not step or #step.goals>0) then	-- If the previous step doesn't have goals then no reason to make another
 				if not guide.parsing_fully then
-					guide.steps=nil
+					guide.steps = nil
 					breakout = true
 					break
 				end
@@ -715,8 +715,8 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 
 				local is_goal_cmd
 
-				if cmd=="only" then  -- THIS IS A MESS.
-					if goal or chunkcount>1 then is_goal_cmd=true end  -- "yes, this is a step command too, but IGNORE IT, handle it like a goal command"
+				if cmd == "only" then  -- THIS IS A MESS.
+					if goal or chunkcount > 1 then is_goal_cmd = true end  -- "yes, this is a step command too, but IGNORE IT, handle it like a goal command"
 				end
 
 				local cmdHandler = self:GetStepCommandHandler(cmd)
@@ -734,8 +734,8 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 					cmdHandler = self:GetGoalCommandHandler(cmd)
 					if cmdHandler then
 						if goal.action == "text"	-- If we have the chance to overwrite the 'text' action then do it because there was something more important after it.
-						and cmd~= "tip"						-- tip shouldn't overwrite a text action because it won't display the text then.
-						and cmd~= "only"					-- Don't overwrite the goal's action to |only
+						and cmd~= "tip"				-- tip shouldn't overwrite a text action because it won't display the text then.
+						and cmd~= "only"			-- Don't overwrite the goal's action to |only
 						then
 							goal.action = nil
 						end
@@ -754,15 +754,15 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 						prevmap = step.map or prevmap
 
 					else
-						print(("Command : '%s' not supported"):format(cmd))
+						print(("Command : '%s' not supported (line # %s)"):format(cmd,linecount))
 						-- ERROR?
 					end
 
 
 				end
 			end
-			chunkcount=chunkcount+1
-			if chunkcount>20 then
+			chunkcount = chunkcount + 1
+			if chunkcount > 20 then
 				return nil,"More than 20 chunks in line",linecount,line
 			end
 		end end

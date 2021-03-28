@@ -5,6 +5,7 @@
 local ZGV = _G.ZGV
 if ZGV:DoMutex("LevelingCommon") then return end
 ZGV.GuideMenuTier = "TAM"
+
 ZGV:RegisterGuide("Common Leveling Guides\\The Wailing Prison",[[
 loadingimage loadscreen_chapter1_01.dds
 description Brave The Wailing Prison, a prisoner stronghold in Coldharbour.
@@ -177,6 +178,7 @@ talk The Prophet##3360001
 turnin Soul Shriven in Coldharbour |next Daggerfall Covenant Leveling Guides\\Stros M'Kai
 |only if ZGV.Utils.GetFaction("player","notvet")=="DC"
 ]])
+
 ZGV:RegisterGuide("Aldmeri Dominion Leveling Guides\\Khenarthi's Roost",[[
 loadingimage loadscreen_kenathis_roost_01.dds
 description This island off the south coast of Elsweyr is named after the Khajiiti goddess of weather and the sky, who is usually represented as a great hawk. She finds many worshipers among the cat-folk's sailors and farmers, especially those who grow moon-sugar cane.
@@ -960,6 +962,7 @@ goto 61.53,29.33
 click Prowler Skiff
 'Board the Skiff |q To Auridon/Board the Skiff |next Aldmeri Dominion Leveling Guides\\Auridon
 ]])
+
 ZGV:RegisterGuide("Aldmeri Dominion Leveling Guides\\Auridon",[[
 loadingimage loadscreen_auridon_01.dds
 description The second largest of the Summerset Isles, Auridon has always served the High Elves as a buffer between their serene archipelago and the turmoil of Tamriel. The Altmer of Auridon have been hardened by generations of repelling invaders, pirates, and plagues.
@@ -4364,6 +4367,7 @@ talk Captain Jimila
 'Tell her _"I'm ready to leave for Haven."_
 'Talk to Captain Jamila in Vulkhel Guard |q The Great Tree/Talk to Captain Jimila in Vulkhel Guard |next Aldmeri Dominion Leveling Guides\\Grahtwood |only Aldmeri Dominion
 ]])
+
 ZGV:RegisterGuide("Aldmeri Dominion Leveling Guides\\Grahtwood",[[
 loadingimage loadscreen_grahtwood_01.dds
 description This region is the southern heart of the Wood Elves' great forest, and home to more of the gigantic graht-oaks than any other part of Valenwood. Its capital, now also the capital of the entire Aldmeri Dominion, is Elden Root.
@@ -7888,6 +7892,7 @@ goto marbruk_base 73.50,35.60
 click Monomyth: The Heart of the World
 lorebook Monomyth: The Heart of the World/1/10/7 |next Aldmeri Dominion Leveling Guides\\Greenshade
 ]])
+
 ZGV:RegisterGuide("Aldmeri Dominion Leveling Guides\\Greenshade",[[
 loadingimage loadscreen_greenshade_01.dds
 description As the region of Valenwood farthest from all other realms, Greenshade's graht-oak forest is virtually pristine, the Tamriel jungle at its most primeval. Its capital is the trading port of Woodhearth.
@@ -11061,6 +11066,7 @@ goto velynharbor_base 38.84,79.97
 talk Lieutenant Ehran
 turnin To Velyn Harbor |next Aldmeri Dominion Leveling Guides\\Malabal Tor
 ]])
+
 ZGV:RegisterGuide("Aldmeri Dominion Leveling Guides\\Malabal Tor",[[
 loadingimage loadscreen_malabaltor_01.dds
 description Malabal Tor is the northwest region of Valenwood, on the coast of the Abecean Sea and the Strid River estuary. Its capital is Silvenar, the spiritual home of all Wood Elves.
@@ -14859,6 +14865,7 @@ goto 15.17,42.68
 click Ancient Scrolls of the Dwemer IV
 lorebook Ancient Scrolls of the Dwemer IV/1/12/16 |next Aldmeri Dominion Leveling Guides\\Reaper's March
 ]])
+
 ZGV:RegisterGuide("Aldmeri Dominion Leveling Guides\\Reaper's March",[[
 loadingimage loadscreen_reapersmarch_01.dds
 description Once known simply as Northern Valenwood, this region that borders Cyrodiil and Elsweyr has seen so much bloody warfare since the fall of the Second Empire that it's now known as Reaper's March, even to its battle-scarred inhabitants.
@@ -18996,6 +19003,7 @@ step
 'Congratulations, you've explored all of the factions!
 |only if ZGV.Utils.GetFaction("player","notvet")=="EP"
 ]])
+
 ZGV:RegisterGuide("Daggerfall Covenant Leveling Guides\\Stros M'Kai",[[
 loadingimage loadscreen_strosmkai_01.dds
 description One of the first landfalls settled by the Redguards when they sailed east from their lost homeland of Yokuda, the island of Stros M'Kai is now a haven for freebooters, sea-rovers, and other nautical entrepeneurs who roam the Abecean Sea.
@@ -19598,6 +19606,7 @@ talk Captain Kaleen
 'Tell her _"I'm ready to leave now. Let's sail."_
 talk Captain Kaleen |q Tip of the Spearhead/Talk to Captain Kaleen |next Daggerfall Covenant Leveling Guides/Betnikh
 ]])
+
 ZGV:RegisterGuide("Daggerfall Covenant Leveling Guides\\Betnikh",[[
 loadingimage loadscreen_betnikh_01.dds
 description Nine generations ago, the island of Betony was conquered by the Stonetooth Orcs, who renamed it Betnikh. A proud, self-reliant people, the Orcs fiercely protect their new home from incursion by outsiders.
@@ -20110,6 +20119,7 @@ goto daggerfall_base 71.79,65.73
 talk Sir Lanis Shaldon
 turnin On to Glenumbra |next Daggerfall Covenant Leveling Guides\\Glenumbra
 ]])
+
 ZGV:RegisterGuide("Daggerfall Covenant Leveling Guides\\Glenumbra",[[
 loadingimage loadscreen_glenumbra_01.dds
 description Glenumbra, the westernmost region of High Rock, contains the city-states of Daggerfall and Camlorn, the great cemetery of Cath Bedraud, and the wild areas of Hag Fen, Glenumbra Moors, and the forests of Daenia.
@@ -23481,6 +23491,7 @@ goto koeglinvillage_base 45.77,29.18
 talk Captain Jerick
 turnin A Dangerous Dream |next Daggerfall Covenant Leveling Guides\\Stormhaven
 ]])
+
 ZGV:RegisterGuide("Daggerfall Covenant Leveling Guides\\Stormhaven",[[
 loadingimage loadscreen_stormhaven_01.dds
 description I spent some time studying and painting in the Stormhaven countryside; a charming realm of rolling hills, lush flood plains, rocky outcrops, and copses of ancient woodland. The place would be idyllic were it not for the perpetual unsettled gloom, occasional crackles of thunder, and bolts of Kynareth’s rage that arc across the skies.
@@ -26677,6 +26688,7 @@ goto rivenspire_base 45.90,73.89
 talk Darien Gautier
 turnin The Road to Rivenspire |next Daggerfall Covenant Leveling Guides\\Rivenspire
 ]])
+
 ZGV:RegisterGuide("Daggerfall Covenant Leveling Guides\\Rivenspire",[[
 loadingimage loadscreen_rivenspire_01.dds
 description This northwestern region of High Rock contains some of the province's most dramatic terrain, including towering, flinty crags, windswept moors, and narrow canyons. Many folk find the environment oppressive, even threatening.
@@ -30216,6 +30228,7 @@ goto sentinel_base 27.79,15.53
 talk First Mate Elvira Derre
 turnin Favor for the Queen |next Daggerfall Covenant Leveling Guides\\Alik'r Desert
 ]])
+
 ZGV:RegisterGuide("Daggerfall Covenant Leveling Guides\\Alik'r Desert",[[
 loadingimage loadscreen_alikir_01.dds
 description A sacred flame rises above the fire, The ghosts of great men and women without names, Cities long dead rise and fall in the flame, The Dioscori Song of Revelation, Bursting walls and deathless rock, Fiery sand that heals and destroys.
@@ -33392,6 +33405,7 @@ goto evermore_base 24.08,59.86
 talk Sergeant Antieve
 accept A City in Black |next Daggerfall Covenant Leveling Guides\\Bangkorai
 ]])
+
 ZGV:RegisterGuide("Daggerfall Covenant Leveling Guides\\Bangkorai",[[
 loadingimage loadscreen_bankorai_01.dds
 description This region takes its name from its most famous feature, the Bangkorai Pass, which has served as High Rock's defense against the wild raiders of Hammerfell for countless generations. The uplands north of the pass and the desert to the south are both ruled from the port city of Evermore.
@@ -38210,6 +38224,7 @@ step
 'Congratulations, you've explored all of the factions!
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 ]])
+
 ZGV:RegisterGuide("Ebonheart Pact Leveling Guides\\Bleakrock Isle",[[
 loadingimage loadscreen_bleakrock_01.dds
 description Bleakrock is an island off the northeast coast of Skyrim between Windhelm and Solstheim. The hardy Nords who inhabit Bleakrock are mostly farmers and fisherfolk. A small contingent of Pact soldiers keeps a sharp lookout for pirates and raiders.
@@ -42441,6 +42456,7 @@ goto 15.28,40.66
 talk Dandrii Dran
 turnin A Letter for Deshaan |next Ebonheart Pact Leveling Guides\\Deshaan
 ]])
+
 ZGV:RegisterGuide("Ebonheart Pact Leveling Guides\\Deshaan",[[
 loadingimage loadscreen_deshaan_01.dds
 description Deshaan is the fertile, central plain of Morrowind and the triumphant fruition of Dunmeri agriculture. Primitive irrigation along low-lying lands around the Lake Amaya basin provide all the water needed to sustain both plants and animals, although the tribes seem more concerned with rituals than recompense.
@@ -45759,6 +45775,7 @@ goto stormhold_base 57.30,48.70
 talk Angwe
 accept Shadowfen Smorgasbord |next Ebonheart Pact Leveling Guides\\Shadowfen
 ]])
+
 ZGV:RegisterGuide("Ebonheart Pact Leveling Guides\\Shadowfen",[[
 loadingimage loadscreen_shadowfen_01.dds
 description On the border with Morrowind, the Shadowfen region has had more contact with Tamrielic civilization than most of Black Marsh—due primarily to the activities of the Dunmeri slavers who once operated out of the city of Stormhold. Now the Argonians are back in charge.
@@ -49127,6 +49144,7 @@ goto altencorimont_base 62.14,68.73
 talk Muz-Muz
 'Talk to the Boatmaster |q Swamp to Snow/Talk to the Boatmaster |next Ebonheart Pact Leveling Guides\\Eastmarch
 ]])
+
 ZGV:RegisterGuide("Ebonheart Pact Leveling Guides\\Eastmarch",[[
 loadingimage loadscreen_eastmarch_01.dds
 description One of the "Old Holds," Eastmarch was among the first regions of Skyrim settled by the Nords when they arrived from Atmora. Its capital, Windhelm, is the oldest continuously inhabited human settlement in Tamriel, and was founded by Ysgramor himself.
@@ -52293,6 +52311,7 @@ step
 goto shorsstone_base 55.78,43.67
 talk Vigrod Wraithbane |q Beneath the Stone/Talk to Vigrod Wraithbane |next Ebonheart Pact Leveling Guides\\The Rift
 ]])
+
 ZGV:RegisterGuide("Ebonheart Pact Leveling Guides\\The Rift",[[
 loadingimage loadscreen_rift_01.dds
 description Skyrim's southernmost hold has a relatively temperate climate, thanks to northern mountains that block the frigid gales of the Sea of Ghosts, and warming volcanoes in the Velothi Mountains to the east. Its capital is Riften, on the shores of broad Lake Honrich.
@@ -56367,6 +56386,7 @@ step
 'Congratulations, you've explored all of the factions!
 |only if ZGV.Utils.GetFaction("player","notvet")=="DC"
 ]])
+
 ZGV:RegisterGuide("Common Leveling Guides\\Coldharbour",[[
 loadingimage loadscreen_coldharbor_01.dds
 description The dreadful Oblivion plane of Coldharbour is a place of death, despair, and infinite cruelty. It is ruled by Molag Bal, the Lord of Brutality and Domination, a Daedric Prince dedicated to enslaving all the mortals of Nirn.

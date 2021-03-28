@@ -5,6 +5,7 @@
 local ZGV = _G.ZGV
 if ZGV:DoMutex("MorrowindDLC") then return end
 ZGV.GuideMenuTier = "MOR"
+
 ZGV:RegisterGuide("LEVELING\\DLC\\Clockwork City",[[
 loadingimage loadscreen_clockworkcity_zone_01.dds
 description The Clockwork City is a giant complex the size of a world, but it fits inside a glass dome no larger than a good-sized netch.
@@ -2395,6 +2396,7 @@ goto clockworkoutlawsrefuge_base 88.73,35.68
 talk Brengolin
 turnin A Matter of Tenderness
 ]])
+
 ZGV:RegisterGuide("LEVELING\\DLC\\Dark Brotherhood",[[
 loadingimage loadscreen_dbsanctuary_01.dds
 description Sometimes the best way to deal with a troublesome person is permanent removal. As a Dark Brotherhood assassin, you'll be tasked to fill that need.
@@ -3497,6 +3499,7 @@ goto dbsanctuary_base 51.99,44.31
 talk Speaker Terenus
 turnin Filling the Void
 ]])
+
 ZGV:RegisterGuide("LEVELING\\DLC\\Imperial City",[[
 loadingimage loadscreen_imperialcity_01.dds
 description Join with three other adventurers in a race to the top of the White-Gold Tower in pursuit of a stolen Elder Scroll.
@@ -6388,6 +6391,7 @@ turnin The Sublime Brazier
 step
 'Congratulations, you have completed the Imperial City guide!
 ]])
+
 ZGV:RegisterGuide("LEVELING\\Vvardenfell",[[
 loadingimage loadscreen_balfoyen_01.dds
 description Stop a meteor from crashing into Vivec City by helping a demi-god regain his lost powers in this Morrowind expansion.
@@ -10571,6 +10575,7 @@ goto vvardenfell_base 61.90,85.93
 talk Lady Clarisse Laurent
 turnin A Web of Troubles
 ]])
+
 ZGV:RegisterGuide("LEVELING\\DLC\\Orsinium",[[
 loadingimage loadscreen_orsinium_keyart_01.dds
 description King Kurog has begun to rebuild the great city of Orsinium, the long-abandoned capital city of the Orcs. But already there are whispered plots from those who would seize power for themselves.
@@ -13325,6 +13330,7 @@ goto honorsrestfinalc_base 73.83,55.54
 talk Sharela
 turnin The Ashes of Our Fathers
 ]])
+
 ZGV:RegisterGuide("LEVELING\\DLC\\Thieves Guild",[[
 loadingimage loadscreen_outlaw_refuge_nedic_01.dds
 description Help restore the Thieves Guild in Abah's Landing, currently besieged by the mercenary force known as the Iron Wheel.
@@ -15337,6 +15343,7 @@ goto abahslanding_base 46.65,35.23
 talk Zeira
 turnin The One That Got Away
 ]])
+
 ZGV:RegisterGuide("LEVELING\\Summerset",[[
 loadingimage loadscreen_summerset_01.dds
 description The land called Summerset is the birthplace of civilization and magic as we know it in Tamriel. On its idyllic sea-kissed shores live the Altmer, the High Elves.
@@ -15346,25 +15353,6 @@ step
 'Select _Summerset_ in the list of Chapters
 'Click the _Accept Quest_ button at the bottom
 accept The Queen's Decree
-step
-goto elsweyr_base 40.81,25.95
-wayshrine Star Haven
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 4 and _G.GetCurrentMapZoneIndex() == 712 or ZGV.Utils.GetPlayerPreciseLevel() < 4 and _G.GetCurrentMapZoneIndex() == 647 -- Elsweyr is the new starting zone for new players, OR backup step once the player visits the destination
-step
-goto elsweyr_base 40.81,25.95
-click Star Haven Wayshrine
-'Open your map. Right click to go to the Tamriel map.
-'Travel to the Shimmerene Wayshrine |q The Queen's Decree/Travel to Shimmerene in Summerset
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 4 and _G.GetCurrentMapZoneIndex() == 712 or ZGV.Utils.GetPlayerPreciseLevel() < 4 and _G.GetCurrentMapZoneIndex() == 647 -- Elsweyr is the new starting zone for new players, OR backup step once the player visits the destination
-step
-'Open your map. Right click until you see the Tamirel map.
-'Travel to the _Shimmerene_ Wayshrine |q The Queen's Decree/Travel to Shimmerene in Summerset
-|tip Summerset is the large island in the southwest of Tamriel
-|only if ZGV.Utils.GetPlayerPreciseLevel() > 4 and _G.GetCurrentMapZoneIndex() ~= 712 or ZGV.Utils.GetPlayerPreciseLevel() > 4 and _G.GetCurrentMapZoneIndex() == 647 -- If the player isn't new and not in the starting zone for new players, OR backup step once the player visits the destination
-step
-goto shimmerene_base 26.19,69.92
-'Travel to the _Shimmerene_ Wayshrine |q The Queen's Decree/Travel to Shimmerene in Summerset
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 4 and _G.GetCurrentMapZoneIndex() == 615 -- If the player is new and somehow in Summerset. An edge case check for situations when a player created their character while Summerset was new and the default starting location, and the player forgot about that character until now.
 step
 goto shimmerene_base 24.42,70.53
 'Follow the road Southeast of here |q The Queen's Decree
@@ -21015,6 +21003,7 @@ turnin A New Alliance
 step
 'Congratulations, you have completed the Summerset guide!
 ]])
+
 ZGV:RegisterGuide("LEVELING\\Murkmire",[[
 loadingimage loadscreen_murkmire_01.dds
 description Investigate Murkmire's long-forgotten past and help an Imperial scholar recover a mysterious and powerful relic that will take you deep into Black Marsh, its history, and its people.
@@ -23551,6 +23540,7 @@ step
 '_Congratulations, you have completed the Murkmire guide!_
 'You can still seek out the remaining Xinchei-Konu pieces for the Xinchei-Konu at the Xinchei-Konu Monument
 ]])
+
 ZGV:RegisterGuide("LEVELING\\Elsweyr",[[
 loadingimage loadscreen_elsweyr_zone_01.dds
 description Once thought lost to the mists of time, fearsome Dragons now soar the skies of Elsweyr, leaving scorched ruin in their wake. Discover the dark purpose behind their rampage in a new epic story and prevent the destruction of the Khajiiti homeland.
@@ -23563,7 +23553,7 @@ accept A Rage of Dragons
 step
 'Open your map. Right click until you see the Tamirel map.
 'Travel to the _Rimmen_ Wayshrine
-|tip It can be found in the new Elsweyr map in the southeast of Tamriel, just below Cyrodiil. Once you're in Rimmen, I recommend buying a set of lockpicks.
+|tip It can be found in the new Northern Elsweyr map in the southeast of Tamriel, just below Cyrodiil. Once you're in Rimmen, I recommend buying a set of lockpicks.
 |tip Manually skip to the next step.
 step
 goto rimmen_base 08.14,55.18
@@ -23758,7 +23748,7 @@ goto abodeofignominy_base 61.36,13.00
 'Take _Marzula-jo's Memory Stone_
 |tip Manually skip to the next step.
 step
-'Open your map. Right click to bring up the Elsweyr map.
+'Open your map. Right click to bring up the Northern Elsweyr map.
 'Travel to the _Star Haven_ Wayshrine
 |tip Manually skip to the next step.
 step
@@ -24127,7 +24117,7 @@ talk Abnur Tharn
 |tip Manually skip to the next step.
 step
 goto elsweyr_base 48.72,31.52
-'Follow the road Southwest from here. (_Note:_ From this point forward you will enter areas of Elsweyr with random Dragon appearances. Best to avoid them if you're solo.)
+'Follow the road Southwest from here. (_Note:_ From this point forward you will enter areas of Northern Elsweyr with random Dragon appearances. Best to avoid them if you're solo.)
 |tip Manually skip to the next step.
 step
 goto elsweyr_base 44.01,43.62
@@ -24552,7 +24542,7 @@ goto rimmen_base 23.79,35.37
 talk Tahara
 |tip Manually skip to the next step.
 step
-'Open your map. Right click to bring up the Elsweyr map.
+'Open your map. Right click to bring up the Northern Elsweyr map.
 'Travel to _The Stitches_ Wayshrine
 |tip Manually skip to the next step.
 step
@@ -24745,7 +24735,7 @@ goto stitches_base 55.40,51.71
 talk Tasnasi
 |tip Manually skip to the next step.
 step
-'Open your map. Right click to bring up the Elsweyr map.
+'Open your map. Right click to bring up the Northern Elsweyr map.
 'Travel to _Riverhold_ Wayshrine
 |tip Manually skip to the next step.
 step
@@ -24773,7 +24763,7 @@ goto riverholdcity_base 54.26,71.78
 talk Lord Gharesh-ri
 |tip Manually skip to the next step.
 step
-'Open your map. Right click to bring up the Elsweyr map.
+'Open your map. Right click to bring up the Northern Elsweyr map.
 'Travel to _Rimmen_ Wayshrine
 |tip Manually skip to the next step.
 step
@@ -24867,7 +24857,7 @@ goto rimmen_base 30.14,71.70
 talk Jo'isi
 |tip Manually skip to the next step.
 step
-'Open your map. Right click until you see the Elsweyr map.
+'Open your map. Right click until you see the Northern Elsweyr map.
 'Travel to _The Stitches_ Wayshrine
 |tip Manually skip to the next step.
 step
@@ -24964,7 +24954,7 @@ goto DesertWind2_Base 44.94,48.88
 talk Zamarak
 |tip Manually skip to the next step.
 step
-'Open your map. Right click until you see the Elsweyr map.
+'Open your map. Right click until you see the Northern Elsweyr map.
 'Travel to _Riverhold_ Wayshrine
 |tip Manually skip to the next step.
 step
@@ -25199,7 +25189,7 @@ goto riverholdcity_base 55.76,71.94
 talk Lord Gharesh-ri
 |tip Manually skip to the next step.
 step
-'Open your map. Right click until you see the Elsweyr map.
+'Open your map. Right click until you see the Northern Elsweyr map.
 'Travel to _Rimmen_ Wayshrine
 |tip Manually skip to the next step.
 step
@@ -25644,7 +25634,7 @@ goto hakoshaecrypts_base 18.80,37.75
 talk Magnate Feina-Darak
 |tip Manually skip to the next step.
 step
-'Open your map. Right click to see the Elsweyr map.
+'Open your map. Right click to see the Northern Elsweyr map.
 'Travel to the _Hakoshae_ Wayshrine
 |tip Manually skip to the next step.
 step
@@ -25680,7 +25670,7 @@ goto rimmen_base 46.10,47.51
 talk Rigurt the Brash
 accept Cross-cultural Confusion
 step
-'Open your map. Right click to see the Elsweyr map.
+'Open your map. Right click to see the Northern Elsweyr map.
 'Travel to the _Riverhold_ Wayshrine
 |tip Manually skip to the next step.
 step
@@ -25693,7 +25683,7 @@ talk Thadarra
 |tip Choice: You can choose to pay Thadarra's delivery fee, or threaten to report her for extortion.
 |tip Manually skip to the next step.
 step
-'Open your map. Right click to bring up the Elsweyr map.
+'Open your map. Right click to bring up the Northern Elsweyr map.
 'Travel to _The Stitches_ Wayshrine
 |tip Manually skip to the next step.
 step
@@ -26603,7 +26593,7 @@ goto dragonguardoutpost_base 90.78,15.19
 'Take _Anequina Combat Dragonhorn_
 |tip Manually skip to the next step.
 step
-'Open your map. Right click until you see the Elsweyr map.
+'Open your map. Right click until you see the Northern Elsweyr map.
 'Travel to the _Rimmen_ Wayshrine
 |tip Manually skip to the next step.
 step
@@ -26655,7 +26645,7 @@ goto rimmen_base 77.61,36.85
 talk Abnur Tharn
 |tip Manually skip to the next step.
 step
-'Open your map. Right click until you see the Elsweyr map.
+'Open your map. Right click until you see the Northern Elsweyr map.
 'Travel to _The Stitches_ wayshrine
 |tip Manually skip to the next step.
 step
@@ -26764,7 +26754,7 @@ goto rimmen_base 77.61,36.85
 talk Khamira
 |tip Manually skip to the next step.
 step
-'Open your map. Right click until you see the Elsweyr map.
+'Open your map. Right click until you see the Northern Elsweyr map.
 'Travel to _Hakoshae_ wayshrine
 |tip Manually skip to the next step.
 step
@@ -26842,7 +26832,7 @@ click Vault of the Heavenly Scourge
 step
 goto dancingmoon03_base 50,50
 kill Cadwell the Betrayer
-|tip Cadwell is another of Elsweyr's seminal bosses and as such presents quite a challenge. You'll want to use a health-augmenting consumable before the fight and keep your health potions on the ready. Cadwell hits like a freight truck. Further, he casts an array of AOE telegraphs that spread out from his location like a pinwheel. At particular intervals, he'll cast a large AOE telegraph at your location. Standing in it will stun you and do lots of damage. However, you can easily avoid it if you listen for his "taste of oblivion" cry. In a group is the most efficient way to tackle Cadwell. However, if you're solo, ranged attacks are the best choice. The excellent news is excluding one ability in which Cadwell teleports to you most of the time he'll waste his time running around the room. So as long as you keep your distance, you can kill the ole chap. Jolly good and some such!
+|tip Cadwell is another of Northern Elsweyr's seminal bosses and as such presents quite a challenge. You'll want to use a health-augmenting consumable before the fight and keep your health potions on the ready. Cadwell hits like a freight truck. Further, he casts an array of AOE telegraphs that spread out from his location like a pinwheel. At particular intervals, he'll cast a large AOE telegraph at your location. Standing in it will stun you and do lots of damage. However, you can easily avoid it if you listen for his "taste of oblivion" cry. In a group is the most efficient way to tackle Cadwell. However, if you're solo, ranged attacks are the best choice. The excellent news is excluding one ability in which Cadwell teleports to you most of the time he'll waste his time running around the room. So as long as you keep your distance, you can kill the ole chap. Jolly good and some such!
 |tip Manually skip to the next step.
 step
 goto dancingmoon03_base 50.12,32.85
@@ -26909,7 +26899,7 @@ goto rimmen_base 57.55,47.16
 talk Zamarak
 |tip Manually skip to the next step.
 step
-'Open your map. Right click until you see the Elsweyr map.
+'Open your map. Right click until you see the Northern Elsweyr map.
 'Travel to _Scar's End_ wayshrine
 |tip Manually skip to the next step.
 step
@@ -27155,7 +27145,7 @@ goto rimmensewer_base 59.67,37.36
 'Press _E_ to Examine _Suspicious Barrel_
 |tip Manually skip to the next step.
 step
-'Open your map. Right click until you see the Elsweyr map.
+'Open your map. Right click until you see the Northern Elsweyr map.
 'Travel to _Rimmen_ wayshrine
 |tip Manually skip to the next step.
 step
@@ -27167,7 +27157,7 @@ goto rimmen_base 32.61,62.92
 talk Jakarn
 |tip Manually skip to the next step.
 step
-'Open your map. Right click until you see the Elsweyr map.
+'Open your map. Right click until you see the Northern Elsweyr map.
 'Travel to _Scar's End_ wayshrine
 |tip Manually skip to the next step.
 step
@@ -27429,5 +27419,5 @@ goto stitches_base 61.02,52.60
 talk Jakarn
 |tip Manually skip to the next step.
 step
-'Congratulations, you have completed the Elsweyr guide!
+'Congratulations, you have completed the Northern Elsweyr guide!
 ]])

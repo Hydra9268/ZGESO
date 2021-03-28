@@ -3,7 +3,7 @@ if not ZGV then return end
 
 local GPS = LibGPS2
 
-MEMORYSPAM=false
+MEMORYSPAM = false
 
 local Pointer = {}
 ZGV.Pointer = Pointer
@@ -11,7 +11,7 @@ ZGV.Pointer = Pointer
 local  _G,assert,table,string,tinsert,tonumber,tostring,type,ipairs,pairs,setmetatable,math,abs,ceil = _G,assert,table,string,table.insert,tonumber,tostring,type,ipairs,pairs,setmetatable,math,abs,ceil
 
 local min,max = math.min,math.max
-local wipe=function(tab) for k,v in pairs(tab) do tab[k]=nil end end
+local wipe = function(tab) for k,v in pairs(tab) do tab[k] = nil end end
 
 local L=ZGV.L
 local print = d
@@ -21,22 +21,22 @@ local BZR=ZGV.BZR
 local CHAIN = ZGV.Utils.ChainCall
 
 Pointer.nummanual = 0
-Pointer.antphase=0
+Pointer.antphase = 0
 
 Pointer.waypoints = {}
 Astrolabe = {}
 local profile={}
 local unusedMarkers = {}
 
-local last_distance=0
-local speed=0
-local last_speed=0
+local last_distance = 0
+local speed = 0
+local last_speed = 0
 
-local lastminimapdist=99999
-local minimapcontrol_suspension=0
+local lastminimapdist = 99999
+local minimapcontrol_suspension = 0
 local minimap_lastset = 0
 
-local cuedinged=nil
+local cuedinged = nil
 local submap_cache = nil
 
 local GetMapNameByID  --defined later
@@ -215,7 +215,7 @@ function Pointer:GetMapMarker (m,f,x,y,data)
 	return waypoint
 end
 
-local dont_setwaypoint=false
+local dont_setwaypoint = false
 function Pointer:ClearWaypoints (waytype)
 	Pointer:Debug("ClearWaypoints %s",waytype or "all?")
 	local n=0
@@ -296,8 +296,8 @@ function Pointer:ShowArrow(waypoint)
 end
 
 local markerproto = {}
-local markermeta = {__index=markerproto}
-local nummarkers=0
+local markermeta = { __index = markerproto }
+local nummarkers = 0
 
 function Pointer:MakeMarkerFrames(marker,type)
 	setmetatable(marker,markermeta)
@@ -358,7 +358,7 @@ local function FormatDistance(dist)
 		end
 	end
 end
-ZGV.FormatDistance=FormatDistance
+ZGV.FormatDistance = FormatDistance
 
 function Pointer:CreateArrowFrame()
 	if not self.ArrowFrameCtrl then
@@ -534,15 +534,15 @@ function Pointer:GetDirectionToWaypoint(way)
 	return dir
 end
 
-local cache_throttle=0
+local cache_throttle = 0
 local were_in_unknown_location
 
 function Pointer.ArrowFrame_ShowSpellArrow(self,waypoint)
 	do return end
 end
 
-local noskip_time=0
-local dummy_waypoint = {DUMMY=1}
+local noskip_time = 0
+local dummy_waypoint = { DUMMY = 1 }
 
 -- /dump ZGV.Pointer:TranslateCoords("bleakrock_base_0",0.7,0.7,"bleakrockvillage_base_0")
 -- /dump ZGV.Pointer:TranslateCoords("deshaan_base",.4053,.7517,"kragenmoor_base")
@@ -831,7 +831,7 @@ function Pointer.ArrowFrame_Proto_GetDistTxt(self,dist)
 	end
 end
 
-local mfloor=math.floor
+local mfloor = math.floor
 function Pointer.FormatTime(eta)
 	return ("%01d:%02d|r"):format(eta / 60, eta % 60)
 end
@@ -1234,6 +1234,12 @@ SLASH_COMMANDS["/zgpos"] = function(checker)
 		d(("|cffffff%s|r"):format(tex))
 		d(("zone id: |c88ff88%d|r"):format(gps.zoneId))
 		d(("map index: |c88ff88%d|r"):format(gps.mapIndex))
+		if _G.GetCurrentMapIndex() ~= nil then
+			d(("GetCurrentMapIndex: |c88ff88%d|r - ESO Global function"):format(_G.GetCurrentMapIndex()))
+		end
+		if _G.GetCurrentMapZoneIndex() ~= nil then
+			d(("GetCurrentMapZoneIndex: |c88ff88%d|r - ESO Global function"):format(_G.GetCurrentMapZoneIndex()))
+		end
 		d(("xoffset: |c88ff88%.19f|r"):format(gps.offsetX))
 		d(("yoffset: |c88ff88%.19f|r"):format(gps.offsetY))
 		d(("xscale: |c88ff88%.19f|r"):format(gps.scaleX))
@@ -1246,6 +1252,13 @@ SLASH_COMMANDS["/zgpos"] = function(checker)
 		d(("xoffset: |c88ff88%.19f|r"):format(Z.xoffset))
 		d(("yoffset: |c88ff88%.19f|r"):format(Z.yoffset))
 		d(("xscale: |c88ff88%.19f|r"):format(gps.scaleX))
+		d(("map index: |c88ff88%d|r"):format(gps.mapIndex))
+		if _G.GetCurrentMapIndex() ~= nil then
+			d(("GetCurrentMapIndex: |c88ff88%d|r - ESO Global function"):format(_G.GetCurrentMapIndex()))
+		end
+		if _G.GetCurrentMapZoneIndex() ~= nil then
+			d(("GetCurrentMapZoneIndex: |c88ff88%d|r - ESO Global function"):format(_G.GetCurrentMapZoneIndex()))
+		end
 	end
 end
 
@@ -1267,7 +1280,6 @@ end
 -- MAP CLICKING SIMULATION PREP:
 --/script for i=1,9 do _G['MapMouseoverBlob'..i]:SetHidden(false) end
 --ProcessMapClick()
-
 local function dist_to_target()
 	local px,py = GetMapPlayerPosition("player")
 	local tx,ty = GetMapPlayerPosition("reticleover")
@@ -1303,11 +1315,11 @@ tinsert(ZGV.startups,function(self)
 	end
 end)
 
-local flash_interval=0.25
-local ant_interval=0.001
+local flash_interval = 0.25
+local ant_interval = 0.001
 local ant_speed = 1.7  -- ant steps per second
 
-local flash=nil
+local flash = nil
 function Pointer:MinimapNodeFlash(s)
 	flash=not flash
 	Minimap:SetBlipTexture(ZGV.DIR.."\\Skins\\objecticons_"..(flash and "on" or "off"))
@@ -1316,7 +1328,7 @@ function Pointer:MinimapNodeFlashOff()
 	Minimap:SetBlipTexture("INTERFACE\\MINIMAP\\OBJECTICONS")
 end
 
-local q=0
+local q = 0
 
 -- Some small utilities which may be useful to several waypointing backends
 -- Moved 'em out of Internal waypointer so that TomTom, for example,
