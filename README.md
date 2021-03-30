@@ -12,7 +12,8 @@ No longer supported references:
 
 Install through the excellent add-on manager <a href="https://minion.mmoui.com/" target="blank">Minion</a>
 
-### 3/14/21 Update: Skyrim Guides Coming Soon (Thanks to snichols7778)!
+### 3/27/21 Skyrim Guides Now Available (Thanks to snichols7778)!
+https://www.esoui.com/downloads/fileinfo.php?id=2062#info
 
 <img src="https://i.imgur.com/bsUJyDD.png">
 <i>artwork &copy; ZeniMax Media</i>
