@@ -133,9 +133,9 @@ Guides/LevelingAldmeriDominion.lua
 Guides/LevelingDaggerfallCovenant.lua
 Guides/LevelingEbonheartPact.lua
 Guides/Skyshards.lua
-Guides/MorrowindDLC.lua
 Guides/MainQuestsOnly.lua
-Guides/Skyrim.lua
+Guides/DLCs.lua
+Guides/Expansions.lua
 
 Testing/Main.lua
 Testing/UI.lua

@@ -4,7 +4,6 @@ local ZGV = _G.ZGV
 
 ZGV._QuestDataCommon = [[
 Soul Shriven in Coldharbour=3360001
-
 The Hollow City=1540001
 The Army of Meridia=1540002
 Truth, Lies, and Prisoners=1540003
@@ -32,5 +31,4 @@ The Endless War=1540024
 A Thorn in Your Side=1540025
 Between Blood and Bone=1540026
 God of Schemes=1540027
-
 ]]

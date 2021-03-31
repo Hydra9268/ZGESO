@@ -1,14 +1,10 @@
+-----------------------------------------
+-- LOCALIZED GLOBAL VARIABLES
+-----------------------------------------
+
 local ZGV = _G.ZGV
 local Pointer = ZGV.Pointer	if not Pointer then return end
-
-local arrowskindir = "Stealth"
-local arrowskinlc = "stealth"
-local arrowskinname = "Stealth"
-
-local arrowframeproto = {}
-
 local CHAIN = ZGV.Utils.ChainCall
--- local GuiRoot = _G.GuiRoot
 local CT_LABEL = _G.CT_LABEL
 local CT_TEXTURE = _G.CT_TEXTURE
 local TOP = _G.TOP
@@ -17,6 +13,16 @@ local zo_round = _G.zo_round
 local TEX_BLEND_MODE_ADD = _G.TEX_BLEND_MODE_ADD
 local TEXT_ALIGN_CENTER = _G.TEXT_ALIGN_CENTER
 local WM = _G.WINDOW_MANAGER
+
+-----------------------------------------
+-- LOCAL VARIABLES
+-----------------------------------------
+
+local arrowskindir = "Stealth"
+local arrowskinlc = "stealth"
+local arrowskinname = "Stealth"
+
+local arrowframeproto = {}
 
 local arrowskin = ZGV.Pointer:AddArrowSkin(arrowskinlc,arrowskinname)
 arrowskin.features = { colordist = false, smooth = true }
@@ -231,17 +237,3 @@ function arrowframeproto:ShowWaiting(phase)
 	self.precise.turn.anim:SetRadians( phase * 6.28 )
 	self.precise.turn:Play()
 end
-
---[[
-function arrowframeproto:ShowWarning()
-	UIFrameFlash(self.arrow,0.2,0.2,0.2, true,0,0)
-end
-
-function arrowframeproto:OnMouseWheel(delta)
-	if IsControlKeyDown() then
-		ZGV.db.profile.arrowscale = ZGV.db.profile.arrowscale + delta * 0.2
-		if ZGV.db.profile.arrowscale<0.4 then ZGV.db.profile.arrowscale=0.4 end
-		self:SetScale(ZGV.db.profile.arrowscale)
-	end
-end
---]]
