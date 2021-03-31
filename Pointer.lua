@@ -1,4 +1,3 @@
-local ZGV=ZygorGuidesViewer
 if not ZGV then return end
 
 local GPS = LibGPS2
@@ -380,7 +379,7 @@ function Pointer:SetupArrow()
 	end
 
 	self.ArrowFrame = CHAIN(self.CurrentArrowSkin:CreateFrame())
-		:SetHandler("OnClick",ZygorGuidesViewer.Pointer.ArrowFrame_OnClick)
+		:SetHandler("OnClick", ZGV.Pointer.ArrowFrame_OnClick)
 
 		-- freeze?
 		:SetMovable(not ZGV.db.profile.arrowfreeze)

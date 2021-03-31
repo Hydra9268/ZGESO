@@ -92,7 +92,17 @@ talk Ena White-Eye |q Crisis at Dragon Bridge/Talk to Ena White-Eye
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
 step
 goto 37.22,50.45
-talk Captain Hingrid
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
+step
+goto 37.16,50.65
+'Return to Dragon Bridge |q Crisis at Dragon Bridge/Return to Dragon Bridge
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
+step
+goto 37.16,50.65
+talk Captain Hingrid |q Crisis at Dragon Bridge/Talk to Captain Hingrid
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
+step
+goto 37.16,50.65
 talk Ena White-Eye |q Crisis at Dragon Bridge/Talk to Ena White-Eye
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
 step
@@ -106,9 +116,10 @@ click Barrel
 'Retrieve the Fire salts |q Crisis at Dragon Bridge/Retrieve the Fire Salts
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
 step
-goto 35.63,50.56
-|tip Leave barn
-|tip Manually skip to the next step.
+goto 36.75,50.08
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
+step
+goto 36.82,50.43
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 743
 step
 goto 33.97,50.52

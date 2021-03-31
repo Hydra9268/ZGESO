@@ -39,7 +39,6 @@ local L = ZGV.L
 -----------------------------------------
 
 -- global export
-_G['ZygorGuidesViewer'] = ZGV
 _G['ZGV'] = ZGV
 
 ZGV.CFG_LOAD_ALL_FACTIONS = true
