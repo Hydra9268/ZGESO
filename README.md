@@ -34,10 +34,11 @@ https://www.esoui.com/downloads/fileinfo.php?id=2062#info
 
 * 7/27/20: Northern Elsweyr Guide Out Now!
 
+<!--
 ### Coming Soon
 
 * Western Skyrim guide by snichols7778
-
+-->
 
 # Development Guide
 
