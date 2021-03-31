@@ -4,10 +4,7 @@ local ZGV = _G.ZGV
 -- LOCAL REFERENCES
 -----------------------------------------
 
-local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs
-local print = ZGV.print
-local CHAIN = ZGV.Utils.ChainCall
-local ui = ZGV.UI
+local tinsert = table.insert
 local Testing = ZGV.Testing
 local Data = ZGV.Data
 
@@ -36,12 +33,12 @@ function DataCollecting.TestNpcData()
   local nid = 3360001
 
   local name = Data:GetNpcNameById(nid)
-  if name~=nname then
+  if name ~= nname then
     return cleanUpTestAndReturn(false,"Npc name no match. %s~=%s",nname,tostring(name))
   end
 
   local id = Data:GetNpcIdByName(nname)
-  if nid~=id then
+  if nid ~= id then
     return cleanUpTestAndReturn(false,"Npc id no match. %s~=%s",nid,tostring(id))
   end
 
@@ -51,7 +48,7 @@ function DataCollecting.TestNpcData()
   nid = 3360012
 
   name = Data:GetNpcNameById(nid)
-  if name~=nname then
+  if name ~= nname then
     return cleanUpTestAndReturn(false,"Npc name no match. %s~=%s",nname,tostring(name))
   end
 

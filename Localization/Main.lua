@@ -9,7 +9,7 @@ Core_xxXX files provide full UI texts, even in English. Just to have them all in
 -- LOCAL REFERENCES
 -----------------------------------------
 
-local tinsert, tremove, sort, min, max, floor, type, pairs, ipairs = table.insert, table.remove, table.sort, math.min, math.max, math.floor, type, pairs, ipairs
+local type = type
 
 -----------------------------------------
 -- LOCAL VARIABLES
@@ -34,7 +34,9 @@ function GuideViewer(name, locale, translations)
 		local arr = {}
 		local function grab(txt)
 			local k, v = txt:gsub("%s*//.*$", ""):match("^%s*(.-)%s*===%s*(.-)%s*$")
-			if k and v then arr[k] = v end
+			if k and v then 
+				arr[k] = v
+			end
 		end
 		translations:gsub("(.-)\n", grab)
 		translations = arr
