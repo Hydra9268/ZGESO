@@ -30,7 +30,7 @@ arrowskin.features = { colordist = false, smooth = true }
 
 function arrowskin:CreateFrame()
 	if not self.frame then
-		self.frame = CHAIN("ArrowFrame")
+		self.frame = CHAIN(ZGVArrowFrame)
 			:SetDimensions(50,50)
 			:SetHidden(false)
 			:SetAnchor(TOP,GuiRoot,TOP,0,100)
