@@ -1,7 +1,7 @@
-## Title: Leveling Guides v1.4.669
+## Title: Leveling Guides v1.4.672
 ## Description: A Zygor addon updated by snichols7778, Hydra9268, Krandor1, and Sharlikran for the Greymoor expansion.
 ## Author: snichols7778, Hydra9268
-## Version: 1.4.669
+## Version: 1.4.672
 ## AddOnVersion: 14654
 ## APIVersion: 100033 100034
 ; ## DependsOn: LibGPS AceTimer-3.0>=146
