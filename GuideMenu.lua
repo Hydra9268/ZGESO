@@ -556,7 +556,7 @@ function GuideMenu:RefreshUI()
 	else
 		frame.GuideTitle:SetText("Welcome to the Zygor Community Guide for ESO")
 		frame.GuideImage:SetTexture(ZGV.DIR.."/Viewer/Skins/Stealth/zgeso-greymoor.dds")
-		frame.GuideData:SetText("Greymoor and Markarth guides authored by snichols7778\nSummerset, Murkmire and Elsweyr guides authored by Hydra9268\nOriginal guide authored by Zygor Guides")
+		frame.GuideData:SetText("Western Skyrim, The Reach guides authored by |cffaa00snichols7778|r\nSummerset, Murkmire and Elsweyr guides authored by |cffaa00Hydra9268|r\nAdditional support by |cffaa00Sharlikran|r, |cffaa00Krandor1|r\n|c999999Original guide authored by Zygor Guides|r")
 		frame.GuideData:SetPoint(TOPLEFT,frame.GuideImage,0,265)
 		frame.GuideImage:Show()
 		frame.OkButton:Hide()
