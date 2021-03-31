@@ -12,24 +12,25 @@ local TEX_BLEND_MODE_ALPHA = _G.TEX_BLEND_MODE_ALPHA
 local zo_round = _G.zo_round
 local TEX_BLEND_MODE_ADD = _G.TEX_BLEND_MODE_ADD
 local TEXT_ALIGN_CENTER = _G.TEXT_ALIGN_CENTER
+local GuiRoot = _G.GuiRoot
 local WM = _G.WINDOW_MANAGER
 
 -----------------------------------------
 -- LOCAL VARIABLES
 -----------------------------------------
 
-local arrowskindir = "Stealth"
+local arrowSkinFolder = "Stealth"
 local arrowskinlc = "stealth"
-local arrowskinname = "Stealth"
+local arrowSkinName = "Stealth"
 
 local arrowframeproto = {}
 
-local arrowskin = ZGV.Pointer:AddArrowSkin(arrowskinlc,arrowskinname)
+local arrowskin = ZGV.Pointer:AddArrowSkin(arrowskinlc,arrowSkinName)
 arrowskin.features = { colordist = false, smooth = true }
 
 function arrowskin:CreateFrame()
 	if not self.frame then
-		self.frame = CHAIN(ZGVArrowFrame)
+		self.frame = CHAIN("ArrowFrame")
 			:SetDimensions(50,50)
 			:SetHidden(false)
 			:SetAnchor(TOP,GuiRoot,TOP,0,100)
@@ -37,7 +38,7 @@ function arrowskin:CreateFrame()
 			:SetMouseEnabled(true)
 			:SetHandler("OnUpdate",function(self,elapsed) end)
 			.__END
-		
+
 		-- Have to inherit base to allow :Hide and :Show
 		ZGV.UI:InheritClass(self.frame,"Base")
 
@@ -62,7 +63,7 @@ function arrowskin:CreateFrame()
 		.__END
 
 		-- Have to inherit base to allow :Hide and :Show
-		ZGV.UI:InheritClass(self.frame.arrow,"Base")	
+		ZGV.UI:InheritClass(self.frame.arrow,"Base")
 
 		self.frame.spec = CHAIN(WM:CreateControl(self.frame:GetName().."_Spec", self.frame, CT_TEXTURE))
 			:SetTexture("arrow.dds")
@@ -93,33 +94,33 @@ function arrowskin:CreateFrame()
 
 	self.frame.style = self.id
 
-	for f,fu in pairs(arrowframeproto) do 
+	for f,fu in pairs(arrowframeproto) do
 		self.frame[f] = fu
 	end
 
-	if self.frame.OnLoad then 
+	if self.frame.OnLoad then
 		self.frame:OnLoad()
 	end
 
 	return self.frame
 end
 
-function arrowframeproto:ShowText(title, dist, eta)
+function arrowframeproto:ShowText(title, distance, eta)
 	self.stairs = false
 
 	Pointer.ArrowFrame_Proto_ShowText(self)
-	local disttxt = Pointer.ArrowFrame_Proto_GetDistTxt(self,dist)
-	local etatxt = Pointer.ArrowFrame_Proto_GetETATxt(self,eta)
+	local distanceText = Pointer.ArrowFrame_Proto_GetDistTxt(self,distance)
+	local etaText = Pointer.ArrowFrame_Proto_GetETATxt(self,eta)
 
-	local distcolor
-	if type(dist) == "number" then
+	local distanceColor
+	if type(distance) == "number" then
 		local r,g,b = 1,1,1
-		distcolor = ("|c%02x%02x%02x"):format(r * 255, g * 255, b * 255)
+		distanceColor = ("|c%02x%02x%02x"):format(r * 255, g * 255, b * 255)
 	else
-		distcolor = "|cffff00"
+		distanceColor = "|cffff00"
 	end
 
-	self.title:SetText( (title and "|cffffff"..title.."|r\n" or "") .. (disttxt and distcolor..disttxt.."|r" or "") .. (etatxt or "") )
+	self.title:SetText( (title and "|cffffff"..title.."|r\n" or "") .. (distanceText and distanceColor..distanceText.."|r" or "") .. (etaText or "") )
 end
 
 
@@ -132,51 +133,51 @@ local mfloor = math.floor
 local mround = zo_round
 
 function arrowframeproto:OnLoad()
-	local skindir = ZGV.DIR.."/Arrows/".. arrowskindir
-	self.arrow:SetTexture(skindir.."/arrow.dds")
-	self.spec:SetTexture(skindir.."/arrow-specular.dds")
+	local skinFolder = ZGV.DIR.."/Arrows/".. arrowSkinFolder
+	self.arrow:SetTexture(skinFolder.."/arrow.dds")
+	self.spec:SetTexture(skinFolder.."/arrow-specular.dds")
 	self.arrow:Hide()
 	self.spec:Hide()
 
-	local spr_w,spr_h = 102,68
-	local imgw,imgh = 1024,1024
-	local w, h, inrow, total = spr_w / imgw, spr_h / imgh, mfloor( imgw / spr_w ), mfloor( imgw / spr_w ) * mfloor( imgh / spr_h )
+	local spriteWidth,spriteHeight = 102,68
+	local imageWidth,imageHeight = 1024,1024
+	local w, h, inrow, total = spriteWidth / imageWidth, spriteHeight / imageHeight, mfloor( imageWidth / spriteWidth ), mfloor( imageWidth / spriteWidth ) * mfloor( imageHeight / spriteHeight )
 	local step = 360 / total
-	
+
 	local TINY_TURNS = false
 
 	self.SetAngle = function(self,angle)
 		self.angle = angle
 		angle = angle * rad2deg
-		
+
 		if TINY_TURNS then
-			local frac_angle = angle % step
-			
+			local fractionAngle = angle % step
+
 			if (angle < 90 or angle > 270) then
-				if frac_angle > step * 0.5 then
-					frac_angle = frac_angle-step
+				if fractionAngle > step * 0.5 then
+					fractionAngle = fractionAngle-step
 				end
 				local q = ( ( angle < 180 ) and angle or 360 - angle ) / 180
-				frac_angle = frac_angle * ( 1 + q * 0.7 )
-				
-				frac_angle = frac_angle * ( 1 + mcos ( angle * 2 ) ) / 2
+				fractionAngle = fractionAngle * ( 1 + q * 0.7 )
+
+				fractionAngle = fractionAngle * ( 1 + mcos ( angle * 2 ) ) / 2
 			else
-				frac_angle = 0
+				fractionAngle = 0
 			end
 		end
-		
-		local num = mround( angle / step ) % total
-		local row, col = mfloor( num / inrow ), num % inrow
+
+		local number = mround( angle / step ) % total
+		local row, col = mfloor( number / inrow ), number % inrow
 		self.arrow:SetTextureCoords( col * w, ( col + 1 ) * w, row * h, ( row + 1 ) * h )
 		self.spec:SetTextureCoords( col * w, ( col + 1 ) * w, row * h, ( row + 1 ) * h )
-	
+
 		-- precision!
-		if num == 0 or num == 1 or num == total - 1 then
+		if number == 0 or number == 1 or number == total - 1 then
 			if ZGV.db.profile.arrowcolordist then
 				local r,g,b,a = 1,1,1,1 --self.arr:GetVertexColor()
-				r = r + (1-r)*0.5
-				g = g + (1-g)*0.5
-				b = b + (1-b)*0.5
+				r = r + (1-r) * 0.5
+				g = g + (1-g) * 0.5
+				b = b + (1-b) * 0.5
 				self.arrow:SetVertexColors(15,r,g,b,a)
 			else
 				self.arrow:SetVertexColors(15,0.6,1.0,0.4,1.0)
@@ -198,9 +199,8 @@ function arrowframeproto:ShowNothing()
 	self.here:Hide()
 end
 
-function arrowframeproto:ShowTraveling(elapsed, angle, dist)
+function arrowframeproto:ShowTraveling(elapsed, angle, distance)
 	self.here:Hide()
-	
 	self.arrow:Show()
 	self.spec:Show()
 
@@ -208,10 +208,10 @@ function arrowframeproto:ShowTraveling(elapsed, angle, dist)
 
 	local spangood,spanperf = 0.10, 0.02
 
-	Pointer.initialdist = Pointer.initialdist or dist
+	Pointer.initialdist = Pointer.initialdist or distance
 
 	perc = mabs( 1 - angle * 0.3183 )
-	perc,tier = Pointer.CalculateDirectionTiers( perc, 1 - spangood, 1 - spangood + 0.02, 1 - spanperf, 1)
+	perc,tier = Pointer.CalculateDirectionTiers(perc, 1 - spangood, 1 - spangood + 0.02, 1 - spanperf, 1)
 
 	self:SetAngle(angle) -- rotation of elements
 end
