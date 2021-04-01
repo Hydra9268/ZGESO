@@ -78,7 +78,7 @@ ZGV.Utils = Utils
 function Utils.ChainCall(obj)
 	local T={}
 	setmetatable(T,{__index = function(self,fun)
-				if fun=="__END" then
+				if fun == "__END" then
 					return obj
 				end
 				return function(self,...)
@@ -184,7 +184,7 @@ function Utils.GetPlayerName()
 end
 
 function Utils.GetMapNameByTexture()
-	local _, _, word = string.find( GetMapTileTexture(), "%a+/%a+/(%a+)/" ) -- pattern "Art/maps/mapname <- we want this
+	local _,_,word = string.find( GetMapTileTexture(), "%a+/%a+/(%a+)/" ) -- pattern "Art/maps/mapname <- we want this
 	local name = zo_strformat("<<C:1>>", word) -- Uppercase first letter
 	return name
 end
@@ -198,7 +198,7 @@ end
 -- 6: Undaunted
 function Utils.CheckIfInSkillGuild(guildSkillIndex)
    if guildSkillIndex <= 0 then return end
-   local _, _, isActive, _ = GetSkillLineDynamicInfo(SKILL_TYPE_GUILD, guildSkillIndex)
+   local _,_,isActive,_ = GetSkillLineDynamicInfo(SKILL_TYPE_GUILD, guildSkillIndex)
    return isActive
 end
 
@@ -320,25 +320,25 @@ end
 
 -- Prototype inheritance for tables that will inherit all functions
 function table.zginherits(self,tbl)
-	self.__UNSTRICT_CLASS=1
+	self.__UNSTRICT_CLASS = 1
 	for f,fun in pairs(tbl) do
-		if type(fun)=="function" 								-- Functions are the only thing we want to copy
-		and f~="New" then										-- Don't copy :New because those are specific to the Frames and don't want to overwrite them
+		if type(fun) == "function" 								-- Functions are the only thing we want to copy
+		and f ~= "New" then										-- Don't copy :New because those are specific to the Frames and don't want to overwrite them
 			if self[f] then self["saved"..f] = self[f] end		-- Don't strictly overwrite. Save it first incase it is still needed.
 			self[f] = fun
 		elseif f == "class" then
 			self.class = self.class or fun						-- Don't overwrite class class of orginal obj
 		end
 	end
-	self.__UNSTRICT_CLASS=nil
+	self.__UNSTRICT_CLASS = nil
 end
 
 function table.zgclone(self)
-	local t={}
-	if type(self)=="table" then
+	local t = {}
+	if type(self) == "table" then
 		-- Note: Be very careful about convert ipairs or pairs into standard for loops
 		for k,_ in pairs(self) do
-			t[k]=rawget(self,k)
+			t[k] = rawget(self,k)
 		end
 	end
 	return t
@@ -352,27 +352,29 @@ function getusermetatable(tab)
 end
 
 function class(obj)
-	if type(obj)~="table" and type(obj)~="userdata" then return end
+	if type(obj) ~= "table" and type(obj) ~= "userdata" then return end
 	return obj.class
 end
 
 function Utils.table_join (target,source)
-	if type(source)~="table" then return end
-	if type(target)~="table" then return end
+	if type(source) ~= "table" then return end
+	if type(target) ~= "table" then return end
 	for k,v in pairs(source) do
 		target[k] = v
 	end
 end
 
 function Utils.table_wipe (tab)
-	while #tab>0 do table.remove(tab) end
+	while #tab > 0 do
+		table.remove(tab)
+	end
 end
 
 function Utils.table_wipe_keys (tab)
 	while true do
-		local k=next(tab)
+		local k = next(tab)
 		if not k then break end
-		tab[k]=nil
+		tab[k] = nil
 	end
 end
 
@@ -380,10 +382,10 @@ end
 -- at least we're as precise as WoW lua allows us to
 function HTMLColor(code)
 	assert(code:match("#[0-9A-Fa-f]+$") and (#code==7 or #code==9),"Bogus code given: \""..code.."\")")
-	local r,g,b,a=tonumber("0x"..code:sub(2,3))/0xff,
-	tonumber("0x"..code:sub(4,5))/0xff,
-	tonumber("0x"..code:sub(6,7))/0xff,
-	#code==9 and tonumber("0x"..code:sub(8,9))/0xff
+	local r,g,b,a = tonumber("0x"..code:sub(2,3)) / 0xff,
+	tonumber("0x"..code:sub(4,5)) / 0xff,
+	tonumber("0x"..code:sub(6,7)) / 0xff,
+	#code == 9 and tonumber("0x"..code:sub(8,9))/0xff
 	return r,g,b,a or 1
 end
 
@@ -417,7 +419,7 @@ PrefixPairs = function(prefix)  -- iterator
 			if index and index:find("^"..prefix) then
 				return index,val
 			end
-			safety=safety+1
+			safety = safety + 1
 			if safety > 100000 then
 				return "ERR","ERR"
 			end
@@ -436,7 +438,7 @@ GetByPrefix = function(prefix,value,strip)  -- lookup func
 	end
 	if strip then
 		ret = ret:gsub(prefix,"")
-		if ret:sub(1,1)=="_" then
+		if ret:sub(1,1) == "_" then
 			ret = ret:sub(2)
 		end
 	end
@@ -451,7 +453,7 @@ function Utils.MakeExcerpt(text)
 	if #text > LIMIT then
 		local n = HEADLEN / 2
 		local head = text:sub(1,HEADLEN)
-		while head:sub(-1)~=" " and n > 0 do
+		while head:sub(-1) ~= " " and n > 0 do
 			head = head:sub(1,-2) n = n - 1
 		end
 		if #head == 0 then
@@ -518,9 +520,9 @@ assert (not MatchExcerpt("Blah___bleh___bloh","bleh, this is bloh because Blah")
 function Utils.GetMyAddonInfo()
 	local AM = GetAddOnManager()
 	for i = 1, AM:GetNumAddOns() do
-		local dir, title, _, _1, _2, _3, _4 = AM:GetAddOnInfo(i)
+		local dir,title,_,_1,_2,_3,_4 = AM:GetAddOnInfo(i)
 		if dir == ZGV.DIR then
-			return dir, title, _1, _2, _3, _4
+			return dir,title,_1,_2,_3,_4
 		end
 	end
 	error("Can't find addon info!")
@@ -536,7 +538,7 @@ function Utils.IsPOIComplete(map,poi)
 	end
 	if type(poi) == "string" then
 		for i = 1,GetNumPOIs(map) do
-			local text,_,_,_ = GetPOIInfo(map,i)
+			local text = GetPOIInfo(map,i)
 			if text == poi then
 				poi = i
 				break
@@ -568,7 +570,9 @@ local function SetVeteran(faction)
 	end
 end
 
-Utils.VETERAN_PROGRESSION={ ['AD']={'AD','EP','DC'}, ['EP']={'EP','DC','AD'}, ['DC']={'DC','AD','EP'} }
+Utils.VETERAN_PROGRESSION={ ['AD'] = {'AD','EP','DC'},
+							['EP'] = {'EP','DC','AD'},
+							['DC'] = {'DC','AD','EP'} }
 
 function Utils.GetVeteranFaction()
 	local natural_faction = Utils.GetFaction("player","novet")
@@ -598,7 +602,7 @@ function Utils.GetVeteranFaction()
 					return progression[prog_step+1],prog_step + 1
 				end  -- "next" faction
 				for ci = 1,numcond do
-					local conditionText,_,_,_,_,_ = GetJournalQuestConditionInfo(ji,si,ci)
+					local conditionText = GetJournalQuestConditionInfo(ji,si,ci)
 					if conditionText == "Experience the Daggerfall Covenant" then
 						return "DC",prog_step + 1 -- this is a bit of an assumption, but the player can't possibly be on anything but their "next" vet faction if they have this kind of goal.
 					end
