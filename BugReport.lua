@@ -1,4 +1,15 @@
+-----------------------------------------
+-- LOCALIZED GLOBAL VARIABLES
+-----------------------------------------
+
 local ZGV = _G.ZGV
+
+-----------------------------------------
+-- LOCAL VARIABLES
+-----------------------------------------
+
+local BugReport = {}
+local guiRoot, uiCenter, uiTopLeft, uiBottomRight, uiTopRight, ctEditBox = _G.GuiRoot, _G.CENTER, _G.TOPLEFT, _G.BOTTOMRIGHT, _G.TOPRIGHT, _G.CT_EDITBOX
 
 -----------------------------------------
 -- LOCAL REFERENCES
@@ -8,13 +19,6 @@ local tinsert,type,pairs,ipairs = table.insert,type,pairs,ipairs
 local CHAIN = ZGV.Utils.ChainCall
 local UI, WM = ZGV.UI, _G.WINDOW_MANAGER
 local getControl = _G.GetControl
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
-local BugReport = {}
-local guiRoot, uiCenter, uiTopLeft, uiBottomRight, uiTopRight, ctEditBox = _G.GuiRoot, _G.CENTER, _G.TOPLEFT, _G.BOTTOMRIGHT, _G.TOPRIGHT, _G.CT_EDITBOX
 
 -----------------------------------------
 -- SAVED REFERENCES
@@ -28,49 +32,50 @@ ZGV.BugReport = BugReport
 -----------------------------------------
 
 -----------------------------------------
--- CREATE FUNCTION
+-- FUNCTIONS
 -----------------------------------------
 function BugReport:CreateDumpFrameBasic()
 	local name = "ZGESO_DumpFrameBasic"
 
 	local frame = CHAIN(UI:Create("Frame",guiRoot,name))
-	:SetSize(1024,700)
-	:SetPoint(uiCenter)
-	:Hide()
-	:SetCanDrag(true)
-	.__END
+		:SetSize(1024,700)
+		:SetPoint(uiCenter)
+		:Hide()
+		:SetCanDrag(true)
+		.__END
+	
 	BugReport.BasicFrame = frame
 
 	frame.scroll = CHAIN(WM:CreateControlFromVirtual(name.."_Scroll",frame,"ZO_ScrollContainer"))
-	:SetAnchor(uiTopLeft,frame,uiTopLeft,8,50)
-	:SetAnchor(uiBottomRight,frame,uiBottomRight,-1,-38)
-	.__END
+		:SetAnchor(uiTopLeft,frame,uiTopLeft,8,50)
+		:SetAnchor(uiBottomRight,frame,uiBottomRight,-1,-38)
+		.__END
 
 	frame.scroll.scrollchild = CHAIN(getControl(frame.scroll:GetName().."ScrollChild"))
-	:ClearAnchors()
-	:SetAnchor(uiTopLeft,frame.scroll)
-	:SetAnchor(uiTopRight,frame.scroll)
-	:SetHeight(50)
-	.__END
+		:ClearAnchors()
+		:SetAnchor(uiTopLeft,frame.scroll)
+		:SetAnchor(uiTopRight,frame.scroll)
+		:SetHeight(50)
+		.__END
 
 	frame.display = CHAIN(UI:Create("Label",frame.scroll.scrollchild,name.."display"))
-	:SetAnchor(uiTopLeft,frame.scroll.scrollchild)
-	:SetAnchor(uiTopRight,frame.scroll.scrollchild)
-	:SetCanWrap(true)
-	.__END
+		:SetAnchor(uiTopLeft,frame.scroll.scrollchild)
+		:SetAnchor(uiTopRight,frame.scroll.scrollchild)
+		:SetCanWrap(true)
+		.__END
 
 	-- hidden edit box
 	frame.copybox = CHAIN(WM:CreateControl(name.."copybox",frame,ctEditBox))
-	:SetAnchor(uiTopLeft,frame.scroll)
-	:SetAnchor(uiBottomRight,frame.scroll)
-	:SetMouseEnabled(true)
-	:SetFont("ZoFontGame")
-	:SetMultiLine(true)
-	:SetHandler("OnMouseDown",function(self) self:TakeFocus() end)
-	:SetHandler("OnMouseUp",function(self) self:SelectAll() end)
-	:SetMaxInputChars(999999)
-	:SetHidden(true)
-	.__END
+		:SetAnchor(uiTopLeft,frame.scroll)
+		:SetAnchor(uiBottomRight,frame.scroll)
+		:SetMouseEnabled(true)
+		:SetFont("ZoFontGame")
+		:SetMultiLine(true)
+		:SetHandler("OnMouseDown",function(self) self:TakeFocus() end)
+		:SetHandler("OnMouseUp",function(self) self:SelectAll() end)
+		:SetMaxInputChars(999999)
+		:SetHidden(true)
+		.__END
 
 	--[[
 	-- TODO real edit box only handles 1000 char???
@@ -114,32 +119,29 @@ function BugReport:CreateDumpFrameBasic()
 	frame.display.back = UI:Create("SecBackdrop",frame.display,name.."bd")
 
 	frame.close = CHAIN(UI:Create("GuideButton",frame,name.."_Close","Close"))
-	:SetPoint(uiTopRight, frame, -5, 5)
-	:SetHandler("OnClicked",function(self)
-			frame:Hide()
-			BugReport.report = ""
-		end)
-	.__END
+		:SetPoint(uiTopRight, frame, -5, 5)
+		:SetHandler("OnClicked",function(self)
+				frame:Hide()
+				BugReport.report = ""
+			end)
+		.__END
 
 	frame.title = CHAIN(UI:Create("Label",frame,name.."_MainText",14,"bold"))
-	:SetPoint(uiTopLeft,frame.logo,10,10)
-	:SetText("No text")
-	.__END
+		:SetPoint(uiTopLeft,frame.logo,10,10)
+		:SetText("No text")
+		.__END
 
 	frame.CloseButton = CHAIN(UI:Create("Button",frame,name.."_Close2"))
-	:SetSize(100,25)
-	:SetText("Close")
-	:SetPoint(uiBottomRight, frame,-5,-5)
-	:SetHandler("OnClicked",function(...)
-			frame:Hide()
-			BugReport.report = ""
-		end)
-	.__END
+		:SetSize(100,25)
+		:SetText("Close")
+		:SetPoint(uiBottomRight, frame,-5,-5)
+		:SetHandler("OnClicked",function(...)
+				frame:Hide()
+				BugReport.report = ""
+			end)
+		.__END
 end
 
------------------------------------------
--- FUNCTION
------------------------------------------
 
 -- Circle back to this. Update to support any type of output
 function BugReport:ShowDump(text,title)
@@ -162,9 +164,10 @@ function BugReport:ShowDump(text,title)
 end
 
 local lastreport
+
 function BugReport:AddToReport(text)
 	if text == lastreport then return end
-	lastreport=text
+	lastreport = text
 	self.report = self.report or ""
 	self.report = self.report .. "\n" .. text
 end
@@ -239,6 +242,7 @@ end
 function BugReport:ShowReport()
 	self:ShowDump(self:GetReport(),"Bug Report")
 end
+
 
 -----------------------------------------
 -- DEBUG

@@ -1,16 +1,32 @@
+-----------------------------------------
+-- LOCALIZED GLOBAL VARIABLES
+-----------------------------------------
+
 local ZGV = _G.ZGV
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
-local tinsert, max, type, pairs, ipairs = table.insert, math.max, type, pairs, ipairs
+local GetMapTileTexture = _G.GetMapTileTexture
+local zo_strformat = _G.zo_strformat
+local GetAddOnManager = _G.GetAddOnManager
+local GetCurrentMapZoneIndex = _G.GetCurrentMapZoneIndex
+local GetNumPOIs = _G.GetNumPOIs
+local GetPOIMapInfo = _G.GetPOIMapInfo
+local MAP_PIN_TYPE_POI_COMPLETE = _G.MAP_PIN_TYPE_POI_COMPLETE
+local GetNumSkillTypes = _G.GetNumSkillTypes
+local GetSkillLineDynamicInfo = _G.GetSkillLineDynamicInfo
+local SKILL_TYPE_GUILD = _G.SKILL_TYPE_GUILD
+local GetNumSkillLines = _G.GetNumSkillLines
+local d = _G.d
 
 -----------------------------------------
 -- LOCAL VARIABLES
 -----------------------------------------
 
 local Utils = {}
+
+-----------------------------------------
+-- LOCAL REFERENCES
+-----------------------------------------
+
+local tinsert,max,type,pairs,ipairs = table.insert,math.max,type,pairs,ipairs
 
 -----------------------------------------
 -- SAVED REFERENCES
@@ -43,7 +59,7 @@ end
 function Utils.GetFaction(unitTag,novet,onlyvet)
 	unitTag = unitTag or "player"
 
-	if unitTag=="player" then
+	if unitTag == "player" then
 		if ZGV.FAKE_FACTION then
 			return ZGV.FAKE_FACTION
 		end
@@ -68,16 +84,16 @@ function Utils.GetFaction(unitTag,novet,onlyvet)
 	end
 end
 
-Utils.faction_names_full = { AD="Aldmeri Dominion", DC="Daggerfall Covenant", EP="Ebonheart Pact" }
-Utils.faction_names_short = { AD="Aldmeri", DC="Daggerfall", EP="Ebonheart" }
+Utils.faction_names_full = { AD = "Aldmeri Dominion", DC = "Daggerfall Covenant", EP = "Ebonheart Pact" }
+Utils.faction_names_short = { AD = "Aldmeri", DC = "Daggerfall", EP = "Ebonheart" }
 
 --TODO better than strings pls
-function Utils.IsFaction(faction)
-	local fac = Utils.GetFaction()
-	return (fac==faction)
-	or (fac == "DC" and faction == "Daggerfall Covenant")
-	or (fac == "EP" and faction == "Ebonheart Pact")
-	or (fac == "AD" and faction == "Aldmeri Dominion")
+function Utils.IsFaction()
+	local faction = Utils.GetFaction()
+	return (faction == faction)
+	or (faction == "DC" and faction == "Daggerfall Covenant")
+	or (faction == "EP" and faction == "Ebonheart Pact")
+	or (faction == "AD" and faction == "Aldmeri Dominion")
 end
 
 --- Checks if the player's race/class matches the requirements.
@@ -121,11 +137,11 @@ function Utils.FormatLevel(l,...)
 end
 
 function Utils.GetPlayerPreciseLevel()
-	if ZGV.db.char.fakelevel and ZGV.db.char.fakelevel>0 then
+	if ZGV.db.char.fakelevel and ZGV.db.char.fakelevel > 0 then
 		return ZGV.db.char.fakelevel
 	else
 		local GetUnitLevel, GetUnitXP, GetUnitXPMax = _G.GetUnitLevel, _G.GetUnitXP, _G.GetUnitXPMax
-		return GetUnitLevel("player") + GetUnitXP("player")/max(GetUnitXPMax("player"),1)
+		return GetUnitLevel("player") + GetUnitXP("player") / max(GetUnitXPMax("player"),1)
 	end
 end
 
@@ -160,26 +176,26 @@ function Utils.SkillLines(showType,showLineInfo,showLineXP,showSkillAbilities,sh
     end
     if showLineInfo then
         for index = 0,GetNumSkillLines(SKILL_TYPE_GUILD) do
-            d(index..": "..GetSkillLineInfo(SKILL_TYPE_GUILD, index))
+            d(index..": ".._G.GetSkillLineInfo(SKILL_TYPE_GUILD, index))
         end
         d("-----------------------------")
     end
     if showLineXP then
-        for index = 0,GetSkillLineXPInfo(SKILL_TYPE_GUILD) do
-            d(index..": "..GetSkillLineXPInfo(SKILL_TYPE_GUILD, index))
+        for index = 0,_G.GetSkillLineXPInfo(SKILL_TYPE_GUILD) do
+            d(index..": ".._G.GetSkillLineXPInfo(SKILL_TYPE_GUILD, index))
         end
         d("-----------------------------")
     end
     if showSkillAbilities then
-        for index = 0,GetNumSkillAbilities(SKILL_TYPE_GUILD) do
-            d(index..": "..GetNumSkillAbilities(SKILL_TYPE_GUILD, index))
+        for index = 0,_G.GetNumSkillAbilities(SKILL_TYPE_GUILD) do
+            d(index..": ".._G.GetNumSkillAbilities(SKILL_TYPE_GUILD, index))
         end
         d("-----------------------------")
     end
     if showAbilityInfo then
-        local hasProgression, progressionIndex, lastRankXP, nextRankXP, currentXP, atMorph = GetAbilityProgressionXPInfoFromAbilityId(abilityId)
-        local skillType, skillIndex, abilityIndex = GetSkillAbilityIndicesFromProgressionIndex(progressionIndex)
-        local abilityId2 = GetSkillAbilityId(skillType, skillIndex, abilityIndex)
+        local hasProgression, progressionIndex, lastRankXP, nextRankXP, currentXP, atMorph = _G.GetAbilityProgressionXPInfoFromAbilityId(_G.abilityId)
+        local skillType, skillIndex, abilityIndex = _G.GetSkillAbilityIndicesFromProgressionIndex(progressionIndex)
+        local abilityId2 = _G.GetSkillAbilityId(skillType, skillIndex, abilityIndex)
         d("GetSkillAbilityId: "..abilityId2)
         d("skillType: "..skillType)
         d("skillIndex: "..skillIndex)
@@ -290,7 +306,7 @@ function table.zgclone(self)
 	local t={}
 	if type(self)=="table" then
 		-- Note: Be very careful about convert ipairs or pairs into standard for loops
-		for k,v in pairs(self) do
+		for k,_ in pairs(self) do
 			t[k]=rawget(self,k)
 		end
 	end
@@ -371,7 +387,7 @@ PrefixPairs = function(prefix)  -- iterator
 				return index,val
 			end
 			safety=safety+1
-			if safety>100000 then
+			if safety > 100000 then
 				return "ERR","ERR"
 			end
 		until not index
@@ -396,60 +412,74 @@ GetByPrefix = function(prefix,value,strip)  -- lookup func
 	return ret
 end
 
-local HEADLEN=40
-local TAILLEN=20
-local LIMIT=HEADLEN+TAILLEN+12  -- making a buffer, so that texts cannot be (accidentally) excerpted twice.
+local HEADLEN = 40
+local TAILLEN = 20
+local LIMIT = HEADLEN + TAILLEN + 12  -- making a buffer, so that texts cannot be (accidentally) excerpted twice.
 function Utils.MakeExcerpt(text)
 	if not text then return "" end
-	if #text>LIMIT then
-		local n=HEADLEN/2
+	if #text > LIMIT then
+		local n = HEADLEN / 2
 		local head = text:sub(1,HEADLEN)
-		while head:sub(-1)~=" " and n>0 do head=head:sub(1,-2) n=n-1 end
-		if #head==0 then head=text:sub(1,HEADLEN) end -- oh well
+		while head:sub(-1)~=" " and n > 0 do
+			head = head:sub(1,-2) n = n - 1
+		end
+		if #head == 0 then
+			head = text:sub(1,HEADLEN)
+		end -- oh well
 
-		local n=TAILLEN/2
+		n = TAILLEN / 2
 		local tail = text:sub(-TAILLEN)
-		while tail:sub(1,1)~=" " and n>0 do tail=tail:sub(2) n=n-1 end
-		if #tail==0 then tail=text:sub(-TAILLEN) end -- oh well
+		while tail:sub(1,1) ~= " " and n > 0 do
+			tail = tail:sub(2) n = n - 1
+		end
+		if #tail == 0 then
+			tail = text:sub(-TAILLEN)
+		end -- oh well
 
-		text=head.."___"..tail -- .."<"..#text..">"
+		text = head.."___"..tail -- .."<"..#text..">"
 	end
 	return text
 end
-local MakeExcerpt=Utils.MakeExcerpt
+local MakeExcerpt = Utils.MakeExcerpt
 
 -- /zgoo {ZGV.Utils.MatchExcerpt(shortem,lorem)}
 
 function Utils.MatchExcerpt(exc,text)
-	if exc==text then return true end
+	if exc == text then return true end
 	if not exc or not text then return false end
 	if exc:find("___") then -- this is an excerpt all right
 		local txt,len = exc:match("^(.-)%s*<(%d+)>$")
-		if txt then exc=txt end
-		len=len and tonumber(len)
+		if txt then
+			exc = txt
+		end
+		len = len and tonumber(len)
 
 		-- First try parts.
-		local safetext="%{%"..text.."%}%"
-		local parts={zo_strsplit("___","%{%"..exc.."%}%")}
-		for i,part in ipairs(parts) do
-			if not zo_plainstrfind(safetext,part) then return false,safetext,part end
+		local safetext = "%{%"..text.."%}%"
+		local parts = {_G.zo_strsplit("___","%{%"..exc.."%}%")}
+		for _,part in ipairs(parts) do
+			if not _G.zo_plainstrfind(safetext,part) then
+				return false,safetext,part
+			end
 		end
 
-		if len and (len~=#text) then return false,len,#text end
+		if len and (len ~= #text) then
+			return false,len,#text
+		end
 
 		return true
 	end
-	return text==exc
+	return text == exc
 end
-local MatchExcerpt=Utils.MatchExcerpt
+local MatchExcerpt = Utils.MatchExcerpt
 
 Utils.quest_cond_counts = "%s*:%s*%d+%s*/%s*%d+%s*"
 
 -- TEST
 local lorem = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 local shortem = MakeExcerpt(lorem)
-assert (shortem=="Lorem ipsum dolor sit amet, consectetur ___ id est laborum.",'Utils:MakeExcerpt cannot do lorem ipsum properly!')
-assert (shortem==MakeExcerpt(shortem),'Utils:MatchExcerpt can\'t eat its own tail!')
+assert (shortem == "Lorem ipsum dolor sit amet, consectetur ___ id est laborum.",'Utils:MakeExcerpt cannot do lorem ipsum properly!')
+assert (shortem == MakeExcerpt(shortem),'Utils:MatchExcerpt can\'t eat its own tail!')
 assert (MatchExcerpt(shortem,lorem),'Utils:MatchExcerpt doesn\'t work on normal long texts')
 assert (MatchExcerpt("Blah___bleh___bloh","Blah, this is bleh because bloh"),'Utils:MatchShortText fails to do 3 parts')
 assert (not MatchExcerpt("Blah___bleh___bloh","bleh, this is bloh because Blah"),'Utils:MatchShortText is confused by order')
@@ -457,7 +487,7 @@ assert (not MatchExcerpt("Blah___bleh___bloh","bleh, this is bloh because Blah")
 function Utils.GetMyAddonInfo()
 	local AM = GetAddOnManager()
 	for i = 1, AM:GetNumAddOns() do
-		local dir, title, author, _1, _2, _3, _4 = AM:GetAddOnInfo(i)
+		local dir, title, _, _1, _2, _3, _4 = AM:GetAddOnInfo(i)
 		if dir == ZGV.DIR then
 			return dir, title, _1, _2, _3, _4
 		end
@@ -466,36 +496,45 @@ function Utils.GetMyAddonInfo()
 end
 
 function Utils.IsPOIComplete(map,poi)
-	if type(map)=="string" or (type(map)=="number" and map>1000) then
-		poi = map%1000
-		map = math.floor(map/1000)
+	if type(map) == "string" or (type(map) == "number" and map > 1000) then
+		poi = map % 1000
+		map = math.floor(map / 1000)
 	end
-	if not map then map=GetCurrentMapZoneIndex() end
-	if type(poi)=="string" then
-		for i=1,GetNumPOIs(map) do
-			local text,level,subtextinc,subtextcom = GetPOIInfo(map,i)
-			if text==poi then poi=i break end
+	if not map then
+		map = GetCurrentMapZoneIndex()
+	end
+	if type(poi) == "string" then
+		for i = 1,GetNumPOIs(map) do
+			local text,_,_,_ = _G.GetPOIInfo(map,i)
+			if text == poi then
+				poi = i
+				break
+			end
 		end
 	end
-	if type(poi)=="number" then
-		local x,y,typ,tex = GetPOIMapInfo(map,poi)
-		return typ==MAP_PIN_TYPE_POI_COMPLETE
+	if type(poi) == "number" then
+		local _,_,typ,_ = GetPOIMapInfo(map,poi)
+		return typ == MAP_PIN_TYPE_POI_COMPLETE
 	end
 end
 
 function Utils.GetPOIForQuest(questid)
 	if not ZGV._QuestPOIData then return "" end
-	if questid<=999999 then questid=("%07d"):format(questid) end
-	poi = ZGV._QuestPOIData:match("(%d+):[^\n]*"..questid)
+	if questid <= 999999 then
+		questid = ("%07d"):format(questid)
+	end
+	local poi = ZGV._QuestPOIData:match("(%d+):[^\n]*"..questid)
 	return poi
 end
 
 
 ZGV.VETERAN_FACTION = "UNCHECKED"
-local function SetVeteran(fac)
+local function SetVeteran(faction)
 	local prev_check = ZGV.VETERAN_FACTION
-	ZGV.VETERAN_FACTION = fac
-	if prev_check~="UNCHECKED" and prev_check~=ZGV.VETERAN_FACTION then ZGV.VETERAN_FACTION_CHANGED=fac end
+	ZGV.VETERAN_FACTION = faction
+	if prev_check ~= "UNCHECKED" and prev_check ~= ZGV.VETERAN_FACTION then
+		ZGV.VETERAN_FACTION_CHANGED = faction
+	end
 end
 
 Utils.VETERAN_PROGRESSION={ ['AD']={'AD','EP','DC'}, ['EP']={'EP','DC','AD'}, ['DC']={'DC','AD','EP'} }
@@ -507,36 +546,54 @@ function Utils.GetVeteranFaction()
 	local silver_complete = ZGV.QuestTracker:IsQuestComplete("Cadwell's Silver")
 	local gold_complete = silver_complete and ZGV.QuestTracker:IsQuestComplete("Cadwell's Gold")
 	table.insert(ZGV.PRELOG,"silver "..tostring(silver_complete)..", gold "..tostring(gold_complete))
-	if gold_complete then return progression[3],4 end
-	for ji=1,MAX_JOURNAL_QUESTS do if IsValidQuestIndex(ji) then
-		local title=GetJournalQuestName(ji)
+
+	if gold_complete then
+		return progression[3],4
+	end
+
+	for ji = 1,_G.MAX_JOURNAL_QUESTS do if _G.IsValidQuestIndex(ji) then
+		local title = _G.GetJournalQuestName(ji)
 		local prog_step
-		if title=="Cadwell's Silver" then prog_step = 1
-		elseif title=="Cadwell's Gold" then prog_step = 2
+		if title == "Cadwell's Silver" then
+			prog_step = 1
+		elseif title == "Cadwell's Gold" then
+			prog_step = 2
 		end
 
 		if prog_step then
-			for si=1,GetJournalQuestNumSteps(ji) do
-				local steptext,visibility,steptype,tracker,numcond = GetJournalQuestStepInfo(ji,si)
-				if tracker and tracker:find(" to Cadwell") then return progression[prog_step+1],prog_step+1 end  -- "next" faction
-				for ci=1,numcond do
-					local conditionText,current,maxv,isFailCondition,isComplete,isCreditShared = GetJournalQuestConditionInfo(ji,si,ci)
-					if conditionText=="Experience the Daggerfall Covenant" then return "DC",prog_step+1 end  -- this is a bit of an assumption, but the player can't possibly be on anything but their "next" vet faction if they have this kind of goal.
-					if conditionText=="Experience the Ebonheart Pact" then return "EP",prog_step+1 end
-					if conditionText=="Experience the Aldmeri Dominion" then return "AD",prog_step+1 end
-					if conditionText:find("Light of Meridia") then return progression[prog_step],prog_step end  -- still "current" faction
+			for si = 1,_G.GetJournalQuestNumSteps(ji) do
+				local _,_,_,tracker,numcond = _G.GetJournalQuestStepInfo(ji,si)
+				if tracker and tracker:find(" to Cadwell") then
+					return progression[prog_step+1],prog_step + 1
+				end  -- "next" faction
+				for ci = 1,numcond do
+					local conditionText,_,_,_,_,_ = _G.GetJournalQuestConditionInfo(ji,si,ci)
+					if conditionText == "Experience the Daggerfall Covenant" then
+						return "DC",prog_step + 1 -- this is a bit of an assumption, but the player can't possibly be on anything but their "next" vet faction if they have this kind of goal.
+					end
+					if conditionText == "Experience the Ebonheart Pact" then
+						return "EP",prog_step + 1
+					end
+					if conditionText == "Experience the Aldmeri Dominion" then
+						return "AD",prog_step + 1
+					end
+					if conditionText:find("Light of Meridia") then
+						return progression[prog_step],prog_step -- still "current" faction
+					end
 				end
 			end
 			break
 		end
 	end end
-	if silver_complete then return progression[2],2 end
+	if silver_complete then return
+		progression[2],2
+	end
 	return nil,1
 end
 
 function Utils.GetVeteranStage() -- 0:original, 1:first vet, 2:second vet, 3:original again
-	local vet,stageplus = Utils.GetVeteranFaction()
-	return stageplus-1
+	local stageplus = Utils.GetVeteranFaction()
+	return stageplus - 1
 end
 
 function Utils.CheckVeteranFaction()
@@ -547,6 +604,5 @@ end
 
 -- remove "^Ng,adv" and similar language tags
 function Utils.Delocalize(localstring)
-	local zo_strformat = _G.zo_strformat
 	return zo_strformat("<<1>>",localstring)
 end

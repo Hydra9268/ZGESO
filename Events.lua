@@ -1,17 +1,15 @@
+-----------------------------------------
+-- LOCALIZED GLOBAL VARIABLES
+-----------------------------------------
+
 local ZGV = _G.ZGV
 
 --[[
 	:AddEvent(EVENT,function() end)		- > Calls function
-	:AddEvent(Event,"Name")			- > Calls Events:Name or ZGV:Name
-	:AddEvent(EVENT,table)			- > Calls table:EVENT
-	:AddEvent(EVENT)			- > Calls Events:EVENT or ZGV:EVENT
+	:AddEvent(Event,"Name")				- > Calls Events:Name or ZGV:Name
+	:AddEvent(EVENT,table)				- > Calls table:EVENT
+	:AddEvent(EVENT)					- > Calls Events:EVENT or ZGV:EVENT
 --]]
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
-local tinsert, tremove, type, pairs, ipairs = table.insert, table.remove, type, pairs, ipairs
 
 -----------------------------------------
 -- LOCAL VARIABLES
@@ -20,6 +18,12 @@ local tinsert, tremove, type, pairs, ipairs = table.insert, table.remove, type, 
 local Events = {}
 local GuiRoot, uiTopLevelControl = _G.GuiRoot, _G.CT_TOPLEVELCONTROL
 local eventFrame = ZGV.WM:CreateControl("ZGV_EventFrame",GuiRoot,uiTopLevelControl)
+
+-----------------------------------------
+-- LOCAL REFERENCES
+-----------------------------------------
+
+local tinsert, tremove, type, pairs, ipairs = table.insert, table.remove, type, pairs, ipairs
 
 -----------------------------------------
 -- SAVED REFERENCES
@@ -94,7 +98,6 @@ end
 -- state = true -> Enter Combat
 -- state = false -> Exit Combat
 -- https://i.imgur.com/TzfcjTA.png
-local state = _G.state
 function ZGV:EVENT_PLAYER_COMBAT_STATE(_,state)
 	if not state then
 		if self.call_after_combat then
@@ -133,15 +136,15 @@ local safenext = function(table,index)
 end
 
 local globalprefixes = function(prefix)
-	local safeglobalnext = function(tab,index)
+	local safeglobalnext = function(_,index)
 		local val
-		local safety=0
+		local safety = 0
 		repeat
 			index,val = safenext(_G,index)
 			if index and index:find("^"..prefix) then
 				return index,val
 			end
-			safety=safety + 1
+			safety = safety + 1
 			if safety > 20000 then
 				return "ERR","ERR"
 			end
@@ -153,10 +156,8 @@ end
 Events.eventList = {}
 
 for k,v in globalprefixes("EVENT_") do
-	if type(v)=="number"
-	and k~="EVENT_GLOBAL_MOUSE_DOWN"
-	and k~="EVENT_GLOBAL_MOUSE_UP"
-	then Events.eventList[v]=k
+	if type(v) == "number" and k ~= "EVENT_GLOBAL_MOUSE_DOWN" and k ~= "EVENT_GLOBAL_MOUSE_UP" then
+		Events.eventList[v] = k
 	end
 end
 
