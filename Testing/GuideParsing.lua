@@ -1,4 +1,14 @@
+-----------------------------------------
+-- LOCALIZED GLOBAL VARIABLES
+-----------------------------------------
+
 local ZGV = _G.ZGV
+
+-----------------------------------------
+-- LOCAL VARIABLES
+-----------------------------------------
+
+local Parsing = {}
 
 -----------------------------------------
 -- LOCAL REFERENCES
@@ -6,12 +16,6 @@ local ZGV = _G.ZGV
 
 local tinsert = table.insert
 local Testing = ZGV.Testing
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
-local Parsing = {}
 
 -----------------------------------------
 -- SAVED REFERENCES

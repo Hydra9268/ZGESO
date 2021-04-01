@@ -1,4 +1,14 @@
+-----------------------------------------
+-- LOCALIZED GLOBAL VARIABLES
+-----------------------------------------
+
 local ZGV = _G.ZGV
+
+-----------------------------------------
+-- LOCAL VARIABLES
+-----------------------------------------
+
+local GuideWriting = {}
 
 -----------------------------------------
 -- LOCAL REFERENCES
@@ -7,12 +17,6 @@ local ZGV = _G.ZGV
 local tinsert,pairs = table.insert,pairs
 local Testing = ZGV.Testing
 local Data = ZGV.Data
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
-local GuideWriting = {}
 
 -----------------------------------------
 -- TESTS

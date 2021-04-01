@@ -1,15 +1,7 @@
 -----------------------------------------
--- INFORMATION
+-- The localization of this addon makes no sense whatsoever.
+-- Core_xxXX files provide full UI texts, even in English. Just to have them all in one place.
 -----------------------------------------
---[[
-The localization of this addon makes no sense whatsoever.
-Core_xxXX files provide full UI texts, even in English. Just to have them all in one place.
---]]
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
-local type = type
 
 -----------------------------------------
 -- LOCAL VARIABLES
@@ -22,6 +14,12 @@ local mt = {__index = function(self, key)
 		self[key] = key
 		return key
 	end}
+
+-----------------------------------------
+-- LOCAL REFERENCES
+-----------------------------------------
+
+local type = type
 
 -----------------------------------------
 -- FUNCTIONS

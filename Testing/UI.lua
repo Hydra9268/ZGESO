@@ -1,21 +1,23 @@
+-----------------------------------------
+-- LOCALIZED GLOBAL VARIABLES
+-----------------------------------------
+
 local ZGV = _G.ZGV
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
-local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs
-local print = ZGV.print
-local CHAIN = ZGV.Utils.ChainCall
-local ui = ZGV.UI
-local Testing = ZGV.Testing
-local GuiRoot = _G.GuiRoot
 
 -----------------------------------------
 -- LOCAL VARIABLES
 -----------------------------------------
 
 local UI = {}
+
+-----------------------------------------
+-- LOCAL REFERENCES
+-----------------------------------------
+
+local tinsert,type = table.insert,type
+local ui = ZGV.UI
+local Testing = ZGV.Testing
+local GuiRoot = _G.GuiRoot
 
 -----------------------------------------
 -- TESTS

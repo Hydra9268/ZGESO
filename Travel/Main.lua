@@ -1,20 +1,20 @@
+-----------------------------------------
+-- LOCALIZED GLOBAL VARIABLES
+-----------------------------------------
+
 local ZGV = _G.ZGV
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
-local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs
-local print = ZGV.print
-local CHAIN = ZGV.Utils.ChainCall
-local ui = ZGV.UI
-local L = ZGV.L
 
 -----------------------------------------
 -- LOCAL VARIABLES
 -----------------------------------------
 
 local Travel = {}
+
+-----------------------------------------
+-- LOCAL REFERENCES
+-----------------------------------------
+
+local tinsert = table.insert
 
 -----------------------------------------
 -- SAVED REFERENCES
@@ -34,7 +34,7 @@ function Travel:GetMapNameById(zone)
 	if not zone then
 		return "nomap"
 	end
-	local z1,z2 = _G.GetZoneInfo(zone)		-- TODO what is the difference in z1/z2. Likely one is localized.
+	local z1,_ = _G.GetZoneInfo(zone)		-- TODO what is the difference in z1/z2. Likely one is localized.
 
 	return z1
 end

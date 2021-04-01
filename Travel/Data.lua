@@ -1,18 +1,8 @@
+-----------------------------------------
+-- LOCALIZED GLOBAL VARIABLES
+-----------------------------------------
+
 local ZGV = _G.ZGV
-
------------------------------------------
--- INFORMATION
------------------------------------------
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
-local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs
-local print = ZGV.print
-local CHAIN = ZGV.Utils.ChainCall
-local ui = ZGV.UI
-local L = ZGV.L
 
 -----------------------------------------
 -- LOCAL VARIABLES
@@ -20,6 +10,12 @@ local L = ZGV.L
 
 local Data = {}
 local Travel
+
+-----------------------------------------
+-- LOCAL REFERENCES
+-----------------------------------------
+
+
 
 -----------------------------------------
 -- SAVED REFERENCES
@@ -623,8 +619,8 @@ function Data:CollectMapIds()
 	local sv = ZGV.sv.profile
 	sv.mapids = {}
 
-	for i=0,1000 do
-		local loczone, zone = _G.GetZoneInfo(i)
+	for i = 0,1000 do
+		local loczone, _ = _G.GetZoneInfo(i)
 		sv.mapids[loczone] = i
 	end
 end

@@ -1,4 +1,8 @@
-﻿local ZGV = _G.ZGV
+﻿-----------------------------------------
+-- LOCALIZED GLOBAL VARIABLES
+-----------------------------------------
+
+local ZGV = _G.ZGV
 
 ZGV.MapData = {
 	["ZoneNameToTex"] =

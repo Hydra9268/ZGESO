@@ -1,3 +1,7 @@
+-----------------------------------------
+-- LOCALIZED GLOBAL VARIABLES
+-----------------------------------------
+
 local ZGV = _G.ZGV
 
 -- 3 diget zone id then 4 diget uniqueid
