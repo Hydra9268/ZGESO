@@ -1,16 +1,14 @@
 -----------------------------------------
 -- INFORMATION
+-- 	Loaded before ZGESO.lua
+-- 	Options get put in "Option" instead of in the main group. No reason to comingle them.
 -----------------------------------------
---[[
-	Loaded before ZGESO.lua
 
-	Options get put in "Option" instead of in the main group. No reason to comingle them.
---]]
 -----------------------------------------
 -- LOCAL REFERENCES
 -----------------------------------------
 
-local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs
+local type,pairs,ipairs = type,pairs,ipairs
 local GuideViewer = _G.GuideViewer
 
 -----------------------------------------
@@ -20,71 +18,71 @@ local GuideViewer = _G.GuideViewer
 local COLOR_TIP_MOUSE = "|cddff00"
 
 local plurals = {
-	Ballista="Ballistae",
-	Bark=1,
-	Briarthorn=1,
-	Blood=1,
-	Bruiseweed=1,
-	Cargo=1,
-	Child="Children",
-	Chutney=1,
-	Dirt=1,
-	Down=1,
-	Dreamfoil=1,
-	drunk=1,
-	Dust=1,
-	Earth=1,
-	Felsworn=1,
-	Felweed=1,
-	Ferocious=1,
-	Flesh=1,
-	Flour=1,
-	Gizmo="Gizmos",
-	Glory=1,
-	Gromsblood=1,
-	Grow=1,
-	Harvest=1,
-	Heartwood=1,
-	Honey=1,
-	Ichor=1,
-	Infantry=1,
-	Kingsblood=1,
-	Leather=1,
-	Lumber=1,
-	Lotus="Lotuses",
-	Mageroyal=1,
-	Meat=1,
-	Milk=1,
-	Mogu=1,
-	mogu=1,
-	Mojo=1,
-	Nitroglycerin=1,
-	Nitrate=1,
-	Oil=1,
-	Ore=1,
-	Port=1,
-	Prey=1,
-	Pulp=1,
-	Rice=1,
-	Sap=1,
-	Silk=1,
-	Snuff=1,
-	Spawn=1,
-	Stuff=1,
-	Supplies=1,
-	Talisman="Talismans",
-	Tooth="Teeth",
-	Topaz=1,
-	Truegold=1,
-	Venom=1,
-	Vermin=1,
-	Venison=1,
-	Vrykul=1,
-	Water=1,
-	wildlife=1,
-	Witchban=1,
-	Worgen=1,
-	Wood=1
+	Ballista = "Ballistae",
+	Bark = 1,
+	Briarthorn = 1,
+	Blood = 1,
+	Bruiseweed = 1,
+	Cargo = 1,
+	Child = "Children",
+	Chutney = 1,
+	Dirt = 1,
+	Down = 1,
+	Dreamfoil = 1,
+	drunk = 1,
+	Dust = 1,
+	Earth = 1,
+	Felsworn = 1,
+	Felweed = 1,
+	Ferocious = 1,
+	Flesh = 1,
+	Flour = 1,
+	Gizmo = "Gizmos",
+	Glory = 1,
+	Gromsblood = 1,
+	Grow = 1,
+	Harvest = 1,
+	Heartwood = 1,
+	Honey = 1,
+	Ichor = 1,
+	Infantry = 1,
+	Kingsblood = 1,
+	Leather = 1,
+	Lumber = 1,
+	Lotus = "Lotuses",
+	Mageroyal = 1,
+	Meat = 1,
+	Milk = 1,
+	Mogu = 1,
+	mogu = 1,
+	Mojo = 1,
+	Nitroglycerin = 1,
+	Nitrate = 1,
+	Oil = 1,
+	Ore = 1,
+	Port = 1,
+	Prey = 1,
+	Pulp = 1,
+	Rice = 1,
+	Sap = 1,
+	Silk = 1,
+	Snuff = 1,
+	Spawn = 1,
+	Stuff = 1,
+	Supplies = 1,
+	Talisman = "Talismans",
+	Tooth = "Teeth",
+	Topaz = 1,
+	Truegold = 1,
+	Venom = 1,
+	Vermin = 1,
+	Venison = 1,
+	Vrykul = 1,
+	Water = 1,
+	wildlife = 1,
+	Witchban = 1,
+	Worgen = 1,
+	Wood = 1
 }
 
 local specials = {
@@ -225,7 +223,7 @@ GuideViewer("Main", "enUS", function() local f = {
 		--if type(v)=="string" then  f[k]=v:gsub("<<(.-)>>",COLOR_TIP_MOUSE.."%1"..COLOR_TIP)  end
 		--end
 		return f
-	end)
+end)
 
 GuideViewer("Option", "enUS", function() local f = {
 
@@ -330,13 +328,13 @@ GuideViewer("Option", "enUS", function() local f = {
 		--if type(v)=="string" then  f[k]=v:gsub("<<(.-)>>",COLOR_TIP_MOUSE.."%1"..COLOR_TIP)  end
 		--end
 		return f
-	end)
+end)
 
 GuideViewer("Specials", "enUS", function() return {
 			['plural'] = function (word)
 				if not word then return end
 				-- one-shot special cases
-				for i,data in ipairs(specials) do
+				for _,data in ipairs(specials) do
 					if word:match(data[1]) then
 						return data[2]==1 and word or word:gsub(data[1],data[2])
 					end
@@ -408,29 +406,30 @@ GuideViewer("Specials", "enUS", function() return {
 			end,
 
 			['contract_mobs'] = function(mobs)
-				local start,ending
 
-				if not mobs[1].name and type(mobs)=="table" then
-					local l=mobs
-					mobs={}
-					for i=1,#l do mobs[i]={name=l[i]} end
+				if not mobs[1].name and type(mobs) == "table" then
+					local l = mobs
+					mobs = {}
+					for i = 1,#l do
+						mobs[i] = { name = l[i] }
+					end
 				end
 
 				if mobs[1].name:match("^Echo of") then return nil end
 
 				local common,lastcommon,all
-				for i=1,5 do
+				for i = 1,5 do
 					common = mobs[1].name:match("^([%a']+" .. (" [%a']+"):rep(i-1) .. ")")
 					if not common then break end
-					all=true
-					for m=2,#mobs do
-						if mobs[m].name:find(common)~=1 then
-							all=false
+					all = true
+					for m = 2,#mobs do
+						if mobs[m].name:find(common) ~=1 then
+							all = false
 							break
 						end
 					end
 					if all then
-						lastcommon=common
+						lastcommon = common
 					else
 						break
 					end
@@ -441,19 +440,19 @@ GuideViewer("Specials", "enUS", function() return {
 				end
 
 				-- start failed? let's try end.
-				lastcommon=nil
-				for i=1,5 do
+				lastcommon = nil
+				for i = 1,5 do
 					common = mobs[1].name:match("([%a']+" .. (" [%a']+"):rep(i-1) .. ")$")
 					if not common then break end
-					all=true
-					for m=2,#mobs do
-						if mobs[m].name:sub(-#common)~=common then
-							all=false
+					all = true
+					for m = 2,#mobs do
+						if mobs[m].name:sub(-#common) ~= common then
+							all = false
 							break
 						end
 					end
 					if all then
-						lastcommon=common
+						lastcommon = common
 					else
 						break
 					end
@@ -469,6 +468,6 @@ GuideViewer("Specials", "enUS", function() return {
 
 			['contract_mobs_start'] = function(s) return s.." mobs" end,
 			['contract_mobs_end'] = function(s) return GuideViewer("Specials")['plural'](s) end,
-			} end)
+} end)
 
 

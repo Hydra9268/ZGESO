@@ -1,21 +1,22 @@
+-----------------------------------------
+-- LOCALIZED GLOBAL VARIABLES
+-----------------------------------------
+
 local ZGV = _G.ZGV
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
-local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs
-local print = ZGV.print
-local CHAIN = ZGV.Utils.ChainCall
-local ui = ZGV.UI
-local Testing = ZGV.Testing
-local GuideViewer = _G.GuideViewer
 
 -----------------------------------------
 -- LOCAL VARIABLES
 -----------------------------------------
 
 local Localization = {}
+
+-----------------------------------------
+-- LOCAL REFERENCES
+-----------------------------------------
+
+local tinsert = table.insert
+local Testing = ZGV.Testing
+local GuideViewer = _G.GuideViewer
 
 -----------------------------------------
 -- TESTS
@@ -33,9 +34,9 @@ function Localization.TestLocalization()
     return pass,comment
   end
 
-  if stringL['qwerty']~="zxczxc" then
+  if stringL['qwerty'] ~= "zxczxc" then
     return cleanUpTestAndReturn(false, "String Based localization failed")
-  elseif stringL['dupa dupa']~="sratatata" then
+  elseif stringL['dupa dupa'] ~= "sratatata" then
     return cleanUpTestAndReturn(false, "String Based localization with space failed")
   end
 

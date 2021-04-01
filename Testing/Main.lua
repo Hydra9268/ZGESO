@@ -1,11 +1,8 @@
+-----------------------------------------
+-- LOCALIZED GLOBAL VARIABLES
+-----------------------------------------
+
 local ZGV = _G.ZGV
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
-local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs
-local print = ZGV.print
 
 -----------------------------------------
 -- LOCAL VARIABLES
@@ -17,6 +14,13 @@ local Testing = {
   testdata = {},
 }
 local AllTestsRan = false
+
+-----------------------------------------
+-- LOCAL REFERENCES
+-----------------------------------------
+
+local tinsert,type,pairs = table.insert,type,pairs
+local print = ZGV.print
 
 -----------------------------------------
 -- SAVED REFERENCES
@@ -69,7 +73,6 @@ function Testing:RunTests(testgroup,testgroupname)
       return false
     else
       testsPassed[name] = "ok"
-
       return true
     end
   end
@@ -94,7 +97,6 @@ function Testing:RunTests(testgroup,testgroupname)
   -- Report results
   if numTestFailed == 0 then
     self:Debug(("All %d tests |c00ff00PASSED. Clear Captain|r."):format(numTestRan))
-
     return true
   else
     self:Debug(("%d tests ran. %d tests |cff0000FAILED|r."):format(numTestRan,numTestFailed))
@@ -125,15 +127,7 @@ function Testing:RegisterTest(testType,testFunc)
 
   tinsert(testFunc,testgroup)
 end
---[[
-/dump #ZGV.BugReport.BasicFrame.edit:GetText()
-/run local s = ""
- for i=1,1000 do
- 	s = s..i.."-123456789\n"
- end
 
- ZGV:Dump(s)
---]]
 -----------------------------------------
 -- DUMP FUNCTIONS
 -----------------------------------------
