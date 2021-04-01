@@ -3,17 +3,51 @@
 -----------------------------------------
 
 local ZGV = _G.ZGV
-local GetMapTileTexture = _G.GetMapTileTexture
-local zo_strformat = _G.zo_strformat
+
+local GetAbilityProgressionXPInfoFromAbilityId = _G.GetAbilityProgressionXPInfoFromAbilityId
 local GetAddOnManager = _G.GetAddOnManager
 local GetCurrentMapZoneIndex = _G.GetCurrentMapZoneIndex
+local GetJournalQuestConditionInfo = _G.GetJournalQuestConditionInfo
+local GetJournalQuestName = _G.GetJournalQuestName
+local GetJournalQuestNumSteps = _G.GetJournalQuestNumSteps
+local GetJournalQuestStepInfo = _G.GetJournalQuestStepInfo
+local GetMapTileTexture = _G.GetMapTileTexture
 local GetNumPOIs = _G.GetNumPOIs
-local GetPOIMapInfo = _G.GetPOIMapInfo
-local MAP_PIN_TYPE_POI_COMPLETE = _G.MAP_PIN_TYPE_POI_COMPLETE
-local GetNumSkillTypes = _G.GetNumSkillTypes
-local GetSkillLineDynamicInfo = _G.GetSkillLineDynamicInfo
-local SKILL_TYPE_GUILD = _G.SKILL_TYPE_GUILD
+local GetNumSkillAbilities = _G.GetNumSkillAbilities
 local GetNumSkillLines = _G.GetNumSkillLines
+local GetNumSkillTypes = _G.GetNumSkillTypes
+local GetPOIInfo = _G.GetPOIInfo
+local GetPOIMapInfo = _G.GetPOIMapInfo
+local GetSkillAbilityId = _G.GetSkillAbilityId
+local GetSkillAbilityIndicesFromProgressionIndex = _G.GetSkillAbilityIndicesFromProgressionIndex
+local GetSkillLineDynamicInfo = _G.GetSkillLineDynamicInfo
+local GetSkillLineInfo = _G.GetSkillLineInfo
+local GetSkillLineXPInfo = _G.GetSkillLineXPInfo
+local GetUnitAlliance = _G.GetUnitAlliance
+local GetUnitLevel = _G.GetUnitLevel
+local GetUnitName = _G.GetUnitName
+local GetUnitXP = _G.GetUnitXP
+local GetUnitXPMax = _G.GetUnitXPMax
+local IsUnitInCombat = _G.IsUnitInCombat
+local IsValidQuestIndex = _G.IsValidQuestIndex
+
+local abilityId = _G.abilityId
+local zo_plainstrfind = _G.zo_plainstrfind
+local zo_strfind = _G.zo_strfind
+local zo_strformat = _G.zo_strformat
+local zo_strsplit = _G.zo_strsplit
+
+local ALLIANCE_ALDMERI_DOMINION = _G.ALLIANCE_ALDMERI_DOMINION
+local ALLIANCE_DAGGERFALL_COVENANT = _G.ALLIANCE_DAGGERFALL_COVENANT
+local ALLIANCE_EBONHEART_PACT = _G.ALLIANCE_EBONHEART_PACT
+local ALLIANCE_NONE = _G.ALLIANCE_NONE
+local CENTER_SCREEN_ANNOUNCE = _G.CENTER_SCREEN_ANNOUNCE
+local CSA_EVENT_SMALL_TEXT = _G.CSA_EVENT_SMALL_TEXT
+local EVENT_OBJECTIVE_COMPLETED = _G.EVENT_OBJECTIVE_COMPLETED
+local MAP_PIN_TYPE_POI_COMPLETE = _G.MAP_PIN_TYPE_POI_COMPLETE
+local MAX_JOURNAL_QUESTS = _G.MAX_JOURNAL_QUESTS
+local SKILL_TYPE_GUILD = _G.SKILL_TYPE_GUILD
+local SOUNDS_QUEST_OBJECTIVE_STARTED = _G.SOUNDS.QUEST_OBJECTIVE_STARTED
 local d = _G.d
 
 -----------------------------------------
@@ -71,16 +105,16 @@ function Utils.GetFaction(unitTag,novet,onlyvet)
 		end
 	end
 
-	local alliance = _G.GetUnitAlliance(unitTag)
+	local alliance = GetUnitAlliance(unitTag)
 
-	if alliance == _G.ALLIANCE_ALDMERI_DOMINION then
+	if alliance == ALLIANCE_ALDMERI_DOMINION then
 		return "AD"
-	elseif alliance == _G.ALLIANCE_EBONHEART_PACT then
+	elseif alliance == ALLIANCE_EBONHEART_PACT then
 		return "EP"
-	elseif alliance == _G.ALLIANCE_DAGGERFALL_COVENANT then
+	elseif alliance == ALLIANCE_DAGGERFALL_COVENANT then
 		return "DC"
 	else
-		return _G.ALLIANCE_NONE
+		return ALLIANCE_NONE
 	end
 end
 
@@ -140,13 +174,12 @@ function Utils.GetPlayerPreciseLevel()
 	if ZGV.db.char.fakelevel and ZGV.db.char.fakelevel > 0 then
 		return ZGV.db.char.fakelevel
 	else
-		local GetUnitLevel, GetUnitXP, GetUnitXPMax = _G.GetUnitLevel, _G.GetUnitXP, _G.GetUnitXPMax
 		return GetUnitLevel("player") + GetUnitXP("player") / max(GetUnitXPMax("player"),1)
 	end
 end
 
 function Utils.GetPlayerName()
-	local name = _G.GetUnitName("player")
+	local name = GetUnitName("player")
 	return name
 end
 
@@ -176,26 +209,26 @@ function Utils.SkillLines(showType,showLineInfo,showLineXP,showSkillAbilities,sh
     end
     if showLineInfo then
         for index = 0,GetNumSkillLines(SKILL_TYPE_GUILD) do
-            d(index..": ".._G.GetSkillLineInfo(SKILL_TYPE_GUILD, index))
+            d(index..": "..GetSkillLineInfo(SKILL_TYPE_GUILD, index))
         end
         d("-----------------------------")
     end
     if showLineXP then
-        for index = 0,_G.GetSkillLineXPInfo(SKILL_TYPE_GUILD) do
-            d(index..": ".._G.GetSkillLineXPInfo(SKILL_TYPE_GUILD, index))
+        for index = 0,GetSkillLineXPInfo(SKILL_TYPE_GUILD) do
+            d(index..": "..GetSkillLineXPInfo(SKILL_TYPE_GUILD, index))
         end
         d("-----------------------------")
     end
     if showSkillAbilities then
-        for index = 0,_G.GetNumSkillAbilities(SKILL_TYPE_GUILD) do
-            d(index..": ".._G.GetNumSkillAbilities(SKILL_TYPE_GUILD, index))
+        for index = 0,GetNumSkillAbilities(SKILL_TYPE_GUILD) do
+            d(index..": "..GetNumSkillAbilities(SKILL_TYPE_GUILD, index))
         end
         d("-----------------------------")
     end
     if showAbilityInfo then
-        local hasProgression, progressionIndex, lastRankXP, nextRankXP, currentXP, atMorph = _G.GetAbilityProgressionXPInfoFromAbilityId(_G.abilityId)
-        local skillType, skillIndex, abilityIndex = _G.GetSkillAbilityIndicesFromProgressionIndex(progressionIndex)
-        local abilityId2 = _G.GetSkillAbilityId(skillType, skillIndex, abilityIndex)
+        local hasProgression, progressionIndex, lastRankXP, nextRankXP, currentXP, atMorph = GetAbilityProgressionXPInfoFromAbilityId(abilityId)
+        local skillType, skillIndex, abilityIndex = GetSkillAbilityIndicesFromProgressionIndex(progressionIndex)
+        local abilityId2 = GetSkillAbilityId(skillType, skillIndex, abilityIndex)
         d("GetSkillAbilityId: "..abilityId2)
         d("skillType: "..skillType)
         d("skillIndex: "..skillIndex)
@@ -212,13 +245,12 @@ function Utils.SkillLines(showType,showLineInfo,showLineXP,showSkillAbilities,sh
 end
 
 function Utils:IsPlayerInCombat()
-	local IsUnitInCombat = _G.IsUnitInCombat
 	return ZGV.db.profile.fakecombat or IsUnitInCombat("player")
 end
 
 function Utils.ShowFloatingMessage(msg,event,font,sound,publicfloat,publictext)
 	if ZGV.DEV or publicfloat then
-		_G.CENTER_SCREEN_ANNOUNCE:AddMessage(event or _G.EVENT_OBJECTIVE_COMPLETED,font or _G.CSA_EVENT_SMALL_TEXT,sound or _G.SOUNDS.QUEST_OBJECTIVE_STARTED,"|cffaa00[|cf8fbffZ|cffaa00]|r "..msg)
+		CENTER_SCREEN_ANNOUNCE:AddMessage(event or EVENT_OBJECTIVE_COMPLETED,font or CSA_EVENT_SMALL_TEXT,sound or SOUNDS_QUEST_OBJECTIVE_STARTED,"|cffaa00[|cf8fbffZ|cffaa00]|r "..msg)
 	end
 	if ZGV.DEV or publictext then
 		local print = ZGV.print
@@ -279,7 +311,6 @@ end
 -- Letters, numbers or spaces
 function Utils.IsAlphanumeric(str)
 	if not str then return end
-	local zo_strfind = _G.zo_strfind
 	return not zo_strfind(str,"[^%w ]")
 end
 
@@ -456,9 +487,9 @@ function Utils.MatchExcerpt(exc,text)
 
 		-- First try parts.
 		local safetext = "%{%"..text.."%}%"
-		local parts = {_G.zo_strsplit("___","%{%"..exc.."%}%")}
+		local parts = {zo_strsplit("___","%{%"..exc.."%}%")}
 		for _,part in ipairs(parts) do
-			if not _G.zo_plainstrfind(safetext,part) then
+			if not zo_plainstrfind(safetext,part) then
 				return false,safetext,part
 			end
 		end
@@ -505,7 +536,7 @@ function Utils.IsPOIComplete(map,poi)
 	end
 	if type(poi) == "string" then
 		for i = 1,GetNumPOIs(map) do
-			local text,_,_,_ = _G.GetPOIInfo(map,i)
+			local text,_,_,_ = GetPOIInfo(map,i)
 			if text == poi then
 				poi = i
 				break
@@ -551,8 +582,8 @@ function Utils.GetVeteranFaction()
 		return progression[3],4
 	end
 
-	for ji = 1,_G.MAX_JOURNAL_QUESTS do if _G.IsValidQuestIndex(ji) then
-		local title = _G.GetJournalQuestName(ji)
+	for ji = 1,MAX_JOURNAL_QUESTS do if IsValidQuestIndex(ji) then
+		local title = GetJournalQuestName(ji)
 		local prog_step
 		if title == "Cadwell's Silver" then
 			prog_step = 1
@@ -561,13 +592,13 @@ function Utils.GetVeteranFaction()
 		end
 
 		if prog_step then
-			for si = 1,_G.GetJournalQuestNumSteps(ji) do
-				local _,_,_,tracker,numcond = _G.GetJournalQuestStepInfo(ji,si)
+			for si = 1,GetJournalQuestNumSteps(ji) do
+				local _,_,_,tracker,numcond = GetJournalQuestStepInfo(ji,si)
 				if tracker and tracker:find(" to Cadwell") then
 					return progression[prog_step+1],prog_step + 1
 				end  -- "next" faction
 				for ci = 1,numcond do
-					local conditionText,_,_,_,_,_ = _G.GetJournalQuestConditionInfo(ji,si,ci)
+					local conditionText,_,_,_,_,_ = GetJournalQuestConditionInfo(ji,si,ci)
 					if conditionText == "Experience the Daggerfall Covenant" then
 						return "DC",prog_step + 1 -- this is a bit of an assumption, but the player can't possibly be on anything but their "next" vet faction if they have this kind of goal.
 					end
