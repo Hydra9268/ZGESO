@@ -1,22 +1,13 @@
+-----------------------------------------
+-- LOCALIZED GLOBAL VARIABLES
+-----------------------------------------
+
 local ZGV = _G.ZGV
-
------------------------------------------
--- INFORMATION
------------------------------------------
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
 local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs
 local print = ZGV.print
 local CHAIN = ZGV.Utils.ChainCall
 local ui = ZGV.UI
 local L = ZGV.L
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
 
 local StepProto = {}
 local Step = ZGV.Class:New("Step")

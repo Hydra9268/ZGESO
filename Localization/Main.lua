@@ -4,21 +4,14 @@
 -----------------------------------------
 
 -----------------------------------------
--- LOCAL VARIABLES
+-- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
-
 local data = {}
-
 local mt = {__index = function(self, key)
 		if type(key) == "number" then return end
 		self[key] = key
 		return key
 	end}
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
 local type = type
 
 -----------------------------------------

@@ -1,21 +1,11 @@
+-----------------------------------------
+-- LOCALIZED GLOBAL VARIABLES
+-----------------------------------------
+
 local ZGV = _G.ZGV
-
------------------------------------------
--- INFORMATION
------------------------------------------
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
 local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs
 local print = ZGV.print
 local L = ZGV.L
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
 local help_string = [[	Options:
 	reset - Reset Guide Viewer to original position, and settings.
 	show - Show the Guide Viewer.
@@ -29,10 +19,6 @@ if ZGV.DEV then
 	error - Toggle ignore errors. Requires a reload
 	]]
 end
-
------------------------------------------
--- SAVED REFERENCES
------------------------------------------
 
 -----------------------------------------
 -- FUNCTIONS

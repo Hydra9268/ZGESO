@@ -11,10 +11,6 @@ local ZGV = _G.ZGV
 local TOPLEFT, TOPRIGHT, BOTTOMLEFT, BOTTOMRIGHT, CENTER = _G.TOPLEFT, _G.TOPRIGHT, _G.BOTTOMLEFT, _G.BOTTOMRIGHT, _G.CENTER
 local TOP, RIGHT, BOTTOM, LEFT = _G.TOP, _G.RIGHT, _G.BOTTOM, _G.LEFT
 
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
 local Menu = {}
 local Settings = {
 	opt_groups = {},
@@ -49,10 +45,6 @@ local GuideStatusColor = {
 	["HEADER"] 		= "FFFFFF",
 	["FOLDER"] 		= "FFFFFF",
 }
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
 
 local tinsert,type,pairs,ipairs,class = table.insert,type,pairs,ipairs,_G.class
 local CHAIN = ZGV.Utils.ChainCall
@@ -148,13 +140,13 @@ function Menu:CreateBaseMenu()
 
 	-- Guide version, lower left
 	frame.version = CHAIN(ui:Create("Label",frame,name.."_VerTitle",12,"bold"))
-		:SetPoint(BOTTOMLEFT,frame,BOTTOMLEFT,10,-8)	-- TODO y vert distance does not keep centered in footer if footer size changes.
+		:SetPoint(BOTTOMLEFT,frame,BOTTOMLEFT,10,-8) -- TODO y vert distance does not keep centered in footer if footer size changes.
 		:SetText("VER:")
 		.__END
-	
+
 	frame.versionNum = CHAIN(ui:Create("Label",frame,name.."_VerNum",12))
 		:SetPoint(LEFT,frame.version,RIGHT,3,0)
-		:SetText(ZGV.version)
+		:SetText("|cffaa00"..ZGV.version.."|r")
 		.__END
 
 	-- Close button, upper right
@@ -216,18 +208,18 @@ function GuideMenu:Create()
 		Menu:CreateBaseMenu()
 	end
 	if self.Frame then return end
-	local gmname = name.. "_GuideMenu"
+	local guideMenuName = name.. "_GuideMenu"
 
 	local HEADER_PADDING = 5
 
-	local frame = CHAIN(ui:Create("InvisFrame", Menu.Frame.mainBackdrop,gmname))
+	local frame = CHAIN(ui:Create("InvisFrame", Menu.Frame.mainBackdrop,guideMenuName))
 		:SetAllPoints()
 		:Hide()
 		.__END
 
 	self.Frame = frame
 
-	frame.guideBox = CHAIN(ui:Create("InvisFrame", frame, gmname.. "_GuideBox"))
+	frame.guideBox = CHAIN(ui:Create("InvisFrame", frame, guideMenuName.. "_GuideBox"))
 		:SetPoint(TOPLEFT) :SetPoint(BOTTOMLEFT)
 		:SetWidth(LEFT_COLUMN_WIDTH)
 		.__END
@@ -248,19 +240,19 @@ function GuideMenu:Create()
 			end)
 		.__END
 
-	frame.guideBoxScrollBack = CHAIN(ui:Create("SecFrame", frame, gmname.. "_ScrollBack"))
+	frame.guideBoxScrollBack = CHAIN(ui:Create("SecFrame", frame, guideMenuName.. "_ScrollBack"))
 		:SetPoint(TOPLEFT,frame.guideBoxScroll,TOPLEFT)
 		:SetPoint(BOTTOMRIGHT,frame.guideBoxScroll,BOTTOMRIGHT)
 		:SetBackdropColor(.4,.4,.4,1)
 		.__END
 
-	frame.guideInfoBox = CHAIN(ui:Create("InvisFrame", frame, gmname.. "_GuideInfoBox"))
+	frame.guideInfoBox = CHAIN(ui:Create("InvisFrame", frame, guideMenuName.. "_GuideInfoBox"))
 		:SetPoint(TOPLEFT,frame.guideBoxScroll,TOPRIGHT)
 		:SetPoint(BOTTOMRIGHT)
 		:SetWidth(LEFT_COLUMN_WIDTH)
 		.__END
 
-	frame.header = CHAIN(ui:Create("Label",frame,gmname.."_Header",15,"bold"))
+	frame.header = CHAIN(ui:Create("Label",frame,guideMenuName.."_Header",15,"bold"))
 		:SetPoint(TOPLEFT,frame,TOPLEFT,HEADER_PADDING,6)
 		:SetText (ZGV.Utils.faction_names_short[ZGV.Utils.GetFaction()]:upper() .. (ZGV.VETERAN_FACTION and " VETERAN" or "") .. " LEVELING")
 		.__END
@@ -272,10 +264,10 @@ function GuideMenu:Create()
 	local rows = MAX_LINES
 	local ROWHEIGHT = 22	-- TODO calculate these based on height of Guide Menu?
 	for i = 1,rows do
-		local butname = gmname.."_But"..i
+		local buttonName = guideMenuName.."_But"..i
 
 		-- Copy ZGESO_DumpFrameBasic layout. Has working scrollbar.
-		local but = CHAIN(ui:Create("SecButton",frame.guideBox,butname))
+		local button = CHAIN(ui:Create("SecButton",frame.guideBox,buttonName))
 			:SetHeight(ROWHEIGHT)
 			:SetHandler("OnMouseEnter",function(me)
 					me.highlight:Show()
@@ -283,9 +275,9 @@ function GuideMenu:Create()
 			:SetHandler("OnMouseExit",function(me)
 					me.highlight:Hide()
 				end)
-			:SetHandler("OnClicked",function(me,but) GuideMenu:MenuButton_OnClick(me,but) end)
+			:SetHandler("OnClicked",function(me,button) GuideMenu:MenuButton_OnClick(me,button) end)
 			:SetHandler("OnMouseDoubleClick",function(me)
-					if me.target.type=="folder" then
+					if me.target.type == "folder" then
 					else
 						GuideMenu:SetCurrentGuide(me.target)
 					end
@@ -293,51 +285,51 @@ function GuideMenu:Create()
 			.__END
 
 		-- Texture for when the button is hovered over.
-		but.highlight = CHAIN(ui:Create("Texture",but,butname.."_Highlight"))
+		button.highlight = CHAIN(ui:Create("Texture",button,buttonName.."_Highlight"))
 			:SetColor(unpack(BUTTON_HIGHLIGHT_TEXTURE))
-			:SetPoint(but)
+			:SetPoint(button)
 			:Hide()
 			.__END
 
 		if i == 1 then
-			CHAIN(but)
+			CHAIN(button)
 			:SetPoint(RIGHT) -- Set the right point first so it gets the width
 			:SetPoint(TOPLEFT,frame.header,BOTTOMLEFT,-HEADER_PADDING,0)
 		else
-			local prevBut = frame.buttons[i-1]
-			CHAIN(but)
-			:SetPoint(TOPLEFT,prevBut,BOTTOMLEFT)
-			:SetPoint(TOPRIGHT,prevBut,BOTTOMRIGHT)
+			local previousButton = frame.buttons[i-1]
+			CHAIN(button)
+			:SetPoint(TOPLEFT,previousButton,BOTTOMLEFT)
+			:SetPoint(TOPRIGHT,previousButton,BOTTOMRIGHT)
 		end
 
-		but.icon = CHAIN(ui:Create("Texture",but,butname.."_Icon"))
-			:SetPoint(LEFT,but,LEFT,10,0)
+		button.icon = CHAIN(ui:Create("Texture",button,buttonName.."_Icon"))
+			:SetPoint(LEFT,button,LEFT,10,0)
 			:SetSize(17,17)
 			:SetTexture(ZGV.DIR.."/Viewer/Skins/Stealth/guideicons-small.dds")
 			.__END
 
 		-- TODO blinking star on guide animation?
 
-		but.label = CHAIN(ui:Create("Label",but,butname.."_Label",13))
-			:SetPoint(LEFT,but.icon,RIGHT,5,0)
+		button.label = CHAIN(ui:Create("Label",button,buttonName.."_Label",13))
+			:SetPoint(LEFT,button.icon,RIGHT,5,0)
 			:SetPoint(RIGHT)
 			:SetText("No label?!!?")
 			.__END
 
-		but.SetIcon = SetIcon
-		frame.buttons[i] = but
+		button.SetIcon = SetIcon
+		frame.buttons[i] = button
 	end
 
 	------------------------------
 	-- Setup Right information panel
 	-----------------------------
 
-	frame.GuideTitle = CHAIN(ui:Create("Label",frame.guideInfoBox,gmname.."_GuideTitle",17,"bold"))
+	frame.GuideTitle = CHAIN(ui:Create("Label",frame.guideInfoBox,guideMenuName.."_GuideTitle",17,"bold"))
 		:SetPoint(TOPLEFT,frame.guideInfoBox,20,20)
 		:SetWidth(GUIDE_IMAGE_WIDTH-20)
 		.__END
 
-	frame.GuideImage = CHAIN(ui:Create("Texture",frame.guideInfoBox,gmname.."_GuideTexture"))
+	frame.GuideImage = CHAIN(ui:Create("Texture",frame.guideInfoBox,guideMenuName.."_GuideTexture"))
 		:SetPoint(TOPLEFT,frame.GuideTitle,0,30)
 		:SetPoint(BOTTOMRIGHT,frame.GuideTitle,0,256)
 		:SetSize(GUIDE_IMAGE_WIDTH,GUIDE_IMAGE_HEIGHT)
@@ -345,14 +337,14 @@ function GuideMenu:Create()
 		.__END
 
 	-- TODO scrollbar for information panel on the right? Create a scrollbox for the rest of the information.
-	frame.GuideData = CHAIN(ui:Create("Label",frame.guideInfoBox,gmname.."_GuideData",14))
+	frame.GuideData = CHAIN(ui:Create("Label",frame.guideInfoBox,guideMenuName.."_GuideData",14))
 		:SetPoint(TOPLEFT,frame.GuideImage,0,200)
 		:SetPoint(BOTTOMRIGHT,-20,-10)
 		:SetVerticalAlignment(_G.TEXT_ALIGN_TOP)
 		.__END
 
 	-- Button isn't in the scrollframe either
-	frame.OkButton = CHAIN(ui:Create("Button",frame.guideBox,gmname.."_OkButton"))
+	frame.OkButton = CHAIN(ui:Create("Button",frame.guideBox,guideMenuName.."_OkButton"))
 		:SetPoint(BOTTOMRIGHT,frame.guideInfoBox,BOTTOMRIGHT,-20,-10)
 		:SetSize(80,20)
 		:SetText("Start Guide")
@@ -368,7 +360,7 @@ function GuideMenu:RefreshUI()
 	if not self.Frame then
 		self:Create()
 	end
-	
+
 	local frame = self.Frame
 	local buts = frame.buttons
 
@@ -421,7 +413,7 @@ function GuideMenu:RefreshUI()
 	local zo_min, zo_max = _G.zo_min, _G.zo_max
 	self.offset = self.offset and zo_min(#guides,zo_max(0,self.offset)) or 0
 
-	frame.guideBoxScroll:SetMinMax(0, #guides-MAX_LINES)		-- code works but there's no scrolling
+	frame.guideBoxScroll:SetMinMax(0, #guides-MAX_LINES)		-- code works button there's no scrolling
 
 	local hei = zo_min(1,MAX_LINES / #guides)  if hei==1 then
 		hei = 0
@@ -433,21 +425,21 @@ function GuideMenu:RefreshUI()
 	-- UPDATE THE BUTTONS
 	-------------------------------
 
-	for i,but in ipairs(buts) do
+	for i,button in ipairs(buts) do
 		local guide = guides[i+self.offset]
 
 		if guide then
 
 			-- guide/folder, doesn't matter
-			but.target = guide
+			button.target = guide
 
-			--but.isguide=true
+			--button.isguide=true
 			local status = guide.GetStatus and guide:GetStatus() or ""
 
 			if guide.type=="folder" then
-				but:SetIcon(1,1,2,2)
+				button:SetIcon(1,1,2,2)
 			else
-				but:SetIcon(2,1,2,2)
+				button:SetIcon(2,1,2,2)
 			end
 			-- TODO icon stuffz
 			--[[
@@ -455,43 +447,43 @@ function GuideMenu:RefreshUI()
 				if type(g.icon[3]) == "string" then -- icon in get_icon() format
 					local x,y = g.icon[1],g.icon[2] --get_icon(g.header)
 					if x then
-						but:SetIcon(x,y,4,4,false,true)
-						--but.label:SetPoint("TOPLEFT",but,"TOPLEFT",32,2)
+						button:SetIcon(x,y,4,4,false,true)
+						--button.label:SetPoint("TOPLEFT",button,"TOPLEFT",32,2)
 					end
 				end
 
-				but:SetIcon(0,0,2,2,true)
+				button:SetIcon(0,0,2,2,true)
 			else
 
-				but:SetIcon(2,1,2,2)
+				button:SetIcon(2,1,2,2)
 
 				if status=="SUGGESTED" then
-					but:SetIcon(1,2,2,2,true)
-					--but.iconover.anim:Play()
+					button:SetIcon(1,2,2,2,true)
+					--button.iconover.anim:Play()
 				else
-					but:SetIcon(0,0,2,2,true)
+					button:SetIcon(0,0,2,2,true)
 				end
 			end
 			--]]
 
 
-			but.icon:Show()
+			button.icon:Show()
 
 			local statuscolor = GuideStatusColor[status] or "ffffff"
 			if self.selectedguide and self.selectedguide==guide then
 				local r,g,b = _G.HTMLColor("#"..statuscolor)
-				but:SetBackdropColor(r,g,b,1)
-				but.bd:Show()
+				button:SetBackdropColor(r,g,b,1)
+				button.bd:Show()
 
 				statuscolor = "ffffff"	-- status text is always white when we hover over it to not conflict with the backdrop.
 			else
-				but.bd:Hide()
+				button.bd:Hide()
 			end
 
-			but.label:SetText("|c"..statuscolor..(guide.title_short or "")..(guide.parse_error and "-|cff0000ERROR|r" or "") )
-			but:Show()
+			button.label:SetText("|c"..statuscolor..(guide.title_short or "")..(guide.parse_error and "-|cff0000ERROR|r" or "") )
+			button:Show()
 		else
-			but:Hide()
+			button:Hide()
 		end
 	end
 
@@ -617,9 +609,9 @@ function Settings:Create()
 	local rows = MAX_LINES
 	local ROWHEIGHT = 22	-- TODO calculate these based on height of Guide Menu?
 	for i = 1,rows do
-		local butname = setname.."_But"..i
+		local buttonName = setname.."_But"..i
 
-		local but = CHAIN(ui:Create("SecButton",frame.optionTypesBox,butname))
+		local button = CHAIN(ui:Create("SecButton",frame.optionTypesBox,buttonName))
 			:SetHeight(ROWHEIGHT)
 			:SetHandler("OnMouseEnter",function(me)
 					me.highlight:Show()
@@ -627,43 +619,43 @@ function Settings:Create()
 			:SetHandler("OnMouseExit",function(me)
 					me.highlight:Hide()
 				end)
-			:SetHandler("OnClicked",function(me,but) Settings:MenuButton_OnClick(me,but)
+			:SetHandler("OnClicked",function(me,button) Settings:MenuButton_OnClick(me,button)
 				end)
 			.__END
 
 		-- Texture for when the button is hovered over.
-		but.highlight = CHAIN(ui:Create("Texture",but,butname.."_Highlight"))
+		button.highlight = CHAIN(ui:Create("Texture",button,buttonName.."_Highlight"))
 			:SetColor(unpack(BUTTON_HIGHLIGHT_TEXTURE))
-			:SetPoint(but)
+			:SetPoint(button)
 			:Hide()
 			.__END
 
 		if i == 1 then
-			CHAIN(but)
+			CHAIN(button)
 			:SetPoint(RIGHT)		-- Set the right point first so it gets the width
 			:SetPoint(TOPLEFT,frame.header,BOTTOMLEFT,-HEADER_PADDING,0)
 		else
-			local prevBut = frame.buttons[i-1]
-			CHAIN(but)
-			:SetPoint(TOPLEFT,prevBut,BOTTOMLEFT)
-			:SetPoint(TOPRIGHT,prevBut,BOTTOMRIGHT)
+			local previousButton = frame.buttons[i-1]
+			CHAIN(button)
+			:SetPoint(TOPLEFT,previousButton,BOTTOMLEFT)
+			:SetPoint(TOPRIGHT,previousButton,BOTTOMRIGHT)
 		end
 
-		but.icon = CHAIN(ui:Create("Texture",but,butname.."_Icon"))
-			:SetPoint(LEFT,but,LEFT,10,0)
+		button.icon = CHAIN(ui:Create("Texture",button,buttonName.."_Icon"))
+			:SetPoint(LEFT,button,LEFT,10,0)
 			:SetSize(17,17)
 			:SetTexture(ZGV.DIR.."/Viewer/Skins/Stealth/guideicons-small.dds")
 			.__END
 
 		-- TODO blinking star on guide animation?
-		but.label = CHAIN(ui:Create("Label",but,butname.."_Label",15))
-			:SetPoint(LEFT,but.icon,RIGHT,5,0)
+		button.label = CHAIN(ui:Create("Label",button,buttonName.."_Label",15))
+			:SetPoint(LEFT,button.icon,RIGHT,5,0)
 			:SetPoint(RIGHT)
 			:SetText("No label?!!?")
 			.__END
 
-		but.SetIcon = SetIcon
-		frame.buttons[i] = but
+		button.SetIcon = SetIcon
+		frame.buttons[i] = button
 	end
 
 	------------------------------
@@ -853,55 +845,55 @@ function Settings:RefreshUI()
 	-- UPDATE THE BUTTONS
 	-------------------------------
 
-	for i,but in ipairs(buts) do
+	for i,button in ipairs(buts) do
 		local group = opt_groups[i]
 
 		if group then
 			-- guide
-			but.group = group
+			button.group = group
 
-			but:SetIcon(1,1,2,2)
+			button:SetIcon(1,1,2,2)
 			-- TODO icons
 			--[[
 			if g.icon and Menu.path == "RECENT" and Menu.simpleList then
 				if type(g.icon[3]) == "string" then -- icon in get_icon() format
 					local x,y = g.icon[1],g.icon[2] --get_icon(g.header)
 					if x then
-						but:SetIcon(x,y,4,4,false,true)
-			--but.label:SetPoint("TOPLEFT",but,"TOPLEFT",32,2)
+						button:SetIcon(x,y,4,4,false,true)
+			--button.label:SetPoint("TOPLEFT",button,"TOPLEFT",32,2)
 		end
 	end
 
-		but:SetIcon(0,0,2,2,true)
+		button:SetIcon(0,0,2,2,true)
 	else
-		but:SetIcon(2,1,2,2)
+		button:SetIcon(2,1,2,2)
 
 		if status=="SUGGESTED" then
-			but:SetIcon(1,2,2,2,true)
-			but.iconover.anim:Play()
+			button:SetIcon(1,2,2,2,true)
+			button.iconover.anim:Play()
 		else
-			but:SetIcon(0,0,2,2,true)
+			button:SetIcon(0,0,2,2,true)
 		end
 	end
 	--]]
 
-			but.icon:Show()
+			button.icon:Show()
 
 			if self.selectedgroup and self.selectedgroup == group then
 				local mult = 0.7
 				local r,g,b = .6,.6,.6 -- HTMLColor("#0000ff")-- TODO more interesting color.
-				but:SetBackdropColor(r*mult,g*mult,b*mult,1)
-				but.bd:Show()
+				button:SetBackdropColor(r*mult,g*mult,b*mult,1)
+				button.bd:Show()
 
 			else
-				but.bd:Hide()
+				button.bd:Hide()
 			end
 
-			but.label:SetText(group.title)
+			button.label:SetText(group.title)
 
-			but:Show()
+			button:Show()
 		else
-			but:Hide()
+			button:Hide()
 		end
 	end
 
@@ -1327,16 +1319,16 @@ function GuideMenu:Hide()
 	self.Frame:Hide()
 end
 
-function GuideMenu:MenuButton_OnClick(but,_)
-	if not but.target then return end
-	if but.target.type == "folder" then
-		self.folder = but.target.title
+function GuideMenu:MenuButton_OnClick(button,_)
+	if not button.target then return end
+	if button.target.type == "folder" then
+		self.folder = button.target.title
 		self:RefreshUI()
 		return
 	end
 	if false then
 	else
-		GuideMenu:SelectGuide(but.target)
+		GuideMenu:SelectGuide(button.target)
 	end
 end
 
@@ -1432,10 +1424,10 @@ function Settings:OpenSettings(group)
 	self:Show()
 end
 
-function Settings:MenuButton_OnClick(but,_)
-	if not but.group then return end
+function Settings:MenuButton_OnClick(button,_)
+	if not button.group then return end
 
-	self:SelectGroup(but.group)
+	self:SelectGroup(button.group)
 
 	self:Refresh()
 end

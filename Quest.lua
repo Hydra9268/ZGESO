@@ -1,5 +1,3 @@
-local ZGV = _G.ZGV
-
 -----------------------------------------
 -- INFORMATION
 -----------------------------------------
@@ -10,10 +8,12 @@ local ZGV = _G.ZGV
 
 	Main steps are not actually created by ZOS
 --]]
+
 -----------------------------------------
--- LOCAL REFERENCES
+-- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
+local ZGV = _G.ZGV
 local tinsert,type, ipairs = table.insert, type, ipairs
 local Data = ZGV.Data
 
@@ -27,10 +27,6 @@ local EMPTY_STRING = _G.EMPTY_STRING
 local GetJournalQuestNumConditions = _G.GetJournalQuestNumConditions
 local GetJournalQuestConditionInfo = _G.GetJournalQuestConditionInfo
 local GetJournalQuestInfo = _G.GetJournalQuestInfo
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
 
 -- Saved Variables initialized at startup
 local svchardata, savedquests, svcompletedquests

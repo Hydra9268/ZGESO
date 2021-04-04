@@ -1,24 +1,17 @@
+-----------------------------------------
+-- LOCALIZED GLOBAL VARIABLES
+-----------------------------------------
+
 local ZGV = _G.ZGV
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
 local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs
 local tonumber = tonumber
 local print = ZGV.print
 local L = ZGV.L
-
 local GOALTYPES		-- initialized at startup
 local mod="%05d%05d"
 local msg = _G.msg
 local guide = _G.guide
 local reference = _G.reference
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
 local Parser = {}
 local Commands = {}
 local GuideCommands = {}
@@ -587,12 +580,7 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 	local breakout
 	local prevmap
 	local funclocdata = {}
-
 	local do_debug	= 1
-
-	-------------------
-	-- LOCAL REFERENCES
-	-------------------
 	local strfind = string.find
 
 	-------------------

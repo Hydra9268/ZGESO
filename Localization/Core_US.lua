@@ -5,18 +5,12 @@
 -----------------------------------------
 
 -----------------------------------------
--- LOCAL REFERENCES
+-- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
 local type,pairs,ipairs = type,pairs,ipairs
 local GuideViewer = _G.GuideViewer
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
 local COLOR_TIP_MOUSE = "|cddff00"
-
 local plurals = {
 	Ballista = "Ballistae",
 	Bark = 1,

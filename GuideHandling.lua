@@ -5,20 +5,10 @@
 local ZGV = _G.ZGV
 local GetZoneNameByIndex = _G.GetZoneNameByIndex
 local GetCurrentMapZoneIndex = _G.GetCurrentMapZoneIndex
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
 local Viewer
 local LONG_STEP_INTERVAL = 1
 local SHORT_STEP_INTERVAL = .1
 local completeionInterval = LONG_STEP_INTERVAL
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
 local tinsert,tremove,type,ipairs,class = table.insert,table.remove,type,ipairs,_G.class
 local CHAIN = ZGV.Utils.ChainCall
 local L = ZGV.L
