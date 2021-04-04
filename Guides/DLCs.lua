@@ -2448,18 +2448,18 @@ click Jarol Estate Gate
 'Find a Way Into the Jarol Estate |q Signed in Blood/Find a Way Into the Jarol Estate
 |tip Manually skip to the next step.
 step
-goto goldcoast_base 25.05,38.49
+goto 25.05,38.49
 click Jarol Estate
 |tip You'll have to pick the lock.
 'Find a Way Into the Jarol Estate |q Signed in Blood/Find a Way Into the Jarol Estate
 step
-goto goldcoast_base 24.39,38.23
+goto 24.39,38.23
 click Letter from the Governor
 |tip It's on a desk upstairs.
 'Search the Manor House |q Signed in Blood/Search the Manor House
 |tip Manually skip to the next step.
 step
-goto goldcoast_base 24.39,38.23
+goto 24.39,38.23
 click Wine Cellar
 |tip It is downstairs.
 'Enter the Wine Cellar |q Signed in Blood/Search the Manor House
@@ -2537,15 +2537,15 @@ step
 goto goldcoast_base 53.99,40.19
 wayshrine Gold Coast
 step
-goto goldcoast_base 52.16,33.18
+goto 52.16,33.18
 'Go through the rocks |q Signed in Blood/Gain Entry to the Sanctuary
 |tip Manually skip to the next step.
 step
-goto goldcoast_base 53.53,31.96
+goto 53.53,31.96
 click The Black Door
 'Gain Entry to the Sanctuary |q Signed in Blood/Gain Entry to the Sanctuary
 step
-goto goldcoast_base 53.52,31.96
+goto 53.52,31.96
 click Dark Brotherhood Sanctuary
 'Enter the Sanctuary |q Signed in Blood/Talk to Astara
 |tip Manually skip to the next step.
@@ -2757,29 +2757,29 @@ talk Beran Larocque
 'Search the Old Shrines |q Pious Intervention/Search the Old Shrines
 |tip Manually skip to the next step.
 step
-goto goldcoast_base 49.86,31.37
+goto 49.86,31.37
 talk Erina Glaucia
 'Search the Old Shrines |q Pious Intervention/Search the Old Shrines
 |tip Manually skip to the next step.
 step
-goto goldcoast_base 38.15,37.31
+goto 38.15,37.31
 kill Lieutenant Mervial
 'Search the Old Shrines |q Pious Intervention/Search the Old Shrines
 |tip Manually skip to the next step.
 step
-goto goldcoast_base 32.99,26.83
+goto 32.99,26.83
 'Search the Old Shrines |q Pious Intervention/Search the Old Shrines
 step
-goto goldcoast_base 32.99,26.83
+goto 32.99,26.83
 talk Initiate Josseline
 'Tell her _"No. Just a friend."_
 'Talk to Josseline |q Pious Intervention/Talk to Josseline
 step
-goto goldcoast_base 33.20,26.83
+goto 33.20,26.83
 talk Crafty Lerisa
 turnin Pious Intervention
 step
-goto goldcoast_base 53.52,31.96
+goto 53.52,31.96
 click Dark Brotherhood Sanctuary
 'Enter the Sanctuary |q Questions of Faith/Return to the Sanctuary |future
 |tip Manually skip to the next step.
@@ -3140,20 +3140,20 @@ step
 goto goldcoast_base 81.91,56.40
 talk Count Carolus Aquilarios |q Dark Revelations/Talk to Count Carolus Aquilarios
 step
-goto goldcoast_base 80.71,60.89
+goto 80.71,60.89
 talk Mirabelle Motierre |q Dark Revelations/Investigate the Enclave
 |tip Manually skip to the next step.
 step
-goto goldcoast_base 82.14,61.25
+goto 82.14,61.25
 click Catapult
 'Burn the Siege Weapons |q Dark Revelations/.*Burn the Siege Weapons.* |count 1
 step
-goto goldcoast_base 82.68,61.09
+goto 82.68,61.09
 click Catapult
 'Burn the Siege Weapons |q Dark Revelations/Investigate the Enclave
 |tip Manually skip to the next step.
 step
-goto goldcoast_base 82.15,63.34
+goto 82.15,63.34
 click Enclave of the Hourglass
 'Enter the Enclave of the Hourglass |q Dark Revelations/Investigate the Enclave
 |tip Manually skip to the next step.

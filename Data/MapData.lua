@@ -1287,7 +1287,7 @@ ZGV.MapData = {
 		["goblinminesend_base"] = { name = "Goblin Mines", xoffset = 0.161484, yoffset = 0.534375, scale = 0.003906, },
 		["goblinminesstart_base"] = { name = "Goblin Mines", xoffset = 0.165391, yoffset = 0.532109, scale = 0.0025, },
 		["godrunsdream_base"] = { name = "Godrun's Dream", id = 385, xoffset = 0.247816, yoffset = 0.321039, scale = 0.01, },
-		["goldcoast_base"] = { xoffset = 0.286749, yoffset = 0.518039, scale = 0.100000, },
+		["goldcoast_base_0"] = { xoffset = 0.286749, yoffset = 0.518039, scale = 0.100000, },
 		["grahtwood_base"] = { name = "Grahtwood", id = 180, xoffset = 0.356250, yoffset = 0.662031, scale = 0.138281, map = 7, },
 		["graystonequarrytop_base"] = { xoffset = 0.261312, yoffset = 0.276004, scale = 0.004510, },
 		["graystonequarrybottom_base"] = { xoffset = 0.261312, yoffset = 0.276004, scale = 0.004510, },
