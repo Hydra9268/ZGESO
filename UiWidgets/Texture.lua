@@ -1,25 +1,16 @@
+-----------------------------------------
+-- LOCALIZED GLOBAL VARIABLES
+-----------------------------------------
+
 local ZGV = _G.ZGV
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
-local tinsert,tremove,sort,zginherits,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,table.zginherits,math.min,math.max,math.floor,type,pairs,ipairs
-local CHAIN = ZGV.Utils.ChainCall
-local print = ZGV.print
-local ui = ZGV.UI
-local WM = ZGV.WM
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
+local CT_TEXTURE = _G.CT_TEXTURE
 local Texture = ZGV.Class:New("Texture")
 local Logo = ZGV.Class:New("Logo")
 local LetterZ = ZGV.Class:New("LetterZ")
-
-local LOGO_WIDTH = 100
-local LOGO_HEIGHT = LOGO_WIDTH/4
+local LOGO_WIDTH = 200
+local LOGO_HEIGHT = 25 -- LOGO_WIDTH / 3.5
+local CHAIN = ZGV.Utils.ChainCall
+local ui = ZGV.UI
 
 -----------------------------------------
 -- LOAD TIME SETUP
@@ -48,7 +39,7 @@ end
 
 function Logo:New(parent,name)
   local logo = CHAIN(ui:CreateControl(name,parent,CT_TEXTURE,Logo))
-  :SetTexture(ZGV.DIR .. "/Viewer/Skins/Stealth/zygorlogo2.dds")
+  :SetTexture(ZGV.DIR .. "/Viewer/Skins/Stealth/zygorlogo3.dds")
   --:SetTextureCoords(0,1,0,1)
   :SetSize(LOGO_WIDTH,LOGO_HEIGHT)
   .__END
