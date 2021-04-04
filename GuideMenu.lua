@@ -8,8 +8,8 @@
 -----------------------------------------
 
 local ZGV = _G.ZGV
-local TOPLEFT,TOPRIGHT,BOTTOMLEFT,BOTTOMRIGHT,CENTER = _G.TOPLEFT,_G.TOPRIGHT,_G.BOTTOMLEFT,_G.BOTTOMRIGHT,_G.CENTER
-local TOP,RIGHT,BOTTOM,LEFT = _G.TOP,_G.RIGHT,_G.BOTTOM,_G.LEFT
+local TOPLEFT, TOPRIGHT, BOTTOMLEFT, BOTTOMRIGHT, CENTER = _G.TOPLEFT, _G.TOPRIGHT, _G.BOTTOMLEFT, _G.BOTTOMRIGHT, _G.CENTER
+local TOP, RIGHT, BOTTOM, LEFT = _G.TOP, _G.RIGHT, _G.BOTTOM, _G.LEFT
 
 -----------------------------------------
 -- LOCAL VARIABLES
@@ -17,14 +17,17 @@ local TOP,RIGHT,BOTTOM,LEFT = _G.TOP,_G.RIGHT,_G.BOTTOM,_G.LEFT
 
 local Menu = {}
 local Settings = {
-					opt_groups = {},
-					OptionUI = {},
-				}
+	opt_groups = {},
+	OptionUI = {},
+}
 local GuideMenu = {}
+
 local BUTTON_HIGHLIGHT_TEXTURE = {1,1,1,.2}
+
 local name = "ZygorMenu"
 local GUIDEMENU_TAB_ID = "guides"
 local SETTINGS_TAB_ID = "settings"
+
 local DEFAULT_WIDTH = 800
 local DEFAULT_HEIGHT = 500
 local HEADER_HEIGHT = 60
@@ -51,7 +54,7 @@ local GuideStatusColor = {
 -- LOCAL REFERENCES
 -----------------------------------------
 
-local tinsert,type,pairs,ipairs,class = table.inserttype,pairs,ipairs,_G.class
+local tinsert,type,pairs,ipairs,class = table.insert,type,pairs,ipairs,_G.class
 local CHAIN = ZGV.Utils.ChainCall
 local ui = ZGV.UI
 local wm = _G.WINDOW_MANAGER
@@ -995,7 +998,6 @@ Settings.OptionUI["dropdown"] = function(self,option,parent)
 	end
 	assert(type(valuetbl) == "table", "Dropdown values must be a table or a function. Not: "..type(valuetbl))
 
-	--[[
 	for value,names in pairs(valuetbl) do
 		local item = dropdown:AddItem(names,value,function(me)
 				-- Whenever an item is clicked set the value of this option.
@@ -1004,7 +1006,6 @@ Settings.OptionUI["dropdown"] = function(self,option,parent)
 				end
 			end)
 	end
-	--]]
 
 	return opt_frame
 end
@@ -1326,7 +1327,7 @@ function GuideMenu:Hide()
 	self.Frame:Hide()
 end
 
-function GuideMenu:MenuButton_OnClick(but)
+function GuideMenu:MenuButton_OnClick(but,_)
 	if not but.target then return end
 	if but.target.type == "folder" then
 		self.folder = but.target.title
@@ -1401,7 +1402,7 @@ function Settings:Refresh()
 	if not self.selectedgroup then
 		self:OpenSettings()
 		return
-	end		-- If no group to open to then open to the main group and let it recall refresh
+	end	-- If no group to open to then open to the main group and let it recall refresh
 
 	self:RefreshUI()
 end
@@ -1422,7 +1423,7 @@ function Settings:GetOptionGroupByName(name)
 end
 
 function Settings:OpenSettings(group)
-	group = group or "viewer"		-- Open to viewer if nothing else is given
+	group = group or "viewer" -- Open to viewer if nothing else is given
 
 	local opt_group = self:GetOptionGroupByName(group)
 
@@ -1431,7 +1432,7 @@ function Settings:OpenSettings(group)
 	self:Show()
 end
 
-function Settings:MenuButton_OnClick(but)
+function Settings:MenuButton_OnClick(but,_)
 	if not but.group then return end
 
 	self:SelectGroup(but.group)
@@ -1450,7 +1451,7 @@ end
 
 -- TODO does this even belong here?
 function Settings:AddOptionGroup(opt_group)
-	assert(class(opt_group)=="OptionGroup","AddOptionGroup trying to add a opt_group that isn't a OptionGroup")
+	assert(class(opt_group) == "OptionGroup","AddOptionGroup trying to add a opt_group that isn't a OptionGroup")
 
 	tinsert(self.opt_groups,opt_group)
 end
