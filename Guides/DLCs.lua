@@ -2591,10 +2591,10 @@ step
 goto kvatchcity_base 51.67,89.58
 wayshrine Kvatch Wayshrine
 step
-goto kvatchcity_base 44.92,83.72
+goto 44.92,83.72
 'Go to Kvatch |q Contract: Kvatch/Go to Kvatch
 step
-goto kvatchcity_base 49.48,31.29
+goto 49.48,31.29
 kill Roliand Maraennius |q Contract: Kvatch/Kill Roliand Maraennius
 step
 'Open your map:
@@ -2628,10 +2628,10 @@ step
 goto kvatchcity_base 44.91,83.69
 'Travel to Kvatch |q A Lesson in Silence/Travel to Kvatch
 step
-goto kvatchcity_base 49.88,79.29
+goto 49.88,79.29
 talk Tanek |q A Lesson in Silence/Talk to Tanek
 step
-goto kvatchcity_base 36.18,65.15
+goto 36.18,65.15
 'Found all around Kvatch:
 kill 3 Akatosh Sermonizers |q A Lesson in Silence/.*Kill Akatosh Sermonizers.*
 step
@@ -2714,38 +2714,38 @@ click The Eight Blessings
 'Enter the Eight Blessings |q Pious Intervention/.*Spread the Word of Boethiah in Kvatch.* |future
 |tip Manually skip to the next step.
 step
-goto kvatchcity_base 39.54,70.03
+goto 39.54,70.03
 talk Crafty Lerisa
 accept Pious Intervention
 step
-goto kvatchcity_base 36.31,69.78
+goto 36.31,69.78
 click Kvatch
 'Leave the building |q Pious Intervention/.*Spread the Word of Boethiah in Kvatch.*
 |tip Manually skip to the next step.
 step
-goto kvatchcity_base 27.96,68.55
+goto 27.96,68.55
 talk Initiate Blatta
 'Spread the Word of Boethiah |q Pious Intervention/.*Spread the Word of Boethiah in Kvatch.* |count 1
 step
-goto kvatchcity_base 26.70,58.32
+goto 26.70,58.32
 talk Initiate Perien
 'Spread the Word of Boethiah |q Pious Intervention/.*Spread the Word of Boethiah in Kvatch.* |count 2
 step
-goto kvatchcity_base 49.44,61.70
+goto 49.44,61.70
 talk Initiate Ranius
 'Spread the Word of Boethiah |q Pious Intervention/.*Spread the Word of Boethiah in Kvatch.* |count 3
 step
-goto kvatchcity_base 50.17,43.61
+goto 50.17,43.61
 talk Initiate Genele
 'Spread the Word of Boethiah |q Pious Intervention/.*Spread the Word of Boethiah in Kvatch.*
 step
-goto kvatchcity_base 51.67,40.42
+goto 51.67,40.42
 'Tell her _"Why does the Grand Chanter fear the words of Boethiat?"_
 talk Lieutenant Mervial |q Pious Intervention/Talk to Lieutenant Mervial
 step
 'Wait to Be Judged |q Pious Intervention/Wait to Be Judged
 step
-goto kvatchcity_base 57.64,78.79
+goto 57.64,78.79
 talk Crafty Lerisa |q Pious Intervention/Talk to Crafty Lerisa
 step
 'Open your map:
@@ -2952,18 +2952,18 @@ click Castellan's House
 'Enter the House |q A Special Request/Infiltrate Castle Kvatch
 |tip Manually skip to the next step.
 step
-goto kvatchcity_base 29.54,53.77
+goto 29.54,53.77
 click Gatehouse Key
 |tip It is upstairs.
 'Obtain the Gatehouse Key |q A Special Request/Infiltrate Castle Kvatch
 |tip Manually skip to the next step.
 step
-goto kvatchcity_base 60.33,28.63
+goto 60.33,28.63
 click Castle Kvatch Gatehouse
 'Enter the Gatehouse |q A Special Request/Infiltrate Castle Kvatch
 |tip Manually skip to the next step.
 step
-goto kvatchcity_base 55.71,18.04
+goto 55.71,18.04
 click Castle Kvatch Vaults
 'Infiltrate Castle Kvatch |q A Special Request/Infiltrate Castle Kvatch
 step
@@ -3066,14 +3066,14 @@ goto kvatchcity_base 45.00,82.99
 'Enter Kvatch |q A Cordial Collaboration/Talk to Naryu Virian |future
 |tip Manually skip to the next step.
 step
-goto kvatchcity_base 16.40,35.56
+goto 16.40,35.56
 talk Naryu Virian
 accept A Cordial Collaboration
 step
-goto kvatchcity_base 16.40,35.47
+goto 16.40,35.47
 talk Naryu Virian |q A Cordial Collaboration/Talk to Naryu Virian
 step
-goto kvatchcity_base 38.86,32.93
+goto 38.86,32.93
 click Castle Kvatch Courtyard
 'Enter Castle Kvatch Courtyard |q A Cordial Collaboration/Find Dathus Ildram's Room
 |tip Manually skip to the next step.
@@ -3102,12 +3102,12 @@ click Kvatch
 'Return to Kvatch |q A Cordial Collaboration/Talk to Naryu Virian
 |tip Manually skip to the next step.
 step
-goto kvatchcity_base 35.58,69.77
+goto 35.58,69.77
 click The Eight Blessings
 'Enter The Eight Blessings Inn |q A Cordial Collaboration/Talk to Naryu Virian
 |tip Manually skip to the next step.
 step
-goto kvatchcity_base 36.96,71.01
+goto 36.96,71.01
 talk Naryu Virian
 turnin A Cordial Collaboration
 step
@@ -3306,14 +3306,14 @@ goto kvatchcity_base 46.29,62.40
 talk Green-Venom-Tongue
 'Meet Green-Venom-Tongue in Kvatch |q A Ghost from the Past/Meet Green-Venom-Tongue in Kvatch
 step
-goto kvatchcity_base 46.50,62.57
+goto 46.50,62.57
 'Watch the dialogue
 'Learn Lyra's Fate |q A Ghost from the Past/Learn Lyra's Fate
 step
-goto kvatchcity_base 46.42,62.32
+goto 46.42,62.32
 talk Green-Venom-Tongue |q A Ghost from the Past/Talk to Green-Venom-Tongue
 step
-goto kvatchcity_base 51.80,89.59
+goto 51.80,89.59
 click Kvatch Wayshrine
 'Travel to the Gold Coast Wayshrine |q A Ghost from the Past/Talk to Astara
 |tip Manually skip to the next step.
@@ -3447,7 +3447,7 @@ goto kvatchcity_base 61.62,52.65
 talk Tanek
 'Meet Tanek in Kvatch |q Filling the Void/Meet Tanek in Kvatch
 step
-goto kvatchcity_base 62.33,52.81
+goto 62.33,52.81
 click Cathedral Catacombs
 'Enter the Cathedral Catacombs |q Filling the Void/Explore the Cathedral Catacombs
 |tip Manually skip to the next step.
