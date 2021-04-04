@@ -3,19 +3,9 @@
 -----------------------------------------
 
 local ZGV = _G.ZGV
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
 local Class = {}
 local STRICT_CLASSES = false
 local allowed_nils
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
 local zginherits, type = table.zginherits, type
 
 -----------------------------------------

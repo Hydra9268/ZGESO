@@ -3,19 +3,9 @@
 -----------------------------------------
 
 local ZGV = _G.ZGV
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
 local GuideProto = {}
 local Guide = ZGV.Class:New("Guide")
 local Guide_mt = { __index=Guide }
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
 local tinsert,_,_,min,max,floor,type,_,ipairs,_ = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs,_G.class
 local L = ZGV.L
 local Utils = ZGV.Utils

@@ -1,9 +1,3 @@
------------------------------------------
--- LOCALIZED GLOBAL VARIABLES
------------------------------------------
-
-local ZGV = _G.ZGV
-
 --[[
 	:AddEvent(EVENT,function() end)		- > Calls function
 	:AddEvent(Event,"Name")				- > Calls Events:Name or ZGV:Name
@@ -12,17 +6,13 @@ local ZGV = _G.ZGV
 --]]
 
 -----------------------------------------
--- LOCAL VARIABLES
+-- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
+local ZGV = _G.ZGV
 local Events = {}
 local GuiRoot, uiTopLevelControl = _G.GuiRoot, _G.CT_TOPLEVELCONTROL
 local eventFrame = ZGV.WM:CreateControl("ZGV_EventFrame",GuiRoot,uiTopLevelControl)
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
 local tinsert, tremove, type, pairs, ipairs = table.insert, table.remove, type, pairs, ipairs
 
 -----------------------------------------

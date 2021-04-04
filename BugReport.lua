@@ -3,18 +3,8 @@
 -----------------------------------------
 
 local ZGV = _G.ZGV
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
 local BugReport = {}
 local guiRoot, uiCenter, uiTopLeft, uiBottomRight, uiTopRight, ctEditBox = _G.GuiRoot, _G.CENTER, _G.TOPLEFT, _G.BOTTOMRIGHT, _G.TOPRIGHT, _G.CT_EDITBOX
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
 local tinsert,type,pairs,ipairs = table.insert,type,pairs,ipairs
 local CHAIN = ZGV.Utils.ChainCall
 local UI, WM = ZGV.UI, _G.WINDOW_MANAGER
@@ -43,7 +33,7 @@ function BugReport:CreateDumpFrameBasic()
 		:Hide()
 		:SetCanDrag(true)
 		.__END
-	
+
 	BugReport.BasicFrame = frame
 
 	frame.scroll = CHAIN(WM:CreateControlFromVirtual(name.."_Scroll",frame,"ZO_ScrollContainer"))

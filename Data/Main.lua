@@ -8,23 +8,12 @@ local questDataCom = ZGV._QuestDataCommon
 local questStepDataCom = ZGV._QuestStepDataCommon
 local objectDataCom = ZGV._ObjectDataCommon
 local itemData = ZGV._ItemData
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
 local npcData, questData, questStepData, objectData
-
 local NPC_STR = "npc"
 local QUEST_STR = "quest"
 local QUEST_STEP_STR = "queststep"
 local OBJECT_STR = "object"
 local ITEM_STR = "item"
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
 local tinsert, abs, type, pairs, ipairs = table.insert, math.abs, type, pairs, ipairs
 local svdata -- Set at startup
 

@@ -3,11 +3,6 @@
 -----------------------------------------
 
 local ZGV = _G.ZGV
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
 local tinsert = table.insert
 local ZO_CallbackObject = _G.ZO_CallbackObject
 

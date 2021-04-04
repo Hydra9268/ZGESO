@@ -49,17 +49,7 @@ local MAX_JOURNAL_QUESTS = _G.MAX_JOURNAL_QUESTS
 local SKILL_TYPE_GUILD = _G.SKILL_TYPE_GUILD
 local SOUNDS_QUEST_OBJECTIVE_STARTED = _G.SOUNDS.QUEST_OBJECTIVE_STARTED
 local d = _G.d
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
 local Utils = {}
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
 local tinsert,max,type,pairs,ipairs = table.insert,math.max,type,pairs,ipairs
 
 -----------------------------------------

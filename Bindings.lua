@@ -3,11 +3,6 @@
 -----------------------------------------
 
 local ZGV = _G.ZGV
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
 local L = ZGV.L
 local getGameTimeMS, ZO_CreateStringId = _G.GetGameTimeMilliseconds, _G.ZO_CreateStringId
 

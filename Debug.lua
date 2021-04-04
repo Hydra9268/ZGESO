@@ -3,11 +3,6 @@
 -----------------------------------------
 
 local ZGV = _G.ZGV
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
 local debugcolor = "|cff88dd"
 local lastdate = 0
 local mscycle = 0
@@ -15,11 +10,6 @@ local mscolors,mscolorsn = {[0] = "|cffcc00",[1] = "|cffaa00"},2
 local timecolor = mscolors[0]
 local errorlog = ""
 local blockedmsgs = {}
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
 local tinsert, type, ipairs = table.insert, type, ipairs
 local print = ZGV.print
 local L = ZGV.L

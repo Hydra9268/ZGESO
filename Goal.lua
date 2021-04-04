@@ -21,16 +21,14 @@ local GetAchievementInfo = _G.GetAchievementInfo
 local GetAchievementCriterion = _G.GetAchievementCriterion
 local zo_loadstring = _G.zo_loadstring
 local zo_max = _G.zo_max
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
 local GoalProto = {}
 local Goal = ZGV.Class:New("Goal")
 local GoalProto_mt = { __index=Goal }
 local GOALTYPES = {}
 local empty_table = {}
+local tinsert, min, type, ipairs = table.insert, math.min, type, ipairs
+local L = ZGV.L
+local split = _G.zo_strsplit
 
 -- Parser functions
 local ParseMapXYDist = ZGV.Parser.ParseMapXYDist
@@ -39,14 +37,6 @@ local ParseQuest = ZGV.Parser.ParseQuest
 local ParseId = ZGV.Parser.ParseId
 
 local INDENT = ""
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
-local tinsert, min, type, ipairs = table.insert, math.min, type, ipairs
-local L = ZGV.L
-local split = _G.zo_strsplit
 
 -----------------------------------------
 -- SAVED REFERENCES
