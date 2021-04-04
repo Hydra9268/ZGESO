@@ -1,5 +1,3 @@
-local ZGV = _G.ZGV
-
 -----------------------------------------
 -- INFORMATION
 -----------------------------------------
@@ -12,22 +10,18 @@ local ZGV = _G.ZGV
 		Help
 		Info
 --]]
+
 -----------------------------------------
--- LOCAL REFERENCES
+-- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
+local ZGV = _G.ZGV
 local tinsert,tremove,sort,zginherits,min,max,floor,type,pairs,ipairs,unpack = table.insert,table.remove,table.sort,table.zginherits,math.min,math.max,math.floor,type,pairs,ipairs,unpack
 local CHAIN = ZGV.Utils.ChainCall
 local print = ZGV.print
 local ui = ZGV.UI
 local WM = ZGV.WM
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
 local GuideButton = ZGV.Class:New("GuideButton")
-
 local DEFAULT_BUTTON_SIZE = 15
 local NUM_ICONS = 32
 local TEXTURE = ZGV.DIR.."/Viewer/Skins/Stealth/titlebuttons_0.dds"

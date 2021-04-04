@@ -1,5 +1,3 @@
-local ZGV = _G.ZGV
-
 -----------------------------------------
 -- INFORMATION
 -----------------------------------------
@@ -26,19 +24,16 @@ local ZGV = _G.ZGV
 			if val then me:SetValue(value) end
 		end)
 --]]
+
 -----------------------------------------
--- LOCAL REFERENCES
+-- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
+local ZGV = _G.ZGV
 local tinsert,tremove,sort,zginherits,min,max,floor,type,pairs,ipairs,unpack = table.insert,table.remove,table.sort,table.zginherits,math.min,math.max,math.floor,type,pairs,ipairs,unpack
 local CHAIN = ZGV.Utils.ChainCall
 local print = ZGV.print
 local ui = ZGV.UI
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
 local Dropdown =  ZGV.Class:New("Dropdown")
 local DropdownItem =  ZGV.Class:New("DropdownItem")
 

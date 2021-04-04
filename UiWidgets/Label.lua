@@ -1,4 +1,3 @@
-local ZGV = ZGV
 -----------------------------------------
 -- INFORMATION
 -----------------------------------------
@@ -15,20 +14,15 @@ local ZGV = ZGV
 --]]
 
 -----------------------------------------
--- LOCAL REFERENCES
+-- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
+local ZGV = ZGV
 local tinsert,tremove,sort,zginherits,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,table.zginherits,math.min,math.max,math.floor,type,pairs,ipairs
 local CHAIN = ZGV.Utils.ChainCall
 local print = ZGV.print
 local ui = ZGV.UI
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
 local Label = ZGV.Class:New("Label")
-
 local LINE_HEIGHT = 20	-- TODO is a line height really needed?
 local	DEFAULT_SIZE = 13
 

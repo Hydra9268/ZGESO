@@ -1,18 +1,12 @@
+-----------------------------------------
+-- LOCALIZED GLOBAL VARIABLES
+-----------------------------------------
+
 local ZGV = _G.ZGV
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
 local tinsert,tremove,sort,zginherits,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,table.zginherits,math.min,math.max,math.floor,type,pairs,ipairs
 local CHAIN = ZGV.Utils.ChainCall
 local print = ZGV.print
 local ui = ZGV.UI
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
 local Frame = ZGV.Class:New("Frame")
 local SecFrame = ZGV.Class:New("SecFrame")
 local InvisFrame = ZGV.Class:New("InvisFrame")
