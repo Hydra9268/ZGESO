@@ -7,7 +7,7 @@ local EVENT_ACTION_LAYER_POPPED = _G.EVENT_ACTION_LAYER_POPPED
 local EVENT_ACTION_LAYER_PUSHED = _G.EVENT_ACTION_LAYER_PUSHED
 local EVENT_PLAYER_COMBAT_STATE = _G.EVENT_PLAYER_COMBAT_STATE
 local IsActionLayerActiveByName = _G.IsActionLayerActiveByName
-local TOP,TOPRIGHT,RIGHT,BOTTOMRIGHT,LEFT,TOPLEFT,BOTTOM,BOTTOMLEFT = _G.TOP,_G.TOPRIGHT,_G.RIGHT,_G.BOTTOMRIGHT,_G.LEFT,_G.TOPLEFT,_G.BOTTOM,_G.BOTTOMLEFT
+local TOP,TOPRIGHT,RIGHT,BOTTOMRIGHT,LEFT,TOPLEFT,BOTTOM,BOTTOMLEFT,CENTER = _G.TOP,_G.TOPRIGHT,_G.RIGHT,_G.BOTTOMRIGHT,_G.LEFT,_G.TOPLEFT,_G.BOTTOM,_G.BOTTOMLEFT,_G.CENTER
 local LEFT_MOUSE_BUTTON,RIGHT_MOUSE_BUTTON = _G.LEFT_MOUSE_BUTTON,_G.RIGHT_MOUSE_BUTTON
 local Zgoo = _G.Zgoo
 local GuiRoot = _G.GuiRoot
@@ -220,7 +220,7 @@ function Viewer:CreateZGVF()
 	titlebar.bug:SetHidden(not ZGV.db.profile.bugreports)
 
 	titlebar.title = CHAIN(ui:Create("Logo",titlebar,tname.."_Title"))
-		:SetPoint(TOP,titlebar,0,SMALL_PADDING)
+		:SetPoint(CENTER,titlebar,0,-8)
 		.__END
 
 	titlebar.close = CHAIN(ui:Create("GuideButton",titlebar,tname.."_Close","Close"))

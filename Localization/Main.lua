@@ -6,6 +6,7 @@
 -----------------------------------------
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
+
 local data = {}
 local mt = {__index = function(self, key)
 		if type(key) == "number" then return end

@@ -8,7 +8,7 @@ local Texture = ZGV.Class:New("Texture")
 local Logo = ZGV.Class:New("Logo")
 local LetterZ = ZGV.Class:New("LetterZ")
 local LOGO_WIDTH = 200
-local LOGO_HEIGHT = 25 -- LOGO_WIDTH / 3.5
+local LOGO_HEIGHT = 25
 local CHAIN = ZGV.Utils.ChainCall
 local ui = ZGV.UI
 
@@ -40,7 +40,6 @@ end
 function Logo:New(parent,name)
   local logo = CHAIN(ui:CreateControl(name,parent,CT_TEXTURE,Logo))
   :SetTexture(ZGV.DIR .. "/Viewer/Skins/Stealth/zygorlogo3.dds")
-  --:SetTextureCoords(0,1,0,1)
   :SetSize(LOGO_WIDTH,LOGO_HEIGHT)
   .__END
 
