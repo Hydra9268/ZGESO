@@ -3,17 +3,7 @@
 -----------------------------------------
 
 local ZGV = _G.ZGV
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
 local GuideWriting = {}
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
 local tinsert,pairs = table.insert,pairs
 local Testing = ZGV.Testing
 local Data = ZGV.Data

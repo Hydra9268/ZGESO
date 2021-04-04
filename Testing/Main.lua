@@ -3,22 +3,12 @@
 -----------------------------------------
 
 local ZGV = _G.ZGV
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
 local Testing = {
   results = {},
   testgroups = {},
   testdata = {},
 }
 local AllTestsRan = false
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
 local tinsert,type,pairs = table.insert,type,pairs
 local print = ZGV.print
 

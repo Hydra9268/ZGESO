@@ -3,17 +3,7 @@
 -----------------------------------------
 
 local ZGV = _G.ZGV
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
 local UI = {}
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
 local tinsert,type = table.insert,type
 local ui = ZGV.UI
 local Testing = ZGV.Testing

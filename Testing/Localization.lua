@@ -3,17 +3,7 @@
 -----------------------------------------
 
 local ZGV = _G.ZGV
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
 local Localization = {}
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
 local tinsert = table.insert
 local Testing = ZGV.Testing
 local GuideViewer = _G.GuideViewer

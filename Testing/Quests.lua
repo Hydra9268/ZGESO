@@ -3,18 +3,8 @@
 -----------------------------------------
 
 local ZGV = _G.ZGV
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
 local QuestsTest = {}
 local Parser = _G.Parser
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
 local tinsert = table.insert
 local Testing = ZGV.Testing
 
