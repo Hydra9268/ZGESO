@@ -1,19 +1,21 @@
 # ZGESO
 
-<img src="https://i.imgur.com/WCpaGMC.png">
+<img src="https://i.imgur.com/9ezGOIV.png">
 
 A Public Domain leveling guide produced by Zygor Guides, updated and maintained by Hydra9268. The purpose of this project is to add leveling guides for new content and extend the life for as long as ESO is available.
 
-No longer supported references:
-* Announcement: https://zygorguides.com/blog/zygor-guides-elder-scrolls-online-guides-going-free-use/
-* Admin okaying community development: http://zygorguides.com/forum/showthread.php?21769-Summerset-Question&p=121501&viewfull=1#post121501
+* Zygor's Discontinued support announcement: https://zygorguides.com/blog/zygor-guides-elder-scrolls-online-guides-going-free-use/
+* Zygor staff okaying community development: http://zygorguides.com/forum/showthread.php?21769-Summerset-Question&p=121501&viewfull=1#post121501
 
 <br><img src="https://i.imgur.com/WnfLf4W.png">
 
 Install through the excellent add-on manager <a href="https://minion.mmoui.com/" target="blank">Minion</a>
 
+#### Libraries Required
+
+* LibGPS, LibMapPing, LibDebugLogger, LibChatMessage
+
 ### 3/27/21 Skyrim Guides Now Available (Thanks to snichols7778)! 
-https://www.esoui.com/downloads/fileinfo.php?id=2062#info
 
 <img src="https://i.imgur.com/bsUJyDD.png">
 <i>artwork &copy; ZeniMax Media</i>
