@@ -1,24 +1,15 @@
-local ZGV = _G.ZGV
-
 -----------------------------------------
 -- INFORMATION
 -- :SetPoint(POINT ORIGIN, UI reference, X, Y)
 -----------------------------------------
 
 -----------------------------------------
--- LOCAL REFERENCES
+-- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs,class = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs,_G.class
-local print = ZGV.print
-local CHAIN = ZGV.Utils.ChainCall
-local ui = ZGV.UI
-local wm = _G.WINDOW_MANAGER
-local L = ZGV.L
-local GuiRoot = _G.GuiRoot
-local titlebar = _G.titlebar
-local TOPLEFT, TOPRIGHT, BOTTOMLEFT, BOTTOMRIGHT, CENTER = _G.TOPLEFT, _G.TOPRIGHT, _G.BOTTOMLEFT, _G.BOTTOMRIGHT, _G.CENTER
-local TOP, RIGHT, BOTTOM, LEFT = _G.TOP, _G.RIGHT, _G.BOTTOM, _G.LEFT
+local ZGV = _G.ZGV
+local TOPLEFT,TOPRIGHT,BOTTOMLEFT,BOTTOMRIGHT,CENTER = _G.TOPLEFT,_G.TOPRIGHT,_G.BOTTOMLEFT,_G.BOTTOMRIGHT,_G.CENTER
+local TOP,RIGHT,BOTTOM,LEFT = _G.TOP,_G.RIGHT,_G.BOTTOM,_G.LEFT
 
 -----------------------------------------
 -- LOCAL VARIABLES
@@ -26,17 +17,14 @@ local TOP, RIGHT, BOTTOM, LEFT = _G.TOP, _G.RIGHT, _G.BOTTOM, _G.LEFT
 
 local Menu = {}
 local Settings = {
-	opt_groups = {},
-	OptionUI = {},
-}
+					opt_groups = {},
+					OptionUI = {},
+				}
 local GuideMenu = {}
-
 local BUTTON_HIGHLIGHT_TEXTURE = {1,1,1,.2}
-
 local name = "ZygorMenu"
 local GUIDEMENU_TAB_ID = "guides"
 local SETTINGS_TAB_ID = "settings"
-
 local DEFAULT_WIDTH = 800
 local DEFAULT_HEIGHT = 500
 local HEADER_HEIGHT = 60
@@ -52,19 +40,31 @@ local MAX_LINES = 18
 
 local GuideStatusColor = {
 	["SUGGESTED"]	= "FFCC40",
-	["VALID"]	= "40BF40",
+	["VALID"]		= "40BF40",
 	["COMPLETE"]	= "808080",
 	["INVALID"] 	= "E60000",
-	["HEADER"] 	= "FFFFFF",
-	["FOLDER"] 	= "FFFFFF",
+	["HEADER"] 		= "FFFFFF",
+	["FOLDER"] 		= "FFFFFF",
 }
+
+-----------------------------------------
+-- LOCAL REFERENCES
+-----------------------------------------
+
+local tinsert,type,pairs,ipairs,class = table.inserttype,pairs,ipairs,_G.class
+local CHAIN = ZGV.Utils.ChainCall
+local ui = ZGV.UI
+local wm = _G.WINDOW_MANAGER
+local L = ZGV.L
+local GuiRoot = _G.GuiRoot
+local titlebar = _G.titlebar
 
 -----------------------------------------
 -- METATABLE SETUP
 -----------------------------------------
 
 setmetatable(Settings.OptionUI, {
-		__index = function(me,tab)
+		__index = function(_,tab)
 			error(("Option Type %s is not available."):format(tostring(tab)))
 		end
 	})
@@ -84,12 +84,10 @@ Menu.GuideMenu = GuideMenu
 -----------------------------------------
 
 local function GetOpinionFrame(parent,name,opt,notooltip)
-	local tooltip = ZGV.Tooltip.Frame
-
 	local opt_frame = CHAIN(ui:Create("InvisFrame", parent, name))
-	:SetResizeToFitDescendents(true)
-	:SetMouseEnabled(true)
-	.__END
+		:SetResizeToFitDescendents(true)
+		:SetMouseEnabled(true)
+		.__END
 
 	if not notooltip then
 		opt_frame:AddTooltip(opt.title,opt.desc)
@@ -97,17 +95,17 @@ local function GetOpinionFrame(parent,name,opt,notooltip)
 
 	-- Just need an invisble backdrop so that ResizeToFitDescendents works to maintain desired width with adjusting height dynamically.
 	opt_frame.bd = CHAIN(ui:Create("SecBackdrop",opt_frame,name and name.."_BD"))
-	:SetBackdropColor(1,0,0,0)
-	:SetExcludeFromResizeToFitExtents(false)
-	.__END
+		:SetBackdropColor(1,0,0,0)
+		:SetExcludeFromResizeToFitExtents(false)
+		.__END
 
 	return opt_frame
 end
 
 local function GetInlineDesc(parent,name)
 	local desc = CHAIN(ui:Create("Label",parent,name,11))
-	:SetCanWrap(true)
-	.__END
+		:SetCanWrap(true)
+		.__END
 	return desc
 end
 
@@ -116,9 +114,9 @@ local function SetTextureBlock(tex,nh,nv,h,v)
 	tex:SetTextureCoords((nh-1)/h,nh/h,(nv-1)/v,nv/v)
 end
 
-local function SetIcon(self,nh,nv,h,v,sec,big)
+local function SetIcon(self,nh,nv,h,v,sec)
 	local icon = sec and self.iconover or self.icon
-	if nh>0 then
+	if nh > 0 then
 		icon:Show()
 	else
 		icon:Hide()
@@ -137,31 +135,32 @@ function Menu:CreateBaseMenu()
 
 	-- main window
 	local frame =  CHAIN(ui:Create("Frame",GuiRoot,name))
-	:SetPoint(unpack(DEFAULT_ANCHOR))
-	:SetCanDrag(1)
-	:SetSize(DEFAULT_WIDTH,DEFAULT_HEIGHT)
-	:SetMouseEnabled(true)
-	:Hide()
-	.__END
+		:SetPoint(unpack(DEFAULT_ANCHOR))
+		:SetCanDrag(1)
+		:SetSize(DEFAULT_WIDTH,DEFAULT_HEIGHT)
+		:SetMouseEnabled(true)
+		:Hide()
+		.__END
 	self.Frame = frame
 
 	-- Guide version, lower left
 	frame.version = CHAIN(ui:Create("Label",frame,name.."_VerTitle",12,"bold"))
-	:SetPoint(BOTTOMLEFT,frame,BOTTOMLEFT,10,-8)	-- TODO y vert distance does not keep centered in footer if footer size changes.
-	:SetText("VER:")
-	.__END
+		:SetPoint(BOTTOMLEFT,frame,BOTTOMLEFT,10,-8)	-- TODO y vert distance does not keep centered in footer if footer size changes.
+		:SetText("VER:")
+		.__END
+	
 	frame.versionNum = CHAIN(ui:Create("Label",frame,name.."_VerNum",12))
-	:SetPoint(LEFT,frame.version,RIGHT,3,0)
-	:SetText(ZGV.version)
-	.__END
+		:SetPoint(LEFT,frame.version,RIGHT,3,0)
+		:SetText(ZGV.version)
+		.__END
 
 	-- Close button, upper right
 	frame.close = CHAIN(ui:Create("GuideButton",frame,name.."_Close","Close"))
-	:SetPoint(TOPRIGHT, titlebar, -5, 5 )
-	:SetHandler("OnClicked",function(me)
-			Menu:Hide()
-		end)
-	.__END
+		:SetPoint(TOPRIGHT, titlebar, -5, 5 )
+		:SetHandler("OnClicked",function()
+				Menu:Hide()
+			end)
+		.__END
 
 	-- Guide title
 	frame.tabhandler = CHAIN(ui:Create(
@@ -194,13 +193,13 @@ function Menu:CreateBaseMenu()
 
 	-- Settings Gear button, bottom right
 	frame.settings = CHAIN(ui:Create("GuideButton",frame,name.."_Settings","Settings"))
-	:SetPoint(BOTTOMRIGHT,frame,BOTTOMRIGHT,-5,-5)
-	.__END
+		:SetPoint(BOTTOMRIGHT,frame,BOTTOMRIGHT,-5,-5)
+		.__END
 
 	frame.mainBackdrop = CHAIN(ui:Create("SecFrame", frame, name.. "_mainBackdrop"))
-	:SetPoint( TOPLEFT,frame, TOPLEFT,1,HEADER_HEIGHT)
-	:SetPoint(BOTTOMRIGHT,frame,BOTTOMRIGHT,-1,-FOOTER_HEIGHT)
-	.__END
+		:SetPoint( TOPLEFT,frame, TOPLEFT,1,HEADER_HEIGHT)
+		:SetPoint(BOTTOMRIGHT,frame,BOTTOMRIGHT,-1,-FOOTER_HEIGHT)
+		.__END
 
 	self:SetTab(GUIDEMENU_TAB_ID)	-- Set the default tab
 end
@@ -219,84 +218,83 @@ function GuideMenu:Create()
 	local HEADER_PADDING = 5
 
 	local frame = CHAIN(ui:Create("InvisFrame", Menu.Frame.mainBackdrop,gmname))
-	:SetAllPoints()
-	:Hide()
-	.__END
+		:SetAllPoints()
+		:Hide()
+		.__END
 
 	self.Frame = frame
 
 	frame.guideBox = CHAIN(ui:Create("InvisFrame", frame, gmname.. "_GuideBox"))
-	:SetPoint(TOPLEFT) :SetPoint(BOTTOMLEFT)
-	:SetWidth(LEFT_COLUMN_WIDTH)
-	.__END
+		:SetPoint(TOPLEFT) :SetPoint(BOTTOMLEFT)
+		:SetWidth(LEFT_COLUMN_WIDTH)
+		.__END
 
 	frame.guideBoxScroll = CHAIN(wm:CreateControl(name.."_Slider",frame,_G.CT_SLIDER))
-	:SetMouseEnabled(true)
-	:SetThumbTexture(_G.tex,_G.tex,_G.tex,SCROLL_WIDTH,50,0,0,1,1)
-	:SetThumbFlushWithExtents(true)
-	:SetValue(0)
-	:SetValueStep(1)
-	:SetWidth(SCROLL_WIDTH)
-	:SetAnchor(TOPLEFT,frame.guideBox,TOPRIGHT)
-	:SetAnchor(BOTTOMLEFT,frame.guideBox,BOTTOMRIGHT)
-	:SetOrientation(_G.ORIENTATION_VERTICAL)
-	:SetHandler("OnValueChanged",function(self,value,eventReason)
-			GuideMenu.offset = value
-			GuideMenu:RefreshUI()
-		end)
-
-	.__END
+		:SetMouseEnabled(true)
+		:SetThumbTexture(_G.tex,_G.tex,_G.tex,SCROLL_WIDTH,50,0,0,1,1)
+		:SetThumbFlushWithExtents(true)
+		:SetValue(0)
+		:SetValueStep(1)
+		:SetWidth(SCROLL_WIDTH)
+		:SetAnchor(TOPLEFT,frame.guideBox,TOPRIGHT)
+		:SetAnchor(BOTTOMLEFT,frame.guideBox,BOTTOMRIGHT)
+		:SetOrientation(_G.ORIENTATION_VERTICAL)
+		:SetHandler("OnValueChanged",function(self,value)
+				GuideMenu.offset = value
+				GuideMenu:RefreshUI()
+			end)
+		.__END
 
 	frame.guideBoxScrollBack = CHAIN(ui:Create("SecFrame", frame, gmname.. "_ScrollBack"))
-	:SetPoint(TOPLEFT,frame.guideBoxScroll,TOPLEFT)
-	:SetPoint(BOTTOMRIGHT,frame.guideBoxScroll,BOTTOMRIGHT)
-	:SetBackdropColor(.4,.4,.4,1)
-	.__END
+		:SetPoint(TOPLEFT,frame.guideBoxScroll,TOPLEFT)
+		:SetPoint(BOTTOMRIGHT,frame.guideBoxScroll,BOTTOMRIGHT)
+		:SetBackdropColor(.4,.4,.4,1)
+		.__END
 
 	frame.guideInfoBox = CHAIN(ui:Create("InvisFrame", frame, gmname.. "_GuideInfoBox"))
-	:SetPoint(TOPLEFT,frame.guideBoxScroll,TOPRIGHT)
-	:SetPoint(BOTTOMRIGHT)
-	:SetWidth(LEFT_COLUMN_WIDTH)
-	.__END
+		:SetPoint(TOPLEFT,frame.guideBoxScroll,TOPRIGHT)
+		:SetPoint(BOTTOMRIGHT)
+		:SetWidth(LEFT_COLUMN_WIDTH)
+		.__END
 
 	frame.header = CHAIN(ui:Create("Label",frame,gmname.."_Header",15,"bold"))
-	:SetPoint(TOPLEFT,frame,TOPLEFT,HEADER_PADDING,6)
-	:SetText (ZGV.Utils.faction_names_short[ZGV.Utils.GetFaction()]:upper() .. (ZGV.VETERAN_FACTION and " VETERAN" or "") .. " LEVELING")
-	.__END
+		:SetPoint(TOPLEFT,frame,TOPLEFT,HEADER_PADDING,6)
+		:SetText (ZGV.Utils.faction_names_short[ZGV.Utils.GetFaction()]:upper() .. (ZGV.VETERAN_FACTION and " VETERAN" or "") .. " LEVELING")
+		.__END
 
 	------------------------------
 	-- Setup Left column buttons
 	-----------------------------
-	frame.buttons={}
+	frame.buttons = {}
 	local rows = MAX_LINES
 	local ROWHEIGHT = 22	-- TODO calculate these based on height of Guide Menu?
-	for i=1,rows do
+	for i = 1,rows do
 		local butname = gmname.."_But"..i
 
 		-- Copy ZGESO_DumpFrameBasic layout. Has working scrollbar.
 		local but = CHAIN(ui:Create("SecButton",frame.guideBox,butname))
-		:SetHeight(ROWHEIGHT)
-		:SetHandler("OnMouseEnter",function(me)
-				me.highlight:Show()
-			end)
-		:SetHandler("OnMouseExit",function(me)
-				me.highlight:Hide()
-			end)
-		:SetHandler("OnClicked",function(me,but) GuideMenu:MenuButton_OnClick(me,but) end)
-		:SetHandler("OnMouseDoubleClick",function(me,but)
-				if me.target.type=="folder" then
-				else
-					GuideMenu:SetCurrentGuide(me.target)
-				end
-			end)
-		.__END
+			:SetHeight(ROWHEIGHT)
+			:SetHandler("OnMouseEnter",function(me)
+					me.highlight:Show()
+				end)
+			:SetHandler("OnMouseExit",function(me)
+					me.highlight:Hide()
+				end)
+			:SetHandler("OnClicked",function(me,but) GuideMenu:MenuButton_OnClick(me,but) end)
+			:SetHandler("OnMouseDoubleClick",function(me)
+					if me.target.type=="folder" then
+					else
+						GuideMenu:SetCurrentGuide(me.target)
+					end
+				end)
+			.__END
 
 		-- Texture for when the button is hovered over.
 		but.highlight = CHAIN(ui:Create("Texture",but,butname.."_Highlight"))
-		:SetColor(unpack(BUTTON_HIGHLIGHT_TEXTURE))
-		:SetPoint(but)
-		:Hide()
-		.__END
+			:SetColor(unpack(BUTTON_HIGHLIGHT_TEXTURE))
+			:SetPoint(but)
+			:Hide()
+			.__END
 
 		if i == 1 then
 			CHAIN(but)
@@ -310,21 +308,21 @@ function GuideMenu:Create()
 		end
 
 		but.icon = CHAIN(ui:Create("Texture",but,butname.."_Icon"))
-		:SetPoint(LEFT,but,LEFT,10,0)
-		:SetSize(17,17)
-		:SetTexture(ZGV.DIR.."/Viewer/Skins/Stealth/guideicons-small.dds")
-		.__END
+			:SetPoint(LEFT,but,LEFT,10,0)
+			:SetSize(17,17)
+			:SetTexture(ZGV.DIR.."/Viewer/Skins/Stealth/guideicons-small.dds")
+			.__END
 
 		-- TODO blinking star on guide animation?
 
 		but.label = CHAIN(ui:Create("Label",but,butname.."_Label",13))
-		:SetPoint(LEFT,but.icon,RIGHT,5,0)
-		:SetPoint(RIGHT)
-		:SetText("No label?!!?")
-		.__END
+			:SetPoint(LEFT,but.icon,RIGHT,5,0)
+			:SetPoint(RIGHT)
+			:SetText("No label?!!?")
+			.__END
 
-		but.SetIcon=SetIcon
-		frame.buttons[i]=but
+		but.SetIcon = SetIcon
+		frame.buttons[i] = but
 	end
 
 	------------------------------
@@ -332,34 +330,34 @@ function GuideMenu:Create()
 	-----------------------------
 
 	frame.GuideTitle = CHAIN(ui:Create("Label",frame.guideInfoBox,gmname.."_GuideTitle",17,"bold"))
-	:SetPoint(TOPLEFT,frame.guideInfoBox,20,20)
-	:SetWidth(GUIDE_IMAGE_WIDTH-20)
-	.__END
+		:SetPoint(TOPLEFT,frame.guideInfoBox,20,20)
+		:SetWidth(GUIDE_IMAGE_WIDTH-20)
+		.__END
 
 	frame.GuideImage = CHAIN(ui:Create("Texture",frame.guideInfoBox,gmname.."_GuideTexture"))
-	:SetPoint(TOPLEFT,frame.GuideTitle,0,30)
-	:SetPoint(BOTTOMRIGHT,frame.GuideTitle,0,256)
-	:SetSize(GUIDE_IMAGE_WIDTH,GUIDE_IMAGE_HEIGHT)
-	:Hide()
-	.__END
+		:SetPoint(TOPLEFT,frame.GuideTitle,0,30)
+		:SetPoint(BOTTOMRIGHT,frame.GuideTitle,0,256)
+		:SetSize(GUIDE_IMAGE_WIDTH,GUIDE_IMAGE_HEIGHT)
+		:Hide()
+		.__END
 
 	-- TODO scrollbar for information panel on the right? Create a scrollbox for the rest of the information.
 	frame.GuideData = CHAIN(ui:Create("Label",frame.guideInfoBox,gmname.."_GuideData",14))
-	:SetPoint(TOPLEFT,frame.GuideImage,0,200)
-	:SetPoint(BOTTOMRIGHT,-20,-10)
-	:SetVerticalAlignment(_G.TEXT_ALIGN_TOP)
-	.__END
+		:SetPoint(TOPLEFT,frame.GuideImage,0,200)
+		:SetPoint(BOTTOMRIGHT,-20,-10)
+		:SetVerticalAlignment(_G.TEXT_ALIGN_TOP)
+		.__END
 
 	-- Button isn't in the scrollframe either
 	frame.OkButton = CHAIN(ui:Create("Button",frame.guideBox,gmname.."_OkButton"))
-	:SetPoint(BOTTOMRIGHT,frame.guideInfoBox,BOTTOMRIGHT,-20,-10)
-	:SetSize(80,20)
-	:SetText("Start Guide")
-	:SetFontSize(14)
-	:SetHandler("OnClicked",function(but)
-			GuideMenu:SetCurrentGuide(GuideMenu.selectedguide)
-		end)
-	.__END
+		:SetPoint(BOTTOMRIGHT,frame.guideInfoBox,BOTTOMRIGHT,-20,-10)
+		:SetSize(80,20)
+		:SetText("Start Guide")
+		:SetFontSize(14)
+		:SetHandler("OnClicked",function()
+				GuideMenu:SetCurrentGuide(GuideMenu.selectedguide)
+			end)
+		.__END
 
 end
 
@@ -367,6 +365,7 @@ function GuideMenu:RefreshUI()
 	if not self.Frame then
 		self:Create()
 	end
+	
 	local frame = self.Frame
 	local buts = frame.buttons
 
@@ -378,13 +377,13 @@ function GuideMenu:RefreshUI()
 	end
 
 	if self.folder then
-		if #self.folder>0 then
+		if #self.folder > 0 then
 			local parentfolder = self.folder:match("(.+)/[^/]+")
 			table.insert(folders,{type="folder",title=parentfolder,title_short="( up )"})
 		end
 		local topfolders_seen = {}
-		local folderslash = self.folder=="" and "" or self.folder.."/"
-		for gn,guide in pairs(ZGV.registeredguides) do
+		local folderslash = self.folder == "" and "" or self.folder.."/"
+		for _,guide in pairs(ZGV.registeredguides) do
 			local wholefolder,topfolder = guide.title:match("LEVELING/("..folderslash.."([^/]+))/.+")
 			if topfolder then
 				if not topfolders_seen[topfolder] then
@@ -394,14 +393,14 @@ function GuideMenu:RefreshUI()
 			end
 		end
 
-		for gn,guide in pairs(ZGV.registeredguides) do
+		for _,guide in pairs(ZGV.registeredguides) do
 			if (guide.title:match("^LEVELING/"..folderslash.."[^/]+$")) then
 				table.insert(guides,guide)
 			end
 		end
 	end
 
-	frame.header:SetText ( self.folder=="" and "All Guides" or self.folder or "Leveling Guides" )
+	frame.header:SetText ( self.folder == "" and "All Guides" or self.folder or "Leveling Guides" )
 
 	-- Sort guides by startlevel, place at end if there is no startlevel.
 	table.sort(guides, function(a, b)
@@ -500,7 +499,6 @@ function GuideMenu:RefreshUI()
 	if self.selectedguide then
 
 		local g = self.selectedguide
-		local imageWidth, imageHeight = GUIDE_IMAGE_WIDTH, GUIDE_IMAGE_HEIGHT
 		local formatLevel = _G.formatLevel
 
 		frame.GuideTitle:SetText(g.title_short)
@@ -508,7 +506,7 @@ function GuideMenu:RefreshUI()
 		frame.GuideData:SetText(g.desc)
 		frame.GuideData:SetPoint(TOPLEFT,frame.GuideImage,0,200)
 
-		local s="\n"
+		local s = "\n"
 
 		if g.startlevel and g.startlevel>0 then
 			local formatLevel = ZGV.Utils.FormatLevel
@@ -528,10 +526,9 @@ function GuideMenu:RefreshUI()
 
 		s = s .. "\n"
 
-		local status,msg = g:GetStatus()
-		local color = GuideStatusColor[status]
-		if status=="COMPLETE" and g.type=="LEVELING" then
-			status=status.."_lev"
+		local status,_ = g:GetStatus()
+		if status == "COMPLETE" and g.type == "LEVELING" then
+			status = status.."_lev"
 		end
 
 		s = s .. "\n"
@@ -579,35 +576,35 @@ function Settings:Create()
 	local HEADER_PADDING = 5
 
 	local frame = CHAIN(ui:Create("InvisFrame", Menu.Frame.mainBackdrop,setname))
-	:SetAllPoints()
-	:Hide()
-	.__END
+		:SetAllPoints()
+		:Hide()
+		.__END
 
 	self.Frame = frame
 
 	frame.optionTypesBox = CHAIN(ui:Create("InvisFrame", frame, setname.. "_OptionsBox"))
-	:SetPoint(TOPLEFT) :SetPoint(BOTTOMLEFT)
-	:SetWidth(LEFT_COLUMN_WIDTH)
-	.__END
+		:SetPoint(TOPLEFT) :SetPoint(BOTTOMLEFT)
+		:SetWidth(LEFT_COLUMN_WIDTH)
+		.__END
 
 	frame.optionTypesScroll = CHAIN(ui:Create("SecFrame", frame, setname.. "_Scroll"))	-- TODO A real scroll bar for the left Panel
-	:SetPoint(TOPLEFT,frame.optionTypesBox,TOPRIGHT)
-	:SetPoint(BOTTOMLEFT,frame.optionTypesBox,BOTTOMRIGHT)
-	:SetWidth(SCROLL_WIDTH)
-	:SetBackdropColor(.4,.4,.4,1)
-	.__END
+		:SetPoint(TOPLEFT,frame.optionTypesBox,TOPRIGHT)
+		:SetPoint(BOTTOMLEFT,frame.optionTypesBox,BOTTOMRIGHT)
+		:SetWidth(SCROLL_WIDTH)
+		:SetBackdropColor(.4,.4,.4,1)
+		.__END
 
 	frame.optionsBox = CHAIN(ui:Create("InvisFrame", frame, setname.. "_GuideInfoBox"))
-	:SetPoint(TOPLEFT,frame.optionTypesScroll,TOPRIGHT)
-	:SetPoint(BOTTOMRIGHT)
-	:SetWidth(LEFT_COLUMN_WIDTH)
-	.__END
+		:SetPoint(TOPLEFT,frame.optionTypesScroll,TOPRIGHT)
+		:SetPoint(BOTTOMRIGHT)
+		:SetWidth(LEFT_COLUMN_WIDTH)
+		.__END
 
 	-- Used to say "Options"
 	frame.header = CHAIN(ui:Create("Label",frame,setname.."_Header",0,"bold"))
-	:SetPoint(TOPLEFT,frame,TOPLEFT,HEADER_PADDING,2)
-	:SetText("")
-	.__END
+		:SetPoint(TOPLEFT,frame,TOPLEFT,HEADER_PADDING,2)
+		:SetText("")
+		.__END
 
 	------------------------------
 	-- Setup Left column buttons
@@ -620,23 +617,23 @@ function Settings:Create()
 		local butname = setname.."_But"..i
 
 		local but = CHAIN(ui:Create("SecButton",frame.optionTypesBox,butname))
-		:SetHeight(ROWHEIGHT)
-		:SetHandler("OnMouseEnter",function(me)
-				me.highlight:Show()
-			end)
-		:SetHandler("OnMouseExit",function(me)
-				me.highlight:Hide()
-			end)
-		:SetHandler("OnClicked",function(me,but) Settings:MenuButton_OnClick(me,but)
-			end)
-		.__END
+			:SetHeight(ROWHEIGHT)
+			:SetHandler("OnMouseEnter",function(me)
+					me.highlight:Show()
+				end)
+			:SetHandler("OnMouseExit",function(me)
+					me.highlight:Hide()
+				end)
+			:SetHandler("OnClicked",function(me,but) Settings:MenuButton_OnClick(me,but)
+				end)
+			.__END
 
 		-- Texture for when the button is hovered over.
 		but.highlight = CHAIN(ui:Create("Texture",but,butname.."_Highlight"))
-		:SetColor(unpack(BUTTON_HIGHLIGHT_TEXTURE))
-		:SetPoint(but)
-		:Hide()
-		.__END
+			:SetColor(unpack(BUTTON_HIGHLIGHT_TEXTURE))
+			:SetPoint(but)
+			:Hide()
+			.__END
 
 		if i == 1 then
 			CHAIN(but)
@@ -650,21 +647,20 @@ function Settings:Create()
 		end
 
 		but.icon = CHAIN(ui:Create("Texture",but,butname.."_Icon"))
-		:SetPoint(LEFT,but,LEFT,10,0)
-		:SetSize(17,17)
-		:SetTexture(ZGV.DIR.."/Viewer/Skins/Stealth/guideicons-small.dds")
-		.__END
-
+			:SetPoint(LEFT,but,LEFT,10,0)
+			:SetSize(17,17)
+			:SetTexture(ZGV.DIR.."/Viewer/Skins/Stealth/guideicons-small.dds")
+			.__END
 
 		-- TODO blinking star on guide animation?
 		but.label = CHAIN(ui:Create("Label",but,butname.."_Label",15))
-		:SetPoint(LEFT,but.icon,RIGHT,5,0)
-		:SetPoint(RIGHT)
-		:SetText("No label?!!?")
-		.__END
+			:SetPoint(LEFT,but.icon,RIGHT,5,0)
+			:SetPoint(RIGHT)
+			:SetText("No label?!!?")
+			.__END
 
 		but.SetIcon = SetIcon
-		frame.buttons[i]=but
+		frame.buttons[i] = but
 	end
 
 	------------------------------
@@ -672,89 +668,89 @@ function Settings:Create()
 	-----------------------------
 
 	frame.OptionTitle = CHAIN(ui:Create("Label",frame.optionsBox,setname.."_GroupTitle",17))
-	:SetPoint(TOPLEFT,frame.guideInfoBox,TOPLEFT,HEADER_PADDING,2)
-	:SetPoint(TOPRIGHT,frame.guideInfoBox,TOPRIGHT,-HEADER_PADDING,0)
-	:SetText("Options")
-	.__END
+		:SetPoint(TOPLEFT,frame.guideInfoBox,TOPLEFT,HEADER_PADDING,2)
+		:SetPoint(TOPRIGHT,frame.guideInfoBox,TOPRIGHT,-HEADER_PADDING,0)
+		:SetText("Options")
+		.__END
 
 	frame.OptionDesc = CHAIN(ui:Create("Label",frame.optionsBox,setname.."_GroupDesc",12))
-	:SetPoint(TOPRIGHT,frame.OptionTitle,TOPRIGHT)
-	:SetPoint(TOPLEFT,frame.OptionTitle,BOTTOMLEFT,5,5)
-	:SetCanWrap(true)
-	:SetText("Desc")
-	.__END
+		:SetPoint(TOPRIGHT,frame.OptionTitle,TOPRIGHT)
+		:SetPoint(TOPLEFT,frame.OptionTitle,BOTTOMLEFT,5,5)
+		:SetCanWrap(true)
+		:SetText("Desc")
+		.__END
 
 	-- Button isn't in the scrollframe either
 	local ButtonHortPad = 10
 	frame.OkButton = CHAIN(ui:Create("Button",frame.optionsBox,setname.."_OkButton"))
-	:SetPoint(BOTTOMRIGHT,frame.guideInfoBox,BOTTOMRIGHT,-ButtonHortPad,-5)
-	:SetText("Accept")
-	:SetFontSize(14)
-	:SetHandler("OnClicked",function(but)
-			Menu:Hide()
-		end)
-	.__END
+		:SetPoint(BOTTOMRIGHT,frame.guideInfoBox,BOTTOMRIGHT,-ButtonHortPad,-5)
+		:SetText("Accept")
+		:SetFontSize(14)
+		:SetHandler("OnClicked",function()
+				Menu:Hide()
+			end)
+		.__END
 
 	frame.DefaultButton = CHAIN(ui:Create("Button",frame.optionsBox,setname.."_DefaultButton"))
-	:SetPoint(BOTTOMLEFT,frame.guideInfoBox,BOTTOMLEFT,ButtonHortPad,-5)
-	:SetText("Default")
-	:SetFontSize(14)
-	:SetHandler("OnClicked",function(but)
-			Settings:ShowDefaultPopup()
-		end)
-	.__END
+		:SetPoint(BOTTOMLEFT,frame.guideInfoBox,BOTTOMLEFT,ButtonHortPad,-5)
+		:SetText("Default")
+		:SetFontSize(14)
+		:SetHandler("OnClicked",function()
+				Settings:ShowDefaultPopup()
+			end)
+		.__END
 
 	frame.OptionsScrollBase = CHAIN(ui:Create("InvisFrame", frame.optionsBox, setname.. "_OptionsScrollChild"))	-- Base for the option UI for each individual group
-	:SetPoint(TOPLEFT,frame.OptionDesc,BOTTOMLEFT,-HEADER_PADDING,0)
-	:SetPoint(BOTTOMRIGHT,frame.OkButton,TOPRIGHT,_G.OkButtonHortPad,0)
-	.__END
+		:SetPoint(TOPLEFT,frame.OptionDesc,BOTTOMLEFT,-HEADER_PADDING,0)
+		:SetPoint(BOTTOMRIGHT,frame.OkButton,TOPRIGHT,_G.OkButtonHortPad,0)
+		.__END
 end
 
 function Settings:CreateDefaultPopup()
 	if self.DefaultPopup then return end
 
 	local popup = CHAIN(ZGV.Popup:New("Zygor_Settings_Reset_Default_Popup"))
-	:SetText(L['static_options'])
-	:SetDimensionConstraints(375)				-- Force minWidth to 375 for the buttons to fit nicely
-	.__END
+		:SetText(L['static_options'])
+		:SetDimensionConstraints(375)				-- Force minWidth to 375 for the buttons to fit nicely
+		.__END
 
 	-- No settings button for settings popup. That would be silly
 	popup.settings:Hide()
 
 	-- Need a third button for cancel
 	popup.cancelbutton = CHAIN(ui:Create("Button",popup,popup:GetName().."_Cancel"))
-	:SetPoint(TOP,popup.text,BOTTOM,0,10)			-- 10 is BUT_Y_OFFSET from Popup.lua
-	:SetWidth(105)
-	:SetText(L['static_cancel'])
-	:SetFontSize(ZGV.db.profile.fontsize,true)		-- TODO change size dynamically?
-	:SetHandler("OnClicked",function(me)
-			local pop = me:GetParent()			-- Just hide the popup
-			pop.private:Hide(pop)
-		end)
-	.__END
+		:SetPoint(TOP,popup.text,BOTTOM,0,10)			-- 10 is BUT_Y_OFFSET from Popup.lua
+		:SetWidth(105)
+		:SetText(L['static_cancel'])
+		:SetFontSize(ZGV.db.profile.fontsize,true)		-- TODO change size dynamically?
+		:SetHandler("OnClicked",function(me)
+				local pop = me:GetParent()			-- Just hide the popup
+				pop.private:Hide(pop)
+			end)
+		.__END
 
 	-- Accept button is all Settings to Default
 	CHAIN(popup.acceptbutton)
-	:ClearAllPoints()
-	:SetWidth(105)
-	:SetPoint(RIGHT,popup.cancelbutton,LEFT,-5,0)
-	:SetText(L['static_allsetting'])
+		:ClearAllPoints()
+		:SetWidth(105)
+		:SetPoint(RIGHT,popup.cancelbutton,LEFT,-5,0)
+		:SetText(L['static_allsetting'])
 
 	-- Decline button is these settings to default
 	CHAIN(popup.declinebutton)
-	:ClearAllPoints()
-	:SetWidth(105)
-	:SetPoint(LEFT,popup.cancelbutton,RIGHT,5,0)
-	:SetText(L['static_thesesetting'])
+		:ClearAllPoints()
+		:SetWidth(105)
+		:SetPoint(LEFT,popup.cancelbutton,RIGHT,5,0)
+		:SetText(L['static_thesesetting'])
 
-	popup.OnAccept = function(me)
+	popup.OnAccept = function()
 		-- All option groups to default!
-		for i,opt_groups in ipairs(Settings.opt_groups) do
+		for _,opt_groups in ipairs(Settings.opt_groups) do
 			opt_groups:SetToDefault()
 		end
 	end
 
-	popup.OnDecline = function(me)
+	popup.OnDecline = function()
 		-- Currently shown option group to default!
 		Settings.selectedgroup:SetToDefault()
 	end
@@ -779,15 +775,15 @@ function Settings:CreateOptionsUI(group)
 	:SetPoint(TOPLEFT) :SetPoint(BOTTOMRIGHT)
 	.__END
 
-	for i,option in ipairs(group.options) do
+	for _,option in ipairs(group.options) do
 		local data = option.data
 		local typ = data.type
 
 		local obj = self.OptionUI[typ](self,option,frame)	-- This obj is a frame that contains the actual option UI
 
-		if typ ~= "execute"					-- Execute buttons are unnecessary, they run a function on clicked
-		and typ ~= "header"					-- headers are dumber
-		and typ ~= "desc"					-- desc ^^^^
+		if typ ~= "execute"	-- Execute buttons are unnecessary, they run a function on clicked
+		and typ ~= "header"	-- headers are dumber
+		and typ ~= "desc" -- desc ^^^^
 		then
 			assert(obj.SetValue,"All option objects must have a :SetValue method")
 			obj:SetValue(option:GetValue())
@@ -888,7 +884,7 @@ function Settings:RefreshUI()
 
 			but.icon:Show()
 
-			if self.selectedgroup and self.selectedgroup==group then
+			if self.selectedgroup and self.selectedgroup == group then
 				local mult = 0.7
 				local r,g,b = .6,.6,.6 -- HTMLColor("#0000ff")-- TODO more interesting color.
 				but:SetBackdropColor(r*mult,g*mult,b*mult,1)
@@ -910,7 +906,7 @@ function Settings:RefreshUI()
 -- DISPLAY THE OPTION GROUP
 -------------------------------
 
-	for i,group in ipairs(opt_groups) do
+	for _,group in ipairs(opt_groups) do
 		if group.frame then
 			group.frame:Hide()
 		end		-- Hide all the frames, then only show when needed
@@ -953,15 +949,15 @@ Settings.OptionUI["dropdown"] = function(self,option,parent)
 	local opt_frame = GetOpinionFrame(parent, name, option)
 
 	local label = CHAIN(ui:Create("Label",opt_frame,name.."_Label"))
-	:SetPoint(TOPLEFT,OPTIONS_LEFT_OFFSET,0)
-	:SetText(option.title)
-	.__END
+		:SetPoint(TOPLEFT,OPTIONS_LEFT_OFFSET,0)
+		:SetText(option.title)
+		.__END
 
 	local dropdown = CHAIN(ui:Create("Dropdown",opt_frame,name.."_Dropdown"))
-	:SetPoint(TOPLEFT,label,BOTTOMLEFT)
-	:AddTooltip(option.title,option.desc,opt_frame)
-	:SetDefaultText(option.data.defaultext)
-	.__END
+		:SetPoint(TOPLEFT,label,BOTTOMLEFT)
+		:AddTooltip(option.title,option.desc,opt_frame)
+		:SetDefaultText(option.data.defaultext)
+		.__END
 
 	if option.data.width then
 		dropdown:SetWidth(option.data.width)
@@ -972,11 +968,11 @@ Settings.OptionUI["dropdown"] = function(self,option,parent)
 
 	if option:GetDescStyle() == "inline" then
 		local desc = CHAIN(GetInlineDesc(opt_frame,name.."_InlineDesc"))
-		-- Get creative with Points. Can't anchor to bottomright of opt_frame because it resizes to fit descendents. Parent to topRight then overwrite top with a topleft and get the
-		:SetPoint(TOPRIGHT,opt_frame,TOPRIGHT,-5,0)
-		:SetPoint(TOPLEFT,dropdown,BOTTOMLEFT)
-		:SetText(option.desc)
-		.__END
+			-- Get creative with Points. Can't anchor to bottomright of opt_frame because it resizes to fit descendents. Parent to topRight then overwrite top with a topleft and get the
+			:SetPoint(TOPRIGHT,opt_frame,TOPRIGHT,-5,0)
+			:SetPoint(TOPLEFT,dropdown,BOTTOMLEFT)
+			:SetText(option.desc)
+			.__END
 
 		opt_frame.desc = desc
 	end
@@ -997,16 +993,18 @@ Settings.OptionUI["dropdown"] = function(self,option,parent)
 	if type(valuetbl)=="function" then
 		valuetbl = valuetbl(dropdown)
 	end
-	assert(type(valuetbl)=="table", "Dropdown values must be a table or a function. Not: "..type(valuetbl))
+	assert(type(valuetbl) == "table", "Dropdown values must be a table or a function. Not: "..type(valuetbl))
 
-	for value,name in pairs(valuetbl) do
-		local item = dropdown:AddItem(name,value,function(me)
+	--[[
+	for value,names in pairs(valuetbl) do
+		local item = dropdown:AddItem(names,value,function(me)
 				-- Whenever an item is clicked set the value of this option.
 				if me.dropdown.option then
 					me.dropdown.option:SetValue(me:GetValue())
 				end
 			end)
 	end
+	--]]
 
 	return opt_frame
 end
@@ -1024,22 +1022,22 @@ Settings.OptionUI["slider"] = function(self,option,parent)
 	local opt_frame = GetOpinionFrame(parent, name, option)
 
 	local slider = CHAIN(ui:Create("Slider",opt_frame,name.."_Slider"))
-	:SetPoint(LEFT,OPTIONS_LEFT_OFFSET,0)
-	:SetIsPercent(option.data.ispercent)
-	:SetMinMax(option.data.min,option.data.max)
-	:SetStep(option.data.step)
-	:AddTooltip(option.title,option.desc,opt_frame)
-	:AddValueChangedCallback(function(me,value)
-			if me.option then
-				me.option:SetValue(value)
-			end
-		end)
-	.__END
+		:SetPoint(LEFT,OPTIONS_LEFT_OFFSET,0)
+		:SetIsPercent(option.data.ispercent)
+		:SetMinMax(option.data.min,option.data.max)
+		:SetStep(option.data.step)
+		:AddTooltip(option.title,option.desc,opt_frame)
+		:AddValueChangedCallback(function(me,value)
+				if me.option then
+					me.option:SetValue(value)
+				end
+			end)
+		.__END
 
 	local label = CHAIN(ui:Create("Label",opt_frame,name.."_Label"))
-	:SetPoint(BOTTOM,slider,TOP)
-	:SetText(option.title)
-	.__END
+		:SetPoint(BOTTOM,slider,TOP)
+		:SetText(option.title)
+		.__END
 
 	if option:GetDescStyle() == "inline" then
 		error("No inline description for slider available atm.")
@@ -1070,24 +1068,24 @@ Settings.OptionUI["toggle"] = function(self,option,parent)
 	local opt_frame = GetOpinionFrame(parent, name, option)
 
 	local toggle = CHAIN(ui:Create("ToggleButton",opt_frame,name.."_Toggle"))
-	:SetSize(15,15)
-	:SetPoint(TOPLEFT,OPTIONS_LEFT_OFFSET,0)
-	:SetText(option.title)
-	:AddTooltip(option.title,option.desc,opt_frame)
-	:AddValueChangedCallback(function(me,value)
-			if me.option then
-				me.option:SetValue(value)
-			end
-		end)
-	.__END
+		:SetSize(15,15)
+		:SetPoint(TOPLEFT,OPTIONS_LEFT_OFFSET,0)
+		:SetText(option.title)
+		:AddTooltip(option.title,option.desc,opt_frame)
+		:AddValueChangedCallback(function(me,value)
+				if me.option then
+					me.option:SetValue(value)
+				end
+			end)
+		.__END
 
 	if option:GetDescStyle() == "inline" then
 		local desc = CHAIN(GetInlineDesc(opt_frame,name.."_InlineDesc"))
-		-- Get creative with Points. Can't anchor to bottomright of opt_frame because it resizes to fit descendents. Parent to topRight then overwrite top with a topleft and get the
-		:SetPoint(TOPRIGHT,opt_frame,TOPRIGHT,-5,0)
-		:SetPoint(TOPLEFT,toggle,BOTTOMLEFT)
-		:SetText(option.desc)
-		.__END
+			-- Get creative with Points. Can't anchor to bottomright of opt_frame because it resizes to fit descendents. Parent to topRight then overwrite top with a topleft and get the
+			:SetPoint(TOPRIGHT,opt_frame,TOPRIGHT,-5,0)
+			:SetPoint(TOPLEFT,toggle,BOTTOMLEFT)
+			:SetText(option.desc)
+			.__END
 
 		opt_frame.desc = desc
 	end
@@ -1116,11 +1114,11 @@ Settings.OptionUI["execute"] = function(self,option,parent)
 	local opt_frame = GetOpinionFrame(parent, name, option)
 
 	local button = CHAIN(ui:Create("Button",opt_frame,name.."_Button"))
-	:SetText(option.title)
-	:SetPoint(LEFT,OPTIONS_LEFT_OFFSET,0)
-	:AddTooltip(option.title,option.desc,opt_frame)
-	:SetHandler("OnClicked",option.data.func)
-	.__END
+		:SetText(option.title)
+		:SetPoint(LEFT,OPTIONS_LEFT_OFFSET,0)
+		:AddTooltip(option.title,option.desc,opt_frame)
+		:SetHandler("OnClicked",option.data.func)
+		.__END
 
 	if option.data.width then
 		button:SetWidth(option.data.width)
@@ -1150,21 +1148,21 @@ Settings.OptionUI["header"] = function(self,option,parent)
 	local opt_frame = GetOpinionFrame(parent, name, option, "true")
 
 	local label = CHAIN(ui:Create("Label",opt_frame,name.."_Label",14,"bold"))
-	:SetPoint(CENTER)
-	:SetText(option.title)
-	.__END
+		:SetPoint(CENTER)
+		:SetText(option.title)
+		.__END
 
 	label.leftLine = CHAIN(ui:Create("Texture",label,name.."_Left"))
-	:SetPoint(RIGHT,label,LEFT,-LINE_PADDING,0)
-	:SetPoint(LEFT,opt_frame)
-	:SetHeight(1)
-	.__END
+		:SetPoint(RIGHT,label,LEFT,-LINE_PADDING,0)
+		:SetPoint(LEFT,opt_frame)
+		:SetHeight(1)
+		.__END
 
 	label.rightLine = CHAIN(ui:Create("Texture",label,name.."_Right"))
-	:SetPoint(LEFT,label,RIGHT,LINE_PADDING,0)
-	:SetPoint(RIGHT,opt_frame)
-	:SetHeight(1)
-	.__END
+		:SetPoint(LEFT,label,RIGHT,LINE_PADDING,0)
+		:SetPoint(RIGHT,opt_frame)
+		:SetHeight(1)
+		.__END
 
 	opt_frame.label = label
 
@@ -1181,16 +1179,15 @@ Relavant data values:
 --]]
 Settings.OptionUI["desc"] = function(self,option,parent)
 	local name = parent:GetName().."_Option"..option.num
-	local LINE_PADDING = 3
 
 	local opt_frame = GetOpinionFrame(parent, name, option, "true")
 
 	local label = CHAIN(ui:Create("Label",opt_frame,name.."_Label",12))
-	:SetPoint(LEFT)
-	:SetPoint(RIGHT)
-	:SetCanWrap(true)
-	:SetText(option.title)
-	.__END
+		:SetPoint(LEFT)
+		:SetPoint(RIGHT)
+		:SetCanWrap(true)
+		:SetText(option.title)
+		.__END
 
 	opt_frame.label = label
 
@@ -1211,29 +1208,29 @@ Settings.OptionUI["color"] = function(self,option,parent)
 	local opt_frame = GetOpinionFrame(parent, name, option)
 
 	local colorpicker = CHAIN(ui:Create("ColorPicker",opt_frame,name.."_ColorPicker"))
-	:SetSize(20,20)
-	:SetPoint(TOPLEFT,OPTIONS_LEFT_OFFSET,0)
-	:AddTooltip(option.title,option.desc,opt_frame)
-	:AddValueChangedCallback(function(me,r,g,b,a)
-			local value = { r = r, g = g, b = b, a = a }
-			if me.option then
-				me.option:SetValue(value)
-			end
-		end)
-	.__END
+		:SetSize(20,20)
+		:SetPoint(TOPLEFT,OPTIONS_LEFT_OFFSET,0)
+		:AddTooltip(option.title,option.desc,opt_frame)
+		:AddValueChangedCallback(function(me,r,g,b,a)
+				local value = { r = r, g = g, b = b, a = a }
+				if me.option then
+					me.option:SetValue(value)
+				end
+			end)
+		.__END
 
 	local label = CHAIN(ui:Create("Label",opt_frame,name.."_Label"))
-	:SetPoint(LEFT,colorpicker,RIGHT,5,0)
-	:SetText(option.title)
-	.__END
+		:SetPoint(LEFT,colorpicker,RIGHT,5,0)
+		:SetText(option.title)
+		.__END
 
 	if option:GetDescStyle() == "inline" then
 		local desc = CHAIN(GetInlineDesc(opt_frame,name.."_InlineDesc"))
-		-- Get creative with Points. Can't anchor to bottomright of opt_frame because it resizes to fit descendents. Parent to topRight then overwrite top with a topleft and get the
-		:SetPoint(TOPRIGHT,opt_frame,TOPRIGHT,-5,0)
-		:SetPoint(TOPLEFT,colorpicker,BOTTOMLEFT)
-		:SetText(option.desc)
-		.__END
+			-- Get creative with Points. Can't anchor to bottomright of opt_frame because it resizes to fit descendents. Parent to topRight then overwrite top with a topleft and get the
+			:SetPoint(TOPRIGHT,opt_frame,TOPRIGHT,-5,0)
+			:SetPoint(TOPLEFT,colorpicker,BOTTOMLEFT)
+			:SetText(option.desc)
+			.__END
 
 		opt_frame.desc = desc
 	end
@@ -1329,7 +1326,7 @@ function GuideMenu:Hide()
 	self.Frame:Hide()
 end
 
-function GuideMenu:MenuButton_OnClick(but,button)
+function GuideMenu:MenuButton_OnClick(but)
 	if not but.target then return end
 	if but.target.type == "folder" then
 		self.folder = but.target.title
@@ -1413,7 +1410,7 @@ end
 function Settings:GetOptionGroupByName(name)
 	local opt_group
 
-	for i,opt_g in ipairs(self.opt_groups) do
+	for _,opt_g in ipairs(self.opt_groups) do
 		if opt_g.group_name == name then
 			opt_group = opt_g
 		end
@@ -1434,7 +1431,7 @@ function Settings:OpenSettings(group)
 	self:Show()
 end
 
-function Settings:MenuButton_OnClick(but,button)
+function Settings:MenuButton_OnClick(but)
 	if not but.group then return end
 
 	self:SelectGroup(but.group)

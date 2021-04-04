@@ -1,17 +1,26 @@
-local ZGV = _G.ZGV
-
 -----------------------------------------
 -- INFORMATION
------------------------------------------
 -- Guide events and actions (e.g. "goto")
-
------------------------------------------
--- LOCAL REFERENCES
 -----------------------------------------
 
-local tinsert, min, type, ipairs = table.insert, math.min, type, ipairs
-local L = ZGV.L
-local split = _G.zo_strsplit
+-----------------------------------------
+-- LOCALIZED GLOBAL VARIABLES
+-----------------------------------------
+
+local ZGV = _G.ZGV
+local GetCurrentMapIndex = _G.GetCurrentMapIndex
+local GuideViewer = _G.GuideViewer
+local GetNumPOIs = _G.GetNumPOIs
+local IsPOIWayshrine = _G.IsPOIWayshrine
+local GetPOIInfo = _G.GetPOIInfo
+local zo_plainstrfind = _G.zo_plainstrfind
+local GetPOIMapInfo = _G.GetPOIMapInfo
+local MAP_PIN_TYPE_POI_COMPLETE = _G.MAP_PIN_TYPE_POI_COMPLETE
+local GetLoreBookInfo = _G.GetLoreBookInfo
+local GetAchievementInfo = _G.GetAchievementInfo
+local GetAchievementCriterion = _G.GetAchievementCriterion
+local zo_loadstring = _G.zo_loadstring
+local zo_max = _G.zo_max
 
 -----------------------------------------
 -- LOCAL VARIABLES
@@ -21,7 +30,7 @@ local GoalProto = {}
 local Goal = ZGV.Class:New("Goal")
 local GoalProto_mt = { __index=Goal }
 local GOALTYPES = {}
-local empty_table={}
+local empty_table = {}
 
 -- Parser functions
 local ParseMapXYDist = ZGV.Parser.ParseMapXYDist
@@ -30,6 +39,14 @@ local ParseQuest = ZGV.Parser.ParseQuest
 local ParseId = ZGV.Parser.ParseId
 
 local INDENT = ""
+
+-----------------------------------------
+-- LOCAL REFERENCES
+-----------------------------------------
+
+local tinsert, min, type, ipairs = table.insert, math.min, type, ipairs
+local L = ZGV.L
+local split = _G.zo_strsplit
 
 -----------------------------------------
 -- SAVED REFERENCES
@@ -67,13 +84,13 @@ GOALTYPES['only'] = {  -- |only, |only if
 		local cond = params:match("^if%s+(.*)$")
 		if cond then
 			-- condition match and is a |only if
-			local subject = chunkcount==1 and step or self	-- If this is the first chunk for this line, then it is a |only if for a step.
+			local subject = chunkcount == 1 and step or self -- If this is the first chunk for this line, then it is a |only if for a step.
 
 			local fun,err = MakeCondition(cond,true)
 			if not fun then return err end
 
-			subject.condition_visible_raw=cond
-			subject.condition_visible=fun
+			subject.condition_visible_raw = cond
+			subject.condition_visible = fun
 
 			return false,"cancel goal"
 		else
@@ -83,104 +100,108 @@ GOALTYPES['only'] = {  -- |only, |only if
 }
 
 GOALTYPES['complete'] = {
-	parse = function(self,params,step,data)
+	parse = function(self,params)
 		--local chunkcount = data.chunkcount
 
 		local cond = params:match("^if%s+(.*)$")
 		if cond then
 			-- condition match and is a |only if
-			local subject = self	-- If this is the first chunk for this line, then it is a |only if for a step.
+			local subject = self -- If this is the first chunk for this line, then it is a |only if for a step.
 
 			local fun,err = MakeCondition(cond,true)
 			if not fun then return err end
 
-			subject.condition_complete_raw=cond
-			subject.condition_complete=fun
+			subject.condition_complete_raw = cond
+			subject.condition_complete = fun
 		else
 			ZGV:Error("||complete needs 'if'. because.")
-			self.action = nil		-- rip in peace goal. wipe out because this is a command for steps.
+			self.action = nil -- rip in peace goal. wipe out because this is a command for steps.
 		end
 	end,
 }
 
 GOALTYPES['next'] = {
-	parse = function(self,params,step,data)
+	parse = function(self,params)
 		params = params:gsub("^\"(.-)\"$","%1")
-		if params=="" then params="+1" end
-		self.next=params
+		if params == "" then
+			params = "+1"
+		end
+		self.next = params
 	end,
 }
 
 GOALTYPES['nextreload'] = {
-	parse = function(self,params,step,data)
+	parse = function(self,params)
 		params = params:gsub("^\"(.-)\"$","%1")
-		if params=="" then params="+1" end
-		self.nextreload=params
+		if params == "" then
+			params = "+1"
+		end
+		self.nextreload = params
 	end,
 }
 
 GOALTYPES['sticky'] = {
-	parse = function(self,params,step,data)
+	parse = function(self)
 		self.sticky = true
 	end,
 }
 
 GOALTYPES['n'] = {
-	parse = function(self,params,step,data)
+	parse = function(self)
 		self.force_nocomplete = true
 	end,
 }
 
 GOALTYPES['c'] = {
-	parse = function(self,params,step,data)
+	parse = function(self)
 		self.force_complete = true
 	end,
 }
 
 GOALTYPES['sub'] = {
-	parse = function(self,params,step,data)
+	parse = function(self)
 		self.subgoal = true  -- obsolete! do not use!
 	end,
 }
 
 GOALTYPES['opt'] = {
-	parse = function(self,params,step,data)
+	parse = function(self)
 		self.optional = true
 	end,
 }
 
 GOALTYPES['future'] = {
-	parse = function(self,params,step,data)
+	parse = function(self)
 		self.future = true
 	end,
 }
 
 GOALTYPES['noway'] = {
-	parse = function(self,params,step,data)
+	parse = function(self)
 		self.force_noway = true
 	end,
 }
 
 GOALTYPES['or'] = {
-	parse = function(self,params,step,data)
+	parse = function(self,params)
 		self.orlogic = params and tonumber(params) or 1
 	end,
 }
 
 GOALTYPES['override'] = {
-	parse = function(self,params,step,data)
+	parse = function(self)
 		self.override = true
 	end,
 }
 
 GOALTYPES['tip'] = {
-	parse = function(self,params,step,data)
+	parse = function(self,params)
 		self.tooltip = params
 	end,
 }
 
 GOALTYPES['q'] = {
-	parse = function(self,params,step,data)
+	parse = function(self,params)
 		self.quest, self.questcondtxt = ParseQuest(params)
 		if not self.quest then return "no quest in parameter" end
 	end,
@@ -207,7 +228,6 @@ GOALTYPES['_item'] = {
 			local tar, tarid = ParseId(str)
 
 			if plural and tar then
-				local GuideViewer = _G.GuideViewer
 				tar = GuideViewer("Specials").plural(tar)
 			end
 
@@ -286,8 +306,8 @@ GOALTYPES['goto'] = {
 		local step = self.parentStep
 		local all_gotos = true
 
-		for i,goal in ipairs(step.goals) do
-			if goal.action~="goto"		-- A non-goto step or a goto step that is force_complete
+		for _,goal in ipairs(step.goals) do
+			if goal.action ~= "goto" -- A non-goto step or a goto step that is force_complete
 			or goal.force_complete then
 				all_gotos = false
 				break
@@ -318,70 +338,67 @@ GOALTYPES['buy'] = 			GOALTYPES['collect']
 GOALTYPES['gather'] = 		GOALTYPES['collect']
 GOALTYPES['collect'] = 		{ parse = GOALTYPES['_item'].parse, }
 GOALTYPES['kill'] = 		{ parse = GOALTYPES['_item'].parse, }
-GOALTYPES['wayshrine'] = 	{
-	parse = function(self,params,step,data)
+GOALTYPES['wayshrine'] = 	{ parse = function(self,params,_,_)
 
-		local mapid, map = string.match(params,"([^/]+)/([^/]+)")
+								local mapid, map = string.match(params,"([^/]+)/([^/]+)")
 
-		if tonumber(mapid) then
-			self.wayshrine_zoneid = tonumber(mapid)
-			self.wayshrine = map
-		elseif mapid then -- string
-			self.wayshrine_zoneid = ZGV.Pointer.Zones[mapid] and ZGV.Pointer.Zones[mapid].id
-			self.wayshrine = map
-		else
-			self.wayshrine = params
-		end
-	end,
+								if tonumber(mapid) then
+									self.wayshrine_zoneid = tonumber(mapid)
+									self.wayshrine = map
+								elseif mapid then -- string
+									self.wayshrine_zoneid = ZGV.Pointer.Zones[mapid] and ZGV.Pointer.Zones[mapid].id
+									self.wayshrine = map
+								else
+									self.wayshrine = params
+								end
+							end,
 
-	iscomplete = function(self)
+							iscomplete = function(self)
 
-		if not self.wayshrine_POIIndex then
+							if not self.wayshrine_POIIndex then
 
-			local zoneid = self.wayshrine_zoneid
-			local GetNumPOIs, IsPOIWayshrine, GetPOIInfo, zo_plainstrfind = _G.GetNumPOIs, _G.IsPOIWayshrine, _G.GetPOIInfo, _G.zo_plainstrfind
+								local zoneid = self.wayshrine_zoneid
 
-			-- screw it, search them all if there's none given.
-			for zid=(zoneid or 1),(zoneid or 999) do  -- oh whatever, less code is good.
-				for i=1,GetNumPOIs(zid) do
-					if IsPOIWayshrine(zid,i) or (zid==488 and i==9) then   -- West Gash Wayshrine is not a wayshrine. Go figure.
-						local text,num,subtextinc,subtextcom = GetPOIInfo(zid,i)
-						local fb,fi = zo_plainstrfind(text,self.wayshrine)
-						if fb and fi==1 then
-							self.wayshrine_zoneid = zid
-							self.wayshrine_POIIndex = i
-							if ZGV.db.profile.debug_wayshrines then
-								ZGV:Debug("Found wayshrine '%s' on map id %d. POI %d.", self.wayshrine, self.wayshrine_zoneid, self.wayshrine_POIIndex)
+								-- screw it, search them all if there's none given.
+								for zid = (zoneid or 1),(zoneid or 999) do  -- oh whatever, less code is good.
+									for i = 1,GetNumPOIs(zid) do
+										if IsPOIWayshrine(zid,i) or (zid == 488 and i == 9) then   -- West Gash Wayshrine is not a wayshrine. Go figure.
+											local text,_,_,_ = GetPOIInfo(zid,i)
+											local fb,fi = zo_plainstrfind(text,self.wayshrine)
+											if fb and fi == 1 then
+												self.wayshrine_zoneid = zid
+												self.wayshrine_POIIndex = i
+												if ZGV.db.profile.debug_wayshrines then
+													ZGV:Debug("Found wayshrine '%s' on map id %d. POI %d.", self.wayshrine, self.wayshrine_zoneid, self.wayshrine_POIIndex)
+												end
+												break -- out of 2 loops
+											end
+										end
+									end
+									if self.wayshrine_POIIndex then break end
+								end
+
+								-- Index wasn't found... okay well we don't want to spam looking through POI's because it isn't efficient. Assign the index to 0 which returns an empty POI (no match) then reset it every 10s to try to match again.
+								if not self.wayshrine_POIIndex then
+									--ZGV:Debug("Wayshrine '%s' not found, will retry in 10s.", self.wayshrine)
+									ZGV:Debug("Wayshrine '%s' not found.", self.wayshrine)
+									self.wayshrine_POIIndex = 0
+									-- ZGV:ScheduleTimer(function() self.wayshrine_POIIndex = nil end, 10)
+								end
 							end
-							break -- out of 2 loops
-						end
-					end
-				end
-				if self.wayshrine_POIIndex then break end
-			end
 
-			-- Index wasn't found... okay well we don't want to spam looking through POI's because it isn't efficient. Assign the index to 0 which returns an empty POI (no match) then reset it every 10s to try to match again.
-			if not self.wayshrine_POIIndex then
-				--ZGV:Debug("Wayshrine '%s' not found, will retry in 10s.", self.wayshrine)
-				ZGV:Debug("Wayshrine '%s' not found.", self.wayshrine)
-				self.wayshrine_POIIndex = 0
-				-- ZGV:ScheduleTimer(function() self.wayshrine_POIIndex = nil end, 10)
-			end
-		end
+							local _,_,typ,_ = GetPOIMapInfo( self.wayshrine_zoneid, self.wayshrine_POIIndex, true ) --true=truthful call! don't be fooled by our own Pointer.lua and its foglight!
 
-		local x, y, typ, tex = _G.GetPOIMapInfo( self.wayshrine_zoneid, self.wayshrine_POIIndex, true ) --true=truthful call! don't be fooled by our own Pointer.lua and its foglight!
-		local MAP_PIN_TYPE_POI_COMPLETE = _G.MAP_PIN_TYPE_POI_COMPLETE
-
-		if typ == MAP_PIN_TYPE_POI_COMPLETE then
-			return true,true
-		else
-			return false,self.wayshrine_POIIndex>0
-		end
-	end,
-}
+							if typ == MAP_PIN_TYPE_POI_COMPLETE then
+								return true,true
+							else
+								return false,self.wayshrine_POIIndex > 0
+							end
+						end,
+						}
 
 GOALTYPES['learnskill'] = {
-	parse = function(self,params,step,data)
+	parse = function(self,params)
 		self.skillname = params
 	end,
 }
@@ -391,7 +408,7 @@ GOALTYPES['click'] = {
 }
 
 GOALTYPES['accept'] = {
-	parse = function(self,params,step,data)
+	parse = function(self,params)
 		if not params then
 			return "no quest parameter"
 		end
@@ -416,7 +433,7 @@ GOALTYPES['turnin'] = {
 }
 
 GOALTYPES['talk'] = {
-	parse = function(self,params,step,data)
+	parse = function(self,params)
 		self.npc,self.npcid = ParseId(params)
 		if not self.npc and not self.npcid then
 			return "no npc"
@@ -439,22 +456,22 @@ GOALTYPES['confirm'] = {
 	end,
 	onclick = function(self)
 		-- damn, special functionality HERE of all places...
-		self.clicked=true
+		self.clicked = true
 		if self.nextreload then
 			ZGV.sv.char.guidename = self.nextreload
 			ZGV.sv.char.step = 1
-			ReloadUI()
+			_G.ReloadUI()
 			return true -- oh wait...
 		end
 	end,
 }
 
 GOALTYPES['lorebook'] = {
-	parse = function(self,params,step,data)
+	parse = function(self,params,_,_)
 		if not params then
 			return "no lorebook parameter"
 		end
-		local name,cat,col,book = params:match("^(.-)(%d+)/(%d+)/(%d+)$")
+		local _,cat,col,book = params:match("^(.-)(%d+)/(%d+)/(%d+)$")
 		self.lorebook_cat = tonumber(cat)
 		self.lorebook_col = tonumber(col)
 		self.lorebook_book = tonumber(book)
@@ -464,11 +481,11 @@ GOALTYPES['lorebook'] = {
 		end
 	end,
 	iscomplete = function(self)
-		local title,icon,known = _G.GetLoreBookInfo(self.lorebook_cat,self.lorebook_col,self.lorebook_book)
+		local _,_,known = GetLoreBookInfo(self.lorebook_cat,self.lorebook_col,self.lorebook_book)
 		return known , true
 	end,
 	gettext = function(self)
-		local title = _G.GetLoreBookInfo(self.lorebook_cat,self.lorebook_col,self.lorebook_book)
+		local title = GetLoreBookInfo(self.lorebook_cat,self.lorebook_col,self.lorebook_book)
 		return L['stepgoal_lorebook']:format(title)
 	end
 }
@@ -489,21 +506,20 @@ GOALTYPES['achieve'] = {
 		end
 	end,
 	iscomplete = function(self,override_achieve_id,override_achieve_crit)
-		local name,desc,points,icon,isCompleted,date,time = _G.GetAchievementInfo(override_achieve_id or self.achieve_id)
+		local _,_,_,_,isCompleted,_,_ = GetAchievementInfo(override_achieve_id or self.achieve_id)
 		if isCompleted or not (override_achieve_crit or self.achieve_crit) then
 			return isCompleted , true
 		else
-			local desc,numcom,numreq = _G.GetAchievementCriterion(override_achieve_id or self.achieve_id,override_achieve_crit or self.achieve_crit)
-			local zo_max = _G.zo_max
+			local _,numcom,numreq = GetAchievementCriterion(override_achieve_id or self.achieve_id,override_achieve_crit or self.achieve_crit)
 			return numcom == numreq, true, (numcom/zo_max(1,(numreq or 1)))
 		end
 	end,
 	gettext = function(self)
 		local name
 		if not self.achieve_crit then
-			name = _G.GetAchievementInfo(self.achieve_id)
+			name = GetAchievementInfo(self.achieve_id)
 		else
-			name = _G.GetAchievementCriterion(self.achieve_id,self.achieve_crit)
+			name = GetAchievementCriterion(self.achieve_id,self.achieve_crit)
 		end
 		return L['stepgoal_achieve']:format(name)
 	end
@@ -555,7 +571,7 @@ function Goal:GetQuestGoalStatus()
 end
 
 function Goal:GetQuestGoalCounts()
-	local complete,possible,expl,curv,maxv,expl2 = self:GetQuestGoalStatus()
+	local _,_,expl,curv,maxv,_ = self:GetQuestGoalStatus()
 
 	if expl ~= "cond completion" then return end
 	if not curv then return end
@@ -577,7 +593,7 @@ function Goal:GetQuestGoalCounts()
 end
 
 function Goal:GetText()
-	local GOALTYPE=GOALTYPES[self.action]
+	local GOALTYPE = GOALTYPES[self.action]
 	local text = "?"
 	local progtext
 	local _done
@@ -618,7 +634,7 @@ function Goal:GetText()
 		end
 
 		local function parser_simple(s)
-			local fun,err = _G.zo_loadstring(s:find("return") and s or "return "..s)
+			local fun,err = zo_loadstring(s:find("return") and s or "return "..s)
 			if fun then
 				setfenv(fun,ZGV.Parser.ConditionEnv)
 				return fun
@@ -630,7 +646,7 @@ function Goal:GetText()
 		local function parser_ternary(s)
 			local condcode,a,b = s:match("(.*)%?%?(.*)::(.*)")
 			if condcode and a and b then
-				local condfun,err = _G.zo_loadstring(condcode:find("return") and condcode or "return "..condcode)
+				local condfun,err = zo_loadstring(condcode:find("return") and condcode or "return "..condcode)
 				if condfun then
 					local fun = function() -- Generating a real worker function
 						return condfun() and a or b
@@ -651,69 +667,69 @@ function Goal:GetText()
 		:gsub("{(.-)}",make_parser(parser_simple))
 		:gsub("#(%d+)#",COLOR_COUNT(remaining))
 
-	elseif self.action=="tip" then
+	elseif self.action == "tip" then
 		text = self.tooltip
 
-	elseif self.action=="accept" then
+	elseif self.action == "accept" then
 		base = L["stepgoal_accept".._done]
 		data = COLOR_QUEST(L["questtitle"]:format(self.quest or "?quest?"))
 
-	elseif self.action=="turnin" then
+	elseif self.action == "turnin" then
 		base = L["stepgoal_turnin".._done]
 		data = COLOR_QUEST(L["questtitle"]:format(self.quest or "?quest?"))
 
-	elseif self.action=="talk" then
+	elseif self.action == "talk" then
 		base = L["stepgoal_talk".._done]
 		data = COLOR_NPC(self.npc)
 
-	elseif self.action=="kill" then
+	elseif self.action == "kill" then
 		base = L["stepgoal_kill".._done]
 		data = COLOR_NPC(self.target)
 
-	elseif self.action=="equip" then
+	elseif self.action == "equip" then
 		base = L["stepgoal_equip".._done]
 		data = COLOR_NPC(self.target)
 
-	elseif self.action=="collect" then
+	elseif self.action == "collect" then
 		base = L["stepgoal_collect".._done]
 		data = COLOR_NPC(self.target)
 
-	elseif self.action=="buy" then
+	elseif self.action == "buy" then
 		base = L["stepgoal_buy".._done]
 		data = COLOR_NPC(self.target)
 
-	elseif self.action=="gather" then
+	elseif self.action == "gather" then
 		base = L["stepgoal_gather".._done]
 		data = COLOR_NPC(self.target)
 
-	elseif self.action=="learnskill" then
+	elseif self.action == "learnskill" then
 		base = L["stepgoal_learnskill".._done]
 		data = COLOR_NPC(self.target)
 
-	elseif self.action=="confirm" then
+	elseif self.action == "confirm" then
 		text = L["stepgoal_confirm"]
 
-	elseif self.action=="click" then
+	elseif self.action == "click" then
 		base = L["stepgoal_click".._done]
 		data = COLOR_ITEM(self.target)
 
-	elseif self.action=="wayshrine" then
+	elseif self.action == "wayshrine" then
 		base = L["stepgoal_wayshrine".._done]
 		data = COLOR_NPC(self.wayshrine)
 
-	elseif self.action=="goto" then
+	elseif self.action == "goto" then
 		local curZone = _G.GetMapName()
 		local mapname = ZGV.Pointer.Zones[self.map] and ZGV.Pointer.Zones[self.map].name or self.map or curZone.."(?)"
 
-		if mapname~=curZone then
-			if self.x and self.y then	-- different map
-				text = COLOR_LOC(L['map_coords']:format(ZGV.Utils.Delocalize(mapname),self.x*100,self.y*100))	-- and coords
+		if mapname ~= curZone then
+			if self.x and self.y then -- different map
+				text = COLOR_LOC(L['map_coords']:format(ZGV.Utils.Delocalize(mapname),self.x * 100,self.y * 100)) -- and coords
 			else
 				text = COLOR_LOC(ZGV.Utils.Delocalize(mapname))	-- just the map
 			end
 		else
 			if self.x and self.y then
-				text = COLOR_LOC(L['coords']:format(self.x*100,self.y*100))	-- same map
+				text = COLOR_LOC(L['coords']:format(self.x*100,self.y * 100)) -- same map
 			else
 				text = COLOR_LOC(ZGV.Utils.Delocalize(mapname))	-- just the map
 			end
@@ -726,17 +742,17 @@ function Goal:GetText()
 
 	if base and data then
 		local num = remaining or self.count
-		if num and num>1 then
+		if num and num > 1 then
 			data = num .. " " .. data
 		end
 		text = base:format(data)
 	end
 
-	if text=="?" and GOALTYPE.gettext then
+	if text == "?" and GOALTYPE.gettext then
 		text = GOALTYPE.gettext(self)
 	end
 
-	if text=="?" and L["stepgoal_"..self.action] then  -- fallback: just plain text in L
+	if text == "?" and L["stepgoal_"..self.action] then  -- fallback: just plain text in L
 		text = L["stepgoal_"..self.action]
 	end
 
@@ -783,7 +799,7 @@ function Goal:IsVisible()
 	if self.condition_visible then
 		if self.condition_visible_raw == "default" then
 			-- oo, special case: show this only if no others are visible!
-			for i,goal in ipairs(self.parentStep.goals) do
+			for _,goal in ipairs(self.parentStep.goals) do
 				if goal ~= self and goal.condition_visible and goal:IsVisible() then return false end
 			end
 			return true
@@ -825,7 +841,7 @@ function Goal:IsComplete()
 
 	if self.map then
 		self:CheckVisited()
-	end  -- TODO: this is a bad place to call other checks.
+	end -- TODO: this is a bad place to call other checks.
 
 	return iscomplete,ispossible,v1,v2,v3
 end
@@ -884,58 +900,56 @@ function Goal:IsCompleteCheck()
 			iscomplete,ispossible,explanation,curv,maxv,debugs = ZGV.Quests:GetCompletionStatus(self.quest, self.questcondtxt)
 			ZGV:Debug("&goal completion: complete:|cffffff%s|r, possible:|cffffff%s|r, why:|cffffff%s|r ... match: |cffaaee%s|r",tostring(iscomplete),tostring(ispossible),tostring(explanation),tostring(debugs))
 
-			local quest = ZGV.Quests:GetQuest(self.quest)
+			local _ = ZGV.Quests:GetQuest(self.quest)
 
 			if iscomplete then
 
 				-- complete means complete, leave it at that!
-				if explanation=="quest complete"
-				or explanation=="quest POI complete"
-				or explanation=="past stage"
-				or explanation=="cond recently completed"
-				--or explanation=="stage completed" )  -- not there anymore, we don't store completed stages now
-				then
+				if explanation == "quest complete"
+					or explanation == "quest POI complete"
+					or explanation == "past stage"
+					or explanation == "cond recently completed" then
 					return "past",true
 				end
 				return true,true,self.count and 1
 
-			elseif false and explanation=="step END" and self.optstep then
+			elseif false and explanation == "step END" and self.optstep then
 				return true,true
 
-			elseif false and explanation=="future stage" then
+			elseif false and explanation == "future stage" then
 				if self.future then break end  -- fall through
 				return false,false
 
-			elseif explanation=="not in journal" then
+			elseif explanation == "not in journal" then
 				if self.future and GOALTYPES[self.action].iscomplete then break end  -- fall through if can complete
 				if self.future and not GOALTYPES[self.action].iscomplete then -- pretend completable. EVIL. SHAME.
 					return false,true, "future step? pretend completable. shame!"
 				end
 				return false,false
 
-			elseif false and explanation=="no stagenum" or explanation=="stage completion" then
+			elseif false and explanation == "no stagenum" or explanation == "stage completion" then
 				-- quest in journal, but no stage mentioned, and surely not complete
 				-- or, stage mentioned, but it's current, so
 				if self:IsCompletable("by type") then break end  -- fall through
 				return iscomplete,ispossible -- always false,true
 
-			elseif explanation=="step completion" or explanation=="step overrides cond" then
+			elseif explanation == "step completion" or explanation == "step overrides cond" then
 				if ispossible and self:IsCompletable("by type") then break end  -- fall through
 				return iscomplete,ispossible
 
-			elseif explanation=="cond completion" then  -- possible, countable
-				if self.count and self.count > 0 and curv then		-- If we only want a specific amount of items at this point then allow them to collect 1/5 and complete this step.
+			elseif explanation == "cond completion" then  -- possible, countable
+				if self.count and self.count > 0 and curv then -- If we only want a specific amount of items at this point then allow them to collect 1/5 and complete this step.
 					if curv >= self.count then
 						iscomplete = true
 					end
 				end
 				if iscomplete then
-					return true, ispossible, (curv and curv/(self.count or maxv or 1))
+					return true, ispossible, (curv and curv / (self.count or maxv or 1))
 				end
 				if self:IsCompletable("by type") then break end -- let the goto complete it!
-				return false, ispossible, (curv and curv/(self.count or maxv or 1))
+				return false, ispossible, (curv and curv / (self.count or maxv or 1))
 
-			elseif false and explanation=="current stage unknown" then	-- RAISE ALARM?
+			elseif false and explanation == "current stage unknown" then	-- RAISE ALARM?
 				return false,false
 
 			elseif self.future and not GOALTYPES[self.action].iscomplete then -- simulate completability. EVIL.
@@ -977,12 +991,12 @@ function Goal:IsCompleteCheck()
 end
 
 function Goal:IsCompletable(by_type)
-	local GOALTYPE=GOALTYPES[self.action]	-- All goals have goaltypes
+	local GOALTYPE = GOALTYPES[self.action] -- All goals have goaltypes
 
-	if self.force_nocomplete then return false end	-- the almighty |n
-	if self.condition_complete then return true end  -- we have a script, so obey
+	if self.force_nocomplete then return false end -- the almighty |n
+	if self.condition_complete then return true end -- we have a script, so obey
 
-	if not by_type and self.action~="goto" then
+	if not by_type and self.action ~= "goto" then
 		if self.quest or self.lorebook or self.achieve_id then
 			return true
 		end	-- there is a quest/lore/achieve associated with this goal so can be completed. Unless it's a goto. These are only completed by |c.
@@ -990,7 +1004,8 @@ function Goal:IsCompletable(by_type)
 
 	if GOALTYPE.iscompletable then
 		return GOALTYPE.iscompletable(self)
-	end		-- This may or maynot be there if it is only sometimes completable.
+	end -- This may or maynot be there if it is only sometimes completable.
+
 	if GOALTYPE.iscomplete then return true end	-- There is a way to complete this goal
 
 	-- Nothing above? Okay can't complete.
@@ -1011,16 +1026,16 @@ end
 function Goal:GetStatus()
 
 	-- a good place to check for quest coordinates as any...
-	if self.action=="goto" and self.quest and self.questcondtxt then
+	if self.action == "goto" and self.quest and self.questcondtxt then
 		local quest = ZGV.Quests:GetQuest(self.quest)
 		if quest and quest.steps then
 			local snum,cnum = quest:FindStepCond(self.questcondtxt)
 			if snum then
 				local cond = quest.steps[snum] and quest.steps[snum].conditions and quest.steps[snum].conditions[cnum]
-				if cond and cond.x and cond.x~=self.x then
+				if cond and cond.x and cond.x ~= self.x then
 					self.x,self.y = cond.x,cond.y
 					self.m = ZGV.Pointer:GetMapTex()
-					ZGV:SetWaypoint()  -- update, really
+					ZGV:SetWaypoint() -- update, really
 				end
 			end
 		end
@@ -1032,13 +1047,10 @@ function Goal:GetStatus()
 	if not self:IsCompletable() then
 		return "passive"
 	end
-	local iscomplete,ispossible,progress,warn = self:IsComplete()
+	local iscomplete,_,progress,_ = self:IsComplete()
 	if iscomplete then
 		return "complete"
 	end
-	-- FIRST impossible (gray), THEN obsolete (blue).
-	--if warn then return "warning" end
-	--if not possible then return "impossible" end
 
 	return "incomplete",progress
 end
