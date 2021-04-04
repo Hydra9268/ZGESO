@@ -1,18 +1,10 @@
+-----------------------------------------
+-- LOCALIZED GLOBAL VARIABLES
+-----------------------------------------
+
 assert(not ZGV, "Two ZGV loaded.")
-
--- local LAT = AceTimer
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
 local tinsert, tremove, sort, min, max, floor, type, pairs, ipairs = table.insert, table.remove, table.sort, math.min, math.max, math.floor, type, pairs, ipairs
 local GetGameTimeMilliseconds = GetGameTimeMilliseconds
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
 local ZGV = {}
 ZGV.print = function(...)
   local s = {...}

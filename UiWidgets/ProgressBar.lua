@@ -1,5 +1,3 @@
-local ZGV = ZGV
-if not ZGV then return end
 -----------------------------------------
 -- INFORMATION
 -----------------------------------------
@@ -8,9 +6,11 @@ if not ZGV then return end
 --]]
 
 -----------------------------------------
--- LOCAL REFERENCES
+-- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
+local ZGV = ZGV
+if not ZGV then return end
 local tinsert,tremove,sort,zginherits,min,max,floor,type,pairs,ipairs,unpack = table.insert,table.remove,table.sort,table.zginherits,math.min,math.max,math.floor,type,pairs,ipairs,unpack
 local CHAIN = ZGV.Utils.ChainCall
 local print = ZGV.print
@@ -22,10 +22,6 @@ local DEFAULT_WIDTH = 150
 local COLOR_1 = {HTMLColor("#00ff00")}
 local COLOR_2 = {HTMLColor("#ffff00")}
 local COLOR_3 = {HTMLColor("#ff0000")}
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
 
 local ProgressBar =  ZGV.Class:New("ProgressBar")
 

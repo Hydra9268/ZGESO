@@ -1,32 +1,18 @@
+-----------------------------------------
+-- LOCALIZED GLOBAL VARIABLES
+-----------------------------------------
+
 local ZGV = ZGV
 if not ZGV then return end
------------------------------------------
--- INFORMATION
------------------------------------------
---[[
-
---]]
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
 local tinsert,tremove,sort,zginherits,min,max,floor,type,pairs,ipairs,unpack = table.insert,table.remove,table.sort,table.zginherits,math.min,math.max,math.floor,type,pairs,ipairs,unpack
 local round = zo_round
 local CHAIN = ZGV.Utils.ChainCall
 local print = ZGV.print
 local ui = ZGV.UI
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
 local Slider =  ZGV.Class:New("Slider")
-
 local VALUE_BOX_SIZE = {50,15}
 local DEFAULT_BAR_HEIGHT = 5
 local LABEL_WIDTH = 50
-
 local DEFAULT_WIDTH = 125
 local DEFAULT_HEIGHT = 20
 

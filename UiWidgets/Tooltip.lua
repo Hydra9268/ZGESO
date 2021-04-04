@@ -1,27 +1,19 @@
+-----------------------------------------
+-- LOCALIZED GLOBAL VARIABLES
+-----------------------------------------
+
 local ZGV = _G.ZGV
-
------------------------------------------
--- INFORMATION
------------------------------------------
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
-local tinsert,tremove,sort,zginherits,min,max,floor,type,pairs,ipairs,unpack = table.insert,table.remove,table.sort,table.zginherits,math.min,math.max,math.floor,type,pairs,ipairs,unpack
 local CHAIN = ZGV.Utils.ChainCall
-local print = ZGV.print
 local ui = ZGV.UI
+local unpack = unpack
 
 -----------------------------------------
 -- LOCAL VARIABLES
 -----------------------------------------
 
 local Tooltip =  ZGV.Class:New("Tooltip")
-
 local headerFont = ui:GetFont(14,true)
 local HEADER_COLOR = {1,1,1}
-
 local lineFont = ui:GetFont(13)
 local LINE_COLOR = {1,1,1}
 

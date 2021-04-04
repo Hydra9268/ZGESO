@@ -1,27 +1,14 @@
+-----------------------------------------
+-- LOCALIZED GLOBAL VARIABLES
+-----------------------------------------
+
 local ZGV = ZGV
 if not ZGV then return end
------------------------------------------
--- INFORMATION
------------------------------------------
---[[
-
---]]
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
 local tinsert,tremove,sort,zginherits,min,max,floor,type,pairs,ipairs,unpack = table.insert,table.remove,table.sort,table.zginherits,math.min,math.max,math.floor,type,pairs,ipairs,unpack
 local CHAIN = ZGV.Utils.ChainCall
 local print = ZGV.print
 local ui = ZGV.UI
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
 local ToggleButton =  ZGV.Class:New("ToggleButton")
-
 local DEFAULT_SIZE = 12
 local ACCENT_COLOR = {HTMLColor("#fe6100ff")}
 local BG_COLOR = {.2,.2,.2,1}	-- Copied from SecBackdrop

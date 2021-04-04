@@ -1,17 +1,11 @@
+-----------------------------------------
+-- LOCALIZED GLOBAL VARIABLES
+-----------------------------------------
+
 local ZGV = _G.ZGV
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
 local tinsert,tremove,sort,zginherits,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,table.zginherits,math.min,math.max,math.floor,type,pairs,ipairs
 local print = ZGV.print
 local WM = ZGV.WM
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
 local UI = {}
 local savedwidgets = {}
 local Classes = {}						-- Not available in UI

@@ -1,26 +1,24 @@
+-----------------------------------------
+-- LOCALIZED GLOBAL VARIABLES
+-----------------------------------------
+
 local ZGV = _G.ZGV
-
------------------------------------------
--- LOCAL REFERENCES
------------------------------------------
-
-local tinsert,tremove,sort,zginherits,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,table.zginherits,math.min,math.max,math.floor,type,pairs,ipairs
-local print = ZGV.print
-local CHAIN = ZGV.Utils.ChainCall
-local ui = ZGV.UI
-local L = ZGV.L
-
------------------------------------------
--- LOCAL VARIABLES
------------------------------------------
-
+local EVENT_ACTION_LAYER_POPPED = _G.EVENT_ACTION_LAYER_POPPED
+local EVENT_ACTION_LAYER_PUSHED = _G.EVENT_ACTION_LAYER_PUSHED
+local EVENT_PLAYER_COMBAT_STATE = _G.EVENT_PLAYER_COMBAT_STATE
+local IsActionLayerActiveByName = _G.IsActionLayerActiveByName
+local TOP,TOPRIGHT,RIGHT,BOTTOMRIGHT,LEFT,TOPLEFT,BOTTOM,BOTTOMLEFT = _G.TOP,_G.TOPRIGHT,_G.RIGHT,_G.BOTTOMRIGHT,_G.LEFT,_G.TOPLEFT,_G.BOTTOM,_G.BOTTOMLEFT
+local LEFT_MOUSE_BUTTON,RIGHT_MOUSE_BUTTON = _G.LEFT_MOUSE_BUTTON,_G.RIGHT_MOUSE_BUTTON
+local Zgoo = _G.Zgoo
+local GuiRoot = _G.GuiRoot
+local TEXT_ALIGN_CENTER = _G.TEXT_ALIGN_CENTER
+local zo_floatsAreEqual = _G.zo_floatsAreEqual
+local GOAL_FONTSIZE = _G.GOAL_FONTSIZE
 local Viewer = {}
 local FrameUI = ZGV.Class:New("FrameUI")
 local StepUI = ZGV.Class:New("StepUI")
 local GoalUI = ZGV.Class:New("GoalUI")
-
 local name = "ZGVF"
-
 local DEFAULT_ANCHOR = { -- Set point using Top so that goals grow downward properly
 	TOPRIGHT,
 	_G['GuiRoot'],
@@ -28,7 +26,6 @@ local DEFAULT_ANCHOR = { -- Set point using Top so that goals grow downward prop
 	100,
 	225,
 }
-
 local DEFAULT_MINIMAP_ANCHOR = { -- Set point using Top so that goals grow downward properly
 	TOPRIGHT,
 	_G['GuiRoot'],
@@ -60,7 +57,6 @@ local BIG_PADDING = 10
 
 local GOAL_ICON_SIZE = 15
 local GOAL_ICON_PADDING = 2
-local TEXT_ICON_PADDING = 5
 
 local PROG_BAR_TYPE_STEP = "steps"
 local PROG_BAR_TYPE_LEVEL = "level"
@@ -68,23 +64,27 @@ local PROG_BAR_TYPE_LEVEL = "level"
 local PROG_BAR_COLOR_STEP = {0.0,0.8,0.0,1.0}
 local PROG_BAR_COLOR_LEVEL = {1/255,162/255,253/255,1.0}
 
-ActionLabels = {} -- filled at startup
+local ActionLabels = {} -- filled at startup
 
 local actionicon={
-	["accept"]=5,
-	["turnin"]=6,
-	["kill"]=7,
-	["from"]=7,
-	["get"]=8,
-	["collect"]=8,
-	["buy"]=8,
-	["goal"]=9,
-	["home"]=10,
-	["goto"]=12,
-	["talk"]=13,
-	["next"]=14
+	["accept"]	=5,
+	["turnin"]	=6,
+	["kill"]	=7,
+	["from"]	=7,
+	["get"]		=8,
+	["collect"]	=8,
+	["buy"]		=8,
+	["goal"]	=9,
+	["home"]	=10,
+	["goto"]	=12,
+	["talk"]	=13,
+	["next"]	=14
 }
 setmetatable(actionicon,{__index=function() return 2 end})
+local tinsert,zginherits,type,ipairs = table.insert,table.zginherits,type,ipairs
+local CHAIN = ZGV.Utils.ChainCall
+local ui = ZGV.UI
+local L = ZGV.L
 
 -----------------------------------------
 -- SAVED REFERENCES
@@ -98,9 +98,9 @@ ZGV.Viewer.name = name
 -----------------------------------------
 
 local function setupActionLayers()
-	local num = GetNumActionLayers()
+	local num = _G.GetNumActionLayers()
 	for i=1,num do
-		local name, numCata = GetActionLayerInfo(i)
+		local name,_ = _G.GetActionLayerInfo(i)
 
 		ActionLabels[i] = name
 	end
@@ -133,21 +133,21 @@ function Viewer:CreateZGVF()
 
 	-- Master frame is only needed so that the viewer can point off of it. Viewer needs to use SetPoint(TOP) so that it expands down nicely when moving stepsg
 	local master = CHAIN(ui:Create("InvisFrame",GuiRoot,name.."_Master",1))	-- toplevel
-	:SetMovable(true)
-	:SetHandler("OnMoveStop", function(me)
-			local isValidAnchor, point, relativeTo, relativePoint, offsetX, offsetY = me:GetAnchor()
+		:SetMovable(true)
+		:SetHandler("OnMoveStop", function(me)
+				local isValidAnchor, point, relativeTo, relativePoint, offsetX, offsetY = me:GetAnchor()
 
-			if isValidAnchor then
-				ZGV.sv.profile.vieweranchor = {
-					point,
-					relativeTo:GetName(),		-- Can not store userdata. Just put a string in and it will be forced to GuiRoot when setting
-					relativePoint,
-					offsetX,
-					offsetY
-				}
-			end
-		end)
-	.__END
+				if isValidAnchor then
+					ZGV.sv.profile.vieweranchor = {
+						point,
+						relativeTo:GetName(),		-- Can not store userdata. Just put a string in and it will be forced to GuiRoot when setting
+						relativePoint,
+						offsetX,
+						offsetY
+					}
+				end
+			end)
+		.__END
 
 	-- Lets set the point! Use either from Saved Vars or default
 	ZGV.sv.profile.vieweranchor = ZGV.sv.profile.vieweranchor and #ZGV.sv.profile.vieweranchor==5 and ZGV.sv.profile.vieweranchor or DEFAULT_ANCHOR
@@ -157,27 +157,27 @@ function Viewer:CreateZGVF()
 
 	local fwidth = ZGV.sv.profile.viewerwidth or DEFAULT_WIDTH
 	local frame =  CHAIN(ui:Create("Frame",master,name,"true"))	-- Not toplevel
-	:SetPoint(TOP)
-	:SetSize(fwidth,DEFAULT_HEIGHT)						-- Height doesn't need to be saved because that is based on goals
-	:SetDimensionConstraints(MIN_WIDTH,nil,MAX_WIDTH,nil)
-	:SetResizeHandleSize(4)
-	:SetMouseEnabled(true)								-- Just enable mouse so it can drag master
-	:SetHandler("OnMouseDown",function(me)				-- TODO while draggin all of the OnResizedToFit handlers fire, not a big deal likely, but strange and not needed.
-			Viewer.moving = master:StartMoving()			-- Blocking in stepbox:OnResizedToFit so that viewer isn't resized without need
-		end)
-	:SetHandler("OnMouseUp",function(me)
-			master:StopMovingOrResizing()
-			Viewer.moving = nil
-		end)
-	:SetHandler("OnResizeStop",function(me)
-			Viewer:ResizeToFitSteps()						-- Can't prevent vertical resizing, just make it look normal again when they stop.
-			Viewer:UpdateProgressBar()
-			ZGV.sv.profile.viewerwidth = me:GetWidth()
-		end)
-	:SetHandler("OnUpdate",function(me,time)
-			me:OnUpdate(time)
-		end)
-	.__END
+		:SetPoint(TOP)
+		:SetSize(fwidth,DEFAULT_HEIGHT)						-- Height doesn't need to be saved because that is based on goals
+		:SetDimensionConstraints(MIN_WIDTH,nil,MAX_WIDTH,nil)
+		:SetResizeHandleSize(4)
+		:SetMouseEnabled(true)								-- Just enable mouse so it can drag master
+		:SetHandler("OnMouseDown",function()				-- TODO while draggin all of the OnResizedToFit handlers fire, not a big deal likely, but strange and not needed.
+				Viewer.moving = master:StartMoving()			-- Blocking in stepbox:OnResizedToFit so that viewer isn't resized without need
+			end)
+		:SetHandler("OnMouseUp",function()
+				master:StopMovingOrResizing()
+				Viewer.moving = nil
+			end)
+		:SetHandler("OnResizeStop",function(me)
+				Viewer:ResizeToFitSteps()						-- Can't prevent vertical resizing, just make it look normal again when they stop.
+				Viewer:UpdateProgressBar()
+				ZGV.sv.profile.viewerwidth = me:GetWidth()
+			end)
+		:SetHandler("OnUpdate",function(me,time)
+				me:OnUpdate(time)
+			end)
+		.__END
 	ZGV.Frame = frame
 	self.Frame = frame
 	frame.master = master
@@ -186,31 +186,31 @@ function Viewer:CreateZGVF()
 	-- Invisible frame
 	local tname = name.."_TitleBar"
 	local titlebar = CHAIN(ui:Create("InvisFrame",frame,tname))
-	:SetPoint(TOPRIGHT)
-	:SetPoint(TOPLEFT)
-	:SetHeight(TITLE_BAR_HEIGHT)
-	.__END
+		:SetPoint(TOPRIGHT)
+		:SetPoint(TOPLEFT)
+		:SetHeight(TITLE_BAR_HEIGHT)
+		.__END
 
 	titlebar.help = CHAIN(ui:Create("GuideButton",titlebar,tname.."_Help","Help"))
-	:SetPoint(TOPLEFT, titlebar, BIG_PADDING, SMALL_PADDING )
-	:SetHandler("OnClicked",function(me) self:HelpButton_OnClick() end)
-	.__END
+		:SetPoint(TOPLEFT, titlebar, BIG_PADDING, SMALL_PADDING )
+		:SetHandler("OnClicked",function() self:HelpButton_OnClick() end)
+		.__END
 
 	titlebar.bug = CHAIN(ui:Create("GuideButton",titlebar,tname.."_bug","Debug"))
-	:SetPoint(LEFT, titlebar.help, RIGHT, BIG_PADDING, 0 )
-	:SetHandler("OnClicked",function(me,but)
-			if but == RIGHT_MOUSE_BUTTON then
-				if Zgoo and IsShiftKeyDown() then
-					Zgoo(ZGV.CurrentGuide)
+		:SetPoint(LEFT, titlebar.help, RIGHT, BIG_PADDING, 0 )
+		:SetHandler("OnClicked",function(_,but)
+				if but == RIGHT_MOUSE_BUTTON then
+					if Zgoo and _G.IsShiftKeyDown() then
+						Zgoo(ZGV.CurrentGuide)
+					else
+						Zgoo(ZGV.CurrentStep)
+					end
 				else
-					Zgoo(ZGV.CurrentStep)
+					-- normal report
+					ZGV.BugReport:ShowReport()
 				end
-			else
-				-- normal report
-				ZGV.BugReport:ShowReport()
-			end
-		end)
-	.__END
+			end)
+		.__END
 
 	local s = "Click to generate a bug report."
 	if Zgoo and ZGV.DEV then
@@ -220,116 +220,116 @@ function Viewer:CreateZGVF()
 	titlebar.bug:SetHidden(not ZGV.db.profile.bugreports)
 
 	titlebar.title = CHAIN(ui:Create("Logo",titlebar,tname.."_Title"))
-	:SetPoint(TOP,titlebar,0,SMALL_PADDING)
-	.__END
+		:SetPoint(TOP,titlebar,0,SMALL_PADDING)
+		.__END
 
 	titlebar.close = CHAIN(ui:Create("GuideButton",titlebar,tname.."_Close","Close"))
-	:SetPoint(TOPRIGHT, titlebar, - BIG_PADDING, SMALL_PADDING )
-	:SetHandler("OnClicked",function(me) self:CloseButton_OnClick() end)
-	.__END
+		:SetPoint(TOPRIGHT, titlebar, - BIG_PADDING, SMALL_PADDING )
+		:SetHandler("OnClicked",function() self:CloseButton_OnClick() end)
+		.__END
 
 	-- TODO what button?
 	titlebar.something = CHAIN(ui:Create("GuideButton",titlebar,tname.."_something","Close"))
-	:SetPoint(BOTTOMRIGHT, titlebar, - BIG_PADDING, 0 )
-	:SetHandler("OnClicked",function(me) self:CloseButton_OnClick() end)
-	:Hide()	-- TODO unhide and make a real button?
-	.__END
+		:SetPoint(BOTTOMRIGHT, titlebar, - BIG_PADDING, 0 )
+		:SetHandler("OnClicked",function() self:CloseButton_OnClick() end)
+		:Hide()	-- TODO unhide and make a real button?
+		.__END
 
 	titlebar.prevStep = CHAIN(ui:Create("GuideButton",titlebar,tname.."_PrevStep","Left"))
-	:SetPoint(BOTTOMLEFT,titlebar,BIG_PADDING,0)
-	:SetHandler("OnClicked",function(me,but) self:PrevStepButton_OnClick(but) end)
-	:SetHandler("OnMouseDown",function(me)
-			Viewer.prevDownTime = GetFrameTimeSeconds()
-			Viewer.lastArrowSurfUpdate = 0
-		end)
-	:SetHandler("OnMouseUp",function(me)
-			Viewer.prevDownTime = nil
-		end)
-	.__END
+		:SetPoint(BOTTOMLEFT,titlebar,BIG_PADDING,0)
+		:SetHandler("OnClicked",function(_,but) self:PrevStepButton_OnClick(but) end)
+		:SetHandler("OnMouseDown",function()
+				Viewer.prevDownTime = _G.GetFrameTimeSeconds()
+				Viewer.lastArrowSurfUpdate = 0
+			end)
+		:SetHandler("OnMouseUp",function()
+				Viewer.prevDownTime = nil
+			end)
+		.__END
 
 	titlebar.nextStep = CHAIN(ui:Create("GuideButton",titlebar,tname.."_NextStep","Right"))
-	:SetPoint(LEFT,titlebar.prevStep,RIGHT,CUR_STEP_WIDTH,0)	-- Some padding on each side, then the width of the number.
-	:SetHandler("OnClicked",function(me,but) self:NextStepButton_OnClick(but) end)
-	:SetHandler("OnMouseDown",function(me)
-			Viewer.nextDownTime = GetFrameTimeSeconds()
-			Viewer.lastArrowSurfUpdate = 0
-		end)
-	:SetHandler("OnMouseUp",function(me)
-			Viewer.nextDownTime = nil
-		end)
-	.__END
+		:SetPoint(LEFT,titlebar.prevStep,RIGHT,CUR_STEP_WIDTH,0)	-- Some padding on each side, then the width of the number.
+		:SetHandler("OnClicked",function(_,but) self:NextStepButton_OnClick(but) end)
+		:SetHandler("OnMouseDown",function()
+				Viewer.nextDownTime = _G.GetFrameTimeSeconds()
+				Viewer.lastArrowSurfUpdate = 0
+			end)
+		:SetHandler("OnMouseUp",function()
+				Viewer.nextDownTime = nil
+			end)
+		.__END
 
 	titlebar.stepLabel = CHAIN(ui:Create("Label",titlebar,tname.."_StepLabel"))
-	:SetPoint(TOPLEFT,titlebar.prevStep,TOPRIGHT)
-	:SetPoint(TOPRIGHT,titlebar.nextStep,TOPLEFT)
-	:SetText("-")
-	:SetHorizontalAlignment(TEXT_ALIGN_CENTER)
-	.__END
+		:SetPoint(TOPLEFT,titlebar.prevStep,TOPRIGHT)
+		:SetPoint(TOPRIGHT,titlebar.nextStep,TOPLEFT)
+		:SetText("-")
+		:SetHorizontalAlignment(TEXT_ALIGN_CENTER)
+		.__END
 
 	titlebar.guideSelect = CHAIN(ui:Create("GuideButton",titlebar,tname.."_GuidePicker","Down"))
-	:SetPoint(RIGHT,titlebar.something,LEFT,-BIG_PADDING,0)
-	:SetSize(GUIDE_BAR_HEIGHT,GUIDE_BAR_HEIGHT)
-	:SetHandler("OnClicked",function(me,but) self:GuideSelectButton_OnClick(but) end)
-	.__END
+		:SetPoint(RIGHT,titlebar.something,LEFT,-BIG_PADDING,0)
+		:SetSize(GUIDE_BAR_HEIGHT,GUIDE_BAR_HEIGHT)
+		:SetHandler("OnClicked",function(_,but) self:GuideSelectButton_OnClick(but) end)
+		.__END
 
 	titlebar.guideBox = CHAIN(ui:Create("SecFrame",titlebar,tname.."_GuideBox"))
-	:SetPoint(LEFT,titlebar.nextStep,RIGHT,BIG_PADDING,0)
-	:SetPoint(RIGHT,titlebar.guideSelect,LEFT,0,0)
-	:SetHeight(GUIDE_BAR_HEIGHT)
-	.__END
+		:SetPoint(LEFT,titlebar.nextStep,RIGHT,BIG_PADDING,0)
+		:SetPoint(RIGHT,titlebar.guideSelect,LEFT,0,0)
+		:SetHeight(GUIDE_BAR_HEIGHT)
+		.__END
 
 	titlebar.guideLabel = CHAIN(ui:Create("Label",titlebar.guideBox,tname.."_GuideLabel"))
-	:SetPoint(TOPLEFT,SMALL_PADDING,0)
-	:SetAnchor(BOTTOMRIGHT,titlebar.guideSelect,BOTTOMLEFT,-SMALL_PADDING,0)
-	:SetText("Guide")
-	.__END
+		:SetPoint(TOPLEFT,SMALL_PADDING,0)
+		:SetAnchor(BOTTOMRIGHT,titlebar.guideSelect,BOTTOMLEFT,-SMALL_PADDING,0)
+		:SetText("Guide")
+		.__END
 
 	frame.TitleBar = titlebar
 
 	-- Step Box
 	frame.stepbox = CHAIN(ui:Create("SecFrame",frame,name.."_StepBox"))
-	:SetAnchor(TOPLEFT,titlebar,BOTTOMLEFT,BIG_PADDING,BIG_PADDING)
-	:SetAnchor(TOPRIGHT,titlebar,BOTTOMRIGHT,-BIG_PADDING,BIG_PADDING)
-	:SetResizeToFitDescendents(true)
-	:SetHandler("OnResizedToFit",function(me,...)
-			if Viewer.moving then return end
-			Viewer:Debug("Stepbox Resized to %d %d",...)
-			Viewer:ResizeToFitSteps()		-- Time to fix the guide viewer.
-		end)
-	.__END
+		:SetAnchor(TOPLEFT,titlebar,BOTTOMLEFT,BIG_PADDING,BIG_PADDING)
+		:SetAnchor(TOPRIGHT,titlebar,BOTTOMRIGHT,-BIG_PADDING,BIG_PADDING)
+		:SetResizeToFitDescendents(true)
+		:SetHandler("OnResizedToFit",function(_,...)
+				if Viewer.moving then return end
+				Viewer:Debug("Stepbox Resized to %d %d",...)
+				Viewer:ResizeToFitSteps()		-- Time to fix the guide viewer.
+			end)
+		.__END
 
 	-- Below Steps
 	frame.settings = CHAIN(ui:Create("GuideButton",frame,name.."_Settings","Settings"))
-	:SetPoint(TOPRIGHT, frame.stepbox, BOTTOMRIGHT, 0, SMALL_PADDING )
-	.__END
+		:SetPoint(TOPRIGHT, frame.stepbox, BOTTOMRIGHT, 0, SMALL_PADDING )
+		.__END
 
 	local pboffset = (((frame.settings:GetHeight() + SMALL_PADDING + VIEWER_BOT_PADDING) -- Total space below stepbox
 			- PROGRESS_BAR_HEIGHT) / 2)
 	frame.progress = CHAIN(ui:Create("ProgressBar",frame,name.."_ProgressBar"))
-	:SetPoint(TOPLEFT, frame.stepbox, BOTTOMLEFT, 0, pboffset)
-	:SetPoint(RIGHT, frame.settings, LEFT, -SMALL_PADDING, 0 )
-	:SetHeight(PROGRESS_BAR_HEIGHT)
-	:SetShowLabelOnHover(true)
-	:SetHandler("OnMouseUp",function(me)
-			Viewer:ChangeProgressType()
-		end)
-	:HookHandler("OnMouseEnter",function(me)
-			if me.tooltip == "none" then return end
-			me.tooltipShown = true
+		:SetPoint(TOPLEFT, frame.stepbox, BOTTOMLEFT, 0, pboffset)
+		:SetPoint(RIGHT, frame.settings, LEFT, -SMALL_PADDING, 0 )
+		:SetHeight(PROGRESS_BAR_HEIGHT)
+		:SetShowLabelOnHover(true)
+		:SetHandler("OnMouseUp",function()
+				Viewer:ChangeProgressType()
+			end)
+		:HookHandler("OnMouseEnter",function(me)
+				if me.tooltip == "none" then return end
+				me.tooltipShown = true
 
-			CHAIN(ZGV.Tooltip)
-			:ClearLines()
-			:SetWidth(0)
-			:SetOwner(frame,TOP,0,0,BOTTOM)
-			:AddLine(me.tooltip)
-			:Show()
-		end)
-	:HookHandler("OnMouseExit",function(me)
-			me.tooltipShown = nil
+				CHAIN(ZGV.Tooltip)
+				:ClearLines()
+				:SetWidth(0)
+				:SetOwner(frame,TOP,0,0,BOTTOM)
+				:AddLine(me.tooltip)
+				:Show()
+			end)
+		:HookHandler("OnMouseExit",function(me)
+				me.tooltipShown = nil
 
-			ZGV.Tooltip:Hide()
-		end)
-	.__END
+				ZGV.Tooltip:Hide()
+			end)
+		.__END
 
 	frame.stepuis = {}	-- Step UIs
 
@@ -348,39 +348,39 @@ function Viewer:CreateMiniMapButton()
 	local mbut = name.."_ScreenToggle"
 
 	local frame = CHAIN(ui:Create("Frame",GuiRoot,mbut))	-- toplevel
-	:SetMovable(true)
-	:SetMouseEnabled(true)
-	:SetSize(MINIMAP_BUTTON_SIZE,MINIMAP_BUTTON_SIZE)
-	:AddTooltip(L["name"],L['minimap_tooltip'],nil,TOP,0,0,BOTTOM)
-	:SetHandler("OnMouseUp", function(me,but)
-			if me.recentlyMoved then me.recentlyMoved = nil return end		-- If dragged don't trigger
-			if but == LEFT_MOUSE_BUTTON then
-				Viewer:Toggle_GuideViewer()
-			elseif but == RIGHT_MOUSE_BUTTON then
-				ZGV.Settings:OpenSettings()
-			end
-		end)
-	:SetHandler("OnMoveStop", function(me)
-			local isValidAnchor, point, relativeTo, relativePoint, offsetX, offsetY = me:GetAnchor()
-
-			if isValidAnchor then
-				if ZGV.sv.profile.minibutanchor[1] ~= point or
-				ZGV.sv.profile.minibutanchor[3] ~= relativePoint or
-				not zo_floatsAreEqual(ZGV.sv.profile.minibutanchor[4],offsetX) or
-				not zo_floatsAreEqual(ZGV.sv.profile.minibutanchor[5],offsetY) then
-					me.recentlyMoved = true
-
-					ZGV.sv.profile.minibutanchor = {
-						point,
-						relativeTo:GetName(),		-- Can not store userdata. Just put a string in and it will be forced to GuiRoot when setting
-						relativePoint,
-						offsetX,
-						offsetY
-					}
+		:SetMovable(true)
+		:SetMouseEnabled(true)
+		:SetSize(MINIMAP_BUTTON_SIZE,MINIMAP_BUTTON_SIZE)
+		:AddTooltip(L["name"],L['minimap_tooltip'],nil,TOP,0,0,BOTTOM)
+		:SetHandler("OnMouseUp", function(me,but)
+				if me.recentlyMoved then me.recentlyMoved = nil return end		-- If dragged don't trigger
+				if but == LEFT_MOUSE_BUTTON then
+					Viewer:Toggle_GuideViewer()
+				elseif but == RIGHT_MOUSE_BUTTON then
+					ZGV.Settings:OpenSettings()
 				end
-			end
-		end)
-	.__END
+			end)
+		:SetHandler("OnMoveStop", function(me)
+				local isValidAnchor, point, relativeTo, relativePoint, offsetX, offsetY = me:GetAnchor()
+
+				if isValidAnchor then
+					if ZGV.sv.profile.minibutanchor[1] ~= point or
+					ZGV.sv.profile.minibutanchor[3] ~= relativePoint or
+					not zo_floatsAreEqual(ZGV.sv.profile.minibutanchor[4],offsetX) or
+					not zo_floatsAreEqual(ZGV.sv.profile.minibutanchor[5],offsetY) then
+						me.recentlyMoved = true
+
+						ZGV.sv.profile.minibutanchor = {
+							point,
+							relativeTo:GetName(),		-- Can not store userdata. Just put a string in and it will be forced to GuiRoot when setting
+							relativePoint,
+							offsetX,
+							offsetY
+						}
+					end
+				end
+			end)
+		.__END
 
 	ZGV.sv.profile.minibutanchor = ZGV.sv.profile.minibutanchor and #ZGV.sv.profile.minibutanchor==5 and ZGV.sv.profile.minibutanchor or DEFAULT_MINIMAP_ANCHOR
 	local point, relativeTo, relativePoint, offsetX, offsetY = unpack(ZGV.sv.profile.minibutanchor)
@@ -388,8 +388,8 @@ function Viewer:CreateMiniMapButton()
 	frame:SetPoint(point, relativeTo, relativePoint, offsetX, offsetY)
 
 	frame.Z = CHAIN(ui:Create("LetterZ",frame,mbut.."_ZZZZ"))
-	:SetAllPoints()
-	.__END
+		:SetAllPoints()
+		.__END
 
 	frame:ShowIf(ZGV.sv.profile.showmapbutton)
 	self.MinimapButton = frame
@@ -402,11 +402,11 @@ function Viewer:CreateStepUI(parent,stepnum)
 	local stepuis = parent.stepuis
 
 	local stepui = CHAIN(ui:Create("InvisFrame",stepbox,stepName))
-	:SetResizeToFitDescendents(true)
-	:SetHandler("OnResizedToFit",function(me,...)
-			Viewer:Debug("Step %s Resized to %d %d",me:GetName(),...)
-		end)
-	.__END
+		:SetResizeToFitDescendents(true)
+		:SetHandler("OnResizedToFit",function(me,...)
+				Viewer:Debug("Step %s Resized to %d %d",me:GetName(),...)
+			end)
+		.__END
 
 	-- First one is anchored to the stepbox, rest are the step above it.
 	if stepnum == 1 then
@@ -433,13 +433,13 @@ function Viewer:CreateGoalUI(parent,goalnum)
 	local goaluis = parent.goaluis
 
 	local goalui = CHAIN(ui:Create("SecFrame",parent,goalName))
-	:SetResizeToFitDescendents(true)
-	:SetMouseEnabled(true)
-	:SetHandler("OnMouseUp",function(me,but) me:OnMouseUp(but) end)
-	:SetHandler("OnResizedToFit",function(me,...)
-			Viewer:Debug("Goal %s Resized to %d %d",me:GetName(),...)
-		end)
-	.__END
+		:SetResizeToFitDescendents(true)
+		:SetMouseEnabled(true)
+		:SetHandler("OnMouseUp",function(me,but) me:OnMouseUp(but) end)
+		:SetHandler("OnResizedToFit",function(me,...)
+				Viewer:Debug("Goal %s Resized to %d %d",me:GetName(),...)
+			end)
+		.__END
 
 	if goalnum == 1 then
 		CHAIN(goalui)
@@ -453,36 +453,36 @@ function Viewer:CreateGoalUI(parent,goalnum)
 	end
 
 	goalui.icon = CHAIN(ui:Create("Texture",goalui,goalName.."_Icon"))
-	:SetPoint(LEFT,GOAL_ICON_PADDING,0)	-- TODO If you put it in TOPRIGHT then it makes the goal's Sizing to Descendents to be much bigger than needed (Height is ~5 px bigger than needed). Why?
-	:SetSize(GOAL_ICON_SIZE,GOAL_ICON_SIZE)
-	:SetTexture(ZGV.DIR .. "/Viewer/Skins/Stealth/stepicons.dds")
-	.__END
+		:SetPoint(LEFT,GOAL_ICON_PADDING,0)	-- TODO If you put it in TOPRIGHT then it makes the goal's Sizing to Descendents to be much bigger than needed (Height is ~5 px bigger than needed). Why?
+		:SetSize(GOAL_ICON_SIZE,GOAL_ICON_SIZE)
+		:SetTexture(ZGV.DIR .. "/Viewer/Skins/Stealth/stepicons.dds")
+		.__END
 
 	local labelOffset = GOAL_ICON_SIZE + GOAL_ICON_PADDING*2		-- Width of the icon, plus double it's offset
 	-- Note: Don't anchor the label off of the icon because run into issues of vertically centering a single line/multiple lines.
 
 	goalui.label = CHAIN(ui:Create("Label",goalui,goalName.."_Label",GOAL_FONTSIZE))
-	:SetPoint(LEFT,goalui,LEFT,labelOffset,0)
-	:SetPoint(RIGHT)
-	:SetCanWrap(true)
-	:SetText(goalName)
-	:SetHandler("OnTextChanged", function(me)
-			local goalui = me:GetParent()
-			if not goalui.dirty then return end		-- This is needed because sometimes OnTextChanged will trigger multiple times w/o text actually changing and do bad things
+		:SetPoint(LEFT,goalui,LEFT,labelOffset,0)
+		:SetPoint(RIGHT)
+		:SetCanWrap(true)
+		:SetText(goalName)
+		:SetHandler("OnTextChanged", function(me)
+				local goalui = me:GetParent()
+				if not goalui.dirty then return end		-- This is needed because sometimes OnTextChanged will trigger multiple times w/o text actually changing and do bad things
 
-			Viewer:Debug("%s Changed",me:GetName())
+				Viewer:Debug("%s Changed",me:GetName())
 
-			-- Reposition the icon based on if there is 1 line or multiple.
-			goalui.icon:ClearAllPoints()
-			if me:DidLineWrap() then
-				goalui.icon:SetPoint(TOPLEFT,GOAL_ICON_PADDING,GOAL_ICON_PADDING)
-			else
-				goalui.icon:SetPoint(LEFT,GOAL_ICON_PADDING,0)
-			end
+				-- Reposition the icon based on if there is 1 line or multiple.
+				goalui.icon:ClearAllPoints()
+				if me:DidLineWrap() then
+					goalui.icon:SetPoint(TOPLEFT,GOAL_ICON_PADDING,GOAL_ICON_PADDING)
+				else
+					goalui.icon:SetPoint(LEFT,GOAL_ICON_PADDING,0)
+				end
 
-			goalui.dirty = nil
-		end)
-	.__END
+				goalui.dirty = nil
+			end)
+		.__END
 
 	zginherits(goalui,GoalUI)
 
@@ -521,7 +521,7 @@ function FrameUI:OnUpdate(time)
 
 	local bug = Viewer.Frame.TitleBar.bug
 	if ZGV.BugReport.report and #ZGV.BugReport.report>0 then
-		local time = GetFrameTimeMilliseconds()%500
+		local time = _G.GetFrameTimeMilliseconds() % 500
 		bug:SetAlpha(time<250 and 1 or 0.5)
 		-- TODO: BLINK THE BUG
 	else
@@ -589,7 +589,7 @@ function StepUI:GetGoalUI(goalnum)
 end
 
 function StepUI:HideExtraGoals()
-	for i,goalframe in ipairs(self.goaluis) do
+	for _,goalframe in ipairs(self.goaluis) do
 		if goalframe.updated then
 			goalframe:Show()
 		else
@@ -609,21 +609,25 @@ function GoalUI:SetText(text)
 	self.label:SetText(text)
 end
 
-local NUM_ICONS=16
-function GoalUI:SetIcon(texture,num)
-	if type(texture)=="string" then self.icon:SetTexture(texture)
-	elseif type(texture)=="table" then self.icon:SetTexture(unpack(texture))
-	elseif type(texture)=="number" then self.icon:SetTextureCoords((texture-1)/16,texture/16,0,1)
+function GoalUI:SetIcon(texture,_)
+	if type(texture) == "string" then
+		self.icon:SetTexture(texture)
+	elseif type(texture) == "table" then
+		self.icon:SetTexture(unpack(texture))
+	elseif type(texture) == "number" then
+		self.icon:SetTextureCoords((texture-1)/16,texture/16,0,1)
 	end
 end
 
 function GoalUI:OnMouseUp(but)
-	if self.goal and self.goal.action=="confirm" then	-- Has a |confirm
+	if self.goal and self.goal.action == "confirm" then -- Has a |confirm
 		-- EXTRA! If it's a "nextreload", set it up.
 		local halt = self.goal:OnClick()
 		if not halt then Viewer:NextStepButton_OnClick() end
 	end
-	if but==RIGHT_MOUSE_BUTTON and Zgoo then Zgoo("ZGV.CurrentStep.goals["..(self.goal.num).."]") end
+	if but == RIGHT_MOUSE_BUTTON and Zgoo then
+		Zgoo("ZGV.CurrentStep.goals["..(self.goal.num).."]")
+	end
 end
 
 -----------------------------------------
@@ -637,10 +641,10 @@ end
 function Viewer:HelpButton_OnClick()
 	if not self.HelpPopup then
 		local popup = ZGV.Popup:New("Zygor_Help_Popup")
-		popup.declinebutton:Hide()
-		CHAIN(popup.acceptbutton)
-		:ClearAllPoints()
-		:SetPoint(BOTTOM,popup,BOTTOM,0,-5)
+			popup.declinebutton:Hide()
+			CHAIN(popup.acceptbutton)
+			:ClearAllPoints()
+			:SetPoint(BOTTOM,popup,BOTTOM,0,-5)
 
 		self.HelpPopup = popup
 	end
@@ -650,7 +654,7 @@ function Viewer:HelpButton_OnClick()
 end
 
 function Viewer:PrevStepButton_OnClick(but)
-	if IsControlKeyDown() and not IsAltKeyDown() then
+	if _G.IsControlKeyDown() and not _G.IsAltKeyDown() then
 		ZGV:FocusStep(1)
 		ZGV.pause=nil
 	else
@@ -662,7 +666,7 @@ function Viewer:NextStepButton_OnClick(but)
 	self:NextStep_GuideViewer(1,but == RIGHT_MOUSE_BUTTON)
 end
 
-function Viewer:GuideSelectButton_OnClick(but)
+function Viewer:GuideSelectButton_OnClick()
 	ZGV.GuideMenu:Show()
 end
 
@@ -672,7 +676,9 @@ end
 
 -- Can pass a parameter to show/hide to not toggle the main ZGV option. This is done when hid because of an action layer change
 function Viewer:Show_GuideViewer(notoggle)
-	if not self.Frame then self:CreateZGVF() end
+	if not self.Frame then
+		self:CreateZGVF()
+	end
 
 	if not notoggle then
 		ZGV.sv.profile.showviewer = true
@@ -719,7 +725,7 @@ function Viewer:NextStep_GuideViewer(count,fast)
 	count = count or 1
 	if not self.Frame then return end
 
-	for i=1,count do
+	for i = 1,count do
 		ZGV:SkipStep(fast,i<count)
 	end
 end
@@ -728,7 +734,7 @@ function Viewer:PrevStep_GuideViewer(count,fast)
 	count = count or 1
 	if not self.Frame then return end
 
-	for i=1,count do
+	for i = 1,count do
 		ZGV:PreviousStep(fast,i<count)
 	end
 end
@@ -765,7 +771,7 @@ function Viewer:Update(full)
 
 					local goalnum = 1	-- goalnum incremented manually so tip lines can be added
 					-- Lets handle goals!
-					for i,goal in ipairs(curStep.goals) do while(1) do
+					for _,goal in ipairs(curStep.goals) do while(1) do
 						local goalframe = stepframe:GetGoalUI(goalnum)
 						local text = goal:GetText()
 						local status = goal:GetStatus()
@@ -820,37 +826,40 @@ function Viewer:Update(full)
 							if goal.next then
 								goalframe:SetIcon(actionicon.next)
 
-							elseif status=="passive" then
+							elseif status == "passive" then
 
-								if goal.action=="talk" or goal.action=="from" or goal.action=="goto" or
-								goal.action=="goldcollect" or goal.action=="goldtracker" then
-									goalframe:SetIcon(actionicon[goal.action])
+								if 	goal.action == "talk" or 
+									goal.action == "from" or 
+									goal.action == "goto" or
+									goal.action == "goldcollect" or 
+									goal.action == "goldtracker" then
+										goalframe:SetIcon(actionicon[goal.action])
 								else
 									goalframe:SetIcon(1)
 								end
 								--icon:SetDesaturated(false)
 
-							elseif status=="incomplete" then
+							elseif status == "incomplete" then
 
 								goalframe:SetIcon(actionicon[goal.action])
 								--icon:SetDesaturated(false)
 
-							elseif status=="complete" then
+							elseif status == "complete" then
 
 								goalframe:SetIcon(3)
 								--icon:SetDesaturated(false)
 
-							elseif status=="impossible" then
+							elseif status == "impossible" then
 
 								goalframe:SetIcon(actionicon[goal.action])
 								--icon:SetDesaturated(true)
 
-							elseif status=="obsolete" then
+							elseif status == "obsolete" then
 
 								goalframe:SetIcon(actionicon[goal.action])
 								--icon:SetDesaturated(true)
 
-							else	-- maybe hidden, maybe WTF
+							else -- maybe hidden, maybe WTF
 								goalframe:SetIcon(1)
 							end
 						else
@@ -858,15 +867,13 @@ function Viewer:Update(full)
 							goal.icon:Hide()
 						end
 
-
-
 						-- Backdrops
 
 						local arr = (ZGV.Pointer.ArrowFrame and ZGV.Pointer.ArrowFrame.waypoint and ZGV.Pointer.ArrowFrame.waypoint.goalnum==goal.num and 0.3) or 0
 
 						if goal:IsCompletable() then
 							local complete,possible = goal:IsComplete()
-							if complete=="past" then
+							if complete == "past" then
 								goalframe:SetBackdropColor(0,1,0,.5)  -- saving this for future use, I guess. We don't really show many CURRENT and COMPLETE steps, they're usually past already.
 							elseif complete then
 								goalframe:SetBackdropColor(arr,1,arr,.5)
@@ -895,7 +902,7 @@ function Viewer:Update(full)
 
 				else
 					-- No current guide.
-					if #ZGV.registeredguides>0 then
+					if #ZGV.registeredguides > 0 then
 						Fr.TitleBar.guideLabel:SetText(L["guide_notselected"])
 					else
 						Fr.TitleBar.guideLabel:SetText(L["guide_notloaded"])
@@ -920,8 +927,8 @@ function Viewer:Update(full)
 			local point, relativeTo, relativePoint, offsetX, offsetY = unpack(ZGV.sv.profile.vieweranchor)
 			relativeTo = GuiRoot		-- Force to GuiRoot.
 			CHAIN(self.Frame.master)
-			:ClearAllPoints()
-			:SetPoint(point, relativeTo, relativePoint, offsetX, offsetY)
+				:ClearAllPoints()
+				:SetPoint(point, relativeTo, relativePoint, offsetX, offsetY)
 
 			self:Update()
 		end
@@ -956,9 +963,7 @@ function Viewer:Update(full)
 			if not curGuide then
 				-- No guide, no progress
 				label = L['frame_guide_none']
-			elseif progBarType == PROG_BAR_TYPE_STEP
-			or progBarType == PROG_BAR_TYPE_LEVEL
-			then
+			elseif progBarType == PROG_BAR_TYPE_STEP or progBarType == PROG_BAR_TYPE_LEVEL then
 				progressText, tooltip, progress = curGuide:GetCompletionText(progBarType)
 				if not progress then return end
 
@@ -998,8 +1003,8 @@ function Viewer:Update(full)
 			end
 		end
 
--- Called from UI Creation handlers
--- Resize the Viewer to fit the stepbox
+		-- Called from UI Creation handlers
+		-- Resize the Viewer to fit the stepbox
 		function Viewer:ResizeToFitSteps()
 			if not self.Frame then return end
 
@@ -1018,8 +1023,8 @@ function Viewer:Update(full)
 
 			-- When changing the frame it sometimes loses it's anchor to master. Strongely enforce it.
 			CHAIN(frame)
-			:ClearAllPoints()
-			:SetPoint(TOP,frame.master)
+				:ClearAllPoints()
+				:SetPoint(TOP,frame.master)
 		end
 
 		function Viewer:SetAlpha(a)
@@ -1040,8 +1045,8 @@ function Viewer:Update(full)
 			ZGV.sv.profile.vieweranchor = DEFAULT_ANCHOR
 
 			CHAIN(Viewer.Frame.master)
-			:ClearAllPoints()
-			:SetPoint(unpack(ZGV.sv.profile.vieweranchor))
+				:ClearAllPoints()
+				:SetPoint(unpack(ZGV.sv.profile.vieweranchor))
 		end
 
 		function Viewer:ResetToDefaultWidth()
@@ -1092,7 +1097,7 @@ function Viewer:Update(full)
 				end
 			end
 
-			ZO_WorldMap_UpdateMap()								-- TODO temp fix for world map sometimes not updating properly
+			_G.ZO_WorldMap_UpdateMap()								-- TODO temp fix for world map sometimes not updating properly
 		end
 
 -----------------------------------------
@@ -1123,19 +1128,19 @@ function Viewer:Update(full)
 		2 is open
 --]]
 
-		function Viewer:EVENT_ACTION_LAYER_PUSHED(event,layerIndex,activeLayerIndex)
+		function Viewer:EVENT_ACTION_LAYER_PUSHED(_,_,_)
 			--print(ActionLabels[layerIndex],ActionLabels[activeLayerIndex])
 			Viewer:HandleActionLayer()
 		end
 
-		function Viewer:EVENT_ACTION_LAYER_POPPED(event,layerIndex,activeLayerIndex)
+		function Viewer:EVENT_ACTION_LAYER_POPPED(_,_,_)
 			--print(ActionLabels[layerIndex],ActionLabels[activeLayerIndex])
 			Viewer:HandleActionLayer()
 		end
 
--- state = true -> Enter Combat
--- state = false -> Exit Combat
-		function Viewer:EVENT_PLAYER_COMBAT_STATE(event,state)
+		-- state = true -> Enter Combat
+		-- state = false -> Exit Combat
+		function Viewer:EVENT_PLAYER_COMBAT_STATE(_,state)
 			if not ZGV.sv.profile.hideincombat then return end
 
 			if state then
