@@ -1384,7 +1384,7 @@ ZGV.MapData = {
 		["kulatimines-a_base"] = { name = "Kulati Mines", xoffset = 0.182758, yoffset = 0.402389, scale = 0.001336, },
 		["kulatimines-b_base"] = { name = "Kulati Mines", xoffset = 0.183133, yoffset = 0.403217, scale = 0.000738, },
 		["kunasdelve_base"] = { name = "Kuna's Delve", id = 248, xoffset = 0.462337, yoffset = 0.574093, scale = 0.011875, },
-		["kvatchcity_base_0"] = { xoffset = 0.359065, yoffset = 0.549541, scale = 0.017458, },
+		["kvatchcity_base"] = { xoffset = 0.359065, yoffset = 0.549541, scale = 0.017458, },
 		["kwamacolony_base"] = { name = "Lady Llarel's Shelter", id = 200, xoffset = 0.722149, yoffset = 0.499609, scale = 0.010352, },
 		["laeloriaruins_base"] = { name = "Laeloria Ruins", xoffset = 0.420346, yoffset = 0.699649, scale = 0.01039, },
 		["lastresortbarrow_base"] = { name = "Last Rest", xoffset = 0.6788, yoffset = 0.267, scale = 0.00536, },
