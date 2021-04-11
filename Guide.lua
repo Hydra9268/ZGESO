@@ -250,7 +250,7 @@ function Guide:GetFirstValidStep(start)
 	if start ~= 1 and not startstep then
 		return self:GetFirstValidStep(1)
 	end
-	
+
 	assert(startstep,"GetFirstValidStep: no starting step at 1?? what the hell??")
 
 	-- starting step is good?
@@ -281,7 +281,6 @@ function Guide:GetCompletion(mode)
 	if mode == "steps" then
 		-- request full parsing for those
 		if not self.fully_parsed then
-			--self.need_to_parse=true
 			ZGV:Debug("Guide:GetCompletion : '"..self.title.."' needs parsing for completion type '"..mode.."'")
 			return "loading"
 		end
@@ -311,7 +310,7 @@ function Guide:GetCompletion(mode)
 			else
 				nextStepComp = nextstep:IsComplete(1)
 			end
-			
+
 			if step:AreRequirementsMet() -- Valid step?
 			and not step.finish	-- Not last step
 			then
@@ -339,7 +338,7 @@ function Guide:GetCompletionText(mode)
 	mode = mode or self.completionmode
 	local comp,a,b,_,_ = self:GetCompletion(mode)
 	assert(comp) -- Sanity!
-	
+
 	if comp == "loading" then
 		return "...","(loading)", 0
 	end
@@ -377,12 +376,15 @@ function Guide:AdvertiseWithPopup(nodelay)
 
 	local popup = ZGV.AdvertisePopup
 	if not popup then
+		-- This text hides unless needed
 		popup = ZGV.Popup:New("Zygor_AdvertiseGuide_Popup","sis")
 
 		--[[
 		if self.image then
 		dialog.tex = CHAIN(dialog:CreateTexture())
-		:SetPoint("TOP",dialog.text2,"BOTTOM",0,-3) :SetSize(275,115) :SetTexture(self.image)
+			:SetPoint("TOP",dialog.text2,"BOTTOM",0,-3)
+			:SetSize(275,115)
+			:SetTexture(self.image)
 		.__END
 		end
 		--]]
@@ -390,16 +392,16 @@ function Guide:AdvertiseWithPopup(nodelay)
 		popup.OnAccept = function(me)
 			ZGV:SetGuide(me.guide,me.guide.CurrentStepNum)
 		end
-	
+
 		popup.OnDecline = function(me)
 			ZGV.db.char.ignoredguides[me.guide.title] = true
 		end
-	
+
 		--[[
-		dialog.OnEscape = function(self) 
-			if not ZGV.tempguideblock then 
-				ZGV.tempguideblock = {} 
-			end 
+		dialog.OnEscape = function(self)
+			if not ZGV.tempguideblock then
+				ZGV.tempguideblock = {}
+			end
 			ZGV.tempguideblock[self.guide.title] = true
 			self = nil
 		end
@@ -409,6 +411,7 @@ function Guide:AdvertiseWithPopup(nodelay)
 	end
 
 	popup:SetText(L['static_nextguide'],self.title_short,L['static_nextguide_anyzone'])
+	popup:SetDimensionConstraints(225,nil,625,nil)
 	popup.guide = self
 
 	ZGV.pause = true -- to avoid a loop of "step complete" clicks.

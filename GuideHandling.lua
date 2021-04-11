@@ -400,7 +400,7 @@ function ZGV:GetGuideByTitle(title)
 	end
 end
 
-function ZGV:MaybeSuggestNextGuide()		-- TODO Assume all guides must be completed for the time being. Moving to next guides is handled with a |next line
+function ZGV:MaybeSuggestNextGuide() -- TODO Assume all guides must be completed for the time being. Moving to next guides is handled with a |next line
 	if true then return end
 	-- And now check if the next guide is up for suggesting.
 	-- However, don't bother suggesting others when we're exclusive and still suggested.
@@ -445,7 +445,7 @@ function ZGV:RegisterGuide(title,data,extra)
 	title = self:SanitizeGuideTitle(title)
 
 	local guide = ZGV.GuideProto:New(title,data,extra)
-	
+
 	if guide then
 		guide:Parse(false)
 	end
@@ -530,8 +530,8 @@ function ZGV:SetGuide(name,step)
 
 			self.BadGuidePopup:SetText(L['static_badguide']:format(guide.title_short,msg or ""))
 
-			self.BadGuidePopup.guide=guide
-			self.BadGuidePopup.step=step
+			self.BadGuidePopup.guide = guide
+			self.BadGuidePopup.step = step
 
 			self.BadGuidePopup:Show()
 
@@ -543,7 +543,7 @@ function ZGV:SetGuide(name,step)
 			self.CurrentGuide:Unload()
 		end
 
-		guide:Parse(true)		-- Make sure this is parsed
+		guide:Parse(true) -- Make sure this is parsed
 
 		if guide.steps and #guide.steps > 0 and not guide.parse_failed then
 			local name = guide.title
