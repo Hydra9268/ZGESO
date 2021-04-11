@@ -379,16 +379,6 @@ function Guide:AdvertiseWithPopup(nodelay)
 		-- This text hides unless needed
 		popup = ZGV.Popup:New("Zygor_AdvertiseGuide_Popup","sis")
 
-		--[[
-		if self.image then
-		dialog.tex = CHAIN(dialog:CreateTexture())
-			:SetPoint("TOP",dialog.text2,"BOTTOM",0,-3)
-			:SetSize(275,115)
-			:SetTexture(self.image)
-		.__END
-		end
-		--]]
-
 		popup.OnAccept = function(me)
 			ZGV:SetGuide(me.guide,me.guide.CurrentStepNum)
 		end
@@ -396,16 +386,6 @@ function Guide:AdvertiseWithPopup(nodelay)
 		popup.OnDecline = function(me)
 			ZGV.db.char.ignoredguides[me.guide.title] = true
 		end
-
-		--[[
-		dialog.OnEscape = function(self)
-			if not ZGV.tempguideblock then
-				ZGV.tempguideblock = {}
-			end
-			ZGV.tempguideblock[self.guide.title] = true
-			self = nil
-		end
-		--]]
 
 		ZGV.AdvertisePopup = popup
 	end

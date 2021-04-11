@@ -255,7 +255,7 @@ GuideViewer("Option", "enUS", function() local f = {
 
 			------ ARROW -------
 			['opt_arrow'] = "Waypoint Arrow",
-			['opt_arrow_desc'] = "",				--"These settings control the direction arrow",-- and map markers.",
+			['opt_arrow_desc'] = "", -- "These settings control the direction arrow",-- and map markers.",
 			['opt_arrowshow'] = "Enable waypoint arrow",
 			['opt_arrowshow_desc'] = "Display a rotating arrow, indicating the direction towards the current waypoint.",
 			['opt_arrow_display'] = "Arrow look and feel:",
@@ -330,30 +330,30 @@ GuideViewer("Specials", "enUS", function() return {
 				-- one-shot special cases
 				for _,data in ipairs(specials) do
 					if word:match(data[1]) then
-						return data[2]==1 and word or word:gsub(data[1],data[2])
+						return data[2] == 1 and word or word:gsub(data[1],data[2])
 					end
 				end
 
 				-- breakdown.
-				local rest=""
+				local rest = ""
 				local preof,postof = word:match("^(.-) of (.+)$")
 				if preof then
-					word=preof
-					rest=" of "..postof
+					word = preof
+					rest = " of "..postof
 				else
 					local obj,verb = word:match("^(.+)( %a-ed)$")
 					local notverbs = _G.notverbs
 					if obj and not notverbs[verb:sub(2)] then
-						word=obj
-						rest=verb
+						word = obj
+						rest = verb
 					end
 				end
 
 				local notlastw,lastw = word:match("^(.+%s)(.-)$")
 				if lastw then
-					word=lastw
+					word = lastw
 				else
-					notlastw=""
+					notlastw = ""
 				end
 
 				-- got a proper exception for this word?
@@ -363,7 +363,7 @@ GuideViewer("Specials", "enUS", function() return {
 				else
 					for sing,plur in pairs(wordspecials) do
 						if word:match(sing) then
-							return notlastw .. (plur==1 and word or word:gsub(sing,plur)) .. rest
+							return notlastw .. (plur == 1 and word or word:gsub(sing,plur)) .. rest
 						end
 					end
 
@@ -371,26 +371,26 @@ GuideViewer("Specials", "enUS", function() return {
 
 					-- just use language defaults, I guess.
 					local last = word:sub(-1)
-					if (last=="y" and not word:sub(-2):match("[aeiou]y")) then
+					if (last == "y" and not word:sub(-2):match("[aeiou]y")) then
 						return notlastw .. word:sub(1,-2).."ies" .. rest
-					elseif word:sub(-2)=="ff" then
+					elseif word:sub(-2) == "ff" then
 						return notlastw .. word:sub(1,-3).."ves" .. rest
-					elseif last=="f" then
+					elseif last == "f" then
 						return notlastw .. word:sub(1,-2).."ves" .. rest
-					elseif word:sub(-2)=="fe" then
+					elseif word:sub(-2) == "fe" then
 						return notlastw .. word:sub(1,-3).."ves" .. rest
-					elseif word:sub(-3)=="ess" then
+					elseif word:sub(-3) == "ess" then
 						return notlastw .. word.."es" .. rest
-					elseif word:sub(-2)=="ch" or word:sub(-2)=="sh" then
+					elseif word:sub(-2) == "ch" or word:sub(-2)=="sh" then
 						return notlastw .. word.."es" .. rest
-					elseif last=="x" then
+					elseif last == "x" then
 						return notlastw .. word.."es" .. rest
-					elseif last=="s" then
+					elseif last == "s" then
 						return notlastw .. word .. rest
-					elseif last=="o" then
+					elseif last == "o" then
 						return notlastw .. word .."es" .. rest
 						-- the following is to prevent pluralization of goal items ending with a double-quote
-					elseif last=="\"" then
+					elseif last == "\"" then
 						return notlastw .. word .. rest
 						--print(notlastw.."..."..word.."..."..rest)
 					else
