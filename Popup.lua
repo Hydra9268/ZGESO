@@ -53,20 +53,7 @@ local MIN_WIDTH = 400
 local MAX_WIDTH = 200
 
 local RESIZE_X_PADDING = 30
-local RESIZE_Y_PADDING = LOGO_Y_OFFSET + 5 --+ BUT_Y_OFFSET + TEXT_Y_OFFSET-- + 5
-
---[[
-local popupTypes = {
-	["sis"] = 0,
-	["monk"] = 1,
-	["dungeon"] = 2,
-	["mount"] = 3,
-	["gear"] = 4,
-	["panda"] = 5,
-	["loot"] = 6,
-	["default"] = 7,
-}
---]]
+local RESIZE_Y_PADDING = LOGO_Y_OFFSET + 5
 
 -----------------------------------------
 -- SAVED REFERENCES
