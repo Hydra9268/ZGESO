@@ -108,6 +108,9 @@ Only allow this step if the player doesn't have the quest or hasn't completed th
 `|only not ZGV.Quests:HasQuest("A City in Black")`<br>
 Appears to be the best method for accepting quests. `|only if not` causes the step to stick after accepting the quest.
 
+`|only ZGV.Quests:HasQuest("A City in Black")`<br>
+Appears to be the best method for quest steps. `|only if` causes the step to stick after accepting the quest.
+
 `|or` = Handler for dialog choices (Note: you need to put the |or handler on each choice)
 
 For example<br>
