@@ -123,6 +123,11 @@ step
 * `/zgpos gps` - For general map data. Works in any map.
 * `/dump ZGFunctionName(arguments)` - A way to execute ZGESO's public functions<br> (e.g. `/dump ZGV.Pointer:GetDistToCoords(alinor_base,48.80,54.64)`)
 
+#### /dump functions of note:
+
+`/dump ZGV.Data:GetQuestIdByName("A City in Black")` - Returns the quest id
+`/dump ZGV.Quests:IsQuestComplete(questid)` - returns a boolean for quest id
+
 ----
 
 ### Addon Resource
