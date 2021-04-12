@@ -33549,12 +33549,18 @@ goto 46.03,30.48
 talk Captain Eugien Gaercroft
 accept Beyond the Call
 step
+goto 48.26,24.89
+step
 goto 48.12,25.31
 |tip Upstairs inside the building.
 'Search the Chapel |q Beyond the Call/Search the Chapel
 step
 goto 48.13,25.31
 talk Hatmi |q Beyond the Call/Talk to Hatmi
+step
+goto 47.98,24.83
+step
+goto 48.13,25.71
 step
 goto 49.35,22.91
 'Find the Wyrd Camp |q Beyond the Call/Find the Wyrd Camp
@@ -33577,10 +33583,11 @@ step
 goto 50.41,24.51
 talk Wyress Delphique |q Beyond the Call/Talk to Wyress Delphique
 step
-goto 50.39,22.34
+goto 50.42,22.30
 click Northglen
-'Leave the Ruins |q Beyond the Call/.*Destroy the Markers.*
 |tip Manually skip to the next step.
+step
+goto 53.11,23.28
 step
 goto 50.65,30.99
 click Dark Witness Marker
@@ -33599,8 +33606,10 @@ click Living with Lycanthropy
 lorebook Living with Lycanthropy/1/4/2
 step
 goto 51.20,34.17
-|tip Downstairs inside the building.
-'Locate Duraeg |q Beyond the Call/Locate Duraeg
+click Duraeg's House
+|tip Manually skip to the next step.
+step
+goto 51.32,34.37
 step
 goto 51.07,34.20
 kill Duraeg
@@ -33609,7 +33618,6 @@ step
 goto 51.55,34.11
 click Northglen
 'Follow Isabeth Gaercroft |q Beyond the Call/Follow Isabeth Gaercroft |future
-|tip Manually skip to the next step.
 step
 goto 51.90,34.19
 talk Isabeth Gaercroft |q Beyond the Call/Talk to Isabeth Gaercroft
@@ -33636,11 +33644,8 @@ goto 49.13,31.19
 |tip Manually skip to the next step.
 step
 goto 46.19,28.82
-'Follow the path |q Beyond the Call/Return to the Evermore Camp
-|tip Manually skip to the next step.
 step
 goto 46.05,29.84
-'Return to the Evermore Camp |q Beyond the Call/Return to the Evermore Camp
 step
 goto 45.99,30.05
 'Watch the dialogue
@@ -33657,7 +33662,7 @@ goto 45.96,29.97
 talk Captain Eugien Gaercroft
 turnin Beyond the Call
 step
-goto 45.98,30.16
+goto 45.98,30.11
 talk Wyress Delphique
 accept Destroying the Dark Witnesses
 step
@@ -33687,9 +33692,7 @@ talk Arnitole's Fear
 |tip Wait in this spot, he runs and teleports around. Stand here until he runs up to you.
 'Recover Arnitole's Fear |q Conflicted Emotions/Recover Arnitole's Fear
 step
-goto 55.16,24.02
-'Follow the path up |q Conflicted Emotions/Recover Arnitole's Anger
-|tip Manually skip to the next step.
+goto 55.18,24.07
 step
 goto 56.69,25.98
 talk Arnitole's Anger
@@ -33720,6 +33723,8 @@ goto 56.36,21.84
 talk Zaag
 turnin Conflicted Emotions
 step
+goto 53.15,22.69
+step
 goto 52.14,18.21
 talk Herald Kixathi
 accept Mistress of the Lake
@@ -33730,20 +33735,13 @@ lorebook The True-Told Tale of Hallin, Pt. 1/1/4/7
 step
 goto 51.97,16.80
 click Bisnensel
-'Enter Bisnensel |q Mistress of the Lake/.*Investigate the Essence.* |count 1
 |tip Manually skip to the next step.
 step
 goto bisnensel_base 65.03,54.75
-'Follow the path down |q Mistress of the Lake/.*Investigate the Essence.*
-|tip Manually skip to the next step.
 step
-goto 52.90,60.08
-'Follow the path |q Mistress of the Lake/.*Investigate the Essence.*
-|tip Manually skip to the next step.
+goto 65.00,58.15
 step
 goto 40.42,59.95
-'Follow the path up |q Mistress of the Lake/.*Investigate the Essence.*
-|tip Manually skip to the next step.
 step
 goto 16.28,39.99
 |tip Kill a Wisp around this area to get 3 Mysterious Essences.
@@ -33759,8 +33757,6 @@ click Essence Trough
 'Investigate the Essence Trough |q Mistress of the Lake/.*Investigate the Essence Trough.* |count 3
 step
 goto 20.74,47.10
-'Follow the path  |q Mistress of the Lake/Find Apostle Marian
-|tip Manually skip to the next step.
 step
 goto 25.01,50.73
 'Find Apostle Marian |q Mistress of the Lake/Find Apostle Marian
@@ -33769,8 +33765,6 @@ goto 29.02,50.53
 talk Apostle Marian |q Mistress of the Lake/Talk to Apostle Marian
 step
 goto 31.39,60.21
-'Follow the path |q Mistress of the Lake/.*Free the Captured Rain Disciples.*
-|tip Manually skip to the next step.
 step
 goto 64.67,61.25
 talk Disciple Jeannelle
@@ -33781,32 +33775,22 @@ talk Disciple Cesamund
 'Free the Capture Rain Disciple |q Mistress of the Lake/.*Free the Captured Rain Disciples.* |count 2
 step
 goto 66.68,57.44
-'Follow the path up |q Mistress of the Lake/.*Free the Captured Rain Disciples.*
-|tip Manually skip to the next step.
 step
 goto 57.21,50.82
 talk Disciple Dianette
 'Free the Capture Rain Disciple |q Mistress of the Lake/.*Free the Captured Rain Disciples.* |count 3
 step
 goto 74.98,53.40
-'Follow the path |q Mistress of the Lake/.*Free the Captured Rain Disciples.*
-|tip Manually skip to the next step.
 step
 goto 75.41,68.46
 talk Disciple Theophile
 'Free the Capture Rain Disciple |q Mistress of the Lake/.*Free the Captured Rain Disciples.* |count 4
 step
 goto 65.17,65.21
-'Follow the path down |q Mistress of the Lake/Return to Apostle Marian
-|tip Manually skip to the next step.
 step
 goto 56.11,60.15
-'Follow the path |q Mistress of the Lake/Return to Apostle Marian
-|tip Manually skip to the next step.
 step
 goto 40.62,59.87
-'Follow the stairs up |q Mistress of the Lake/Return to Apostle Marian
-|tip Manually skip to the next step.
 step
 goto 35.99,60.09
 'Return to Apostle Marian |q Mistress of the Lake/Return to Apostle Marian
@@ -33837,12 +33821,14 @@ click Food Basket
 'Burn the Disciples' Food|q Sunken Knowledge/Burn Disciples' Food
 step
 goto 18.57,34.16
-'Follow the path up |q Sunken Knowledge/Talk to Herald Kixathi
-|tip Manually skip to the next step.
+step
+goto 11.79,32.20
+step
+goto 06.50,41.80
 step
 goto 8.18,44.50
-'Follow the path |q Sunken Knowledge/Talk to Herald Kixathi
-|tip Manually skip to the next step.
+step
+goto 14.93,43.93
 step
 goto 20.75,36.48
 talk Herald Kixathi |q Sunken Knowledge/Talk to Herald Kixathi
@@ -33873,24 +33859,16 @@ goto 19.72,42.77
 |tip Manually skip to the next step.
 step
 goto 20.67,47.87
-'Follow the path |q Sunken Knowledge/Stop the Nereid from Flooding the Ruins
-|tip Manually skip to the next step.
 step
 goto 32.57,60.07
-'Follow the path |q Sunken Knowledge/Stop the Nereid from Flooding the Ruins
-|tip Manually skip to the next step.
 step
 goto 63.29,57.50
-'Follow the path up |q Sunken Knowledge/Stop the Nereid from Flooding the Ruins
-|tip Manually skip to the next step.
+step
+goto 65.13,53.78
 step
 goto 78.50,59.89
-'Follow the path |q Sunken Knowledge/Stop the Nereid from Flooding the Ruins
-|tip Manually skip to the next step.
 step
 goto 85.56,52.64
-'Follow the path down |q Sunken Knowledge/Stop the Nereid from Flooding the Ruins
-|tip Manually skip to the next step.
 step
 goto 90.73,52.93
 kill Lorelia
@@ -33901,24 +33879,15 @@ talk Voice of Hermaeus Mora
 turnin Sunken Knowledge
 step
 goto 88.13,54.49
-'Follow the path up |q The Charge of Evermore/Talk to Squire Theo Rocque |future
-|tip Manually skip to the next step.
 step
-goto 81.85,52.70
-'Follow the path |q The Charge of Evermore/Talk to Squire Theo Rocque |future
-|tip Manually skip to the next step.
+goto 80.27,52.75
 step
 goto 77.34,59.98
-'Follow the path |q The Charge of Evermore/Talk to Squire Theo Rocque |future
-|tip Manually skip to the next step.
 step
 goto 65.13,50.33
-'Follow the path up |q The Charge of Evermore/Talk to Squire Theo Rocque |future
-|tip Manually skip to the next step.
 step
 goto 65.13,47.94
 click Halcyon Lake
-'Leave Bisnensel |q The Charge of Evermore/Talk to Squire Theo Rocque |future
 |tip Manually skip to the next step.
 step
 goto bangkorai_base 52.48,8.54
@@ -33934,15 +33903,9 @@ click The Viridian Sentinel
 lorebook The Viridian Sentinel/1/4/6
 step
 goto 41.33,23.40
-'Follow the path |q The Charge of Evermore/Talk to Squire Theo Rocque
-|tip Manually skip to the next step.
 step
 goto 41.85,24.39
 talk Squire Theo Rocque |q The Charge of Evermore/Talk to Squire Theo Rocque
-step
-goto 41.85,24.39
-'Watch the dialogue
-talk Squire Theo Rocque |q The Charge of Evermore/Learn What Happened in Murcien's Hamlet
 step
 goto 42.32,24.37
 click Bucket
