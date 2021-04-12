@@ -79,21 +79,21 @@ local ConditionEnv = {
 		if not y then
 			map,x,y = ((goal and goal.map) or (step and step.map)),map,x
 		end
-		if not x and not y and goal and goal.x then 
+		if not x and not y and goal and goal.x then
 			x,y = goal.x,goal.y
 		end
 		if not x and not y and step and step.goals then
-			for gi,go in ipairs(step.goals) do 
-				if go.x then 
-					map,x,y = go.map,go.x,go.y 
+			for gi,go in ipairs(step.goals) do
+				if go.x then
+					map,x,y = go.map,go.x,go.y
 					break
 				end
 			end
 		end
-		if x > 1 then 
-			x = x / 100 
+		if x > 1 then
+			x = x / 100
 		end
-		if y > 1 then 
+		if y > 1 then
 			y = y / 100
 		end
 		return ZGV.Pointer:GetDistToCoords(map,x,y)
