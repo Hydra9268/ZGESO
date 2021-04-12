@@ -100,7 +100,10 @@ For example<br>
 Only allow this step if the player's precise level is less than 6 and the current map zone index equals 712 (which is Elsweyr)
 
 `|only if not ZGV.QuestTracker:IsQuestComplete("A City in Black")`<br>
-Only allow this step if the player hasn't completed the quest. Useful for situations where the quest was already picked up.
+Only allow this step if the player hasn't completed the quest.
+
+`|only if not ZGV.Quests:HasQuest("A City in Black") or ZGV.Quests:IsQuestComplete("A City in Black")`<br>
+Only allow this step if the player doesn't have the quest or hasn't completed the quest.
 
 `|or` = Handler for dialog choices (Note: you need to put the |or handler on each choice)
 
@@ -129,7 +132,8 @@ step
 #### /dump functions of note:
 
 * `/dump ZGV.Data:GetQuestIdByName("A City in Black")` - Returns the quest id
-* `/dump ZGV.Quests:IsQuestComplete(questid)` - returns nil if false
+* `/dump ZGV.Quests:IsQuestComplete(questid)` - returns true or nil if false
+* `/dump ZGV.Quests:HasQuest(questid)` - return a boolean
 
 ----
 
