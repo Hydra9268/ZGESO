@@ -129,7 +129,7 @@ step
 #### /dump functions of note:
 
 * `/dump ZGV.Data:GetQuestIdByName("A City in Black")` - Returns the quest id
-* `/dump ZGV.Quests:IsQuestComplete(questid)` - returns a boolean for quest id
+* `/dump ZGV.Quests:IsQuestComplete(questid)` - returns nil if false
 
 ----
 
