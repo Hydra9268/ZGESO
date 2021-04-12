@@ -33693,6 +33693,8 @@ talk Arnitole's Fear
 'Recover Arnitole's Fear |q Conflicted Emotions/Recover Arnitole's Fear
 step
 goto 55.18,24.07
+'Follow the path up |q Conflicted Emotions/Recover Arnitole's Anger
+|tip Manually skip to the next step.
 step
 goto 56.69,25.98
 talk Arnitole's Anger
