@@ -33452,37 +33452,55 @@ ZGV:RegisterGuide("Daggerfall Covenant Leveling Guides\\Bangkorai",[[
 loadingimage loadscreen_bankorai_01.dds
 description This region takes its name from its most famous feature, the Bangkorai Pass, which has served as High Rock's defense against the wild raiders of Hammerfell for countless generations. The uplands north of the pass and the desert to the south are both ruled from the port city of Evermore.
 step
+goto evermore_base 24.08,59.86
+talk Sergeant Antieve
+accept A City in Black
+|only not ZGV.Quests:HasQuest("A City in Black")
+step
 goto evermore_base 28.19,57.67
-'Follow the path |q Kingdom in Mourning/Find the Stables in Evermore
-|tip Manually skip to the next step.
 step
 goto 35.53,57.50
-'Find the Stables in Evermore |q Kingdom in Mourning/Find the Stables in Evermore
+|only ZGV.Quests:HasQuest("Kingdom in Mourning")
 step
 goto 38.19,58.91
 talk Ramza
 turnin Kingdom in Mourning
+|only ZGV.Quests:HasQuest("Kingdom in Mourning")
 step
 goto 35.41,55.34
 click The Legend of Fallen Grotto
 lorebook The Legend of Fallen Grotto/1/4/1
 step
 goto 36.22,66.43
-'Jump down here |achieve 557/1
-|tip Manually skip to the next step.
 step
 goto 35.48,67.99
 click Skyshard |achieve 557/1
 step
+goto 23.86,60.14
+step
 goto 29.91,57.29
-'Follow the path |q Conflicted Emotions/Meet Zaag at the Silaseli Ruins |future
-|tip Manually skip to the next step.
+step
+goto 40.35,55.61
+step
+goto 51.36,46.68
+step
+goto 48.71,35.34
 step
 goto 50.85,34.08
-|tip Downstairs inside the building.
+click Dragonstar Caravan Company
+|tip Manually skip to the next step.
+step
+goto 53.76,34.38
+step
+goto 50.85,34.08
 talk Zaag
-|tip She walks around.
 accept Conflicted Emotions
+step
+goto 53.76,34.38
+step
+goto 50.46,33.68
+click Evermore
+|tip Manually skip to the next step.
 step
 goto 65.17,21.22
 talk Llotha Nelvani
@@ -33517,8 +33535,6 @@ talk Llotha Nelvani |tip She walks around.
 turnin A Grave Matter
 step
 goto 69.95,30.33
-'Follow the path |q Beyond the Call/Search the Chapel |future
-|tip Manually skip to the next step.
 step
 goto bangkorai_base 46.68,37.12
 wayshrine Eastern Evermore
@@ -33528,8 +33544,6 @@ click Aspects of Lord Hircine
 lorebook Aspects of Lord Hircine/1/4/5
 step
 goto 47.90,35.39
-'Follow the path |q Beyond the Call/Search the Chapel |future
-|tip Manually skip to the next step.
 step
 goto 46.03,30.48
 talk Captain Eugien Gaercroft
