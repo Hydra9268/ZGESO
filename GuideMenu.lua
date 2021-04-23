@@ -706,7 +706,7 @@ function Settings:CreateDefaultPopup()
 
 	local popup = CHAIN(ZGV.Popup:New("Zygor_Settings_Reset_Default_Popup"))
 		:SetText(L['static_options'])
-		:SetDimensionConstraints(375)				-- Force minWidth to 375 for the buttons to fit nicely
+		:SetDimensionConstraints(375) -- Force minWidth to 375 for the buttons to fit nicely
 		.__END
 
 	-- No settings button for settings popup. That would be silly
@@ -714,12 +714,12 @@ function Settings:CreateDefaultPopup()
 
 	-- Need a third button for cancel
 	popup.cancelbutton = CHAIN(ui:Create("Button",popup,popup:GetName().."_Cancel"))
-		:SetPoint(TOP,popup.text,BOTTOM,0,10)			-- 10 is BUT_Y_OFFSET from Popup.lua
+		:SetPoint(TOP,popup.text,BOTTOM,0,10) -- 10 is BUT_Y_OFFSET from Popup.lua
 		:SetWidth(105)
 		:SetText(L['static_cancel'])
-		:SetFontSize(ZGV.db.profile.fontsize,true)		-- TODO change size dynamically?
+		:SetFontSize(ZGV.db.profile.fontsize,true) -- TODO change size dynamically?
 		:SetHandler("OnClicked",function(me)
-				local pop = me:GetParent()			-- Just hide the popup
+				local pop = me:GetParent() -- Just hide the popup
 				pop.private:Hide(pop)
 			end)
 		.__END
@@ -766,7 +766,7 @@ function Settings:CreateOptionsUI(group)
 	local name = "ZygorOptionPanel_Group_"..group.title
 	local lastobj, lastfrontobj
 
-	local frame = CHAIN(ui:Create("InvisFrame", self.Frame.OptionsScrollBase, name))	-- Frame that contains all option UI components for this group --TODO make it scrollie
+	local frame = CHAIN(ui:Create("InvisFrame", self.Frame.OptionsScrollBase, name)) -- Frame that contains all option UI components for this group --TODO make it scrollie
 	:SetPoint(TOPLEFT) :SetPoint(BOTTOMRIGHT)
 	.__END
 
