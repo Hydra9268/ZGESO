@@ -193,11 +193,11 @@ GuideViewer("Main", "enUS", function() local f = {
 			['static_allsetting']	= "All Settings",
 			['static_thesesetting']	= "These Settings",
 
-			['static_nextguide'] = "You're now ready to proceed to:\n",
-			['static_nextguide_anyzone'] = "This is the recommended next zone. However, since ESO has no zone level restrictions anymore, you're free to visit any other zone and load a guide for it manually.",
-			['static_badguide'] = "The selected guide:\n|cffee00%s|r\n is |cffbbaaimproper|r for your character.\n|cff6644%s|r\n\nDo you really want to load it?",
-			["static_endguide"] = "You've reached the end of the current guide.",
-			["static_help"] = "You can set keybindings in Esc-Controls-Keybindings.\n\nPlease visit |cfe6100tinyurl.com/ZGESO|r if you need additional assistance.",
+			['static_nextguide'] = "\nYou're now ready to proceed to:\n",
+			['static_nextguide_anyzone'] = "\nThis is the recommended next zone. However, since ESO has no zone level restrictions anymore, you're free to visit any other zone and load a guide for it manually.",
+			['static_badguide'] = "\nThe selected guide:\n|cffee00%s|r\n is |cffbbaaimproper|r for your character.\n|cff6644%s|r\n\nDo you really want to load it?",
+			["static_endguide"] = "\nYou've reached the end of the current guide.",
+			["static_help"] = "\nYou can set keybindings in Esc-Controls-Keybindings.\n\nPlease visit |cfe6100tinyurl.com/ZGESO|r if you need additional assistance.",
 
 			['static_profile'] = "Switch to profile %s?",
 			['static_deleteprofile'] = "Delete profile %s?",
