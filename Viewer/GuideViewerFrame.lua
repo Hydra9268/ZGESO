@@ -650,13 +650,14 @@ function Viewer:HelpButton_OnClick()
 	end
 
 	self.HelpPopup:SetText(L['static_help'])
+	self.HelpPopup:SetDimensionConstraints(225,nil,625,nil)
 	self.HelpPopup:Show()
 end
 
 function Viewer:PrevStepButton_OnClick(but)
 	if _G.IsControlKeyDown() and not _G.IsAltKeyDown() then
 		ZGV:FocusStep(1)
-		ZGV.pause=nil
+		ZGV.pause = nil
 	else
 		self:PrevStep_GuideViewer(1,but == RIGHT_MOUSE_BUTTON)
 	end
