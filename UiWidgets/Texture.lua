@@ -52,7 +52,7 @@ end
 
 function LetterZ:New(parent,name)
   local z = CHAIN(ui:CreateControl(name,parent,CT_TEXTURE,LetterZ))
-  :SetTexture(ZGV.DIR .. "/Viewer/Skins/Stealth/zglogo.dds")
+  :SetTexture(ZGV.DIR .. "/Viewer/Skins/Stealth/clglogo.dds")
   :SetTextureCoords(.1,.9,.1,.9)
   :SetSize(25,25)	-- Should be set by user.
   .__END

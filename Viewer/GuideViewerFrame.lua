@@ -382,7 +382,7 @@ function Viewer:CreateMiniMapButton()
 			end)
 		.__END
 
-	ZGV.sv.profile.minibutanchor = ZGV.sv.profile.minibutanchor and #ZGV.sv.profile.minibutanchor==5 and ZGV.sv.profile.minibutanchor or DEFAULT_MINIMAP_ANCHOR
+	ZGV.sv.profile.minibutanchor = ZGV.sv.profile.minibutanchor and #ZGV.sv.profile.minibutanchor == 5 and ZGV.sv.profile.minibutanchor or DEFAULT_MINIMAP_ANCHOR
 	local point, relativeTo, relativePoint, offsetX, offsetY = unpack(ZGV.sv.profile.minibutanchor)
 	relativeTo = GuiRoot -- Force to GuiRoot.
 	frame:SetPoint(point, relativeTo, relativePoint, offsetX, offsetY)
