@@ -1,7 +1,3 @@
------------------------------------------
--- TODO: Break this up into smaller files
------------------------------------------
-
 local ZGV = _G.ZGV
 if ZGV:DoMutex("Expansions") then return end
 ZGV.GuideMenuTier = "MOR"
