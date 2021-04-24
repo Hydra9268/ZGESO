@@ -10,6 +10,7 @@
 local ZGV = _G.ZGV
 local TOPLEFT, TOPRIGHT, BOTTOMLEFT, BOTTOMRIGHT, CENTER = _G.TOPLEFT, _G.TOPRIGHT, _G.BOTTOMLEFT, _G.BOTTOMRIGHT, _G.CENTER
 local TOP, RIGHT, BOTTOM, LEFT = _G.TOP, _G.RIGHT, _G.BOTTOM, _G.LEFT
+local CT_TEXTURE = _G.CT_TEXTURE
 
 local Menu = {}
 local Settings = {
@@ -149,9 +150,16 @@ function Menu:CreateBaseMenu()
 		:SetText("|cffaa00"..ZGV.version.."|r")
 		.__END
 
+	-- Community Leveling Guides logo, upper right, left of close button
+	frame.logo = CHAIN(ui:Create("Logo",frame,name.."_Logo","Logo"))
+		:SetTexture(ZGV.DIR .. "/Viewer/Skins/Stealth/communityguidelogo.dds")
+		:SetSize(300,40)
+		:SetPoint(TOPRIGHT, titlebar, -5, 10)
+		.__END
+
 	-- Close button, upper right
 	frame.close = CHAIN(ui:Create("GuideButton",frame,name.."_Close","Close"))
-		:SetPoint(TOPRIGHT, titlebar, -5, 5 )
+		:SetPoint(TOPRIGHT, titlebar, -5, 5)
 		:SetHandler("OnClicked",function()
 				Menu:Hide()
 			end)
@@ -165,17 +173,17 @@ function Menu:CreateBaseMenu()
 			{
 				{
 					id = GUIDEMENU_TAB_ID,
-					name="Home",
-					size = {120,40},
+					name = "Home",
+					size = { 120, 40 },
 					fontsize = 25,
-					point = { TOPLEFT, -12, 9},
+					point = { TOPLEFT, -12, 9 },
 					handler = function()
 						Menu:SetTab(GUIDEMENU_TAB_ID)
 					end
 				},
 				{
 					id = SETTINGS_TAB_ID,
-					name="",
+					name = "",
 					size = { 120, 40 },
 					fontsize = 25,
 					handler=function()
