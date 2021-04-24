@@ -15,6 +15,11 @@ Install through the excellent add-on manager <a href="https://minion.mmoui.com/"
 
 * LibGPS, LibMapPing, LibDebugLogger, LibChatMessage
 
+### 4/24/21 Blackwood Guide Coming Soon (Thanks to snichols7778)! 
+
+<img src="https://i.imgur.com/GYcFbv7.png">
+<i>artwork &copy; ZeniMax Media</i>
+
 ### 3/27/21 Skyrim Guides Now Available (Thanks to snichols7778)! 
 
 <img src="https://i.imgur.com/bsUJyDD.png">
