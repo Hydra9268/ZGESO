@@ -69,7 +69,7 @@ For example, 1.4.96
 * `goto` = ZGESO command that tells the arrow where to point
 * `wailingprison4_base` = the current map's dds reference (Note: only works in map the user is currently in)
 * `50.00,50.00` = the floating point x and y coordinates (Note: decimal values are optional, but recommended for precision)
-* Note: Once the map's dds is declared you can use exclude it (e.g., `goto 50.00,50.00`)
+* Note: Once the map's DDS is declared, you can exclude it (e.g., `goto 50.00,50.00`)
 
 `talk` = ZGESO command to talk to NPCs
 
