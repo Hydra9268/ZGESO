@@ -99,7 +99,7 @@ local ConditionEnv = {
 		return ZGV.Pointer:GetDistToCoords(map,x,y)
 	end,
 }
-Parser.ConditionEnv=ConditionEnv  --DEBUG
+Parser.ConditionEnv = ConditionEnv  --DEBUG
 
 -----------------------------------------
 -- GUIDE COMMANDS
