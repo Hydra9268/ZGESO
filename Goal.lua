@@ -270,7 +270,7 @@ GOALTYPES['goto'] = {
 			params = params2
 		end
 
-		local map,x,y,dist, err = ParseMapXYDist(params)
+		local map,x,y,dist,err = ParseMapXYDist(params)
 		if err then
 			return err
 		end
@@ -283,10 +283,31 @@ GOALTYPES['goto'] = {
 		self.x = x or self.x
 		self.y = y or self.y
 		-- Adjusting the speed between zone maps and non-zone maps
-		if (GetCurrentMapIndex() == nil) then
+		if GetCurrentMapIndex() == nil then -- cities, delves, dungeons
 			self.dist = dist or self.dist or 5
-		else
-			self.dist = dist or self.dist or 1
+		else -- zone maps
+			-- Created Utils.DistanceOffset in functions
+			if GetCurrentMapIndex() == Enums.SummersetMap then
+				self.dist = dist or self.dist or 1.5
+			elseif GetCurrentMapIndex() == Enums.BangkoraiMap then
+				self.dist = dist or self.dist or 10
+			elseif GetCurrentMapIndex() == Enums.AlikrDesertMap then
+				self.dist = dist or self.dist or 10
+			elseif GetCurrentMapIndex() == Enums.ArtaeumMap then
+				self.dist = dist or self.dist or 1.5
+			elseif GetCurrentMapIndex() == Enums.AuridonMap then
+				self.dist = dist or self.dist or 10
+			elseif GetCurrentMapIndex() == Enums.BalFoyenMap then
+				self.dist = dist or self.dist or 10
+			elseif GetCurrentMapIndex() == Enums.BetnikhMap then
+				self.dist = dist or self.dist or 5
+			elseif GetCurrentMapIndex() == Enums.BleakrockIsleMap then
+				self.dist = dist or self.dist or 5
+			elseif GetCurrentMapIndex() == Enums.ClockworkCityMap then
+				self.dist = dist or self.dist or 15
+			else
+				self.dist = dist or self.dist or 1
+			end
 		end
 
 		self.waytitle = title
@@ -308,8 +329,34 @@ GOALTYPES['goto'] = {
 	end,
 	iscomplete = function(self) -- Called repeatedly
 
-		-- if the player isn't in the zone map then adjust the distance (TernaryOperator ?:) -- GetGameTimeMilliseconds
-		self.dist = (GetCurrentMapIndex() == nil) and 5 or 1
+		-- if the player isn't in the zone map then adjust the distance -- GetGameTimeMilliseconds
+
+		if GetCurrentMapIndex() == nil then -- cities, delves, dungeons
+			self.dist = 5
+		else -- zone maps
+			-- Create a Utils function in function at the bottom of the file
+			if GetCurrentMapIndex() == Enums.SummersetMap then
+				self.dist = 1.5
+			elseif GetCurrentMapIndex() == Enums.BangkoraiMap then
+				self.dist = 10
+			elseif GetCurrentMapIndex() == Enums.AlikrDesertMap then
+				self.dist = 10
+			elseif GetCurrentMapIndex() == Enums.ArtaeumMap then
+				self.dist = 1.5
+			elseif GetCurrentMapIndex() == Enums.AuridonMap then
+				self.dist = 10
+			elseif GetCurrentMapIndex() == Enums.BalFoyenMap then
+				self.dist = 10
+			elseif GetCurrentMapIndex() == Enums.BetnikhMap then
+				self.dist = 5
+			elseif GetCurrentMapIndex() == Enums.BleakrockIsleMap then
+				self.dist = 5
+			elseif GetCurrentMapIndex() == Enums.ClockworkCityMap then
+				self.dist = 15
+			else
+				self.dist = 1
+			end
+		end
 
 		local dist = ZGV.Pointer:GetDistToCoords(self.map,self.x,self.y)
 
@@ -606,12 +653,12 @@ function Goal:GetText()
 		local function make_parser(parser) -- function to generate code
 			return function(s)
 				if not self.textsubs then
-					self.textsubs={}
+					self.textsubs = {}
 				end
 				local f = self.textsubs[nsub]
 				if not f then
-					f=parser(s)
-					self.textsubs[nsub]=f
+					f = parser(s)
+					self.textsubs[nsub] = f
 				end
 				nsub = nsub + 1
 				if type(f)=="function" then
