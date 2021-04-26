@@ -251,9 +251,9 @@ end
 function Utils.escape(s)
 	return s:gsub("\'","\\\'"):gsub("\"","\\\""):gsub("%[","\\["):gsub("%]","\\]")
 end
-local esc=Utils.escape
+local esc = Utils.escape
 
-local strrep=string.rep
+local strrep = string.rep
 function Utils.serialize(tab,indent)
 	if type(tab)~="table" then
 		return tab
@@ -630,4 +630,8 @@ end
 -- remove "^Ng,adv" and similar language tags
 function Utils.Delocalize(localstring)
 	return zo_strformat("<<1>>",localstring)
+end
+
+function Utils.DistanceOffset(zoneid,dist,value)
+	return dist or self.dist or value
 end
