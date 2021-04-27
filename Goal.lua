@@ -287,26 +287,24 @@ GOALTYPES['goto'] = {
 			self.dist = dist or self.dist or 5
 		else -- zone maps
 			-- Created Utils.DistanceOffset in functions
-			if GetCurrentMapIndex() == Enums.SummersetMap then
-				self.dist = dist or self.dist or 1.5
-			elseif GetCurrentMapIndex() == Enums.BangkoraiMap then
-				self.dist = dist or self.dist or 10
-			elseif GetCurrentMapIndex() == Enums.AlikrDesertMap then
-				self.dist = dist or self.dist or 10
-			elseif GetCurrentMapIndex() == Enums.ArtaeumMap then
-				self.dist = dist or self.dist or 1.5
-			elseif GetCurrentMapIndex() == Enums.AuridonMap then
-				self.dist = dist or self.dist or 10
-			elseif GetCurrentMapIndex() == Enums.BalFoyenMap then
-				self.dist = dist or self.dist or 10
-			elseif GetCurrentMapIndex() == Enums.BetnikhMap then
-				self.dist = dist or self.dist or 5
-			elseif GetCurrentMapIndex() == Enums.BleakrockIsleMap then
-				self.dist = dist or self.dist or 5
-			elseif GetCurrentMapIndex() == Enums.ClockworkCityMap then
-				self.dist = dist or self.dist or 15
-			else
-				self.dist = dist or self.dist or 1
+			if GetCurrentMapIndex() == Enums.AlikrDesertMap then		self.dist = dist or self.dist or 10
+			elseif GetCurrentMapIndex() == Enums.ArtaeumMap then		self.dist = dist or self.dist or 1.5
+			elseif GetCurrentMapIndex() == Enums.AuridonMap then		self.dist = dist or self.dist or 10
+			elseif GetCurrentMapIndex() == Enums.BalFoyenMap then		self.dist = dist or self.dist or 10
+			elseif GetCurrentMapIndex() == Enums.BangkoraiMap then		self.dist = dist or self.dist or 10
+			elseif GetCurrentMapIndex() == Enums.BetnikhMap then		self.dist = dist or self.dist or 5
+			elseif GetCurrentMapIndex() == Enums.BleakrockIsleMap then	self.dist = dist or self.dist or 5
+			elseif GetCurrentMapIndex() == Enums.ClockworkCityMap then	self.dist = dist or self.dist or 15
+			elseif GetCurrentMapIndex() == Enums.ColdharbourMap then	self.dist = dist or self.dist or 8
+			elseif GetCurrentMapIndex() == Enums.CraglornMap then		self.dist = dist or self.dist or 8
+			elseif GetCurrentMapIndex() == Enums.DeshaanMap then		self.dist = dist or self.dist or 10
+			elseif GetCurrentMapIndex() == Enums.EastmarchMap then		self.dist = dist or self.dist or 10
+			elseif GetCurrentMapIndex() == Enums.GlenumbraMap then		self.dist = dist or self.dist or 10
+			elseif GetCurrentMapIndex() == Enums.GoldCoastMap then		self.dist = dist or self.dist or 10
+			elseif GetCurrentMapIndex() == Enums.GrahtwoodMap then		self.dist = dist or self.dist or 10
+			elseif GetCurrentMapIndex() == Enums.GreenshadeMap then		self.dist = dist or self.dist or 7
+			elseif GetCurrentMapIndex() == Enums.SummersetMap then 		self.dist = dist or self.dist or 1.5
+			else self.dist = dist or self.dist or 1
 			end
 		end
 
@@ -335,26 +333,24 @@ GOALTYPES['goto'] = {
 			self.dist = 5
 		else -- zone maps
 			-- Create a Utils function in function at the bottom of the file
-			if GetCurrentMapIndex() == Enums.SummersetMap then
-				self.dist = 1.5
-			elseif GetCurrentMapIndex() == Enums.BangkoraiMap then
-				self.dist = 10
-			elseif GetCurrentMapIndex() == Enums.AlikrDesertMap then
-				self.dist = 10
-			elseif GetCurrentMapIndex() == Enums.ArtaeumMap then
-				self.dist = 1.5
-			elseif GetCurrentMapIndex() == Enums.AuridonMap then
-				self.dist = 10
-			elseif GetCurrentMapIndex() == Enums.BalFoyenMap then
-				self.dist = 10
-			elseif GetCurrentMapIndex() == Enums.BetnikhMap then
-				self.dist = 5
-			elseif GetCurrentMapIndex() == Enums.BleakrockIsleMap then
-				self.dist = 5
-			elseif GetCurrentMapIndex() == Enums.ClockworkCityMap then
-				self.dist = 15
-			else
-				self.dist = 1
+			if GetCurrentMapIndex() == Enums.AlikrDesertMap then		self.dist = 10
+			elseif GetCurrentMapIndex() == Enums.ArtaeumMap then		self.dist = 1.5
+			elseif GetCurrentMapIndex() == Enums.AuridonMap then		self.dist = 10
+			elseif GetCurrentMapIndex() == Enums.BalFoyenMap then		self.dist = 10
+			elseif GetCurrentMapIndex() == Enums.BangkoraiMap then		self.dist = 10
+			elseif GetCurrentMapIndex() == Enums.BetnikhMap then		self.dist = 5
+			elseif GetCurrentMapIndex() == Enums.BleakrockIsleMap then	self.dist = 5
+			elseif GetCurrentMapIndex() == Enums.ClockworkCityMap then	self.dist = 15
+			elseif GetCurrentMapIndex() == Enums.ColdharbourMap then	self.dist = 8
+			elseif GetCurrentMapIndex() == Enums.CraglornMap then		self.dist = 8
+			elseif GetCurrentMapIndex() == Enums.DeshaanMap then		self.dist = 10
+			elseif GetCurrentMapIndex() == Enums.EastmarchMap then		self.dist = 10
+			elseif GetCurrentMapIndex() == Enums.GlenumbraMap then		self.dist = 10
+			elseif GetCurrentMapIndex() == Enums.GoldCoastMap then		self.dist = 10
+			elseif GetCurrentMapIndex() == Enums.GrahtwoodMap then		self.dist = 10
+			elseif GetCurrentMapIndex() == Enums.GreenshadeMap then		self.dist = 7
+			elseif GetCurrentMapIndex() == Enums.SummersetMap then		self.dist = 1.5
+			else self.dist = 1
 			end
 		end
 

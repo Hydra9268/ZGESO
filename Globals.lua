@@ -17,5 +17,13 @@ Enums = {
 	BetnikhMap = 20,
 	BleakrockIsleMap = 22,
 	ClockworkCityMap = 31,
+	ColdharbourMap = 23,
+	CraglornMap = 25,
+	DeshaanMap = 10,
+	EastmarchMap = 13,
+	GlenumbraMap = 2,
+	GoldCoastMap = 29,
+	GrahtwoodMap = 7,
+	GreenshadeMap = 16,
 }
 
