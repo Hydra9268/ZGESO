@@ -8,12 +8,11 @@ RIGHT_MOUSE_BUTTON = 2
 MIDDLE_MOUSE_BUTTON = 3
 
 Enums = {
-	SummersetMap = 32,
-	BangkoraiMap = 6,
 	AlikrDesertMap = 5,
 	ArtaeumMap = 33,
 	AuridonMap = 15,
 	BalFoyenMap = 18,
+	BangkoraiMap = 6,
 	BetnikhMap = 20,
 	BleakrockIsleMap = 22,
 	ClockworkCityMap = 31,
@@ -25,5 +24,6 @@ Enums = {
 	GoldCoastMap = 29,
 	GrahtwoodMap = 7,
 	GreenshadeMap = 16,
+	SummersetMap = 32,
 }
 
