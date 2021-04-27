@@ -30,6 +30,7 @@ local GetUnitXP = _G.GetUnitXP
 local GetUnitXPMax = _G.GetUnitXPMax
 local IsUnitInCombat = _G.IsUnitInCombat
 local IsValidQuestIndex = _G.IsValidQuestIndex
+local GetCurrentMapIndex = _G.GetCurrentMapIndex
 
 local abilityId = _G.abilityId
 local zo_plainstrfind = _G.zo_plainstrfind
@@ -632,6 +633,56 @@ function Utils.Delocalize(localstring)
 	return zo_strformat("<<1>>",localstring)
 end
 
-function Utils.DistanceOffset(zoneid,dist,value)
-	return dist or self.dist or value
+function Utils.GotoDistanceOffset(dist,selfdist)
+	if GetCurrentMapIndex() == nil then -- cities, delves, dungeons
+		return dist or selfdist or 5
+	else -- zone maps
+		-- Created Utils.DistanceOffset in functions
+		if GetCurrentMapIndex() == Enums.AlikrDesertMap then		return dist or selfdist or 10
+		elseif GetCurrentMapIndex() == Enums.ArtaeumMap then		return dist or selfdist or 1.5
+		elseif GetCurrentMapIndex() == Enums.AuridonMap then		return dist or selfdist or 10
+		elseif GetCurrentMapIndex() == Enums.BalFoyenMap then		return dist or selfdist or 10
+		elseif GetCurrentMapIndex() == Enums.BangkoraiMap then		return dist or selfdist or 10
+		elseif GetCurrentMapIndex() == Enums.BetnikhMap then		return dist or selfdist or 5
+		elseif GetCurrentMapIndex() == Enums.BleakrockIsleMap then	return dist or selfdist or 5
+		elseif GetCurrentMapIndex() == Enums.ClockworkCityMap then	return dist or selfdist or 15
+		elseif GetCurrentMapIndex() == Enums.ColdharbourMap then	return dist or selfdist or 8
+		elseif GetCurrentMapIndex() == Enums.CraglornMap then		return dist or selfdist or 8
+		elseif GetCurrentMapIndex() == Enums.DeshaanMap then		return dist or selfdist or 10
+		elseif GetCurrentMapIndex() == Enums.EastmarchMap then		return dist or selfdist or 10
+		elseif GetCurrentMapIndex() == Enums.GlenumbraMap then		return dist or selfdist or 10
+		elseif GetCurrentMapIndex() == Enums.GoldCoastMap then		return dist or selfdist or 10
+		elseif GetCurrentMapIndex() == Enums.GrahtwoodMap then		return dist or selfdist or 10
+		elseif GetCurrentMapIndex() == Enums.GreenshadeMap then		return dist or selfdist or 7
+		elseif GetCurrentMapIndex() == Enums.SummersetMap then 		return dist or selfdist or 1.5
+		else return dist or selfdist or 1
+		end
+	end
+end
+
+function Utils.IsCompleteDistanceOffset()
+	if GetCurrentMapIndex() == nil then -- cities, delves, dungeons
+		return 5
+	else -- zone maps
+		-- Create a Utils function in function at the bottom of the file
+		if GetCurrentMapIndex() == Enums.AlikrDesertMap then		return 10
+		elseif GetCurrentMapIndex() == Enums.ArtaeumMap then		return 1.5
+		elseif GetCurrentMapIndex() == Enums.AuridonMap then		return 10
+		elseif GetCurrentMapIndex() == Enums.BalFoyenMap then		return 10
+		elseif GetCurrentMapIndex() == Enums.BangkoraiMap then		return 10
+		elseif GetCurrentMapIndex() == Enums.BetnikhMap then		return 5
+		elseif GetCurrentMapIndex() == Enums.BleakrockIsleMap then	return 5
+		elseif GetCurrentMapIndex() == Enums.ClockworkCityMap then	return 15
+		elseif GetCurrentMapIndex() == Enums.ColdharbourMap then	return 8
+		elseif GetCurrentMapIndex() == Enums.CraglornMap then		return 8
+		elseif GetCurrentMapIndex() == Enums.DeshaanMap then		return 10
+		elseif GetCurrentMapIndex() == Enums.EastmarchMap then		return 10
+		elseif GetCurrentMapIndex() == Enums.GlenumbraMap then		return 10
+		elseif GetCurrentMapIndex() == Enums.GoldCoastMap then		return 10
+		elseif GetCurrentMapIndex() == Enums.GrahtwoodMap then		return 10
+		elseif GetCurrentMapIndex() == Enums.GreenshadeMap then		return 7
+		elseif GetCurrentMapIndex() == Enums.SummersetMap then		return 1.5
+		else return 1
+		end
+	end
 end

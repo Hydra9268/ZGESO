@@ -282,32 +282,10 @@ GOALTYPES['goto'] = {
 
 		self.x = x or self.x
 		self.y = y or self.y
-		-- Adjusting the speed between zone maps and non-zone maps
-		if GetCurrentMapIndex() == nil then -- cities, delves, dungeons
-			self.dist = dist or self.dist or 5
-		else -- zone maps
-			-- Created Utils.DistanceOffset in functions
-			if GetCurrentMapIndex() == Enums.AlikrDesertMap then		self.dist = dist or self.dist or 10
-			elseif GetCurrentMapIndex() == Enums.ArtaeumMap then		self.dist = dist or self.dist or 1.5
-			elseif GetCurrentMapIndex() == Enums.AuridonMap then		self.dist = dist or self.dist or 10
-			elseif GetCurrentMapIndex() == Enums.BalFoyenMap then		self.dist = dist or self.dist or 10
-			elseif GetCurrentMapIndex() == Enums.BangkoraiMap then		self.dist = dist or self.dist or 10
-			elseif GetCurrentMapIndex() == Enums.BetnikhMap then		self.dist = dist or self.dist or 5
-			elseif GetCurrentMapIndex() == Enums.BleakrockIsleMap then	self.dist = dist or self.dist or 5
-			elseif GetCurrentMapIndex() == Enums.ClockworkCityMap then	self.dist = dist or self.dist or 15
-			elseif GetCurrentMapIndex() == Enums.ColdharbourMap then	self.dist = dist or self.dist or 8
-			elseif GetCurrentMapIndex() == Enums.CraglornMap then		self.dist = dist or self.dist or 8
-			elseif GetCurrentMapIndex() == Enums.DeshaanMap then		self.dist = dist or self.dist or 10
-			elseif GetCurrentMapIndex() == Enums.EastmarchMap then		self.dist = dist or self.dist or 10
-			elseif GetCurrentMapIndex() == Enums.GlenumbraMap then		self.dist = dist or self.dist or 10
-			elseif GetCurrentMapIndex() == Enums.GoldCoastMap then		self.dist = dist or self.dist or 10
-			elseif GetCurrentMapIndex() == Enums.GrahtwoodMap then		self.dist = dist or self.dist or 10
-			elseif GetCurrentMapIndex() == Enums.GreenshadeMap then		self.dist = dist or self.dist or 7
-			elseif GetCurrentMapIndex() == Enums.SummersetMap then 		self.dist = dist or self.dist or 1.5
-			else self.dist = dist or self.dist or 1
-			end
-		end
 
+		-- Adjusting the speed between zone maps and non-zone maps
+		self.dist = ZGV.Utils.GotoDistanceOffset(dist,self.dist)
+		
 		self.waytitle = title
 	end,
 	iscompletable = function(self) -- Called repeatedly
@@ -328,31 +306,7 @@ GOALTYPES['goto'] = {
 	iscomplete = function(self) -- Called repeatedly
 
 		-- if the player isn't in the zone map then adjust the distance -- GetGameTimeMilliseconds
-
-		if GetCurrentMapIndex() == nil then -- cities, delves, dungeons
-			self.dist = 5
-		else -- zone maps
-			-- Create a Utils function in function at the bottom of the file
-			if GetCurrentMapIndex() == Enums.AlikrDesertMap then		self.dist = 10
-			elseif GetCurrentMapIndex() == Enums.ArtaeumMap then		self.dist = 1.5
-			elseif GetCurrentMapIndex() == Enums.AuridonMap then		self.dist = 10
-			elseif GetCurrentMapIndex() == Enums.BalFoyenMap then		self.dist = 10
-			elseif GetCurrentMapIndex() == Enums.BangkoraiMap then		self.dist = 10
-			elseif GetCurrentMapIndex() == Enums.BetnikhMap then		self.dist = 5
-			elseif GetCurrentMapIndex() == Enums.BleakrockIsleMap then	self.dist = 5
-			elseif GetCurrentMapIndex() == Enums.ClockworkCityMap then	self.dist = 15
-			elseif GetCurrentMapIndex() == Enums.ColdharbourMap then	self.dist = 8
-			elseif GetCurrentMapIndex() == Enums.CraglornMap then		self.dist = 8
-			elseif GetCurrentMapIndex() == Enums.DeshaanMap then		self.dist = 10
-			elseif GetCurrentMapIndex() == Enums.EastmarchMap then		self.dist = 10
-			elseif GetCurrentMapIndex() == Enums.GlenumbraMap then		self.dist = 10
-			elseif GetCurrentMapIndex() == Enums.GoldCoastMap then		self.dist = 10
-			elseif GetCurrentMapIndex() == Enums.GrahtwoodMap then		self.dist = 10
-			elseif GetCurrentMapIndex() == Enums.GreenshadeMap then		self.dist = 7
-			elseif GetCurrentMapIndex() == Enums.SummersetMap then		self.dist = 1.5
-			else self.dist = 1
-			end
-		end
+		self.dist = ZGV.Utils.IsCompleteDistanceOffset()
 
 		local dist = ZGV.Pointer:GetDistToCoords(self.map,self.x,self.y)
 
