@@ -6,18 +6,21 @@ A Public Domain leveling guide produced by Zygor Guides, updated and maintained 
 
 * Zygor's Discontinued support announcement: https://zygorguides.com/blog/zygor-guides-elder-scrolls-online-guides-going-free-use/
 * Zygor staff okaying community development: http://zygorguides.com/forum/showthread.php?21769-Summerset-Question&p=121501&viewfull=1#post121501
+<br/>
 
 ----
 
-<br><img src="https://i.imgur.com/27kT29T.png">
+<img src="https://i.imgur.com/27kT29T.png">
 
 Install through the excellent add-on manager <a href="https://minion.mmoui.com/" target="blank">Minion</a>
 
 #### Libraries Required
 
-* LibGPS, LibMapPing, LibDebugLogger, LibChatMessage<br/><br/><br/>
+* LibGPS, LibMapPing, LibDebugLogger, LibChatMessage<br/><br/>
 
 ----
+
+<br/>
 
 ### 4/24/21 Blackwood Guide Coming Soon (Thanks to snichols7778)! 
 
@@ -32,17 +35,11 @@ Install through the excellent add-on manager <a href="https://minion.mmoui.com/"
 ### Recent Updates
 
 * 3/13/21 merge: Sharlikran: Misc changes and updates
-
 * 3/13/21 merge: Sharlikran: Removed embedded libraries. Fixed /zgpos output
-
 * 3/13/21 merge: Krandor1: Fix for the two glumbra bugs reported by AegonVI
-
 * 3/13/21 merge: Krandor1: Reorder bleakrock quests so hero of bleakrock achivement can be earned. Bug request from Cavanoskus on forums.
-
 * 11/2/20: API version now supports Dragonhold
-
 * 8/12/20: API version now supports Scalebreaker
-
 * 7/27/20: Northern Elsweyr Guide Out Now!
 
 <!--
