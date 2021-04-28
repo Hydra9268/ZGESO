@@ -128,7 +128,7 @@ For example<br>
 step
 ```
 
-*To see a complete list of Types and Handlers, review Goal.lua*
+*To see a complete list of Types and Handlers, review Goal.lua. If you have questions, feel free to ask.*
 
 ----
 
