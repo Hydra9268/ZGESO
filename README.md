@@ -7,7 +7,7 @@ A Public Domain leveling guide produced by Zygor Guides, updated and maintained 
 * Zygor's Discontinued support announcement: https://zygorguides.com/blog/zygor-guides-elder-scrolls-online-guides-going-free-use/
 * Zygor staff okaying community development: http://zygorguides.com/forum/showthread.php?21769-Summerset-Question&p=121501&viewfull=1#post121501
 
-<br><img src="https://i.imgur.com/WnfLf4W.png">
+<br><img src="https://i.imgur.com/27kT29T.png">
 
 Install through the excellent add-on manager <a href="https://minion.mmoui.com/" target="blank">Minion</a>
 
