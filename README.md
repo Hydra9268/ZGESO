@@ -141,10 +141,10 @@ step
 
 #### /dump functions of note:
 
-* `/dump ZGV.Data:GetQuestIdByName("A City in Black")` - Returns the quest id
-* `/dump ZGV.Quests:IsQuestComplete("A City in Black")` - returns a boolean
-* `/dump ZGV.Quests:HasQuest("A City in Black")` - return a boolean
-* `/dump d(GetCurrentMapIndex())` - Returns the current zone's ID. Tip: some functions require the `d()` command to display the output.
+* `/dump ZGV.Data:GetQuestIdByName("A City in Black")` - Returns the Quest ID
+* `/dump ZGV.Quests:IsQuestComplete("A City in Black")` - Returns a boolean
+* `/dump ZGV.Quests:HasQuest("A City in Black")` - Return a boolean
+* `/dump d(GetCurrentMapIndex())` - Returns the zone's ID. Tip: some functions require the `d()` command to display the output.
 
 
 ----
