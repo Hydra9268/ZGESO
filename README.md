@@ -138,13 +138,13 @@ step
 * `/zgpos` - For city and delve data. Also displays the map's correct DDS filename.
 * `/zgpos gps` - For general map data. Works in any map.
 * `/dump ZGFunctionName(arguments)` - A way to execute ESO's and ZGESO's public functions<br> (e.g. `/dump ZGV.Pointer:GetDistToCoords(alinor_base,48.80,54.64)`)
-* `/dump d(GetCurrentMapIndex())` - Returns the current zone's ID. Tip: some functions require the `d()` command to display the output.
 
 #### /dump functions of note:
 
 * `/dump ZGV.Data:GetQuestIdByName("A City in Black")` - Returns the quest id
 * `/dump ZGV.Quests:IsQuestComplete("A City in Black")` - returns a boolean
 * `/dump ZGV.Quests:HasQuest("A City in Black")` - return a boolean
+* `/dump d(GetCurrentMapIndex())` - Returns the current zone's ID. Tip: some functions require the `d()` command to display the output.
 
 
 ----
