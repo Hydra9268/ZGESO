@@ -65,8 +65,8 @@ For example, 1.4.96
 `goto wailingprison4_base 50.00,50.00`
 * `goto` = Tells the arrow where to point. Auto-advances to the next step if nothing but goto and step exist.
 * `wailingprison4_base` = the current map's DDS reference. It only works when the user is in the zone.
-* `50.00,50.00` = the floating-point x and y coordinates Decimal values are optional but highly recommended for precision.
-* Note: Once the map's DDS is declared, you can exclude it (e.g., `goto 50.00,50.00`)
+* `50.00,50.00` = the floating-point x and y coordinates. Decimal values are optional but highly recommended for precision.
+* Tip: Once the map's DDS is declared, you can exclude it (e.g., `goto 50.00,50.00`)
 
 #### These actions auto-advance to the next step
 
