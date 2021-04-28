@@ -62,36 +62,34 @@ For example, 1.4.96
 ### Development HOW-TO
 
 
-
-##### Goal Types
-
 `goto wailingprison4_base 50.00,50.00`
-* `goto` = ZGESO command that tells the arrow where to point
-* `wailingprison4_base` = the current map's dds reference (Note: only works in map the user is currently in)
-* `50.00,50.00` = the floating point x and y coordinates (Note: decimal values are optional, but recommended for precision)
+* `goto` = Tells the arrow where to point. Auto-advances to the next step if nothing but goto and step exist.
+* `wailingprison4_base` = the current map's DDS reference. It only works when the user is in the zone.
+* `50.00,50.00` = the floating-point x and y coordinates Decimal values are optional but highly recommended for precision.
 * Note: Once the map's DDS is declared, you can exclude it (e.g., `goto 50.00,50.00`)
 
-`talk` = ZGESO command to talk to NPCs
+#### These actions auto-advance to the next step
 
-`accept` = ZGESO command to accept quests (auto-advances to next step)
+`accept` = Accept quests.<br/>
+`turnin` = Turn in quests.<br/>
+`wayshrine` = Discover wayshrines.<br/>
+`step` = Declares a guide step.<br/>
 
-`turnin` = ZGESO command to turn in quests (auto-advances to next step)
 
-`wayshrine` = ZGESO command to discover wayshrines (auto-advances to next step)
+#### These actions are purely visual and do not auto-advance to the next step
 
-`click` = ZGESO command for clicking objects and doors
-
-`'` = ZGESO command to add general information
-
+`talk` = Talk to NPCs.<br/>
+`click` = Clicking objects and doors.<br/>
+`'` = Adds general information.<br/>
 
 
 ##### Goal Handlers - requires a pipe | in front to activate (e.g. |tip, |q, |count)
 
-`|q` = Creates a step in ZGESO's progress bar. Also denotes the current step's quest
+`|q` = Creates a step in ZGESO's progress bar. It also denotes the current step's quest.
 
-`/` = Placed on the same line after `|q`, the slash checks for the completed task in the Quest Journal based on the current step's quest. Note: Must match word-for-word, space-for-space to register as completed.
+`/` = Placed on the same line after `|q`. The slash checks for a completed task in the Quest Journal for the current step's quest. Note: Must match the task word-for-word, space-for-space to register as completed.
 
-`|tip` = Handler for displaying tips in a small font. Note: placing a `|tip` in a `|goto` step prevents the goto from automatically going to the next step when the condition is met.
+`|tip` = Handler for displaying tips in a small font. Note: placing a `|tip` in a `|goto` step prevents the action from automatically going to the next step when meeting the condition.
 
 `|next Aldmeri Dominion Leveling Guides\\Khenarthi's Roost` = Instructs ZGESO to skip to another guide
 * `next` = Handler that tells the guide to load another guide
@@ -112,12 +110,12 @@ Only allow this step if the player hasn't completed the quest.
 Only allow this step if the player doesn't have the quest or hasn't completed the quest.
 
 `|only not ZGV.Quests:HasQuest("A City in Black")`<br>
-Appears to be the best method for accepting quests. `|only if not` causes the step to stick after accepting the quest.
+It appears to be the best method for accepting quests. `|only if not` causes the step to stick after accepting the quest.
 
 `|only ZGV.Quests:HasQuest("A City in Black")`<br>
-Appears to be the best method for quest steps. `|only if` causes the step to stick after accepting the quest.
+It appears to be the best method for quest steps. `|only if` causes the step to stick after accepting the quest.
 
-`|or` = Handler for dialog choices (Note: you need to put the |or handler on each choice)
+`|or` = Handler for dialog choices (Note: you need to put the |or handler for each selection)
 
 For example<br>
 ```
@@ -130,7 +128,7 @@ For example<br>
 step
 ```
 
-*To see a complete list of Types and Handlers review Goal.lua*
+*To see a complete list of Types and Handlers, review Goal.lua*
 
 ----
 
