@@ -101,7 +101,7 @@ For example, 1.4.96
 
 For example<br>
 `|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 712`<br>
-Only allow this step if the player's precise level is less than 6 and the current map zone index equals 712 (Elsweyr)
+Only allow this step if the player's precise level is less than 6 and the current map zone ID equals 712 (Elsweyr)
 
 `|only if not ZGV.QuestTracker:IsQuestComplete("A City in Black")`<br>
 Only allow this step if the player hasn't completed the quest.
@@ -115,7 +115,7 @@ It appears to be the best method for accepting quests. `|only if not` causes the
 `|only ZGV.Quests:HasQuest("A City in Black")`<br>
 It appears to be the best method for quest steps. `|only if` causes the step to stick after accepting the quest.
 
-`|or` = Handler for dialog choices. Important: You need to put the |or handler for each selection.
+`|or` = Handler for dialog choices. Important: You need to put the |or handler on each selection.
 
 For example<br>
 ```
