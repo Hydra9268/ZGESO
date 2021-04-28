@@ -285,7 +285,7 @@ GOALTYPES['goto'] = {
 
 		-- Adjusting the speed between zone maps and non-zone maps
 		self.dist = ZGV.Utils.GotoDistanceOffset(dist,self.dist)
-		
+
 		self.waytitle = title
 	end,
 	iscompletable = function(self) -- Called repeatedly

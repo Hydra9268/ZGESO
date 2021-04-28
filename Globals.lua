@@ -24,6 +24,11 @@ Enums = {
 	GoldCoastMap = 29,
 	GrahtwoodMap = 7,
 	GreenshadeMap = 16,
+	HewsBaneMap = 28,
+	KhenarthisRoostMap = 21,
+	MalabalTorMap = 8,
+	MurkmireMap = 34,
+	NorthernElsweyrMap = 36,
+
 	SummersetMap = 32,
 }
-

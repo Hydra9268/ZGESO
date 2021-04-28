@@ -6,6 +6,6 @@ ZGV:RegisterGuide("LEVELING\\Testing\\Testing",[[
 loadingimage loadscreen_clockworkcity_zone_01.dds
 description Description
 step
-goto bangkorai_base 55.90,44.98
+goto elsweyr_base 58.61,65.42
 step
 ]])
