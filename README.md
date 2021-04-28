@@ -115,7 +115,7 @@ It appears to be the best method for accepting quests. `|only if not` causes the
 `|only ZGV.Quests:HasQuest("A City in Black")`<br>
 It appears to be the best method for quest steps. `|only if` causes the step to stick after accepting the quest.
 
-`|or` = Handler for dialog choices Important: You need to put the |or handler for each selection.
+`|or` = Handler for dialog choices. Important: You need to put the |or handler for each selection.
 
 For example<br>
 ```
