@@ -73,7 +73,7 @@ For example, 1.4.96
 `accept` = Accept quests.<br/>
 `turnin` = Turn in quests.<br/>
 `wayshrine` = Discover wayshrines.<br/>
-`step` = Declares a guide step.<br/>
+`step` = Declares a guide step (Auto-advance is based on nothing else but `goto` and `step`).<br/>
 
 
 #### These actions are purely visual and do not auto-advance to the next step
@@ -87,7 +87,7 @@ For example, 1.4.96
 
 `|q` = Creates a step in ZGESO's progress bar. It also denotes the current step's quest.
 
-`/` = Placed on the same line after `|q`. The slash checks for a completed task in the Quest Journal for the current step's quest. Note: Must match the task word-for-word, space-for-space to register as completed.
+`/` = Placed on the same line after `|q`. The slash checks for a completed task in the Quest Journal for the current step's quest. Important: Must match the task word-for-word, space-for-space to register as completed.
 
 `|tip` = Handler for displaying tips in a small font. Note: placing a `|tip` in a `|goto` step prevents the action from automatically going to the next step when meeting the condition.
 
@@ -97,11 +97,11 @@ For example, 1.4.96
 
 `|count #` = Handler to track a sequence of objectives
 
-`|only if` = Conditional handler
+`|only if` and `|only if not` = Conditional handlers
 
 For example<br>
 `|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and _G.GetCurrentMapZoneIndex() == 712`<br>
-Only allow this step if the player's precise level is less than 6 and the current map zone index equals 712 (which is Elsweyr)
+Only allow this step if the player's precise level is less than 6 and the current map zone index equals 712 (Elsweyr)
 
 `|only if not ZGV.QuestTracker:IsQuestComplete("A City in Black")`<br>
 Only allow this step if the player hasn't completed the quest.
@@ -115,7 +115,7 @@ It appears to be the best method for accepting quests. `|only if not` causes the
 `|only ZGV.Quests:HasQuest("A City in Black")`<br>
 It appears to be the best method for quest steps. `|only if` causes the step to stick after accepting the quest.
 
-`|or` = Handler for dialog choices (Note: you need to put the |or handler for each selection)
+`|or` = Handler for dialog choices Important: You need to put the |or handler for each selection.
 
 For example<br>
 ```
