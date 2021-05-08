@@ -644,6 +644,7 @@ function Utils.GotoDistanceOffset(dist,selfdist)
 		elseif GetCurrentMapIndex() == Enums.BalFoyenMap then			return dist or selfdist or 10
 		elseif GetCurrentMapIndex() == Enums.BangkoraiMap then			return dist or selfdist or 10
 		elseif GetCurrentMapIndex() == Enums.BetnikhMap then			return dist or selfdist or 5
+		elseif GetCurrentMapIndex() == Enums.BlackwoodMap then			return dist or selfdist or 2
 		elseif GetCurrentMapIndex() == Enums.BleakrockIsleMap then		return dist or selfdist or 5
 		elseif GetCurrentMapIndex() == Enums.ClockworkCityMap then		return dist or selfdist or 15
 		elseif GetCurrentMapIndex() == Enums.ColdharbourMap then		return dist or selfdist or 8
@@ -659,8 +660,7 @@ function Utils.GotoDistanceOffset(dist,selfdist)
 		elseif GetCurrentMapIndex() == Enums.MalabalTorMap then			return dist or selfdist or 10
 		elseif GetCurrentMapIndex() == Enums.MurkmireMap then			return dist or selfdist or 3
 		elseif GetCurrentMapIndex() == Enums.NorthernElsweyrMap then	return dist or selfdist or 1.75
-
-
+		
 		elseif GetCurrentMapIndex() == Enums.SummersetMap then 			return dist or selfdist or 1.5
 		else return dist or selfdist or 1
 		end
@@ -679,6 +679,7 @@ function Utils.IsCompleteDistanceOffset()
 		elseif GetCurrentMapIndex() == Enums.BangkoraiMap then			return 10
 		elseif GetCurrentMapIndex() == Enums.BetnikhMap then			return 5
 		elseif GetCurrentMapIndex() == Enums.BleakrockIsleMap then		return 5
+		elseif GetCurrentMapIndex() == Enums.BlackwoodMap then			return 2
 		elseif GetCurrentMapIndex() == Enums.ClockworkCityMap then		return 15
 		elseif GetCurrentMapIndex() == Enums.ColdharbourMap then		return 8
 		elseif GetCurrentMapIndex() == Enums.CraglornMap then			return 8
@@ -693,8 +694,7 @@ function Utils.IsCompleteDistanceOffset()
 		elseif GetCurrentMapIndex() == Enums.MalabalTorMap then			return 10
 		elseif GetCurrentMapIndex() == Enums.MurkmireMap then			return 3
 		elseif GetCurrentMapIndex() == Enums.NorthernElsweyrMap then	return 1.75
-
-
+		
 		elseif GetCurrentMapIndex() == Enums.SummersetMap then			return 1.5
 		else return 1
 		end

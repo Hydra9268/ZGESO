@@ -14,6 +14,7 @@ Enums = {
 	BalFoyenMap = 18,
 	BangkoraiMap = 6,
 	BetnikhMap = 20,
+	BlackwoodMap = 43,
 	BleakrockIsleMap = 22,
 	ClockworkCityMap = 31,
 	ColdharbourMap = 23,
@@ -29,6 +30,6 @@ Enums = {
 	MalabalTorMap = 8,
 	MurkmireMap = 34,
 	NorthernElsweyrMap = 36,
-
+	
 	SummersetMap = 32,
 }
