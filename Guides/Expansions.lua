@@ -27530,4 +27530,383 @@ step
 goto 48.92,50.70
 talk Sombren |q Weapons of Destruction/Talk to Sombren
 step
+goto 48.92,50.70
+talk Destron |q Weapons of Destruction/Talk to Destron
+|tip Manually skip to the next step.
+step
+goto 48.92,50.70
+talk Calia |q Weapons of Destruction/Talk to Calia
+|tip Manually skip to the next step.
+step
+goto 45.56,49.74
+click Gideon |q Weapons of Destruction/Talk to Eveli Sharp-Arrow
+step
+goto 62.05,39.22
+talk Eveli Sharp-Arrow |q Weapons of Destruction/Talk to Eveli Sharp-Arrow
+step
+goto blackwood_base 56.94,48.16 |q Weapons of Destruction/Meet the Ambitions at the Shrine
+step
+goto 53.23,48.62
+'Meet the Ambitions at the Shrine |q Weapons of Destruction/Meet the Ambitions at the Shrine
+step
+goto 53.23,48.62
+talk Xynaa |q Weapons of Destruction/Talk to Xynaa
+step
+talk Sombren |q Weapons of Destruction/Talk to Sombren
+step
+goto 53.13,48.63
+talk Destron |q Weapons of Destruction/Talk to Destron
+|tip Manually skip to the next step.
+step
+goto 53.13,48.63
+talk Calia |q Weapons of Destruction/Talk to Calia
+|tip Manually skip to the next step.
+step
+goto 51.47,47.33
+'Take Crimson Deadlands Sliver |q Weapons of Destruction/.*Gather the Deadlands Slivers.* |count 1
+step
+goto 47.51,51.42
+'Take Obsidian Sliver |q Weapons of Destruction/.*Gather the Deadlands Slivers.* |count 2
+'Open Blackwood Map
+click Stonewastes Wayshrine
+'Travel to Stonewastes in Blackwood |q Weapons of Destruction/Meet Sombren on the Road
+step
+goto 65.51,70.33
+'Meet Sombren on the Road |q Weapons of Destruction/Meet Sombren on the Road
+step
+goto 65.51,70.33
+talk Sombren |q Weapons of Destruction/Talk to Sombren
+step
+goto 70.80,73.45 
+'Reach the Portal Site |q Weapons of Destruction/Reach the Portal Site
+step
+goto 70.80,73.45 
+'click Portal to the Ashen Forest |q Weapons of Destruction/Enter the Portal
+step
+goto u30_ashenforest_ext_base 24.12,85.98
+talk Xynaa |q Weapons of Destruction/Talk to Xynaa
+step
+goto 41.52,63.85
+'Reach Obelisk of Origin |q Weapons of Destruction/Reach the Obelisk of Origin
+step
+goto 41.52,63.85
+'Activate Obelisk of Origin |q Weapons of Destruction/Activate the Obelisk of Origin
+step
+goto 68.07,59.02
+'Reach Obelisk of Empowerment |q Weapons of Destruction/Reach the Obelisk of Empowerment
+step
+goto 68.07,59.02
+'Activate Obelisk of Empowerment |q Weapons of Destruction/Activate the Obelisk of Empowerment
+step
+goto 44.20,58.07 |q Weapons of Destruction/Reach the Obelisk of Inevitability
+step
+goto 35.45,43.41 |q Weapons of Destruction/Reach the Obelisk of Inevitability
+step
+goto 38.14,48.13
+'Reach Obelisk of Inevitability |q Weapons of Destruction/Reach the Obelisk of Inevitability
+step
+goto 38.14,48.13
+click Portal to the Inevitability |q Weapons of Destruction/Enter the Portal
+step
+goto
+talk Emperor Vandacia |q Weapons of Destruction/Confront the Inevitability
+step
+goto
+click Portal to the Ashen Forest |q Weapons of Destruction/Escape the Inevitability
+step
+goto 38.87,47.91
+talk Destron |q Weapons of Destruction/Talk to Destron
+step
+goto 38.87,47.91 
+talk Calia |q Weapons of Destruction/Talk to Calia
+step
+goto 38.87,47.91
+talk Sombren |q Weapons of Destruction/Talk to Sombren
+step
+goto 40.17,35.06
+click Xynaa's Sanctuary |q Weapons of Destruction/Enter Xynaa's Sanctuary
+step
+goto u30_ashenforest_int_base 18.52,87.74
+talk Xynaa |q Weapons of Destruction/Talk to Xynaa
+step
+click Xynaa's Sanctuary Professional Hall |q Weapons of Destruction/Follow Xynaa
+step
+goto 47.48,78.51
+talk Sombren |q Weapons of Destruction/Talk to Sombren
+step
+goto 52.50,77.70
+click Xynaa's Sanctuary: Maze |q Weapons of Destruction/Retrieve Daedric Skull
+|tip Manually skip to the next step.
+goto 64.54,77.75
+step
+click Xynaa's Sanctuary: Spiders' Larder |q Weapons of Destruction/Retrieve Daedric Skull
+|tip Manually skip to the next step.
+step
+click Xynaa's Sanctuary: Gauntlet |q Weapons of Destruction/Retrieve Daedric Skull
+|tip Manually skip to the next step.
+step
+goto 71.00,58.50
+click Xynaa's Sanctuary: Spiders' Den |q Weapons of Destruction/Retrieve Daedric Skull
+|tip Manually skip to the next step.
+step
+goto 65.98,52.34
+click Xynaa's Sanctuary: Crematorium |q Weapons of Destruction/Retrieve Daedric Skull
+|tip Manually skip to the next step.
+step
+click Xynaa's Sanctuary: Treasure Chamber |q Weapons of Destruction/Retrieve Daedric Skull
+|tip Manually skip to the next step.
+step
+goto 56.01,68.65
+'Search Xynaa's Trophy Chest |q Weapons of Destruction/Retrieve Daedric Skull
+step
+goto 60.03,69.42
+click Xynaa's Sanctuary: Maze |q Weapons of Destruction/Find Sombren
+|tip Manually skip to the next step.
+step
+goto 54.41,77.79
+click Xynaa's Sanctuary: Spidernest |q Weapons of Destruction/Find Sombren
+|tip Manually skip to the next step.
+step
+goto 47.44,72.67
+click Xynaa's Sanctuary: Cellar |q Weapons of Destruction/Find Sombren
+|tip Manually skip to the next step.
+step
+goto 47.45,59.29 |q Weapons of Destruction/Find Sombren
+step
+goto 47.55,40.79
+'Find Sombren |q Weapons of Destruction/Find Sombren
+step
+goto 47.55,40.79
+'Use Menthyx's Skull |q Weapons of Destruction/Recharge Sombren's Power
+step
+goto 46.28,40.45
+'Examine Xynaa's Book of Contracts |q Weapons of Destruction/Examine Xynaa's Book
+step
+goto 47.42,38.84
+click Xynaa's Sanctuary |q Weapons of Destruction/Enter Xynaa's Sanctuary
+step
+goto 47.42,28.79
+kill Xynaa
+step
+goto 47.42,28.79
+click Portal to Gideon |q Weapons of Destruction/Return to Gideon
+step
+goto u30_Gideoncity_base 37.73,46.86
+talk Sombren |q Weapons of Destruction/Talk to Sombren
+step
+goto 63.69,40.02
+click Govenor's Mansion |q Weapons of Destruction/Talk to Keshu the Black Fin
+|tip Manually skip to the next step.
+step
+goto 63.63,37.76
+talk Keshu the Black Fin
+turnin Weapons of Destruction
+accept Pyre of Ambition
+step
+goto 63.52,38.70
+talk Eveli |q Pyre of Ambition/Talk to Eveli Sharp-Arrow
+step
+goto 63.82,40.27
+click Gideon |q Pyre of Ambition/Talk to Sombren
+|tip Manually skip to the next step.
+step
+goto 43.13,49.70
+click Temple of Dibella |q Pyre of Ambition/Talk to Sombren
+|tip Manually skip to the next step.
+step
+goto 45.43,51.35
+talk Sombren |q Pyre of Ambition/Talk to Sombren
+step
+'Open Blackwood Map
+click Leyawiin Wayshrine
+'Travel to Leyawiin in Blackwood |q Pyre of Ambition/Talk to Captain Rian Liore
+|tip Manually skip to the next step.
+step
+goto u30_leyawiincity_base 48.44,67.30 |q Pyre of Ambition/Talk to Captain Rian Liore
+step
+goto 79.23,53.08
+click Leyawiin Castle Courtyard |q Pyre of Ambition/Talk to Captain Rian Liore
+|tip Manually skip to the next step.
+step
+goto 83.47,52.22
+talk Captain Rian Liore |q Pyre of Ambition/Talk to Captain Rian Liore
+step
+goto 80.60,53.25
+click Leyawiin |q Pyre of Ambition/Talk to Eveli Sharp-Arrow
+|tip Manually skip to the next step.
+step
+goto 79.31,42.49
+click Blackwood |q Pyre of Ambition/Talk to Eveli Sharp-Arrow
+step
+goto blackwood_base 31.54,52.98 |q Pyre of Ambition/Talk to Eveli Sharp-Arrow
+step
+goto 35.60,33.58 |q Pyre of Ambition/Talk to Eveli Sharp-Arrow
+step
+goto 29.56,32.53
+wayshrine Fort Redmane
+step
+goto 28.70,28.98
+talk Eveli Sharp-Arrow |q Pyre of Ambition/Talk to Eveli Sharp-Arrow
+step
+goto 28.22,28.94
+talk Keshu the Black Fin |q Pyre of Ambition/Talk to Keshu the Black Fin
+step
+goto 28.48,28.36
+click Fort Redmane |q Pyre of Ambition/Enter Fort Redmane
+step
+goto u30_redmayne_ext_base 49.90,62.18
+'Listen to Captain Rian and Eveli |q Pyre of Ambition/Listen to Captain Rian and Eveli
+step
+goto 49.90,62.18
+kill Bruzzak Tor |q Pyre of Ambition/Defend the Fort Courtyard
+step
+goto 49.97,59.27
+click Fort Redmane Guardhouse |q Pyre of Ambition/Find Eveli Sharp-Arrow
+step
+goto 33.60,54.45 
+'Clear the Guardhouse |q Pyre of Ambition/Clear the Guardhouse
+step
+goto 33.60,54.45
+'Listen to Eveli Sharp-Arrow |q Pyre of Ambition/Listen to Eveli Sharp-Arrow
+step
+goto 33.60,54.45
+click Fort Redmane West Wing |q Pyre of Ambition/Find the Ambitions
+|tip Manually skip to the next step.
+step
+goto 30.80,50.01 |q Pyre of Ambition/Find the Ambitions
+step
+goto 21.50,52.48 |q Pyre of Ambition/Find the Ambitions
+step
+goto 14.86,46.88 |q Pyre of Ambition/Find the Ambitions
+step
+goto 07.65,49.76
+talk Eveli Sharp-Arrow |q Pyre of Ambition/Find the Ambitions
+|tip Manually skip to the next step.
+step
+goto 04.68,50.36
+click Fort Redmane Inner Bailey |q Pyre of Ambition/Find the Ambitions
+|tip Manually skip to the next step.
+step
+goto u30_redmayne_ext_base 35.09,53.61
+Find the Ambitions |q Pyre of Ambition/Find the Ambitions
+step
+goto 34.58,50.16 
+Defend the Ambitions |q Pyre of Ambition/Defend the Ambitions
+step
+goto 35.13,40.44
+Defend the Ambitions |q Pyre of Ambition/Defend the Ambitions
+step
+goto 53.33,40.55
+Defend the Ambitions |q Pyre of Ambition/Defend the Ambitions
+step
+goto 50.14,47.26
+click Fort Redmane Keep |q Pyre of Ambition/Go to the Keep
+step
+goto u30_ashenforest_int_base 38.02,35.36
+'Secure the Keep |q Pyre of Ambition/Secure the Keep
+step
+goto 38.02,35.36
+'Listen to Sombren |q Pyre of Ambition/Listen to Sombren
+step
+goto 38.02,35.36
+talk Eveli Sharp-Arrow |q Pyre of Ambition/Talk to Eveli Sharp-Arrow
+step
+goto 38.02,35.36
+talk Calia |q Pyre of Ambition/Talk to Calia
+step
+goto 38.02,35.36
+talk Sombren |q Pyre of Ambition/Talk to Sombren
+step
+goto 38.04,41.68
+click Fort Redmane Museum Hall |q Pyre of Ambition/Reach the Courtyard
+|tip Manually skip to the next step.
+step
+goto 38.04,45.25 |q Pyre of Ambition/Reach the Courtyard
+step
+goto 87.32,52.48 |q Pyre of Ambition/Reach the Courtyard
+step
+goto 86.42,65.01
+click Fort Redmane Inner Courtyard |q Pyre of Ambition/Reach the Courtyard
+step
+goto u30_redmayne_ext_base 63.66,53.59
+kill Vandacia |q Pyre of Ambitions/Kill Vandacia
+step
+goto 63.66,53.59
+'Listen to Mehrunes Dagon |q Pyre of Ambitions/Listen to Mehrunes Dagon
+step
+goto 63.07,53.46
+talk Eveli Sharp-Arrow |q Pyre of Ambition/Talk to Eveli Sharp-Arrow
+|tip Manually skip to the next step.
+step
+goto 68.01,56.76
+talk Elam Drals |q Pyre of Ambitions/Talk to Elam Drals
+step
+'Open Blackwood Map
+click Fort Redmane Wayshrine
+'Travel to Fort Redmane in Blackwood |q Pyre of Ambitions/Leave Fort Redmane
+step
+goto blackwood_base 28.20,28.85
+talk to Calia |q Pyre of Ambitions/Talk to Calia
+step
+goto 28.14,28.90
+talk Sombren |q Pyre of Ambitions/Talk to Sombren
+step
+goto 28.82,28.98
+talk Kenshu the Black Fin |q Pyre of Ambitions/Talk to Kenshu the Black Fin
+|tip Manually skip to the next step.
+step
+goto 28.87,28.98
+talk Eveli Sharp-Arrow
+turnin Pyre of Ambitions
+accept Heroes of Blackwood
+step
+goto 29.54,32.53
+click Fort Redmane Wayshrine
+'Travel to Gideon in Blackwood |q Heroes of Blackwood/Go to the Temple of Dibella
+|tip Manually skip to the next step.
+step
+goto u30_Gideoncity_base 43.42,50.01
+click Temple of Dibella |q Heroes of Blackwood/Go to the Temple of Dibella
+step
+goto 48.49,46.57
+'Find
+step
+goto 48.49,46.57
+talk Priest Larusa |q Heroes of Blackwood/Talk to Larusa
+step
+goto 47.88,48.61
+talk Eveli Sharp-Arrow |q Heroes of Blackwood/Talk to Eveli Sharp-Arrow
+|tip Manually skip to the next step.
+step
+goto 43.65,49.70
+'Leave the Temple of Dibella |q Heroes of Blackwood/Leave the Temple of Dibella
+step
+goto 64.56,27.86 |q Heroes of Blackwood/Go to the Ruin
+step
+goto blackwood_base 51.56,47.40
+'Go to the Ruin |q Heroes of Blackwood/Go to the Ruin
+step
+goto 51.56,47.40
+talk Cali |q Heroes of Blackwood/Talk to Calia
+step
+goto 51.56,47.40 
+talk Sombren |q Heroes of Blackwood/Talk to Sombren
+step
+goto 51.68,47.41
+talk Eveli Sharp-Arrow |q Heroes of Blackwood/Talk to Eveli Sharp-Arrow
+step
+goto u30_Gideoncity_base 23.52,45.74 |q Heroes of the Blackwood/Go to the Victory Celebration
+step
+goto 77.28,43.95
+'Go to the Victory Celebration |q Heroes of the Blackwood/Go to the Victory Celebration
+step
+goto 77.28,43.95
+talk Keshu the Black Fin 
+turnin Heroes of the Blackwood |q Heroes of Blackwood/Talk to Kenshu the Black Fin
+step
+goto 77.11,44.85
+talk Eveli Sharp-Arrow 
+turnin Heroes of Blackwood
+step
+'Congratulations, you have completed Blackwood guide!
 ]])

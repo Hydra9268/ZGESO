@@ -2244,6 +2244,11 @@ ZGV.MapData = {
 		["deadlands_vault_base"] =				{ name = "Doomvault Capraxus",						id = 772, xoffset = 0.668055, yoffset = 0.737322, scale = 0.015174, },
 		["u30_deadlandskeep_ext_base"] =		{ name = "Vandacia's Deadline Keep",				id = 773, xoffset = 0.601428, yoffset = 0.678044, scale = 0.014734, },
 		["u30_deadlandskeep_int_base"] =		{ name = "Vandacia's Deadline Keep",				id = 773, xoffset = 0.611857, yoffset = 0.673037, scale = 0.015555, },
+		["u30_ashenforest_ext_base"] =			{ name = "Deadlands: The Ashen Forest",				id = 774, xoffset = 0.676944, yoffset = 0.684658, scale = 0.029020, },
+		["u30_ashenforest_int_base"] =			{ name = "Xynaa's Sanctuary",						id = 775, xoffset = 0.685450, yoffset = 0.679660, scale = 0.016445, },
+		["u30_redmayne_ext_base"] =				{ name = "u30_redmayne_ext_base",					id = 776, xoffset = 0.609749, yoffset = 0.630447, scale = 0.003436, },
+		["u30_redmayne_int_base"] =				{ name = "u30_redmayne_ext_base",					id = 777, xoffset = 0.610469, yoffset = 0.630835, scale = 0.002830, },
+		
 	},
 }
 
