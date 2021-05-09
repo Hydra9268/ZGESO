@@ -26610,6 +26610,53 @@ step
 goto 27.68,53.08
 talk Eveli Sharp-Arrow |q A Deadly Secret/Talk to Eveli Sharp-Arrow
 step
+goto 20.90,50.31
+talk Amalia Vasatoln
+accept Relics and Rumblings
+step
+goto 20.71,50.11
+click Undertow Cavern |q Relics and Rumblings/Enter Undertow Cavern
+step
+goto u30_undertowcavern_base 48.62,86.85
+'Take Phalevon's Magnificent Sword |q Relics and Rumblings/.*Gather Phalevon's Relics.* Count 1
+step
+goto 49.08,74.62 |q Relics and Rumblings/.*Gather Phalevon's Relics.* Count 2
+step
+goto 33.18,70.80
+'Take Phalevon's Magnificent helm |q Relics and Rumblings/.*Gather Phalevon's Relics.* Count 2
+step
+goto 49.85,74.62 |q Relics and Rumblings/.*Gather Phalevon's Relics.* Count 3
+step
+goto 60.86,62.84
+'Take Phalevon's Magnificent armor |q Relics and Rumblings/.*Gather Phalevon's Relics.* Count 3
+step
+goto 60.86,62.84
+talk Amalia Vasatoln |q Relics and Rumblings/Talk to Amalia Vasatoln
+step
+goto 53.21,68.20 |achieve 2982/14
+step
+goto 52.45,40.52
+click Skyshard |achieve 2982/14
+|tip Follow Ramp
+step
+goto 50.00,39.45 |achieve 2965
+step
+goto 50.31,16.06
+kill Druvaakh The Smasher
+'Explore Undertow Cavern |achieve 2965
+step
+goto 52.29,13.30
+'Take Phalevon's Horn of Magnificent |q Relics and Rumblings/Gather Phalevon's Horn of Magnificent
+step
+goto 50.76,15.29 |q Relics and Rumblings/Exit Undertow Cavern
+step
+goto 57.19,14.98
+click Blackwood |q Relics and Rumblings/Exit Undertow Cavern
+step
+goto blackwood_base 24.35,48.03
+talk Amalia Vasatoln
+turnin Relics and Rumblings
+step
 goto 19.57,49.55 
 'Warn Councilor Sophus |q A Deadly Secret/Warn Councilor Sophus
 step
@@ -26621,6 +26668,9 @@ goto 18.07,46.81
 step
 goto 18.10,46.87
 talk Lunia Sophus |q A Deadly Secret/Talk to Lunia Sophus
+step
+goto 16.37,44.79
+click Skyshard |achieve 2982/3
 step
 goto 23.14,63.66
 talk Councilor Faleria |q A Deadly Secret/Warn Councilor Faleria
@@ -26750,6 +26800,9 @@ step
 click Blackwood Crossroads Wayshrine
 'Travel to Blackwood Crossroads in Blackwood |q A Deadly Secret/Warn Councilor Vandacia
 step
+goto 46.73,56.32
+click Skyshard |achieve 2982/10
+step
 goto u30_Gideoncity_base 55.54,30.35
 wayshrine Gideon
 step
@@ -26815,6 +26868,16 @@ step
 goto blackwood_base 36.24,66.51
 wayshrine Blueblood
 step
+goto 30.30,64.60 |achieve 2892/1
+step
+goto 29.23,63.79 |achieve 2892/1
+step
+goto 29.37,64.18
+click Skyshard |achieve 2892/1
+|tip climb to the top of the tower
+step
+goto 30.36,64.55 |q A Deadly Secret/Find Councilor Faleria
+step
 goto 32.69,69.71 |q A Deadly Secret/Find Councilor Faleria
 step
 goto 31.01,68.25
@@ -26861,7 +26924,92 @@ click Gideon Wayshrine
 step
 goto u30_Gideoncity_base 64.91,26.51 |q An Unexpected Adversary/Go to Bloodrun Cave
 step
-goto blackwood_base 67.06,48.45 |q An Unexpected Adversary/Go to Bloodrun Cave
+goto 71.50,56.12 |achieve 2967
+step
+goto 74.13,51.57
+talk Khud af-Hadajja
+accept A Battle of Silk and Flame
+step
+goto 74.13,51.57
+click Doomvault Porcixid |q A Battle of Silk and Flame/Enter the Doomvault
+step
+goto VaultDelve_INT01_base 82.97,50.44
+click Doomvault |q A Battle of Silk and Flame/Find Morgane
+step
+goto VaultDelve_EXT01_base 41.25,76.73
+'Find Morgane Brousseau |q A Battle of Silk and Flame/Find Morgane
+step
+goto 41.25,76.73
+'Examine Morgrane Brousseau |q A Battle of Silk and Flame/Take the Sending Stone
+step
+goto 60.58,67.21 |q A Battle of Silk and Flame/.*Investigate the Doomvault.* |count 1
+step
+goto 68.65,56.73
+'Use Morgane's Sending Stone |q A Battle of Silk and Flame/.*Investigate the Doomvault.* |count 1
+step
+goto 64.04,43.56 |q A Battle of Silk and Flame/.*Investigate the Doomvault.* |count 2
+step
+goto 36.06,53.46 |q A Battle of Silk and Flame/.*Investigate the Doomvault.* |count 2
+step
+goto 34.33,37.50 |achieve 2982/15
+step
+goto 26.15,37.60
+click Doomvault Porcixid |achieve 2982/15
+step
+goto VaultDelve_INT02B_base 14.69,56.12 |achieve 2982/15
+step
+goto VaultDelve_INT02A_base 87.32,34.70 
+click Skyshard |achieve 2982/15
+step
+goto 95.06,27.03
+click Doomvault Porcixid |q A Battle of Silk and Flame/.*Investigate the Doomvault.* |count 2
+step
+goto VaultDelve_INT02B_base 60.61,26.53
+click Doomvault Porcixid |q A Battle of Silk and Flame/.*Investigate the Doomvault.* |count 2
+step 
+goto VaultDelve_EXT01_base 31.83,64.33
+click Doomvault Porcixid |q A Battle of Silk and Flame/.*Investigate the Doomvault.* |count 2
+step
+goto VaultDelve_INT02A_base 55.51,47.55
+'Use Morgane's Sending Stone |q A Battle of Silk and Flame/.*Investigate the Doomvault.* |count 2
+step
+goto 13.47,47.14
+click Doomvault Porcixid |q A Battle of Silk and Flame/.*Investigate the Doomvault.* |count 3
+step
+goto VaultDelve_EXT02_base 42.37,33.41 |q A Battle of Silk and Flame/.*Investigate the Doomvault.* |count 3
+step
+goto 21.03,49.28
+'Use Morgane's Sending Stone |q A Battle of Silk and Flame/.*Investigate the Doomvault.* |count 3
+step
+goto 84.97,49.89
+click Doomvault Porcixid |q A Battle of Silk and Flame/Find the Daedric Device
+step
+goto VaultDelve_INT03_base 33.93,65.62
+kill Karzikon the Razorsworm
+'Explore Doomvault Porcixid |achieve 2967
+step
+goto 34.08,83.18 |q A Battle of Silk and Flame/Find the Daedric Device
+step
+goto 65.92,58.26
+'Find the Daedric Device |q A Battle of Silk and Flame/Find the Daedric Device
+step
+goto 65.92,58.28
+'Destroy the Daedric |q A Battle of Silk and Flame/Destroy the Daedric Device
+step
+goto 69.22,25.53
+step
+goto VaultDelve_INT01_base 12.23,50.66
+click Blackwood |q A Battle of Silk and Flame/Exit the Doomvault
+step
+goto blackwood_base 73.93,51.43
+talk Khud af-Hadajja
+turnin A Battle of Silk and Flame
+step
+goto 67.06,48.45 |q An Unexpected Adversary/Go to Bloodrun Cave
+step
+goto 75.34,36.30
+click Sksyshard |achieve 2982/5
+|tip Stay on Road to avoid being dismounted.
 step
 goto 65.92,39.73
 wayshrine Hutan-Tzel
@@ -27032,6 +27180,8 @@ step
 goto blackwood_base 65.92,19.20
 talk Mim-Jasa
 turnin Destroying What Remains
+goto 58.10,18.24
+click Skyshard |achieve 2982/6
 step
 goto 66.36,22.11
 click Bloodrun Wayshrine
@@ -27110,8 +27260,64 @@ step
 goto 60.41,77.85 
 wayshrine Stonewastes
 step
+goto 58.84,76.49
+click Skyshard |achieve 2982/9
+step
+goto 55.02,77.52
+talk Jela
+accept Idol Threats
+step
+goto 54.82,77.21
+click Xi-Tsei
+step
+goto u30_xanmeeroverlook_ext_base 52.69,62.07 |q Idol Threats/.*Disrupt the Sul-Xan Rituals.* |count 1
+step
+goto 38.89,63.95
+'Destroy Ritual Focus |q Idol Threats/.*Disrupt the Sul-Xan Rituals.* |count 1
+step
+goto 49.55,34.72 
+click Xi-Tsei |q Idol Threats/.*Disrupt the Sul-Xan Rituals.* |count 2
+step
+goto u30_xanmeeroverlook_int_base 35.52,37.25 |q Idol Threats/.*Disrupt the Sul-Xan Rituals.* |count 2
+step
+goto 36.49,76.50
+'Destroy Ritual Focus |q Idol Threats/.*Disrupt the Sul-Xan Rituals.* |count 2
+step
+goto 35.52,37.25 |q Idol Threats/.*Disrupt the Sul-Xan Rituals.* |count 3
+step
+goto 27.28,22.57 |q Idol Threats/.*Disrupt the Sul-Xan Rituals.* |count 3
+step
+goto 56.98,28.16 
+'Destroy Ritual Focus |q Idol Threats/.*Disrupt the Sul-Xan Rituals.* |count 3
+step
+goto 62.09,31.62
+talk Jela |q Idol Threats/Talk to Jela
+step
+goto 60.10,20.44 
+click Xi-Tsei |q Idol Threats/Find the Idol of Xulunaht
+step
+goto u30_xanmeeroverlook_ext_base 51.79,45.95
+kill Raj-Kaal loraxeek
+'Explore Xi-Tsei |achieve 2966
+step
+goto 50.54,48.68
+'Destroy Idol of Xulunaht |q Idol Threats/Destroy Idol of Xulunaht
+step
+goto 68.07,51.11
+click Skyshard 2982/13
+step
+goto 71.07,68.90
+click Blackwood
+step
+goto blackwood_base 56.07,78.00
+talk Jela
+turnin Idol Threats
+step
 goto 67.28,88.23
 'Meet Eveli Near Sul-Xan Territory |q A Hidden Vault/Meet Eveli Near Sul-Xan Territory
+step
+goto 70.33,91.09
+click Skyshard |achieve 2982/2
 step
 goto 67.28,88.23
 talk Eveli Sharp-Arrow |q A Hidden Vault/Talk to Eveli Sharp-Arrow
@@ -27565,6 +27771,11 @@ step
 goto 51.47,47.33
 'Take Crimson Deadlands Sliver |q Weapons of Destruction/.*Gather the Deadlands Slivers.* |count 1
 step
+goto 54.06,44.79 |achieve 2982/7
+step
+goto 53.69,45.71
+click Skyshard |achieve 2982/7
+step
 goto 47.51,51.42
 'Take Obsidian Sliver |q Weapons of Destruction/.*Gather the Deadlands Slivers.* |count 2
 'Open Blackwood Map
@@ -27579,6 +27790,69 @@ talk Sombren |q Weapons of Destruction/Talk to Sombren
 step
 goto 70.80,73.45 
 'Reach the Portal Site |q Weapons of Destruction/Reach the Portal Site
+step
+goto 76.93,73.33
+wayshrine Vunalk
+step
+step
+goto 81.35,70.67
+click Skyshard |achieve 2982/8
+goto 83.01,69.58
+talk Hokatsei
+accept In Need of a Bath
+step
+goto 83.97,69.45
+click Vunalk |q In Need of a Bath/Enter the Ruins of Vunalk
+step
+goto vunalk1_base 25.26,71.31 |q In Need of a Bath/.*Bathe Deet-Loh.* |count 1
+step
+goto 52.43,70.74
+'Bathe Humble Pool |q In Need of a Bath/.*Bathe Deet-Loh.* |count 1
+step
+goto 69.66,75.12 |q In Need of a Bath/.*Bathe Deet-Loh.* |count 2
+step
+goto 80.33,39.13
+'Bathe Remorseful Pool |q In Need of a Bath/.*Bathe Deet-Loh.* |count 2
+step
+goto 75.77,21.15 |achieve 2982/18
+step
+goto 85.67,21.13
+click Skyshard |achieve 2982/18
+step
+goto 54.52,42.69
+'Bathe Penitent Pool |q In Need of a Bath/.*Bathe Deet-Loh.* |count 3
+step
+goto 54.61,42.58
+talk Hokatsei |q In Need of a Bath/Talk to Hokatsei
+step
+goto 44.89,25.52
+step
+goto 20.71,31.13
+'Escort 
+step
+goto 20.71,31.13
+'Bathe Frog Pool |q In Need of a Bath/Bathe Deet-Loh
+step
+goto 20.18,30.86
+'Listen to Deet-Loh |q In Need of a Bath/Listen to Deet-Loh
+step
+goto 27.92,43.53
+kill Choking Vine
+'Explore Vunalk |achieve 2970
+step
+goto 21.98,67.00 |q In Need of a Bath/Leave the Ruins of Vunalk
+step
+goto vunalk1_base 04.57,71.47
+click Blackwood |q In Need of a Bath/Leave the Ruins of Vunalk
+step
+goto blackwood_base 83.02,69.58
+talk Hokatsei
+turnin In Need of a Bath
+step
+'Open Blackwood Map
+click Vunalk Wayshrine
+'Travel to Vunalk in Blackwood |q Weapons of Destruction/Enter the Portal
+|tip Manually skip to the next step.
 step
 goto 70.80,73.45 
 'click Portal to the Ashen Forest |q Weapons of Destruction/Enter the Portal
@@ -27745,6 +28019,64 @@ step
 goto 29.56,32.53
 wayshrine Fort Redmane
 step
+goto 36.55,26.99
+talk Duke of Crows
+accept Glittering Lies
+step
+goto 36.94,29.96
+click Arpenia |q Glittering Lies
+step
+goto arpeniaL_base 42.57,29.82 |q Glittering Lies/Free the Blackfeather Court |count 1
+step
+goto 43.34,19.97
+talk Duke of Crows |q Glittering Lies/Free the Blackfeather Court |count 1
+step
+goto 65.34,13.31 |q Glittering Lies/Free the Blackfeather Court |count 1
+step
+goto arpeniaH2_base 67.77,21.03
+'Destroy Ornate Mirror |q Glittering Lies/Free the Blackfeather Court |count 1
+step
+goto arpeniaL_base 64.37,22.53 |q Glittering Lies/Free the Blackfeather Court |count 2
+step
+goto 81.95,42.59 |q Glittering Lies/Free the Blackfeather Court |count 2
+step
+goto 64.18,56.95
+'Destroy Ornate Mirror |q Glittering Lies/Free the Blackfeather Court |count 2
+step
+goto 80.11,52.01 |q Glittering Lies/Free the Blackfeather Court |count 3
+step
+goto arpeniaH_base 85.85,45.05
+click Skyshard |achieve 2982/16
+step
+goto 80.74,60.20 |q Glittering Lies/Free the Blackfeather Court |count 3
+step
+goto 45.43,60.89
+'Destroy Ornate Mirror |q Glittering Lies/Free the Blackfeather Court |count 3
+step
+goto 45.64,61.95
+talk Duke of Crows |q Glittering Lies/Talk to Duke of Crows
+step
+goto 40.81,56.08 |q Glittering Lies/Free the Duke of Crows
+step
+goto 16.41,39.00
+kill Shadow Knight Nassuphae
+'Explore Arpenia |achieve 2968
+step
+goto 20.73,36.95
+'Destroy Ornate Mirror |q Glittering Lies/Free the Duke of Crows
+step
+goto 20.73,34.15 |q Glittering Lies/Exit Arphenia Ruins
+step
+goto arpeniaL_base 32.25,30.16
+click Blackwood |q Glittering Lies/Exit Arphenia Ruins
+step
+goto blackwood_base 36.58,26.96
+talk Duke of Crows
+turnin Glittering Lies
+step
+goto 30.22,22.63
+click Skyshard 2982/4
+step
 goto 28.70,28.98
 talk Eveli Sharp-Arrow |q Pyre of Ambition/Talk to Eveli Sharp-Arrow
 step
@@ -27788,16 +28120,16 @@ click Fort Redmane Inner Bailey |q Pyre of Ambition/Find the Ambitions
 |tip Manually skip to the next step.
 step
 goto u30_redmayne_ext_base 35.09,53.61
-Find the Ambitions |q Pyre of Ambition/Find the Ambitions
+'Find the Ambitions |q Pyre of Ambition/Find the Ambitions
 step
 goto 34.58,50.16 
-Defend the Ambitions |q Pyre of Ambition/Defend the Ambitions
+'Defend the Ambitions |q Pyre of Ambition/Defend the Ambitions
 step
 goto 35.13,40.44
-Defend the Ambitions |q Pyre of Ambition/Defend the Ambitions
+'Defend the Ambitions |q Pyre of Ambition/Defend the Ambitions
 step
 goto 53.33,40.55
-Defend the Ambitions |q Pyre of Ambition/Defend the Ambitions
+'Defend the Ambitions |q Pyre of Ambition/Defend the Ambitions
 step
 goto 50.14,47.26
 click Fort Redmane Keep |q Pyre of Ambition/Go to the Keep
