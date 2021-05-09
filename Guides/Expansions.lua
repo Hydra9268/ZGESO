@@ -26669,8 +26669,153 @@ step
 goto 18.10,46.87
 talk Lunia Sophus |q A Deadly Secret/Talk to Lunia Sophus
 step
+goto 21.19,42.25
+'Examine Pirate's Treasure Message
+accept The Pirate's Gift
+step
+goto 19.60,40.10
+talk Brigadine Scout Iscaria
+accept A Keep's Ransom
+step
+goto 20.31,36.12
+talk Commander Axius |q A Keep's Ransom/Talk to Commander Axius
+step
+goto 18.02,32.10 |q A Keep's Ransom/Enter the Broderwatch Keep
+step
+goto 17.48,31.94
+click Borderwatch Sewer |q A Keep's Ransom/Enter the Borderwatch Keep
+step
+goto Borderwatch Sewers 25.23,36.71
+'Find a Way in the Keep |q A Keep's Ransom/Find a Way in the Keep
+step
+goto 09.53,51.66
+'Find the Source of the Voice |q A Keep's Ransom/Find the Source of the Voice
+step
+goto 09.53,51.66
+talk Erilthel |q A Keep's Ransom/Talk to Erilthel
+step
+goto 49.87,54.35 |q A Keep's Ransom/Find Seeks-the-Dark
+step
+goto 63.87,36.67 |q A Keep's Ransom/Find Seeks-the-Dark
+step
+goto 78.90,60.54
+click Borderwatch Cellars |q A Keep's Ransom/Find Seeks-the-Dark
+|tip Manually skip to the next step.
+step
+step
+goto 91.67,70.74
+'Find Seeks-the-Dark |q A Keep's Ransom/Find Seeks-the-Dark
+step
+goto 91.67,70.74
+talk Seeks-the-Dark |q A Keep's Ransom/Talk to Seeks-the-Dark
+step
+goto 86.50,79.72
+click Borderwatch Courtyard |q A Keep's Ransom/Save the Hostages in the Southwest Guard
+|tip Manually skip to the next step.
+step
+goto u30_borderwatchkeep 75.82,55.03
+'Destroy Chain Post |q A Keep's Ransom/Save the Hostages in the Southwest Guard
+step
+goto 75.84,55.66
+talk Calixto Tunifus |q A Keep's Ransom/Talk to Calix Tunifus
+step
+goto 26.35,56.35
+'Destroy Chain Post |q A Keep's Ransom/Save the Hostages at the Smithy
+step
+goto 26.15,56.64
+talk Shanil-Tee |q A Keep's Ransom/Talk to Shanil-Tee
+step
+goto 49.84,83.16
+'Destroy Chain Post |q A Keep's Ransom/Save the Hostages at the Stables
+step
+goto 49.84,83.16
+talk Otten |q A Keep's Ransom/Talk to Otten
+step
+goto 40.34,29.48
+'Lead the Hostages to Safety |q A Keep's Ransom/Lead the Hostages to Safety
+step
+goto 40.34,29.48
+talk Seeks-the-Dark |q A Keep's Ransom/Talk to Seeks-the-Dark
+step
+goto 33.28,41.39 
+click Borderwatch Keep |q A Keep's Ransom/Rescue the Ayleid Scholar
+|tip Manually skip to the next step.
+step
+goto u30_borderwatch_int_base 67.58,39.86 |q A Keep's Ransom/Rescue the Ayleid Scholar
+step
+goto 49.42,20.30 |q A Keep's Ransom/Rescue the Ayleid Scholar
+step
+goto 62.67,20.22
+talk Teldundindo of Sunhold |q A Keep's Ransom/Rescue the Ayleid Scholar
+step
+goto 21.93,40.31 |q A Keep's Ransom/Get the Crypt Key
+step
+goto 41.22,61.03
+'Take Crypt Key |q A Keep's Ransom/Get the Crypt Key
+step
+goto 35.43,91.81 |q A Keep's Ransom/Go to the Crypt
+step
+goto 90.24,72.16
+click Borderwatch Courtyard |q A Keep's Ransom/Go to the Crypt
+step
+goto u30_borderwatchkeep 46.16,18.93
+click Borderwatch Crypt |q A Keep's Ransom/Go to the Crypt
+step
+goto u30_borderwatch_chapel_base 45.79,81.82 |q A Keep's Ransom/Find the Entrace to the Ayleid Ruin
+step
+goto 46.45,54.44 |q A Keep's Ransom/Find the Entrace to the Ayleid Ruin
+step
+goto 43.69,10.19
+'Find the Entrace to the Ayleid Ruin |q A Keep's Ransom/Find the Entrace to the Ayleid Ruin
+step
+goto 43.69,10.19
+click Ayleid Ruin |q A Keep's Ransom/Search the Ayleid Ruin
+|tip Manually skip to the next step.
+step
+goto 59.26,60.27
+'Search the Ayleid Ruin |q A Keep's Ransom/Search the Ayleid Ruin
+step
+goto 59.26,60.27
+'Destroy Attunement Crystal |q A Keep's Ransom/Stop the Painted Eye Ritual
+step
+goto 49.47,43.42
+'Destroy Attunement Crystal |q A Keep's Ransom/Stop the Painted Eye Ritual
+step
+goto 59.01,25.27
+'Destroy Attunement Crystal |q A Keep's Ransom/Stop the Painted Eye Ritual
+step
+goto 38.98,4352
+click Ayleid Vault |q A Keep's Ransom/Confront the Painted Eye's Leader
+|tip Manually skip to the next step.
+step
+goto 25.39,42.84
+'Confront the Painted Eye's Leader |q A Keep's Ransom/Confront the Painted Eye's Leader
+step
+goto 08.29,88.27
+click Blackwood |q A Keep's Ransom/Escape the Ayleid Ruin
+step
+goto blackwood_base 14.97,37.92
+talk Erilthel |q A Keep's Ransom/Talk to Erilthel
+step
+goto 14.97,37.92
+talk Seeks-the-Dark |q A Keep's Ransom/Talk to Seeks-the-Dark
+step
+goto 17.34,36.23
+talk Commander Axius
+turnin A Keep's Ransom
+step
+goto 16.37,40.70
+wayshrine Borderwatch
+step
 goto 16.37,44.79
 click Skyshard |achieve 2982/3
+step
+goto 21.86,60.67
+'Examine Aloysius's Note
+accept Dog Days
+step
+goto 21.89,60.73
+'Search Aloysius's Pack |q Dog Days/Retrieve Aloysius's Ring
 step
 goto 23.14,63.66
 talk Councilor Faleria |q A Deadly Secret/Warn Councilor Faleria
@@ -26724,11 +26869,30 @@ goto 80.60,53.24
 click Leyawiin |q A Deadly Secret/Go to Fort Blueblood
 |tip Manually skip to the next step.
 step
+goto 47.70,32.21
+'Find Tertia Falto |q Dog Days/Find Tertia Falto
+step
+goto 47.70,32.21
+talk Tertia Falto
+turnin Dog Days
+step
+goto 22.69,50.57
+'Examine Work for Hire in Leyawiin
+accept Help Wanted in Leyawiin
+step
+goto 22.65,53.39
+talk Servatius Leontulon 
+turnin Help Wanted in Leyawiin
+step
 goto 78.98,42.58
 click Blackwood |q A Deadly Secret/Go to Fort Blueblood
 |tip Manually skip to the next step.
 step
-goto blackwood_base 41.35,52.87 
+goto blackwood_base 33.82,53.88
+'Examine Phantasmal Discovery Awaits
+accept Giving Up the Ghost
+step
+goto 41.35,52.87 
 wayshrine Blackwood Crossroads
 step
 goto 38.02,60.64
@@ -26803,8 +26967,24 @@ step
 goto 46.73,56.32
 click Skyshard |achieve 2982/10
 step
-goto u30_Gideoncity_base 55.54,30.35
+goto u30_Gideoncity_base 09.47,43.82
+'Examine Author's Assistance Wanted!
+accept The Ghostwriter of Giovesse
+step
+goto 35.42,51.47
+click The Egg and Hammer Inn |q The Ghostwriter of Giovesse/Talk to Yisara
+step
+goto 32.79,56.29
+talk Yisara |q The Ghostwriter of Giovesse/Talk to Yisara
+step
+goto 33.49,51.70 |q A Deadly Secret/Warn Councilor Vandacia
+step
+goto 55.54,30.35
 wayshrine Gideon
+step
+goto 59.28,30.90
+talk Faric Gemain
+accept Haunted Legacy
 step
 goto 49.10,36.84
 click Gideon Courthouse |q A Deadly Secret/Warn Councilor Vandacia
@@ -26859,6 +27039,69 @@ click Gideon Courtyard |q A Deadly Secret/Talk to Councilor Vandacia
 step
 goto 46.40,34.93
 talk Councilor Vandacia |q A Deadly Secret/Talk to Councilor Vandacia
+step
+goto 48.96,35.05
+click Gideon |q Haunted Legacy/Escort Faric Gemain
+step
+goto 43.44,50.00
+click Temple of Dibella |q Haunted Legacy/Escort Faric Gemain
+step
+goto 49.37,49.97
+'Escort Faric Gemain |q Haunted Legacy/Escort Faric Gemain
+|tip Upstairs
+step
+goto 49.37,49.97
+talk Faric Gemain |q Haunted Legacy/Talk to Faric Gemain
+step
+goto 49.13,48.75
+'Search the Ground Floor |q Haunted Legacy/Search the Ground Floor
+step
+goto 49.13,48.75
+'Use Memory Stone |q Haunted Legacy/Use Memory Stone
+step
+goto 49.13,48.75
+talk Faric Gemain |q Haunted Legacy/Talk to Faric Gemain
+step
+goto 45.58,50.61
+'Explore the Second Floor |q Haunted Legacy/Explore the Second Floor
+step
+goto 45.58,50.61
+'Use Memory Stone |q Haunted Legacy/Use Memory Stone
+step
+goto 44.68,51.00
+'Explore the Top Floor |q Haunted Legacy/Explore the Top Floor
+goto 44.68,51.00
+'Use Memory Stone |q Haunted Legacy/Use Memory Stone
+step
+goto 44.52,48.78
+'Activate Suspicious Wall |q Haunted Legacy/Activate Suspecious Wall
+step
+goto 44.54,48.84
+click Phantom Door |q Haunted Legacy/Use the Phantom Door
+step
+goto 45.29,47.58
+'Examine Crude Map |q Haunted Legacy/Examine the Crude Map
+step
+goto 45.29,47.58
+'Examine Ledger of Souls |q Haunted Legacy/Examine the Ledger
+step
+goto 45.10,48.13
+talk Faric Gemain |q Haunted Legacy/Talk to Faric Gemain
+step
+goto 45.10,48.13
+'Watch Faric |q Haunted Legacy/Watch Faric
+step
+goto 45.10,48.13
+talk Faric Gemain |q Haunted Legacy/Talk to Faric Gemain
+step
+goto 44.60,47.94
+click Phantom Door |q Haunted Legacy/Find the Lost Carriage
+|tip Manually skip to the next step.
+step
+goto 43.75,46.69
+click Gideon |q Haunted Legacy/Find the Lost Carriage
+|tip Ground Floor
+|tip Manually skip to the next step.
 step
 'Open Blackwood Map
 click Blackwood Crossroads Wayshrine
@@ -27793,7 +28036,6 @@ goto 70.80,73.45
 step
 goto 76.93,73.33
 wayshrine Vunalk
-step
 step
 goto 81.35,70.67
 click Skyshard |achieve 2982/8
