@@ -2132,7 +2132,7 @@ ZGV.MapData = {
 		["moongate_base"] ={ name = "Moon Gate of Anequina",id = 676, xoffset = 0.90292587062169, yoffset = -0.076247444700743, xscale = -0.98680423018764, },
 		["moonsurface_base"] ={ name = "Jode's Core",id = 677, xoffset = 0.58902459270864, yoffset = 1.3638879949588, xscale = -0.64374272427174, },
 		["thescab_base"] ={ name = "Darkpool Mine",id = 678, xoffset = -0.09350672985143, yoffset = -0.068329917242788, xscale = 1.1000791747227, },
-		["thetangle_base"] ={ name = "The Tangle",id = 679, xoffset = 1.1163170573778, yoffset = 0.85366619048082, xscale = 0.85366619048082, },
+		["thetangle_base"] =					{ name = "The Tangle",								id = 679, xoffset = 1.1163170573778, yoffset = 0.85366619048082, xscale = 0.85366619048082, },
 		
 		--SOUTHERN ELSWEYR
 		["WindScourTemple_Base"] =              { name = "Wind Scour Temple",                       id = 680, xoffset = 0.224073, yoffset = 0.411174, scale = 0.035977, },
