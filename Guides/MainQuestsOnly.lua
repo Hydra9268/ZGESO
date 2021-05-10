@@ -5508,7 +5508,7 @@ step
 goto koeglinvillage_base 45.77,29.18
 |tip Inside the building.
 talk Captain Jerick
-turnin A Dangerous Dream |next Daggerfall Covenant Leveling Guides\\Main Quests Only\\Daggerfall Covenant\Stormhaven
+turnin A Dangerous Dream |next Daggerfall Covenant Leveling Guides\\Main Quests Only\\Daggerfall Covenant\\Stormhaven
 ]])
 
 ZGV:RegisterGuide("Ebonheart Pact Leveling Guides\\Main Quests Only\\Ebonheart Pact\\Bleakrock Isle",[[
