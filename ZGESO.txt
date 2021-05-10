@@ -136,7 +136,7 @@ Guides/Skyshards.lua
 Guides/MainQuestsOnly.lua
 Guides/DLCs.lua
 Guides/Expansions.lua
-Guides/Testing.lua
+-- Guides/Testing.lua
 
 Testing/Main.lua
 Testing/UI.lua
