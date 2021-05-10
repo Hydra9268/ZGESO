@@ -33693,37 +33693,55 @@ ZGV:RegisterGuide("Daggerfall Covenant Leveling Guides\\Bangkorai",[[
 loadingimage loadscreen_bankorai_01.dds
 description This region takes its name from its most famous feature, the Bangkorai Pass, which has served as High Rock's defense against the wild raiders of Hammerfell for countless generations. The uplands north of the pass and the desert to the south are both ruled from the port city of Evermore.
 step
+goto evermore_base 24.08,59.86
+talk Sergeant Antieve
+accept A City in Black
+|only not ZGV.Quests:HasQuest("A City in Black")
+step
 goto evermore_base 28.19,57.67
-'Follow the path |q Kingdom in Mourning/Find the Stables in Evermore
-|tip Manually skip to the next step.
 step
 goto 35.53,57.50
-'Find the Stables in Evermore |q Kingdom in Mourning/Find the Stables in Evermore
+|only ZGV.Quests:HasQuest("Kingdom in Mourning")
 step
 goto 38.19,58.91
 talk Ramza
 turnin Kingdom in Mourning
+|only ZGV.Quests:HasQuest("Kingdom in Mourning")
 step
 goto 35.41,55.34
 click The Legend of Fallen Grotto
 lorebook The Legend of Fallen Grotto/1/4/1
 step
 goto 36.22,66.43
-'Jump down here |achieve 557/1
-|tip Manually skip to the next step.
 step
 goto 35.48,67.99
 click Skyshard |achieve 557/1
 step
+goto 23.86,60.14
+step
 goto 29.91,57.29
-'Follow the path |q Conflicted Emotions/Meet Zaag at the Silaseli Ruins |future
-|tip Manually skip to the next step.
+step
+goto 40.35,55.61
+step
+goto 51.36,46.68
+step
+goto 48.71,35.34
 step
 goto 50.85,34.08
-|tip Downstairs inside the building.
+click Dragonstar Caravan Company
+|tip Manually skip to the next step.
+step
+goto 53.76,34.38
+step
+goto 50.85,34.08
 talk Zaag
-|tip She walks around.
 accept Conflicted Emotions
+step
+goto 53.76,34.38
+step
+goto 50.46,33.68
+click Evermore
+|tip Manually skip to the next step.
 step
 goto 65.17,21.22
 talk Llotha Nelvani
@@ -33757,9 +33775,7 @@ talk Llotha Nelvani |tip She walks around.
 'Tell her _"His last name was Rernis and he was the mage."_
 turnin A Grave Matter
 step
-goto  69.95,30.33
-'Follow the path |q Beyond the Call/Search the Chapel |future
-|tip Manually skip to the next step.
+goto 69.95,30.33
 step
 goto bangkorai_base 46.68,37.12
 wayshrine Eastern Evermore
@@ -33768,13 +33784,13 @@ goto 47.22,33.57
 click Aspects of Lord Hircine
 lorebook Aspects of Lord Hircine/1/4/5
 step
-goto 48.05,36.67
-'Follow the path |q Beyond the Call/Search the Chapel |future
-|tip Manually skip to the next step.
+goto 47.90,35.39
 step
 goto 46.03,30.48
 talk Captain Eugien Gaercroft
 accept Beyond the Call
+step
+goto 48.26,24.89
 step
 goto 48.12,25.31
 |tip Upstairs inside the building.
@@ -33782,6 +33798,10 @@ goto 48.12,25.31
 step
 goto 48.13,25.31
 talk Hatmi |q Beyond the Call/Talk to Hatmi
+step
+goto 47.98,24.83
+step
+goto 48.13,25.71
 step
 goto 49.35,22.91
 'Find the Wyrd Camp |q Beyond the Call/Find the Wyrd Camp
@@ -33804,10 +33824,11 @@ step
 goto 50.41,24.51
 talk Wyress Delphique |q Beyond the Call/Talk to Wyress Delphique
 step
-goto 50.39,22.34
+goto 50.42,22.30
 click Northglen
-'Leave the Ruins |q Beyond the Call/.*Destroy the Markers.*
 |tip Manually skip to the next step.
+step
+goto 53.11,23.28
 step
 goto 50.65,30.99
 click Dark Witness Marker
@@ -33826,8 +33847,10 @@ click Living with Lycanthropy
 lorebook Living with Lycanthropy/1/4/2
 step
 goto 51.20,34.17
-|tip Downstairs inside the building.
-'Locate Duraeg |q Beyond the Call/Locate Duraeg
+click Duraeg's House
+|tip Manually skip to the next step.
+step
+goto 51.32,34.37
 step
 goto 51.07,34.20
 kill Duraeg
@@ -33836,7 +33859,6 @@ step
 goto 51.55,34.11
 click Northglen
 'Follow Isabeth Gaercroft |q Beyond the Call/Follow Isabeth Gaercroft |future
-|tip Manually skip to the next step.
 step
 goto 51.90,34.19
 talk Isabeth Gaercroft |q Beyond the Call/Talk to Isabeth Gaercroft
@@ -33863,11 +33885,8 @@ goto 49.13,31.19
 |tip Manually skip to the next step.
 step
 goto 46.19,28.82
-'Follow the path |q Beyond the Call/Return to the Evermore Camp
-|tip Manually skip to the next step.
 step
 goto 46.05,29.84
-'Return to the Evermore Camp |q Beyond the Call/Return to the Evermore Camp
 step
 goto 45.99,30.05
 'Watch the dialogue
@@ -33884,7 +33903,7 @@ goto 45.96,29.97
 talk Captain Eugien Gaercroft
 turnin Beyond the Call
 step
-goto 45.98,30.16
+goto 45.98,30.11
 talk Wyress Delphique
 accept Destroying the Dark Witnesses
 step
@@ -33914,7 +33933,7 @@ talk Arnitole's Fear
 |tip Wait in this spot, he runs and teleports around. Stand here until he runs up to you.
 'Recover Arnitole's Fear |q Conflicted Emotions/Recover Arnitole's Fear
 step
-goto 55.16,24.02
+goto 55.18,24.07
 'Follow the path up |q Conflicted Emotions/Recover Arnitole's Anger
 |tip Manually skip to the next step.
 step
@@ -33947,6 +33966,8 @@ goto 56.36,21.84
 talk Zaag
 turnin Conflicted Emotions
 step
+goto 53.15,22.69
+step
 goto 52.14,18.21
 talk Herald Kixathi
 accept Mistress of the Lake
@@ -33957,20 +33978,13 @@ lorebook The True-Told Tale of Hallin, Pt. 1/1/4/7
 step
 goto 51.97,16.80
 click Bisnensel
-'Enter Bisnensel |q Mistress of the Lake/.*Investigate the Essence.* |count 1
 |tip Manually skip to the next step.
 step
 goto bisnensel_base 65.03,54.75
-'Follow the path down |q Mistress of the Lake/.*Investigate the Essence.*
-|tip Manually skip to the next step.
 step
-goto 52.90,60.08
-'Follow the path |q Mistress of the Lake/.*Investigate the Essence.*
-|tip Manually skip to the next step.
+goto 65.00,58.15
 step
 goto 40.42,59.95
-'Follow the path up |q Mistress of the Lake/.*Investigate the Essence.*
-|tip Manually skip to the next step.
 step
 goto 16.28,39.99
 |tip Kill a Wisp around this area to get 3 Mysterious Essences.
@@ -33986,8 +34000,6 @@ click Essence Trough
 'Investigate the Essence Trough |q Mistress of the Lake/.*Investigate the Essence Trough.* |count 3
 step
 goto 20.74,47.10
-'Follow the path  |q Mistress of the Lake/Find Apostle Marian
-|tip Manually skip to the next step.
 step
 goto 25.01,50.73
 'Find Apostle Marian |q Mistress of the Lake/Find Apostle Marian
@@ -33996,8 +34008,6 @@ goto 29.02,50.53
 talk Apostle Marian |q Mistress of the Lake/Talk to Apostle Marian
 step
 goto 31.39,60.21
-'Follow the path |q Mistress of the Lake/.*Free the Captured Rain Disciples.*
-|tip Manually skip to the next step.
 step
 goto 64.67,61.25
 talk Disciple Jeannelle
@@ -34008,33 +34018,22 @@ talk Disciple Cesamund
 'Free the Capture Rain Disciple |q Mistress of the Lake/.*Free the Captured Rain Disciples.* |count 2
 step
 goto 66.68,57.44
-'Follow the path up |q Mistress of the Lake/.*Free the Captured Rain Disciples.*
-|tip Manually skip to the next step.
 step
 goto 57.21,50.82
 talk Disciple Dianette
 'Free the Capture Rain Disciple |q Mistress of the Lake/.*Free the Captured Rain Disciples.* |count 3
 step
 goto 74.98,53.40
-'Follow the path |q Mistress of the Lake/.*Free the Captured Rain Disciples.*
-|tip Manually skip to the next step.
 step
 goto 75.41,68.46
 talk Disciple Theophile
-|tip Stay up top.
 'Free the Capture Rain Disciple |q Mistress of the Lake/.*Free the Captured Rain Disciples.* |count 4
 step
 goto 65.17,65.21
-'Follow the path down |q Mistress of the Lake/Return to Apostle Marian
-|tip Manually skip to the next step.
 step
 goto 56.11,60.15
-'Follow the path |q Mistress of the Lake/Return to Apostle Marian
-|tip Manually skip to the next step.
 step
 goto 40.62,59.87
-'Follow the stairs up |q Mistress of the Lake/Return to Apostle Marian
-|tip Manually skip to the next step.
 step
 goto 35.99,60.09
 'Return to Apostle Marian |q Mistress of the Lake/Return to Apostle Marian
@@ -34065,12 +34064,14 @@ click Food Basket
 'Burn the Disciples' Food|q Sunken Knowledge/Burn Disciples' Food
 step
 goto 18.57,34.16
-'Follow the path up |q Sunken Knowledge/Talk to Herald Kixathi
-|tip Manually skip to the next step.
+step
+goto 11.79,32.20
+step
+goto 06.50,41.80
 step
 goto 8.18,44.50
-'Follow the path |q Sunken Knowledge/Talk to Herald Kixathi
-|tip Manually skip to the next step.
+step
+goto 14.93,43.93
 step
 goto 20.75,36.48
 talk Herald Kixathi |q Sunken Knowledge/Talk to Herald Kixathi
@@ -34101,24 +34102,16 @@ goto 19.72,42.77
 |tip Manually skip to the next step.
 step
 goto 20.67,47.87
-'Follow the path |q Sunken Knowledge/Stop the Nereid from Flooding the Ruins
-|tip Manually skip to the next step.
 step
 goto 32.57,60.07
-'Follow the path |q Sunken Knowledge/Stop the Nereid from Flooding the Ruins
-|tip Manually skip to the next step.
 step
 goto 63.29,57.50
-'Follow the path up |q Sunken Knowledge/Stop the Nereid from Flooding the Ruins
-|tip Manually skip to the next step.
+step
+goto 65.13,53.78
 step
 goto 78.50,59.89
-'Follow the path |q Sunken Knowledge/Stop the Nereid from Flooding the Ruins
-|tip Manually skip to the next step.
 step
 goto 85.56,52.64
-'Follow the path down |q Sunken Knowledge/Stop the Nereid from Flooding the Ruins
-|tip Manually skip to the next step.
 step
 goto 90.73,52.93
 kill Lorelia
@@ -34129,24 +34122,15 @@ talk Voice of Hermaeus Mora
 turnin Sunken Knowledge
 step
 goto 88.13,54.49
-'Follow the path up |q The Charge of Evermore/Talk to Squire Theo Rocque |future
-|tip Manually skip to the next step.
 step
-goto 81.85,52.70
-'Follow the path |q The Charge of Evermore/Talk to Squire Theo Rocque |future
-|tip Manually skip to the next step.
+goto 80.27,52.75
 step
 goto 77.34,59.98
-'Follow the path |q The Charge of Evermore/Talk to Squire Theo Rocque |future
-|tip Manually skip to the next step.
 step
 goto 65.13,50.33
-'Follow the path up |q The Charge of Evermore/Talk to Squire Theo Rocque |future
-|tip Manually skip to the next step.
 step
 goto 65.13,47.94
 click Halcyon Lake
-'Leave Bisnensel |q The Charge of Evermore/Talk to Squire Theo Rocque |future
 |tip Manually skip to the next step.
 step
 goto bangkorai_base 52.48,8.54
@@ -34162,15 +34146,9 @@ click The Viridian Sentinel
 lorebook The Viridian Sentinel/1/4/6
 step
 goto 41.33,23.40
-'Follow the path |q The Charge of Evermore/Talk to Squire Theo Rocque
-|tip Manually skip to the next step.
 step
 goto 41.85,24.39
 talk Squire Theo Rocque |q The Charge of Evermore/Talk to Squire Theo Rocque
-step
-goto 41.85,24.39
-'Watch the dialogue
-talk Squire Theo Rocque |q The Charge of Evermore/Learn What Happened in Murcien's Hamlet
 step
 goto 42.32,24.37
 click Bucket
@@ -34191,14 +34169,6 @@ step
 goto 41.57,23.41
 click Fortifications
 'Check the Fortification |q The Charge of Evermore/.*Check the Fortifications.* |count 2
-step
-goto 42.32,24.37
-click Bucket
-|tip These spawn around this area.
-'Grab a Bucket of Water |q The Charge of Evermore/.*Check the Fortifications.*
-step
-goto 41.59,23.43
-'Extinguish the Fortification |q The Charge of Evermore/.*Check the Fortifications.*
 step
 goto 39.81,20.11
 |tip Inside the building.
@@ -34350,134 +34320,139 @@ step
 goto 52.96,30.73
 'Follow the path |q Valley of Blades/Enter the Harborage |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 66.61,24.64
 click Evermore Wayshrine
 'Travel to the Harborage in Glenumbra |q Valley of Blades/Enter the Harborage |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto glenumbra_base 35.50,79.27
 click The Harborage
 'Enter the Harborage |q Valley of Blades/Enter the Harborage |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto the_daggerfall_harborage 67.23,62.74
 talk Sai Sahan |q Valley of Blades/Talk to Sai Sahan
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 69.80,60.90
 click Portal to Valley of Blades
 'Travel to the Valley of Blades |q Valley of Blades/Travel to the Valley of Blades |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 'Next to you:
 talk Sai Sahan |q Valley of Blades/Enter the Abbey of Blades
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto valleyofblades1_base 26.20,18.90
 'Follow the path |q Valley of Blades/Enter the Abbey of Blades
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 34.82,24.26
 'Enter the Abbey of Blades |q Valley of Blades/Enter the Abbey of Blades
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 50.91,45.68
 'Find Kasura |q Valley of Blades/Find Kasura
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 50.91,45.68
 'Watch the dialogue
 'Listen to Kasura |q Valley of Blades/Listen to Kasura
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 44.57,41.83
 click Sigil Stone
 'Destroy the Sigil |q Valley of Blades/.*Destroy the Sigils.* |count 1
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 47.98,54.42
 click Sigil Stone
 'Destroy the Sigil |q Valley of Blades/.*Destroy the Sigils.* |count 2
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 58.81,48.94
 click Sigil Stone
 'Destroy the Sigil |q Valley of Blades/.*Destroy the Sigils.* |count 3
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 55.82,47.93
 kill Titan
 'Defeat the Titan |q Valley of Blades/Defeat the Titan
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 50.70,46.47
 talk Kasura |q Valley of Blades/Talk to Kasura
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 58.54,48.89
 'Follow the path |q Valley of Blades/Enter the Ancestral Crypt
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 74.43,44.86
 click Ancestral Crypt
 'Enter the Ancestral Crypt |q Valley of Blades/Enter the Ancestral Crypt |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 'Next to you:
 talk Sai Sahan |q Valley of Blades/Find the Ring of Stendarr's Mercy
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto valleyofblades2_base 30.10,49.60
 'Follow the path |q Valley of Blades/Find the Ring of Stendarr's Mercy
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 77.26,48.08
 click Chest
 'Find the Ring of Stendarr's Mercy |q Valley of Blades/Find the Ring of Stendarr's Mercy
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 'Next to you:
 'Watch the dialogue
 talk Kasura |q Valley of Blades/Talk to Kasura
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 59.92,51.37
 'Kill the many enemies that attack you
 'Protect the Ancestral Crypt |q Valley of Blades/Protect the Ancestral Crypt
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 'Next to you:
 'Watch the dialogue
 talk Sai Sahan |q Valley of Blades/Talk to Sai Sahan
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 72.65,49.20
 click Portal to the Harborage
 'Return to the Harborage |q Valley of Blades/Return to the Harborage |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto the_daggerfall_harborage 67.08,65.31
 talk Varen Aquilarios
 turnin Valley of Blades
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 'Open your map to Bangkorai:
 click Eastern Evermore Wayshrine
 'Travel to the Eastern Evermore Wayshrine |q The Waking Darkness/Find Prince Adrien's Corpse |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
+step
+goto evermore_base 71.48,54.10
+'Follow the path |q The Waking Darkness/Find Prince Adrien's Corpse |future
+|tip Manually skip to the next step.
+|only VET
 step
 goto bangkorai_base 45.32,42.42
 talk Lort the Gravedigger
@@ -34604,19 +34579,19 @@ step
 goto 44.25,46.26
 talk Dame Valyrie Spenard |q The Waking Darkness/Talk to Dame Valyrie
 step
-goto 44.68,47.07
+goto 45.14,45.46
 click Brazier
 'Extinguish the Blue Flames |q The Waking Darkness/.*Extinguish the Blue Flames.* |count 1
 step
-goto 45.80,47.28
+goto 45.65,46.60
 click Brazier
 'Extinguish the Blue Flames |q The Waking Darkness/.*Extinguish the Blue Flames.* |count 2
 step
-goto 45.44,47.97
+goto 45.90,47.21
 click Brazier
 'Extinguish the Blue Flames |q The Waking Darkness/.*Extinguish the Blue Flames.* |count 3
 step
-goto 44.78,48.14
+goto 44.71,47.14
 click Brazier
 'Extinguish the Blue Flames |q The Waking Darkness/.*Extinguish the Blue Flames.* |count 4
 step
@@ -34815,11 +34790,6 @@ goto 41.36,44.27
 |tip Inside the building.
 talk Sir Jarnot |q A City in Black/Talk to Sir Jarnot
 |tip Manually skip to the next step.
-step
-goto 38.27,43.20
-|tip Upstairs in this building.
-click Crow and Raven: Three Short Fables
-lorebook The Homilies of Blessed Almalexia/1/14/9
 step
 goto 41.38,44.78
 talk Strange Crow
@@ -35337,7 +35307,6 @@ talk Arienne Kerbol |q Freedom's Chains/Talk to Arienne Kerbol
 step
 goto 68.31,29.36
 talk Renoit Leonciele
-|tip Quest has been bugged for years quit game and log back in to fix it.
 'Tell him _"I understood. I need you to come with me, though."_
 'Tell him _"Not exactly, but the ritual she started needs to end."_
 'Tell him _"Kerbol said we must lure Draven away from the village."_
@@ -35384,10 +35353,6 @@ goto 62.77,61.89
 'Follow the path up |q The Parley/Return to Queen Arzhela
 |tip Manually skip to the next step.
 step
-goto 53.88,65.63
-'Follow the path up |q The Parley/Return to Queen Arzhela
-|tip Manually skip to the next step.
-step
 goto 65.37,72.65
 |tip Inside the building.
 talk Queen Arzhela
@@ -35412,11 +35377,11 @@ step
 goto nchuduabtharthreshold_base 46.99,39.09
 'Go to the Strategic Position |q The Parley/Go to the Strategic Position
 step
-goto 46.99,39.09
+goto nchuduabtharthreshold_base 46.99,39.09
 'Watch the dialogue below
 'Keep Watch During the Parley |q The Parley/Keep Watch During Parley
 step
-goto 46.99,39.09
+goto nchuduabtharthreshold_base 46.99,39.09
 'Watch the dialogue
 |tip On the enemies that spawn below in waves.
 'Press _X_ to use the Targeted Spell
@@ -35438,7 +35403,7 @@ step
 goto evermore_base 65.39,72.66
 talk Queen Arzhela |q The Parley/Talk to Queen Arzhela
 step
-goto 65.39,72.66
+goto evermore_base 65.39,72.66
 'Watch the dialogue
 'Watch the Portal |q The Parley/Watch the Portal
 step
@@ -35451,7 +35416,7 @@ goto 64.62,72.23
 talk High King Emeric
 accept Rendezvous at the Pass
 step
-goto 47.03,62.63
+goto evermore_base 47.03,62.63
 'Go down the path |q Troll's Dessert/Talk to Gluineth in Evermore
 |tip Manually skip to the next step.
 step
@@ -35483,7 +35448,7 @@ goto 56.50,34.88
 talk Princess Elara
 'Examine Princess Elara |q The Will of the Woods/Examine Princess Elara
 step
-goto 53.37,34.75
+goto 56.43,34.84
 'Watch the dialogue
 talk Stenwick Gurles |q The Will of the Woods/Talk to Stenwick Gurles
 step
@@ -35602,12 +35567,24 @@ goto 56.46,34.86
 talk Voice of the Forest |q The Will of the Woods/Complete the Ritual
 |tip Manually skip to the next step.
 step
-goto 56.76,35.46
+goto 56.49,35.68
 |tip Wait for Elara to gather the Mote.
-|tip The Motes all around this area in a half circle just keep gathering until complete.
 'Help Elara Gather the Mote |q The Will of the Woods/Complete the Ritual
 |tip Manually skip to the next step.
 step
+goto 55.66,35.34
+|tip Wait for Elara to gather the Mote.
+'Help Elara Gather the Mote |q The Will of the Woods/Complete the Ritual
+|tip Manually skip to the next step.
+step
+goto 55.34,35.62
+|tip Wait for Elara to gather the Mote.
+'Help Elara Gather the Mote |q The Will of the Woods/Complete the Ritual
+|tip Manually skip to the next step.
+step
+goto 55.47,33.78
+|tip Wait for Elara to gather the Mote.
+'Complete the Ritual |q The Will of the Woods/Complete the Ritual
 step
 goto 56.49,34.90
 'Return to the Altar |q The Will of the Woods/Return to the Altar
@@ -35961,24 +35938,19 @@ click Royal Crypt
 'Enter the Royal Crypt |q Storming the Garrison/Enter the Royal Crypt |future
 |tip Manually skip to the next step.
 step
-goto bangkoraigarrison_alt_base 65.15,38.86
+'_Follow the path to the right:_
 'Run down the stairs |q Storming the Garrison/Defeat Battlemage Papus
 |tip Manually skip to the next step.
 step
-goto 84.74,55.58
-'Run down the stairs |q Storming the Garrison/Defeat Battlemage Papus
+'_Continue down the stairs and through the hallway:_
+'Run down the stairs into the large room |q Storming the Garrison/Defeat Battlemage Papus
 |tip Manually skip to the next step.
 step
-goto 33.79,66.02
-'Run into the large room |q Storming the Garrison/Defeat Battlemage Papus
-|tip Manually skip to the next step.
-step
-goto 50.08,60.59
+'_Downstairs in the large room:_
 kill Battlemage Papus
 'Defeat Battlemage Papus |q Storming the Garrison/Defeat Battlemage Papus
 step
-goto 27.61,85.06
-'Run up the stairs 
+'_Run up the nearby stairs to the door:_
 click Garrison Courtyard
 'Leave the Royal Crypt |q Storming the Garrison/Talk to High King Emeric
 |tip Manually skip to the next step.
@@ -35986,11 +35958,11 @@ step
 goto bangkorai_base 55.44,57.16
 talk High King Emeric |q Storming the Garrison/Talk to High King Emeric
 step
-goto 53.71,57.84
+goto bangkorai_base 53.71,57.84
 kill Moath
 'Destroy the Summoned Dark Anchor |q Storming the Garrison/Destroy the Summoned Dark Anchor
 step
-goto 57.68,56.95
+goto 53.56,57.57
 'Watch the dialogue
 'Listen to the King's Speech |q Storming the Garrison/Listen to the High King's Speech
 step
@@ -36087,7 +36059,7 @@ talk Wyress Linnae |q The Heart of the Beast/Talk to Wyress Linnae
 step
 goto 33.83,57.62
 kill Brinarch
-'Defeat Brinarch for the Briarheart |q The Heart of the Beast/Defeat Brinarch for the Briarheart
+'Defeat Brinarch for the Briar Heart |q The Heart of the Beast/Defeat Brinarch for the Briar Heart
 step
 goto 38.57,54.35
 talk Wyress Linnae |q The Heart of the Beast/Talk to Wyress Linnae
@@ -36545,7 +36517,7 @@ goto 26.17,62.74
 click Imperial Soldier
 'Free the Spiders' Victim |q To Aid the Enemy/.*Free the Spiders' Victims.* |count 4
 step
-goto 27.57,63.44
+goto 27.01,61.31
 click Imperial Soldier
 'Free the Spiders' Victim |q To Aid the Enemy/.*Free the Spiders' Victims.* |count 5
 step
@@ -37280,7 +37252,7 @@ step
 goto 40.26,89.94
 talk Rahannal |q Rising Against Onsi's Breath/Talk to Rahannal at Mine Entrance
 step
-goto 90.43,28.60
+goto onsisbreathmine_base 90.43,28.60
 'Enter the mine |q Rising Against Onsi's Breath/Talk to Foreman Connor
 |tip Manually skip to the next step.
 step
@@ -37601,860 +37573,868 @@ goto 67.90,19.30
 click Troll's Toothpick Wayshrine
 'Travel to the Harborage in Glenumbra |q Shadow of Sancre Tor/Enter the Harborage
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto glenumbra_base 35.51,79.29
 click The Harborage
 'Enter the Harborage |q Shadow of Sancre Tor/Enter the Harborage |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto the_daggerfall_harborage 67.08,65.31
 talk Varen Aquilarios |q Shadow of Sancre Tor/Talk to Varen Aquilarios
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 70.00,64.06
 talk Sai Sahan |q Shadow of Sancre Tor/Talk to Sai Sahan
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 70.00,64.06
 'Wait for Varen to Open the Portal |q Shadow of Sancre Tor/Wait for Varen to Open the Portal
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 69.05,59.73
 click Portal to Sancre Tor
 'Enter the Portal to Sancre Tor |q Shadow of Sancre Tor/Enter Portal to Sancre Tor |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto sancretor1_base 50.06,57.11
 'Explore Sancre Tor |q Shadow of Sancre Tor/Explore Sancre Tor
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 45.16,65.23
 'Watch the dialogue
 'Confront Mannimarco |q Shadow of Sancre Tor/Confront Mannimarco
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 44.88,67.60
 talk Sai Sahan |q Shadow of Sancre Tor/Talk to Sai Sahan
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 37.29,84.07
 'Follow the path |q Shadow of Sancre Tor/Go to Sancre Tor Inner Chamber
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 47.97,91.18
 click Sancre Tor Interior
 'Enter the Sancre Tor Interior |q Shadow of Sancre Tor/Go to Sancre Tor Inner Chamber
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto sancretor2_base 59.22,89.65
 click Sancre Tor Inner Chamber
 'Enter the Sancre Tor Inner Chamber |q Shadow of Sancre Tor/Go to Sancre Tor Inner Chamber
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto sancretor3_base 40.56,54.36
 'Go to the Sancre Tor Inner Chamber |q Shadow of Sancre Tor/Go to Sancre Tor Inner Chamber
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 40.56,54.36
 'Watch the dialogue
 'Confront Mannimarco |q Shadow of Sancre Tor/Confront Mannimarco
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 45.64,54.13
 'Kill the enemies that appear
 'Defeat Mannimarco's Minions |q Shadow of Sancre Tor/Defeat Mannimarco's Minions
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 74.92,56.11
 'Follow the path |q Shadow of Sancre Tor/Continue to the Inner Courtyard
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 86.10,44.71
 click Inner Courtyard
 'Enter the Inner Courtyard |q Shadow of Sancre Tor/Continue to the Inner Courtyard
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto sancretor4_base 46.41,67.70
 'Continue to the Inner Courtyard |q Shadow of Sancre Tor/Continue to the Inner Courtyard
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 46.48,63.06
 'Watch the dialogue
 'Wait for Sai to Catch His Breath |q Shadow of Sancre Tor/Wait for Sai to Catch His Breath
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 52.55,60.97
 talk Lyris Titanborn |q Shadow of Sancre Tor/Talk to Sai Sahan
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 45.85,61.24
 talk Sai Sahan |q Shadow of Sancre Tor/Talk to Sai Sahan
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 14.61,49.27
 click Dragonguard Tomb
 'Enter the Dragonguard Tomb |q Shadow of Sancre Tor/Enter the Dragonguard Tomb
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto sancretor6_base23.71,52.05
 |tip Click Gates to open them to get to this point.
 click Shrine of the Divines
 'Watch the ritual
 'Consecrate the Shrine in the Dragonguard Tomb |q Shadow of Sancre Tor/Consecrate the Shrine in the Dragonguard Tomb
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 89.94,51.33
 |tip Click Gates to open them to get to this point.
 click Inner Courtyard
 'Leave the Dragonguard Tomb |q Shadow of Sancre Tor/Go to the Reman Vault
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto sancretor4_base 68.49,49.26
 'Follow the path |q Shadow of Sancre Tor/Go to the Reman Vault
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 80.68,65.81
 click Reman Vault
 'Go to the Reman Vault |q Shadow of Sancre Tor/Go to the Reman Vault
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto sancretor5_base 61.32,40.31
-|tip Lever Order Left to Right
-click Lever 3rd Lever
-click Lever 1st Lever
-click Lever 2nd Lever
+click Lever
+'Activate the Level |q Shadow of Sancre Tor/Consecrate the Shrine in the Reman Vault
+|tip Manually skip to the next step.
+|only not VET
+step
+goto sancretor5_base 58.74,40.89
+click Lever
+'Activate the Level |q Shadow of Sancre Tor/Consecrate the Shrine in the Reman Vault
+|tip Manually skip to the next step.
+|only not VET
+step
+goto sancretor5_base 59.94,41.29
+click Lever
 'Lower the Bridge |q Shadow of Sancre Tor/Consecrate the Shrine in the Reman Vault
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 37.81,68.52
 click Shrine to the Divines
 'Watch the ritual
 kill Bone Colossus
 'Consecrate the Shrine in the Reman Vault |q Shadow of Sancre Tor/Consecrate the Shrine in the Reman Vault
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 49.95,13.37
 click Inner Courtyard
 'Leave the Reman Vault |q Shadow of Sancre Tor/Continue to the Vault Antechamber
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto sancretor4_base 52.54,11.46
 click Vault Antechamber
 'Enter the Vault Antechamber |q Shadow of Sancre Tor/Continue to the Vault Antechamber
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto sancretor7_base 50.37,62.10
 'Continue to the Vault Antechamber |q Shadow of Sancre Tor/Continue to the Vault Antechamber
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 50.37,62.10
 'Watch the dialogue
 'Confront Mannimarco |q Shadow of Sancre Tor/Confront Mannimarco
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 50.37,62.10
 'Kill the waves of enemies that attack you
 'Defeat the Undead |q Shadow of Sancre Tor/Defeat the Undead
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 57.35,43.53
 click Gate
 'Follow the path |q Shadow of Sancre Tor/Enter the Vault of Kings
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 33.07,18.65
 click Vault of Kings
 'Enter the Vault of Kings |q Shadow of Sancre Tor/Enter the Vault of Kings
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto sancretor8_base 84.40,51.70
 talk Sai Sahan |q Shadow of Sancre Tor/Talk to Sai Sahan
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 74.39,51.32
 'Use the Ring of Stendarr's Mercy
 'Open the Vault Door |q Shadow of Sancre Tor/Open the Vault Door
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 45.10,50.82
 kill Mannimarco
 |tip He summons enemies through portals, but they are weak.
 'Watch the dialogue
 'Defeat Mannimarco |q Shadow of Sancre Tor/Defeat Mannimarco
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 23.53,50.60
 click Amulet of Kings
 'Collect the Amulet of Kings |q Shadow of Sancre Tor/Collect the Amulet of Kings
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 18.72,50.49
 click Portal to Harborage
 'Return to the Harborage |q Shadow of Sancre Tor/Return to the Harborage |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto the_daggerfall_harborage 66.80,65.21
 talk Varen Aquilarios
 turnin Shadow of Sancre Tor
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 'Open your map to Bangkorai:
 click Eastern Evermore Wayshrine
 'Travel to the Eastern Evermore Wayshrine |q The Mad God's Bargain/Talk to Valaste
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto evermore_base 71.08,54.04
 'Follow the path |q The Mad God's Bargain/Talk to Valaste
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 60.35,46.77
 click Mages Guild
 'Enter the Mages Guild |q The Mad God's Bargain/Talk to Valaste
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 66.06,45.86
 talk Valaste |q The Mad God's Bargain/Talk to Valaste
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 65.78,45.40
 click Pillar of Light
 'Place the Book |q The Mad God's Bargain/Place the Books
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 63.56,44.25
 click Pillar of Light
 'Place the Book |q The Mad God's Bargain/Place the Books
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 62.47,46.37
 click Pillar of Light
 'Place the Book |q The Mad God's Bargain/Place the Books
 |tip Manually skip to the next step.
-The Mad God's Bargain
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 64.33,47.28
 click Pillar of Light
 'Place the Book |q The Mad God's Bargain/Place the Books
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 64.01,46.08
 talk Arch-Mage Shalidor |q The Mad God's Bargain/Talk to Shalidor
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 64.01,46.08
 'Watch the dialogue
 'Wait for Shalidor |q The Mad God's Bargain/Wait for Shalidor
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 63.99,45.98
 click Portal to Eyevea
 'Enter the Portal to Eyevea |q The Mad God's Bargain/Enter Portal to Eyevea |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto eyevea_base 83.99,37.81
 talk Arch-Mage Shalidor |q The Mad God's Bargain/Talk to Shalidor
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 53.04,48.46
 'Watch the dialogue
 'Find Shalidor at the Guild Hall |q The Mad God's Bargain/Find Shalidor at the Guild Hall
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 52.45,48.39
 talk Sheogorath |q The Mad God's Bargain/Talk to Sheogorath
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 52.98,47.93
 talk Arch-Mage Shalidor |q The Mad God's Bargain/Talk to Shalidor
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 50.72,62.31
 'Follow the path |q The Mad God's Bargain/Close the Southeast Portal
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 75.26,61.60
 click Crystal
 'Close the Southeast Portal |q The Mad God's Bargain/Close the Southeast Portal
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 79.88,57.67
 'Follow the path |q The Mad God's Bargain/Close the Northeast Portal
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 69.35,25.80
 click Crystal
 'Close the Northeast Portal |q The Mad God's Bargain/Close the Northeast Portal
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 61.42,32.07
 'Follow the path |q The Mad God's Bargain/Close the West Portal
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 35.16,45.85
 click Crystal
 'Close the West Portal |q The Mad God's Bargain/Close the West Portal
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 36.89,50.99
 'Follow the path |q The Mad God's Bargain/.*Place the Crystals at the Guildhall.*
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 50.34,60.27
 'Follow the path down |q The Mad God's Bargain/.*Place the Crystals at the Guildhall.*
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 48.92,56.68
 click Crystal Sconce
 'Place a Crystal at the Guildhall |q The Mad God's Bargain/.*Place the Crystals at the Guildhall.* |count 1
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 54.51,43.08
 click Crystal Sconce
 'Place a Crystal at the Guildhall |q The Mad God's Bargain/.*Place the Crystals at the Guildhall.* |count 2
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 51.50,43.75
 click Crystal Sconce
 'Place a Crystal at the Guildhall |q The Mad God's Bargain/.*Place the Crystals at the Guildhall.* |count 3
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 52.99,47.80
 talk Arch-Mage Shalidor |q The Mad God's Bargain/Talk to Shalidor
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 51.62,48.25
 click Mages Guild Hall
 'Enter the Guildhall |q The Mad God's Bargain/Enter the Guildhall |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 47.60,47.39
 'Watch the dialogue
 'Confront Sheogorath |q The Mad God's Bargain/Confront Sheogorath
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 47.60,47.39
 kill Haskill |q The Mad God's Bargain/Defeat Haskill
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 46.78,47.24
 'Watch the dialogue
 'Watch the Confrontation |q The Mad God's Bargain/Watch the Confrontation
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 47.44,47.45
 talk Arch-Mage Shalidor |q The Mad God's Bargain/Talk to Sheogorath
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 47.39,46.97
 talk Valaste |q The Mad God's Bargain/Talk to Sheogorath
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 46.29,47.35
 talk Sheogorath
 'Tell him _"[Valaste Stays] I want you to cure Valaste."_
 talk Sheogorath |q The Mad God's Bargain/Talk to Sheogorath
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 46.29,47.35
 'Watch the dialogue
 'Wait for Sheogorath |q The Mad God's Bargain/Wait for Sheogorath
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 46.84,47.20
 talk Valaste
 turnin The Mad God's Bargain
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 52.70,48.52
 talk Arch-Mage Shalidor
 accept The Arch-Mage's Boon
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 53.10,49.00
 'Watch Shalidor Prepare the Spell |q The Arch-Mage's Boon/Watch Shalidor Prepare the Spell
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 52.70,48.52
 talk Arch-Mage Shalidor
 turnin The Arch-Mage's Boon
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 86.59,35.76
 click Eyevea Wayshrine
 wayshrine Eyevea
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 86.59,35.76
 click Eyevea
 'Travel to the Eastern Evermore Wayshrine in Bangkorai |q Will of the Council/Talk to Aelif |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto evermore_base 71.08,54.04
 'Follow the path |q Will of the Council/Talk to Aelif |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 49.72,57.94
 |tip Upstairs inside the Fighters Guild.
 talk Aelif
 accept Will of the Council
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 49.72,57.93
-talk Aelif |q Will of the Council/Talk to AelifB
+talk Aelif |q Will of the Council/Talk to Aelif
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 49.22,58.24
 click Portal
 'Enter the Portal to the Earth Forge |q Will of the Council/Enter Portal to the Earth Forge |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto theearthforge_base 73.60,40.98
 'Follow the Path |q Will of the Council/Follow Aelif into the Forge
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 41.72,24.17
 'Follow Aelif into the Forge |q Will of the Council/Follow Aelif into the Forge
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 38.28,25.19
 talk Merric at-Aswala
 'Tell him whatever weapon you use
 |tip You can choose from a Longsword, a Bow, a Staff, or a Greatsword.
 talk Merric at-Aswala |q Will of the Council/Talk to Merric
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 40.61,24.33
 'Watch the dialogue
 'Wait for Aelif |q Will of the Council/Wait for Aelif
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 39.03,24.29
-click the weapon you chose
+'Click the weapon you chose
 'Take the Prismatic Weapon |q Will of the Council/Take the Prismatic Weapon
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 39.70,24.47
 click Halls of Submission
 'Enter the Portal to the Halls of Submission |q Will of the Council/Enter Portal to Halls of Submission |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto hallsofsubmission_base 10.69,30.51
 'Follow the path |q Will of the Council/Explore the Halls
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto hallsofsubmission_base 16.82,24.50
 'Follow the path |q Will of the Council/Explore the Halls
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 19.79,38.78
 click Halls of Submission
 'Explore the Halls |q Will of the Council/Explore the Halls
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 19.80,43.17
 'Watch the dialogue
 click Crystal
 'Activate the Crystal |q Will of the Council/Follow Aelif's Instructions
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 18.94,49.00
 click Crystal
 'Watch the dialogue
 |tip It will take a little while to complete the objective.
 'Follow Aelif's Instructions |q Will of the Council/Follow Aelif's Instructions
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 37.24,48.56
 click Outer Courtyard
 'Enter the Outer Courtyard |q Will of the Council/Confront Sees-All-Colors
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 65.33,50.42
 talk Sees-All-Colors
 'Confront Sees-All-Colors |q Will of the Council/Confront Sees-All-Colors
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 65.33,50.42
 talk Sees-All-Colors
 'Tell _"Your quest is just. Let's finish, and go."_
 'Watch the dialogue
 'Decide the Fate of Sees-All-Colors |q Will of the Council/Decide the Fate of Sees-All-Colors
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 66.57,67.06
 kill Oru
 click Font Pinion
 'Shut Down the Blood Font |q Will of the Council/Shut Down the Blood Fonts
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 88.49,52.31
 kill Razan
 click Font Pinion
 'Shut Down the Blood Font |q Will of the Council/Shut Down the Blood Fonts
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 69.28,28.33
 kill Irazur
 click Font Pinion
 'Shut Down the Blood Font |q Will of the Council/Shut Down the Blood Fonts
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 67.99,48.11
 kill Aelif |q Will of the Council/Kill Aelif
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 66.27,48.60
 talk Jofnir Iceblade |q Will of the Council/Talk to Jofnir Iceblade
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 66.86,50.04
 click Mortuum Vivicus
 'Destroy the Mortuum Vivicus |q Will of the Council/Destroy the Mortuum Vivicus
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 64.28,48.82
 click Portal to Earthforge
 'Return to the Earth Forge |q Will of the Council/Return to Earth Forge |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto theearthforge_base 39.03,22.38
 talk Jofnir Iceblade |q Will of the Council/Talk to Jofnir
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 38.85,22.15
 talk Merric at-Aswala |q Will of the Council/Talk to Countess Hakruba
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 39.42,24.98
 talk Countess Hakruba
 'Choose _"[Sees-All-Colors Stays] She did what she felt she had to. Let her serve the Guild."_
 talk Countess Hakruba |q Will of the Council/Talk to Countess Hakruba
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 39.61,24.38
 'Watch the dialogue
 'Observe the Council's Justice |q Will of the Council/Observe the Council's Justice
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 72.77,26.21
 'Follow the path |q Will of the Council/Follow Merric out of the Earth Forge
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 73.56,44.07
 'Follow Merric out of the Earth Forge |q Will of the Council/Follow Merric out of the Earth Forge
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 73.56,44.07
 talk Merric at-Aswala |q Will of the Council/Talk to Merric
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 73.44,45.35
 click Portal to the Guildhall
 'Return to the Guild Hall |q Will of the Council/Return to the Guild Hall |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto evermore_base 49.68,57.79
 talk Jofnir Iceblade
 'Tell him you're best with whatever weapon you use
 |tip You can choose from a Longsword, a Bow, a Staff, or a Greatsword.
 turnin Will of the Council
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 'Open your map to Glenumbra:
 click The Harborage
 'Travel to the Harborage |q Council of the Five Companions/Go to the Harborage
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto glenumbra_base 35.51,79.29
 click The Harborage
 'Go to the Harborage |q Council of the Five Companions/Go to the Harborage |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto the_daggerfall_harborage 66.79,65.21
 talk Varen Aquilarios
 'Tell him _"Show me these visions."_
 talk Varen Aquilarios |q Council of the Five Companions/Talk to Varen Aquilarios
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto visionofthecompanions_base 66.69,80.53
 'Watch the dialogue
 'Observe Varen's Dream Vision |q Council of the Five Companions/Observe Varen's Dream Vision
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto the_daggerfall_harborage 69.52,61.82
 talk Sai Sahan
 'Tell him _"I am honored to join you as the last member of the Five Companions."_
 talk Sai Sahan |q Council of the Five Companions/Talk to Sai Sahan
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 67.26,63.58
 'Watch the dialogue
 'Listen to Sai Sahan |q Council of the Five Companions/Listen to Sai Sahan
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 70.30,62.52
 talk Lyris Titanborn |q Council of the Five Companions/Talk to Lyris
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 70.30,62.52
 'Watch the dialogue
 'Listen to Lyris |q Council of the Five Companions/Listen to Lyris
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 65.39,62.12
 talk Abnur Tharn |q Council of the Five Companions/Talk to Abnur Tharn
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 65.39,62.12
 'Watch the dialogue
 'Listen to the Discussion |q Council of the Five Companions/Listen to the Discussion
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 67.34,65.54
 talk Varen Aquilarios
 turnin Council of the Five Companions
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 25.26,26.93
 click Glenumbra
 'Leave the Harborage |q Messages Across Tamriel/Talk to Copper Dariah in Daggerfall
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto daggerfall_base 68.79,64.36
 'Follow the path |q Messages Across Tamriel/Talk to Copper Dariah in Daggerfall
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 56.45,47.83
 'Cross the bridge |q Messages Across Tamriel/Talk to Copper Dariah in Daggerfall
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 48.96,38.09
 |tip Inside the Mages Guild.
 talk Copper Dariah |q Messages Across Tamriel/Talk to Copper Dariah in Daggerfall
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 48.96,38.09
 'Watch the dialogue
 'Wait for Vanus Galerion |q Messages Across Tamriel/Wait for Vanus Galerion
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 49.39,38.61
 talk Vanus Galerion |q Messages Across Tamriel/Talk to Vanus Galerion
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 49.38,38.42
 click Portal to Alliance Capital
 'Enter Vanus Galerion's Portal |q Messages Across Tamriel/Enter Vanus Galerion's Portal |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 '_After taking the portal:_
 |tip Run to the middle of the courtyard.
 'Watch the dialogue
 'Receive the Introduction |q Messages Across Tamriel/Receive Introduction
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 '_Standing in the middle of the courtyard:_
 talk Jorunn the Skald-King
 'Talk to the Alliance Leader |q Messages Across Tamriel/Talk to the Alliance Leader
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 '_Standing next to you in the courtyard:_
 talk Vanus Galerion |q Messages Across Tamriel/Talk to Vanus Galerion
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 '_Run back towards the place you came in:_
 click Portal to Alliance Capital
 'Enter Vanus Galerion's Portal |q Messages Across Tamriel/Enter Vanus Galerion's Portal |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 '_In the large room in Elden Root:_
 'Receive the Introduction |q Messages Across Tamriel/Receive Introduction
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 '_In front of you in Elden Root:_
 talk Queen Ayrenn
 'Talk to the Alliance Leader |q Messages Across Tamriel/Talk to the Alliance Leader
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 '_Standing nearby:_
 talk Vanus Galerion |q Messages Across Tamriel/Talk to Vanus Galerion
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 '_Go to the opposite end of the room:_
 click Portal to Alliance Capital
 'Enter Vanus Galerion's Portal |q Messages Across Tamriel/Enter Vanus Galerion's Portal |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto wayrest_base 36.04,30.01
 talk Vanus Galerion
 turnin Messages Across Tamriel
 accept The Weight of Three Crowns
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 36.46,29.97
 'Wait for the Portal |q The Weight of Three Crowns/Wait for Portal
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 36.46,29.97
 click Portal to Stirk
 'Enter the Portal to Stirk |q The Weight of Three Crowns/Enter Portal to Stirk |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto stirk_base 23.56,30.64
 talk Vanus Galerion |q The Weight of Three Crowns/Talk to Vanus Galerion
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 45.72,55.42
 |tip Follow the path.
 'Go to Summit Point |q The Weight of Three Crowns/Go to Summit Point
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 47.00,55.34
 'Watch the dialogue
 'Listen to the Alliance Leaders |q The Weight of Three Crowns/Listen to the Alliance Leaders
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 46.52,55.91
 talk Vanus Galerion |q The Weight of Three Crowns/Talk to Vanus Galerion
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 46.47,54.71
 talk Countess Hakruba |q The Weight of Three Crowns/Talk to Countess Hakruba
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 49.52,45.40
 talk High King Emeric
 'Talk to the Alliance Leader |q The Weight of Three Crowns/Talk to the Alliance Leaders
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 57.54,54.86
 talk Queen Ayrenn
 |tip Persuade her.
 'Talk to the Alliance Leader |q The Weight of Three Crowns/Talk to the Alliance Leaders
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 47.82,63.81
 talk Jorunn the Skald-King
 |tip Intimidate him.
 'Talk to the Alliance Leader |q The Weight of Three Crowns/Talk to the Alliance Leaders
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 47.53,55.40
 talk Vanus Galerion
 'Watch the dialogue
 talk Vanus Galerion |q The Weight of Three Crowns/Talk to Vanus Galerion
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 49.82,43.51
 kill Bitterwind
 click Unstable Rift
 'Close the Unstable Rift |q The Weight of Three Crowns/.*Close the Unstable Rifts.* | count 1
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 59.71,54.55
 kill Ra'Lorka
 click Unstable Rift
 'Close the Unstable Rift |q The Weight of Three Crowns/.*Close the Unstable Rifts.* | count 2
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 47.59,67.03
 kill Sormorask
 click Unstable Rift
 'Close the Unstable Rift |q The Weight of Three Crowns/.*Close the Unstable Rifts.* | count 3
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 49.69,55.61
 talk Vanus Galerion
 'Watch the dialogue
 talk Vanus Galerion |q The Weight of Three Crowns/Talk to Vanus Galerion
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 66.83,54.67
 click Portal Valley
 'Go through the door |q The Weight of Three Crowns/Enter the Portal Valley
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 78.60,68.38
 'Enter the Portal Valley |q The Weight of Three Crowns/Enter the Portal Valley
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 78.60,68.38
 talk Vanus Galerion |q The Weight of Three Crowns/Talk to Vanus Galerion
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 78.60,68.38
 'Wait for the Portal |q The Weight of Three Crowns/Wait for Portal
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto 80.01,68.59
 click Portal to Coldharbour
 'Take the Portal to Coldharbour |q The Weight of Three Crowns/Take Portal to Coldharbour |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
-goto coldharbour_base 52.29,77.06
+goto coldharbour_base 52.12,77.30
 talk Cadwell
 turnin The Weight of Three Crowns |next Common Leveling Guides\\Coldharbour
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only not VET
 step
 goto bangkorai_base 67.90,19.30
 click Troll's Toothpick Wayshrine
@@ -38482,7 +38462,7 @@ click Light of Meridia
 step
 'Congratulations, you're now exploring the Aldmeri Dominion! |only if not ZGV.QuestTracker:IsQuestComplete("Cadwell's Silver")
 |tip You need to reload the guides to switch factions. |only if not ZGV.QuestTracker:IsQuestComplete("Cadwell's Silver")
-click Here to Reload |confirm |nextreload Aldmeri Dominion Leveling Guides\\Khenarthi's Roost |only if not ZGV.QuestTracker:IsQuestComplete("Cadwell's Silver")
+'Click Here to Reload |confirm |nextreload Aldmeri Dominion Leveling Guides\\Khenarthi's Roost |only if not ZGV.QuestTracker:IsQuestComplete("Cadwell's Silver")
 'Congratulations, you've explored the Aldmeri Dominion! |only if ZGV.QuestTracker:IsQuestComplete("Cadwell's Silver")
 |only if ZGV.Utils.GetFaction("player","notvet")=="EP"
 step
