@@ -30,6 +30,17 @@ Enums = {
 	MalabalTorMap = 8,
 	MurkmireMap = 34,
 	NorthernElsweyrMap = 36,
-	
+	ReapersMarchMap = 17,
+	RivenspireMap = 3,
+	ShadowfenMap = 9,
+	SouthernElsweyrMap = 37,
+	StonefallsMap = 11,
+	StormhavenMap = 4,
+	StrosMkaiMap = 19,
 	SummersetMap = 32,
+	TheReachMap = 42,
+	TheRiftMap = 12,
+	VvardenfellMap = 30,
+	WesternSkyrimMap = 38,
+	WrothgarMap = 27,
 }

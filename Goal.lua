@@ -284,7 +284,7 @@ GOALTYPES['goto'] = {
 		self.y = y or self.y
 
 		-- Adjusting the speed between zone maps and non-zone maps
-		self.dist = ZGV.Utils.GotoDistanceOffset(dist,self.dist)
+		self.dist = ZGV.Utils.DistanceOffsetForGoto(dist,self.dist)
 
 		self.waytitle = title
 	end,
@@ -306,7 +306,7 @@ GOALTYPES['goto'] = {
 	iscomplete = function(self) -- Called repeatedly
 
 		-- if the player isn't in the zone map then adjust the distance -- GetGameTimeMilliseconds
-		self.dist = ZGV.Utils.IsCompleteDistanceOffset()
+		self.dist = ZGV.Utils.DistanceOffsetForIsComplete()
 
 		local dist = ZGV.Pointer:GetDistToCoords(self.map,self.x,self.y)
 
