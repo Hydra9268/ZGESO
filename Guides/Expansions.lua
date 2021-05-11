@@ -25990,6 +25990,7 @@ turnin Second Chances
 step
 'Congratulations, you have completed The Reach guide!
 ]])
+
 ZGV:RegisterGuide("LEVELING\\Blackwood",[[
 loadingimage loadscreen_blackwood_01.dds
 description Caught between the Argonian homeland and Imperial province of Cyrodiil, the region of Blackwood is beset by Daedric influence, and its people struggle to survive would-be tyrants and Oblivion-spawned evils alike. Including the Imperial City of Leyawiin (first featured in The Elder Scrolls IV: Oblivion), the Niben Forest, and open wetlands of the Blackwood Bog, you’ll have the opportunity to explore a diverse land in strife, investigate the emerging Daedric threat, and discover all-new stories, challenges, and rewards not found anywhere else in Tamriel.
@@ -26018,12 +26019,12 @@ goto 50.82,58.86
 'Equip a Weapon |q The Gates of Adamant/Equip a Weapon
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6
 step
-goto u30_balfiera_int2_base 50.40,49.72
+goto 50.40,49.72
 click Balfiera Ruins |q The Gates of Adamant/Follow Norianwe
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6
 |tip Manually skip to the next step.
 step
-goto 51.29,34.79
+goto u30_balfiera_int2_base 51.29,34.79
 'Follow Norianwe |q The Gates of Adamant/Follow Norianwe
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6
 step
@@ -26038,6 +26039,9 @@ step
 goto 50.75,27.47
 click Balfiera Ruins |q The Gates of Adamant/Lead Norianwe Outside
 |tip Manually skip to the next step.
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6
+step
+goto u30_balfiera_int3_base 35.07,41.44 |q Shattered and Scattered/Find the Ruin
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6
 step
 goto u30_balfiera_int3_base 49.81,45.45
@@ -26059,17 +26063,17 @@ talk Norianwe |q The Gates of Adamant/Talk to Norianwe
 |tip Upstairs
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6
 step
-goto u30_balfiera_ext 28.78,74.04
+goto 28.78,74.04
 click Balfiera Island |q The Gates of Adamant/Acquire the Skyshard
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6
 step
-goto 66.87,71.27
+goto u30_balfiera_ext 66.87,71.27
 click Skyshard Vault |q The Gates of Adamant/Acquire the Skyshard
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6
 step
-goto 66.84,71.28
+|tip Straight Ahead
 click Skyshard |q The Gates of Adamant/Acquire the Skyshard
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6
 step
@@ -26083,7 +26087,7 @@ click Gallery Balfiera |q The Gates of Adamant/Return to the Gate
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6
 step
 goto u30_balfiera_int7_base 49.05,53.61
-'Activate Skyshard Aperture |q The Gates of Adamant/Repair the Gate
+'Activate Skyshard Aperture |q The Gates of Adamant/Find the Ruin
 |tip Upstairs
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6
 step
@@ -26147,6 +26151,7 @@ goto 71.66,79.20
 step
 goto 71.66,79.20
 click Cart to the Location Shown on Your Map |q A Mortal's Touch/Go to the Location Shown on Your Map
+|tip Manually skip to the next step.
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto malabaltor_base 62.56,82.77
@@ -26435,8 +26440,6 @@ step
 goto 51.95,65.15
 'Destroy Wards and Search Caches |q The Emperor's Secret/.*Search for Clues to Leovic's Secret.* |count 1
 step
-goto 49.24,78.34 |q The Emperor's Secret/.*Search for Clues to Leovic's Secret.* |count 2
-step
 goto 53.76,75.50
 'Destroy Wards and Search Caches |q The Emperor's Secret/.*Search for Clues to Leovic's Secret.* |count 2
 step
@@ -26523,19 +26526,20 @@ accept Relics and Rumblings
 step
 goto 20.71,50.11
 click Undertow Cavern |q Relics and Rumblings/Enter Undertow Cavern
+|tip Manually skip to the next step.
 step
 goto u30_undertowcavern_base 48.62,86.85
-'Take Phalevon's Magnificent Sword |q Relics and Rumblings/.*Gather Phalevon's Relics.* Count 1
+'Take Phalevon's Magnificence Sword |q Relics and Rumblings/.*Gather Phalevon's Relics.* |count 1
 step
-goto 49.08,74.62 |q Relics and Rumblings/.*Gather Phalevon's Relics.* Count 2
+goto 49.08,74.62 |q Relics and Rumblings/.*Gather Phalevon's Relics.* |count 2
 step
 goto 33.18,70.80
-'Take Phalevon's Magnificent helm |q Relics and Rumblings/.*Gather Phalevon's Relics.* Count 2
+'Take Phalevon's Magnificence helm |q Relics and Rumblings/.*Gather Phalevon's Relics.* |count 2
 step
-goto 49.85,74.62 |q Relics and Rumblings/.*Gather Phalevon's Relics.* Count 3
+goto 49.85,74.62 |q Relics and Rumblings/.*Gather Phalevon's Relics.* |count 3
 step
 goto 60.86,62.84
-'Take Phalevon's Magnificent armor |q Relics and Rumblings/.*Gather Phalevon's Relics.* Count 3
+'Take Phalevon's Magnificence armor |q Relics and Rumblings/.*Gather Phalevon's Relics.* |count 3
 step
 goto 60.86,62.84
 talk Amalia Vasatoln |q Relics and Rumblings/Talk to Amalia Vasatoln
@@ -26546,16 +26550,13 @@ goto 52.45,40.52
 click Skyshard |achieve 2982/14
 |tip Follow Ramp
 step
-goto 50.00,39.45 |achieve 2965
-step
 goto 50.31,16.06
+|tip Jump down
 kill Druvaakh The Smasher
 'Explore Undertow Cavern |achieve 2965
 step
 goto 52.29,13.30
-'Take Phalevon's Horn of Magnificent |q Relics and Rumblings/Gather Phalevon's Horn of Magnificent
-step
-goto 50.76,15.29 |q Relics and Rumblings/Exit Undertow Cavern
+'Take Phalevon's Horn of Magnificence |q Relics and Rumblings/Gather Phalevon's Horn of Magnificence
 step
 goto 57.19,14.98
 click Blackwood |q Relics and Rumblings/Exit Undertow Cavern
@@ -26587,21 +26588,18 @@ step
 goto 20.31,36.12
 talk Commander Axius |q A Keep's Ransom/Talk to Commander Axius
 step
-goto 18.02,32.10 |q A Keep's Ransom/Enter the Broderwatch Keep
-step
 goto 17.48,31.94
-click Borderwatch Sewer |q A Keep's Ransom/Enter the Borderwatch Keep
+click Borderwatch Sewer |q A Keep's Ransom/Enter Borderwatch Keep
+|tip Manually skip to the next step.
 step
 goto Borderwatch Sewers 25.23,36.71
-'Find a Way in the Keep |q A Keep's Ransom/Find a Way in the Keep
+'Find a Way in the Keep |q A Keep's Ransom/Find a Way into the Keep
 step
 goto 09.53,51.66
 'Find the Source of the Voice |q A Keep's Ransom/Find the Source of the Voice
 step
 goto 09.53,51.66
 talk Erilthel |q A Keep's Ransom/Talk to Erilthel
-step
-goto 49.87,54.35 |q A Keep's Ransom/Find Seeks-the-Dark
 step
 goto 63.87,36.67 |q A Keep's Ransom/Find Seeks-the-Dark
 step
@@ -26616,14 +26614,14 @@ goto 91.67,70.74
 talk Seeks-the-Dark |q A Keep's Ransom/Talk to Seeks-the-Dark
 step
 goto 86.50,79.72
-click Borderwatch Courtyard |q A Keep's Ransom/Save the Hostages in the Southwest Guard
+click Borderwatch Courtyard |q A Keep's Ransom/Save the Hostages in the Southwest Guard Tower
 |tip Manually skip to the next step.
 step
 goto u30_borderwatchkeep 75.82,55.03
-'Destroy Chain Post |q A Keep's Ransom/Save the Hostages in the Southwest Guard
+'Destroy Chain Post |q A Keep's Ransom/Save the Hostages in the Southwest Guard Tower
 step
 goto 75.84,55.66
-talk Calixto Tunifus |q A Keep's Ransom/Talk to Calix Tunifus
+talk Calixto Tunifus |q A Keep's Ransom/Talk to Calixto Tunifus
 step
 goto 26.35,56.35
 'Destroy Chain Post |q A Keep's Ransom/Save the Hostages at the Smithy
@@ -26649,8 +26647,6 @@ click Borderwatch Keep |q A Keep's Ransom/Rescue the Ayleid Scholar
 step
 goto u30_borderwatch_int_base 67.58,39.86 |q A Keep's Ransom/Rescue the Ayleid Scholar
 step
-goto 49.42,20.30 |q A Keep's Ransom/Rescue the Ayleid Scholar
-step
 goto 62.67,20.22
 talk Teldundindo of Sunhold |q A Keep's Ransom/Rescue the Ayleid Scholar
 step
@@ -26663,34 +26659,37 @@ goto 35.43,91.81 |q A Keep's Ransom/Go to the Crypt
 step
 goto 90.24,72.16
 click Borderwatch Courtyard |q A Keep's Ransom/Go to the Crypt
+|tip Manually skip to the next step.
 step
 goto u30_borderwatchkeep 46.16,18.93
 click Borderwatch Crypt |q A Keep's Ransom/Go to the Crypt
 step
-goto u30_borderwatch_chapel_base 45.79,81.82 |q A Keep's Ransom/Find the Entrace to the Ayleid Ruin
+goto u30_borderwatch_chapel_base 33.25,81.93 |q A Keep's Ransom/Find the Entrance to the Ayleid Ruin
 step
-goto 46.45,54.44 |q A Keep's Ransom/Find the Entrace to the Ayleid Ruin
+goto 46.45,54.44 |q A Keep's Ransom/Find the Entrance to the Ayleid Ruin
 step
 goto 43.69,10.19
-'Find the Entrace to the Ayleid Ruin |q A Keep's Ransom/Find the Entrace to the Ayleid Ruin
+'Find the Entrace to the Ayleid Ruin |q A Keep's Ransom/Find the Entrance to the Ayleid Ruin
 step
 goto 43.69,10.19
 click Ayleid Ruin |q A Keep's Ransom/Search the Ayleid Ruin
 |tip Manually skip to the next step.
 step
-goto 59.26,60.27
+goto u30_borderwatch_ayl_vlt_base 59.26,60.27
 'Search the Ayleid Ruin |q A Keep's Ransom/Search the Ayleid Ruin
 step
 goto 59.26,60.27
 'Destroy Attunement Crystal |q A Keep's Ransom/Stop the Painted Eye Ritual
+|tip Manually skip to the next step.
 step
 goto 49.47,43.42
 'Destroy Attunement Crystal |q A Keep's Ransom/Stop the Painted Eye Ritual
+|tip Manually skip to the next step.
 step
 goto 59.01,25.27
 'Destroy Attunement Crystal |q A Keep's Ransom/Stop the Painted Eye Ritual
 step
-goto 38.98,4352
+goto 38.98,43.13
 click Ayleid Vault |q A Keep's Ransom/Confront the Painted Eye's Leader
 |tip Manually skip to the next step.
 step
@@ -26801,6 +26800,184 @@ step
 goto 41.35,52.87 
 wayshrine Blackwood Crossroads
 step
+goto 36.05,44.87
+talk Revus Demnevanni |q Giving Up the Ghost/Talk to Revus Demnevanni
+step
+goto 36.20,45.88 |q Giving Up the Ghost/Meet Revus Demnevanni in Veyond
+step
+goto 34.92,45.88 |q Giving Up the Ghost/Meet Revus Demnevanni in Veyond
+step
+goto 34.82,44.42
+click Veyond |q Giving Up the Ghost/Meet Revus Demnevanni in Veyond
+|tip Manually skip to the next step.
+step
+goto veyond1_base 50.48,22.49
+'Meet Revus Demnevanni in Veyond |q Giving Up the Ghost/Meet Revus Demnevanni in Veyond
+step
+goto 50.48,22.49
+talk Revus Demnevanni |q Giving Up the Ghost/Talk to Revus Demnevanni
+step
+goto 50.34,23.96
+talk Tiras Tirethi |q Giving Up the Ghost/Talk to Tiras Tirethi
+step
+goto 34.54,21.48
+'Mark Rune Site |q Giving Up the Ghost/.*Paint Stabilizing Runes.* |count 1
+step
+goto 44.00,34.74 
+'Mark Rune Site |q Giving Up the Ghost/.*Paint Stabilizing Runes.* |count 2
+step
+goto 53.60,31.00
+'Mark Rune Site |q Giving Up the Ghost/.*Paint Stabilizing Runes.* |count 3
+|tip Downstairs
+step
+goto 50.70,22.44
+talk Revus Demnevanni |q Giving Up the Ghost/Talk to Revus Demnevanni
+step
+goto 50.39,23.87
+talk Tiras Tirethi |q Giving Up the Ghost/Talk to Tiras Tirethi
+|tip Manually skip to the next step.
+step
+goto 49.21,23.23
+talk Revus Demnevanni |q Giving Up the Ghost/Talk to Revus Demnevanni
+step
+goto 45.89,81.08
+click Veyond Mathmalatu |q Giving Up the Ghost/Search for the Source of Interference
+step
+goto 45.66,86.63
+'Search for the Source of Interference |q Giving Up the Ghost/Search for the Source of Interference
+step
+goto 45.66,86.63
+'Wait for Tiras Tirethi |q Giving Up the Ghost/Wait for Tiras Tirethi
+step
+goto 45.30,87.75
+'Destroy Clouded Varla Stones |q Giving Up the Ghost/.*Destroy the Clouded Varla Stones.* |count 1
+step
+goto 45.81,88.20
+'Destroy Clouded Varla Stones |q Giving Up the Ghost/.*Destroy the Clouded Varla Stones.* |count 2
+step
+goto 45.42,87.75
+'Destroy Clouded Varla Stones |q Giving Up the Ghost/.*Destroy the Clouded Varla Stones.* |count 3
+step
+goto 45.66,86.99
+'Listen to the Conversation |q Giving Up the Ghost/Listen to the Conversation 
+step
+goto 45.66,86.99
+talk Revus Demnevanni |q Giving Up the Ghost/Talk to Revus Demnevanni
+step
+goto 44.06,88.43
+'Take Phantasmal Censer |q Giving Up the Ghost/Take the Phantasmal Censer
+step
+goto 47.24,95.52
+click Beyond Bangara |q Giving Up the Ghost/Follow Tiras Tirethi's Voice
+|tip Manually skip to the next step.
+step
+goto veyond2_base 21.97,74.63
+'Follow Tiras Tirethi's Voice |q Giving Up the Ghost/Follow Tiras Tirethi's Voice
+step
+goto 21.97,74.63
+'Use Phantasmal Censer |q Giving Up the Ghost/Use the Phantasmal Censer
+step
+goto 20.90,75.16
+talk Revus Demnevanni |q Giving Up the Ghost/Talk to Revus Demnevanni
+step
+goto 25.43,82.51
+'Use The Phantasmal Censer |q Giving Up the Ghost/Find Tiras Tirethi with the Phantasmal Censer
+|tip Manually skip to the next step.
+step
+goto 55.82,24.90
+'Find Tiras Tirethi with the Phantasmal Censer |q Giving Up the Ghost/Find Tiras Tirethi with the Phantasmal Censer
+|tip Follow Phantasmal Mote
+step
+goto 55.82,25.79
+'Dislodge the Clouded Varla Stones |q Giving Up the Ghost/.*Dislodge the Clouded Varla Stones.* |count 1
+step
+goto 53.79,24.90
+'Dislodge the Clouded Varla Stones |q Giving Up the Ghost/.*Dislodge the Clouded Varla Stones.* |count 2
+step
+goto 55.64,23.94
+'Dislodge the Clouded Varla Stones |q Giving Up the Ghost/.*Dislodge the Clouded Varla Stones.* |count 3
+step
+goto 57.31,25.25
+talk Revus Demnevanni |q Giving Up the Ghost/Talk to Revus Demnevanni
+step
+goto 55.88,21.91
+'Use The Phantasmal Censer |q Giving Up the Ghost/Find Tiras Tirethi with the Phantasmal Censer
+|tip Manually skip to the next step.
+step
+goto 75.58,08.06
+click Veyond Gandrassel |q Giving Up the Ghost/Find Tiras Tirethi with the Phantasmal Censer
+|tip Follow Phantasmal Mote
+|tip Manually skip to the next step.
+step
+goto veyond3_base 86.57,71.96 |q Giving Up the Ghost/Find Tiras Tirethi with the Phantasmal Censer
+'Use The Phantasmal Censer |q Giving Up the Ghost/Find Tiras Tirethi with the Phantasmal Censer
+|tip Manually skip to the next step.
+step
+goto 67.82,55.31
+'Find Tiras Tirethi with the Phantasmal Censer |q Giving Up the Ghost/Find Tiras Tirethi with the Phantasmal Censer
+|tip Follow Phantasmal Mote
+step
+goto 67.82,55.31
+talk to Revus Demnevanni|q Giving Up the Ghost/Talk to Revus Demnevanni
+step
+goto 79.21,54.14
+'Use Phantasmal Censer |q Giving Up the Ghost/Find Tiras Tirethi with the Phantasmal Censer
+|tip Manually skip to the next step.
+step
+goto 63.07,64.20
+'Find Tiras Tirethi with the Phantasmal Censer |q Giving Up the Ghost/Find Tiras Tirethi with the Phantasmal Censer
+|tip Follow Phantasmal Mote
+step
+goto 63.07,64.20 
+'Destroy Clouded Varla Stones |q Giving Up the Ghost/.*Destroy the Clouded Varla Stones.* |count 1
+step
+goto 64.81,65.02
+'Destroy Clouded Varla Stones |q Giving Up the Ghost/.*Destroy the Clouded Varla Stones.* |count 2
+step
+goto 63.18,65.78
+'Destroy Clouded Varla Stones |q Giving Up the Ghost/.*Destroy the Clouded Varla Stones.* |count 3
+step
+goto 62.61,64.56
+'Use Phantasmal Censer |q Giving Up the Ghost/Find Tiras Tirethi with the Phantasmal Censer
+|tip Manually skip to the next step.
+step
+goto 34.63,22.27
+click Ancient Tomb |q Giving Up the Ghost/Find Tiras Tirethi with the Phantasmal Censer
+|tip Follow Phantasmal Mote
+step
+goto 27.73,22.73
+talk Revus Demnevanni |q Giving Up the Ghost/Talk to Revus Demnevanni
+step
+goto 27.58,22.47
+'Use Phantasmal Censer |q Giving Up the Ghost/Save Tiras Tirethi
+step
+goto 05.77,22.37
+click Veyond |q Giving Up the Ghost/Go to Revus Demnevanni's Camp
+|tip Manually skip to the next step.
+step
+goto veyond1_base 46.37,03.60
+click Blackwood |q Giving Up the Ghost/Go to Revus Demnevanni's Camp
+|tip Manually skip to the next step.
+step
+goto blackwood_base 36.05,44.88
+talk Revus Demnevanni
+turnin Giving Up the Ghost
+step
+goto 34.82,32.19 |q Shrine of Nocturnal |future
+step
+goto 35.74,31.45
+talk Nocturnal
+accept Shrine of Nocturnal
+step
+goto 34.88,32.32
+talk Milona Brolus |q Shrine of Nocturnal/Talk to Millona Brolus
+step
+goto 29.56,32.53
+wayshrine Fort Redmane
+step
+click Fort Redmane Wayshrine
+'Travel to Blackwood Crossroads in Blackwood
+step
 goto 38.02,60.64
 'Go to Fort Blueblood |q A Deadly Secret/Go to Fort Blueblood
 step
@@ -26883,10 +27060,14 @@ step
 goto 32.79,56.29
 talk Yisara |q The Ghostwriter of Giovesse/Talk to Yisara
 step
-goto 33.49,51.70 |q A Deadly Secret/Warn Councilor Vandacia
+goto 33.49,51.70
+click Gideon |q Haunted Legacy |future
 step
 goto 55.54,30.35
 wayshrine Gideon
+step
+talk Faric Gemain
+accept Haunted Legacy
 step
 goto 49.10,36.84
 click Gideon Courthouse |q A Deadly Secret/Warn Councilor Vandacia
@@ -26913,9 +27094,7 @@ goto 28.97,27.42
 click Twyllbek Ruins |q A Deadly Secret/Search the Twyllbek Ruins
 |tip Manually skip to the next step.
 step
-goto U30_castleGiovesse1_base 39.26,44.93 |q A Deadly Secret/Search the Twyllbek Ruins
-step
-goto 61.63,27.49 |q A Deadly Secret/Search the Twyllbek Ruins
+goto U30_castleGiovesse1_base 61.63,27.49 |q A Deadly Secret/Search the Twyllbek Ruins
 step
 goto 69.73,46.14
 'Search the Twyllbek Ruins |q A Deadly Secret/Search the Twyllbek Ruins
@@ -26936,8 +27115,72 @@ goto blackwood_base 52.73,52.04 |q A Deadly Secret/Talk to Councilor Vandacia
 step
 goto u30_Gideoncity_base 23.52,46.01 |q A Deadly Secret/Talk to Councilor Vandacia
 step
+goto 43.34,49.62
+click Temple of Dibella |q Haunted Legacy/Escort Faric Gemain
+|tip Manually skip to the next step.
+step
+goto 49.24,49.29
+'Escort Faric Gemain |q Haunted Legacy/Escort Faric Gemain
+|tip Upstairs
+step
+goto 49.24,49.29
+talk Faric Gemain |q Haunted Legacy/Talk to Faric Gemain
+step
+goto 48.54,48.52
+'Explore Ground Floor |q Haunted Legacy/Explore the Ground Floor
+step
+goto 48.54,48.52
+'Use the Memory Stone |q Haunted Legacy/Use the Memory Stone
+step
+goto 48.54,48.52
+talk Faric Gemain |q Haunted Legacy/Talk to Faric Gemain
+step
+goto 45.40,50.49
+'Explore the Second Floor |q Haunted Legacy/Explore the Second Floor
+step
+goto 45.40,50.49
+'Use the Memory Stone |q Haunted Legacy/Use the Memory Stone
+step
+goto 44.63,50.79
+'Explore Top Floor |q Haunted Legacy/Explore the Top Floor
+step
+goto 44.63,50.79
+'Use the Memory Stone |q Haunted Legacy/Use the Memory Stone
+step
+goto 44.63,50.79
+'Watch Ghostly Killer |q Haunted Legacy/Watch Ghostly Killer
+step
+goto 44.49,48.67
+'Activate Suspicious Wall |q Haunted Legacy/Mimic the Ghostly Killer
+step
+goto 44.49,48.67
+click Phantom Door |q Haunted Legacy/Use the Phantom Door
+step
+goto 45.30,47.59
+'Take Crude Map |q Haunted Legacy/Examine Crude Map
+step
+goto 45.30,47.59
+'Examine the Ledger of Souls |q Haunted Legacy/Examine the Ledger of Souls
+step
+goto 45.14,48.32
+talk Faric Gemain |q Haunted Souls/Talk to Faric Gemain
+step
+goto 45.14,48.32
+'Watch Faric Gemain |q Haunted Souls/Watch Faric Gemain
+step
+goto 45.14,48.32
+talk Faric Gemain |q Haunted Souls/Talk to Faric Gemain
+click Phantom Door |q |q A Deadly Secret/Talk to Councilor Vandacia
+|tip Manually skip to the next step.
+step
+goto 43.80,49.67
+click Gideon |q A Deadly Secret/Talk to Councilor Vandacia
+|tip Ground floor
+|tip Manually skip to the next step.
+step
 goto 49.06,36.85
 click Gideon Courtyard |q A Deadly Secret/Talk to Councilor Vandacia
+|tip Manually skip to the next step.
 step
 goto 46.40,34.93
 talk Councilor Vandacia |q A Deadly Secret/Talk to Councilor Vandacia
@@ -26967,7 +27210,7 @@ goto 62.69,50.03
 'Examine Tarnished Ring of Mara |q The Ghostwriter of Giovesse/Search the Lovers' Cottage
 step
 goto 62.57,49.98
-talk Yisara |q The Ghost Writer of Giovesse/Talk to Yisara
+talk Yisara |q The Ghostwriter of Giovesse/Talk to Yisara
 step
 goto 62.60,49.97
 'Use Spirit Lantern |q The Ghostwriter of Giovesse/Use the Spirit Lantern
@@ -26977,9 +27220,6 @@ talk Mathen Galenus |q The Ghostwriter of Giovesse/Talk to Mathen Galenus
 step
 goto 54.29,45.89
 'Go to the Castle Giovesse Chapel |q The Ghostwriter of Giovesse/Go to the Castle Giovesse Chapel
-step
-goto 53.96,46.05
-'Search the Chapel |q The Ghostwriter of Giovesse/Search the Chapel
 step
 goto 53.96,46.05
 'Examine Scrawled Incantation |q The Ghostwriter of Giovesse/Search the Chapel
@@ -26995,6 +27235,7 @@ talk Duchess Astella Galenus |q The Ghostwriter of Giovesse/Talk to Duchess Aste
 step
 goto 56.62,45.59
 click Duchess's Private Study |q The Ghostwriter of Giovesse/Find Duchess Astella Galenus's Notes
+|tip Manually skip to the next step.
 step
 goto 57.08,45.40
 'Examine Duchess Astella's Notes |q The Ghostwriter of Giovesse/Find Duchess Astella Galenus's Notes
@@ -27004,6 +27245,7 @@ talk Yisara |q The Ghostwriter of Giovesse/Talk to Yisara
 step
 goto 56.68,45.72
 click Castle Ruins |q The Ghostwriter of Giovesse/Find Mathen Galenus's Armor
+|tip Manually skip to the next step.
 step
 goto 56.79,46.40 
 'Dig Heartsbane |q The Ghostwriter of Giovesse/Find Mathen Galenus's Armor
@@ -27030,10 +27272,9 @@ step
 goto 54.26,46.68
 talk Duchess Astella Galenus |q The Ghostwriter of Giovesse/Talk to Duchess Astella Galenus
 step
-goto |q The Ghostwriter of Giovesse/Find the Sword of Giovesse
-step
 goto 55.29,45.13
 click Giovesse Mausoleum |q The Ghostwriter of Giovesse/Find the Sword of Giovesse
+|tip Manually skip to the next step.
 step
 goto 54.19,46.04
 'Take Sword of Giovesse |q The Ghostwriter of Giovesse/Find the Sword of Giovesse
@@ -27054,16 +27295,16 @@ goto 56.86,44.33
 'Use Spirit Lantern |q The Ghostwriter of Giovesse/Use the Spirit Lantern
 step
 goto 56.86,44.33
-'Place Mage's Alter |q The Ghostwriter of Giovesse/Lay out Mathen's Sword and Armor
+'Place Mage's Alter |q The Ghostwriter of Giovesse/Lay Out Mathen's Sword and Armor
 step
 goto 56.93,44.26
 talk Mathen Galenus |q The Ghostwriter of Giovesse/Talk to Mathen Galenus
 step
 goto 56.93,44.26
-'Let Mathen Speak To Yisara |q The Ghostwriter of Giovesse/Let Mathen Speak To Yisara
+'Let Mathen Speak to Yisara |q The Ghostwriter of Giovesse/Let Mathen Speak to Yisara
 step
 goto 56.97,44.30
-talk Yisara |q The Ghostwriter of Giovesse/Talk Yisara
+talk Yisara |q The Ghostwriter of Giovesse/Talk to Yisara
 step
 goto 56.89,44.35
 'Use Amall Brazier |q The Ghostwriter of Giovesse/Destroy the Ring
@@ -27072,32 +27313,72 @@ goto 56.96,44.34
 talk Yisara
 turnin The Ghostwriter of Giovesse
 step
-'Open Blackwood Map
-click Blackwood Crossroads Wayshrine
+goto 56.66,44.45
+click Castle Giovesse Ruins |q Haunted Legacy/Find the Lost Carriage
+|tip Manually skip to the next step.
+step
+goto 61.15,57.35
+'Find the Lost Carriage |q Haunted Legacy/Find the Lost Carriage
+step
+goto 61.15,57.35
+'Search Skeleton |q Haunted Legacy/Search the Skeleton
+step
+goto 61.12,57.45
+'Search Waterlogged Chest |q Haunted Legacy/Search Waterlogged Chest
+step
+goto 61.04,57.37
+talk Faric Gemain |q Haunted Legacy/Talk to Faric Gemain
+step
+goto 61.79,56.93
+'Approach the Ghost |q Haunted Legacy/Approach the Ghost
+step
+goto 63.29,57.44
+'Follow the Ghost |q Haunted Legacy/Follow the Ghost
+step
+goto 63.29,57.44
+'Examine Cerise's Farewell Note |q Haunted Legacy/Examine the Scroll
+step
+goto 63.29,57.44
+'Search Skeleton |q Haunted Legacy/Search Skeleton
+step
+goto 63.21,57.43
+talk Faric Gemain |q Haunted Legacy/Talk to Faric Gemain
+step
+talk Fire-From-Nowhere |q Haunted Legacy/Talk to Fire-From-Nowhere
+step
+goto 58.82,56.24 |q Haunted Legacy/Talk to Fire-From-Nowhere
+step
+goto u30_Gideoncity_base 65.22,24.25
+talk Fire-From-Nowhere |q Haunted Legacy/Talk to Fire-From-Nowhere
+step
+goto 64.04,24.46
+talk Faric Gemain
+turnin Haunted Legacy
+step
+goto 55.60,30.32
+click Gideon Wayshrine
 'Travel to Blackwood Crossroads in Blackwood |q A Deadly Secret/Find Councilor Faleria
 |tip Manually skip to the next step.
 step
 goto blackwood_base 36.24,66.51
 wayshrine Blueblood
 step
-goto 30.30,64.60 |achieve 2892/1
+goto 30.30,64.60 |achieve 2982/1
 step
-goto 29.23,63.79 |achieve 2892/1
+goto 29.23,63.79 |achieve 2982/1
 step
 goto 29.37,64.18
-click Skyshard |achieve 2892/1
+click Skyshard |achieve 2982/1
 |tip climb to the top of the tower
 step
 goto 30.95,63.81
-'Find Pirates Treasure |q The Pirate's Gift/Find the Pirates Treasure
+'Find Captain Voldar's Treasure |q The Pirate's Gift/Find Captain Voldar's Treasure
 step
 goto 30.95,63.81
 'Dig Loose Dirt 
 turnin The Pirate's Gift
 step
 goto 30.36,64.55 |q A Deadly Secret/Find Councilor Faleria
-step
-goto 32.69,69.71 |q A Deadly Secret/Find Councilor Faleria
 step
 goto 31.01,68.25
 click Tidewater Cave |q A Deadly Secret/Find Councilor Faleria
@@ -28668,175 +28949,6 @@ step
 goto 80.60,53.25
 click Leyawiin |q Giving Up the Ghost/Talk to Revus Demnevanni
 |tip Manually skip to the next step.
-step
-goto 79.31,42.49
-click Blackwood |q Giving Up the Ghost/Talk to Revus Demnevanni
-step
-goto blackwood_base 31.54,52.98 |q Giving Up the Ghost/Talk to Revus Demnevanni
-step
-goto 36.05,44.87
-talk Revus Demnevanni |q Giving Up the Ghost/Talk to Revus Demnevanni
-step
-goto 36.20,45.88 |q Giving Up the Ghost/Meet Revus Demnevanni in Veyond
-step
-goto 34.92,45.88 |q Giving Up the Ghost/Meet Revus Demnevanni in Veyond
-step
-goto 34.82,44.42
-click Veyond |q Giving Up the Ghost/Meet Revus Demnevanni in Veyond
-step
-goto veyond1_base 50.48,22.49
-'Meet Revus Demnevanni in Veyond |q Giving Up the Ghost/Meet Revus Demnevanni in Veyond
-step
-goto 50.48,22.49
-talk Revus Demnevanni |q Giving Up the Ghost/Talk to Revus Demnevanni
-step
-goto 50.34,23.96
-talk Tiras Tirethi |q Giving Up the Ghost/Talk to Tiras Tirethi
-step
-goto 34.54,21.48
-'Mark Rune Site |q Giving Up the Ghost/.*Paint Stabilizing Runbes.* |count 1
-step
-goto 44.00,34.74 
-'Mark Rune Site |q Giving Up the Ghost/.*Paint Stabilizing Runbes.* |count 2
-step
-goto 53.60,31.00
-'Mark Rune Site |q Giving Up the Ghost/.*Paint Stabilizing Runbes.* |count 3
-|tip Downstairs
-step
-goto 50.70,22.44
-talk Revus Demnevanni |q Giving Up the Ghost/Talk to Revus Demnevanni
-step
-goto 50.39,23.87
-talk Tiras Tirethi |q Giving Up the Ghost/Talk to Tiras Tirethi
-step
-goto 49.21,23.23
-talk Revus Demnevanni |q Giving Up the Ghost/Talk to Revus Demnevanni
-step
-goto 45.89,81.08
-click Veyond Mathmalatu |q Giving Up the Ghost/Search for the Source of Interference
-step
-goto 45.66,86.63
-'Search for the Source of Interference |q Giving Up the Ghost/Search for the Source of Interference
-step
-goto 45.66,86.63
-'Wait for Tiras Tirethi |q Giving Up the Ghost/Wait for Tiras Tirethi
-step
-goto 45.30,87.75
-'Destroy Clouded Varla Stones |q Giving Up the Ghost/.*Destroy Clouded Varla Stones.* |count 1
-step
-goto 45.81,88.20
-'Destroy Clouded Varla Stones |q Giving Up the Ghost/.*Destroy Clouded Varla Stones.* |count 2
-step
-goto 45.42,87.75
-'Destroy Clouded Varla Stones |q Giving Up the Ghost/.*Destroy Clouded Varla Stones.* |count 3
-step
-goto 45.66,86.99
-'Listen to the Conversation |q Giving Up the Ghost/Listen to the Conversation 
-step
-goto 45.66,86.99
-talk Revus Demnevanni |q Giving Up the Ghost/Talk to Revus Demnevanni
-step
-goto 44.06,88.43
-'Take Phantasmal Censor |q Giving Up the Ghost/Take the Phantasmal Censor
-step
-goto 47.24,95.52
-click Beyond Bangara |q Giving Up the Ghost/Follow Tiras Tirethi's Voice
-step
-goto veyond2_base 21.97,74.63
-'Follow Tiras Tirethi's Voice |q Giving Up the Ghost/Follow Tiras Tirethi's Voice
-step
-goto 21.97,74.63
-'Use Phantasmal Censor |q Giving Up the Ghost/Use the Phantasmal Censor
-step
-goto 20.90,75.16
-talk Revus Demnevanni |q Giving Up the Ghost/Talk to Revus Demnevanni
-step
-goto 25.43,82.51
-'Use The Phantasmal Censor |q Giving Up the Ghost/Find Tiras Tirethi with the Phantasmal Censor
-|tip Follow Phantasmal Mote
-step
-goto 55.82,24.90
-'Find Tiras Tirethi with the Phantasmal Censor |q Giving Up the Ghost/Find Tiras Tirethi with the Phantasmal Censor
-step
-goto 55.82,25.79
-'Dislodge the Clouded Varla Stones |q Giving Up the Ghost/.*Dislodge the Clouded Varla Stones.* |count 1
-step
-goto 53.79,24.90
-'Dislodge the Clouded Varla Stones |q Giving Up the Ghost/.*Dislodge the Clouded Varla Stones.* |count 2
-step
-goto 55.64,23.94
-'Dislodge the Clouded Varla Stones |q Giving Up the Ghost/.*Dislodge the Clouded Varla Stones.* |count 3
-step
-goto 57.31,25.25
-talk Revus Demnevanni |q Giving Up the Ghost/Talk to Revus Demnevanni
-step
-goto 55.88,21.91
-'Use The Phantasmal Censor |q Giving Up the Ghost/Find Tiras Tirethi with the Phantasmal Censor
-|tip Manually skip to the next step.
-step
-goto 75.58,08.06
-click Veyond Gandrassel |q Giving Up the Ghost/Find Tiras Tirethi with the Phantasmal Censor
-step
-goto veyond3_base 86.57,71.96 |q Giving Up the Ghost/Find Tiras Tirethi with the Phantasmal Censor
-step
-goto 67.82,55.31
-'Find Tiras Tirethi with the Phantasmal Censor |q Giving Up the Ghost/Find Tiras Tirethi with the Phantasmal Censor
-|tip Follow Phantasmal Mote
-step
-goto 67.82,55.31
-talk to Revus Demnevanni|q Giving Up the Ghost/Talk to Revus Demnevanni
-step
-goto 79.21,54.14
-'Use Phantasmal Censor |q Giving Up the Ghost/Find Tiras Tirethi with the Phantasmal Censor
-|tip Manually skip to the next step.
-step
-goto 63.07,64.20
-'Find Tiras Tirethi with the Phantasmal Censor |q Giving Up the Ghost/Find Tiras Tirethi with the Phantasmal Censor
-|tip Follow Phantasmal Mote
-step
-goto 63.07,64.20 
-'Destroy Clouded Varla Stones |q Giving Up the Ghost/.*Destroy Clouded Varla Stones.* |count 1
-step
-goto 64.81,65.02
-'Destroy Clouded Varla Stones |q Giving Up the Ghost/.*Destroy Clouded Varla Stones.* |count 2
-step
-goto 63.18,65.78
-'Destroy Clouded Varla Stones |q Giving Up the Ghost/.*Destroy Clouded Varla Stones.* |count 3
-step
-goto 62.61,64.56
-'Use Phantasmal ensor |q Giving Up the Ghost/Find Tiras Tirethi with the Phantasmal Censor
-|tip Follow Phantasmal Mote
-step
-goto 34.63,22.27
-click Ancient Tomb |q Giving Up the Ghost/Find Tiras Tirethi with the Phantasmal Censor
-step
-goto 27.73,22.73
-talk Revus Demnevanni |q Giving Up the Ghost/Talk to Revus Demnevanni
-step
-goto 27.58,22.47
-'Use Phantasmal Censor |q Giving Up the Ghost/Save Tiras Tirethi
-step
-goto 05.77,22.37
-click Veyond |q Giving Up the Ghost/Go to Revus Demnevanni's Camp
-step
-goto veyond1_base 46.37,03.60
-click Blackwood |q Giving Up the Ghost/Go to Revus Demnevanni's Camp
-step
-goto blackwood_base 36.05,44.88
-talk Revus Demnevanni
-turnin Giving Up the Ghost
-step
-goto 34.82,32.19 |q Shrine of Nocturnal |future
-step
-goto 35.74,31.45
-talk Nocturnal
-accept Shrine of Nocturnal
-step
-goto 34.88,32.32
-talk Milona Brolus |q Shrine of Nocturnal/Talk to Milona Brolus
-step
-goto 29.56,32.53
-wayshrine Fort Redmane
 step
 goto 36.55,26.99
 talk Duke of Crows
