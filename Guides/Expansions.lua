@@ -27394,11 +27394,36 @@ talk Councilor Faleria |q A Deadly Secret/Talk to Councilor Faleria
 step
 'Open Blackwood Map
 click Leyawiin Wayshrine
-|tip find and accept Shrine of Nocturnal
-'Travel to Leyawiin in Blackwood |q A Deadly Secret/Go to Leyawiin Castle
+'Travel to Leyawiin in Blackwood |q Shrine of Nocturnal/Find Giovanni Corvus
 |tip Manually skip to the next step.
 step
-goto u30_leyawiincity_base 49.37,60.64 |q A Deadly Secret/Go to Leyawiin Castle
+goto u30_leyawiincity_base 13.98,64.59
+'Find Giovanni Corvus |q Shrine of Nocturnal/Find Giovanni Corvus
+step
+goto 27.93,46.73
+'Follow Giovanni Corvus |q Shrine of Nocturnal/Follow Giovanni Corvus
+|tip Keep your distance
+step
+goto 27.91,46.84
+click Chapel of Zenithar |q Shrine of Nocturnal/Witness the Secret Meeting
+step
+goto 22.65,46.45
+'Witness the Secret Meeting |q Shrine of Nocturnal/Witness the Secret Meeting
+|tip Crouch down low
+step
+goto 23.49,46.61
+talk Darene Gavendier
+'[Intimidate]
+|tip Manually skip to the next step.
+step
+goto 23.49,46.61
+'[Persuade]
+|tip Manually skip to the next step.
+step
+click Leyawiin |q A Deadly Secret/Go to Leyawiin Castle
+|tip Manually skip to the next step. 
+step
+goto 49.37,60.64 |q A Deadly Secret/Go to Leyawiin Castle
 step
 goto 79.55,53.18 |q A Deadly Secret/Go to Leyawiin Castle
 click Leyawiin Castle Courtyard |q A Deadly Secret/Go to Leyawiin Castle
@@ -27425,6 +27450,268 @@ click Gideon Wayshrine
 step
 goto u30_Gideoncity_base 64.91,26.51 |q An Unexpected Adversary/Go to Bloodrun Cave
 step
+goto blackwood_base 69.09,55.45
+step
+goto 67.08,61.18
+talk Lounges-on-Moss
+accept An Abundance of Stibbons
+step
+goto 63.90,63.96
+talk Lady Clarisse Laurent |q An Abundance of Stibbons/Talk to Lady Clarisse Laurent
+step
+goto 64.44,61.57
+click Glenbridge Hut |q An Abundance of Stibbons/Go to the Glenbridge Hut
+step
+goto 64.36,61.53
+talk Lady Clarisse Laurent |q An Abundance of Stibbons/Talk to Lady Clarisse Laurent
+step
+goto 64.44,61.58
+click Glenbridge |q An Abundance of Stibbons/Find the Lost Stibbons Duplicate
+|tip Manually skip to the next step.
+step
+goto 66.42,63.16
+talk Stibbons Duplicate |q An Abundance of Stibbons/Find the Lost Stibbons Duplicate
+step
+goto 64.44,61.57
+click Glenbridge Hut |q An Abundance of Stibbons/Go to the Glenbridge Hut
+step
+goto 64.36,61.53
+talk Lady Clarisse Laurent |q An Abundance of Stibbons/Talk to Lady Clarisse Laurent
+step
+goto 64.44,61.58
+click Glenbridge |q An Abundance of Stibbons/Find the Lost Stibbons Duplicate
+|tip Manually skip to the next step.
+step
+goto 63.91,63.98
+talk Nisswo Somarz |q An Abundance of Stibbons/Talk to Nisswo Somarz
+step
+goto 66.31,63.80
+click Glenbridge Xanmeer |q An Abundance of Stibbons/Meet Lady Clarisse Laurent in the Xanmeer
+|tip Manually skip to the next step.
+step
+goto u30_glenbridge_base 25.03,47.64
+'Meet Lady Clarisse Laurent in the Xanmeer |q An Abundance of Stibbons/Meet Lady Clarisse Laurent in the Xanmeer
+step
+goto 25.03,47.64
+talk Lady Clarisse Laurent |q An Abundance of Stibbons/Talk to Lady Clarisse Laurent
+step
+goto 22.05,48.34
+talk Stibbbons Duplicate |q An Abundance of Stibbons/Command the Stibbons Duplicate
+|tip Manually skip to the next step.
+step
+goto 20.30,53.50
+'kick Dormant Vine-Tongue |q An Abundance of Stibbons/Command the Stibbons Duplicate
+|tip Manually skip to the next step.
+step
+goto 22.66,53.73
+talk Stibbbons Duplicate |q An Abundance of Stibbons/Command the Stibbons Duplicate
+|tip Manually skip to the next step.
+step
+goto 22.66,53.73
+talk Lady Clarisse Laurent |q An Abundance of Stibbons/Talk to Lady Clarisse Laurent
+step
+goto 22.30,55.93
+click Southern Vestry |q An Abundance of Stibbons/Find a Way to Open the Main Doors
+|tip Manually skip to the next step
+step
+goto 16.87,68.65
+talk Stibbons Duplicate |q An Abundance of Stibbons/Find a Way to Open the Main Doors
+|tip Manually skip to the next step.
+step
+goto 22.37,72.57
+click Gate |q An Abundance of Stibbons/Find a Way to Open the Main Doors
+|tip Manually skip to the next step.
+step
+goto 17.77,73.08
+'kick Dormant Vine-Tongue |q An Abundance of Stibbons/Find a Way to Open the Main Doors
+|tip Manually skip to the next step.
+step
+goto 22.31,75.61
+click Southern Transept |q An Abundance of Stibbons/Find a Way to Open the Main Doors
+|tip Manually skip to the next step
+step
+goto 11.41,83.53 |q An Abundance of Stibbons/Find a Way to Open the Main Doors
+step
+goto 15.49,88.87 |q An Abundance of Stibbons/Find a Way to Open the Main Doors
+step
+goto 18.92,83.48
+talk Stibbons Duplicate |q An Abundance of Stibbons/Find a Way to Open the Main Doors
+|tip Manually skip to the next step.
+step
+goto 23.49,83.65
+'kick Dormant Vine-Tongue |q An Abundance of Stibbons/Find a Way to Open the Main Doors
+|tip Manually skip to the next step.
+step
+goto 37.70,83.92
+click Southern Alter |q An Abundance of Stibbons/Find a Way to Open the Main Doors
+|tip Manually skip to the next step.
+step
+goto 33.45,77.28
+talk Stibbons Duplicate |q An Abundance of Stibbons/Find a Way to Open the Main Doors
+|tip Manually skip to the next step.
+step
+goto 37.60,74.70
+click Gate |q An Abundance of Stibbons/Find a Way to Open the Main Doors
+step
+goto 32.74,71.06
+'kick Dorm'ant Vine-Tongue |q An Abundance of Stibbons/Find a Way to Open the Main Doors
+|tip Manually skip to the next step.
+step
+goto 37.81,69.00 |q An Abundance of Stibbons/Find a Way to Open the Main Doors
+step
+goto 38.13,63.11
+talk Stibbons Duplicate |q An Abundance of Stibbons/Find a Way to Open the Main Doors
+|tip Command Stibbons to stop on the floor plate.
+step
+goto 32.15,62.53
+talk Soutern Vestry |q An Abundance of Stibbons/Return to the First Floor
+|tip Manually skip to the next step.
+step
+goto 22.23,59.71
+click Central Chamber |q An Abundance of Stibbons/Return to the First Floor
+|tip Manually skip to the next step.
+step
+goto 22.87,46.49
+'Return to the First Floor |q An Abundance of Stibbons/Return to the First Floor
+step
+goto 22.87,46.49
+talk Lady Clarisse Laurent |q An Abundance of Stibbons/Talk to Lady Clarisse Laurent
+step
+goto 22.25,39.52
+click Northern Vestry |q An Abundance of Stibbons/Find Floor Plates in the North Wing
+|tip Manually skip to the next step.
+step
+goto 28.14,17.88 |q An Abundance of Stibbons/Find Floor Plates in the North Wing
+step
+goto 23.41,24.54
+talk Stibbons Duplicate |q An Abundance of Stibbons/Find Floor Plates in the North Wing
+|tip Manually skip to the next step.
+step
+goto 17.48,24.36
+click Gate |q An Abundance of Stibbons/Find Floor Plates in the North Wing
+|tip Manually skip to the next step.
+step
+goto 13.07,21.89
+talk Stibbons Duplicate |q An Abundance of Stibbons/Find Floor Plates in the North Wing
+|tip Manually skip to the next step.
+step
+goto 13.04,17.48
+'kick Dormant Vine-Tongue |q An Abundance of Stibbons/Find Floor Plates in the North Wing
+|tip Manually skip to the next step
+step
+goto 13.91,12.25
+talk Stibbons Duplicate |q An Abundance of Stibbons/Find Floor Plates in the North Wing
+|tip Manually skip to the next step.
+step
+goto 17.17,12.30
+click Gate |q An Abundance of Stibbons/Find Floor Plates in the North Wing
+|tip Manually skip to the next step.
+step
+goto 17.36,10.46
+'kick Dormant Vine-Tongue |q An Abundance of Stibbons/Find Floor Plates in the North Wing
+|tip Manually skip to the next step.
+step
+goto 22.20,19.60
+'kick Dormant Vine-Tongue |q An Abundance of Stibbons/Find Floor Plates in the North Wing
+|tip Manually skip to the next step
+step
+goto 27.71,16.73
+click Northern Transept |q An Abundance of Stibbons/Find Floor Plates in the North Wing
+|tip Manually skip to the next step.
+step
+goto 38.00,08.03
+click Northern Alter |q An Abundance of Stibbons/Find Floor Plates in the North Wing|q An Abundance of Stibbons/Find Floor Plates in the North Wing
+|tip Manually skip to the next step.
+step
+goto 39.54,13.98
+talk Stibbons Duplicate |q An Abundance of Stibbons/Find Floor Plates in the North Wing
+|tip Manually skip to the next step.
+step
+goto 35.41,14.23
+talk Stibbons Duplicate |q An Abundance of Stibbons/Find Floor Plates in the North Wing
+|tip Manually skip to the next step
+step
+goto 39.75,17.88
+'kick Dormant Vine-Tongue |q An Abundance of Stibbons/Find Floor Plates in the North Wing
+|tip Manually skip to the next step.
+step
+click Gate |q An Abundance of Stibbons/Find Floor Plates in the North Wing
+|tip Manually skip to the next step
+step
+goto 36.72,21.12
+'kick Dormant Vine-Tongue |q An Abundance of Stibbons/Find Floor Plates in the North Wing
+|tip Manually skip to the next step.
+step
+goto 34.66,23.42
+talk Stibbons Duplicate |q An Abundance of Stibbons/Find Floor Plates in the North Wing
+|tip Manually skip to the next step.
+step
+goto 38.55,32.81
+talk Stibbons Duplicate |q An Abundance of Stibbons/Find Floor Plates in the North Wing
+|tip Command Stibbons to stop on the Floor Plate.
+|tip Manually skip to the next step.
+step
+goto 37.58,32.86
+talk Stibbons Duplicate |q An Abundance of Stibbons/Find Floor Plates in the North Wing
+|tip Command Stibbons to stop on the Floor Plate.
+step
+goto 32.42,33.42
+click Northern Vestry |q An Abundance of Stibbons/Return to the First Hall
+|tip Manually skip to the next step.
+step
+goto 22.18,36.27
+click Central Chamber |q An Abundance of Stibbons/Return to the First Hall
+|tip Manually skip to the next step.
+step
+goto 27.43,47.87
+'Return to the First Hall |q An Abundance of Stibbons/Return to the First Hall
+step
+goto 27.43,47.87
+talk Lady Clarisse Laurent |q An Abundance of Stibbons/Talk to Lady Clarisse Laurent
+step
+goto 30.83,47.72
+click Sealed Halls |q An Abundance of Stibbons/Go to the Sorcerer's Chamber
+|tip Manually skip to the next step.
+step
+goto 46.54,47.53 |q An Abundance of Stibbons/Go to the Sorcerer's Chamber
+step
+goto 72.66,47.74
+click Sanctum of Sealing |q An Abundance of Stibbons/Go to the Sorcerer's Chamber
+|tip Manually skip to the next step.
+step
+goto 83.96,48.45
+'Go to the Sorcerer's Chamber |q An Abundance of Stibbons/Go to the Sorcerer's Chamber
+step
+goto 87.90,43.35
+'kick Dorm'ant Vine Tongue |q An Abundance of Stibbons/Rescue Stibbons
+|tip Manually skip to the next step.
+step
+goto 88.47,51.63
+'kick Dormant Vine Tongue |q An Abundance of Stibbons/Rescue Stibbons
+|tip Manually skip to the next step.
+step
+goto 90.45,47.72
+'kick Dormant Vine Tongue |q An Abundance of Stibbons/Rescue Stibbons
+step
+goto 73.40,47.71
+click Sealed Halls |q An Abundance of Stibbons/Return to the First Hall
+|tip Manually skip to the next step.
+step
+goto 33.50,47.65
+click Central Chamber |q An Abundance of Stibbons/Return to the First Hall
+|tip Manually skip to the next step.
+step
+goto 22.83,47.89
+'Return to the First Hall |q An Abundance of Stibbons/Return to the First Hall
+step
+goto 22.83,47.89
+talk Lady Clarisse Laurent 
+turnin An Abundance of Stibbons
+step
+goto 11.93,47.84
+click Blackwood |achieve 2967
+|tip Manually skip to the next step.
+step
 goto blackwood_base 71.50,56.12 |achieve 2967
 step
 goto 74.13,51.57
@@ -27433,9 +27720,11 @@ accept A Battle of Silk and Flame
 step
 goto 74.13,51.57
 click Doomvault Porcixid |q A Battle of Silk and Flame/Enter the Doomvault
+|tip Manually skip to the next step.
 step
 goto VaultDelve_INT01_base 82.97,50.44
 click Doomvault |q A Battle of Silk and Flame/Find Morgane
+|tip Manually skip to the next step.
 step
 goto VaultDelve_EXT01_base 41.25,76.73
 'Find Morgane Brousseau |q A Battle of Silk and Flame/Find Morgane
@@ -27456,26 +27745,33 @@ goto 34.33,37.50 |achieve 2982/15
 step
 goto 26.15,37.60
 click Doomvault Porcixid |achieve 2982/15
+|tip Manually skip to the next step.
 step
-goto VaultDelve_INT02B_base 14.69,56.12 |achieve 2982/15
+goto VaultDelve_INT02B_base 14.69,56.12 
+click Doomvault Porcixid |achieve 2982/15
+|tip Manually skip to the next step.
 step
-goto VaultDelve_INT02A_base 87.32,34.70 
+goto VaultDelve_EXT02_base 87.32,34.70 
 click Skyshard |achieve 2982/15
 step
 goto 95.06,27.03
 click Doomvault Porcixid |q A Battle of Silk and Flame/.*Investigate the Doomvault.* |count 2
+|tip Manually skip to the next step.
 step
 goto VaultDelve_INT02B_base 60.61,26.53
 click Doomvault Porcixid |q A Battle of Silk and Flame/.*Investigate the Doomvault.* |count 2
+|tip Manually skip to the next step.
 step 
 goto VaultDelve_EXT01_base 31.83,64.33
 click Doomvault Porcixid |q A Battle of Silk and Flame/.*Investigate the Doomvault.* |count 2
+|tip Manually skip to the next step.
 step
 goto VaultDelve_INT02A_base 55.51,47.55
 'Use Morgane's Sending Stone |q A Battle of Silk and Flame/.*Investigate the Doomvault.* |count 2
 step
 goto 13.47,47.14
 click Doomvault Porcixid |q A Battle of Silk and Flame/.*Investigate the Doomvault.* |count 3
+|tip Manually skip to the next step.
 step
 goto VaultDelve_EXT02_base 42.37,33.41 |q A Battle of Silk and Flame/.*Investigate the Doomvault.* |count 3
 step
@@ -27484,6 +27780,7 @@ goto 21.03,49.28
 step
 goto 84.97,49.89
 click Doomvault Porcixid |q A Battle of Silk and Flame/Find the Daedric Device
+|tip Manually skip to the next step.
 step
 goto VaultDelve_INT03_base 33.93,65.62
 kill Karzikon the Razorsworm
@@ -27515,6 +27812,7 @@ step
 goto 68.28,41.86
 talk Imperial Prisoner |q Shadows in the Swamp/Talk to the Imperial Prisoner
 step
+goto 68.25,41.72
 talk Olik |q Shadows in the Swamp/Talk to Olik
 step
 goto 71.41,42.19
@@ -27574,20 +27872,21 @@ goto 77.69,40.14
 talk Naheesh Nurwul |q Shadows in the Swamp/Talk to Naheesh Nurwul
 step
 goto 79.13,38.59
-'Disable Ancient Lure |q Shadows in the Swamp/.*Diable the Lures.* |count 1
+'Disable Ancient Lure |q Shadows in the Swamp/.*Disable the Lures.* |count 1
 step
-goto 59.88,20.47 |q Shadows in the Swamp/.*Diable the Lures.* |count 2
+goto 59.88,20.47 |q Shadows in the Swamp/.*Disable the Lures.* |count 2
 step
 goto 51.72,28.47
-'Disable Ancient Lure |q Shadows in the Swamp/.*Diable the Lures.* |count 2
+'Disable Ancient Lure |q Shadows in the Swamp/.*Disable the Lures.* |count 2
 step
-goto 43.36,21.87 'Disable Ancient Lure |q Shadows in the Swamp/.*Diable the Lures.* |count 3
+goto 43.36,21.87 |q Shadows in the Swamp/.*Disable the Lures.* |count 3
 step
 goto 27.19,53.02
-'Disable Ancient Lure |q Shadows in the Swamp/.*Diable the Lures.* |count 3
+'Disable Ancient Lure |q Shadows in the Swamp/.*Disable the Lures.* |count 3
 step
 goto 33.09,59.80
 click Blackwood |q Shadows in the Swamp/Return to the Village
+|tip Manually skip to the next step.
 step
 goto blackwood_base 67.57,41.80
 'Return to the Village |q Shadows in the Swamp/Return to the Village
@@ -27608,175 +27907,7 @@ wayshrine Hutan-Tzel
 step
 goto 60.71,36.81 |q An Unexpected Adversary/Go to Bloodrun Cave
 step
-goto 62.69,24.93 |q An Unexpected Adversary/Go to Bloodrun Cave
-step
-goto 66.34,22.15
-wayshrine Bloodrun
-step
-goto 63.97,17.99
-talk Mim-Jasa
-accept Destroying What Remains
-step
-goto 64.12,18.22
-click Bloodrun Cave |q Destroying What Remains/Enter Bloodrun Cave
-|tip Manually skip to the next step.
-step
-goto u30_bloodruncave_base 48.89,08.03
-talk Eveli Sharp-Arrow |q An Unexpected Adversary/Talk to Eveli Sharp-Arrow
-step
-goto 51.73,14.33
-'Destroy Shadowscale Remains |q Destroying What Remains/.*Destroy Shadowscale Remains.* |count 1
-step
-goto 66.59,29.01 |q Destroying What Remains/.*Destroy Shadowscale Remains.* |count 2
-step
-goto 53.91,29.62
-click Skyshard |achieve 2982/17
-step
-goto 53.01,38.12
-'Destroy Shadowscale Remains |q Destroying What Remains/.*Destroy Shadowscale Remains.* |count 2
-|tip Jump down
-step
-goto 64.90,48.86 |q Destroying What Remains/.*Destroy Shadowscale Remains.* |count 3
-step
-goto 43.17,51.71
-'Destroy Shadowscale Remains |q Destroying What Remains/.*Destroy Shadowscale Remains.* |count 3
-step
-goto 43.17,51.71
-talk Mim-Jasa |q Destroying What Remains/Talk to Mim-Jasa
-step
-goto 33.50,49.71 |q Destroying What Remains/Destroy Stolen Skull
-step
-goto 29.13,65.04 
-kill Tumma-Maxath
-'Explore Bloodrun Cave |achieve 2969
-step
-goto 29.13,65.04
-'Destroy Ajum-Shei's Skull |q Destroying What Remains/Destroy Stolen Skull
-step
-goto 35.13,62.81 |q An Unexpected Adversary/Find the Sanctuary Entrance
-step
-goto 28.93,77.40 |q An Unexpected Adversary/Find the Sanctuary Entrance
-step
-goto 41.80,83.85
-'Find the Sanctuary Entrance |q An Unexpected Adversary/Find the Sanctuary Entrance
-step
-goto 41.80,83.85
-talk Eveli Sharp-Arrow |q An Unexpected Adversary/Talk to Eveli Sharp-Arrow
-step
-goto 41.79,86.15
-'Activate the Black Door |q An Unexpected Adversary/Examine the Black Door
-'Tell Door _"Death, my brother"_
-step
-goto 41.79,86.15
-click The Black Door |q An Unexpected Adversary/Enter the Sanctuary
-|tip Manually skip to the next step
-step
-goto 41.79,93.46
-'Enter the Sanctuary |q An Unexpected Adversary/Enter the Sanctuary
-step
-goto 41.79,93.46
-talk Elam Drals |q An Unexpected Adversary/Talk to Elam Drals
-step
-goto 46.84,94.24
-click Dark Brotherhood Sanctuary Storage Halls |q An Unexpected Adversary/Explore the Sanctuary
-|tip Manually skip to the next step.
-step
-goto 54.02,84.05 |q An Unexpected Adversary/Explore the Sanctuary
-step
-goto 65.68,78.21 |q An Unexpected Adversary/Explore the Sanctuary
-step
-goto 72.74,74.29
-'Explore the Sanctuary |q An Unexpected Adversary/Explore the Sanctuary
-step
-goto 72.74,74.29
-talk Elam Drals |q An Unexpected Adversary/Talk to Elam Drals
-step
-goto 73.11,74.45
-click Portal |q An Unexpected Adversary/Enter the Portal
-step
-goto u30_welke_upper_base 56.18,39.11 
-'Examine High Priest's Orders |q An Unexpected Adversary/Explore the Ayleid Ruins
-|tip Manually skip to the next step.
-step
-goto 42.92,42.84 |q An Unexpected Adversary/Explore the Ayleid Ruins
-step
-goto 41.94,61.07
-'Examine Dead Cultist |q An Unexpected Adversary/Explore the Ayleid Ruins
-|tip Manually skip to the next step.
-step
-goto 42.69,43.09 |q An Unexpected Adversary/Explore the Ayleid Ruins
-step
-goto 36.52,69.32
-'Examine Mysterious Note |q An Unexpected Adversary/Explore the Ayleid Ruins
-|tip Manually skip to the next step.
-step
-goto 36.67,68.63
-talk Elam Drals |q An Unexpected Adversary/Talk to Elam Drals
-step
-goto 42.69,43.09 |q An Unexpected Adversary/Explore the Ayleid Ruins
-step
-goto 54.57,54.86
-click Welke |q An Unexpected Adversary/Explore the Ayleid Ruins
-|tip Manually skip to the next step.
-step
-goto u30_welke_lower_base 57.30,59.80 |q An Unexpected Adversary/Explore the Ayleid Ruins
-step
-goto 49.52,67.95 |q An Unexpected Adversary/Explore the Ayleid Ruins
-step
-goto 33.31,66.95
-'Explore the Ayleid Ruins |q An Unexpected Adversary/Explore the Ayleid Ruins
-step
-goto 33.31,66.95
-'Observe the Conversation |q An Unexpected Adversary/Observe the Conversation
-step
-goto 34.28,66.68
-talk Elam Drals |q An Unexpected Adversary/Talk to Elam Drals
-step
-goto 35.98,61.48 |q An Unexpected Adversary/Find Another Pedestal
-step
-goto 23.01,48.39 |q An Unexpected Adversary/Find Another Pedestal
-step
-goto 36.98,28.47 
-'Find Another Pedestal |q An Unexpected Adversary/Find Another Pedestal
-step
-goto 36.98,28.47 
-talk Elam Drals |q An Unexpected Adversary/Talk to Elam Drals
-step
-goto 36.98,28.47 
-click Portal Pedastal |q An Unexpected Adversary/Use the Amulet
-step
-goto 37.05,28.38
-click Portal |q An Unexpected Adversary/Enter the Portal
-step
-goto u30_welke_quest_base 31.73,60.88
-'Explore the Ayleid Ruins |q An Unexpected Adversary/Explore the Ayleid Ruins
-step
-goto 34.45,59.40
-'Examine Disastrix Zansora's Journal |q An Unexpected Adversary/.*Investigate the Shrine Chamber.* |count 1
-step
-goto 30.87,64.11
-'Examine Preserve the Secret |q An Unexpected Adversary/.*Investigate the Shrine Chamber.* |count 2
-step
-goto 32.00,61.57
-talk Elam Drals |q An Unexpected Adversary/Talk to Elam Drals
-step
-goto 21.96,60.74
-click Portal |q An Unexpected Adversary/Warn the Councilors
-|tip Manually skip to the next step.
-step
-'Open Blackwood Map
-click Bloodrun Wayhrine
-'Travel to Bloodrun in Blackwood |q Destroying What Remains/Talk to Mim-Jasa
-|tip Manually skip to the next step.
-step
-goto blackwood_base 65.92,19.20
-talk Mim-Jasa
-turnin Destroying What Remains
-step
-goto 58.10,18.24
-click Skyshard |achieve 2982/6
-step
-goto 56.61,21.36
+goto 63.72,31.15
 'Examine Come One, Come All!
 accept The Face of Change
 step
@@ -27975,6 +28106,174 @@ step
 goto 67.31,28.19
 talk Alchemy 
 turnin The Face of Change
+step
+goto 62.69,24.93 |q An Unexpected Adversary/Go to Bloodrun Cave
+step
+goto 66.34,22.15
+wayshrine Bloodrun
+step
+goto 63.97,17.99
+talk Mim-Jasa
+accept Destroying What Remains
+step
+goto 64.12,18.22
+click Bloodrun Cave |q Destroying What Remains/Enter Bloodrun Cave
+|tip Manually skip to the next step.
+step
+goto u30_bloodruncave_base 48.89,08.03
+talk Eveli Sharp-Arrow |q An Unexpected Adversary/Talk to Eveli Sharp-Arrow
+step
+goto 51.73,14.33
+'Destroy Shadowscale Remains |q Destroying What Remains/.*Destroy Shadowscale Remains.* |count 1
+step
+goto 66.59,29.01 |q Destroying What Remains/.*Destroy Shadowscale Remains.* |count 2
+step
+goto 53.91,29.62
+click Skyshard |achieve 2982/17
+step
+goto 53.01,38.12
+'Destroy Shadowscale Remains |q Destroying What Remains/.*Destroy Shadowscale Remains.* |count 2
+|tip Jump down
+step
+goto 64.90,48.86 |q Destroying What Remains/.*Destroy Shadowscale Remains.* |count 3
+step
+goto 43.17,51.71
+'Destroy Shadowscale Remains |q Destroying What Remains/.*Destroy Shadowscale Remains.* |count 3
+step
+goto 43.17,51.71
+talk Mim-Jasa |q Destroying What Remains/Talk to Mim-Jasa
+step
+goto 33.50,49.71 |q Destroying What Remains/Destroy Stolen Skull
+step
+goto 29.13,65.04 
+kill Tumma-Maxath
+'Explore Bloodrun Cave |achieve 2969
+step
+goto 29.13,65.04
+'Destroy Ajum-Shei's Skull |q Destroying What Remains/Destroy Stolen Skull
+step
+goto 35.13,62.81 |q An Unexpected Adversary/Find the Sanctuary Entrance
+step
+goto 28.93,77.40 |q An Unexpected Adversary/Find the Sanctuary Entrance
+step
+goto 41.80,83.85
+'Find the Sanctuary Entrance |q An Unexpected Adversary/Find the Sanctuary Entrance
+step
+goto 41.80,83.85
+talk Eveli Sharp-Arrow |q An Unexpected Adversary/Talk to Eveli Sharp-Arrow
+step
+goto 41.79,86.15
+'Activate the Black Door |q An Unexpected Adversary/Examine the Black Door
+'Tell Door _"Death, my brother"_
+step
+goto 41.79,86.15
+click The Black Door |q An Unexpected Adversary/Enter the Sanctuary
+|tip Manually skip to the next step
+step
+goto 41.79,93.46
+'Enter the Sanctuary |q An Unexpected Adversary/Enter the Sanctuary
+step
+goto 41.79,93.46
+talk Elam Drals |q An Unexpected Adversary/Talk to Elam Drals
+step
+goto 46.84,94.24
+click Dark Brotherhood Sanctuary Storage Halls |q An Unexpected Adversary/Explore the Sanctuary
+|tip Manually skip to the next step.
+step
+goto 54.02,84.05 |q An Unexpected Adversary/Explore the Sanctuary
+step
+goto 65.68,78.21 |q An Unexpected Adversary/Explore the Sanctuary
+step
+goto 72.74,74.29
+'Explore the Sanctuary |q An Unexpected Adversary/Explore the Sanctuary
+step
+goto 72.74,74.29
+talk Elam Drals |q An Unexpected Adversary/Talk to Elam Drals
+step
+goto 73.11,74.45
+click Portal |q An Unexpected Adversary/Enter the Portal
+step
+goto u30_welke_upper_base 56.18,39.11 
+'Examine High Priest's Orders |q An Unexpected Adversary/Explore the Ayleid Ruins
+|tip Manually skip to the next step.
+step
+goto 42.92,42.84 |q An Unexpected Adversary/Explore the Ayleid Ruins
+step
+goto 41.94,61.07
+'Examine Dead Cultist |q An Unexpected Adversary/Explore the Ayleid Ruins
+|tip Manually skip to the next step.
+step
+goto 42.69,43.09 |q An Unexpected Adversary/Explore the Ayleid Ruins
+step
+goto 36.52,69.32
+'Examine Mysterious Note |q An Unexpected Adversary/Explore the Ayleid Ruins
+|tip Manually skip to the next step.
+step
+goto 36.67,68.63
+talk Elam Drals |q An Unexpected Adversary/Talk to Elam Drals
+step
+goto 42.69,43.09 |q An Unexpected Adversary/Explore the Ayleid Ruins
+step
+goto 54.57,54.86
+click Welke |q An Unexpected Adversary/Explore the Ayleid Ruins
+|tip Manually skip to the next step.
+step
+goto u30_welke_lower_base 57.30,59.80 |q An Unexpected Adversary/Explore the Ayleid Ruins
+step
+goto 49.52,67.95 |q An Unexpected Adversary/Explore the Ayleid Ruins
+step
+goto 33.31,66.95
+'Explore the Ayleid Ruins |q An Unexpected Adversary/Explore the Ayleid Ruins
+step
+goto 33.31,66.95
+'Observe the Conversation |q An Unexpected Adversary/Observe the Conversation
+step
+goto 34.28,66.68
+talk Elam Drals |q An Unexpected Adversary/Talk to Elam Drals
+step
+goto 35.98,61.48 |q An Unexpected Adversary/Find Another Pedestal
+step
+goto 23.01,48.39 |q An Unexpected Adversary/Find Another Pedestal
+step
+goto 36.98,28.47 
+'Find Another Pedestal |q An Unexpected Adversary/Find Another Pedestal
+step
+goto 36.98,28.47 
+talk Elam Drals |q An Unexpected Adversary/Talk to Elam Drals
+step
+goto 36.98,28.47 
+click Portal Pedastal |q An Unexpected Adversary/Use the Amulet
+step
+goto 37.05,28.38
+click Portal |q An Unexpected Adversary/Enter the Portal
+step
+goto u30_welke_quest_base 31.73,60.88
+'Explore the Ayleid Ruins |q An Unexpected Adversary/Explore the Ayleid Ruins
+step
+goto 34.45,59.40
+'Examine Disastrix Zansora's Journal |q An Unexpected Adversary/.*Investigate the Shrine Chamber.* |count 1
+step
+goto 30.87,64.11
+'Examine Preserve the Secret |q An Unexpected Adversary/.*Investigate the Shrine Chamber.* |count 2
+step
+goto 32.00,61.57
+talk Elam Drals |q An Unexpected Adversary/Talk to Elam Drals
+step
+goto 21.96,60.74
+click Portal |q An Unexpected Adversary/Warn the Councilors
+|tip Manually skip to the next step.
+step
+'Open Blackwood Map
+click Bloodrun Wayhrine
+'Travel to Bloodrun in Blackwood |q Destroying What Remains/Talk to Mim-Jasa
+|tip Manually skip to the next step.
+step
+goto blackwood_base 65.92,19.20
+talk Mim-Jasa
+turnin Destroying What Remains
+step
+goto 58.10,18.24
+click Skyshard |achieve 2982/6
 step
 goto 66.36,22.11
 click Bloodrun Wayshrine
@@ -29010,23 +29309,6 @@ click Skyshard 2982/4
 step
 goto 34.18,20.66
 wayshrine Doomvault Vulpinaz
-step
-click Doomvault Vulpinaz Wayshrine
-'Travel to Leyawiin in Blackwood
-step
-goto u30_leyawiincity_base 13.99,61.29
-'Find Giovanni Corvus |q Shrine of Nocturnal/Talk to Giovanni Corvus
-step
-goto 27.93,46.73
-'Follow Giovanni Corvus |q Shrine of Nocturnal/Follow Giovanni Corvus
-|tip Keep your distance
-step
-goto 27.91,46.84
-click Chapel of Zenithar |q Shrine of Nocturnal/Witness the Secret Meeting
-step
-goto 22.65,46.45
-'Witness the Secret Meeting |q Shrine of Nocturnal/Witeness the Secret Meeting
-|tip Crouch down low
 step
 'Open Blackwood Map
 click Bloodrun Wayshrine
