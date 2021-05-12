@@ -17627,77 +17627,219 @@ step
 goto vulkhelguard_base 57.72,58.92
 talk Hinzuur
 accept The Dragonguard's Legacy
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 39.38,41.00
 click Manor House |q The Dragonguard's Legacy/Talk to Kasura
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 35.87,38.63
 talk Kasura |q The Dragonguard's Legacy/Talk to Kasura
 |tip She's upstairs in this building.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 35.87,38.63
-'Read Kasura's Notes |q The Dragonguard's Legacy/Read Kasura's Notes
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
-step
-goto 35.87,38.63
-talk Kasura |q The Dragonguard's Legacy/Talk to Kasura
-|tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+'Examine Kasura's Notes |q The Dragonguard's Legacy/Read Kasura's Notes
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 'Open Audiron Map
 click Tanzelwil Wayshrine
 'Travel to Tanzelwil in Auridon |q The Dragonguard's Legacy/Find the Eastern Glyph
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto auridon_base 50.63,70.72
-click Hidden Glyph |q The Dragonguard's Legacy/Find the Eastern Glyph
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+'Activate Hidden Glyph |q The Dragonguard's Legacy/Find the Eastern Glyph
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 44.92,71.08
-click Hidden Glyph |q The Dragonguard's Legacy/Find the Northern Glyph
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+'Activate Hidden Glyph |q The Dragonguard's Legacy/Find the Northern Glyph
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 44.70,76.67
-click Hidden Glyph |q The Dragonguard's Legacy/Find the Southern Glyph
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+'Activate Hidden Glyph |q The Dragonguard's Legacy/Find the Southern Glyph
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 46.37,73.26
 'Activate Hidden Dragonguard Entrance |q The Dragonguard's Legacy/Reveal the Tomb Entrance
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 46.37,73.26
-'Use Glyph of Blades
-'Use Glyph of Honor
-'Use Glyph of Bravery |q The Dragonguard's Legacy/Reveal the Tomb Door
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+'Use Glyph of Blades, Glyph of Honor, and Glyph of Bravery |q The Dragonguard's Legacy/Reveal the Tomb Door
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 46.37,73.26
 click Dragonguard Tomb |q The Dragonguard's Legacy/Search the Dragonguard Tomb
 tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 46.49,73.30
 click Dragonguard Chest |q The Dragonguard's Legacy/Search the Dragonguard Tomb
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 46.38,73.29
 click Auridon |q The Dragonguard's Legacy/Talk to Kasura
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 46.07,73.53
 talk Kasura |q The Dragonguard's Legacy/Talk to Kasura
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 46.07,73.53
 click Peri |q The Dragonguard's Legacy/Travel to the Valley of Blades
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD" and ZGV.Utils.GetPlayerPreciseLevel() > 10
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+'Open Glenumbra Map
+click Daggerfall Wayshrine
+'Travel to Daggerfall in Glenumbra |q The Dragonguard's Legacy |future
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto daggerfall_base 71.44,67.15
+talk Hinzuur
+accept The Dragonguard's Legacy
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto 51.95,26.14
+click The Rosey Lion |q The Dragonguard's Legacy/Talk to Kasura
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto 50.67,28.85
+talk Kasura |q The Dragonguard's Legacy/Talk to Kasura
+|tip In the attic
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto 50.47,28.73
+'Examine Kasura's Note |q The Dragonguard's Legacy/Read Kasura's Notes
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+'Open Glenumbra Map
+click Wyrd Tree Wayshrine
+'Travel to Wyrd Tree in Glenumbra |q The Dragonguard's Legacy/Find the Southern Glyph
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto glenumbra_base 26.83,61.48
+'Activate Hidden Glyph |q The Dragonguard's Legacy/Find the Southern Glyph
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto 27.87,57.05 |q The Dragonguard's Legacy/Find the Eastern Glyph
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto 31.24,57.80
+'Activate Hidden Glyph |q The Dragonguard's Legacy/Find the Eastern Glyph
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto 25.23,55.60
+'Activate Hidden Glyph |q The Dragonguard's Legacy/Find the Northern Glyph
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto 29.99,56.65
+'Activate the Hidden Dragonguard Entrance |q The Dragonguard's Legacy/Reveal the Tomb Entrance
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto 29.99,56.65
+'Use Glyph of Blades, Glyph of Honor, and Glyph of Bravery |q The Dragonguard's Legacy/Reveal the Tomb Door
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto 29.99,56.65
+click Dragonguard Tomb |q The Dragonguard's Legacy/Search the Dragonguard Tomb
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto 34.42,62.17
+click Dragonguard Chest |q The Dragonguard's Legacy/Search the Dragonguard Tomb
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto 33.70,62.13
+click Glenumbra |q The Dragonguard's Legacy/Talk to Kasura
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto 29.77,56.94
+talk Kasura |q The Dragonguard's Legacy/Talk to Kasura
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+click Peri |q The Dragonguard's Legacy/Travel to the Valley of Blades
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+'Open Stonefalls Map
+click Devon's Watch Wayshrine
+'Travel to Devon's Watch in Stonefalls |q The Dragonguard's Legacy |future
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto davonswatch_base 72.24,72.63
+talk Hinzuur
+accept The Dragonguard's Legacy
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 47.36,52.97
+click The Watch House |q The Dragonguard's Legacy/Talk to Kasura
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 46.17,55.22
+talk Kasura |q The Dragonguard's Legacy/Talk to Kasura
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 46.12,55.20
+'Examine Kasura's Notes |q The Dragonguard's Legacy/Read Kasura's Notes
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+'Open Stonefalls Map
+click Othrenis Wayshrine
+'Travel Othrenis in Stonesfalls |q The Dragonguard's Legacy/Find the Northern Glyph
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto stonefalls_base 75.19,60.28
+'Activate Hidden Glyph |q The Dragonguard's Legacy/Find the Northern Glyph
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 79.18,60.66
+'Activate Hidden Glyph |q The Dragonguard's Legacy/Find the Eastern Glyph
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 76.99,64.29
+'Activate Hidden Glyph |q The Dragonguard's Legacy/Find the Southern Glyph
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 74.30,60.14
+'Activate Hidden Dragonguard Entrance |q The Dragonguard's Legacy/Reveal the Tomb Entrance
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 74.30,60.14
+'Use Glyph of Blades, Glyph of Honor, and Glyph of Bravery |q The Dragonguard's Legacy/Reveal the Tomb Door
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 74.30,60.14
+click Dragonguard Tomb |q The Dragonguard's Legacy/Search the Dragonguard Tomb
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 76.97,62.65
+click Dragonguard Chest |q The Dragonguard's Legacy/Search the Dragonguard Tomb
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 76.19,62.61
+click Stonefalls |q The Dragonguard's Legacy/Talk to Kasura
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 74.63,60.34
+talk Kasura |q The Dragonguard's Legacy/Talk to Kasura
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 74.78,60.17
+click Peri |q The Dragonguard's Legacy/Travel to the Valley of Blades
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
 step
 goto valleyofblades1_base 50.35,56.37 
 talk Sai Sahan |q The Dragonguard's Legacy/Talk to Kasura's Student
@@ -17725,6 +17867,7 @@ goto 54.94,36.21
 click Grappling Point |q The Dragonguard's Legacy/Light the Brazier
 |tip Click post on top of building.
 |tip Jump to the building to your left and use Grappling on post on the next roof.
+|tip Manually skip to the next step.
 step
 goto 57.69,37.11
 click Grappling Point |q The Dragonguard's Legacy/Light the Brazier
@@ -17746,14 +17889,22 @@ goto alikr_base 73.29,53.07 |q The Dragonguard's Legacy/Explore Wind Scour Templ
 step
 goto 71.63,54.93 |q The Dragonguard's Legacy/Explore Wind Scour Temple
 step
+goto 73.57,54.55 |q The Dragonguard's Legacy/Explore Wind Scour Temple
+step
+goto 73.82,56.50 |q The Dragonguard's Legacy/Explore Wind Scour Temple
+step
 goto 75.82,56.82
 click Wind Scour Temple |q The Dragonguard's Legacy/Explore Wind Scour Temple
-|tip Jump straight down
 |tip Manually skip to the next step.
 step
-goto WindScourTemple_Base 73.54,54.65 |q The Dragonguard's Legacy/Explore Wind Scour Temple
+goto WindScourTemple_Base 70.58,26.00 |q The Dragonguard's Legacy/Explore Wind Scour Temple
+step
+goto 60.77,52.09 |q The Dragonguard's Legacy/Explore Wind Scour Temple
 step
 goto 43.52,51.61
+'Explore Wind Scour Temple |q The Dragonguard's Legacy/Explore Wind Scour Temple
+step
+goto 44.14,52.09
 talk Sai Sahan |q The Dragonguard's Legacy/Talk to Sai Sahan
 step
 goto 36.44,56.44
@@ -17780,12 +17931,12 @@ goto 24.70,40.93
 step
 goto 35.89,53.17
 talk Sai Sahan |q The Dragonguard's Legacy/Talk to Sai Sahan
-|tip Use the Fast Travel Dialog Option
 step
 goto stormhaven_base 67.40,49.94 |q The Dragonguard's Legacy/Travel to Storm Talon Temple
 step
 goto 69.90,49.13
 click Storm Talon Temple |q The Dragonguard's Legacy/Travel to Storm Talon Temple
+|tip Manually skip to the next step.
 step
 goto StormTalonTemple_Base 27.91,47.24
 talk Sai Sahan |q The Dragonguard's Legacy/Talk to Sai Sahan
@@ -17860,7 +18011,7 @@ step
 goto 64.39,39.16
 'Examine Dragonguard Archives |q The Dragonguard's Legacy/Find a Way to Reach the Sanctuary
 step
-goto 37.58,18.20
+goto 51.19,35.62
 click Grappling Point |q The Dragonguard's Legacy/Gather the Dragonbone Powder
 |tip Manually skip to the next step.
 step
@@ -17887,11 +18038,15 @@ talk Sai Sahan
 turnin The Dragonguard's Legacy
 accept The Horn of Ja'darri
 step
-goto 56.75,55.77
-'Travel Pivott |q The Horn of Ja'darri/Travel to Vahlokzin's Lair
+talk Sai Sahan |q The Horn of Ja'darri/Travel to Vahlokzin's Lair
+'Tell him _"I'm ready to depart. (Fast Travel to Vahlokzin's Lair)"_
 |tip Manually skip to the next step.
 step
-goto DormantVolcano_Base 46.87,49.83 |q The Horn of Ja'darri/Enter Vahlokzin's Lair
+goto DormantVolcano_Base 45.51,69.81
+step
+goto 46.87,49.83 
+click Vahlokzin's Lair |q The Horn of Ja'darri/Enter Vahlokzin's Lair
+|tip Manually skip to the next step.
 step
 goto DormantVolcanoInterior_Base 61.33,52.02 |q The Horn of Ja'darri/Explore Vahlokzin's Lair
 step 
@@ -17904,6 +18059,8 @@ step
 goto 30.55,50.30
 'Examine Dragonguard Remains |q The Horn of Ja'darri/Explore Vahlokzin's Lair
 tip Manually skip to the next step.
+step
+goto 20.52,37.46 |q The Horn of Ja'darri/Explore Vahlokzin's Lair
 step
 goto 10.20,57.21
 'Explore Vahlokzin's Lair |q The Horn of Ja'darri/Explore Vahlokzin's Lair
@@ -17940,24 +18097,28 @@ step
 'Lower the Drawbridge |q The Horn of Ja'darri/Lower the Drawbridge
 step
 goto 49.65,21.67
+'Reach the Horn of Ja'darri |q The Horn of Ja'darri/Reach the Horn of Ja'darri
+step
+goto 49.65,21.67 
 'Take the Horn of Ja'darri |q The Horn of Ja'darri/Take the Horn of Ja'darri
 step
 goto 49.65,21.67
 talk Sai Sahan |q The Horn of Ja'darri/Give the Dragonhorn to Sai Sahan
 step
+goto 49.98,17.74
 kill Vahlokzin |q The Horn of Ja'darri/Defeat Vahlokzin
 step
 goto 49.73,13.34
 click Supply Tunnel |q The Horn of Ja'darri/Return to the Valley of Blades
 |tip Manually skip to the next step.
 step
-goto DormantVolcanoInterior2_Base 64.65,79.49
+goto DormantVolcanoInterior2_Base 47.48,19.15 |q The Horn of Ja'darri/Return to the Valley of Blades
+step
+goto 64.65,79.49
 click Vahlokzin's Domain |q The Horn of Ja'darri/Return to the Valley of Blades
 |tip Manually skip to the next step.
 step
-goto DormantVolcano_Base 37.72,69.58 |q The Horn of Ja'darri/Return to the Valley of Blades
-step
-goto 38.20,80.27
+goto DormantVolcano_Base 38.20,80.27
 click Wagon |q The Horn of Ja'darri/Return to the Valley of Blades
 |tip Manually skip to the next step.
 step
@@ -17982,12 +18143,18 @@ step
 goto 38.35,67.35
 talk Darkhu |q The Dragon's Lair/Obtain Forged Credentials
 step
+goto 29.91,61.22
+click The Sweet Breeze Inn |q The Dragon's Lair/Bribe Renmus's Clerk
+|tip Manually skip to the next step.
+step
 goto 29.33,61.76
-|tip Inside Sweet Breezes Inn
 talk Nadama |q The Dragon's Lair/Bribe Renmus's Clerk
 step
+goto 30.90,61.63
+click Senchal |q The Herbalist's Product |future
+|tip Manually skip to the next step.
+step
 goto 28.09,59.52
-|tip Up the ramp behind Sweet Breezes Inn
 talk Jansen Nashrith
 accept The Herbalist's Product
 step
@@ -18018,7 +18185,7 @@ goto 53.23,83.73 |q The Herbalist's Product/.*Deliver the Herbalist's Product.* 
 step
 goto 58.39,74.87 |q The Herbalist's Product/.*Deliver the Herbalist's Product.* |count 3
 step
-goto 
+goto 56.92,77.91
 click Delivery Chest |q The Herbalist's Product/.*Deliver the Herbalist's Product.* |count 3
 |tip Go up the ramp
 step
@@ -18287,6 +18454,8 @@ goto 11.17,62.47
 click Ancient Sanctum |q The Dragon's Lair/Search for the Dragon
 |tip Manually skip to the next step.
 step
+goto 46.30,23.03 |q The Dragon's Lair/Search for the Dragon
+step
 goto 20.68,25.05
 |tip Follow path up the stairs.
 click Sanctum Balcony |q The Dragon's Lair/Search for the Dragon
@@ -18338,7 +18507,7 @@ goto 74.82,34.17
 |tip Follow path downstairs and across docks to the boat.
 talk Za'ji |q Reformation/Talk to Za'ji
 step
-goto 24.05,69.41 |q Reformation/Return to Sai
+goto 19.76,74.16 |q Reformation/Return to Sai
 step
 goto 33.27,74.69
 click Nahfahlaar Chamber |q Reformation/Return to Sai
@@ -18353,19 +18522,21 @@ accept Uneasy Alliances
 step
 goto 46.37,37.40
 click Dragonguard Sanctum |q Uneasy Alliances/Talk to Your Companions
+|tip Manually skip to the next step.
 step
 goto ELS_DG_Sanctuary_base 26.27,68.95 |q Uneasy Alliances/Talk to Your Companions
 step
 goto 26.27,68.95
 talk Za'ji |q Uneasy Alliances/Talk to Za'ji
 step
-goto 73.47,34.66
-|tip Follow path to the boat and leave the island.
-click Senchal |q Uneasy Alliances/Meet Za'ji at Black Heights
+goto 42.10,43.03
+click Dragonguard Sanctum Wayshrine
+'Travel to Senchal in Southern Elsweyr |q Uneasy Alliances/Meet Za'ji at Black Heights
+|tip Manually skip to the next step.
 step
-goto 42.52,59.90 |q The Deadliest Prey |future
+goto senchal_base 45.93,63.44
 step
-goto 38.41,60.96 |q The Deadliest Prey |future
+goto southernelsweyr_base 38.41,60.96 |q The Deadliest Prey |future
 step
 goto 37.58,56.49
 talk Skordo the Knife
@@ -18395,8 +18566,9 @@ click Lost Cat Note
 accept Little Lost Cat
 step
 goto 24.89,59.88
-'Pick Pp Tender Claw |q Little Lost Cat/Pick Up Tender Claw
+'Pick Up Tender Claw |q Little Lost Cat/Pick Up Tender Claw
 step
+goto 28.58,53.69
 talk Vigwenn Owl-Watcher
 accept Song of the Sand-Whale
 step
@@ -18434,13 +18606,14 @@ goto 24.73,42.12
 'Examine Shrub |q Another Khajiit's Tale/Search Zhasim's Camp
 step
 goto 27.68,43.45 
-'Follow Winks |q Another Khajiit's Tale/'Follow Winks
+'Follow Winks |q Another Khajiit's Tale/Follow Winks
 step
 goto 27.68,43.45
 talk Zhasim |q Another Khajiit's Tale/Talk to Zhasim
 step
-goto 29.42,45.44
-|tip Follow path down
+goto 28.32,42.22 |q Another Khajiit's Tale/Find Maezi
+step
+goto 29.42,45.44 
 'Untie Maezi |q Another Khajiit's Tale/Find Maezi
 step
 goto 29.52,46.29
@@ -18450,10 +18623,13 @@ goto 29.91,48.45
 talk Maezi |q Another Khajiit's Tale/Talk to Maezi
 step
 goto 30.10,52.15
-'Search Hizhikar's Cargo |q Another Khajiit's Tale/.*Find the Gourmet Moon-Sugar.* |count 1
+'Search Hizhikar's Cargo |q Another Khajiit's Tale/Gather Gourmet Moon-Sugar
+|tip Manually skip to the next step.
+step
+goto 37.91,58.08 |q Another Khajiit's Tale/Gather Gourmet Moon-Sugar
 step
 goto 41.45,58.93
-'Search Hizhikar's Cargo |q Another Khajiit's Tale/.*Find the Gourment Moon-Sugar.* |count 2
+'Search Hizhikar's Cargo |q Another Khajiit's Tale/Gather Gourmet Moon-Sugar
 step
 goto 41.39,59.00
 'Examine Moon-Sugar: A Better Plan |q Another Khajiit's Tale/Take the Smuggler's Plan
@@ -18462,6 +18638,8 @@ goto senchal_base 47.06,63.73 |q Another Khajiit's Tale/Talk to Zhasim
 step
 goto 57.67,68.02
 talk Zhasim |q Another Khajiit's Tale/Talk to Zhasim
+step
+goto 57.80,77.64 |q Little Lost Cat/Find Kishima in Senchal
 step
 goto 52.38,83.52 |q Little Lost Cat/Find Kishima in Senchal
 step
@@ -18472,6 +18650,7 @@ step
 'Open Southern Elsweyr Map
 click Black Heights Wayshrine
 'Travel to Black Heights in  Southern Elsweyr |q Uneasy Alliances/Meet Za'ji at Black Heights
+|tip Manually skip to the next step.
 step
 goto southernelsweyr_base 21.21,35.40
 'Meet Za'ji at Black Heights |q Uneasy Alliances/Meet Za'ji at Black Heights
@@ -18481,6 +18660,10 @@ click Khenarthi's Breath Temple |q Uneasy Alliances/Enter Khenarthi's Breath Tem
 step
 goto 20.60,36.14
 talk Clan Mother Tadali |q Uneasy Alliances/Talk to Clan Mother Tadali
+step
+goto 21.04,35.71
+click Elsweyr |q Uneasy Alliances/Talk to Za'ji
+|tip Manually skip to the next step.
 step
 goto 21.24,35.54
 talk Za'ji |q Uneasy Alliances/Talk to Za'ji
@@ -18496,6 +18679,7 @@ accept Skooma Sequela
 step
 goto 16.52,61.96
 click Moonlit Cove |q Skooma Sequela/.*Drink the Sacramental Waters at Five Shrines.* |count 1
+|tip Manually skip to the next step.
 step
 goto moonlitcove05_base 56.66,54.39 |q Skooma Sequela/.*Drink the Sacramental Waters at Five Shrines.* |count 1
 step
@@ -18527,7 +18711,7 @@ talk Za'ji |q Uneasy Alliances/Talk to Za'ji
 step
 goto 70.39,28.93
 |tip Look at the top of the scaffolding behind you.
-click Grappling Point |q The Horn of Ja'darri/Lower the Drawbridge
+click Grappling Point |q The Horn of Ja'darri/Find the Key
 |tip Manually skip to the next step.
 step
 goto 71.88,33.07
@@ -18547,11 +18731,18 @@ goto moonlitcove04_base 93.09,34.38
 step
 goto 88.43,45.20
 click Moonlit Cove |q Skooma Sequela/.*Drink the Sacramental Waters at Five Shrines.* |count 2
+|tip Manually skip to the next step.
 step
 goto moonlitcove01_base 74.77,26.92 |q Skooma Sequela/.*Drink the Sacramental Waters at Five Shrines.* |count 2
 step
+goto 62.34,24.37 |q Skooma Sequela/.*Drink the Sacramental Waters at Five Shrines.* |count 2
+step
 goto 57.53,09.42
 'Drink Sacred Shrine |q Skooma Sequela/.*Drink the Sacramental Waters at Five Shrines.* |count 2
+step
+48.80,09.66 |achieve 2558
+step
+goto 26.04,25.77 |achieve 2558
 step
 goto 42.27,41.24
 kill The Tigershark
@@ -18560,12 +18751,18 @@ step
 goto 37.29,47.83
 'Drink Sacred Shrine |q Skooma Sequela/.*Drink the Sacramental Waters at Five Shrines.* |count 3
 step
+goto 33.57,51.81 |q Skooma Sequela/.*Drink the Sacramental Waters at Five Shrines.* |count 4
+step
 goto 48.35,66.56 |q Skooma Sequela/.*Drink the Sacramental Waters at Five Shrines.* |count 4
 step
-goto 55.22,60.96
+goto moonlitcove02_base 55.22,60.96
 'Drink Sacred Shrine |q Skooma Sequela/.*Drink the Sacramental Waters at Five Shrines.* |count 4
 step
-goto 48.35,66.56 |q Skooma Sequela/.*Drink the Sacramental Waters at Five Shrines.* |count 5
+goto 50.99,61.13
+step
+goto moonlitcove01_base 48.70,67.41 |q Skooma Sequela/.*Drink the Sacramental Waters at Five Shrines.* |count 5
+step
+goto 34.34,67.41 |q Skooma Sequela/.*Drink the Sacramental Waters at Five Shrines.* |count 5
 step
 goto 07.66,48.25 |q Skooma Sequela/.*Drink the Sacramental Waters at Five Shrines.* |count 5
 step
@@ -18580,7 +18777,7 @@ goto southernelsweyr_base 17.31,62.36
 talk Shazar the Sibilant |q Skooma Sequela/Talk to Shazar the Sibilant
 step
 goto 17.69,61.95
-'Clense Yourself in the Tides |q Skooma Sequela/Clense Yourself in the Tides
+'Cleanse Yourself in the Tides |q Skooma Sequela/Cleanse Yourself in the Tides
 step
 talk Shazar the Sibilant
 turnin Skooma Sequela
@@ -18600,7 +18797,7 @@ goto 20.42,36.41
 talk Clan Mother Tadali |q Uneasy Alliances/Talk to Clan Mother Tadali
 step
 goto 20.42,36.41
-'Listen to Clan Mother Tadali |q Uneasy Allinace/Listen to Clan Mother Tadali
+'Listen to Clan Mother Tadali |q Uneasy Allinaces/Listen to Clan Mother Tadali
 step
 goto 20.47,36.47
 talk Za'ji |q Uneasy Alliances/Talk to Za'ji
@@ -18627,17 +18824,22 @@ step
 goto 20.43,36.38
 talk Clan Mother Tadali |q Uneasy Alliances/Talk to Tadali
 step
+goto 20.47,36.44
+'Wait for Tadali |q Uneasy Alliances/Wait for Tadali
+step
 goto 20.85,36.80
-talk Nahfahlaar |q Uneasy Alliances/Talk to Nahfahlaar
+talk Nahfalaar |q Uneasy Alliances/Talk to Nahfalaar
 step
 goto 20.96,32.82
 |tip Leave Khenarthi's Breath Temple
 talk Adara'hai
 accept Chiaroscuro Crossroads
 step
+step
+goto 17.80,33.48 |q Chiaroscuro Crossroads/Head to the Wall of Life
+step
 goto 14.00,26.72
 'Head to the Wall of Life |q Chiaroscuro Crossroads/Head to the Wall of Life
-|tip Follow road to the cave.
 step
 goto 12.73,27.22
 talk Vijari |q Chiaroscuro Crossroads/Talk to Vijari
@@ -18646,14 +18848,13 @@ goto 12.73,27.22
 talk Adara'hai |q Chiaroscuro Crossroads/Talk to Adara'hai
 step
 goto 12.41,27.07
-'Strike the Right Bell |q Chiaroscuro Crossroads/Strike the Right Bell
+'Strike Khenarthi Bell |q Chiaroscuro Crossroads/Strike the Right Bell
 step
 goto 12.82,27.56
-'Strike the Left Bell |q Chiaroscuro Crossroads/Strike the Left Bell
+'Strike Khenarthi Bell |q Chiaroscuro Crossroads/Strike the Left Bell
 step
 goto 21.04,31.57
-|tip Leave cave
-click Vijari's House |q Chiaroscuro Crossroads/Go to Vijari's House
+click Vijari's House |q Chiaroscuro Crossroads/Go to Vijari's Home
 step
 goto 21.27,31.56
 talk Adara'hai |q Chiaroscuro Crossroads/Talk to Adara'hai
@@ -18664,8 +18865,11 @@ step
 goto 21.15,31.54
 'Touch Cracked Decantor |q Chiaroscuro Crossroads/.*Study the Residual Darkness.* |count 1
 step
+goto 21.01,31.56
+click Black Heights |q Chiaroscuro Crossroads/.*Study the Residual Darkness.* |count 2
+|tip Manually skip to the next step.
+step
 goto 19.96,31.29
-|tip Click Black Heights
 'Touch Wishing Coins |q Chiaroscuro Crossroads/.*Study the Residual Darkness.* |count 2
 step
 goto 21.56,29.04
@@ -18675,38 +18879,43 @@ step
 goto 23.18,29.27
 'Touch Claw-worn Brush |q Chiaroscuro Crossroads/.*Study the Residual Darkness.* |count 4
 step
+goto 22.41,28.16
+click Colorworks |q Chiaroscuro Crossroads/.*Study the Residual Darkness.* |count 5
+|tip Manually skip to the next step.
+step
 goto 22.49,27.68
-|tip Click Coolworks
 'Touch Darkly Stained Mortar |q Chiaroscuro Crossroads/.*Study the Residual Darkness.* |count 5
 step
+goto 22.44,27.86 
+click Black Heights |q Chiaroscuro Crossroads/Return to Vijari's House
+|tip Manually skip to the next step.
+step
 goto 21.04,31.57
-|tip Leave Coolworks
 click Vijari's House |q Chiaroscuro Crossroads/Return to Vijari's House
 step
 goto 21.26,31.59
 talk Adara'hai |q Chiaroscuro Crossroads/Talk to Adara'hai
 step
-goto 21.64,36.30
-|tip Leave Vijari's House
-click Blue Poppy |q Chiaroscuro Crossroads/.*Collect Petals, Blue as the Sky.* |count 1
+goto 21.01,31.56
+click Black Heights |q Chiaroscuro Crossroads/.*Collect Petals, Blue as the Sky.*
+|tip Manually skip to the next step.
 step
-goto 22.10,36.69
-click Blue Poppy |q Chiaroscuro Crossroads/.*Collect Petals, Blue as the Sky.* |count 2
+goto 21.64,36.30
+'Take' Blue Poppy |q Chiaroscuro Crossroads/.*Collect Petals, Blue as the Sky.*
 step
 goto 22.70,36.91
-|tip Terror Birds are all around this area.
 kill Terror Birds |q Chiaroscuro Crossroads/.*Collect Blood of a Flightless Bird.*
 step
 goto 28.90,40.79 |q Chiaroscuro Crossroads/.*Collect Skin of Khenarthi's Fallen Children.*
 step
-goto 31.52,40.96 |q Chiaroscuro Crossroads/.*Collect Skin of Khenarthi's Fallen Children.*
+goto 31.52,40.94 |q Chiaroscuro Crossroads/.*Collect Skin of Khenarthi's Fallen Children.*
 step
-goto 32.13,34.21 |q Chiaroscuro Crossroads/.*Collect Skin of Khenarthi's Fallen Children.*
+goto 34.54,36.35 |q Chiaroscuro Crossroads/.*Collect Skin of Khenarthi's Fallen Children.*
+step
+goto 31.14,33.87 |q Chiaroscuro Crossroads/.*Collect Skin of Khenarthi's Fallen Children.*
 step
 goto 28.59,34.56
-|tip They are all around this area.
 'Take White Sycamore |q Chiaroscuro Crossroads/.*Collect Skin of Khenarthi's Fallen Children.*
-|tip Manually skip to the next step.
 step
 goto 30.48,30.92 |achieve 2562/4
 step
@@ -18725,23 +18934,31 @@ click Skyshard |achieve 2562/4
 step
 'Open Southern Elsweyr Map
 click Black Heights Wayshrine
-'Travel to Black Heights in Southern Elsweyr |q Take Your Lumps/Talk to Juisa
+'Travel to Black Heights in Southern Elsweyr |q Take Your Lumps/Find Juisa in Black Heights
 |tip Manually skip to the next step.
 step
 goto 20.04,32.50
+'Find Juisa in Black Heights |q Take Your Lumps/Find Juisa in Black Heights
 |tip Cross the bridge and Follow the road.
+step
+goto 20.05,32.54
 talk Juisa
 turnin Take Your Lumps
 step
 goto 22.41,28.14
-click Colorworks |q Chiaroscuro Crossroads/Return to Colorworks
+click Colorworks |q Chiaroscuro Crossroads/Return to the Colorworks
 step
 goto 22.65,27.72
 talk Adara'hai |q Chiaroscuro Crossroads/Talk to Adara'hai
 step
+goto 22.44,27.86
+click Black Heights |q Chiaroscuro Crossroads/Return to the Wall of Life
+|tip Manually skip to the next step.
+step
+goto 17.56,33.52 |q Chiaroscuro Crossroads/Return to the Wall of Life
+step
 goto 13.88,26.78
-'Return to Wall of Life |q Chiaroscuro Crossroads/Return to Wall of Life
-|tip Leave Colorworks and Follow road and enter cave to this point.
+'Return to Wall of Life |q Chiaroscuro Crossroads/Return to the Wall of Life
 step
 goto 12.42,27.07
 'Strike Khenarthic Bell |q Chiaroscuro Crossroads/Ring a Khenarthic Bell
@@ -18752,6 +18969,7 @@ talk Adara'hai |q Chiaroscuro Crossroads/Talk to Adara'hai
 step
 goto 11.50,26.30
 click Passage of Dad'na Ghaten |q Chiaroscuro Crossroads/Enter the Passage of Dad'na Ghaten
+|tip Manually skip to the next step.
 step
 goto blackheightscave_base 67.60,40.47
 'Strike Khenarthic Bell |q Chiaroscuro Crossroads/.*Cleanse the Passage.* |count 1
@@ -18776,8 +18994,10 @@ step
 goto southernelsweyr_base 12.72,27.34
 'Return to the Wall of Life |q Chiaroscuro Crossroads/Return to the Wall of Life
 step
+goto 12.72,27.35
 talk Vijari |q Chiaroscuro Crossroads/Talk to Vijari
 step
+goto 12.72,27.20
 talk Adara'hai
 turnin Chiaroscuro Crossroads
 step
@@ -18786,8 +19006,10 @@ click South Guard Ruins Wayshrine
 'Travel to South Guard Ruins in Elsweyr |q Uneasy Alliances/Meet Aeliah Renmus at the Quarry
 step
 goto 55.68,69.06
+'Meet Aeliah Renmus at the Quarry |q Uneasy Alliances/Meet Aeliah Renmus at the Quarry
+step
+goto 55.68,69.06
 talk Aeliah Renmus |q Uneasy Alliances/Talk to Aeliah Renmus
-goto southernelsweyr_base 55.51,69.09 |q Out of Murkmire |future
 step
 goto 52.32,72.33
 talk Nomu
@@ -18802,10 +19024,14 @@ step
 goto 47.37,72.04
 talk Nasee |q Out of Murkmire/.*Find Nomu's Lost Friends.* |count 3
 step
-goto 49.37,71.59 |q Uneasy Alliances/Enter the Mine
+goto 49.37,71.59 |q Uneasy Alliances/Find the Mine
+step
+goto 49.21,70.50
+'Find the Mine |q Uneasy Alliances/Find the Mine
 step
 goto 49.21,70.50
 click Zazaradi's Quarry and Mine |q Uneasy Alliances/Enter the Mine
+|tip Manually skip to the next step.
 step
 goto empyreanquarry_base 41.03,30.52
 |tip Follow path around to the door.
@@ -18819,11 +19045,11 @@ goto 44.61,50.92
 kill Yahgrondu |q Uneasy Alliances/Defeat Yahgrondu
 step
 goto 41.87,49.05
-talk Nahfahlaar |q Uneasy Alliance/Talk to Nahfahlaar
+talk Nahfahlaar |q Uneasy Alliances/Talk to Nahfahlaar
 step
 'Open Southern Elsweyr Map
 click South Guard Ruins Wayshrine
-'Travel to South Guard Ruins in Southern Elsweyr |q Out of Murkmire/Talk  to Nomu
+'Travel to South Guard Ruins in Southern Elsweyr |q Out of Murkmire/Talk to Nomu
 |tip Manually skip to the next step.
 step
 goto southernelsweyr_base 56.47,67.33
@@ -18833,6 +19059,7 @@ step
 goto 59.86,65.90
 click South Guard Ruins Wayshrine
 'Travel to Dragonguard Sanctum in Southern Elsweyr |q Uneasy Alliances/Return to the Dragonguard Sanctum
+|tip Manually skip to the next step.
 step
 goto ELS_DG_Sanctuary_base 31.40,49.38
 talk Sai Sahan
@@ -18846,15 +19073,19 @@ click Dragonguard Sanctum Wayshrine
 step
 goto senchal_base 56.65,71.97 |q The Deadliest Prey/Find Selloe
 step
-goto 67.65,28.76  |q The Deadliest Prey/Find Selloe
+goto 68.68,64.40 |q The Deadliest Prey/Find Selloe
+step
+goto 67.65,28.76 |q The Deadliest Prey/Find Selloe
 step
 goto 67.65,28.76 
 talk Selloe |q The Deadliest Prey/Talk to Selloe
 step
-goto 47.09,39.90 |q Order of the New Moon/Meet Aeliah Renum in Senchal
+goto 47.09,39.90 |q Order of the New Moon/Meet Aeliah Renmus in Senchal
+step
+goto 38.58,53.64 |q Order of the New Moon/Meet Aeliah Renmus in Senchal
 step
 goto 54.68,53.74
-'Meet Aeliah Renmus|q Order of the New Moon/Meet Aeliah Renmus in Senchal
+'Meet Aeliah Renmus |q Order of the New Moon/Meet Aeliah Renmus in Senchal
 step
 goto 55.76,52.49
 click Senchal Palace |q Order of the New Moon/Talk to General Renmus
@@ -18867,33 +19098,32 @@ step
 goto 82.35,55.26
 talk General Renmus |q Order of the New Moon/Talk to General Renmus
 step
+goto 81.79,59.82
+click Senchal Palace  |q Order of the New Moon/Talk to Buzinda
+step
 goto 75.80,66.02
-click Senchal Palace 
 talk Buzinda |q Order of the New Moon/Talk to Buzinda
 step
 goto 76.46,63.59
-talk Aeliah Renmus |q Order of the New Moon/Talk to Aeliah Renmus
+talk Aeliah Renmus |q Order of the New Moon/Go to the Sweet Breezes Inn
+|tip Manually skip to the next step.
 step
 goto 35.07,68.40
 click Senchal |q Order of the New Moon/Go to the Sweet Breezes Inn
 |tip Manually skip to the next step.
 step
-goto 40.49,53.69 |q Order of the New Moon/Go to the Sweet Breezes Inn
+goto senchal_base 40.49,53.69 |q Order of the New Moon/Go to the Sweet Breezes Inn
 step
 goto 31.84,51.09
 talk Skordo the Knife |q The Deadliest Prey/Meet Skordo in the Marketplace
-step
-goto 29.75,50.30
-'Examine Sugar Brandy Bottle |q The Deadliest Prey/Look for Zurnash
-|tip Manually skip to the next step.
 step
 goto 37.61,46.80
 'Look for Zurnash |q The Deadliest Prey/Look for Zurnash
 step
 goto 36.86,46.99
-talk Zurnash |q The Deadliest Prey/Talk to Zarnash
+talk Zurnash |q The Deadliest Prey/Talk to Zurnash
 step
-goto 31.47,46.83
+goto 38.02,46.91
 talk Skordo the Knife |q The Deadliest Prey/Talk to Skordo
 step
 goto 42.77,45.40
@@ -18908,13 +19138,13 @@ goto 42.99,45.07
 click Senchal |q The Deadliest Prey/Meet Skordo Outside
 step
 goto 63.29,30.46
-'Meet Skordo near the Waterfront |q The Deadliest Prey/Meet Skordo near the Waterfronta
+'Meet Skordo near the Waterfront |q The Deadliest Prey/Meet Skordo near the Waterfront
 step
 goto 63.29,30.46
 talk Skordo the Knife |q The Deadliest Prey/Talk to Skordo the Knife
 step
 goto 63.29,30.46
-'Tie Up Skordo the Knife |q The Deadliest Prey/Tie Up Skordo
+'Bind Skordo the Knife |q The Deadliest Prey/Tie Up Skordo
 step
 goto 67.83,29.26
 'Take Skordo to Selloe |q The Deadliest Prey/Take Skordo to Selloe
@@ -18936,15 +19166,20 @@ goto 29.76,60.83
 step
 goto 29.76,60.83
 talk Kazahn |q Order of the New Moon/Talk to Kazahn
+'Tell her _"[Persuade] We're trying to find  Lahini to help her. If she meant anythiing to you, you'll help us."_"
+step
+goto 29.76,60.83
+talk Kazahn |q Order of the New Moon/Talk to Kazahn
 step
 goto 29.76,60.83
 'Listen to Ranza |q Order of the New Moon/Listen to Ranza
 step
-'Take Ranza's Map |q Order of the New Moon/Take Ranza's Map
+'Take Map |q Order of the New Moon/Take Ranza's Map
 step
 'Open Southern Elsweyr Map
 click Senchal Wayshrine
-'Travel to Senchal Wayshrine in Southern Elsweyr
+'Travel to Senchal Wayshrine in Southern Elsweyr |q Order of the New Moon/Follow Ranza's Map
+|tip Manually skip to the next step.
 step
 goto 56.32,67.19 |q Order of the New Moon/Follow Ranza's Map
 step
@@ -18976,11 +19211,16 @@ click Senchal |q Order of the New Moon/Enter the Black Kiergo
 step
 goto 56.92,70.90  |q Order of the New Moon/Enter the Black Kiergo
 step
+goto 59.07,81.59 |q Order of the New Moon/Enter the Black Kiergo
+step
 goto 51.51,82.09
 click Senchal Outlaws Refuge |q Order of the New Moon/Enter the Black Kiergo
 |tip Manually skip to the next step.
 step
 goto Senchal Outlaws Refuge 41.56,61.76 |q Order of the New Moon/Enter the Black Kiergo
+step
+goto 34.49,87.31
+'Wait for Caska |q Order of the New Moon/Enter the Black Kiergo
 step
 goto 34.49,87.31
 talk Do'mazir |q Order of the New Moon/Talk to Do'mazir
@@ -18992,14 +19232,14 @@ goto 34.60,89.18
 click Black Kiergo Arena |q Order of the New Moon/Compete in the Arena
 |tip Manually skip to the next step.
 step
-goto 51.28,52.96
+goto kiergofightingpit_base 51.28,52.96
 'Compete in the Arena |q Order of the New Moon/Compete in the Arena
 step
 goto 67.63,52.79
 click Black Kiergo Terrace |q Order of the New Moon/Talk to Shirnama
 |tip Manually skip to the next step.
 step
-goto 68.02,53.57
+goto kiergofightingpit_top_base 68.02,53.57
 talk Shirnama |q Order of the New Moon/Talk to Shirnama
 |tip Go upstairs to this point.
 step
@@ -19011,7 +19251,7 @@ step
 goto southernelsweyr_base 29.86,55.90
 talk Hunt Master Tildulon |q The Deadliest Prey/Present the Token to a Hunt Master
 step
-goto 29.45,61.67
+goto 29.93,62.08
 'Find Skordo the Knife |q The Deadliest Prey/Find Skordo
 step
 goto 29.93,62.08
@@ -19070,6 +19310,7 @@ accept Dreams of the Forsaken
 step
 goto 48.24,30.73
 click Forsaken Citadel |q Dreams of the Forsaken/Enter the Forsaken Citadel
+|tip Manually skip to the next step.
 step
 goto houseofembersinside_base 58.64,59.10
 'Find the Letter |q Dreams of the Forsaken/Find the Letter
@@ -19099,11 +19340,13 @@ step
 goto houseofembersoutside_base 59.83,66.87
 'Destroy Honoria's Diary |q Dreams of the Forsaken/.*Destroy the Corrupted Totems.* |count 2
 step
+goto 68.91,47.85 |q Dreams of the Forsaken/.*Destroy the Corrupted Totems.* |count 3
+step
 goto 45.77,30.69
 click Grand Lecture Hall |q Dreams of the Forsaken/.*Destroy the Corrupted Totems.* |count 3
 |tip Manually skip to the next step.
 step
-goto 45.75,27.74
+|tip Room directly ahead.
 kill Commandant Weston
 'Explore Forsaken Citadel |achieve 2557
 step
@@ -19116,9 +19359,10 @@ goto 45.75,27.74
 click Courtyard |q Dreams of the Forsaken/Return to Jano
 |tip Manually skip to the next step.
 step
-goto 53.15,63.09
+goto houseofembersoutside_base 24.25,64.59
 click Forsaken Citadel Dungeons |q Dreams of the Forsaken/Return to Jano
 |tip Manually skip to the next step.
+step
 step
 goto houseofembersinside_base 63.32,69.33
 'Return to Jano |q Dreams of the Forsaken/Return to Jano
@@ -19134,6 +19378,7 @@ talk Honoria Garrana |q Dreams of the Forsaken/Talk to Honnoria
 step
 goto 53.32,90.27
 click Elsweyr |q Dreams of the Forsaken/Talk to Catina
+|tip Manually skip to the next step.
 step
 goto southernelsweyr_base 46.94,30.32
 talk Catina Garrana
@@ -19142,7 +19387,7 @@ step
 goto 46.95,26.71 |achieve 2562/1
 step
 goto 58.81,24.39
-click Skyshard |achieve 2562/2
+click Skyshard |achieve 2562/1
 step
 goto 29.80,22.14 
 'Travel to the New Moon Fortress |q Order of the New Moon/Travel to the New Moon Fortress
@@ -19152,6 +19397,7 @@ talk Vinbaza |q Order of the New Moon/Talk to New Moon Fortress Guard
 step
 goto newmoonfortress1_base 29.71,21.93
 click New Moon Fortress |q Order of the New Moon/Enter the New Moon Fortress
+|tip Manually skip to the next step.
 step
 goto 79.40,39.98
 talk Trial Master Zayri |q Order of the New Moon/Talk to Trial Master Zayri
@@ -19167,8 +19413,6 @@ step
 goto 81.26,25.13
 'Activate Door Switch |q Order of the New Moon/Complete the First Trial
 |tip Manually skip to the next step.
-step
-goto 83.56,24.29 |q Order of the New Moon/Complete the First Trial
 step
 goto 76.12,30.67
 'Move Game Cube to this Poin |q Order of the New Moon/Complete the First Trial
@@ -19187,11 +19431,12 @@ goto 64.76,31.70
 'Activate Door Switch |q Order of the New Moon/Complete the Trial Path
 |tip Manually skip to the next step.
 step
-goto 66.49,30.42 |q Order of the New Moon/Complete the First Trial
+goto 66.49,30.42 |q Order of the New Moon/Complete the Trial Path
 step
 goto 67.13,27.01
 'Move Game Cube to this Poin |q Order of the New Moon/Complete the Trial Path
 |tip Move Game Cube to this spot using attacks.
+|tip Manually skip to the next step.
 step
 goto 66.24,21.42 |q Order of the New Moon/Complete the Trial Path
 step
@@ -19204,14 +19449,12 @@ step
 goto 60.95,30.48
 'Move Game Cube to this Poin |q Order of the New Moon/Complete the Trial Path
 |tip Move Game Cube to this spot using attacks.
+|tip Manually skip to the next step.
 step
 goto 57.42,24.84 |q Order of the New Moon/Complete the Trial Path
 step
 goto 59.17,29.09
 'Activate Door Switch |q Order of the New Moon/Complete the Trial Path
-|tip Manually skip to the next step.
-step
-goto 60.95,30.47 |q Order of the New Moon/Complete the Trial Path
 |tip Manually skip to the next step.
 step
 goto 56.93,29.62
@@ -19276,27 +19519,33 @@ goto 44.73,55.23
 'Destroy the Aeonstone |q Order of the New Moon/Destroy the Aeonstone
 step
 goto 40.32,52.80 
-click New Moon Fortress |q Order of the New Moon/Meet Up with Caska
+click New Moon Fortress |q Order of the New Moon/Meet Up With Caska
 |tip Manually skip to the next step.
 step
-goto 25.56,50.21 |q Order of the New Moon/Meet Up with Caska
+goto 25.56,50.21 |q Order of the New Moon/Meet Up With Caska
 step
-goto 09.54,53.72 |q Order of the New Moon/Meet Up with Caska
+goto 09.54,53.72 |q Order of the New Moon/Meet Up With Caska
 step
-goto newmoonfortress2_base 81.82,48.32 |q Order of the New Moon/Meet Up with Caska
+goto newmoonfortress2_base 81.82,48.32 |q Order of the New Moon/Meet Up With Caska
 step
-goto 82.07,61.38 |q Order of the New Moon/Meet Up with Caska
+goto 87.79,76.54 |q Order of the New Moon/Meet Up With Caska
+step
+goto 63.98,69.92 |q Order of the New Moon/Meet Up With Caska
+step
+goto 51.96,59.35 |q Order of the New Moon/Meet Up With Caska
+step
+goto 42.85,29.44 |q Order of the New Moon/Meet Up With Caska
 step
 goto 24.92,47.28
 'Meet Up With Caska |q Order of the New Moon/Meet Up With Caska
-'Follow path to this point then Jump down in the water.
+|tip Follow path to this point then Jump down in the water.
 step
 goto 24.92,47.28
 talk Caska |q Order of the New Moon/Talk to Caska
 step
 'Open Southern Elsweyr Map
 click Dragonguard Sanctum Wayshrine
-'Travel to Dragonguard Sanctum in Southern Elsweyr |q Order of the New Moon/Talk to Sai Sahan
+'Travel to Dragonguard Sanctum in Southern Elsweyr |q Order of the New Moon/Return to the Dragonguard Sanctum
 |tip Manually skip to the next step.
 step
 goto ELS_DG_Sanctuary_base 32.99,66.03
@@ -19454,7 +19703,8 @@ turnin Masterpieces
 step
 goto 35.22,68.54
 click Senchal |q Another Khajiit's Tale/Talk to Zhasim
-step senchal_base 56.68,71.79 |q Another Khajiit's Tale/Talk to Zhasim
+step
+goto senchal_base 56.68,71.79 |q Another Khajiit's Tale/Talk to Zhasim
 step
 goto 47.94,69.50
 talk Zhasim
@@ -25991,15 +26241,20 @@ step
 'Congratulations, you have completed The Reach guide!
 ]])
 
-ZGV:RegisterGuide("LEVELING\\Blackwood",[[
-loadingimage loadscreen_blackwood_01.dds
-description Caught between the Argonian homeland and Imperial province of Cyrodiil, the region of Blackwood is beset by Daedric influence, and its people struggle to survive would-be tyrants and Oblivion-spawned evils alike. Including the Imperial City of Leyawiin (first featured in The Elder Scrolls IV: Oblivion), the Niben Forest, and open wetlands of the Blackwood Bog, you’ll have the opportunity to explore a diverse land in strife, investigate the emerging Daedric threat, and discover all-new stories, challenges, and rewards not found anywhere else in Tamriel.
+ZGV:RegisterGuide("LEVELING\\Isle of Balfiera",[[
+loadingimage loadscreen_balfieraruins_01.dds
+description The Isle of Balfiera (also called Balfiera Island)[1] is an island region within the northern portion of Iliac Bay. In the late Third Era, the largest settlement was the town of Upvale, the dominant vampire bloodline was Lyrezi, and the regional deity was Akatosh.[2] It is a tropical region containing beaches and palm trees.
 -- BEGIN: BLACKWOOD INTRO GUIDE FOR NEW PLAYERS
 step
 goto u30_balfiera_int1_base 43.40,72.51
 talk Norianwe |q The Gates of Adamant/Talk to Norianwe
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6
 step
+goto 43.52,72.84
+'Wait for Norianew |q The Gates of Adamant/Wait for Norianwe
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6
+step
+goto 43.52,72.84
 click Cell Door |q The Gates of Adamant/Exit Cell
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6
 step
@@ -26041,7 +26296,7 @@ click Balfiera Ruins |q The Gates of Adamant/Lead Norianwe Outside
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6
 step
-goto u30_balfiera_int3_base 35.07,41.44 |q Shattered and Scattered/Find the Ruin
+goto u30_balfiera_int3_base 35.07,41.44 |q The Gates of Adamant/Lead Norianwe Outside
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6
 step
 goto u30_balfiera_int3_base 49.81,45.45
@@ -26087,7 +26342,10 @@ click Gallery Balfiera |q The Gates of Adamant/Return to the Gate
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6
 step
 goto u30_balfiera_int7_base 49.05,53.61
-'Activate Skyshard Aperture |q The Gates of Adamant/Find the Ruin
+'Return to the Gate |q The Gates of Adamant/Return to the Gate
+step
+goto 49.05,53.61
+'Activate Skyshard Aperture |q The Gates of Adamant/Repair the Gate
 |tip Upstairs
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6
 step
@@ -26127,8 +26385,11 @@ step
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6
 step
 -- END: BLACKWOOD INTRO GUIDE FOR NEW PLAYERS
+]])
 
-
+ZGV:RegisterGuide("LEVELING\\Blackwood",[[
+loadingimage loadscreen_blackwood_keyart_01.dds
+description Caught between the Argonian homeland and Imperial province of Cyrodiil, the region of Blackwood is beset by Daedric influence, and its people struggle to survive would-be tyrants and Oblivion-spawned evils alike. Including the Imperial City of Leyawiin (first featured in The Elder Scrolls IV: Oblivion), the Niben Forest, and open wetlands of the Blackwood Bog, you’ll have the opportunity to explore a diverse land in strife, investigate the emerging Daedric threat, and discover all-new stories, challenges, and rewards not found anywhere else in Tamriel.
 -- BEGIN: BLACKWOOD PROLOGUE GUIDE FOR NEW AND EXISTING PLAYERS
 -- START: ALDMERI DOMINION FACTION
 'Open Grahtwood Map
@@ -26976,7 +27237,7 @@ goto 29.56,32.53
 wayshrine Fort Redmane
 step
 click Fort Redmane Wayshrine
-'Travel to Blackwood Crossroads in Blackwood
+'Travel to Blackwood Crossroads in Blackwood |q A Deadly Secret/Go to Fort Blueblood
 step
 goto 38.02,60.64
 'Go to Fort Blueblood |q A Deadly Secret/Go to Fort Blueblood
@@ -27163,13 +27424,13 @@ goto 45.30,47.59
 'Examine the Ledger of Souls |q Haunted Legacy/Examine the Ledger of Souls
 step
 goto 45.14,48.32
-talk Faric Gemain |q Haunted Souls/Talk to Faric Gemain
+talk Faric Gemain |q Haunted Legacy/Talk to Faric Gemain
 step
 goto 45.14,48.32
-'Watch Faric Gemain |q Haunted Souls/Watch Faric Gemain
+'Watch Faric Gemain |q Haunted Legacy/Watch Faric Gemain
 step
 goto 45.14,48.32
-talk Faric Gemain |q Haunted Souls/Talk to Faric Gemain
+talk Faric Gemain |q Haunted Legacy/Talk to Faric Gemain
 click Phantom Door |q |q A Deadly Secret/Talk to Councilor Vandacia
 |tip Manually skip to the next step.
 step
@@ -27412,12 +27673,14 @@ goto 22.65,46.45
 |tip Crouch down low
 step
 goto 23.49,46.61
-talk Darene Gavendier
+talk Darene Gavendier |q Shrine of Nocturnal/
 '[Intimidate]
+|tip redo
 |tip Manually skip to the next step.
 step
 goto 23.49,46.61
-'[Persuade]
+|tip redo
+'[Persuade] |q Shrine of Nocturnal/
 |tip Manually skip to the next step.
 step
 click Leyawiin |q A Deadly Secret/Go to Leyawiin Castle
@@ -27450,7 +27713,7 @@ click Gideon Wayshrine
 step
 goto u30_Gideoncity_base 64.91,26.51 |q An Unexpected Adversary/Go to Bloodrun Cave
 step
-goto blackwood_base 69.09,55.45
+goto blackwood_base 69.09,55.45 |q An Unexpected Adversary/Go to Bloodrun Cave
 step
 goto 67.08,61.18
 talk Lounges-on-Moss
@@ -27794,7 +28057,7 @@ step
 goto 65.92,58.28
 'Destroy the Daedric |q A Battle of Silk and Flame/Destroy the Daedric Device
 step
-goto 69.22,25.53
+goto 69.22,25.53 |q A Battle of Silk and Flame/Exit the Doomvault
 step
 goto VaultDelve_INT01_base 12.23,50.66
 click Blackwood |q A Battle of Silk and Flame/Exit the Doomvault
@@ -28035,6 +28298,7 @@ goto 55.35,23.43
 step
 goto 55.51,23.30
 click Rellesel Retreat |q The Face of Change/.*Investigate the Ayleid Ruin.* |count 1
+|tip Manually skip to the next step.
 step
 goto 56.11,22.97
 'Wake Annyce Favraud |q The Face of Change/.*Investigate the Ayleid Ruin.* |count 1
@@ -28054,10 +28318,9 @@ step
 goto 56.15,22.95
 'Enter Annyce Favraud's Dream |q The Face of Change/Enter Annyce Favraud's Dream
 step
-goto 55.80,22.99 |q The Face of Change/Find Annyce Favraud
-step
 goto 55.79,22.95
 'Find Annyce Favraud |q The Face of Change/Find Annyce Favraud
+|tip Downstairs
 step
 goto 55.79,22.95
 talk Annyce Favraud |q The Face of Change/Talk to Annyce Favraud
@@ -28067,8 +28330,9 @@ goto 55.85,23.06
 |tip top of the ship
 step
 goto 55.84,23.06
-talk Annyce Favraud |q The Facce of Change/Talk to Annyce Favraud
+talk Annyce Favraud |q The Face of Change/Talk to Annyce Favraud
 step
+goto 55.87,23.01
 click Portal to Rellesel Retreat |q The Face of Change/Leave the Dream
 step
 goto 56.19,22.93
@@ -28083,15 +28347,15 @@ step
 goto 56.10,22.96
 talk Annyce Favraud |q The Face of Change/Talk to Annyce Favraud
 step
-talk Maelle Favraud |q The Face of Change/Congront Cres
+talk Maelle Favraud |q The Face of Change/Confront Cres
+|tip Manually skip to the next step.
+step
+goto 55.54,23.30
+click Blackwood |q The Face of Change/Confront Cres
 |tip Manually skip to the next step.
 step
 goto 59.57,27.50
-'Confront Cres |q The Face of Change/Congront Cres
-step
-goto 59.57,27.50
-click Blackwood |q The Face of Change/Congront Cres
-|tip Manually skip to the next step.
+'Confront Cres |q The Face of Change/Confront Cres
 step
 goto 59.57,27.50
 talk Bradon Davaux |q The Face of Change/Talk to Bradon Davaux
@@ -28152,6 +28416,8 @@ step
 goto 29.13,65.04
 'Destroy Ajum-Shei's Skull |q Destroying What Remains/Destroy Stolen Skull
 step
+'Take Shade Sickle |q Shrine of Nocturnal/Collect the Shade Sickle
+step
 goto 35.13,62.81 |q An Unexpected Adversary/Find the Sanctuary Entrance
 step
 goto 28.93,77.40 |q An Unexpected Adversary/Find the Sanctuary Entrance
@@ -28192,6 +28458,7 @@ talk Elam Drals |q An Unexpected Adversary/Talk to Elam Drals
 step
 goto 73.11,74.45
 click Portal |q An Unexpected Adversary/Enter the Portal
+|tip Manually skip to the next step.
 step
 goto u30_welke_upper_base 56.18,39.11 
 'Examine High Priest's Orders |q An Unexpected Adversary/Explore the Ayleid Ruins
@@ -28218,10 +28485,6 @@ goto 54.57,54.86
 click Welke |q An Unexpected Adversary/Explore the Ayleid Ruins
 |tip Manually skip to the next step.
 step
-goto u30_welke_lower_base 57.30,59.80 |q An Unexpected Adversary/Explore the Ayleid Ruins
-step
-goto 49.52,67.95 |q An Unexpected Adversary/Explore the Ayleid Ruins
-step
 goto 33.31,66.95
 'Explore the Ayleid Ruins |q An Unexpected Adversary/Explore the Ayleid Ruins
 step
@@ -28230,10 +28493,6 @@ goto 33.31,66.95
 step
 goto 34.28,66.68
 talk Elam Drals |q An Unexpected Adversary/Talk to Elam Drals
-step
-goto 35.98,61.48 |q An Unexpected Adversary/Find Another Pedestal
-step
-goto 23.01,48.39 |q An Unexpected Adversary/Find Another Pedestal
 step
 goto 36.98,28.47 
 'Find Another Pedestal |q An Unexpected Adversary/Find Another Pedestal
@@ -28258,10 +28517,6 @@ goto 30.87,64.11
 step
 goto 32.00,61.57
 talk Elam Drals |q An Unexpected Adversary/Talk to Elam Drals
-step
-goto 21.96,60.74
-click Portal |q An Unexpected Adversary/Warn the Councilors
-|tip Manually skip to the next step.
 step
 'Open Blackwood Map
 click Bloodrun Wayhrine
@@ -28299,22 +28554,27 @@ click Leyawiin Castle |q An Unexpected Adversary/Enter Leyawiin Castle
 step
 goto u30_leyawiincastleint02_base 21.63,48.10 |q An Unexpected Adversary/Find the Councilors
 step
-goto 62.50,61.33 |q An Unexpected Adversary/Find the Councilors
+goto 62.50,61.33 |q An Unexpected Adversary/Find Councilor Lovidicus
 step
-goto u30_leyawiincastleint01_base 83.82,75.49 |q An Unexpected Adversary/Find the Councilors
+goto u30_leyawiincastleint01_base 83.82,75.49 |q An Unexpected Adversary/Find Councilor Lovidicus
 step
-goto 82.62,42.04 |q An Unexpected Adversary/Find the Councilors
+goto 82.62,42.04 |q An Unexpected Adversary/Find Councilor Lovidicus
 step
-goto 48.96,35.50 |q An Unexpected Adversary/Find the Councilors
+goto 48.96,35.50 |q An Unexpected Adversary/Find Councilor Lovidicus
 step
 goto 48.81,05.30
-click Leyawiin Castle Courtyard |q An Unexpected Adversary/Find the Councilors
+click Leyawiin Castle Courtyard |q An Unexpected Adversary/Find Councilor Lovidicus
+|tip Manually skip to the next step.
 step
 goto u30_leyawiincity_base 85.10,53.59
-'Find the Councilors |q An Unexpected Adversary/Find the Councilors
+'Find Councilor Lovidicus |q An Unexpected Adversary/Find Councilor Lovidicus
+step
+goto 85.52,53.00
+kill Disciple of Aspiration |q An Unexpected Adversary/Defeat the Disciple of Aspiration
 step
 goto 80.87,53.25
 click Leyawiin |q An Unexpected Adversary/Leave Leyawiin Castle
+|tip Manually skip to the next step.
 step
 goto 77.50,54.05
 talk Beragon |q An Unexpected Adversary/Talk to Beragon
@@ -28327,8 +28587,8 @@ talk Eveli Sharp-Arrow
 turnin An Unexpected Adversary
 accept A Hidden Vault
 step
-'Open Blackwood Map
-click Gideon Wayhrine
+goto 24.51,64.02
+click Leyawiin Wayshrine
 'Travel to Gideon in Blackwood |q A Hidden Vault/Go to Gideon
 step
 goto u30_Gideoncity_base 63.69,40.02
@@ -28360,46 +28620,50 @@ talk Jela
 accept Idol Threats
 step
 goto 54.82,77.21
-click Xi-Tsei
+click Xi-Tsei |q Idol Threats/Enter Xi-Tsei
+|tip Manually skip to the next step.
 step
-goto u30_xanmeeroverlook_ext_base 52.69,62.07 |q Idol Threats/.*Disrupt the Sul-Xan Rituals.* |count 1
+goto u30_xanmeeroverlook_ext_base 52.69,62.07 |q Idol Threats/Rescue Kuran
 step
 goto 38.89,63.95
-'Destroy Ritual Focus |q Idol Threats/.*Disrupt the Sul-Xan Rituals.* |count 1
+'Destroy Ritual Focus |q Idol Threats/Rescue Kuran
 step
 goto 49.55,34.72 
-click Xi-Tsei |q Idol Threats/.*Disrupt the Sul-Xan Rituals.* |count 2
+click Xi-Tsei |q Idol Threats|q Idol Threats/Rescue Hands-like-Fish
+|tip Manually skip to the next step.
 step
-goto u30_xanmeeroverlook_int_base 35.52,37.25 |q Idol Threats/.*Disrupt the Sul-Xan Rituals.* |count 2
+goto u30_xanmeeroverlook_int_base 35.52,37.25 |q Idol Threats/Rescue Hands-like-Fish
 step
 goto 36.49,76.50
-'Destroy Ritual Focus |q Idol Threats/.*Disrupt the Sul-Xan Rituals.* |count 2
+'Destroy Ritual Focus |q Idol Threats/Rescue Hands-like-Fish
 step
-goto 35.52,37.25 |q Idol Threats/.*Disrupt the Sul-Xan Rituals.* |count 3
+goto 35.52,37.25 |q Idol Threats/Rescue Last-to-Eat
 step
-goto 27.28,22.57 |q Idol Threats/.*Disrupt the Sul-Xan Rituals.* |count 3
+goto 27.28,22.57 |q Idol Threats/Rescue Last-to-Eat
 step
 goto 56.98,28.16 
-'Destroy Ritual Focus |q Idol Threats/.*Disrupt the Sul-Xan Rituals.* |count 3
+'Destroy Ritual Focus |q Idol Threats/Rescue Last-to-Eat
 step
 goto 62.09,31.62
 talk Jela |q Idol Threats/Talk to Jela
 step
 goto 60.10,20.44 
 click Xi-Tsei |q Idol Threats/Find the Idol of Xulunaht
+|tip Manually skip to the next step
 step
 goto u30_xanmeeroverlook_ext_base 51.79,45.95
 kill Raj-Kaal loraxeek
 'Explore Xi-Tsei |achieve 2966
 step
 goto 50.54,48.68
-'Destroy Idol of Xulunaht |q Idol Threats/Destroy Idol of Xulunaht
+'Destroy Idol of Xulunaht |q Idol Threats/Destroy the Idol of Xulunaht
 step
 goto 68.07,51.11
-click Skyshard 2982/13
+click Skyshard |achieve 2982/13
 step
 goto 71.07,68.90
-click Blackwood
+click Blackwood |q Idol Threats/Leave Xi-Tsei
+|tip Manually skip to the next step.
 step
 goto blackwood_base 56.07,78.00
 talk Jela
@@ -28426,8 +28690,6 @@ goto 61.10,76.11
 talk Elossi, the Sudden Gust |q The Rising Winds/Talk to Elossi
 step
 goto 61.15,76.15
-step
-goto 61.15,76.15
 click Blackwood |q The Rising Winds/Retrieve Elossi's Cache
 |tip Manually skip to the next step.
 step
@@ -28440,16 +28702,16 @@ step
 goto 67.40,80.63 |q The Rising Winds/Find Meer-Ta
 step
 goto 68.21,80.28
-'Find Meer-Ta |q The Rising Winds/Find Meer-Ta
+'Find Meer-Ta, the Zephyr Eternal |q The Rising Winds/Find Meer-Ta
 step
 goto 68.21,80.28
-talk Meer-Ta |q The Rising Winds/Talk to Meer-Ta
+talk Meer-Ta, the Zephyr Eternal |q The Rising Winds/Talk to Meer-Ta
 step
 goto 63.07,84.94
-'Find Otumi-Ra |q The Rising Winds/Find Otumi-Ra
+'Find Otumi-Ra, the Unrelenting Gale |q The Rising Winds/Find Otumi-Ra
 step
 goto 63.07,84.94
-talk Otumi-Ra |q The Rising Winds/Meet Otumi-Ra
+talk Otumi-Ra |q The Rising Winds/talk Otumi-Ra
 step
 goto 63.02,85.00
 talk Nuxul |q The Rising Winds/Talk to Nuxul
@@ -28469,28 +28731,26 @@ goto 62.97,84.97
 talk Nuxul |q The Rising Winds/Talk to Nuxul
 step
 goto 63.05,84.99
-'Wake Otumi-Ra |q The Rising Winds/Wake Otumi-Ra
+'Wake Otumi-Ra, the Unrelenting Gale |q The Rising Winds/Wake Otumi-Ra
 step
 goto 63.05,84.99
-talk Otumi-Ra |q The Rising Winds/Talk to Otumi-Ra
-step
-goto 63.51,84.97
+talk Otumi-Ra, the Unrelenting Gale |q The Rising Winds/Talk to Otumi-Ra
 step
 goto 63.35,84.68
 click Otumi-Ra's Hut |q The Rising Winds/Follow Otumi-Ra
 step
 goto 63.50,84.98
-'Follow Otumi-Ra |q The Rising Winds/Follow Otumi-Ra
+'Follow Otumi-Ra, the Unrelenting Gale |q The Rising Winds/Follow Otumi-Ra
 step
 goto 63.50,84.98
-talk Otumi-Ra |q The Rising Winds/Talk to Otumi-Ra
+talk Otumi-Ra, the Unrelenting Gale |q The Rising Winds/Talk to Otumi-Ra
 step
 goto 63.52,84.93
 |tip Order Matters
 click Blue, Red, Gold, and Green |q The Rising Winds/Complete Otumi-Ra's Challenge
 step
 goto 63.50,84.98
-talk Otumi-Ra |q The Rising Winds/Talk to Otumi-Ra
+talk Otumi-Ra, the Unrelenting Gale |q The Rising Winds/Talk to Otumi-Ra
 step
 goto 63.36,84.71
 click Blackwood |q The Rising Winds/Hang Otumi-Ra's Banner
@@ -28508,13 +28768,16 @@ goto 61.14,80.46
 click Stonewastes Courtyard |q The Rising Winds/Enter Stonewastes Keep
 step
 goto 59.99,80.21
-talk Otumi-Ra |q The Rising Winds/Talk to Otumi-Ra
+talk Otumi-Ra, the Unrelenting Gale |q The Rising Winds/Talk to Otumi-Ra
 step
 goto 60.00,80.24
 'Use Heavy Pillar |q The Rising Winds/Assist Otumi-Ra
 step
 goto 60.71,81.42
-talk Elossi |q The Rising Winds/Talk Elossi
+'Find Elossi, the Sudden Gust |q The Rising Winds/Find Elossi
+step
+goto 60.71,81.42
+talk Elossi, the Sudden Gust |q The Rising Winds/Talk to Elossi
 step
 goto 60.37,81.97
 'Use Rusty Pulley |q The Rising Winds/Release the Prisoners
@@ -28523,18 +28786,19 @@ goto 60.21,81.48 |q The Rising Winds/Search the Keep
 step
 goto 58.81,82.37
 click Stonewastes Keep Undercroft |q The Rising Winds/Search the Keep
+|tip Manually skip to the next step.
 step
 goto stonewastesfortress_base 12.80,60.26
 'Search the Keep |q The Rising Winds/Search the Keep
 step
 goto 12.80,60.26
-talk Meer-Ta |q The Rising Winds/Talk to Meer-Ta
+talk Meer-Ta, the Zephyr Eternal |q The Rising Winds/Talk to Meer-Ta
 step
 goto 31.49,24.05 
 'Collect Binding Word|q The Rising Winds/Locate the Binding Word
 step
 goto 12.77,60.45
-talk Meer-Ta |q The Rising Winds/Talk to Meer-Ta
+talk Meer-Ta, the Zephyr Eternal |q The Rising Winds/Talk to Meer-Ta
 step
 goto 32.79,60.32 |q The Rising Winds/Destroy the Banner
 step
@@ -28542,7 +28806,7 @@ goto 94.14,60.83
 click Blackwood |q The Rising Winds/Destroy the Banner
 |tip Manually skip to the next step.
 step
-goto blackwood 59.80,82.78
+goto blackwood_base 59.80,82.78
 'Burn Naxhosa's Banner |q The Rising Winds/Destroy the Banner
 step
 goto 61.50,81.76 |q The Rising Winds/Return to the Village
@@ -28569,7 +28833,7 @@ step
 goto 63.27,89.76
 talk Lyranth |q A Hidden Vault/Talk to Lyranth
 step
-goto 62.29,90.01
+goto 62.69,90.01
 'Turn Ward Cube |q A Hidden Vault/Find a Way Into the Vault
 |tip Turn cube three times.
 |tip Manually skip to the next step.
@@ -28598,6 +28862,7 @@ goto 80.24,20.10 |q A Hidden Vault/Explore the Daedric Vault
 step
 goto 66.58,42.28
 click Ward Chamber |q A Hidden Vault/Explore the Daedric Vault
+|tip Manually skip to the next step.
 step
 goto 63.37,42.18
 'Explore the Daedric Vault |q A Hidden Vault/Explore the Daedric Vault
@@ -28618,7 +28883,6 @@ step
 goto 57.79,41.57 
 'Turn Ward Cube |q A Hidden Vault/Disrupt the Inner Ward
 |tip Turn cube three times.
-|tip Manually skip to the next step.
 step
 goto 56.22,42.28
 click Doomvault Corridor |q A Hidden Vault/Explore the Daedric Vault
@@ -28648,10 +28912,14 @@ goto 40.37,42.25 |q A Hidden Vault/Explore the Daedric Vault
 step
 goto 29.57,41.19 |q A Hidden Vault/Explore the Daedric Vault
 step
+goto 29.61,41.23
+click The Deadlands |q A Hidden Vault/Explore the Daedric Vault
+step
 goto 11.75,60.07 |q A Hidden Vault/Explore the Daedric Vault
 step
 goto 38.98,51.72 |q A Hidden Vault/Explore the Daedric Vault
 click Inner Vault Ward Chamber |q A Hidden Vault/Explore the Daedric Vault
+|tip Manually skip to the next step.
 step
 goto 41.84,51.72
 talk Lyranth |q A Hidden Vault/Explore the Daedric Vault
@@ -28681,6 +28949,7 @@ goto 42.56,56.80
 step
 goto 44.50,58.67
 click Doomvault Capraxus Inner Vault |q A Hidden Vault/Enter the Inner Vault
+|tip Manually skip to the next step.
 step
 goto 44.77,66.13
 'Enter the Inner Vault |q A Hidden Vault/Enter the Inner Vault
@@ -28702,6 +28971,7 @@ goto 46.75,69.30
 step
 goto 44.46,69.34
 click Doomvault Capraxus Deep Vaults |q A Hidden Vault/Find Eveli Sharp-Arrow
+|tip Manually skip to the next step.
 step
 goto 44.87,75.33
 'Find Eveli Sharp-Arrow |q A Hidden Vault/Find Eveli Sharp-Arrow
@@ -28729,6 +28999,7 @@ step
 'Open Blackwood Map
 click Gideon Wayshrine
 'Travel to Gideon in Blackwood |q A Hidden Vault/Return to Gideon
+|tip Manually skip to the next step.
 step
 goto u30_Gideoncity_base 63.69,40.04
 click Govenor's Mansion |q A Hidden Vault/Talk to Keshu the Black Fin
@@ -28736,6 +29007,7 @@ click Govenor's Mansion |q A Hidden Vault/Talk to Keshu the Black Fin
 step
 goto 63.73,39.73
 talk Keshu the Black Fin |q A Hidden Vault/Talk to Keshu the Black Fin
+|tip Upstairs
 step
 goto 63.53,38.89
 talk Eveli
@@ -28751,6 +29023,7 @@ step
 goto 63.82,40.44
 click Gideon |q A Mysterious Event/Go to Amnis Manor
 |tip Downstairs
+|tip Manually skip to the next step.
 step
 goto 29.81,46.07 |q A Mysterious Event/Go to Amnis Manor
 step
@@ -28781,23 +29054,23 @@ step
 'Open Blackwood Map
 click Hutan-Tzel Wayshrine
 'Travel to Hutan-Tzel in Blackwood |q A Mysterious Event/Go to the Salvitto Estate
+|tip Manually skip to the next step.
 step
 goto blackwood_base 56.99,38.42
 'Go to the Salvitto Estate |q A Mysterious Event/Go to the Salvitto Estate
 step
 goto 56.99,37.14
 click Salvitto Estate |q A Mysterious Event/Search the Salvitto Estate
+|tip Manually skip to the next step.
 step
 goto 57.04,36.90
 'Search the Salvitto Estate |q A Mysterious Event/Search the Salvitto Estate
 |tip Upstairs
 step
 goto 56.99,37.15
-'Pursue Gracian Salvitto |q A Mysterious Event/Pursue Gracian Salvitto
-|tip Downstairs
-step
-goto 56.99,37.15
 click Blackwood |q A Mysterious Event/Pursue Gracian Salvitto
+|tip Downstairs
+|tip Manually skip to the next step.
 step
 goto 56.13,37.45 |q A Mysterious Event/Pursue Gracian Salvitto
 step
@@ -28821,6 +29094,7 @@ goto 47.75,34.76 |q A Mysterious Event/Talk to Percius Loche
 step
 goto 50.41,51.75 
 click Armor and Fine Garments |q A Mysterious Event/Talk to Percius Loche
+|tip Manually skip to the next step.
 step
 goto 52.96,49.47
 talk Percius Loche |q A Mysterious Event/Talk to Percius Loche
@@ -28834,9 +29108,11 @@ talk Eveli Sharp-Arrow |q A Mysterious Event/Talk to Eveli Sharp-Arrow
 step
 goto 51.68,50.11
 click Leyawiin |q A Mysterious Event/Present Yourself at the Calamity
+|tip Manually skip to the next step
 step
 goto 40.19,70.45
 click Leyawiin Docks |q A Mysterious Event/Present Yourself at the Calamity
+|tip Manually skip to the next step.
 step
 goto 61.60,87.59
 talk First Mate Gulfreida |q A Mysterious Event/Present Yourself at the Calamity
@@ -28865,11 +29141,12 @@ goto u30_deadlandskeep_int_base 09.84,67.17
 talk Eveli Sharp-Arrow |q A Mysterious Event/Talk to Eveli Sharp-Arrow
 step
 goto 13.41,62.25
-talk Lyranth |q A Mysterious Event/Search Vandacia's Keep
+talk Lyranth |q A Mysterious Event/Talk to Lyranth
 |tip Manually skip to the next step.
 step
 goto 19.97,67.18
 click Vandacia's Inner Chambers |q A Mysterious Event/Search Vandacia's Keep
+|tip Manually skip to the next step.
 step
 goto 45.50,61.68 |q A Mysterious Event/Search Vandacia's Keep
 step
@@ -28907,11 +29184,11 @@ goto 66.81,67.17
 click Keep Audience Hall |q A Mysterious Event/Place the Reekers
 |tip Manually skip to the next step.
 step
-goto 72.79,65.94
+goto 76.17,65.93
 'Place Reeker |q A Mysterious Event/Place the Reekers
 |tip Manually skip to the next step.
 step
-goto 76.17,65.93
+goto 72.79,65.94
 'Place Reeker |q A Mysterious Event/Place the Reekers
 |tip Manually skip to the next step.
 step
@@ -28952,6 +29229,7 @@ goto 49.96,51.26
 step
 goto 43.82,49.67
 click Gideon |q A Mysterious Event/Talk to Eveli Sharp-Arrow
+|tip Manually skip to the next step.
 step
 goto 63.69,40.07
 click Govenor's Mansion |q A Mysterious Event/Talk to Eveli Sharp-Arrow
@@ -28965,7 +29243,8 @@ goto 63.61,37.83
 talk Keshu the Black Fin
 accept Weapons of Destruction
 step
-goto 63.82,40.33 |q Weapons of Destruction/Meet with the Ambitions
+goto 63.82,40.33
+click Gideon |q Weapons of Destruction/Meet with the Ambitions
 |tip Manually skip to the next step.
 step
 goto 43.40,50.01
@@ -28987,6 +29266,7 @@ talk Calia |q Weapons of Destruction/Talk to Calia
 step
 goto 45.56,49.74
 click Gideon |q Weapons of Destruction/Talk to Eveli Sharp-Arrow
+|tip Manually skip to the next step.
 step
 goto 62.05,39.22
 talk Eveli Sharp-Arrow |q Weapons of Destruction/Talk to Eveli Sharp-Arrow
@@ -28999,6 +29279,7 @@ step
 goto 53.23,48.62
 talk Xynaa |q Weapons of Destruction/Talk to Xynaa
 step
+goto 53.18,48.62
 talk Sombren |q Weapons of Destruction/Talk to Sombren
 step
 goto 53.13,48.63
@@ -29019,9 +29300,11 @@ click Skyshard |achieve 2982/7
 step
 goto 47.51,51.42
 'Take Obsidian Sliver |q Weapons of Destruction/.*Gather the Deadlands Slivers.* |count 2
+step
 'Open Blackwood Map
 click Stonewastes Wayshrine
 'Travel to Stonewastes in Blackwood |q Weapons of Destruction/Meet Sombren on the Road
+|tip Manually skip to the next step.
 step
 goto 65.51,70.33
 'Meet Sombren on the Road |q Weapons of Destruction/Meet Sombren on the Road
@@ -29037,22 +29320,26 @@ wayshrine Vunalk
 step
 goto 81.35,70.67
 click Skyshard |achieve 2982/8
+step
 goto 83.01,69.58
 talk Hokatsei
 accept In Need of a Bath
 step
 goto 83.97,69.45
 click Vunalk |q In Need of a Bath/Enter the Ruins of Vunalk
+|tip Manually skip to the next step.
 step
-goto vunalk1_base 25.26,71.31 |q In Need of a Bath/.*Bathe Deet-Loh.* |count 1
+goto vunalk1_base 25.26,71.31 |q In Need of a Bath/Bathe Deet-Loh
 step
 goto 52.43,70.74
-'Bathe Humble Pool |q In Need of a Bath/.*Bathe Deet-Loh.* |count 1
+'Bathe Humble Pool |q In Need of a Bath/Bathe Deet-Loh
+|tip Manually skip to the next step.
 step
-goto 69.66,75.12 |q In Need of a Bath/.*Bathe Deet-Loh.* |count 2
+goto 69.66,75.12 |q In Need of a Bath/Bathe Deet-Loh
 step
 goto 80.33,39.13
-'Bathe Remorseful Pool |q In Need of a Bath/.*Bathe Deet-Loh.* |count 2
+'Bathe Remorseful Pool |q In Need of a Bath/Bathe Deet-Loh
+|tip Manually skip to the next step.
 step
 goto 75.77,21.15 |achieve 2982/18
 step
@@ -29060,15 +29347,17 @@ goto 85.67,21.13
 click Skyshard |achieve 2982/18
 step
 goto 54.52,42.69
-'Bathe Penitent Pool |q In Need of a Bath/.*Bathe Deet-Loh.* |count 3
+'Bathe Penitent Pool |q In Need of a Bath/Bathe Deet-Loh
 step
 goto 54.61,42.58
 talk Hokatsei |q In Need of a Bath/Talk to Hokatsei
 step
-goto 44.89,25.52
+goto 44.89,25.52 |q In Need of a Bath/Escort Deet-Loh to the Frog Pool
+step
+goto 20.71,31.13 |q In Need of a Bath/Escort Deet-Loh to the Frog Pool
 step
 goto 20.71,31.13
-'Escort 
+'Escort Deet-Loh to the Frog Pool |q In Need of a Bath/Escort Deet-Loh to the Frog Pool
 step
 goto 20.71,31.13
 'Bathe Frog Pool |q In Need of a Bath/Bathe Deet-Loh
@@ -29096,39 +29385,40 @@ click Vunalk Wayshrine
 step
 goto 70.80,73.45 
 'click Portal to the Ashen Forest |q Weapons of Destruction/Enter the Portal
+|tip Manually skip to the next step.
 step
 goto u30_ashenforest_ext_base 24.12,85.98
 talk Xynaa |q Weapons of Destruction/Talk to Xynaa
 step
-goto 41.52,63.85
+goto 49.21,53.56
 'Reach Obelisk of Origin |q Weapons of Destruction/Reach the Obelisk of Origin
 step
-goto 41.52,63.85
+goto 49.21,53.56
 'Activate Obelisk of Origin |q Weapons of Destruction/Activate the Obelisk of Origin
 step
-goto 68.07,59.02
+goto 78.76,47.93
 'Reach Obelisk of Empowerment |q Weapons of Destruction/Reach the Obelisk of Empowerment
 step
-goto 68.07,59.02
+goto 78.76,47.93
 'Activate Obelisk of Empowerment |q Weapons of Destruction/Activate the Obelisk of Empowerment
 step
-goto 44.20,58.07 |q Weapons of Destruction/Reach the Obelisk of Inevitability
+goto 44.20,58.07 |q Weapons of Destruction/Reach the Obelisk of Inevitable
 step
-goto 35.45,43.41 |q Weapons of Destruction/Reach the Obelisk of Inevitability
+goto 35.45,43.41 |q Weapons of Destruction/Reach the Obelisk of Inevitable
 step
-goto 38.14,48.13
-'Reach Obelisk of Inevitability |q Weapons of Destruction/Reach the Obelisk of Inevitability
+goto 45.09,36.01
+'Reach Obelisk Inevitable |q Weapons of Destruction/Reach the Obelisk of Inevitable
 step
-goto 38.14,48.13
-click Portal to the Inevitability |q Weapons of Destruction/Enter the Portal
+goto 45.09,36.01
+click Portal to the Inevitable |q Weapons of Destruction/Enter the Portal
 step
-goto
-talk Emperor Vandacia |q Weapons of Destruction/Confront the Inevitability
+goto u30_ashenforest_wgt_base 72.21,50.22
+talk Emperor Vandacia |q Weapons of Destruction/Confront the Inevitable
 step
-goto
-click Portal to the Ashen Forest |q Weapons of Destruction/Escape the Inevitability
+goto 43.01,50.51
+click Portal to the Ashen Forest |q Weapons of Destruction/Escape the Inevitable
 step
-goto 38.87,47.91
+goto u30_ashenforest_ext_base 38.87,47.91
 talk Destron |q Weapons of Destruction/Talk to Destron
 step
 goto 38.87,47.91 
@@ -29137,72 +29427,75 @@ step
 goto 38.87,47.91
 talk Sombren |q Weapons of Destruction/Talk to Sombren
 step
-goto 40.17,35.06
+goto 47.53,21.26
 click Xynaa's Sanctuary |q Weapons of Destruction/Enter Xynaa's Sanctuary
 step
-goto u30_ashenforest_int_base 18.52,87.74
+goto u30_ashenforest_int_base 14.98,83.98
 talk Xynaa |q Weapons of Destruction/Talk to Xynaa
 step
+goto 15.31,81.69
 click Xynaa's Sanctuary Professional Hall |q Weapons of Destruction/Follow Xynaa
 step
-goto 47.48,78.51
+goto 50.81,72.41
 talk Sombren |q Weapons of Destruction/Talk to Sombren
 step
-goto 52.50,77.70
+goto 57.05,71.37
 click Xynaa's Sanctuary: Maze |q Weapons of Destruction/Retrieve Daedric Skull
 |tip Manually skip to the next step.
-goto 64.54,77.75
 step
+goto 71.96,71.45
 click Xynaa's Sanctuary: Spiders' Larder |q Weapons of Destruction/Retrieve Daedric Skull
 |tip Manually skip to the next step.
 step
+goto 85.75,71.37
 click Xynaa's Sanctuary: Gauntlet |q Weapons of Destruction/Retrieve Daedric Skull
 |tip Manually skip to the next step.
 step
-goto 71.00,58.50
+goto 79.92,47.62
 click Xynaa's Sanctuary: Spiders' Den |q Weapons of Destruction/Retrieve Daedric Skull
 |tip Manually skip to the next step.
 step
-goto 65.98,52.34
+goto 73.76,39.93
 click Xynaa's Sanctuary: Crematorium |q Weapons of Destruction/Retrieve Daedric Skull
 |tip Manually skip to the next step.
 step
+goto 66.30,46.17
 click Xynaa's Sanctuary: Treasure Chamber |q Weapons of Destruction/Retrieve Daedric Skull
 |tip Manually skip to the next step.
 step
-goto 56.01,68.65
+goto 61.41,60.24
 'Search Xynaa's Trophy Chest |q Weapons of Destruction/Retrieve Daedric Skull
 step
-goto 60.03,69.42
+goto 66.38,61.18
 click Xynaa's Sanctuary: Maze |q Weapons of Destruction/Find Sombren
 |tip Manually skip to the next step.
 step
-goto 54.41,77.79
+goto 59.41,71.48
 click Xynaa's Sanctuary: Spidernest |q Weapons of Destruction/Find Sombren
 |tip Manually skip to the next step.
 step
-goto 47.44,72.67
+goto 50.79,65.19
 click Xynaa's Sanctuary: Cellar |q Weapons of Destruction/Find Sombren
 |tip Manually skip to the next step.
 step
-goto 47.45,59.29 |q Weapons of Destruction/Find Sombren
+goto  50.68,48.38 |q Weapons of Destruction/Find Sombren
 step
-goto 47.55,40.79
+goto 50.76,25.74
 'Find Sombren |q Weapons of Destruction/Find Sombren
 step
-goto 47.55,40.79
+goto 50.76,25.74
 'Use Menthyx's Skull |q Weapons of Destruction/Recharge Sombren's Power
 step
-goto 46.28,40.45
+goto 49.16,25.43
 'Examine Xynaa's Book of Contracts |q Weapons of Destruction/Examine Xynaa's Book
 step
-goto 47.42,38.84
+goto 50.61.23,28
 click Xynaa's Sanctuary |q Weapons of Destruction/Enter Xynaa's Sanctuary
 step
-goto 47.42,28.79
-kill Xynaa
+goto 50.86,10.29
+kill Xynaa |q Weapons of Destruction/Kill Xynaa
 step
-goto 47.42,28.79
+goto 50.68,10.62
 click Portal to Gideon |q Weapons of Destruction/Return to Gideon
 step
 goto u30_Gideoncity_base 37.73,46.86
@@ -29231,8 +29524,8 @@ step
 goto 45.43,51.35
 talk Sombren |q Pyre of Ambition/Talk to Sombren
 step
-'Open Blackwood Map
-click Leyawiin Wayshrine
+goto 55.40,30.31
+click Gideon Wayshrine
 'Travel to Leyawiin in Blackwood |q Pyre of Ambition/Talk to Captain Rian Liore
 |tip Manually skip to the next step.
 step
@@ -29245,46 +29538,66 @@ step
 goto 83.47,52.22
 talk Captain Rian Liore |q Pyre of Ambition/Talk to Captain Rian Liore
 step
-goto 80.60,53.25
-click Leyawiin |q Giving Up the Ghost/Talk to Revus Demnevanni
+goto 80.59,53.39
+click Leyawiin |q Shrine of Nocturnal/Return to the Shrine of Nocturnal
 |tip Manually skip to the next step.
+step
+goto 24.64,63.96
+click Leyawiin Wayshrine
+'Travel to Fort Redmane in Blackwood |q Shrine of Nocturnal/Return to the Shrine of Nocturnal
+step
+goto blackwood_base 35.74,31.46
+'Return to the Shrine of Nocturnal |q Shrine of Nocturnal/Return to the Shrine of Nocturnal
+step
+goto 35.74,31.46
+'Place Shrine of Nocturnal |q Shrine of Nocturnal/Return the Shade Sickle
+step
+goto 34.94,32.20
+talk Millona Brolus
+turnin Shrine of Nocturnal
 step
 goto 36.55,26.99
 talk Duke of Crows
 accept Glittering Lies
 step
-goto 36.94,29.96
-click Arpenia |q Glittering Lies
+goto 36.93,26.98
+click Arpenia |q Glittering Lies/Enter Arpenia Ruins
+|tip Manually skip to the next step.
 step
-goto arpeniaL_base 42.57,29.82 |q Glittering Lies/Free the Blackfeather Court |count 1
+goto arpeniaL_base 42.57,29.82 |q Glittering Lies/.*Free the Blackfeather Court.* |count 1
 step
 goto 43.34,19.97
-talk Duke of Crows |q Glittering Lies/Free the Blackfeather Court |count 1
+talk Duke of Crows |q Glittering Lies/Talk to the Duke of Crows
+|tip Manually skip to the next step
 step
-goto 65.34,13.31 |q Glittering Lies/Free the Blackfeather Court |count 1
+goto 65.34,13.31 |q Glittering Lies/.*Free the Blackfeather Court.* |count 1
 step
 goto arpeniaH2_base 67.77,21.03
-'Destroy Ornate Mirror |q Glittering Lies/Free the Blackfeather Court |count 1
+'Destroy Ornate Mirror |q Glittering Lies/.*Free the Blackfeather Court.* |count 1
 step
-goto arpeniaL_base 64.37,22.53 |q Glittering Lies/Free the Blackfeather Court |count 2
+goto arpeniaL_base 64.37,22.53 |q Glittering Lies/.*Free the Blackfeather Court.* |count 2
 step
-goto 81.95,42.59 |q Glittering Lies/Free the Blackfeather Court |count 2
+goto 81.95,42.59 |q Glittering Lies/.*Free the Blackfeather Court.* |count 2
 step
 goto 64.18,56.95
-'Destroy Ornate Mirror |q Glittering Lies/Free the Blackfeather Court |count 2
+'Destroy Ornate Mirror |q Glittering Lies/.*Free the Blackfeather Court.* |count 2
 step
-goto 80.11,52.01 |q Glittering Lies/Free the Blackfeather Court |count 3
+goto 80.11,52.01 |achieve 2982/16
 step
-goto arpeniaH_base 85.85,45.05
+goto arpeniaH_base 87.03,55.79 |achieve 2982/16
+step
+goto 85.85,45.05
 click Skyshard |achieve 2982/16
 step
-goto 80.74,60.20 |q Glittering Lies/Free the Blackfeather Court |count 3
+goto 87.37,55.35 |q Glittering Lies/.*Free the Blackfeather Court.* |count 3
+step
+goto 63.81,64.06 |q Glittering Lies/.*Free the Blackfeather Court.* |count 3
 step
 goto 45.43,60.89
-'Destroy Ornate Mirror |q Glittering Lies/Free the Blackfeather Court |count 3
+'Destroy Ornate Mirror |q Glittering Lies/.*Free the Blackfeather Court.* |count 3
 step
 goto 45.64,61.95
-talk Duke of Crows |q Glittering Lies/Talk to Duke of Crows
+talk Duke of Crows |q Glittering Lies/Talk to the Duke of Crows
 step
 goto 40.81,56.08 |q Glittering Lies/Free the Duke of Crows
 step
@@ -29295,27 +29608,25 @@ step
 goto 20.73,36.95
 'Destroy Ornate Mirror |q Glittering Lies/Free the Duke of Crows
 step
-goto 20.73,34.15 |q Glittering Lies/Exit Arphenia Ruins
+goto arpeniaL_base 37.55,38.77 |q Glittering Lies/Exit Arpenia Ruins
 step
 goto arpeniaL_base 32.25,30.16
-click Blackwood |q Glittering Lies/Exit Arphenia Ruins
+click Blackwood |q Glittering Lies/Exit Arpenia Ruins
 step
 goto blackwood_base 36.58,26.96
 talk Duke of Crows
 turnin Glittering Lies
 step
 goto 30.22,22.63
-click Skyshard 2982/4
+click Skyshard |achieve 2982/4
 step
 goto 34.18,20.66
 wayshrine Doomvault Vulpinaz
 step
 'Open Blackwood Map
 click Bloodrun Wayshrine
-'Travel to Bloodrun in Blackwood
-step
-goto blackwood_base 64.11,18.19
-click Bloodrun Cave |q Shrine of Nocturnal/Search Bloodrun Cave
+'Travel to Bloodrun in Blackwood |q Pyre of Ambition/Talk to Eveli Sharp-Arrow
+|tip Manually skip to the next step.
 step
 goto 28.70,28.98
 talk Eveli Sharp-Arrow |q Pyre of Ambition/Talk to Eveli Sharp-Arrow
@@ -29325,6 +29636,7 @@ talk Keshu the Black Fin |q Pyre of Ambition/Talk to Keshu the Black Fin
 step
 goto 28.48,28.36
 click Fort Redmane |q Pyre of Ambition/Enter Fort Redmane
+|tip Manually skip to the next step.
 step
 goto u30_redmayne_ext_base 49.90,62.18
 'Listen to Captain Rian and Eveli |q Pyre of Ambition/Listen to Captain Rian and Eveli
@@ -29362,12 +29674,6 @@ step
 goto u30_redmayne_ext_base 35.09,53.61
 'Find the Ambitions |q Pyre of Ambition/Find the Ambitions
 step
-goto 34.58,50.16 
-'Defend the Ambitions |q Pyre of Ambition/Defend the Ambitions
-step
-goto 35.13,40.44
-'Defend the Ambitions |q Pyre of Ambition/Defend the Ambitions
-step
 goto 53.33,40.55
 'Defend the Ambitions |q Pyre of Ambition/Defend the Ambitions
 step
@@ -29393,7 +29699,7 @@ goto 38.04,41.68
 click Fort Redmane Museum Hall |q Pyre of Ambition/Reach the Courtyard
 |tip Manually skip to the next step.
 step
-goto 38.04,45.25 |q Pyre of Ambition/Reach the Courtyard
+goto u30_redmayne_int_base 38.04,45.25 |q Pyre of Ambition/Reach the Courtyard
 step
 goto 87.32,52.48 |q Pyre of Ambition/Reach the Courtyard
 step
@@ -29423,10 +29729,6 @@ step
 goto 28.14,28.90
 talk Sombren |q Pyre of Ambition/Talk to Sombren
 step
-goto 28.82,28.98
-talk Kenshu the Black Fin |q Pyre of Ambition/Talk to Kenshu the Black Fin
-|tip Manually skip to the next step.
-step
 goto 28.87,28.98
 talk Eveli Sharp-Arrow
 turnin Pyre of Ambition
@@ -29439,9 +29741,6 @@ click Fort Redmane Wayshrine
 step
 goto u30_Gideoncity_base 43.42,50.01
 click Temple of Dibella |q Heroes of Blackwood/Go to the Temple of Dibella
-step
-goto 48.49,46.57
-'Find
 step
 goto 48.49,46.57
 talk Priest Larusa |q Heroes of Blackwood/Talk to Larusa
@@ -29467,10 +29766,10 @@ step
 goto 51.68,47.41
 talk Eveli Sharp-Arrow |q Heroes of Blackwood/Talk to Eveli Sharp-Arrow
 step
-goto u30_Gideoncity_base 23.52,45.74 |q Heroes of the Blackwood/Go to the Victory Celebration
+goto u30_Gideoncity_base 23.52,45.74 |q Heroes of Blackwood/Go to the Victory Celebration
 step
 goto 77.28,43.95
-'Go to the Victory Celebration |q Heroes of the Blackwood/Go to the Victory Celebration
+'Go to the Victory Celebration |q Heroes of Blackwood/Go to the Victory Celebration
 step
 goto 77.28,43.95
 talk Keshu the Black Fin 
