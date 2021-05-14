@@ -21,6 +21,28 @@ talk Star-Gazer Herald
 accept The Star-Gazers
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
+goto 66.76,45.06
+click Cart to Belkarth |q The Star-Gazers/Board the Cart
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+'Open Stormhaven Map
+click Wayrest Wayshrine
+'Travel to Wayrest in Stormhaven |q The Star-Gazers |future
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto wayrest_base 40.65,15.43
+talk Star-Gazer Herald
+accept The Star-Gazers
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto 41.28,16.05
+click Cart to Belkarth |q The Star-Gazers/Board the Cart
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto 
 'Open Map Deshaan
 click Mournhold
 'Travel to Mournhold in Deshaan
@@ -32,8 +54,10 @@ talk Star-Gazer Herald
 accept The Star-Gazers
 |only if ZGV.Utils.GetFaction("player","notvet")=="EP"
 step
+goto 65.87,48.34
 click Cart to Belkarth |q The Star-Gazers/Board the Cart
 |tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
 step
 goto belkarth_base 52.76,39.47 |q The Star-Gazers/Ask About Star-Gazers In Town 
 step
@@ -65,6 +89,7 @@ accept Elemental Army
 step
 goto 25.10,56.15
 click Belkarth |q Elemental Army/Investigate the Proving Grounds Dolmen
+|tip Manually skip to the next step.
 step
 goto 25.96,70.29
 talk Brown-Tooth
@@ -77,11 +102,10 @@ wayshrine Seeker's Archive Wayshrine
 step
 goto 53.81,62.98 |q The Warrior's Call/Search for the Indecent Imperial at Bangkorai Gate
 step
-goto 51.57,62.90
+goto 57.80,58.67
+wayshrine Spellscar Wayshrine 
 step
 goto 57.80,58.67
-wayshrine Spellscar Wayshrine
-step
 click Spellscar Wayshrine
 'Travel to Seeker's Archive in Craglorn |q The Warrior's Call/Search for the Indecent Imperial at Bangkorai Gate
 |tip Manually skip to the next step.
@@ -106,7 +130,7 @@ goto burriedsands_base 40.61,63.69 |q The Warrior's Call/Search for the Burial C
 step
 goto 33.65,37.56 |q The Warrior's Call/Search for the Burial Chamber
 step
-goto 18.40,42.07
+goto 18.33,42.10
 click Forgotten Burial Chamber |q The Warrior's Call/Search for the Burial Chamber
 step
 goto 09.18,50.40
@@ -125,10 +149,13 @@ click skyshard |achieve 727/7
 step
 'Open Craglorn Map
 click Sand Path Wayshrine
-'Travel to Sandy Path in Craglorn
+'Travel to Sandy Path in Craglorn |q The Warrior's Call/Find the Ruined Library
 |tip Manually skip to the next step.
 step
 goto craglorn_base 37.88,71.89
+'Find the Ruined Library |q The Warrior's Call/Find the Ruined Library
+step
+goto 37.88,71.89
 click Ruined Library |q The Warrior's Call/Enter the Ruined Library
 step
 goto North |q The Warrior's Call/Help Titus Locate the Legend of Tarish-Zi
@@ -162,7 +189,7 @@ goto 42.53,53.91
 step
 'Open Craglorn Map
 click Sandy Path Wayshrine
-'Travel to Sandy Path in Craglorn
+'Travel to Sandy Path in Craglorn |q The Warrior's Call/Meet Titus In the Tombs of the Na-Totambu
 |tip Manually skip to the next step.
 step
 goto 31.65,60.37 |q The Warrior's Call/Meet Titus In the Tombs of the Na-Totambu
@@ -190,6 +217,7 @@ goto cryptoftarishzi_base 37.91,55.12
 step
 goto 40.62,57.33
 click Crypt Tarish-Zi |q The Warrior's Call/Search for Emperor Tarish-Zi
+|tip Manually skip to the next step.
 step
 goto cryptoftarishzi2_base 41.40,86.98
 kill Emperor Tarish-Zi |q The Warrior's Call/Defeat Emperor Tarish-Zi
@@ -198,7 +226,7 @@ goto 41.48,63.46
 talk Thief 
 turnin The Warrior's Call
 step
-goto cryptoftarishzizone_base 41.62,58.56
+goto 41.62,58.56
 click Tombs of the Na-Totambu |achieve 727/11
 |tip Manually skip to the next step.
 step
@@ -214,8 +242,6 @@ goto belkarth_base 70.25,23.83 |q Elemental Army/Investigate the Proving Grounds
 step
 goto craglorn_base 79.08,63.68 
 wayshrine Elinhir Wayshrine
-step
-goto 72.49,62.00 |q Elemental Army/Investigate the Proving Grounds Dolmen
 step
 goto 79.02,52.56
 wayshrine Inazzur's Hold Wayshrine
@@ -236,9 +262,7 @@ click Belkarth Wayshrine
 step
 goto belkarth_base 83.80,26.43 |q Elemental Army/Find Kelmen Locke
 step
-goto craglorn_base 64.87,65.35 |q Elemental Army/Find Kelmen Locke
-step
-goto 66.45,67.80
+goto craglorn_base 66.45,67.80
 click Haddock's Market |q Elemental Army/Find Kelmen Locke
 |tip Manually skip to the next step.
 step
@@ -257,6 +281,9 @@ step
 goto 71.77,16.39
 click Tower |q Elemental Army/Find Kelmen Locke
 |tip Manually skip to the next step.
+step
+goto 71.77,16.39
+'Find Kelmen Locke |q Elemental Army/Find Kelmen Locke
 step
 goto 71.77,16.39
 talk Kelmen Locke |q Elemental Army/Talk to Kelmen Locke
@@ -308,9 +335,7 @@ click Elinhir Wayshrine
 'Travel to Elinhir in Cragslorn |q Elemental Army/Defeat the Flame Monarch
 |tip Manually skip to the next step.
 step
-goto craglorn_base 72.30,61.63 |q Elemental Army/Defeat the Flame Monarch
-step
-goto 74.34,70.12 |q Elemental Army/Defeat the Flame Monarch
+goto craglorn_base 74.34,70.12 |q Elemental Army/Defeat the Flame Monarch
 step
 goto 74.36,72.65 
 click Molavar |q Elemental Army/Defeat the Flame Monarch
@@ -365,7 +390,7 @@ click Left Focus
 click Middle Focus 
 click Right Focus |q Elemental Army/Summon the Storm Monarch
 step
-89.65,67.76
+goto 89.65,67.76
 'Listen to the Atronachs |q Elemental Army/Listen to the Atronachs
 step
 goto 89.65,67.76
@@ -373,11 +398,10 @@ talk Kelmen |q Elemental Army/Talk to Kelmen
 step
 'Open Craglorn Map
 click Elinhir Wayshrine
-'Travel to Elinhir in Cragslorn
+'Travel to Elinhir in Cragslorn |q Elemental Army/Kill the Air Monarch
 |tip Manually skip to the next step.
 step
-goto craglorn_base 82.85,62.94
-'Follow path |q Elemental Army/Kill the Air Monarch
+goto craglorn_base 82.85,62.94 |q Elemental Army/Kill the Air Monarch
 step
 goto 81.16,57.64  |q Elemental Army/Kill the Air Monarch
 step
@@ -413,11 +437,13 @@ kill Parel Nirus |q Elemental Army/Kill the Air Monarch
 step
 goto balamathairmonarchcham_base 72.02,08.77
 click Balamath |q Elemental Army/Talk to Kelmen
+|tip Manually skip to the next step.
 step
 goto balamath_base 26.38,59.73
 talk Kelemen
 turnin Elemental Army
 step
+goto 27.95,55.08
 talk Cursare
 accept The Missing Guardian
 step
@@ -436,6 +462,7 @@ goto 25.41,54.44
 |tip Upstairs insde Private Quarters
 'Find Hara at the Star-Gazer's Observatory |q The Missing Guardian/Find Hara at the Star-Gazer's Observatory
 step
+goto 25.44,54.52
 talk Titus Valerius |q The Missing Guardian/Talk to Titus Valerius
 step
 goto 25.05,56.15
@@ -446,6 +473,7 @@ step
 goto 64.79,86.63
 'Meet Titus and Kelmen at the Lake |q The Missing Guardian/Meet Titus and Kelmen at the Lake
 step
+goto 64.56,86.71
 talk Kelmen Locke |q The Missing Guardian/Talk to Kelmen Locke
 step
 goto craglorn_base 58.39,75.69
@@ -467,9 +495,7 @@ goto 58.11,75.98
 click Reinhold's Retreat |q The Missing Guardian/Enter Reinhold's Retreat
 |tip Manually skip to the next step.
 step
-goto reinholdsretreatcave_base 15.34,24.91 |q The Missing Guardian/Search the Ruins
-step
-goto 35.87,54.78 |q The Missing Guardian/Search the Ruins
+goto reinholdsretreatcave_base 35.87,54.78 |q The Missing Guardian/Search the Ruins
 step
 goto 41.01,58.73
 click Hall of the Oathkeepers |q The Missing Guardian/Search the Ruins
@@ -496,9 +522,15 @@ goto 24.80,42.47
 talk Hara 
 turnin The Missing Guardian
 step
+goto 25.06,56.15
+click Belkarth |q Slithering Brood |future
+|tip Manually skip to the next step.
+step
 goto 25.82,60.59
 talk Thaenaneth
 accept Slithering Brood
+step
+goto 40.11,68.22 |q Slithering Brood/Meet Regent Cassipia Near Dragonstar
 step
 goto 49.89,32.36
 click Belkarth Wayshrine 
@@ -509,7 +541,6 @@ goto craglorn_base 23.02,42.20
 wayshrine Shada's Tear
 step
 goto craglorn_dragonstar_base 41.56,73.65
-'Follow the road |q Slithering Brood/Meet Regent Cassipia Near Dragonstar
 wayshrine Dragonstar
 step
 goto 25.87,66.79
@@ -519,9 +550,7 @@ goto craglorn_base 08.68,30.54
 click Fearfangs Cavern |achieve 897
 |tip Manually skip to the next step.
 step
-goto fearfang_base 70.19,75.48 |achieve 897
-step
-goto 81.51,56.32 |achieve 897
+goto fearfang_base 81.51,56.32 |achieve 897
 step
 goto 64.83,34.41  |achieve 897
 step
@@ -571,6 +600,7 @@ goto craglorn_base 27.98,30.00 |q Slithering Brood/Kill the Progenitor Mantikora
 step
 goto 28.26,26.35
 click Serpent's Nest |achieve 886
+|tip Manually skip to the next step.
 step
 goto serpentsnest_base 76.10,52.51 |achieve 886
 step
@@ -593,6 +623,7 @@ goto 41.01,52.22 |q Slithering Brood/Kill the Progenitor Mantikora
 step
 goto 40.27,59.13
 click Spawning Pools Chamber |q Slithering Brood/Kill the Progenitor Mantikora
+|tip Manually skip to the next step.
 step
 goto 36.59,69.66
 kill Scaled Court Mobs 
@@ -643,7 +674,9 @@ goto 58.27,42.70
 click Ilthag's Undertower |achieve 887
 |tip Manually skip to the next step.
 step
-goto ilthagsundertower_base 56.05,66.13  |q The Serpent's Fang/Kill Ilthag Ironblood
+goto ilthagsundertower_base 56.05,66.13
+'Drop down in the hole |q The Serpent's Fang/Kill Ilthag Ironblood
+|tip Manually skip to the next step.
 step
 goto ilthagsundertower02_base 29.41,74.10 |q The Serpent's Fang/Kill Ilthag Ironblood
 step
@@ -659,6 +692,7 @@ kill Rahk and Vosh
 kill Ilthag Ironblood
 'Explore Ilthag's Undertower |achieve 887
 step
+goto 38.21,61.98
 talk Little Leaf |q The Serpent's Fang/Talk to Little Leaf
 step
 goto 43.56,60.99
@@ -667,6 +701,7 @@ click Ilthag's Undertow |q The Serpent's Fang/Meet Little Leaf at the Valley of 
 step
 goto 55.53,88.09
 click Craglorn |q The Serpent's Fang/Meet Little Leaf at the Valley of Scars
+|tip Manually skip to the next step.
 step
 goto craglorn_base 53.98,35.51
 'Meet Little Leaf at the Valley of Scars |q The Serpent's Fang/Meet Little Leaf at the Valley of Scars
@@ -700,15 +735,15 @@ step
 goto 62.74,55.88
 click Skyshard |achieve 912/6
 step
-goto 53.90,56.02
-'Climb up rocks and cross the bridge |q The Serpent's Fang/Enter the Throne Room
-|tip Manually skip to the next step.
+goto 50.18,58.99 |q The Serpent's Fang/Enter the Throne Room
 step
 goto 51.89,46.68
 click Exarch's Stronghold |q The Serpent's Fang/Enter the Throne Room
 |tip Manually skip to the next step.
 step
 goto 68.69,16.64 |q The Serpent's Fang/Enter the Throne Room
+step
+goto 68.65,11.71 |q The Serpent's Fang/Enter the Throne Room
 step
 goto 49.20,07.99
 click Exarch Braadoth's Abode |q The Serpent's Fang/Enter the Throne Room
@@ -737,6 +772,7 @@ goto 40.90,70.82
 click Exarch Stronghold |achieve 898
 |tip Manually skip to the next step.
 step
+goto 41.74,85.07
 kill Ordooth the Corruptor
 'Explore Exarch's Stronghold |achieve 898
 step
@@ -752,6 +788,7 @@ goto craglorn_base 54.89,25.31
 talk Little Leaf
 turnin The Serpent's Fang
 step
+goto 54.73,25.52
 talk Anneke
 |tip She runs up the stairs to you.
 accept Dawn of the Exalted Viper
@@ -766,11 +803,18 @@ step
 goto 23.10,59.58
 talk Titus Valerius |q Dawn of the Exalted Viper/Talk to Titus in Belkarth
 step
+goto belkarth_base 33.29,69.88 |q Dawn of the Exalted Viper/Enter the Howling Sepulchers
+step
 goto 49.84,32.64
 click Belkarth Wayshrine
 'Travel to Valley of Scars in Craglorn |q Dawn of the Exalted Viper/Enter the Howling Sepulchers
+|tip Manually skip to the next step.
 step
 goto craglorn_base 66.26,33.09 |q Dawn of the Exalted Viper/Enter the Howling Sepulchers
+step
+goto 66.32,33.13
+click The Howling Sepulchers |q Dawn of the Exalted Viper/Enter the Howling Sepulchers
+|tip Manually skip to the next step
 step
 goto howlingsepulchersoverland_base 47.40,51.90 |achieve 895
 step
@@ -800,8 +844,10 @@ goto howlingsepulchersscrying_base 53.94,51.47
 |tip Click Ritual fires quickly its timed.
 click Ritual Fires |q Dawn of the Exalted Viper/Activate the Ritual Fires
 step
+goto 53.94,51.47
 'Observe the Farsight |q Dawn of the Exalted Viper/Observe the Farsight
 step
+goto 53.94,51.47
 talk The Thief |q Dawn of the Exalted Viper/Talk to the Thief
 step
 'Open Craglorn Map
@@ -818,7 +864,7 @@ step
 goto lothna_base 40.10,41.08
 click Skyshard |achieve 912/3
 step
-goto 64.41,56.39' |achieve 889
+goto 64.41,56.39 |achieve 889
 step
 goto 61.67,44.81 |achieve 889
 step
@@ -852,6 +898,8 @@ goto 25.11,61.20
 talk The Celestial Warrior
 accept The Time-Lost Warrior
 step
+goto 30.47,70.21 |q The Time-Lost Warrior/Find Titus Valerius
+step
 goto 49.78,32.44
 click Belkarth Wayshrine
 'Travel to Valley of Scars in Craglorn |q The Time-Lost Warrior/Find Titus Valerius
@@ -874,11 +922,12 @@ turnin The Time-Lost Warrior
 step
 |tip ****GROUP QUESTS ONLY FROM THIS POINT ON****
 |tip ****HAVE RING OF THE PALE ORDER FOR SOLO****
+|tip ***OR HAVE A COMPANION UNLOCK AND LEVEL 20**
 |tip Manually skip to the next step.
 step
 'Open Craglorn Map
 click Belkarth Wayshrine
-'Travel to Belkarth in Craglorn The Shattered and the Lost |future
+'Travel to Belkarth in Craglorn |q The Shattered and the Lost |future
 |tip Manually skip to the next step.
 step
 goto belkarth_base 71.58,54.43
@@ -18043,7 +18092,7 @@ talk Sai Sahan |q The Horn of Ja'darri/Travel to Vahlokzin's Lair
 'Tell him _"I'm ready to depart. (Fast Travel to Vahlokzin's Lair)"_
 |tip Manually skip to the next step.
 step
-goto DormantVolcano_Base 45.51,69.81
+goto DormantVolcano_Base 45.51,69.81 |q The Horn of Ja'darri/Enter Vahlokzin's Lair
 step
 goto 46.87,49.83 
 click Vahlokzin's Lair |q The Horn of Ja'darri/Enter Vahlokzin's Lair
@@ -18124,7 +18173,9 @@ click Wagon |q The Horn of Ja'darri/Return to the Valley of Blades
 |tip Manually skip to the next step.
 step
 goto valleyofblades1_base 55.68,44.00
-talk Kasura
+talk Kasura |q The Horn of Ja'darri/Talk to Kasura
+step
+goto 55.68,44.00
 talk Sahan
 turnin The Horn of Ja'darri
 step
@@ -18353,7 +18404,6 @@ goto 68.23,74.70 |q A Childhood in Flames/Search the Slaver Caves
 step
 goto 70.00,74.36
 'Search the Slaver Caves |q A Childhood in Flames/Search the Slaver Caves
-|tip Manually skip to the next step.
 step
 goto 70.00,74.36
 talk Malahbu |q A Childhood in Flames/Talk to Malahbu
@@ -18535,9 +18585,11 @@ click Dragonguard Sanctum Wayshrine
 'Travel to Senchal in Southern Elsweyr |q Uneasy Alliances/Meet Za'ji at Black Heights
 |tip Manually skip to the next step.
 step
-goto senchal_base 45.93,63.44
+goto senchal_base 56.36,67.17 |q Uneasy Alliances/Meet Za'ji at Black Heights
 step
-goto southernelsweyr_base 38.41,60.96 |q The Deadliest Prey |future
+goto 34.47,79.49 |q Uneasy Alliances/Meet Za'ji at Black Heights
+step
+goto southernelsweyr_base 38.41,60.96 |q Uneasy Alliances/Meet Za'ji at Black Heights
 step
 goto 37.58,56.49
 talk Skordo the Knife
@@ -18741,7 +18793,7 @@ step
 goto 57.53,09.42
 'Drink Sacred Shrine |q Skooma Sequela/.*Drink the Sacramental Waters at Five Shrines.* |count 2
 step
-48.80,09.66 |achieve 2558
+goto 48.80,09.66 |achieve 2558
 step
 goto 26.04,25.77 |achieve 2558
 step
@@ -18759,7 +18811,7 @@ step
 goto moonlitcove02_base 55.22,60.96
 'Drink Sacred Shrine |q Skooma Sequela/.*Drink the Sacramental Waters at Five Shrines.* |count 4
 step
-goto 50.99,61.13
+goto 50.99,61.13 |q Skooma Sequela/.*Drink the Sacramental Waters at Five Shrines.* |count 5
 step
 goto moonlitcove01_base 48.70,67.41 |q Skooma Sequela/.*Drink the Sacramental Waters at Five Shrines.* |count 5
 step
@@ -18798,10 +18850,13 @@ goto 20.42,36.41
 talk Clan Mother Tadali |q Uneasy Alliances/Talk to Clan Mother Tadali
 step
 goto 20.42,36.41
-'Listen to Clan Mother Tadali |q Uneasy Allinaces/Listen to Clan Mother Tadali
+'Listen to Clan Mother Tadali |q Uneasy Alliances/Listen to Clan Mother Tadali
 step
 goto 20.47,36.47
 talk Za'ji |q Uneasy Alliances/Talk to Za'ji
+step
+goto 20.47,36.47
+'Wait for Za'ji |q Uneasy Alliances/Wait for Za'ji
 step
 goto 20.19,37.34
 'Use Khenarthic Bell
@@ -18836,7 +18891,6 @@ goto 20.96,32.82
 talk Adara'hai
 accept Chiaroscuro Crossroads
 step
-step
 goto 17.80,33.48 |q Chiaroscuro Crossroads/Head to the Wall of Life
 step
 goto 14.00,26.72
@@ -18849,10 +18903,10 @@ goto 12.73,27.22
 talk Adara'hai |q Chiaroscuro Crossroads/Talk to Adara'hai
 step
 goto 12.41,27.07
-'Strike Khenarthi Bell |q Chiaroscuro Crossroads/Strike the Right Bell
+'Strike Khenarthic Bell |q Chiaroscuro Crossroads/Strike the Right Bell
 step
 goto 12.82,27.56
-'Strike Khenarthi Bell |q Chiaroscuro Crossroads/Strike the Left Bell
+'Strike Khenarthic Bell |q Chiaroscuro Crossroads/Strike the Left Bell
 step
 goto 21.04,31.57
 click Vijari's House |q Chiaroscuro Crossroads/Go to Vijari's Home
@@ -19101,6 +19155,7 @@ talk General Renmus |q Order of the New Moon/Talk to General Renmus
 step
 goto 81.79,59.82
 click Senchal Palace  |q Order of the New Moon/Talk to Buzinda
+|tip Manually skip to the next step.
 step
 goto 75.80,66.02
 talk Buzinda |q Order of the New Moon/Talk to Buzinda
@@ -19218,9 +19273,7 @@ goto 51.51,82.09
 click Senchal Outlaws Refuge |q Order of the New Moon/Enter the Black Kiergo
 |tip Manually skip to the next step.
 step
-goto Senchal Outlaws Refuge 41.56,61.76 |q Order of the New Moon/Enter the Black Kiergo
-step
-goto 34.49,87.31
+goto Senchal Outlaws Refuge 34.49,87.31
 'Wait for Caska |q Order of the New Moon/Enter the Black Kiergo
 step
 goto 34.49,87.31
@@ -19295,6 +19348,7 @@ step
 goto 32.46,57.72
 click Western Plains Wayshrine
 'Travel to Black Heights in Southern Elsweyr |q Order of the New Moon/Travel to the New Moon Fortress
+|tip Manually skip to the next step.
 step
 goto 25.72,33.55 |q Order of the New Moon/Travel to the New Moon Fortress
 step
@@ -19332,7 +19386,7 @@ step
 goto 51.14,32.27
 'Search Hizhikar's Cargo |q Another Khajiit's Tale/Find the Gourmet Moon-Sugar
 step
-goto 40.51,29.62 |q Dreams of the Forsaken |future
+goto 46.98,28.74 |q Order of the New Moon/Travel to the New Moon Fortress
 step
 goto 46.95,28.81
 talk Catina Garrana
@@ -19342,7 +19396,10 @@ goto 48.24,30.73
 click Forsaken Citadel |q Dreams of the Forsaken/Enter the Forsaken Citadel
 |tip Manually skip to the next step.
 step
-goto houseofembersinside_base 58.64,59.10
+goto houseofembersinside_base 48.24,30.73
+'Enter the Forsaken Citadel |q Dreams of the Forsaken/Enter the Forsaken Citadel
+step
+goto 58.64,59.10
 'Find the Letter |q Dreams of the Forsaken/Find the Letter
 step
 goto 58.64,59.10
@@ -19356,7 +19413,9 @@ step
 goto 39.86,38.49
 click Skyshard |achieve 2562/6
 step
-goto 29.63,30.72 |q Dreams of the Forsaken/.*Destroy the Corrupted Totems.* |count 1
+goto 22.77,28.21 |q Dreams of the Forsaken/.*Destroy the Corrupted Totems.* |count 1
+step
+goto 46.61,31.85 |q Dreams of the Forsaken/.*Destroy the Corrupted Totems.* |count 1
 step
 goto 46.61,21.49
 'Destroy Honoria's Sword |q Dreams of the Forsaken/.*Destroy the Corrupted Totems.* |count 1
@@ -19382,7 +19441,7 @@ kill Commandant Weston
 step
 goto 45.75,27.74
 |tip Upstairs in this building
-'Destroy Honoria's Child's Toy |q Dreams of the Forsaken/.*Destroy the Corrupted Totems.* |count 3
+'Destroy Child's Toy |q Dreams of the Forsaken/.*Destroy the Corrupted Totems.* |count 3
 step
 goto 45.75,27.74
 |tip Go back downstairs
@@ -19392,7 +19451,6 @@ step
 goto houseofembersoutside_base 24.25,64.59
 click Forsaken Citadel Dungeons |q Dreams of the Forsaken/Return to Jano
 |tip Manually skip to the next step.
-step
 step
 goto houseofembersinside_base 63.32,69.33
 'Return to Jano |q Dreams of the Forsaken/Return to Jano
@@ -19425,11 +19483,11 @@ step
 goto 29.80,22.14
 talk Vinbaza |q Order of the New Moon/Talk to New Moon Fortress Guard
 step
-goto newmoonfortress1_base 29.71,21.93
+goto 29.71,21.93
 click New Moon Fortress |q Order of the New Moon/Enter the New Moon Fortress
 |tip Manually skip to the next step.
 step
-goto 79.40,39.98
+goto newmoonfortress1_base 79.40,39.98
 talk Trial Master Zayri |q Order of the New Moon/Talk to Trial Master Zayri
 step
 goto 89.09,40.76 |q Order of the New Moon/Complete the First Trial
@@ -19593,6 +19651,7 @@ turnin Masterpieces
 step
 goto 35.22,68.54
 click Senchal |q Another Khajiit's Tale/Talk to Zhasim
+|tip Manually skip to the next step.
 step
 goto senchal_base 56.68,71.79 |q Another Khajiit's Tale/Talk to Zhasim
 step
@@ -19613,6 +19672,8 @@ talk Sai Sahan
 turnin Order of the New Moon
 accept The Pride of Alkosh
 step
+goto 19.87,74.88 |q The Pride of Alkosh/Talk to Nahfahlaar
+step
 goto 33.27,74.78
 click Nahfahlaar's Chamber |q The Pride of Alkosh/Talk to Nahfahlaar
 |tip Manually skip to the next step.
@@ -19623,6 +19684,7 @@ step
 'Open Southern Elsweyr Map
 click Pridehome Wayshrine
 'Travel to Pridehome in Southern Elsweyr |q The Pride of Alkosh/Go to Pridehome
+|tip Manually skip to the next step.
 step
 goto southernelsweyr_base 40.99,26.72
 'Go to Pridehome |q The Pride of Alkosh/Go to Pridehome
@@ -19632,19 +19694,14 @@ goto 41.70,23.53
 step
 goto 41.70,23.53
 talk Caska |q The Pride of Alkosh/Talk to Caska
-|tip Manually skip to the next step.
 step
-goto 41.70,23.53
-'Examine Letter from Clan Mother Tadali |q The Pride of Alkosh/Search the Area
-|tip Manually skip to the next step.
-step
-goto 41.70,23.53
+goto 36.64,23.82
 'Examine Letter from Clan Mother Tadali |q The Pride of Alkosh/Search the Area
 step
 goto 41.70,23.53
 talk Za'ji |q The Pride of Alkosh/Talk to Za'ji
 step
-goto 41.70,23.53
+goto 40.85,20.29
 'Search the Area |q The Pride of Alkosh/Search the Area
 step
 goto 40.85,20.29
@@ -19665,6 +19722,7 @@ goto 36.05,17.88
 step
 goto 34.80,17.76
 click Pridehome Temple |q The Pride of Alkosh/Enter the Temple
+|tip Manually skip to the next step.
 step
 goto 33.86,17.37
 talk Clan Mother Hizuni |q The Pride of Alkosh/Talk to Clan Mother Hizuni
@@ -19677,6 +19735,7 @@ talk Sai Sahan |q The Pride of Alkosh/Talk to Sai Sahan
 step
 goto 35.40,18.00
 click Pridehome Temple Grounds |q The Pride of Alkosh/Find Nahfahlaar
+|tip Manually skip to the next step.
 step
 goto 35.30,18.66
 'Find Nahfahlaar |q The Pride of Alkosh/Find Nahfahlaar
@@ -19686,7 +19745,8 @@ talk Nahfahlaar |q The Pride of Alkosh/Talk to Nahfahlaar
 step
 'Open Southern Elsweyr Map
 click Black Heights Wayshrine
-'Travel to Black Heights in Southern Elsweyr |q J'saad's Stone/Talk to Adhimba
+'Travel to Black Heights in Southern Elsweyr |q J'saad's Stone/Find Adhimba
+|tip Manually skip to the next step.
 step
 goto 19.46,30.24
 talk Adhimba
@@ -19717,6 +19777,7 @@ step
 goto 27.95,39.35
 click Black Heights Wayshrine
 'Travel to Western Plains in Southern Elsweyr |q The Pride of Alkosh/Meet Aeliah Renmus at the Statue
+|tip Manually skip to the next step.
 step
 goto southernelsweyr_base 29.24,57.75 |q The Pride of Alkosh/Meet Aeliah Renmus at the Statue
 step
@@ -19864,9 +19925,9 @@ goto 67.56,79.70
 'Move Game Cube to this location |q The Pride of Alkosh/Pass the Third Trial
 |tip Manually skip to the next step.
 step
-goto 71.82,77.40
+goto 71.22,76.86
 click Grappling Point |q The Pride of Alkosh/Pass the Third Trial
-|tip back to the door at beginning.
+|tip Corner of platform where you can in.
 |tip Manually skip to the next step.
 step
 goto 76.92,83.73
@@ -19912,7 +19973,9 @@ click Dragonguard Sanctuary Wayshrine
 'Travel to Dragonguard Sanctum in Southern Elsweyr |q The Pride of Alkosh/Leave the Halls of the Highmane
 |tip Manually skip to the next step.
 step
-goto ELS_DG_Sanctuary_base 33.27,74.68
+goto 19.95,74.14  ELS_DG_Sanctuary_base |q The Pride of Alkosh/Talk to Sai Sahan
+step
+goto 33.27,74.68
 click Nahfahlaar's Chamber |q The Pride of Alkosh/Talk to Sai Sahan
 |tip Manually skip to the next step.
 step
@@ -19972,6 +20035,8 @@ talk Sai Sahan |q The Dragonguard/Talk to Sai Sahan
 step
 goto 57.40,61.85
 'Ignite Dragonguard Brazier |q The Dragonguard/Light the First Flame
+step
+goto 71.84,59.31 |q The Dragonguard/Light the Fires
 step
 goto 53.32,87.19
 'Ignite Dragonguard Brazier |q The Dragonguard/Light the Fires
@@ -20044,6 +20109,8 @@ step
 goto ELS_DG_Sanctuary_base 31.16,67.45
 talk Sai Sahan |q The Dragonguard/Talk to Sai Sahan
 step
+goto 19.80,74.34 |q The Dragonguard/Talk to Nahfahlaar
+step
 goto 33.27,74.67
 click Nahfahlaar's Chamber |q The Dragonguard/Talk to Nahfahlaar
 |tip Manually skip to the next step.
@@ -20076,10 +20143,6 @@ step
 goto 30.30,26.96
 talk Sai Sahan |q The Dark Aeon/Talk to Sai Sahan
 step
-goto 31.50,24.83 |q The Dark Aeon/Find a Way Inside
-step
-goto 29.15,24.75 |q The Dark Aeon/Find a Way Inside
-step
 goto 27.01,24.39
 'Find a Way Inside |q The Dark Aeon/Find a Way Inside
 step
@@ -20111,6 +20174,9 @@ tip Manually skip to the next step.
 step
 goto 47.07,61.38
 'Approach the Aeonstones |q The Dark Aeon/Approach the Aeonstones
+step
+goto 49.34,61.60
+'Wait for Tharn to Open the Portal |q The Dark Aeon/Wait for Tharn to Open the Portal
 step
 goto 49.34,61.60
 click the Portal to Dragonhold |q The Dark Aeon/Enter the Portal to Dragonhold
@@ -20150,10 +20216,13 @@ goto 70.03,61.87 |q The Dark Aeon/Explore the Ancient Ruins
 step
 goto dragonholdlower02_base 69.90,64.96 |q The Dark Aeon/Explore the Ancient Ruins
 step
-goto 44.35,65.57
+goto dragonholdlower01_base 45.01,66.56
+'Explore the Ancient Ruins |q The Dark Aeon/Explore the Ancient Ruins
+step
+goto 45.01,66.56
 'Wait for Abnur Tharn |q The Dark Aeon/Wait for Abnur Tharn
 step
-goto 44.35,65.57
+goto 45.01,66.56
 talk Abnur Tharn |q The Dark Aeon/Talk to Abnur Tharn
 step
 goto 55.22,69.65
@@ -20161,6 +20230,8 @@ click Dragonhold Depths |q The Dark Aeon/Find the Aegis
 |tip Manually skip to the next step.
 step
 goto dragonholdlower03_base 44.34,31.44 |q The Dark Aeon/Find the Aegis
+step
+goto 31.49,20.02 |q The Dark Aeon/Find the Aegis
 step
 goto 24.82,33.58
 'Find the Aegis |q The Dark Aeon/Find the Aegis
@@ -20179,7 +20250,7 @@ click Upper Tunnels |q The Dark Aeon/Escape Dragonhold
 |tip Manually skip to the next step.
 step
 goto 57.12,77.41
-click Dragonhold |q The Dark Aeon/Escape Dragonhold
+click Dragonhold Surface |q The Dark Aeon/Escape Dragonhold
 |tip Manually skip to the next step.
 step
 goto 57.02,71.35
@@ -20197,7 +20268,9 @@ click Dragonguard Sanctum Wayshrine
 'Travel to Dragonguard Sanctum in Elsweyr |q The Dark Aeon/Go to Nahfahlaar's Chamber
 |tip Manually skip to the next step.
 step
-goto ELS_DG_Sanctuary_base 33.27,74.60
+goto ELS_DG_Sanctuary_base 20.40,74.90 |q The Dark Aeon/Go to Nahfahlaar's Chamber
+step
+goto 33.27,74.60
 click Nahfahlaar's Chamber |q The Dark Aeon/Go to Nahfahlaar's Chamber
 step
 goto ELS_Dragonguard_island01_base 50.28,35.52 
@@ -20209,7 +20282,9 @@ goto 46.37,37.41
 click Dragonguard Sanctum |q New Moon Rising/Talk to Khamira
 |tip Manually skip to the next step.
 step
-goto ELS_DG_Sanctuary_base 63.97,55.15
+goto ELS_DG_Sanctuary_base 19.19,69.34 |q New Moon Rising/Talk to Khamira
+step
+goto 63.97,55.15
 talk Khamira |q New Moon Rising/Talk to Khamira
 step
 goto 63.98,55.16
@@ -20225,6 +20300,7 @@ click Western Plains Wayshrine
 step
 goto southernelsweyr_base 16.52,61.97
 click Moonlit Cove |q New Moon Rising/Go to Moonlit Cove
+|tip Manually skip to the next step.
 step
 goto moonlitcove05_base 67.16,63.54
 talk Sai Sahan |q New Moon Rising/Talk to Sai Sahan
@@ -20249,23 +20325,27 @@ goto 18.80,39.12
 |tip Follow Spirit Alfiq
 'Take Tablet Fragment |q New Moon Rising/.*Find the Missing Tablet Pieces.* |count 2
 step
+goto 06.74,44.22 |q New Moon Rising/.*Find the Missing Tablet Pieces.* |count 3
+step
 goto 27.21,66.49 |q New Moon Rising/.*Find the Missing Tablet Pieces.* |count 3
 step
 goto moonlitcove05_base 56.92,54.32  |q New Moon Rising/.*Find the Missing Tablet Pieces.* |count 3
 step
-goto moonlitcove01_base 74.89,37.39 |q New Moon Rising/.*Find the Missing Tablet Pieces.* |count 3
+goto moonlitcove01_base 74.20,32.90 |q New Moon Rising/.*Find the Missing Tablet Pieces.* |count 3
 step
-goto 60.84,22.46 |q New Moon Rising/.*Find the Missing Tablet Pieces.* |count 3
+goto 53.26,15.97 |q New Moon Rising/.*Find the Missing Tablet Pieces.* |count 3
 step
-goto 56.92,54.32  |q New Moon Rising/.*Find the Missing Tablet Pieces.* |count 3
+goto 42.78,06.91  |q New Moon Rising/.*Find the Missing Tablet Pieces.* |count 3
 step
-goto 33.36,52.00 |q New Moon Rising/.*Find the Missing Tablet Pieces.* |count 3
+goto 31.52,31.06 |q New Moon Rising/.*Find the Missing Tablet Pieces.* |count 3
 step
-goto 33.18,45.69
+goto 32.95,45.84
 |tip Follow Spirit Alfiq
 'Take Tablet Fragment |q New Moon Rising/.*Find the Missing Tablet Pieces.* |count 3
 step
 goto 39.23,63.44 |q New Moon Rising/Restore the Tablet
+step
+goto 32.15,72.12 |q New Moon Rising/Restore the Tablet
 step
 goto 44.89,85.01
 'Read Broken Tablet |q New Moon Rising/Restore the Tablet
@@ -20320,16 +20400,11 @@ goto 68.65,74.37
 |tip Follow path to the left.
 'Destroy the Second Dark Aeon Focal Point |q New Moon Rising/Destroy the Second Dark Aeon Focal Point
 step
-goto 96.17,56.01
+goto dragonholdisland_int02_base 96.17,56.01
 click Dragonhold Ruins |q New Moon Rising/Destroy the Third Dark Aeon Focal Point
 |tip Manually skip to the next step.
 step
-goto 22.77,75.57
-click Grappling Point |q New Moon Rising/Destroy the Third Dark Aeon Focal Point
-|tip back to the door at beginning.
-|tip Manually skip to the next step.
-step
-goto 28.25,68.89
+goto dragonholdisland_base 28.25,68.89
 'Destroy the Third Dark Aeon Focal Point |q New Moon Rising/Destroy the Third Dark Aeon Focal Point
 step
 goto 23.00,49.58
@@ -20349,6 +20424,9 @@ kill Kaalgrontiid |q New Moon Rising/Kill Kaalgrontiid
 step
 goto 49.46,62.22
 talk Abnur Tharn |q New Moon Rising/Talk to Abnur Tharn
+step 
+goto 49.58,62.10 
+'Find a Way to Escape Dragonhold |q New Moon Rising/'Find a Way to Escape Dragonhold
 step
 goto 48.39,62.69
 'Use Khamira's Portal |q New Moon Rising/Use Khamira's Portal
@@ -20359,8 +20437,11 @@ step
 'Open Southern Elsweyr Map
 click Dragonguard Sanctum Wayshrine
 'Travel to Dragonguard in Southern Elsweyr |q New Moon Rising/Go to the Dragonguard Sanctum
+|tip Manually skip to the next step.
 step
-goto ELS_DG_Sanctuary_base 34.85,49.36
+goto ELS_DG_Sanctuary_base 20.02,74.38 |q New Moon Rising/Talk to Sai Sahan
+step
+goto 34.85,49.36
 talk Sai Sahan 
 turnin New Moon Rising
 accept The Pride of Elsweyr
