@@ -17966,7 +17966,7 @@ step
 goto reapersmarch_base 68.54,38.07
 'Reach the City of Dune |q To Dune/Reach the City of Dune
 step
-goto 11.74,46.97
+goto dune_base 11.74,46.97
 talk Queen Ayrenn
 turnin To Dune
 accept The Fires of Dune
@@ -35938,19 +35938,17 @@ click Royal Crypt
 'Enter the Royal Crypt |q Storming the Garrison/Enter the Royal Crypt |future
 |tip Manually skip to the next step.
 step
-'_Follow the path to the right:_
-'Run down the stairs |q Storming the Garrison/Defeat Battlemage Papus
-|tip Manually skip to the next step.
+goto bangkoraigarrison_alt_base 65.15,38.86 |q Storming the Garrison/Defeat Battlemage Papus
 step
-'_Continue down the stairs and through the hallway:_
-'Run down the stairs into the large room |q Storming the Garrison/Defeat Battlemage Papus
-|tip Manually skip to the next step.
+goto 84.74,55.58 |q Storming the Garrison/Defeat Battlemage Papus
 step
-'_Downstairs in the large room:_
-kill Battlemage Papus
-'Defeat Battlemage Papus |q Storming the Garrison/Defeat Battlemage Papus
+goto 33.79,66.02 |q Storming the Garrison/Defeat Battlemage Papus
 step
-'_Run up the nearby stairs to the door:_
+goto 35.18,65.79
+kill Battlemage Papus |q Storming the Garrison/Defeat Battlemage Papus
+step
+goto 27.61,85.06
+'Run up the stairs 
 click Garrison Courtyard
 'Leave the Royal Crypt |q Storming the Garrison/Talk to High King Emeric
 |tip Manually skip to the next step.
@@ -35958,11 +35956,11 @@ step
 goto bangkorai_base 55.44,57.16
 talk High King Emeric |q Storming the Garrison/Talk to High King Emeric
 step
-goto bangkorai_base 53.71,57.84
+goto bangkorai_base 57.77,57.08
 kill Moath
 'Destroy the Summoned Dark Anchor |q Storming the Garrison/Destroy the Summoned Dark Anchor
 step
-goto 53.56,57.57
+goto 57.77,57.08
 'Watch the dialogue
 'Listen to the King's Speech |q Storming the Garrison/Listen to the High King's Speech
 step

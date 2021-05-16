@@ -14,6 +14,7 @@ Enums = {
 	BalFoyenMap = 18,
 	BangkoraiMap = 6,
 	BetnikhMap = 20,
+	BlackreachMap = 39,
 	BlackwoodMap = 43,
 	BleakrockIsleMap = 22,
 	ClockworkCityMap = 31,
