@@ -41,6 +41,7 @@ Enums = {
 	SummersetMap = 32,
 	TheReachMap = 42,
 	TheRiftMap = 12,
+	U28BlackreachMap = 41,
 	VvardenfellMap = 30,
 	WesternSkyrimMap = 38,
 	WrothgarMap = 27,

@@ -642,6 +642,7 @@ function Utils.DistanceOffsetForGoto(dist,selfdist)
 		if GetCurrentMapIndex() == Enums.BlackwoodMap then				return dist or selfdist or 2
 		elseif GetCurrentMapIndex() == Enums.SouthernElsweyrMap then    return dist or selfdist or 2
 		elseif GetCurrentMapIndex() == Enums.BlackreachMap then         return dist or selfdist or 3
+		elseif GetCurrentMapIndex() == Enums.U28BlackreachMap then      return dist or selfdist or 3
 		elseif GetCurrentMapIndex() == Enums.MurkmireMap then			return dist or selfdist or 3
 		elseif GetCurrentMapIndex() == Enums.NorthernElsweyrMap then	return dist or selfdist or 1.75
 		elseif GetCurrentMapIndex() == Enums.SummersetMap then 			return dist or selfdist or 1.5
@@ -698,6 +699,7 @@ function Utils.DistanceOffsetForIsComplete()
 		if GetCurrentMapIndex() == Enums.BlackwoodMap then				return 2
 		elseif GetCurrentMapIndex() == Enums.SouthernElsweyrMap then    return 2
 		elseif GetCurrentMapIndex() == Enums.BlackreachMap then         return 3
+		elseif GetCurrentMapIndex() == Enums.U28BlackreachMap then      return 3
 		elseif GetCurrentMapIndex() == Enums.MurkmireMap then			return 3
 		elseif GetCurrentMapIndex() == Enums.NorthernElsweyrMap then	return 1.75
 		elseif GetCurrentMapIndex() == Enums.SummersetMap then			return 1.5
