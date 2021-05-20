@@ -776,7 +776,7 @@ Data.MapIdsByName = {
 	["Darkpool Mine"]                       = 678,
 	["The Tangle"]                          = 679,
 	
-	-- Southern Elsweyr
+		-- SOUTHERN ELSWEYR
 	["Wind Scour Temple"]                   = 680,
 	["Storm Talon Temple"]                  = 681,
 	["Dark Water Temple"]                   = 682,
@@ -792,15 +792,15 @@ Data.MapIdsByName = {
 	["Passage of Dad'na Ghaten"]            = 692,
 	["Zazardi's Quarry and Mine"]           = 693,
 	["Black Kiergo Arena"]                  = 694,
-	["New Moon Fortress"]                   = 695,
-	["Halls of the Highmane"]               = 696,
-	["Path of Pride"]                       = 697,
-	["Doomstone Keep"]                      = 698,
-	["The Spilled Sand"]                    = 699,
-	["Dragonhold"]                          = 700,
-	["Forsaken Citadel"]                    = 701,
+	["Forsaken Citadel"]                    = 695,
+	["New Moon Fortress"]                   = 696,
+	["Halls of the Highmane"]               = 697,
+	["Path of Pride"]                       = 698,
+	["Doomstone Keep"]                      = 699,
+	["The Spilled Sand"]                    = 700,
+	["Dragonhold"]                          = 701,
 	["Jonelight Path"]                      = 702,
-	
+
 	-- WESTERN SKYRIM
 	["Riften Ratway"]                       = 703,
 	["Blackreach: Mzark Cavern"]            = 704,
@@ -830,7 +830,7 @@ Data.MapIdsByName = {
 	["Greymoor Keep: West Wing"]            = 728,
 	["Greymoor Keep"]                       = 729,
 	["Gray Host Tunnels"]                   = 730,
-	
+
 	-- THE REACH
 	["Gray Host Sanctuary"]                 = 731,
 	["Grayhome"]                            = 732,
@@ -850,52 +850,19 @@ Data.MapIdsByName = {
 	["Bthar-Zel Vault"]                     = 746,
 	["Blackreach: Arkthzand"]               = 747,
 	["Halls of Arkthzand"]                  = 748,
-	["Gloomreach"]                          = 749,
-	["Lost Valley Redoubt"]                 = 750,
-	["The Dark Descent"]                    = 751,
+	["Lost Valley Redoubt"]                 = 749,
+	["The Dark Descent"]                    = 750,
+	["Gloomreach"]                          = 751,
 	["Nighthollow Keep"]                    = 752,
 	["Chamber of the Dark Heart"]           = 753,
 	["Nchuand-Zel"]                         = 754,
 	["Arkthzand Orrery"]                    = 755,
 	["Gray Haven"]                          = 756,
-	["Bthar-Zel Repository"]                = 757,
-
-	-- Blackwood
-	["Balfiera Ruins"]                      = 758,
-	["Isle of Balfiera"]                    = 759,
-	["Keywright's Gallery"]                 = 760,
-	["Imperial Cache Annex"]                = 761,
-	["Ne Salas Cache Annex"]                = 762,
-	["Imperial Sewers"]                     = 763,
-	["Deadlands"]                           = 764,
-	["Leyawiin"]                            = 765,
-	["Blackwood"]                           = 766,
-	["Undertow Cavern"]                     = 767,
-	["Borderwatch Sewers"]                  = 768,
-	["Borderwatch Courtyard"]               = 769,
-	["Borderwatch Keep"]                    = 770,
-	["Borderlands Crypt"]                   = 771,
-	["Ayleid Ruins"]                        = 772,
-	["Veyond"]                              = 773,
-	["Gideon"]                              = 774,
-	["Twyllbek Ruins"]                      = 775,
-	["Tidewater Cave"]                      = 776,
-	["Glenbridge Xanmeer"]                  = 777,
-	["Doomvault Porcixid"]                  = 778,
-	["Xal Irasotl"]                         = 779,
-	["Bloodrun Cave"]                       = 780,
-	["Stonewastes Keep"]                    = 781,
-	["Welke"]                               = 782,
-	["Leyawiin Castle"]                     = 783,
-	["Xi-Tsei"]                             = 784,
-	["Doomvault Capraxus"]                  = 785,
-	["Vandacia's Deadline Keep"]            = 786,
-	["Vunalk"]                              = 787,
-	["Deadlands: The Ashen Forest"]         = 788,
-	["White Gold Tower Throne Room"]        = 789,
-	["Xynaa's Sanctuary"]                   = 790,
-	["Arpenia"]                             = 791,
-	["Fort Redmane"]                        = 792,
+	
+	-- Isle of Balfiera
+	["Balfiera Ruins"]                      = 757,
+	["Isle of Balfiera"]                    = 758,
+	["Keywright's Gallery"]                 = 759,
 }
 
 -----------------------------------------

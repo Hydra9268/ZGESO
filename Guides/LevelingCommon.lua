@@ -5,7 +5,6 @@
 local ZGV = _G.ZGV
 if ZGV:DoMutex("LevelingCommon") then return end
 ZGV.GuideMenuTier = "TAM"
-
 ZGV:RegisterGuide("Common Leveling Guides\\The Wailing Prison",[[
 loadingimage loadscreen_chapter1_01.dds
 description Brave The Wailing Prison, a prisoner stronghold in Coldharbour.
