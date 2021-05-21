@@ -29776,6 +29776,7 @@ kill Xynaa |q Weapons of Destruction/Kill Xynaa
 step
 goto 50.68,10.62
 click Portal to Gideon |q Weapons of Destruction/Return to Gideon
+|tip Manually skip to the next step.
 step
 goto u30_Gideoncity_base 37.73,46.86
 talk Sombren |q Weapons of Destruction/Talk to Sombren
@@ -29808,7 +29809,21 @@ click Gideon Wayshrine
 'Travel to Leyawiin in Blackwood |q Pyre of Ambition/Talk to Captain Rian Liore
 |tip Manually skip to the next step.
 step
-goto u30_leyawiincity_base 48.44,67.30 |q Pyre of Ambition/Talk to Captain Rian Liore
+goto u30_leyawiincity_base 38.43,44.86
+click Kaladas Inn |q Making a Racket/Go to the Happy Aveerno Shipping Company
+|tip Manually skip to the next step.
+step
+goto 39.59,44.99
+'Go to the Happy Aveerno Shipping Company |q Making a Racket/Go to the Happy Aveerno Shipping Company
+|tip Upstairs
+step
+goto 39.59,44.99
+talk Iulius Averno 
+turnin Making a Racket
+step
+goto 39.32,45.13
+click Leyawiin |q Pyre of Ambition/Talk to Captain Rian Liore
+|tip Manually skip to the next step.
 step
 goto 79.23,53.08
 click Leyawiin Castle Courtyard |q Pyre of Ambition/Talk to Captain Rian Liore
@@ -29861,16 +29876,14 @@ step
 goto 64.18,56.95
 'Destroy Ornate Mirror |q Glittering Lies/.*Free the Blackfeather Court.* |count 2
 step
-goto 80.11,52.01 |achieve 2982/16
-step
-goto arpeniaH_base 87.03,55.79 |achieve 2982/16
+goto arpeniaH_base 90.44,53.01 |achieve 2982/16
 step
 goto 85.85,45.05
 click Skyshard |achieve 2982/16
 step
 goto 87.37,55.35 |q Glittering Lies/.*Free the Blackfeather Court.* |count 3
 step
-goto 63.81,64.06 |q Glittering Lies/.*Free the Blackfeather Court.* |count 3
+goto 61.70,65.39 |q Glittering Lies/.*Free the Blackfeather Court.* |count 3
 step
 goto 45.43,60.89
 'Destroy Ornate Mirror |q Glittering Lies/.*Free the Blackfeather Court.* |count 3
@@ -30118,15 +30131,9 @@ step
 goto 33.60,54.45
 'Listen to Eveli Sharp-Arrow |q Pyre of Ambition/Listen to Eveli Sharp-Arrow
 step
-goto 33.60,54.45
+goto u30_redmayne_int_base 33.60,54.45
 click Fort Redmane West Wing |q Pyre of Ambition/Find the Ambitions
 |tip Manually skip to the next step.
-step
-goto 30.80,50.01 |q Pyre of Ambition/Find the Ambitions
-step
-goto 21.50,52.48 |q Pyre of Ambition/Find the Ambitions
-step
-goto 14.86,46.88 |q Pyre of Ambition/Find the Ambitions
 step
 goto 07.65,49.76
 talk Eveli Sharp-Arrow |q Pyre of Ambition/Find the Ambitions
@@ -30141,30 +30148,26 @@ goto u30_redmayne_ext_base 35.09,53.61
 step
 goto 53.33,40.55
 'Defend the Ambitions |q Pyre of Ambition/Defend the Ambitions
+|tip Stay around Ambitions
 step
 goto 50.14,47.26
 click Fort Redmane Keep |q Pyre of Ambition/Go to the Keep
 step
-goto u30_ashenforest_int_base 38.02,35.36
+goto u30_redmayne_int_base 38.02,35.36
 'Secure the Keep |q Pyre of Ambition/Secure the Keep
 step
 goto 38.02,35.36
 'Listen to Sombren |q Pyre of Ambition/Listen to Sombren
 step
 goto 38.02,35.36
-talk Eveli Sharp-Arrow |q Pyre of Ambition/Talk to Eveli Sharp-Arrow
-step
-goto 38.02,35.36
-talk Calia |q Pyre of Ambition/Talk to Calia
-step
-goto 38.02,35.36
-talk Sombren |q Pyre of Ambition/Talk to Sombren
+talk Eveli Sharp-Arrow
+talk Calia
+talk Sombren |q Pyre of Ambition/Reach the Courtyard
+|tip Manually skip to the next step.
 step
 goto 38.04,41.68
 click Fort Redmane Museum Hall |q Pyre of Ambition/Reach the Courtyard
 |tip Manually skip to the next step.
-step
-goto u30_redmayne_int_base 38.04,45.25 |q Pyre of Ambition/Reach the Courtyard
 step
 goto 87.32,52.48 |q Pyre of Ambition/Reach the Courtyard
 step
@@ -30177,16 +30180,10 @@ step
 goto 63.66,53.59
 'Listen to Mehrunes Dagon |q Pyre of Ambition/Listen to Mehrunes Dagon
 step
-goto 63.07,53.46
-talk Eveli Sharp-Arrow |q Pyre of Ambition/Talk to Eveli Sharp-Arrow
-|tip Manually skip to the next step.
-step
-goto 68.01,56.76
-talk Elam Drals |q Pyre of Ambition/Talk to Elam Drals
-step
 'Open Blackwood Map
 click Fort Redmane Wayshrine
 'Travel to Fort Redmane in Blackwood |q Pyre of Ambition/Leave Fort Redmane
+|tip Manually skip to the next step.
 step
 goto blackwood_base 28.20,28.85
 talk to Calia |q Pyre of Ambition/Talk to Calia
@@ -30208,11 +30205,7 @@ goto u30_Gideoncity_base 43.42,50.01
 click Temple of Dibella |q Heroes of Blackwood/Go to the Temple of Dibella
 step
 goto 48.49,46.57
-talk Priest Larusa |q Heroes of Blackwood/Talk to Larusa
-step
-goto 47.88,48.61
-talk Eveli Sharp-Arrow |q Heroes of Blackwood/Talk to Eveli Sharp-Arrow
-|tip Manually skip to the next step.
+talk Priest Larusa |q Heroes of Blackwood/Talk to Priest Larusa
 step
 goto 43.65,49.70
 'Leave the Temple of Dibella |q Heroes of Blackwood/Leave the Temple of Dibella
@@ -30221,9 +30214,6 @@ goto 64.56,27.86 |q Heroes of Blackwood/Go to the Ruin
 step
 goto blackwood_base 51.56,47.40
 'Go to the Ruin |q Heroes of Blackwood/Go to the Ruin
-step
-goto 51.56,47.40
-talk Cali |q Heroes of Blackwood/Talk to Calia
 step
 goto 51.56,47.40
 talk Sombren |q Heroes of Blackwood/Talk to Sombren
@@ -30238,7 +30228,7 @@ goto 77.28,43.95
 step
 goto 77.28,43.95
 talk Keshu the Black Fin
-turnin Heroes of the Blackwood |q Heroes of Blackwood/Talk to Kenshu the Black Fin
+talk Kenshu the Black Fin |q Heroes of Blackwood/Talk to Kenshu the Black Fin
 step
 goto 77.11,44.85
 talk Eveli Sharp-Arrow
