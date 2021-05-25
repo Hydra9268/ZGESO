@@ -1704,17 +1704,17 @@ ZGV.MapData = {
 		["mzendeldt_base"] =                    { name = "Mzeneldt",                                id = 401, xoffset = 0.220160, yoffset = 0.329839, scale =  0.008711 , },
 		["abagarlas_base"] =                    { name = "Abagarlas",                               id = 402, xoffset = 0.006341, yoffset = 0.023750, scale = 0.013593, },
 		["theearthforge_base"] =                { name = "The Earth Forge",                         id = 403, xoffset = 0.332152, yoffset = 0.274374, scale = 0.012277, },
-		["ragnthar_base"] =                     { name = "Ragnthar",                                id = 404, },
+		["ragnthar_base"] =                     { name = "Ragnthar",                                id = 404, xoffset = -0.518789, yoffset = -0.376992, scale = 0.007734, },
 		["hallsofsubmission_base"] =            { name = "Halls of Submission",                     id = 405, xoffset = -0.559034, yoffset = -0.419346, scale = 0.012775, },
 
 		-- Mages Guild
-		["cheesemongershollow_base"] =          { name = "Cheesemonger's Hollow",                   id = 406, },
+		["cheesemongershollow_base"] =          { name = "Cheesemonger's Hollow",                   id = 406, xoffset = 0.025786, yoffset = -0.025198, scale = 0.016211, },
 		["gladeofthedivineshivering_base"] =    { name = "Shivering Isles",                         id = 407, xoffset = 0.224079, yoffset = 0.335676, scale = 0.003428, },
 		["gladeofthedivinevuldngrav_base"] =    { name = "Vuldngrav",                               id = 408, xoffset = 0.215729, yoffset = 0.325800, scale = 0.003632, },
 		["gladeofthedivineasakala_base"] =      { name = "Asakala",                                 id = 409, xoffset = 0.213356, yoffset = 0.336682, scale = 0.005136, },
 		["circusofcheerfulslaughter_base"] =    { name = "Circus of Cheerful Slaughter",            id = 410, xoffset = -0.640000, yoffset = -0.502500, scale = 0.023047, },
-		["chateaumasterbedroom_base"] =         { name = "Chateau Master Bedroom",                  id = 411, },
-		["chateauravenousrodent_base"] =        { name = "Chateau of the Ravenous Rodent",          id = 412, },
+		["chateauravenousrodent_base"] =        { name = "Chateau of the Ravenous Rodent",          id = 411, xoffset = -0.684413, yoffset = -0.543359, scale = 0.024492, },
+		["chateaumasterbedroom_base"] =         { name = "Chateau Master Bedroom",                  id = 412, xoffset = -0.664531, yoffset = -0.53277, scale = 0.004883, },
 		["eyevea_base"] =                       { name = "Eyevea",                                  id = 413, xoffset = 0.049742, yoffset = 0.600216, scale = 0.025039, },
 
 		-- Craglorn
@@ -2360,7 +2360,7 @@ ZGV.MapData = {
 		["arpeniaL3_base"] =                    { name = "Arpenia",                                 id = 795, xoffset = 0.623368, yoffset = 0.628055, scale = 0.008104, },
 		["u30_redmayne_ext_base"] =             { name = "Fort Redmane",                            id = 796, xoffset = 0.608249, yoffset = 0.628047, scale = 0.006436, },
 		["u30_redmayne_int_base"] =             { name = "Fort Redmane",                            id = 796, xoffset = 0.608796, yoffset = 0.627876, scale = 0.006830, },
-		["U30_GideonFightClub_base"] =          { name = "Ruction Ring",                            id = 797, xoffset = 0.659935, yoffset = 0.674435, scale = 0.007504, },
+		["U30_GideonFightClub_base"] =          { name = "Ruction Ring",                            id = 797, xoffset = 0.655735, yoffset = 0.670635, scale = 0.007504, },
 
 	},
 }
