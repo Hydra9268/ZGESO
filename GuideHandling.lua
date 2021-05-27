@@ -12,6 +12,7 @@ local completeionInterval = LONG_STEP_INTERVAL
 local tinsert,tremove,type,ipairs,class = table.insert,table.remove,type,ipairs,_G.class
 local CHAIN = ZGV.Utils.ChainCall
 local L = ZGV.L
+local GPS = LibGPS2
 
 -----------------------------------------
 -- SAVED REFERENCES
@@ -423,7 +424,7 @@ end
 function ZGV:FindSuggestedGuides()
 	local suggested = {}
 	for _,guide in ipairs(self.registeredguides) do
-		if guide:GetStatus()=="SUGGESTED" then
+		if guide:GetStatus() == "SUGGESTED" then
 			if guide.condition_suggested_exclusive then
 				return {guide}
 			else
@@ -592,12 +593,20 @@ function ZGV:GuideLoadStartup()
 		if gs['LEVELING'] then
 			gs = gs['LEVELING']
 		end
-		if not gs or #gs == 0 then
-			self:SetGuide(ZGV:SanitizeGuideTitle("LEVELING/"..GetZoneNameByIndex(GetCurrentMapZoneIndex())))
-			return
-		elseif #gs == 1 then
-			local g = gs[1]
-			self:SetGuide(g)
+		if GetZoneNameByIndex(GetCurrentMapZoneIndex()) == '' then
+			local gps = GPS:GetCurrentMapMeasurements()
+			self:Print(gps.mapIndex)
+			if gps.mapIndex == 24 then -- Temporary special case for Isle of Balfiera
+				self:SetGuide(ZGV:SanitizeGuideTitle("LEVELING/Blackwood"))
+			end
+		else
+			if not gs or #gs == 0 then
+				self:SetGuide(ZGV:SanitizeGuideTitle("LEVELING/"..GetZoneNameByIndex(GetCurrentMapZoneIndex())))
+				return
+			elseif #gs == 1 then
+				local g = gs[1]
+				self:SetGuide(g)
+			end
 		end
 	end
 
