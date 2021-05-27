@@ -1293,6 +1293,7 @@ kill Zalgaz and two Handmaiden's
 step
 'Congratulations, you have completed the Craglorn guide!
 ]])
+
 ZGV:RegisterGuide("LEVELING\\Vvardenfell",[[
 loadingimage loadscreen_balfoyen_01.dds
 description Stop a meteor from crashing into Vivec City by helping a demi-god regain his lost powers in this Morrowind expansion.
@@ -17665,6 +17666,7 @@ talk Jakarn
 step
 'Congratulations, you have completed the Northern Elsweyr guide!
 ]])
+
 ZGV:RegisterGuide("LEVELING\\Southern Elsweyr",[[
 loadingimage loadscreen_southernelsweyr_01.dds
 description Devastated by a terrible plague and its purging fire decades ago, Southern Elsweyr devolved into a lawless region beset by slavers, pirates, and brigands.
@@ -20494,6 +20496,7 @@ turnin The Pride of Elsweyr
 step
 'Congratulations, you have completed the Southern Elsweyr guide!
 ]])
+
 ZGV:RegisterGuide("LEVELING\\Western Skyrim",[[
 loadingimage loadscreen_westernskyrim_01.dds
 description Greymoor is the fourth Chapter of The Elder Scrolls Online. Supernatural harrowstorms plague Western Skyrim, and dark beasts, led by a powerful Vampire Lord, devour souls to further their mysterious plans. In The Elder Scrolls Online: Greymoor, ESO's newest Chapter, you must defend the besieged Nords and uncover the evil behind this monstrous resurgence.
@@ -26286,19 +26289,18 @@ step
 'Congratulations, you have completed The Reach guide!
 ]])
 
-ZGV:RegisterGuide("LEVELING\\Tutorial",[[
-								 
-loadingimage loadscreen_u30_tutorial_01.dds
-description The Isle of Balfiera (also called Balfiera Island) is an island found off the coast of the Iliac Bay. All characters created after the release of Blackwood will be placed in this zone to go through a quest that serves as a tutorial over the game's systems.
-It is the home of the Adamantine Tower, the oldest structure in Tamrielic history, as well as the Direnni Clan.
--- BEGIN: Isle Balfiera INTRO GUIDE FOR NEW PLAYERS
+ZGV:RegisterGuide("LEVELING\\Blackwood",[[
+loadingimage loadscreen_u30_blackwood_zone_01.dds
+description Blackwood is the fifth Chapter of The Elder Scrolls Online. It takes place in the southern region of Blackwood, between the Cyrodilic city of Leyawiin and the Black Marsh city of Gideon. Mehrunes Dagon threatens all of Tamriel with his four Ambitions, superweapons once granted to the fallen Longhouse Emperors.
+
+-- BEGIN: ISLE OF BALFIERA INTRO GUIDE FOR NEW PLAYERS
 step
 goto u30_balfiera_int1_base 43.40,72.51
-talk Norianwe |q The Gates of Adamant/Talk to Norianwe
+'Look Around |q The Gates of Adamant/Look Around
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6
 step
-goto 43.52,72.84
-'Wait for Norianew |q The Gates of Adamant/Wait for Norianwe
+goto 43.40,72.51
+talk Norianwe |q The Gates of Adamant/Talk to Norianwe
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6
 step
 goto 43.52,72.84
@@ -26348,7 +26350,7 @@ goto u30_balfiera_int3_base 35.07,41.44 |q The Gates of Adamant/Lead Norianwe Ou
 step
 goto u30_balfiera_int3_base 49.81,45.45
 click Balfiera Ruins |q The Gates of Adamant/Lead Norianwe Outside
-|tip Go upstairs.
+|tip Go upstairs
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6
 step
@@ -26362,7 +26364,7 @@ click Gallery Foyer |q The Gates of Adamant/Find the Keywright's Gallery
 step
 goto u30_balfiera_int7_base 49.57,54.09
 talk Norianwe |q The Gates of Adamant/Talk to Norianwe
-|tip Upstairs
+|tip Go Upstairs
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6
 step
 goto 28.78,74.04
@@ -26375,8 +26377,8 @@ click Skyshard Vault |q The Gates of Adamant/Acquire the Skyshard
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6
 step
-|tip Straight Ahead
 click Skyshard |q The Gates of Adamant/Acquire the Skyshard
+|tip Straight ahead. Kill the Gargoyle and then acquire the Skyshard.
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6
 step
 click Balfiera Island |q The Gates of Adamant/Return to the Gate
@@ -26410,6 +26412,7 @@ kill Shyazzel the Traveler |q The Gates of Adamant/Defeat Shyazzel the Traveler
 step
 goto 68.22,34.39
 click the Keywright's Gallery |q The Gates of Adamant/Enter the Keywright's Gallery
+|tip Manually skip to the next step.
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6
 step
 goto u30_balfiera_int8_base 64.79,72.48
@@ -26427,15 +26430,13 @@ talk Norianwe
 turnin The Gates of Adamant
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6
 step
-|tip Click any of the portals around the room depending on where you want to level.
+'Click any of the portals around the room depending on where you want to level.
 'Congratulations, you have completed the Tutorial!
+|tip Manually skip to the next step.
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6
-]])
 
-ZGV:RegisterGuide("LEVELING\\Blackwood",[[
-loadingimage loadscreen_u30_blackwood_zone_01.dds
-description Blackwood is the fifth Chapter of The Elder Scrolls Online. It takes place in the southern region of Blackwood, between the Cyrodilic city of Leyawiin and the Black Marsh city of Gideon. Mehrunes Dagon threatens all of Tamriel with his four Ambitions, superweapons once granted to the fallen Longhouse Emperors.
 -- BEGIN: BLACKWOOD PROLOGUE GUIDE FOR NEW AND EXISTING PLAYERS
+
 -- START: ALDMERI DOMINION FACTION
 step
 'Open Grahtwood Map
@@ -26482,16 +26483,21 @@ goto 38.42,89.90
 click Imperial Cache Annex |q A Mortal's Touch/Enter the Imperial Cache Annex
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
-step
 -- END: ALDMERI DOMINION FACTION
 
 -- START: DAGGERFALL COVENANT FACTION
-'Open Glenumbra Map
-click Baelbourn Rock Wayshrine
-'Travel to Baelborne Rock in Glenumbra |q A Mortal's Touch |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
 step
-goto daggerfall_base 68.35,39.25
+'Open your map. Right click until you see the Tamriel map.
+'Travel to the _Daggerfall_ Wayshrine
+|tip Manually skip to the next step.
+step
+goto daggerfall_base 45.78,31.11
+step
+goto 53.69,37.63
+step
+goto 66.65,40.54
+step
+goto 68.35,39.25
 talk Rogatus Cinna
 accept A Mortal's Touch
 |only if ZGV.Utils.GetFaction("player","notvet")=="DC"
@@ -26529,10 +26535,17 @@ goto 28.29,88.73
 click Imperial Cache Annex |q A Mortal's Touch/Enter the Imperial Cache Annex
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetFaction("player","notvet")=="DC"
-step
 -- END: DAGGERFALL COVENANT FACTION
 
 -- START: EBONHEART PACT FACTION
+step
+'Open your map. Right click until you see the Tamriel map.
+'Travel to the _Davon's Watch_ Wayshrine
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+
+
 'Open Deshaan Map
 click Mournhold Wayshrine
 'Travel to Mournhold in Deshaan |q A Mortal's Touch |future
