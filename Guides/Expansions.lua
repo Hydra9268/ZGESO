@@ -13788,7 +13788,7 @@ step
 
 ZGV:RegisterGuide("LEVELING\\Northern Elsweyr",[[
 loadingimage loadscreen_elsweyr_zone_01.dds
-description Once thought lost to the mists of time, fearsome Dragons now soar the skies of Elsweyr, leaving scorched ruin in their wake. Discover the dark purpose behind their rampage in a new epic story and prevent the destruction of the Khajiiti homeland.
+description This region, also known as Anequina, merged with the southern region of Pellitine several centuries ago to form the province of Elsweyr. It's a patchwork that united many former small kingdoms, including Rimmen, Orcrest, Riverhold, and Meirvale.
 step
 'Press _U_ to open your _Collections_
 'Click over to the _Stories_ tab and look under the _Chapter_ section:
@@ -26291,7 +26291,7 @@ step
 
 ZGV:RegisterGuide("LEVELING\\Blackwood",[[
 loadingimage loadscreen_u30_blackwood_zone_01.dds
-description Blackwood is the fifth Chapter of The Elder Scrolls Online. It takes place in the southern region of Blackwood, between the Cyrodilic city of Leyawiin and the Black Marsh city of Gideon. Mehrunes Dagon threatens all of Tamriel with his four Ambitions, superweapons once granted to the fallen Longhouse Emperors.
+description Straddling the great Niben River and extending east into the bogs of the Argonian homeland, Blackwood serves as the maritime gate to Cyrodiil—a valuable, if perilous, stretch of territory greatly prized by Khajiit, Argonians, and Imperials alike.
 
 -- BEGIN: ISLE OF BALFIERA INTRO GUIDE FOR NEW PLAYERS
 step
