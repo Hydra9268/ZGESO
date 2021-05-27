@@ -640,6 +640,9 @@ function Utils.DistanceOffsetForGoto(dist,selfdist)
 		-- Created Utils.DistanceOffset in functions
 		-- sorting based on preceived popularity
 		if GetCurrentMapIndex() == Enums.BlackwoodMap then				return dist or selfdist or 2
+		elseif GetCurrentMapIndex() == Enums.SouthernElsweyrMap then    return dist or selfdist or 2
+		elseif GetCurrentMapIndex() == Enums.BlackreachMap then         return dist or selfdist or 3
+		elseif GetCurrentMapIndex() == Enums.U28BlackreachMap then      return dist or selfdist or 3
 		elseif GetCurrentMapIndex() == Enums.MurkmireMap then			return dist or selfdist or 3
 		elseif GetCurrentMapIndex() == Enums.NorthernElsweyrMap then	return dist or selfdist or 1.75
 		elseif GetCurrentMapIndex() == Enums.SummersetMap then 			return dist or selfdist or 1.5
@@ -660,8 +663,7 @@ function Utils.DistanceOffsetForGoto(dist,selfdist)
 				GetCurrentMapIndex() == Enums.WrothgarMap then			return dist or selfdist or 10
 
 		elseif 	GetCurrentMapIndex() == Enums.ArtaeumMap or
-				GetCurrentMapIndex() == Enums.KhenarthisRoostMap or
-				GetCurrentMapIndex() == Enums.SouthernElsweyrMap or
+		        GetCurrentMapIndex() == Enums.KhenarthisRoostMap or
 				GetCurrentMapIndex() == Enums.WesternSkyrimMap then		return dist or selfdist or 2.5
 
 		elseif 	GetCurrentMapIndex() == Enums.StonefallsMap or
@@ -681,7 +683,7 @@ function Utils.DistanceOffsetForGoto(dist,selfdist)
 		elseif GetCurrentMapIndex() == Enums.GreenshadeMap then			return dist or selfdist or 7
 
 		elseif 	GetCurrentMapIndex() == Enums.BetnikhMap or
-				GetCurrentMapIndex() == Enums.BleakrockIsleMap then		return dist or selfdist or 5
+		        GetCurrentMapIndex() == Enums.BleakrockIsleMap then		return dist or selfdist or 5
 
 		else return dist or selfdist or 1 -- default value
 		end
@@ -695,6 +697,9 @@ function Utils.DistanceOffsetForIsComplete()
 		-- Create a Utils function in function at the bottom of the file
 		-- sorting based on preceived popularity
 		if GetCurrentMapIndex() == Enums.BlackwoodMap then				return 2
+		elseif GetCurrentMapIndex() == Enums.SouthernElsweyrMap then    return 2
+		elseif GetCurrentMapIndex() == Enums.BlackreachMap then         return 3
+		elseif GetCurrentMapIndex() == Enums.U28BlackreachMap then      return 3
 		elseif GetCurrentMapIndex() == Enums.MurkmireMap then			return 3
 		elseif GetCurrentMapIndex() == Enums.NorthernElsweyrMap then	return 1.75
 		elseif GetCurrentMapIndex() == Enums.SummersetMap then			return 1.5
@@ -715,8 +720,7 @@ function Utils.DistanceOffsetForIsComplete()
 				GetCurrentMapIndex() == Enums.WrothgarMap then			return 10
 
 		elseif 	GetCurrentMapIndex() == Enums.ArtaeumMap or
-				GetCurrentMapIndex() == Enums.KhenarthisRoostMap or
-				GetCurrentMapIndex() == Enums.SouthernElsweyrMap or
+		        GetCurrentMapIndex() == Enums.KhenarthisRoostMap or
 				GetCurrentMapIndex() == Enums.WesternSkyrimMap then		return 2.5
 
 		elseif	GetCurrentMapIndex() == Enums.StonefallsMap or
@@ -730,7 +734,7 @@ function Utils.DistanceOffsetForIsComplete()
 				GetCurrentMapIndex() == Enums.HewsBaneMap then			return 11
 
 		elseif	GetCurrentMapIndex() == Enums.StrosMkaiMap or
-				GetCurrentMapIndex() == Enums.TheReachMap then 			return 4
+		        GetCurrentMapIndex() == Enums.TheReachMap then 			return 4
 
 		elseif 	GetCurrentMapIndex() == Enums.ClockworkCityMap or
 				GetCurrentMapIndex() == Enums.GreenshadeMap then		return 7
