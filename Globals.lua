@@ -27,6 +27,7 @@ Enums = {
 	GrahtwoodMap = 7,
 	GreenshadeMap = 16,
 	HewsBaneMap = 28,
+	IsleOfBalfieraMap = 24,
 	KhenarthisRoostMap = 21,
 	MalabalTorMap = 8,
 	MurkmireMap = 34,
