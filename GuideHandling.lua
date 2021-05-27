@@ -595,7 +595,6 @@ function ZGV:GuideLoadStartup()
 		end
 		if GetZoneNameByIndex(GetCurrentMapZoneIndex()) == '' then
 			local gps = GPS:GetCurrentMapMeasurements()
-			self:Print(gps.mapIndex)
 			if gps.mapIndex == 24 then -- Temporary special case for Isle of Balfiera
 				self:SetGuide(ZGV:SanitizeGuideTitle("LEVELING/Blackwood"))
 			end
