@@ -429,7 +429,7 @@ end
 ------------------------------------------- ARROW -----------------
 
 local arrowctrl_fps = 1/30
-local arrowctrl_last=0
+local arrowctrl_last = 0
 
 local forceupdate_fps = 3
 local forceupdate_last = 0
@@ -479,12 +479,12 @@ local oldangle = 0
 
 local title,disttxt,etatxt
 
-local speeds={}
-local stoptime=0
-local avgspeed=0
+local speeds = {}
+local stoptime = 0
+local avgspeed = 0
 
-local eta_elapsed=0
-local etadisp_elapsed=0
+local eta_elapsed = 0
+local etadisp_elapsed = 0
 
 -- local lastbeeptime=GetTimeStamp()
 local lastbeeptime = GetGameTimeMilliseconds()
@@ -675,7 +675,7 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 	if safe then ArrowFrame:Show() end
 
 	local playerangle = GetPlayerCameraHeading()
-	local angle=0
+	local angle = 0
 
 	local going_up
 	if errortxt then
@@ -697,7 +697,7 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 			if waypoint.actionicon=="upstairs" then ArrowFrame:ShowStairs(true)
 			elseif waypoint.actionicon=="downstairs" then ArrowFrame:ShowStairs(false)
 			end
-			showstairs=true  -- after all!
+			showstairs = true  -- after all!
 
 		else
 
@@ -712,13 +712,13 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 
 			if profile.arrowsmooth and self.CurrentArrowSkin and self.CurrentArrowSkin.features.smooth then
 				local dif = angle-oldangle
-				if dif>0.001 or dif<0.001 then
-					while dif>3.14159 do dif=dif-6.28319 end
-					while dif<-3.14159 do dif=dif+6.28319 end
+				if dif > 0.001 or dif < 0.001 then
+					while dif > 3.14159 do dif = dif-6.28319 end
+					while dif < -3.14159 do dif = dif+6.28319 end
 
-					angle = angle-dif/(1+elapsed*20) --speed!
-					while angle>6.28319 do angle=angle-6.28319 end
-					while angle<0 do angle=angle+6.28319 end
+					angle = angle - dif / (1 + elapsed * 20) --speed!
+					while angle > 6.28319 do angle = angle - 6.28319 end
+					while angle < 0 do angle = angle + 6.28319 end
 				end
 				oldangle=angle
 			end
@@ -743,7 +743,7 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 
 		speed = (last_distance-dist) / eta_elapsed
 		if last_distance == 0 then speed = 0 end
-		if last_distance==dist then stoptime=stoptime+eta_elapsed else stoptime=0 end
+		if last_distance == dist then stoptime = stoptime + eta_elapsed else stoptime = 0 end
 
 		if speed>=0 and stoptime<2 then
 			table.insert(speeds,1,speed)

@@ -647,6 +647,7 @@ function Utils.DistanceOffsetForGoto(dist,selfdist)
 				GetCurrentMapIndex() == Enums.MurkmireMap then			return dist or selfdist or 3
 
 		elseif GetCurrentMapIndex() == Enums.NorthernElsweyrMap then	return dist or selfdist or 1.75
+
 		elseif GetCurrentMapIndex() == Enums.SummersetMap then 			return dist or selfdist or 1.5
 
 		elseif 	GetCurrentMapIndex() == Enums.AlikrDesertMap or
@@ -698,6 +699,7 @@ function Utils.DistanceOffsetForIsComplete()
 	else -- zone maps
 		-- Create a Utils function in function at the bottom of the file
 		-- sorting based on preceived popularity
+
 		if GetCurrentMapIndex() == Enums.BlackwoodMap or
 			GetCurrentMapIndex() == Enums.SouthernElsweyrMap then    	return 2
 
@@ -706,6 +708,7 @@ function Utils.DistanceOffsetForIsComplete()
 				GetCurrentMapIndex() == Enums.MurkmireMap then			return 3
 
 		elseif GetCurrentMapIndex() == Enums.NorthernElsweyrMap then	return 1.75
+
 		elseif GetCurrentMapIndex() == Enums.SummersetMap then			return 1.5
 
 		elseif 	GetCurrentMapIndex() == Enums.AlikrDesertMap or
