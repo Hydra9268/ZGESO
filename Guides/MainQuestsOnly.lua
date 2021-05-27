@@ -5508,7 +5508,7 @@ step
 goto koeglinvillage_base 45.77,29.18
 |tip Inside the building.
 talk Captain Jerick
-turnin A Dangerous Dream |next Daggerfall Covenant Leveling Guides\\Main Quests Only\\Daggerfall Covenant\Stormhaven
+turnin A Dangerous Dream |next Daggerfall Covenant Leveling Guides\\Main Quests Only\\Daggerfall Covenant\\Stormhaven
 ]])
 
 ZGV:RegisterGuide("Ebonheart Pact Leveling Guides\\Main Quests Only\\Ebonheart Pact\\Bleakrock Isle",[[
@@ -5883,7 +5883,7 @@ talk Captain Rana
 turnin Escape from Bleakrock |next Ebonheart Pact Leveling Guides\\Main Quests Only\\Ebonheart Pact\\Stonefalls
 ]])
 
-ZGV:RegisterGuide("Daggerfall Covenant Leveling Guides\\Main Quests Only\\Daggerfall Covenant\\Stormhaven",[[
+ZGV:RegisterGuide("Daggerfall Covenant Leveling Guides\\Main Quests Only\\Daggerfall Covenant\Stormhaven",[[
 loadingimage loadscreen_stormhaven_01.dds
 description I spent some time studying and painting in the Stormhaven countryside; a charming realm of rolling hills, lush flood plains, rocky outcrops, and copses of ancient woodland. The place would be idyllic were it not for the perpetual unsettled gloom, occasional crackles of thunder, and bolts of Kynareth’s rage that arc across the skies.
 step
