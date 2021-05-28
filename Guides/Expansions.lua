@@ -26488,14 +26488,18 @@ click Imperial Cache Annex |q A Mortal's Touch/Enter the Imperial Cache Annex
 -- START: DAGGERFALL COVENANT FACTION
 step
 'Open your map. Right click until you see the Tamriel map.
-'Travel to the _Daggerfall_ Wayshrine
+'Travel to the _Daggerfall_ Wayshrine |q A Mortal's Touch |future
 |tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
 step
-goto daggerfall_base 45.78,31.11
+goto daggerfall_base 45.78,31.11 |q A Mortal's Touch |future
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
 step
-goto 53.69,37.63
+goto 53.69,37.63 |q A Mortal's Touch |future
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
 step
-goto 66.65,40.54
+goto 66.65,40.54 |q A Mortal's Touch |future
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
 step
 goto 68.35,39.25
 talk Rogatus Cinna
@@ -26540,22 +26544,41 @@ click Imperial Cache Annex |q A Mortal's Touch/Enter the Imperial Cache Annex
 -- START: EBONHEART PACT FACTION
 step
 'Open your map. Right click until you see the Tamriel map.
-'Travel to the _Davon's Watch_ Wayshrine
+'Travel to the _Davon's Watch_ Wayshrine |q A Mortal's Touch |future
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetFaction("player","notvet")=="EP"
 step
-
-
-'Open Deshaan Map
-click Mournhold Wayshrine
-'Travel to Mournhold in Deshaan |q A Mortal's Touch |future
+goto davonswatch_base 70.58,72.76
+step
+goto 65.56,64.11 |q A Mortal's Touch |future
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 70.93,57.74 |q A Mortal's Touch |future
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 66.24,49.51 |q A Mortal's Touch |future
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 79.14,41.51 |q A Mortal's Touch |future
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 76.25,33.58 |q A Mortal's Touch |future
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 77.94,30.07
+talk Falvis Raram |q A Mortal's Touch |future
+'Select _I'd like to travel within the Ebonheart Pact._
+'Select _Deshaan, when you're ready._
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetFaction("player","notvet")=="EP"
 step
-goto mournhold_base 60.84,59.77 |q A Mortal's Touch |future
+goto mournhold_base 35.26,51.95 |q A Mortal's Touch |future
 |only if ZGV.Utils.GetFaction("player","notvet")=="EP"
 step
-goto 50.10,59.50 |q A Mortal's Touch |future
+goto 42.63,57.28 |q A Mortal's Touch |future
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 42.21,67.86 |q A Mortal's Touch |future
 |only if ZGV.Utils.GetFaction("player","notvet")=="EP"
 step
 goto 35.54,77.26
