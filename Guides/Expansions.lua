@@ -26740,7 +26740,6 @@ goto 66.30,87.63
 talk Eveli Sharp-Arrow
 turnin The Emperor's Secret
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
-step
 -- END: ALDMERI DOMINION FACTION PROLOGUE GUIDE
 
 -- START: DAGGERFALL COVENANT FACTION
