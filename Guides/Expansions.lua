@@ -26392,6 +26392,7 @@ click Gallery Balfiera |q The Gates of Adamant/Return to the Gate
 step
 goto u30_balfiera_int7_base 49.05,53.61
 'Return to the Gate |q The Gates of Adamant/Return to the Gate
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6
 step
 goto 49.05,53.61
 'Activate Skyshard Aperture |q The Gates of Adamant/Repair the Gate
