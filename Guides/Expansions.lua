@@ -26439,13 +26439,37 @@ step
 
 -- START: ALDMERI DOMINION FACTION
 step
-'Open Grahtwood Map
-click Elden Root Wayshrine
-'Travel to Elden Root in Grahtwood |q A Mortal's Touch |future
+goto khenarthisroost_base 55.26,83.87
+talk Sugar Claws |q A Mortal's Touch |future
+'Select _I'm looking for passage off this island._
+'Select _Where can you take me?_
+'Select _All right. Take me to Vulkhel Guard._
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
-goto eldenrootgroundfloor_base 71.62,78.75
+goto vulkhelguard_base 71.89,56.98 |q A Mortal's Touch |future
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 64.14,56.63 |q A Mortal's Touch |future
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 54.63,59.14 |q A Mortal's Touch |future
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 54.23,63.66
+talk Selandilwen |q A Mortal's Touch |future
+'Select _I'd like to travel within the Aldmeri Dominion._
+'Select _Grahtwood, please._
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto eldenrootgroundfloor_base 73.55,54.93 |q A Mortal's Touch |future
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 73.58,64.18 |q A Mortal's Touch |future
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 71.62,78.75
 talk Rogatus Cinna
 accept A Mortal's Touch
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
