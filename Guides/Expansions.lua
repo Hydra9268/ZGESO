@@ -26434,10 +26434,11 @@ step
 'Congratulations, you have completed the Tutorial!
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetPlayerPreciseLevel() < 6
+-- END: ISLE OF BALFIERA INTRO GUIDE FOR NEW PLAYERS
 
 -- BEGIN: BLACKWOOD PROLOGUE GUIDE FOR NEW AND EXISTING PLAYERS
 
--- START: ALDMERI DOMINION FACTION
+-- START: ALDMERI DOMINION FACTION PROLOGUE GUIDE
 step
 goto khenarthisroost_base 55.26,83.87
 talk Sugar Claws |q A Mortal's Touch |future
@@ -26507,7 +26508,240 @@ goto 38.42,89.90
 click Imperial Cache Annex |q A Mortal's Touch/Enter the Imperial Cache Annex
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
--- END: ALDMERI DOMINION FACTION
+goto u29_Prologue_IC_base 49.94,53.01 |q A Mortal's Touch/.*Destroy Wards and Search Caches.* |count 1
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 56.18,55.16
+'Destroy Wards and Search Caches |q A Mortal's Touch/.*Destroy Wards and Search Caches.* |count 1
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 45.10,57.03
+'Destroy Wards and Search Caches |q A Mortal's Touch/.*Destroy Wards and Search Caches.* |count 2
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 49.32,64.24
+'Destroy Wards and Search Caches |q A Mortal's Touch/.*Destroy Wards and Search Caches.* |count 3
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 50.35,40.26
+talk Lyranth |q A Mortal's Touch/Talk to Lyranth
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 49.71,40.30
+click Portal to Grahtwood |q A Mortal's Touch/Travel to Ne Salas in Grahtwood
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto grahtwood_base 56.55,66.51
+click Ne Salas |q A Mortal's Touch/Enter Ne Salas
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto nesalas_base 83.20,23.53
+'Search Ne Salas |q A Mortal's Touch/Search Ne Salas
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 83.20,23.53
+talk Eveli Sharp-Arrow |q A Mortal's Touch/Talk to Eveli Sharp-Arrow
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 14.98,33.43 |q A Mortal's Touch/Find the Imperial Cache
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 31.53,87.26
+'Find the Imperial Cache |q A Mortal's Touch/Find the Imperial Cache
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 31.53,87.26
+click Ne Salas Cache Annex |q A Mortal's Touch/Enter the Ne Salas Cache Annex
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto u29_ne_salas_vault_base 66.51,52.55
+'Search the Ne Salas Cache Annex |q A Mortal's Touch/Search the Ne Salas Cache Annex
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 66.51,52.55
+talk Eveli Sharp-Arrow |q A Mortal's Touch/Talk to Eveli Sharp-Arrow
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 38.86,78.65 |q A Mortal's Touch/Reach the Lower Annex Chamber
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 56.51,25.52 |q A Mortal's Touch/Reach the Lower Annex Chamber
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 54.10,53.29
+'Reach the Lower Annex Chamber |q A Mortal's Touch/Reach the Lower Annex Chamber
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 54.10,53.29
+'Destroy the Protective Ward |q A Mortal's Touch/Destroy the Protective Ward
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 53.95,52.63
+'Wait for Eveli |q A Mortal's Touch/Wait for Eveli
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 53.95,52.63
+'Search the Imperial Cache |q A Mortal's Touch/Search the Imperial Cache
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 54.57,53.68
+talk Eveli Sharp-Arrow |q A Mortal's Touch/Talk to Eveli Sharp-Arrow
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 53.17,54.06
+talk Lyranth |q A Mortal's Touch/Talk to Lyranth
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 53.17,54.06
+click Portal to Elden Root |q A Mortal's Touch/Meet Eveli in Elden Root
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto eldenrootgroundfloor_base 64.95,87.11
+'Meet Eveli's Contact |q A Mortal's Touch/Meet Eveli's Contact
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 64.95,87.11
+talk Beragon |q A Mortal's Touch/Talk to Beragon
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 64.95,87.11
+'Examine Deciphered Imperial Document |q A Mortal's Touch/Examine the Deciphered Scroll
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 64.95,87.11
+talk Eveli
+turnin A Mortal's Touch
+accept The Emperor's Secret
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 63.74,87.07
+click Cart to Riften |q The Emperor's Secret/Meet Eveli in the Riften Mages Guild
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto riften_base 72.69,61.06
+'Meet Eveli in the Riften Mages Guild |q The Emperor's Secret/Meet Eveli in the Riften Mages Guild
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 74.20,61.62
+talk Eveli Sharp-Arrow |q The Emperor's Secret/Talk to Eveli Sharp-Arrow
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 76.22,62.81
+talk Renna |q The Emperor's Secret/Talk to Renna
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 72.88,61.06
+click Riften |q The Emperor's Secret/Go to Renna's House
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 41.73,56.14
+'Go to Renna's House |q The Emperor's Secret/Go to Renna's House
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 41.73,56.14
+'Knock on Renna's Door |q The Emperor's Secret/Knock on Renna's Door
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 41.73,56.14
+'Unlock Renna's House |q The Emperor's Secret/Find a Way Inside
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 43.26,53.97
+'Examine Farrul Lupus |q The Emperor's Secret/Examine Farrul Lupus
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 43.21,53.89
+talk Renna |q The Emperor's Secret/Talk to Renna
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 42.40,54.88
+click Riften |q The Emperor's Secret/Talk to Eveli Sharp-Arrow
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 35.64,50.76 |q The Emperor's Secret/Talk to Eveli Sharp-Arrow
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 40.26,49.32
+talk Eveli Sharp-Arrow |q The Emperor's Secret/Talk to Eveli Sharp-Arrow
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 39.96,49.63
+talk Lyranth |q The Emperor's Secret/Talk to Lyranth
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 40.37,49.40
+click Portal to Imperial Sewers |q The Emperor's Secret/Enter the Portal to the Imperial Sewers
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto u29_imperialsewers_base 55.07,42.76
+'Find the Imperial Cache Annex |q The Emperor's Secret/Find the Imperial Cache Annex
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 55.07,42.76
+click Imperial Cache Annex |q The Emperor's Secret/Enter the Imperial Cache Annex
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 51.95,65.15
+'Destroy Wards and Search Caches |q The Emperor's Secret/.*Search for Clues to Leovic's Secret.* |count 1
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 53.76,75.50
+'Destroy Wards and Search Caches |q The Emperor's Secret/.*Search for Clues to Leovic's Secret.* |count 2
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 73.16,81.19
+'Examine Waking Flame Ritual |q The Emperor's Secret/.*Search for Clues to Leovic's Secret.* |count 3
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 80.27,63.45
+'Find the Shrine to Dagon |q The Emperor's Secret/Find the Shrine to Dagon
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 80.14,44.42
+click Portal to the Deadlands |q The Emperor's Secret/Follow Doombringer Eshil Through the Portal
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto bwp2deadlands_base 40.49,63.92 |q The Emperor's Secret/Find Doombringer Eshil
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 59.47,44.44 |q The Emperor's Secret/Find Doombringer Eshil
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 74.93,54.71 |q The Emperor's Secret/Find Doombringer Eshil
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 61.11,58.99
+'Find Doombringer Eshil |q The Emperor's Secret/Find Doombringer Eshil
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 61.11,58.99
+kill Doombringer Eshil |q The Emperor's Secret/Kill Doombringer Eshil
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 58.06,58.42
+click Portal to Elden Root |q The Emperor's Secret/Return to Elden Root
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto eldenrootgroundfloor_base 66.97,86.92
+talk Lyranth |q The Emperor's Secret/Talk to Lyranth
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 66.30,87.63
+talk Eveli Sharp-Arrow
+turnin The Emperor's Secret
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+-- END: ALDMERI DOMINION FACTION PROLOGUE GUIDE
 
 -- START: DAGGERFALL COVENANT FACTION
 step
@@ -26650,182 +26884,6 @@ step
 -- END: EBONHEART PACT FACTION
 
 -- BEGIN PROLOGUE FOR ALL FACTIONS
-goto u29_Prologue_IC_base 49.94,53.01 |q A Mortal's Touch/.*Destroy Wards and Search Caches.* |count 1
-step
-goto 56.18,55.16
-'Destroy Wards and Search Caches |q A Mortal's Touch/.*Destroy Wards and Search Caches.* |count 1
-step
-goto 45.10,57.03
-'Destroy Wards and Search Caches |q A Mortal's Touch/.*Destroy Wards and Search Caches.* |count 2
-step
-goto 49.32,64.24
-'Destroy Wards and Search Caches |q A Mortal's Touch/.*Destroy Wards and Search Caches.* |count 3
-step
-goto 50.35,40.26
-talk Lyranth |q A Mortal's Touch/Talk to Lyranth
-step
-goto 49.71,40.30
-click Portal to Grahtwood |q A Mortal's Touch/Travel to Ne Salas in Grahtwood
-|tip Manually skip to the next step.
-step
-goto grahtwood_base 56.55,66.51
-click Ne Salas |q A Mortal's Touch/Enter Ne Salas
-|tip Manually skip to the next step.
-step
-goto nesalas_base 83.20,23.53
-'Search Ne Salas |q A Mortal's Touch/Search Ne Salas
-step
-goto 83.20,23.53
-talk Eveli Sharp-Arrow |q A Mortal's Touch/Talk to Eveli Sharp-Arrow
-step
-goto 14.98,33.43 |q A Mortal's Touch/Find the Imperial Cache
-step
-goto 31.53,87.26
-'Find the Imperial Cache |q A Mortal's Touch/Find the Imperial Cache
-step
-goto 31.53,87.26
-click Ne Salas Cache Annex |q A Mortal's Touch/Enter the Ne Salas Cache Annex
-|tip Manually skip to the next step.
-step
-goto u29_ne_salas_vault_base 66.51,52.55
-'Search the Ne Salas Cache Annex |q A Mortal's Touch/Search the Ne Salas Cache Annex
-step
-goto 66.51,52.55
-talk Eveli Sharp-Arrow |q A Mortal's Touch/Talk to Eveli Sharp-Arrow
-step
-goto 38.86,78.65 |q A Mortal's Touch/Reach the Lower Annex Chamber
-step
-goto 56.51,25.52 |q A Mortal's Touch/Reach the Lower Annex Chamber
-step
-goto 54.10,53.29
-'Reach the Lower Annex Chamber |q A Mortal's Touch/Reach the Lower Annex Chamber
-step
-goto 54.10,53.29
-'Destroy the Protective Ward |q A Mortal's Touch/Destroy the Protective Ward
-step
-goto 53.95,52.63
-'Wait for Eveli |q A Mortal's Touch/Wait for Eveli
-step
-goto 53.95,52.63
-'Search the Imperial Cache |q A Mortal's Touch/Search the Imperial Cache
-step
-goto 54.57,53.68
-talk Eveli Sharp-Arrow |q A Mortal's Touch/Talk to Eveli Sharp-Arrow
-step
-goto 53.17,54.06
-talk Lyranth |q A Mortal's Touch/Talk to Lyranth
-step
-goto 53.17,54.06
-click Portal to Elden Root |q A Mortal's Touch/Meet Eveli in Elden Root
-|tip Manually skip to the next step.
-step
-goto eldenrootgroundfloor_base 64.95,87.11
-'Meet Eveli's Contact |q A Mortal's Touch/Meet Eveli's Contact
-step
-goto 64.95,87.11
-talk Beragon |q A Mortal's Touch/Talk to Beragon
-step
-goto 64.95,87.11
-'Examine Deciphered Imperial Document |q A Mortal's Touch/Examine the Deciphered Scroll
-step
-goto 64.95,87.11
-talk Eveli
-turnin A Mortal's Touch
-accept The Emperor's Secret
-step
-goto 63.74,87.07
-click Cart to Riften |q The Emperor's Secret/Meet Eveli in the Riften Mages Guild
-|tip Manually skip to the next step.
-step
-goto riften_base 72.69,61.06
-'Meet Eveli in the Riften Mages Guild |q The Emperor's Secret/Meet Eveli in the Riften Mages Guild
-step
-goto 74.20,61.62
-talk Eveli Sharp-Arrow |q The Emperor's Secret/Talk to Eveli Sharp-Arrow
-step
-goto 76.22,62.81
-talk Renna |q The Emperor's Secret/Talk to Renna
-step
-goto 72.88,61.06
-click Riften |q The Emperor's Secret/Go to Renna's House
-|tip Manually skip to the next step.
-step
-goto 41.73,56.14
-'Go to Renna's House |q The Emperor's Secret/Go to Renna's House
-step
-goto 41.73,56.14
-'Knock on Renna's Door |q The Emperor's Secret/Knock on Renna's Door
-step
-goto 41.73,56.14
-'Unlock Renna's House |q The Emperor's Secret/Find a Way Inside
-step
-goto 43.26,53.97
-'Examine Farrul Lupus |q The Emperor's Secret/Examine Farrul Lupus
-step
-goto 43.21,53.89
-talk Renna |q The Emperor's Secret/Talk to Renna
-step
-goto 42.40,54.88
-click Riften |q The Emperor's Secret/Talk to Eveli Sharp-Arrow
-|tip Manually skip to the next step.
-step
-goto 35.64,50.76 |q The Emperor's Secret/Talk to Eveli Sharp-Arrow
-step
-goto 40.26,49.32
-talk Eveli Sharp-Arrow |q The Emperor's Secret/Talk to Eveli Sharp-Arrow
-step
-goto 39.96,49.63
-talk Lyranth |q The Emperor's Secret/Talk to Lyranth
-step
-goto 40.37,49.40
-click Portal to Imperial Sewers |q The Emperor's Secret/Enter the Portal to the Imperial Sewers
-|tip Manually skip to the next step.
-step
-goto u29_imperialsewers_base 55.07,42.76
-'Find the Imperial Cache Annex |q The Emperor's Secret/Find the Imperial Cache Annex
-step
-goto 55.07,42.76
-click Imperial Cache Annex |q The Emperor's Secret/Enter the Imperial Cache Annex
-step
-goto 51.95,65.15
-'Destroy Wards and Search Caches |q The Emperor's Secret/.*Search for Clues to Leovic's Secret.* |count 1
-step
-goto 53.76,75.50
-'Destroy Wards and Search Caches |q The Emperor's Secret/.*Search for Clues to Leovic's Secret.* |count 2
-step
-goto 73.16,81.19
-'Examine Waking Flame Ritual |q The Emperor's Secret/.*Search for Clues to Leovic's Secret.* |count 3
-step
-goto 80.27,63.45
-'Find the Shrine to Dagon |q The Emperor's Secret/Find the Shrine to Dagon
-step
-goto 80.14,44.42
-click Portal to the Deadlands |q The Emperor's Secret/Follow Doombringer Eshil Through the Portal
-|tip Manually skip to the next step.
-step
-goto bwp2deadlands_base 40.49,63.92 |q The Emperor's Secret/Find Doombringer Eshil
-step
-goto 59.47,44.44 |q The Emperor's Secret/Find Doombringer Eshil
-step
-goto 74.93,54.71 |q The Emperor's Secret/Find Doombringer Eshil
-step
-goto 61.11,58.99
-'Find Doombringer Eshil |q The Emperor's Secret/Find Doombringer Eshil
-step
-goto 61.11,58.99
-kill Doombringer Eshil |q The Emperor's Secret/Kill Doombringer Eshil
-step
-goto 58.06,58.42
-click Portal to Elden Root |q The Emperor's Secret/Return to Elden Root
-|tip Manually skip to the next step.
-step
-goto eldenrootgroundfloor_base 66.97,86.92
-talk Lyranth |q The Emperor's Secret/Talk to Lyranth
-step
-goto 66.30,87.63
-talk Eveli Sharp-Arrow
-turnin The Emperor's Secret
-step
 -- END PROLOGUE GUIDE FOR NEW AND EXISTING PLAYERS
 
 -- BEGIN BLACKWOOD GUIDE FOR EXISTING PLAYERS
