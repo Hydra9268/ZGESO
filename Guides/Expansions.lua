@@ -26441,11 +26441,8 @@ step
 
 -- START: ALDMERI DOMINION FACTION PROLOGUE GUIDE
 step
-goto khenarthisroost_base 55.26,83.87
-talk Sugar Claws |q A Mortal's Touch |future
-'Select _I'm looking for passage off this island._
-'Select _Where can you take me?_
-'Select _All right. Take me to Vulkhel Guard._
+'Open your map. Right click until you see the Tamriel map.
+'Travel to the _Vulkhel Guard_ Wayshrine |q A Mortal's Touch |future
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
@@ -26493,6 +26490,12 @@ step
 goto shaelruins_base 32.77,39.22 |q A Mortal's Touch/Find Lyranth Inside the Delve
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
+goto 50.43,74.87 |q A Mortal's Touch/Find Lyranth Inside the Delve
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 47.00,88.79 |q A Mortal's Touch/Find Lyranth Inside the Delve
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
 goto 38.39,83.20
 'Find Lyranth Inside the Delve |q A Mortal's Touch/Find Lyranth Inside the Delve
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
@@ -26509,6 +26512,7 @@ goto 38.42,89.90
 click Imperial Cache Annex |q A Mortal's Touch/Enter the Imperial Cache Annex
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
 goto u29_Prologue_IC_base 49.94,53.01 |q A Mortal's Touch/.*Destroy Wards and Search Caches.* |count 1
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
@@ -26549,6 +26553,15 @@ step
 goto 14.98,33.43 |q A Mortal's Touch/Find the Imperial Cache
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
+goto 14.64,49.39
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 14.47,75.58
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 31.23,76.51
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
 goto 31.53,87.26
 'Find the Imperial Cache |q A Mortal's Touch/Find the Imperial Cache
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
@@ -26566,7 +26579,19 @@ goto 66.51,52.55
 talk Eveli Sharp-Arrow |q A Mortal's Touch/Talk to Eveli Sharp-Arrow
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
-goto 38.86,78.65 |q A Mortal's Touch/Reach the Lower Annex Chamber
+goto 69.89,71.10 |q A Mortal's Touch/Reach the Lower Annex Chamber
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 58.11,74.13 |q A Mortal's Touch/Reach the Lower Annex Chamber
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 45.62,74.25 |q A Mortal's Touch/Reach the Lower Annex Chamber
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 35.71,78.10 |q A Mortal's Touch/Reach the Lower Annex Chamber
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 38.58,57.29 |q A Mortal's Touch/Reach the Lower Annex Chamber
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 56.51,25.52 |q A Mortal's Touch/Reach the Lower Annex Chamber
