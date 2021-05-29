@@ -26298,144 +26298,144 @@ description Straddling the great Niben River and extending east into the bogs of
 step
 goto u30_balfiera_int1_base 43.40,72.51
 'Look Around |q The Gates of Adamant/Look Around
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 goto 43.40,72.51
 talk Norianwe |q The Gates of Adamant/Talk to Norianwe
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 goto 43.52,72.84
 click Cell Door |q The Gates of Adamant/Exit Cell
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 goto 45.70,62.13
 'Follow Norianwe |q The Gates of Adamant/Follow Norianwe
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 goto 45.70,62.13
 talk Norianwe |q The Gates of Adamant/Talk to Norianwe
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 goto 50.82,58.86
 'Take a Weapon |q The Gates of Adamant/Take a Weapon
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 goto 50.82,58.86
 'Equip a Weapon |q The Gates of Adamant/Equip a Weapon
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 goto 50.40,49.72
 click Balfiera Ruins |q The Gates of Adamant/Follow Norianwe
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 |tip Manually skip to the next step.
 step
 goto u30_balfiera_int2_base 51.29,34.79
 'Follow Norianwe |q The Gates of Adamant/Follow Norianwe
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 goto 51.29,34.79
 'Practice Combat |q The Gates of Adamant/Practice Combat
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 goto 52.36,32.29
 talk Norianwe |q The Gates of Adamant/Talk to Norianwe
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 goto 50.75,27.47
 click Balfiera Ruins |q The Gates of Adamant/Lead Norianwe Outside
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 goto u30_balfiera_int3_base 35.07,41.44 |q The Gates of Adamant/Lead Norianwe Outside
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 goto u30_balfiera_int3_base 49.81,45.45
 click Balfiera Ruins |q The Gates of Adamant/Lead Norianwe Outside
 |tip Go upstairs
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 goto u30_balfiera_int5_base 75.95,45.42
 click Balfiera Island |q The Gates of Adamant/Lead Norianwe Outside
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 goto u30_balfiera_ext 70.51,51.10
 click Gallery Foyer |q The Gates of Adamant/Find the Keywright's Gallery
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 goto u30_balfiera_int7_base 49.57,54.09
 talk Norianwe |q The Gates of Adamant/Talk to Norianwe
 |tip Go Upstairs
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 goto 28.78,74.04
 click Balfiera Island |q The Gates of Adamant/Acquire the Skyshard
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 goto u30_balfiera_ext 66.87,71.27
 click Skyshard Vault |q The Gates of Adamant/Acquire the Skyshard
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 click Skyshard |q The Gates of Adamant/Acquire the Skyshard
 |tip Straight ahead. Kill the Gargoyle and then acquire the Skyshard.
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 click Balfiera Island |q The Gates of Adamant/Return to the Gate
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 goto 70.55,51.17
 click Gallery Balfiera |q The Gates of Adamant/Return to the Gate
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 goto u30_balfiera_int7_base 49.05,53.61
 'Return to the Gate |q The Gates of Adamant/Return to the Gate
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 goto 49.05,53.61
 'Activate Skyshard Aperture |q The Gates of Adamant/Repair the Gate
 |tip Upstairs
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 goto 48.62,53.02
 talk Norianwe |q The Gates of Adamant/Talk to Norianwe
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 goto 51.45,51.13
 click Gallery Antechamber |q The Gates of Adamant/Enter Gate
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 goto 61.23,41.34
 kill Shyazzel the Traveler |q The Gates of Adamant/Defeat Shyazzel the Traveler
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 goto 68.22,34.39
 click the Keywright's Gallery |q The Gates of Adamant/Enter the Keywright's Gallery
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 goto u30_balfiera_int8_base 64.79,72.48
 click Keywright's Gallery |q The Gates of Adamant/Enter the Keywright's Gallery
 |tip Follow path to the right.
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 goto 62.06,61.65
 'Enter the Keywright's Gallery |q The Gates of Adamant/Enter the Keywright's Gallery
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 goto 47.01,55.19
 talk Norianwe
 turnin The Gates of Adamant
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 step
 'Click any of the portals around the room depending on where you want to level.
 'Congratulations, you have completed the Tutorial!
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24
+|only if ZGV.Utils.GetPlayerPreciseLevel() < 6 and ZGV.Utils.MapIndex() == 24 and ZGV.Utils.GetMapNameByDDSFile() ~= u29_ne_salas_vault_base
 -- END: NEW ISLE OF BALFIERA TUTORIAL GUIDE FOR NEW PLAYERS
 
 -- BEGIN: BLACKWOOD PROLOGUE GUIDE FOR NEW AND EXISTING PLAYERS
