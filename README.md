@@ -89,7 +89,7 @@ For example, 1.4.96
 `ZGV.Utils.IsIntroTutorial()` = (functions.lua) Quickly indentifies the intro tutorial for new players. Currently configured for the Isle of Balfiera.
 
 
-##### Goal Handlers - requires a pipe | in front to activate (e.g. |tip, |q, |count)
+#### Goal Handlers - requires a pipe | in front to activate (e.g. |tip, |q, |count)
 
 `|q` = Creates a step in ZGESO's progress bar. It also denotes the current step's quest.
 
