@@ -84,6 +84,11 @@ For example, 1.4.96
 `'` = Adds general information.<br/>
 
 
+#### ZGESO Functions of note
+
+`ZGV.Utils.IsIntroTutorial()` = (functions.lua) Quickly indentifies the intro tutorial for new players. Currently configured for the Isle of Balfiera.
+
+
 ##### Goal Handlers - requires a pipe | in front to activate (e.g. |tip, |q, |count)
 
 `|q` = Creates a step in ZGESO's progress bar. It also denotes the current step's quest.
@@ -97,8 +102,6 @@ For example, 1.4.96
 * `Aldmeri Dominion Leveling Guides\\Khenarthi's Roost` = the RegisterGuide to load
 
 `|count #` = Handler to track a sequence of objectives
-
-`ZGV.Utils.IsIntroTutorial()` = (functions.lua) Quickly indentifies the intro tutorial for new players. Currently configured for the Isle of Balfiera.
 
 `|only if` and `|only if not` = Conditional handlers
 
