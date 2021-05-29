@@ -95,7 +95,7 @@ For example, 1.4.96
 
 `/` = Placed on the same line after `|q`. The slash checks for a completed task in the Quest Journal for the current step's quest. Important: Must match the task word-for-word, space-for-space to register as completed.
 
-`|tip` = Handler for displaying tips in a small font. Note: placing a `|tip` in a `|goto` step prevents the action from automatically going to the next step when meeting the condition.
+`|tip` = Handler for displaying tips in a small font. Note: placing a `|tip` in a `goto` step prevents the action from automatically going to the next step when meeting the condition.
 
 `|next Aldmeri Dominion Leveling Guides\\Khenarthi's Roost` = Instructs ZGESO to skip to another guide
 * `next` = Handler that tells the guide to load another guide
