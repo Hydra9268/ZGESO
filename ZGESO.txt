@@ -1,7 +1,7 @@
-## Title: Leveling Guides v1.4.715
+## Title: Leveling Guides v1.4.812
 ## Description: A Zygor addon updated by snichols7778, Hydra9268, Krandor1, and Sharlikran for the Blackwood expansion.
 ## Author: snichols7778, Hydra9268
-## Version: 1.4.715
+## Version: 1.4.812
 ## AddOnVersion: 14654
 ## APIVersion: 100034 100035
 ; ## DependsOn: LibGPS AceTimer-3.0>=146
@@ -49,7 +49,7 @@ ZGESO.lua
 ZGESO.xml
 Functions.lua
 
--- Main Utilities?
+-- Utilities
 UiWidgets/Main.lua
 Class.lua
 Globals.lua
@@ -62,11 +62,13 @@ BugReport.lua
 
 Options.lua
 
+-- UI
 Pointer.xml
 Pointer.lua
 Arrows/Stealth/Arrow.lua
 Arrows/Stealth/Arrow.xml
 
+-- Data
 Travel/Main.lua
 Travel/Data.lua
 
@@ -95,6 +97,7 @@ Data/EbonheartPact/ObjectData.lua
 
 Data/Main.lua
 
+-- Guide
 Parser.lua
 GuideHandling.lua
 Guide.lua
@@ -104,6 +107,7 @@ Goal.lua
 Quest.lua
 QuestTracker.lua
 
+-- UI Widgets
 UiWidgets/Base.lua
 UiWidgets/Label.lua
 UiWidgets/Backdrop.lua
@@ -127,6 +131,7 @@ Viewer/GuideViewerFrame.lua
 Viewer/GuideViewerFrame.xml
 GuideMenu.lua
 
+-- Guides
 Guides/ZygorIncludeCommon.lua
 Guides/LevelingCommon.lua
 Guides/LevelingAldmeriDominion.lua
@@ -137,13 +142,16 @@ Guides/MainQuestsOnly.lua
 Guides/DLCs.lua
 Guides/Expansions.lua
 Guides/Expansions2.lua
+; Guides/Testing.lua
 
-Testing/Main.lua
-Testing/UI.lua
-Testing/Localization.lua
-Testing/GuideParsing.lua
-Testing/DataCollecting.lua
-Testing/Quests.lua
+-- Testing
+; Testing/Main.lua
+; Testing/UI.lua
+; Testing/Localization.lua
+; Testing/GuideParsing.lua
+; Testing/DataCollecting.lua
+; Testing/Quests.lua
 
+-- Bindings
 Bindings.xml
 Bindings.lua

@@ -20499,7 +20499,7 @@ step
 
 ZGV:RegisterGuide("LEVELING\\Western Skyrim",[[
 loadingimage loadscreen_westernskyrim_01.dds
-description Greymoor is the fourth Chapter of The Elder Scrolls Online. Supernatural harrowstorms plague Western Skyrim, and dark beasts, led by a powerful Vampire Lord, devour souls to further their mysterious plans. In The Elder Scrolls Online: Greymoor, ESO's newest Chapter, you must defend the besieged Nords and uncover the evil behind this monstrous resurgence.
+description Sundered from Eastern Skyrim in years past, High King Svargrim rules the cold and unforgiving land known as Western Skyrim. Consisting of the holds of Haafingar, Karthald, and Hjaalmarch, the realm gives rise to hardy natures, brave warriors, and suspicious townsfolk.
 step
 
 -- BEGIN: WESTERN SKYRIM PROLOGUE GUIDE FOR EXISTING PLAYERS
@@ -21002,7 +21002,6 @@ click Windhelm Wayshrine
 |tip Manually skip to next step.
 step
 -- END: WESTERN SKYRIM INTRO GUIDE FOR EXISTING PLAYERS
-
 
 -- BEGIN: WESTERN SKYRIM GUIDE EXISTING PLAYERS
 goto westernskryim_base 51.25,43.10

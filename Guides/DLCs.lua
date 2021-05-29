@@ -6706,7 +6706,7 @@ step
 'Congratulations, you have completed the Imperial City guide!
 ]])
 
-ZGV:RegisterGuide("LEVELING\\DLC\\Orsinium",[[
+ZGV:RegisterGuide("LEVELING\\Wrothgar",[[
 loadingimage loadscreen_orsinium_keyart_01.dds
 description King Kurog has begun to rebuild the great city of Orsinium, the long-abandoned capital city of the Orcs. But already there are whispered plots from those who would seize power for themselves.
 step
