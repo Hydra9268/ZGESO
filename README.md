@@ -98,6 +98,8 @@ For example, 1.4.96
 
 `|count #` = Handler to track a sequence of objectives
 
+`ZGV.Utils.IsIntroTutorial()` = (functions.lua) Quickly indentifies the intro tutorial for new players. Currently configured for the Isle of Balfiera.
+
 `|only if` and `|only if not` = Conditional handlers
 
 For example<br>

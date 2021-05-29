@@ -193,6 +193,14 @@ function Utils.GetMapNameByDDSFile()
 	end
 end
 
+function Utils.IsIntroTutorial()
+	if ZGV.Utils.GetPlayerPreciseLevel() < 6 and Utils.MapIndex() == 24 and Utils.GetMapNameByDDSFile() ~= "u29_ne_salas_vault_base" then
+		return true
+	else
+		return false
+	end
+end
+
 function Utils.GetMapNameByTexture()
 	local _,_,word = string.find( GetMapTileTexture(), "%a+/%a+/(%a+)/" ) -- pattern "Art/maps/mapname <- we want this
 	local name = zo_strformat("<<C:1>>", word) -- Uppercase first letter
