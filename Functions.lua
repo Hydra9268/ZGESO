@@ -164,7 +164,7 @@ end
 
 function Utils.MapIndex()
 	local gps = GPS:GetCurrentMapMeasurements()
-	if gps.mapIndex ~= '' then
+	if gps ~= nil then
 		return gps.mapIndex
 	else
 		return 0
@@ -182,6 +182,15 @@ end
 function Utils.GetPlayerName()
 	local name = GetUnitName("player")
 	return name
+end
+
+function Utils.GetMapNameByDDSFile()
+	local texture = ZGV.Pointer:GetMapTex()
+	if texture ~= nil then
+		return texture
+	else
+		return 0
+	end
 end
 
 function Utils.GetMapNameByTexture()
