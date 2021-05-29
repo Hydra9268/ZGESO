@@ -22,9 +22,9 @@ Install through the excellent add-on manager <a href="https://minion.mmoui.com/"
 
 <br/>
 
-### 4/24/21 Blackwood Guide Coming Soon (Thanks to snichols7778)! 
 
-<img src="https://i.imgur.com/GYcFbv7.png">
+### 5/29/21 Blackwood and Dragonhold (Southern Elsweyr) Guides Coming 6/1 (Thank you, snichols7778)! 
+<img src="https://i.imgur.com/sXFD12e.png">
 <i>artwork &copy; ZeniMax Media</i>
 
 ### 3/27/21 Skyrim Guides Now Available (Thanks to snichols7778)! 

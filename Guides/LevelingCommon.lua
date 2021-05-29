@@ -34147,13 +34147,7 @@ step
 goto 41.33,23.40
 step
 goto 41.85,24.39
-talk Squire Theo Rocque |q The Charge of Evermore/Talk to Squire Theo Rocque
-step
-goto 42.32,24.37
-click Bucket
-|tip These spawn around this area.
-'Grab a Bucket of Water |q The Charge of Evermore/.*Check the Fortifications.*
-|tip Manually skip to the next step.
+talk Squire Theo Rocque |q The Charge of Evermore/Learn What Happened in Murcien's Hamlet
 step
 goto 40.72,24.38
 'Check the Western Fortifications |q The Charge of Evermore/.*Check the Fortifications.* |count 1
@@ -34168,6 +34162,12 @@ step
 goto 41.57,23.41
 click Fortifications
 'Check the Fortification |q The Charge of Evermore/.*Check the Fortifications.* |count 2
+step
+goto 42.32,24.37
+click Bucket
+|tip These spawn around this area.
+'Grab a Bucket of Water |q The Charge of Evermore/.*Check the Fortifications.*
+|tip Manually skip to the next step.
 step
 goto 39.81,20.11
 |tip Inside the building.
