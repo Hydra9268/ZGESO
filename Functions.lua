@@ -3,6 +3,7 @@
 -----------------------------------------
 
 local ZGV = _G.ZGV
+local GPS = LibGPS2
 
 local GetAbilityProgressionXPInfoFromAbilityId = _G.GetAbilityProgressionXPInfoFromAbilityId
 local GetAddOnManager = _G.GetAddOnManager
@@ -159,6 +160,11 @@ end
 function Utils.FormatLevel(l,...)
 	if type(l) == "table" then l = ... end	-- dummy proof ZGV.Utils:FormatLevel(5)
 	return tostring(l)		-- Nothing special atm
+end
+
+function Utils.MapIndex()
+	local gps = GPS:GetCurrentMapMeasurements()
+	return gps.mapIndex
 end
 
 function Utils.GetPlayerPreciseLevel()
