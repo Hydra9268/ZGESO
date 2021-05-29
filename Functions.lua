@@ -164,7 +164,11 @@ end
 
 function Utils.MapIndex()
 	local gps = GPS:GetCurrentMapMeasurements()
-	return gps.mapIndex
+	if gps.mapIndex ~= '' then
+		return gps.mapIndex
+	else
+		return 0
+	end
 end
 
 function Utils.GetPlayerPreciseLevel()
