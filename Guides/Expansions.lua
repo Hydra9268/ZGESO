@@ -26488,7 +26488,13 @@ click Shael Ruins |q A Mortal's Touch/Find Lyranth Inside the Delve
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
-goto shaelruins_base 32.77,39.22 |q A Mortal's Touch/Find Lyranth Inside the Delve
+goto shaelruins_base 88.41,40.30 |q A Mortal's Touch/Find Lyranth Inside the Delve
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 32.77,39.22 |q A Mortal's Touch/Find Lyranth Inside the Delve
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 32.49,74.73 |q A Mortal's Touch/Find Lyranth Inside the Delve
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 50.43,74.87 |q A Mortal's Touch/Find Lyranth Inside the Delve
