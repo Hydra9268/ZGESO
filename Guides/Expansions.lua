@@ -26513,6 +26513,155 @@ goto 38.42,89.90
 click Imperial Cache Annex |q A Mortal's Touch/Enter the Imperial Cache Annex
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+-- END: ALDMERI DOMINION FACTION PROLOGUE GUIDE
+
+-- START: DAGGERFALL COVENANT FACTION
+step
+'Open your map. Right click until you see the Tamriel map.
+'Travel to the _Daggerfall_ Wayshrine |q A Mortal's Touch |future
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto daggerfall_base 45.78,31.11 |q A Mortal's Touch |future
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto 53.69,37.63 |q A Mortal's Touch |future
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto 66.65,40.54 |q A Mortal's Touch |future
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto 68.35,39.25
+talk Rogatus Cinna
+accept A Mortal's Touch
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto daggerfall_base 68.35,39.25
+'Examine Dread Lady's Letter |q A Mortal's Touch/Examine the Letter
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto 69.19,38.80
+click Cart to Location Shown on Your Map |q A Mortal's Touch/Go to the Location Shown on Your Map
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto rivenspire_base 40.01,31.14
+click Erokii Ruins |q A Mortal's Touch/Go to the Location Shown on Your Map
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto erokii_base 76.97,38.09 |q A Mortal's Touch/Find Lyranth Inside the Delve
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto 12.75,38.41 |q A Mortal's Touch/Find Lyranth Inside the Delve
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto 12.03,78.73 |q A Mortal's Touch/Find Lyranth Inside the Delve
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto 26.89,78.61
+'Find Lyranth Inside the Delve |q A Mortal's Touch/Find Lyranth Inside the Delve
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto 28.88,83.15
+talk Lyranth |q A Mortal's Touch/Talk to Lyranth
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto 28.37,86.65
+'Destroy Protective Ward |q A Mortal's Touch/Destroy the Protective Ward
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+step
+goto 28.29,88.73
+click Imperial Cache Annex |q A Mortal's Touch/Enter the Imperial Cache Annex
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+-- END: DAGGERFALL COVENANT FACTION
+
+-- START: EBONHEART PACT FACTION
+step
+'Open your map. Right click until you see the Tamriel map.
+'Travel to the _Davon's Watch_ Wayshrine |q A Mortal's Touch |future
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto davonswatch_base 70.58,72.76 |q A Mortal's Touch |future
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 65.56,64.11 |q A Mortal's Touch |future
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 70.93,57.74 |q A Mortal's Touch |future
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 66.24,49.51 |q A Mortal's Touch |future
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 79.14,41.51 |q A Mortal's Touch |future
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 76.25,33.58 |q A Mortal's Touch |future
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 77.94,30.07
+talk Falvis Raram |q A Mortal's Touch |future
+'Select _I'd like to travel within the Ebonheart Pact._
+'Select _Deshaan, when you're ready._
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto mournhold_base 35.26,51.95 |q A Mortal's Touch |future
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 42.63,57.28 |q A Mortal's Touch |future
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 42.21,67.86 |q A Mortal's Touch |future
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 35.54,77.26
+talk Rogatus Cinna
+accept A Mortal's Touch
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 35.82,76.87
+'Examine Dread Lady's Letter |q A Mortal's Touch/Examine the Letter
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 35.91,77.09
+click Cart to the Location Shown on Your Map |q A Mortal's Touch/Go to the Location Shown on Your Map
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto shadowfen_base 28.99,16.90
+click Shrine of the Black Maw |q A Mortal's Touch/Find Lyranth Inside the Delve
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto shrineofblackworm_base 15.59,35.19 |q A Mortal's Touch/Find Lyranth Inside the Delve
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 14.58,79.98 |q A Mortal's Touch/Find Lyranth Inside the Delve
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 33.50,84.51
+'Find Lyranth Inside the Delve |q A Mortal's Touch/Find Lyranth Inside the Delve
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 33.50,84.51
+talk Lyranth |q A Mortal's Touch/Talk to Lyranth
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 33.09,88.53
+'Destroy the Protective Ward |q A Mortal's Touch/Destroy the Protective Ward
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 33.27,91.54
+click Imperial Cache Annex |q A Mortal's Touch/Enter the Imperial Cache Annex
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+-- END: EBONHEART PACT FACTION
+
+-- BEGIN: MERGED PROLOGUE FOR ALL FACTIONS
 step
 goto u29_Prologue_IC_base 49.94,53.01 |q A Mortal's Touch/.*Destroy Wards and Search Caches.* |count 1
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
@@ -26626,148 +26775,6 @@ goto 53.17,54.06
 click Portal to Elden Root |q A Mortal's Touch/Meet Eveli in Elden Root
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
--- END: ALDMERI DOMINION FACTION PROLOGUE GUIDE
-
--- START: DAGGERFALL COVENANT FACTION
-step
-'Open your map. Right click until you see the Tamriel map.
-'Travel to the _Daggerfall_ Wayshrine |q A Mortal's Touch |future
-|tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
-step
-goto daggerfall_base 45.78,31.11 |q A Mortal's Touch |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
-step
-goto 53.69,37.63 |q A Mortal's Touch |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
-step
-goto 66.65,40.54 |q A Mortal's Touch |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
-step
-goto 68.35,39.25
-talk Rogatus Cinna
-accept A Mortal's Touch
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
-step
-goto daggerfall_base 68.35,39.25
-'Examine Dread Lady's Letter |q A Mortal's Touch/Examine the Letter
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
-step
-goto 69.19,38.80
-click Cart to Location Shown on Your Map |q A Mortal's Touch/Go to the Location Shown on Your Map
-|tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
-step
-goto rivenspire_base 40.01,31.14
-click Erokii Ruins |q A Mortal's Touch/Go to the Location Shown on Your Map
-|tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
-step
-goto erokii_base 12.75,38.41 |q A Mortal's Touch/Find Lyranth Inside the Delve
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
-step
-goto 26.89,78.61
-'Find Lyranth Inside the Delve |q A Mortal's Touch/Find Lyranth Inside the Delve
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
-step
-goto 28.88,83.15
-talk Lyranth |q A Mortal's Touch/Talk to Lyranth
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
-step
-goto 28.37,86.65
-'Destroy Protective Ward |q A Mortal's Touch/Destroy the Protective Ward
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
-step
-goto 28.29,88.73
-click Imperial Cache Annex |q A Mortal's Touch/Enter the Imperial Cache Annex
-|tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
--- END: DAGGERFALL COVENANT FACTION
-
--- START: EBONHEART PACT FACTION
-step
-'Open your map. Right click until you see the Tamriel map.
-'Travel to the _Davon's Watch_ Wayshrine |q A Mortal's Touch |future
-|tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
-step
-goto davonswatch_base 70.58,72.76
-step
-goto 65.56,64.11 |q A Mortal's Touch |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
-step
-goto 70.93,57.74 |q A Mortal's Touch |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
-step
-goto 66.24,49.51 |q A Mortal's Touch |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
-step
-goto 79.14,41.51 |q A Mortal's Touch |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
-step
-goto 76.25,33.58 |q A Mortal's Touch |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
-step
-goto 77.94,30.07
-talk Falvis Raram |q A Mortal's Touch |future
-'Select _I'd like to travel within the Ebonheart Pact._
-'Select _Deshaan, when you're ready._
-|tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
-step
-goto mournhold_base 35.26,51.95 |q A Mortal's Touch |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
-step
-goto 42.63,57.28 |q A Mortal's Touch |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
-step
-goto 42.21,67.86 |q A Mortal's Touch |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
-step
-goto 35.54,77.26
-talk Rogatus Cinna
-accept A Mortal's Touch
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
-step
-goto 35.82,76.87
-'Examine Dread Lady's Letter |q A Mortal's Touch/Examine the Letter
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
-step
-goto 35.91,77.09
-click Cart to the Location Shown on Your Map |q A Mortal's Touch/Go to the Location Shown on Your Map
-|tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
-step
-goto shadowfen_base 28.99,16.90
-click Shrine of the Black Maw |q A Mortal's Touch/Find Lyranth Inside the Delve
-|tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
-step
-goto shrineofblackworm_base 15.59,35.19 |q A Mortal's Touch/Find Lyranth Inside the Delve
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
-step
-goto 14.58,79.98 |q A Mortal's Touch/Find Lyranth Inside the Delve
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
-step
-goto 33.50,84.51
-'Find Lyranth Inside the Delve |q A Mortal's Touch/Find Lyranth Inside the Delve
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
-step
-goto 33.50,84.51
-talk Lyranth |q A Mortal's Touch/Talk to Lyranth
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
-step
-goto 33.09,88.53
-'Destroy the Protective Ward |q A Mortal's Touch/Destroy the Protective Ward
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
-step
-goto 33.27,91.54
-click Imperial Cache Annex |q A Mortal's Touch/Enter the Imperial Cache Annex
-|tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
--- END: EBONHEART PACT FACTION
-
--- BEGIN: MERGED PROLOGUE FOR ALL FACTIONS
 step
 goto eldenrootgroundfloor_base 64.95,87.11
 'Meet Eveli's Contact |q A Mortal's Touch/Meet Eveli's Contact
