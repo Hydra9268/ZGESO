@@ -26638,14 +26638,15 @@ click Cart to the Location Shown on Your Map |q A Mortal's Touch/Go to the Locat
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetFaction("player","notvet")=="EP"
 step
-
-
 goto shadowfen_base 28.99,16.90
 click Shrine of the Black Maw |q A Mortal's Touch/Find Lyranth Inside the Delve
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetFaction("player","notvet")=="EP"
 step
-goto shrineofblackworm_base 15.59,35.19 |q A Mortal's Touch/Find Lyranth Inside the Delve
+goto shrineofblackworm_base 89.49,32.59 |q A Mortal's Touch/Find Lyranth Inside the Delve
+|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+step
+goto 15.59,35.19 |q A Mortal's Touch/Find Lyranth Inside the Delve
 |only if ZGV.Utils.GetFaction("player","notvet")=="EP"
 step
 goto 14.58,79.98 |q A Mortal's Touch/Find Lyranth Inside the Delve
@@ -26729,6 +26730,8 @@ step
 goto 35.71,78.10 |q A Mortal's Touch/Reach the Lower Annex Chamber
 step
 goto 38.58,57.29 |q A Mortal's Touch/Reach the Lower Annex Chamber
+step
+goto 36.44,26.68 |q A Mortal's Touch/Reach the Lower Annex Chamber
 step
 goto 56.51,25.52 |q A Mortal's Touch/Reach the Lower Annex Chamber
 step
