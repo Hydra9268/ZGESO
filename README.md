@@ -115,6 +115,15 @@ Only allow this step if the player hasn't completed the quest.
 `|only if not ZGV.Quests:HasQuest("A City in Black") or ZGV.Quests:IsQuestComplete("A City in Black")`<br>
 Only allow this step if the player doesn't have the quest or hasn't completed the quest.
 
+`|only if ZGV.Utils.GetFaction("player","notvet")=="EP"`<br>
+Only allow this step if the player's faction is Ebonheart Pact.
+
+`|only if ZGV.Utils.GetFaction("player","notvet")=="AD"`<br>
+Only allow this step if the player's faction is Aldmeri Dominion.
+
+`|only if ZGV.Utils.GetFaction("player","notvet")=="DC"`<br>
+Only allow this step if the player's faction is Daggerfall Covenant.
+
 `|only not ZGV.Quests:HasQuest("A City in Black")`<br>
 It appears to be the best method for accepting quests. `|only if not` causes the step to stick after accepting the quest.
 
