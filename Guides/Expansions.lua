@@ -26444,6 +26444,7 @@ step
 step
 'Open your map. Right click until you see the Tamriel map.
 'Travel to the _Vulkhel Guard_ Wayshrine |q A Mortal's Touch |future
+|tip If you do not have the funds use can also run the nearest wayshrine
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
@@ -26525,6 +26526,7 @@ click Imperial Cache Annex |q A Mortal's Touch/Enter the Imperial Cache Annex
 step
 'Open your map. Right click until you see the Tamriel map.
 'Travel to the _Daggerfall_ Wayshrine |q A Mortal's Touch |future
+|tip If you do not have the funds use can also run the nearest wayshrine
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetFaction("player","notvet")=="DC"
 step
@@ -26587,6 +26589,7 @@ click Imperial Cache Annex |q A Mortal's Touch/Enter the Imperial Cache Annex
 step
 'Open your map. Right click until you see the Tamriel map.
 'Travel to the _Davon's Watch_ Wayshrine |q A Mortal's Touch |future
+|tip If you do not have the funds use can also run the nearest wayshrine
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetFaction("player","notvet")=="EP"
 step
