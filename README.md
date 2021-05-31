@@ -108,7 +108,7 @@ For Example:
 * `q` quest tracking
 * `The Waking Darkness` name of quest
 * `/.*Cleanse the Mausoleums.*` Quest objective. Formatting required `/.*Name of Objectve.*`
-* `|count 2` Number of objective
+* `|count 2` Current objective number
 
 `|only if` and `|only if not` = Conditional handlers
 
