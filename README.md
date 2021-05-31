@@ -103,6 +103,13 @@ For example, 1.4.96
 
 `|count #` = Handler to track a sequence of objectives
 
+For Example:
+`|q The Waking Darkness/.*Cleanse the Mausoleums.* |count 2`
+* `q` quest tracking
+* `The Waking Darkness` name of quest
+* `/.*Cleanse the Mausoleums.*` Quest objective
+* `|count 2` Number of objective
+
 `|only if` and `|only if not` = Conditional handlers
 
 For example<br>
