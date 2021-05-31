@@ -105,9 +105,9 @@ For example, 1.4.96
 
 For Example:
 `|q The Waking Darkness/.*Cleanse the Mausoleums.* |count 2`
-* `q` quest tracking
-* `The Waking Darkness` name of quest
-* `/.*Cleanse the Mausoleums.*` Quest objective. Formatting required `/.*Name of Objectve.*`
+* `q` Quest tracking
+* `The Waking Darkness` Name of quest
+* `/.*Cleanse the Mausoleums.*` Quest objective (Formatting required `/.*Name of Objectve.*`)
 * `|count 2` Current objective number
 
 `|only if` and `|only if not` = Conditional handlers
