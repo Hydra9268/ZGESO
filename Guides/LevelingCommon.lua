@@ -34147,7 +34147,15 @@ step
 goto 41.33,23.40
 step
 goto 41.85,24.39
-talk Squire Theo Rocque |q The Charge of Evermore/Learn What Happened in Murcien's Hamlet
+talk Squire Theo Rocque |q The Charge of Evermore/Talk to Squire Theo Rocque
+step
+goto 41.85,24.39
+'Listen to Theo and Medya Zurric |q The Charge of Evermore/Listen to Theo and Medya Zurric
+|tip Manually skip to the next step.
+step
+goto 41.85,24.39
+talk Squire Theo Rocque
+'Learn What Happened in Murcien's Hamlet |q The Charge of Evermore/Learn What Happened in Murcien's Hamlet
 step
 goto 40.72,24.38
 'Check the Western Fortifications |q The Charge of Evermore/.*Check the Fortifications.* |count 1
@@ -34160,8 +34168,6 @@ kill Dark Witness Thornslinger
 |tip Manually skip to the next step.
 step
 goto 41.57,23.41
-click Fortifications
-'Check the Fortification |q The Charge of Evermore/.*Check the Fortifications.* |count 2
 step
 goto 42.32,24.37
 click Bucket
@@ -34169,8 +34175,15 @@ click Bucket
 'Grab a Bucket of Water |q The Charge of Evermore/.*Check the Fortifications.*
 |tip Manually skip to the next step.
 step
+goto 41.57,23.41
+click Fortifications
+'Check the Fortification |q The Charge of Evermore/.*Check the Fortifications.* |count 2
+step
+goto 40.32,20.19
+click Medya Zurric's Home |q The Charge of Evermore/Talk to Theo
+|tip Manually skip to the next step.
+step
 goto 39.81,20.11
-|tip Inside the building.
 talk Squire Theo Rocque |q The Charge of Evermore/Talk to Theo
 step
 goto 39.83,20.14
@@ -34194,16 +34207,17 @@ step
 goto 39.75,20.13
 talk Squire Theo Rocque |q The Charge of Evermore/Talk to Theo
 step
+goto 39.98,20.26
+click Murcien's Hamlet |q The Charge of Evermore/Talk to Rolbert Foucher
+|tip Manually skip to the next step.
+step
 goto 40.91,24.73
 talk Rolbert Foucher |q The Charge of Evermore/Talk to Rolbert Foucher
 step
 goto 34.14,25.61
-'Follow the path up |achieve 540
-|tip Manually skip to the next step.
 step
 goto 33.18,26.94
 click Torog's Spite
-'Enter Torog's Spite |achieve 540
 |tip Manually skip to the next step.
 step
 goto murciensclaim_base 47.30,65.50
@@ -34211,66 +34225,61 @@ click Letter from Historian Maaga
 accept Claim to Fame
 step
 goto 38.50,66.57
-'Follow the path |achieve 540
-|tip Manually skip to the next step.
 step
 goto 18.19,23.48
 click Skyshard |achieve 557/12
 step
 goto 31.79,21.84
-'Follow the path |achieve 540
-|tip Manually skip to the next step.
 step
 goto 57.19,14.09
 click Borzugh's Letter
 'Look for a Letter Claiming Credit |q Claim to Fame/Look for a Letter Claiming Credit
 step
 goto 63.10,30.92
-'Follow the path |achieve 540
-|tip Manually skip to the next step.
 step
 goto 72.33,29.96
 click Thorzhul's Letter
 'Read the Other Letter |q Claim to Fame/Read the Other Letter
 step
 goto 56.49,25.54
-'Run up the wooden ramp |achieve 540
-|tip Manually skip to the next step.
 step
 goto 62.41,35.55
 kill Lorogdu gra-Gulash
-'Explore Torog's Spite |achieve 540
+|tip Manually skip to the next step.
 step
 goto 53.90,45.32
 click Torog's Spite
-'Go through the door |q The Charge of Evermore/Search Inside Houses
 |tip Manually skip to the next step.
 step
 goto 52.82,63.72
-'Follow the path |q The Charge of Evermore/Search Inside Houses
-|tip Manually skip to the next step.
 step
 goto 40.85,70.38
-'Follow the path up |q The Charge of Evermore/Search Inside Houses
-|tip Manually skip to the next step.
 step
 goto 32.92,90.66
-click Bangkorai
-'Leave Torog's Spite |q Claim to Fame/Talk to Historian Maaga in Evermore
+click Bangkorai |q Claim to Fame/Talk to Historian Maaga in Evermore
 |tip Manually skip to the next step.
 step
-goto bangkorai_base 39.59,21.96
-|tip Inside the building.
+goto bangkorai_base 40.12,21.89
+click Abandoned House |q The Charge of Evermore/Search Inside Houses
+|tip Manually skip to the next step.
+step
+goto 39.59,21.96
 click The Reachmen Are Coming!
 'Search Inside Houses |q The Charge of Evermore/Search Inside Houses
 step
+goto 40.03,21.89
+click Murcien's Hamlet
+|tip Manually skip to the next step.
+step
 goto 43.73,21.20
-|tip Outside behind the building.
 click Grisly Totem
 'Find the Site Medya Visits |q The Charge of Evermore/Find the Site Medya Visits
 step
 goto 40.31,20.18
 click Medya Zurric's Home
+|tip Manually skip to the next step.
+step
+goto 40.31,20.18
 'Talk to Theo |q The Charge of Evermore/Talk to Theo |future
 |tip Manually skip to the next step.
 step
