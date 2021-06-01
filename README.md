@@ -22,9 +22,9 @@ Install through the excellent add-on manager <a href="https://minion.mmoui.com/"
 
 <br/>
 
-### 4/24/21 Blackwood Guide Coming Soon (Thanks to snichols7778)! 
 
-<img src="https://i.imgur.com/GYcFbv7.png">
+### 5/29/21 Blackwood and Dragonhold (Southern Elsweyr) Guides Coming 6/1 (Thank you, snichols7778)! 
+<img src="https://i.imgur.com/sXFD12e.png">
 <i>artwork &copy; ZeniMax Media</i>
 
 ### 3/27/21 Skyrim Guides Now Available (Thanks to snichols7778)! 
@@ -102,6 +102,13 @@ For example, 1.4.96
 * `Aldmeri Dominion Leveling Guides\\Khenarthi's Roost` = the RegisterGuide to load
 
 `|count #` = Handler to track a sequence of objectives
+
+For Example:
+`|q The Waking Darkness/.*Cleanse the Mausoleums.* |count 2`
+* `q` Quest tracking
+* `The Waking Darkness` Name of quest
+* `/.*Cleanse the Mausoleums.*` Quest objective (Formatting required `/.*Name of Objectve.*`)
+* `|count 2` Current objective number
 
 `|only if` and `|only if not` = Conditional handlers
 

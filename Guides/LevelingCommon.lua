@@ -34149,11 +34149,13 @@ step
 goto 41.85,24.39
 talk Squire Theo Rocque |q The Charge of Evermore/Talk to Squire Theo Rocque
 step
-goto 42.32,24.37
-click Bucket
-|tip These spawn around this area.
-'Grab a Bucket of Water |q The Charge of Evermore/.*Check the Fortifications.*
+goto 41.85,24.39
+'Listen to Theo and Medya Zurric |q The Charge of Evermore/Listen to Theo and Medya Zurric
 |tip Manually skip to the next step.
+step
+goto 41.85,24.39
+talk Squire Theo Rocque
+'Learn What Happened in Murcien's Hamlet |q The Charge of Evermore/Learn What Happened in Murcien's Hamlet
 step
 goto 40.72,24.38
 'Check the Western Fortifications |q The Charge of Evermore/.*Check the Fortifications.* |count 1
@@ -34166,11 +34168,22 @@ kill Dark Witness Thornslinger
 |tip Manually skip to the next step.
 step
 goto 41.57,23.41
+step
+goto 42.32,24.37
+click Bucket
+|tip These spawn around this area.
+'Grab a Bucket of Water |q The Charge of Evermore/.*Check the Fortifications.*
+|tip Manually skip to the next step.
+step
+goto 41.57,23.41
 click Fortifications
 'Check the Fortification |q The Charge of Evermore/.*Check the Fortifications.* |count 2
 step
+goto 40.32,20.19
+click Medya Zurric's Home |q The Charge of Evermore/Talk to Theo
+|tip Manually skip to the next step.
+step
 goto 39.81,20.11
-|tip Inside the building.
 talk Squire Theo Rocque |q The Charge of Evermore/Talk to Theo
 step
 goto 39.83,20.14
@@ -34194,16 +34207,17 @@ step
 goto 39.75,20.13
 talk Squire Theo Rocque |q The Charge of Evermore/Talk to Theo
 step
+goto 39.98,20.26
+click Murcien's Hamlet |q The Charge of Evermore/Talk to Rolbert Foucher
+|tip Manually skip to the next step.
+step
 goto 40.91,24.73
 talk Rolbert Foucher |q The Charge of Evermore/Talk to Rolbert Foucher
 step
 goto 34.14,25.61
-'Follow the path up |achieve 540
-|tip Manually skip to the next step.
 step
 goto 33.18,26.94
 click Torog's Spite
-'Enter Torog's Spite |achieve 540
 |tip Manually skip to the next step.
 step
 goto murciensclaim_base 47.30,65.50
@@ -34211,66 +34225,61 @@ click Letter from Historian Maaga
 accept Claim to Fame
 step
 goto 38.50,66.57
-'Follow the path |achieve 540
-|tip Manually skip to the next step.
 step
 goto 18.19,23.48
 click Skyshard |achieve 557/12
 step
 goto 31.79,21.84
-'Follow the path |achieve 540
-|tip Manually skip to the next step.
 step
 goto 57.19,14.09
 click Borzugh's Letter
 'Look for a Letter Claiming Credit |q Claim to Fame/Look for a Letter Claiming Credit
 step
 goto 63.10,30.92
-'Follow the path |achieve 540
-|tip Manually skip to the next step.
 step
 goto 72.33,29.96
 click Thorzhul's Letter
 'Read the Other Letter |q Claim to Fame/Read the Other Letter
 step
 goto 56.49,25.54
-'Run up the wooden ramp |achieve 540
-|tip Manually skip to the next step.
 step
 goto 62.41,35.55
 kill Lorogdu gra-Gulash
-'Explore Torog's Spite |achieve 540
+|tip Manually skip to the next step.
 step
 goto 53.90,45.32
 click Torog's Spite
-'Go through the door |q The Charge of Evermore/Search Inside Houses
 |tip Manually skip to the next step.
 step
 goto 52.82,63.72
-'Follow the path |q The Charge of Evermore/Search Inside Houses
-|tip Manually skip to the next step.
 step
 goto 40.85,70.38
-'Follow the path up |q The Charge of Evermore/Search Inside Houses
-|tip Manually skip to the next step.
 step
 goto 32.92,90.66
-click Bangkorai
-'Leave Torog's Spite |q Claim to Fame/Talk to Historian Maaga in Evermore
+click Bangkorai |q Claim to Fame/Talk to Historian Maaga in Evermore
 |tip Manually skip to the next step.
 step
-goto bangkorai_base 39.59,21.96
-|tip Inside the building.
+goto bangkorai_base 40.12,21.89
+click Abandoned House |q The Charge of Evermore/Search Inside Houses
+|tip Manually skip to the next step.
+step
+goto 39.59,21.96
 click The Reachmen Are Coming!
 'Search Inside Houses |q The Charge of Evermore/Search Inside Houses
 step
+goto 40.03,21.89
+click Murcien's Hamlet
+|tip Manually skip to the next step.
+step
 goto 43.73,21.20
-|tip Outside behind the building.
 click Grisly Totem
 'Find the Site Medya Visits |q The Charge of Evermore/Find the Site Medya Visits
 step
 goto 40.31,20.18
 click Medya Zurric's Home
+|tip Manually skip to the next step.
+step
+goto 40.31,20.18
 'Talk to Theo |q The Charge of Evermore/Talk to Theo |future
 |tip Manually skip to the next step.
 step
@@ -34303,16 +34312,21 @@ click Halcyon Lake Wayshrine
 'Travel to the Eastern Evermore Wayshrine in Bangkorai |q Dark Wings/Speak to Phylgaux
 |tip Manually skip to the next step.
 step
-goto evermore_base 71.00,53.98
-'Follow the path |q Dark Wings/Speak to Phylgaux
-|tip Manually skip to the next step.
+goto evermore_base 71.00,53.98 |q Dark Wings/Speak to Phylgaux
 step
 goto 66.14,55.38
 talk Phylgaux Dugot
 turnin Dark Wings
 step
+goto 58.96,48.28 |q Claim to Fame/Talk to Historian Maaga in Evermore
+step
+goto 44.33,41.51
+click Anchor's Point Inn |q Claim to Fame/Talk to Historian Maaga in Evermore
+|tip Manually skip to the next step.
+step
+goto 40.70,40.48 |q Claim to Fame/Talk to Historian Maaga in Evermore
+step
 goto 42.38,45.62
-|tip Inside the building.
 talk Maaga
 turnin Claim to Fame
 step
@@ -34466,55 +34480,41 @@ wayshrine Bangkorai Pass
 step
 goto 45.43,50.41
 click Crypt of the Exiles
-'Enter the Crypt of the Exiles |achieve 541
 |tip Manually skip to the next step.
 step
-goto cryptoftheexiles_base 89.52,73.53
-'Follow the path |achieve 541
-|tip Manually skip to the next step.
+goto cryptoftheexiles_base 92.85,75.86
+step
+goto 89.52,73.53
 step
 goto 84.19,67.08
 click Orders from Knight-Commander Varaine
 accept A Favor Between Kings
 step
-goto 89.98,61.02
-'Follow the path |achieve 541
-|tip Manually skip to the next step.
+goto 91.57,57.00
 step
 goto 86.38,44.54
-'Follow the path |achieve 541
-|tip Manually skip to the next step.
 step
 goto 68.85,45.79
-'Follow the path |achieve 541
-|tip Manually skip to the next step.
 step
 goto 67.78,33.71
 click Skyshard |achieve 557/10
 step
 goto 71.49,41.13
-'Follow the path |achieve 541
-|tip Manually skip to the next step.
 step
 goto 62.77,24.89
-'Follow the path |achieve 541
-|tip Manually skip to the next step.
 step
 goto 41.60,26.18
 click Ulbazar's Sepulcher
 'Recover the Memory Stone |q A Favor Between Kings/Recover the Memory Stone
 step
-goto 47.67,28.50
-'Follow the path |achieve 541
-|tip Manually skip to the next step.
+goto 51.82,25.78
 step
 goto 42.90,42.74
-'Follow the path |achieve 541
-|tip Manually skip to the next step.
 step
 goto 18.11,59.44
 kill Ulbazar Thief-Lord
-'Explore the Crypt of the Exiles |achieve 541
+'Explore the Crypt of the Exiles
+|tip Manually skip to the next step.
 step
 'Open your map to Bangkorai:
 click Bangkorai Pass Wayshrine
@@ -34525,13 +34525,9 @@ goto bangkorai_base 49.09,51.09
 click Ancient Scrolls of the Dwemer IV
 lorebook Ancient Scrolls of the Dwemer IV/1/12/16
 step
-goto 47.31,46.52
-'Run up the stairs |q The Waking Darkness/Find Prince Adrien's Corpse
-|tip Manually skip to the next step.
+goto 47.17,45.84 |q The Waking Darkness/Find Prince Adrien's Corpse
 step
-goto 45.95,46.73
-'Run up the stairs |q The Waking Darkness/Find Prince Adrien's Corpse
-|tip Manually skip to the next step.
+goto 45.81,47.34 |q The Waking Darkness/Find Prince Adrien's Corpse
 step
 goto 45.33,45.99
 'Find Prince Adrien's Corpse |q The Waking Darkness/Find Prince Adrien's Corpse
@@ -34594,9 +34590,7 @@ goto 44.71,47.14
 click Brazier
 'Extinguish the Blue Flames |q The Waking Darkness/.*Extinguish the Blue Flames.* |count 4
 step
-goto 43.98,46.51
-'Run down the stairs |q The Waking Darkness/Meet Dame Valyrie at the South Monument
-|tip Manually skip to the next step.
+goto 44.36,46.34 |q The Waking Darkness/Meet Dame Valyrie at the South Monument
 step
 goto 40.94,48.52
 'Meet Dame Valyrie at the South Monument |q The Waking Darkness/Meet Dame Valyrie at the South Monument
@@ -34608,9 +34602,7 @@ goto 40.96,48.73
 talk Father Quiston
 'Talk to the Priest |q The Waking Darkness/Talk to the Priest
 step
-goto 41.37,45.70
-'Follow the path |q The Waking Darkness/Defeat the Defiler at the West Monument
-|tip Manually skip to the next step.
+goto 41.37,45.70 |q The Waking Darkness/Defeat the Defiler at the West Monument
 step
 goto 40.11,44.77
 kill Defiler Spirit
@@ -34630,12 +34622,9 @@ step
 goto 39.48,46.00
 talk Dame Valyrie Spenard |q The Waking Darkness/Talk to Dame Valyrie
 step
-goto 42.03,45.27
-'Enter the crypt |q The Waking Darkness/Talk to the Blue Flames |future
-|tip Manually skip to the next step.
+goto 42.03,45.27 |q The Waking Darkness/Talk to the Blue Flames |future
 step
-goto 42.57,45.12
-'Enter the Mausoleums |q The Waking Darkness/Enter the Mausoleums
+goto 42.57,45.12 |q The Waking Darkness/Enter the Mausoleums
 step
 goto 42.91,45.00
 click Blue Flames
@@ -34645,53 +34634,39 @@ goto 42.94,45.02
 'Use the Holy Water
 'Cleanse the Mausoleum |q The Waking Darkness/.*Cleanse the Mausoleums.* |count 1
 step
-goto 42.03,45.27
-'Leave the crypt |q The Waking Darkness/.*Cleanse the Mausoleums.* |count 2
-|tip Manually skip to the next step.
+goto 41.39,45.49 |q The Waking Darkness/.*Cleanse the Mausoleums.* |count 2
 step
-goto 41.98,47.33
-'Enter the crypt |q The Waking Darkness/.*Cleanse the Mausoleums.* |count 2
-|tip Manually skip to the next step.
+goto 41.98,47.33 |q The Waking Darkness/.*Cleanse the Mausoleums.* |count 2
 step
 goto 42.34,48.33
 'Use the Holy Water
 'Cleanse the Mausoleum |q The Waking Darkness/.*Cleanse the Mausoleums.* |count 2
 step
-goto 41.98,47.33
-'Leave the crypt |q The Waking Darkness/.*Cleanse the Mausoleums.* |count 3
-|tip Manually skip to the next step.
+goto 41.86,46.97 |q The Waking Darkness/.*Cleanse the Mausoleums.* |count 3
 step
-goto 44.05,44.66
-'Enter the crypt |q The Waking Darkness/.*Cleanse the Mausoleums.* |count 3
-|tip Manually skip to the next step.
+goto 44.76,44.56 |q The Waking Darkness/.*Cleanse the Mausoleums.* |count 3
 step
 goto 43.26,44.00
 'Use the Holy Water
 'Cleanse the Mausoleum |q The Waking Darkness/.*Cleanse the Mausoleums.* |count 3
 step
-goto 44.05,44.66
-'Leave the crypt |q The Waking Darkness/.*Cleanse the Mausoleums.* |count 4
-|tip Manually skip to the next step.
+goto 44.49,44.95 |q The Waking Darkness/.*Cleanse the Mausoleums.* |count 4
 step
-goto 45.31,45.08
-'Run up the stairs |q The Waking Darkness/.*Cleanse the Mausoleums.* |count 4
-|tip Manually skip to the next step.
+goto 45.91,44.75 |q The Waking Darkness/.*Cleanse the Mausoleums.* |count 4
 step
-goto 45.34,47.65
-'Run down the stairs |q The Waking Darkness/.*Cleanse the Mausoleums.* |count 4
-|tip Manually skip to the next step.
+goto 46.21,47.38 |q The Waking Darkness/.*Cleanse the Mausoleums.* |count 4
 step
-goto 46.43,48.45
-'Enter the crypt |q The Waking Darkness/.*Cleanse the Mausoleums.* |count 4
-|tip Manually skip to the next step.
+goto 44.83,47.45 |q The Waking Darkness/.*Cleanse the Mausoleums.* |count 4
+step
+goto 45.40,48.78 |q The Waking Darkness/.*Cleanse the Mausoleums.* |count 4
+step
+goto 46.92,47.91 |q The Waking Darkness/.*Cleanse the Mausoleums.* |count 4
 step
 goto 46.21,49.52
 'Use the Holy Water
 'Cleanse the Mausoleum |q The Waking Darkness/.*Cleanse the Mausoleums.* |count 4
 step
-goto 46.43,48.45
-'Leave the crypt |q The Waking Darkness/Talk to Dame Valyrie
-|tip Manually skip to the next step.
+goto 46.53,47.92 |q The Waking Darkness/Talk to Dame Valyrie
 step
 goto 39.46,46.03
 talk Dame Valyrie Spenard |q The Waking Darkness/Talk to Dame Valyrie
@@ -34740,8 +34715,32 @@ goto 37.84,45.90
 talk Dame Valyrie Spenard
 turnin The Waking Darkness
 step
+goto 38.92,45.90
+click Pelin Graveyard
+|tip Manually skip to the next step.
+step
 goto 38.69,44.76
-'Jump down here |q A City in Black/Collect Strastnoc's Head
+'Drop down here |q A City in Black/Collect Strastnoc's Head
+|tip Manually skip to the next step.
+step
+goto 38.51,44.45
+'Drop down here |q A City in Black/Collect Strastnoc's Head
+|tip Manually skip to the next step.
+step
+goto 38.09,44.23
+'Drop down here |q A City in Black/Collect Strastnoc's Head
+|tip Manually skip to the next step.
+step
+goto 38.17,44.33
+'Drop down here |q A City in Black/Collect Strastnoc's Head
+|tip Manually skip to the next step.
+step
+goto 38.20,44.04
+'Drop down here |q A City in Black/Collect Strastnoc's Head
+|tip Manually skip to the next step.
+step
+goto 35.83,44.14
+'Drop down here |q A City in Black/Collect Strastnoc's Head
 |tip Manually skip to the next step.
 step
 goto 33.25,43.81
@@ -34749,9 +34748,7 @@ goto 33.25,43.81
 kill Strastnoc
 'Collect Strastnoc's Head |q A City in Black/Collect Strastnoc's Head
 step
-goto evermore_base 26.40,85.53
-'Follow the path |q A City in Black/Give the Head to Captain Hjurrun
-|tip Manually skip to the next step.
+goto evermore_base 26.40,85.53 |q A City in Black/Give the Head to Captain Hjurrun
 step
 goto 44.86,82.95
 talk Captain Hjurrun
@@ -34772,9 +34769,7 @@ goto 51.23,76.05
 talk Strange Crow
 'Investigate the Stocks |q A City in Black/Investigate the Stocks
 step
-goto 70.25,53.79
-'Follow the path |q A City in Black/Investigate the East Gate
-|tip Manually skip to the next step.
+goto 70.25,53.79 |q A City in Black/Investigate the East Gate
 step
 goto 74.32,54.67
 click Mysterious Crate
@@ -34785,8 +34780,11 @@ goto 74.84,54.69
 talk Strange Crow
 'Investigate the East Gate |q A City in Black/Investigate the East Gate
 step
+goto 44.32,41.57
+click Anchor's Point Inn
+|tip Manually skip to the next step.
+step
 goto 41.36,44.27
-|tip Inside the building.
 talk Sir Jarnot |q A City in Black/Talk to Sir Jarnot
 |tip Manually skip to the next step.
 step
@@ -34794,21 +34792,36 @@ goto 41.38,44.78
 talk Strange Crow
 'Talk to Sir Jarnot |q A City in Black/Talk to Sir Jarnot
 step
-goto 35.67,51.00
-|tip Inside the building.
-click St. Pelin's Sanctuary
-'Enter St. Pelin's Sanctuary |q A City in Black/Talk to Queen Arzhela
+goto 43.94,41.12
+click Evermore |q A City in Black/Talk to Queen Arzhela
+|tip Manually skip to the next step.
+step
+goto 39.23,51.67
+click St. Pelin's Sanctuary |q A City in Black/Talk to Queen Arzhela
+|tip Manually skip to the next step.
+step
+goto 35.66,50.99
+click St. Pelin's Sanctuary |q A City in Black/Talk to Queen Arzhela
 |tip Manually skip to the next step.
 step
 goto 34.21,50.37
 talk Queen Arzhela |q A City in Black/Talk to Queen Arzhela
 step
-goto 47.42,65.13
-'Follow the path up |q A City in Black/Report to the Duke
+goto 34.82,50.74
+click St. Pelin's Sanctuary |q A City in Black/Report to the Duke
+|tip Manually skip to the next step.
+step
+goto 38.98,51.62
+click Evermore |q A City in Black/Report to the Duke
+|tip Manually skip to the next step.
+step
+goto 47.42,65.13 |q A City in Black/Report to the Duke
+step
+goto 59.08,68.53
+click Evermore Castle |q A City in Black/Report to the Duke
 |tip Manually skip to the next step.
 step
 goto 62.26,69.22
-|tip Inside the building.
 'Report to the Duke |q A City in Black/Report to the Duke
 step
 goto 64.46,71.91
@@ -34819,14 +34832,15 @@ goto 64.83,72.27
 talk Duke Renchant |q A City in Black/Talk to Duke Renchant
 step
 goto 64.83,72.27
-talk Duke Renchant
-|tip Persuade him.
 talk Duke Renchant |q A City in Black/Investigate the Bjoulsae Queen
+|tip Persuade him, if you have the option available
 |tip Manually skip to the next step.
 step
-goto 49.39,36.72
-'Follow the path |q A City in Black/Investigate the Bjoulsae Queen
+goto 59.26,68.69
+click Evermore |q A City in Black/Investigate the Bjoulsae Queen
 |tip Manually skip to the next step.
+step
+goto 49.39,36.72 |q A City in Black/Investigate the Bjoulsae Queen
 step
 goto 25.89,21.51
 |tip On the deck of the ship.
