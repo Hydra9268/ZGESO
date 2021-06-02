@@ -93,7 +93,7 @@ For example, 1.4.96
 
 `|tip` = Handler for displaying tips in a small font. Note: placing a `|tip` in a `goto` step prevents the action from automatically going to the next step when meeting the condition.
 
-`|next Aldmeri Dominion Leveling Guides\\Khenarthi's Roost` = Instructs ZGESO to skip to another guide
+`|next Aldmeri Dominion Leveling Guides\\Khenarthi's Roost` = Instructs ZGESO to go to another guide
 * `next` = Handler that tells the guide to load another guide
 * `Aldmeri Dominion Leveling Guides\\Khenarthi's Roost` = the RegisterGuide to load
 
