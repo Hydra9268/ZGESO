@@ -70,7 +70,7 @@ For example, 1.4.96
 `accept` = Accept quests.<br/>
 `turnin` = Turn in quests.<br/>
 `wayshrine` = Discover wayshrines.<br/>
-`step` = Declares a guide step (Auto-advance is based on nothing else but `goto` and `step`).<br/>
+`step` = Declares a guide step (Auto-advance based on `goto` and `step` or if the condition of another action like wayshrine or accept is met).<br/>
 
 
 #### These actions are purely visual and do not auto-advance to the next step
