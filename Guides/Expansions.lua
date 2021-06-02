@@ -26978,6 +26978,8 @@ goto blackwood_base 26.90,50.07
 'Examine Letter from Farrul Lupus |q A Deadly Secret/Find Councilor Jirich
 |tip Manually skip to the next step.
 step
+goto 31.99,57.49 |q A Deadly Secret/Find Councilor Jirich
+step
 goto 33.25,57.60 |q A Deadly Secret/Find Councilor Jirich
 'Examine Letter to Councilor Lovidicus |q A Deadly Secret/Find Councilor Jirich
 step
