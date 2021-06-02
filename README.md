@@ -161,7 +161,7 @@ step
 
 * `/dump ZGV.Data:GetQuestIdByName("A City in Black")` - Returns the Quest ID
 * `/dump ZGV.Quests:IsQuestComplete("A City in Black")` - Returns a boolean
-* `/dump ZGV.Quests:HasQuest("A City in Black")` - Return a boolean
+* `/dump ZGV.Quests:HasQuest("A City in Black")` - Returns a boolean
 * `/dump d(GetCurrentMapIndex())` - Returns the zone's ID. Tip: some functions require the `d()` command to display the output.
 
 
