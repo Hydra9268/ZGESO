@@ -25982,7 +25982,11 @@ goto nchuandzeV1_base 65.22,23.08
 click Nchuand-Zel Vaults |q A Feast of Souls/Find the Keystone
 |tip Manually skip to the next step.
 step
-goto nchuandzelV2_base 82.71,22.37
+goto nchuandzelV2_base 72.93,19.74 |q A Feast of Souls/Find the Keystone
+step
+goto 69.36,35.34 |q A Feast of Souls/Find the Keystone
+step
+goto 82.71,22.37
 click Keystone Chamber |q A Feast of Souls/Find the Keystone
 step
 goto nchuandzel_base 66.34,13.50
@@ -26084,6 +26088,9 @@ goto 34.95,30.08
 talk Count Verandis Ravenwatch
 accept The End of Eternity
 step
+goto 34.95,30.08
+talk Count Verandis Ravenwatch |q The End of Eternity/Talk to Count Verandis Ravenwatch
+step
 'Open Map The Reach
 'Travel to _Druadach Mountains_ in The Reach |q The End of Eternity/Investigate North of Markarth
 |tip Manually skip to the next step.
@@ -26092,6 +26099,9 @@ goto reach_base 33.55,27.07 |q The End of Eternity/Investigate North of Markarth
 step
 goto 27.95,28.42
 'Investigate North of Markarth |q The End of Eternity/Investigate North of Markarth
+step
+goto 27.95,28.42
+'Find Rada al-Saran |q The End of Eternity/Find Rada al-Saran
 step
 goto 27.95,28.42
 talk Lyris Titanborn |q The End of Eternity/Talk to Lyris Titanborn
@@ -26105,10 +26115,10 @@ goto 28.08,28.21
 step
 'Open Map Blackreach: Arkthzand Caverns
 'Travel to _Arkthzand_ in Blackreach: Arkthzand Caverns |q The End of Eternity/Go to the Orrery Chamber
+|tip Manually skip to the next step.
 step
 goto U28_blackreach_base 23.76,47.19
 click Arkthzand Orrery |q The End of Eternity/Go to the Orrery Chamber
-|tip Manually skip to the next step.
 step
 goto u28_OrreryChamber_base 52.30,47.26
 talk Count Verandis Ravenwatch |q The End of Eternity/Talk to Count Verandis Ravenwatch
@@ -26145,6 +26155,8 @@ click Bthar-Zel |q The End of Eternity/Learn About Keystones in Bthar-Zel
 |tip Manually skip to the next step.
 step
 goto btharzel_base 28.96,41.97 |q The End of Eternity/Learn About Keystones in Bthar-Zel
+step
+goto 46.95,34.84 |q The End of Eternity/Learn About Keystones in Bthar-Zel
 step
 goto 54.98,36.20 |q The End of Eternity/Learn About Keystones in Bthar-Zel
 step
@@ -26977,8 +26989,6 @@ step
 goto blackwood_base 26.90,50.07
 'Examine Letter from Farrul Lupus |q A Deadly Secret/Find Councilor Jirich
 |tip Manually skip to the next step.
-step
-goto 31.99,57.49 |q A Deadly Secret/Find Councilor Jirich
 step
 goto 33.25,57.60 |q A Deadly Secret/Find Councilor Jirich
 'Examine Letter to Councilor Lovidicus |q A Deadly Secret/Find Councilor Jirich
