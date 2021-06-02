@@ -27044,7 +27044,7 @@ click Blackwood |q Relics and Rumblings/Exit Undertow Cavern
 step
 goto blackwood_base 24.35,48.03
 talk Amalia Vasatoln
-|tip If you advise her to keep the horn, she'll relate problems with it. If you suggest she destroy the horn, she'll tell you she's had no problem but lacks recognition for her efforts.
+|tip If you advise her to keep the horn, she'll relate problems with it when you talk to her in Gideon. If you suggest she destroy the horn, she'll tell you she's had no problem but lacks recognition for her efforts.
 turnin Relics and Rumblings
 step
 goto 19.57,49.55
