@@ -1717,6 +1717,8 @@ click Skyshard |achieve 1843/17
 step
 goto 56.91,46.98 |achieve 1862
 step
+goto 53.31,75.88 |achieve 1862
+step
 goto 78.70,50.19
 kill Bralsa Inlador
 'Explore Pulk |achieve 1862
@@ -1821,7 +1823,7 @@ goto 72.94,30.54
 |tip Manually skip to the next step.
 step
 goto 73.93,29.09
-click Malignant Growth |q Reclaiming Vos/Investigate the Base of Tel Mora Tower
+'Examine Malignant Growth |q Reclaiming Vos/Investigate the Base of Tel Mora Tower
 step
 goto 72.91,29.19
 click Tel Mora |q Reclaiming Vos/Talk to Llayne
@@ -1899,7 +1901,6 @@ step
 step
 goto vvardenfell_base 72.91,29.19
 click Tel Mora |q Reclaiming Vos/Bring the Toxin Sample to Tel Mora
-|tip Manually skip to the next step.
 step
 goto 73.69,28.59
 click Mistress Dratha's Chambers |q Reclaiming Vos/Talk to Menwendel
@@ -2109,6 +2110,10 @@ goto 76.24,75.79
 talk Buoyant Armiger
 accept An Armiger's Duty
 step
+goto 80.23,76.17 |q Objections and Obstacles/Travel to Shashpilamat
+step
+goto 81.21,72.17 |q Objections and Obstacles/Travel to Shashpilamat
+step
 goto 82.54,72.55
 'Travel to Shashpilamat |q Objections and Obstacles/Travel to Shashpilamat
 step
@@ -2117,6 +2122,7 @@ goto 82.59,71.91
 step
 goto 82.30,72.08
 talk Zashanti |q Objections and Obstacles/Talk to Zashanti
+|tip Manually skip to the next step.
 step
 goto 82.30,72.08
 'Talk to the Escaping Khajiit |q Objections and Obstacles/Talk to the Escaping Khajiit
@@ -2249,6 +2255,8 @@ click Dwarven Spur Gear |q The Magister Makes a Move/.*Find Tools to Release the
 step
 goto 40.78,26.10 |q The Magister Makes a Move/.*Find Tools to Release the Prism.*
 step
+goto 17.03,09.54 |q The Magister Makes a Move/.*Find Tools to Release the Prism.*
+step
 goto 13.57,53.83
 click Dwarven Crank |q The Magister Makes a Move/.*Find Tools to Release the Prism.* |count 2
 step
@@ -2291,6 +2299,7 @@ click Zalkin-Sul Egg Mine |q The Magister Makes a Move/Escape the Mine
 step
 goto 93.45,84.20
 click Vvardenfell |q The Magister Makes a Move/Escape the Mine
+|tip Manually skip to the next step.
 step
 'Open Vvardenfell map
 'Travel to _Sadrith Mora_ in Vvardenfell |q The Magister Makes a Move/Return to Tel Aruhn
