@@ -114,19 +114,7 @@ end
 
 function Viewer:add_tooltip(control,text)
 	control:AddTooltip(nil,text,control,TOP,0,0,BOTTOM)
-	--[[
-	control:SetHandler("OnMouseEnter",function(control)
-		ZGV.Tooltip:SetOwner(control, TOP, 0, 10)
-		ZGV.Tooltip:ClearLines()
-		ZGV.Tooltip:AddLine(text)
-		ZGV.Tooltip:Show()
-	end)
-	control:SetHandler("OnMouseExit",function(control)
-		ZGV.Tooltip:Hide()
-	end)
-	--]]
 end
-
 
 function Viewer:CreateZGVF()
 	if self.Frame then return end
