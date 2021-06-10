@@ -179,7 +179,6 @@ GuideCommands['leechsteps'] = function(guide,params)
 	return true
 end
 
-
 GuideCommands['next'] = function(guide,params)
 	params = params:gsub("^\"(.-)\"$","%1")
 	params = tonumber(params) or params
@@ -293,8 +292,6 @@ StepCommands['travelfor'] = function(step,params)
 	step.condition_visible=travelfor_is_valid_func
 end
 
-
-
 -----------------------------------------
 -- GOAL COMMANDS
 -----------------------------------------
@@ -319,7 +316,6 @@ function Parser.MakeCondition(cond,forcebool)
 
 	return fun,err
 end
-
 
 function Parser:GetGuideCommandHandler(cmd)
 	if GuideCommands[cmd] then
@@ -389,6 +385,8 @@ function Parser.ParseQuest(text)
 	if not text then return end
 	local quest,cond = text:match("^(.-)%s*/%s*(.-)$")
 
+	d(quest,cond)
+
 	local questtxt,questid = Parser.ParseId(quest)
 
 	if questid then
@@ -398,7 +396,7 @@ function Parser.ParseQuest(text)
 
 	if not cond then quest=text end
 
-	if quest then quest,questid = Parser.ParseId(quest) end
+	if quest then quest,questid = Parser.Pars2eId(quest) end
 
 	return quest,cond
 end
@@ -406,9 +404,9 @@ end
 function Parser.OLD_ParseQuest(text)
 	if not text then return end
 	local quest,stage,step,cond = text:match("^(.*)/(.*)/(.*)/(.*)$")
-	if not stage then		quest,stage,step = text:match("^(.*)/(.*)/(.*)$")  end
+	if not stage then	quest,stage,step = text:match("^(.*)/(.*)/(.*)$")  end
 	if not stage then   quest,stage = text:match("^(.*)/(.*)$")  end
-	if not stage then   quest=text  end
+	if not stage then   quest = text  end
 
 	local questtxt,questid = Parser.ParseId(quest)
 	local stagetxt,stagenum = Parser.ParseId(stage)
