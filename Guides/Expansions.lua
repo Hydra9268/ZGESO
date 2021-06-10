@@ -26263,11 +26263,11 @@ talk Eveli Sharp-Arrow |q A Mortal's Touch/Talk to Eveli Sharp-Arrow
 step
 goto 14.98,33.43 |q A Mortal's Touch/Find the Imperial Cache
 step
-goto 14.64,49.39
+goto 14.64,49.39 |q A Mortal's Touch/Find the Imperial Cache
 step
-goto 14.47,75.58
+goto 14.47,75.58 |q A Mortal's Touch/Find the Imperial Cache
 step
-goto 31.23,76.51
+goto 31.23,76.51 |q A Mortal's Touch/Find the Imperial Cache
 step
 goto 31.53,87.26
 'Find the Imperial Cache |q A Mortal's Touch/Find the Imperial Cache
@@ -28665,7 +28665,7 @@ step
 goto 62.50,61.33 
 'Find the Councilors |q An Unexpected Adversary/Find the Councilors
 step
-goto u30_leyawiincastleint01_base 49.15,61.84
+goto u30_leyawiincastleint01_base 49.15,61.84 |q An Unexpected Adversary/Find the Councilors
 step
 goto 83.82,75.49 |q An Unexpected Adversary/Find Councilor Lovidicus
 step
