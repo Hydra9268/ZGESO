@@ -29914,9 +29914,9 @@ turnin Making a Racket
 step
 'Congratulations, you have completed Blackwood guide!
 ]])
-ZGV:RegisterGuide("LEVELING\\Companion Unlock",[[
+ZGV:RegisterGuide("LEVELING\\Blackwood Companion Unlock",[[
 loadingimage loadscreen_u30_blackwood_zone_01.dds
-description Companion Stand-Alone Questline
+description Stand-alone Companion questline in Blackwood.
 step
 goto u30_leyawiincity_base 72.11,28.52 |q Shattered and Scattered |future
 step
