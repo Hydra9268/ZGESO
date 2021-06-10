@@ -181,12 +181,14 @@ function Quests:SetConditionCoords(journalIndex,stepnum,condnum, typ,m,x,y,r,b1,
 	end
 	local quest = Quests:GetQuest(journalIndex)
 	if not quest then return end  -- shouldn't happen!
-	local step = quest.steps[stepnum]
-	if not step then return end
-	local cond = step.conditions[condnum]
-	if not cond then return end
-	cond.coords = { pinType = GetByPrefix("MAP_PIN_TYPE",typ) or typ, map = m, x = x, y = y, r = r, b1 = b1, b2 = b2 }
-	--ZGV:Debug(("&quest Got coords for quest |cffffff%s|r step |cffffff%d|r cond |cffffff%d|r: %d %.3f %.3f %.3f %s %s"):format(quest.name,step.num,cond.num,typ,x,y,r, tostring(b1),tostring(b2)))
+	if quest.steps[stepnum] ~= nil then
+		local step = quest.steps[stepnum]
+		if not step then return end
+		local cond = step.conditions[condnum]
+		if not cond then return end
+		cond.coords = { pinType = GetByPrefix("MAP_PIN_TYPE",typ) or typ, map = m, x = x, y = y, r = r, b1 = b1, b2 = b2 }
+		--ZGV:Debug(("&quest Got coords for quest |cffffff%s|r step |cffffff%d|r cond |cffffff%d|r: %d %.3f %.3f %.3f %s %s"):format(quest.name,step.num,cond.num,typ,x,y,r, tostring(b1),tostring(b2)))
+	end
 end
 
 --PUBLIC though legacy
