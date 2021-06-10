@@ -385,8 +385,6 @@ function Parser.ParseQuest(text)
 	if not text then return end
 	local quest,cond = text:match("^(.-)%s*/%s*(.-)$")
 
-	d(quest,cond)
-
 	local questtxt,questid = Parser.ParseId(quest)
 
 	if questid then
@@ -396,7 +394,7 @@ function Parser.ParseQuest(text)
 
 	if not cond then quest=text end
 
-	if quest then quest,questid = Parser.Pars2eId(quest) end
+	if quest then quest,questid = Parser.ParseId(quest) end
 
 	return quest,cond
 end
