@@ -273,7 +273,7 @@ end
 function ZGV:GetVersion()
   local dir, title = ZGV.Utils.GetMyAddonInfo()
   if title then
-    ZGV.version = title:match("v(%d+%.%d+%..*)")
+    ZGV.version = title:match("v(%d+)")
     return ZGV.version
   end
 end
