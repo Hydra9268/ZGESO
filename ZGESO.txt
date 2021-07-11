@@ -143,7 +143,6 @@ Guides/DLCs.lua
 Guides/Expansions.lua
 
 -- Testing
-; Guides/Expansions2.lua
 ; Guides/Testing.lua
 ; Testing/Main.lua
 ; Testing/UI.lua
