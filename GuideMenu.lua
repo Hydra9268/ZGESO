@@ -362,6 +362,9 @@ function GuideMenu:Create()
 			end)
 		.__END
 
+		local str = "|cfe6100Note:|r If you change to another guide before completing an active guide, you may lose your progress in the current guide. We |cfe6100do not recommend|r changing guides until you complete the current."
+		ZGV.Viewer:add_tooltip(frame.OkButton,str)
+
 end
 
 function GuideMenu:RefreshUI()

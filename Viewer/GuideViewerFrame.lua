@@ -112,21 +112,9 @@ end
 
 -- TODO make goals always grow down.
 
-local function add_tooltip(control,text)
+function Viewer:add_tooltip(control,text)
 	control:AddTooltip(nil,text,control,TOP,0,0,BOTTOM)
-	--[[
-	control:SetHandler("OnMouseEnter",function(control)
-		ZGV.Tooltip:SetOwner(control, TOP, 0, 10)
-		ZGV.Tooltip:ClearLines()
-		ZGV.Tooltip:AddLine(text)
-		ZGV.Tooltip:Show()
-	end)
-	control:SetHandler("OnMouseExit",function(control)
-		ZGV.Tooltip:Hide()
-	end)
-	--]]
 end
-
 
 function Viewer:CreateZGVF()
 	if self.Frame then return end
@@ -216,7 +204,7 @@ function Viewer:CreateZGVF()
 	if Zgoo and ZGV.DEV then
 		s = s .. "\nDEV:\nRight click to Zgoo the current step.\nShift-Right click to Zgoo current guide."
 	end
-	add_tooltip(titlebar.bug,s)
+	Viewer:add_tooltip(titlebar.bug,s)
 	titlebar.bug:SetHidden(not ZGV.db.profile.bugreports)
 
 	titlebar.title = CHAIN(ui:Create("Logo",titlebar,tname.."_Title"))

@@ -141,10 +141,10 @@ Guides/Skyshards.lua
 Guides/MainQuestsOnly.lua
 Guides/DLCs.lua
 Guides/Expansions.lua
-Guides/Expansions2.lua
-; Guides/Testing.lua
 
 -- Testing
+; Guides/Expansions2.lua
+; Guides/Testing.lua
 ; Testing/Main.lua
 ; Testing/UI.lua
 ; Testing/Localization.lua
