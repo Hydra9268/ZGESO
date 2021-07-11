@@ -1,4 +1,4 @@
-## Title: Leveling Guides v1.4.840
+## Title: Leveling Guides v1.4.863
 ## Description: A Zygor addon updated by snichols7778, Hydra9268, Krandor1, and Sharlikran for the Blackwood expansion.
 ## Author: snichols7778, Hydra9268
 ## Version: 1.4.840
