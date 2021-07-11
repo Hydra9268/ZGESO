@@ -677,8 +677,7 @@ function Utils.DistanceOffsetForGoto(dist,selfdist)
 
 		elseif GetCurrentMapIndex() == Enums.SummersetMap then 			return dist or selfdist or 1.5
 
-		elseif 	GetCurrentMapIndex() == Enums.AlikrDesertMap or
-				GetCurrentMapIndex() == Enums.AuridonMap or
+		elseif 	GetCurrentMapIndex() == Enums.AuridonMap or
 				GetCurrentMapIndex() == Enums.BalFoyenMap or
 				GetCurrentMapIndex() == Enums.BangkoraiMap or
 				GetCurrentMapIndex() == Enums.DeshaanMap or
@@ -698,7 +697,8 @@ function Utils.DistanceOffsetForGoto(dist,selfdist)
 		elseif 	GetCurrentMapIndex() == Enums.StonefallsMap or
 				GetCurrentMapIndex() == Enums.VvardenfellMap then		return dist or selfdist or 9
 
-		elseif 	GetCurrentMapIndex() == Enums.ColdharbourMap or
+		elseif 	GetCurrentMapIndex() == Enums.AlikrDesertMap or
+		        GetCurrentMapIndex() == Enums.ColdharbourMap or
 				GetCurrentMapIndex() == Enums.CraglornMap then			return dist or selfdist or 8
 
 		elseif	GetCurrentMapIndex() == Enums.ShadowfenMap or
@@ -738,8 +738,7 @@ function Utils.DistanceOffsetForIsComplete()
 
 		elseif GetCurrentMapIndex() == Enums.SummersetMap then			return 1.5
 
-		elseif 	GetCurrentMapIndex() == Enums.AlikrDesertMap or
-				GetCurrentMapIndex() == Enums.AuridonMap or
+		elseif 	GetCurrentMapIndex() == Enums.AuridonMap or
 				GetCurrentMapIndex() == Enums.BalFoyenMap or
 				GetCurrentMapIndex() == Enums.BangkoraiMap or
 				GetCurrentMapIndex() == Enums.DeshaanMap or
@@ -759,7 +758,8 @@ function Utils.DistanceOffsetForIsComplete()
 		elseif	GetCurrentMapIndex() == Enums.StonefallsMap or
 				GetCurrentMapIndex() == Enums.VvardenfellMap then		return 9
 
-		elseif 	GetCurrentMapIndex() == Enums.ColdharbourMap or
+		elseif 	GetCurrentMapIndex() == Enums.AlikrDesertMap or
+		        GetCurrentMapIndex() == Enums.ColdharbourMap or
 				GetCurrentMapIndex() == Enums.CraglornMap then			return 8
 
 		elseif 	GetCurrentMapIndex() == Enums.ShadowfenMap or
