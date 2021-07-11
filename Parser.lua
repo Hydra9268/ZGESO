@@ -179,7 +179,6 @@ GuideCommands['leechsteps'] = function(guide,params)
 	return true
 end
 
-
 GuideCommands['next'] = function(guide,params)
 	params = params:gsub("^\"(.-)\"$","%1")
 	params = tonumber(params) or params
@@ -293,8 +292,6 @@ StepCommands['travelfor'] = function(step,params)
 	step.condition_visible=travelfor_is_valid_func
 end
 
-
-
 -----------------------------------------
 -- GOAL COMMANDS
 -----------------------------------------
@@ -319,7 +316,6 @@ function Parser.MakeCondition(cond,forcebool)
 
 	return fun,err
 end
-
 
 function Parser:GetGuideCommandHandler(cmd)
 	if GuideCommands[cmd] then
@@ -391,12 +387,14 @@ function Parser.ParseQuest(text)
 
 	local questtxt,questid = Parser.ParseId(quest)
 
+	-- d(questtxt.." "..questid)
+
 	if questid then
 		local qt,qi,stt,sti,st,si,ct,ci = Parser.OLD_ParseQuest(text)
 		return qt,ct
 	end
 
-	if not cond then quest=text end
+	if not cond then quest = text end
 
 	if quest then quest,questid = Parser.ParseId(quest) end
 
@@ -406,9 +404,9 @@ end
 function Parser.OLD_ParseQuest(text)
 	if not text then return end
 	local quest,stage,step,cond = text:match("^(.*)/(.*)/(.*)/(.*)$")
-	if not stage then		quest,stage,step = text:match("^(.*)/(.*)/(.*)$")  end
+	if not stage then	quest,stage,step = text:match("^(.*)/(.*)/(.*)$")  end
 	if not stage then   quest,stage = text:match("^(.*)/(.*)$")  end
-	if not stage then   quest=text  end
+	if not stage then   quest = text  end
 
 	local questtxt,questid = Parser.ParseId(quest)
 	local stagetxt,stagenum = Parser.ParseId(stage)
@@ -428,7 +426,7 @@ function Parser.OLD_ParseQuest(text)
 
 	if steptxt and stepnum and not condtxt and not condnum then steptxt,stepnum,condtxt,condnum=nil,nil,steptxt,stepnum end
 
-	return questtxt,questid, stagetxt,stagenum, steptxt,stepnum, condtxt,condnum
+	return questtxt, questid, stagetxt, stagenum, steptxt, stepnum, condtxt, condnum
 
 	-- stagetxt and steptxt should rarely occur, if at all, and definitely not combined.
 	-- Support for those is kept just for consistency's sake.
@@ -443,7 +441,7 @@ function Parser.ParseId(text)
 
 	if id then id = tonumber(id) end
 
-	if not (name or id) then name=text end
+	if not (name or id) then name = text end
 	return name, id
 end
 
@@ -580,7 +578,7 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 	local breakout
 	local prevmap
 	local funclocdata = {}
-	local do_debug	= 1
+	local do_debug = 1
 	local strfind = string.find
 
 	-------------------
@@ -597,7 +595,7 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 	-------------------
 
 	-- clear some fields before reparsing
-	guide.description=nil
+	guide.description = nil
 
 	-- Pull out the includes since we are parsing fully
 	if guide.parsing_fully  then
@@ -607,7 +605,7 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 	end
 
 	-- index starts at 1
-	while (index<#text) do
+	while (index < #text) do
 		local indent
 		local goal			-- DON'T initialize yet, we could be in a "step" line, and there's a pretty bunch of those.
 		local chunkcount = 1
@@ -683,7 +681,7 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 			end
 
 			-- new step line. Make a step then bail
-			if cmd=="step" and (not step or #step.goals>0) then	-- If the previous step doesn't have goals then no reason to make another
+			if cmd == "step" and (not step or #step.goals>0) then	-- If the previous step doesn't have goals then no reason to make another
 				if not guide.parsing_fully then
 					guide.steps = nil
 					breakout = true
