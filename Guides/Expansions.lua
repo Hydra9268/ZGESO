@@ -1340,7 +1340,7 @@ goto 37.71,13.31
 'Escort Canon Llevule to the Summoning Chamber |q Divine Conundrum/Escort Canon Llevule to the Summoning Chamber
 step
 goto 29.57,15.83
-'Talk to the Ancestral Spirit |q Divine Conundrum/Talk to the Ancestral Spirit
+'Talk to Farena Andrano |q Divine Conundrum/Talk to the Ancestral Spirit
 step
 goto 32.10,47.75
 click Hall of Remembrance
@@ -1353,7 +1353,7 @@ click Vvardenfell
 |tip Manually skip to the next step.
 step
 goto vvardenfell_base 43.63,79.13
-talk Canon Llevule |q Divine Conundrum/Talk to Canon Llevule Outside the Tomb
+'Talk to Canon Llevule |q Divine Conundrum/Talk to Canon Llevule Outside the Tomb
 step
 goto 39.96,80.22
 click Seyda Neen Wayshrine
