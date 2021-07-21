@@ -1305,36 +1305,12 @@ step
 |tip If this is your first Morrowind character, you can also accept this quest by picking up the Invitation to Morrowind in your mail.
 accept Divine Conundrum
 step
-goto woodhearth_base 24.42,59.78
-click Vivec City
-'Travel to Vvardenfell |q Divine Conundrum/Travel to Vvardenfell
-'Click here if you're a new character already in Vvardenfell |confirm |next "skiptravel" |only if level < 5
+'Open your map. Right click until you see the Tamirel map.
+|tip If you don't have enough coin, travel to the nearest wayshrine
+'Travel to the _Seyda Neen_ Wayshrine |q Divine Conundrum/Talk to Canon Valasa
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
-goto wayrest_base 79.02,86.77
-click Vivec City
-'Travel to Vvardenfell |q Divine Conundrum/Travel to Vvardenfell
-'Click here if you're a new character already in Vvardenfell |confirm |next "skiptravel" |only if level < 5
-|tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
-step
-goto mournhold_base 30.85,52.60
-click Vivec City
-'Travel to Vvardenfell |q Divine Conundrum/Travel to Vvardenfell
-'Click here if you're a new character already in Vvardenfell |confirm |next "skiptravel" |only if level < 5
-|tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
-step
-label "skiptravel"
-goto vvardenfell_base 47.50,85.82
-wayshrine Vivec City
-step
-goto 47.49,85.84
-click Vivec City Wayshrine
-'Travel to the Seyda Neen Wayshrine |q Divine Conundrum/Travel to Vvardenfell
-step
-goto 40.88,79.88
+goto vvardenfell_base 40.88,79.88
 talk Canon Valasa |q Divine Conundrum/Talk to Canon Valasa
 step
 goto 40.88,79.88
@@ -1347,11 +1323,12 @@ step
 goto 43.52,79.23
 talk Canon Llevule
 'Tell him _"I'm ready. Let's enter your family tomb."_
-talk Canon Llevule |q Divine Conundrum/Talk to Canon Llevule
+'Talk to Canon Llevule |q Divine Conundrum/Talk to Canon Llevule
 step
 goto 43.15,79.30
 click Andrano Ancestral Tomb
 'Enter the Andrano Ancestral Tomb |q Divine Conundrum/Enter the Andrano Ancestral Tomb
+|tip Manually skip to the next step.
 step
 goto andrano_base 31.24,79.05 |q Divine Conundrum/Escort Canon Llevule to the Summoning Chamber
 step
@@ -1363,7 +1340,7 @@ goto 37.71,13.31
 'Escort Canon Llevule to the Summoning Chamber |q Divine Conundrum/Escort Canon Llevule to the Summoning Chamber
 step
 goto 29.57,15.83
-talk Farena Andrano |q Divine Conundrum/Talk to the Ancestral Spirit
+'Talk to the Ancestral Spirit |q Divine Conundrum/Talk to the Ancestral Spirit
 step
 goto 32.10,47.75
 click Hall of Remembrance
