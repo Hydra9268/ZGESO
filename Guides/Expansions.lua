@@ -14372,8 +14372,9 @@ step
 goto elsweyr_base 36.81,48.58
 wayshrine The Stitches
 step
-goto elsweyr_base 50.11,16.21
+goto stitches_base 50.11,16.21
 talk Tasnasi
+|tip She is found East of The Stitches wayshrine
 accept Thick as Thieves
 step
 goto stitches_base 34.21,27.01
@@ -15324,7 +15325,7 @@ goto elsweyr_base 42.24,15.09
 |tip Manually skip to the next step.
 step
 goto elsweyr_base 43.50,17.26
-Swim to this spot
+'Swim to this spot
 |tip Manually skip to the next step.
 step
 goto elsweyr_base 43.75,17.71
