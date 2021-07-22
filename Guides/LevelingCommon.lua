@@ -3725,7 +3725,7 @@ loadingimage loadscreen_grahtwood_01.dds
 description This region is the southern heart of the Wood Elves' great forest, and home to more of the gigantic graht-oaks than any other part of Valenwood. Its capital, now also the capital of the entire Aldmeri Dominion, is Elden Root.
 step
 goto haven_base 80.56,79.80
-|tip Outside on the ship.
+|tip Outside on the ship. Note: If you cannot reach Captain Jimila then skip to the next step.
 talk Captain Jimila
 accept Unsafe Haven
 step
@@ -3743,11 +3743,11 @@ goto 81.18,73.16
 talk Eryarion
 accept Lost Treasures
 step
-goto 70.73,44.01
+goto haven_base 70.73,44.01
 |tip All around this area in the swamp.
 'Rescue 3 Workers in the Marsh |q Lost Treasures/.*Rescue Workers in Marsh.*
 step
-goto haven_base 55.52,28.69
+goto 55.52,28.69
 |tip In the house.
 talk Khezuli
 turnin Lost Treasures
