@@ -116,7 +116,7 @@ GuideViewer("Main", "enUS", function() local f = {
 			["message_errorloading_critical"] = "|cff4444CRITICAL Error|r loading guide |caaffaa%s|r\nError: %s\nLine: %d\nData: %s",
 			["message_loadedguide"] = "Activated guide: |caaffaa%s|r",
 			["message_missingguide"] = "|cff4444Missing|r guide: |caaffaa%s|r",
-			["title_noguide"] = "Leveling Guides Viewer (no guide loaded)",
+			["title_noguide"] = "Community Leveling Guides (no guide loaded)",
 
 			-- GUIDE VIEWER
 			['guide_notselected'] = "- select a guide -",

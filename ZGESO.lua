@@ -303,7 +303,7 @@ function ZGV:ShowKeybinds()
     end
   end
   for i, data in ipairs(ZO_KeybindingsList.data) do
-    if data.data and data.data.categoryName == "Leveling Guides Viewer" then
+    if data.data and data.data.categoryName == "Community Leveling Guides" then
       ZO_KeybindingsListScrollBar:SetValue(data.top - 20)
       break
     end
