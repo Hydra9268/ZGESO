@@ -1340,7 +1340,7 @@ goto 37.71,13.31
 'Escort Canon Llevule to the Summoning Chamber |q Divine Conundrum/Escort Canon Llevule to the Summoning Chamber
 step
 goto 29.57,15.83
-'Talk to Farena Andrano |q Divine Conundrum/Talk to the Ancestral Spirit
+talk Farena Andrano |q Divine Conundrum/Talk to the Ancestral Spirit
 step
 goto 32.10,47.75
 click Hall of Remembrance
