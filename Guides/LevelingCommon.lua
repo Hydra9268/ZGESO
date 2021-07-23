@@ -203,10 +203,6 @@ step
 goto 55.88,76.69
 talk Razum-dar |q Storm on the Horizon/Talk to Razum-dar
 step
-goto 55.88,76.69
-talk Razum-dar |q Storm on the Horizon/Talk to Commander Karinith
-|tip Manually skip to the next step.
-step
 goto 55.87,78.59
 talk Commander Karinith |q Storm on the Horizon/Talk to Commander Karinith
 step
@@ -215,7 +211,6 @@ talk Ealcil |q Storm on the Horizon/Talk to Ealcil
 step
 goto 58.92,80.93
 click Skyshard |achieve 431/1
-|tip It looks like a cluster of white crystals at the top of this tower.
 step
 goto 55.40,76.43
 talk Razum-dar |q Storm on the Horizon/Talk to Razum-dar at Eagle's Strand's Entrance
@@ -237,7 +232,7 @@ talk Azbi-ra
 accept The Family Business
 step
 goto 64.39,68.91
-talk Officer Lorin |q The Family Business/Talk to Officer Lorin
+talk Officer Lorin |q The Family Business/Talk to Officer Lorin |future
 |tip Manually skip to the next step.
 step
 goto 66.23,73.19
@@ -247,8 +242,8 @@ goto 68.21,73.13
 click Smoldering Alchemical Tools |q The Family Business/Smoldering Alchemical Tools
 step
 goto 71.61,69.72
-'Salvage the Alchemical Tools |q The Family Business/Salvage Alchemical Tools
 |tip Upstairs in the burned house.
+'Salvage the Alchemical Tools |q The Family Business/Salvage Alchemical Tools
 step
 goto 71.61,69.72
 talk Zaban-ma |q The Family Business/Talk to Zaban-ma
@@ -265,20 +260,21 @@ goto 61.78,64.17
 talk Officer Lorin |q The Family Business/Talk to Officer Lorin
 step
 goto 61.89,64.04
+|tip If you chose to lie for the family, talk to Khajit nearby to turn in the quest after talking to Officer Lorin.
 talk Officer Lorin
 turnin The Family Business
-|tip If you chose to lie for the family, talk to Khajit nearby to turn in the quest after talking to Officer Lorin.
 step
 goto 65.84,59.47
-talk Gathwen |tip She will run up to you.
+|tip She will run up to you.
+talk Gathwen 
 accept Tears of the Two Moons
 step
 goto 68.29,57.85
 click Skyshard |achieve 431/4
 step
 goto 70.45,55.94
-'Enter the Temple Courtyard |q Tears of the Two Moons/Enter the Temple Courtyard
 |tip Run up the stairs.
+'Enter the Temple Courtyard |q Tears of the Two Moons/Enter the Temple Courtyard
 step
 goto 70.45,55.94
 talk Skeleton |q Tears of the Two Moons/Talk to the Skeleton
@@ -293,8 +289,8 @@ goto 74.57,50.46
 click Scorpion Ward |q Tears of the Two Moons/Disrupt the Temple Wards
 step
 goto 76.74,54.20
-click Catacombs |q Tears of the Two Moons/Enter the Temple Catacombs
 |tip Run deeper into the room and down the stairs to complete the goal.
+click Catacombs |q Tears of the Two Moons/Enter the Temple Catacombs
 step
 goto templeofthemourningspring_base 19.73,50.80
 click New Moons Stone
@@ -322,9 +318,7 @@ goto khenarthisroost_base 77.00,57.16
 |tip Gathwen will destroy the bone pile, but you must protect her. Do this for the other 3 bone piles around this area.
 'Disrupt Uldor's Summoning Ritual |q Tears of the Two Moons/Disrupt Uldor's Summoning Ritual
 step
-goto 77.97,54.73
-|tip You will get struck down.
-'Watch the dialogue |q Tears of the Two Moons/Confront Uldor
+goto 77.60,55.94 |q Tears of the Two Moons/Confront Uldor
 step
 goto 80.22,55.99
 click Great Hall |q Tears of the Two Moons/Confront Uldor
@@ -353,6 +347,7 @@ goto 71.24,48.86
 click Uldor's Tomb |q Tears of the Two Moons/Seal Uldor's Tomb
 |tip Manually skip to the next step.
 step
+goto 81.89,49.17
 'Watch the dialogue
 click Tears of the Two Moons Pedestal
 |tip It looks like a lion statue in the corner of the room. Do this for the other 3 lion statues in the other corners of the room.
@@ -387,8 +382,8 @@ talk Zulana |q Moon-Sugar Medicament/Find Hazak's Hollow
 step
 goto 71.56,39.47
 |tip Enter the cave.
-'Enter Hazak's Hollow |q Moon-Sugar Medicament/Enter Hazak's Hollow
 |tip Go deeper into the cave to complete the goal.
+'Enter Hazak's Hollow |q Moon-Sugar Medicament/Enter Hazak's Hollow
 step
 goto hazikslair_base 43.52,68.80
 |tip Swim onto the dock to the left as you enter the cave.
@@ -434,8 +429,8 @@ talk Juranda-ra
 accept A Pinch of Sugar
 step
 goto 45.74,61.12
-talk Cinder-Tail |q A Pinch of Sugar/Talk to Cinder-Tail
 |tip He's in the small house up the stairs.
+talk Cinder-Tail |q A Pinch of Sugar/Talk to Cinder-Tail
 step
 goto 44.30,60.16
 click Thunderbug Mound |q A Pinch of Sugar/Steal Thunderbug Eggs
@@ -514,12 +509,12 @@ goto 25.36,56.45
 talk Quartermaster Oblan |q Cast Adrift/Talk to Quartermaster Oblan at the Prowler
 step
 goto 23.66,55.89
-talk Captain Jimila |q Cast Adrift/Talk to the Prowler's Captain
 |tip She's at the top of the ship.
+talk Captain Jimila |q Cast Adrift/Talk to the Prowler's Captain
 step
 goto 23.48,56.30
-talk Mastengwe |q Cast Adrift/Talk to Mastengwe
 |tip She is downstairs in the ship, in a side room.
+talk Mastengwe |q Cast Adrift/Talk to Mastengwe
 step
 goto 17.04,53.88
 |tip Leave the ship.
@@ -529,9 +524,7 @@ step
 goto 16.32,55.50
 click Skyshard |achieve 431/3
 step
-goto 11.52,51.62
-'Board the ship |q Cast Adrift/Stop the Maormer Ritual
-|tip Manually skip to the next step.
+goto 11.52,51.62 |q Cast Adrift/Stop the Maormer Ritual
 step
 goto 11.17,49.57
 'Use the Lodestone on Virkvild |q Cast Adrift/Stop the Maormer Ritual
@@ -541,13 +534,11 @@ goto 13.22,52.81
 'Use the Lodestone on Suhr |q Cast Adrift/Stop the Maormer Ritual
 step
 goto 23.66,55.89
-talk Captain Jimila
 |tip She's at the top of the ship.
+talk Captain Jimila
 turnin Cast Adrift
 step
-goto 28.81,49.36
-'Run up the stairs |q Dark Knowledge/Collect Journal of Bravam Lythandas
-|tip Manually skip to the next step.
+goto 28.81,49.36 |q Dark Knowledge/Collect Journal of Bravam Lythandas |tip Run up the stairs
 step
 goto 36.68,50.06
 click Journal of Bravam |q Dark Knowledge/Collect Journal of Bravam Lythandas
@@ -604,7 +595,7 @@ goto 37.89,43.33 |q Storm on the Horizon/Go to Mistral
 step
 goto mistral_base 23.30,75.11 |q Storm on the Horizon/Go to Mistral
 step
-goto 26.33,65.23 |q Storm on the Horizon/Talk to Razum-dar
+goto 26.33,65.23 |q Storm on the Horizon/Talk to Razum-dar |future
 step
 goto 39.96,49.07
 wayshrine Mistral
@@ -972,6 +963,7 @@ step
 goto 23.01,53.25
 click Vulkhel Guard |q Unaccounted Crew/Find Degail
 |tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 15.49,52.47 |q Unaccounted Crew/Find Degail
 step
