@@ -972,7 +972,6 @@ step
 goto 23.01,53.25
 click Vulkhel Guard |q Unaccounted Crew/Find Degail
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 15.49,52.47 |q Unaccounted Crew/Find Degail
 step
