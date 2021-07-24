@@ -2272,7 +2272,9 @@ step
 goto auridon_base 78.31,51.48
 click Boat to Skywatch |q The Veil Falls/Return to Skywatch
 step
-goto skywatch_base 53.56,47.79
+goto skywatch_base 40.76,53.92 |q The Veil Falls/Talk to Razum-dar
+step
+goto 53.56,47.79
 talk Razum-dar |q The Veil Falls/Talk to Razum-dar
 step
 goto 59.99,47.08
@@ -2483,7 +2485,8 @@ click Auridon |q Spirited Away/.*Pray for Ancalin's Children.* |count 1
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
-'Open Auridon Map
+goto skywatch_base 18.35,42.01
+click Skywatch Wayshrine
 'Travel to the _Vulkhel Guard_ in Auridon |q Spirited Away/.*Pray for Ancalin's Children.* |count 1
 |tip Manually skip to the next step.
 |only not Aldmeri Dominion
@@ -2509,6 +2512,8 @@ step
 goto 68.12,72.25
 click Mendol's Grave Marker |q Spirited Away/.*Pray for Ancalin's Children.* |count 2
 step
+goto 66.84,75.62 |q Spirited Away/.*Pray for Ancalin's Children.* |count 3
+step
 goto 58.92,76.11
 click Phaer Wayshrine
 'Travel to the _Tanzelwil_ in Auridon |q Spirited Away/.*Pray for Ancalin's Children.* |count 3
@@ -2526,7 +2531,9 @@ goto skywatch_base 14.65,44.91
 talk Egranor
 accept Final Blows
 step
-goto auridon_base 56.93,48.67 |lorebook Why Don the Veil?/1/25/5
+goto auridon_base 58.42,46.90 |lorebook Why Don the Veil?/1/25/5
+step
+goto 56.36,44.78 |lorebook Why Don the Veil?/1/25/5
 step
 goto 55.94,47.33
 click Why Don the Veil?
@@ -2568,13 +2575,13 @@ goto 61.81,42.51
 kill Spirit enemies |q An Act of Kindness/.*Use Sirinque's Crystal on Weakened Spirits.*
 step
 goto 62.41,40.00
-talk Andewen |q The Mallari-Mora/Talk to Andewen at the Undercroft
+talk Andewen |q The Mallari-Mora/Talk to Andewen at the Undercroft 
 step
 goto 62.33,40.10
 'Wait for Andewen to Unlock the Door |q The Mallari-Mora/Wait for Andewen to Unlock the Door
 step
 goto 62.57,40.51
-click Ezduiin Undercroft |q The Mallari-Mora/Enter the Ezduiin Undercroft
+click Ezduiin Undercroft |q The Mallari-Mora/Enter the Ezduiin Undercroft |future
 |tip Manually skip to the next step.
 step
 goto ezduiin_base 42.33,58.01
@@ -3500,7 +3507,7 @@ goto 31.24,08.61
 talk Sorondil |q Rightful Inheritance/Return to Vault Entrance
 |tip If you go back on mount it bugs out alot of times.
 step
-goto 30.45,07.86 |q Rightful Inheritance/Enter Castle Vault
+goto 30.45,07.86  |q Rightful Inheritance/Enter Castle Vault |tip Enter Vault of Exiles
 step
 goto thevaultofexile_base 77.35,50.77
 |tip Enter the Vault of Exiles
@@ -3841,7 +3848,7 @@ talk Quartermaster Oblan
 turnin A Little on the Side
 step
 goto 22.82,68.54
-click Aquifer |q Unsafe Haven/Enter Aquifer
+click Aquifer |q Unsafe Haven/Enter Aquifer |future
 |tip Manually skip to the next step.
 step
 goto havensewers_base 28.11,81.62 |q Unsafe Haven/Enter Fort
@@ -3855,7 +3862,7 @@ step
 goto 46.59,52.11 |q Unsafe Haven/Enter Fort
 step
 goto 50.05,9.49
-click Fort |q Unsafe Haven/Enter Fort
+click Fort |q Unsafe Haven/Enter Fort |future
 |tip Manually skip to the next step.
 step
 goto haven_base 48.23,42.68
@@ -4320,10 +4327,11 @@ talk Captain Linwen |q Luck of the Albatross/Talk to Captain Linwen
 step
 goto 60.97,75.13
 talk Captain Linwen |q Luck of the Albatross/Enter the Cave of Broken Sails |future
+'Tell her _"That's all i need to know."_
 |tip Manually skip to the next step.
 step
 goto 61.11,75.50
-click Cave of Broken Sails |q Luck of the Albatross/Enter the Cave of Broken Sails
+click Cave of Broken Sails |q Luck of the Albatross/Enter the Cave of Broken Sails |future
 |tip Manually skip to the next step.
 step
 goto caveofbrokensails_base 77.34,71.94
@@ -4973,6 +4981,10 @@ goto 64.60,78.09
 step
 goto 76.42,67.23 |q The Honor of the Queen/Return to Elden Root
 step
+goto 49.57,52.64 |q The Honor of the Queen/Return to Elden Root
+step
+goto 51.54,33.29 |q The Honor of the Queen/Return to Elden Root
+step
 goto 68.73,31.37
 click Elden Root |q The Honor of the Queen/Return to Elden Root
 |tip Manually skip to the next step.
@@ -5159,7 +5171,7 @@ goto 47.89,82.20
 click Portal to Ossuary of Telacar |q Until Death/Use Dog Whistle
 |tip Manually skip to the next step.
 step
-goto 71.28,52.91
+goto grahtwood_base 71.28,52.91
 click Ossuary Wayshrine
 'Travel to the _Elden Root Temple_ in Grahtwood |q Until Death/Use Dog Whistle
 |tip Manually skip to the next step.
@@ -5170,7 +5182,7 @@ step
 goto 58.30,40.21
 talk Eat Eat |q Until Death/Pet Eat Eat
 step
-goto grahtwood_base 57.28,35.76 
+goto 57.28,35.76 
 'Follow Eat Eat |q Until Death/Follow Eat Eat
 step
 goto 56.96,35.78
@@ -5256,6 +5268,7 @@ goto 53.68,34.54
 'Fill the Sigil Geode |q Eyes of Azura/Fill the Sigil Geode
 step
 goto 52.23,32.20
+|tip Watch dialogue
 click Twilit Heart |q Eyes of Azura/Use Sigil Geode on the Twilit Heart
 step
 goto 51.92,31.60
@@ -5619,6 +5632,7 @@ talk Laranalda |q Heart of the Matter/Pursue Ukaezai
 step
 goto 71.44,50.40
 click Reliquary Vault |q Heart of the Matter/Pursue Ukaezai
+|tip Manually skip to the next step.
 step
 goto reliquaryvaulttop_base 53.72,52.47
 'Confront Ukaezai |q Heart of the Matter/Confront Ukaezai
@@ -5752,7 +5766,7 @@ step
 goto 36.00,35.44
 talk Sabonn
 'Watch the dialogue
-'Listen to the Plan |q Blood Hunt/Listen to the Plan
+'Listen to the Plan |q Blood Hunt/Listen to the Plan |future
 step
 goto 38.41,32.49 |q Blood Hunt/Get Into Position
 step
@@ -7078,6 +7092,7 @@ goto 66.41,69.74
 talk Wilderking |q Audience with the Wilderking/Talk to the Wilderking
 step
 goto 66.41,69.74
+|tip Watch dialogue
 click Petitioning Stone |q Audience with the Wilderking/Learn the Veiled Heritance Member's Identity
 step
 goto 66.41,69.74
@@ -7224,12 +7239,12 @@ talk Erunor |q The Fading Tree/Talk to Erunor
 'Tell him: _"You know what's right. You need to take care of your family."_
 step
 goto 39.28,31.80
-click Shrouded Hollow |q The Fading Tree/Meet Erunor inside Shrouded Hollow
+click Shrouded Hollow |q The Fading Tree/Return to Shrouded Hollow |future
 |tip Manually skip to the next step.
 step
 goto shroudedhollowarea2_base 59.39,19.79
 |tip Watch dialogue
-'Meet Erunor Inside Shrouded Hollow |q The Fading Tree/Meet Erunor inside Shrouded Hollow
+'Meet Erunor Inside Shrouded Hollow |q The Fading Tree/Meet Erunor inside Shrouded Hollow |future
 step
 goto 59.18,19.44
 talk Erunor
@@ -7274,7 +7289,7 @@ goto greenshade_base 64.80,78.83 |q The Spinner's Tale/Talk to Maruin
 step
 goto 62.87,79.48
 click Skyshard |achieve 683/1
-|tip Jump up the rocks.
+|tip Climb the spiral rock.
 step
 goto 62.46,78.90
 click Visions of the Green Pact Bosmer
@@ -7408,17 +7423,17 @@ goto 53.48,65.59
 talk Indanas |q Stone Cold/Talk to Indanas
 step
 goto 56.46,66.04
-|tip Glitched if the mobs arent there wait for them to spawn before it will allow you to Collapse Hole.
+|tip Glitched workaround is dismiss pets and companions.
 'Press _X_ to Collapse the Hole
 'Collapse the Southern Hole |q Stone Cold/Collapse Southern Hole
 step
 goto 56.00,62.51
-|tip Glitched if the mobs arent there wait for them to spawn before it will allow you to Collapse Hole.
+|tip Glitched workaround is dismiss pets and companions.
 'Press _X_ to Collapse the Hole
 'Collapse the Northern Hole |q Stone Cold/Collapse Northern Hole
 step
 goto 53.30,63.08
-|tip Glitched if the mobs arent there wait for them to spawn before it will allow you to Collapse Hole.
+|tip Glitched workaround is dismiss pets and companions.
 'Press _X_ to Collapse the Hole
 'Collapse the Western Hole |q Stone Cold/Collapse Western Hole
 step
@@ -8321,7 +8336,7 @@ kill Domina Ssaranth
 'Explore the Underroot |achieve 550
 step
 goto 46.48,23.95
-|tip Carefully jump over.
+|tip Carefully jump over to the rock.
 click Skyshard |achieve 683/13
 step
 goto 46.85,23.75
@@ -8960,7 +8975,8 @@ goto 55.06,35.62
 click Empty Pike |q The Falinesti Faithful/Mount Roog's Head
 step
 goto 54.98,35.69
-click Sacrifice Stone |q The Falinesti Faithful/Kill Warchief Gorzesh
+click Sacrifice Stone 
+kill Warchief Gorzesh |q The Falinesti Faithful/Kill Warchief Gorzesh
 step
 goto 54.99,35.70
 talk Fanrel
