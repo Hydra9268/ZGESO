@@ -1068,7 +1068,8 @@ goto 39.16,44.13
 'Allow Urcelmo and Ayrenn to Consult |q A Hostile Situation/Allow Urcelmo and Ayrenn to Consult
 step
 goto 39.24,49.73
-click Temple of Auri-El |q A Hostile Situation/Enter the Temple
+click Temple of Auri-El |q A Hostile Situation/Enter the Temple |future
+|tip Manually skip to the next step.
 step
 '_Go to middle of room_
 'Watch the dialogue |q A Hostile Situation/Examine the Temple
@@ -1183,6 +1184,8 @@ click Del's Claim |achieve 288
 step
 goto delsclaim_base 39.66,66.72 |achieve 288
 step
+goto 41.25,40.60 |achieve 288
+step
 goto 24.28,34.32 |achieve 288
 step
 goto 31.45,21.81
@@ -1250,6 +1253,8 @@ goto 64.23,78.84
 talk Captain Tendil
 turnin Real Marines
 step
+goto 63.60,82.25 |q Silsailen Rescue/Talk to Elenwen
+step
 goto 62.70,82.89
 |tip Leave the Cellar.
 talk Elenwen |tip She is inside the large storehouse.
@@ -1260,7 +1265,7 @@ goto 62.86,81.05 |q Teldur's End/Find a Way Into Valano Manor
 step
 goto 66.56,81.18 |q Teldur's End/Find a Way Into Valano Manor
 step
-goto 67.93,82.95
+goto 70.06,83.06
 kill Heritance Soldiers
 'Get a Manor Key From the Guards |q Teldur's End/Find a Way Into Valano Manor
 |tip Manually skip to the next step.
@@ -1477,7 +1482,7 @@ click Cabinet |q The First Patient/Find a Way into the Cave
 |tip Manually skip to the next step.
 step
 goto 58.55,69.16
-click Phaer Catacombs |q The First Patient/Find a Way into the Cave
+click Phaer Catacombs |q The First Patient/Find a Way into the Cave |future
 |tip Manually skip to the next step.
 step
 goto phaercatacombs_base 68.25,28.39
@@ -1503,7 +1508,7 @@ goto 57.31,56.81
 talk Hendil |q The First Patient/Talk to Hendil
 step
 goto 88.52,41.42
-click Phaer |q The First Patient/Return to Phaer
+click Phaer |q The First Patient/Return to Phaer |future
 |tip Manually skip to the next step.
 step
 goto auridon_base 58.97,69.82
@@ -1944,6 +1949,8 @@ step
 goto 59.96,62.32
 talk Razum-dar |q The Unveiling/Talk to Razum-dar
 step
+goto 60.39,61.74 |q The Unveiling/Defeat Condalin
+step
 goto 59.49,61.73
 |tip Wait for Razum-dar to open the cell door, then exit the cell.
 click Mathiisen |q The Unveiling/Defeat Condalin
@@ -2056,7 +2063,7 @@ goto 52.61,50.66
 'Watch the dialogue |q A Village Awakened/Watch Anenwen Confront Merormo
 step
 goto 52.61,50.66
-talk Merormo |q A Village Awakened/Talk to Merormo
+talk Merormo |q A Village Awakened/Talk to Merormo |future
 |tip Manually skip to the next step.
 step
 goto 52.74,50.95
@@ -2135,6 +2142,10 @@ goto 64.44,51.67
 step
 goto 64.44,51.67
 talk Razum-dar |q Lifting the Veil/Talk to Razum-dar
+step
+goto 64.66,47.38 |achieve 695/4
+step
+goto 60.20,47.13 |achieve 695/4
 step
 goto 54.68,55.47
 click Skyshard |achieve 695/4
@@ -2240,7 +2251,7 @@ goto 34.03,37.71
 step
 goto 29.13,63.53
 |tip Click the Door Switch to get through the door. It's a box on the wall with a blue crystal in it.
-  |q The Veil Falls/Enter the Second Room
+click Door Switch |q The Veil Falls/Enter the Second Room
 step
 goto 27.21,73.67
 |tip Click all of the Crystals in the stone pillars in this room.
