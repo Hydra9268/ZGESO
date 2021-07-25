@@ -23,12 +23,13 @@ Install through the excellent add-on manager <a href="https://minion.mmoui.com/"
 <br/>
 
 
-### 6/1/21 Blackwood, Dragonhold (Southern Elsweyr), and Craglorn guides now available (Thank you, snichols7778)! 
-<img src="https://i.imgur.com/gtJYaJ4.png">
+### 7/24/21 Remaster Legacy guides and Stand-alone Blackwood Companions guide (Thank you, snichols7778)! 
+<img src="https://i.imgur.com/5DZTFBl.png">
 <i>artwork &copy; ZeniMax Media</i>
 
 ### Recent Updates
 
+* 6/1/21 Blackwood, Dragonhold (Southern Elsweyr), and Craglorn guides now available (Thank you, snichols7778)! 
 * 3/27/21 Skyrim Guides Now Available (Thanks to snichols7778)!
 * 3/13/21 merge: Sharlikran: Misc changes and updates
 * 3/13/21 merge: Sharlikran: Removed embedded libraries. Fixed /zgpos output
