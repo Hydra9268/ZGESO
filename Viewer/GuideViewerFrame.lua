@@ -234,6 +234,8 @@ function Viewer:CreateZGVF()
 				Viewer.prevDownTime = nil
 			end)
 		.__END
+		s = "Left click to move back one step. Right click to fast REWIND steps."
+		ZGV.Viewer:add_tooltip(titlebar.prevStep,s)
 
 	titlebar.nextStep = CHAIN(ui:Create("GuideButton",titlebar,tname.."_NextStep","Right"))
 		:SetPoint(LEFT,titlebar.prevStep,RIGHT,CUR_STEP_WIDTH,0) -- Some padding on each side, then the width of the number.
@@ -246,6 +248,8 @@ function Viewer:CreateZGVF()
 				Viewer.nextDownTime = nil
 			end)
 		.__END
+		s = "Left click to move forward one step. Right click to fast FORWARD steps."
+		ZGV.Viewer:add_tooltip(titlebar.nextStep,s)
 
 	titlebar.stepLabel = CHAIN(ui:Create("Label",titlebar,tname.."_StepLabel"))
 		:SetPoint(TOPLEFT,titlebar.prevStep,TOPRIGHT)
