@@ -1,4 +1,4 @@
-## Title: |cE76931Community Leveling Guides|r v891
+## Title: |cE76931Community Leveling Guides|r v898
 ## Description: A Zygor addon updated by snichols7778, Hydra9268, Krandor1, and Sharlikran for the Blackwood expansion.
 ## Author: snichols7778, Hydra9268
 ## Version: 891
