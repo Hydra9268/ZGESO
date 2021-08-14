@@ -160,6 +160,7 @@ function Menu:CreateBaseMenu()
 	-- Close button, upper right
 	frame.close = CHAIN(ui:Create("GuideButton",frame,name.."_Close","Close"))
 		:SetPoint(TOPRIGHT, titlebar, -5, 5)
+		:SetSize(20,20)
 		:SetHandler("OnClicked",function()
 				Menu:Hide()
 			end)
@@ -198,10 +199,11 @@ function Menu:CreateBaseMenu()
 	frame.settings = CHAIN(ui:Create("GuideButton",frame,name.."_Settings","Settings"))
 		:SetPoint(BOTTOMRIGHT,frame,BOTTOMRIGHT,-5,-5)
 		.__END
-
+	-- Secondary Frame (contains the menu, scroll bar, and guide information)
 	frame.mainBackdrop = CHAIN(ui:Create("SecFrame", frame, name.. "_mainBackdrop"))
 		:SetPoint( TOPLEFT,frame, TOPLEFT,1,HEADER_HEIGHT)
 		:SetPoint(BOTTOMRIGHT,frame,BOTTOMRIGHT,-1,-FOOTER_HEIGHT)
+		:SetBackdropColor(.15,.15,.15,1) -- #252526
 		.__END
 
 	self:SetTab(GUIDEMENU_TAB_ID)	-- Set the default tab
@@ -265,6 +267,7 @@ function GuideMenu:Create()
 		:SetText (ZGV.Utils.faction_names_short[ZGV.Utils.GetFaction()]:upper() .. (ZGV.VETERAN_FACTION and " VETERAN" or "") .. " LEVELING")
 		.__END
 
+
 	------------------------------
 	-- Setup Left column buttons
 	-----------------------------
@@ -310,6 +313,7 @@ function GuideMenu:Create()
 			:SetPoint(TOPRIGHT,previousButton,BOTTOMRIGHT)
 		end
 
+		-- icons that appear to the left of the guide names
 		button.icon = CHAIN(ui:Create("Texture",button,buttonName.."_Icon"))
 			:SetPoint(LEFT,button,LEFT,10,0)
 			:SetSize(17,17)
@@ -317,7 +321,6 @@ function GuideMenu:Create()
 			.__END
 
 		-- TODO blinking star on guide animation?
-
 		button.label = CHAIN(ui:Create("Label",button,buttonName.."_Label",13))
 			:SetPoint(LEFT,button.icon,RIGHT,5,0)
 			:SetPoint(RIGHT)
@@ -331,7 +334,6 @@ function GuideMenu:Create()
 	------------------------------
 	-- Setup Right information panel
 	-----------------------------
-
 	frame.GuideTitle = CHAIN(ui:Create("Label",frame.guideInfoBox,guideMenuName.."_GuideTitle",17,"bold"))
 		:SetPoint(TOPLEFT,frame.guideInfoBox,20,20)
 		:SetWidth(GUIDE_IMAGE_WIDTH-20)
@@ -424,7 +426,7 @@ function GuideMenu:RefreshUI()
 	local zo_min, zo_max = _G.zo_min, _G.zo_max
 	self.offset = self.offset and zo_min(#guides,zo_max(0,self.offset)) or 0
 
-	frame.guideBoxScroll:SetMinMax(0, #guides-MAX_LINES)		-- code works button there's no scrolling
+	frame.guideBoxScroll:SetMinMax(0, #guides-MAX_LINES)		-- code works but there's no scrolling
 
 	local hei = zo_min(1,MAX_LINES / #guides)  if hei==1 then
 		hei = 0
@@ -589,7 +591,8 @@ function Settings:Create()
 	self.Frame = frame
 
 	frame.optionTypesBox = CHAIN(ui:Create("InvisFrame", frame, setname.. "_OptionsBox"))
-		:SetPoint(TOPLEFT) :SetPoint(BOTTOMLEFT)
+		:SetPoint(TOPLEFT)
+		:SetPoint(BOTTOMLEFT)
 		:SetWidth(LEFT_COLUMN_WIDTH)
 		.__END
 

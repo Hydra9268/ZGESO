@@ -129,8 +129,7 @@ function OptionGroup:New(opt_group_name,data)
 
   setmetatable(opt_group,OptionGroup_meta)
 
-  -- Used for adding options to a group
-  mostRecentOptGroup = opt_group
+  mostRecentOptGroup = opt_group -- Used for adding options to a group
 
   ZGV.Settings:AddOptionGroup(opt_group)--self.opt_groups,opt_group)
 
@@ -166,27 +165,27 @@ end
 
 --[[
 	General data choices in options:
-		type - Type of UI component
-			- string. Possible types seen below
-		char - Can signel that the option is in .char instead of .profile. True for .char.
-			- T/F
-		set - Additional setter mechanism run when the value of the option gets changed.
-			- function(option,value)
-		get - Addiional code ran when the UI gets the value for the option returns a value
-			- function(option)
-		_default - value for default use. Can set here or in appropriate default table above. defaultChar or defaultAccount
-			- W/e is appropriate for that option
-		name - Title for option that gets put in a label above it. If not passed then uses O[opt_'optname']
-			- String
-		desc - describsion for option that gets put in a tooltip. If not passed then uses O[opt_'optname'_desc]
-			- String
-		column - Puts an option in a column.
-			- String - one/two/three. Only creates columns as needed
-		descStyle - How to display the description
-			- String - INLINE
-		width - Make it bigger?		-- TODO only dropdown supports atm
-			- Int...
-		--TODO hidden/disable
+    type - Type of UI component
+      - string. Possible types seen below
+    char - Can signal that the option is in .char instead of .profile. True for .char.
+      - T/F
+    set - Additional setter mechanism run when the value of the option gets changed.
+      - function(option,value)
+    get - Addiional code ran when the UI gets the value for the option returns a value
+      - function(option)
+    _default - value for default use. Can set here or in appropriate default table above. defaultChar or defaultAccount
+      - W/e is appropriate for that option
+    name - Title for an option that gets put in a label above it. If not passed, then uses O[opt_'optname']
+      - String
+    desc - description for an option that gets put in a tooltip. If not passed then uses O[opt_'optname'_desc]
+      - String
+    column - Puts an option in a column.
+      - String - one/two/three. Only creates columns as needed
+    descStyle - How to display the description
+      - String - INLINE
+    width - Make it bigger?   -- TODO only dropdown supports atm
+      - Int...
+    --TODO hidden/disable
 
 	Option Types:
 		dropdown -
@@ -328,7 +327,6 @@ function SavedVars:InitializeOptions()
         set = function(i,v) ZGV.Viewer:ShowIf_GuideViewer(v) end,
         _default = true,
       })
-
     AddOption("opacitymain",{
         type = "slider",
         min = 0, max = 1, step = .01, ispercent = true,
@@ -356,8 +354,10 @@ function SavedVars:InitializeOptions()
         _default = 11,
       })
 
-    AddOption(nil,{ type="header", name=O["opt_auto_hiding"] })
-
+    AddOption(nil,{
+      type="header",
+      name=O["opt_auto_hiding"]
+      })
     AddOption("hideincombat",{
         type = "toggle",
         --set = function(i,v) end,
@@ -382,6 +382,14 @@ function SavedVars:InitializeOptions()
           ZGV.Viewer:ResetAllViewerSettings()
         end,
       })
+    AddOption(nil,{
+        type="header",
+        name=O["opt_general_tip"]
+      })
+    AddOption(nil,{
+        type="desc",
+        name=O["opt_general_tip_desc"]
+      })
   end
 
   -- ARROW
@@ -401,8 +409,10 @@ function SavedVars:InitializeOptions()
       })
 
 
-    AddOption(nil,{ type="header", name=O["opt_arrow_display"] })
-
+    AddOption(nil,{
+        type="header",
+        name=O["opt_arrow_display"]
+      })
     AddOption('arrowcolordist',{
         type = 'toggle',
         _default = false,
@@ -443,8 +453,10 @@ function SavedVars:InitializeOptions()
         end,
       })
 
-    AddOption(nil,{ type="header", name=O["opt_additional_arrow_functions"] })
-
+    AddOption(nil,{
+        type="header",
+        name=O["opt_additional_arrow_functions"]
+      })
     AddOption('hidearrowwithguide',{
         type = 'toggle',
         _default = true,
@@ -455,21 +467,11 @@ function SavedVars:InitializeOptions()
   -- EXTRAS
   AddOptionGroup("extras")
   do
-
     AddOption("showmapbutton",{
         type = "toggle",
         set = function(i,v) if not ZGV.Viewer.MinimapButton then return end ZGV.Viewer.MinimapButton:ShowIf(v) end,
         _default = true,
       })
-
-    --[[
-		-- What is this?? ~Jeremiah
-		AddOption(nil,{
-			type = "desc",
-			width = 150,
-		})
-		]]--
-
     AddOption("bugreports",{
         type = "toggle",
         name = O["opt_bugreports"],
@@ -484,7 +486,10 @@ function SavedVars:InitializeOptions()
   -- PROFILES
   AddOptionGroup("profile")
   do
-    AddOption(nil,{ type="desc", name=O["opt_new_profile"] })
+    AddOption(nil,{
+        type="desc",
+        name=O["opt_new_profile"]
+      })
     AddOption(nil,{
         type = "dropdown",
         values = function(me)
@@ -755,7 +760,6 @@ function SavedVars:InitializeOptions()
           width = 150,
         })
     end
-
 
   end
 

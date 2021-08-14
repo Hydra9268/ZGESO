@@ -185,3 +185,4 @@ step
 * https://esomap.uesp.net/
 * https://en.uesp.net/wiki
 * https://game-maps.com/ESO/The-Elder-Scrolls-Online.asp
+* https://andylangton.co.uk/tools/colour-converter

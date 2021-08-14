@@ -253,6 +253,9 @@ GuideViewer("Option", "enUS", function() local f = {
 			["opt_reset"] = "Reset viewer",
 			["opt_reset_desc"] = "Reset Guide Viewer to original position and size.",
 
+			['opt_general_tip'] = "Leveling Guides Tips",
+			['opt_general_tip_desc'] = "\n|cfd5b02Did you know you can bind keys to control the Level Guides Viewer?|r It's far easier to navigate between steps by pressing keys rather than clicking the buttons with your mouse. You can access this by Esc-Controls-Keybindings and scroll down to Community Leveling Guides.",
+
 			------ ARROW -------
 			['opt_arrow'] = "Waypoint Arrow",
 			['opt_arrow_desc'] = "", -- "These settings control the direction arrow",-- and map markers.",
@@ -292,10 +295,10 @@ GuideViewer("Option", "enUS", function() local f = {
 
 			------ PROFILE --------
 			['opt_profile'] = "Profiles",
-			['opt_profile_desc'] = "You can change the active database profile, so you can have different settings for every character.",
+			['opt_profile_desc'] = "You can change the active database profile so that you can have different settings for every character.",
 
-			['opt_new_profile'] = "You can either create a new profile by entering a name in the editbox, or choose one of the already existing profiles.",
-			['opt_existing_profiles'] = "Current Profile",	['opt_existing_profiles_desc'] = "You can select a profile to change to it. Some settings may require you to reload to be shown properly.",
+			['opt_new_profile'] = "You can either create a new profile by entering a name in the edit box or choosing one existing profile.",
+			['opt_existing_profiles'] = "Current Profile",	['opt_existing_profiles_desc'] = "You can select a profile to change to it. Some settings may require you to reload to display correctly.",
 
 			['opt_newprof'] = "New Profile",
 			['opt_newprof_desc'] = "Create a new Profile",

@@ -54,7 +54,6 @@ end
 -- SECFRAME CLASS FUNCTIONS
 -----------------------------------------
 
-
 -- This is just a Control, not a top level so it has to go onto a top level
 function SecFrame:New(parent,name,control)
   control = not control		-- These are CT_CONTROL by default, so if passed an extra arg change it
