@@ -13,7 +13,7 @@ ZGV:RegisterGuide("MISCELLANEOUS\\Miscellaneous\\Testing\\Skyshards",[[
 		'Open your map, and teleport to the _Bleakrock Wayshrine_ in the center of Bleakrock Isle |goto bleakrock_base 49.31,38.55  |achieve 398
 		.' Follow the road and _cross the bridge_ |goto bleakrock_base 44.96,40.92 < 20
 		.' Take the _left fork_ in the road |goto bleakrock_base 38.22,39.52 < 20
-		.' Enter _Hozzin's Folly_ |gmoto 25.46,39.66 < 5
+		.' Enter _Hozzin's Folly_ |goto 25.46,39.66 < 5
 		.' Follow the _path inside the cave_ to the skyshard |goto hozzinsfolley_base 55.93,76.13
 		.click Skyshard##3360010 |achieve 398/3 |goto hozzinsfolley_base 32.91,81.56
 	step
