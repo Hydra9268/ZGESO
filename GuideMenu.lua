@@ -393,6 +393,9 @@ function GuideMenu:RefreshUI()
 		local folderslash = self.folder == "" and "" or self.folder.."/"
 		for _,guide in pairs(ZGV.registeredguides) do
 			local wholefolder,topfolder = guide.title:match("LEVELING/("..folderslash.."([^/]+))/.+")
+			if not topfolder then
+				wholefolder,topfolder = guide.title:match("MISCELLANEOUS/("..folderslash.."([^/]+))/.+")
+			end
 			if topfolder then
 				if not topfolders_seen[topfolder] then
 					topfolders_seen[topfolder] = true
@@ -402,7 +405,7 @@ function GuideMenu:RefreshUI()
 		end
 
 		for _,guide in pairs(ZGV.registeredguides) do
-			if (guide.title:match("^LEVELING/"..folderslash.."[^/]+$")) then
+			if (guide.title:match("^LEVELING/"..folderslash.."[^/]+$") or guide.title:match("^MISCELLANEOUS/"..folderslash.."[^/]+$")) then
 				table.insert(guides,guide)
 			end
 		end
