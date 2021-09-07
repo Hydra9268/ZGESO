@@ -47,6 +47,10 @@ function ZGV.SlashCommandHandler(text)		--TODO
 		ZGV.Viewer:Hide_GuideViewer()
 	elseif text == "config" then
 		ZGV.Settings:OpenSettings()
+	elseif text == "creator" then
+		ZGV.Creator = not ZGV.Creator
+		self.sv.char.creator = not self.sv.char.creator
+		ZGV:Print(("Creator Mode is now %s"):format(self.sv.char.creator and "on" or "off"))
 	else
 		ZGV:Print(help_string)
 	end
