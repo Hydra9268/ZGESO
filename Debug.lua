@@ -106,6 +106,8 @@ function ZGV:Print(str,...)
 	-- TODO
 	if (ZGV.Creator) then
 		print(L['name'].." |ceeeecc[Creator]|r: "..str)
+	elseif (ZGV.DEV) then
+		print(L['name'].." |ceeeecc[DEV]|r: "..str)
 	else
 		print(L['name']..": "..str)
 	end
