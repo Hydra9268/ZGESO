@@ -142,31 +142,42 @@ function ZGV.EVENT_ACHIEVEMENT_UPDATED(_,_,id)
 		[1149] = "Writ Upon the Sky",
 	}
 	if not IgnoreAchievements[id] then
-		if (ZGV.Creator) then
+		if (ZGV.Creator or ZGV.DEV) then
 			local name,desc,_,_,isCompleted,_,_ = _G.GetAchievementInfo(id)
 			local isSkyshardAchievement,_ = string.find(name,"Skyshard")
-			--ZGV:Print("|cd3d3d3Achievement Updated: %d:%s (isCompleted: %s)|r",id,name,tostring(isCompleted))                  -- DEBUG
-			--ZGV:Print("|cd3d3d3- isSkyshardAchievement: %s|r", tostring(isSkyshardAchievement))                                -- DEBUG
-			--ZGV:Print("|cd3d3d3- desc: %s|r", desc)                                                                            -- DEBUG
+			if (ZGV.DEV) then
+				ZGV:Debug("|cd3d3d3Achievement Updated: %d:%s (isCompleted: %s)|r",id,name,tostring(isCompleted))
+				ZGV:Debug("|cd3d3d3- isSkyshardAchievement: %s|r", tostring(isSkyshardAchievement))
+				ZGV:Debug("|cd3d3d3- desc: %s|r", desc)
+			end
 			if (isCompleted) then
 				ZGV:Print("achieve %d", id)
 				ZGV:Print("|cd3d3d3(Name: %s)|r", name)
 			else
 				local numCriteria = _G.GetAchievementNumCriteria(id)
-				--ZGV:Print("|cd3d3d3- numCriteria: %d|r", numCriteria)                                                          -- DEBUG
-				local progress = _G.GetAchievementProgress(id)
+				if (ZGV.DEV) then
+					ZGV:Debug("|cd3d3d3- numCriteria: %d|r", numCriteria)
+				end
+					local progress = _G.GetAchievementProgress(id)
 				if (isSkyshardAchievement) then
 					ZGV:Print("click Skyshard ||achieve %d/#",id)
 					ZGV:Print("|cffff99- Chose a number below for # above:|r")
 					for i = 1, numCriteria do
 						local criterionDesc,numCompleted,numRequired = _G.GetAchievementCriterion(id,i)
-						ZGV:Print("|cffff99- # = %d :: %s (Completed: %d/%d)|r", i, criterionDesc, numCompleted, numRequired)
+						if (ZGV.DEV) then
+							ZGV:Debug("|cffff99- # = %d :: %s (Completed: %d/%d)|r", i, criterionDesc, numCompleted, numRequired)
+						else
+							if (numCompleted == numRequired) then
+								ZGV:Print("|cffff99- # = %d :: %s|r", i, criterionDesc)		
+							end
+						end
 					end
-					ZGV:Print("|cffff99---|r")
 				else
 					for i = 1, numCriteria do
 						local criterionDesc,numCompleted,numRequired = _G.GetAchievementCriterion(id,i)
-						--ZGV:Print("|cd3d3d3- Criterion.%d: %s (%d/%d)|r", i, criterionDesc, numCompleted, numRequired)         -- DEBUG
+						if (ZGV.DEV) then
+							ZGV:Debug("|cd3d3d3- Criterion.%d: %s (%d/%d)|r", i, criterionDesc, numCompleted, numRequired)
+						end
 					end
 				end
 			end
