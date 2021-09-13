@@ -180,7 +180,7 @@ function Quests:SetConditionCoords(journalIndex,stepnum,condnum, typ,m,x,y,r,b1,
 		error("Quests:SetConditionCoords without journalIndex, stepnum or condnum")
 	end
 	local quest = Quests:GetQuest(journalIndex)
-	if not quest then return end  -- shouldn't happen!
+	if not quest or not quest.steps then return end  -- shouldn't happen!
 	if quest.steps[stepnum] ~= nil then
 		local step = quest.steps[stepnum]
 		if not step then return end
