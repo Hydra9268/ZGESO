@@ -473,14 +473,21 @@ function SavedVars:InitializeOptions()
         type = "toggle",
         set = function(i,v) if not ZGV.Viewer.MinimapButton then return end ZGV.Viewer.MinimapButton:ShowIf(v) end,
         _default = true,
-      })
+    })
+    AddOption("skiplorebooks",{
+        type = "toggle",
+        name = O["opt_skiplorebooks"],
+        desc = O["opt_skiplorebooks_desc"],
+        _default = false,
+    })
     AddOption("bugreports",{
         type = "toggle",
         name = O["opt_bugreports"],
         desc = O["opt_bugreports_desc"],
         _default = true,
         set = function(i,v) if ZGV.Viewer.Frame then ZGV.Viewer.Frame.TitleBar.bug:SetHidden(not ZGV.db.profile.bugreports) end end,
-      })
+    })
+
 
     -- TODO: [ ] Enable Bug Reporting button on viewer
   end

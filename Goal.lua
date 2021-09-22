@@ -468,6 +468,9 @@ GOALTYPES['lorebook'] = {
 		end
 	end,
 	iscomplete = function(self)
+		if (ZGV.db.profile.skiplorebooks) then
+			return true , true
+		end
 		local _,_,known = GetLoreBookInfo(self.lorebook_cat,self.lorebook_col,self.lorebook_book)
 		return known , true
 	end,
