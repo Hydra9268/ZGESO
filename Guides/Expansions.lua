@@ -665,6 +665,7 @@ step
 goto 55.39,41.69
 talk Little Leaf
 turnin A Leaf in the Wind
+accept The Serpent's Fang
 step
 goto 58.27,42.70
 click Ilthag's Undertower |achieve 887
@@ -686,7 +687,7 @@ step
 goto 18.26,47.56
 kill Rahk and Vosh
 kill Ilthag Ironblood
-'Explore Ilthag's Undertower |achieve 887
+'Explore Ilthag's Undertower |q The Serpent's Fang/Kill Ilthag Ironblood
 step
 goto 38.21,61.98
 talk Little Leaf |q The Serpent's Fang/Talk to Little Leaf
