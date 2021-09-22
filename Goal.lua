@@ -468,6 +468,10 @@ GOALTYPES['lorebook'] = {
 		end
 	end,
 	iscomplete = function(self)
+		if (ZGV.db.profile.skiplorebooks) then
+			ZGV:Debug("Skipping Lorebook due to options setting.")
+			return true , true
+		end
 		local _,_,known = GetLoreBookInfo(self.lorebook_cat,self.lorebook_col,self.lorebook_book)
 		return known , true
 	end,
