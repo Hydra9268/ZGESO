@@ -5,7 +5,7 @@
 local ZGV = _G.ZGV
 ZGV.GuideMenuTier = "TAM"
 
-ZGV:RegisterGuide("MISCELLANEOUS\\Miscellaneous\\Testing\\Skyshards",[[
+ZGV:RegisterGuide("TEST\\Skyshards",[[
 
 --// Ebonheart Pact
 //Bleakrock Isle
@@ -13,7 +13,7 @@ ZGV:RegisterGuide("MISCELLANEOUS\\Miscellaneous\\Testing\\Skyshards",[[
 		'Open your map, and teleport to the _Bleakrock Wayshrine_ in the center of Bleakrock Isle |goto bleakrock_base 49.31,38.55  |achieve 398
 		.' Follow the road and _cross the bridge_ |goto bleakrock_base 44.96,40.92 < 20
 		.' Take the _left fork_ in the road |goto bleakrock_base 38.22,39.52 < 20
-		.' Enter _Hozzin's Folly_ |goto 25.46,39.66 < 5
+		.' Enter _Hozzin's Folly_ |gmoto 25.46,39.66 < 5
 		.' Follow the _path inside the cave_ to the skyshard |goto hozzinsfolley_base 55.93,76.13
 		.click Skyshard##3360010 |achieve 398/3 |goto hozzinsfolley_base 32.91,81.56
 	step
@@ -602,7 +602,7 @@ ZGV:RegisterGuide("MISCELLANEOUS\\Miscellaneous\\Testing\\Skyshards",[[
 		.' Go _up the stairs_ and to the _left_ to the _large metal door to leave the temple_ |goto 43.02,86.73 < 10
 		.' Continue along the _snowy path, staying close to the fires_ as you go |goto therift_base 76.96,60.26 < 20
 		.click Skyshard##3360010 |achieve 689/8 |goto 78.22,62.00
-		|only if ZGV.Quests:IsQuestComplete("A Walk Above the Clouds")
+		|only if completedquest("A Walk Above the Clouds##163051/14")
 	step
 		'Open your map, and teleport to the _Riften Wayshrine_ in the eastern portion of The Rift |goto riften_base 71.28,53.54  |achieve 689/9
 		.' Follow the path and _leave through the opening_ |goto riften_base 65.18,34.29 < 20
