@@ -680,23 +680,23 @@ Data.MapIdsByName = {
 	["Bal Fell"]                            = 590,
 	
 	-- Clockwork City
-	["Dranil Kir Island"]                   = 591
-	["Clockwork City Vaults"]               = 592
-	["Clockwork City"]                      = 593
-	["Brass Fortress"]                      = 594
-	["Clockwork Basilica"]                  = 595
-	["Serviflume"]                          = 596
-	["Administration Nexus"]                = 597
-	["Mechanical Fundament"]                = 598
-	["Ventral Terminus"]                    = 599
-	["Incarnatorium"]                       = 600
-	["The Shadow Cleft"]                    = 601
-	["Mnemonic Planisphere"]                = 602
-	["Slag Town Outlaws Refuge"]            = 603
-	["Evergloom"]                           = 604
-	["Cogitum Centralis"]                   = 605
-	["Everwound Wellspring"]                = 606
-	["Halls of Regulation"]                 = 607
+	["Dranil Kir Island"]                   = 591,
+	["Clockwork City Vaults"]               = 592,
+	["Clockwork City"]                      = 593,
+	["Brass Fortress"]                      = 594,
+	["Clockwork Basilica"]                  = 595,
+	["Serviflume"]                          = 596,
+	["Administration Nexus"]                = 597,
+	["Mechanical Fundament"]                = 598,
+	["Ventral Terminus"]                    = 599,
+	["Incarnatorium"]                       = 600,
+	["The Shadow Cleft"]                    = 601,
+	["Mnemonic Planisphere"]                = 602,
+	["Slag Town Outlaws Refuge"]            = 603,
+	["Evergloom"]                           = 604,
+	["Cogitum Centralis"]                   = 605,
+	["Everwound Wellspring"]                = 606,
+	["Halls of Regulation"]                 = 607,
 	
    	-- SUMMERSET
 	["Shimmerene"]                          = 608,
@@ -762,38 +762,8 @@ Data.MapIdsByName = {
 	["remnantofargon_base"]                 = 666,
 
 	-- NORTHERN ELSWEYR
-	["Elsweyr"]                             = 650,
-	["Rimmen"]                              = 651,
-	["Riverhold"]                           = 652,
-	["Adobe of Ignominy"]                   = 653,
-	["Tomb of the Serpents"]                = 654,
-	["Smuggler's Hideout"]                  = 655,
-	["The Stitches"]                        = 656,
-	["Sleepy Senche Mine"]                  = 657,
-	["Cicatrice Caverns"]                   = 658,
-	["Meirvale Keep Dungeons"]              = 659,
-	["Meirvale Keep Courtyard"]             = 660,
-	["Meirvale Keep Palace"]                = 661,
-	["Meirvale Keep Dugout"]                = 662,
-	["Rimmen Palace Recesses"]              = 663,
-	["Desert Wind Caverns"]                 = 664,
-	["Riverhold"]                           = 665,
-	["Hakoshae Tombs"]                      = 666,
-	["Merryvale Sugar Farm Caves"]          = 667,
-	["Skooma Cat's Cloister"]               = 668,
-	["Rimmen Palace Crypts"]                = 669,
-	["Rimmen Palace"]                       = 670,
-	["Rimmen Palace Courtyard"]             = 671,
-	["Dov-Vahl Shrine"]                     = 672,
-	["Sepulcher of Mischance"]              = 673,
-	["Shadow Dance Temple"]                 = 674,
-	["Vault of Heavenly Scourge"]           = 675,
-	["Moon Gate of Anequina"]               = 676,
-	["Jode's Core"]                         = 677,
-	["Darkpool Mine"]                       = 678,
-	["The Tangle"]                          = 679,
-	
-		-- SOUTHERN ELSWEYR
+
+	-- SOUTHERN ELSWEYR
 	["Wind Scour Temple"]                   = 680,
 	["Storm Talon Temple"]                  = 681,
 	["Dark Water Temple"]                   = 682,

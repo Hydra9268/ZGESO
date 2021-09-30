@@ -21564,3882 +21564,1911 @@ ZGV:RegisterGuide("LEVELING\\Northern Elsweyr",[[
 loadingimage loadscreen_elsweyr_zone_01.dds
 description This region, also known as Anequina, merged with the southern region of Pellitine several centuries ago to form the province of Elsweyr. It's a patchwork that united many former small kingdoms, including Rimmen, Orcrest, Riverhold, and Meirvale.
 step
-'Press _U_ to open your _Collections_
-'Click over to the _Stories_ tab and look under the _Chapter_ section:
-'Select _Elsweyr_ in the list of Zone(s)
-'Click the _Accept Quest_ button at the bottom
+-- BEGIN: NORTHERN ELSWEYR PROLOGUE GUIDE
+
+-- START: ALDMERI DOMINION FACTION PROLOGUE GUIDE
+'Open Auridon Map
+'Travel to _Vulkhel Guard_ in Auridon |q The Demon Weapon |future
+|tip Manually skip to the next step.
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto vulkhelguard_base 59.58,28.77
+talk Anais Davaux
+accept The Demon Weapon
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+step
+goto 48.03,44.91 |q The Demon Weapon/Talk to Abnur Tharn
+step
+goto 39.42,40.81
+'Open Manor House |q The Demon Weapon/Talk to Abnur Tharn
+|tip Manually skip to the next step.
+step
+goto 38.40,37.26
+talk Abnur Tharn |q The Demon Weapon/Talk to Abnur Tharn
+step
+goto 38.40,37.26
+talk Abnur Tharn |q The Demon Weapon/.*Gather Mushrooms in Bewan.* |future
+'Tell him _Triangulants? Is that a real word?_
+'Tell him _How can a Khajiiti loremaster help us find an ancient weapon?_
+'Tell him _Where do i find the loremaster?_
+'Tell him _You seem to know a lot about the Khajiiti legends already._
+|tip Manually skip to the next step.
+step
+'Open Auridon Map
+'Travel to _Quendeluum_ in Auridon |q The Demon Weapon/.*Gather Mushrooms in Bewan.*
+|tip Manually skip to the next step.
+step
+goto auridon_base 54.13,43.76 |q The Demon Weapon/.*Gather Mushrooms in Bewan.*
+step
+goto 45.54,39.33 |q The Demon Weapon/.*Gather Mushrooms in Bewan.*
+step
+goto 43.16,40.07 |q The Demon Weapon/.*Gather Mushrooms in Bewan.*
+step
+goto 43.48,40.21
+'Open Bewan |q The Demon Weapon/.*Gather Mushrooms in Bewan.*
+|tip Manually skip to the next step.
+step
+goto bewan_base 30.48,08.47 |q The Demon Weapon/.*Gather Mushrooms in Bewan.* |count 1
+step
+goto 27.15,50.63
+'Take _Dusk Mushroom_ |q The Demon Weapon/.*Gather Mushrooms in Bewan.* |count 1
+step
+goto 30.85,55.59 |q The Demon Weapon/.*Gather Mushrooms in Bewan.* |count 2
+step
+goto 24.19,68.57 |q The Demon Weapon/.*Gather Mushrooms in Bewan.* |count 2
+step
+goto 37.41,77.26
+'Take _Dusk Mushroom_ |q The Demon Weapon/.*Gather Mushrooms in Bewan.* |count 2
+step
+goto 74.24,74.67 |q The Demon Weapon/.*Gather Mushrooms in Bewan.* |count 3
+step
+goto 75.62,54.11
+'Take _Dusk Mushroom_ |q The Demon Weapon/.*Gather Mushrooms in Bewan.* |count 3
+step
+goto 61.82,31.56 |q The Demon Weapon/.*Gather Mushrooms in Bewan.* |count 4
+step
+goto 44.75,16.33
+'Take _Dusk Mushroom_ |q The Demon Weapon/.*Gather Mushrooms in Bewan.* |count 4
+step
+'Open Auridon Map
+'Travel to _College_ in Auridon |q The Demon Weapon/Talk to Dagaril-dro
+|tip Manually skip to the next step.
+step
+goto auridon_base 55.12,19.88 |q The Demon Weapon/Talk to Dagaril-dro
+step
+goto 49.24,12.88
+talk Dagaril-dro |q The Demon Weapon/Talk to Dagaril-dro
+step
+goto 49.24,12.97
+talk Abnur Tharn |q The Demon Weapon/Talk to Abnur Tharn
+step
+goto 49.24,12.97
+'Use Portal to _Redfur Trading Post_ |q The Demon Weapon/Find the Moon-Singer at Redfur Trading Post
+|tip Manually skip to the next step.
+-- END: ALDMERI DOMINION FACTION PROLOGUE GUIDE
+
+-- START: DAGGERFALL COVENANT FACTION
+
+-- END: DAGGERFALL COVENANT FACTION
+
+-- START: EBONHEART PACT FACTION
+
+-- END: EBONHEART PACT FACTION
+
+-- BEGIN: MERGED PROLOGUE FOR ALL FACTIONS
+step
+goto redfurtradingpost_base 63.46,61.29 |q The Demon Weapon/Find the Moon-Singer at Redfur Trading Post
+step
+goto 70.84,63.68
+talk Azargo Long-Tale |q The Demon Weapon/Find the Moon-Singer at Redfur Trading Post
+step
+goto 64.58,63.20
+talk Abnur Tharn |q The Demon Weapon/Talk to Abnur Tharn
+step
+goto grahtwood_base 18.36,14.62
+'Open Wormroot Depths |q The Demon Weapon/Locate the Secret in Wormroot Depths
+|tip Manually skip to the next step.
+step
+goto wormrootdepths_base 33.90,12.23 |q The Demon Weapon/Locate the Secret in Wormroot Depths
+step
+goto 34.11,78.63 |q The Demon Weapon/Locate the Secret in Wormroot Depths
+step
+goto 77.27,76.51 |q The Demon Weapon/Locate the Secret in Wormroot Depths
+step
+goto 68.73,16.38
+'Open New-Moons Chamber |q The Demon Weapon/Locate the Secret in Wormroot Depths
+|tip Manually skip to the next step.
+step
+goto newmoonschamber_base 14.62,74.07 |q The Demon Weapon/Locate the Secret in Wormroot Depths
+step
+goto 77.36,68.62 |q The Demon Weapon/Locate the Secret in Wormroot Depths
+step
+goto 70.09,21.80 |q The Demon Weapon/Solve the Khajiiti Puzzle |future
+step
+goto 80.38,18.77
+'Activate _Moons Guardian_ |q The Demon Weapon/Solve the Khajiiti Puzzle
+|tip Manually skip to the next step.
+step
+goto 64.81,24.12
+'Activate _Moons Guardian_ |q The Demon Weapon/Solve the Khajiiti Puzzle
+step
+goto 75.94,16.25
+'Search _Ancient Khajiiti Chest_ |q The Demon Weapon/Take the Triangulant Tile
+step
+goto 66.98,20.59
+'Use Portal to _Baandari Trading Post_ |q The Demon Weapon/Find the Moon-Singer at Baandari Trading Post
+|tip Manually skip to the next step.
+step
+goto baandaritradingpost_base 67.21,43.79
+talk Mizbina |q The Demon Weapon/Find the Moon-Singer at Baandari Trading Post
+step
+goto 66.51,42.47
+talk Abnur Tharn |q The Demon Weapon/Talk to Abnur Tharn
+step
+goto malabaltor_base 83.13,28.74 |q The Demon Weapon/Locate the Secret in Black Vine Ruins
+step
+goto baandaritradingpost_base 18.46,25.64
+'Open Black Vine Ruins |q The Demon Weapon/Locate the Secret in Black Vine Ruins
+|tip Manually skip to the next step.
+step
+goto blackvineruins_base 28.01,08.66 |q The Demon Weapon/Locate the Secret in Black Vine Ruins
+step
+goto 28.21,60.56 |q The Demon Weapon/Locate the Secret in Black Vine Ruins
+step
+goto 60.16,61.91 |q The Demon Weapon/Locate the Secret in Black Vine Ruins
+step
+goto 55.07,11.46
+'Open Dark-Moons Chamber |q The Demon Weapon/Locate the Secret in Black Vine Ruins
+|tip Manually skip to the next step.
+step
+goto darkmoonschamber_base 19.23,48.60 |q The Demon Weapon/Locate the Secret in Black Vine Ruins
+step
+goto 72.55,48.35 |q The Demon Weapon/Locate the Secret in Black Vine Ruins
+step
+goto 85.61,56.47
+'Activate _Moons Guardian_ |q The Demon Weapon/Solve the Khajiiti Puzzle
+|tip Manually skip to the next step.
+step
+goto 72.31,44.80
+'Activate _Moons Guardian_ |q The Demon Weapon/Solve the Khajiiti Puzzle
+step
+goto 84.04,48.73
+'Search _Ancient Khajiiti Chest_ |q The Demon Weapon/Take the Triangulant Tile
+step
+goto 73.64,52.28
+'Use Portal to _Rawl'kha_ |q The Demon Weapon/Find the Moon-Singer in Rawl'kha
+|tip Manually skip to the next step.
+step
+goto rawlkha_base 55.83,42.71
+talk Satarri |q The Demon Weapon/Find the Moon-Singer in Rawl'kha
+step
+goto 56.36,44.84
+talk Abnur Tharn |q The Demon Weapon/Talk to Abnur Tharn
+step
+goto 37.90,53.63j
+click Rawl'kha Wayshrine
+'Travel _Dune_ in Reaper's March |q The Demon Weapon/Find the Secret in Jode's Light
+|tip Manually skip to the next step.
+step
+goto reapersmarch_base 64.50,37.12 |q The Demon Weapon/Find the Secret in Jode's Light
+step
+goto 63.36,39.05
+talk Khamira |q The Demon Weapon/Talk to Khamira |future
+step
+goto 63.35,39.53
+'Open Jode's Light |q The Demon Weapon/Enter Jode's Light
+|tip Manually skip to the next step.
+step
+goto jodeslight_base 50.03,16.67
+talk Abnur Tharn |q The Demon Weapon/Talk to Abnur Tharn
+step
+goto 46.33,33.07 |q The Demon Weapon/Locate the Secret in Jode's Light
+step
+goto 10.45,34.04
+'Open Full-Moons Chamber |q The Demon Weapon/Locate the Secret in Jode's Light
+|tip Manually skip to the next step.
+step
+goto fullmoonschamber_base 39.89,35.00
+'Locate the Secret in Jode's Light |q The Demon Weapon/Locate the Secret in Jode's Light
+step
+goto 39.89,61.60 |q The Demon Weapon/Solve the Khajiiti Puzzle
+step
+goto 28.82,63.60
+'Activate _Moons Guardian_ |q The Demon Weapon/Solve the Khajiiti Puzzle
+|tip Manually skip to the next step.
+step
+goto 39.89,61.60 |q The Demon Weapon/Solve the Khajiiti Puzzle
+step
+goto 50.95,63.20
+'Activate _Moons Guardian_ |q The Demon Weapon/Solve the Khajiiti Puzzle
+step
+goto 39.89,61.60
+'Search _Ancient Khajiiti Chest_ |q The Demon Weapon/Take the Triangulant Tile
+step
+goto 46.56,78.80
+'Use Portal _Abnur Tharn's Camp_ |q The Demon Weapon/Talk to Abnur Tharn
+|tip Manually skip to the next step.
+step
+goto grahtwood_base 59.48,15.38
+talk Abnur Tharn |q The Demon Weapon/Talk to Abnur Tharn
+step
+goto 59.48,15.38
+'Listen to Khamira |q The Demon Weapon/Listen to Khamira
+step
+goto 59.48,15.38
+talk Abnur Tharn
+turnin The Demon Weapon
+accept The Halls of Colossus
+step
+goto 58.98,16.43
+'Travel Chartered Wagon |q The Halls of Colossus/Travel to the Halls of Colossus |future
+|tip Manually skip to the next step.
+step
+goto els_teaser_hoc_ext01 48.56,15.99
+'Open Halls of Colossus |q The Halls of Colossus/Enter the Halls of Colossus
+|tip Manually skip to the next step.
+step
+goto els_teaser_hoc_int01 19.72,76.82 
+'Survive the Ambush |q The Halls of Colossus/Survive the Ambush |future
+step
+goto 21.72,81.15
+'Active _Moons Guardian_ |q The Halls of Colossus/Open the Interior Door
+|tip Manually skip to the next step.
+step
+goto 14.75,78.28
+'Active _Moons Guardian_ |q The Halls of Colossus/Open the Interior Door
+|tip Manually skip to the next step.
+step
+goto 23.87,78.25
+'Active _Moons Guardian_ |q The Halls of Colossus/Open the Interior Door
+step
+goto 23.87,70.60
+'Open Ascension Way |q The Halls of Colossus/Pursue Captain Calsivius
+|tip Manually skip to the next step.
+step
+goto 15.66,35.88 |q The Halls of Colossus/Pursue Captain Calsivius
+step
+goto 44.22,44.02 |q The Halls of Colossus/Pursue Captain Calsivius
+step
+'_Go Straight up the stairs then go left._ |tip Jump down
+'_Go Straight then go right and up the stairs._
+'_Go Left and up the stairs._
+'_Go Left and up the stairs and go left through the doorway._ |q The Halls of Colossus/Solve the Left Puzzle |future
+|tip Manually skip to the next step.
+step
+'_Go to Third Moon Guardian_
+'Activate _Moon Guardian_ |q The Halls of Colossus/Solve the Left Puzzle
+|tip Manually skip to the next step.
+step
+'_Go to First Moon Guardian_
+'Activate _Moon Guardian_ |q The Halls of Colossus/Solve the Left Puzzle
+step
+'_Goto First Moon Guardian on the right side_
+'Activate _Moon Guardian_ |q The Halls of Colossus/Solve the Right Puzzle
+|tip Manually skip to the next step.
+step
+'_Goto Third Moon Guardian on the right side_
+'Activate _Moon Guardian_ |q The Halls of Colossus/Solve the Right Puzzle
+|tip Manually skip to the next step.
+step
+'_Goto Fourth Moon Guardian on the right side_
+'Activate _Moon Guardian_ |q The Halls of Colossus/Solve the Right Puzzle
+step
+'_Goto the door_
+'Open Upper Halls |q The Halls of Colossus/Pursue Captain Calsivius
+|tip Manually skip to the next step.
+step
+'_Go up the steps and to the end of the hallway._
+'Open Summit of Rending Flames |q The Halls of Colossus/Pursue Captain Calsivius
+step
+'_Go to the circle in the middle of the room._
+kill Captain Calsivius |q The Halls of Colossus/Kill Captain Calsivius
+step
+'_Stay in the circle_
+'Protect Abnur Tharn |q The Halls of Colossus/Protect Abnur Tharn
+step
+'_Stay in the circle._
+'Witness the Event |q The Halls of Colossus/Witness the Event
+step
+'Use Portal to Abnur Tharn's Camp |q The Halls of Colossus/Exit the Halls of Colossus
+step
+goto grahtwood_base 59.48,15.38
+talk to Khamira |q The Halls of Colossus/Talk to Khamira
+step
+goto 59.48,15.38
+talk Abnur Tharn
+turnin The Halls of Colossus
+-- END: MERGED PROLOGUE GUIDE FOR NEW AND EXISTING PLAYERS
+
+-- BEGIN NORTHERN ELSWEYR GUIDE
+'Open Northern Elsweyr Map
+'Travel to _Rimmen_ in Northern Elsweyr |q A Rage of Dragons |future
+|tip Manually skip to the next step.
+step
+goto 26.06,55.18
+talk Anais Davaux
 accept A Rage of Dragons
 step
-'Open your map. Right click until you see the Tamirel map.
-'Travel to the _Rimmen_ Wayshrine
-|tip It can be found in the new Northern Elsweyr map in the southeast of Tamriel, just below Cyrodiil. Once you're in Rimmen, I recommend buying a set of lockpicks.
-|tip Manually skip to the next step.
+goto rimmen_base 33.22,45.11 |q Scariest in Show |future
 step
-goto rimmen_base 08.14,55.18
-'Make your way to the western edge of Rimmen
-step
-goto elsweyr_base 61.56,27.87
-talk Ghashugg
-accept Strange Messengers
-step
-goto elsweyr_base 51.33,20.80
-wayshrine Riverhold
-step
-goto elsweyr_base 50.08,19.46
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 56.21,68.67
-click K'har Zhab Hall
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 56.55,72.14
-talk Abnur Tharn
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 55.78,72.76
-talk Khamira
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 55.78,72.76
-talk Lord Gharesh-ri
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 56.93,69.09
-click Riverhold
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 46.62,58.50
-talk Mizzik Thunderboots
-accept The Riverhold Abduction
-step
-goto riverholdcity_base 33.82,51.12
-click House of Histories
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 38.66,50.59
-click The Kingdoms Exhibit
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 37.43,51.64
-talk Iraya
-accept The Song of Kingdoms
-step
-goto riverholdcity_base 42.14,49.17
-click House of Histories
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 36.05,51.70
-click Riverhold
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 44.70,68.14
-click Ishu's House
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 43.23,70.28
-talk Ishu
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 44.01,69.00
-click Riverhold
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 38.97,30.50
-talk Mell the Musical
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 60.53,79.49
-'Press _E_ to Examine _Tajirri's Note_
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 57.17,76.91
-talk Mizzik Thunderboots
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 55.11,92.65
-'Make your way to this spot
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 50.24,20.46
-'At the fork in the road, go right from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 49.31,21.67
-'At the fork in the road, go right from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 49.20,22.80
-'At the fork in the road, go right from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 45.36,23.59
-talk Asazeh
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 44.86,25.39
-talk Elianna Pevengius
-accept Ruddy Fang Retrieval
-step
-goto elsweyr_base 46.33,25.60
-'Press _E_ to Search _Coffer_
-'Take _Gold Necklace_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 46.59,25.41
-'Press _E_ to Search _Crate_
-'Take _Bottle of Skooma_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 46.59,25.41
-'Press _E_ to Take _Imperial Legion Backpack_
-'Take _Imperial Legion Backpack_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 46.63,23.41
-talk Mizzik Thunderboots
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 42.23,25.22
-talk Inalzin
-accept An Animal's Grim Abode
-step
-goto elsweyr_base 41.28,25.66
-wayshrine Star Haven
-step
-goto elsweyr_base 41.63,25.15
-'Jump up onto the ledge here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 40.78,22.39
-talk Narama-ko
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 40.53,22.50
-click Abode of Ignominy
-|tip Manually skip to the next step.
-step
-goto abodeofignominy_base 74.87,80.37
-'Press _E_ to Take _Memory Stone_
-'Take _Marzula-jo's Memory Stone_
-|tip Manually skip to the next step.
-step
-goto abodeofignominy_base 50.69,76.20
-'At the fork in the path, go left from here
-|tip Manually skip to the next step.
-step
-goto abodeofignominy_base 34.54,75.69
-'Press _E_ to Take _Memory Stone_
-'Take _Marzula-jo's Memory Stone_
-|tip Manually skip to the next step.
-step
-goto abodeofignominy_base 23.85,75.36
-'Continue South along the wall from here
-|tip Manually skip to the next step.
-step
-goto abodeofignominy_base 23.67,78.53
-'Continue West along the wall from here
-|tip Manually skip to the next step.
-step
-goto abodeofignominy_base 20.96,81.42
-'Continue West along the wall from here
-|tip Manually skip to the next step.
-step
-goto abodeofignominy_base 14.18,80.99
-'Continue North along the wall from here
-|tip Manually skip to the next step.
-step
-goto abodeofignominy_base 12.36,75.97
-'Press _E_ to Examine _Marzula-jo's Notes_
-|tip Manually skip to the next step.
-step
-goto abodeofignominy_base 28.51,52.71
-'At the fork in the path, go left from here
-|tip Manually skip to the next step.
-step
-goto abodeofignominy_base 31.83,23.75
-'Press _E_ to Take _Memory Stone_
-'Take _Marzula-jo's Memory Stone_
-|tip Manually skip to the next step.
-step
-goto abodeofignominy_base 61.36,13.00
-'Press _E_ to Take _Memory Stone_
-'Take _Marzula-jo's Memory Stone_
-|tip Manually skip to the next step.
-step
-'Open your map. Right click to bring up the Northern Elsweyr map.
-'Travel to the _Star Haven_ Wayshrine
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 41.63,25.15
-'Jump up onto the ledge here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 40.78,22.39
-talk Narama-ko
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 44.60,19.48
-'Press _E_ to Examine _Foul-Smelling Sack_
-'Take _Rotten Turkey Leg_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 44.68,14.14
-'Press _E_ to Examine _Discarded Orders_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 44.63,14.22
-talk Lharahad
-|tip Manually skip to the next step.
-step
-'Open your map.
-'Travel to the _Riverhold_ Wayshrine
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 52.66,23.54
-talk Cadwell
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 52.77,23.45
-'Press _E_ to Examine _Ancient Gravestone_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 52.77,23.45
-talk Cadwell
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 52.21,24.43
-'At the road, continue Southeast from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 60.70,28.43
-'At the fork in the road, follow the path Northeast from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 61.19,23.71
-talk Kiseravi
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 61.39,23.06
-click Tomb of the Serpents
-|tip Manually skip to the next step.
-step
-goto tombofserpents_base 34.81,66.30
-'Press _E_ to Search _Akaviri Chest_
-'Take _Akaviri Relic_
-|tip Manually skip to the next step.
-step
-goto tombofserpents_base 30.68,46.36
-'Continue West from here
-|tip Manually skip to the next step.
-step
-goto tombofserpents_base 06.87,39.64
-'Press _E_ to Examine _Anequina Fragment_
-|tip Manually skip to the next step.
-step
-goto tombofserpents_base 06.91,39.94
-talk Rajhin's Shadow
-|tip Manually skip to the next step.
-step
-goto tombofserpents_base 06.91,39.94
-'Press _E_ to Take _Anequina Fragment_
-'Take _Anequina Fragment_
-|tip Manually skip to the next step.
-step
-goto tombofserpents_base 17.25,32.01
-'Continue North from here
-|tip Manually skip to the next step.
-step
-goto tombofserpents_base 30.79,31.25
-'Press _E_ to Search _Akaviri Chest_
-'Take _Akaviri Relic_
-|tip Manually skip to the next step.
-step
-goto tombofserpents_base 74.34,31.17
-'Press _E_ to Search _Akaviri Chest_
-'Take _Akaviri Relic_
-|tip Manually skip to the next step.
-step
-goto tombofserpents_base 67.56,59.66
-'Continue West from here
-|tip Manually skip to the next step.
-step
-goto tombofserpents_base 50.34,82.69
-click Elsweyr
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 61.43,23.73
-talk Kiseravi
-|tip Manually skip to the next step.
-step
-'Open your map.
-'Travel to the _Riverhold_ Wayshrine
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 50.08,19.46
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 60.07,53.75
-click Banished Regrets Inn
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 59.96,53.62
-talk Rideza
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 63.09,51.62
-talk Elianna Pevengius
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 65.77,52.69
-'Run up the stairs from here
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 64.61,49.94
-talk Mizzik Thunderboots
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 60.07,53.69
-'Run downstairs and...
-click Riverhold
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 58.63,43.14
-'Press _E_ to Unlock _Tajirri's House_
-|tip You'll have to pick the simple lock.
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 59.31,42.63
-'Wait for the maid to face away from the main walkway, then sneak over to the stairs. Note: Do not do this when she is sweeping.
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 58.64,42.86
-'Press _E_ to Search _Hidden Panel_
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 59.63,38.84
-'As before wait for the maid to face away from the main walkway, then sneak over to the door. It might be best to wait until she is on the other side. Note: Do not do this when she is sweeping.
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 57.69,43.43
-click Riverhold
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 56.80,55.58
-talk Mizzik Thunderboots
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 33.82,51.12
-click House of Histories
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 38.66,50.59
-click The Kingdoms Exhibit
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 37.32,51.93
-talk Izanji
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 35.35,51.86
-'Press _E_ to Place _Rithana-di-Renada_
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 38.81,51.69
-talk Iraya
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 42.03,48.98
-click House of Histories
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 36.16,51.46
-click Riverhold
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 44.74,87.77
-'Press _E_ to Search _Barrel_
-'Take _Summerset Wine_
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 31.90,94.78
-'Make you way to here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 47.88,19.73
-'Press _E_ to Search _Barrel_
-'Take _Mammoth Cheese_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 51.58,20.47
-'Make you way to here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 52.90,19.47
-'Press _E_ to Search _Crate_
-'Take _Silken Scarf_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 52.72,18.78
-'Press _E_ to Search _Barrel_
-'Take _Rotten Moon-Sugar_
-|tip Manually skip to the next step.
-step
-'Open your map.
-'Travel to the _Riverhold_ Wayshrine
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 50.08,19.46
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 44.87,67.84
-click Ishu's House
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 43.23,70.28
-talk Ishu
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 44.01,69.00
-click Riverhold
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 60.07,53.75
-click Banished Regrets Inn
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 65.77,52.69
-'Run up the stairs from here
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 63.01,48.88
-talk Rideza
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 63.01,48.88
-talk Mizzik Thunderboots
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 60.07,53.69
-'Run downstairs and...
-click Riverhold
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 73.58,54.33
-click Cellar
-|tip Manually skip to the next step.
-step
-goto smugglershideout_base 48.58,51.69
-kill Chirrdazi the Chopper
-kill Dhanril the Dangerous
-kill Mad Minurrum
-|tip A simple fight that isn't too difficult. You can pull 1-2 at a time.
-|tip Manually skip to the next step.
-step
-goto smugglershideout_base 55.37,52.22
-'Continue up ramp from here
-|tip Manually skip to the next step.
-step
-goto smugglershideout_base 46.69,38.01
-'Make you way here
-|tip Manually skip to the next step.
-step
-goto smugglershideout_base 43.80,13.63
-talk Mizzik Thunderboots
-|tip Manually skip to the next step.
-step
-goto smugglershideout_base 43.02,11.70
-click Riverhold
-|tip Manually skip to the next step.
-step
-'Open your map.
-'Travel to the _Riverhold_ Wayshrine
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 50.08,19.46
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 60.07,53.75
-click Banished Regrets Inn
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 65.77,52.69
-'Run up the stairs from here
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 63.91,49.75
-talk Mizzik Thunderboots
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 60.07,53.69
-'Run downstairs and...
-click Riverhold
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 54.90,91.45
-'Make your way to the edge of Riverhold
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 48.11,25.63
-'Make your way to here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 49.79,26.34
-talk Abnur Tharn
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 49.84,26.60
-talk Khamira
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 49.44,26.76
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 49.61,28.51
-'Press _E_ to Search _Mail Sack_
-'Take _List of Sympathizers_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 49.98,28.72
-'Drop down here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 50.40,28.06
-'Press _E_ to Search _Mail Sack_
-'Take _List of Safehouses_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 50.92,29.96
-'Press _E_ to Search _Mail Sack_
-'Take _Spy Correspondence_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 52.18,28.97
-'Drop down from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 51.97,28.81
-'Press _E_ to Search _Mail Sack_
-'Take _Intelligence Reports_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 52.25,29.96
-talk Captain Nala-do
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 48.10,30.81
-talk Abnur Tharn
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 48.72,31.52
-'Follow the road Southwest from here. (_Note:_ From this point forward you will enter areas of Northern Elsweyr with random Dragon appearances. Best to avoid them if you're solo.)
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 44.01,43.62
-'At the fork in the road, go right from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 36.81,48.58
-wayshrine The Stitches
-step
-goto stitches_base 50.11,16.21
-talk Tasnasi
-|tip She is found East of The Stitches wayshrine
-accept Thick as Thieves
-step
-goto stitches_base 34.21,27.01
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto stitches_base 52.36,35.94
-'Press _E_ to Unlock _Jubani's Junkshop_
-|tip You'll have to pick the simple lock. Try and do it when the guard is not around.
-|tip Manually skip to the next step.
-step
-goto stitches_base 53.55,33.12
-'Continue downstairs from here
-|tip Manually skip to the next step.
-step
-goto stitches_base 55.02,34.82
-'Press _E_ to Untie _Vole_
-|tip Manually skip to the next step.
-step
-goto stitches_base 55.67,38.07
-click Elsweyr
-|tip Manually skip to the next step.
-step
-goto stitches_base 58.20,35.58
-talk Vole
-|tip Manually skip to the next step.
-step
-goto stitches_base 48.49,37.41
-'Cross the bridge from here
-|tip Manually skip to the next step.
-step
-goto stitches_base 46.50,50.01
-'Run up the stairs from here
-|tip Manually skip to the next step.
-step
-goto stitches_base 46.97,59.34
-'Press _E_ to Take _Odorous Bucket_
-'Take _Odorous Bucket_
-|tip Manually skip to the next step.
-step
-goto stitches_base 46.13,59.47
-'Press _E_ to Douse _Sereyne_
-|tip Manually skip to the next step.
-step
-goto stitches_base 46.13,59.47
-talk Sereyne
-|tip Manually skip to the next step.
-step
-goto stitches_base 59.53,53.35
-click The Goiter's Gulp
-|tip Manually skip to the next step.
-step
-goto stitches_base 61.01,54.65
-talk Scipion Averno
-|tip Manually skip to the next step.
-step
-goto stitches_base 50.90,55.12
-'Press _E_ to Open _Jewelry Box_
-'Take _Sereyne's Focus_
-|tip Manually skip to the next step.
-step
-goto stitches_base 59.50,52.62
-click Elsweyr
-|tip Manually skip to the next step.
-step
-goto stitches_base 46.13,59.47
-talk Sereyne
-|tip Manually skip to the next step.
-step
-goto stitches_base 17.36,57.91
-talk Nazdar
-|tip Manually skip to the next step.
-step
-goto stitches_base 21.75,62.90
-talk Humble Zaham
-accept Beware the Purring Liar
-step
-goto stitches_base 60.03,54.64
-'Press _E_ to Unlock _Goiter's Gulp Cellar_
-|tip You'll have to pick the intermediate lock. The area should be clear of guards.
-|tip Manually skip to the next step.
-step
-goto stitches_base 56.12,60.29
-|tip Wait until the guard is out of way and sneak your way over
-'Press _E_ to Steal _Goiter's Gulp Ledger_
-'Take _Goiter's Gulp Ledger_
-|tip Manually skip to the next step.
-step
-goto stitches_base 59.79,53.81
-|tip Wait until the guard is out of way and sneak your way over
-click Elsweyr
-|tip Manually skip to the next step.
-step
-goto stitches_base 38.49,19.46
-'Make you way to the edge of The Stitches
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 33.56,49.24
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 26.41,53.11
-'Continue on the path Southeast from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 27.78,55.99
-'Follow the path down to here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 28.52,54.84
-'Press _E_ to Take _Nazdar's Flute_
-'Take _Nazdar's Flute_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 27.70,55.69
-'Follow the path up to the main road from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 25.99,51.82
-'Follow the path Northwest from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 25.03,50.11
-talk Khamira
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 24.89,50.15
-click Sleepy Senche Mine
-|tip Manually skip to the next step.
-step
-goto mulaamnirslair_base 71.73,61.91
-' Follw the path to here
-|tip Manually skip to the next step.
-step
-goto mulaamnirslair_base 73.76,53.90
-kill Gravestalker Gemmia
-|tip A simple boss fight. When the boss summons five bone cauldrons move away before they explode. Khamira will occasionally cast a green healing spell on the ground. Lastly, ignore the randomly summoned undead minions.
-|tip Manually skip to the next step.
-step
-goto mulaamnirslair_base 64.00,53.74
-click Elsweyr
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 22.93,50.02
-talk Mulaamnir
-'Here you decide to fight Mulaamnir or tell Abnur. For the sake of this guide, choose _I'll tell Abnur Tharn what you said._
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 22.93,50.02
-talk Khamira
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 25.99,51.82
-'Continue to the main road here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 22.49,56.60
-talk Iokkas
-accept Scars of the Past
-step
-goto elsweyr_base 21.76,55.73
-'Kill three random NPCs to obtain _Diseased Samples_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 23.45,56.78
-talk Iokkas
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 19.59,61.30
-'Follow the path North from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 19.17,59.04
-'Press _E_ to Take _Arkay's Lash_
-'Take _Arkay's Lash Blossom_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 19.59,61.30
-'Follow the path back to the main
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 16.70,64.11
-'At the fork in the road, go right from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 16.34,70.56
-wayshrine Scar's End
-step
-goto elsweyr_base 15.93,70.09
-'Drop down into the canyon from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 16.61,69.51
-'Press _E_ to Examine _Reward for Stolen Wine_
-accept The Connoisseur
-step
-goto elsweyr_base 16.61,69.51
-'Press _E_ to Take _White Wine_
-'Take _White Wine_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 15.18,75.10
-|tip Wait until Finnalir isn't looking or is out of way and sneak to
-'Press _E_ to Steal _Clothing Chest_
-'Take _Wood Elf Silk Clothing_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 17.01,70.94
-'Continue to this path
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 20.42,66.91
-'Drop down to the ledge from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 20.50,66.76
-'Drop down to the canyon floor from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 20.78,65.79
-'Press _E_ to Take _Red Wine_
-'Take _Red Wine_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 23.75,62.35
-'Press _E_ to Take _Obscure Wine_
-'Take _Obscure Wine_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 25.16,60.64
-'Follow the path up from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 27.00,58.53
-'Cross the bridge from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 23.49,56.78
-talk Iokkas
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 23.52,56.78
-'Press _E_ to Drink _Antidote_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 23.27,56.09
-'Follow the path East from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 27.54,59.27
-'Follow the path down from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 25.55,59.90
-'Drop down into the canyon from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 24.29,59.33
-click Cicatrice Caverns
-|tip Manually skip to the next step.
-step
-goto cicatriceoasis_base 50.53,66.53
-talk Lara-Tan
-|tip Manually skip to the next step.
-step
-goto cicatriceoasis_base 35.73,61.69
-'At the fork in the path, go left from here
-|tip Manually skip to the next step.
-step
-goto cicatriceoasis_base 23.36,61.43
-'Press _E_ to Give Antidote _Najirra_
-|tip Manually skip to the next step.
-step
-goto cicatriceoasis_base 17.88,35.31
-'Press _E_ to Examine _Nikussha's Research Note 2_
-|tip Manually skip to the next step.
-step
-goto cicatriceoasis_base 33.52,08.53
-'Press _E_ to Give Antidote _Pilazaz_
-|tip Manually skip to the next step.
-step
-goto cicatriceoasis_base 49.45,27.07
-'Press _E_ to Examine _Nikussha's Research Note 1_
-|tip Manually skip to the next step.
-step
-goto cicatriceoasis_base 60.30,33.66
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto cicatriceoasis_base 81.05,43.36
-'Press _E_ to Give Antidote _Raebanji_
-|tip Manually skip to the next step.
-step
-goto cicatriceoasis_base 77.26,50.79
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto cicatriceoasisupperfloor_base 51.20,66.65
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto cicatriceoasis_base 24.83,83.21
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto cicatriceoasis_base 65.96,61.28
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto cicatriceoasis_base 67.27,79.54
-'Press _E_ to Examine _Nikussha's Research Note 3_
-|tip Manually skip to the next step.
-step
-goto cicatriceoasisupperfloor_base 51.31,80.74
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto cicatriceoasis_base 38.98,61.80
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto cicatriceoasis_base 50.75,66.22
-talk Iokkas
-|tip Manually skip to the next step.
-step
-goto cicatriceoasis_base 51.38,55.00
-click Central Chamber
-|tip Manually skip to the next step.
-step
-goto cicatriceoasisbossroom_base 51.38,22.47
-kill Shavali the Befouled
-|tip A simple boss fight. When the minions appear, focus on Shavali as much as possible and heal as needed.
-|tip Manually skip to the next step.
-step
-goto cicatriceoasisbossroom_base 51.46,50.89
-click Cicatrice Caverns
-|tip Manually skip to the next step.
-step
-goto cicatriceoasis_base 50.78,87.28
-click Elsweyr
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 24.57,58.73
-'At the path up to the encampment from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 23.49,56.81
-talk Iokkas
-|tip Manually skip to the next step.
-step
-'Open your map.
-'Travel to the _Rimmen_ Wayshrine
-|tip Manually skip to the next step.
-step
-goto rimmen_base 23.62,35.43
+goto 23.57,35.43
 talk Tahara
 accept Scariest in Show
 step
-goto rimmen_base 30.05,31.99
-|tip You'll have to pick the advanced lock. The area should be clear of guards.
-|tip Manually skip to the next step.
-step
-goto rimmen_base 28.48,30.43
-'Wait for the housemaid to walk away from the stairs, and sneak over
-|tip If you don't care to sneak around, you can bee-line to the item and pay a fine later if you get caught.
-|tip If you have the Dark Brotherhood DLC you can sneak up behind the house maid and kill him.
-|tip Manually skip to the next step.
-step
-goto rimmen_base 26.08,29.10
-'Walk up the stairs from here
-|tip Manually skip to the next step.
-step
-goto rimmen_base 25.82,30.65
-'Press _E_ to Steal _Moon-Phase Decorations Storage_
-'Take _Golen Cathay Idol_
-|tip Manually skip to the next step.
-step
-goto rimmen_base 25.86,31.39
-'Wait until the housemaid finishes cleaning the upstairs bedroom and follow close behind downstairs.
-|tip Manually skip to the next step.
-step
-goto rimmen_base 30.09,31.69
-click Rimmen
-|tip Manually skip to the next step.
-step
-goto rimmen_base 33.53,51.37
-'Make your way to this spot
-|tip Manually skip to the next step.
-step
-goto rimmen_base 37.90,38.06
-'Make your way to this spot
-|tip Manually skip to the next step.
-step
-goto rimmen_base 48.51,37.71
-'Make your way to this spot
-|tip Manually skip to the next step.
-step
-goto rimmen_base 46.10,44.55
-'You can attempt to steal the food in the bag, or you can buy it for 68 gold from Jahlar. You also have the option to [Intimidate] Jahlar to obtain the food for free. It's your choice.
-|tip Manually skip to the next step.
-step
-goto rimmen_base 48.96,37.35
-'Press _E_ to Use Odoriferous Meal _Burtle_
-|tip Manually skip to the next step.
-step
-goto rimmen_base 36.44,39.20
-'Go down the stairs from here
-|tip Manually skip to the next step.
-step
-goto rimmen_base 23.79,35.37
-talk Tahara
-|tip Manually skip to the next step.
-step
-'Open your map. Right click to bring up the Northern Elsweyr map.
-'Travel to _The Stitches_ Wayshrine
-|tip Manually skip to the next step.
-step
-goto stitches_base 46.84,28.43
-'Cross the bridge from here
-|tip Manually skip to the next step.
-step
-goto stitches_base 47.95,55.95
-'Follow the path down from here
-|tip Manually skip to the next step.
-step
-goto stitches_base 35.15,55.94
-'Cross the bridge from here
-|tip Manually skip to the next step.
-step
-goto stitches_base 21.27,57.95
-talk Hofgrad Kjisorssen
-|tip Manually skip to the next step.
-step
-goto stitches_base 17.46,58.08
-talk Nazdar
-|tip Manually skip to the next step.
-step
-goto stitches_base 21.65,62.86
-talk Humble Zaham
-|tip Manually skip to the next step.
-step
-goto stitches_base 27.09,57.69
-'Cross the bridge from here
-|tip Manually skip to the next step.
-step
-goto stitches_base 48.31,46.20
-'Cross the bridge from here
-|tip Manually skip to the next step.
-step
-goto stitches_base 59.54,35.56
-'Drop down onto the ledge below
-|tip Manually skip to the next step.
-step
-goto stitches_base 61.22,38.81
-'Drop down onto the canyon floor below
-|tip Manually skip to the next step.
-step
-goto stitches_base 54.63,70.13
-'Enter the opening
-|tip You may have a train of mobs behind you. Keep running, most will retreat.
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 36.71,55.19
-talk Tasnasi
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 36.57,55.20
-click Meirvale Keep Dungeons
-|tip Manually skip to the next step.
-step
-goto khasdaskeep01_base 70.08,59.38
-click Upper Dungeons
-|tip Manually skip to the next step.
-step
-goto khasdaskeep01_base 46.60,75.79
-'Kill the easy wave of mobs that appear
-|tip Manually skip to the next step.
-step
-goto khasdaskeep01_base 46.60,75.79
-click Upper Dungeons
-|tip Manually skip to the next step.
-step
-goto khasdaskeep01_base 44.80,33.98
-'Kill the easy wave of mobs that appear
-|tip Manually skip to the next step.
-step
-goto khasdaskeep01_base 44.80,33.98
-click Upper Dungeons
-|tip Manually skip to the next step.
-step
-goto khasdaskeep01_base 20.79,23.45
-'Kill the easy wave of mobs that appear
-|tip Manually skip to the next step.
-step
-goto khasdaskeep01_base 20.79,23.45
-click Upper Dungeons
-|tip Manually skip to the next step.
-step
-goto khasdaskeep01_base 40.63,16.20
-click Meirvale Keep Courtyard
-|tip Manually skip to the next step.
-step
-goto khasdaskeep02_base 74.46,22.23
-talk Sereyne
-|tip Manually skip to the next step.
-step
-goto khasdaskeep02_base 63.96,22.59
-'Sneak your way to here (Remember to avoid patrols)
-|tip Manually skip to the next step.
-step
-goto khasdaskeep02_base 61.81,32.92
-'Sneak your way to here
-|tip Manually skip to the next step.
-step
-goto khasdaskeep02_base 61.76,63.13
-'Sneak your way to here
-|tip Tip: Wait until both patrols walk into the dirt area, then it'll be easier to sneak across the cement pavement.
-|tip Manually skip to the next step.
-step
-goto khasdaskeep02_base 54.12,75.93
-click Southern Close
-|tip Manually skip to the next step.
-step
-goto khasdaskeep02_base 41.13,72.79
-click Meirvale Keep Palace
-|tip Manually skip to the next step.
-step
-goto khasdaskeep03_base 66.87,83.26
-talk Tasnasi
-|tip Going forward you don't need to sneak around. You can kill anyone in the Palace with impunity.
-|tip Manually skip to the next step.
-step
-goto khasdaskeep03_base 42.53,48.73
-'Press _E_ to Take _Treasure Vault Key_
-'Take _Treasure Vault Key_
-|tip Manually skip to the next step.
-step
-goto khasdaskeep03_base 40.86,61.50
-'Go downstairs from here
-|tip Manually skip to the next step.
-step
-goto khasdaskeep05_base 31.82,17.67
-'Make you way to this spot
-|tip Manually skip to the next step.
-step
-goto khasdaskeep05_base 72.79,20.13
-'Press _E_ to Take _Treasure Vault Key_
-'Take _Treasure Vault Key_
-|tip Manually skip to the next step.
-step
-goto khasdaskeep05_base 77.08,14.37
-'Go up the stairs from here
-|tip Manually skip to the next step.
-step
-goto khasdaskeep03_base 76.93,47.14
-'Go up the stairs from here
-|tip Manually skip to the next step.
-step
-goto khasdaskeep04_base 70.11,50.31
-'Press _E_ to Take _Treasure Vault Key_
-'Take _Treasure Vault Key_
-|tip Manually skip to the next step.
-step
-goto khasdaskeep04_base 77.00,55.05
-'Go downstairs from here
-|tip Manually skip to the next step.
-step
-goto khasdaskeep03_base 40.86,61.50
-'Go downstairs from here
-|tip Manually skip to the next step.
-step
-goto khasdaskeep05_base 19.26,50.63
-click Meirvale Keep Dugout
-|tip Manually skip to the next step.
-step
-goto khasdaskeep06_base 23.87,41.33
-click Khasda's Torture Chamber
-|tip Note: When you see the patrol join the other two, know that the fight can be challenging. The best approach is to pull the two guards away from the patrol. If you somehow die and can resurrect on the spot do so and quickly run to the door to bypass all guards.
-|tip Manually skip to the next step.
-step
-goto khasdaskeep06_base 54.49,45.05
-kill Cud
-|tip A simple melee fight. Stay out of Cud's telegraphs and charges.
-|tip Manually skip to the next step.
-step
-goto khasdaskeep06_base 59.48,37.13
-'Press _E_ to Untie _Tasnasi_
-|tip Manually skip to the next step.
-step
-goto khasdaskeep06_base 61.07,26.24
-click Elsweyr
-|tip Manually skip to the next step.
-step
-goto stitches_base 45.03,80.05
-talk Tasnasi
-|tip Choice: You can suggest Tasnasi kill or spare Khasda's life. Killing Khasda leads to a sad ending for everyone while sparing his life leads to a happier ending.
-|tip Manually skip to the next step.
-step
-goto stitches_base 46.54,78.89
-'Drop down on to the path from here
-|tip Manually skip to the next step.
-step
-goto stitches_base 55.40,51.71
-talk Tasnasi
-|tip Manually skip to the next step.
-step
-'Open your map. Right click to bring up the Northern Elsweyr map.
-'Travel to _Riverhold_ Wayshrine
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 50.08,19.46
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 53.69,68.68
-talk Cadwell
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 56.21,68.67
-click K'har Zhab Hall
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 55.12,70.90
-talk Abnur Tharn
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 54.97,71.06
-talk Captain Nala-do
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 54.26,71.78
-talk Lord Gharesh-ri
-|tip Manually skip to the next step.
-step
-'Open your map. Right click to bring up the Northern Elsweyr map.
-'Travel to _Rimmen_ Wayshrine
-|tip Manually skip to the next step.
-step
-goto rimmen_base 26.11,59.56
-talk Abnur Tharn
-|tip Choice: You can see Thorn's tour of Euraxia's tyranny or you can skip the tour. For the sake of this guide chose the tour.
-|tip Manually skip to the next step.
-step
-goto rimmen_base 43.17,59.51
-talk Abnur Tharn
-|tip Manually skip to the next step.
-step
-goto rimmen_base 48.47,52.17
-'Press _E_ to Examine _A Job Offer_
-accept In Defense of Elsweyr
-|tip Manually skip to the next step.
-step
-goto rimmen_base 46.32,47.94
-talk Abnur Tharn
-|tip Manually skip to the next step.
-step
-goto rimmen_base 61.92,45.17
-talk Abnur Tharn
-|tip Manually skip to the next step.
-step
-goto rimmen_base 73.42,38.40
-click Rimmen Palace
-|tip Manually skip to the next step.
-step
-goto rimmen_base 77.61,36.85
-talk Zumog Phoom
-|tip Manually skip to the next step.
-step
-goto rimmen_base 77.61,36.85
-click Rimmen Palace Throne Room
-|tip Manually skip to the next step.
-step
-talk Eyraxia Tharn
-|tip Note: The mapping coordinates in the Throne Room appear to be "broken."
-|tip Manually skip to the next step.
-step
-goto rimmensewer_base 54.07,95.67
-talk Abnur Tharn
-|tip Manually skip to the next step.
-step
-goto rimmensewer_base 49.98,90.05
-'Continue West from here
-|tip Manually skip to the next step.
-step
-goto rimmensewer_base 42.86,90.14
-'Continue North from here
-|tip Manually skip to the next step.
-step
-goto rimmensewer_base 42.95,71.13
-'Continue East from here
-|tip Manually skip to the next step.
-step
-goto rimmensewer_base 55.71,74.71
-'Continue North from here
-|tip Manually skip to the next step.
-step
-goto rimmensewer_base 56.02,62.16
-'Continue Northeast from here
-|tip Manually skip to the next step.
-step
-goto rimmensewer_base 40.24,52.96
-'Continue North from here
-|tip Manually skip to the next step.
-step
-goto rimmensewer_base 41.71,26.48
-'Continue Northwest from here
-|tip Manually skip to the next step.
-step
-goto rimmensewer_base 35.30,22.46
-'Continue North from here
-|tip Manually skip to the next step.
-step
-goto rimmensewer_base 39.66,04.55
-click Elsweyr
-|tip Manually skip to the next step.
-step
-goto rimmen_base 66.51,28.86
-talk Abnur Tharn
-|tip Manually skip to the next step.
-step
-'Open your map.
-'Travel to _Rimmen_ Wayshrine
-|tip Manually skip to the next step.
-step
-goto rimmen_base 30.14,71.70
-talk Jo'isi
-|tip Manually skip to the next step.
-step
-'Open your map. Right click until you see the Northern Elsweyr map.
-'Travel to _The Stitches_ Wayshrine
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 41.55,44.61
-'Follow the road Northeast to here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 41.04,44.16
-'Sneak over to this spot
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 40.37,44.29
-'Sneak over to this spot (Wait until the guard patrols away)
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 40.54,43.81
-'Sneak over to this spot (Wait until the guard patrol passes south)
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 40.34,43.58
-'Sneak North along the rock wall here until you reach the Desert Wind Caverns entrance
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 39.66,43.09
-click Desert Wind Caverns
-|tip Manually skip to the next step.
-step
-goto DesertWind_Base 30.43,84.97
-'Dropdown from here
-|tip Manually skip to the next step.
-step
-goto DesertWind_Base 23.27,84.91
-'Sneak Northwest along the rock wall to here
-|tip Manually skip to the next step.
-step
-goto DesertWind_Base 21.93,80.43
-'Sneak North along the rock wall to here
-|tip Manually skip to the next step.
-step
-goto DesertWind_Base 23.08,75.13
-'Sneak North along the rock wall to here
-|tip Manually skip to the next step.
-step
-goto DesertWind_Base 29.03,69.63
-'Sneak Northeast along the rock wall to the stairs here
-|tip Manually skip to the next step.
-step
-goto DesertWind_Base 31.84,54.92
-'Sneak up into the hollow path from here
-|tip Manually skip to the next step.
-step
-goto DesertWind_Base 53.52,69.25
-'Sneak through the hollow to this spot underneath the tree
-|tip Manually skip to the next step.
-step
-goto DesertWind_Base 60.42,62.53
-'Sneak into the next hollow to this spot
-|tip Manually skip to the next step.
-step
-goto DesertWind_Base 57.23,57.74
-'Sneak to this spot
-|tip Manually skip to the next step.
-step
-goto DesertWind_Base 61.89,53.39
-'Sneak along the rock face to this spot
-|tip Manually skip to the next step.
-step
-goto DesertWind_Base 63.87,46.93
-talk Zamarak
-|tip Manually skip to the next step.
-step
-goto DesertWind_Base 64.32,46.93
-click Desert Wind Adeptorium
-|tip Manually skip to the next step.
-step
-goto DesertWind_Base 69.25,46.93
-'Press _E_ to Enter _Desert Wind Main Hall_
-|tip Manually skip to the next step.
-step
-goto DesertWind_Base 76.94,47.48
-kill Lieutenant Lepida
-|tip A simple boss fight. She's a lightning caster, so you want to avoid the cross-shaped pool of water as much as possible. Beyond that, try and interrupt her casts and DPS her down.
-|tip Manually skip to the next step.
-step
-goto DesertWind_Base 82.67,46.80
-click Grand Adept's Chambers
-|tip Manually skip to the next step.
-step
-goto DesertWind2_Base 37.08,49.44
-talk Lieutenant Lepida's Shade
-|tip Manually skip to the next step.
-step
-goto DesertWind2_Base 44.94,48.88
-talk Zamarak
-|tip Manually skip to the next step.
-step
-'Open your map. Right click until you see the Northern Elsweyr map.
-'Travel to _Riverhold_ Wayshrine
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 50.08,19.46
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 56.21,68.67
-click K'har Zhab Hall
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 55.05,71.15
-talk Abnur Tharn
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 54.98,71.70
-talk Gharesh-ri
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 57.11,69.14
-click Riverhold
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 54.57,79.91
-talk Khamira
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 54.57,79.91
-talk Zamarak
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 42.31,55.44
-'Make your way to here.
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 44.72,15.63
-'Follow the road North from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 45.50,12.43
-'Make your way to this spot.
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 46.05,11.66
-'Make your way to this spot.
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 46.78,11.52
-click Greenleaf Farmhouse
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 46.79,11.66
-talk Tsazii
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 46.80,11.76
-click Elsweyr
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 46.05,11.67
-'Make your way to this spot.
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 44.92,12.12
-'Drop down from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 43.04,12.53
-'Make your way to this spot.
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 42.18,11.92
-talk Kinaro
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 44.68,11.32
-'Run up the hill from here and immediately head east to avoid the wolf pack
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 46.02,11.68
-'Make you way to this spot
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 46.78,11.52
-click Greenleaf Farmhouse
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 46.83,11.62
-talk Tsazii
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 46.80,11.68
-talk Khamira
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 46.79,11.75
-click Elsweyr
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 46.05,11.66
-'Make you way to this spot
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 45.44,12.43
-'Make you way to this spot
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 42.33,14.19
-'Make you way to this spot
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 42.54,14.80
-'Press _E_ to Startle _Horses_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 42.57,15.00
-'Press _E_ to Burn _Euraxian Supply Cart_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 42.24,15.09
-'Press _E_ to Burn _Euraxian Supply Cart_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 43.50,17.26
-'Swim to this spot
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 43.75,17.71
-'Press _E_ to Startle _Horses_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 43.61,17.80
-'Press _E_ to Burn _Euraxian Supply Cart_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 43.81,18.13
-'Press _E_ to Burn _Euraxian Supply Cart_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 45.96,18.30
-talk Captain Nala-do
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 49.27,22.72
-talk Cadwell
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 49.63,23.31
-'Press _E_ to Arm _Cadwell's Complex Trap_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 48.96,23.45
-'Press _E_ to Arm _Cadwell's Complex Trap_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 49.31,23.00
-talk Cadwell
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 50.34,20.06
-talk Khamira
-'Select I am Ready to Defend Riverhold
-|tip Manually skip to the next step.
-step
-goto riverholdinstance_base 53.61,78.33
-'Listen to the dialog
-|tip Manually skip to the next step.
+goto 36.63,36.44 |q Scariest in Show/Find Burtle
 step
-goto riverholdinstance_base 48.96,55.38
-'Defend the town
-|tip Manually skip to the next step.
-step
-goto riverholdinstance_base 49.35,32.36
-click Temple of the Purifying Moons
-|tip Manually skip to the next step.
-step
-goto riverholdinstance_base 49.39,17.30
-'Run to Zamarak
-|tip Manually skip to the next step.
-step
-goto riverholdinstance_base 48.63,48.47
-click Elsweyr
-|tip Manually skip to the next step.
-step
-goto riverholdinstance_base 45.42,38.00
-'Jump over this wall
-|tip Manually skip to the next step.
-step
-goto riverholdinstance_base 35.21,30.25
-'Defend Zamarak from a couple waves of easy undead
-|tip Manually skip to the next step.
-step
-goto riverholdinstance_base 43.55,33.64
-'Run up the stairs from here
-|tip Manually skip to the next step.
-step
-goto riverholdinstance_base 56.29,34.49
-'Follow the path Southeast from here
-|tip Manually skip to the next step.
-step
-goto riverholdinstance_base 65.58,46.80
-'Defend Zamarak from a few waves of easy undead
-|tip Manually skip to the next step.
-step
-goto riverholdinstance_base 63.19,63.95
-'Follow the path to this spot
-|tip Manually skip to the next step.
-step
-goto riverholdinstance_base 48.63,62.16
-'Press _E_ to Use _Ballista_
-'tip Tip: Aim the Ballista at the dragon and fire.
-|tip Manually skip to the next step.
-step
-goto riverholdinstance_base 48.41,55.21
-kill Bahlokdaan
-|tip This is a pretty tricky fight, but it has a pattern that is reasonably easy to follow. First, you'll need a ranged weapon. It's almost impossible to try and melee the dragon as it does a lot of damage in one melee hit. The trick is to use the walls in the courtyard to block various incoming telegraphs like fire breath and shouts (e.g., Skyrim stuff). When the dragon teleports you to its location immediately run back behind the wall. The best strategy to use is to strafe back and forth between two walls while firing at the dragon from the opening all-the-while paying attention to which telegraph the dragon uses. Depending on your range DPS this could take a while. But follow the pattern, and you'll bring the big guy down.
-|tip Manually skip to the next step.
-step
-goto riverholdinstance_base 56.21,68.67
-click K'har Zhab Hall
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 55.91,71.51
-talk Lord Gharesh-ri
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 57.90,72.32
-talk Abnur Tharn
-|tip Manually skip to the next step.
-step
-goto riverholdcity_base 55.76,71.94
-talk Lord Gharesh-ri
-|tip Manually skip to the next step.
-step
-'Open your map. Right click until you see the Northern Elsweyr map.
-'Travel to _Rimmen_ Wayshrine
-|tip Manually skip to the next step.
-step
-goto rimmen_base 33.07,85.67
-'Make your way to this spot, and follow the road south until you reach the tree up ahead.
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 71.66,38.34
-'Continue to this spot
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 70.69,39.75
-'Jump across the ravine here (watch out for the patroling Minotaur)
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 69.19,40.05
-'Continue to this spot
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 68.98,39.33
-'Continue to the road.
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 67.99,39.13
-talk Narayun
-accept In Sickness and In Health
-step
-goto elsweyr_base 68.98,39.33
-'Continue to here.
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 68.86,40.70
-'Continue to here.
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 68.21,40.78
-talk Aneshi the Shrine Keeper
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 68.20,40.75
-'Press _E_ to Examine _Aneshi's Note_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 71.15,41.58
-'Continue to this spot (watch out for the Minotaur patrol)
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 72.94,40.81
-talk Vazbi
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 73.22,41.76
-'Continue to this spot to trigger the next step in Vazbi's quest
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 73.28,42.88
-'Press _E_ to Examine _Aqueduct Sluice Gate_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 75.05,43.26
-'Continue to the road here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 75.97,42.69
-'Continue to this spot
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 77.33,44.29
-'Press _E_ to Examine _Aqueduct Sluice Gate_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 77.33,44.29
-'Press _E_ to Examine _Torn Habit_
-'Take _Torn Habit_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 77.33,44.29
-talk Vazbi
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 77.87,44.35
-'Press _E_ to Examine _Bloody Habit_
-'Take _Bloody Habit_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 77.80,43.58
-'Press _E_ to Examine _Weathered Cameo_
-'Take _Weathered Cameo_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 77.32,43.13
-'Press _E_ to Examine _Crumpled Nursery Rhyme_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 76.43,42.85
-'Press _E_ to Examine _Swaddling Cloth_
-'Take _Swaddling Cloth_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 75.61,42.36
-'Continue to this spot
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 76.18,42.02
-'Press _E_ to Examine _Scarred Coin_
-'Take _Scarred Coin_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 76.18,42.02
-talk Vazbi
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 78.13,41.84
-'Follow the ravine to this spot
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 79.42,40.82
-'Follow the ravine to this spot to trigger the next step in Vazbi's quest
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 81.40,41.96
-'Kill the four waves of easy mobs.
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 82.53,41.38
-talk Silhu-jo
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 83.48,39.95
-'Follow the ravine to this spot
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 85.01,42.16
-talk Silhu-jo
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 85.07,42.37
-click Upper Baan Dar Caverns
-|tip Note: You'll encounter waves of mobs after entering.
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 84.13,43.32
-talk Vazbi
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 84.00,43.14
-click Baan Dar Overlook
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 83.54,43.07
-kill Hulzar
-|tip This is a simple fight. However, note that Hulzar does hit hard, so you'll want to keep health potion on the ready. Kill Hulzar's minions when they appear (or include them in your AOE attacks) and avoid his telegraphs.
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 82.17,43.67
-'Continue to this spot
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 81.76,44.54
-'Run up the stairs from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 81.97,44.28
-'Press _E_ to Open _Baan-Dar Sluice Gate_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 81.56,44.80
-'Run underneath the Aquaduct West from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 78.95,44.64
-'Drop down from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 77.36,44.61
-'Continue to run underneath the Aquaduct West to here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 74.96,44.03
-'Drop down from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 73.57,42.74
-'Continue to run underneath the Aquaduct West to here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 72.57,40.24
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 72.86,40.10
-talk Vazbi
-|tip Choice: You can suggest Vazbi stay or leave. Telling her to go leads to a sad ending (Spoiler: She's carrying a disease. If she leaves, she will infect others) while telling her to stay leads to a happier ending (Spoiler: The monks can heal her).
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 71.20,41.55
-'Continue up the hill to this spot
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 69.24,39.94
-'Continue up the hill to this spot
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 68.94,39.31
-'Continue to the road here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 65.55,38.73
-'Follow the road West to here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 65.55,38.73
-'Reaching this spot triggers the next step of the Two Queens quest
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 62.14,38.42
-'Follow the dirt path to here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 59.97,38.73
-'Follow the dirt path to here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 59.99,39.16
-'Press _E_ to Dig _Aneshi's Mound_
-'Take _Rimmen Master Key_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 60.02,39.39
-'Drop down from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 59.98,40.64
-'Continue to the road here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 60.84,43.68
-'At the fork in the road, go left from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 67.26,44.23
-talk Ashur
-accept Descendant of the Potentate
-step
-goto elsweyr_base 67.36,44.29
-'Follow the road Southeast from here
-accept Descendant of the Potentate
-step
-goto elsweyr_base 70.45,45.85
-wayshrine Hakoshae
-step
-goto elsweyr_base 71.15,46.39
-'At the fork in the road, go right from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 71.83,47.48
-'At the fork in the road, go left from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 73.24,47.66
-talk Magnate Feina-Darak
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 71.79,48.79
-talk Domitia Nasica
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 71.65,48.68
-'Press _E_ to _Use Paper Lotus_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 71.77,48.76
-talk Domitia Nasica
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 70.51,48.67
-talk Vek-Drassi Secunia
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 71.75,47.53
-'At the fork in the road, go left from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 71.27,46.46
-'At the fork in the road, go left from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 69.06,46.10
-'At the fork in the road, go right from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 68.84,43.21
-'Continue to this point. Be sure to avoid the Minotaur.
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 68.55,42.72
-'Continue to up the hill to this point
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 67.59,42.18
-'Drop down from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 65.12,42.44
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 63.12,42.12
-kill Senche-Lion
-|tip Kill the waves of lions, and then kill the Senche-Lion boss. There are no range or telegraph attacks to look out for making this a simple melee fight.
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 63.19,42.35
-'Press _E_ to Take _Sugar Daisy_
-'Take _Sugar Daisy_
-|tip Manually skip to the next step.
-step
-'Open your map.
-'Travel to the _Hakoshae_ Wayshrine
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 71.47,47.78
-'Cross the bridge here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 70.51,48.67
-talk Vek-Drassi Secunia
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 74.69,48.06
-talk Valoria Marius
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 74.55,47.84
-'Press _E_ to Take _Bowl_
-'Take _Bowl_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 74.69,48.06
-talk Valoria Marius
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 74.73,47.92
-talk Ashur
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 74.09,48.52
-talk Captain Verus
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 73.26,49.06
-click Manor Cellar
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 73.56,48.72
-'Press _E_ to Search _Chest_
-'Take all item
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 73.49,48.63
-'Press _E_ to Examine _Tale of the Elements_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 73.47,48.66
-'Press _E_ to Place _East Socket_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 73.47,48.66
-'Press _E_ to Place _West Socket_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 73.49,48.63
-'Press _E_ to Place _North Socket_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 73.47,48.66
-'Press _E_ to Place _South Socket_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 73.30,48.59
-click History Vault
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 73.10,48.46
-'Press _E_ to Examine _Letter to Feina-Darak_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 73.10,48.46
-talk Ashur
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 73.24,48.55
-click Manor Cellar
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 73.34,48.97
-click Hakoshae
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 75.31,48.60
-'Jump over the rock here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 76.73,46.80
-click Hakoshae Tombs
-|tip Manually skip to the next step.
-step
-goto hakoshaecrypts_base 15.76,69.42
-talk Ashur
-|tip Manually skip to the next step.
-step
-goto hakoshaecrypts_base 44.13,69.04
-'Continue North from here
-|tip Manually skip to the next step.
-step
-goto hakoshaecrypts_base 44.13,51.98
-'Continue East from here
-|tip Manually skip to the next step.
-step
-goto hakoshaecrypts_base 64.43,51.98
-'Continue North from here
-|tip Manually skip to the next step.
-step
-goto hakoshaecrypts_base 64.43,38.21
-'Continue West from here
-|tip Manually skip to the next step.
-step
-goto hakoshaecrypts_base 45.17,38.21
-kill Shade of the Founder
-|tip This is a simple fight. The Shade switches between ranged and melee attacks and occasionally summon minions. Kill the minions or include them in your AOE attacks and avoid the Shade's ranged telegraphs. Use health potion as needed.
-|tip Manually skip to the next step.
-step
-goto hakoshaecrypts_base 29.52,38.21
-click Founder Chamber
-|tip Manually skip to the next step.
-step
-goto hakoshaecrypts_base 18.80,37.75
-talk Proconsul Beloren-Kaie
-|tip Manually skip to the next step.
-step
-goto hakoshaecrypts_base 18.80,37.75
-talk Magnate Feina-Darak
-|tip Manually skip to the next step.
-step
-'Open your map. Right click to see the Northern Elsweyr map.
-'Travel to the _Hakoshae_ Wayshrine
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 72.41,48.41
-'Enter the town of Hakoshae
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 74.56,47.21
-talk Ashur
-|tip Manually skip to the next step.
-step
-'Open your map.
-'Travel to the _Rimmen_ Wayshrine
-|tip Manually skip to the next step.
-step
-goto rimmen_base 37.32,82.39
-'Make your way to this spot
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 79.15,33.48
-talk Abnur Tharn
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 77.73,33.08
-'Make your way to the main road
-|tip Manually skip to the next step.
+goto 49.14,37.49
+'Find Burtle |q Scariest in Show/Find Burtle
+|tip Go up the stairs.
 step
-goto rimmen_base 45.38,49.46
-'Follow the road to here
+talk Jahlar
+'Tell him _I'll buy what's left of your food from you. [69]_ |q Scariest in Show/Lure Burtle Out
 |tip Manually skip to the next step.
 step
-goto rimmen_base 46.10,47.51
 talk Rigurt the Brash
 accept Cross-cultural Confusion
 step
-'Open your map. Right click to see the Northern Elsweyr map.
-'Travel to the _Riverhold_ Wayshrine
-|tip Manually skip to the next step.
+goto 49.23,37.48
+'Use Odoriferous Meal |q Scariest in Show/Lure Burtle Out
 step
-goto elsweyr_base 50.08,19.46
-'Continue to here
-|tip Manually skip to the next step.
+goto 23.58,35.48
+talk Tahara
+turnin Scariest in Show
 step
-goto riverholdcity_base 45.62,58.29
-talk Thadarra
-|tip Choice: You can choose to pay Thadarra's delivery fee, or threaten to report her for extortion.
-|tip Manually skip to the next step.
+goto 28.80,50.44 |q Love and Guar |future
 step
-'Open your map. Right click to bring up the Northern Elsweyr map.
-'Travel to _The Stitches_ Wayshrine
-|tip Manually skip to the next step.
+goto 15.59,60.62 |q Love and Guar |future
 step
-goto stitches_base 46.84,28.43
-'Cross the bridge from here
-|tip Manually skip to the next step.
-step
-goto stitches_base 56.66,56.48
-talk Rigurt the Brash
-|tip Manually skip to the next step.
-step
-goto stitches_base 49.25,61.65
-'Cross the bridge from here
-|tip Manually skip to the next step.
-step
-goto stitches_base 48.78,74.29
-'Follow the path West from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 36.04,55.12
-'Follow the path South from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 37.23,58.45
-'Follow the path Southwest from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 37.91,60.47
-'Press _E_ to Talk _Help Wanted: Merryvale!_
-accept Home Sweet Home
-step
-goto elsweyr_base 37.87,62.17
-'Press _E_ to Take _Honey Flower_
-'Take _Honey Flower_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 36.51,62.53
-'Press _E_ to Take _Honey Flower_
-'Take _Honey Flower_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 37.00,64.64
-'Press _E_ to Take _Honey Flower_
-'Take _Honey Flower_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 38.82,64.06
-'Press _E_ to Take _Honey Flower_
-'Take _Honey Flower_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 39.83,65.60
-talk Rakhzargo
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 40.60,63.82
-talk Kideya
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 41.14,60.04
-talk Razum-dar
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 40.79,67.44
-talk Razum-dar
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 41.56,68.15
-talk Rigurt the Brash
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 39.84,67.00
-talk Asaldak
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 41.56,68.15
-talk Rigurt the Brash
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 40.61,68.61
-click Fragrant Moons Plantation
-'Note: You will be trespassing. If the guards catch you, they will attack. In other words, sneak carefully and remain undetected. (Note: If found, you'll still be able to continue, you'll only fail this option within the quest.)
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 41.24,68.66
-'Press _E_ to Spy _Vantage Point_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 40.73,70.56
-'Press _E_ to Examine _Terror Bird_
-'Take _Strange Claw_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 40.84,69.99
-click M'Zzum's Mansion
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 41.19,70.06
-'Sneak downstairs from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 40.40,70.61
-'Press _E_ to Examine _M'zum's Ledger_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 41.07,69.91
-'Run upstairs from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 40.87,69.85
-click Merryvale Farms
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 40.59,68.72
-click Merryvale Farms
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 40.01,62.17
-talk Razum-dar
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 38.10,66.04
-talk Itzi-Da
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 35.88,66.54
-talk J'dathal
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 36.50,67.92
-'Make your way here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 34.61,66.86
-'Run up the hill to here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 35.23,65.69
-talk Pashroni
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 35.34,67.71
-'Continue down the hill to here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 34.92,68.71
-talk Banji
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 34.09,67.09
-'Run up the hill to here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 34.04,69.07
-talk Nurra
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 34.02,67.44
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 32.86,66.33
-kill Dolor the Boorish
-|tip This is a simple fight. Dolor is a melee and AOE fighter, so avoid its telegraphs. Strafing attacks are the best strategy to avoid the telegraphs (or demolish it if you have enough DPS and health). Use health potion as needed.
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 33.61,66.66
-talk Razum-dar
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 36.78,68.05
-'Make your way to the main road here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 41.17,63.58
-click Storage Cellar
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 40.91,63.56
-'Press _E_ to Examine _Crates_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 40.77,63.81
-'Press _E_ to Examine _Urn_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 41.01,63.76
-'Press _E_ to Examine _Barrel_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 40.69,63.53
-'Press _E_ to Examine _Tapestry_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 40.69,63.53
-click Secret Tunnel
-|tip Manually skip to the next step.
-step
-goto merrivillesugarfarm_base 19.04,82.21
-talk Patia Cecia
-|tip Manually skip to the next step.
-step
-goto merrivillesugarfarm_base 78.02,36.80
-'Follow the path and
-click Skooma Workshop
-|tip Manually skip to the next step.
-step
-goto merrivillesugarfarm_base 78.02,36.80
-kill Saevus
-kill Timtem the Terrible
-|tip This is a simple fight. Neither are elite. Accordingly, they'll be effortless to dispatch. As before you'll encounter melee and AOE fighting, so avoid the telegraphs. Use health potion as needed.
-|tip Manually skip to the next step.
-step
-goto merrivillesugarfarm_base 42.84,21.80
-click Merryvale Farms
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 40.09,62.20
-talk Razum-dar
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 39.90,65.39
-'Make you way to the main road
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 58.85,65.96
-wayshrine Tenmar Temple
-step
-goto elsweyr_base 58.79,65.84
-talk Priest Haduras
-accept The Lunacy of Two Moons
-step
-goto elsweyr_base 55.06,66.35
-'Run up the hill from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 54.17,66.48
-'Enter the cavern here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 53.55,66.03
-kill Terro Bird Matriarch
-|tip This is a simple fight. The Matriarch uses melee and telegraph attacks. Use health potion as needed.
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 54.22,66.61
-talk Skooma Cat
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 54.94,67.64
-talk Priest Haduras
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 57.63,65.50
-'Run up the hill here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 58.50,63.28
-'Press _E_ to Take _Fork of Horripilation_
-'Take _The Fork of Horripilation_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 55.04,67.66
-talk Priest Haduras
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 54.84,67.87
-talk Skooma Cat
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 57.33,68.61
-'Go to this spot to trigger the next step in The Lunacy of Two Moons quest
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 58.30,68.54
-talk Moon-Priest Rilasu
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 59.06,68.60
-'Enter the temple
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 59.73,68.94
-'Run upstairs from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 59.33,68.61
-click Temple Balcony
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 59.03,68.62
-talk Moon-Bishop Sizenza
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 59.03,68.62
-talk Skooma Cat
-|tip Manually skip to the next step.
-step
-goto SkoomaCatsCloister1_base 40.40,55.64
-'Make your way to here
-|tip Manually skip to the next step.
-step
-goto SkoomaCatsCloister1_base 59.54,40.55
-talk Moon-Bishop Sizenza
-|tip Manually skip to the next step.
-step
-goto SkoomaCatsCloister1_base 61.92,40.79
-'Press _E_ to Take _Milk-Toast Cream_
-'Take _Milk-Toast Cream_
-|tip Manually skip to the next step.
-step
-goto SkoomaCatsCloister1_base 59.56,40.42
-talk Skooma Cat
-|tip Manually skip to the next step.
-step
-goto SkoomaCatsCloister1_base 55.70,41.37
-'Press _E_ to Fill _Empty Bowl_
-|tip Manually skip to the next step.
-step
-goto SkoomaCatsCloister1_base 59.30,40.46
-talk Moon-Bishop Sizenza
-|tip Manually skip to the next step.
-step
-goto SkoomaCatsCloister1_base 64.53,51.18
-'Follow the path to here
-|tip Manually skip to the next step.
-step
-goto SkoomaCatsCloister1_base 50.93,61.41
-'Follow the path to here
-|tip Manually skip to the next step.
-step
-goto SkoomaCatsCloister1_base 67.95,64.10
-'Follow the path to here
-|tip Manually skip to the next step.
-step
-goto SkoomaCatsCloister1_base 69.46,55.70
-'Run upstairs from here
-|tip Manually skip to the next step.
-step
-goto SkoomaCatsCloister1_base 83.60,50.60
-'Press _E_ to Use _Delightfully Long Yarn_
-'Take _Delightfully Long Yarn_
-|tip Manually skip to the next step.
-step
-goto SkoomaCatsCloister1_base 84.22,54.54
-talk Skooma Cat
-|tip Manually skip to the next step.
-step
-goto SkoomaCatsCloister1_base 76.93,55.81
-'Press _E_ to Toss _Delightfully Long Yarn_
-|tip Manually skip to the next step.
-step
-goto SkoomaCatsCloister1_base 83.56,55.77
-talk Moon-Bishop Sizenza
-|tip Manually skip to the next step.
-step
-goto SkoomaCatsCloister1_base 86.87,57.71
-click Temple Cellar
-|tip Manually skip to the next step.
-step
-goto SkoomaCatsCloister2_base 09.96,62.14
-'Continue to this spot
-|tip Manually skip to the next step.
-step
-goto SkoomaCatsCloister2_base 24.67,43.72
-'Continue to this spot
-|tip Manually skip to the next step.
-step
-goto SkoomaCatsCloister2_base 37.47,53.75
-'Continue to this spot
-|tip Manually skip to the next step.
-step
-goto SkoomaCatsCloister2_base 63.44,54.42
-kill Mad Anchorite
-|tip After its health reaches a certain percentage, the Anchorite shifts into different forms and assumes that form's abilities. The final shape is a dragon-like creature. Because of its various types, it will use both melee and ranged telegraph attacks. Use health potion as needed.
-|tip Manually skip to the next step.
-step
-goto SkoomaCatsCloister2_base 75.82,55.30
-talk Sheogorath
-|tip Choice: Pick Htarogoehs, Htarogoehs, Htarogoehs!
-|tip Manually skip to the next step.
-step
-goto SkoomaCatsCloister2_base 77.16,54.74
-'Press _E_ to Eat _Aromatic Olroy Anchor_
-|tip Manually skip to the next step.
-step
-goto SkoomaCatsCloister2_base 80.63,55.02
-'Press _E_ to Exit _Portal to Elsweyr_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 59.69,68.62
-talk Moon-Bishop Sizenza
-|tip Manually skip to the next step.
-step
-'Open your map.
-'Travel to the _Scar's End_ Wayshrine
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 13.94,74.42
-talk Brigette Stormsong
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 13.87,74.43
-'Press _E_ to Open _The Screaming Mammoth's Chest_
-'Take All _The Giant's Lute_ and _Skullchucker's Drum_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 16.33,70.65
-'Press _E_ to Use _Scar's End Wayshrine_
-'Travel to the _Rimmen_ Wayshrine
-|tip Manually skip to the next step.
-step
-goto rimmen_base 33.26,34.34
-'Continue to this spot
-|tip Manually skip to the next step.
-step
-goto rimmen_base 36.68,28.96
-talk Rigurt the Brash
-|tip Manually skip to the next step.
-step
-goto rimmen_base 36.61,28.91
-'Press _E_ to Use _Skullchucker's Drum_
-|tip Manually skip to the next step.
-step
-goto rimmen_base 37.18,29.48
-talk Lady Izza
-|tip Manually skip to the next step.
-step
-goto rimmen_base 37.18,29.48
-talk Rigurt the Brash
-|tip Manually skip to the next step.
-step
-goto rimmen_base 38.82,35.47
-'Continue to this spot
-|tip Manually skip to the next step.
-step
-goto rimmen_base 39.87,37.69
-'Continue to this spot
-|tip Manually skip to the next step.
-step
-goto rimmen_base 50.22,38.96
-'Run upstairs from here
-|tip Manually skip to the next step.
-step
-goto rimmen_base 55.75,36.07
-'Run up both set of stairs from here
-|tip Manually skip to the next step.
-step
-goto rimmen_base 62.33,43.62
-'Run upstairs from here
-|tip Manually skip to the next step.
-step
-goto rimmen_base 67.94,43.58
-talk Captain Nala-do
-|tip Manually skip to the next step.
-step
-goto rimmen_base 67.82,50.17
-click South Weapons Platform
-|tip Manually skip to the next step.
-step
-goto rimmen_base 66.71,55.55
-'Sneak to here
-|tip The best approach is to wait until the soldiers are by themselves then you can pull one to your location or assassinate that one from behind
-|tip Manually skip to the next step.
-step
-goto rimmen_base 65.11,59.07
-'Press _E_ to Burn _Siege Weapon_
-|tip Manually skip to the next step.
-step
-goto rimmen_base 61.85,56.67
-'Press _E_ to Burn _Siege Weapon_
-|tip Manually skip to the next step.
-step
-goto rimmen_base 63.01,54.18
-'Press _E_ to Burn _Siege Weapon_
-|tip Manually skip to the next step.
-step
-goto rimmen_base 67.38,50.65
-click Rimmen
-|tip Manually skip to the next step.
-step
-goto rimmen_base 62.65,33.60
-click North Weapons Platform
-|tip Manually skip to the next step.
-step
-goto rimmen_base 57.44,31.34
-'Press _E_ to Burn _Siege Weapon_
-|tip Manually skip to the next step.
-step
-goto rimmen_base 57.45,27.96
-'Press _E_ to Burn _Siege Weapon_
-|tip Manually skip to the next step.
-step
-goto rimmen_base 54.68,29.53
-'Press _E_ to Burn _Siege Weapon_
-|tip Manually skip to the next step.
-step
-goto rimmen_base 62.22,33.24
-click Rimmen
-|tip Manually skip to the next step.
-step
-goto rimmen_base 62.50,38.62
-'Drop down from here
-|tip Manually skip to the next step.
-step
-goto rimmen_base 58.12,36.51
-'Drop down from here
-|tip Manually skip to the next step.
-step
-goto rimmen_base 61.44,32.30
-talk Captain Nala-do
-|tip Manually skip to the next step.
-step
-goto rimmen_base 66.59,28.93
-click Rimmen Palace Recesses
-|tip Manually skip to the next step.
-step
-goto rimmensewer_base 43.89,11.85
-click Rimmen Palace Crypts
-|tip Manually skip to the next step.
-step
-goto rimmencrypts_base 36.47,49.35
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto rimmencrypts_base 57.11,60.89
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto rimmencrypts_base 57.83,34.79
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto rimmencrypts_base 78.57,28.06
-'Press _E_ to Examine _King Hemaker's Grave_
-|tip Manually skip to the next step.
-step
-goto rimmencrypts_base 78.57,28.06
-talk Zamarak
-|tip Manually skip to the next step.
-step
-goto rimmencrypts_base 91.00,35.58
-click Rimmen Palace
-|tip Manually skip to the next step.
-step
-goto rimmenpalaceinterior_base 43.33,41.10
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto rimmenpalaceinterior_base 49.52,14.40
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto rimmenpalaceinterior_base 23.78,28.06
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto rimmenpalaceinterior_base 29.41,42.09
-click Chapel of the Guiding Moons
-|tip Manually skip to the next step.
-step
-goto rimmenpalaceinterior_base 35.60,58.46
-'Kill the easy wave of mummies
-|tip Manually skip to the next step.
-step
-goto rimmenpalaceinterior_base 54.36,85.55
-click The Great Hall
-|tip Manually skip to the next step.
-step
-goto rimmenpalaceinterior_base 73.21,78.82
-'Press _E_ to Destroy _Necromantic Glass_
-|tip Manually skip to the next step.
-step
-goto rimmenpalaceinterior_base 73.12,75.85
-'Press _E_ to Destroy _Necromantic Glass_
-|tip Manually skip to the next step.
-step
-goto rimmenpalaceinterior_base 73.30,56.45
-click Royal Chambers
-|tip Manually skip to the next step.
-step
-goto rimmenpalaceinterior_base 75.22,44.54
-click Rimmen Palace Courtyard
-|tip Manually skip to the next step.
-step
-goto rimmenpalacecourtyard_base 56.04,47.15
-kill King Hemaker
-kill Queen Numara
-|tip Manually skip to the next step.
-step
-goto rimmenpalacecourtyard_base 56.04,47.15
-kill Euraxia Tharn
-|tip Euraxia is a straight-forward fight, but she has a lot of HP and mana. The main thing to evade is her large AOE telegraph and summoned Atronach. Beyond that, she's pretty easy to take down.
-|tip Manually skip to the next step.
-step
-goto rimmenpalacecourtyard_base 63.35,49.21
-talk Abnur Tharn
-|tip Manually skip to the next step.
-step
-goto rimmenpalacecourtyard_base 44.31,74.59
-click Palace Throne Room
-|tip Manually skip to the next step.
-step
-goto rimmen_base 77.61,36.85
-talk Khamira
-|tip Manually skip to the next step.
-step
-goto rimmen_base 77.61,36.85
-talk Lord Gharesh-ri
-accept The Final Order
-step
-goto rimmen_base 77.61,36.85
-click Royal Study
-|tip Manually skip to the next step.
-step
-goto rimmen_base 77.61,36.85
-talk Abnur Tharn
-|tip Manually skip to the next step.
-step
-goto rimmen_base 77.61,36.85
-'Press _E_ to Examine _Captain's Letter_
-|tip Manually skip to the next step.
-step
-goto rimmen_base 77.61,36.85
-'Press _E_ to Examine _Euraxia's Personal Journal_
-|tip Manually skip to the next step.
-step
-goto rimmen_base 77.61,36.85
-'Press _E_ to Examine _Dragons: A Report for the Queen_
-|tip Manually skip to the next step.
-step
-goto rimmen_base 77.61,36.85
-talk Abnur Tharn
-|tip Manually skip to the next step.
-step
-'Open your map.
-'Travel to the _Rimmen_ Wayshrine
-|tip Manually skip to the next step.
-step
-goto rimmen_base 08.14,55.18
-'Make your way to the western edge of Rimmen
-step
-goto elsweyr_base 71.39,26.66
+goto elsweyr_base 71.37,26.62
 talk Hadamnargo
 accept Love and Guar
 step
-goto elsweyr_base 73.09,24.94
-'Press _E_ to Burn _Wasp Nest_
-|tip Manually skip to the next step.
+goto rimmen_base 10.56,37.27
+'Burn Wasp Nest |q Love and Guar/.*Burn Wasps.* |count 1
 step
-goto elsweyr_base 74.01,26.30
-'Make you way to here
-|tip Manually skip to the next step.
+goto elsweyr_base 73.27,25.90
+'Use Skyshard |achieve 2461/4
 step
-goto rimmen_base 10.75,36.85
-'Press _E_ to Burn _Wasp Nest_
-|tip Manually skip to the next step.
+goto 73.15,24.94
+'Burn Wasp Nest |q Love and Guar/.*Burn Wasps.* |count 2
 step
-goto rimmen_base 09.57,36.48
-'Make you way to here
-|tip Manually skip to the next step.
+goto 72.72,29.94
+'Burn Wasp Nest |q Love and Guar/.*Burn Wasps.* |count 3
 step
-goto elsweyr_base 72.74,29.90
-'Press _E_ to Burn _Wasp Nest_
-|tip Manually skip to the next step.
+goto 72.63,33.13
+talk Sanzagh |q Love and Guar/Search for the Missing Guar
+'Tell him _"[Persuade] You don't want to eat this guar. His name is Gordon._
 step
-goto elsweyr_base 72.63,33.10
-talk Sanzagh
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 71.39,26.66
+goto 71.37,26.62
 talk Hadamnargo
+turnin Love and Guar
+step
+goto 61.58,27.90
+talk Ghashugg
+accept Strange Messengers
+step
+goto 49.25,21.74 |q A Rage of Dragons/Talk to Abnur Tharn
+step
+goto riverholdcity_base 56.47,68.73
+'Open K'har Zhab Hall |q A Rage of Dragons/Talk to Abnur Tharn
 |tip Manually skip to the next step.
 step
-goto elsweyr_base 65.57,26.84
+goto 55.98,72.54
+talk Abnur Tharn |q A Rage of Dragons/Talk to Abnur Tharn
+step
+goto 55.64,72.69
+talk Khamira |q A Rage of Dragons/Talk to Khamira
+step
+goto 55.64,72.69
+talk Lord Gharesh-ri |q A Rage of Dragons/Talk to Lord Gharesh-ri
+step
+goto 46.30,58.42
+talk Mizzik Thunderboots
+accept The Riverhold Abduction
+step
+goto 45.45,57.72
+talk Thadarra |q Cross-cultural Confusion/Talk to Thadarra
+'Tell her [Intimidate] I don't owe you anything. In fact, I might report you to the Imperials for extortion.
+step
+goto 33.94,51.33
+'Open House of Histories |q The Song of Kingdoms |future
+|tip Manually skip to the next step.
+step
+goto 37.06,51.40
+|tip Go downstairs.
+talk Iraya
+accept The Song of Kindoms
+step
+goto 41.79,49.17
+'Open House of Histories |q The Riverhold Abduction/Talk to Ishu
+|tip Manually skip to the next step.
+step
+goto 31.42,51.65 |q The Riverhold Abduction/Talk to Ishu
+step
+goto 44.58,68.33
+'Climb Ishu's House |q The Riverhold Abduction/Talk to Ishu
+|tip Manually skip to the next step.
+step
+goto 42.84,70.38
+talk Ishu |q The Riverhold Abduction/Talk to Ishu
+step
+goto 38.94,30.58 |q The Riverhold Abduction/Search for Mell the Musical |future
+step
+goto 38.94,30.58
+talk Mell the Musical |q The Riverhold Abduction/Talk to Mell the Musical
+step
+goto 60.63,79.34
+'Examine Tajirri's Note |q The Riverhold Abduction/Search Behind the Stables
+step
+goto 57.12,76.69
+talk Mizzik Thunderboots |q The Riverhold Abduction/Talk to Mizzik
+step
+goto 49.44,68.84 |q Ruddy Fang Retrieval |future
+step
+goto elsweyr_base 50.24,20.65 |q Ruddy Fang Retrieval |future
+step
+goto 49.15,22.79 |q Ruddy Fang Retrieval |future
+step
+goto 44.84,25.38
+talk Elianna Pevengius
+accept Ruddy Fang Retrieval
+step
+goto 46.59,25.43
+'Take Imperial Legion Backpack |q Ruddy Fang Retrieval/Find Elianna Pevengius's Belongings
+step
+goto 46.34,25.61
+'Travel to the Sleeping Badger |q The Riverhold Abduction/Travel to the Sleeping Badger
+step
+goto 46.34,25.61 
+'Search Coffer |q The Riverhold Abduction/Investigate Camp
+|tip Manually skip to the next step.
+step
+goto 46.62,25.42
+'Search Crate |q The Riverhold Abduction/Investigate Camp
+step
+goto 46.64,23.35
+talk Mizzik Thunderboots |q The Riverhold Abduction/Talk to Mizzik Thunderboots
+step
+goto 46.05,23.40 |q A Rage of Dragons/.*Investigate Power Surge Locations.* |count 1
+step
+goto 45.24,23.54
+talk Asazeh |q A Rage of Dragons/.*Investigate Power Surge Locations.* |count 1
+step
+goto 44.60,19.46
+'Examine Foul-Smelling Sack |q A Rage of Dragons/.*Investigate Power Surge Locations.* |count 2
+step
+goto 44.90,16.98 |achieve 2461/1
+step
+goto 44.28,16.99
+'Use Skyshard |achieve 2461/1
+step
+goto 44.70,14.15
+'Examine Discarded Orders |q A Rage of Dragons/.*Investigate Power Surge Locations.* |count 3
+step
+goto 44.59,14.24
+talk Lharahad |q A Rage of Dragons/Talk to Lharahad
+step
+'Open Northern Elsweyr Map
+'Travel to _Riverhold_ in Northern Elsweyr |q Ruddy Fang Retrieval/Talk to Elianna Pevengius in Riverhold
+|tip Manually skip to the next step.
+step
+goto 50.22,20.58 |q Ruddy Fang Retrieval/Talk to Elianna Pevengius in Riverhold
+step
+goto riverholdcity_base 49.68,54.64 |q Ruddy Fang Retrieval/Talk to Elianna Pevengius in Riverhold
+step
+goto 60.37,53.69
+'Open Banished Regrets Inn |q Ruddy Fang Retrieval/Talk to Elianna Pevengius in Riverhold
+|tip Manually skip to the next step.
+step
+goto 60.26,53.45
+talk Rideza |q The Riverhold Abduction/Talk to Rideza
+step
+goto 63.23,51.67
+talk Elianna Pevengius
+turnin Ruddy Fang Retrieval
+step
+goto 64.94,50.05
+|tip Go upstairs.
+talk Mizzik Thunderboots |q The Riverhold Abduction/Talk to Mizzik
+step
+goto 59.38,53.81
+'Open Riverhold |q The Riverhold Abduction/Search Tajirri's House
+|tip Manually skip to the next step.
+step
+goto 58.91,42.67
+|tip Pick the lock
+'Open Tajirri's House |q The Riverhold Abduction/Search Tajirri's House
+|tip Manually skip to the next step.
+step
+goto 58.75,43.09
+|tip Go upstairs and avoid the sentry.
+'Search Hidden Panel |q The Riverhold Abduction/Search Tajirri's House
+step
+goto 57.43,43.62
+'Open Riverhold |q The Riverhold Abduction/Talk to Mizzik
+|tip Manually skip to the next step.
+step
+goto 56.76,55.69
+talk Mizzik Thunderboots |q The Riverhold Abduction/Talk to Mizzik
+step
+goto 52.54,86.30 |q The Riverhold Abduction/Look for Smuggler Caches
+step
+goto 44.73,87.70
+'Search Barrel |q The Riverhold Abduction/Look for Smuggler Caches
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 47.85,19.74
+'Search Barrel |q The Riverhold Abduction/Look for Smuggler Caches
+|tip Manually skip to the next step.
+step
+goto 52.89,20.51 |q The Riverhold Abduction/Look for Smuggler Caches
+step
+goto 52.88,19.44
+'Search Crate |q The Riverhold Abduction/Look for Smuggler Caches
+|tip Manually skip to the next step.
+step
+goto 52.72,18.76
+'Search Barrel |q The Riverhold Abduction/Look for Smuggler Caches
+step
+goto 52.48,21.39 |q A Rage of Dragons/Find the Outsider with a Pot on His Head
+step
+goto 52.67,23.53
+'Find the Outsider with a Pot on His Head |q A Rage of Dragons/Find the Outsider with a Pot on His Head
+step
+goto 52.67,23.53
+talk Cadwell |q A Rage of Dragons/Talk to Cadwell
+step
+goto 52.77,23.46
+'Examine Ancient Gravestone |q A Rage of Dragons/Examine the Gravestone
+step
+goto 52.71,23.50
+talk Cadwell |q A Rage of Dragons/Talk to Cadwell
+step
+goto 60.78,28.40 |q Strange Messengers/Talk to Kiseravi
+step
+goto 61.21,23.67
+talk Kiseravi |q Strange Messengers/Talk to Kiseravi
+step
+goto 61.40,23.03
+'Open Tomb of the Serpents |q Strange Messengers/Talk to Kiseravi
+|tip Manually skip to the next step.
+step
+goto tombofserpents_base 50.38,62.53 |q Strange Messengers/.*Gather Akaviri Relics.* |count 1
+step
+goto 34.93,65.57
+'Search Akaviri Chest |q Strange Messengers/.*Gather Akaviri Relics.* |count 1
+step
+goto 30.94,44.65 |q The Song of Kingdoms/Search the Tomb of the Serpents
+step
+goto 07.90,39.37
+'Examine Anequina Fragment |q The Song of Kingdoms/Search the Tomb of the Serpents
+step
+goto 07.56,39.41
+talk Rajhin's Shadow |q The Song of Kingdoms/Talk to Rajhin's Shadow
+step
+goto 08.09,,39.41
+'Take Anequina Fragment |q The Song of Kingdoms/Take the Missing Piece
+step
+goto 12.11,36.33
+'Use Skyshard |achieve 2461/18
+step
+goto 31.13,31.36
+'Search Akaviri Chest |q Strange Messengers/.*Gather Akaviri Relics.* |count 2
+step
+goto 36.86,29.04
+'Search Akaviri Chest |q Strange Messengers/.*Gather Akaviri Relics.* |count 3
+step
+goto 50.80,29.61 |achieve 2399
+step
+goto 
+kill Gornikaus Oxtooth
+'Explore Tomb of the Serpents |achieve 2399
+step
+goto 50.34,82.73
+|tip Drop down
+'Open Elsweyr |q Strange Messengers/Talk to Kiseravi
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 61.43,23.77
+talk Kiseravi
+turnin Strange Messengers
+step
+goto 60.81,28.40 |q A Rage of Dragons/Find the Defense Force Outpost
+step
+goto 51.69,24.36 |q A Rage of Dragons/Find the Defense Force Outpost
+step
+goto 51.04,26.30
+'Find the Defense Force Outpost |q A Rage of Dragons/Find the Defense Force Outpost
+step
+goto 49.82,26.41
+'Survive the Dragon Attack |q A Rage of Dragons/Survive the Dragon Attack
+step
+goto 49.82,26.41
+talk Abnur Tharn |q A Rage of Dragons/Talk to Abnur Tharn
+step
+goto 49.83,26.61
+talk Khamira |q A Rage of Dragons/Talk to Khamira
+step
+goto 49.60,28.51
+'Search Mail Sack |q A Rage of Dragons/.*Recover Military Documents.* |count 1
+step
+goto 50.39,28.05
+'Search Mail Sack |q A Rage of Dragons/.*Recover Military Documents.* |count 2
+step
+goto 50.92,30.02
+'Search Mail Sack |q A Rage of Dragons/.*Recover Military Documents.* |count 3
+step
+goto 51.83,29.27 |q A Rage of Dragons/.*Recover Military Documents.* |count 4
+step
+goto 51.97,28.82
+'Search Mail Sack |q A Rage of Dragons/.*Recover Military Documents.* |count 
+step
+goto 52.86,28.72 |q A Rage of Dragons/Find Captain Nala-do
+step
+goto 51.82,29.36 |q A Rage of Dragons/Find Captain Nala-do
+step
+goto 52.24,29.94
+'Find Captain Nala-do |q A Rage of Dragons/Find Captain Nala-do
+step
+goto 52.24,29.94
+talk Captain Nala-do |q A Rage of Dragons/Talk to Captain Nala-do
+step
+goto 51.18,30.53 |q A Rage of Dragons/Talk to Abnur Tharn
+step
+goto 48.10,30.82
+talk Abnur Tharn |q A Rage of Dragons/Talk to Abnur Tharn
+step
+goto 42.50,28.60 |q The Riverhold Abduction/Talk to Ishu
+step
+goto 40.86,25.98
+wayshrine Star Haven
+step
+goto elsweyr_base 42.20,25.25
+talk Inalzin
+accept An Animal's Grim Abode
+step
+goto 40.83,22.33
+talk Narama-ko |q An Animal's Grim Abode/Talk to Narama-ko
+step
+goto 40.48,22.47
+'Open Abode of Ignominy |q An Animal's Grim Abode/.*Find Memory Stones.* |count 1
+|tip Manually skip to the next step.
+step
+goto abodeofignominy_base 68.71,39.18 |q An Animal's Grim Abode/.*Find Memory Stones.* |count 1
+step
+goto 67.84,72.13 |q An Animal's Grim Abode/.*Find Memory Stones.* |count 1
+step
+goto 74.85,78.63
+'Use Skyshard |achieve 2461/15
+step
+goto 75.20,80.66
+'Take Memory Stone |q An Animal's Grim Abode/.*Find Memory Stones.* |count 1
+step
+goto 59.52,76.25 |q An Animal's Grim Abode/.*Find Memory Stones.* |count 2
+step
+goto 34.34,75.41 |q An Animal's Grim Abode/.*Find Memory Stones.* |count 2
+step
+goto 17.94,75.20
+kill Zaorir and Sugarsnout
+'Explore Abod of Ignominy |achieve 2396
+step
+goto 12.54,75.49
+'Examine Marzula-jo's Notes |q An Animal's Grim Abode/Find Marzula-jo's Notes
+step
+goto 31.86,23.69
+'Take Memory Stone |q An Animal's Grim Abode/.*Find Memory Stones.* |count 3
+step
+goto 39.18,14.84 |q An Animal's Grim Abode/.*Find Memory Stones.* |count 4
+step
+goto 61.54,13.02
+'Take Memory Stone |q An Animal's Grim Abode/.*Find Memory Stones.* |count 4
+step
+goto 45.83,15.79 |q An Animal's Grim Abode/Talk to Narama-ko
+step
+goto 51.54,30.91 |q An Animal's Grim Abode/Talk to Narama-ko
+step
+goto 65.89,31.01 |q An Animal's Grim Abode/Talk to Narama-ko
+step
+goto 66.45,38.61 |q An Animal's Grim Abode/Talk to Narama-ko
+step
+goto 91.58,38.46
+'Open Elsweyr |q An Animal's Grim Abode/Talk to Narama-ko
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 40.75,22.33
+talk Narama-ko
+turnin An Animal's Grim Abode
+step
+'Use Star Haven Wayshrine
+'Travel to _Riverhold_ in Northern Elsweyr |q The Riverhold Abduction/Talk to Ishu
+step
+goto 50.16,19.74 |q The Riverhold Abduction/Talk to Ishu
+step
+goto riverholdcity_base 44.66,68.13
+'Climb Ishu's House |q The Riverhold Abduction/Talk to Ishu
+|tip Manually skip to the next step.
+step
+goto 42.87,70.51
+talk Ishu |q The Riverhold Abduction/Talk to Ishu
+step
+goto 60.75,53.76
+'Open Banished Regrets Inn |q The Riverhold Abduction/Meet Mizzik in the Banished Regrets
+|tip Manually skip to the next step.
+step
+goto 62.90,48.46
+|tip Go up the stairs.
+'Meet Mizzik in the Banished Regrets |q The Riverhold Abduction/Meet Mizzik in the Banished Regrets
+step
+goto 62.90,48.46
+talk Rideza |q The Riverhold Abduction/Talk to Rideza
+step
+goto 63.01,48.03
+talk Mizzik Thunderboots |q The Riverhold Abduction/Talk to Mizzik
+step
+goto 59.38,53.87
+|tip Go down the stairs.
+'Open Riverhold |q The Riverhold Abduction/Track Rideza
+|tip Manually skip to the next step.
+step
+goto 73.36,54.35 |q The Riverhold Abduction/Track Rideza |tip Behind building.
+step
+goto 73.36,54.35
+'Open Cellar |q The Riverhold Abduction/Enter the Smuggler's Lair |future
+|tip Manually skip to the next step.
+step
+goto Smuggler's Hideout 61.34,85.67 |q The Riverhold Abduction/Search Smuggler's Lair for Rideza
+step
+goto 47.26,46.38
+kill Rideza's Bodyguards |q The Riverhold Abduction/Kill Rideza's Bodyguards
+step
+goto 54.84,52.43 |q The Riverhold Abduction/Confront Rideza
+step
+goto 45.78,34.31 |q The Riverhold Abduction/Confront Rideza |tip Go up the ramp.
+step
+goto 43.02,15.03
+'Confront Rideza |q The Riverhold Abduction/Confront Rideza
+step
+goto 44.01,13.63
+talk Mizzik Thunderboots |q The Riverhold Abduction/Talk to Mizzik
+step
+goto 43.27,10.58
+'Open Riverhold |q The Riverhold Abduction/Meet Mizzik in the Banished Regrets
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 44.70,13.20 |q The Song of Kingdoms/Return to the House of Histories |tip Drop down.
+step
+goto 44.67,15.67 |q The Song of Kingdoms/Return to the House of Histories
+step
+goto riverholdcity_base 33.89,51.14
+'Open House of Histories |q The Song of Kingdoms/Return to the House of Histories
+|tip Manually skip to the next step.
+step
+goto 36.85,52.18
+|tip Go down the stairs.
+'Return to the House of Histories |q The Song of Kingdoms/Return to the House of Histories
+step
+goto 36.85,52.18
+talk Izanji |q The Song of Kingdoms/Talk to Izanji
+step
+goto 34.81,51.82
+'Place Rithana-di-Renada |q The Song of Kingdoms/Place the Piece in the Mural Frame
+step
+goto 39.12,51.72
+talk Iraya
+turnin The Song of Kingdoms
+step
+goto 35.62,51.62
+|tip Go up the stairs.
+'Open Riverhold |q The Riverhold Abduction/Meet Mizzik in the Banished Regrets
+|tip Manually skip to the next step.
+step
+goto 60.75,53.51
+'Open Banished Regrets Inn |q The Riverhold Abduction/Meet Mizzik in the Banished Regrets
+step
+goto 64.06,49.73
+|tip Go up the stairs.
+'Meet Mizzik in the Banished Regrets |q The Riverhold Abduction/Meet Mizzik in the Banished Regrets
+step
+goto 64.06,49.73
+talk Mizzik Thunderboots
+turnin The Riverhold Abduction
+step
+'Open Northern Elsweyr Map
+'Travel to Star Haven in Northern Elsweyr |q Sweet Rotmeth Brew |future
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 39.78,28.83
+'Examine Melleron's Journal
+accept Sweet Rotmeth Brew
+step
+goto 39.74,28.83
+'Take Keg of Sweet Rotmeth |q Sweet Rotmeth Brew/Take Keg of Sweet Rotmeth
+step
+goto 40.40,32.75
+talk Elhalem
+accept Preserving the Prowl
+step
+goto 43.15,35.00
+talk Numaia |q Preserving the Prowl/Talk to Numaia
+step
+goto 40.29,32.30 |q Preserving the Prowl/.*Destroy Poacher Camps.* |count 1
+step
+goto 39.73,32.16
+'Destroy Poacher Supplies |q Preserving the Prowl/.*Destroy Poacher Camps.* |count 1
+|tip Manually skip to the next step.
+step
+goto 39.57,32.02
+'Burn Poacher Tent |q Preserving the Prowl/.*Destroy Poacher Camps.* |count 1
+|tip Manually skip to the next step.
+step
+goto 39.48,32.06
+'Destroy Poacher Supplies |q Preserving the Prowl/.*Destroy Poacher Camps.* |count 1
+step
+goto 37.07,32.83
+'Destroy Poacher Supplies |q Preserving the Prowl/.*Destroy Poacher Camps.* |count 2
+|tip Manually skip to the next step.
+step
+goto 36.95,32.78
+'Burn Poacher Tent |q Preserving the Prowl/.*Destroy Poacher Camps.* |count 2
+|tip Manually skip to the next step.
+step
+goto 36.90,32.81
+'Destroy Poacher Supplies |q Preserving the Prowl/.*Destroy Poacher Camps.* |count 2
+step
+goto 35.52,35.06
+'Destroy Poacher Supplies |q Preserving the Prowl/.*Destroy Poacher Camps.* |count 3
+|tip Manually skip to the next step.
+step
+goto 35.50,35.28
+'Burn Poacher Tent |q Preserving the Prowl/.*Destroy Poacher Camps.* |count 3
+|tip Manually skip to the next step.
+step
+goto 35.56,35.39
+'Destroy Poacher Supplies |q Preserving the Prowl/.*Destroy Poacher Camps.* |count 3
+step
+goto 37.59,36.10 |q Preserving the Prowl/Recover the Training Whistle
+step
+goto 38.50,36.06
+'Search Stolen Supplies |q Preserving the Prowl/Recover the Training Whistle
+step
+goto 42.52,34.67
+talk Numaia |q Preserving the Prowl/Talk to Numaia
+step
+goto 35.00,35.47
+'Use Skyshard |achieve 2461/2
+step
+goto 33.79,36.30
+'Use Numaia's Training Whistle |q Preserving the Prowl/Rescue Honeydew
+step
+goto 34.37,37.82
+'Unlock Cage |q Preserving the Prowl/Rescue Lavender
+step
+goto 33.69,37.27
+'Use Numaia's Training Whistle |q Preserving the Prowl/Enter Bonechime Outpost
+|tip Manually skip to the next step.
+step
+goto 33.80,37.37
+'Open Bonechime Outpost |q Preserving the Prowl/Enter Bonechime Outpost
+|tip Manually skip to the next step.
+step
+goto 32.93,37.58 |q Preserving the Prowl/Rescue Sugar-Belly
+step
+goto 32.73,38.60 |q Preserving the Prowl/Rescue Sugar-Belly
+step
+goto 32.89,38.03
+'Unlock Cage |q Preserving the Prowl/Rescue Sugar-Belly
+step
+goto 32.77,37.87
+'Use Numaia's Training Whistle |q Preserving the Prowl/Whistle for Marmalade
+step
+goto 32.65,37.89
+'Take Rahti's Command Post Key |q Preserving the Prowl/Aquire the Key
+step
+goto 32.54,37.90
+'Open Rahti's Command Post |q Preserving the Prowl/Search for Milksop
+|tip Manually skip to the next step.
+step
+goto 31.97,37.02 |q Preserving the Prowl/Search for Milksop
+step
+goto 31.53,37.49 |q Preserving the Prowl/Search for Milksop
+step
+goto 32.53,38.84
+'Unlock Cage |q Preserving the Prowl/Rescue Milksop |future
+step
+goto 31.76,39.14 |q Preserving the Prowl/Talk to Numaia
+step
+goto 32.09,39.83 |q Preserving the Prowl/Talk to Numaia
+step
+goto 42.99,34.86
+talk Numaia
+turnin Preserving the Prowl
+step
+goto 34.27,39.41 |q Hunting the Hunters |future
+step
+goto 31.64,45.21
+talk Sarazi
+accept Hunting the Hunters
+step
+goto 28.12,44.56 |q Hunting the Hunters/Kill Quillmane
+step
+goto predatorrise_base 33.01,68.64
+'Open Predator Mesa |q Hunting the Hunters/Kill Quillmane
+|tip Manually skip to the next step.
+step
+goto 55.73,66.48 |q Hunting the Hunters/Kill Quillmane
+step
+goto 61.69,55.36 |q Hunting the Hunters/Kill Quillmane
+step
+goto 73.22,68.12
+kill Quillmane |q Hunting the Hunters/Kill Quillmane
+step
+goto 81.09,36.12
+kill Split-Ear Tahuda |q Hunting the Hunters/Kill Split-Ear Tahuda
+step
+goto 51.84,22.85 |achieve 2461/14
+step
+goto 62.85,26.94
+'Use Skyshard |achieve 2461/14
+step
+goto 56.95,35.09
+kill Zahalar Oak-Eye
+'Explore Predator Mesa |achieve 2397
+step
+goto 44.59,38.59 |q Hunting the Hunters/Kill Kuzo the Thunderclaw |tip Drop down.
+step
+goto 26.97,36.56 |q Hunting the Hunters/Kill Kuzo the Thunderclaw
+step
+goto 27.66,30.14
+kill Kuzo the Thunderclaw |q Hunting the Hunters/Kill Kuzo the Thunderclaw
+step
+goto 40.67,38.50 |q Hunting the Hunters/Talk to Sarazi
+step
+goto 45.61,39.67 |q Hunting the Hunters/Talk to Sarazi
+step
+goto 45.17,63.56 |q Hunting the Hunters/Talk to Sarazi
+step
+goto 40.22,63.74
+talk Sarazi
+turnin Hunting the Hunters
+step
+goto 33.10,68.58
+'Open Elsweyr |q Thick as Thieves |future
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 28.36,45.29 |q Thick as Thieves |future |tip Drop down.
+step
+goto 33.53,49.34
+|tip Watch for the world boss.
+goto 33.53,49.34
+talk Isadati
+accept Thick as Thieves
+step
+goto stitches_base 50.35,16.23
+talk Tasnasi |q Thick as Thieves/Talk to Tasnasi
+step
+goto 56.75,56.58
+talk Rigurt the Brash |q Cross-cultural Confusion/Talk to Rigurt the Brash
+step
+goto 46.94,59.30
+'Take Oderous Bucket |q Thick as Thieves/.*Recruit Tasnasi's Crew.* Count 1
+|tip Manually skip to the next step.
+step
+goto 45.88,59.64
+'Douse Sereyne |q Thick as Thieves/.*Recruit Tasnasi's Crew.* Count 1
+|tip Manually skip to the next step.
+step
+goto 46.15,59.64
+talk Sereyne |q Thick as Thieves/.*Recruit Tasnasi's Crew.* Count 1
+|tip Manually skip to the next step.
+step
+goto 59.51,53.28
+'Open Goiter's Gulp |q Thick as Thieves/.*Recruit Tasnasi's Crew.* Count 1
+|tip Manually skip to the next step.
+step
+goto 61.23,53.90
+talk Iulius Averno |q Thick as Thieves/.*Recruit Tasnasi's Crew.* Count 1
+|tip Manually skip to the next step.
+step
+goto 59.96,54.79
+'Open Jewelry Box |q Thick as Thieves/.*Recruit Tasnasi's Crew.* Count 1
+|tip Manually skip to the next step.
+step
+goto 45.98,59.50
+talk Sereyne |q Thick as Thieves/.*Recruit Tasnasi's Crew.* Count 1
+step
+goto 49.25,61.51 |q Beware the Purring Liar |future
+step
+goto 48.54,75.29 |q Beware the Purring Liar |future
+step
+goto 22.44,63.30
+talk Humble Zaham
+accept Beware the Purring Liar
+step
+goto 17.04,58.15
+talk Nazdar |q Thick as Thieves/.*Recruit Tasnasi's Crew.* Count 2
+step
+goto elsweyr_base 32.77,51.63 |q Thick as Thieves/.*Recruit Tasnasi's Crew.* Count 2
+step
+goto stitches_base 24.08,42.41
+talk Melleron
+turnin Sweet Rotmeth Brew
+step
+goto 52.58,35.75
+'Unlock Jubani's Junkshop |q Thick as Thieves/.*Recruit Tasnasi's Crew.* Count 2
+|tip Manually skip to the next step.
+step
+goto 55.12,34.51
+|tip Go down the stairs.
+kill Jubani's Tough
+'Untie Vole |q Thick as Thieves/.*Recruit Tasnasi's Crew.* Count 2
+|tip Manually skip to the next step.
+step
+goto 51.06,35.99
+'Open Elsweyr |q Thick as Thieves/.*Recruit Tasnasi's Crew.* Count 2
+|tip Manually skip to the next step.
+step
+goto 58.41,35.66
+talk Vole |q Thick as Thieves/.*Recruit Tasnasi's Crew.* Count 2
+step
+goto 62.03,48.47
+|tip Carefully drop down.
+'Use Skyshard |achieve 2461/5
+step
+goto 75.60,67.49 |q Beware the PUrring Liar/Steal the Goiter's Gulp Ledger
+step
+goto 40.30,54.39 |q Beware the PUrring Liar/Steal the Goiter's Gulp Ledger |tip Follow path to the top.
+step
+goto 48.62,73.32 |q Beware the PUrring Liar/Steal the Goiter's Gulp Ledger
+step
+goto 59.93,54.28
+'Unlock Goiter's Gulp Ledger |q Beware the PUrring Liar/Steal the Goiter's Gulp Ledger
+|tip Manually skip to the next step.
+step
+goto 56.16,60.30
+'Steal from Desk |achieve 1212
+step
+goto 56.16,60.30
+'Steal the Goiter's Gulp Ledger |q Beware the PUrring Liar/Steal the Goiter's Gulp Ledger
+step
+goto 59.77,54.17
+'Open Elsweyr |q A Rage of Dragons/Find the Source of Undead
+|tip Manually skip to the next step.
+step
+goto 50.62,52.90 |q A Rage of Dragons/Find the Source of Undead
+step
+goto elsweyr_base 37.29,47.89 |q A Rage of Dragons/Find the Source of Undead
+step
+goto 28.33,49.71 |q A Rage of Dragons/Find the Source of Undead
+step
+goto 25.02,50.11
+'Find the Source of Undead |q A Rage of Dragons/Find the Source of Undead
+step
+goto 25.02,50.11
+talk Khamira |q A Rage of Dragons/Talk to Khamira
+step
+goto 24.85,50.14
+'Open Sleepy Senche Mine |q A Rage of Dragons/Enter the Mine
+|tip Manually skip to the next step.
+step
+goto mulaamnirslair_base 48.46,18.90 |q A Rage of Dragons/Find the Source of Undead
+step
+goto 62.02,33.37 |q A Rage of Dragons/Find the Source of Undead
+step
+goto 28.58,49.65 |q A Rage of Dragons/Find the Source of Undead
+step
+goto 33.34,70.60 |q A Rage of Dragons/Find the Source of Undead
+step
+goto 63.66,70.41 |q A Rage of Dragons/Find the Source of Undead
+step
+goto 73.16,58.53 |q A Rage of Dragons/Find the Source of Undead |future
+step
+goto 73.92,54.02
+'kill Gravestalker Gemmia |q A Rage of Dragons/Kill Gravestalker Gemmia
+step
+goto 63.51,53.56
+'Enter Elsweyr |q A Rage of Dragons/Follow the Dragon |future
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 23.11,49.86
+talk Mulaamnir |q A Rage of Dragons/Talk to Mulaamnir
+step
+goto 22.81,50.15
+talk Khamira |q A Rage of Dragons/Talk to Khamira
+step
+goto 25.68,49.18 |q Thick as Thieves/.*Recruit Tasnasi's Crew.* |count 3
+step
+goto 26.91,52.94 |q Thick as Thieves/.*Recruit Tasnasi's Crew.* |count 3
+step
+goto 27.95,55.98 |q Thick as Thieves/.*Recruit Tasnasi's Crew.* |count 3 |tip Follow the path down.
+step
+goto 28.51,54.85
+'Take Nazdar's Lute |q Thick as Thieves/.*Recruit Tasnasi's Crew.* |count 3
+|tip Manually skip to the next step.
+step
+'Open Northern Elsweyr Map
+'Travel to _Riverhold_ in Northern Elsweyr |q A Rage of Dragons/Return to Riverhold
+|tip Manually skip to the next step.
+step
+goto 50.17,19.74 |q A Rage of Dragons/Return to Riverhold
+step
+goto riverholdcity_base 54.27,68.22
+'Return to Riverhold |q A Rage of Dragons/Return to Riverhold
+step
+goto 54.27,68.22
+talk Cadwell |q A Rage of Dragons/Talk to Cadwell
+step
+goto 56.70,69.07
+'Open K'har Zhab Hall |q A Rage of Dragons/Talk to Abnur Tharn
+|tip Manually skip to the next step.
+step
+goto 54.75,70.85
 talk Abnur Tharn
-|tip Manually skip to the next step.
+turnin A Rage of Dragons
+accept The Usurper Queen
 step
-goto elsweyr_base 65.60,25.31
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 65.47,24.94
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 66.24,25.32
-'Press _E_ to Examine _Captain Saulinia's Instructions_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 65.47,24.94
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 64.03,24.87
-'Press _E_ to Search _Lieutenant Talia's Lockbox_
-'Take _Cellar Key_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 66.71,24.56
-'Press _E_ to Open _Sandswirl Manor Cellar_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 66.68,24.76
-talk Abnur Tharn
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 65.64,24.53
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 64.88,23.70
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 64.88,23.55
-'Press _E_ to Climb _Sandswirl Manor_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 65.64,23.84
-talk Prefect Calo
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 65.56,23.79
-'Make you way upstairs to the second floor
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 65.01,23.75
-'Make you way over to here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 65.00,23.57
-'Jump down to the floor below (you may need to fight a couple of NPCs)
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 65.21,23.55
-click Manor Main Hall
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 65.18,22.64
-'Press _E_ to Examine _Dragonguard Report_
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 65.22,22.87
-talk Prefect Calo
-|tip Manually skip to the next step.
-step
-'Open your map.
-'Travel to _The Stitches_ Wayshrine
-|tip Manually skip to the next step.
-step
-goto stitches_base 46.84,28.43
-'Cross the bridge from here
-|tip Manually skip to the next step.
-step
-goto stitches_base 42.48,58.41
-talk Zamarak
-|tip Manually skip to the next step.
-step
-goto stitches_base 47.69,55.45
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto stitches_base 35.08,55.95
-'Cross the bridge from here
-|tip Manually skip to the next step.
-step
-goto stitches_base 13.30,58.34
-'Continue to this spot
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 31.39,53.04
-'Continue to this spot to trigger the next step in The Final Order
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 31.16,54.65
-'Continue to this spot to trigger the next step in The Final Order
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 31.80,55.11
-'Continue through this ravine
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 32.34,56.09
-click Dov-Vahl Shrine
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 61.66,17.18
-'Press _E_ to Examine _Stone Pedestal_
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 61.30,29.29
-'At this spot, jump over the plate to avoid the fire trap
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 62.03,31.28
-'At this spot, roll forever to avoid the arrow traps
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 63.65,36.17
-'At this spot, jump over the plate to avoid the fire trap
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 63.83,37.79
-'At this spot, jump over the plates to avoid the arrow traps
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 62.03,42.68
-'Quickly roll forward to avoid the spike trap. You can listen to the order the traps happens and time your roll accordingly.
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 64.74,44.67
-'Quickly roll South to avoid the spike trap.
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 64.56,46.84
-'At this spot, jump over the plate to avoid the fire trap
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 64.01,48.28
-'Quickly roll South to avoid the spike trap.
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 63.65,49.91
-'Roll East to avoid the spike trap. Stop at the second trap and wait for the third trap to end. Roll forward and make your way into the southern room.
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 64.20,54.07
-'These traps are tricky, but you'll need to quickly roll forward as the second in each set lowers.
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 66.73,61.12
-'As before these traps are tricky, but observe the pattern and proceed accordingly.
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 66.73,61.12
-'As before, observe the trap's pattern and proceed accordingly.
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 61.66,65.64
-'Enter the opening here
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 49.19,84.63
-'Enter the maze here
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 47.56,87.34
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 45.03,86.08
-'At this spot, jump over the plate to avoid the fire trap
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 43.94,84.99
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 41.77,79.93
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 37.79,82.64
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 37.25,78.66
-'Run up both flight of stairs from here
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 36.65,62.21
-click Training Chamber
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 30.53,55.05
-kill Captain Saulinia
-|tip Saulinia is a pretty tough fight. She has both melee and AOE telegraphs so you'll want to keep health potions on the ready. If you have a health augmenting drink, use it. She also has teleporting abilities to close the distance pretty quickly. The best tactic is to avoid a direct assault and instead rely on both the trap plates as well as Zamarak to tank her. He will, on occasion, send out green telegraphs that heal if you stand in them.
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 30.38,51.54
-click Dov-Vahl Shrine
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 42.68,33.09
-talk Dragonguard Orland
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 53.98,22.78
-'Drop down from here
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 60.76,17.54
-talk Prefect Calo
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 61.66,17.18
-'Press _E_ to Insert Ring _Stone Pedastal_
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 63.47,16.64
-click Dov-Vahl Sanctuary
-|tip Manually skip to the next step.
-step
-goto dragonguardoutpost_base 90.78,15.19
-'Press _E_ to Take _Anequina Dragonhorn_
-'Take _Anequina Combat Dragonhorn_
-|tip Manually skip to the next step.
-step
-'Open your map. Right click until you see the Northern Elsweyr map.
-'Travel to the _Rimmen_ Wayshrine
-|tip Manually skip to the next step.
-step
-goto rimmen_base 36.94,51.38
-'Run upstairs from here
-|tip Manually skip to the next step.
-step
-goto rimmen_base 45.99,48.46
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto rimmen_base 52.29,34.71
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto rimmen_base 61.55,41.80
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto rimmen_base 72.38,39.35
-talk Cadwell
-|tip Manually skip to the next step.
-step
-goto rimmen_base 73.58,38.36
-click Rimmen Palace
-|tip Manually skip to the next step.
-step
-goto rimmen_base 77.61,36.85
-click Rimmen Palace Throne Room
-|tip Manually skip to the next step.
-step
-goto rimmen_base 77.61,36.85
-talk Khamira
-accept Cadwell the Betrayer
-step
-goto rimmen_base 77.61,36.85
-click Rimmen Palace
-|tip Manually skip to the next step.
-step
-goto rimmen_base 77.61,36.85
-'Follow this passage East
-|tip Manually skip to the next step.
-step
-goto rimmen_base 77.61,36.85
-talk Cadwell
-|tip Manually skip to the next step.
-step
-goto rimmen_base 77.61,36.85
-talk Abnur Tharn
-|tip Manually skip to the next step.
-step
-'Open your map. Right click until you see the Northern Elsweyr map.
-'Travel to _The Stitches_ wayshrine
-|tip Manually skip to the next step.
-step
-goto stitches_base 46.84,28.43
-'Cross the bridge from here
-|tip Manually skip to the next step.
-step
-goto stitches_base 56.55,59.23
-'Slowly and carefully drop down to the wooden platform below
-|tip Manually skip to the next step.
-step
-goto stitches_base 77.24,51.50
-'Continue to this spot
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 42.05,51.47
-talk Abnur Tharn
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 42.17,51.50
-click Sepulcher of Mischance
-|tip Manually skip to the next step.
-step
-goto SepulcherofMischance00_base 32.19,50.68
-talk Cadwell
-|tip Manually skip to the next step.
-step
-goto SepulcherofMischance00_base 21.23,57.53
-click Lower Crypts
-|tip Manually skip to the next step.
-step
-goto SepulcherofMischance01_base 52.80,64.65
-kill Necromancer Otho
-|tip Simple fight. AOE Otho's minions as needed, but focus on killing Otho.
-|tip Manually skip to the next step.
-step
-goto SepulcherofMischance01_base 52.00,63.00
-'Press _E_ to Dispel _Cadwell's Stolen Energy_
-|tip Manually skip to the next step.
-step
-goto SepulcherofMischance01_base 69.00,66.00
-click Crpyt Library
-|tip Manually skip to the next step.
-step
-goto SepulcherofMischance02_base 52.53,67.68
-kill Skullguard Marama
-|tip Simple fight. When Marama's summons bone spires move away before they explode.
-|tip Manually skip to the next step.
-step
-goto SepulcherofMischance02_base 52.53,67.68
-'Press _E_ to Dispel _Cadwell's Stolen Energy_
-|tip Manually skip to the next step.
-step
-goto SepulcherofMischance02_base 53.54,86.87
-click Funerary Chamber
-|tip Manually skip to the next step.
-step
-goto SepulcherofMischance03_base 68.38,45.23
-kill Gravecaller Duvia
-kill Skullguard Grundu
-|tip Focus on Duvia and interrupt her when she heals Grundu. Ignore the minions as well. They will die when Duvia does. If you're using AOE attacks, Grundu should have lost some health when Duvia dies. When he summons the bone spires move away before they explode.
-|tip Manually skip to the next step.
-step
-goto SepulcherofMischance03_base 67.68,46.46
-'Press _E_ to Dispel _Cadwell's Stolen Energy_
-|tip Manually skip to the next step.
-step
-goto SepulcherofMischance03_base 69.70,61.62
-click Necromancer Workshop
-|tip Manually skip to the next step.
-step
-goto SepulcherofMischance04_base 40.40,51.52
+goto 54.13,71.06
 talk Captain Nala-do
+talk Lord Gharesh-ri |q The Usurper Queen/Talk to Lord Gharesh-ri
 |tip Manually skip to the next step.
 step
-goto SepulcherofMischance04_base 32.32,68.69
-click Zumog Phoom's Lair
+'Open Northern Elsweyr Map
+'Travel to _Rimmen_ in Northern Elsweyr |q The Usurper Queen/Meet Abnur Tharn in Rimmen
 |tip Manually skip to the next step.
 step
-goto SepulcherofMischance00B_base 53.62,50.61
-kill Zumog Phoom
-|tip As one of the seminal bosses of the expansion Zumog is a challenge but not difficult. During the first phase always fight him and use AOE attacks to hit him and his minions. Avoid the bone spires that spawn. During phase one, he'll summon a bone dragon that will telegraph a massive area flame blast that is easy to avoid. When Zumog reaches 30-40% health, he will transform into a bone colossus with massive frontal telegraphing attacks. The best tactic during this phase is to stay behind the giant. Rinse and repeat, and Zumog will go down.
+goto rimmen_base 25.57,59.76
+talk Abnur Tharn |q The Usurper Queen/Meet Abnur Tharn in Rimmen
+'Tell him _Let's skip the tour and get on with the parley._
+step
+goto 43.17,58.94 |q The Usurper Queen/Go to Euraxia's Throne Room
+step
+goto 52.21,34.23 |q The Usurper Queen/Go to Euraxia's Throne Room
+step
+goto 62.51,43.13 |q The Usurper Queen/Go to Euraxia's Throne Room
+step
+goto 73.65,38.38
+'Open Rimmen Palace |q The Usurper Queen/Go to Euraxia's Throne Room
 |tip Manually skip to the next step.
 step
-goto SepulcherofMischance00B_base 52.05,50.00
-talk Cadwell
+goto 76.45,37.24
+talk Zunmog Phoom |q The Usurper Queen/Talk to Zunmog Phoom
+step
+goto 76.52,37.21
+'Open Rimmen Palace Throne Room |q The Usurper Queen/Enter Rimmen Palace Throne Room
 |tip Manually skip to the next step.
 step
-goto SepulcherofMischance00B_base 52.05,50.00
-'Press _E_ to Use _Portal to Rimmen_
+goto 77.49,36.82
+'Wait to Be Introduced |q The Usurper Queen/Wait to Be Introduced |future
+step
+goto 77.81,36.70
+talk Euraxia Tharn |q The Usurper Queen/Talk to Euraxia Tharn
+'Tell her [Persuade] There's no need to play games with me. Mulaamnir admitted to your alliance when we spoke.
+'Tell her [Persuade] You're no fool, Queen Euraxia. You know Mulaamnir will destroy you once you've served your purpose.
+'Tell her [Persuade] Think about it! You're doing exactly what Mulaamnir wants you to do!
+step
+goto 77.81,36.70
+'Listen to Zumog Phoom |q The Usurper Queen/Listen to Zumog Phoom
+step
+goto 77.81,36.70
+'Defend Yourself |q The Usurper Queen/Defend Yourself
+step
+goto rimmensewer_base53.67,95.36
+talk Abnur Tharn |q The Usurper Queen/Talk to Abnur Tharn
+step
+goto 42.15,88.11 |q The Usurper Queen/Escort Tharn Out of the Sewers
+step
+goto 43.66,70.65 |q The Usurper Queen/Escort Tharn Out of the Sewers
+step
+goto 56.15,73.39 |q The Usurper Queen/Escort Tharn Out of the Sewers
+step
+goto 40.77,52.61 |q The Usurper Queen/Escort Tharn Out of the Sewers
+step
+goto 39.57,03.49
+'Open Rimmen |q The Usurper Queen/Escort Tharn Out of the Sewers
 |tip Manually skip to the next step.
 step
-goto rimmen_base 77.61,36.85
-click Rimmen Palace Throne Room
+goto rimmen_base 66.01,28.77
+talk Abnur Tharn |q The Usurper Queen/Talk to Abnur Tharn
+step
+goto 54.92,35.47 |q Beware the Purring Liar/Steal the Golden Cat Idol
+step
+goto 29.85,53.04 |q Beware the Purring Liar/Steal the Golden Cat Idol
+step
+goto 29.99,31.74
+'Unlock Feziri's House |q Beware the Purring Liar/Steal the Golden Cat Idol
 |tip Manually skip to the next step.
 step
-goto rimmen_base 77.61,36.85
-talk Khamira
+goto 25.63,30.69
+|tip Go up the stairs.
+'Steal Moon-Phase Decorations Storage |q Beware the Purring Liar/Steal the Golden Cat Idol
+step
+'Open Northern Elsweyr Map
+'Travel to _The Stitches_ in Northern Elsweyr |q The Usurper Queen/Go to Desert Wind Adeptorium
 |tip Manually skip to the next step.
 step
-goto rimmen_base 77.61,36.85
-click Royal Study
+goto elsweyr_base 41.44,44.20 |q The Usurper Queen/Go to Desert Wind Adeptorium
+step
+goto 39.70,43.09
+'Enter Desert Wind Caverns |q The Usurper Queen/Enter the Adeptorium
+step
+goto DesertWind_Base 34.27,84.97 |achieve 2461/13
+step
+goto 29.16,68.54 |achieve 2461/13
+step
+goto 32.03,54.92 |achieve 2461/13
+step
+goto 53.96,71.99 |achieve 2461/13
+step
+goto 42.26,86.19 |achieve 2461/13
+step
+goto 37.85,84.91
+'Use Skyshard |achieve 2461/13
+step
+goto 49.30,84.40 |achieve 2398
+step
+goto 57.10,69.82 |achieve 2398
+step
+goto 65.66,21.55 |achieve 2398
+step
+goto 55.75,17.58
+kill Augurius the Mad and Tasam-ri
+'Explore Desert Wind Caverns |achieve 2398
+step
+goto 65.79,22.06 |q The Usurper Queen/Enter the Adeptorium
+step
+goto 64.19,46.99
+'Enter the Adeptorium |q The Usurper Queen/Enter the Adeptorium
+step
+goto 64.19,46.99
+talk Zamarak |q The Usurper Queen/Talk to Zamarak
+step
+goto 64.64,47.06
+'Open Desert Wind Adeptorium |q The Usurper Queen/Enter the Desert Wind Adeptorium
 |tip Manually skip to the next step.
 step
-goto rimmen_base 77.61,36.85
-talk Khamira
+goto 69.76,46.87
+'Enter the Desert Wind Adeptorium |q The Usurper Queen/Enter the Desert Wind Adeptorium
+step
+goto 81.07,46.87
+kill Lieutenant Lepida |q The Usurper Queen/Defeat Lieutenant Lepida
+step
+goto 82.93,46.80
+'Open Grand Adept Chambers |q The Usurper Queen/Talk to Lieutenant Lepida's Shade
 |tip Manually skip to the next step.
 step
-'Open your map. Right click until you see the Northern Elsweyr map.
-'Travel to _Hakoshae_ wayshrine
+goto DesertWind2_Base 38.76,49.44
+talk Lieutenant Lepida's Shade |q The Usurper Queen/Talk to Lieutenant Lepida's Shade
+step
+goto 38.76,49.44
+'Listen to Zumog Phoom |q The Usurper Queen/Listen to Zumog Phoom
+step
+goto 48.31,50.56
+talk Zamarak |q The Usurper Queen/Talk to Zamarak
+step
+'Open Norther Elsweyr Map
+'Travel to _Riverhold_ in Northern Elsweyr |q The Usurper Queen/Talk to Abnur Tharn
 |tip Manually skip to the next step.
 step
-goto elsweyr_base 69.05,46.10
-'At the fork in the road, go left from here
+goto 50.18,19.77 |q The Usurper Queen/Talk to Abnur Tharn
+step
+goto riverholdcity_base 56.79,68.94
+'Open K'har Zhab Hall |q The Usurper Queen/Talk to Abnur Tharn
 |tip Manually skip to the next step.
 step
-goto elsweyr_base 66.32,49.07
-'Run up the hill from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 63.87,48.46
-click Shadow Dance Ruins
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 63.96,48.36
-talk Khamira
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 63.90,48.22
-'Press _E_ to Use _Portal to Shadow Dance Temple_
-|tip Manually skip to the next step.
-step
-goto dancingmoon01_base 65.73,47.64
-click Shadow Dance Temple
-|tip Manually skip to the next step.
-step
-goto dancingmoon02_base 12.24,37.19
-'Press _E_ to Examine _Temple Relic_
-|tip Manually skip to the next step.
-step
-goto dancingmoon02_base 28.61,37.38
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto dancingmoon02_base 39.31,32.27
-'Follow the rock wall south from here
-|tip Manually skip to the next step.
-step
-goto dancingmoon02_base 44.41,44.61
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto dancingmoon02_base 62.24,45.47
-'Press _E_ to Activate _Temple Relic_
-|tip Manually skip to the next step.
-step
-goto dancingmoon02_base 70.42,49.33
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto dancingmoon02_base 71.10,65.61
-'Follow the rock wall Southeast from here
-|tip Manually skip to the next step.
-step
-goto dancingmoon02_base 86.22,71.29
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto dancingmoon02_base 91.62,62.43
-'Press _E_ to Activate _Temple Relic_
-|tip Manually skip to the next step.
-step
-goto dancingmoon02_base 86.42,59.73
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto dancingmoon02_base 86.61,46.05
-talk Khamira
-|tip Manually skip to the next step.
-step
-goto dancingmoon02_base 86.42,45.38
-click Vault of the Heavenly Scourge
-|tip Manually skip to the next step.
-step
-goto dancingmoon03_base 50,50
-kill Cadwell the Betrayer
-|tip Cadwell is another of Northern Elsweyr's seminal bosses and as such presents quite a challenge. You'll want to use a health-augmenting consumable before the fight and keep your health potions on the ready. Cadwell hits like a freight truck. Further, he casts an array of AOE telegraphs that spread out from his location like a pinwheel. At particular intervals, he'll cast a large AOE telegraph at your location. Standing in it will stun you and do lots of damage. However, you can easily avoid it if you listen for his "taste of oblivion" cry. In a group is the most efficient way to tackle Cadwell. However, if you're solo, ranged attacks are the best choice. The excellent news is excluding one ability in which Cadwell teleports to you most of the time he'll waste his time running around the room. So as long as you keep your distance, you can kill the ole chap. Jolly good and some such!
-|tip Manually skip to the next step.
-step
-goto dancingmoon03_base 50.12,32.85
-talk Khamira
-|tip Manually skip to the next step.
-step
-goto dancingmoon03_base 45.56,29.74
-'Press _E_ to Activate _Temple Relic_
-|tip Manually skip to the next step.
-step
-goto dancingmoon03_base 50.12,31.41
-talk Cadwell
-|tip Manually skip to the next step.
-step
-goto dancingmoon03_base 54.68,32.37
-'Press _E_ to Use _Portal to Rimmen_
-|tip Manually skip to the next step.
-step
-goto rimmen_base 77.61,36.85
-talk Khamira
-accept Jode's Core
-step
-'Open your map.
-'Travel to _Rimmen_ wayshrine
-|tip Manually skip to the next step.
-step
-goto rimmen_base 37.86,61.61
+goto 54.61,71.51
 talk Abnur Tharn
+turnin The Usurper Queen
+accept The Battle for Riverhold
+step
+goto 54.61,71.51
+talk Gharesh-ri |q The Battle for Riverhold/Talk to Gharesh-ri
+step
+goto 57.04,69.04
+'Open Riverhold |q The Battle for Riverhold/Talk to Khamira
 |tip Manually skip to the next step.
 step
-goto rimmen_base 35.77,58.57
-'Continue to here
+goto 54.42,80.01
+talk Khamira |q The Battle for Riverhold/Talk to Khamira
+step
+goto 54.42,80.01
+talk Zamarak |q The Battle for Riverhold/Talk to Zamarak
+step
+goto 37.17,48.01 |q The Battle for Riverhold/Go to the Greenleaf Farm
+step
+goto 17.47,44.43 |q The Battle for Riverhold/Go to the Greenleaf Farm
+step
+goto elsweyr_base 46.77,11.49 |q The Battle for Riverhold/Go to the Greenleaf Farm
+step
+goto 46.77,11.49
+'Open Greenleaf Farmhouse |q The Battle for Riverhold/Talk to Tsazii
 |tip Manually skip to the next step.
 step
-goto rimmen_base 39.99,56.91
-talk Cadwell
+goto 46.78,11.61
+talk Tsazii |q The Battle for Riverhold/Talk to Tsazii
+step
+goto 46.73,12.05 |q The Battle for Riverhold/Find Tsazii's Brother and Mate
+step
+goto 42.15,11.92
+talk Kinaro |q The Battle for Riverhold/Find Tsazii's Brother and Mate
+step
+goto 46.77,11.49
+'Open Greenleaf Farmhouse |q The Battle for Riverhold/Talk to Tsazii
 |tip Manually skip to the next step.
 step
-goto rimmen_base 38.52,52.97
-'Continue to here
+goto 46.78,11.61
+talk Tsazii |q The Battle for Riverhold/Talk to Tsazii
+step
+goto 46.79,11.69
+talk Khamira |q The Battle for Riverhold/Talk to Khamira
+step
+goto 46.86,12.13 |q The Battle for Riverhold/Disrupt the North Supply Camp
+step
+goto 42.55,14.84
+'Startle the Horses |q The Battle for Riverhold/Disrupt the North Supply Camp
 |tip Manually skip to the next step.
 step
-goto rimmen_base 29.00,49.55
-'Continue to here
+goto 42.53,15.02
+'Burn Euraxia Supply Cart |q The Battle for Riverhold/Disrupt the North Supply Camp
 |tip Manually skip to the next step.
 step
-goto rimmen_base 24.44,43.49
-talk Prefect Calo
+goto 42.27,15.10
+'Burn Euraxia Supply Cart |q The Battle for Riverhold/Disrupt the North Supply Camp
+step
+goto 43.75,17.72
+'Startle the Horses |q The Battle for Riverhold/Disrupt the South Supply Camp
 |tip Manually skip to the next step.
 step
-goto rimmen_base 28.76,45.59
-'Continue to here
+goto 43.62,17.82
+'Burn Euraxia Supply Cart |q The Battle for Riverhold/Disrupt the South Supply Camp
 |tip Manually skip to the next step.
 step
-goto rimmen_base 37.10,51.79
-'Continue to here
+goto 43.85,18.13
+'Burn Euraxia Supply Cart |q The Battle for Riverhold/Disrupt the South Supply Camp
+step
+goto 45.97,18.32
+talk Captain Nala-do |q The Battle for Riverhold/Talk to Captain Nala-do
+step
+goto 49.29,22.73
+talk Cadwell |q The Battle for Riverhold/Help Cadwell
+step
+goto 49.61,23.32
+'Arm Cadwell's Complex Trap |q The Battle for Riverhold/Arm Cadwell's Complex Traps
 |tip Manually skip to the next step.
 step
-goto rimmen_base 37.56,47.20
-'Continue to here
+goto 48.94,23.43
+'Arm Cadwell's Complex Trap |q The Battle for Riverhold/Arm Cadwell's Complex Traps
+step
+goto 49.37,22.98
+talk Cadwell |q The Battle for Riverhold/Talk to Cadwell
+step
+goto 50.36,20.02
+talk Khamira |q The Battle for Riverhold/Talk to Khamira
+step
+goto riverholdinstance_base 51.73,73.03
+'Meet Allies |q The Battle for Riverhold/Meet Allies
+step
+goto 49.24,54.82
+'Warn Captain Nala-do |q The Battle for Riverhold/Warn Captain Nala-do
+step
+goto 49.24,54.82
+'Defend Town Center |q The Battle for Riverhold/Defend Town Center
+step
+goto 49.40,31.91
+'Open Temple of the Purifying Moons |q The Battle for Riverhold/Meet Zamarak at the Temple
+step
+goto 49.44,16.66
+'Protect Zamarak |q The Battle for Riverhold/Protect Zamarak
+step
+goto 48.63,49.20
+'Open Riverhold |q The Battle for Riverhold/Activate the Blessed Pillar of the Spring Moon
 |tip Manually skip to the next step.
 step
-goto rimmen_base 57.55,47.16
-talk Zamarak
-|tip Manually skip to the next step.
+goto 44.41,47.50 |q The Battle for Riverhold/Activate the Blessed Pillar of the Spring Moon
 step
-'Open your map. Right click until you see the Northern Elsweyr map.
-'Travel to _Scar's End_ wayshrine
-|tip Manually skip to the next step.
+goto 36.08,29.11
+kill the Forces |q The Battle for Riverhold/Activate the Blessed Pillar of the Spring Moon
 step
-goto elsweyr_base 16.96,71.77
-'Drop down from here
-|tip Manually skip to the next step.
+goto 44.41,47.50 |q The Battle for Riverhold/Activate the Blessed Pillar of the Summer Moon
 step
-goto elsweyr_base 18.65,73.99
-'Continue to the road
-|tip Manually skip to the next step.
+goto 69.69,48.46
+kill the Forces |q The Battle for Riverhold/Activate the Blessed Pillar of the Summer Moon
 step
-goto elsweyr_base 25.47,73.86
-'At the fork in the road, go left from here
-|tip Manually skip to the next step.
+goto 65.83,63.06 |q The Battle for Riverhold/Activate the Blessed Pillar of the Winter Moon
 step
-goto elsweyr_base 25.46,72.25
-click Moon Gate of Anequina
-|tip Manually skip to the next step.
+goto 50.48,65.30
+kill the Forces |q The Battle for Riverhold/Activate the Blessed Pillar of the Winter Moon
 step
-goto moongate_base 29.94,84.08
-talk Prefect Calo
-|tip Manually skip to the next step.
+goto 48.17,62.35
+'Watch the Dragons |q The Battle for Riverhold/Watch the Dragons
 step
-goto moongate_base 48.00,74.66
-'Run up the stairs in this tunnel
-|tip Manually skip to the next step.
+goto 48.17,62.35
+'Use Ballista |q The Battle for Riverhold/Ground the Dragon
 step
-goto moongate_base 70.40,64.94
-'Defeat the waves of easy Euraxian enemies here
-|tip Manually skip to the next step.
+goto 49.05,57.17
+kill the Dragon |q The Battle for Riverhold/Kill the Dragon
 step
-goto moongate_base 69.13,59.23
-'Enter the tunnel here
-|tip Manually skip to the next step.
+goto 56.63,69.18
+'Open K'har Zhab Hall |q The Battle for Riverhold/Go to K'har Zhab Hall
 step
-goto moongate_base 52.08,54.77
-talk Zamarak
-|tip Manually skip to the next step.
-step
-goto moongate_base 42.89,60.16
-click Upper Moon Gate Landing
-|tip Manually skip to the next step.
-step
-goto moongate_base 31.28,53.58
-'Exit through here
-|tip Manually skip to the next step.
-step
-goto moongate_base 37.33,45.85
-'Defeat the waves of easy Euraxian enemies here
-|tip Manually skip to the next step.
-step
-goto moongate_base 36.81,39.34
-'Run up the stairs in this tunnel
-|tip Manually skip to the next step.
-step
-goto moongate_base 44.71,34.91
-'Exit through here
-|tip Manually skip to the next step.
-step
-goto moongate_base 54.63,31.96
-'Run up the stairs here
-|tip Manually skip to the next step.
-step
-goto moongate_base 57.54,22.94
-'Run up the stairs here
-|tip Manually skip to the next step.
-step
-goto moongate_base 62.46,22.73
-'Press _E_ to _Use Combat Dragonhorn_
-|tip Manually skip to the next step.
-step
-goto moongate_base 67.90,22.13
-talk Khamira
-|tip Manually skip to the next step.
-step
-goto moongate_base 67.90,22.13
-kill Lieutenant Herennius
-kill Lieutenant Artorius
-|tip Defeat a couple of waves of easy incoming Euraxian enemies. When both lieutenants appear, the best tactic is to move around using AOE attacks to kill Herennius as soon as possible. While inflicting damage you'll want to avoid her multiple summoned Atronachs, and once dispatched, finish off Artorius. Herennius's Atronachs don't have much health so they'll die fairly quickly. Try and stay inside Abnur Tharn's energy shield as much as possible. Use any health augmenting potions you have available and keep health potions on the ready as needed.
-|tip Manually skip to the next step.
-step
-goto moongate_base 76.91,21.95
-click Portal to the Plane of Jode
-|tip Manually skip to the next step.
-step
-goto moonsurface_base 16.12,42.48
-talk Khamira
-|tip Manually skip to the next step.
-step
-goto moonsurface_base 36.86,67.69
-'Defeat a couple of waves of easy incoming enemies. However, while that happens, you'll want to be careful to avoid Mulaamnir's telegraphed attack.
-|tip Manually skip to the next step.
-step
-goto moonsurface_base 40.06,53.16
-'In this area, avoid Mulaamnir's telegraphed attack
-|tip Manually skip to the next step.
-step
-goto moonsurface_base 39.74,32.23
-'As before, defeat a couple of waves of easy incoming enemies while avoiding Mulaamnir's telegraphed attack. This time the telegraphs will be a brighter red.
-|tip Manually skip to the next step.
-step
-goto moonsurface_base 55.12,42.93
-click Jode's Core
-|tip Manually skip to the next step.
-step
-goto moonsurface_base 60.83,43.08
-kill Mulaamnir
-|tip This is the expansion's dragon fight in all its glory and as such it will be difficult in the extreme. Ranged is the best attack for the fight, and being in a group is the best tactic. However, it is more likely you'll do it solo so if you have any health augmenting potions, you should consume one. Keep your healing potions on the ready. You'll likely need several resurrection gems and if you don't have a few, get them. The fight is divided up into three phases that repeat in sequence.
-|tip PHASE 1: Mulaamnir spits dragon fire and teleports you to his location until he reaches a certain health percentage. Immediately after he teleports you, run away as his melees can one-shot you much like Bahlokdaan could in Riverhold. You'll want to use either pillar in the back to block some of Mulaamnir's more deadlier dragon fire. However, it is okay to run up the stairs and duck behind a wall. The primary consideration is to keep away from the dragon's melee attack range.
-|tip PHASE 2: Mulaamnir takes flight and summons various Atronachs and minions. During one of the later stages, he'll summon a couple of elite Atronachs including multiple lower leveled minions. The key here is to AOE them all down while avoiding the dragon's telegraphing attacks from above.
-|tip PHASE 3: Run into Abnur Tharn's energy shield to protect from Mulaamnir's shout and immediately after use the Dragonhorn. After this, the dragon will return to phase 1. That's the extent of the fight.
-|tip Manually skip to the next step.
-step
-goto moonsurface_base 73.36,43.35
-click Elsweyr
-|tip Manually skip to the next step.
-step
-goto rimmen_base 70.55,42.23
-talk Khamira
-accept The Heir of Anequina
-step
-'Open your map.
-'Travel to _Rimmen_ wayshrine
-|tip Manually skip to the next step.
-step
-goto rimmen_base 23.53,62.88
-talk Jakarn
-accept The Jewel of Baan Dar
-step
-goto rimmen_base 23.53,62.88
-talk Ak'an
-|tip Manually skip to the next step.
-step
-goto rimmen_base 18.68,55.51
-talk Lord Gharesh-ri
-|tip Manually skip to the next step.
-step
-goto rimmen_base 17.50,53.95
-talk Zamarak
-|tip Manually skip to the next step.
-step
-goto rimmen_base 17.39,56.41
-talk Prefect Calo
-|tip Manually skip to the next step.
-step
-goto rimmen_base 27.30,61.19
-'Run upstairs from here
-|tip Manually skip to the next step.
-step
-goto rimmen_base 31.32,63.41
-click The Sugar Bowl
-|tip Manually skip to the next step.
-step
-goto rimmen_base 32.61,62.92
-talk Jakarn
-|tip Manually skip to the next step.
-step
-goto rimmen_base 32.61,62.92
-'Run downstairs from here
-|tip Manually skip to the next step.
-step
-goto rimmen_base 32.61,62.92
-click Rimmen
-|tip Manually skip to the next step.
-step
-goto rimmen_base 43.18,59.42
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto rimmen_base 50.18,39.75
-talk Envoy Cashia
-|tip Manually skip to the next step.
-step
-goto rimmen_base 52.23,34.87
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto rimmen_base 61.50,41.91
-'Continue to here
-|tip Manually skip to the next step.
-step
-goto rimmen_base 71.76,38.87
+goto riverholdcity_base 57.96,72.51
 talk Abnur Tharn
+turnin The Battle for Riverhold
+accept Two Queens
+step
+goto 55.58,72.05
+talk Lord Gharesh-ri |q The Battle for Riverhold/Talk to Lord Gharesh-ri
+step
+'Open Northern Elsweyr Map
+'Travel to _Rimmen_ in Elsweyr |q In Sickness and In Health |future
 |tip Manually skip to the next step.
 step
-goto rimmen_base 73.45,38.35
-click Rimmen Palace
+goto rimmen_base 45.19,59.55 |q In Sickness and In Health |future
+step
+goto 43.70,72.89 |q In Sickness and In Health |future
+step
+goto elsweyr_base 74.61,36.99 |q In Sickness and In Health |future
+step
+goto 77.41,39.43
+talk Narayun
+accept In Sickness and In Health
+step
+goto 77.60,41.45 |q In Sickness and In Health/Talk to Vazbi
+step
+goto 75.21,42.99 |q In Sickness and In Health/Talk to Vazbi
+step
+goto 72.99,40.73
+talk Vazbi |q In Sickness and In Health/Talk to Vazbi
+step
+goto 72.60,42.41
+'Go to the First Gate |q In Sickness and In Health/Go to the First Gate
+step
+goto 73.46,42.73 |q In Sickness and In Health/Examine the First Gate
+step
+goto 73.29,42.84
+'Examine Aqueduct Sluice Gate |q In Sickness and In Health/Examine the First Gate
+step
+goto 77.22,44.11
+'Go to the Second Gate |q In Sickness and In Health/Go to the Second Gate
+step
+goto 77.36,44.32
+'Examine Aqueduct Sluice Gate |q In Sickness and In Health/Examine the Second Gate
+step
+goto 77.34,44.32
+'Examine the Torn Habit |q In Sickness and In Health/Examine the Torn Habit
+step
+'_Fix Coordinates_
+talk Vazbi |q In Sickness and In Health/Talk to Vazbi
+step
+goto 77.91,44.36
+'Examine Bloody Habit |q In Sickness and In Health/Find the Injured Stranger
 |tip Manually skip to the next step.
 step
-goto rimmen_base 77.61,36.85
-'Continue down to the western hallway
+goto 77.80,43.57
+'Examine Weathered Cameo |q In Sickness and In Health/Find the Injured Stranger
 |tip Manually skip to the next step.
 step
-goto rimmen_base 77.61,36.85
+goto 77.33,43.13
+'Examine Crumpled Nursery Rhyme |q In Sickness and In Health/Find the Injured Stranger
+|tip Manually skip to the next step.
+step
+goto 76.41,42.85
+'Examine Swaddling Cloth |q In Sickness and In Health/Find the Injured Stranger
+|tip Manually skip to the next step.
+step
+goto 75.64,42.19 |q In Sickness and In Health/Find the Injured Stranger
+step
+goto 76.17,42.02
+'Examine Scarred Coin |q In Sickness and In Health/Find the Injured Stranger
+|tip Manually skip to the next step.
+step
+goto 76.25,41.98
+talk Vazbi |q In Sickness and In Health/Talk to Vazbi
+step
+goto 78.20,41.92
+'Enter Baan Dar's Litter |q In Sickness and In Health/Enter Baan Dar's Litter
+step
+goto 79.47,40.80
+'Find the Injured Stranger |q In Sickness and In Health/Find the Injured Stranger
+step
+goto 81.19,42.08
+'Follow the Stranger |q In Sickness and In Health/Follow the Stranger
+step
+goto 81.19,42.08
+'Survive the Stricken Ambush |q In Sickness and In Health/Survive the Stricken Ambush
+step
+goto 82.67,41.86
+'Find Vazbi |q In Sickness and In Health/Find Vazbi
+step
+goto 82.53,41.32
+talk Silhu-jo |q In Sickness and In Health/Talk to Silhu-jo
+step
+goto 82.72,39.91 |q In Sickness and In Health/Reach the Baan Dar Gate
+step
+goto 85.16,40.63 |q In Sickness and In Health/Reach the Baan Dar Gate
+step
+goto 85.06,42.37
+'Reach the Baan Dar Gate |q In Sickness and In Health/Reach the Baan Dar Gate
+step
+goto 84.99,42.13
+talk Silhu-jo |q In Sickness and In Health/Talk to Silhu-jo
+step
+goto 85.06,42.37
+'Enter Upper Baan Dar Caverns |q In Sickness and In Health/Follow Silhu-jo
+|tip Manually skip to the next step.
+step
+goto 84.11,43.28
+talk Vazbi |q In Sickness and In Health/Talk to Vazbi
+step
+goto 83.98,43.13
+'Enter Baan Dar Overlook |q In Sickness and In Health/Kill Hulzar
+|tip Manually skip to the next step.
+step
+goto 83.07,43.38
+kill Hulzar |q In Sickness and In Health/Kill Hulzar
+step
+goto 81.62,44.20 |q In Sickness and In Health/Open the Baan Dar Gate
+step
+goto 81.99,44.29
+'Open Baan Dar Sluice Gate |q In Sickness and In Health/Open the Baan Dar Gate
+step
+goto 79.98,44.05 |q In Sickness and In Health/Go to S'rendarr's Cradle
+step
+goto 76.75,44.20 |q In Sickness and In Health/Go to S'rendarr's Cradle
+step
+goto 73.73,40.83
+'Go to S'rendarr's Cradle |q In Sickness and In Health/Go to S'rendarr's Cradle
+step
+goto 72.53,40.64
+talk Vazbi
+turnin In Sickness and In Health
+step
+goto 74.89,43.45 |q Descendant of the Potentate |future
+step
+goto 70.53,45.72
+wayshrine Hakoshae
+step
+goto 71.81,46.96
+talk Ashur
+accept Descendant of the Potentate
+step
+goto 72.46,48.44 |q Descendant of the Potentate/Talk to Magnate Feina-Darak
+step
+goto 73.31,47.65
+|tip Watch dialogue
+talk Magnate Feina-Darak |q Descendant of the Potentate/Talk to Magnate Feina-Darak
+step
+goto 71.75,48.48
+talk Domitia Nasica |q Descendant of the Potentate/Talk to Domitia Nasica
+step
+goto 71.60,48.67
+'Use Paper Lotus |q Descendant of the Potentate/Place Lotus in River
+step
+goto 71.75,48.48
+talk Domitia Nasica |q Descendant of the Potentate/Talk to Domitia Nasica
+step
+goto 70.52,48.65
+talk Vek-Drassi Secunia |q Descendant of the Potentate/Talk to Vek-Drassi Secunia
+step
+goto 69.07,46.08 |q Descendant of the Potentate/Gather Sugar Daisy
+step
+goto 67.56,44.25 |q Descendant of the Potentate/Gather Sugar Daisy
+step
+goto 65.99,44.81 |q Descendant of the Potentate/Gather Sugar Daisy
+step
+goto 65.18,42.48 |q Descendant of the Potentate/Gather Sugar Daisy
+step
+goto 63.18,42.33
+'Take Sugar Daisy |q Descendant of the Potentate/Gather Sugar Daisy
+step
+goto 65.25,42.49 |q Two Queens/Find Aneshi
+step
+goto 67.08,42.39 |q Two Queens/Find Aneshi
+step
+goto 67.71,41.52 |q Two Queens/Find Aneshi
+step
+goto 68.23,40.81 
+'Find Aneshi |q Two Queens/Find Aneshi
+step
+goto 68.23,40.81
+talk Aneshi the Shrine Keeper |q Two Queens/Talk to Aneshi
+step
+goto 68.21,40.74
+'Examine Aneshi's Note |q Two Queens/Take Aneshi's Note
+step
+goto 66.57,38.49 |q Two Queens/Find the Master Key
+step
+goto 63.81,38.81 |q Two Queens/Find the Master Key
+step
+goto 59.78,38.98 |q Two Queens/Find the Master Key
+step
+goto 60.03,39.12
+'Dig Aneshi's Mound |q Two Queens/Find the Master Key
+step
+'Open Northern Elsweyr Map
+'Travel to _Hakoshae_ |q Descendant of the Potentate/Talk to Vek-Drassi Secunia
+|tip Manually skip to the next step.
+step
+goto 70.48,48.60
+talk Vek-Drassi Secunia |q Descendant of the Potentate/Talk to Vek-Drassi Secunia
+step
+goto 72.40,48.40 |q Descendant of the Potentate/Talk to Valoria Marius
+step
+goto 74.65,48.06
+talk Valoria Marius |q Descendant of the Potentate/Talk to Valoria Marius
+step
+goto 74.57,47.83
+'Take Bowl |q Descendant of the Potentate/Acquire Riddle Item
+step
+goto 74.65,48.06
+talk Valoria Marius |q Descendant of the Potentate/Talk to Valoria Marius
+step
+goto 74.75,47.91
+talk Ashur |q Descendant of the Potentate/Talk to Ashur
+step
+goto 74.06,48.57
+talk Captain Verus |q Descendant of the Potentate/Talk to Guard
+step
+goto 73.27,49.08
+'Open Manor Cellar |q Descendant of the Potentate/Search Manor Cellar
+|tip Manualy skip to the next step.
+step
+goto 73.48,48.63
+'Examine Tale of Elements |q Descendant of the Potentate/Investigate Book
+step
+goto 73.59,48.73
+'Search Chest |q Descendant of the Potentate/Investigate Chest
+step
+goto 73.46,48.66
+|tip Puzzle Order East, West, North and South.
+'Solve Puzzle |q Descendant of the Potentate/Solve Puzzle
+step
+goto 73.29,48.57
+'Open History Vault |q Descendant of the Potentate/Enter Chamber
+step
+goto 73.09,48.47
+'Read Letter to Feina-Darak |q Descendant of the Potentate/Read Letter
+step
+goto 73.09,48.47
+'Listen to the Magnate |q Descendant of the Potentate/Listen to the Magnate
+step
+goto 73.09,48.47
+talk Ashur |q Descendant of the Potentate/Talk to Ashur
+step
+goto 73.26,48.56
+'Open Manor Cellar |q Descendant of the Potentate/Enter the Tombs
+|tip Manually skip to the next step.
+step
+goto 73.32,49.98
+'Climb Hakoshae |q Descendant of the Potentate/Enter the Tombs
+|tip Manually skip to the next step.
+step
+goto 74.85,47.79 |q Descendant of the Potentate/Enter the Tombs
+step
+goto 76.77,46.82
+'Open Hakoshae Tombs |q Descendant of the Potentate/Enter the Tombs
+|tip Manually skip to the next step.
+step
+goto hakoshaecrypts_base 18.59,69.65
+'Investigate the Tombs |q Descendant of the Potentate/Investigate the Tombs
+step
+goto 16.55,69.34
+talk Ashur |q Descendant of the Potentate/Talk to Ashur
+step
+goto 44.31,69.87 |q Descendant of the Potentate/Search for the Magnate
+step
+goto 44.27,52.19 |q Descendant of the Potentate/Search for the Magnate
+step
+goto 64.71,51.09 |q Descendant of the Potentate/Search for the Magnate
+step
+goto 64.89,38.39 |q Descendant of the Potentate/Search for the Magnate
+step
+goto 42.76,38.46
+kill the Shade of the Founder |q Descendant of the Potentate/Kill the Shade of the Founder |future
+step
+goto 28.77,38.27
+'Open Founder Chamber |q Descendant of the Potentate/Enter Founder Chamber
+|tip Manually skip to the next step.
+step
+goto 18.63,37.86
+talk Proconsul Beloren-Kaie |q Descendant of the Potentate/Talk to Proconsul Beloren-Kaie
+step
+goto 18.63,37.86
+talk Magnate Feina-Darak |q Descendant of the Potentate/Talk to Magnate Feina-Darak
+step
+goto 08.26,38.05
+'Open Elsweyr |q Descendant of the Potentate/Talk to Ashur
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 47.10,44.33 |q Descendant of the Potentate/Talk to Ashur
+step
+goto 71.34,46.47 |q Descendant of the Potentate/Talk to Ashur
+step
+goto 72.58,48.44 |q Descendant of the Potentate/Talk to Ashur
+step
+goto 74.58,47.20
+talk Ashur
+turnin Descendant of the Potentate
+step
+goto 71.41,47.75 |achieve 2461/3
+step
+goto 67.23,47.14 |achieve 2461/3
+step
+goto 66.19,47.16 |achieve 2461/3
+step
+goto 70.53,45.76
+'Use Hakoshae Wayshrine
+'Travel to _Rimmen_ in Northern Elsweyr |q Two Queens/Rendezvous in Rimmen
+|tip Manually skip to the next step.
+step
+goto 45.26,59.48 |q Two Queens/Rendezvous in Rimmen
+step
+goto 43.87,72.86 |q Two Queens/Rendezvous in Rimmen
+step
+goto 38.41,72.75 |q Two Queens/Rendezvous in Rimmen
+step
+goto 36.11,80.98 |q Two Queens/Rendezvous in Rimmen
+step
+goto elsweyr_base 79.18,33.50
+'Rendezvous in Rimmen |q Two Queens/Rendezvous in Rimmen
+step
+goto 79.18,33.50
+talk Abnur Tharn |q Two Queens/Talk to Abnur Tharn
+step
+goto rimmen_base 36.02,81.29 |q Two Queens/Talk to Captain Nala-do
+step
+goto 38.10,72.95 |q Two Queens/Talk to Captain Nala-do
+step
+goto 44.11,72.72 |q Two Queens/Talk to Captain Nala-do
+step
+goto 43.77,52.64 |q Two Queens/Talk to Captain Nala-do
+step
+goto 52.28,34.56 |q Two Queens/Talk to Captain Nala-do
+step
+goto 61.76,43.26 |q Two Queens/Talk to Captain Nala-do
+step
+goto 68.23,43.62 |q Two Queens/Talk to Captain Nala-do
+talk Captain Nala-do |q Two Queens/Talk to Captain Nala-do
+step
+goto 67.69,50.25
+'Open South Weapons Platform |q Two Queens/Destroy the South Siege Weapons
+|tip Manually skip to the next step.
+step
+goto 63.15,54.42
+'Burn Siege Weapon |q Two Queens/Destroy the South Siege Weapons
+|tip Manually skip to the next step.
+step
+goto 61.85,56.76
+'Burn Siege Weapon |q Two Queens/Destroy the South Siege Weapons
+|tip Manually skip to the next step.
+step
+goto 64.60,58.76
+'Burn Siege Weapon |q Two Queens/Destroy the South Siege Weapons
+step
+goto 67.50,50.55
+'Open Rimmen |q Two Queens/Destroy the North Siege Weapons
+|tip Manually skip to the next step.
+step
+goto 62.58,33.49
+'Open North Weapons Platform |q Two Queens/Destroy the North Siege Weapons
+|tip Manually skip to the next step.
+step
+goto 57.15,31.48
+'Burn Siege Weaon |q Two Queens/Destroy the North Siege Weapons
+|tip Manually skip to the next step.
+step
+goto 54.72,29.96
+'Burn Siege Weaon |q Two Queens/Destroy the North Siege Weapons
+|tip Manually skip to the next step.
+step
+goto 57.45,27.96
+'Burn Siege Weaon |q Two Queens/Destroy the North Siege Weapons
+step
+goto 62.29,33.33
+'Open Rimmen'Burn Siege Weaon |q Two Queens/Rendezvous at the Sewer Entrance
+|tip Manually skip to the next step.
+step
+goto 65.11,40.70 |q Two Queens/Rendezvous at the Sewer Entrance
+step
+goto 60.23,40.80 |q Two Queens/Rendezvous at the Sewer Entrance
+step
+goto 55.96,35.68 |q Two Queens/Rendezvous at the Sewer Entrance
+step
+goto 61.67,31.94
+'Rendezvous at the Sewer Entrance |q Two Queens/Rendezvous at the Sewer Entrance
+step
+goto 61.67,31.94
+talk Captain Nala-do |q Two Queens/Talk to Captain Nala-do
+step
+goto 66.74,28.95
+'Open Rimmen Palace Recesses |q Two Queens/Enter the Palace Sewer |future
+|tip Manually skip to the next step.
+step
+goto rimmensewer_base 44.02,12.47
+'Open Rimmen Palace Crypts |q Two Queens/Find a Way into the Palace
+step
+goto rimmencrypts_base 09.92,46.46 |q Two Queens/Find a Way into the Palace
+step
+goto 37.33,46.91 |q Two Queens/Find a Way into the Palace
+step
+goto 57.52,61.09 |q Two Queens/Find a Way into the Palace
+step
+goto 57.73,34.75 |q Two Queens/Find a Way into the Palace
+step
+goto 79.46,34.99
+'Find a Way into the Palace |q Two Queens/Find a Way into the Palace
+step
+goto 78.71,27.75
+'Examine King Hemakar's Grave |q Two Queens/Examine the Royal Crypt
+step
+goto 78.71,27.75
+talk Zamarak |q Two Queens/Talk to Zamarak
+step
+goto 90.93,36.61
+'Open Rimmen Palace |q Two Queens/Enter Rimmen Palace |future
+|tip Manually skip to the next step.
+step
+goto 51.27,47.77 |q Two Queens/Go to the Chapel of the Guiding Moons
+step
+goto 48.16,14.89 |q Two Queens/Go to the Chapel of the Guiding Moons
+step
+goto 23.27,24.59 |q Two Queens/Go to the Chapel of the Guiding Moons
+step
+goto 29.84,42.82
+'Open Chapel of the Guiding Moons |q Two Queens/Go to the Chapel of the Guiding Moons
+|tip Manually skip to the next step.
+step
+goto 34.02,52.21
+'Fight the Forces |q Two Queeens/Escape the Chapel
+step
+goto 55.97,85.13
+'Open The Great Hall |q Two Queeens/Enter the Great Hall
+step
+goto 73.15,75.11
+'Destory Necromantic Glass |q Two Queeens/Destory the Necromantic Glass
+|tip Manually skip to the next step.
+step
+goto 73.87,78.73
+'Destory Necromantic Glass |q Two Queeens/Destory the Necromantic Glass
+step
+goto 73.41,55.51
+|tip Go up the stairs.
+'Open Royal Chambers |q Two Queeens/Go to the Royal Chambers
+|tip Manually skip to the next step.
+step
+goto 69.80,46.10
+'Watch dialogue |q Two Queeens/Go to the Royal Chambers
+step
+goto 76.47,43.83
+'Open Rimmen Palace Courtyard |q Two Queeens/Enter the Palace Courtyard
+|tip Manually skip to the next step.
+step
+goto rimmenpalacecourtyard_base 56.13,46.86
+kill the two guards |q Two Queeens/Enter the Palace Courtyard
+step
+goto 64.12,42.86
+kill Euraxia Tharn |q Two Queeens/Kill Euraxia Tharn
+step
+goto 64.28,49.26
+talk to Abnur Tharn |q Two Queens/Talk to Abnur Tharn
+step
+goto 43.17,75.01
+'Open Palace Throne Room |q Two Queens/Go to the Palace Throne Room
+step
+goto rimmen_base 77.67,36.80
 talk Khamira
-|tip Manually skip to the next step.
+turnin Two Queens
 step
-goto rimmen_base 77.61,36.85
-'Return the main lobby
-|tip Manually skip to the next step.
-step
-goto rimmen_base 77.61,36.85
-click Rimmen Palace Throne Room
-|tip Manually skip to the next step.
-step
-goto rimmen_base 77.61,36.85
+goto 77.54,36.80
 talk Lord Gharesh-ri
-|tip Manually skip to the next step.
-step
-goto rimmen_base 77.61,36.85
-talk Queen Khamira
-|tip Manually skip to the next step.
-step
-goto rimmen_base 77.61,36.85
-click Rimmen Palace
-|tip Manually skip to the next step.
-step
-goto rimmen_base 77.61,36.85
-click Rimmen
-|tip Manually skip to the next step.
-step
-goto rimmen_base 62.50,38.42
-'Drop down from here
-|tip Manually skip to the next step.
-step
-goto rimmen_base 58.12,36.59
-'Drop down from here
-|tip Manually skip to the next step.
-step
-goto rimmen_base 66.70,28.94
-click Rimmen Palace Recesses
-|tip Manually skip to the next step.
-step
-goto rimmensewer_base 35.44,22.10
-'Continue South to here
-|tip Manually skip to the next step.
-step
-goto rimmensewer_base 42.91,40.23
-'Continue East through this passageway
-|tip Manually skip to the next step.
-step
-goto rimmensewer_base 59.67,37.36
-'Press _E_ to Examine _Suspicious Barrel_
-|tip Manually skip to the next step.
-step
-'Open your map. Right click until you see the Northern Elsweyr map.
-'Travel to _Rimmen_ wayshrine
-|tip Manually skip to the next step.
-step
-goto rimmen_base 32.65,62.03
-click The Sugar Bowl
-|tip Manually skip to the next step.
-step
-goto rimmen_base 32.61,62.92
-talk Jakarn
-|tip Manually skip to the next step.
-step
-'Open your map. Right click until you see the Northern Elsweyr map.
-'Travel to _Scar's End_ wayshrine
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 15.39,70.54
-'Continue to the road
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 18.69,61.70
-'Follow the road to here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 18.50,59.85
-talk Tu'heiba
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 15.44,60.75
-talk Mara'dahni
-'Watch out for the elite Minotaur around the path
-accept Iron in the Blood
-step
-goto elsweyr_base 15.17,60.86
-click Darkpool Mine
-|tip Manually skip to the next step.
-step
-goto thescab_base 33.55,77.08
-'At the fork in the path, go right
-|tip Manually skip to the next step.
-step
-goto thescab_base 46.84,80.08
-'Press _E_ to Examine _Hadaz's Final Letter_
-|tip Manually skip to the next step.
-step
-goto thescab_base 24.78,73.48
-'Continue West to here
-|tip Manually skip to the next step.
-step
-goto thescab_base 24.68,49.97
-'At the fork in the path, go right
-|tip Manually skip to the next step.
-step
-goto thescab_base 35.23,52.59
-'Press _E_ to Burn _Oil Pool_
-|tip Manually skip to the next step.
-step
-goto thescab_base 54.04,49.40
-'Press _E_ to Burn _Oil Pool_
-|tip Manually skip to the next step.
-step
-goto thescab_base 77.78,58.96
-'Continue East to here
-|tip Manually skip to the next step.
-step
-goto thescab_base 79.89,40.85
-'Press _E_ to Burn _Oil Pool_
-|tip Manually skip to the next step.
-step
-goto thescab_base 84.19,37.06
-'Press _E_ to Take _Slavemaster's Bag_
-'Take _Slave Trader's Ledger_
-|tip Manually skip to the next step.
-step
-goto thescab_base 72.82,32.80
-'Continue West to here
-|tip Manually skip to the next step.
-step
-goto thescab_base 45.01,21.42
-kill Zadrahd the Iron Hearted
-kill Iron Heart Atronach
-|tip Simple straight-forward fight. Kill Zadrahd. After he dies the Atronach will appear. Zadrahd is a telegraphing caster while Atronach mostly does melee DPS. Neither present much a challege.
-|tip Manually skip to the next step.
-step
-goto thescab_base 47.51,20.42
-'Press _E_ to Take _Deadland Hammer_
-'Take _Deadland Hammer_
-|tip Manually skip to the next step.
-step
-goto thescab_base 41.32,24.31
-'Press _E_ to Burn _Oil Pool_
-|tip Manually skip to the next step.
-step
-goto thescab_base 24.02,49.81
-'Continue South to here
-|tip Manually skip to the next step.
-step
-goto thescab_base 50.92,90.53
-talk Mara'dahni
-|tip Manually skip to the next step.
-step
-goto thescab_base 51.86,91.32
-click Elsweyr
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 18.44,59.83
-talk Tu'heiba
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 17.52,59.78
-talk Jakarn
-|tip Manually skip to the next step.
-step
-'Open your map.
-'Travel to _Tenmar Temple_ wayshrine
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 60.96,59.00
-'Follow the path up from here
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 62.34,58.42
-click The Tangle
-|tip Manually skip to the next step.
-step
-goto thetangle_base 46.69,28.60
-talk Mazdurr the Moonstruck
-accept Moonstruck in Manacles
-step
-goto thetangle_base 43.91,40.60
-talk Fez'skar
-|tip Manually skip to the next step.
-step
-goto thetangle_base 45.06,29.60
-'Continue South to here
-|tip Manually skip to the next step.
-step
-goto thetangle_base 70.00,31.83
-'Continue East to here
-|tip Manually skip to the next step.
-step
-goto thetangle_base 78.40,44.63
-'Continue Southeast to here
-|tip Manually skip to the next step.
-step
-goto thetangle_base 87.29,48.09
-'Press _E_ to Search _Slavers' Chest_
-'Take _Trapper's Key_
-|tip Manually skip to the next step.
-step
-goto thetangle_base 78.31,44.37
-'Continue West to here
-|tip Manually skip to the next step.
-step
-goto thetangle_base 67.11,50.80
-'Continue Southwest to here
-|tip Manually skip to the next step.
-step
-goto thetangle_base 65.91,60.51
-'Press _E_ to Search _Ruddy Fang Pack_
-'Take _Cage Key_
-|tip Manually skip to the next step.
-step
-goto thetangle_base 63.03,79.74
-'Continue South to here
-|tip Manually skip to the next step.
-step
-goto thetangle_base 46.69,71.91
-'Continue Northwest to here
-|tip Manually skip to the next step.
-step
-goto thetangle_base 45.06,63.50
-kill Zayreba Sharpclaw
-|tip Sharpclaw is a simple fight. Basically AOE her to kill off her minions and then focus attacks on her.
-|tip Manually skip to the next step.
-step
-goto thetangle_base 45.66,62.40
-'Press _E_ to Search _Ruddy Fang Coffer_
-'Take _Amulet of Azurah_
-|tip Manually skip to the next step.
-step
-goto thetangle_base 44.63,52.14
-'Continue North to here
-|tip Manually skip to the next step.
-step
-goto thetangle_base 49.23,54.46
-'Carefully continue East to here
-|tip Manually skip to the next step.
-step
-goto thetangle_base 50.43,50.80
-'Carefully continue North to here
-|tip Manually skip to the next step.
+accept The Final Order
 step
-goto thetangle_base 49.71,49.03
-'Carefully dropdown from here until the wooden platform below
+goto 77.69,36.32
+'Open Royal Study |q The Final Order/Talk to Abnur Tharn
 |tip Manually skip to the next step.
 step
-goto thetangle_base 50.03,44.69
-'Carefully continue North to here
-|tip Manually skip to the next step.
-step
-goto thetangle_base 46.57,47.63
-'Carefully continue South to the floor
-|tip Manually skip to the next step.
-step
-goto thetangle_base 19.23,53.14
-'Continue West to here
-|tip Manually skip to the next step.
-step
-goto thetangle_base 32.74,42.14
-'Continue Northeast to here
-|tip Manually skip to the next step.
-step
-goto thetangle_base 33.03,31.31
-'Continue North to here
-|tip Manually skip to the next step.
-step
-goto thetangle_base 46.46,29.09
-'Press _E_ to Unlock _Cage_
-|tip Manually skip to the next step.
-step
-goto thetangle_base 43.91,40.60
-talk Fez'skar
-|tip the choice doesn't matter. Pick either.
-|tip Manually skip to the next step.
-step
-goto thetangle_base 44.57,40.54
-'Press _E_ to Disarm _Spike Plate Chain_
-|tip Manually skip to the next step.
-step
-goto thetangle_base 44.11,40.26
-talk Jakarn
-|tip Manually skip to the next step.
-step
-goto thetangle_base 46.60,20.51
-click Elsweyr
-|tip Manually skip to the next step.
-step
-goto elsweyr_base 62.17,58.36
-talk Mazdurr the Moonstruck
-|tip Manually skip to the next step.
-step
-'Open your map.
-'Travel to _The Stitches_ wayshrine
-|tip Manually skip to the next step.
-step
-goto stitches_base 46.84,28.43
-'Cross the bridge from here
-|tip Manually skip to the next step.
-step
-goto stitches_base 57.06,59.28
-'Carefully dropdown onto the tent cloth above the wooden platform below
-|tip Manually skip to the next step.
-step
-goto stitches_base 58.67,60.89
-talk Jakarn
-|tip Manually skip to the next step.
-step
-goto stitches_base 65.25,75.30
-'Continue South to here
-|tip Manually skip to the next step.
-step
-goto stitches_base 49.22,61.65
-'Continue North to here
-|tip Manually skip to the next step.
-step
-goto stitches_base 60.92,53.15
-talk Tu'heiba
-|tip Manually skip to the next step.
-step
-goto stitches_base 61.02,52.60
-talk Jakarn
-|tip Manually skip to the next step.
+goto 77.39,35.57
+talk Abnur Tharn |q The Final Order/Talk to Abnur Tharn
 step
-'Congratulations, you have completed the Northern Elsweyr guide!
+goto 
 ]])
 
 ZGV:RegisterGuide("LEVELING\\Southern Elsweyr",[[
@@ -25469,7 +23498,7 @@ talk Kasura |q The Dragonguard's Legacy/Talk to Kasura
 step
 goto 35.87,38.63
 'Examine Kasura's Notes |q The Dragonguard's Legacy/Read Kasura's Notes
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only if ZGV.U7tils.GetFaction("player","notvet")=="AD"
 step
 'Open Audiron Map
 click Tanzelwil Wayshrine
