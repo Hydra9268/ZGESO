@@ -23183,6 +23183,94 @@ step
 goto 60.03,39.12
 'Dig Aneshi's Mound |q Two Queens/Find the Master Key
 step
+goto 62.30,36.32 |q The Witch of Azurah |future
+step
+goto 61.76,35.20 |q The Witch of Azurah |future
+step
+goto 57.67,38.31 |q The Witch of Azurah |future
+step
+goto 52.38,41.71 |q The Witch of Azurah |future
+step
+goto 51.81,40.55
+talk Vastarie
+accept The Witch of Azurah
+step
+goto 52.33,39.84
+talk Vastarie |q The Witch of Azurah/Talk to Vastarie
+step
+goto 52.43,39.01
+'Place Descrying Stone |q The Witch of Azurah/Place the Central Descrying Stone
+step
+goto 52.18,37.84 |q The Witch of Azurah/Place the East Descrying Stone
+step
+goto 53.85,36.85 |q The Witch of Azurah/Place the East Descrying Stone
+step
+goto 54.01,38.38 |q The Witch of Azurah/Place the East Descrying Stone
+step
+goto 55.43,36.94
+'Place Descrying Stone |q The Witch of Azurah/Place the East Descrying Stone
+step
+goto 57.51,35.67 |achieve 2461/10
+step
+goto 56.97,35.28 |achieve 2461/10 |tip Follow the rocks around to the Skyshard.
+step
+goto 56.42,36.15
+'Use Skyshard |achieve 2461/10
+step
+goto 54.04,38.53 |q The Witch of Azurah/Place the West Descrying Stone |tip Drop down carefully.
+step
+goto 50.53,37.71 |q The Witch of Azurah/Place the West Descrying Stone
+step
+goto 50.51,36.41 |q The Witch of Azurah/Place the West Descrying Stone
+step
+goto 49.84,37.55
+'Place Descrying Stone |q The Witch of Azurah/Place the West Descrying Stone
+step
+goto 52.56,36.38
+'Open Tomb of the Hidden Moon |q The Witch of Azurah/Investigate the Tomb
+step
+goto 52.55,36.31
+'Destroy Dark Phylactery |q The Witch of Azurah/Destroy the Orb
+step
+goto 52.55,36.61
+talk Vastarie |q The Wtich of Azurah/Talk to Vastarie
+step
+goto 52.55,36.46
+'Place Descrying Stone |q The Witch of Azurah/Place the Descrying Stone
+step
+goto 52.55,36.46
+talk Malizaz |q The Witch of Azurah/Talk to Malizaz
+step
+goto 52.55,36.62
+talk Vastarie
+turnin The Witch of Azurah
+accept Path of the Hidden Moon
+step
+goto 52.56,36.73
+'Open Elsweyr |q Path of the Hidden Moon/Travel to the Temple Summit
+|tip Manually skip to the next step.
+step
+goto 54.34,36.70 |q Path of the Hidden Moon/Travel to the Temple Summit
+step
+goto 54.30,35.01 |q Path of the Hidden Moon/Travel to the Temple Summit
+step
+goto 49.72,35.29 |q Path of the Hidden Moon/Travel to the Temple Summit
+step
+goto 55.83,36.74 |q Path of the Hidden Moon/Travel to the Temple Summit
+step
+goto 58.42,35.06 |q Path of the Hidden Moon/Travel to the Temple Summit
+step
+goto 56.55,33.21 |q Path of the Hidden Moon/Travel to the Temple Summit
+step
+goto 52.66,33.71
+'Travel to the Temple Summit |q Path of the Hidden Moon/Travel to the Temple Summit
+step
+goto 52.61,34.48
+'Examine The Tale of the Three Moons |q Path of the Hidden Moon/Search the Temple Summit
+step
+goto 52.61,34.48
+talk Mazza-Mirri |q Path of the Hidden Moon/Talk to Mazza-Mirri
+step
 'Open Northern Elsweyr Map
 'Travel to _Hakoshae_ |q Descendant of the Potentate/Talk to Vek-Drassi Secunia
 |tip Manually skip to the next step.
@@ -23299,7 +23387,7 @@ goto 70.53,45.76
 'Travel to _Rimmen_ in Northern Elsweyr |q Two Queens/Rendezvous in Rimmen
 |tip Manually skip to the next step.
 step
-goto 45.26,59.48 |q Two Queens/Rendezvous in Rimmen
+goto rimmen_base 45.26,59.48 |q Two Queens/Rendezvous in Rimmen
 step
 goto 43.87,72.86 |q Two Queens/Rendezvous in Rimmen
 step
@@ -23468,7 +23556,520 @@ step
 goto 77.39,35.57
 talk Abnur Tharn |q The Final Order/Talk to Abnur Tharn
 step
-goto 
+goto 77.25,36.03
+'Examine Dragons: A Report for the Queens |q The Final Order/Search the Royal Study
+|tip Manually skip to the next step.
+step
+goto 77.76,35.96
+'Examine Euraxia's Personal Journal |q The Final Order/Search the Royal Study
+|tip Manually skip to the next step.
+step
+goto 77.65,35.56
+'Examine Captain's Letter |q The Final Order/Search the Royal Study
+step
+goto 77.54,35.89
+talk Abnur Tharn |q The Final Order/Talk to Abnur Tharn
+step
+goto 77.60,36.10
+'Open Rimmen Palace Throne Room |q The Final Order/Rendezvous at Sandswirl Manor
+|tip Manually skip to the next step.
+step
+goto 76.56,37.20
+'Open Rimmen Palace |q The Final Order/Rendezvous at Sandswirl Manor
+|tip Manually skip to the next step.
+step
+goto 75.69,37.54
+'Open Rimmen |q The Final Order/Rendezvous at Sandswirl Manor
+|tip Manually skip to the next step.
+step
+goto 61.10,42.14 |q The Final Order/Rendezvous at Sandswirl Manor
+step
+goto 51.51,35.30 |q The Final Order/Rendezvous at Sandswirl Manor
+step
+goto 44.78,66.64 |q The Final Order/Rendezvous at Sandswirl Manor
+step
+goto 25.63,71.93 |q The Final Order/Rendezvous at Sandswirl Manor
+step
+goto 10.97,55.62 |q The Final Order/Rendezvous at Sandswirl Manor
+step
+goto elsweyr_base 65.30,27.63 |q The Final Order/Rendezvous at Sandswirl Manor
+step
+goto 65.53,26.82
+'Rendezvous at Sandswirl Manor |q The Final Order/Rendezvous at Sandswirl Manor
+step
+goto 65.53,26.82
+talk Abnur Tharn |q The Final Order/Talk to Abnur Tharn
+step
+goto 65.86,25.97 |q The Final Order/Find a Way Inside the Manor
+step
+goto 64.70,23.80
+'Examine Letter for Vittoria
+lorebook Letter for Vittoria 3/37/23
+step
+goto 66.28,24.05
+'Search Well Bucket |q The Final Order/Find a Way Inside the Manor
+step
+goto 66.69,24.56
+'Open Sandswirl Manor Cellar |q The Final Order/Enter the Cellar
+|tip Manually skip to the next step.
+step
+goto 66.68,24.78
+talk Abnur Tharn |q The Final Order/Talk to Abnur Tharn
+step
+goto 65.65,24.59 |q The Final Order/Find Prefect Calo
+step
+goto 64.88,24.00 |q The Final Order/Find Prefect Calo
+step
+goto 64.89,23.56
+'Climb Sandswirl Manor |q The Final Order/Find Prefect Calo
+step
+goto 65.63,23.84
+'Find Prefect Calo |q The Final Order/Find Prefect Calo
+step
+goto 65.63,23.84
+talk Prefect Calo |q The Final Order/Talk to Prefect Calo
+step
+goto 65.21,23.52
+'Open Manor Main Hall |q The Final Order/Find the Dragonguard Report
+|tip Manually skip to the next step.
+step
+goto 65.16,22.63
+'Examine Dragonguard Report |q The Final Order/Find the Dragonguard Report
+step
+goto 65.23,22.89
+talk Prefect Calo |q The Final Order/Talk to Prefect Calo |future
+step
+'Open Northern Elsweyr Map
+'Travel to _The Stitches_ |q The Final Order/Go to the Stitches
+|tip Manually skip to the next step.
+step
+goto stitches_base 46.97,28.41 |q The Final Order/Go to the Stitches
+step
+goto 51.27,55.03 |q The Final Order/Go to the Stitches
+step
+goto 42.49,58.27
+'Go to the Stitches |q The Final Order/Go to the Stitches
+step
+goto 42.49,58.27
+talk Zamarak |q The Final Order/Talk to Zamarak
+step
+goto 46.59,27.34 |q The Final Order/Track Down the Assassination Squad
+step
+goto elsweyr_base 33.09,49.38 |q The Final Order/Track Down the Assassination Squad
+step
+goto 34.13,50.26 |q The Final Order/Track Down the Assassination Squad |tip Follow patch down.
+step
+goto 31.38,53.11 |q The Final Order/Track Down the Assassination Squad
+step
+goto 31.57,54.98 |q The Final Order/Track Down the Assassination Squad
+step
+goto 31.89,56.05 |q The Final Order/Track Down the Assassination Squad
+step
+goto 32.36,56.10
+'Open Dov-Vahl Shrine |q The Final Order/Enter the Hidden Shrine
+step
+goto dragonguardoutpost_base 51.90,18.63 |q The Final Order/Search the Hidden Shrine
+step
+goto 61.84,17.18
+|tip Follow path down.
+'Search the Hidden Shrine |q The Final Order/Search the Hidden Shrine
+step
+goto 61.84,17.18
+'Examine the Stone Pedastal |q The Final Order/Examine Stone Pedastal
+step
+goto 61.84,17.18
+talk Zamarak |q The Final Order/Talk to Zamarak
+step
+goto 64.38,52.98
+|tip Watch traps.
+'Fix Quest Objective next run.
+step
+goto 66.55,64.74 |q The Final Order/Follow Captain Saulinia |tip Watch traps.
+step
+goto 57.69,83.91 |q The Final Order/Follow Captain Saulinia |tip Watch traps.
+step
+goto 37.07,78.66 |q The Final Order/Follow Captain Saulinia |tip Watch traps and Follow path down the stairs.
+step
+goto 33.63,68.72 |q The Final Order/Follow Captain Saulinia |tip Watch traps and Go up the stairs.
+step
+goto 36.17,62.03
+'Open Training Chamber |q The Final Order/Follow Captain Saulinia
+step
+goto 30.20,55.88
+kill Captain Saulinia |q The Final Order/Kill Captain Saulinia
+step
+goto 30.56,51.36
+'Open Dov-Vahl Shrine |q The Final Order/Talk to Dragonguard Orland
+|tip Manually skip to the next step.
+step
+goto 42.68,33.27
+talk Dragonguard Orland |q The Final Order/Talk to Dragonguard Orland
+step
+goto 61.84,17.18
+|tip Drop down.
+'Insert Ring into Stone Pedastal |q The Final Order/Open the Dragonguard Sanctuary
+step
+goto 63.65,16.64
+'Open Dov-Vahl Sanctuary |q The Final Order/Claim the Dragonhorn
+|tip Manually skip to the next step.
+step
+goto 91.14,15.01
+'Take Anequina Dragonhorn |q The Final Order/Claim the Dragonhorn
+step
+'Open Northern Elsweyr
+'Travel to _Rimmen_ in Northern Elsweyr |q The Final Order/Return to Rimmen Palace
+|tip Manually skip to the next step.
+step
+goto rimmen_base 37.88,38.45 |q The Final Order/Return to Rimmen Palace
+step
+goto 52.79,34.48 |q The Final Order/Return to Rimmen Palace
+step
+goto 72.78,39.27
+'Return to Rimmen Palace |q The Final Order/Return to Rimmen Palace
+step
+goto 72.78,39.27
+talk Cadwell |q The Final Order/Talk to Cadwell
+step
+goto 73.66,38.42
+'Open Rimmen Palace |q The Final Order/Attend the Meeting in the Throne Room
+|tip Manually skip to the next step.
+step
+goto 76.52,37.22
+'Open Rimmen Palace Throne Room |q The Final Order/Attend the Meeting in the Throne Room
+|tip Manually skip to the next step.
+step
+goto 77.66,36.76
+'Attend the Meeting in the Throne Room |q The Final Order/Attend the Meeting in the Throne Room
+step
+goto
+talk Khamira
+turnin The Final Order
+accept Cadwell the Betrayer
+step
+goto 76.56,37.20
+'Open Rimmen Palace |q Cadwell the Betrayer/Find Abnur Tharn
+|tip Manually skip to the next step.
+step
+goto 76.40,38.69
+'Find Abnur Tharn |q Cadwell the Betrayer/Find Abnur Tharn
+step
+goto 76.40,38.69
+talk Cadwell |q Cadwell the Betrayer/Talk to Cadwell
+step
+goto 76.40,38.69
+talk Abnur Tharn |q Cadwell the Betrayer/Talk to Abnur Tharn
+step
+'Open Northern Elsweyr
+'Travel to _The Stitches_ in Northern Elsweyr |q Cadwell the Betrayer/Go to Zumog Phoom's Lair
+|tip Manually skip to the next step.
+step
+goto stitches_base 46.92,28.48 |q Cadwell the Betrayer/Go to Zumog Phoom's Lair
+step
+goto 49.02,75.35 |q Cadwell the Betrayer/Go to Zumog Phoom's Lair
+step
+goto 40.26,54.26 |q Cadwell the Betrayer/Go to Zumog Phoom's Lair
+step
+goto 59.02,59.17 |q Cadwell the Betrayer/Go to Zumog Phoom's Lair
+step
+goto 42.10,51.46
+'Go to Zumog Phoom's Lair |q Cadwell the Betrayer/Go to Zumog Phoom's Lair
+step
+goto 42.10,51.46
+talk Abnur Tharn |q Cadwell the Betrayer/Talk to Abnur Tharn
+step
+goto 42.23,51.49
+'Open Sepulcher of Mischance |q Cadwell the Betrayer/Enter the Sepulcher of Mischance
+|tip Manually skip to the next step.
+step
+goto SepulcherofMischance00_base 33.56,50.68
+talk Cadwell |q Cadwell the Betrayer/Talk to Cadwell
+step
+goto 21.23,58.90
+'Open Lower Crypts |q Cadwell the Betrayer/Recover Cadwell's Stolen Energy
+|tip Manually skip to the next step.
+step
+goto SepulcherofMischance01_base 51.00,65.00
+'Dispell Cadwell's Stolen Energy |q Cadwell the Betrayer/Recover Cadwell's Stolen Energy
+|tip Manually skip to the next step.
+step
+goto 70.00,65.00
+'Open Crypt Library |q Cadwell the Betrayer/Recover Cadwell's Stolen Energy
+|tip Manually skip to the next step.
+step
+goto SepulcherofMischance02_base 53.54,67.68
+'Dispell Cadwell's Stolen Energy |q Cadwell the Betrayer/Recover Cadwell's Stolen Energy
+|tip Manually skip to the next step.
+step
+goto 52.53,87.88
+'Open Funerary Chamber |q Cadwell the Betrayer/Recover Cadwell's Stolen Energy
+|tip Manually skip to the next step.
+step
+goto SepulcherofMischance03_base 67.68,46.46
+'Dispell Cadwell's Stolen Energy |q Cadwell the Betrayer/Recover Cadwell's Stolen Energy
+|tip Manually skip to the next step.
+step
+goto 69.70,63.64
+'Open Necromancer Workshop |q Cadwell the Betrayer/Recover Cadwell's Stolen Energy
+|tip Manually skip to the next step.
+step
+goto SepulcherofMischance04_base 38.38,51.52
+'Recover Cadwell's Stolen Energy |q Cadwell the Betrayer/Recover Cadwell's Stolen Energy
+step
+goto 38.38,51.52
+talk Captain Nala-do |q Cadwell the Betrayer/Talk to Nala-do's Spirit
+step
+goto 32.32,69.70
+'Open Zumog Phoom's Lair |q Cadwell the Betrayer/Stop Zumog Phoom's Ritual
+|tip Manually skip to the next step.
+step
+goto SepulcherofMischance00B_base 53.42,51.37
+kill Zumog Phoom |q Cadwell the Betrayer/Stop Zumog Phoom's Ritual
+step
+goto 53.42,51.37
+'Watch Cadwell the Betrayer |q Cadwell the Betrayer/Watch Cadwell the Betrayer
+step 
+talk Cadwell |q Cadwell the Betrayer/Talk to Cadwell
+step
+goto 52.74,52.05
+'Use Portal to Rimmen |q Cadwell the Betrayer/Return to Rimmen Palace
+|tip Manually skip to the next step.
+step
+goto rimmen_base 76.52,37.21
+'Open Rimmen Palace Throne Room |q Cadwell the Betrayer/Talk to Khamira
+|tip Manually skip to the next step.
+step
+goto 77.73,36.74
+talk Khamira |q Cadwell the Betrayer/Talk to Khamira
+step
+goto 77.69,36.32
+'Open Rimmen Palace Royal Study |q Cadwell the Betrayer/Enter the Royal Study
+step
+goto 77.39,35.57
+'Listen to Khamira |q Cadwell the Betrayer/Listen to Khamira
+step
+goto 77.39,35.57
+talk Khamira |q Cadwell the Betrayer/Talk to Khamira
+step
+'Open Northern Elsweyr
+'Travel to _Hakoshae_ in Northern Elsweyr |q Cadwell the Betrayer/Go to the Shadow Dance Ruins
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 67.84,48.12 |q Cadwell the Betrayer/Go to the Shadow Dance Ruins
+step
+goto 66.77,47.68 |q Cadwell the Betrayer/Go to the Shadow Dance Ruins
+step
+goto 64.46,49.11 |q Cadwell the Betrayer/Go to the Shadow Dance Ruins
+step
+goto 63.88,48.45
+'Open Shadow Dance Ruins |q Cadwell the Betrayer/Go to the Shadow Dance Ruins
+step
+goto 63.96,48.35
+talk Khamira |q Cadwell the Betrayer/Talk to Khamira
+step
+goto 63.87,48.15
+'Use Portal to Shadow Dance Temple |q Cadwell the Betrayer/Follow Khamira
+step
+goto dancingmoon01_base 66.24,47.64
+'Open Shadow Dance Temple |q Cadwell the Betrayer/Search the Shadow Dance Temple
+|tip Manually skip to the next step.
+step
+goto dancingmoon02_base 12.33,37.19
+'Examine Temple Relic |q Cadwell the Betrayer/Examine the Temple Relic |future
+step
+goto 40.56,31.12 |q Cadwell the Betrayer/Find the Next Temple Relic
+step
+goto 62.04,45.66
+'Activate Temple Relic |q Cadwell the Betrayer/Activate the Temple Relic |future
+step
+goto 70.62,49.71 |q Cadwell the Betrayer/Find the Final Temple Relic
+step
+goto 72.45,71.29 |q Cadwell the Betrayer/Find the Final Temple Relic
+step
+goto 92.00,62.43
+'Activate Temple Relic |q Cadwell the Betrayer/Activate the Temple Relic |future
+step
+goto 86.51,45.66
+talk Khamira |q Cadwell the Betrayer/Talk to Khamira |future
+step
+goto 86.42,44.70
+'Open Vault of the Heavenly Scourage |q Cadwell the Betrayer/Enter the Temple Sanctuary
+step
+goto dancingmoon03_base 49.16,48.92
+kill Cadwell the Betrayer |q Cadwell the Betrayer/Kill the Betrayer
+step
+goto 49.88,31.18
+talk Khamira |q Cadwell the Betrayer/Talk to Khamira
+step
+goto 44.84,28.30
+'Activate Temple Relic |q Cadwell the Betrayer/Activate the Temple Relic
+step
+goto 54.20,32.85
+'Observe Khamira |q Cadwell the Betrayer/Observe Khamira
+step
+goto 54.20,32.85
+talk Cadwell |q Cadwell the Betrayer/Talk to Cadwell
+step
+goto 54.20,32.85
+'Use Portal to Rimmen |q Cadwell the Betrayer/Return to Rimmen Palace
+step
+goto rimmen_base 77.72,36.72
+talk Khamira
+turnin Cadwell the Betrayer
+accept Jode's Core
+step
+goto 76.56,37.20
+'Open Rimmen Palace |q Jode's Core/Gather Your Compansions
+|tip Manually skip to the next step.
+step
+goto 75.69,37.54
+'Open Rimmen |q Jode's Core/Gather Your Compansions
+|tip Manually skip to the next step.
+step
+goto 61.09,42.38 |q Jode's Core/Gather Your Compansions
+step
+goto 51.97,34.61 |q Jode's Core/Gather Your Compansions
+step
+goto 48.00,45.08 |q Jode's Core/Gather Your Compansions
+step
+goto 57.84,47.16
+talk Zamarak |q Jode's Core/Talk to Zamarak
+step
+goto 40.13,56.52
+|tip Drop down.
+talk Cadwell |q Jode's Core/Talk to Cadwell
+step
+goto 38.09,61.60
+talk Abnur Tharn |q Jode's Core/Talk to Abnur Tharn
+step
+goto 28.50,45.56 |q Jode's Core/Talk to Prefect Calo
+step
+goto 24.22,43.43
+talk Prefect Calo |q Jode's Core/Talk to Prefect Calo
+step
+'Open Northern Elsweyr Map
+'Travel to _The Stitches_ |q Scars of the Past |future
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 28.50,49.51 |q Scars of the Past |future
+step
+goto 22.51,56.62
+|tip Follow the main road south.
+talk Iokkas
+accept Scars of the Past
+step
+goto 21.71,55.78
+'Enter Cicatrice |q Scars of the Past/Enter Cicatrice
+step
+goto 21.35,55.94
+|tip Loot the Forces you kill.
+kill Blighted Forces |q Scars of the Past/.*Gather Diseased Samples.*
+step
+goto 21.76,55.73 |q Scars of the Past/Talk to Iokkas
+step
+goto 22.57,56.67 |q Scars of the Past/Talk to Iokkas
+step
+goto 23.48,56.80
+talk Iokkas |q Scars of the Past/Talk to Iokkas
+step
+goto 21.99,57.62 |q Scars of the Past/Gather Arkay's Lash Blossom
+step
+goto 19.57,61.15 |q Scars of the Past/Gather Arkay's Lash Blossom
+step
+goto 19.14,59.01
+'Take Arkay's Lash |q Scars of the Past/Gather Arkay's Lash Blossom
+step
+goto 20.07,61.12 |q Scars of the Past/Talk to Iokkas
+step
+goto 22.21,57.62 |q Scars of the Past/Talk to Iokkas
+step
+goto 23.50,56.80
+talk Iokkas |q Scars of the Past/Talk to Iokkas
+step
+goto 23.55,56.76
+'Drink Antidote |q Scars of the Past/Drink Antidote
+step
+goto 23.03,57.72 |q Scars of the Past/Enter the Oasis Caverns
+step
+goto 24.28,59.36
+|tip Follow path down.
+'Open Cicatrice Caverns |q Scars of the Past/Enter the Oasis Caverns
+|tip Manually skip to the next step.
+step
+goto cicatriceoasis_base 49.86,66.12
+talk Lara-Tan |q Scars of the Past/Talk to Lara-Tan |future
+step
+goto 22.89,61.27
+'Give Antidote Najirra |q Scars of the Past/Rescue Najirra
+step
+goto 17.70,35.17
+'Examine Nikussha's Research Note 2 |q Scars of the Past/.*Gather Research Notes.* |count 1
+step
+goto 33.81,08.52
+'Give Antidote Pilazaz |q Scares of the Past/Rescue Pilazaz
+step
+goto 47.22,10.68 |q Scars of the Past/.*Gather Research Notes.* |count 2
+step
+goto 49.48,26.83
+'Examine Nikussha's Research Note 1 |q Scars of the Past/.*Gather Research Notes.* |count 2
+step
+goto 76.04,32.83 |q Scars of the Past/Rescue Raebanji
+step
+goto 81.43,43.38
+'Give Antidote Raebanji |q Scars of the Past/Rescue Raebanji
+step
+goto 75.35,32.00 |q Scars of the Past/.*Gather Research Notes.* |count 3
+step
+goto 50.34,91.18 |q Scars of the Past/.*Gather Research Notes.* |count 3
+step
+goto 37.49,33.63 |q Scars of the Past/.*Gather Research Notes.* |count 3
+step
+goto 35.65,61.29 |q Scars of the Past/.*Gather Research Notes.* |count 3
+step
+goto 86.18,71.15 |q Scars of the Past/.*Gather Research Notes.* |count 3
+step
+goto 87.79,84.51 |q Scars of the Past/.*Gather Research Notes.* |count 3
+step
+goto 67.28,79.49
+'Examine Nikussha's Research Note 3 |q Scars of the Past/.*Gather Research Notes.* |count 3
+step
+goto 88.47,84.00 |q Scars of the Past/Return to Oasis Entrance
+step
+goto 83.55,68.18 |q Scars of the Past/Return to Oasis Entrance
+step
+goto 61.01,66.41
+'Return to Oasis Entrance |q Scars of the Past/Return to Oasis Entrance
+step
+goto 61.01,66.41
+talk Iokkas |q Scars of the Past/Talk to Iokkas
+step
+goto 51.50,54.54
+'Open Central Chamber |q Scars of the Past/Kill the Nereid
+|tip Manually skip to the next step.
+step
+goto cicatriceoasisbossroom_base 52.03,20.51
+kill Nereid |q Scars of the Past/Kill the Nereid
+step
+goto 51.23,51.37
+'Open Cicatrice Caverns |q Scars of the Past/Talk to Iokkas
+|tip Manually skip to the next step.
+step
+goto 50.70,87.82
+'Open Elsweyr |q Scars of the Past/Talk to Iokkas
+|tip Manually skip to the next step.
+step
+goto elsweyr_base 22.69,57.74 |q Scars of the Past/Talk to Iokkas
+step
+goto 23.53,56.79
+talk Iokkas
+turnin Scars of the Past
+step
+goto 22.51,55.98 |q Iron in the Blood |future
+step
+goto 31.46,72.57 |q Thick as Thieves/.*Recruit Tasnasi's Crew.* |count 3
+step
+goto 17.09,58.06
+talk Nazdar |q Thick as Thieves/.*Recruit Tasnasi's Crew.* |count 3
+step
 ]])
 
 ZGV:RegisterGuide("LEVELING\\Southern Elsweyr",[[
@@ -23476,7 +24077,6 @@ loadingimage loadscreen_southernelsweyr_01.dds
 description Devastated by a terrible plague and its purging fire decades ago, Southern Elsweyr devolved into a lawless region beset by slavers, pirates, and brigands.
 step
 'Open Map Auridon
-click Vulkhel Guard Wayshrine
 'Travel to _Vulkhel Guard_ in Auridon |q The Dragonguard's Legacy |future
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
@@ -23487,7 +24087,7 @@ accept The Dragonguard's Legacy
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 39.38,41.00
-click Manor House |q The Dragonguard's Legacy/Talk to Kasura
+'Open Manor House |q The Dragonguard's Legacy/Talk to Kasura
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
@@ -23501,7 +24101,6 @@ goto 35.87,38.63
 |only if ZGV.U7tils.GetFaction("player","notvet")=="AD"
 step
 'Open Audiron Map
-click Tanzelwil Wayshrine
 'Travel to _Tanzelwil_ in Auridon |q The Dragonguard's Legacy/Find the Eastern Glyph
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"

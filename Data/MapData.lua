@@ -2169,6 +2169,19 @@ ZGV.MapData = {
 		["DesertWind2_Base"] =                  { name = "Desert Wind Caverns",                     id = 684, xoffset = 0.520148, yoffset = 0.634774, scale = 0.002571, },
 		["DesertWind2_2A_Base"] =               { name = "Desert Wind Caverns",                     id = 684, xoffset = 0.521048, yoffset = 0.635974, scale = 0.002571, },
 		["hakoshaecrypts_base"] =               { name = "Hakoshae Tombs",                          id = 685, xoffset = 0.566845, yoffset = 0.638652, scale = 0.011061, },
+		["dragonguardoutpost_base"] =           { name = "Dov-Vahl Shrine",                         id = 686, xoffset = 0.578204, yoffset = 0.616931, scale = 0.010221, },
+		["SepulcherofMischance00_base"] =       { name = "Sepulcher of Mischance",                  id = 687, xoffset = 0.509581, yoffset = 0.648637, scale = 0.010058, },
+		["SepulcherofMischance01_base"] =       { name = "Sepulcher of Mischance",                  id = 687, xoffset = 0.506742, yoffset = 0.653291, scale = 0.010040, },
+		["SepulcherofMischance02_base"] =       { name = "Sepulcher of Mischance",                  id = 687, xoffset = 0.513721, yoffset = 0.660006, scale = 0.000040, },
+		["SepulcherofMischance03_base"] =       { name = "Sepulcher of Mischance",                  id = 687, xoffset = 0.513707, yoffset = 0.660094, scale = 0.000040, },
+		["SepulcherofMischance04_base"] =       { name = "Sepulcher of Mischance",                  id = 687, xoffset = 0.513784, yoffset = 0.660008, scale = 0.000040, },
+		["SepulcherofMischance00B_base"] =      { name = "Sepulcher of Mischance",                  id = 687, xoffset = 0.513781, yoffset = 0.660037, scale = 0.000058, },
+		["dancingmoon01_base"] =                { name = "Shadow Dance Temple",                     id = 688, xoffset = 0.548679, yoffset = 0.646867, scale = 0.002514, },
+		["dancingmoon02_base"] =                { name = "Shadow Dance Temple",                     id = 688, xoffset = 0.550212, yoffset = 0.647056, scale = 0.002514, },
+		["dancingmoon03_base"] =                { name = "Vault of Heavenly Scourage",              id = 689, xoffset = 0.551055, yoffset = 0.645824, scale = 0.002567, },
+		["cicatriceoasis_base"] =               { name = "Cicatrice Caverns",                       id = 690, xoffset = 0.483640, yoffset = 0.650546, scale = 0.015530, },
+		["cicatriceoasisupperfloor_base"] =     { name = "Cicatrice Caverns",                       id = 690, xoffset = 0.483640, yoffset = 0.650546, scale = 0.015530, },
+		["cicatriceoasisbossroom_base"] =       { name = "Cicatrice Caverns",                       id = 690, xoffset = 0.483640, yoffset = 0.650546, scale = 0.015530, },
 		
 		
 		-- SOUTHERN ELSWEYR
