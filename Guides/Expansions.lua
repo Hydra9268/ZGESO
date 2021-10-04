@@ -23271,6 +23271,162 @@ step
 goto 52.61,34.48
 talk Mazza-Mirri |q Path of the Hidden Moon/Talk to Mazza-Mirri
 step
+goto 53.87,34.76
+'Examine Stone of Atonement |q Path of the Hidden Moon/.*Visit the Teaching Stones.* |count 1
+step
+goto 52.61,35.07
+'Examine Stone of Commitment |q Path of the Hidden Moon/.*Visit the Teaching Stones.* |count 2
+step
+goto 51.97,34.56
+'Examine Stone of Banishment |q Path of the Hidden Moon/.*Visit the Teaching Stones.* |count 3
+step
+goto 52.61,34.48
+talk Mazza-Mirri |q Path of the Hidden Moon/Talk to Mazza-Mirri
+step
+goto 52.59,34.80
+'Use Portal to the Temple of the Hidden Moon |q Path of the Hidden Moon/Enter the Temple
+step
+goto 53.01,34.82
+'Listen to Mazza-Mirri's Tale |q Path of the Hidden Moon/Listen to Mazza-Mirri's Tale
+step
+goto 53.01,34.80
+talk Mazza-Mirri |q Path of the Hidden Moon/Talk to Mazza-Mirri
+step
+goto 53.01,34.66
+'Open Halls of Atonement |q Path of the Hidden Moon/Pass Mazza-Mirri's Test
+|tip Manually skip to the next step.
+step
+goto 53.07,33.23
+kill Waves of Forces |q Path of the Hidden Moon/Pass Mazza-Mirri's Test
+step
+goto 53.00,32.82
+'Open Moon Guardian's Tomb |q Path of the Hidden Moon/Follow Mazza-Mirri
+|tip Manually skip to the next step.
+step
+goto 53.00,32.07
+'Take The Moonlight Blade |q Path of the Hidden Moon/Take the Moonlight Blade
+step
+goto 53.00,32.07
+talk Shando-ri |q Path of the Hidden Moon/Talk to Shando-ri
+step
+goto 53.00,30.98 |q Path of the Hidden Moon/Talk to Vastarie
+step
+goto 52.08,31.23 |q Path of the Hidden Moon/Talk to Vastarie
+step
+goto 51.95,31.55
+'Open Tomb of the Hidden Moon |q Path of the Hidden Moon/Talk to Vastarie
+|tip Manually skip to the next step.
+step
+goto 52.57,36.68
+|tip Drop down
+talk Vastarie
+turnin Path of the Hidden Moon
+accept The Moonlight Blade
+step
+goto 52.52,36.64
+talk Shando-ri |q The Moonlight Blade/Talk to Shando-ri
+step
+goto 52.55,36.73
+'Open Elsweyr |q The Moonlight Blade/Restore the Moonlight Blade
+|tip Manually skip to the next step.
+step
+goto 52.51,37.26
+|tip Kill the Undead forces all around this area.
+'Blade Charge: Low |q The Moonlight Blade/Blade Charge: Low
+step
+goto 52.51,37.26
+|tip Kill the Undead forces all around this area.
+'Blade Charge: Medium |q The Moonlight Blade/Blade Charge: Medium
+step
+goto 52.51,37.26
+|tip Kill the Undead forces all around this area.
+'Blade Charge: High |q The Moonlight Blade/Blade Charge: High
+step
+goto 54.35,36.26 |q The Moonlight Blade/Talk to Shando-ri
+step
+goto 54.43,35.03 |q The Moonlight Blade/Talk to Shando-ri
+step
+goto 52.44,36.09
+talk Shando-ri |q The Moonlight Blade/Talk to Shando-ri
+step
+goto 52.56,35.88
+'Use Moonlight Blade |q The Moonlight Blade/Open Azurah's Gate
+step
+goto 52.58,35.89
+'Open Hidden Moons Crypt |q The Moonlight Blade/Kill the Shades of Arum-Khal
+|tip Manually skip to the next step.
+step
+goto ashencombs1_base 49.29,82.36 |q The Moonlight Blade/Kill the Shades of Arum-Khal
+step
+goto 37.81,82.33 |q The Moonlight Blade/Kill the Shades of Arum-Khal
+step
+goto 37.46,63.28 |q The Moonlight Blade/Kill the Shades of Arum-Khal
+step
+goto 21.00,63.28
+'Open Jone's Vault of Repentance |q The Moonlight Blade/Kill the Shades of Arum-Khal
+|tip Manually skip to the next step.
+step
+goto 08.43,63.09
+kill he Shades of Arum-Khal |q The Moonlight Blade/Kill the Shades of Arum-Khal
+|tip Manually skip to the next step.
+step
+goto 20.35,63.19
+'Open Hidden Moon Catacombs |q The Moonlight Blade/Kill the Shades of Arum-Khal
+|tip Manually skip to the next step.
+step
+goto 27.08,51.64 |q The Moonlight Blade/Kill the Shades of Arum-Khal
+step
+goto 71.18,51.95 |q The Moonlight Blade/Kill the Shades of Arum-Khal
+step
+goto 77.63,63.26
+'Open Jone's Vault of Contrition |q The Moonlight Blade/Kill the Shades of Arum-Khal
+|tip Manually skip to the next step.
+step
+goto 89.63,63.14
+kill the Shades of Arum-Khal |q The Moonlight Blade/Kill the Shades of Arum-Khal
+step
+goto 78.22,63.26
+'Open Hidden Moon Catacombs |q The Moonlight Blade/Kill Arum-Khal
+|tip Manually skip to the next step.
+step
+goto 71.41,52.05 |q The Moonlight Blade/Kill Arum-Khal
+step
+goto 63.90,40.43 |q The Moonlight Blade/Kill Arum-Khal
+step
+goto 49.26,35.30
+'Open The Dark Adept's Crypt |q The Moonlight Blade/Kill Arum-Khal
+|tip Manually skip to the next step.
+step
+goto 49.34,25.98
+kill Arum-Khal |q The Moonlight Blade/Kill Arum-Khal
+step
+goto 49.64,21.76
+|tip Wait for Shando-ri
+'Use Moonlight Blade |q The Moonlight Blade/Use the Moonlight Blade
+step
+goto 49.57,21.58
+'Use Portal to Arum-Khal's Realm |q The Moonlight Blade/Enter Arum-Khal's Realm
+step
+goto ashencombs2_base 73.49,24.57
+talk Shando-ri |q The Moonlight Blade/Talk to Shando-ri
+step
+goto 36.02,38.39
+kill the Dark Spirit of Arum-Khal |q The Moonlight Blade/Kill the Dark Spirit of Arum-Khal
+step
+goto 32.68,82.46
+'Escape Arum-Khal's Realm |q The Moonlight Blade/Escape Arum-Khal's Realm
+step
+goto elsweyr_base 51.66,40.26
+talk Vastarie |q The Moonlight Blade/Talk to Vastarie
+step
+goto 51.80,40.52
+|tip Wait for Vastarie
+'Use Moonlight Blade |q The Moonlight Blade/Restore Shando-ri
+step
+goto 51.66,40.26
+talk Vastarie
+turnin The Moonlight Blade
+step
 'Open Northern Elsweyr Map
 'Travel to _Hakoshae_ |q Descendant of the Potentate/Talk to Vek-Drassi Secunia
 |tip Manually skip to the next step.
@@ -23381,6 +23537,95 @@ step
 goto 67.23,47.14 |achieve 2461/3
 step
 goto 66.19,47.16 |achieve 2461/3
+step
+goto 64.25,51.47 |q Blood and Tears |future
+step
+goto 62.29,51.27 |q Blood and Tears |future
+step
+goto 59.89,50.58
+talk Yushiha
+accept Blood and Tears
+step
+goto 59.43,49.67 |q Blood and Tears/Check on the Travelers' Camp
+step
+goto 57.11,49.20
+'Examine Through the Weeping Scar |q Blood and Tears/Check on the Travelers' Camp
+step
+goto 54.98,48.96 |q Blood and Tears/Check on the Caravan
+step
+goto 
+kill Tenarr Bloodletting |q Blood and Tears/Check on the Caravan
+step
+goto 53.63,49.77
+talk Rakazsa |q Blood and Tears/Talk to Rakazsa
+step
+goto 53.66,49.73
+talk Yushiha |q Blood and Tears/Talk to Yushiha
+step
+goto 58.48,48.07 |q Blood and Tears/Go to the Tenarr Zalviit Ossuary
+step
+goto 60.11,48.10
+'Open Tenarr Zalviit Ossuary |q Blood and Tears/Go to the Tenarr Zalviit Ossuary
+step
+goto weepingscarmain_base 15.63,35.70 |q Blood and Tears/Search the Tenarr Zalviit Ossuary
+step
+goto 17.97,16.21 |q Blood and Tears/Search the Tenarr Zalviit Ossuary
+step
+goto 54.09,14.60
+'Search the Tenarr Zalviit Ossuary |q Blood and Tears/Search the Tenarr Zalviit Ossuary
+step
+goto 51.73,29.53
+'Search Chest |q Blood and Tears/Acquire Kennel Key
+step
+goto 55.81,14.60
+'Unlock Captive Kennel |q Blood and Tears/.*Rescue Captive Caravanners.* |count 1
+step
+goto 58.98,30.01 |q Blood and Tears/.*Rescue Captive Caravanners.* |count 2
+step
+goto 77.35,37.71 |q Blood and Tears/.*Rescue Captive Caravanners.* |count 2
+step
+goto 85.30,68.63
+'Clear Tenarr Forces in the Room |q Blood and Tears/.*Rescue Captive Caravanners.* |count 2
+step
+goto 74.49,65.73 |q Blood and Tears/.*Rescue Captive Caravanners.* |count 3
+step
+goto weepingscar_f2_base 65.58,91.59 |q Blood and Tears/.*Rescue Captive Caravanners.* |count 3
+step
+goto 81.92,90.93
+'Unlock Captive Kennel |q Blood and Tears/.*Rescue Captive Caravanners.*
+step
+goto 78.46,66.54 |q Blood and Tears/Find Rakazsa in the Tenarr Zalviit Ossuary
+step
+goto 42.43,63.86
+talk Yushiha |q Blood and Tears/Talk to Yushiha |future
+step
+goto 23.05,65.46
+'Open Rakazsa's Den |q Blood and Tears/Pursue Rakazsa
+step
+goto 13.98,65.69
+kill Rakazsa |q Blood and Tears/Kill Rakazsa
+step
+goto 12.92,50.78
+'Open Elsweyr |q Blood and Tears/Talk to Yushiha
+step
+goto elsweyr_base 57.22,48.62 |q Blood and Tears/Talk to Yushiha |tip Drop down.
+step
+goto 58.22,49.46 |q Blood and Tears/Talk to Yushiha
+step
+goto 57.28,49.28
+talk Yushiha
+turnin Blood and Tears
+step
+goto 63.93,51.95 |q Moonstruck in Manacles |future
+step
+goto 60.87,58.88 |q Moonstruck in Manacles |future
+step
+goto 62.36,58.69
+|tip Climb the dirt path to the top.
+'Open The Tangle |q Moonstruck in Manacles |future
+step
+goto thetangle_base 46.60,27.74
+talk Mazdurr the Moonstruck
 step
 goto 70.53,45.76
 'Use Hakoshae Wayshrine
