@@ -34043,7 +34043,7 @@ goto 44.06,88.43
 'Take Phantasmal Censer |q Giving Up the Ghost/Take the Phantasmal Censer
 step
 goto 47.24,95.52
-click Beyond Bangara |q Giving Up the Ghost/Follow Tiras Tirethi's Voice
+click Veyond Bangrara |q Giving Up the Ghost/Follow Tiras Tirethi's Voice
 |tip Manually skip to the next step.
 step
 goto veyond2_base 21.97,74.63
