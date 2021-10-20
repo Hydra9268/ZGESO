@@ -666,12 +666,11 @@ function Utils.DistanceOffsetForGoto(dist,selfdist)
 	else -- zone maps
 		-- Created Utils.DistanceOffset in functions
 		-- sorting based on preceived popularity
-		if      GetCurrentMapIndex() == Enums.CraglornMap or
+		if  GetCurrentMapIndex() == Enums.CraglornMap or
        		    GetCurrentMapIndex() == Enums.SouthernElsweyrMap then    	return dist or selfdist or 2
 
 		elseif 	GetCurrentMapIndex() == Enums.BlackwoodMap or
 		        GetCurrentMapIndex() == Enums.BlackreachMap or
-				GetCurrentMapIndex() == Enums.DeadlandsMap or
 				GetCurrentMapIndex() == Enums.NorthernElsweyrMap or
 		        GetCurrentMapIndex() == Enums.U28BlackreachMap or
 				GetCurrentMapIndex() == Enums.MurkmireMap then			return dist or selfdist or 3
@@ -732,7 +731,7 @@ function Utils.DistanceOffsetForIsComplete()
 
 		elseif 	GetCurrentMapIndex() == Enums.BlackwoodMap or
 		        GetCurrentMapIndex() == Enums.BlackreachMap or
-				GetCurrentMapIndex() == Enums.DeadlandsMap or
+				GetCurrentMapIndex() == Enums.CraglornMap or
 				GetCurrentMapIndex() == Enums.NorthernElsweyrMap or
 				GetCurrentMapIndex() == Enums.U28BlackreachMap or
 				GetCurrentMapIndex() == Enums.MurkmireMap then			return 3
