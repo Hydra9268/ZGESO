@@ -132,15 +132,11 @@ Viewer/GuideViewerFrame.xml
 GuideMenu.lua
 
 -- Guides
-Guides/ZygorIncludeCommon.lua
 Guides/LevelingCommon.lua
-Guides/LevelingAldmeriDominion.lua
-Guides/LevelingDaggerfallCovenant.lua
-Guides/LevelingEbonheartPact.lua
 Guides/Skyshards.lua
 Guides/MainQuestsOnly.lua
-Guides/DLCs.lua
 Guides/Expansions.lua
+Guides/Companions.lua
 
 -- Testing
 ; Guides/Testing.lua
