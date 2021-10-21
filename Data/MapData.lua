@@ -2517,7 +2517,7 @@ ZGV.MapData = {
 		["U30_GideonFightClub_base"] =          { name = "Ruction Ring",                            id = 818, xoffset = 0.655735, yoffset = 0.670635, scale = 0.007504, },
 		
 		-- Deadlands
-		["u31_lyranthhideaway_base"] =          { name = "Lyranth's Hidden Lair",                   id = 819, xoffset = -0.103035, yoffset = 0.093206, scale = 0.019854, },
+				["u31_lyranthhideaway_base"] =          { name = "Lyranth's Hidden Lair",                   id = 819, xoffset = -0.103035, yoffset = 0.093206, scale = 0.019854, },
 		["u31_culthideaway_base"] =             { name = "Waking Flame Camp",                       id = 820, xoffset = 0.335013, yoffset = 0.710732, scale = 0.012114, },
 		["u32_ws_wakingflame_base"] =           { name = "Waking Flame Camp",                       id = 820, xoffset = 1.102833, yoffset = 0.749242, scale = 0.015858, },
 		["u31_FlameConclaveP1_base"] =          { name = "Waking Flame Fargrave Conclave",          id = 821, xoffset = -0.039216, yoffset = 0.179866, scale = 0.013568, },
@@ -2529,12 +2529,14 @@ ZGV.MapData = {
 		["u32_folly_delve_base"] =              { name = "False Martyrs' Folly",                    id = 826, xoffset = 1.143798, yoffset = 0.701336, scale = 0.014596, },
 		["u32_bathhouse_base"] =                { name = "The Bathhouse",                           id = 827, xoffset = 0.906379, yoffset = 0.945389, scale = 0.014810, },
 		["u32_bathhouse2_base"] =               { name = "The Bathhouse",                           id = 827, xoffset = 0.906379, yoffset = 0.945389, scale = 0.014810, },
+		["u32_bathhouse3_base"] =               { name = "The Bathhouse",                           id = 827, xoffset = 0.866379, yoffset = 0.959989, scale = 0.011143, },
 		["u32_collectorvilla_ext_base"] =       { name = "The Collector's Villa",                   id = 828, xoffset = 0.839310, yoffset = 1.019780, scale = 0.010996, },
 		["u32_collectorvilla_int1_base"] =      { name = "The Collector's Villa",                   id = 828, xoffset = 0.846473, yoffset = 1.025422, scale = 0.000237, },
 		["u32_collectorvilla_int2_base"] =      { name = "The Collector's Villa",                   id = 828, xoffset = 0.841759, yoffset = 1.015544, scale = 0.011127, },
 		["u32_collectorvilla_int3_base"] =      { name = "The Collector's Villa",                   id = 828, xoffset = 0.840073, yoffset = 1.009932, scale = 0.010990, },
 		["u32_collectorvilla_int4_base"] =      { name = "The Collector's Villa",                   id = 828, xoffset = 0.840573, yoffset = 1.013620, scale = 0.000348, },
 		["u32_collectorvilla_int5_base"] =      { name = "The Collector's Villa",                   id = 828, xoffset = 0.830624, yoffset = 1.009166, scale = 0.010977, },
+		["u32_collectorvilla_int6_base"] =      { name = "The Collector's Villa",                   id = 828, xoffset = 0.833391, yoffset = 1.017559, scale = 0.000238, },
 		["u32_burninggyre_base"] =              { name = "Burning Gyre Keep",                       id = 829, xoffset = 1.043752, yoffset = 0.807891, scale = 0.009180, },
 		["u32_dreaded_refuge_ext_base"] =       { name = "Brandfire Reformatory",                   id = 830, xoffset = 1.000403, yoffset = 0.750697, scale = 0.015150, },
 		["u32_dreaded_refuge_int_base"] =       { name = "Brandfire Reformatory",                   id = 830, xoffset = 0.997574, yoffset = 0.742188, scale = 0.013575, },
