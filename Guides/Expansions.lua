@@ -37743,7 +37743,7 @@ goto 55.42,62.45
 talk Morah |q The Force of Change/Talk to Morah
 step
 goto 53.87,59.47
-'Use Wounded Crossing Wayshrine
+'Use _Wounded Crossing Wayshrine_
 'Travel to _Raging Coast_ in The Deadlands |q The Celestial Palanquin/Talk to Initiate Tilgo
 |tip Manually skip to the next step.
 step
@@ -37860,6 +37860,7 @@ goto 37.38,32.50
 'Open _The Shambles_ |q Web of Lies/Exit the Tavern
 step
 goto 74.78,55.90
+|tip Directly outside The Wishbone.
 'Follow the _Spiderling_ |q Web of Lies/Follow the Spiderling
 step
 goto 74.78,55.90
@@ -37995,6 +37996,8 @@ goto 49.53,32.17 |q Destruction Incarnate/Go to the Collector's Villa
 step
 goto 45.31,24.13 |q Destruction Incarnate/Go to the Collector's Villa
 step
+goto 30.65,33.75 |q Destruction Incarnate/Go to the Collector's Villa
+step
 goto 16.79,29.98
 'Open _The Collector's Villa_ |q Destruction Incarnate/Go to the Collector's Villa |future
 |tip Manually skip to the next step.
@@ -38017,11 +38020,11 @@ goto 61.06,16.58
 step
 goto u32_collectorvilla_int3_base 67.92,44.81 |q Destruction Incarnate/Find the Arox
 step
-goto u32_collectorvilla_int4_base 53.44,43.23
+goto 09.49,36.20
 'Open _The Collector's Prized Exhibits_ |q Destruction Incarnate/Find the Arox |tip Watch dialogue.
 step
-goto 53.44,43.23
-'Use _Cage Release Lever_ |q Destruction Incarnate/Release Arox the Mutilator
+goto u32_collectorvilla_int4_base 53.44,43.23
+'Use _Cage Release Lever_ |q Destruction Incarnate/Release Arox the Mutilator |future
 step
 goto 56.19,48.28
 talk Arox the Mutilator |q Destruction Incarnate/Talk to Arox the Mutilator
@@ -38047,7 +38050,7 @@ goto u32_collectorvilla_ext_base 51.83,58.05
 'Open _Fargrave City District_ |q Destruction Incarnate/Return to the House of Whims
 |tip Manually skip to the next step.
 step
-goto u32_fargrave_base 16.94,35.68 |q Destruction Incarnate/Return to the House of Whims
+goto u32_fargrave_base 16.78,34.65 |q Destruction Incarnate/Return to the House of Whims
 step
 goto 46.76,24.56 |q Destruction Incarnate/Return to the House of Whims
 step
@@ -38072,7 +38075,7 @@ step
 goto 33.68,80.16 |q Destruction Incarnate/Explore Burning Gyre Keep
 step
 goto 47.26,73.77
-'Search _Broken BladeBearer Sword_ |q Destruction Incarnate/Examine the Blade-Bearer's Sword |future
+'Search _Broken Bladebearer Sword_ |q Destruction Incarnate/Examine the Blade-Bearer's Sword |future
 |tip Manually skip to the next step.
 step
 goto 51.42,83.09
@@ -38080,10 +38083,11 @@ goto 51.42,83.09
 |tip Manually skip to the next step.
 step
 goto 70.70,53.42
-|tip Stand in the Green healing circle.
+|tip Follow the Green circle around the edge of the room starting on the left side.
 kill The Cyclone Incarnate |q Destruction Incarnate/Kill the Cyclone Incarnate |future
 step
 goto 70.85,43.22
+|tip Watch the dialogue.
 'Enter Portal to the _House of Whims_ |q Destruction Incarnate/Escape Burning Gyre Keep |future
 |tip Manually skip to the next step.
 step
@@ -38093,9 +38097,10 @@ turnin Destruction Incarnate
 accept The Durance Vile
 step
 goto 45.76,32.26
+|tip Watch the dialogue.
 talk Arox the Mutilator |q The Durance Vile/Talk to Arox the Mutilator
 step
-goto 60.05,34.01 |q Courier's Folly |future
+goto 60.05,34.01 |q Courier's Folly |tip Go down the stairs. |future
 step
 goto 63.06,45.45
 'Use Portal to _The Sever_ |q Courier's Folly |future
@@ -38236,7 +38241,7 @@ step
 goto 80.87,34.65 |q Salvaged Plans/.*Find Bakh's Friends.* |count 2
 step
 goto 83.66,32.82
-'Use False Martyrs Folly Wayshrine
+'Use _False Martyrs Folly Wayshrine_
 'Travel to _Scourshales_ in The Deadlandsh |q Salvaged Plans/.*Find Bakh's Friends.* |count 2
 |tip Manually skip to the next step.
 step
@@ -38257,6 +38262,7 @@ step
 goto 83.67,32.84
 'Use _False Martyrs' Folly Wayshrine_
 'Travel to _Wretched Spire_ in the Deadlands |q The Durance Vile/Meet Lyranth at Wretched Spire
+|tip Manually skip to the next step.
 step
 goto u32deadlandszone_base 74.56,50.85 |q The Durance Vile/Meet Lyranth at Wretched Spire
 step
@@ -38307,9 +38313,6 @@ goto 71.57,49.45
 step
 goto 71.68,49.44
 'Examine _Abdomen_ |q Peace's Wretched Price/Perform Examination Ritual
-step
-goto 71.57,49.45
-'Place _Brazier_ |q Peace's Wretched Price/Perform Examination Ritual
 step
 goto 71.57,49.52
 talk Noroth |q Peace's Wretched Price/Talk to Noroth
@@ -38374,7 +38377,7 @@ goto 43.08,63.53 |q The Durance Vile/Investigate Zynoahz's Gaol
 step
 goto 43.42,62.62 |q The Durance Vile/Investigate Zynoahz's Gaol
 step
-goto 41.63,61.31
+goto 40.70,60.65
 'Examine _Zynoahz's Sketch_ |q The Durance Vile/Investigate Zynoahz's Gaol
 |tip Manually skip to the next step.
 step
@@ -38403,7 +38406,11 @@ step
 goto 18.57,64.62
 'Search _Mikget's Pack_ |q A Gem of a Mystery/Retrieve the White Planestone
 step
-goto 26.16,59.87 |q The Durance Vile/Explore the Blood Pit |future
+goto 25.66,59.19
+talk The Anchorite |q The Durance Vile/Explore the Blood Pit |future
+|tip Manually skip to the next step.
+step
+goto 26.16,59.87 |q The Durance Vile/Explore the Blood Pit
 step
 goto 26.69,60.49
 'Observe _the Overseer_ |q The Durance Vile/Observe the Overseer |future
@@ -38446,10 +38453,10 @@ goto 24.83,70.15
 step
 goto 24.83,70.15
 'Take _Lucent_ |q The Durance Vile/Find a Way to Open Elegian's Cell
-|tip Manually skip to the next step.
 step
 goto 23.68,70.22
 'Place _Dynamus Font_ |q The Durance Vile/Activate the Rune of Unsealing
+|tip Manually skip to the next step.
 step
 goto 23.49,69.63
 'Use Portal to _Balcony_ |q The Durance Vile/Activate the Rune of Unsealing
@@ -38464,8 +38471,7 @@ goto 24.21,70.06
 |tip Manually skip to the next step.
 step
 goto 24.16,70.10
-'Activate _Rune of Unsealing_
-'Place Discharge Labrum |q The Durance Vile/Activate the Rune of Unsealing
+'Activate _Rune of Unsealing_ |q The Durance Vile/Activate the Rune of Unsealing
 step
 goto 24.11,69.02
 |tip Drop down.
@@ -38487,6 +38493,7 @@ step
 goto 24.08,67.76
 talk Elegian |q The Durance Vile/Talk to Elegian
 step
+|tip Listen to the Conversation.
 'Open _The Deadlands Map_
 'Travel to _Wretched Spire_ in The Deadlands |q Peace's Wretched Price/Go to Spire Hall
 |tip Manually skip to the next step.
@@ -38525,6 +38532,7 @@ goto 77.50,60.69 |q Peace's Wretched Price/Find Vontan
 step
 goto 66.79,78.25
 talk Gilfrex |q The Force of Change/Talk to Gilfrex
+'Tell him _[Persuade] Is Shiro'dar's debt really worth all the effort you're putting into collecting?_
 step
 goto 51.99,78.20 |q Peace's Wretched Price/Find Vontan
 step
@@ -38597,9 +38605,7 @@ goto 87.25,55.03
 'Open _Wretched Spire_ |q Peace's Wretched Price/Chase Tarvyn Indoril
 |tip Manually skip to the next step.
 step
-goto u32deadlandszone_base 71.57,51.25 |q Peace's Wretched Price/Chase Tarvyn Indoril
-step
-goto 72.47,51.49
+goto u32deadlandszone_base 72.47,51.49
 |tip Follow Tarvyn Indoril across the rock.
 'Chase _Tarvyn Indoril_ |q Peace's Wretched Price/Chase Tarvyn Indoril
 step
@@ -38711,7 +38717,7 @@ step
 goto 67.92,43.81 |q Born of Grief/Go to the House of Whims
 step
 goto 61.82,44.16
-'Use _The Scourshales_ Wayshrine
+'Use _The Scourshales Wayshrine_
 'Travel to _Fargrave_ |q Born of Grief/Go to the House of Whims
 |tip Manually skip to the next step.
 step
@@ -38764,7 +38770,7 @@ goto 63.67,28.63
 'Examine _Thadriax's Instructions_ |q Deadlight/.*Search Cultist Sites.* |count 2
 step
 goto 66.89,26.69
-'Use Annihilarch's Summit Wayshrine
+'Use _Annihilarch's Summit Wayshrine_
 'Travel to _Ardent Hope_ in The Deadlands |q Deadlight/.*Search Cultist Sites.*
 |tip Manually skip to the next step.
 step
@@ -38974,7 +38980,7 @@ step
 goto 59.08,44.67 |q The Force of Change/.*Find Changed Stones.*
 step
 goto 61.78,44.15
-'Use _The Scourshales_ Wayshrine
+'Use _The Scourshales Wayshrine_
 'Travel to _Ardent Hope_ in The Deadlands |q The Force of Change/.*Find Changed Stones.*
 |tip Manually skip to the next step.
 step
@@ -39104,7 +39110,7 @@ goto 45.46,31.86
 talk Madam Whim |q Against All Hope/Talk to Madam Whim
 step
 goto 52.86,30.12
-'Use _Fargrave_ Wayshrine
+'Use _Fargrave Wayshrine_
 'Travel to _Ardent Hope_ in The Deadlands |q Against All Hope/Go to the Old Portal Dais
 |tip Manually skip to the next step.
 step
@@ -39161,7 +39167,6 @@ goto 68.33,68.31 |q Against All Hope/Search for the Anchorite
 step
 goto 85.64,67.25
 'Eavesdrop on the _Blood Adepts_ |q Against All Hope/Eavesdrop on the Blood Adepts |future
-|tip Manually skip to the next step.
 step
 goto 78.48,61.22
 'Open _Inner Keep_ |q Against All Hope/Pursue the Anchorite
@@ -39194,7 +39199,7 @@ goto 36.45,38.39
 'Use _Twisted Rod Fragment_ |q Against All Hope/Breach the Third Gate
 step
 goto 51.04,20.26
-'Open _Heart of Fire_ |q Against All Hope/Save the Anchorite
+'Open _Xarxes Crucible_ |q Against All Hope/Save the Anchorite
 |tip Manually skip to the next step.
 step
 goto u32_dl6_ahope_volcano_base 50.09,28.00 |q Against All Hope/Save the Anchorite
@@ -39203,7 +39208,7 @@ goto 50.19,47.68
 kill Bloodlord Zavak |q Against All Hope/Save the Anchorite
 step
 goto 49.86,52.11
-|tip Press X when the prompt appears during the final phase when the fire is going around in a circle.
+|tip Press X when the prompt appears during the final phase you have to stand in the green circle when the fire is going around in a circle.
 'Destroy _Valkynaz Nokvroz_ |q Against All Hope/Destroy Valkynaz Nokvroz
 step
 goto 49.86,52.11
@@ -39236,14 +39241,11 @@ step
 goto 45.95,32.30
 'Take _Memory Fragment_ |q The Last Ambition/Take the Memory Fragments
 step
-goto 45.98,32.21
-'Take _Memory Fragment_ |q The Last Ambition/Take the Memory Fragments
-step
 goto 45.86,32.05
 talk Madam Whim |q The Last Ambition/Talk to Madam Whim
 step
 goto 52.86,30.11
-'Use _Fargrave_ Wayshrine
+'Use _Fargrave Wayshrine_
 'Travel to _The Blood Pit_ in The Deadlands |q Reformatory Rescue |future
 |tip Manually skip to the next step.
 step
@@ -39263,14 +39265,14 @@ step
 goto 60.46,52.56 |q The Last Ambition/Explore the Brandfire Reformatory
 step
 goto 83.26,53.50
-'Open _Reformatory Forge_ |q The Last Ambition/Enter the Door
+'Open _Reformatory Forge_ |q The Last Ambition/Enter the Door |future
 step
 goto u32_drefuge_forge_base 42.68,52.14
 lorebook Waking Flame Journal/3/44/17
 step
 goto 54.41,41.19
+|tip Watch the dialogue.
 'Examine _Furnace Door_ |q The Last Ambition/Explore the Area
-|tip Manually skip to the next step.
 step
 goto 46.25,51.74
 'Take _Charged Lucent_ |q The Last Ambition/Open the Furnace Door
@@ -39297,7 +39299,7 @@ goto 56.12,33.86
 'Use Portal to _Forge Balcony_ |q The Last Ambition/Ignite the Furnace
 |tip Manually skip to the next step.
 step
-goto u32_drefuge_forge_baseB 56.23,32.45
+goto u32_drefuge_forge_base 56.23,32.45
 'Take _Lucent_ |q The Last Ambition/Ignite the Furnace
 |tip Manually skip to the next step.
 step
@@ -39367,7 +39369,7 @@ step
 goto 41.09,42.47
 'Search _Seized Contraband_ |q Reformatory Rescue/.*Investigate the Brandfire Reformatory.* |count 4
 step
-goto 30.98,42.06 |q Reformatory Rescue/.*Investigate the Brandfire Reformatory.* |achieve 3140/5
+goto 22.84,43.67 |achieve 3140/5
 step
 goto 15.81,24.38 |achieve 3140/5
 step
@@ -39425,7 +39427,9 @@ goto 37.45,14.25
 'Open _Doomvault Vulpinaz_ |q The Last Ambition/Meet Eveli at Doomvault Vulpinaz
 |tip Manually skip to the next step.
 step
-goto u30_shattered_vault_1_base 51.29,50.93 |q The Last Ambition/Search Doomvault Vulpinaz |future
+goto u30_shattered_vault_1_base 38.93,75.47 |q The Last Ambition/Search Doomvault Vulpinaz |future
+step
+goto 51.29,50.93 |q The Last Ambition/Search Doomvault Vulpinaz
 step
 goto 63.02,49.33
 'Use _Rune-Etched Ring_ |q The Last Ambition/Use the Rune-Etched Ring |future
@@ -39451,7 +39455,7 @@ goto 48.50,36.70
 step
 goto u32deadlandszone_base 70.54,18.52
 |tip Follow path to top.
-'Open _Ambition's End_ |q The Last Ambition/Confront Sombren
+'Open _Ambition's End_ |q The Last Ambition/Confront Sombren |future
 |tip Manually skip to the next step.
 step
 goto u32deadlandszone_base 73.51,18.38
@@ -39497,6 +39501,7 @@ goto u32_theshambles_base 39.41,63.96 |q Ambition's End/Find Arox the Mutilator
 step
 goto 42.22,67.88
 talk Grasp-Kyn Xar |q Ambition's End/Talk to Grasp-Kyn Xar |future
+|tip Pay him.
 |tip Manually skip to the next step.
 step
 goto 42.22,67.88
@@ -39534,11 +39539,11 @@ goto u32_dsolace_int1_base 13.96,41.72
 'Open _Solace Keep Battlements_ |q Ambition's End/Find the Anchorite
 |tip Manually skip to the next step.
 step
-goto 31.65,50.41
+goto u32_dsolace_ext1_base 31.65,50.41
 |tip Watch the dialogue.
 'Find The Anchorite |q Ambition's End/Find the Anchorite
 step
-goto u32_dsolace_ext1_base 21.62,50.66
+goto 21.62,50.66
 'Open _Solace Palace_ |q Ambition's End/Find Sombren |future
 |tip Manually skip to the next step.
 step
@@ -39583,19 +39588,19 @@ talk Eveli
 turnin Ambition's End
 accept Hope Springs Eternal
 step
-goto 70.55,45.36
 'Open _Fargrave Map_
-'Travel to _Fargrave_ in Fargrave |q Hope Springs Eternal/Go to Fargrave
+'Travel to _Fargrave_ in Fargrave |q Hope Springs Eternal/Go to Fargrave |future
 |tip Manually skip to the next step.
 step
 goto u32_fargrave_base 46.98,32.19
+|tip Go upstairs.
 'Open _House of Whims_ |q Hope Springs Eternal/Go to the House of Whims
 step
 goto 45.47,31.89
 |tip Go up the stairs.
 talk Madam Whip |q Hope Springs Eternal/Talk to Madam Whim
 step
-goto 47.66,26.25 |q Hope Springs Eternal/Look for Lyranth
+goto 47.66,26.25 |q Hope Springs Eternal/Look for Lyranth |tip Leave the House of Whims
 step
 goto 39.79,24.78 |q Hope Springs Eternal/Look for Lyranth
 step
