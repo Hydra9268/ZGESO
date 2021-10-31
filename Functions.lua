@@ -688,7 +688,8 @@ function Utils.DistanceOffsetForGoto(dist,selfdist)
 			    GetCurrentMapIndex() == Enums.BleakrockIsleMap then	return 5
 
 		elseif 	GetCurrentMapIndex() == Enums.ClockworkCityMap or
-		        GetCurrentMapIndex() == Enums.DeadlandsMap or
+	            GetCurrentMapIndex() == Enums.DeadlandsMap or
+				GetCurrentMapIndex() == Enums.FargraveMap or
 			    GetCurrentMapIndex() == Enums.GreenshadeMap then	return 7
 
 		elseif 	GetCurrentMapIndex() == Enums.AlikrDesertMap or
@@ -748,6 +749,7 @@ function Utils.DistanceOffsetForIsComplete()
 
 		elseif 	GetCurrentMapIndex() == Enums.ClockworkCityMap or
 		        GetCurrentMapIndex() == Enums.DeadlandsMap or
+				GetCurrentMapIndex() == Enums.FargraveMap or
 			    GetCurrentMapIndex() == Enums.GreenshadeMap then	return 7
 
 		elseif 	GetCurrentMapIndex() == Enums.AlikrDesertMap or
