@@ -37299,7 +37299,7 @@ turnin Making a Racket |next LEVELING\\The Deadlands
 
 ZGV:RegisterGuide("LEVELING\\The Deadlands",[[
 loadingimage loadscreen_ardent_hope_01.dds
-description Coming Soon
+description The Deadlands is Mehrunes Dagon's realm of Oblivion.
 -- BEGIN: DEADLANDS PROLOGUE GUIDE
 
 -- START: ALDMERI DOMINION FACTION PROLOGUE GUIDE
