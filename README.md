@@ -29,6 +29,7 @@ Install through the excellent add-on manager <a href="https://minion.mmoui.com/"
 
 ### Recent Updates
 
+*10/31/21 Remaster DLCs and Deadland Guides now available
 * 6/1/21 Blackwood, Dragonhold (Southern Elsweyr), and Craglorn guides now available (Thank you, snichols7778)! 
 * 3/27/21 Skyrim Guides Now Available (Thanks to snichols7778)!
 * 3/13/21 merge: Sharlikran: Misc changes and updates
