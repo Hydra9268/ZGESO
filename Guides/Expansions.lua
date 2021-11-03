@@ -33824,7 +33824,7 @@ step
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
-goto 54.23,63.66
+goto vulkhelguard_base 54.23,63.66
 talk Selandilwen |q A Mortal's Touch |future
 'Select _I'd like to travel within the Aldmeri Dominion._
 'Select _Grahtwood, please._
