@@ -231,7 +231,7 @@ The following zones have been updated by snichols7778!:
 
 ### ZGESO Version Breakdown
 
-For example, 1.4.96
+For example, 949
 
 * `949` = Community version based on the total number of Github commits (This is the version number on the ESOUI website)
 
