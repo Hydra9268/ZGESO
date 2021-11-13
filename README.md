@@ -23,8 +23,8 @@ Install through the excellent add-on manager <a href="https://minion.mmoui.com/"
 <br/>
 
 
-### 7/24/21 Remaster Legacy guides and Stand-alone Blackwood Companions guide (Thank you, snichols7778)! 
-<img src="https://i.imgur.com/5DZTFBl.png">
+### 10/31/21 Remaster All DLCs guides and Deadlands DLC Guide.
+<img src="https://imgur.com/0J1VYya.png">
 <i>artwork &copy; ZeniMax Media</i>
 
 ### Recent Updates
