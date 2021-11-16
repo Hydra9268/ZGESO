@@ -5,7 +5,7 @@
 local ZGV = _G.ZGV
 ZGV.GuideMenuTier = "TAM"
 
-ZGV:RegisterGuide("MISCELLANEOUS\\Miscellaneous\\Skyshards",[[
+ZGV:RegisterGuide("Extra's\\Extra's\\Skyshards, Delves, and Lorebooks\\Khenarthi's Roost",[[
 
 --// Ebonheart Pact
 //Bleakrock Isle

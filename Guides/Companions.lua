@@ -2,7 +2,7 @@ local ZGV = _G.ZGV
 if ZGV:DoMutex("Miscellaneous") then return end
 ZGV.GuideMenuTier = "MOR"
 
-ZGV:RegisterGuide("MISCELLANEOUS\\Companions\\Mirri Elendis",[[
+ZGV:RegisterGuide("Extra's\\Extra's\\Companions\\Mirri Elendis",[[
 loadingimage loadscreen_u30_blackwood_zone_01.dds
 description Guide to Unlock Mirri Elendis
 step
@@ -201,10 +201,10 @@ click Blackwood |q Shattered and Scattered/Exit the Ruin
 step
 goto blackwood_base 37.71,12.89
 talk Mirri Elendis
-turnin Shattered and Scattered |next MISCELLANEOUS\\Companions\\Bastian Hallix
+turnin Shattered and Scattered |next Extra's\\Extra's\\Companions\\Bastian Hallix
 ]])
 
-ZGV:RegisterGuide("MISCELLANEOUS\\Companions\\Bastian Hallix",[[
+ZGV:RegisterGuide("Extra's\\Extra's\\Companions\\Bastian Hallix",[[
 loadingimage loadscreen_u30_blackwood_zone_01.dds
 description Guide to Unlock Bastian Hallix
 step

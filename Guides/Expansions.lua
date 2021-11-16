@@ -1295,7 +1295,7 @@ kill Zalgaz and two Handmaiden's
 ]])
 
 ZGV:RegisterGuide("LEVELING\\Wrothgar",[[
-loadingimage loadscreen_orsinium_keyart_01.dds
+loadingimage loadscreen_wrothgar_01.dds
 description King Kurog has begun to rebuild the great city of Orsinium, the long-abandoned capital city of the Orcs. But already there are whispered plots from those who would seize power for themselves.
 step
 'Open Auridon Map
@@ -7467,7 +7467,7 @@ turnin Filling the Void |next LEVELING\\Vvardenfell
 ]])
 
 ZGV:RegisterGuide("LEVELING\\Vvardenfell",[[
-loadingimage loadscreen_balfoyen_01.dds
+loadingimage loadscreen_vvardenfel_01.dds
 description Stop a meteor from crashing into Vivec City by helping a demi-god regain his lost powers in this Morrowind expansion.
 
 -- START: PROLOGUE GUIDE

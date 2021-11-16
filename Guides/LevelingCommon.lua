@@ -15,8 +15,7 @@ step
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto vulkhelguard_base 55.29,38.95
-talk The Hooded Figure
-accept Soul Shriven in Coldharbour
+talk The Hooded Figure |q Soul Shriven in Coldharbour/Talk to the Hooded Figure
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto vulkhelguard_base 59.70,68.01
@@ -115,7 +114,7 @@ goto 38.66,56.51
 talk Lyris Titanborn |q Soul Shriven in Coldharbour/Talk to Lyris
 step
 goto 38.66,56.51
-'Kill the enemies that attack |q Soul Shriven in Coldharbour/Defend Lyris
+kill the enemies that attack |q Soul Shriven in Coldharbour/Defend Lyris
 step
 goto 43.92,54.52
 click Dark Pinion |q Soul Shriven in Coldharbour/.*Activate the Pinions.* |count 1
@@ -314,7 +313,7 @@ goto khenarthisroost_base 77.41,56.02
 talk Rurelion |q Tears of the Two Moons/Find Rurelion
 step
 goto khenarthisroost_base 77.00,57.16
-'Kill the enemies that attack
+kill the enemies that attack
 |tip Gathwen will destroy the bone pile, but you must protect her. Do this for the other 3 bone piles around this area.
 'Disrupt Uldor's Summoning Ritual |q Tears of the Two Moons/Disrupt Uldor's Summoning Ritual
 step
@@ -335,12 +334,12 @@ talk Rurelion |q Tears of the Two Moons/Talk to Rurelion
 step
 goto 64.59,49.37
 talk Gathwen
-'Tell her _"I need to hear Rurelion's thoughts before making a decision."_
+'Tell her _I need to hear Rurelion's thoughts before making a decision._
 'Talk to Gathwen |q Tears of the Two Moons/Talk to Gathwen
 step
 goto 65.01,48.63
 talk Rurelion
-'Tell him _"I'll seal you in the tomb with Uldor."_
+'Tell him _I'll seal you in the tomb with Uldor._
 'Choose to Seal Rurelion in the Tomb with Uldor |q Tears of the Two Moons/Let Uldor Claim Rurelion
 step
 goto 71.24,48.86
@@ -363,7 +362,7 @@ turnin Tears of the Two Moons
 step
 goto 65.57,48.88
 talk Gathwen
-'Tell her _"I'd appreciate that."_
+'Tell her _I'd appreciate that._
 click Portal
 |tip It looks like a bright orb of light that appears near you.
 'Teleport Outside |q Moon-Sugar Medicament/Find Hazak's Hollow |future
@@ -397,7 +396,7 @@ goto 64.46,69.31
 click Hazak's Lair |q Moon-Sugar Medicament/Enter Hazak's Lair
 step
 goto 74.28,86.83
-'Kill Hazak |q Moon-Sugar Medicament/Kill Hazak
+kill Hazak |q Moon-Sugar Medicament/Kill Hazak
 step
 goto 65.65,71.42
 click Hazak's Hollow |q Moon-Sugar Medicament/Return to Zulana
@@ -491,18 +490,18 @@ talk Quartermaster Oblan |q Cast Adrift/Talk to Quartermaster Oblan
 step
 goto 25.61,56.16
 talk Sergeant Firion
-'Tell her _"The Prowler needs a replacement helmsman's Wheel."_
-'Tell her _"All. right. Send Edhelas to find a replacement."_
+'Tell her _The Prowler needs a replacement helmsman's Wheel._
+'Tell her _All. right. Send Edhelas to find a replacement._
 'Retrieve the Sun-Sighter from the Sea Vipers |q Cast Adrift/Locate Helmsman's Wheel
 step
 talk Sergeant Firion
-'Tell her _"There are leaks on the Prowler that need patching."_
-'Tell her _"Yes, have Nistel patch the leaks."_
+'Tell her _There are leaks on the Prowler that need patching._
+'Tell her _Yes, have Nistel patch the leaks._
 'Retrieve the Sun-Sighter from the Sea Vipers |q Cast Adrift/Patch Aft Leak
 step
 talk Sergeant Firion
-'Tell her _"The Sea Vipers stole the Prowler's sun-sighter."_
-'Tell her _"Sure, send Onglorn to recover the sun-sighter."_
+'Tell her _The Sea Vipers stole the Prowler's sun-sighter._
+'Tell her _Sure, send Onglorn to recover the sun-sighter._
 'Retrieve the Sun-Sighter from the Sea Vipers |q Cast Adrift/Retrieve Sun-Sighter from Sea Vipers
 step
 goto 25.36,56.45
@@ -704,7 +703,7 @@ click Apothecary's Ledger |q The Perils of Diplomacy/Continue Harrani's Investig
 step
 goto 74.97,58.91
 talk Captain Irinwe
-'Tell her _"Maybe this will change your mind? [Bribe her]"_
+'Tell her _Maybe this will change your mind? [Bribe her]_
 'Find a Way into the Serpent's Kiss |q The Perils of Diplomacy/Continue Harrani's Investigation in Mistral
 |tip Manually skip to the next step.
 step
@@ -872,7 +871,7 @@ accept Ensuring Security
 step
 goto 54.09,51.03
 talk Watch Captain Astanya
-'Tell her _"I'll speak with the advisor first."_
+'Tell her _I'll speak with the advisor first._
 'Talk to Watch Captain Astanya |q Ensuring Security/Talk to Watch Captain Astanya
 step
 goto 47.00,63.47
@@ -924,8 +923,6 @@ step
 goto 8.43,59.12
 talk Guildmaster Sees-All-Colors
 |tip She's inside the Fighters Guild.
-|tip You need to have your fighters guild Rank 2 to accept.
-|tip Grind Dolmens till Rank 2.
 accept Anchors from the Harbour
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
@@ -1075,7 +1072,7 @@ step
 'Watch the dialogue |q A Hostile Situation/Examine the Temple
 step
 '_Go to middle of room_
-kill Watch Captain Asanya |q A Hostile Situation/Defeat the Assassins
+kill Watch Captain Astanya |q A Hostile Situation/Defeat the Assassins
 step
 goto 39.25,44.05
 |tip Leave the building.
@@ -1218,7 +1215,7 @@ click Well |q Silsailen Rescue/.*Save Villagers.*
 |tip Manually skip to the next step.
 step
 goto 65.41,80.57
-'Kill Heritance enemies
+kill Heritance enemies
 |tip All around this area. Kill the ones standing next to cowering villagers around this area.
 'Collect a _Folded Note_
 accept Real Marines
@@ -1351,7 +1348,7 @@ step
 goto 46.81,84.91 |q The Serpent's Beacon/Collect Maormer Rune from Pirates
 step
 goto 46.36,86.42
-'Kill Sea Viper enemies
+kill Sea Viper enemies
 'Collect the Maormer Rune from Pirates |q The Serpent's Beacon/Collect Maormer Rune from Pirates
 step
 goto 47.18,86.02
@@ -1570,7 +1567,7 @@ goto 48.57,72.03
 click Corruption Stone |q Corruption Stones/.*Destroy the Corruption Stones.* |count 2
 step
 goto 50.38,71.75
-'Kill the enemies that attack in waves |q In the Name of the Queen/Aid the Priestess at the Northern Ritual Site
+kill the enemies that attack in waves |q In the Name of the Queen/Aid the Priestess at the Northern Ritual Site
 step
 goto 46.58,72.32
 click Corruption Stone |q Corruption Stones/.*Destroy the Corruption Stones.* |count 3
@@ -1802,7 +1799,7 @@ talk Haskill |q Long Lost Lore/Talk to Haskill
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 13.40,56.50
-'Kill the enemies that appear |q Long Lost Lore/Close the Portal
+kill the enemies that appear |q Long Lost Lore/Close the Portal
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto cheesemongershollow_base 13.29,62.58
@@ -2232,7 +2229,7 @@ goto 82.15,51.81
 talk Alandare |q Wearing the Veil/Talk to Alandare
 step
 goto 81.83,53.64
-'Kill the enemies that attack |q Wearing the Veil/Defeat the Other Initiates
+kill the enemies that attack |q Wearing the Veil/Defeat the Other Initiates
 step
 goto 82.15,51.81
 talk Alandare
@@ -2247,7 +2244,7 @@ goto veiledKeepBase 60.96,17.25
 'Discover the Veiled Heritance Leader |q The Veil Falls/Discover the Veiled Heritance Leader
 step
 goto 34.03,37.71
-'Kill all the enemies in this room |q The Veil Falls/Clear the First Room
+kill all the enemies in this room |q The Veil Falls/Clear the First Room
 step
 goto 29.13,63.53
 |tip Click the Door Switch to get through the door. It's a box on the wall with a blue crystal in it.
@@ -2294,7 +2291,7 @@ goto auridon_base 60.88,53.73
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 60.88,53.73
-'Kill the enemies that attack in waves |q Anchors from the Harbour/Help Aelif Defeat Daedra
+kill the enemies that attack in waves |q Anchors from the Harbour/Help Aelif Defeat Daedra
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 62.46,55.69
@@ -2889,7 +2886,7 @@ click Skyshard |achieve 695/8
 |tip Inside the crumbled mansion, sitting on a broken staircase.
 step
 goto 49.99,35.60
-'Kill enemies that Auridon Marines are fighting around this area |q Through the Ashes/.*Rescue Patrolling Marines.*
+kill enemies that Auridon Marines are fighting around this area |q Through the Ashes/.*Rescue Patrolling Marines.*
 step
 'Next to you:
 talk Sergeant Artinaire |q Through the Ashes/Talk to Sergeant Artinaire
@@ -2902,7 +2899,7 @@ goto abandonedmine_base 35.20,37.39
 talk Captain Landare |q Through the Ashes/Find Captain Landare
 step
 goto 66.83,82.05
-'Kill the Daedra guarding the portal |q Through the Ashes/Stop the Ritual
+kill the Daedra guarding the portal |q Through the Ashes/Stop the Ritual
 step
 goto 56.48,85.07
 click Dawnbreak |q Through the Ashes/Find Landare at the Manor House
@@ -3682,7 +3679,7 @@ click the Harborage |q Chasing Shadows/Investigate Vulkhel Guard
 step
 goto vulkhelguard_base 67.32,61.07
 talk Mehdir |q Chasing Shadows/Investigate Vulkhel Guard
-'Tell him _"Is there anything else you can tell me?"_
+'Tell him _Is there anything else you can tell me?_
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
@@ -3751,7 +3748,7 @@ click Auridon |q The Great Tree/Talk to Captain Jimila in Vulkhel Guard
 step
 goto vulkhelguard_base 59.98,66.83
 talk Captain Jimila |q The Great Tree/Talk to Captain Jimila in Vulkhel Guard 
-'Tell her _"I'm ready to leave for Haven."_ |next Aldmeri Dominion Leveling Guides\\Grahtwood
+'Tell her _I'm ready to leave for Haven._ |next Aldmeri Dominion Leveling Guides\\Grahtwood
 ]])
 
 ZGV:RegisterGuide("Aldmeri Dominion Leveling Guides\\Grahtwood",[[
@@ -3792,7 +3789,7 @@ goto 54.78,27.76
 talk Lord Gharesh-ri |q Unsafe Haven/Talk to Lord Gharesh-ri
 step
 goto 44.68,30.11
-'Kill Jackdaw enemies
+kill Jackdaw enemies
 'Collect 3 Moon Sugar Cane |q A Little on the Side/.*Collect Moon Sugar Cane.*
 'Collect 3 Hist Sap |q A Little on the Side/.*Collect Hist Sap.*
 'Collect 3 Mangrove Juice |q A Little on the Side/.*Collect Mangrove Juice.*
@@ -4137,7 +4134,7 @@ click Chest |q Simply Misplaced/Examine the Chest
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 53.75,64.08
-'Kill the enemies that attack in waves |q Simply Misplaced/Defeat the Draugr
+kill the enemies that attack in waves |q Simply Misplaced/Defeat the Draugr
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 49.65,31.47
@@ -4327,7 +4324,7 @@ talk Captain Linwen |q Luck of the Albatross/Talk to Captain Linwen
 step
 goto 60.97,75.13
 talk Captain Linwen |q Luck of the Albatross/Enter the Cave of Broken Sails |future
-'Tell her _"That's all i need to know."_
+'Tell her _That's all i need to know._
 |tip Manually skip to the next step.
 step
 goto 61.11,75.50
@@ -4536,7 +4533,7 @@ goto 63.69,29.48 |q Scars Never Fade/Kill Slim-Jah and Mother Lightning
 step
 goto 24.90,40.21
 |tip Follow the path through the cave.
-'Kill Slim-Jah and Mother Lightning |q Scars Never Fade/Kill Slim-Jah and Mother Lightning
+kill Slim-Jah and Mother Lightning |q Scars Never Fade/Kill Slim-Jah and Mother Lightning
 step
 goto 48.82,90.60
 |tip Follow the path.
@@ -4571,7 +4568,7 @@ step
 goto 47.04,68.47
 click Sacks of Bones
 |tip They are tan sacks on the ground around this area.
-'kill Worm Cult enemies |q Keeper of Bones/Recover Dringoth's Bones from the Worm Cult
+kill Worm Cult enemies |q Keeper of Bones/Recover Dringoth's Bones from the Worm Cult
 |tip Eventually, you will collect them all.
 step
 'Press _E_ to:
@@ -4766,7 +4763,7 @@ click Central Catacombs |q The Grip of Madness/Cross the Bridge
 step
 goto 47.61,37.68
 talk Sheogorath
-'Tell him _"I'll fight your friend."_ |q The Grip of Madness/Cross the Bridge
+'Tell him _I'll fight your friend._ |q The Grip of Madness/Cross the Bridge
 step
 goto 47.61,37.68
 kill Free Will |q The Grip of Madness/Destroy Free Will
@@ -4977,7 +4974,7 @@ step
 goto 30.96,86.54 |q The Honor of the Queen/Search the Middens for Ambassador Tarinwe
 step
 goto 64.60,78.09
-'Kill the enemies |q The Honor of the Queen/Search the Middens for Ambassador Tarinwe
+kill the enemies |q The Honor of the Queen/Search the Middens for Ambassador Tarinwe
 step
 goto 76.42,67.23 |q The Honor of the Queen/Return to Elden Root
 step
@@ -5109,7 +5106,7 @@ talk Pale Sentinel |q The Unquiet Dead/Talk to the Pale Sentinel
 step
 goto ossuaryoftelacar_base 42.31,28.27
 'Press _E_ to use the Bone Specter on enemies
-'Kill Spectral enemies |q The Unquiet Dead/Collect Milky Rock
+kill Spectral enemies |q The Unquiet Dead/Collect Milky Rock
 step
 goto 25.20,33.07
 |tip Follow the path.
@@ -5261,7 +5258,7 @@ goto 54.70,33.83
 click Reliquary |q Eyes of Azura/Obtain a Sigil Geode
 step
 goto 53.68,34.54
-'Kill enemies around this area
+kill enemies around this area
 |tip Just weaken them, don't kill them.
 'Use the Sigil Geode on weakened enemies
 |tip You have to do it 3 times.
@@ -5385,17 +5382,17 @@ click Sacred Cave |q Pact Advocate/Collect Testimony and Evidence
 step
 goto karthdar_base 63.32,31.36
 talk Treethane Rolon |q Pact Advocate/Collect Testimony and Evidence
-'Tell him _"I Understand. I am ready to make an accusation."_
+'Tell him _I Understand. I am ready to make an accusation._
 step
 goto 63.32,31.36
 talk Treethane Rolon |q Pact Advocate/Talk to Treethane Rolon
-'Tell him _"Gathiel, the spinner's wife."_
+'Tell him _Gathiel, the spinner's wife._
 step
 goto 63.32,31.36
 talk Treethane Rolon
-'Tell him _"I ask Sendranir to stand in testimony."_
-'Tell him _"Gathiel's diary, detailing the intention to aquire Sanguine Alendil to cure an illness."_
-'Tell him _"Gathiel's astrology chart, showing the recent prominent signs."_
+'Tell him _I ask Sendranir to stand in testimony._
+'Tell him _Gathiel's diary, detailing the intention to aquire Sanguine Alendil to cure an illness._
+'Tell him _Gathiel's astrology chart, showing the recent prominent signs._
 'Prove Gathiel's Guilt |q Pact Advocate/Prove Gathiel's Guilt
 step
 goto 63.32,31.36
@@ -5484,8 +5481,8 @@ click Cormount |q The Blacksap's Hold/Secure a Meeting with Lorchon
 step
 goto 56.38,20.42
 |tip Inside the big tree.
-'Tell her _"Rainy skies bring all the peepers out."_
-'Tell her _"Once blue, it was forced to eat its own family. Its body is bathed in their blood."_
+'Tell her _Rainy skies bring all the peepers out._
+'Tell her _Once blue, it was forced to eat its own family. Its body is bathed in their blood._
 talk Nallion |q The Blacksap's Hold/Secure a Meeting with Lorchon
 step
 goto 57.75,21.49
@@ -5707,7 +5704,7 @@ step
 goto cormountprison_base 59.42,40.74
 'Watch the dialogue
 talk Maeroth
-'Tell him _"That sounds harsh."_
+'Tell him _That sounds harsh._
 |tip Persuade or Intimidate him.
 turnin The Blacksap's Hold
 step
@@ -5778,7 +5775,7 @@ click Well |q Blood Hunt/Activate the Fountain
 step
 goto 35.88,32.51
 |tip Listen to his directions to know where the enemies will come from.
-'Kill the enemies that attack |q Blood Hunt/Defeat All Feral Vampires
+kill the enemies that attack |q Blood Hunt/Defeat All Feral Vampires
 step
 goto 36.88,32.65
 talk Sabonn |q Blood Hunt/Talk to Sabonn
@@ -5920,8 +5917,8 @@ talk Gargak |q A Chief Concern/Talk to Gargak
 step
 goto 23.28,22.40
 talk Gargak |q A Chief Concern/Convince Gargak to End His Feud
-' Ask him: _"Isn't there a way to avoid further bloodshed?"_
-' Tell him: _"I'll search the mine for ore."_
+' Ask him: _Isn't there a way to avoid further bloodshed?_
+' Tell him: _I'll search the mine for ore._
 step
 goto 22.38,22.46
 click A Werewolf's Confession
@@ -5973,7 +5970,7 @@ accept Flipping the Coin
 step
 goto 35.40,56.94
 talk Tulira |q Flipping the Coin/Talk to Tulira
-'Tell her: _"[Lie] It is as he says. The thief bumped into us as he fled. I chased after him."_
+'Tell her: _[Lie] It is as he says. The thief bumped into us as he fled. I chased after him._
 step
 goto 35.75,57.73
 talk Cinder-Tail |q Flipping the Coin/Talk to Cinder-Tail
@@ -5999,7 +5996,7 @@ accept The Innkeeper's Daughter
 step
 goto 31.76,42.57
 talk Tulira
-'Tell her _"I was just covering for him."_
+'Tell her _I was just covering for him._
 'Talk to Tulira |q Flipping the Coin/Talk to Tulira
 step
 goto 30.73,41.94
@@ -6069,7 +6066,7 @@ click Nellor's Bandit Connection |q The Innkeeper's Daughter/Find Proof of Nello
 step
 goto redfurtradingpost_base 54.54,59.58
 talk Shan-ra |q Flipping the Coin/Meet Shan-ra
-' Tell him: _"Don't call in the Thalmor. Allow the Hollow Moon to continue its operations in Redfur."_
+' Tell him: _Don't call in the Thalmor. Allow the Hollow Moon to continue its operations in Redfur._
 step
 goto 54.88,60.63
 talk Valirr
@@ -6157,8 +6154,8 @@ step
 goto 54.64,21.83
 |tip Inside the tree house.
 talk Rondrin |q Phantom Guilt/Talk to Rondrin |future
-'Ask him: _"Why would you do that?"_
-'Tell him: _"Someone else could pick it up. You should destroy it. [Rondrin Lives]"_
+'Ask him: _Why would you do that?_
+'Tell him: _Someone else could pick it up. You should destroy it. [Rondrin Lives]_
 step
 goto 54.78,21.75
 'Witness the Amulet's Destruction |q Phantom Guilt/Witness the Amulet's Destruction
@@ -6219,26 +6216,26 @@ step
 goto grahtwood_base 31.16,46.41 |q The Wakening Dark/Destroy Northern Fang
 step
 goto 32.09,46.19
-'Kill 3 Enemies to Empower the Tear of Almalexia
+kill 3 Enemies to Empower the Tear of Almalexia
 |tip Kill enemies as you walk.
 click Fang of Chaos |q The Wakening Dark/Destroy Northern Fang
 step
 goto 30.46,47.01 |q The Wakening Dark/Destroy Western Fang
 step
 goto 28.66,46.66
-'Kill 3 Enemies to Empower the Tear of Almalexia
+kill 3 Enemies to Empower the Tear of Almalexia
 |tip Kill enemies as you walk.
 click Fang of Chaos |q The Wakening Dark/Destroy Western Fang
 step
 goto 33.66,47.33 |q The Wakening Dark/Destroy Eastern Fang
 step
 goto 34.84,48.99
-'Kill 3 Enemies to Empower the Tear of Almalexia
+kill 3 Enemies to Empower the Tear of Almalexia
 |tip Kill enemies as you walk.
 click Fang of Chaos |q The Wakening Dark/Destroy Eastern Fang
 step
 goto 33.03,50.32
-'Kill 3 Enemies to Empower the Tear of Almalexia
+kill 3 Enemies to Empower the Tear of Almalexia
 |tip Kill enemies as you walk.
 click Fang of Chaos |q The Wakening Dark/Destroy Southern Fang
 step
@@ -6633,7 +6630,7 @@ talk Abnur Tharn |q Castle of the Worm/Talk to Abnur Tharn
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 32.59,50.71
-'Kill the waves of skeletons that attack
+kill the waves of skeletons that attack
 'Watch the dialogue
 kill Mannimarco |q Castle of the Worm/Defeat Mannimarco
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
@@ -6649,7 +6646,7 @@ step
 goto 19.10,63.88
 |tip Wait for Cadwell to open the door.
 talk Cadwell |q Castle of the Worm/Talk to Cadwell
-'Tell him _"You should come along. It might be good for you."_
+'Tell him _You should come along. It might be good for you._
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 11.57,66.59
@@ -6807,7 +6804,7 @@ talk Sheogorath
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 74.15,55.19
-'Kill the Ebonheart Pact Actors |q Circus of Cheerful Slaughter/Kill Ebonheart Pact Actors
+kill the Ebonheart Pact Actors |q Circus of Cheerful Slaughter/Kill Ebonheart Pact Actors
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 74.15,55.19
@@ -6823,11 +6820,11 @@ goto 45.89,27.90
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 45.24,27.17
-'Kill the Aldmeri Dominion Actors |q Circus of Cheerful Slaughter/Kill Aldmeri Dominion Actors
+kill the Aldmeri Dominion Actors |q Circus of Cheerful Slaughter/Kill Aldmeri Dominion Actors
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 45.83,29.85
-'Kill Queen Ayrenn |q Circus of Cheerful Slaughter/Kill Queen Ayrenn
+kill Queen Ayrenn |q Circus of Cheerful Slaughter/Kill Queen Ayrenn
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 26.07,60.23
@@ -6836,7 +6833,7 @@ talk Sheogorath |q Circus of Cheerful Slaughter/Find Sheogorath in Daggerwaymore
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 22.87,65.45
-'Kill the enemies here |q Circus of Cheerful Slaughter/Save the Guild Members
+kill the enemies here |q Circus of Cheerful Slaughter/Save the Guild Members
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
@@ -7236,7 +7233,7 @@ goto shroudedhollowcenter_base 52.39,59.72
 step
 goto 52.10,61.61
 talk Erunor |q The Fading Tree/Talk to Erunor
-'Tell him: _"You know what's right. You need to take care of your family."_
+'Tell him: _You know what's right. You need to take care of your family._
 step
 goto 39.28,31.80
 click Shrouded Hollow |q The Fading Tree/Return to Shrouded Hollow |future
@@ -7459,8 +7456,8 @@ talk Hollow Watchman |q Stone Cold/Talk to the Hollow Watchman
 step
 goto 49.23,69.62
 talk Hollow Watchman |q Stone Cold/Tell the Hollow Watchman to Let Them Stay
-'Tell him _"Regardless, that's what's best for the Bosmer"_
-'Tell himn _"To Let Them Stay."_
+'Tell him _Regardless, that's what's best for the Bosmer_
+'Tell himn _To Let Them Stay._
 step
 goto 43.85,68.04 |q Stone Cold/Find and Destroy the Hollow Watchman
 step
@@ -7545,7 +7542,7 @@ goto 58.64,80.94
 step
 goto 56.60,81.29
 talk Sumiril
-'Tell him _"The Wilderking was once a mortal, as were you. His name was Ostion."_
+'Tell him _The Wilderking was once a mortal, as were you. His name was Ostion._
 turnin A Tangled Knot
 step
 goto 55.53,82.35
@@ -7556,8 +7553,7 @@ goto 55.53,82.35
 talk Hartmin
 accept The Flower of Youth
 step
-goto 54.13,84.42
-'Travel to Greenheart |q Throne of the Wilderking/Travel to Greenheart
+goto 54.13,84.42 |q Throne of the Wilderking/Travel to Greenheart
 step
 goto 53.75,85.18
 wayshrine Greenheart
@@ -7706,7 +7702,7 @@ talk Gadinas |q Mist and Shadow/Talk to Gadinas
 step
 goto 20.80,56.71
 talk Mel Adrys
-'Tell him _"We gain nothing from his death right now. Leave him or go through me to get to him."_
+'Tell him _We gain nothing from his death right now. Leave him or go through me to get to him._
 'Convince Mel Adyris to Spare Gadinas |q Mist and Shadow/Convince Mel Adyris to Spare Gadinas
 step
 goto 14.18,33.08
@@ -8087,7 +8083,7 @@ goto 44.69,54.05 |q The Flooded Grove/Activate Hermaeus Mora's Shrine
 step
 goto 22.57,36.46
 click Shrine of Herma-Mora
-'Tell him _"Fine. I will kill Saromir."_
+'Tell him _Fine. I will kill Saromir._
 'Activate Hermaeus Mora's Shrine |q The Flooded Grove/Activate Hermaeus Mora's Shrine
 step
 goto 26.48,37.57
@@ -8155,21 +8151,21 @@ accept The Serpent Lord
 step
 goto 36.83,52.76
 |tip Follow the path.
-'Kill 5 Sea Viper Enemies to Fill the Blood Rune
+kill 5 Sea Viper Enemies to Fill the Blood Rune
 |tip They are all around inside this cave.
 click Elain Sealing Well |q The Serpent Lord/Repair Elain's Seal
 step
 goto 47.37,53.97 |q The Serpent Lord/Repair Ralos's Seal
 step
 goto 65.19,77.02
-'Kill 5 Sea Viper Enemies to Fill the Blood Rune
+kill 5 Sea Viper Enemies to Fill the Blood Rune
 |tip They are all around inside this cave.
 click Ralos Sealing Well |q The Serpent Lord/Repair Ralos's Seal
 step
 goto 64.81,65.50 |q The Serpent Lord/Repair Valir's Seal
 step
 goto 63.31,43.83
-'Kill 5 Sea Viper Enemies to Fill the Blood Rune
+kill 5 Sea Viper Enemies to Fill the Blood Rune
 |tip They are all around inside this cave.
 click Valir Sealing Well |q The Serpent Lord/Repair Valir's Seal
 step
@@ -8307,7 +8303,7 @@ accept A Storm Upon the Shore
 step
 goto 28.37,40.32
 talk Razum-dar
-'Tell him _"I'll take out the commanders and weaken the Maormer forces."_
+'Tell him _I'll take out the commanders and weaken the Maormer forces._
 'Choose to Kill the Commanders |q A Storm Upon the Shore/Talk to Razum-dar and Select a Task
 step
 goto 31.30,38.01
@@ -8414,7 +8410,7 @@ goto 43.14,63.35
 click Fire Ballistae |q Pelidil's End/.*Defeat the Serpent Using the Ballistae.*
 step
 goto 41.33,68.30
-'Kill the enemies that appear on the ship |q Pelidil's End/Repel Maormer Boarders
+kill the enemies that appear on the ship |q Pelidil's End/Repel Maormer Boarders
 step
 goto 39.97,63.60
 click Portal to the Maormer Ship |q Pelidil's End/Kill Vicereeve Pelidil
@@ -8519,19 +8515,19 @@ step
 goto 67.05,37.96
 click Skull of Ethril |q Retaking the Pass/Interrogate the Skulls with Indaenir
 |tip It's the skull on the left.
-'Tell the skull _"All right, I release you."_
+'Tell the skull _All right, I release you._
 |tip Manually skip to the next step.
 step
 goto 67.01,38.00
 click Skull of Ollion |q Retaking the Pass/Interrogate the Skulls with Indaenir
 |tip It's the skull in the middle.
-'Tell the skull _"You understand what you did wrong. You may pass on freely."_
+'Tell the skull _You understand what you did wrong. You may pass on freely._
 |tip Manually skip to the next step.
 step
 goto 66.99,38.03
 click Skull of Thraul |q Retaking the Pass/Interrogate the Skulls with Indaenir
 |tip It's the skull on the right.
-'Tell the skull _"Then you are rightly condemned and will remain here."_
+'Tell the skull _Then you are rightly condemned and will remain here._
 |tip Manually skip to the next step.
 step
 goto 66.99,38.03
@@ -8540,7 +8536,7 @@ step
 goto 67.16,41.20 |q Retaking the Pass/.*Close the Shadow Rifts.* |count 1
 step
 goto 68.58,42.94
-'Kill the 3 Skeletal Mages |q Retaking the Pass/.*Close the Shadow Rifts.* |count 1
+kill the 3 Skeletal Mages |q Retaking the Pass/.*Close the Shadow Rifts.* |count 1
 step
 goto 67.16,41.20 |q Retaking the Pass/.*Close the Shadow Rifts.* |count 2
 step
@@ -8644,7 +8640,7 @@ talk Erinel |q Mourning the Lost/Talk to Erinel
 step
 goto 51.13,35.80
 talk Erinel |q Mourning the Lost/Talk to Laurosse |future
-'Tell her _"No, you love him and he loves you. Don't hide behind your cultural differences."_
+'Tell her _No, you love him and he loves you. Don't hide behind your cultural differences._
 |tip Manually skip to the next step.
 step
 goto 54.16,34.54
@@ -8824,7 +8820,7 @@ talk Indaenir |q Right of Theft/Talk to Indaenir
 step
 goto 36.75,31.18
 talk General Malgoth |q Right of Theft/Talk to General Malgoth
-'Tell him _"I want your army to march on Naemon in the name of the Dominion."_
+'Tell him _I want your army to march on Naemon in the name of the Dominion._
 step
 goto 36.95,31.20
 talk Indaenir
@@ -8922,7 +8918,7 @@ talk Thonoras |q Beasts of Falinesti/Talk to Thonoras
 step
 goto 48.50,45.19
 talk Thonoras |q Beasts of Falinesti/Force Thonoras to Kill Her
-'Tell him _"Don't do this. If you turn yourself into a feral beast, your wife sacrificed herself for nothing."_
+'Tell him _Don't do this. If you turn yourself into a feral beast, your wife sacrificed herself for nothing._
 |tip Persuade him.
 step
 goto 48.03,46.24
@@ -8937,7 +8933,7 @@ talk Nielas |q The Falinesti Faithful/.*Rescue Falinesti Faithful.* |count 3
 step
 goto 52.46,46.11
 talk Fanrel |q The Falinesti Faithful/Talk to Fanrel |future
-'Tell her _"All right. I'll help you get vengeance on these Orcs."_
+'Tell her _All right. I'll help you get vengeance on these Orcs._
 step
 goto 53.70,47.99 |q The Falinesti Faithful/Collect Roog's Head |future
 step
@@ -9397,12 +9393,12 @@ talk Angardil
 accept The Unkindest Cut
 step
 goto 67.32,58.20
-'Kill Drublog enemies around this area
+kill Drublog enemies around this area
 |tip You can also click Sacks on the ground to get the tools.
 'Recover 4 of Angardil's Work Tools |q The Unkindest Cut/.*Recover Angardil's Work Tools.*
 step
 goto 68.63,62.32
-'Kill the enemies
+kill the enemies
 'Press _E_ to:
 'Sound Lieutenant Ehran's Horn when the Upper Gate is Clear |q House and Home/Sound Lieutenant Ehran's Horn When the Upper Gate Is Clear
 step
@@ -9851,7 +9847,7 @@ goto 30.42,55.15 |q The Summer Site/Find the Source of the Projection
 step
 goto 28.53,55.05
 talk Farandare
-'Tell her _"Yes, let's get started."_
+'Tell her _Yes, let's get started._
 'Find the Source of the Projection |q The Summer Site/Find the Source of the Projection
 step
 goto 31.54,56.05
@@ -9874,7 +9870,7 @@ goto 32.55,53.64 |q The Summer Site/Talk to Farandare in the Cave
 step
 goto 32.00,51.31
 talk Farandare
-'Tell her _"Yes! I'm ready for whatever comes through that portal!"_
+'Tell her _Yes! I'm ready for whatever comes through that portal!_
 talk Farandare |q The Summer Site/Talk to Farandare in the Cave
 step
 goto 32.00,51.31
@@ -9882,8 +9878,8 @@ kill Tulu |q The Summer Site/Defeat the Daedra from the Portal
 step
 goto 32.00,51.31
 talk Farandare
-'Tell her _"Please, do more research. You can't reach Falinesti this way."_
-'Tell her _"Good luck with your research, Farandare."_
+'Tell her _Please, do more research. You can't reach Falinesti this way._
+'Tell her _Good luck with your research, Farandare._
 'Talk to Farandare |q The Summer Site/Talk to Farandare
 step
 goto 32.00,51.31
@@ -9942,8 +9938,8 @@ step
 goto 37.15,60.89
 |tip Follow the path up.
 talk Feluz
-' Tell him _"[Lie] No, I couldn't find it"_
-' Tell him _"[Lie] I really didn't find it"_
+' Tell him _[Lie] No, I couldn't find it_
+' Tell him _[Lie] I really didn't find it_
 talk Feluz |q Nature's Best Friend/Talk to Feluz
 step
 goto 37.21,60.93
@@ -9958,7 +9954,7 @@ turnin The Drublog of Dra'bul
 accept Reap What Is Sown
 step
 goto 40.60,54.21
-'Kill Drublog enemies
+kill Drublog enemies
 |tip Loot what you kill.
 'Obtain a Drublog Lock of Hair |q Reap What Is Sown/Obtain a Drublog Lock of Hair
 step
@@ -10001,7 +9997,7 @@ talk Roku |q Reap What Is Sown/Rescue the Green Lady |future
 step
 goto 41.86,48.90
 talk Roku
-'Tell her _"I'm ready. Take me to the arena."_
+'Tell her _I'm ready. Take me to the arena._
 'Enter the Arena |q Reap What Is Sown/Rescue the Green Lady
 |tip Manually skip to the next step.
 step
@@ -10836,9 +10832,9 @@ click A Second Scrap of Parchment |q Buyer Beware/Release the Barrier
 step
 goto 50.42,56.80
 click Barrier
-'Choose _"For many years I've lain beneath these stony walls, this weathered heath."_
-'Choose _"Ten long years you were astray, with sword in hand so far away."_
-'Choose _"Those nine long years we spent in joy seemed but to you a child's toy."_
+'Choose _For many years I've lain beneath these stony walls, this weathered heath._
+'Choose _Ten long years you were astray, with sword in hand so far away._
+'Choose _Those nine long years we spent in joy seemed but to you a child's toy._
 'Release the Barrier |q Buyer Beware/Release the Barrier
 step
 goto 50.42,56.80
@@ -10952,7 +10948,7 @@ step
 goto 72.60,75.54
 |tip Go downstairs.
 talk The Silvenar
-'Tell him _"I'm ready. Let them come."_
+'Tell him _I'm ready. Let them come._
 talk The Silvenar |q The Prisoner of Jathsogur/Talk to the Silvenar
 step
 goto 72.60,75.54
@@ -10960,7 +10956,7 @@ kill Chief Nagoth |q The Prisoner of Jathsogur/Defend the Silvenar
 step
 goto 72.60,75.53
 talk The Silvenar |q The Prisoner of Jathsogur/Talk to the Silvenar
-'Tell him _"Create the portal."_
+'Tell him _Create the portal._
 step
 goto 72.61,75.53
 click Portal |q The Prisoner of Jathsogur/Talk to The Silvenar
@@ -11465,7 +11461,7 @@ click Chateau Guesthouse |q Chateau of the Ravenous Rodent/Enter the Chateau Gue
 step
 goto 31.25,44.17
 click Door
-'Tell them _"That's it. You're out of here."_
+'Tell them _That's it. You're out of here._
 'Evict the Guest That Doesn't Belong |q Chateau of the Ravenous Rodent/Evict the Guest That Doesn't Belong
 |tip It may be randomized, so if it's not this door, try the others.  You just have to kill the person you let out if they're the wrong one.
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
@@ -11648,19 +11644,19 @@ goto 61.95,59.51
 |tip Inside the building.
 talk Vitellia Strabo |q A Tangled Net/Buy off the Colovian Mercenaries
 |tip Persuade her.
-'Tell her _"Sadelia would be a good fit."_
+'Tell her _Sadelia would be a good fit._
 |tip Manually skip to the next step.
 step
 goto 61.00,60.17
 talk Yggnast |q A Tangled Net/Buy off the Colovian Mercenaries
 |tip Persuade him.
-'Tell him _"Kagun would be a good fit."_
+'Tell him _Kagun would be a good fit._
 |tip Manually skip to the next step.
 step
 goto 59.07,61.11
 talk Longstig |q A Tangled Net/Buy off the Colovian Mercenaries
 |tip Persuade him.
-'Tell him _"Athemel would be a good fit."_
+'Tell him _Athemel would be a good fit._
 step
 goto 62.15,59.15
 talk Tabil |q A Tangled Net/Talk to Tabil
@@ -11737,7 +11733,7 @@ talk Aniaste
 accept Sacred Prey, Hunt Profane
 step
 goto 86.53,16.53
-'Kill Worm Cult enemies around this area |q Sacred Prey, Hunt Profane/.*Retrieve the Carved Mammoth Tusks from the Cultists.*
+kill Worm Cult enemies around this area |q Sacred Prey, Hunt Profane/.*Retrieve the Carved Mammoth Tusks from the Cultists.*
 step
 goto 82.09,17.60
 talk Hengekeeper Lara
@@ -11746,16 +11742,16 @@ accept The Dark Night of the Soul
 step
 goto 80.13,19.65
 |tip They will be tormenting spriggans.
-'Kill the Worm Cult |q The Dark Night of the Soul/.*Kill the Spriggans' Tormentors.* |count 1
+kill the Worm Cult |q The Dark Night of the Soul/.*Kill the Spriggans' Tormentors.* |count 1
 step
 goto 78.50,18.24
-'Kill the Worm Cult enemy |q The Dark Night of the Soul/.*Kill the Spriggans' Tormentors.* |count 2
+kill the Worm Cult enemy |q The Dark Night of the Soul/.*Kill the Spriggans' Tormentors.* |count 2
 step
 goto 78.24,19.67
-'Kill the Worm Cult enemy |q The Dark Night of the Soul/.*Kill the Spriggans' Tormentors.* |count 3
+kill the Worm Cult enemy |q The Dark Night of the Soul/.*Kill the Spriggans' Tormentors.* |count 3
 step
 goto 78.14,20.82
-'Kill the Worm Cult enemy |q The Dark Night of the Soul/.*Kill the Spriggans' Tormentors.* |count 4
+kill the Worm Cult enemy |q The Dark Night of the Soul/.*Kill the Spriggans' Tormentors.* |count 4
 step
 goto 74.18,20.65
 talk Vanendil |q Sacred Prey, Hunt Profane/Talk to Vanendil
@@ -11851,7 +11847,7 @@ talk Dariel |q Brothers and Bandits/Find Dariel
 step
 goto 84.01,49.62
 talk Dariel |q Brothers and Bandits/Talk to Dariel
-'Tell him _"Stay here. I'll get the plant sap for you."_
+'Tell him _Stay here. I'll get the plant sap for you._
 step
 goto 61.84,44.73 |achieve 281
 step
@@ -11984,7 +11980,7 @@ goto 72.71,38.72
 click Drums |q The Misfortunate Minstrels/Collect Drums
 step
 goto 71.41,40.13
-'Kill Houndsman enemies around this area
+kill Houndsman enemies around this area
 'Collect 6 Silver Shards |q Restore the Silvenar/.*Collect Silver Shards.*
 step
 goto 72.31,38.43 |q Restore the Silvenar/Talk to Scout Anglith
@@ -12140,7 +12136,7 @@ goto 66.43,43.29
 step
 goto 66.10,43.55
 talk Laen the Doorwalker |q The Misfortunate Minstrels/Talk to Laen the Doorwalker
-'Tell her _"Yes, I'm Ready. Start playing."_
+'Tell her _Yes, I'm Ready. Start playing._
 step
 goto 66.79,43.45
 |tip He runs up to you.
@@ -12829,7 +12825,7 @@ talk Shazah |q Grimmer Still/Talk to Shazah
 step
 goto 42.87,38.84
 talk Shazah
-' Tell her _"I'd like you to come with me."_
+' Tell her _I'd like you to come with me._
 'Choose Shazah |q Grimmer Still/Choose Shazah
 step
 goto 86.39,39.08
@@ -13262,7 +13258,7 @@ talk Halindor |q Ezreba's Fate/Ask a Villager About Ezreba
 step
 goto 42.38,30.05
 talk Treethane Bowenas
-' Choose _"[Service] Ezreba was coerced, and the villagers will forgive her. She should stay."_
+' Choose _[Service] Ezreba was coerced, and the villagers will forgive her. She should stay._
 turnin Ezreba's Fate
 step
 goto 39.27,37.07
@@ -13820,7 +13816,7 @@ goto 26.11,85.10
 step
 goto 26.06,85.03
 talk Fihada
-'Tell her _"You're right, it shouldn't be sold. Here's the ring."_
+'Tell her _You're right, it shouldn't be sold. Here's the ring._
 turnin Desecrated Ground
 step
 goto 27.99,84.35
@@ -13868,7 +13864,7 @@ talk Rid-Thar-ri'Datta |q Motes in the Moonlight/Talk to Rid-Thar-ri'Datta
 step
 goto 13.72,48.34
 talk Khali
-'Tell her _"[Khali Holds the Dark Mane] Thank you for your sacrifice."_
+'Tell her _[Khali Holds the Dark Mane] Thank you for your sacrifice._
 'Choose Khali to Contain the Dark Mane [Khali Holds the Dark Mane] |q Motes in the Moonlight/Choose Shazah to Contain the Dark Mane
 step
 goto 12.46,49.44
@@ -14026,7 +14022,7 @@ talk Dulan |q Into the Vice Den/Talk to Dulan at the Lizard Races
 step
 goto 51.26,68.57
 talk Bunul
-'Tell him _"Fine. I'll play."_
+'Tell him _Fine. I'll play._
 'Go to Starting Line
 |tip Stay here and let the other opponents win. It takes a couple of minutes.
 talk Bunul |q Into the Vice Den/Talk to Azum |future
@@ -14262,7 +14258,7 @@ step
 goto 61.85,54.21
 |tip Upstairs inside the building.
 talk Clan Mother Shuzura |q Small Town Problems/Talk to Clan Mother Shuzura
-'Tell her _"I'll talk to Ezzag about these bandits."_
+'Tell her _I'll talk to Ezzag about these bandits._
 step
 goto 62.51,57.64
 talk Ezzag
@@ -14289,7 +14285,7 @@ click S'ren-ja |q Ezzag's Bandits/Talk to Ezzag
 step
 goto reapersmarch_base 62.50,57.64
 talk Ezzag
-'Tell him _"I'll help Milk Eyes next."_
+'Tell him _I'll help Milk Eyes next._
 turnin Ezzag's Bandits
 accept Rat Problems
 step
@@ -14376,7 +14372,7 @@ step
 goto 59.78,56.78
 |tip She walks around.
 talk Kalari
-'Tell her _"I'm sorry, Kalari. Mathal is dead. The illusion ritual killed him."_
+'Tell her _I'm sorry, Kalari. Mathal is dead. The illusion ritual killed him._
 turnin Haunting of Kalari
 accept Loose Ends
 step
@@ -14670,7 +14666,7 @@ step
 goto reapersmarch_base 60.19,53.38
 |tip Inside the house.
 talk Kala
-'Tell her _"Your brother was taken by a dark spirit. I was forced to kill him."_
+'Tell her _Your brother was taken by a dark spirit. I was forced to kill him._
 turnin Test of Faith
 step
 goto 56.02,47.11 |achieve 453
@@ -15398,7 +15394,7 @@ goto 50.37,62.10
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 50.37,62.10
-'Kill the waves of enemies that attack you |q Shadow of Sancre Tor/Defeat the Undead
+kill the waves of enemies that attack you |q Shadow of Sancre Tor/Defeat the Undead
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 57.35,43.53
@@ -15524,7 +15520,7 @@ talk Sees-All-Colors |q Will of the Council/Confront Sees-All-Colors
 step
 goto 65.33,50.42
 talk Sees-All-Colors |q Will of the Council/Decide the Fate of Sees-All-Colors
-'Tell _"Your quest is just. Let's finish, and go."_
+'Tell _Your quest is just. Let's finish, and go._
 'Watch the dialogue
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
@@ -15574,7 +15570,7 @@ talk Merric at-Aswala |q Will of the Council/Talk to Countess Hakruba
 step
 goto 39.42,24.98
 talk Countess Hakruba |q Will of the Council/Talk to Countess Hakruba
-'Choose _"[Sees-All-Colors Stays] She did what she felt she had to. Let her serve the Guild."_
+'Choose _[Sees-All-Colors Stays] She did what she felt she had to. Let her serve the Guild._
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 39.61,24.38
@@ -15721,7 +15717,7 @@ goto 46.78,47.24
 step
 goto 46.29,47.35
 talk Sheogorath |q The Mad God's Bargain/Talk to Sheogorath
-'Tell him _"[Valaste Stays] I want you to cure Valaste."_
+'Tell him _[Valaste Stays] I want you to cure Valaste._
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 46.29,47.35
@@ -15764,7 +15760,7 @@ click The Harborage |q Council of the Five Companions/Go to the Harborage |futur
 step
 goto the_aldmiri_harborage_map_base 59.99,36.62
 talk Varen Aquilarios |q Council of the Five Companions/Talk to Varen Aquilarios
-'Tell him _"Show me these visions."_
+'Tell him _Show me these visions._
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto visionofthecompanions_base 66.69,80.53
@@ -15773,7 +15769,7 @@ goto visionofthecompanions_base 66.69,80.53
 step
 goto the_aldmiri_harborage_map_base 61.35,32.81
 talk Sai Sahan |q Council of the Five Companions/Talk to Sai Sahan
-'Tell him _"I am honored to join you as the last member of the Five Companions."_
+'Tell him _I am honored to join you as the last member of the Five Companions._
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 goto 61.35,32.81
@@ -16025,8 +16021,8 @@ talk Captain Kaleen |q The Broken Spearhead/Talk to Captain Kaleen
 step
 goto 30.14,68.34
 talk Captain Kaleen
-'Tell her _"Tell me about Crafty Lerisa."_
-'Tell her _"I'll look for Lerisa. How do I find her?"_
+'Tell her _Tell me about Crafty Lerisa._
+'Tell her _I'll look for Lerisa. How do I find her?_
 'Choose to Look for Lerisa |q The Broken Spearhead/Look for Lerisa, Jakarn, or Neramo |future
 step
 goto 43.70,49.37
@@ -16155,7 +16151,7 @@ goto porthunding_base 37.99,7.61
 step
 goto 38.03,8.24
 talk Moglurkgul |q Innocent Scoundrel/Talk to Moglurkgul
-'Tell her _"Well, I did find this gem..."_
+'Tell her _Well, I did find this gem..._
 step
 goto 35.35,13.79
 click Dwarven Part |q Sphere Assembly/.*Collect Dwarven Parts.* |count 2
@@ -16198,7 +16194,7 @@ click Sword |q Moment of Truth/Talk to Dugroth
 step
 goto 36.40,38.33
 talk Dugroth
-'Tell him _"You're not cut out for warfare. Follow your passion and make weapons."_
+'Tell him _You're not cut out for warfare. Follow your passion and make weapons._
 turnin Moment of Truth
 step
 goto 40.79,45.03
@@ -16475,17 +16471,17 @@ talk Captain Kaleen |q Tip of the Spearhead/Talk to Captain Kaleen
 step
 goto 32.77,63.15
 talk Neramo |q Tip of the Spearhead/Obtain a Servant's Disguise
-'Tell him _"I'll take it. Thanks Neramo."_
+'Tell him _I'll take it. Thanks Neramo._
 |tip Manually skip to the next step.
 step
 goto 33.59,63.28
 talk Jakarn |q Tip of the Spearhead/Obtain a Servant's Disguise
-'Tell him _"Sounds great, Jakarn."_
+'Tell him _Sounds great, Jakarn._
 |tip Manually skip to the next step.
 step
 goto 33.61,63.04
 talk Crafty Lerisa |q Tip of the Spearhead/Obtain a Servant's Disguise
-'Tell her _"Thanks, Lerisa. I'd love your help."_
+'Tell her _Thanks, Lerisa. I'd love your help._
 |tip Manually skip to the next step.
 step
 goto strosmkai_base 67.34,41.13
@@ -16536,7 +16532,7 @@ goto 43.88,89.73
 step
 goto 43.88,89.73
 talk Captain Kaleen |q Tip of the Spearhead/Talk to Captain Kaleen |next Daggerfall Covenant Leveling Guides\\Betnikh
-'Tell her _"I'm ready to leave now. Let's sail."_
+'Tell her _I'm ready to leave now. Let's sail._
 ]])
 
 ZGV:RegisterGuide("Daggerfall Covenant Leveling Guides\\Betnikh",[[
@@ -16588,7 +16584,7 @@ goto 34.23,48.11 |q Daughter of Seamount/Advise Lokra
 step
 goto 71.75,63.72
 talk Lokra
-'Tell her _"Your marriage is vital to the clan. There is honor in doing your duty."_
+'Tell her _Your marriage is vital to the clan. There is honor in doing your duty._
 turnin Daughter of Seamount
 step
 goto betnihk_base 52.05,59.78
@@ -16723,11 +16719,11 @@ talk Hunt-Wife Othikha |q Unearthing the Past/Talk to Hunt-Wife Othikha
 step
 goto 19.38,55.78
 talk Queen Nurese |q Unearthing the Past/Talk to Queen Nurese
-'Tell her _"Tell me how to open the door that hides Renwic, or I will kill your daughter."_
+'Tell her _Tell me how to open the door that hides Renwic, or I will kill your daughter._
 step
 goto 27.23,51.09
 talk Drago Auberdine |q Unearthing the Past/Talk to Drago Auberdine
-'Tell him _"Tell me what magic your king plans, or I will hurt you."_
+'Tell him _Tell me what magic your king plans, or I will hurt you._
 step
 goto 46.98,70.20
 talk War Chief Yzzgol |q Unearthing the Past/Talk to War Chief Yzzgol
@@ -16966,7 +16962,7 @@ goto 28.08,57.36 |q On to Glenumbra/Talk to Captain Kaleen
 step
 goto 79.75,60.49
 talk Captain Kaleen |q On to Glenumbra/Talk to Captain Kaleen |future
-'Tell her _"Yes, let's go."_
+'Tell her _Yes, let's go._
 |tip Manually skip to the next step.
 step
 goto daggerfall_base 64.56,80.30 |q On to Glenumbra/Talk to Sir Lanis Shaldon
@@ -17902,9 +17898,9 @@ click The Reality of Spirits |q Legacy of Baelborne Rock/Find a Book About Spiri
 step
 goto 46.79,37.72
 talk Tsiniuc |q Legacy of Baelborne Rock/Talk to the Cloaked Man
-'Tell him _"Claudie."_
-'Tell him _"A necklace."_
-'Tell him _"Revenge."_
+'Tell him _Claudie._
+'Tell him _A necklace._
+'Tell him _Revenge._
 step
 goto 47.76,59.33
 |tip Leave this building.
@@ -18150,7 +18146,7 @@ click Contract with House Diel |q The Dagger's Edge/Investigate the Fishing Hous
 step
 goto 20.69,59.21
 talk Gelvin Feldrin |q The Dagger's Edge/Tell Gelvin to Confront Lord Diel
-'Tell him _"No matter what happens, you have to do the right thing and reveal Lord Diel's treachery."_
+'Tell him _No matter what happens, you have to do the right thing and reveal Lord Diel's treachery._
 step
 goto 20.20,58.76
 talk Lord Alain Diel |q The Dagger's Edge/Talk to Lord Diel
@@ -18160,7 +18156,7 @@ talk Bumnog |q The Dagger's Edge/Talk to Bumnog
 step
 goto 23.31,58.40
 talk Gelvin Feldrin
-'Tell him _"Bumnog snatched these gems from Lord Diel's camp."_
+'Tell him _Bumnog snatched these gems from Lord Diel's camp._
 turnin The Dagger's Edge
 step
 goto 24.67,55.20 |q Signals of Dominion/Collect Dominion Messages |future
@@ -18312,7 +18308,7 @@ click Soul Prison |q A Mysterious Curio/.*Destroy the Binding Artifacts.* |count
 step
 goto 58.33,49.85
 talk Ayleid Ghost
-'Tell him _"You should pass on to Aetherius. The time of the Ayleids is over."_
+'Tell him _You should pass on to Aetherius. The time of the Ayleids is over._
 turnin A Mysterious Curio
 step
 goto 89.32,50.99
@@ -18354,7 +18350,7 @@ accept The Dangerous Past
 step
 goto 56.08,33.97
 talk Captain Vistra
-'Tell her _"Gorak's injuries slowed him down, but he certainly helped out."_
+'Tell her _Gorak's injuries slowed him down, but he certainly helped out._
 turnin Pride of the Lion Guard
 step
 goto 58.24,40.56
@@ -18454,7 +18450,7 @@ goto 66.81,51.07
 step
 goto 66.89,51.05
 talk Gloria Fausta |q Lineage of Tooth and Claw/Talk to Gloria Fausta
-'Tell her _"No, not this way. We need you alive. I'll handle the Duke."_
+'Tell her _No, not this way. We need you alive. I'll handle the Duke._
 step
 goto 61.62,51.14 |lorebook The Illusion of Death/1/9/3
 step
@@ -18468,7 +18464,7 @@ step
 step
 goto aldcroft_base 31.90,58.50
 talk Duke Sebastien |q Lineage of Tooth and Claw/Talk to Duke Sebastien
-'Tell him _"No. I can't risk it. But I won't kill you. Gloria, capture him!"_
+'Tell him _No. I can't risk it. But I won't kill you. Gloria, capture him!_
 step
 goto 32.34,58.65
 talk Gloria Fausta
@@ -18598,7 +18594,7 @@ accept The Nameless Soldier
 step
 goto 46.15,49.07
 talk Scout Hanil
-'Tell him _"Take the soldiers and kill Faolchu. I'll rescue Alana"_
+'Tell him _Take the soldiers and kill Faolchu. I'll rescue Alana_
 'Choose to Rescue Alana |q The Nameless Soldier/Rescue Alana
 step
 goto 45.90,48.01 |q The Nameless Soldier/Find Alana In the Enemy Camp
@@ -18890,17 +18886,17 @@ goto 52.27,31.69 |q The Fall of Faolchu/.*Escort a Volunteer to the Towers.* |co
 step
 goto 50.03,31.31
 click West Tower
-'Kill the werewolves that attack you |q The Fall of Faolchu/.*Escort a Volunteer to the Towers.* |count 1
+kill the werewolves that attack you |q The Fall of Faolchu/.*Escort a Volunteer to the Towers.* |count 1
 step
 goto 53.71,30.09
 click East Tower
-'Kill the werewolves that attack you |q The Fall of Faolchu/.*Escort a Volunteer to the Towers.* |count 2
+kill the werewolves that attack you |q The Fall of Faolchu/.*Escort a Volunteer to the Towers.* |count 2
 step
 goto 52.16,31.41 |q The Fall of Faolchu/.*Escort a Volunteer to the Towers.* |count 3
 step
 goto 53.92,33.98
 click South Tower
-'Kill the werewolves that attack you |q The Fall of Faolchu/.*Escort a Volunteer to the Towers.* |count 3
+kill the werewolves that attack you |q The Fall of Faolchu/.*Escort a Volunteer to the Towers.* |count 3
 step
 goto 51.99,30.94
 click Camlorn Keep |q The Fall of Faolchu/Defeat Faolchu
@@ -18987,7 +18983,7 @@ step
 goto 43.17,31.30
 |tip Downstairs.
 talk Tamien Sellan |q Cutting Off the Source/Talk to Tamien Sellan
-'Tell him _"I'll help save your father. We'll deal with the Bloodthorns later."_
+'Tell him _I'll help save your father. We'll deal with the Bloodthorns later._
 step
 goto 44.07,34.68
 click Bloodthorn-Occupied House |q Cutting Off the Source/Enter the Bloodthorn House
@@ -19095,8 +19091,8 @@ kill Shade of Rosalind |q Memento Mori/Defeat the Cursed Shade of Rosalind
 step
 goto 38.87,41.84
 talk Rosalind Milielle |q Memento Mori/Talk to Rosalind Milielle
-'Tell her _"What happens if I choose the gem?"_
-'Tell her _"I'll take the gem."_
+'Tell her _What happens if I choose the gem?_
+'Tell her _I'll take the gem._
 step
 goto 41.65,43.86
 |tip All around this area.
@@ -19388,7 +19384,7 @@ kill Vorthag |q Angof the Gravesinger/Collect the Shard of the Lost
 step
 goto 69.85,16.98
 talk Sir Thomas Kinlin |q Angof the Gravesinger/Collect the Shard of the Lost
-'Tell him _"Release from slumber! Eternal darkness, come forth!"_
+'Tell him _Release from slumber! Eternal darkness, come forth!_
 step
 goto 70.86,16.26
 talk Sir Pierre Ginsen |q The Labyrinth/Find Limren |future
@@ -20349,7 +20345,7 @@ click Infirmary |q Sir Hughes' Fate/Talk to Duke Nathaniel
 step
 goto stormhaven_base 33.24,29.81
 talk Duke Nathaniel |q Sir Hughes' Fate/Talk to Duke Nathaniel
-'Tell him _"Let him live. He wasn't in his right mind."_
+'Tell him _Let him live. He wasn't in his right mind._
 step
 goto 33.23,29.81
 'Watch the dialogue
@@ -20742,7 +20738,7 @@ accept The Gate to Quagmire
 step
 goto 54.79,32.03
 talk Master Muzgu |q The Gate to Quagmire/Talk to Master Muzgu
-'Tell him _"I think you should let me go find a dreaming cultist to take your place."_
+'Tell him _I think you should let me go find a dreaming cultist to take your place._
 step
 goto 54.60,32.39
 click Scroll of Dream Trapping |q The Gate to Quagmire/Collect Scroll of Dream Trapping
@@ -21059,14 +21055,14 @@ talk Baron Sorick |q The Sower Reaps/Confront Baron Sorick
 step
 goto 26.01,13.71
 talk Baron Sorick |q The Sower Reaps/Decide Baron Sorick's Fate
-'Tell him _"I think I'll expose your plan, and we'll see how brilliant it is."_
+'Tell him _I think I'll expose your plan, and we'll see how brilliant it is._
 step
 goto 27.48,12.22
 talk Baron Sorick |q The Sower Reaps/Catch Baron Sorick
 step
 goto 27.69,12.39
 talk Constable Charlic
-'Tell him _"I think you know too. So I say Baron Sorick tripped and these folks are just helping him. All right?"_
+'Tell him _I think you know too. So I say Baron Sorick tripped and these folks are just helping him. All right?_
 turnin The Sower Reaps
 step
 goto 38.37,12.22 |q The Debt Collector's Debts/Talk to S'rashi |future
@@ -21567,7 +21563,7 @@ click Frodibert Fontbonne's Chest |q One Last Game/Open Frodibert Fontbonne's Ch
 step
 goto 43.39,14.51
 click Frodibert Fontbonne's Chest |q One Last Game/Find Donel Fontbonne and Give Him the Inheritance
-'Choose _"This money belongs to Donel Fontbonne. I will try to find him."_
+'Choose _This money belongs to Donel Fontbonne. I will try to find him._
 step
 goto 45.61,36.44
 |tip Leave the building.
@@ -22069,7 +22065,7 @@ goto 69.03,40.65
 talk Countess Ilise Manteau |q Gift from a Suitor/Warn the Countess
 step
 goto 69.03,40.65
-'Kill the enemies that attack in waves
+kill the enemies that attack in waves
 'Watch the dialogue
 kill Sirion Guerat |q Gift from a Suitor/Defend Countess Ilise Manteau
 step
@@ -22138,8 +22134,8 @@ goto 57.45,27.16 |q King Aphren's Sword/Take Aphren's Sword to Mira at Her Crypt
 step
 goto 56.83,13.10
 talk Princess Mira |q King Aphren's Sword/Take Aphren's Sword to Mira at Her Crypt
-'Tell her _"He wanted me to give you his sword."_
-'Tell her _"Here. Take it."_
+'Tell her _He wanted me to give you his sword._
+'Tell her _Here. Take it._
 step
 goto 59.48,28.97 |q King Aphren's Sword/Talk to King Aphren
 step
@@ -22465,7 +22461,7 @@ step
 goto 19.10,63.88
 |tip Wait for Cadwell to open the door.
 talk Cadwell |q Castle of the Worm/Talk to Cadwell
-'Tell him _"You should come along. It might be good for you."_
+'Tell him _You should come along. It might be good for you._
 |only if ZGV.Utils.GetFaction("player","notvet")=="DC"
 step
 goto 11.57,66.59
@@ -22652,7 +22648,7 @@ step
 goto 50.23,61.16
 |tip Inside the building. 
 talk Heloise Menoit |q Under Siege/Find Heloise Menoit
-'Tell her _"No, I can't let you go. You have to die."_
+'Tell her _No, I can't let you go. You have to die._
 step
 goto 46.72,63.70
 talk Lieutenant Fairfax
@@ -22994,7 +22990,7 @@ talk Sheogorath |q Circus of Cheerful Slaughter/Find Sheogorath in Daggerwaymore
 |only if ZGV.Utils.GetFaction("player","notvet")=="DC"
 step
 goto 22.87,65.45
-'Kill the enemies here |q Circus of Cheerful Slaughter/Save the Guild Members
+kill the enemies here |q Circus of Cheerful Slaughter/Save the Guild Members
 |tip Manually skip to the next step.
 |only if ZGV.Utils.GetFaction("player","notvet")=="DC"
 step
@@ -23237,7 +23233,7 @@ step
 goto 28.59,45.83
 'Watch the dialogue
 talk Baron Wylon Montclair |q Dream-Walk Into Darkness/Learn the Secret of the First Memory
-'Tell him _"You're right. Let me ask Leila what she wants to do."_
+'Tell him _You're right. Let me ask Leila what she wants to do._
 |tip Manually skip to the next step.
 step
 goto 28.15,45.62
@@ -23461,7 +23457,7 @@ talk Countess Eselde Tamrith |q The Blood-Splattered Shield/Talk to Countess Ese
 step
 goto 15.87,40.82
 talk Captain Janeve |q The Blood-Splattered Shield/Decide Captain Janeve's Fate
-'Tell her _"I agree with the Captain. You deserve a chance to prove yourself. We should let you live."_
+'Tell her _I agree with the Captain. You deserve a chance to prove yourself. We should let you live._
 step
 goto 18.90,35.09
 click Rivenspire |q The Blood-Splattered Shield/Return to Darien Gautier
@@ -23561,7 +23557,7 @@ talk Bumnog |q Rusty Daggers/Talk to Bumnog
 step
 goto 35.35,72.03
 talk Makar the Elder |q Rusty Daggers/Tell the Elder the Truth
-'Tell her _"To be honest, I helped them out quite a bit."_,
+'Tell her _To be honest, I helped them out quite a bit._,
 step
 goto 35.35,72.03
 talk Makar the Elder
@@ -23750,7 +23746,7 @@ talk Serine Dathieu |q The Wayward Son/Convince Martin to Enlist
 step
 goto 41.66,61.72
 talk Martin Dathieu |q The Wayward Son/Convince Martin to Enlist
-'Tell him _"Your sister says if you enlist, the steady income would help the family most."_
+'Tell him _Your sister says if you enlist, the steady income would help the family most._
 step
 goto 39.68,58.29
 talk Captain Thayer
@@ -23791,7 +23787,7 @@ talk Guendeline Ascenge |q The Lover/Talk to Guendeline
 step
 goto 50.17,54.61
 talk Julien Rissiel |q The Lover/Talk to Julien Rissiel
-'Tell him _"I'd give her a nice necklace."_
+'Tell him _I'd give her a nice necklace._
 step
 goto rivenspire_base 55.23,59.89
 |tip Around this area.
@@ -23808,8 +23804,8 @@ talk Khalisah |q The Lover/Take the Gems to Khalisah
 step
 goto 50.13,54.22
 talk Julien Rissiel
-'Tell him _"Did you know that Khalisah has feelings for you?"_
-'Tell him _"I think you should give Khalisah a chance."_
+'Tell him _Did you know that Khalisah has feelings for you?_
+'Tell him _I think you should give Khalisah a chance._
 'Take the Necklace to Julien |q The Lover/Talk to Julien
 step
 goto 58.05,53.18
@@ -24172,7 +24168,7 @@ click Sigil Stone |q A Change of Heart/Destroy the Sigil Stone
 step
 goto edraldundercroftdomed_base 48.89,47.65
 talk Federic Seychelle |q A Change of Heart/Talk to Federic Seychelle
-'Tell him _"It's never too late to learn to defend yourself and those you love."_
+'Tell him _It's never too late to learn to defend yourself and those you love._
 step
 goto 16.14,33.09
 click Edrald Manor |q A Change of Heart/Talk to Dulkhi
@@ -24181,7 +24177,7 @@ step
 goto rivenspire_base 69.98,50.18
 |tip Upstairs.
 talk Dulkhi |q A Change of Heart/Talk to Dulkhi
-'Tell her _"Listen, Arlie needs people she can rely on. You've more than proven yourself."_
+'Tell her _Listen, Arlie needs people she can rely on. You've more than proven yourself._
 step
 goto 70.02,49.20
 talk Arlie Edrald
@@ -24459,7 +24455,7 @@ step
 goto 55.09,73.56
 |tip Leave building.
 'Watch the dialogue
-'Kill the enemies that attack in waves |q The Liberation of Northpoint/Find the Rest of Your Assault Team
+kill the enemies that attack in waves |q The Liberation of Northpoint/Find the Rest of Your Assault Team
 |tip Manually skip to the next step.
 step
 goto 26.86,57.50
@@ -24528,7 +24524,7 @@ step
 goto 50.57,57.28
 'Watch the dialogue
 talk Baron Alard Dorell |q The Liberation of Northpoint/Talk to Baron Alard Dorell
-'Tell him _"Hasn't Lleraya paid for these crimes? She was controlling his mind."_
+'Tell him _Hasn't Lleraya paid for these crimes? She was controlling his mind._
 step
 goto 50.57,57.28
 talk Baron Alard Dorell
@@ -24665,7 +24661,7 @@ click Rivenspire |q The Emerald Chalice/Leave Breagha-Fin
 step
 goto rivenspire_base 68.84,25.36
 talk Lady Clarisse Laurent |q The Emerald Chalice/Tell Lady Laurent the Whole Story
-'Tell her _"Anyone who drinks from the chalice is turned into a Goblin."_
+'Tell her _Anyone who drinks from the chalice is turned into a Goblin._
 step
 goto 68.84,25.36
 talk Lady Clarisse Laurent
@@ -24782,7 +24778,7 @@ click Sideboard |q A Spy in Shornhelm/Search Edouard Celd's House for Evidence
 step
 goto 71.20,73.55
 talk Rosamund Celd |q A Spy in Shornhelm/Talk to Rosamund Celd
-'Tell her _"All right. I'll keep his secret."_
+'Tell her _All right. I'll keep his secret._
 step
 goto 35.74,64.73
 talk Arch-Mage Shalidor
@@ -24964,7 +24960,7 @@ click Aren Belaine's House |q Love Lost/Find Giran in Northpoint
 step
 goto 71.36,17.65
 talk Giran |q Love Lost/Talk to Giran
-'Tell him _"I found your wife's journal. She left you for a vampire. [Tell truth.]"_
+'Tell him _I found your wife's journal. She left you for a vampire. [Tell truth.]_
 step
 goto 71.36,17.65
 talk Giran
@@ -24995,7 +24991,7 @@ step
 goto 56.94,22.79 |q Puzzle of the Pass/Meet Verandis Ravenwatch
 step
 goto 52.28,22.01
-'kill Klaandor Axe-Bearer 
+kill Klaandor Axe-Bearer 
 'Open inventory and read Klaandor Axe-Bearer Journal
 accept Last Words
 step
@@ -25201,7 +25197,7 @@ goto 50.51,51.45
 talk Count Verandis Ravenwatch |q The Lightless Remnant/Talk to Verandis Ravenwatch
 step
 goto 46.49,44.39
-'Kill the skeletons that attack
+kill the skeletons that attack
 |tip In order to kill the gargoyle, don't focus on damaging it, just focus on staying alive.  There are 4 statues in the room with a black spell chaneling from them toward the altar.  Run to each statue and position yourself so the statues are between you and the gargoyle.  When the gargoyle attacks you, it will destroy the statue.  Do this for all 4 statues to kill the gargoyle.
 kill Gargoyle |q The Lightless Remnant/Protect Verandis Ravenwatch
 step
@@ -25227,14 +25223,14 @@ kill Baron Wylon Montclair |q The Lightless Remnant/Defeat Baron Montclair
 step
 goto 48.30,40.68
 talk Count Verandis Ravenwatch |q The Lightless Remnant/Talk to Verandis Ravenwatch
-'Tell him _"There must be another way."_
+'Tell him _There must be another way._
 step
 goto rivenspire_base 31.80,37.68
 talk Darien Gautier |q The Lightless Remnant/Talk to Darien Gautier
 step
 goto 31.89,37.80
 talk Gwendis |q The Lightless Remnant/Talk to Gwendis
-'Tell her _"Verandis wouldn't have wanted that."_
+'Tell her _Verandis wouldn't have wanted that._
 step
 goto 31.89,37.80
 talk Gwendis
@@ -25486,7 +25482,7 @@ step
 step
 goto rivenspire_base 71.91,14.70
 talk First Mate Elvira Derre |q Favor for the Queen/Talk to Elvira |future
-'Tell her _"I'm ready to go to Sentinel."_
+'Tell her _I'm ready to go to Sentinel._
 |tip Manually skip to the next step.
 step
 goto sentinel_base 27.79,15.53
@@ -25550,7 +25546,7 @@ goto 14.70,53.25
 step
 goto 15.10,53.48
 talk Watchman Azad |q Seize the Moment/Speak to Watchman Azad
-'Tell him _"I talked to Ildani. She's right up the hill."_
+'Tell him _I talked to Ildani. She's right up the hill._
 step
 goto 15.09,53.33
 click Baandari Contraband |q Seize the Moment/Take Ildani's Goods
@@ -25594,12 +25590,12 @@ goto 9.29,50.09 |q Past in Ruins/Leave with the Ancient Blade
 step
 goto 10.02,50.07
 talk Azei at-Owynok |q Past in Ruins/Talk to Azei at-Owynok
-'Tell him _"Then I'll put the sword back."_
-'Tell him _"I'll return it to Sword-Singr Navid, then."_
+'Tell him _Then I'll put the sword back._
+'Tell him _I'll return it to Sword-Singr Navid, then._
 step
 goto 12.46,47.92
 talk Sword-Singer Navid |q Past in Ruins/Give Sword to Herminius Sophus
-'Tell him _"This curse is your responsibility. You cannot place the burden on others."_
+'Tell him _This curse is your responsibility. You cannot place the burden on others._
 step
 goto 14.17,49.83
 talk Herminius Sophus
@@ -25753,11 +25749,11 @@ lorebook The Lusty Argonian Maid, Vol. 2/1/14/4
 step
 goto 46.87,62.40
 talk Lucienne Mavine |q The Impervious Vault/Collect Worm's Head Cap
-'Tell her _"Do you have worm's head caps?"_
+'Tell her _Do you have worm's head caps?_
 step
 goto 44.54,64.40
 talk Neeneban |q The Impervious Vault/Collect Flame Stalk
-'Tell him _"Do you have any flame stalk caps?"_
+'Tell him _Do you have any flame stalk caps?_
 step
 goto 59.38,58.09 |q The Impervious Vault/Meet Gabrielle Benele at the Impervious Vault
 step
@@ -25880,7 +25876,7 @@ accept The Nature of Fate
 step
 goto 32.04,59.92
 talk Anjan
-'Tell him _"I am ready to race."_
+'Tell him _I am ready to race._
 'Start the Race |q The Nature of Fate/Talk to Anjan
 step
 goto 33.03,59.80 |q The Nature of Fate/Beat the Storm
@@ -25927,7 +25923,7 @@ goto alikr_base 34.32,51.43
 step
 goto 34.32,51.43
 talk Haidar al-Sentinel |q Badwater Mine/Talk to Haidar's Spirit
-'Tell him _"I'll give her the cursed gemstones. Find peace, spirit."_
+'Tell him _I'll give her the cursed gemstones. Find peace, spirit._
 step
 goto 34.38,51.46
 click Cursed Stones |q Badwater Mine/Collect Cursed Gemstones
@@ -25974,7 +25970,7 @@ goto 27.30,62.15
 step
 goto 27.09,62.23
 talk Overseer Jahi
-'Tell her _"I think you should own the johads."_
+'Tell her _I think you should own the johads._
 turnin Trouble at the Rain Catchers
 step
 goto 28.42,63.82
@@ -26048,7 +26044,7 @@ goto 22.80,66.74
 step
 goto 24.60,66.00
 talk Stibbons
-'Tell him _"Yes. Take them."_
+'Tell him _Yes. Take them._
 turnin Lady Laurent's Favor
 step
 goto 22.11,68.19
@@ -26142,7 +26138,7 @@ goto 49.11,70.91
 talk Lady Clarisse Laurent |q Thwarting the Aldmeri Dominion/Talk to Lady Laurent
 step
 goto 49.11,70.91
-'Kill the enemies |q Thwarting the Aldmeri Dominion/Close the Portal
+kill the enemies |q Thwarting the Aldmeri Dominion/Close the Portal
 step
 goto 49.11,70.91
 talk Lady Clarisse Laurent
@@ -26230,7 +26226,7 @@ talk Vizier Yeqdah |q The Initiation/Talk to the Vizier
 step
 goto 36.54,58.71
 talk Prince Haqmir
-'Tell him _"No. I will strike him down. It is my duty."_
+'Tell him _No. I will strike him down. It is my duty._
 talk Prince Haqmir |q The Initiation/Talk  to Prince Haqmir
 step
 goto 36.64,41.18
@@ -26339,7 +26335,7 @@ accept Revered Ancestors
 step
 goto 40.90,55.40
 talk Ramati at-Gar |q Revered Ancestors/Choose Healer
-'Tell him _"I'd prefer one skilled in restoration magic."_
+'Tell him _I'd prefer one skilled in restoration magic._
 step
 goto 41.43,56.45 |q Tu'whacca's Breath/Light the South Brazier
 step
@@ -26545,7 +26541,7 @@ click Magistrate Sulma's House |q Gone Missing/Return Upstairs with the Evidence
 step
 goto bergama_base 41.06,61.66
 talk Magistrate Sulma |q Gone Missing/Confront the Magistrate
-'Tell her _"No. I'm turning you in."_
+'Tell her _No. I'm turning you in._
 step
 goto 52.81,47.18
 talk Istah
@@ -26574,7 +26570,7 @@ talk Rena |q A Winner for Onwyn/Talk to Rena
 step
 goto 49.50,61.29
 talk Rena |q A Winner for Onwyn/Obtain a Racing Lizard
-'Tell her _"I think I'll go buy a lizzard in Sentinel or Bergama then."_
+'Tell her _I think I'll go buy a lizzard in Sentinel or Bergama then._
 |tip Manually skip to the next step.
 step
 |tip If shes not here theres a tent on other side of the road she might be there.
@@ -26720,7 +26716,7 @@ goto 66.48,50.10
 |only if ZGV.Utils.GetFaction("player","notvet")=="DC"
 step
 goto 66.48,50.10
-'Kill the enemies that attack you
+kill the enemies that attack you
 kill Auroran Battlemage |q Proving the Deed/Survive the Trap
 |only if ZGV.Utils.GetFaction("player","notvet")=="DC"
 step
@@ -26805,7 +26801,7 @@ click Chateau Guesthouse |q Chateau of the Ravenous Rodent/Enter the Chateau Gue
 step
 goto 31.25,44.17
 click Door |q Chateau of the Ravenous Rodent/Evict the Guest That Doesn't Belong
-'Tell them _"That's it. You're out of here."_
+'Tell them _That's it. You're out of here._
 |tip It may be randomized, so if it's not this door, try the others.  You just have to kill the person you let out if they're the wrong one.
 |only if ZGV.Utils.GetFaction("player","notvet")=="DC"
 step
@@ -26906,19 +26902,19 @@ step
 goto 59.60,48.97
 |tip Inside the building.
 talk Smith Nabeenam |q Master of Leki's Blade/Answer the First Riddle from Smith Nabeenam
-'Tell him _"Both the man and the woman were bandits."_
+'Tell him _Both the man and the woman were bandits._
 step
 goto 59.60,48.97
 talk Smith Nabeenam |q Master of Leki's Blade/Answer the Second Riddle from Smith Nabeenam
-'Tell him _"Master Ahram used a wooden training sword."_
+'Tell him _Master Ahram used a wooden training sword._
 step
 goto 59.60,48.97
 talk Smith Nabeenam |q Master of Leki's Blade/Listen to the Third Riddle from Smith Nabeenam
-'Tell him _"She asked him to get her blade back from the bandits, giving him a last battle."_
+'Tell him _She asked him to get her blade back from the bandits, giving him a last battle._
 step
 goto 59.60,48.97
 talk Smith Nabeenam |q Master of Leki's Blade/Answer the Third Riddle from Smith Nabeenam
-'Tell him _"She asked him to get her blade back from the bandits, giving him a last battle."_
+'Tell him _She asked him to get her blade back from the bandits, giving him a last battle._
 step
 goto 59.39,48.32
 click Redguards, History and Heroes, V. 2
@@ -26998,8 +26994,8 @@ click Leki's Blade |q Master of Leki's Blade/Find Master Fadalia |future
 step
 goto alikr_base 63.50,49.10
 talk Arbiter Salida al-Natedan |q Master of Leki's Blade/Decide Master Fadalia's Fate
-'Tell her _"I don't think Master Fadalia should die simply for being a vampire."_
-'Tell her _"If it were up to me, I would spare her life."_
+'Tell her _I don't think Master Fadalia should die simply for being a vampire._
+'Tell her _If it were up to me, I would spare her life._
 'Watch the dialogue
 step
 goto 63.40,49.04
@@ -27067,7 +27063,7 @@ goto 23.56,64.19 |q Crawling Chaos/Take Seqbar Deeper into the Mine
 step
 goto 27.99,69.19
 talk Naluroen |q Crawling Chaos/Talk to Naluroen
-'Tell her _"I'll feed the Elder Spider."_
+'Tell her _I'll feed the Elder Spider._
 step
 goto 23.86,70.33
 talk Elder Spider |q Crawling Chaos/Convince Naluroen to Let You Enter Her Nest
@@ -27087,7 +27083,7 @@ talk Shagora |q Crawling Chaos/Talk to Shagora
 step
 goto 72.64,49.51
 talk Naluroen |q Crawling Chaos/Rescue Seqbar and Shagora
-'Tell her _"Deal. Take the Redguard, then."_
+'Tell her _Deal. Take the Redguard, then._
 step
 goto 16.90,54.93
 click Portal to Kulati Mines |q Crawling Chaos/Leave the Nest with Shagora
@@ -27234,7 +27230,7 @@ goto 60.61,29.13
 step
 goto 60.48,29.42
 talk Llasi Omoren |q Warship Designs/Talk to Llasi Omoren
-'Tell her _"Give me the designs and you can go."_
+'Tell her _Give me the designs and you can go._
 step
 goto 60.32,31.24
 |tip Inside the building.
@@ -27468,7 +27464,7 @@ kill Flint-Tooth enemies
 step
 goto 75.84,52.30
 kill Flint-Tooth Warchief
-'Kill the Goblin Chief |q March of the Ra Gada/Kill the Goblin Chief
+kill the Goblin Chief |q March of the Ra Gada/Kill the Goblin Chief
 step
 goto 76.19,53.26 |q March of the Ra Gada/Talk to Throne Keeper Farvad
 step
@@ -27510,25 +27506,25 @@ step
 goto 72.93,56.83
 'Watch the dialogue
 talk Frandar Hunding
-'Tell him _"I would attack!"_
+'Tell him _I would attack!_
 talk Frandar Hunding |q Trials of the Hero/Talk to Frandar Hunding
 step
 goto 74.84,56.18
 'Watch the dialogue
 talk Divad Hunding
-'Tell him _"I help my friend."_
+'Tell him _I help my friend._
 talk Divad Hunding |q Trials of the Hero/Talk to Divad Hunding
 step
 goto 76.17,56.77
 'Watch the dialogue
 talk Derik Hallin
-'Tell him _"I take up the blades."_
+'Tell him _I take up the blades._
 talk Derik Hallin |q Trials of the Hero/Talk to Derik Hallin
 step
 goto 74.91,57.43
 'Watch the dialogue
 talk Makela Leki
-'Tell her _"I choose my family."_
+'Tell her _I choose my family._
 talk Makela Leki |q Trials of the Hero/Talk to Makela Leki
 step
 goto 73.59,56.82 |q Trials of the Hero/Talk to Farvad Atop the Monument
@@ -27702,7 +27698,7 @@ goto 38.79,39.52
 step
 goto 38.74,39.11
 talk Fadeel |q The Real Snake/Decide Fadeel's Fate
-'Tell him _"No, you must face justice."_
+'Tell him _No, you must face justice._
 step
 goto 41.25,48.10
 click The Amulet of Kings
@@ -27740,7 +27736,7 @@ click Skyshard |achieve 556/7
 step
 goto 54.38,31.61
 talk Joroh at-Nazdar
-'Tell him _"I'm here to give you the note actually, the man you owed is dead."_
+'Tell him _I'm here to give you the note actually, the man you owed is dead._
 turnin Past Due
 step
 goto 57.22,42.62
@@ -27903,7 +27899,7 @@ step
 goto 85.50,32.94
 |tip Upstairs inside the building.
 talk Magnifico Khorshad |q Imperial Incursion/Interrogate Magnifico Khorshad
-'Tell him _"You can go, but don't ever come back."_
+'Tell him _You can go, but don't ever come back._
 step
 goto 84.45,32.32
 |tip Downstairs.
@@ -28027,7 +28023,7 @@ click Sepulcher of Blessed Interment |q Amputating the Hand/Help Farvad Cleanse 
 |tip Manually skip to the next step.
 step
 goto 81.27,24.52
-'Kill the enemies that attack in waves
+kill the enemies that attack in waves
 'Watch the dialogue |q Amputating the Hand/Help Farvad Cleanse the Ward
 step
 goto 81.34,23.52
@@ -28043,7 +28039,7 @@ talk Throne Keeper Farvad |q Amputating the Hand/Talk to Throne Keeper Farvad
 step
 goto 77.52,29.73
 talk Throne Keeper Farvad |q Amputating the Hand/Choose Your Companion
-'Tell him _"Then I'd like you to join me, Farvad."_
+'Tell him _Then I'd like you to join me, Farvad._
 step
 goto 77.52,29.73
 'Watch the dialogue
@@ -28185,9 +28181,9 @@ click Fourth Gravestone |q A Grave Matter/Read the Fourth Gravestone
 step
 goto 60.80,24.72
 talk Llotha Nelvani |tip She walks around.
-'Tell her _"Lavergne."_
-'Tell her _"Thief."_
-'Tell her _"His last name was Rernis and he was the mage."_
+'Tell her _Lavergne._
+'Tell her _Thief._
+'Tell her _His last name was Rernis and he was the mage._
 turnin A Grave Matter
 step
 goto 69.95,30.33 |q Beyond the Call |future
@@ -28432,7 +28428,7 @@ goto 35.99,60.09
 step
 goto 32.75,60.39
 talk Herald Kixathi
-'Tell her _"I will help you however I can."_
+'Tell her _I will help you however I can._
 turnin Mistress of the Lake
 accept Sunken Knowledge
 step
@@ -28659,8 +28655,8 @@ kill Labhraidh |q The Charge of Evermore/Defeat Labhraidh
 step
 goto 39.67,20.22
 talk Squire Theo Rocque
-'Tell him _"She should suffer the same fate as Sir Etienne. [Medya dies.]"_
-'Tell him _"It's what she deserves. [Medya dies.]"_
+'Tell him _She should suffer the same fate as Sir Etienne. [Medya dies.]_
+'Tell him _It's what she deserves. [Medya dies.]_
 'Bring Medya Zurric to Justice |q The Charge of Evermore/Bring Medya Zurric to Justice
 step
 goto 39.67,20.22
@@ -29246,7 +29242,7 @@ step
 goto 62.27,71.11
 |tip Downstairs.
 talk Duke Renchant |q Imperial Infiltration/Confront Duke Renchant
-'Tell him _"It's up to you, Your Majesty. [Let Queen Arzhela Decide]"_
+'Tell him _It's up to you, Your Majesty. [Let Queen Arzhela Decide]_
 step
 goto 61.88,71.52
 'Watch the dialogue
@@ -29292,7 +29288,7 @@ accept The Last Spriggan
 step
 goto 65.82,14.82
 talk Wyress Shannia |q The Last Spriggan/Talk to Wyress Shannia
-'Tell her _"I'll do whatever it takes to save her life."_
+'Tell her _I'll do whatever it takes to save her life._
 step
 goto 66.07,18.27
 click A Life Barbaric and Brutal
@@ -29528,12 +29524,12 @@ step
 goto 68.72,29.91
 'Watch the dialogue
 talk Draven Leonciele
-'Tell him _"I'll find a way to help you, Draven."_
+'Tell him _I'll find a way to help you, Draven._
 'Question Draven Leonciele about the Ritual |q Freedom's Chains/Question Draven Leonciele about the Ritual
 step
 goto 68.28,29.36
 talk Renoit Leonciele
-'Tell him _"What's your plan?"_
+'Tell him _What's your plan?_
 talk Renoit Leonciele |q Freedom's Chains/Talk to Renoit
 step
 goto 68.72,29.93
@@ -29547,9 +29543,9 @@ step
 goto 68.31,29.36
 |tip This part of the Quest has been bugged for years have to logout and back in to fix it.
 talk Renoit Leonciele
-'Tell him _"I understood. I need you to come with me, though."_
-'Tell him _"Not exactly, but the ritual she started needs to end."_
-'Tell him _"Kerbol said we must lure Draven away from the village."_
+'Tell him _I understood. I need you to come with me, though._
+'Tell him _Not exactly, but the ritual she started needs to end._
+'Tell him _Kerbol said we must lure Draven away from the village._
 'Capture Renoit |q Freedom's Chains/Lead Renoit to the Upper Shrine
 |tip Manually skip to the next step.
 step
@@ -29907,7 +29903,7 @@ turnin A Favor Between Kings
 step
 goto 55.02,46.18
 talk Crazy Eye
-'Tell her _"I'm ready whenever you are."_
+'Tell her _I'm ready whenever you are._
 kill the Imperial enemies that attack in waves |q Raiders at the Crossing/Defeat Imperial Raid
 step
 goto 53.17,47.72
@@ -30984,7 +30980,7 @@ click Yokudan "Man and Beast" Enigma |q Tongues of Stone/Get Information about R
 step
 goto 42.96,65.62
 talk Mareh the Hermit |q Tongues of Stone/Get Information about Ruins from the Hermit
-'Tell him _"I think the answer you're looking for is 'air'."_
+'Tell him _I think the answer you're looking for is 'air'._
 step
 goto 40.13,65.47
 |tip They are around this area if someone already killed this one recently.
@@ -31086,7 +31082,7 @@ goto 13.83,61.98
 click Coal Stockpile |q Rising Against Onsi's Breath/Create a Distraction
 step
 goto 13.83,61.98
-'Kill the enemies that attack |q Rising Against Onsi's Breath/Defeat the Guards
+kill the enemies that attack |q Rising Against Onsi's Breath/Defeat the Guards
 step
 goto 13.90,41.33
 'Find Rahanna |q Rising Against Onsi's Breath/Find Rahannal
@@ -31183,25 +31179,25 @@ goto 21.49,69.65 |q Trials and Tribulations/Return Frandar's Scrolls
 step
 goto 7.93,70.50
 click Pedestal
-'Choose _Place "Mastery of Discipline"_
+'Choose _Place "Mastery of Discipline_
 'Return Frandar's Scroll of Discipline |q Trials and Tribulations/Return Frandar's Scrolls
 |tip Manually skip to the next step.
 step
 goto 7.94,70.10
 click Pedestal
-'Choose _Place "Mastery of Devotion"_
+'Choose _Place "Mastery of Devotion_
 'Return Frandar's Scroll of Devotion |q Trials and Tribulations/Return Frandar's Scrolls
 |tip Manually skip to the next step.
 step
 goto 7.89,68.97
 click Pedestal
-'Choose _Place "Mastery of Wisdom"_
+'Choose _Place "Mastery of Wisdom_
 'Return Frandar's Scroll of Wisdom |q Trials and Tribulations/Return Frandar's Scrolls
 |tip Manually skip to the next step.
 step
 goto 7.90,68.58
 click Pedestal
-'Choose _Place "Mastery of Sacrifice"_
+'Choose _Place "Mastery of Sacrifice_
 'Return Frandar's Scroll of Sacrifice |q Trials and Tribulations/Return Frandar's Scrolls
 step
 goto 21.49,69.65 |q Trials and Tribulations/Find Divad Hunding's Burial Chamber
@@ -31379,7 +31375,7 @@ goto 40.56,54.36
 |only if ZGV.Utils.GetFaction("player","notvet")=="DC"
 step
 goto 45.64,54.13
-'Kill the enemies that appear |q Shadow of Sancre Tor/Defeat Mannimarco's Minions
+kill the enemies that appear |q Shadow of Sancre Tor/Defeat Mannimarco's Minions
 |only if ZGV.Utils.GetFaction("player","notvet")=="DC"
 step
 goto 74.92,56.11 |q Shadow of Sancre Tor/Continue to the Inner Courtyard
@@ -31460,7 +31456,7 @@ goto 50.37,62.10
 |only if ZGV.Utils.GetFaction("player","notvet")=="DC"
 step
 goto 50.37,62.10
-'Kill the waves of enemies that attack you |q Shadow of Sancre Tor/Defeat the Undead
+kill the waves of enemies that attack you |q Shadow of Sancre Tor/Defeat the Undead
 |only if ZGV.Utils.GetFaction("player","notvet")=="DC"
 step
 goto 57.35,43.53 |q Shadow of Sancre Tor/Enter the Vault of Kings
@@ -31627,8 +31623,8 @@ goto 46.78,47.24
 step
 goto 46.29,47.35
 talk Sheogorath |q The Mad God's Bargain/Talk to Sheogorath
-'Tell him _"I'm ready to make my decision."_
-'Tell him _"[Valaste Stays] I want you to cure Valaste."_
+'Tell him _I'm ready to make my decision._
+'Tell him _[Valaste Stays] I want you to cure Valaste._
 |only if ZGV.Utils.GetFaction("player","notvet")=="DC"
 step
 goto 46.29,47.35
@@ -31740,7 +31736,7 @@ talk Sees-All-Colors |q Will of the Council/Confront Sees-All-Colors
 step
 goto 65.33,50.42
 talk Sees-All-Colors |q Will of the Council/Decide the Fate of Sees-All-Colors
-'Tell _"Your quest is just. Let's finish, and go."_
+'Tell _Your quest is just. Let's finish, and go._
 'Watch the dialogue
 |only if ZGV.Utils.GetFaction("player","notvet")=="DC"
 step
@@ -31789,7 +31785,7 @@ talk Merric at-Aswala |q Will of the Council/Talk to Countess Hakruba
 step
 goto 39.42,24.98
 talk Countess Hakruba |q Will of the Council/Talk to Countess Hakruba
-'Choose _"[Sees-All-Colors Stays] She did what she felt she had to. Let her serve the Guild."_
+'Choose _[Sees-All-Colors Stays] She did what she felt she had to. Let her serve the Guild._
 |only if ZGV.Utils.GetFaction("player","notvet")=="DC"
 step
 goto 39.61,24.38
@@ -31830,7 +31826,7 @@ click The Harborage |q Council of the Five Companions/Go to the Harborage |futur
 step
 goto the_daggerfall_harborage 66.79,65.21
 talk Varen Aquilarios |q Council of the Five Companions/Talk to Varen Aquilarios
-'Tell him _"Show me these visions."_
+'Tell him _Show me these visions._
 |only if ZGV.Utils.GetFaction("player","notvet")=="DC"
 step
 goto visionofthecompanions_base 66.69,80.53
@@ -31839,7 +31835,7 @@ goto visionofthecompanions_base 66.69,80.53
 step
 goto the_daggerfall_harborage 69.52,61.82
 talk Sai Sahan |q Council of the Five Companions/Talk to Sai Sahan
-'Tell him _"I am honored to join you as the last member of the Five Companions."_
+'Tell him _I am honored to join you as the last member of the Five Companions._
 |only if ZGV.Utils.GetFaction("player","notvet")=="DC"
 step
 goto 67.26,63.58
@@ -32095,8 +32091,8 @@ talk Captain Rana##1091003
 step
 goto 78.79,47.18
 talk Captain Rana
-'Tell her _"What is Skyshroud Barrow?"_
-'Tell her _"I'll start at Skyshroud Barrow."_
+'Tell her _What is Skyshroud Barrow?_
+'Tell her _I'll start at Skyshroud Barrow._
 'Help Captain Rana |q A Beginning at Bleakrock/Find Darj |future
 |tip Manually skip to the next step.
 step
@@ -32231,7 +32227,7 @@ goto 25.46,39.66
 'Equip the _Frostedge Bandit Disguise_ in your inventory
 |tip You can get another disguise from killing enemies or from baskets around the area.
 click Mine Door
-'Tell him _"[Lie] The boss wants me to check on the relics we already found."_
+'Tell him _[Lie] The boss wants me to check on the relics we already found._
 'Get Inside the Mine |q Hozzin's Folly/Get Inside the Mine
 step
 goto hozzinsfolley_base 32.92,80.98
@@ -32395,8 +32391,8 @@ step
 goto 78.61,47.55
 |tip Inside the building.
 talk Captain Rana
-'Tell her _"Ive gathered all the missing villagers."_
-'Tell her _"Lets get going."_
+'Tell her _Ive gathered all the missing villagers._
+'Tell her _Lets get going._
 turnin The Missing of Bleakrock
 accept Sparking the Flame
 step
@@ -32661,7 +32657,7 @@ goto 28.75,76.21
 click Fort Zeren |q Zeren in Peril/Defend Fort Zeren
 step
 goto 39.24,79.79
-'Kill enemies near Reinforcement Portals
+kill enemies near Reinforcement Portals
 |tip They appear randomly all around town. Kill the enemies next to the portals to close them.
 'Close 5 Portals |q Zeren in Peril/.*Close Portals.*
 step
@@ -32722,7 +32718,7 @@ accept Legacy of the Ancestors
 step
 goto 65.76,65.70
 talk Holgunn
-'Tell him _"I have some things to do. I'll meet you there."_
+'Tell him _I have some things to do. I'll meet you there._
 talk Holgunn |q Legacy of the Ancestors/Talk to Holgunn
 step
 goto 70.27,52.23
@@ -32785,7 +32781,7 @@ goto 54.00,45.00
 step
 goto 53.89,44.96
 click Valdam's Spellbook
-'Choose _"Eyes of Akatosh!"_
+'Choose _Eyes of Akatosh!_
 'Close the Spellbook |q The Wizard's Tome/Close the Book
 step
 goto 53.89,44.96
@@ -33023,7 +33019,7 @@ talk Reesa |q Through the Aftermath/Talk to Reesa
 step
 goto 85.04,40.65
 talk Sergeant Rhorlak
-'Tell him _"Reesa's right. We should set them free."_
+'Tell him _Reesa's right. We should set them free._
 'Choose Reesa's Plan |q Through the Aftermath/Choose Reesa's Plan |future
 step
 goto 85.08,40.81
@@ -33147,7 +33143,7 @@ step
 goto 76.75,53.50
 kill Kwama Workers
 |tip They are found around this area.
-'Press _"E"_ to use Drelden's Whistle |q Percussive Ranching/.*Use Drelden's Whistle on Kwama.*
+'Press _E_ to use Drelden's Whistle |q Percussive Ranching/.*Use Drelden's Whistle on Kwama.*
 step
 goto 74.58,53.31
 talk Morvani |q Proving Trust/Find Morvani
@@ -33288,7 +33284,7 @@ talk Eanen Varam |q Quieting a Heart/Talk to Eanen
 step
 goto 74.50,58.01
 talk Bala
-'Tell her _"Eanen didn't care for you. Your relationship was just a game to him."_
+'Tell her _Eanen didn't care for you. Your relationship was just a game to him._
 turnin Quieting a Heart
 step
 goto 72.05,57.81 |q To Ash Mountain/Talk to Garyn Indoril
@@ -35200,7 +35196,7 @@ step
 goto 50.13,38.37
 |tip He is upstairs.
 talk Nadras Hlor |q Aggressive Negotiations/Talk to Nadras Hlor
-'Tell him _"I'm going to assault their encampment."_
+'Tell him _I'm going to assault their encampment._
 step
 goto 50.65,43.41
 click Kragenmoor |q Aggressive Negotiations/Search the Vanguard Camp for Information
@@ -35286,7 +35282,7 @@ talk Sen Dres |q Saving the Son/Meet Sen Dres Outside the Daedric Tombs
 step
 goto 46.53,44.95
 talk Laughs-at-All |q This One's a Classic/Give Laughs-at-All the Performance Notes
-'Tell him _"Actually, I didn't find anything in there. [Laughs-at-All lives]"_
+'Tell him _Actually, I didn't find anything in there. [Laughs-at-All lives]_
 step
 goto 46.53,44.95
 talk Laughs-at-All
@@ -35332,8 +35328,8 @@ step
 goto 29.49,55.34
 |tip Path to the left of Softloam Cavern entrance.
 talk Zahshur
-'Tell Him _"Store (Merchant)"_
-'Buy _"Religious Fetish Statue"_
+'Tell Him _Store (Merchant)_
+'Buy _Religious Fetish Statue_
 'Use Religious Fetish Statue
 |tip Religious Fetish Statue is in your bags under miscellaneous.
 accept The Fetish
@@ -35838,7 +35834,7 @@ step
 goto 35.55,43.86
 'Watch the dialogue
 talk Dethisam Berendas |q Bad Medicine/Investigate the Maulborn Quarantine |future
-'Tell him _"No. There's still time to try to help you."_
+'Tell him _No. There's still time to try to help you._
 |tip Manually skip to the next step.
 step
 goto 61.17,46.24
@@ -35898,9 +35894,9 @@ talk Nilyne Hlor |q Quest for the Cure/Talk to Nilyne
 step
 goto 14.48,43.41
 click Alchemy Table
-'Choose _"I should add the Kyne's Heart Healing Herbs now."_
-'Choose _"I should add the Sour Milk Tea now."_
-'Choose _"I should add the Dragon Scale Mushrooms now."_
+'Choose _I should add the Kyne's Heart Healing Herbs now._
+'Choose _I should add the Sour Milk Tea now._
+'Choose _I should add the Dragon Scale Mushrooms now._
 'Mix the Ingredients Together |q Quest for the Cure/Mix the Ingredients Together
 step
 goto 14.41,43.26
@@ -36091,7 +36087,7 @@ click Slips-Through-Fingers' Pack |q Fighting Back/Search the Dropped Pack
 step
 goto 57.80,55.59
 talk Star |q Fighting Back/Look for the Star
-'Select "_<Take the Key>_"
+'Select _<Take the Key>_
 step
 goto 31.13,60.57
 click Tedas House |q Fighting Back/Follow Star to the Secret Meeting
@@ -36102,7 +36098,7 @@ talk Slips-Through-Fingers |q Fighting Back/Talk to Slips-Through-Fingers
 step
 goto 29.05,60.80
 talk Madras Tedas |q Fighting Back/Talk to Madras
-'Tell him _"I'll help you."_
+'Tell him _I'll help you._
 step
 goto 29.39,60.39
 talk Madras Tedas
@@ -36280,7 +36276,7 @@ goto 31.24,45.70
 step
 goto 30.60,46.45
 talk Kotholl
-'Tell him _"Return these items to the families of the merchants. Ask them for your back pay."_
+'Tell him _Return these items to the families of the merchants. Ask them for your back pay._
 turnin Nothing Left to Waste
 step
 goto 30.20,45.94
@@ -36394,7 +36390,7 @@ talk Vrali |q Mechanical Murder/Talk to the Dres Captive
 step
 goto 45.62,36.72
 'Recover the Cargo Manifest |q That Which Matters Most/Recover the Cargo Manifest
-'Kill 8 Dres Raiders |q Mechanical Murder/.*Kill Dres Raiders.*
+kill 8 Dres Raiders |q Mechanical Murder/.*Kill Dres Raiders.*
 |tip They can be found all around this area.
 click 8 Hlaalu Cargo Crates  |q That Which Matters Most/.*Recover Stolen Cargo.*
 step
@@ -36431,7 +36427,7 @@ goto 75.37,24.70
 step
 goto 77.76,22.96
 talk Ithis Omalor |q Mechanical Murder/Talk to Ithis Omalor
-'Tell him _"I'm turning you over to the Hlaalu. They'll decide what to do with you."_
+'Tell him _I'm turning you over to the Hlaalu. They'll decide what to do with you._
 step
 goto 69.29,54.59
 kill Dwarven enemies
@@ -36821,7 +36817,7 @@ step
 goto 74.44,56.47
 |tip Inside the building.
 talk Betina Volek |q Vengeance of the Oppressed/Find Betina Volek
-'Tell her _"I met a pair of Argonians. <Tell Betina about the ambush.>"_
+'Tell her _I met a pair of Argonians. <Tell Betina about the ambush.>_
 step
 goto 76.97,56.84
 |tip Watch dialogue.
@@ -37039,7 +37035,7 @@ talk Almalexia |q The Seal of Three/Pass Vivec's Trial
 step
 goto 70.77,69.00
 talk Vamen |q The Seal of Three/Pass Vivec's Trial
-'Tell him _"Your hands were guided by another's plot. None can blame you."_
+'Tell him _Your hands were guided by another's plot. None can blame you._
 |tip Manually skip to the next step.
 step
 goto 70.79,69.74
@@ -37067,7 +37063,7 @@ talk Fenila Redoran |q The Seal of Three/Pass Vivec's Trial
 step
 goto 69.12,69.95
 talk Morami Hlaalu |q The Seal of Three/Pass Vivec's Trial
-'Tell her _"You lost control of your attempt to discredit Belronen. You bear the most blame for his death."_
+'Tell her _You lost control of your attempt to discredit Belronen. You bear the most blame for his death._
 step
 goto 68.56,68.26
 talk Enigma of Vivec |q The Seal of Three/Receive Vivec's Blessing
@@ -37412,7 +37408,7 @@ click Deshaan |q Search and Rescue/Confront Edrasa Drelas
 step
 goto deshaan_base 44.72,64.47
 talk Orona
-'Tell her _"I think you should give it to Boril instead of selling it."_
+'Tell her _I think you should give it to Boril instead of selling it._
 turnin Carving Cuttle
 step
 goto 43.72,64.76
@@ -37741,7 +37737,7 @@ talk Ghost Snake |q The Trial of the Ghost Snake/Seek the Ghost Snake's Advice
 step
 goto 73.06,61.77
 talk Ghost Snake
-'Tell him _"I'm ready to go back now."_ |q The Trial of the Ghost Snake/Talk to the Farseer
+'Tell him _I'm ready to go back now._ |q The Trial of the Ghost Snake/Talk to the Farseer
 |tip Manually skip to the next step.
 step
 goto 61.28,55.68
@@ -38024,7 +38020,7 @@ step
 goto 87.71,54.68
 |tip Inside the mud house.
 click Alchemy Equipment |q Strange Guard Beasts/Make the Concoction
-'Choose "_<Add six gizzards, eighteen troll fat lumps, and seventeen pinches of wisplight powder.>_ "
+'Choose _<Add six gizzards, eighteen troll fat lumps, and seventeen pinches of wisplight powder.>_ "
 step
 goto 86.94,54.21
 click Tree |q Strange Guard Beasts/Splash Tree with the Concoction
@@ -38132,7 +38128,7 @@ step
 goto 23.46,56.63
 talk Durel Gilveni |q What Lies Beneath/Find Durel Gilveni
 |tip Intimidate him.
-'Tell him _"Get out of here before I change my mind. <Let the retainer live.>"_
+'Tell him _Get out of here before I change my mind. <Let the retainer live.>_
 step
 goto 43.50,66.81 |q What Lies Beneath/Find Proof of the General's Demise
 step
@@ -38159,7 +38155,7 @@ goto 36.29,66.66 |q The Soldier's Alibi/Talk to Saryvn
 step
 goto 19.91,37.50
 talk Saryvn |q The Soldier's Alibi/Talk to Saryvn
-'Tell him _"I'll let you out, but I'm not going to lie for you."_
+'Tell him _I'll let you out, but I'm not going to lie for you._
 step
 goto 25.54,10.21
 click Deshaan |q The Soldier's Alibi/Talk to Sergeant Maril
@@ -38321,8 +38317,8 @@ click Spirit Ward |q Into the Mouth of Madness/.*Destroy the Wards.* |count 2
 step
 goto 89.42,37.31
 |tip All around this area.
-'Kill 5 Malbourn |q A Blow for Order/.*Kill Maulborn.*
-'Kill 5 Daedra |q A Blow for Order/.*Kill Daedra.*
+kill 5 Malbourn |q A Blow for Order/.*Kill Maulborn.*
+kill 5 Daedra |q A Blow for Order/.*Kill Daedra.*
 step
 goto 90.04,41.62
 click Before the Ages of Man: Dawn Era
@@ -38419,7 +38415,7 @@ goto deshaan_base 90.17,25.93
 step
 goto 90.28,24.86
 talk Magistrix Vox |q The Judgment of Veloth/Confront Vox
-'Tell her _"I'd never help anyone who murders the innocent."_
+'Tell her _I'd never help anyone who murders the innocent._
 step
 goto 90.30,24.71
 talk Meram Vox |q The Judgment of Veloth/Talk to Meram Vox
@@ -38444,8 +38440,8 @@ kill The Keeper |q The Judgment of Veloth/Free the Spirit of Ordinator Da'ravis
 step
 goto 90.30,24.66
 talk Meram Vox |q The Judgment of Veloth/Convince Meram to Join You
-'Tell him _"You were a fanatic devoted to Daedric Princes. You cursed the Tribunal."_
-'Tell him _"You slaughtered innocents while trying to destroy the Tribunal."_
+'Tell him _You were a fanatic devoted to Daedric Princes. You cursed the Tribunal._
+'Tell him _You slaughtered innocents while trying to destroy the Tribunal._
 step
 goto 90.29,24.79
 click Portal to the Reservoir of Souls |q The Judgment of Veloth/Enter the Reservoir of Souls |future
@@ -38594,7 +38590,7 @@ talk Abnur Tharn |q Castle of the Worm/Talk to Abnur Tharn
 |only if ZGV.Utils.GetFaction("player","notvet")=="EP"
 step
 goto 32.59,50.71
-'Kill the waves of skeletons that attack
+kill the waves of skeletons that attack
 'Watch the dialogue
 kill Mannimarco |q Castle of the Worm/Defeat Mannimarco
 |only if ZGV.Utils.GetFaction("player","notvet")=="EP"
@@ -38610,7 +38606,7 @@ step
 goto 19.10,63.88
 |tip Wait for Cadwell to open the door.
 talk Cadwell |q Castle of the Worm/Talk to Cadwell
-'Tell him _"You should come along. It might be good for you."_
+'Tell him _You should come along. It might be good for you._
 |only if ZGV.Utils.GetFaction("player","notvet")=="EP"
 step
 goto 11.57,66.59
@@ -38928,7 +38924,7 @@ talk Dendras Indalor |q Three Tender Souls/Talk to Dendras Indalor
 step
 goto 84.12,55.51
 talk Veenaza |q Shadowfen Smorgasbord/Talk to Veenaza
-'Tell him _"I asked around. Everyone told me to talk to Veenaza."_
+'Tell him _I asked around. Everyone told me to talk to Veenaza._
 step
 goto 60.19,65.48
 click Mortuary |q Three Tender Souls/Examine Eroni Omobar
@@ -39201,7 +39197,7 @@ accept The Bargain's End
 step
 goto 24.50,35.12
 talk Shaman Chirah |q The Bargain's End/Follow Shaman Chirah's Advice
-'Tell him _"I'll destroy it and free Stillrise Village from the curse."_
+'Tell him _I'll destroy it and free Stillrise Village from the curse._
 step
 goto 20.64,35.53
 click Odious Chapel |q The Bargain's End/Enter the Odious Chapel |future
@@ -39315,7 +39311,7 @@ click Miharil's Hut |q Schism/Take the Gnaw-Root Goblin Totem to Miharil's Hut I
 step
 goto 76.36,60.43
 talk Miharil |q Schism/Give the Gnaw-Root Goblin Totem to Miharil
-'Tell him _"Take the totem and lead the Goblins to freedom."_
+'Tell him _Take the totem and lead the Goblins to freedom._
 step
 goto 50.70,54.10 |q Schism/Talk to Miharil's brothers in Mud Tree Village
 step
@@ -39505,14 +39501,14 @@ goto skinstealerlair_base 42.06,59.48
 step
 goto 42.06,59.48
 talk Lyranth |q The Skin-Stealer's Lair/Talk to Lyranth
-'Tell her _"Perhaps. What would I do at the altar?"_
+'Tell her _Perhaps. What would I do at the altar?_
 step
 goto 17.17,53.24 |q The Skin-Stealer's Lair/Find the Inner Altar
 step
 goto 68.89,29.55
 talk Bijot |q The Skin-Stealer's Lair/Find the Inner Altar
-'Tell him _"I'm not here to escape. I need to stop the Dominion."_
-'Then tell him _"All right. I'll free your friends if you help me stop the skin-stealers."_
+'Tell him _I'm not here to escape. I need to stop the Dominion._
+'Then tell him _All right. I'll free your friends if you help me stop the skin-stealers._
 step
 goto 41.99,34.85 |q The Skin-Stealer's Lair/.*Destroy the Animus Geodes Holding Bijot's Friends.*
 step
@@ -39558,7 +39554,7 @@ click Hist Vat |q The Skin-Stealer's Lair/Destroy the Hist Vats
 step
 goto 49.95,56.90
 talk Bijot |q The Skin-Stealer's Lair/Kill Vicecanon Hrondar's Imposter
-'Tell him _"No, he'll kill you."_
+'Tell him _No, he'll kill you._
 |tip Manually skip to the next step.
 step
 goto 49.96,68.88
@@ -39834,7 +39830,7 @@ accept Will of the Broken
 step
 goto 33.87,49.71
 talk Mallius Falto |q Will of the Broken/Talk to the Dying Priest
-'Tell him _"You take it. You need it more than I do."_
+'Tell him _You take it. You need it more than I do._
 step
 goto 25.89,53.27 |achieve 687/11
 step
@@ -39859,7 +39855,7 @@ talk Tree-Minder Deyapa
 step
 goto 76.93,49.79
 talk Tree-Minder Deyapa |q The Tree-Minder's Fate/Defend the Spirits
-'Tell her _"I'm ready. Begin the ritual."_
+'Tell her _I'm ready. Begin the ritual._
 step
 goto 76.93,49.79
 talk Tree-Minder Deyapa
@@ -39994,7 +39990,7 @@ talk Tree-Minder Fal-Xoc |q Clarity/Talk to Tree-Minder Fal-Xoc
 step
 goto 76.89,73.35
 talk Ja-Reet
-'Tell him _"Stay and become a healer."_
+'Tell him _Stay and become a healer._
 turnin Clarity
 step
 goto 74.28,72.35
@@ -40030,8 +40026,8 @@ goto 79.84,68.22
 step
 goto 79.79,68.22
 talk Suriel  |q A Life of Privilege/Decide Suriel's Fate
-'Tell her _"You're wrong. I don't work with slavers."_
-'Tell her _"This should be enough to buy your freedom.[347]"_
+'Tell her _You're wrong. I don't work with slavers._
+'Tell her _This should be enough to buy your freedom.[347]_
 step
 talk Aldyna 
 turnin A Life of Privilege
@@ -40143,7 +40139,7 @@ talk Sharava |q Pull the Last Fang/Talk to Sharava
 step
 goto 84.32,77.26
 talk Looks-Under-Rocks |q Pull the Last Fang/Give the Fangs to Looks-Under-Rocks
-'Tell him _"I'm not turning the Fangs over to the Shadowscales. Hold onto them. I'll protect you."_
+'Tell him _I'm not turning the Fangs over to the Shadowscales. Hold onto them. I'll protect you._
 step
 goto 84.40,77.22
 talk Aspect of Sithis |q Pull the Last Fang/Talk to Aspect of Sithis
@@ -40254,7 +40250,7 @@ step
 goto 57.28,81.17
 talk Valrendil |q Broken Apart/Convince Valrendil of the Wispmother's Treachery
 |tip Persuade him.
-'Tell him _"You must believe me. If you don't, more people will die."_
+'Tell him _You must believe me. If you don't, more people will die._
 step
 goto 57.18,81.20
 click Valrendil's Cave |q Broken Apart/Defeat the Wispmother
@@ -40304,12 +40300,12 @@ talk Erranenen
 accept Threefold Folly
 step
 goto 54.05,61.85
-'Tell her _"I'd like to recover Erranenen's lute."_
-'Tell her _"What do I have to do?"_
-'Tell her _"[Persuade] You won the lute by asking riddles. Can you answer mine?"_
-'Tell her _"What can be made and broken but not touch?"_
-'Tell her _"You can never keep it until it is given."_
-'Tell her _"No, a promise."_
+'Tell her _I'd like to recover Erranenen's lute._
+'Tell her _What do I have to do?_
+'Tell her _[Persuade] You won the lute by asking riddles. Can you answer mine?_
+'Tell her _What can be made and broken but not touch?_
+'Tell her _You can never keep it until it is given._
+'Tell her _No, a promise._
 talk Akishan |q Threefold Folly/Talk to Akishan
 step
 goto 60.92,61.79
@@ -40499,7 +40495,7 @@ step
 goto 44.41,82.45 |q Scales of Retribution/Kill Khasar-dro and Velelya
 step
 goto 45.04,83.76
-'Kill Khasar-dro and Velelya |q Scales of Retribution/Kill Khasar-dro and Velelya
+kill Khasar-dro and Velelya |q Scales of Retribution/Kill Khasar-dro and Velelya
 step
 goto 44.02,83.65
 |tip It is downstairs in the Ship's Hold.
@@ -40937,7 +40933,7 @@ accept Into the Temple
 step
 goto 37.22,49.85
 click Ward |q Into the Temple/Break the Ward Blocking the Temple of Sul
-'Choose _"Betrux."_
+'Choose _Betrux._
 step
 goto 37.22,49.86
 click Temple of Sul |q Into the Temple/Enter the Temple of Sul |future
@@ -40979,8 +40975,8 @@ click Zuuk |q Into the Temple/Return to Drillk
 step
 goto shadowfen_base 36.99,47.83
 talk Drillk |q Into the Temple/Return to Drillk
-'Tell him _"Your sacrifice and your people will be remembered."_
-'Tell him _"Thank you, Drillk."_
+'Tell him _Your sacrifice and your people will be remembered._
+'Tell him _Thank you, Drillk._
 step
 goto 36.35,57.10
 talk Lodyna Arethi
@@ -40993,7 +40989,7 @@ click Enchanted Container |q A Poisoned Heart/.*Use the Enchanted Container to C
 step
 goto 35.67,60.32
 talk Rhea
-'Tell her _"Here you go."_
+'Tell her _Here you go._
 turnin A Poisoned Heart
 step
 goto 32.46,57.18
@@ -41225,7 +41221,7 @@ goto 27.98,80.21 |q Catch the Lightning/Talk to Drulis
 step
 goto 35.18,81.33
 talk Drulis |q Catch the Lightning/Talk to Drulis
-'Tell him _"[Persuade] The amulet sounds safe. I'm sure he means you no harm."_
+'Tell him _[Persuade] The amulet sounds safe. I'm sure he means you no harm._
 step
 goto 27.98,80.21 |q Catch the Lightning/Talk to Gathotar
 step
@@ -41303,8 +41299,8 @@ goto 42.88,22.34
 step
 goto loriasel_base 39.56,61.76
 talk Vicecanon Heita-Meen
-'Tell her _"I'm considering leniency."_
-'Tell her _"She earned her freedom by leading us to Ruuvitar."_
+'Tell her _I'm considering leniency._
+'Tell her _She earned her freedom by leading us to Ruuvitar._
 |tip Persuade her.
 turnin The Dominion's Alchemist
 accept The Dream of the Hist
@@ -41398,7 +41394,7 @@ talk Ayleid Knight |q Vigil's End/Investigate the Tomb
 step
 goto 9.32,60.99
 talk Ayleid Knight |q Vigil's End/Talk to the Ayleid Knight
-'Tell him _"No. You died centuries ago."_
+'Tell him _No. You died centuries ago._
 step
 goto 8.87,61.09
 click Phylactery
@@ -41460,17 +41456,17 @@ goto 54.89,66.39 |q The Dream of the Hist/Talk to the Hist-Brothers |future
 step
 goto 62.11,65.17
 talk Hist-Brother |q The Dream of the Hist/Talk to the Hist-Brothers
-'Tell it _"A skin-stealer posed as Vicecanon Hrondar, against his will."_
+'Tell it _A skin-stealer posed as Vicecanon Hrondar, against his will._
 |tip Manually skip to the next step.
 step
 goto 49.14,67.27
 talk Hist-Brother |q The Dream of the Hist/Talk to the Hist-Brothers
-'Tell it _"Vicecanon Servyna tried to save the eggs, not destroy them."_
+'Tell it _Vicecanon Servyna tried to save the eggs, not destroy them._
 |tip Manually skip to the next step.
 step
 goto 59.76,80.32
 talk Hist-Brother |q The Dream of the Hist/Talk to the Hist-Brothers
-'Tell it _"Ruuvitar boiled the Hist sap. The Dremora was his prisoner."_
+'Tell it _Ruuvitar boiled the Hist sap. The Dremora was his prisoner._
 step
 goto 55.61,68.27
 'Return to Heita-Meen |q The Dream of the Hist/Return to Heita-Meen
@@ -41945,7 +41941,7 @@ goto 51.07,41.90
 step
 goto 51.41,42.43
 talk Fresgil |q For Kyne's Honor/Talk to Fresgil
-'Tell her _"I need to find her son. Maybe we can get through to her and bring her back to the light."_
+'Tell her _I need to find her son. Maybe we can get through to her and bring her back to the light._
 step
 goto 47.63,39.92
 click Kynesgrove Wayshrine
@@ -42356,7 +42352,7 @@ click Chateau Guesthouse |q Chateau of the Ravenous Rodent/Enter the Chateau Gue
 step
 goto 31.25,44.17
 click Door |q Chateau of the Ravenous Rodent/Evict the Guest That Doesn't Belong
-'Tell them _"That's it. You're out of here."_
+'Tell them _That's it. You're out of here._
 |tip It may be randomized, so if it's not this door, try the others.  You just have to kill the person you let out if they're the wrong one.
 |only if ZGV.Utils.GetFaction("player","notvet")=="EP"
 step
@@ -43033,7 +43029,7 @@ click Portal |q Our Poor Town/Find Asmalah
 step
 goto fortamol_base 84.16,87.86
 talk Asmalah the Caller |q Our Poor Town/Find Asmalah
-'Tell him _"I'll let you go after you tell me where the reagents are."_
+'Tell him _I'll let you go after you tell me where the reagents are._
 step
 goto 86.37,73.54 |q Our Poor Town/Search the Ruined House for the Reagents
 step
@@ -43191,7 +43187,7 @@ goto 48.64,51.23
 |tip He is upstairs.
 talk Valeric
 |tip Intimidate him.
-'Tell him _"All right. Try to cure her."_
+'Tell him _All right. Try to cure her._
 turnin A Right to Live
 accept The Better of Two Evils
 step
@@ -43201,13 +43197,13 @@ talk Jaruk |q The Better of Two Evils/Talk to Jaruk
 step
 goto 48.71,51.87
 talk Tunus |q The Better of Two Evils/Find the Hunters' Camp
-'Tell him _"Where do I find Majorn?"_
+'Tell him _Where do I find Majorn?_
 step
 goto 46.97,53.84
 |tip Inside the building.
 talk Majorn the Ancient |q The Better of Two Evils/Talk to Majorn or Ignore Him and Find the Hunters
-'Tell him _"You just expect me to take your word and kill your son?"_
-'Tell him _"Fine, I'll help you. Valeric can't continue to do this."_
+'Tell him _You just expect me to take your word and kill your son?_
+'Tell him _Fine, I'll help you. Valeric can't continue to do this._
 step
 goto 48.06,53.32
 |tip Around this area.
@@ -43220,7 +43216,7 @@ step
 goto 51.61,56.78
 |tip Around this area.
 kill Winterland enemies
-'Kill 6 Hunters |q The Better of Two Evils/.*Kill the Hunters.*
+kill 6 Hunters |q The Better of Two Evils/.*Kill the Hunters.*
 step
 goto 46.97,53.84
 |tip Inside the building.
@@ -43445,7 +43441,7 @@ step
 step
 goto 46.68,59.49
 talk Dralof Waterwalker |q Bath Time/Talk to Dralof Waterwalker
-'Tell him _"No. The salts are too dangerous."_
+'Tell him _No. The salts are too dangerous._
 step
 goto eastmarch_base 46.78,59.25
 talk Frera Dagger-Lost
@@ -43784,7 +43780,7 @@ kill Fildgor Orcthane |q Songs of Sovngarde/Defeat Fildgor Orcthane
 step
 '_After you Defeat Fildgor Orcthane:_
 talk Fildgor Orcthane |q Songs of Sovngarde/Talk to Fildgor Orcthane
-'Tell him _"It's not my place to judge. Jorunn the Skald-King will decide your fate."_
+'Tell him _It's not my place to judge. Jorunn the Skald-King will decide your fate._
 step
 '_Nearby:_
 talk Queen Nurnhilde  |q Songs of Sovngarde/Talk to Nurnhilde
@@ -43924,7 +43920,7 @@ goto 83.72,57.96
 step
 goto 84.47,57.50
 talk Kireth Vanos |q Kireth's Amazing Plan/Support Kireth
-'Tell her _"I think you've got the right idea."_
+'Tell her _I think you've got the right idea._
 step
 goto 84.41,58.10
 talk Raynor Vanos
@@ -44064,7 +44060,7 @@ kill Ice-Biter Chieftain |q Merriment and Mystery/Get the Key from the Riekling 
 step
 goto 50.01,11.88
 talk Valding the Bard |q Merriment and Mystery/Decide Valding's Fate
-'Tell him _"If you promise to surrender yourself to the royal workers, I'll open the cage."_
+'Tell him _If you promise to surrender yourself to the royal workers, I'll open the cage._
 step
 goto 50.14,11.68
 click Cell |q Merriment and Mystery/Unlock the Cage
@@ -44235,7 +44231,7 @@ goto 66.48,50.10
 |only if ZGV.Utils.GetFaction("player","notvet")=="EP"
 step
 goto 66.48,50.10
-'Kill the enemies that attack you
+kill the enemies that attack you
 kill Auroran Battlemage |q Proving the Deed/Survive the Trap
 |only if ZGV.Utils.GetFaction("player","notvet")=="EP"
 step
@@ -44503,7 +44499,7 @@ accept Storming the Hall
 step
 goto 38.50,51.54
 talk Vigrod Wraithbane |q Storming the Hall/Talk to Vigrod Wraithbane
-'Tell him _"I'll meet you there"_
+'Tell him _I'll meet you there_
 step
 goto 43.95,52.86
 talk Aera Earth-Turner
@@ -44524,7 +44520,7 @@ accept Smoke on the Horizon
 step
 goto 14.91,70.83
 talk Scout Claurth |q Smoke on the Horizon/Talk to Scout Claurth
-'Tell him _"I know the way."_
+'Tell him _I know the way._
 step
 goto 11.92,74.43
 talk Sigunn
@@ -44667,7 +44663,7 @@ talk Centurion Gjakil |q Smoke on the Horizon/.*Save Soldiers from the Reachmen.
 step
 goto 59.30,35.88
 talk Murmurs-to-Trees |q Smoke on the Horizon/.*Save Soldiers from the Reachmen.* |count 1
-'Tell him _"I heard you might have a ward to use against lurchers."_
+'Tell him _I heard you might have a ward to use against lurchers._
 |tip Manually skip to the next step.
 step
 goto 60.18,36.55
@@ -44837,7 +44833,7 @@ wayshrine Northwind Mine
 step
 goto 43.64,30.84
 talk Dajaheel |q Dangerous Union/Talk to Dajaheel
-'Tell her _"I'll take the cruel option."_
+'Tell her _I'll take the cruel option._
 step
 goto 42.98,32.94
 |tip Click their corpse.
@@ -45101,7 +45097,7 @@ talk Aera Earth-Turner |q Concealed Weapons/Talk to Aera Earth-Turner
 step
 goto 48.07,89.46
 talk Aera Earth-Turner |q Concealed Weapons/Exile Aera Earth-Turner
-'Tell her _"If you're truly done with the cult, then run away. I'll say you're dead."_
+'Tell her _If you're truly done with the cult, then run away. I'll say you're dead._
 step
 goto 48.48,87.02
 click Nimalten Crypt |q Concealed Weapons/Kill Worm Cultist and Leave the Crypt
@@ -45332,14 +45328,14 @@ kill Lockjaw |q Fierce Beasts of Ivarstead/Kill Lockjaw
 step
 goto 15.76,26.20
 talk Nilwen |q Fierce Beasts of Ivarstead/Talk to Nilwen
-'Tell her _"I'll deal with Greatclaw."_
+'Tell her _I'll deal with Greatclaw._
 step
 goto 18.65,26.68
 'Find Greatclaw |q Fierce Beasts of Ivarstead/Find Greatclaw
 step
 goto 15.79,26.16
 talk Nilwen |q Fierce Beasts of Ivarstead/Talk to Nilwen
-'Tell her _"Yeah, yeah. I'll go kill the little guy for you."_
+'Tell her _Yeah, yeah. I'll go kill the little guy for you._
 step
 goto 23.00,24.72
 kill Cracktooth |q Fierce Beasts of Ivarstead/Kill Cracktooth
@@ -45738,7 +45734,7 @@ talk Valdur |q Shattered Hopes/Persuade Valdur to Aid You |future
 step
 goto 41.26,52.49
 talk Valdur |q Shattered Hopes/Choose Healer
-'Tell him _"I choose to fight beside a healer."_
+'Tell him _I choose to fight beside a healer._
 step
 goto 42.05,51.72
 wayshrine Honrich Tower
@@ -45795,21 +45791,21 @@ talk Captain Hrosta |q Shattered Hopes/Talk to Captain Hrosta
 step
 goto 71.99,74.27
 talk Captain Hrosta |q Shattered Hopes/Trick a Reachman Prisoner
-'Tell her _"Couldn't we sacrifice an enemy instead?"_
-'Then say _"Good idea. I'll be back with him soon."_
+'Tell her _Couldn't we sacrifice an enemy instead?_
+'Then say _Good idea. I'll be back with him soon._
 step
 goto 73.81,76.56 |q Shattered Hopes/Find a Reachman Prisoner
 step
 goto 73.14,38.15
 talk Lesuin |q Shattered Hopes/Find a Reachman Prisoner
-'Tell him _"Follow me. I'll lead you to a way out. [Lie]"_
+'Tell him _Follow me. I'll lead you to a way out. [Lie]_
 step
 goto 72.18,75.74
 'Lead the Reachman to the Ritual Circle |q Shattered Hopes/Lead Reachman to Ritual Circle
 step
 goto 72.18,75.74
 talk Lesuin |q Shattered Hopes/Sacrifice Reachman Prisoner
-'Tell him _"Touch the gem in that circle to open a portal out of here. [Lie]"_
+'Tell him _Touch the gem in that circle to open a portal out of here. [Lie]_
 step
 goto 71.01,76.97
 'Watch the dialogue
@@ -45857,7 +45853,7 @@ step
 goto 30.38,48.98 |q A Ritual in the Ragged Hills/Escort the Scout to the Ritual Site
 step
 goto 31.35,50.72
-'Kill the enemies that attack in waves
+kill the enemies that attack in waves
 kill Bone Colossus |q A Ritual in the Ragged Hills/Escort the Scout to the Ritual Site
 step
 goto 30.56,47.91
@@ -46071,8 +46067,8 @@ goto 62.80,60.66
 step
 goto 62.81,60.62
 talk Rilyn Uvani |q Blood Upon the Soil/Talk to Rilyn Uvani
-'Tell him _"You're crazy. You murdered her family!"_
-'Tell him _"No, you murdered three people and you're not getting away with it."_
+'Tell him _You're crazy. You murdered her family!_
+'Tell him _No, you murdered three people and you're not getting away with it._
 step
 goto 65.86,57.79
 'Return to the Frostmoon Farmstead |q Blood Upon the Soil/Return to Frostmoon Farmstead
@@ -46209,7 +46205,7 @@ talk Sarisa Rothalen |q All's Fair/Inform Sarisa of Your Findings
 step
 goto 59.95,62.08
 talk Bar-Neeus |q All's Fair/Inform Bar-Neeus of Sarisa's Plan
-'Tell him _"I must warn you. Sarisa Rothalen asked me to plant illegal goods in your stall."_
+'Tell him _I must warn you. Sarisa Rothalen asked me to plant illegal goods in your stall._
 step
 goto 58.03,78.28
 talk Centurion Andrin
@@ -47079,7 +47075,7 @@ talk Sees-All-Colors |q Will of the Council/Confront Sees-All-Colors
 step
 goto 65.33,50.42
 talk Sees-All-Colors |q Will of the Council/Decide the Fate of Sees-All-Colors
-'Tell _"Your quest is just. Let's finish, and go."_
+'Tell _Your quest is just. Let's finish, and go._
 'Watch the dialogue
 |only if ZGV.Utils.GetFaction("player","notvet")=="EP"
 step
@@ -47123,7 +47119,7 @@ talk Merric at-Aswala |q Will of the Council/Talk to Countess Hakruba
 step
 goto 39.42,24.98
 talk Countess Hakruba |q Will of the Council/Talk to Countess Hakruba
-'Choose _"[Sees-All-Colors Stays] She did what she felt she had to. Let her serve the Guild."_
+'Choose _[Sees-All-Colors Stays] She did what she felt she had to. Let her serve the Guild._
 |only if ZGV.Utils.GetFaction("player","notvet")=="EP"
 step
 goto 39.61,24.38
@@ -47519,7 +47515,7 @@ goto 46.78,47.24
 step
 goto 46.29,47.35
 talk Sheogorath
-'Tell him _"[Valaste Stays] I want you to cure Valaste."_
+'Tell him _[Valaste Stays] I want you to cure Valaste._
 talk Sheogorath |q The Mad God's Bargain/Talk to Sheogorath
 |only if ZGV.Utils.GetFaction("player","notvet")=="EP"
 step
@@ -47563,7 +47559,7 @@ click The Harborage |q Council of the Five Companions/Go to the Harborage |futur
 step
 goto the_ebonheart_harborage_base 67.13,38.60
 talk Varen Aquilarios |q Council of the Five Companions/Talk to Varen Aquilarios
-'Tell him _"Show me these visions."_
+'Tell him _Show me these visions._
 |only if ZGV.Utils.GetFaction("player","notvet")=="EP"
 step
 goto visionofthecompanions_base 66.69,80.53
@@ -47572,7 +47568,7 @@ goto visionofthecompanions_base 66.69,80.53
 step
 goto the_ebonheart_harborage_base 64.59,33.74
 talk Sai Sahan |q Council of the Five Companions/Talk to Sai Sahan
-'Tell him _"I am honored to join you as the last member of the Five Companions."_
+'Tell him _I am honored to join you as the last member of the Five Companions._
 |only if ZGV.Utils.GetFaction("player","notvet")=="EP"
 step
 goto 64.59,33.74
@@ -47820,7 +47816,7 @@ talk The Groundskeeper |q The Hollow City/Find the Hollow City
 step
 goto 71.22,68.93
 talk The Groundskeeper
-'Tell her _"I don't have time for this. Just tell me what I need to know."_
+'Tell her _I don't have time for this. Just tell me what I need to know._
 talk The Groundskeeper |q The Hollow City/Talk to The Groundskeeper
 step
 goto 71.22,68.93
@@ -48028,7 +48024,7 @@ talk Treeminder Xohaneel |q Wisdom of the Ages/Talk to Treeminder Xohaneel
 step
 goto 34.04,81.38
 talk Treeminder Xohaneel |q Wisdom of the Ages/Talk to An-Jeen-Sakka
-'Tell her _"Yes, I'm ready to begin the Trial of Spirit."_
+'Tell her _Yes, I'm ready to begin the Trial of Spirit._
 step
 goto 33.42,82.19 |q Wisdom of the Ages/Give Amulet to Teelawei
 step
@@ -48126,7 +48122,7 @@ talk An-Jeen-Sakka |q Wisdom of the Ages/Talk to An-Jeen-Sakka
 step
 goto 34.06,81.24
 talk An-Jeen-Sakka |q Wisdom of the Ages/Agree with the Warriors
-'Tell him _"I agree with the warriors. The Hist tree must survive."_
+'Tell him _I agree with the warriors. The Hist tree must survive._
 step
 goto 34.06,81.37
 talk Treeminder Xohaneel |q Wisdom of the Ages/Talk to Treeminder Xohaneel
@@ -48292,7 +48288,7 @@ talk Sergeant Kamu |q Into the Woods/Ask the Wood Elf for Help
 step
 goto 23.03,66.41
 talk Faraniel
-'Tell her _"Very well, I'll help you."_
+'Tell her _Very well, I'll help you._
 turnin Into the Woods
 accept The Shadow's Embrace
 step
@@ -48337,19 +48333,19 @@ click Portal to Council of Elders |q The Shadow's Embrace/.*Convince the Council
 step
 goto 26.61,64.84
 talk Elder Erthor |q The Shadow's Embrace/.*Convince the Council to Break Its Vow.* |count 1
-'Tell him _"I understand your situation, but with all due respect, I think you have been tricked."_
+'Tell him _I understand your situation, but with all due respect, I think you have been tricked._
 step
 goto 26.79,64.70
 talk Elder Gluin |q The Shadow's Embrace/.*Convince the Council to Break Its Vow.* |count 2
-'Tell him _"I know this must be hard to hear, but I've seen the chains of destruction."_
+'Tell him _I know this must be hard to hear, but I've seen the chains of destruction._
 step
 goto 26.64,64.51
 talk Elder Inril |q The Shadow's Embrace/.*Convince the Council to Break Its Vow.* |count 3
-'Tell her _"My lady, Coldharbour's chains rip through Nirn. Valenwood will be destroyed unless we do something."_
+'Tell her _My lady, Coldharbour's chains rip through Nirn. Valenwood will be destroyed unless we do something._
 step
 goto 26.44,64.69
 talk Elder Elsaril |q The Shadow's Embrace/.*Convince the Council to Break Its Vow.* |count 4
-'Tell her _"I'm so sorry, but I've seen the Daedric anchors. Thousands have already died. You must believe me."_
+'Tell her _I'm so sorry, but I've seen the Daedric anchors. Thousands have already died. You must believe me._
 step
 goto 26.56,65.05
 click Portal to the Moonless Walk |q The Shadow's Embrace/Use the Portal to Return to Faraniel
@@ -48962,8 +48958,8 @@ click Portal to the Observer's Watch |q The Endless War/Talk to the Observer
 step
 goto 66.97,52.79
 talk The Observer
-'Tell him _"I'll side with Angof."_
-'Tell him _"I'm sure."_
+'Tell him _I'll side with Angof._
+'Tell him _I'm sure._
 turnin The Endless War
 accept A Thorn in Your Side
 step
@@ -49195,7 +49191,7 @@ step
 goto 70.64,79.25
 |tip Go downstairs.
 talk Nelhilda
-'Tell her _"You need to forgive Bernt. He's the only family you have left."_
+'Tell her _You need to forgive Bernt. He's the only family you have left._
 turnin Special Blend
 step
 'Open Coldharbour Map
@@ -49549,7 +49545,7 @@ goto 50.63,51.57
 wayshrine The Orchard
 step
 goto 52.10,48.96
-'Kill Vampire enemies around this area
+kill Vampire enemies around this area
 'Collect 4 Vampire Blood |q The Harvest Heart/.*Mark Vampire Lairs.*
 |tip Manually skip to the next step.
 step
@@ -49584,7 +49580,7 @@ goto 50.85,46.78
 step
 goto 51.06,46.69
 talk Virgar the Red |q The Harvest Heart/Support Vanus Galerion
-'Tell her _"I'll help you free the vampires from the Harvest Heart."_
+'Tell her _I'll help you free the vampires from the Harvest Heart._
 step
 goto 52.11,44.05 |q The Harvest Heart/Defend West Ritual Site
 step
@@ -49943,7 +49939,7 @@ talk Bosun Bones
 accept Old Bones
 step
 goto 64.41,45.62
-'Kill skeleton enemies around this area
+kill skeleton enemies around this area
 'Collect Leg Bones |q Old Bones/Collect Leg Bones
 'Collect a Ribcage |q Old Bones/Collect Ribcage
 'Collect Arm Bones |q Old Bones/Collect Arm Bones
@@ -49989,7 +49985,7 @@ step
 goto 63.98,40.64
 |tip Jump down.
 talk Captain One-Eye
-'Tell her _"Absolutely not."_
+'Tell her _Absolutely not._
 turnin Between Blood and Bone
 step
 'Open Coldharbour Map
@@ -50124,7 +50120,7 @@ talk Hahnin |q The Final Assault/Talk to Hahnin
 step
 goto 47.43,32.85
 talk Cadwell |q The Final Assault/Choose a Companion for the Initial Assault
-'Tell him _"Accompany me on the initial assault."_
+'Tell him _Accompany me on the initial assault._
 step
 goto 47.04,32.69
 talk King Laloriaran Dynar |q The Final Assault/Talk to King Dynar
@@ -50259,7 +50255,7 @@ talk Meridia |q The Final Assault/Talk to Meridia
 step
 goto 49.44,55.99
 talk Meridia |q The Final Assault/Let Meridia Know When You Are Ready
-'Tell her _"I'm ready."_
+'Tell her _I'm ready._
 step
 goto 28.79,83.29 |q The Final Assault/Destroy the Remaining Dark Anchors
 step
@@ -50390,7 +50386,7 @@ talk Abnur Tharn |q God of Schemes/Talk to Abnur Tharn
 step
 goto 55.23,15.12
 talk Varen Aquilarios
-' Tell him _"Very well. I choose you, Varen."_
+' Tell him _Very well. I choose you, Varen._
 'Choose the Sacrifice |q God of Schemes/Choose the Sacrifice
 step
 goto 54.19,12.88
@@ -50566,7 +50562,7 @@ step
 goto eastelsweyrgate_base 21.08,41.73 |q Welcome to Cyrodiil/Go to the Siege Range
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
-goto _Left at Crossroads_ |q Welcome to Cyrodiil/Go to the Siege Range
+'_Left at Crossroads_ |q Welcome to Cyrodiil/Go to the Siege Range
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 talk Zan
@@ -50597,18 +50593,18 @@ step
 'Use Practice Repair Kit on Dominion Oil Catapult |q Siege Warfare/Use Practice Repair Kit on Siege Weapon
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
-'Follow path past all the Sieges
+'_Follow path past all the Sieges_
 talk Taralin
 turnin Siege Warfare
 accept Reporting for Duty
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
-goto _Left at the Crossroads_
-|tip Cross Bridge and in  the center of the Dome. 
+'_Left at the Crossroads_
+|tip Back where you came from then Cross Bridge and in  the center of the Dome. 
 talk Protector Arfire |q Reporting for Duty/Talk to Protector Arfire
 |only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
-goto _Back where you came from_
+'_Back where you came from_
 |tip Follow road straight till you get to Eastern Gate.
 click Eastern Elsweyr Gate
 'Enter Eastern Elsweyr Gate |q Reporting for Duty/Talk to Grand Warlord Sorcalin
