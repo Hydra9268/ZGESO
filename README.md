@@ -21,8 +21,6 @@ Install through the excellent add-on manager <a href="https://minion.mmoui.com/"
 ----
 
 <br/>
-# 11/15/2021 Coming Soon Main Quest Only Legacy Guides and Skyshards, Delves, and Lorebooks Only Guides.
-
 ### 10/31/21 Remaster All DLCs guides and Deadlands DLC Guide.
 <img src="https://imgur.com/0J1VYya.png">
 <i>artwork &copy; ZeniMax Media</i>
