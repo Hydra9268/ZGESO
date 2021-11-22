@@ -21,7 +21,7 @@ goto 34.33,20.35
 wayshrine Doomvault Vulpinaz
 step
 goto 34.48,17.46
-click Adventurers Wanted For Exciting Oppertunity!
+'Examine Adventurers Wanted For Exciting Oppertunity!
 accept Shattered and Scattered
 step
 goto 36.93,14.60
@@ -31,7 +31,7 @@ goto 36.93,14.60
 talk Mirri Elendis |q Shattered and Scattered/Talk to Mirri Elendis
 step
 goto 37.45,14.26
-click Doomvault Vulpinaz |q Shattered and Scattered/Enter the Ruin
+'Open Doomvault Vulpinaz |q Shattered and Scattered/Enter the Ruin
 |tip Manually skip to the next step.
 step
 goto u30_shattered_vault_1_base 45.24,75.64 |q Shattered and Scattered/Reach the Expedition Base Camp
@@ -40,7 +40,7 @@ goto 50.93,50.31
 'Reach the Expedition Base Camp |q Shattered and Scattered/Reach the Expedition Base Camp
 step
 goto 51.11,49.69
-click Grappling Point |q Shattered and Scattered/Use Grapple Bow
+'Use Grappling Point |q Shattered and Scattered/Use Grapple Bow
 step
 goto 48.80,36.27
 'Investigate Base Camp |q Shattered and Scattered/Investigate the Base Camp
@@ -49,16 +49,16 @@ goto 48.80,36.27
 talk Mirri Elendis |q Shattered and Scattered/Talk to Mirri Elendis
 step
 goto 53.16,22.84
-click the Soul Siphon Array |q Shattered and Scattered/Destroy the Soul Siphon Array
+'Destroy the Soul Siphon Array |q Shattered and Scattered/Destroy the Soul Siphon Array
 step
 goto 45.69,14.22
-click Interstitial Corridor |q Shattered and Scattered/Follow Mirri Elendis
+'Open Interstitial Corridor |q Shattered and Scattered/Follow Mirri Elendis
 step
 goto 45.51,12.18
 talk Mirri |q Shattered and Scattered/Talk to Mirri Elendis
 step
 goto 53.87,04.62
-click Inner Ruins |q Shattered and Scattered/Find the Remaining Expedition Members
+'Open Inner Ruins |q Shattered and Scattered/Find the Remaining Expedition Members
 |tip Manually skip to the next step.
 step
 goto u30_shattered_vault_2_base 71.67,77.05 |q Shattered and Scattered/Find the Remaining Expedition Members
@@ -67,41 +67,41 @@ goto 46.84,63.05
 'Find the Remaining Expedition Members |q Shattered and Scattered/Find the Remaining Expedition Members
 step
 goto 46.84,63.05
-click Ardia's Journal |q Shattered and Scattered/Examine the Notebook
+'Examine Ardia's Journal |q Shattered and Scattered/Examine the Notebook
 step
 goto 47.27,62.71
 talk Mirri Elendis |q Shattered and Scattered/Talk to Mirri Elendis
 step
 goto 47.70,61.52
-click Inner Layer |q Shattered and Scattered/Find the Remaining Expedition Members
+'Open Inner Layer |q Shattered and Scattered/Find the Remaining Expedition Members
 |tip Manually skip to the next step.
 step
 goto 43.26,55.29
-click Grappling Point |q Shattered and Scattered/Find the Remaining Expedition Members
+'Use Grappling Point |q Shattered and Scattered/Find the Remaining Expedition Members
 |tip Manually skip to the next step.
 step
 goto 52.82,23.81
 'Find the Remaining Expedition Members |q Shattered and Scattered/Find the Remaining Expedition Members
 step
 goto 52.82,23.81
-click the Soul Siphon Array |q Shattered and Scattered/Destroy the Soul Siphon Array
+'Destroy the Soul Siphon Array |q Shattered and Scattered/Destroy the Soul Siphon Array
 step
 goto 46.25,16.64
 'Follow Mirri Elendis |q Shattered and Scattered/Follow Mirri Elendis
 step
 goto 46.25,16.64 
-click Doomvault Vulpinaz Interstitial Corridor |q Shattered and Scattered/Talk to Mirri Elendis
+'Open Doomvault Vulpinaz Interstitial Corridor |q Shattered and Scattered/Talk to Mirri Elendis
 |tip Manually skip to the next step.
 step
 goto 46.16,14.76
 talk Mirri Elendis |q Shattered and Scattered/Talk to Mirri Elendis
 step
 goto 54.10,04.78
-click Interstitial Corridor |q Shattered and Scattered/Find the Remaining Expedition Members
+'Open Interstitial Corridor |q Shattered and Scattered/Find the Remaining Expedition Members
 |tip Manually skip to the next step.
 step
 goto u30_shattered_vault_3_base 45.86,85.86
-click Doomvault Vulpinaz Core Layer |q Shattered and Scattered/Find the Remaining Expedition Members
+'Open Doomvault Vulpinaz Core Layer |q Shattered and Scattered/Find the Remaining Expedition Members
 |tip Manually skip to the next step.
 step
 goto 44.14,72.67 
@@ -114,59 +114,59 @@ goto 44.14,72.67
 talk Mirri Elendis |q Shattered and Scattered/Talk to Mirri Elendis
 step
 goto 33.53,67.67
-click Grappling Point |q Shattered and Scattered/Find the Remaining Expedition Members
+'Use Grappling Point |q Shattered and Scattered/Find the Remaining Expedition Members
 |tip Manually skip to the next step.
 step
 goto 43.45,55.95 |q Shattered and Scattered/Find the Remaining Expedition Members
 step
 goto 44.31,36.81
-click Grappling Point |q Shattered and Scattered/Find the Remaining Expedition Members
+'Use Grappling Point |q Shattered and Scattered/Find the Remaining Expedition Members
 |tip Manually skip to the next step.
 step
 goto 66.29,21.38 
 'Find the Remaining Expedition Members |q Shattered and Scattered/Find the Remaining Expedition Members
 step
 goto 66.29,21.38
-click the Soul Siphon Array |q Shattered and Scattered/Destroy the Soul Siphon Array
+'Destroy the Soul Siphon Array |q Shattered and Scattered/Destroy the Soul Siphon Array
 step
 goto 81.90,32.41
-click Deadlands Foothold |q Shattered and Scattered/Follow Mirri Elendis
+'Open Deadlands Foothold |q Shattered and Scattered/Follow Mirri Elendis
 step
 goto u30_shattered_vault_4_base 08.56,41.31
 talk Mirri Elendis |q Shattered and Scattered/Talk to Mirri Elendis
 step
 goto 33.01,46.43
-click Grappling Point |q Shattered and Scattered/Find Liam Elendis
+'Use Grappling Point |q Shattered and Scattered/Find Liam Elendis
 |tip Manually skip to the next step.
 step
 goto 50.22,48.46
 'Find Liam Elendis |q Shattered and Scattered/Find Liam Elendis
 step
 goto 50.22,48.46
-click Daedric Switch |q Shattered and Scattered/Unseal the Warded Gate
+'Use Daedric Switch |q Shattered and Scattered/Unseal the Warded Gate
 |tip Manually skip to the next step.
 step
 goto 52.60,39.19
-click Grappling Point |q Shattered and Scattered/Unseal the Warded Gate
+'Use Grappling Point |q Shattered and Scattered/Unseal the Warded Gate
 |tip To your left look  up on the cliff.
 |tip Manually skip to the next step.
 step
 goto 55.16,42.45
-click Daedric Switch |q Shattered and Scattered/Unseal the Warded Gate
+'Use Daedric Switch |q Shattered and Scattered/Unseal the Warded Gate
 |tip Manually skip to the next step.
 step
 goto 45.19,57.72
-click Grappling Point |q Shattered and Scattered/Unseal the Warded Gate
+'Use Grappling Point |q Shattered and Scattered/Unseal the Warded Gate
 |tip Manually skip to the next step.
 step
 goto 53.75,54.02
-click Daedric Switch |q Shattered and Scattered/Unseal the Warded Gate
+'Use Daedric Switch |q Shattered and Scattered/Unseal the Warded Gate
 step
 goto 59.14,48.90
-click Doomvault Vulpinaz Anchor Chamber |q Shattered and Scattered/Find Liam Elendis
+'Open Doomvault Vulpinaz Anchor Chamber |q Shattered and Scattered/Find Liam Elendis
 step
 goto 79.61,54.99
-click Grappling Point |q Shattered and Scattered/Destroy the Anchor Stone Array
+'Use Grappling Point |q Shattered and Scattered/Destroy the Anchor Stone Array
 |tip Manually skip to the next step.
 step
 goto 81.99,55.43
@@ -174,30 +174,30 @@ kill Xigira |q Shattered and Scattered/Destroy the Anchor Stone Array
 |tip Manually skip to the next step.
 step
 goto 89.41,55.69
-click Grappling Point |q Shattered and Scattered/Destroy the Anchor Stone Array
+'Use Grappling Point |q Shattered and Scattered/Destroy the Anchor Stone Array
 |tip Manually skip to the next step.
 step
 goto 92.06,52.69
-click the Anchor Stone Array |q Shattered and Scattered/Destroy the Anchor Stone Array
+'Destroy the Anchor Stone Array |q Shattered and Scattered/Destroy the Anchor Stone Array
 |tip Manually skip to the next step.
 step
 goto 86.23,60.02
-click Grappling Point |q Shattered and Scattered/Destroy the Anchor Stone Array
+'Use Grappling Point |q Shattered and Scattered/Destroy the Anchor Stone Array
 |tip Manually skip to the next step.
 step
 goto 86.05,64.61
-click the Anchor Stone Array |q Shattered and Scattered/Destroy the Anchor Stone Array
+'Destroy the Anchor Stone Array |q Shattered and Scattered/Destroy the Anchor Stone Array
 |tip Manually skip to the next step.
 step
 goto 91.26,63.28
-click Grappling Point |q Shattered and Scattered/Destroy the Anchor Stone Array
+'Use Grappling Point |q Shattered and Scattered/Destroy the Anchor Stone Array
 |tip Manually skip to the next step.
 step
 goto 89.76,58.43
-click the Anchor Stone Array |q Shattered and Scattered/Destroy the Anchor Stone Array
+'Destroy the Anchor Stone Array |q Shattered and Scattered/Destroy the Anchor Stone Array
 step
 goto 95.41,64.34
-click Blackwood |q Shattered and Scattered/Exit the Ruin
+'Open Blackwood |q Shattered and Scattered/Exit the Ruin
 step
 goto blackwood_base 37.71,12.89
 talk Mirri Elendis
