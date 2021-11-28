@@ -133,7 +133,7 @@ GuideMenu.lua
 
 -- Guides
 Guides/LevelingCommon.lua
-Guides/Skyshards.lua
+; Guides/SD.lua
 Guides/MainQuestsOnly.lua
 Guides/Expansions.lua
 Guides/Companions.lua

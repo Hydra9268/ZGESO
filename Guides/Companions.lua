@@ -6,19 +6,15 @@ ZGV:RegisterGuide("Extra's\\Extra's\\Companions\\Mirri Elendis",[[
 loadingimage loadscreen_u30_blackwood_zone_01.dds
 description Guide to Unlock Mirri Elendis
 step
-goto u30_leyawiincity_base 72.11,28.52 |q Shattered and Scattered |future
+'Open Blackwood Map
+'Travel to Leyawiin Outskirts Wayshrine |q Shattered and Scattered |future
+|tip Manually skip to the next step.
 step
-goto blackwood_base 30.02,54.17 |q Shattered and Scattered |future
+goto blackwood_base 21.45,33.07 |q Shattered and Scattered |future
 step
-goto 41.32,52.87
-wayshrine Blackwood Crossroads
+goto 31.92,30.26 |q Shattered and Scattered |future
 step
-goto 36.33,33.97 |q Shattered and Scattered |future
-step
-goto 43.20,27.17 |q Shattered and Scattered |future
-step
-goto 34.33,20.35
-wayshrine Doomvault Vulpinaz
+goto 37.45,23.78 |q Shattered and Scattered |future
 step
 goto 34.48,17.46
 'Examine Adventurers Wanted For Exciting Oppertunity!
@@ -31,10 +27,10 @@ goto 36.93,14.60
 talk Mirri Elendis |q Shattered and Scattered/Talk to Mirri Elendis
 step
 goto 37.45,14.26
-'Open Doomvault Vulpinaz |q Shattered and Scattered/Enter the Ruin
+'Open Doomvault Vulpinaz |q Shattered and Scattered/Enter the Ruin |future
 |tip Manually skip to the next step.
 step
-goto u30_shattered_vault_1_base 45.24,75.64 |q Shattered and Scattered/Reach the Expedition Base Camp
+goto u30_shattered_vault_1_base 39.11,75.73 |q Shattered and Scattered/Reach the Expedition Base Camp
 step
 goto 50.93,50.31
 'Reach the Expedition Base Camp |q Shattered and Scattered/Reach the Expedition Base Camp

@@ -970,11 +970,6 @@ function Pointer:InitMaps()
 	ZGV.MapData.Zones["Tamriel"].xoffset=0
 	ZGV.MapData.Zones["Tamriel"].yoffset=0
 	ZGV.MapData.Zones["Tamriel"].scale=1
-	ZGV.MapData.Zones["coldharbour_base"]=ZGV.MapData.Zones["coldharbour_base"] or {}
-	ZGV.MapData.Zones["coldharbour_base"].xoffset=0
-	ZGV.MapData.Zones["coldharbour_base"].yoffset=0
-	ZGV.MapData.Zones["coldharbour_base"].scale=1
-	ZGV.MapData.Zones["coldharbour_base"].parentWorld="coldharbour_base"
 
 	-- this probably shouldn't be accessed before it is initalized
 	Pointer.ZoneNameToTex = {}
