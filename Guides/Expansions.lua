@@ -37294,10 +37294,10 @@ goto 39.59,44.99
 step
 goto 39.59,44.99
 talk Iulius Averno 
-turnin Making a Racket |next LEVELING\\The Deadlands
+turnin Making a Racket |next LEVELING\\Fargrave
 ]])
 
-ZGV:RegisterGuide("LEVELING\\The Deadlands",[[
+ZGV:RegisterGuide("LEVELING\\Fargrave",[[
 loadingimage loadscreen_ardent_hope_01.dds
 description The Deadlands is Mehrunes Dagon's realm of Oblivion.
 -- BEGIN: DEADLANDS PROLOGUE GUIDE

@@ -169,20 +169,8 @@ goto 81.99,55.43
 kill Xigira |q Shattered and Scattered/Destroy the Anchor Stone Array
 |tip Manually skip to the next step.
 step
-goto 89.41,55.69
-'Use Grappling Point |q Shattered and Scattered/Destroy the Anchor Stone Array
-|tip Manually skip to the next step.
-step
-goto 92.06,52.69
-'Destroy the Anchor Stone Array |q Shattered and Scattered/Destroy the Anchor Stone Array
-|tip Manually skip to the next step.
-step
 goto 86.23,60.02
 'Use Grappling Point |q Shattered and Scattered/Destroy the Anchor Stone Array
-|tip Manually skip to the next step.
-step
-goto 86.05,64.61
-'Destroy the Anchor Stone Array |q Shattered and Scattered/Destroy the Anchor Stone Array
 |tip Manually skip to the next step.
 step
 goto 91.26,63.28

@@ -134,18 +134,10 @@ GuideMenu.lua
 -- Guides
 Guides/LevelingCommon.lua
 ; Guides/SD.lua
+; future rename Guides/Legacy.lua
 Guides/MainQuestsOnly.lua
 Guides/Expansions.lua
 Guides/Companions.lua
-
--- Testing
-; Guides/Testing.lua
-; Testing/Main.lua
-; Testing/UI.lua
-; Testing/Localization.lua
-; Testing/GuideParsing.lua
-; Testing/DataCollecting.lua
-; Testing/Quests.lua
 
 -- Bindings
 Bindings.xml
