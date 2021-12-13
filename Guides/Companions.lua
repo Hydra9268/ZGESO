@@ -59,6 +59,8 @@ goto 53.87,04.62
 step
 goto u30_shattered_vault_2_base 71.67,77.05 |q Shattered and Scattered/Find the Remaining Expedition Members
 step
+goto 51.96,68.94 |q Shattered and Scattered/Find the Remaining Expedition Members
+step
 goto 46.84,63.05
 'Find the Remaining Expedition Members |q Shattered and Scattered/Find the Remaining Expedition Members
 step
@@ -83,11 +85,7 @@ goto 52.82,23.81
 'Destroy the Soul Siphon Array |q Shattered and Scattered/Destroy the Soul Siphon Array
 step
 goto 46.25,16.64
-'Follow Mirri Elendis |q Shattered and Scattered/Follow Mirri Elendis
-step
-goto 46.25,16.64 
-'Open Doomvault Vulpinaz Interstitial Corridor |q Shattered and Scattered/Talk to Mirri Elendis
-|tip Manually skip to the next step.
+'Open Doomvault Vulpinaz Interstitial Corridor |q Shattered and Scattered/Follow Mirri Elendis
 step
 goto 46.16,14.76
 talk Mirri Elendis |q Shattered and Scattered/Talk to Mirri Elendis
@@ -139,45 +137,26 @@ goto 50.22,48.46
 'Find Liam Elendis |q Shattered and Scattered/Find Liam Elendis
 step
 goto 50.22,48.46
-'Use Daedric Switch |q Shattered and Scattered/Unseal the Warded Gate
-|tip Manually skip to the next step.
-step
-goto 52.60,39.19
-'Use Grappling Point |q Shattered and Scattered/Unseal the Warded Gate
-|tip To your left look  up on the cliff.
-|tip Manually skip to the next step.
+'Use Daedric Switch |q Shattered and Scattered/Use Central Lever
 step
 goto 55.16,42.45
-'Use Daedric Switch |q Shattered and Scattered/Unseal the Warded Gate
-|tip Manually skip to the next step.
-step
-goto 45.19,57.72
-'Use Grappling Point |q Shattered and Scattered/Unseal the Warded Gate
-|tip Manually skip to the next step.
+'Use Daedric Switch |q Shattered and Scattered/Use Leftmost Lever
 step
 goto 53.75,54.02
-'Use Daedric Switch |q Shattered and Scattered/Unseal the Warded Gate
+|tip Jump up the rocks.
+'Use Daedric Switch |q Shattered and Scattered/Use Rightmost Lever
 step
 goto 59.14,48.90
 'Open Doomvault Vulpinaz Anchor Chamber |q Shattered and Scattered/Find Liam Elendis
 step
 goto 79.61,54.99
-'Use Grappling Point |q Shattered and Scattered/Destroy the Anchor Stone Array
-|tip Manually skip to the next step.
-step
-goto 81.99,55.43
+'Use Grappling Point
 kill Xigira |q Shattered and Scattered/Destroy the Anchor Stone Array
 |tip Manually skip to the next step.
 step
-goto 86.23,60.02
-'Use Grappling Point |q Shattered and Scattered/Destroy the Anchor Stone Array
-|tip Manually skip to the next step.
-step
 goto 91.26,63.28
-'Use Grappling Point |q Shattered and Scattered/Destroy the Anchor Stone Array
-|tip Manually skip to the next step.
-step
-goto 89.76,58.43
+|tip Skip the two Anchor Stones on the ground and just hit the one up top.
+'Use Grappling Point
 'Destroy the Anchor Stone Array |q Shattered and Scattered/Destroy the Anchor Stone Array
 step
 goto 95.41,64.34

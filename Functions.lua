@@ -680,21 +680,21 @@ function Utils.DistanceOffsetForGoto(dist,selfdist)
 			    GetCurrentMapIndex() == Enums.U28BlackreachMap or
 			    GetCurrentMapIndex() == Enums.MurkmireMap then		return 3
 
-		elseif	GetCurrentMapIndex() == Enums.StrosMkaiMap or
+		elseif	GetCurrentMapIndex() == Enums.ColdharbourMap or
+		        GetCurrentMapIndex() == Enums.StrosMkaiMap or
 		        GetCurrentMapIndex() == Enums.WesternSkyrimMap or
 		        GetCurrentMapIndex() == Enums.TheReachMap then 		return 4
 
 		elseif 	GetCurrentMapIndex() == Enums.BetnikhMap or
-			    GetCurrentMapIndex() == Enums.BleakrockIsleMap then	return 5
+			    GetCurrentMapIndex() == Enums.BleakrockIsleMap or 
+                GetCurrentMapIndex() == Enums.StonefallsMap then	return 5
 
 		elseif 	GetCurrentMapIndex() == Enums.ClockworkCityMap or
 	            GetCurrentMapIndex() == Enums.DeadlandsMap or
 				GetCurrentMapIndex() == Enums.FargraveMap or
 			    GetCurrentMapIndex() == Enums.GreenshadeMap then	return 7
 
-		elseif 	GetCurrentMapIndex() == Enums.AlikrDesertMap or
-		        GetCurrentMapIndex() == Enums.ColdharbourMap or
-		        GetCurrentMapIndex() == Enums.ColdharbourMap then	return 8
+		elseif 	GetCurrentMapIndex() == Enums.AlikrDesertMap then	return 8
 
 		elseif 	GetCurrentMapIndex() == Enums.AuridonMap or
 			    GetCurrentMapIndex() == Enums.BalFoyenMap or
@@ -740,21 +740,21 @@ function Utils.DistanceOffsetForIsComplete()
 			    GetCurrentMapIndex() == Enums.U28BlackreachMap or
 			    GetCurrentMapIndex() == Enums.MurkmireMap then		return 3
 
-		elseif	GetCurrentMapIndex() == Enums.StrosMkaiMap or
+		elseif	GetCurrentMapIndex() == Enums.ColdharbourMap or
+		        GetCurrentMapIndex() == Enums.StrosMkaiMap or
 		        GetCurrentMapIndex() == Enums.WesternSkyrimMap or
 		        GetCurrentMapIndex() == Enums.TheReachMap then 		return 4
 
 		elseif 	GetCurrentMapIndex() == Enums.BetnikhMap or
-			    GetCurrentMapIndex() == Enums.BleakrockIsleMap then	return 5
+			    GetCurrentMapIndex() == Enums.BleakrockIsleMap or
+                GetCurrentMapIndex() == Enums.StonefallsMap then	return 5
 
 		elseif 	GetCurrentMapIndex() == Enums.ClockworkCityMap or
 		        GetCurrentMapIndex() == Enums.DeadlandsMap or
 				GetCurrentMapIndex() == Enums.FargraveMap or
 			    GetCurrentMapIndex() == Enums.GreenshadeMap then	return 7
 
-		elseif 	GetCurrentMapIndex() == Enums.AlikrDesertMap or
-		        GetCurrentMapIndex() == Enums.ColdharbourMap or
-		        GetCurrentMapIndex() == Enums.ColdharbourMap then	return 8
+		elseif 	GetCurrentMapIndex() == Enums.AlikrDesertMap then	return 8
 
 		elseif 	GetCurrentMapIndex() == Enums.AuridonMap or
 			    GetCurrentMapIndex() == Enums.BalFoyenMap or
