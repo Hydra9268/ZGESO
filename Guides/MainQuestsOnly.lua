@@ -229,9 +229,6 @@ step
 goto 55.39,76.48
 talk Razum-dar |q Storm on the Horizon/Talk to Razum-dar at Eagle's Strand's Entrance
 step
-'_Add Waypoint next time_
-wayshrine Khenarthi's Roost
-step
 goto 58.24,60.87 |q Storm on the Horizon/Investigate Temple of the Mourning Springs
 step
 goto 65.59,58.07
@@ -389,7 +386,8 @@ talk Mastengwe |q Cast Adrift/Talk to Mastengwe
 step
 goto 17.04,53.88
 |tip Leave the ship.
-'Take Lodestone from Sea Vipers |q Cast Adrift/Take Lodestone from Sea Vipers
+kill Sea Viper enemies
+'Retrieve Lodestone |q Cast Adrift/Take Lodestone from Sea Vipers
 step
 goto 13.09,49.67 |q Cast Adrift/Stop the Maormer Ritual
 step
@@ -814,6 +812,9 @@ talk Queen Ayrenn
 turnin A Hostile Situation
 accept To Tanzelwil
 step
+goto 54.84,41.81 |q The Harborage/Find the Harborage
+|only Aldmeri Dominion
+step
 goto 54.93,56.00 |q The Harborage/Find the Harborage
 |only Aldmeri Dominion
 step
@@ -881,14 +882,17 @@ step
 'Search Worm Cultists |q Anchors from the Harbour/.*Search Worm Cultists.*
 |only Aldmeri Dominion
 step
-goto 70.62,90.01
+goto 70.18,89.56
 talk Aelif |q Anchors from the Harbour/Talk to Aelif
 |only Aldmeri Dominion
 step
-'Open Auridon Map
-'Travel to Vulkhel Guard Wayshrine |q Anchors from the Harbour/Return to Sees-All-Colors
-|tip Manually skip to the next step.
-|only Aldmeri Dominion
+goto 70.28,93.48 |q Anchors from the Harbour/Return to Sees-All-Colors
+step
+goto vulkhelguard_base 81.32,60.80 |q Anchors from the Harbour/Return to Sees-All-Colors
+step
+goto 48.12,62.51 |q Anchors from the Harbour/Return to Sees-All-Colors
+step
+goto 20.91,62.51 |q Anchors from the Harbour/Return to Sees-All-Colors
 step
 goto vulkhelguard_base 8.44,59.11
 |tip She's inside the Fighters Guild.
@@ -964,6 +968,7 @@ goto 49.15,76.50
 lorebook Monomyth: Dragon God & Missing God/1/10/3
 step
 goto 49.20,75.26
+|tip Watch the dialogue.
 talk Queen Ayrenn |q In the Name of the Queen/Talk to Queen Ayrenn |future
 step
 goto 47.71,76.60 |q In the Name of the Queen/Aid the Priestess at the West Ritual Site
@@ -1000,15 +1005,15 @@ goto 43.58,70.64
 'Open Inner Tanzelwil |q Rites of the Queen/Follow Queen Ayrenn |future
 |tip Manually skip to the next step.
 step
-goto innertanzelwil_base 74.91,50.36 |q Rites of the Queen/Follow Queen Ayrenn |tip Follow Queen Ayrenn
+goto innertanzelwil_base 74.91,50.36 |q Rites of the Queen/Follow Queen Ayrenn |tip Protect Queen Ayrenn
 step
-goto 86.48,49.16 |q Rites of the Queen/Destroy the Crystal to Open the Door |tip Destroy the Crystal to Open the Door.
+goto 86.48,49.16 |q Rites of the Queen/Destroy the Crystal to Open the Door |future |tip Destroy the Crystal to Open the Door.
 step
 goto 66.57,49.59
-'Open Inner Tanzelwil |q Rites of the Queen/Continue to Follow Queen Ayrenn
+'Open Inner Tanzelwil |q Rites of the Queen/Continue to Follow Queen Ayrenn |future
 |tip Manually skip to the next step.
 step
-goto 38.91,32.22 |q Rites of the Queen/Continue to Follow Queen Ayrenn |tip Follow Queen Ayrenn
+goto 38.91,32.22 |q Rites of the Queen/Continue to Follow Queen Ayrenn |tip Protect Queen Ayrenn
 step
 goto 37.18,31.92
 |tip Watch dialogue.
@@ -1393,10 +1398,9 @@ goto 27.21,73.67
 |tip Use all threee of the Crystals in the stone pillars in this room.
 'Use Crystal |q The Veil Falls/Deactivate the Lock Crystals
 step
-goto 58.45,80.38
-'Enter Third Room |q The Veil Falls/Enter the Third Room
+goto 58.45,80.38 |q The Veil Falls/Enter the Third Room
 step
-goto 59.49,79.30
+goto 73.49,78.47
 kill Endartirinque
 kill Ondicantar
 kill Nenaronald |q The Veil Falls/Defeat the Leaders of the Veiled Heritance
@@ -1490,7 +1494,8 @@ talk The Prophet |q Daughter of Giants/Talk to the Prophet
 |only Aldmeri Dominion
 step
 goto 60.27,30.68
-'Use Portal to Coldharbour |q Daughter of Giants/Enter Coldharbour
+'Use Portal to Coldharbour |q Daughter of Giants/Enter Coldharbour |future
+|tip Manually skip to the next step.
 |only Aldmeri Dominion
 step
 goto foundryofwoe_base 7.68,32.73
@@ -1550,13 +1555,8 @@ goto 35.19,65.10
 'Advance Into the Foundry |q Daughter of Giants/Advance into the Foundry
 |only Aldmeri Dominion
 step
-goto 36.61,67.19
-'Resolve Lyris's Uncertainty |q Daughter of Giants/Resolve Lyris's Uncertainty
-|tip Manually skip to the next step.
-|only Aldmeri Dominion
-step
 goto 39.68,69.44
-'Examine Lyris' Axe |q Daughter of Giants/Resolve Lyris's Uncertainty
+'Examine Lyris' Axe |q Daughter of Giants/Resolve Lyris's Uncertainty |future
 |only Aldmeri Dominion
 step
 goto 39.68,69.44
@@ -1615,7 +1615,9 @@ step
 |tip Manually skip to the next step.
 |only Aldmeri Dominion
 step
-goto auridon_base 57.17,50.19 |q To Dawnbreak/Talk to Canonreeve Sinyon in Dawnbreak
+goto auridon_base 61.41,51.43 |q To Dawnbreak/Talk to Canonreeve Sinyon in Dawnbreak
+step
+goto 57.17,50.19 |q To Dawnbreak/Talk to Canonreeve Sinyon in Dawnbreak
 step
 goto 55.93,47.31
 lorebook Why Don the Veil?/1/25/5
@@ -1720,11 +1722,11 @@ lorebook Thalmor Handbill/1/25/10
 step
 goto 27.87,33.41 |q To Firsthold/Report to a First Auridon Marine at Firsthold
 step
+goto 23.94,28.11
+lorebook Fang of the Sea Vipers/1/25/6
+step
 goto 24.68,26.99
 wayshrine Greenwater
-step
-goto 22.52,23.36
-lorebook Fang of the Sea Vipers/1/25/6
 step
 goto 24.68,26.99
 'Use Greenwater Wayshrine
@@ -1913,9 +1915,9 @@ goto vulkhelguard_base 85.21,63.00 |q Chasing Shadows/Investigate Vulkhel Guard
 |only Aldmeri Dominion
 step
 goto 67.32,61.07
-talk Mehdir |q Chasing Shadows/Investigate Vulkhel Guard
+talk Mehdir |q Chasing Shadows/Talk to Mehdir
+|tip Do not pay him.
 'Tell him _Is there anything else you can tell me?_
-|tip Manually skip to the next step.
 |only Aldmeri Dominion
 step
 goto 44.68,46.33
@@ -2004,9 +2006,6 @@ goto 83.19,75.30
 talk Curinwe |q Unsafe Haven/Ask Refugees about Lord Gharesh-ri
 step
 goto haven_base 58.26,35.18
-wayshrine Haven
-step
-goto 58.26,35.18
 'Open Haven City Gates |q Unsafe Haven/Talk to Lord Gharesh-ri
 |tip Manually skip to the next step.
 step
@@ -2119,7 +2118,8 @@ step
 goto 61.89,39.63
 wayshrine Elden Root Temple
 step
-goto grahtwood_base 58.40,39.97 |lorebook Reality and Other Falsehoods/1/15/7
+goto grahtwood_base 58.46,41.06
+lorebook The Old Ways/1/15/5
 step
 goto 59.37,31.07 |lorebook Reality and Other Falsehoods/1/15/7
 step
@@ -2128,16 +2128,18 @@ lorebook Reality and Other Falsehoods/1/15/7
 step
 goto 59.37,31.07 |lorebook Reality and Other Falsehoods/1/15/7
 step
-goto grahtwood_base 58.40,39.97 |q The Great Tree/Talk to King Camoran Aeradan in Elden Root
+goto 57.91,33.98 |q The Great Tree/Talk to King Camoran Aeradan in Elden Root
+step
+goto 58.40,39.97 |q The Great Tree/Talk to King Camoran Aeradan in Elden Root
 step
 goto 61.89,39.63
 'Use Elden Root Temple
 'Travel to Haven Wayshrine |q The Great Tree/Talk to King Camoran Aeradan in Elden Root
 |tip Manually skip to the next step.
 step
-goto 36.57,36.52 |q The Great Tree/Talk to King Camoran Aeradan in Elden Root
+goto haven_base 36.57,36.52 |q The Great Tree/Talk to King Camoran Aeradan in Elden Root
 step
-goto haven_base 23.62,15.97
+goto 23.62,15.97
 'Open Haven City Gates |q The Great Tree/Talk to King Camoran Aeradan in Elden Root
 |tip Manually skip to the next step.
 step
@@ -2281,7 +2283,7 @@ goto 46.25,39.10
 step
 goto 51.46,84.71
 kill Maleel al-Akir
-'Retrieve the Staff |q Simply Misplaced/Retrieve the Staff
+'Retrieve the Staff |q Simply Misplaced/Retrieve the Staff |future
 |only Aldmeri Dominion
 step
 goto 49.38,55.09
@@ -2433,10 +2435,7 @@ step
 'Travel to Elden Root Temple Wayshrine |q Lost in Study |future
 |tip Manually skip to the next step.
 step
-goto grahtwood_base 58.49,41.07
-lorebook The Old Ways/1/15/5
-step
-goto 50.76,37.95
+goto grahtwood_base 50.76,37.95
 lorebook On the Detachment of the Sheath/1/15/6
 step
 goto 49.10,31.99 |lorebook The House of Troubles/1/8/4
@@ -2622,6 +2621,8 @@ step
 goto grahtwood_base 64.58,74.24
 lorebook Common Arms of Valenwood/1/26/4
 step
+goto 65.86,72.71 |lorebook The Book of the Great Tree/1/26/3
+step
 goto 57.64,71.61
 wayshrine Gray Mire
 step
@@ -2790,6 +2791,8 @@ step
 goto 39.01,42.57
 lorebook Ancient Scrolls of the Dwemer V/1/12/4
 step
+goto 37.79,39.44 |q A Lasting Winter |future
+step
 goto 34.62,38.78 |q A Lasting Winter |future
 step
 goto 30.79,26.31 |q A Lasting Winter |future
@@ -2811,10 +2814,11 @@ step
 goto grahtwood_base 29.85,43.28
 lorebook Monomyth: The Myth of Aurbis/1/10/6
 step
-goto 32.09,40.17 |q A Lasting Winter |future
-|only Aldmeri Dominion
+goto 33.31,40.64 |lorebook Monomyth: "Shezarr's Song"/1/10/5
 step
-goto 36.65,50.47 |q A Lasting Winter |future
+goto 35.84,42.96 |lorebook Monomyth: "Shezarr's Song"/1/10/5
+step
+goto 36.63,50.39 |lorebook Monomyth: "Shezarr's Song"/1/10/5
 step
 goto 29.45,56.02
 lorebook Monomyth: "Shezarr's Song"/1/10/5
@@ -2859,13 +2863,16 @@ step
 goto 40.40,58.28
 wayshrine Falinesti Winter
 step
-goto 42.25,55.17
-'Enter the Dig Site |q A Lasting Winter/Enter the Dig Site
+goto 40.23,54.36 |q A Lasting Winter/Enter the Dig Site
 step
-goto 42.36,52.80 |q A Lasting Winter/Enter the Dig Site
+goto 40.90,54.67 |q A Lasting Winter/Enter the Dig Site
+step
+goto 42.46,56.09 |q A Lasting Winter/Enter the Dig Site |tip Follow ramp to the ground.
+step
+goto 42.36,52.80 |q A Lasting Winter/Northern Cave |future
 step
 goto 42.33,50.09
-'Search the Northern Cave |q A Lasting Winter/Northern Cave |future
+'Search the Northern Cave |q A Lasting Winter/Northern Cave
 step
 goto 42.33,50.09
 talk Nairume |q A Lasting Winter/Talk to the Frost Creature
@@ -2896,7 +2903,7 @@ goto 78.04,46.62
 step
 goto 78.04,46.62
 talk General Endare |q A Lasting Winter/Talk to General Endare
-|tip Intimidate her.
+'Tell her _[Intimidate] Rajhin's Mantle is controlling you. You're a Dominion General-snap out of it!_
 step
 goto 78.04,46.62
 kill General Endare |q A Lasting Winter/Defeat General Endare
@@ -2974,6 +2981,7 @@ goto 51.44,50.11
 talk Daraneth |q The Orrery of Elden Root/Talk to Conservator Daraneth
 step
 goto 60.32,49.81
+|tip Dismiss Companion until you break free then immediately bring your companion back if you wish.
 'Activate Pillar of Welke |q The Orrery of Elden Root/Activate the Pillar of Welke with the Heart of Anumaril
 step
 goto 60.32,49.81
@@ -3053,11 +3061,8 @@ goto 55.51,26.09 |q Castle of the Worm/Follow Cadwell
 |only Aldmeri Dominion
 step
 goto 55.51,26.09
-talk Cadwell |q Castle of the Worm/Enter the Keep
-|only Aldmeri Dominion
-step
-goto 64.51,25.00
-'Open Inner Keep |q Castle of the Worm/Enter the Keep
+talk Cadwell
+'Open Inner Keep |q Castle of the Worm/Enter the Keep |future
 |only Aldmeri Dominion
 step
 goto castleoftheworm3_base 45.97,25.45
@@ -3185,7 +3190,10 @@ ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Aldmeri Dominion\\Greensh
 loadingimage loadscreen_greenshade_01.dds
 description As the region of Valenwood farthest from all other realms, Greenshade's graht-oak forest is virtually pristine, the Tamriel jungle at its most primeval. Its capital is the trading port of Woodhearth.
 step
-goto marbruk_base 55.29,46.50
+goto marbruk_base 33.02,62.08
+wayshrine Marbruk
+step
+goto 55.29,46.50
 talk Captain Sarandil |q The Staff of Magnus/Find Captain Sarandil |future
 step
 goto marbruk_base 34.48,31.65
@@ -3650,14 +3658,14 @@ step
 goto 47.76,79.25 |q Throne of the Wilderking/Talk to Aranias
 step
 goto 47.57,85.63
-talk Aranias |q Throne of the Wilderking/Follow Aranias
+talk Aranias |q Throne of the Wilderking/Talk to Aranias
 step
 goto 47.06,86.13 |q Throne of the Wilderking/Follow Aranias
 step
 goto 45.65,85.21 |q Throne of the Wilderking/Reach the Wilderking's Throne |tip Use the Bundle of Roots to Burrow Under Fires. |future
 step
 goto 45.13,85.12
-'Open Throne Plateau |q Throne of the Wilderking/Reach the Wilderking's Throne
+'Open Throne Plateau |q Throne of the Wilderking/Reach the Wilderking's Throne |future
 step
 goto 46.92,84.33 |q Throne of the Wilderking/Find the Wilderking
 step
@@ -3879,16 +3887,14 @@ goto grahtwood_base 18.39,14.61
 |only Aldmeri Dominion
 step
 goto wormrootdepths_base 49.87,62.08
-'Examine Speaking Stone |q The Tharn Speaks/Search for Information in Wormroot Depths
-|tip Manually skip to the next step.
+'Examine Speaking Stone |q The Tharn Speaks/.*TRACKER GOAL TEXT.* |count 1
 |only Aldmeri Dominion
 step
 goto 37.91,68.30 |q The Tharn Speaks/Search for Information in Wormroot Depths
 |only Aldmeri Dominion
 step
 goto 34.24,80.53
-'Examine Speaking Stone |q The Tharn Speaks/Search for Information in Wormroot Depths
-|tip Manually skip to the next step.
+'Examine Speaking Stone |q The Tharn Speaks/.*TRACKER GOAL TEXT.* |count 2
 |only Aldmeri Dominion
 step
 goto 56.96,79.23 |q The Tharn Speaks/Search for Information in Wormroot Depths
@@ -4035,7 +4041,7 @@ goto 85.44,48.49
 kill Vicereeve Pelidil |q Pelidil's End/Kill Vicereeve Pelidil
 step
 goto 77.20,37.18
-'Use Portal to the Prowler |q Pelidil's End/Return to Seaside Sanctuary
+'Use Portal to the Prowler |q Pelidil's End/Return to Seaside Sanctuary |future
 |tip Manually skip to the next step.
 step
 goto greenshade_base 21.49,36.82
@@ -4119,24 +4125,20 @@ goto 67.03,36.81
 step
 goto 67.02,37.99
 'Use Stone Table
-'Watch Indaenir Confer with the Skulls |q Retaking the Pass/Interrogate the Skulls with Indaenir
-|tip Manually skip to the next step.
+'Let Indaenir Confer with the Skulls |q Retaking the Pass/Let Indaenir Confer with the Skulls
 step
 goto 67.03,37.88
 talk Indaenir |q Retaking the Pass/Interrogate the Skulls with Indaenir
-|tip Manually skip to the next step.
 step
 goto 67.05,37.96
-'Use Skull of Ethril |q Retaking the Pass/Interrogate the Skulls with Indaenir
+'Use Skull of Ethril |q Retaking the Pass/Talk to Skull of Ethril and Decide Her Fate
 |tip It's the skull on the left.
 'Tell the skull _All right, I release you._
-|tip Manually skip to the next step.
 step
 goto 67.01,38.00
-'Use Skull of Ollion |q Retaking the Pass/Interrogate the Skulls with Indaenir
+'Use Skull of Ollion |q Retaking the Pass/Talk to Skull of Ollion and Decide His Fate
 |tip It's the skull in the middle.
 'Tell the skull _You understand what you did wrong. You may pass on freely._
-|tip Manually skip to the next step.
 step
 goto 66.99,38.03
 'Use Skull of Thraul |q Retaking the Pass/Interrogate the Skulls with Indaenir
@@ -4147,7 +4149,7 @@ step
 goto 66.99,38.03
 talk Indaenir |q Retaking the Pass/Interrogate the Skulls with Indaenir
 step
-goto 67.16,41.20 |q Retaking the Pass/.*Close the Shadow Rifts.* |count 1
+goto 67.16,41.20 |q Retaking the Pass/.*Close the Shadow Rifts.* |count 1 |tip Drop down.
 step
 goto 68.58,42.94
 kill the 3 Skeletal Mages |q Retaking the Pass/.*Close the Shadow Rifts.* |count 1
@@ -4332,25 +4334,21 @@ talk Indaenir |q Right of Theft/Take the Bow from the Servant of Naemon
 |tip Manually skip to the next step.
 step
 goto 38.72,36.99
-'Close the Shadow Rift |q Right of Theft/Take the Bow from the Servant of Naemon
-|tip Manually skip to the next step.
+'Close the Shadow Rift |q Right of Theft/.*Close the Shadow Rifts.* |count 1
 step
 goto 36.28,35.21
-'Close Shadow Rift |q Right of Theft/Take the Bow from the Servant of Naemon
-|tip Manually skip to the next step.
+'Close Shadow Rift |q Right of Theft/.*Close the Shadow Rifts.* |count 2
 step
 goto 39.57,34.12
-'Close Shadow Rift |q Right of Theft/Take the Bow from the Servant of Naemon
-|tip Manually skip to the next step.
+'Close Shadow Rift |q Right of Theft/.*Close the Shadow Rifts.* |count 3
 step
 goto 39.75,33.21 |q Right of Theft/Take the Bow from the Servant of Naemon
 step
 goto 41.42,31.29
-'Close Shadow Rift |q Right of Theft/Take the Bow from the Servant of Naemon
-|tip Manually skip to the next step.
+'Close Shadow Rift |q Right of Theft/.*Close the Shadow Rifts.* |count 4
 step
 goto 44.25,33.11
-'Close Shadow Rift |q Right of Theft/Take the Bow from the Servant of Naemon
+'Close Shadow Rif |q Right of Theft/Take the Bow from the Servant of Naemon
 |tip Manually skip to the next step.
 step
 goto 44.26,33.16
@@ -4482,8 +4480,8 @@ goto 37.38,43.41
 |tip Manually skip to the next step.
 step
 goto hectahamegrottovalenheart_base 172.19,198.01
-|tip Loot Shade of Naemon
-kill Shade of Naemon |q Striking at the Heart/Obtain the Staff of Magnus from the Shade
+kill Shade of Naemon
+'Obtain the Staff of Magnus from the Shade |q Striking at the Heart/Obtain the Staff of Magnus from the Shade
 step
 goto 172.29,192.91
 talk Indaenir |q Striking at the Heart/Talk to Indaenir
@@ -4547,14 +4545,12 @@ step
 goto 33.78,23.71
 lorebook Varieties of Daedra, Part 2/1/17/8
 step
-goto 36.94,23.32 |q To Velyn Harbor/Go to Velyn Harbor
+goto 34.33,18.87
+lorebook Antecedents of Dwemer Law/1/12/8
 step
-goto 39.58,22.41 |q To Velyn Harbor/Go to Velyn Harbor
+goto 37.69,19.06 |q To Velyn Harbor/Go to Velyn Harbor
 step
-goto 37.01,19.75 |q To Velyn Harbor/Go to Velyn Harbor
-step
-goto 36.07,14.30
-lorebook Varieties of Daedra, Part 2/1/17/8
+goto 38.43,16.45 |q To Velyn Harbor/Go to Velyn Harbor
 step
 goto 34.47,15.50
 wayshrine Moonhenge
@@ -4723,11 +4719,14 @@ step
 goto 36.66,57.57
 wayshrine Dra'bul
 step
+goto 37.25,59.33 |lorebook Opusculus Lamae Bal ta Mezzamortie/1/8/7
+step
 goto 36.73,59.62
 |tip Up the hill.
 lorebook Opusculus Lamae Bal ta Mezzamortie/1/8/7
 step
 goto 38.12,62.30
+|tip Drop down carefully.
 lorebook Ancient Scrolls of the Dwemer I-B/1/12/10
 step
 goto 34.89,58.55 |q The Drublog of Dra'bul/Talk to the Green Lady in Dra'bul
@@ -4938,7 +4937,7 @@ kill Dwarven Spiders
 |only Aldmeri Dominion
 step
 goto 44.87,65.55
-'Use Crystal Stand |q The Dangerous Past/.*TRACKER GOAL TEXT.* |count 1
+'Use Crystal Stand |q The Dangerous Past/.*TRACKER GOAL TEXT.* |count 4
 |only Aldmeri Dominion
 step
 goto 44.74,71.65
@@ -5062,6 +5061,11 @@ goto 74.67,71.77 |q The Prisoner of Jathsogur/Find the Runestone of Malacath
 step
 goto 74.29,74.59 |q The Prisoner of Jathsogur/Find the Runestone of Malacath
 step
+goto 75.48,74.78
+lorebook Ode to the Tundrastriders/1/18/6
+step
+goto 74.29,74.59 |q The Prisoner of Jathsogur/Find the Runestone of Malacath
+step
 goto 74.34,76.83 |q The Prisoner of Jathsogur/Find the Runestone of Malacath
 step
 goto 73.02,80.27
@@ -5114,9 +5118,6 @@ goto 71.80,72.03 |q The Prisoner of Jathsogur/Enter the Silvenar's Prison
 step
 goto 74.67,71.74 |q The Prisoner of Jathsogur/Enter the Silvenar's Prison
 step
-goto 75.48,74.78
-lorebook Ode to the Tundrastriders/1/18/6
-step
 goto 73.63,75.61
 'Open Chieftain's Chambers |q The Prisoner of Jathsogur/Enter the Silvenar's Prison
 step
@@ -5127,7 +5128,7 @@ talk The Silvenar
 talk The Silvenar |q The Prisoner of Jathsogur/Talk to the Silvenar
 step
 goto 73.15,75.68
-|tip there will be a bit of time between waves.
+|tip There will be a bit of time between waves.
 kill Chief Nagoth |q The Prisoner of Jathsogur/Defend the Silvenar
 step
 goto 72.60,75.53
@@ -5157,8 +5158,6 @@ goto 72.82,49.37
 lorebook The Voice of the People/1/21/1
 step
 goto 76.15,51.22 |q A Wedding to Attend/Go to Silvenar
-step
-goto 75.04,49.53 |q A Wedding to Attend/Go to Silvenar
 step
 goto 77.18,53.29 |lorebook Green Lady, My Lady/1/21/3
 step
@@ -5345,10 +5344,9 @@ goto 31.73,38.62
 'Open Chateau Guesthouse |q Chateau of the Ravenous Rodent/Enter the Chateau Guesthouse
 |only Aldmeri Dominion
 step
-goto 31.25,44.17
-|tip Listen Door
+goto 37.12,39.97
+'Listen Door |q Chateau of the Ravenous Rodent/Evict the Guest That Doesn't Belong
 'Tell them _That's it. You're out of here._
-'Evict the Guest That Doesn't Belong |q Chateau of the Ravenous Rodent/Evict the Guest That Doesn't Belong
 |tip It may be randomized, so if it's not this door, try the others.  You just have to kill the person you let out if they're the wrong one.
 |only Aldmeri Dominion
 step
@@ -5394,12 +5392,8 @@ goto 65.90,75.97
 talk Sheogorath |q Chateau of the Ravenous Rodent/Talk to Sheogorath
 |only Aldmeri Dominion
 step
-goto 70.08,76.65
-'Open Chateau Manse |q Chateau of the Ravenous Rodent/Explore the Manse
-|tip Manually skip to the next step.
-|only Aldmeri Dominion
-step
 goto 86.83,70.74
+|tip Inside the Manse.
 'Explore the Manse |q Chateau of the Ravenous Rodent/Explore the Manse
 |only Aldmeri Dominion
 step
@@ -5526,7 +5520,7 @@ talk Houndsman Bewitcher
 step
 goto 70.75,43.99
 talk The Silvenar |q Restore the Silvenar/Talk to the Silvenar
-|tip Persuade him.
+'Tell him _[Persuade] Can you be more specific about solving these puzzles?_
 step
 goto 71.17,45.60 |q Restore the Silvenar/Free Spinner Einrel
 step
@@ -5708,7 +5702,7 @@ step
 goto 37.63,24.31
 |tip Merric will tell you how hot he wants the fire.
 'Use the Forge Tools to Stoke the Fire |q The Prismatic Core/Stoke a Large Fire
-|tip The Forge Valve to the left three times, the coals in the middle, and then the Bellows on the right.
+|tip The Forge Valve to the left three times, the coals in the middle, and then the Bellows on the right three times.
 |only Aldmeri Dominion
 step
 goto 37.63,24.31
@@ -6122,19 +6116,7 @@ goto 42.12,60.69
 'Open Inner Courtyard |q Grimmer Still/Reach the Door's Far Side
 step
 goto 44.86,42.34
-'Disrupt Corrupted Guardian Sench |q Grimmer Still/Disrupt the Ritual
-|tip Manually skip to the next step.
-step
-goto 49.85,41.62
-'Disrupt Corrupted Guardian Senche |q Grimmer Still/Disrupt the Ritual
-|tip Manually skip to the next step.
-step
-goto 50.99,36.16
-'Disrupt Corrupted Guardian Senche |q Grimmer Still/Disrupt the Ritual
-|tip Manually skip to the next step.
-step
-goto 46.10,36.35
-'Disrupt Corrupted Guardian Senche |q Grimmer Still/Disrupt the Ritual
+'Disrupt All 4 Corrupted Guardian Senche |q Grimmer Still/Disrupt the Ritual
 step
 goto 46.41,38.51
 'Wait for Khali |q Grimmer Still/Wait for Khali
@@ -6211,8 +6193,6 @@ step
 goto 41.23,24.70
 lorebook Dwemer Inquiries Volume I/1/12/13
 step
-goto 36.37,17.44 |q Hallowed To Arenthia/Talk to Cariel in Arenthia
-step
 goto 43.06,24.51 |q Hallowed To Arenthia/Talk to Cariel in Arenthia
 step
 goto 47.35,23.86 |q Hallowed To Arenthia/Talk to Cariel in Arenthia
@@ -6245,9 +6225,6 @@ goto 43.10,55.23
 'Open Tower District |q The Colovian Occupation/.*Search the Tower District.* |count 1
 |tip Manually skip to the next step.
 step
-goto 43.00,78.09
-lorebook The Warrior's Charge/1/18/9
-step
 goto 39.79,60.86
 |tip Inside the house.
 'Examine Await My Emissary |q The Colovian Occupation/.*Search the Tower District.* |count 1
@@ -6268,6 +6245,9 @@ talk Cariel |q The Colovian Occupation/Meet Cariel Behind the Tower
 step
 goto 43.61,76.79
 'Open Overwatch Tower |q The Colovian Occupation/Enter the Tower
+step
+goto 43.00,78.09
+lorebook The Warrior's Charge/1/18/9
 step
 goto 43.92,76.91
 'Wait for Gavo |q The Colovian Occupation/Wait for Gavo
@@ -6408,6 +6388,9 @@ lorebook The Legendary Scourge/1/14/2
 step
 goto 36.66,52.09 |q To Rawl'kha/Talk to a Moon Priest of Rawl'kha
 step
+goto rawlkha_base 37.91,53.64
+wayshrine Rawl'kha
+step
 goto rawlkha_base 55.20,60.93
 lorebook The Red Book of Riddles/1/14/7
 step
@@ -6421,16 +6404,13 @@ goto 73.76,51.47
 |tip Manually skip to the next step.
 step
 goto rawlkhatemple_base 52.47,26.23
-talk Queen Ayrenn |q The First Step/Talk to Kauzanabi-jo
-|tip Manually skip to the next step.
+talk Queen Ayrenn |q The First Step/Talk to Queen Ayrenn
 step
 goto 50.17,26.17
-talk The Green Lady |q The First Step/Talk to Kauzanabi-jo
-|tip Manually skip to the next step.
+talk The Green Lady |q The First Step/Talk to the Green Lady
 step
 goto 49.06,31.93
-talk Lord Gharesh-ri |q The First Step/Talk to Kauzanabi-jo
-|tip Manually skip to the next step.
+talk Lord Gharesh-ri |q The First Step/Talk to Speaker Gharesh-ri
 step
 goto 53.71,32.04
 talk Mane Akkhuz-ri |q The First Step/Talk to Kauzanabi-jo
@@ -6552,10 +6532,12 @@ goto 51.45,15.24
 'Open Rawl'kha |q The Path to Moonmont/Meet the Champions at Moonmont
 |tip Manually skip to the next step.
 step
-goto 43.96,59.98 |lorebook 16 Accords of Madness, Vol. VI/1/14/8
+goto reapersmarch_base 43.96,59.98 |lorebook 16 Accords of Madness, Vol. VI/1/14/8
 step
 goto 44.63,61.74
 lorebook 16 Accords of Madness, Vol. VI/1/14/8
+step
+goto 43.96,59.98 |lorebook Crow and Raven: Three Short Fables/1/14/9
 step
 goto reapersmarch_base 31.62,66.03
 lorebook Crow and Raven: Three Short Fables/1/14/9
@@ -6625,9 +6607,8 @@ talk Rid-Thar-ri'Datta |q Motes in the Moonlight/Enter Moonmont's Inner Chamber
 |tip Manually skip to the next step.
 step
 goto 35.70,51.80
-|tip Activate all 3 altar's twice
 |tip Watch the dialogue.
-'Enter Moonmont's Inner Chamber |q Motes in the Moonlight/Enter Moonmont's Inner Chamber
+'Activate all 3 altar's twice |q Motes in the Moonlight/Align the Lunar Altars
 step
 goto 32.55,48.92
 'Open Door |q Motes in the Moonlight/Find the Dark Mane
@@ -7640,9 +7621,10 @@ goto 46.20,40.56
 'Open The Grave |q Innocent Scoundrel/Enter the Grave |future
 |tip Manually skip to the next step.
 step
-goto thegrave_base 32.22,52.81 |q Innocent Scoundrel/Find Jakarn |tip Jump down the hole in the floor.
+goto thegrave_base 32.22,52.81 |q Innocent Scoundrel/Find Jakarn
 step
 goto 47.45,44.68
+|tip Jump down the hole in the floor.
 'Find Jakarn |q Innocent Scoundrel/Find Jakarn
 step
 goto 47.54,44.50
@@ -7998,6 +7980,8 @@ goto 52.82,69.85
 step
 goto 52.82,69.85
 'Listen to the Bloodthorn Leader |q Into the Hills/Listen to Bloodthorn Leader
+step
+goto 60.74,73.18 |q Into the Hills/Enter Bloodthorn Lair
 step
 goto 65.53,74.81
 'Enter the Bloodthorn Lair |q Into the Hills/Enter Bloodthorn Lair
@@ -8556,7 +8540,7 @@ goto 55.80,33.69
 talk Guildmaster Sees-All-Colors |q Anchors from the Harbour/Return to Sees-All-Colors
 |only Daggerfall Covenant
 step
-goto daggerfall_base 64.12,39.77 |q Turning of the Trees/Talk to Bernard Redain
+goto daggerfall_base 64.12,39.77 |q Turning of the Trees |future
 |only Daggerfall Covenant
 step
 goto glenumbra_base 37.40,73.01
@@ -10565,7 +10549,7 @@ kill Dwarven Spiders
 |only Daggerfall Covenant
 step
 goto 44.87,65.55
-'Use Crystal Stand |q The Dangerous Past/.*TRACKER GOAL TEXT.* |count 1
+'Use Crystal Stand |q The Dangerous Past/.*TRACKER GOAL TEXT.* |count 4
 |only Daggerfall Covenant
 step
 goto 44.74,71.65
@@ -11493,27 +11477,27 @@ step
 goto 37.63,24.31
 'Use the Forge Tools to Stoke the Fire |q The Prismatic Core/Stoke a Small Fire
 |tip The Forge Valve to the left, then the Bellows on the right twice.
-|only Daggerfall Covenant
+|only Aldmeri Dominion
 step
 goto 37.63,24.31
 'Wait for Merric |q The Prismatic Core/Wait for Merric
-|only Daggerfall Covenant
+|only Aldmeri Dominion
 step
 goto 37.63,24.31
 |tip Merric will tell you how hot he wants the fire.
 'Use the Forge Tools to Stoke the Fire |q The Prismatic Core/Stoke a Medium-Sized Fire
 |tip The Forge Valve to the left, the coals in the middle, and then the Bellows on the right three times.
-|only Daggerfall Covenant
+|only Aldmeri Dominion
 step
 goto 37.63,24.31
 'Wait for Merric |q The Prismatic Core/Wait for Merric
-|only Daggerfall Covenant
+|only Aldmeri Dominion
 step
 goto 37.63,24.31
 |tip Merric will tell you how hot he wants the fire.
 'Use the Forge Tools to Stoke the Fire |q The Prismatic Core/Stoke a Large Fire
-|tip The Forge Valve to the left three times, the coals in the middle, and then the Bellows on the right.
-|only Daggerfall Covenant
+|tip The Forge Valve to the left three times, the coals in the middle, and then the Bellows on the right three times.
+|only Aldmeri Dominion
 step
 goto 37.63,24.31
 'Wait for Merric |q The Prismatic Core/Wait for Merric
@@ -12594,13 +12578,11 @@ goto 60.54,36.70
 |only Daggerfall Covenant
 step
 goto norvulkruins_base 42.57,19.08
-'Examine  Speaking Stone |q The Tharn Speaks/Search for Information
-|tip Manually skip to the next step.
+'Examine  Speaking Stone |q The Tharn Speaks/.*TRACKER GOAL TEXT.* |count 1
 |only Daggerfall Covenant
 step
 goto 17.83,35.06
-'Examine Speaking Stone |q The Tharn Speaks/Search for Information
-|tip Manually skip to the next step.
+'Examine Speaking Stone |q The Tharn Speaks/.*TRACKER GOAL TEXT.* |count 2
 |only Daggerfall Covenant
 step
 goto 18.02,47.34 |q The Tharn Speaks/Search for Information
@@ -13456,10 +13438,9 @@ goto 31.73,38.62
 'Open Chateau Guesthouse |q Chateau of the Ravenous Rodent/Enter the Chateau Guesthouse
 |only Daggerfall Covenant
 step
-goto 31.25,44.17
-|tip Listen Door
+goto 37.12,39.97
+'Listen Door |q Chateau of the Ravenous Rodent/Evict the Guest That Doesn't Belong
 'Tell them _That's it. You're out of here._
-'Evict the Guest That Doesn't Belong |q Chateau of the Ravenous Rodent/Evict the Guest That Doesn't Belong
 |tip It may be randomized, so if it's not this door, try the others.  You just have to kill the person you let out if they're the wrong one.
 |only Daggerfall Covenant
 step
@@ -13505,12 +13486,8 @@ goto 65.90,75.97
 talk Sheogorath |q Chateau of the Ravenous Rodent/Talk to Sheogorath
 |only Daggerfall Covenant
 step
-goto 70.08,76.65
-'Open Chateau Manse |q Chateau of the Ravenous Rodent/Explore the Manse
-|tip Manually skip to the next step.
-|only Daggerfall Covenant
-step
 goto 86.83,70.74
+|tip Inside the Manse.
 'Explore the Manse |q Chateau of the Ravenous Rodent/Explore the Manse
 |only Daggerfall Covenant
 step
@@ -18785,7 +18762,7 @@ kill Dwarven Spiders
 |only Ebonheart Pact
 step
 goto 44.87,65.55
-'Use Crystal Stand |q The Dangerous Past/.*TRACKER GOAL TEXT.* |count 1
+'Use Crystal Stand |q The Dangerous Past/.*TRACKER GOAL TEXT.* |count 4
 |only Ebonheart Pact
 step
 goto 44.74,71.65
@@ -19702,27 +19679,27 @@ step
 goto 37.63,24.31
 'Use the Forge Tools to Stoke the Fire |q The Prismatic Core/Stoke a Small Fire
 |tip The Forge Valve to the left, then the Bellows on the right twice.
-|only Ebonheart Pact
+|only Aldmeri Dominion
 step
 goto 37.63,24.31
 'Wait for Merric |q The Prismatic Core/Wait for Merric
-|only Ebonheart Pact
+|only Aldmeri Dominion
 step
 goto 37.63,24.31
 |tip Merric will tell you how hot he wants the fire.
 'Use the Forge Tools to Stoke the Fire |q The Prismatic Core/Stoke a Medium-Sized Fire
 |tip The Forge Valve to the left, the coals in the middle, and then the Bellows on the right three times.
-|only Ebonheart Pact
-step
+|only Aldmeri Dominion
+steps
 goto 37.63,24.31
 'Wait for Merric |q The Prismatic Core/Wait for Merric
-|only Ebonheart Pact
+|only Aldmeri Dominion
 step
 goto 37.63,24.31
 |tip Merric will tell you how hot he wants the fire.
 'Use the Forge Tools to Stoke the Fire |q The Prismatic Core/Stoke a Large Fire
-|tip The Forge Valve to the left three times, the coals in the middle, and then the Bellows on the right twice.
-|only Ebonheart Pact
+|tip The Forge Valve to the left three times, the coals in the middle, and then the Bellows on the right three times.
+|only Aldmeri Dominion
 step
 goto 37.63,24.31
 'Wait for Merric |q The Prismatic Core/Wait for Merric
@@ -20275,8 +20252,7 @@ goto desolatecave_base 34.07,48.04 |q The Tharn Speaks/Search for Information in
 |only Ebonheart Pact
 step
 goto desolatecave_base 44.20,37.89
-'Examine Speaking Stone |q The Tharn Speaks/Search for Information in Knife Ear Grotto
-|tip Manually skip to the next step.
+'Examine Speaking Stone |q The Tharn Speaks/.*TRACKER GOAL TEXT.* |count 1
 |only Ebonheart Pact
 step
 goto 48.13,29.23 |q The Tharn Speaks/Search for Information in Knife Ear Grotto
@@ -20286,8 +20262,7 @@ goto 70.68,22.29 |q The Tharn Speaks/Search for Information in Knife Ear Grotto
 |only Ebonheart Pact
 step
 goto 70.53,50.44
-'Examine Speaking Stone |q The Tharn Speaks/Search for Information in Knife Ear Grotto
-|tip Manually skip to the next step.
+'Examine Speaking Stone |q The Tharn Speaks/.*TRACKER GOAL TEXT.* |count 2
 |only Ebonheart Pact
 step
 goto 55.60,44.48
@@ -21032,10 +21007,9 @@ goto 31.73,38.62
 'Open Chateau Guesthouse |q Chateau of the Ravenous Rodent/Enter the Chateau Guesthouse
 |only Ebonheart Pact
 step
-goto 31.25,44.17
-|tip Listen Door
+goto 37.12,39.97
+'Listen Door |q Chateau of the Ravenous Rodent/Evict the Guest That Doesn't Belong
 'Tell them _That's it. You're out of here._
-'Evict the Guest That Doesn't Belong |q Chateau of the Ravenous Rodent/Evict the Guest That Doesn't Belong
 |tip It may be randomized, so if it's not this door, try the others.  You just have to kill the person you let out if they're the wrong one.
 |only Ebonheart Pact
 step
@@ -21081,12 +21055,8 @@ goto 65.90,75.97
 talk Sheogorath |q Chateau of the Ravenous Rodent/Talk to Sheogorath
 |only Ebonheart Pact
 step
-goto 70.08,76.65
-'Open Chateau Manse |q Chateau of the Ravenous Rodent/Explore the Manse
-|tip Manually skip to the next step.
-|only Ebonheart Pact
-step
 goto 86.83,70.74
+|tip Inside the Manse.
 'Explore the Manse |q Chateau of the Ravenous Rodent/Explore the Manse
 |only Ebonheart Pact
 step
@@ -24038,6 +24008,8 @@ goto 38.09,62.80
 |tip Run up the wooden ramp.
 talk Captain Eilram |q Truth, Lies, and Prisoners/Talk to Captain Eilram
 step
+goto 38.64,64.05 |q Truth, Lies, and Prisoners/Find Captain Eilram's Sword
+step
 goto 40.46,64.24
 'Take Captain Eilram's Sword |q Truth, Lies, and Prisoners/Find Captain Eilram's Sword
 step
@@ -24105,10 +24077,7 @@ step
 goto 38.67,66.96
 lorebook Chaotic Creatia: The Azure Plasm/1/29/3
 step
-goto 40.62,66.32 |q Through the Daedric Lens/Talk to Kireth Vanos
-step
-goto 40.99,69.26
-talk Projection of Kireth Vanos |q Through the Daedric Lens/Talk to Kireth Vanos
+goto 40.62,66.32 |q Through the Daedric Lens/.*Destroy the Daedric Lenses.* |count 1
 step
 goto 40.05,75.66
 'Destroy Daedric Lens |q Through the Daedric Lens/.*Destroy the Daedric Lenses.* |count 1
@@ -24381,11 +24350,15 @@ step
 goto 23.86,61.73
 wayshrine Moonless Walk
 step
+goto 28.49,62.82 |q Into the Woods/Talk to Sergeant Kamu
+step
+goto 36.32,54.52 |q Into the Woods/Talk to Sergeant Kamu
+step
 goto 38.58,55.45
 wayshrine Shrouded Plains
 step
 goto 38.58,55.45
-'Use Hollow City Wayshrine
+'Use Shrouded Plains Wayshrine
 'Travel to Moonless Walk Wayshrine |q Into the Woods/Talk to Sergeant Kamu
 |tip Manually skip to the next step.
 step
@@ -24473,7 +24446,7 @@ goto 22.79,62.42
 |tip Manually skip to the next step.
 step
 goto lightlessoubliette_base 76.46,59.69
-'Examine Ancient Branch
+|tip Examine Ancient Branch
 'Take Light of Meridia |q The Shadow's Embrace/Collect Light of Meridia
 step
 goto 70.31,56.59
@@ -24705,9 +24678,7 @@ kill Taskmaster Vyrotesn
 |tip Manually skip to the next step.
 step
 goto 41.45,53.86
-'Use the Essence Extractor on Jurisa Denter
-|tip You have to be at about medium range to be able to use it.
-'Collect 5 Galerion's Stamina |q Vanus Unleashed/.*Collect Galerion's Stamina.* |count 5
+'Use the Essence Extractor on Jurisa Denter |q Vanus Unleashed/.*Collect Galerion's Stamina.* |count 5
 step
 goto 39.84,60.49
 talk Galerion's Stamina |q Vanus Unleashed/Talk to Galerion's Essence
@@ -24926,13 +24897,13 @@ step
 goto 53.03,59.53 |q Crossing the Chasm/Close the East Portal
 step
 goto 54.00,58.21
-|tip Wait for Darien to Close Portal.
+|tip Wait for Darien to Close Portal. DO NOT LEAVE the room before objective completes or you will be re-doing it.
 kill the waves of enemies |q Crossing the Chasm/Close the East Portal
 step
-|tip Wait for Walks-in-Ash to Close Portal.
 goto 51.84,59.68 |q Crossing the Chasm/Close the West Portal
 step
 goto 47.67,58.68
+|tip Wait for Walks-in-Ash to Close Portal. DO NOT LEAVE the room before objective completes or you will be re-doing it.
 kill the waves of enemies |q Crossing the Chasm/Close the West Portal
 step
 goto 49.40,58.76 |q Crossing the Chasm/Talk to Cadwell at the Gatehouse
@@ -25554,7 +25525,6 @@ accept Cadwell's Silver
 step
 goto 72.80,22.40
 'Use Light of Meridia |q Cadwell's Silver /Use the Light of Meridia |future  |next Extra's\\Extra's\\Main Quests Only\\Ebonheart Pact\\Bleakrock Isle
-|tip Manually skip to the next step.
 |only Aldmeri Dominion
 step
 goto the_daggerfall_harborage 71.12,53.92
@@ -25582,7 +25552,6 @@ accept Cadwell's Silver
 step
 goto 53.76,72.17
 'Use Light of Meridia |q Cadwell's Silver /Use the Light of Meridia |future |next Extra's\\Extra's\\Main Quests Only\\Aldmeri Dominion\\Khenarthi's Roost
-|tip Manually skip to the next step.
 |only Daggerfall Covenant
 step
 goto the_ebonheart_harborage_base 65.57,35.55
@@ -25610,7 +25579,6 @@ accept Cadwell's Silver
 step
 goto 87.70,39.05
 'Use Light of Meridia |q Cadwell's Silver/Use the Light of Meridia |future  |next Extra's\\Extra's\\Main Quests Only\\Daggerfall Covenant\\Stros M'Kai
-|tip Manually skip to the next step.
 |only Ebonheart Pact
 ]])
 
@@ -25689,8 +25657,13 @@ talk General Thoron |q Reporting for Duty/Talk to General Thoron
 step
 goto 46.24,47.57
 talk General Atahba
-turnin Reporting for Duty |next Aldmeri Dominion Extra's\\Auridon
+turnin Reporting for Duty
 |only Aldmeri Dominion
+step
+goto 47.06,55.73
+'Use Eastern Elsweyr Wayshrine
+'Travel to Vulkhel Guard in Auridon
+|tip Manually skip to the next step.
 step
 goto northhighrockgate_base 42.67,69.04
 talk Zahreh

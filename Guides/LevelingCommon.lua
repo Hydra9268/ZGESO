@@ -89,7 +89,7 @@ goto 85.88,65.96
 'Follow Lyris |q Soul Shriven in Coldharbour/Follow Lyris 
 step
 goto 85.08,66.34
-talk Lyris Titanborn |q Soul Shriven in Coldharbour/Talk to Lyris
+talk Lyris Titanborn |q Soul Shriven in Coldharbour/Talk to Lyris |future
 step
 goto 87.92,61.39
 'Open The Bleeding Forge |q Soul Shriven in Coldharbour/Continue through the Bleeding Forge
@@ -537,7 +537,7 @@ step
 goto 17.04,53.88
 |tip Leave the ship.
 kill Sea Viper enemies
-'Take the Lodestone from the Sea Vipers |q Cast Adrift/Take Lodestone from Sea Vipers
+'Collect the Lodestone from the Sea Vipers |q Cast Adrift/Take Lodestone from Sea Vipers
 step
 goto 16.32,55.50
 click Skyshard |achieve 431/3
