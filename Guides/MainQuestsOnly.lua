@@ -208,19 +208,28 @@ talk Captain Tremouille
 accept Storm on the Horizon
 |only not Aldmeri Dominion
 step
-goto 54.94,41.17
-'Use Vulkhel Guard Wayshrine
-'Travel to Khenarthi's Roost in Khenarthi's Roost |q Storm on the Horizon |future
+goto 59.43,57.56 |q Storm on the Horizon/Talk to the Boatswain
+|only not Aldmeri Dominion
+step
+goto 73.43,59.01
+talk Sugar Claws |q Storm on the Horizon/Talk to the Boatswain |future
 |tip Manually skip to the next step.
 |only not Aldmeri Dominion
 step
 goto khenarthisroost_base 55.69,76.73
 talk Razum-dar
 accept Storm on the Horizon
+|only Aldmeri Dominion
 step
 goto khenarthisroost_base 55.69,76.73
 talk Razum-dar |q Storm on the Horizon/Talk to Razum-dar
 'Tell him _[Lie] I'm a Dominion soldier who survived the shipwreck._
+|only Aldmeri Dominion
+step
+goto 55.65,79.10
+talk Razum-dar |q Storm on the Horizon/Talk to Razum-dar
+'Tell him _[Lie] I'm a Dominion soldier who survived the shipwreck._
+|only not Aldmeri Dominion
 step
 goto 55.78,78.79
 talk Commander Karinith |q Storm on the Horizon/Talk to Commander Karinith
@@ -405,7 +414,7 @@ kill Sea Viper enemies
 step
 goto 13.09,49.67 |q Cast Adrift/Stop the Maormer Ritual
 step
-goto 11.52,51.62 |q Cast Adrift/Stop the Maormer Ritual
+goto 12.38,50.93 |q Cast Adrift/Stop the Maormer Ritual
 step
 goto 11.17,49.57
 'Use the Lodestone on Virkvild |q Cast Adrift/Free Virkvild
@@ -883,10 +892,12 @@ turnin The Harborage
 |only Aldmeri Dominion
 step
 goto 26.45,24.58 |q Anchors from the Harbour/Find Merric and Aelif
+|only Aldmeri Dominion
 step
 goto 28.35,77.76
 'Open Auridon |q Anchors from the Harbour/Find Merric and Aelif
 |tip Manually skip to the next step.
+|only Aldmeri Dominion
 step
 goto auridon_base 70.19,89.60
 talk Merric at-Aswala |q Anchors from the Harbour/Find Merric and Aelif
@@ -900,12 +911,16 @@ talk Aelif |q Anchors from the Harbour/Talk to Aelif
 |only Aldmeri Dominion
 step
 goto 70.28,93.48 |q Anchors from the Harbour/Return to Sees-All-Colors
+|only Aldmeri Dominion
 step
 goto vulkhelguard_base 81.32,60.80 |q Anchors from the Harbour/Return to Sees-All-Colors
+|only Aldmeri Dominion
 step
 goto 48.12,62.51 |q Anchors from the Harbour/Return to Sees-All-Colors
+|only Aldmeri Dominion
 step
 goto 20.91,62.51 |q Anchors from the Harbour/Return to Sees-All-Colors
+|only Aldmeri Dominion
 step
 goto vulkhelguard_base 8.44,59.11
 |tip She's inside the Fighters Guild.
@@ -919,7 +934,11 @@ lorebook Ayleid Inscriptions Translated/1/19/1
 step
 goto 54.81,40.07 |q To Tanzelwil/Find the Queen's Entourage at Tanzelwil
 step
-goto auridon_base 61.97,82.44
+goto 58.85,24.72 |q To Tanzelwil/Find the Queen's Entourage at Tanzelwil
+step
+goto auridon_base 60.82,81.30 |q To Tanzelwil/Find the Queen's Entourage at Tanzelwil
+step
+goto 61.97,82.44
 lorebook History of the Fighters Guild Pt. 2/1/19/4
 |only Aldmeri Dominion
 step
@@ -1075,6 +1094,12 @@ step
 goto 54.26,63.93
 lorebook Trials of St. Alessia/1/9/8
 |only Aldmeri Dominion
+step
+goto 46.02,66.29 |q To Mathiisen/Meet with Razum-dar near Mathiisen
+|only not Aldmeri Dominion
+step
+goto 51.58,61.02 |q To Mathiisen/Meet with Razum-dar near Mathiisen
+|only not Aldmeri Dominion
 step
 goto 51.03,56.58
 wayshrine Mathiisen
@@ -1792,17 +1817,25 @@ step
 goto 51.10,30.62
 wayshrine College
 step
+goto 49.12,31.14 |q To Firsthold/Report to a First Auridon Marine at Firsthold
+|only not Aldmeri Dominion
+step
+goto 46.50,20.40 |q To Firsthold/Report to a First Auridon Marine at Firsthold
+|only not Aldmeri Dominion
+step
 goto 52.23,29.76
 lorebook Varieties of Faith: The Bretons/1/25/4
 |only Aldmeri Dominion
 step
 goto 53.82,24.08 |q To Firsthold/Report to a First Auridon Marine at Firsthold
+|only Aldmeri Dominion
 step
 goto 54.01,24.30
 lorebook The Rise of Queen Ayrenn/1/25/7
 |only Aldmeri Dominion
 step
 goto 49.82,19.67 |q To Firsthold/Report to a First Auridon Marine at Firsthold
+|only Aldmeri Dominion
 step
 goto 41.91,19.91
 lorebook Life in the Eagle's Shadow/1/25/9
@@ -1816,12 +1849,14 @@ lorebook Regarding the Ebonheart Pact/1/25/2
 |only Aldmeri Dominion
 step
 goto 40.82,20.74 |lorebook Crimes of the Daggerfall Covenant/1/25/1
+|only Aldmeri Dominion
 step
 goto 33.50,14.50
 lorebook Crimes of the Daggerfall Covenant/1/25/1
 |only Aldmeri Dominion
 step
 goto 40.87,20.70 |q To Firsthold/Report to a First Auridon Marine at Firsthold
+|only Aldmeri Dominion
 step
 goto 36.97,21.29 |q To Firsthold/Report to a First Auridon Marine at Firsthold
 step
@@ -1930,7 +1965,7 @@ step
 'Grind the 3 Domens in this zone till Fighters Guild Rank 5 |q The Great Tree/Talk to Captain Jimila in Skywatch
 |tip They look like saw blades on your map.
 |tip Manually skip to the next step.
-|only not Aldmeri Dominion
+|only Aldmeri Dominion
 step
 'Open Auridon Map
 'Travel to Skywatch Wayshrine |q The Great Tree/Talk to Captain Jimila in Skywatch
@@ -2392,6 +2427,7 @@ step
 goto 30.10,24.54
 'Open Upper Level |q The Great Tree/Talk to King Camoran Aeradan in Elden Root
 |tip Manually skip to the next step.
+|only Aldmeri Dominion
 step
 goto eldenrootcrafting_base 77.78,68.15
 'Open Throne Room |q The Great Tree/Talk to King Camoran Aeradan in Elden Root
@@ -2518,11 +2554,15 @@ step
 goto 51.21,26.58 |lorebook The House of Troubles/1/8/4
 |only Aldmeri Dominion
 step
+goto 59.45,30.78 |q Lost in Study |future
+|only not Aldmeri Dominion
+step
 goto 51.86,27.18
 lorebook The House of Troubles/1/8/4
 |only Aldmeri Dominion
 step
 goto 53.53,24.72 |q Lost in Study |future
+|only Aldmeri Dominion
 step
 goto 55.15,27.08
 wayshrine Cormount
@@ -3542,8 +3582,10 @@ lorebook The Doors of Oblivion, Part 2/1/17/4
 |only Aldmeri Dominion
 step
 goto 67.63,84.21 |q The Spinner's Tale/Talk to Maruin
+|only Aldmeri Dominion
 step
 goto 64.93,78.48 |q The Spinner's Tale/Talk to Maruin
+|only Aldmeri Dominion
 step
 goto 62.71,73.09
 wayshrine Labyrinth
@@ -4244,7 +4286,7 @@ goto 59.29,41.31
 wayshrine Falinesti
 step
 goto 59.80,34.77
-|tip He approaches you.
+|tip Cross bridge do not drop down. He approaches you.
 talk Indaenir
 accept The Blight of the Bosmer
 step
@@ -4762,7 +4804,7 @@ step
 'Travel to Dra'bul Wayshrine |q The Hound's Plan/Find the Silvenar in Jathsogur
 |tip Manually skip to the next step.
 step
-goto 41.19,58.72 |q The Dangerous Past |future
+goto 41.19,58.72 |q The Hound's Plan/Find the Silvenar in Jathsogur
 step
 goto vulkwasten_base 46.05,79.04
 wayshrine Vulkwasten
@@ -4923,6 +4965,7 @@ step
 'Open Malabal Tor Map
 'Travel to Vulkwasten in Malabal Tor |q The Hound's Plan/Find the Silvenar in Jathsogur
 |tip Manually skip to the next step.
+|only Aldmeri Dominion
 step
 goto malabaltor_base 58.15,55.25 |q The Hound's Plan/Find the Silvenar in Jathsogur
 step
@@ -5156,6 +5199,7 @@ goto 71.92,54.72
 step
 goto 61.47,39.77
 kill Varen Doppelgangers |q Halls of Torment/Defeat Sai's Torturers
+|only Aldmeri Dominion
 step
 goto 61.47,39.77
 kill Duchess of Anguish |q Halls of Torment/Defeat the Duchess of Anguish
@@ -6440,6 +6484,8 @@ goto 44.54,73.18 |q To Dune/Reach the City of Dune
 step
 goto 52.69,62.09 |q To Dune/Reach the City of Dune
 step
+goto 53.82,58.88 |q To Dune/Reach the City of Dune
+step
 goto 54.53,49.04 |q To Dune/Reach the City of Dune
 step
 goto 58.44,48.77
@@ -7325,9 +7371,7 @@ accept Cadwell's Gold
 |only Daggerfall Covenant
 step
 goto 53.70,72.08
-'Use Light of Meridia |q Cadwell's Gold/Use the Light of Meridia |future
-'Congratulations, you're now exploring the Ebonheart Pact
-|tip Manually skip to the next step. |next Extra's\\Extra's\\Main Quests Only\\Ebonheart Pact\\Bleakrock Isle
+'Use Light of Meridia |q Cadwell's Gold/Use the Light of Meridia |future |next Extra's\\Extra's\\Main Quests Only\\Ebonheart Pact\\Bleakrock Isle
 |only Daggerfall Covenant
 step
 goto dune_base 33.13,25.82
@@ -15645,9 +15689,7 @@ accept Cadwell's Gold
 |only Ebonheart Pact
 step
 goto 87.70,39.03
-'Use Light of Meridia |q Cadwell's Gold/Use the Light of Meridia |future
-'Congratulations, you're now exploring the Aldmeri Dominion
-|tip Manually skip to the next step. |next Extra's\\Extra's\\Main Quests Only\\Aldmeri Dominion\\Khenarthi's Roost
+'Use Light of Meridia |q Cadwell's Gold/Use the Light of Meridia |future |next Extra's\\Extra's\\Main Quests Only\\Aldmeri Dominion\\Khenarthi's Roost
 |only Ebonheart Pact
 step
 goto bangkorai_base 67.90,19.30
@@ -23287,8 +23329,7 @@ accept Cadwell's Gold
 |only Aldmeri Dominion
 step
 goto 71.98,22.09
-'Use Light of Meridia |q Cadwell's Gold/Use the Light of Meridia |future  
-|tip Manually skip to the next step. |next Extra's\\Extra's\\Main Quests Only\\Daggerfall Covenant\\Stros M'Kai
+'Use Light of Meridia |q Cadwell's Gold/Use the Light of Meridia |future |next Extra's\\Extra's\\Main Quests Only\\Daggerfall Covenant\\Stros M'Kai
 |only Aldmeri Dominion
 step
 goto therift_base 81.15,65.24
