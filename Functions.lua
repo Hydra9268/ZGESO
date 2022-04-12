@@ -669,7 +669,7 @@ function Utils.DistanceOffsetForGoto(dist,selfdist)
 			if  GetCurrentMapIndex() == Enums.SummersetMap then	return 1.5
 
         elseif  GetCurrentMapIndex() == Enums.CraglornMap or
- 		        GetCurrentMapIndex() == Enums.SouthernElsweyrMap then   return 2
+		        GetCurrentMapIndex() == Enums.SouthernElsweyrMap then   return 2
 
 		elseif 	GetCurrentMapIndex() == Enums.ArtaeumMap or
 		        GetCurrentMapIndex() == Enums.KhenarthisRoostMap then	return 2.5
@@ -687,6 +687,7 @@ function Utils.DistanceOffsetForGoto(dist,selfdist)
 
 		elseif 	GetCurrentMapIndex() == Enums.BetnikhMap or
 			    GetCurrentMapIndex() == Enums.BleakrockIsleMap or 
+				GetCurrentMapIndex() == Enums.CyrodiilMap or
                 GetCurrentMapIndex() == Enums.StonefallsMap then	return 5
 
 		elseif 	GetCurrentMapIndex() == Enums.ClockworkCityMap or
@@ -729,7 +730,7 @@ function Utils.DistanceOffsetForIsComplete()
 		    if GetCurrentMapIndex() == Enums.SummersetMap then		return 1.5
 
         elseif  GetCurrentMapIndex() == Enums.CraglornMap or
- 		        GetCurrentMapIndex() == Enums.SouthernElsweyrMap then   return 2
+		        GetCurrentMapIndex() == Enums.SouthernElsweyrMap then   return 2
 
 		elseif 	GetCurrentMapIndex() == Enums.ArtaeumMap or
 		        GetCurrentMapIndex() == Enums.KhenarthisRoostMap then	return 2.5
@@ -747,6 +748,7 @@ function Utils.DistanceOffsetForIsComplete()
 
 		elseif 	GetCurrentMapIndex() == Enums.BetnikhMap or
 			    GetCurrentMapIndex() == Enums.BleakrockIsleMap or
+				GetCurrentMapIndex() == Enums.CyrodiilMap or
                 GetCurrentMapIndex() == Enums.StonefallsMap then	return 5
 
 		elseif 	GetCurrentMapIndex() == Enums.ClockworkCityMap or
