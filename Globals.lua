@@ -20,6 +20,7 @@ Enums = {
 	ClockworkCityMap = 31,
 	ColdharbourMap = 23,
 	CraglornMap = 25,
+	CyrodiilMap = 37,
 	FargraveMap = 44,
 	DeadlandsMap = 45,
 	DeshaanMap = 10,
