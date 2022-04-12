@@ -1470,7 +1470,7 @@ ZGV.MapData = {
 		-- Daggerfall Covenant
 	    -- Stros M'Kai
 		["porthunding_base"] =                  { name = "Port Hunding",                            id = 148, xoffset = 0.159916, yoffset = 0.537448, scale = 0.009544, },
-		["thegrave_base"] =                     { name = "The Grave",                               id = 149, xoffset = 0.166406, yoffset = 0.548359, scale = 0.002656, },
+		["thegrave_base"] =                     { name = "The Grave",                               id = 149, xoffset = 0.166406, yoffset = 0.548359, scale = 0.004656, },
 		["strosmkai_base"] =                    { name = "Stros M'Kai",                             id = 150, xoffset = 0.149687, yoffset = 0.532656, scale = 0.022812, },
 		["goblinminesstart_base"] =             { name = "Goblin Mines",                            id = 151, xoffset = 0.165391, yoffset = 0.532109, scale = 0.003500, },
 		["goblinminesend_base"] =               { name = "Goblin Mines",                            id = 151, xoffset = 0.161484, yoffset = 0.534375, scale = 0.003906, },
