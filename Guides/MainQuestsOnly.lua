@@ -1589,17 +1589,12 @@ goto 35.19,65.10
 'Advance Into the Foundry |q Daughter of Giants/Advance into the Foundry
 |only Aldmeri Dominion
 step
-<<<<<<< HEAD
 goto 36.61,67.19 |q Daughter of Giants/Resolve Lyris's Uncertainty
 |only Aldmeri Dominion
 step
 goto 39.68,69.44
 |tip Watch dialogue between Lyris Titanborn and Abnur Tharn.
 'Examine Lyris' Axe |q Daughter of Giants/Resolve Lyris's Uncertainty
-=======
-goto 39.68,69.44
-'Examine Lyris' Axe |q Daughter of Giants/Resolve Lyris's Uncertainty |future
->>>>>>> bb8dcf7211735ebc9aaed720d7b7abaefaf5e31a
 |only Aldmeri Dominion
 step
 goto 39.68,69.44
@@ -1776,10 +1771,7 @@ goto 27.87,33.41 |q To Firsthold/Report to a First Auridon Marine at Firsthold
 step
 goto 23.94,28.11
 lorebook Fang of the Sea Vipers/1/25/6
-<<<<<<< HEAD
 |only Aldmeri Dominion
-=======
->>>>>>> bb8dcf7211735ebc9aaed720d7b7abaefaf5e31a
 step
 goto 24.68,26.99
 wayshrine Greenwater
@@ -2192,10 +2184,7 @@ wayshrine Elden Root Temple
 step
 goto grahtwood_base 58.46,41.06
 lorebook The Old Ways/1/15/5
-<<<<<<< HEAD
 |only Aldmeri Dominion
-=======
->>>>>>> bb8dcf7211735ebc9aaed720d7b7abaefaf5e31a
 step
 goto 59.37,31.07 |lorebook Reality and Other Falsehoods/1/15/7
 |only Aldmeri Dominion
@@ -2210,25 +2199,15 @@ step
 goto 57.91,33.98 |q The Great Tree/Talk to King Camoran Aeradan in Elden Root
 |only Aldmeri Dominion
 step
-<<<<<<< HEAD
 goto 58.40,39.97 |q The Great Tree/Talk to King Camoran Aeradan in Elden Root
 |only Aldmeri Dominion
-=======
-goto 57.91,33.98 |q The Great Tree/Talk to King Camoran Aeradan in Elden Root
-step
-goto 58.40,39.97 |q The Great Tree/Talk to King Camoran Aeradan in Elden Root
->>>>>>> bb8dcf7211735ebc9aaed720d7b7abaefaf5e31a
 step
 goto 61.89,39.63
 'Use Elden Root Temple
 'Travel to Haven Wayshrine |q The Great Tree/Talk to King Camoran Aeradan in Elden Root
 |tip Manually skip to the next step.
 step
-<<<<<<< HEAD
 goto haven_base 36.57,36.52 |q The Great Tree/Talk to King Camoran Aeradan in Elden Root |tip Go through the doors.
-=======
-goto haven_base 36.57,36.52 |q The Great Tree/Talk to King Camoran Aeradan in Elden Root
->>>>>>> bb8dcf7211735ebc9aaed720d7b7abaefaf5e31a
 step
 goto 23.62,15.97
 'Open Haven City Gates |q The Great Tree/Talk to King Camoran Aeradan in Elden Root
@@ -2725,8 +2704,6 @@ lorebook Common Arms of Valenwood/1/26/4
 step
 goto 65.86,72.71 |q The Grip of Madness |future
 step
-goto 65.86,72.71 |lorebook The Book of the Great Tree/1/26/3
-step
 goto 57.64,71.61
 wayshrine Gray Mire
 step
@@ -2905,8 +2882,6 @@ step
 goto 37.79,39.44 |q A Lasting Winter |future
 |only Aldmeri Dominion
 step
-goto 37.79,39.44 |q A Lasting Winter |future
-step
 goto 34.62,38.78 |q A Lasting Winter |future
 |only Aldmeri Dominion
 step
@@ -2934,7 +2909,6 @@ lorebook Monomyth: The Myth of Aurbis/1/10/6
 |only Aldmeri Dominion
 step
 goto 33.31,40.64 |lorebook Monomyth: "Shezarr's Song"/1/10/5
-<<<<<<< HEAD
 |only Aldmeri Dominion
 step
 goto 35.84,42.96 |lorebook Monomyth: "Shezarr's Song"/1/10/5
@@ -2942,12 +2916,6 @@ goto 35.84,42.96 |lorebook Monomyth: "Shezarr's Song"/1/10/5
 step
 goto 36.63,50.39 |lorebook Monomyth: "Shezarr's Song"/1/10/5
 |only Aldmeri Dominion
-=======
-step
-goto 35.84,42.96 |lorebook Monomyth: "Shezarr's Song"/1/10/5
-step
-goto 36.63,50.39 |lorebook Monomyth: "Shezarr's Song"/1/10/5
->>>>>>> bb8dcf7211735ebc9aaed720d7b7abaefaf5e31a
 step
 goto 29.45,56.02
 lorebook Monomyth: "Shezarr's Song"/1/10/5
@@ -2997,20 +2965,10 @@ step
 goto 40.23,54.36 |q A Lasting Winter/Enter the Dig Site
 step
 goto 40.90,54.67 |q A Lasting Winter/Enter the Dig Site
-<<<<<<< HEAD
 step
 goto 42.46,56.09 |q A Lasting Winter/Enter the Dig Site |tip Follow ramp to the ground.
 step
 goto 42.36,52.80 |q A Lasting Winter/Northern Cave |future
-=======
-step
-goto 42.46,56.09 |q A Lasting Winter/Enter the Dig Site |tip Follow ramp to the ground.
-step
-goto 42.36,52.80 |q A Lasting Winter/Northern Cave |future
-step
-goto 42.33,50.09
-'Search the Northern Cave |q A Lasting Winter/Northern Cave
->>>>>>> bb8dcf7211735ebc9aaed720d7b7abaefaf5e31a
 step
 goto 42.33,50.09
 talk Nairume |q A Lasting Winter/Talk to the Frost Creature |future
@@ -3199,17 +3157,12 @@ goto 55.51,26.09 |q Castle of the Worm/Follow Cadwell
 |only Aldmeri Dominion
 step
 goto 55.51,26.09
-<<<<<<< HEAD
 talk Cadwell |q Castle of the Worm/Enter the Keep |future
 |tip Manually skip to the next step.
 |only Aldmeri Dominion
 step
 goto 64.51,25.00
 'Open Inner Keep |q Castle of the Worm/Enter the Keep
-=======
-talk Cadwell
-'Open Inner Keep |q Castle of the Worm/Enter the Keep |future
->>>>>>> bb8dcf7211735ebc9aaed720d7b7abaefaf5e31a
 |only Aldmeri Dominion
 step
 goto castleoftheworm3_base 45.97,25.45
@@ -3336,14 +3289,9 @@ ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Aldmeri Dominion\\Greensh
 loadingimage loadscreen_greenshade_01.dds
 description As the region of Valenwood farthest from all other realms, Greenshade's graht-oak forest is virtually pristine, the Tamriel jungle at its most primeval. Its capital is the trading port of Woodhearth.
 step
-<<<<<<< HEAD
 goto marbruk_base 73.57,35.77
 lorebook Monomyth: The Heart of the World/1/10/7
 |only Aldmeri Dominion
-=======
-goto marbruk_base 33.02,62.08
-wayshrine Marbruk
->>>>>>> bb8dcf7211735ebc9aaed720d7b7abaefaf5e31a
 step
 goto 55.29,46.50
 talk Captain Sarandil |q The Staff of Magnus/Find Captain Sarandil |future
@@ -4224,15 +4172,8 @@ goto 67.03,36.81
 step
 goto 67.02,37.99
 'Use Stone Table
-<<<<<<< HEAD
 talk Indaenir |q Retaking the Pass/Interrogate the Skulls with Indaenir |future
 |tip Manually skip to the next step.
-=======
-'Let Indaenir Confer with the Skulls |q Retaking the Pass/Let Indaenir Confer with the Skulls
-step
-goto 67.03,37.88
-talk Indaenir |q Retaking the Pass/Interrogate the Skulls with Indaenir
->>>>>>> bb8dcf7211735ebc9aaed720d7b7abaefaf5e31a
 step
 goto 67.05,37.96
 'Use Skull of Ethril |q Retaking the Pass/Talk to Skull of Ethril and Decide Her Fate
@@ -4612,34 +4553,11 @@ goto 47.10,25.39
 step
 goto 48.52,28.66 |q To Velyn Harbor/Go to Velyn Harbor
 step
-<<<<<<< HEAD
 goto 42.47,26.26 |q To Velyn Harbor/Go to Velyn Harbor
 step
 goto 37.07,19.79 |q To Velyn Harbor/Go to Velyn Harbor
 step
 goto 38.65,16.71 |q To Velyn Harbor/Go to Velyn Harbor
-=======
-goto 41.50,25.14 |lorebook Spirit of the Daedra/1/17/6
-step
-goto 37.31,25.25 |lorebook Spirit of the Daedra/1/17/6
-step
-goto 37.70,27.35
-lorebook Spirit of the Daedra/1/17/6
-step
-goto 37.31,25.25 |lorebook Varieties of Daedra, Part 2/1/17/8
-step
-goto 34.95,22.91 |lorebook Varieties of Daedra, Part 2/1/17/8
-step
-goto 33.78,23.71
-lorebook Varieties of Daedra, Part 2/1/17/8
-step
-goto 34.33,18.87
-lorebook Antecedents of Dwemer Law/1/12/8
-step
-goto 37.69,19.06 |q To Velyn Harbor/Go to Velyn Harbor
-step
-goto 38.43,16.45 |q To Velyn Harbor/Go to Velyn Harbor
->>>>>>> bb8dcf7211735ebc9aaed720d7b7abaefaf5e31a
 step
 goto 34.47,15.50
 wayshrine Moonhenge
@@ -4766,21 +4684,6 @@ step
 goto 36.66,57.57
 wayshrine Dra'bul
 step
-<<<<<<< HEAD
-=======
-goto 37.25,59.33 |lorebook Opusculus Lamae Bal ta Mezzamortie/1/8/7
-step
-goto 36.73,59.62
-|tip Up the hill.
-lorebook Opusculus Lamae Bal ta Mezzamortie/1/8/7
-step
-goto 38.12,62.30
-|tip Drop down carefully.
-lorebook Ancient Scrolls of the Dwemer I-B/1/12/10
-step
-goto 34.89,58.55 |q The Drublog of Dra'bul/Talk to the Green Lady in Dra'bul
-step
->>>>>>> bb8dcf7211735ebc9aaed720d7b7abaefaf5e31a
 goto 38.48,57.92 |q The Drublog of Dra'bul/Talk to the Green Lady in Dra'bul
 step
 goto 40.41,55.60
@@ -4964,12 +4867,8 @@ kill Dwarven Spiders
 |only Aldmeri Dominion
 step
 goto 44.87,65.55
-<<<<<<< HEAD
 'Use Crystal Stand |q The Dangerous Past/Find a Way Through the Doors
 |tip Manually skip to the next step.
-=======
-'Use Crystal Stand |q The Dangerous Past/.*TRACKER GOAL TEXT.* |count 4
->>>>>>> bb8dcf7211735ebc9aaed720d7b7abaefaf5e31a
 |only Aldmeri Dominion
 step
 goto 44.74,71.65
@@ -5064,11 +4963,6 @@ goto 74.67,71.77 |q The Prisoner of Jathsogur/Find the Runestone of Malacath
 step
 goto 74.29,74.59 |q The Prisoner of Jathsogur/Find the Runestone of Malacath
 step
-goto 75.48,74.78
-lorebook Ode to the Tundrastriders/1/18/6
-step
-goto 74.29,74.59 |q The Prisoner of Jathsogur/Find the Runestone of Malacath
-step
 goto 74.34,76.83 |q The Prisoner of Jathsogur/Find the Runestone of Malacath
 step
 goto 73.02,80.27
@@ -5152,19 +5046,7 @@ step
 goto 75.12,51.30
 wayshrine Valeguard
 step
-<<<<<<< HEAD
 goto 75.14,49.27 |q A Wedding to Attend/Go to Silvenar
-=======
-goto 72.82,49.37
-lorebook The Voice of the People/1/21/1
-step
-goto 76.15,51.22 |q A Wedding to Attend/Go to Silvenar
-step
-goto 77.18,53.29 |lorebook Green Lady, My Lady/1/21/3
-step
-goto 78.30,52.40
-lorebook Green Lady, My Lady/1/21/3
->>>>>>> bb8dcf7211735ebc9aaed720d7b7abaefaf5e31a
 step
 goto 79.91,40.85 |q A Wedding to Attend/Go to Silvenar
 step
@@ -6137,18 +6019,9 @@ step
 step
 goto 37.29,19.76 |q Hallowed To Arenthia/Talk to Cariel in Arenthia
 step
-<<<<<<< HEAD
 goto 42.97,24.55 |q Hallowed To Arenthia/Talk to Cariel in Arenthia
 step
 goto 48.00,23.34 |q Hallowed To Arenthia/Talk to Cariel in Arenthia
-=======
-goto 43.06,24.51 |q Hallowed To Arenthia/Talk to Cariel in Arenthia
-step
-goto 47.35,23.86 |q Hallowed To Arenthia/Talk to Cariel in Arenthia
-step
-goto 48.06,21.03
-lorebook Song of the Askelde Men/1/18/8
->>>>>>> bb8dcf7211735ebc9aaed720d7b7abaefaf5e31a
 step
 goto 49.83,16.60
 talk Cariel
@@ -6195,9 +6068,6 @@ talk Cariel |q The Colovian Occupation/Meet Cariel Behind the Tower
 step
 goto 43.61,76.79
 'Open Overwatch Tower |q The Colovian Occupation/Enter the Tower
-step
-goto 43.00,78.09
-lorebook The Warrior's Charge/1/18/9
 step
 goto 43.92,76.91
 'Wait for Gavo |q The Colovian Occupation/Wait for Gavo
@@ -6331,12 +6201,6 @@ goto 36.66,52.09 |q To Rawl'kha/Talk to a Moon Priest of Rawl'kha
 step
 goto rawlkha_base 37.91,53.64
 wayshrine Rawl'kha
-<<<<<<< HEAD
-=======
-step
-goto rawlkha_base 55.20,60.93
-lorebook The Red Book of Riddles/1/14/7
->>>>>>> bb8dcf7211735ebc9aaed720d7b7abaefaf5e31a
 step
 goto 71.00,52.07
 talk Hadam-do
@@ -6476,21 +6340,9 @@ goto 51.45,15.24
 'Open Rawl'kha |q The Path to Moonmont/Meet the Champions at Moonmont
 |tip Manually skip to the next step.
 step
-<<<<<<< HEAD
 goto rawlkha_base 52.47,57.65 |q The Path to Moonmont/Meet the Champions at Moonmont
 step
 goto reapersmarch_base 43.76,60.06 |q The Path to Moonmont/Meet the Champions at Moonmont
-=======
-goto reapersmarch_base 43.96,59.98 |lorebook 16 Accords of Madness, Vol. VI/1/14/8
-step
-goto 44.63,61.74
-lorebook 16 Accords of Madness, Vol. VI/1/14/8
-step
-goto 43.96,59.98 |lorebook Crow and Raven: Three Short Fables/1/14/9
-step
-goto reapersmarch_base 31.62,66.03
-lorebook Crow and Raven: Three Short Fables/1/14/9
->>>>>>> bb8dcf7211735ebc9aaed720d7b7abaefaf5e31a
 step
 goto 30.76,65.54 |q The Path to Moonmont/Meet the Champions at Moonmont
 step
@@ -7532,14 +7384,10 @@ goto 46.20,40.56
 'Open The Grave |q Innocent Scoundrel/Enter the Grave |future
 step
 goto thegrave_base 32.22,52.81 |q Innocent Scoundrel/Find Jakarn
-<<<<<<< HEAD
 step
 goto 23.88,52.22 |q Innocent Scoundrel/Find Jakarn
-=======
->>>>>>> bb8dcf7211735ebc9aaed720d7b7abaefaf5e31a
 step
 goto 47.45,44.68
-|tip Jump down the hole in the floor.
 'Find Jakarn |q Innocent Scoundrel/Find Jakarn
 |tip Jump down the hole in the floor.
 step
@@ -10558,12 +10406,8 @@ kill Dwarven Spiders
 |only Daggerfall Covenant
 step
 goto 44.87,65.55
-<<<<<<< HEAD
 'Use Crystal Stand |q The Dangerous Past/Find a Way Through the Doors
 |tip Manually skip to the next step.
-=======
-'Use Crystal Stand |q The Dangerous Past/.*TRACKER GOAL TEXT.* |count 4
->>>>>>> bb8dcf7211735ebc9aaed720d7b7abaefaf5e31a
 |only Daggerfall Covenant
 step
 goto 44.74,71.65
@@ -11540,31 +11384,27 @@ step
 goto 37.63,24.31
 'Use the Forge Tools to Stoke the Fire |q The Prismatic Core/Stoke a Small Fire
 |tip The Forge Valve to the left, then the Bellows on the right twice.
-|only Aldmeri Dominion
+|only Daggerfall Covenant
 step
 goto 37.63,24.31
 'Wait for Merric |q The Prismatic Core/Wait for Merric
-|only Aldmeri Dominion
+|only Daggerfall Covenant
 step
 goto 37.63,24.31
 |tip Merric will tell you how hot he wants the fire.
 'Use the Forge Tools to Stoke the Fire |q The Prismatic Core/Stoke a Medium-Sized Fire
 |tip The Forge Valve to the left, the coals in the middle, and then the Bellows on the right three times.
-|only Aldmeri Dominion
+|only Daggerfall Covenant
 step
 goto 37.63,24.31
 'Wait for Merric |q The Prismatic Core/Wait for Merric
-|only Aldmeri Dominion
+|only Daggerfall Covenant
 step
 goto 37.63,24.31
 |tip Merric will tell you how hot he wants the fire.
 'Use the Forge Tools to Stoke the Fire |q The Prismatic Core/Stoke a Large Fire
 |tip The Forge Valve to the left three times, the coals in the middle, and then the Bellows on the right three times.
-<<<<<<< HEAD
 |only Daggerfall Covenant
-=======
-|only Aldmeri Dominion
->>>>>>> bb8dcf7211735ebc9aaed720d7b7abaefaf5e31a
 step
 goto 37.63,24.31
 'Wait for Merric |q The Prismatic Core/Wait for Merric
@@ -18535,12 +18375,8 @@ kill Dwarven Spiders
 |only Ebonheart Pact
 step
 goto 44.87,65.55
-<<<<<<< HEAD
 'Use Crystal Stand |q The Dangerous Past/Find a Way Through the Doors
 |tip Manually skip to the next step.
-=======
-'Use Crystal Stand |q The Dangerous Past/.*TRACKER GOAL TEXT.* |count 4
->>>>>>> bb8dcf7211735ebc9aaed720d7b7abaefaf5e31a
 |only Ebonheart Pact
 step
 goto 44.74,71.65
@@ -19523,31 +19359,27 @@ step
 goto 37.63,24.31
 'Use the Forge Tools to Stoke the Fire |q The Prismatic Core/Stoke a Small Fire
 |tip The Forge Valve to the left, then the Bellows on the right twice.
-|only Aldmeri Dominion
+|only Ebonheart Pact
 step
 goto 37.63,24.31
 'Wait for Merric |q The Prismatic Core/Wait for Merric
-|only Aldmeri Dominion
+|only Ebonheart Pact
 step
 goto 37.63,24.31
 |tip Merric will tell you how hot he wants the fire.
 'Use the Forge Tools to Stoke the Fire |q The Prismatic Core/Stoke a Medium-Sized Fire
 |tip The Forge Valve to the left, the coals in the middle, and then the Bellows on the right three times.
-|only Aldmeri Dominion
-steps
+|only Ebonheart Pact
+step
 goto 37.63,24.31
 'Wait for Merric |q The Prismatic Core/Wait for Merric
-|only Aldmeri Dominion
+|only Ebonheart Pact
 step
 goto 37.63,24.31
 |tip Merric will tell you how hot he wants the fire.
 'Use the Forge Tools to Stoke the Fire |q The Prismatic Core/Stoke a Large Fire
 |tip The Forge Valve to the left three times, the coals in the middle, and then the Bellows on the right three times.
-<<<<<<< HEAD
 |only Ebonheart Pact
-=======
-|only Aldmeri Dominion
->>>>>>> bb8dcf7211735ebc9aaed720d7b7abaefaf5e31a
 step
 goto 37.63,24.31
 'Wait for Merric |q The Prismatic Core/Wait for Merric
@@ -23722,16 +23554,6 @@ talk Projection of Kireth Vanos
 |tip She walks up to you it might take a minute for her to show up.
 accept Through the Daedric Lens
 step
-<<<<<<< HEAD
-=======
-goto 40.62,66.32 |lorebook Chaotic Creatia: The Azure Plasm/1/29/3
-step
-goto 38.67,66.96
-lorebook Chaotic Creatia: The Azure Plasm/1/29/3
-step
-goto 40.62,66.32 |q Through the Daedric Lens/.*Destroy the Daedric Lenses.* |count 1
-step
->>>>>>> bb8dcf7211735ebc9aaed720d7b7abaefaf5e31a
 goto 40.05,75.66
 'Destroy Daedric Lens |q Through the Daedric Lens/.*Destroy the Daedric Lenses.* |count 1
 step
@@ -25158,7 +24980,6 @@ step
 goto 46.24,47.57
 talk General Atahba
 turnin Reporting for Duty
-<<<<<<< HEAD
 |only Aldmeri Dominion
 step
 goto 47.06,55.73
@@ -25169,17 +24990,6 @@ goto 47.06,55.73
 step
 goto southhighrockgate_base 44.58,54.43
 talk Veronard Liancourt
-=======
-|only Aldmeri Dominion
-step
-goto 47.06,55.73
-'Use Eastern Elsweyr Wayshrine
-'Travel to Vulkhel Guard in Auridon
-|tip Manually skip to the next step.
-step
-goto northhighrockgate_base 42.67,69.04
-talk Zahreh
->>>>>>> bb8dcf7211735ebc9aaed720d7b7abaefaf5e31a
 accept Welcome to Cyrodiil
 |only Daggerfall Covenant
 step

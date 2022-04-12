@@ -140,23 +140,24 @@ goto 50.22,48.46
 'Use Daedric Switch |q Shattered and Scattered/Use Central Lever
 step
 goto 55.16,42.45
+|tip Jump up the rocks or use Grappling Point.
 'Use Daedric Switch |q Shattered and Scattered/Use Leftmost Lever
 step
 goto 53.75,54.02
-|tip Jump up the rocks.
+|tip Jump up the rocks or use Grappling Point.
 'Use Daedric Switch |q Shattered and Scattered/Use Rightmost Lever
 step
 goto 59.14,48.90
 'Open Doomvault Vulpinaz Anchor Chamber |q Shattered and Scattered/Find Liam Elendis
 step
 goto 79.61,54.99
-'Use Grappling Point
+|tip Use Grappling Point
 kill Xigira |q Shattered and Scattered/Destroy the Anchor Stone Array
 |tip Manually skip to the next step.
 step
 goto 91.26,63.28
 |tip Skip the two Anchor Stones on the ground and just hit the one up top.
-'Use Grappling Point
+|tip Use Grappling Point
 'Destroy the Anchor Stone Array |q Shattered and Scattered/Destroy the Anchor Stone Array
 step
 goto 95.41,64.34

@@ -25018,7 +25018,7 @@ talk Kasura |q The Dragonguard's Legacy/Talk to Kasura
 step
 goto 35.87,38.63
 click Kasura's Notes |q The Dragonguard's Legacy/Read Kasura's Notes
-|only if ZGV.U7tils.GetFaction("player","notvet")=="AD"
+|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
 step
 'Open Audiron Map
 'Travel to _Tanzelwil_ in Auridon |q The Dragonguard's Legacy/Find the Eastern Glyph
