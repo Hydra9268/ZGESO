@@ -2099,7 +2099,10 @@ step
 goto 83.19,75.30
 talk Curinwe |q Unsafe Haven/Ask Refugees about Lord Gharesh-ri
 step
-goto haven_base 58.26,35.18
+goto haven_base 58.26,39.23
+wayshrine Haven
+step
+goto 58.26,35.18
 'Open Haven City Gates |q Unsafe Haven/Talk to Lord Gharesh-ri
 |tip Manually skip to the next step.
 step
@@ -2182,6 +2185,9 @@ step
 goto 38.80,38.66
 talk Lord Gharesh-ri
 turnin Unsafe Haven
+step
+'_Add Waypoint_
+wayshrine Haven
 step
 goto 41.06,18.01
 'Open Haven City Gates |q The Great Tree/Talk to King Camoran Aeradan in Elden Root
@@ -3480,6 +3486,9 @@ talk Arch-Mage Shalidor
 accept Chateau of the Ravenous Rodent
 |only Aldmeri Dominion
 step
+goto 33.72,60.89
+wayshrine Marbruk
+step
 goto 27.99,71.50 |q Frighten the Fearsome/Talk to Hazazi
 step
 goto greenshade_base 66.17,61.57
@@ -4617,6 +4626,11 @@ goto velynharbor_base 38.84,79.97
 talk Lieutenant Ehran
 turnin To Velyn Harbor
 accept House and Home
+step
+goto 33.05,67.99 |q House and Home/.*Rescue Civilians.* |count 1
+step
+goto 26.70,74.53
+wayshrine Velyn Harbor
 step
 goto 28.41,49.29
 |tip Inside the building.
@@ -5922,7 +5936,8 @@ ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Aldmeri Dominion\\Reaper'
 loadingimage loadscreen_reapersmarch_01.dds
 description Once known simply as Northern Valenwood, this region that borders Cyrodiil and Elsweyr has seen so much bloody warfare since the fall of the Second Empire that it's now known as Reaper's March, even to its battle-scarred inhabitants.
 step
-goto reapersmarch_base 20.12,41.44 |q The Dark Mane/Go to Fort Grimwatch
+goto reapersmarch_base 20.26,43.12
+wayshrine Vinedusk
 step
 goto 24.41,29.61
 talk Englor
@@ -7765,6 +7780,9 @@ step
 goto 64.91,59.00
 talk Gruluk gro-Khazun
 accept The Bloodthorn Plot
+step
+goto 48.07,58.67
+wayshrine Stonetooth
 step
 goto 35.99,66.25
 talk Laganakh
@@ -9867,6 +9885,9 @@ talk Dame Dabienne
 turnin False Accusations
 accept To Alcaire Castle
 step
+goto 72.35,42.83
+wayshrine Koeglin
+step
 goto 72.50,42.65
 'Use Koeglin Village Wayshrine
 'Travel to The Harborage in Glenumbra |q Chasing Shadows/Go to the Harborage
@@ -11331,6 +11352,9 @@ talk Darien Gautier
 turnin The Road to Rivenspire
 accept Shornhelm Divided
 step
+goto 46.62,72.45
+wayshrine Oldgate
+step
 goto 46.04,68.52 |q Shornhelm Divided/Find Countess Tamrith in Shornhelm
 step
 goto 47.52,67.70
@@ -12676,6 +12700,7 @@ step
 goto 19.61,58.60
 |tip Inside the building.
 'Examine Dwarven Gear |q Proving the Deed/Examine Gear
+|only Daggerfall Covenant
 step
 goto 21.03,59.41
 'Search Backpack |q Proving the Deed/Examine Pack
@@ -12697,6 +12722,9 @@ step
 goto 26.87,57.53
 talk Aelif |q Proving the Deed/Report to Aelif
 |only Daggerfall Covenant
+step
+goto 29.69,72.52
+wayshrine Sentinel
 step
 goto 43.23,67.74 |q Rise of the Dead/Talk to King Fahara'jad
 step
@@ -13787,6 +13815,11 @@ goto bangkorai_base 46.63,37.17
 wayshrine Eastern Evermore
 step
 goto evermore_base 72.59,31.50 |q Beyond the Call |future
+step
+goto 67.22,24.51
+wayshrine Evermore
+step
+goto 72.40,31.98 |q Beyond the Call |future
 step
 goto bangkorai_base 46.03,30.48
 talk Captain Eugien Gaercroft
@@ -16003,24 +16036,17 @@ talk Captain Rana |q Escape from Bleakrock/Talk to Captain Rana
 step
 goto balfoyen_base 72.87,57.75
 talk Captain Rana
-turnin Escape from Bleakrock |next Extra's\\Extra's\\Main Quests Only\\Ebonheart Pact\\Bal Foyen
-]])
-
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Ebonheart Pact\\Bal Foyen",[[
-loadingimage loadscreen_balfoyen_01.dds
-description Bal Foyen is a small coastal zone neighboring Stonefalls in mainland Morrowind. It has little significance beyond Fort Zeren and its Dockyards. A large number of freed Argonian slaves have settled in the region, largely due to its swampy terrain, where they grow saltrice and herd guar and netches out of the village of Dhalmora.
-step
-'Save 2 Extra Skill Points as you Level |q A Beginning at Bleakrock/Talk to Liezl |future
-|tip Don't spend them yet.
-|tip You'll be able to invest them into the Intimidate and Persuade skills soon, which will save you a lot of time on certain quests as you level.
-|tip Manually skip to the next step.
-|only Ebonheart Pact
-step
-goto balfoyen_base 72.87,57.75
-talk Captain Rana
+turnin Escape from Bleakrock
 accept If By Sea
 step
-goto balfoyen_base 50.33,51.52 |q If By Sea/Get to the Dhalmora Watchtower
+goto dhalmora_base 57.35,53.11 |q If By Sea/Get to the Dhalmora Watchtower
+step
+goto balfoyen_base 63.36,70.58
+wayshrine Dhalmora
+step
+goto dhalmora_base 57.35,53.11 |q If By Sea/Get to the Dhalmora Watchtower
+step
+goto balfoyen_base 50.10,51.67 |q If By Sea/Get to the Dhalmora Watchtower
 step
 goto 53.55,45.39
 'Get to the Dhalmora Watchtower |q If By Sea/Get to the Dhalmora Watchtower
@@ -16135,7 +16161,12 @@ goto balfoyen_base 29.99,67.91
 step
 goto 18.49,56.21
 'Open Stonefalls |q Warning Davon's Watch/Talk to Holgunn
-|tip Manually skip to the next step.
+|tip Manually skip to the next step. |next Extra's\\Extra's\\Main Quests Only\\Ebonheart Pact\\Stonefalls
+]])
+
+ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Ebonheart Pact\\Stonefalls",[[
+loadingimage loadscreen_stonefalls_01.dds
+description The ashfall from the volcanoes of the Velothi Mountains and from great Ash Mountain itself is Stonefalls' bane and benefit, fertilizing the soil where the land isn't too arid to grow crops. It was here that the recent invading army from Akavir met its bloody end.
 step
 'If your are level 10 or higher use Cyrodiil Introduction guide and and complete it to gain a healing spell and 30% gallop mount speed through the Assault War/Alliance Skill Line. |q Welcome to Cyrodiil |future 
 |tip Located in Extra's Main Quest Only Folders.
@@ -16145,15 +16176,7 @@ step
 step
 goto davonswatch_base 65.76,65.70
 talk Holgunn
-turnin Warning Davon's Watch |next Extra's\\Extra's\\Main Quests Only\\Ebonheart Pact\\Stonefalls
-]])
-
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Ebonheart Pact\\Stonefalls",[[
-loadingimage loadscreen_stonefalls_01.dds
-description The ashfall from the volcanoes of the Velothi Mountains and from great Ash Mountain itself is Stonefalls' bane and benefit, fertilizing the soil where the land isn't too arid to grow crops. It was here that the recent invading army from Akavir met its bloody end.
-step
-goto davonswatch_base 65.76,65.70
-talk Holgunn
+turnin Warning Davon's Watch
 accept Legacy of the Ancestors
 step
 goto 65.76,65.70
@@ -16274,6 +16297,7 @@ goto 16.45,30.77
 'Burn Ladders |q Delaying the Daggers/.*Burn Siege Equipment.* |count 6
 step
 goto stonefalls_base 75.64,32.30 |q The Harborage/Find the Harborage
+|only Ebonheart Pact
 step
 goto 77.44,36.58
 'Open The Harborage |q The Harborage/Find the Harborage |future
@@ -16383,9 +16407,9 @@ talk Tanval Indoril
 turnin City Under Siege
 accept Quiet the Ringing Bell
 step
-goto 71.76,60.29 |q Anchors from the Harbour/Find Merric and Aelif
+goto 71.76,60.29 |q Quiet the Ringing Bell/Talk to Garyn Indoril
 step
-goto 66.33,66.27 |q Anchors from the Harbour/Find Merric and Aelif
+goto 66.33,66.27 |q Quiet the Ringing Bell/Talk to Garyn Indoril
 step
 goto stonefalls_base 90.12,43.39
 talk Merric at-Aswala |q Anchors from the Harbour/Find Merric and Aelif
@@ -16604,7 +16628,7 @@ talk Walks-in-Ash
 turnin The Death of Balreth
 accept In With the Tide
 step
-goto 71.61,56.30 |q Long Lost Lore/Enter the Ruins
+goto 71.61,56.30 |q The Coral Heart |future
 step
 goto 72.14,59.14
 'Use Othrenis Wayshrine
@@ -17691,7 +17715,9 @@ step
 'Next to you:
 talk Aerona Berendas |q Bad Medicine/Talk to Aerona
 step
-goto 12.50,43.23 |q Bad Medicine/Find the Old Graveyard Key |tip Leave this building.
+goto 13.57,41.39
+|tip Leave this building.
+wayshrine Quarantine Serk
 step
 goto 9.30,46.50
 'Search Maulborn Pack |q Bad Medicine/Find the Old Graveyard Key
@@ -18426,6 +18452,7 @@ goto 44.74,71.65
 |only Ebonheart Pact
 step
 goto 37.10,71.99 |lorebook The Whithering of Delodiil/1/29/2
+|only Ebonheart Pact
 step
 goto 39.13,92.08
 lorebook The Whithering of Delodiil/1/29/2
@@ -19578,6 +19605,9 @@ step
 goto 65.53,27.94
 talk Dendras Indalor |q Three Tender Souls/Talk to Dendras Indalor
 step
+goto 87.21,34.67
+wayshrine Stormhold
+step
 goto 60.19,65.48
 'Open Mortuary |q Three Tender Souls/Examine Eroni Omobar
 |tip Manually skip to the next step.
@@ -19853,10 +19883,6 @@ step
 goto 57.48,52.84
 kill Swarming Wasps
 'Use Wasp Nest |q Outside Interference/.*Collect Giant Wasp Larvae.* |count 1
-step
-goto 57.57,53.77
-kill Swarming Wasp
-'Use Wasp Nest |q Outside Interference/.*Collect Giant Wasp Larvae.* |count 3
 step
 goto 57.26,53.94
 'Use Jungle Plant |q Outside Interference/Test Poultice on a Jungle Plant
@@ -20145,6 +20171,7 @@ talk Gerent Nuleem-Malem |q The Dream of the Hist/Talk to Gerent Nuleem-Malem
 step
 goto 39.15,20.89
 'Examine Mnemic Egg |q The Dream of the Hist/Investigate the Mnemic Egg
+|tip Manually skip to the next step.
 step
 goto visionofthehist_base 47.10,14.65
 'Active all four Corner Plumes
@@ -20328,6 +20355,11 @@ goto 74.30,23.71 |q Shadows Over Windhelm/Talk to Thane Mera Stormcloak
 step
 goto 50.71,33.20
 talk Thane Mera Stormcloak |q Shadows Over Windhelm/Talk to Thane Mera Stormcloak
+step
+goto 46.82,38.18
+wayshrine Windhelm
+step
+goto 58.69,34.65 |q Shadows Over Windhelm/Enter the Cold Moon Inn
 step
 goto 61.53,52.94
 'Open Cold Moon Inn |q Shadows Over Windhelm/Enter the Cold Moon Inn
@@ -20743,19 +20775,19 @@ goto 32.16,42.25
 'Use the Horn |q Strange Allies/Use the Horn
 step
 goto 31.74,42.08
-click Tree
+'Use Tree
 kill Stormfist Scout |q Strange Allies/.*Collect Stormfist Scout Orders.* |count 1
 step
 goto 31.64,43.86
-click Tree
+'Use Tree
 kill Stormfist Scout |q Strange Allies/.*Collect Stormfist Scout Orders.* |count 2
 step
 goto 30.51,44.73
-click Tree
+'Use Tree
 kill Stormfist Scout |q Strange Allies/.*Collect Stormfist Scout Orders.* |count 3
 step
 goto 30.96,45.40
-click Tree
+'Use Tree
 kill Stormfist Scout |q Strange Allies/.*Collect Stormfist Scout Orders.* |count 4
 step
 goto 24.79,43.34
@@ -21773,8 +21805,7 @@ goto 35.90,49.46
 talk Ree-Zish |q Beneath the Stone/Talk to Ree-Zish
 step
 goto 34.54,48.08
-'Use Effigy of Life |q Beneath the Stone/Imbue Effigies and Enter Mine
-|tip Manually skip to the next step.
+'Use Effigy of Life |q Beneath the Stone/Imbue Effigy of Life
 step
 goto 33.82,49.18
 'Use Effigy of Death |q Beneath the Stone/Imbue Effigies and Enter Mine
@@ -21857,9 +21888,6 @@ goto 59.31,28.41
 talk Vigrod Wraithbane |q Storming the Hall/.*Rally Survivors.* |future
 'Tell him _[Persuade] This will go faster if we both rally the survivors._
 |tip Manually skip to the next step.
-step
-goto 59.14,28.42
-talk Vigrod Wraithbane |q Storming the Hall/.*Rally Survivors.* |count 2 |future
 step
 goto 60.85,28.52
 talk Skald Svari |q Storming the Hall/.*Rally Survivors.* |count 3
@@ -22514,6 +22542,9 @@ goto 69.66,47.17
 talk Yiri Windtorn |q Pulled Under/Find Out What Happened to Yiri's Father
 'Tell her _[Intimidate] <Slap her> Snap out of it. What happened?_
 step
+goto 72.27,53.54
+wayshrine Riften
+step
 goto 57.99,78.35
 talk Centurion Andrin |q Pulled Under/Talk to Centurion Andrin
 step
@@ -22532,7 +22563,7 @@ goto 72.96,83.93 |q Pulled Under/Uncover the Worm Cult Plot
 step
 goto 44.36,65.36
 'Use Rack of Fish
-kill Zombie |q Pulled Under/Uncover the Worm Cult Plot
+kill Zombie and Search |q Pulled Under/Uncover the Worm Cult Plot
 |tip Manually skip to the next step.
 step
 goto 26.44,53.45
@@ -22554,6 +22585,10 @@ step
 goto therift_base 66.30,55.38 |q To the King/Talk to Jorunn the Skald-King
 step
 goto 74.67,52.12 |q To the King/Talk to Jorunn the Skald-King
+step
+goto 78.49,52.77 |q To the King/Talk to Jorunn the Skald-King
+step
+goto 82.14,53.91 |q To the King/Talk to Jorunn the Skald-King
 step
 goto 83.36,55.88
 wayshrine Fullhelm Fort
@@ -22584,15 +22619,9 @@ goto 80.16,69.20
 'Open Trolhetta Cave |q Securing the Pass/Enter Trolhetta Cave |future
 |tip Manually skip to the next step.
 step
-goto trolhettacave_base 51.57,8.12
-'Search Pact Soldier
-'Use the Pact Amulet in your Inventory
-accept Names of the Fallen
-|tip As you walk, click Pact Soldiers and Collect Pact Amulets.
+goto trolhettacave_base 49.12,20.91 |q Securing the Pass/Destroy the Reaper Orb
 step
-goto 49.12,20.91 |q Securing the Pass/Destroy the Reaper Orb |tip As you walk, click Pact Soldiers and Collect Pact Amulets.
-step
-goto 41.97,33.63 |q Securing the Pass/Destroy the Reaper Orb |tip As you walk, click Pact Soldiers and Collect Pact Amulets.
+goto 41.97,33.63 |q Securing the Pass/Destroy the Reaper Orb
 step
 goto 52.76,70.90 |q Securing the Pass/Destroy the Reaper Orb |tip Follow ramp to the top.
 step
@@ -22692,15 +22721,6 @@ goto 78.30,74.76
 talk Jorunn the Skald-King
 accept Messages Across Tamriel
 |only Ebonheart Pact
-step
-goto 78.38,75.01
-'Use Trolhetta Summit Wayshrine
-'Travel to _Trolhetta_ in The Rift |q Names of the Fallen/Talk to Narir
-|tip Manually skip to the next step.
-step
-goto 80.05,68.10
-talk Narir
-turnin Names of the Fallen
 step
 goto 78.38,75.01
 'Use Trolhetta Summit Wayshrine
@@ -23240,8 +23260,8 @@ turnin Council of the Five Companions
 step
 'Open Deshaan Map
 'Travel to Mourhold Wayshrine |q Messages Across Tamriel/Talk to Thrush in Mournhold
-|only Ebonheart Pact
 |tip Manually skip to the next step.
+|only Ebonheart Pact
 step
 goto mournhold_base 34.97,55.51
 |tip Inside the Mages Guild.
@@ -23311,8 +23331,8 @@ goto 52.04,70.85
 |tip Manually skip to the next step. |next Extra's\\Extra's\\Main Quests Only\\Coldharbour
 |only Ebonheart Pact
 step
-goto therift_base 81.15,65.24
-'Use Trolhetta Wayshrine
+goto therift_base 78.38,75.01
+'Use Trolhetta Summit Wayshrine
 'Travel to The Harborage in Auridon |q Cadwell's Silver/Return to Cadwell at the Harborage
 |tip Manually skip to the next step.
 |only Aldmeri Dominion
@@ -23332,8 +23352,8 @@ goto 71.98,22.09
 'Use Light of Meridia |q Cadwell's Gold/Use the Light of Meridia |future |next Extra's\\Extra's\\Main Quests Only\\Daggerfall Covenant\\Stros M'Kai
 |only Aldmeri Dominion
 step
-goto therift_base 81.15,65.24
-'Use Trolhetta Wayshrine
+goto therift_base 78.38,75.01
+'Use Trolhetta Summit Wayshrine
 'Travel to The Harborage in Glenumbra |q Cadwell's Gold/Talk to Cadwell at the Harborage
 |tip Manually skip to the next step.
 |only Daggerfall Covenant
