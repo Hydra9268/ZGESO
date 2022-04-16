@@ -1,8 +1,8 @@
-## Title: |cfd5b02Community Leveling Guides|r v949
+## Title: |cfd5b02Community Leveling Guides|r v971
 ## Description: A Zygor addon updated by snichols7778, Hydra9268, Krandor1, and Sharlikran for the Blackwood expansion.
 ## Author: snichols7778, Hydra9268
-## Version: 949
-## AddOnVersion: 949
+## Version: 971
+## AddOnVersion: 971
 ## APIVersion: 101031 101032
 ; ## DependsOn: LibGPS AceTimer-3.0>=146
 ## DependsOn: LibGPS>=66
