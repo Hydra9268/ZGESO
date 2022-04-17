@@ -27814,9 +27814,10 @@ talk Percius Loche
 'Purchase Servant's Outfit |q The Long Game/Purchase Servant's Outfiti
 step
 'Open Hew's Bane Map
-'Travel to _Abah's Landing_ Wayshrine
+'Travel to _Abah's Landing_ Wayshrine |q The Long Game/Meet Velsa Outside No Shira Citadel
+|tip Manually skip to the next step.
 step
-goto hewsbane_base 50.12,48.07
+goto hewsbane_base 50.12,48.07 |q The Long Game/Meet Velsa Outside No Shira Citadel
 step
 goto 40.58,56.71
 wayshrine Zeht's Displeasure
@@ -28080,7 +28081,7 @@ goto safehouse_base 35.24,40.14
 talk Zeira
 turnin A Flawless Plan
 step
-goto safehouse_base 43.36,52.43
+goto safehouse_base 43.36,52.43 |q Forever Hold Your Peace |future
 step
 goto 32.51,64.52
 talk Andarri
@@ -28651,54 +28652,65 @@ ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Expansion\\Dark Brotherho
 loadingimage loadscreen_dbsanctuary_01.dds
 description Sometimes the best way to deal with a troublesome person is permanent removal. As a Dark Brotherhood assassin, you'll be tasked to fill that need.
 step
-|tip Go to any Outlaws Refuge
+'Open Gold Coast Map
+'Travel to Anvil in Gold Coast |q Voices in the Dark |future
+|tip Manually skip to the next step.
+step
+goto anvilcity_base 36.18,50.13
 talk Amelie Crowe
 accept Voices in the Dark
-step
-'Open Gold Coast Map
-'Travel to Anvil in Gold Coast |q Voices in the Dark/Kill an Innocent in Anvil
-|tip Manually skip to the next step.
 step
 |tip Manually skip to the next step.
 |tip Innocents are located all around this city.
 goto anvilcity_base 56.51,58.85
 kill an Innocent in Anvil |q Voices in the Dark/Kill an Innocent in Anvil
 step
-goto 37.63,51.51
-click for Amelie Crowe Near the Anvil Docks |q Voices in the Dark/Search for Amelie Crowe Near the Anvil Docks
+goto 37.92,51.92 |q Voices in the Dark/Search for Amelie Crowe Near the Anvil Docks
 step
 goto 37.92,51.92
-talk Courier |q Voices in the Dark/Talk to the Courier
+talk Courier |q Voices in the Dark/Talk to the Courier |future
+step
+goto 19.36,47.11 |q Voices in the Dark/Go to the Anvil Lighthouse
 step
 goto 22.62,67.01
-click Anvil Lighthouse |q Voices in the Dark/Go to the Anvil Lighthouse
+'Open Anvil Lighthouse |q Voices in the Dark/Go to the Anvil Lighthouse
 step
 goto 24.08,68.69
 talk Speaker Terenus
 turnin Voices in the Dark
 accept Signed in Blood
 step
-goto goldcoast_base 29.79,37.06
-'Enter Jarol Estate Gate |q Signed in Blood/Find a Way Into the Jarol Estate
+goto 20.74,46.02 |q Signed in Blood/Find a Way Into the Jarol Estate
+step
+goto 33.52,41.92 |q Signed in Blood/Find a Way Into the Jarol Estate
+step
+goto 36.89,27.88 |q Signed in Blood/Find a Way Into the Jarol Estate
+step
+goto 54.26,28.95 |q Signed in Blood/Find a Way Into the Jarol Estate
+step
+goto 58.77,16.85 |q Signed in Blood/Find a Way Into the Jarol Estate
+step
+goto goldcoast_base 36.96,47.04 |q Signed in Blood/Find a Way Into the Jarol Estate
+step
+goto 29.79,37.06
+'Unlock Jarol Estate Gate |q Signed in Blood/Find a Way Into the Jarol Estate
 |tip Manually skip to the next step.
 step
 goto 25.05,38.49
-click Jarol Estate |q Signed in Blood/Find a Way Into the Jarol Estate |future
+'Unlock Jarol Estate |q Signed in Blood/Find a Way Into the Jarol Estate |future
 |tip Manually skip to the next step.
 step
 goto goldcoast_base 24.39,38.23
 |tip It's on a desk upstairs.
-click Letter from the Governor |q Signed in Blood/Search the Manor House
-|tip Manually skip to the next step.
+'Examine Letter from the Governor |lorebook Letter from the Governor/3/29/19
 step
 goto 24.39,38.23
 |tip It is downstairs.
-click Wine Cellar |q Signed in Blood/Search the Manor House
+'Open Wine Cellar |q Signed in Blood/Search the Manor House
 |tip Manually skip to the next step.
 step
 goto varoestatecellar_base 67.31,45.55
-click Contractor's Note |q Signed in Blood/Search the Manor House
-|tip Manually skip to the next step.
+'Examine Contractor's Note |lorebook Contractor's Note/3/29/25
 step
 goto 40.42,70.08
 'Knock False Cask |q Signed in Blood/Search the Manor House
@@ -28708,7 +28720,7 @@ goto 12.10,43.28
 'Knock False Cask |q Signed in Blood/Search the Manor House
 step
 goto 9.58,49.83
-click Wine Cask Passage |q Signed in Blood/Find Lord Quintus Jarol
+'Open Wine Cask Passage |q Signed in Blood/Find Lord Quintus Jarol
 |tip Manually skip to the next step.
 step
 goto varoestatetunnels02_base 34.47,17.93
@@ -28723,7 +28735,7 @@ goto 71.26,61.54 |q Signed in Blood/Assassinate Lord Quintus Jarol |future
 step
 goto 57.97,50.98 |q Signed in Blood/Assassinate Lord Quintus Jarol |future
 step
-goto 11.79,37.15 |q Signed in Blood/Assassinate Lord Quintus Jarol
+goto 11.79,37.15 |q Signed in Blood/Assassinate Lord Quintus Jarol |future
 step
 goto varoestatecaves02_base 59.43,69.48 |q Signed in Blood/Assassinate Lord Quintus Jarol
 step
@@ -28734,33 +28746,29 @@ step
 goto 31.94,31.25
 kill Lord Quintus Jarol |q Signed in Blood/Assassinate Lord Quintus Jarol
 step
-goto 5.80,37.94
-click The Gold Coast |q Signed in Blood/Leave the Estate
-step
 'Open Gold Coast Map
-'Travel to _Anvil_ in Gold Coast |q Signed in Blood/Report to Speaker Terenus
+'Travel to _Anvil_ in Gold Coast |q Signed in Blood/Report to Speaker Terenus |future
 |tip Manually skip to the next step.
 step
-goto 55.91,30.55 |q Signed in Blood/Report to Speaker Terenus
-step
-goto 33.31,33.78 |q Signed in Blood/Report to Speaker Terenus
-step
-goto 22.62,67.00
-click Anvil Lighthouse |q Signed in Blood/Report to Speaker Terenus
+goto anvilcity_base 22.62,67.00
+'Open Anvil Lighthouse |q Signed in Blood/Report to Speaker Terenus
 |tip Manually skip to the next step.
 step
 goto 23.57,68.84
 talk Speaker Terenus |q Signed in Blood/Report to Speaker Terenus
 step
-goto goldcoast_base 56.77,45.44 |q Signed in Blood/Gain Entry to the Sanctuary
+goto 24.56,42.06
+'Use Anvil Wayshrine
+'Travel to _Gold Coast_ Wayshrine |q Signed in Blood/Gain Entry to the Sanctuary
+|tip Manually skip to the next step.
 step
-goto 52.16,33.18 |q Signed in Blood/Gain Entry to the Sanctuary |tip Go through rocks.
+goto goldcoast_base 52.16,33.18 |q Signed in Blood/Gain Entry to the Sanctuary |tip Go through rocks.
 step
 goto 53.53,31.96
 'Activate The Black Door |q Signed in Blood/Gain Entry to the Sanctuary
 step
 goto 53.52,31.96
-click Dark Brotherhood Sanctuary |q Signed in Blood/Talk to Astara
+'Open Dark Brotherhood Sanctuary |q Signed in Blood/Talk to Astara
 |tip Manually skip to the next step.
 step
 goto dbsanctuary_base 49.81,74.82 |q Signed in Blood/Talk to Astara
@@ -28796,36 +28804,34 @@ talk Elam Drals
 turnin Welcome Home
 accept Contract: Kvatch
 step
-goto goldcoast_base 53.99,40.19 |q Contract: Kvatch/Go to Kvatch
+'Open Gold Coast Map
+'Travel to _Gold Coast_ Wayshrine |q Contract: Kvatch/Go to Kvatch
+|tip Manually skip to the next step.
 step
-goto 72.44,53.99 |q Contract: Kvatch/Go to Kvatch
+goto goldcoast_base 58.66,40.26 |q Contract: Kvatch/Go to Kvatch
+step
+goto 66.92,43.89 |q Contract: Kvatch/Go to Kvatch
+step
+goto 72.64,53.93 |q Contract: Kvatch/Go to Kvatch
+step
+goto 81.39,52.10 |q Contract: Kvatch/Go to Kvatch
 step
 goto kvatchcity_base 51.67,89.58
 wayshrine Kvatch
-step
-goto 87.76,56.89 |q Contract: Kvatch/Go to Kvatch
-step
-goto 78.77,55.09 |q Contract: Kvatch/Go to Kvatch
-step
-goto 73.33,66.07
-wayshrine Strid River
-step
-click Strid River Wayshrine
-'Travel to _Kvatch_ in Goldcoast |q Contract: Kvatch |future
-|tip Manually skip to the next step.
-step
-goto Kvatch 44.92,83.72 |q Contract: Kvatch |future
 step
 kill Kvatch Contract |q Contract: Kvatch/Kill Kvatch Contact |future
 |tip The Contract is random so you will have to search for the contact and kill them.
 |tip Manually skip to the next step.
 step
-'Open Gold Coast Map
+goto 44.87,81.82 |q Contract: Kvatch/Return to Elam Drals
+step
+goto 51.82,89.43
+'Use Kvatch Wayshrine
 'Travel to _Gold Coast_ in Gold Coast |q Contract: Kvatch/Return to Elam Drals
 |tip Manually skip to the next step.
 step
 goto goldcoast_base 53.52,31.96
-click Dark Brotherhood Sanctuary |q Contract: Kvatch/Return to Elam Drals
+'Open Dark Brotherhood Sanctuary |q Contract: Kvatch/Return to Elam Drals
 |tip Manually skip to the next step.
 step
 goto dbsanctuary_base 13.16,85.03
@@ -28833,7 +28839,7 @@ talk Elam Drals
 turnin Contract: Kvatch
 step
 goto 14.08,80.63
-click Note from Astara
+'Examine Note from Astara
 accept A Lesson in Silence
 step
 goto 49.87,72.56 |q A Lesson in Silence/Talk to Astara
@@ -28855,14 +28861,16 @@ goto 36.18,65.15
 'Found all around Kvatch:
 kill 3 Akatosh Sermonizers |q A Lesson in Silence/.*Kill Akatosh Sermonizers.*
 step
-goto 44.80,90.08 |q A Lesson in Silence/Enter the Grand Sermonizer's Estate
+goto 44.80,90.08 |q A Lesson in Silence/Enter the Grand Sermonizer's Estate 
+step
+goto 19.48,73.92 |q A Lesson in Silence/Enter the Grand Sermonizer's Estate 
 step
 goto goldcoast_base 72.73,46.36
-click At-Himah Family Estate |q A Lesson in Silence/Enter the Grand Sermonizer's Estate |future
+'Open At-Himah Family Estate |q A Lesson in Silence/Enter the Grand Sermonizer's Estate |future
 |tip Manually skip to the next step.
 step
 goto athimahmanson03_base 47.17,68.55
-click Observation Balcony |q A Lesson in Silence/Spy on the Grand Sermonizer
+'Open Observation Balcony |q A Lesson in Silence/Spy on the Grand Sermonizer
 |tip Manually skip to the next step.
 step
 goto 47.17,55.45
@@ -28870,7 +28878,7 @@ goto 47.17,55.45
 'Spy on the Grand Sermonizer |q A Lesson in Silence/Spy on the Grand Sermonizer
 step
 goto athimahmanson01_base 57.73,32.46
-click Interrogation Hall |q A Lesson in Silence/Enter the Interrogation Hall
+'Open Interrogation Hall |q A Lesson in Silence/Enter the Interrogation Hall
 step
 goto 48.52,40.32
 'Wait for Tanek to Investigate |q A Lesson in Silence/Wait for Tanek to Investigate
@@ -28883,11 +28891,11 @@ goto 48.10,43.11
 'Check on Tanek |q A Lesson in Silence/Check on Tanek
 step
 goto 47.42,31.11
-click Grand Sermonizer's Study |q A Lesson in Silence/Follow the Grand Sermonizer's Escape Route
+'Open Grand Sermonizer's Study |q A Lesson in Silence/Follow the Grand Sermonizer's Escape Route
 |tip Manually skip to the next step.
 step
 goto 43.11,16.74
-click Escape Tunnel |q A Lesson in Silence/Follow the Grand Sermonizer's Escape Route
+'Open Escape Tunnel |q A Lesson in Silence/Follow the Grand Sermonizer's Escape Route
 step
 goto athimahcave01_base 36.89,43.78
 'Pursue the Grand Sermonizer |q A Lesson in Silence/Pursue the Grand Sermonizer
@@ -28900,7 +28908,7 @@ step
 |tip Manually skip to the next step.
 step
 goto goldcoast_base 53.52,31.96
-click Dark Brotherhood Sanctuary |q A Lesson in Silence/Return to the Sanctuary
+'Open Dark Brotherhood Sanctuary |q A Lesson in Silence/Return to the Sanctuary |future
 |tip Manually skip to the next step.
 step
 goto dbsanctuary_base 49.87,72.56 |q A Lesson in Silence/Talk to Astara |tip Go up the stairs.
@@ -28918,7 +28926,7 @@ talk Tanek
 turnin A Lesson in Silence
 step
 goto 20.57,84.53
-click Note from Kor
+'Examine Note from Kor
 |tip Dark Brotherhood must be at least rank 3 to accept this quest.
 accept Questions of Faith
 step
@@ -28941,7 +28949,7 @@ goto 70.84,44.51
 'Go to the Chapel of Dibella in Anvil |q Questions of Faith/Go to the Chapel of Dibella in Anvil
 step
 goto 70.84,44.51
-click Great Chapel of Dibella |q Questions of Faith/Interview Worshipers
+'Open Great Chapel of Dibella |q Questions of Faith/Interview Worshipers
 |tip Manually skip to the next step.
 step
 goto 62.77,43.85
@@ -28966,11 +28974,17 @@ talk Bilami the Caravaneer
 step
 goto db3jerallmountains_base 64.14,81.97 |q Questions of Faith/Track Hildegard
 step
-goto 59.98,74.13 |q Questions of Faith/Track Hildegard
+goto 59.98,74.13
+'Examine Silver Dawn Hunter |q Questions of Faith/Investigate Dead Nord |future
+|tip Manually skip to the next step.
 step
-goto 32.03,83.26 |q Questions of Faith/Track Hildegard
+goto 32.03,83.26
+'Examine Disturbed Flowers |q Questions of Faith/Investigate Flowers |future
+|tip Manually skip to the next step.
 step
-goto 38.57,60.79 |q Questions of Faith/Track Hildegard
+goto 38.57,60.79
+'Examine Slaughtered Deer |q Questions of Faith/Investigate Deer |future
+|tip Manually skip to the next step.
 step
 goto 58.07,38.78
 kill Purifier Gunthafur |q Questions of Faith/Defeat the Silver Dawn |future
@@ -28993,12 +29007,12 @@ goto 59.95,13.09
 talk Hildegard |q Questions of Faith/Talk to Hildegard
 step
 goto 70.90,44.49
-click Great Chapel of Dibella |q Questions of Faith/Kill Chanter Nemus
+'Open Great Chapel of Dibella |q Questions of Faith/Kill Chanter Nemus
 |tip Manually skip to the next step.
 step
 goto 69.02,44.81
 |tip It is downstairs.
-click Chapel Office |q Questions of Faith/Kill Chanter Nemus
+'Open Chapel Office |q Questions of Faith/Kill Chanter Nemus
 |tip Manually skip to the next step.
 step
 goto 77.87,44.51
@@ -29007,12 +29021,12 @@ step
 goto 74.34,54.49 |q Questions of Faith/Return to the Sanctuary
 step
 goto 24.55,42.41
-click Anvil Wayshrine
+'Open Anvil Wayshrine
 'Travel to _Gold Coast_ in Gold Coast |q Questions of Faith/Return to the Sanctuary
 |tip Manually skip to the next step.
 step
 goto goldcoast_base 53.52,31.96
-click Dark Brotherhood Sanctuary |q Questions of Faith/Return to the Sanctuary
+'Open Dark Brotherhood Sanctuary |q Questions of Faith/Return to the Sanctuary
 |tip Manually skip to the next step.
 step
 goto dbsanctuary_base 49.81,74.82 |q Questions of Faith/Talk to Astara
@@ -29035,7 +29049,7 @@ step
 goto 72.95,70.11 |q A Special Request/Talk to Governor Fortunata
 step
 goto 71.23,76.08
-click Anvil Castle |q A Special Request/Talk to Governor Fortunata
+'Open Anvil Castle |q A Special Request/Talk to Governor Fortunata
 |tip Manually skip to the next step.
 step
 goto castleanvil01_base 57.25,48.88
@@ -29045,21 +29059,21 @@ step
 goto anvilcity_base 73.65,56.41 |q A Special Request/Infiltrate Castle Kvatch
 step
 goto 24.49,42.37
-click Anvil Wayshrine
+'Use Anvil Wayshrine
 'Travel to _Kvatch_ in Gold Coast |q A Special Request/Infiltrate Castle Kvatch
 |tip Manually skip to the next step.
 step
 goto kvatchcity_base 29.54,53.77
 |tip Key located upstairs inside this house.
-click Gatehouse Key |q A Special Request/Infiltrate Castle Kvatch
+'Steal Gatehouse Key |q A Special Request/Infiltrate Castle Kvatch
 |tip Manually skip to the next step.
 step
 goto 60.33,28.63
-click Castle Kvatch Gatehouse |q A Special Request/Infiltrate Castle Kvatch
+'Trespass Castle Kvatch Gatehouse |q A Special Request/Infiltrate Castle Kvatch
 |tip Manually skip to the next step.
 step
 goto 55.71,18.04
-click Castle Kvatch Vaults |q A Special Request/Infiltrate Castle Kvatch
+'Trespass Castle Kvatch Vaults |q A Special Request/Infiltrate Castle Kvatch |future
 |tip Manually skip to the next step.
 step
 goto castlekvatch03_base 27.23,9.94
@@ -29076,7 +29090,7 @@ step
 goto 52.50,59.23 |q A Special Request/Find Count Carolus
 step
 goto 47.32,12.08
-click Count's Suite |q A Special Request/Find Count Carolus
+'Open Count's Suite |q A Special Request/Find Count Carolus
 |tip Manually skip to the next step.
 step
 goto 55.91,16.93
@@ -29096,11 +29110,11 @@ goto anvilcity_base 76.44,73.56
 talk Mirabelle Motierre |q A Special Request/Find Mirabelle Outside Anvil Castle
 step
 goto 71.34,76.01
-click Anvil Castle |q A Special Request/Poison the Wine Decanter
+'Open Anvil Castle |q A Special Request/Poison the Wine Decanter
 |tip Manually skip to the next step.
 step
 goto castleanvil01_base 68.65,42.70
-click Anvil Castle East Halls |q A Special Request/Poison the Wine Decanter
+'Trespass Anvil Castle East Halls |q A Special Request/Poison the Wine Decanter
 |tip Manually skip to the next step.
 step
 goto 87.57,37.10 |q A Special Request/Poison the Wine Decanter
@@ -29110,7 +29124,7 @@ step
 goto 70.61,58.15 |q A Special Request/Poison the Wine Decanter
 step
 goto 73.11,76.35
-click Fortunata's Wine Decanter |q A Special Request/Poison the Wine Decanter
+'Poison Fortunata's Wine Decanter |q A Special Request/Poison the Wine Decanter
 step
 goto 57.20,59.92 |q A Special Request/Talk to Governor Fortunata
 step
@@ -29122,7 +29136,7 @@ goto 60.62,84.61
 talk Governor Fortunata ap Dugal |q A Special Request/Talk to Governor Fortunata
 step
 goto 69.24,87.71
-click Anvil Castle Balcony |q A Special Request/Share a Drink with the Governor
+'Open Anvil Castle Balcony |q A Special Request/Share a Drink with the Governor
 |tip Manually skip to the next step.
 step
 goto anvilcity_base 68.48,84.25
@@ -29134,7 +29148,7 @@ step
 |tip Manually skip to the next step.
 step
 goto goldcoast_base 53.52,31.96
-click Dark Brotherhood Sanctuary |q A Special Request/Return to Astara at the Sanctuary
+'Open Dark Brotherhood Sanctuary |q A Special Request/Return to Astara at the Sanctuary
 |tip Manually skip to the next step.
 step
 goto dbsanctuary_base 49.81,74.82 |q A Special Request/Return to Astara at the Sanctuary
@@ -29144,10 +29158,9 @@ goto 46.65,39.49
 talk Astara Caerellius
 turnin A Special Request
 step
-goto 49.81,74.82 |q Dark Revelations |future
+goto 56.44,17.63 |q Dark Revelations |future |tip Leave the room to make quest appear
 step
-goto 46.56,39.47
-talk Astara Caerellius
+goto 46.65,39.49
 accept Dark Revelations
 step
 goto 46.92,33.43
@@ -29160,20 +29173,16 @@ step
 goto goldcoast_base 81.91,56.40
 talk Count Carolus Aquilarios |q Dark Revelations/Talk to Count Carolus Aquilarios
 step
+goto 73.33,66.07
+wayshrine Strid River
+step
 goto 80.71,60.89
 talk Mirabelle Motierre |q Dark Revelations/Investigate the Enclave
 |tip Manually skip to the next step.
 step
-goto 82.14,61.25
-click Catapult |q Dark Revelations/Investigate the Enclave
-|tip Manually skip to the next step.
-step
-goto 82.68,61.09
-click Catapult |q Dark Revelations/Investigate the Enclave
-|tip Manually skip to the next step.
-step
 goto 82.15,63.34
-click Enclave of the Hourglass |q Dark Revelations/Investigate the Enclave
+|tip Burn the Siege Weapons (Optional)
+'Trespass Enclave of the Hourglass |q Dark Revelations/Investigate the Enclave
 |tip Manually skip to the next step.
 step
 goto orderenclave03_base 31.43,13.93
@@ -29184,7 +29193,7 @@ goto 27.65,20.89 |q Dark Revelations/Stop the Initiation |tip Go down the stairs
 step
 goto 27.45,25.49
 |tip Go down the stairs.
-click Basilica of Eternity |q Dark Revelations/Stop the Initiation
+'Trespass Basilica of Eternity |q Dark Revelations/Stop the Initiation
 |tip Manually skip to the next step.
 step
 goto orderenclave02_base 23.39,46.39 |q Dark Revelations/Stop the Initiation
@@ -29195,11 +29204,11 @@ goto 29.38,70.26
 kill Chanter Collatinus |q Dark Revelations/Stop the Initiation
 step
 goto 29.38,73.91
-click Neglected Vestry |q Dark Revelations/Search the Enclave of the Hourglass
+'Trespass Neglected Vestry |q Dark Revelations/Search the Enclave of the Hourglass
 |tip Manually skip to the next step.
 step
 goto 26.81,82.60
-click Red Sails Crew Pardons |q Dark Revelations/Search the Enclave of the Hourglass
+'Burn Red Sails Crew Pardons |q Dark Revelations/Search the Enclave of the Hourglass
 |tip Manually skip to the next step.
 step
 goto 48.73,78.85 |q Dark Revelations/Search the Enclave of the Hourglass
@@ -29217,18 +29226,18 @@ talk Lyra |q Dark Revelations/Search the Enclave of the Hourglass
 step
 goto 73.04,79.31
 |tip Wait for Lyra to unlock the door.
-click Black Dragon's Chambers |q Dark Revelations/Search the Enclave of the Hourglass
+'Trespass Black Dragon's Chambers |q Dark Revelations/Search the Enclave of the Hourglass
 step
 goto 77.64,79.13
 |tip Watch dialogue
-click The Black Dragon's Journal |q Dark Revelations/Search the Black Dragon's Chamber
+'Examine The Black Dragon's Journal |lorebook The Black Dragon's Journal/3/29/23
 step
 'Open Gold Coast Map
 'Travel to _Gold Coast_ in Gold Coast |q Dark Revelations/Talk to Astara Caerellius
 |tip Manually skip to the next step.
 step
 goto goldcoast_base 53.52,31.96
-click Dark Brotherhood Sanctuary |q Dark Revelations/Talk to Astara Caerellius
+'Open Dark Brotherhood Sanctuary |q Dark Revelations/Talk to Astara Caerellius
 |tip Manually skip to the next step.
 step
 goto dbsanctuary_base 49.81,74.82 |q Dark Revelations/Talk to Astara Caerellius
@@ -29238,12 +29247,14 @@ goto 52.41,43.97
 talk Astara Caerellius
 turnin Dark Revelations
 step
+goto 56.44,17.63 |q A Ghost from the Past |future |tip Leave the room to make quest appear
+step
 goto 50.10,56.14
 talk Green-Venom-Tongue
 accept A Ghost from the Past
 step
 goto 73.30,65.95
-click Strid River Wayshrine
+'Open Gold Coast Map
 'Travel to _Anvil_ in Gold Coast |q A Ghost from the Past/Meet Green-Venom-Tongue Near Anvil
 |tip Manually skip to the next step.
 step
@@ -29261,14 +29272,12 @@ step
 goto blackwoodsborderlands01_base 60.45,57.10 |q A Ghost from the Past/Enter the Purified Sanctuary
 step
 goto 73.12,52.03
-click Ruins of Xith-Izkul |q A Ghost from the Past/Enter the Purified Sanctuary
+'Open Ruins of Xith-Izkul |q A Ghost from the Past/Enter the Purified Sanctuary
 |tip Manually skip to the next step.
 step
-goto blackwoodsborderlands02_base 33.35,43.91
-'Wait for Green-Venom-Tongue to Open the Door |q A Ghost from the Past/Wait for Green-Venom-Tongue to Open the Door
-step
 goto 35.18,43.89
-click Xith-Izkul Sanctuary |q A Ghost from the Past/Talk to Green-Venom-Tongue
+'Wait for Green-Venom-Tongue to Open the Door
+'Open Xith-Izkul Sanctuary |q A Ghost from the Past/Talk to Green-Venom-Tongue
 |tip Manually skip to the next step.
 step
 goto 39.97,43.45
@@ -29277,19 +29286,19 @@ step
 goto 51.47,38.39 |q A Ghost from the Past/Search the Sanctuary
 step
 goto 44.15,10.99
-click Remains |q A Ghost from the Past/Search the Sanctuary
+'Examine Remains |q A Ghost from the Past/Search the Sanctuary
 |tip Manually skip to the next step.
 step
 goto 54.64,25.70 |q A Ghost from the Past/Search the Sanctuary |tip Drop down
 step
 goto 73.46,24.83
-click Remains |q A Ghost from the Past/Search the Sanctuary
+'Examine Remains |q A Ghost from the Past/Search the Sanctuary
 |tip Manually skip to the next step.
 step
 goto 65.10,62.71 |q A Ghost from the Past/Search the Sanctuary
 step
 goto 76.39,62.78
-click Remains |q A Ghost from the Past/Search the Sanctuary
+'Examine Remains |q A Ghost from the Past/Search the Sanctuary
 |tip Manually skip to the next step.
 step
 goto 46.83,75.84 |q A Ghost from the Past/Search the Sanctuary |tip Drop down
@@ -29314,7 +29323,7 @@ step
 'Travel to _Kvatch_ in Gold Coast |q A Ghost from the Past/Meet Green-Venom-Tongue in Kvatch
 |tip Manually skip to the next step.
 step
-goto 46.29,62.40
+goto kvatchcity_base 46.29,62.40
 talk Green-Venom-Tongue |q A Ghost from the Past/Meet Green-Venom-Tongue in Kvatch
 step
 goto 46.50,62.57
@@ -29325,12 +29334,12 @@ goto 46.42,62.32
 talk Green-Venom-Tongue |q A Ghost from the Past/Talk to Green-Venom-Tongue
 step
 goto 51.80,89.59
-click Kvatch Wayshrine
+'Use Kvatch Wayshrine
 'Travel to _Gold Coast_ in Gold Coast |q A Ghost from the Past/Talk to Astara
 |tip Manually skip to the next step.
 step
 goto goldcoast_base 53.52,31.96
-click Dark Brotherhood Sanctuary |q A Ghost from the Past/Talk to Astara
+'Open Dark Brotherhood Sanctuary |q A Ghost from the Past/Talk to Astara
 |tip Manually skip to the next step.
 step
 goto dbsanctuary_base 49.81,74.82 |q A Ghost from the Past/Talk to Astara
@@ -29340,6 +29349,8 @@ goto 46.98,39.55
 talk Astara Caerellius
 turnin A Ghost from the Past
 step
+goto 56.44,17.63 |q The Wrath of Sithis |future |tip Leave the room to make quest appear
+step
 goto 47.12,39.52
 talk Astara Caerellius
 accept The Wrath of Sithis
@@ -29347,14 +29358,14 @@ step
 goto 33.06,49.15 |q The Wrath of Sithis/Enter Knightsgrave
 step
 goto 28.64,91.62
-click Gold Coast |q The Wrath of Sithis/Enter Knightsgrave
+'Open Gold Coast |q The Wrath of Sithis/Enter Knightsgrave
 |tip Manually skip to the next step.
 step
 goto goldcoast_base 34.71,31.86 |q The Wrath of Sithis/Enter Knightsgrave
 step
 goto 27.41,18.50
-|tip Drop down.
-click Knightsgrave |q The Wrath of Sithis/Enter Knightsgrave
+|tip Follow path down.
+'Open Knightsgrave |q The Wrath of Sithis/Enter Knightsgrave
 |tip Manually skip to the next step.
 step
 goto knightsgrave04_base 17.10,55.49 |q The Wrath of Sithis/Find Green-Venom-Tongue
@@ -29373,17 +29384,17 @@ goto 26.20,50.31
 'Ignite Amminus Entius's Flame (back left) |q The Wrath of Sithis/Open the Sealed Doors
 step
 goto 30.98,50.27
-click Path of the Order |q The Wrath of Sithis/Hunt Down the Black Dragon
+'Open Path of the Order |q The Wrath of Sithis/Hunt Down the Black Dragon
 |tip Manually skip to the next step.
 step
 goto 34.71,55.10 |q The Wrath of Sithis/Hunt Down the Black Dragon
 step
 goto 48.43,55.29
-click Overlook of Time |q The Wrath of Sithis/Hunt Down the Black Dragon
+'Open Overlook of Time |q The Wrath of Sithis/Hunt Down the Black Dragon
 |tip Manually skip to the next step.
 step
 goto 45.10,71.22
-click Chamber of Enduring Flame |q The Wrath of Sithis/Hunt Down the Black Dragon
+'Open Chamber of Enduring Flame |q The Wrath of Sithis/Hunt Down the Black Dragon
 step
 goto 44.78,84.04
 |tip Watch dialogue
@@ -29393,7 +29404,7 @@ goto 40.51,80.47
 kill Minotaur |q The Wrath of Sithis/Defeat the Minotaurs
 step
 goto 35.06,83.88
-click Order Armory |q The Wrath of Sithis/Find Green-Venom-Tongue
+'Open Order Armory |q The Wrath of Sithis/Find Green-Venom-Tongue
 |tip Manually skip to the next step.
 step
 goto 52.86,90.39
@@ -29401,7 +29412,7 @@ goto 52.86,90.39
 'Find Green-Venom-Tongue |q The Wrath of Sithis/Find Green-Venom-Tongue
 step
 goto 56.16,90.43
-click Chamber of Shadow |q The Wrath of Sithis/Find the Black Dragon
+'Open Chamber of Shadow |q The Wrath of Sithis/Find the Black Dragon
 |tip Manually skip to the next step.
 step
 goto 64.02,38.47 |q The Wrath of Sithis/Find the Black Dragon
@@ -29423,17 +29434,12 @@ step
 goto 51.40,40.12
 kill The Black Dragon |q The Wrath of Sithis/Defeat the Black Dragon
 step
-goto 64.48,42.93 |q The Wrath of Sithis/Exit Knightsgrave
-step
-goto 64.12,7.82
-'Climb The Gold Coast |q The Wrath of Sithis/Exit Knightsgrave |future
-step
 'Open Gold Coast Map
-'Travel to _Gold Coast_ in Gold Coast |q The Wrath of Sithis/Talk to Astara in the Sanctuary
+'Travel to _Gold Coast_ in Gold Coast |q The Wrath of Sithis/Talk to Astara in the Sanctuary |future
 |tip Manually skip to the next step.
 step
 goto goldcoast_base 53.52,31.96
-click Dark Brotherhood Sanctuary |q The Wrath of Sithis/Talk to Astara in the Sanctuary
+'Open Dark Brotherhood Sanctuary |q The Wrath of Sithis/Talk to Astara in the Sanctuary
 |tip Manually skip to the next step.
 step
 goto dbsanctuary_base 49.81,74.82 |q The Wrath of Sithis/Talk to Astara in the Sanctuary
@@ -29442,6 +29448,8 @@ goto dbsanctuary_base 47.12,39.52
 '_Astara confirms that she needs to talk to the Speaker before you can move against the Primate. The final quest unlocks at Dark Brotherhood Rank 8._
 talk Astara Caerellius
 turnin The Wrath of Sithis
+step
+goto 56.44,17.63 |q Filling the Void |future |tip Leave the room to make quest appear
 step
 goto 51.99,44.31
 talk Speaker Terenus
@@ -29460,7 +29468,7 @@ talk Tanek
 'Meet Tanek in Kvatch |q Filling the Void/Meet Tanek in Kvatch
 step
 goto 62.33,52.81
-click Cathedral Catacombs |q Filling the Void/Explore the Cathedral Catacombs
+'Open Cathedral Catacombs |q Filling the Void/Explore the Cathedral Catacombs
 |tip Manually skip to the next step.
 step
 goto cathedralofakatosh_base 84.63,39.66 |q Filling the Void/Explore the Cathedral Catacombs
@@ -29494,7 +29502,7 @@ step
 goto 39.93,83.39 |q Filling the Void/Enter the Cathedral
 step
 goto 45.68,68.55
-click Cathedral of Akatosh |q Filling the Void/Enter the Cathedral
+'Open Cathedral of Akatosh |q Filling the Void/Enter the Cathedral
 step
 goto 63.95,68.61
 kill the enemies that attack in waves
@@ -29511,7 +29519,7 @@ step
 |tip Manually skip to the next step.
 step
 goto goldcoast_base 53.52,31.96
-click Dark Brotherhood Sanctuary |q Filling the Void/Return to Speaker Terenus
+'Open Dark Brotherhood Sanctuary |q Filling the Void/Return to Speaker Terenus
 |tip Manually skip to the next step.
 step
 goto dbsanctuary_base 49.81,74.82 |q Filling the Void/Return to Speaker Terenus
