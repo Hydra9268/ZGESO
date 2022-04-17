@@ -1537,10 +1537,10 @@ goto 39.16,83.72
 talk Alinon the Alchemist |q The Hidden Harvest/Talk to Alinon the Alchemist
 step
 goto 40.82,84.69
-click Frostbreak Fortress |q The Hidden Harvest/Get Alinon Inside the Fort |future
+'Open Frostbreak Fortress |q The Hidden Harvest/Get Alinon Inside the Fort |future
 |tip Manually skip to the next step.
 step
-goto frostbreakfortint_Map_base 86.32,52.84
+goto frostbreakfortint_map 86.32,52.84
 talk Alinon the Alchemist |q The Hidden Harvest/Talk to Alinon the Alchemist |future
 step
 goto 80.81,60.41
@@ -1595,14 +1595,14 @@ talk Alinon the Alchemist
 turnin The Hidden Harvest
 step
 goto 36.76,85.23
-click Frostbreak Fortress |q For King and Glory/Find Urfon Ice-Heart
+'Open Frostbreak Fortress |q For King and Glory/Find Urfon Ice-Heart
 |tip Manually skip to the next step.
 step
-goto frostbreakfortint_Map_base 42.19,25.27
-click Ice-Heart's Lair|q For King and Glory/Find Urfon Ice-Heart |future
+goto frostbreakfortint_map_base 42.19,25.27
+'Open Ice-Heart's Lair|q For King and Glory/Find Urfon Ice-Heart |future
 |tip Manually skip to the next step.
 step
-goto iceheartslair_Map_base 50.51,49.52
+goto iceheartslair_map_base 50.51,49.52
 kill Urfon Ice-Heart |q For King and Glory/Kill Urfon Ice-Heart |future
 step
 goto 54.51,45.22
@@ -2436,7 +2436,7 @@ step
 goto 51.03,56.48 |q The Hand of Morkul/Search for Ashaka
 step
 goto 68.17,76.08
-click for Ashaka |q The Hand of Morkul/Search for Ashaka
+Search for Ashaka |q The Hand of Morkul/Search for Ashaka
 step
 goto 71.41,78.59
 talk Ashaka |q The Hand of Morkul/Talk to Ashaka
@@ -3712,8 +3712,9 @@ click The Scroll of Vaia |q The Anger of a King/Complete the Trials
 step
 goto 23.00,42.32
 talk Elder Akarah
+|tip Double check next time through.
 'Tell her _"I choose Usunok's strength."_
-'Choose a Blessing |q The Anger of a King/Complete the Trials
+'Choose a Blessing |q The Anger of a King/Talk to Elder Azulg
 |tip Manually skip to the next step.
 step
 goto 45.11,21.45
@@ -3736,7 +3737,7 @@ goto 59.14,44.19
 'Activate Gauntlet Switch |q The Anger of a King/Complete the Trials
 step
 goto 75.33,39.45
-click the Council Chamber |q The Anger of a King/Find the Vosh Rakh Council
+'Open the Council Chamber |q The Anger of a King/Find the Vosh Rakh Council
 |tip Manually skip to the next step.
 step
 goto 75.45,62.68
@@ -3747,20 +3748,20 @@ goto 75.04,68.80
 kill the Vosh Rakh |q The Anger of a King/Kill the Vosh Rakh
 step
 goto 75.50,70.44
-click Vosh Rakh Orders |q The Anger of a King/Find the Information You Seek
+'Examine Vosh Rakh Orders |q The Anger of a King/Find the Information You Seek
 step
 goto 65.93,59.46
-click the Chambers of Loyalty |q The Anger of a King/Rendezvous with Eveli Sharp-Arrow
+'Open the Chambers of Loyalty |q The Anger of a King/Rendezvous with Eveli Sharp-Arrow
 |tip Manually skip to the next step.
 step
 goto 58.22,73.09 |q The Anger of a King/Rendezvous with Eveli Sharp-Arrow
 step
 goto 29.90,72.77
-click the Waiting Chambers |q The Anger of a King/Rendezvous with Eveli Sharp-Arrow
+'Open the Waiting Chambers |q The Anger of a King/Rendezvous with Eveli Sharp-Arrow
 |tip Manually skip to the next step.
 step
 goto 23.09,95.34
-'Return to Paragon's Remembrance |q The Anger of a King/Rendezvous with Eveli Sharp-Arrow
+'Open Paragon's Remembrance |q The Anger of a King/Rendezvous with Eveli Sharp-Arrow
 |tip Manually skip to the next step.
 step
 goto paragonsrememberance_base 90.50,22.93
@@ -3783,10 +3784,6 @@ goto 43.10,57.47 |q The King's Gambit/Investigate the Guard Meeting Area
 step
 goto 41.45,47.10 |q The King's Gambit/Investigate the Guard Meeting Area
 step
-goto 39.80,42.88
-talk Sergeant Oufa
-turnin Broken Promises
-step
 goto 23.97,36.24 |q The King's Gambit/Find a Way Inside the Inn
 step
 goto 26.32,35.28 |q The King's Gambit/Find a Way Inside the Inn |tip Go up the stairs.
@@ -3795,7 +3792,7 @@ goto 16.95,30.01 |q The King's Gambit/Find a Way Inside the Inn
 step
 goto 15.75,35.56
 kill Captain Nulra
-click Leather Pack |q The King's Gambit/Investigate the Guard Meeting Area
+'Search Leather Pack |q The King's Gambit/Investigate the Guard Meeting Area
 step
 goto 16.95,30.01 |q The King's Gambit/Meet Allies in the Greedy Gut
 step
@@ -3804,7 +3801,7 @@ step
 goto 23.97,36.24 |q The King's Gambit/Meet Allies in the Greedy Gut
 step
 goto 45.80,51.20
-click the Greedy Gut |q The King's Gambit/Meet Allies in the Greedy Gut
+'Open the Greedy Gut |q The King's Gambit/Meet Allies in the Greedy Gut
 |tip Manually skip to the next step.
 step
 goto 48.48,52.31 |q The King's Gambit/Meet Allies in the Greedy Gut |tip Go up the stairs.
@@ -3822,7 +3819,7 @@ step
 goto 54.35,71.56 |q The King's Gambit/Talk to King Kurog
 step
 goto 73.93,72.31
-click Scarp Keep |q The King's Gambit/Talk to King Kurog
+'Open Scarp Keep |q The King's Gambit/Talk to King Kurog
 |tip Manually skip to the next step.
 step
 goto scarpkeepupper_base 44.68,31.60
@@ -3848,12 +3845,12 @@ step
 goto 55.37,39.56 |q The King's Gambit/Find the Path in the Throne Room |tip Go up the stairs.
 step
 goto scarpkeepupper_base 77.81,21.29
-click the Throne Room |q The King's Gambit/Find the Path in the Throne Room
+'Open the Throne Room |q The King's Gambit/Find the Path in the Throne Room
 |tip Manually skip to the next step.
 step
 goto orsiniumthroneroom_base 68.20,22.14
 kill Shield-Wife Razbela, Shield-Wife Oshgana
-click The King's Orders |q The King's Gambit/Find the Path in the Throne Room
+'Examine The King's Orders |q The King's Gambit/Find the Path in the Throne Room
 step
 goto orsinium_base 63.38,67.62
 talk Chief Bazrag
@@ -3871,7 +3868,7 @@ step
 goto 33.33,44.39 |q Blood on a King's Hands/Enter the Temple
 step
 goto 30.82,50.34
-click the Temple |q Blood on a King's Hands/Enter the Temple
+'Open the Temple |q Blood on a King's Hands/Enter the Temple |future
 |tip Manually skip to the next step.
 step
 goto orsiniumtemplelower_base 25.93,62.14
@@ -3881,7 +3878,7 @@ goto orsiniumtempleupper_base 30.18,81.38 |q Blood on a King's Hands/Find High P
 step
 goto 38.83,30.64
 |tip Go up stairs and ramps.
-click Orsinium |q Blood on a King's Hands/Find High Priestess Solgra
+'Open Orsinium |q Blood on a King's Hands/Find High Priestess Solgra
 |tip Manually skip to the next step.
 step
 goto orsinium_base 14.15,57.39
@@ -3902,7 +3899,7 @@ goto 17.20,58.91
 talk Penitent Vumnish |q Blood on a King's Hands/Confront the Assassin
 step
 goto 28.39,52.42
-click the Temple of Ire |q Blood on a King's Hands/Check on Solgra in the Temple
+'Open the Temple of Ire |q Blood on a King's Hands/Check on Solgra in the Temple
 |tip Manually skip to the next step.
 step
 goto orsiniumtemplelower_base 29.84,20.46
@@ -3912,7 +3909,7 @@ step
 goto 61.87,78.42 |q Blood on a King's Hands/Go to the Temple Library |tip Go up the stairs.
 step
 goto 62.37,87.18
-click Temple Library |q Blood on a King's Hands/Go to the Temple Library
+'Open Temple Library |q Blood on a King's Hands/Go to the Temple Library |future
 |tip Manually skip to the next step.
 step
 goto pathtothemoo_library_base 56.21,81.26
@@ -3933,11 +3930,11 @@ goto 39.58,57.36
 'Activate Library Switch |q Blood on a King's Hands/Find the Secret Passage
 step
 goto 50.86,84.13
-click the Temple Undertunnels |q Blood on a King's Hands/Go to the Moot
+'Open the Temple Undertunnels |q Blood on a King's Hands/Go to the Moot
 |tip Manually skip to the next step.
 step
 goto pathtothemoot_base 12.29,58.83
-click Temple Undertunnels |q Blood on a King's Hands/Go to the Moot
+'Open Temple Undertunnels |q Blood on a King's Hands/Go to the Moot
 |tip Manually skip to the next step.
 step
 goto 17.77,70.82 |q Blood on a King's Hands/Go to the Moot
@@ -3951,7 +3948,7 @@ step
 goto 79.78,65.50 |q Blood on a King's Hands/Go to the Moot
 step
 goto 79.87,48.36
-click Undertunnels Exit |q Blood on a King's Hands/Go to the Moot
+'Open Undertunnels Exit |q Blood on a King's Hands/Go to the Moot
 step
 goto 80.47,28.39
 'Rescue the Chiefs |q Blood on a King's Hands/Rescue the Chiefs
@@ -3981,7 +3978,7 @@ step
 goto 51.15,71.29 |q Long Live the King/.*Gather Your Allies for the Funeral.* |count 2
 step
 goto 44.63,64.25
-click Mazabakh's House |q Long Live the King/.*Gather Your Allies for the Funeral.* |count 2
+'Open Mazabakh's House |q Long Live the King/.*Gather Your Allies for the Funeral.* |count 2
 |tip Manually skip to the next step.
 step
 goto 48.89,64.47
@@ -3992,7 +3989,7 @@ goto 37.86,65.48
 talk Ulsha |q Long Live the King/.*Gather Your Allies for the Funeral.* |count 3
 step
 goto 45.84,51.22
-click the Greedy Gut |q Long Live the King/.*Gather Your Allies for the Funeral.* |count 4
+'Open the Greedy Gut |q Long Live the King/.*Gather Your Allies for the Funeral.* |count 4
 |tip Manually skip to the next step.
 step
 goto 48.47,52.21 |q Long Live the King/.*Gather Your Allies for the Funeral.* |count 4
@@ -4003,7 +4000,7 @@ step
 goto 35.45,43.81 |q Long Live the King/.*Gather Your Allies for the Funeral.* |count 6
 step
 goto 30.83,50.24
-click the Temple of Ire |q Long Live the King/.*Gather Your Allies for the Funeral.* |count 6
+'Open the Temple of Ire |q Long Live the King/.*Gather Your Allies for the Funeral.* |count 6
 |tip Manually skip to the next step.
 step
 goto orsiniumtemplelower_base 55.55,37.84

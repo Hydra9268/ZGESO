@@ -25994,7 +25994,7 @@ goto 17.62,20.50
 kill Exarch Braadoth and Kurzoth |q The Serpent's Fang/Kill Exarch Braadoth and Kurzoth
 step
 goto 33.61,20.08
-'Open Exarch Braadoth's Abode |achieve 898
+'Open Exarch Braadoth's Abode |q The Serpent's Fang/Talk to Little Leaf Outside
 |tip Manually skip to the next step.
 step
 goto 41.43,33.59
@@ -26200,9 +26200,10 @@ step
 goto orsinium_base 20.59,41.70 |q Invitation to Orsinium/Visit the Inn in Orsinium
 step
 goto 45.85,51.21
-click The Greedy Gut |q Invitation to Orsinium/Visit the Inn in Orsinium
+'Open The Greedy Gut |q Invitation to Orsinium/Visit the Inn in Orsinium
 step
 goto 48.41,55.24
+|tip Leave this building.
 talk Shulthog |q Invitation to Orsinium/Ask About the Traitor
 step
 goto 21.20,80.95
@@ -26214,7 +26215,7 @@ step
 goto 27.37,79.89 |q Invitation to Orsinium/Follow the Scent
 step
 goto 54.03,63.04
-click Bathhouse and Laundry |q Invitation to Orsinium/Follow the Scent
+'Open Bathhouse and Laundry |q Invitation to Orsinium/Follow the Scent
 step
 goto 55.12,63.09
 |tip Go downstairs.
@@ -26234,8 +26235,13 @@ talk Forge-Mother Alga
 accept For King and Glory
 step
 'Open Wrothgar Map
-'Travel to _Trader's Road_ in Wrothgar |q For King and Glory/Travel to Frostbreak Fortress
+'Travel to _Merchant's Gate_ in Wrothgar |q For King and Glory/Travel to Frostbreak Fortress
 |tip Manually skip to the next step.
+step
+goto wrothgar_base 61.95,66.52 |q For King and Glory/Travel to Frostbreak Fortress
+step
+goto 52.09,65.17
+wayshrine Trader's Road
 step
 goto 39.84,73.88
 wayshrine Frostbreak Ridge
@@ -26246,15 +26252,104 @@ step
 goto 38.42,77.43
 talk King Kurog |q For King and Glory/Talk to King Kurog
 step
+goto 39.36,76.86
+talk Chief Urgdosh
+accept The Hidden Harvest
+step
+goto 40.67,76.47
+'Report to Siege Commander Dulph |q The Hidden Harvest/Report to Siege Commander Dulph
+step
+goto 40.79,76.38
+talk Siege Commander Dulph |q The Hidden Harvest/Talk to Siege Commander Dulph
+step
+goto 38.45,79.48 |q The Hidden Harvest/Rendezvous with the Orc Squads
+step
+goto 42.04,80.02
+talk Sergeant Rorburz |q The Hidden Harvest/Rendezvous with the Orc Squads
+step
+goto 43.41,83.51
+|tip She's at the top of the tower.
+talk Eveli Sharp-Arrow |q The Hidden Harvest/Destroy East Tower
+step
+goto 38.91,82.97
+|tip She is at the top of the tower.
+talk Eveli Sharp-Arrow |q The Hidden Harvest/.*Destroy the Harpy Aeries.*
+step
+goto 41.16,83.28 |q The Hidden Harvest/Find the Alchemist |tip Follow the path around
+step
+goto 39.31,83.56
+'Find the Alchemist |q The Hidden Harvest/Find the Alchemist
+step
+goto 39.16,83.72
+talk Alinon the Alchemist |q The Hidden Harvest/Talk to Alinon the Alchemist
+step
+goto 40.82,84.69
+'Open Frostbreak Fortress |q The Hidden Harvest/Get Alinon Inside the Fort |future
+|tip Manually skip to the next step.
+step
+goto frostbreakfortint_map_base 86.32,52.84
+talk Alinon the Alchemist |q The Hidden Harvest/Talk to Alinon the Alchemist |future
+step
+goto 80.81,60.41
+'Burn Briarheart Sapling |q The Hidden Harvest/Destroy Briarheart Saplings
+|tip Manually skip to the next step.
+step
+goto 61.94,59.65
+'Burn Briarheart Sapling |q The Hidden Harvest/Destroy Briarheart Saplings
+|tip Manually skip to the next step.
+step
+goto 59.69,68.25
+'Burn Briarheart Sapling |q The Hidden Harvest/Destroy Briarheart Saplings
+|tip Manually skip to the next step.
+step
+goto 65.20,73.94
+'Burn Briarheart Sapling |q The Hidden Harvest/Destroy Briarheart Saplings
+step
+goto 86.12,51.76
+talk Eveli Sharp-Arrow |q The Hidden Harvest/Return to Alinon and Eveli
+step
+goto 63.87,40.97 |q The Hidden Harvest/Find Alinon the Alchemist |tip Go up the stairs
+step
+goto 45.94,35.12
+'Find Alinon the Alchemist |q The Hidden Harvest/Find Alinon the Alchemist
+step
+goto 45.71,35.80
+talk Alinon the Alchemist |q The Hidden Harvest/Talk to Alinon the Alchemist
+|tip He is in a cage hanging from the ceiling.
+step
+goto 46.26,35.77
+talk Eveli Sharp-Arrow  |q The Hidden Harvest/Talk to Eveli Sharp-Arrow
+step
+goto 51.94,38.27 |q The Hidden Harvest/Destroy the Briarheart Tree
+step
+goto 38.11,69.14
+'Recover Alinon's Alchemy Bag |q The Hidden Harvest/Destroy the Briarheart Tree
+|tip Manually skip to the next step.
+step
+goto 31.67,47.18
+|tip Watch Dialogue
+'Destroy Briarheart Tree |q The Hidden Harvest/Destroy the Briarheart Tree
+|tip Manually skip to the next step.
+step
+goto 31.67,47.18
+kill the enemies that attack in waves: |q The Hidden Harvest/Destroy the Briarheart Tree
+step
+goto 10.87,47.52
+'Open Wrothgar |q The Hidden Harvest/Exit the Fortress
+step
+goto wrothgar_base 36.40,85.63
+talk Alinon the Alchemist
+turnin The Hidden Harvest
+step
 goto 36.76,85.23
-click Frostbreak Fortress |q For King and Glory/Find Urfon Ice-Heart
+'Open Frostbreak Fortress |q For King and Glory/Find Urfon Ice-Heart
 |tip Manually skip to the next step.
 step
-goto frostbreakfortint_Map_base 42.19,25.27
-click Ice-Heart's Lair|q For King and Glory/Find Urfon Ice-Heart |future
+goto frostbreakfortint_map_base 42.19,25.27
+'Open Ice-Heart's Lair |q For King and Glory/Find Urfon Ice-Heart |future
 |tip Manually skip to the next step.
 step
-goto iceheartslair_Map_base 50.51,49.52
+goto iceheartslair_map_base 50.51,49.52
 kill Urfon Ice-Heart |q For King and Glory/Kill Urfon Ice-Heart |future
 step
 goto 54.51,45.22
@@ -26267,13 +26362,13 @@ step
 goto orsinium_base 65.49,64.30 |q For King and Glory/Return to Scarp Keep |tip Go up the stairs
 step
 goto 73.95,72.25
-click Scarp Keep |q For King and Glory/Return to Scarp Keep
+'Open Scarp Keep |q For King and Glory/Return to Scarp Keep
 |tip Manually skip to the next step.
 step
-goto 57.04,42.51 |q For King and Glory/Return to Scarp Keep |tip Go up the stairs
+goto scarpkeeplower_base 57.04,42.51 |q For King and Glory/Return to Scarp Keep |tip Go up the stairs
 step
 goto scarpkeepupper_base 77.85,21.49
-click Throne Room |q For King and Glory/Return to Scarp Keep
+'Open Throne Room |q For King and Glory/Return to Scarp Keep
 step
 goto orsiniumthroneroom_base 63.44,32.65
 talk Forge-Mother Alga |q For King and Glory/Talk to Forge-Mother Alga
@@ -26285,16 +26380,22 @@ goto 62.24,30.30
 talk King Kurog
 turnin For King and Glory
 step
-'Open Wrothgar Map
-'Travel to _Orsinium_ in Wrothgar |q A King-Sized Problem/Talk to King Kurog |future
+goto 34.07,82.85
+'Open Main Hall |q A King-Sized Problem |future
 |tip Manually skip to the next step.
 step
-goto orsinium_base 32.26,87.96
+goto 35.48,34.08
+'Open Orsinium |q A King-Sized Problem |future
+|tip Manually skip to the next step.
+step
+goto orsinium_base 62.02,64.23 |q A King-Sized Problem |future
+step
+goto 32.26,87.96
 talk Talviah Aliaria
 accept A King-Sized Problem
 step
 goto 53.41,73.73
-click The King's Cornerclub |q A King-Sized Problem/Talk to King Kurog
+'Open The King's Cornerclub |q A King-Sized Problem/Talk to King Kurog
 |tip Manually skip to the next step.
 step
 goto 55.06,75.63
@@ -26337,7 +26438,8 @@ talk Priest Rooghub |q A King-Sized Problem/Find a Way Into the Temple
 |tip Manually skip to the next step.
 step
 goto 28.40,52.44
-click Temple of Ire |q A King-Sized Problem/Enter the Temple
+'Open Temple of Ire |q A King-Sized Problem/Enter the Temple |future
+|tip Manually skip to the next step.
 step
 goto orsiniumtempleupper_base 26.68,47.64 |q A King-Sized Problem/Get the Key to the Rectory |tip Avoid NPC patrols and stay in _Stealth_ mode by pressing Control
 step
@@ -26351,12 +26453,7 @@ kill Grand Fanatic Shurkol
 step
 goto 40.22,81.17
 |tip Enter _Stealth_ mode by pressing Control and Avoid the NPC patrols as you go:
-click Temple Rectory |q A King-Sized Problem/Enter the Temple Rectory
-|tip Manually skip to the next step.
-step
-goto rectory01_base 50.62,25.31
-click the Temple Rectory |q A King-Sized Problem/Enter the Temple Rectory
-step
+'Open Temple Rectory |q A King-Sized Problem/Enter the Temple Rectory
 goto 50.47,38.22
 kill the Malacath Forces
 talk Priest Uugus |q A King-Sized Problem/Save Priest Uugus
@@ -26387,7 +26484,7 @@ step
 goto 73.30,31.95 |q A King-Sized Problem/Talk to Forge-Mother Alga
 step
 goto 50.62,12.62
-click the Temple of Ire |q A King-Sized Problem/Talk to Forge-Mother Alga
+'Open the Temple of Ire |q A King-Sized Problem/Talk to Forge-Mother Alga
 |tip Manually skip to the next step.
 step
 goto orsiniumtemplelower_base 45.62,73.25
@@ -26395,7 +26492,7 @@ talk Forge-Mother Alga
 turnin A King-Sized Problem
 step
 goto 65.15,13.69
-click Orsinium |q In the Name of the King/Talk to King Kurog |future
+'Open Orsinium |q In the Name of the King/Talk to King Kurog |future
 |tip Manually skip to the next step.
 step
 goto orsinium_base 30.48,46.06
@@ -26410,13 +26507,13 @@ step
 goto 63.04,62.99 |q In the Name of the King/Talk to King Kurog
 step
 goto 73.98,72.33
-click the Keep |q In the Name of the King/Talk to King Kurog
+'Open Scarp Keep |q In the Name of the King/Talk to King Kurog
 |tip Manually skip to the next step.
 step
 goto scarpkeeplower_base 55.65,39.22 |q In the Name of the King/Talk to King Kurog |tip Go up the stairs
 step
 goto scarpkeepupper_base 77.89,21.33
-click the Throne Room |q In the Name of the King/Talk to King Kurog
+'Open the Throne Room |q In the Name of the King/Talk to King Kurog
 |tip Manually skip to the next step.
 step
 goto orsiniumthroneroom_base 67.51,23.12
@@ -26426,7 +26523,9 @@ step
 'Travel to _Trader's Road_ in Wrothgar |q In the Name of the King/Recruit the Chief of Clan Tumnosh
 |tip Manually skip to the next step.
 step
-goto wrothgar_base 48.55,68.16 |q In the Name of the King/Recruit the Chief of Clan Tumnosh
+goto wrothgar_base 48.10,70.30 |q In the Name of the King/Recruit the Chief of Clan Tumnosh
+step
+goto 50.57,73.01 |q In the Name of the King/Recruit the Chief of Clan Tumnosh
 step
 goto 51.80,72.22 |q In the Name of the King/Recruit the Chief of Clan Tumnosh
 step
@@ -26454,13 +26553,21 @@ step
 goto 37.89,78.55 |q Quarry Conundrum/Find the High Elf
 step
 goto 32.41,72.16
+|tip If not here go to the next spot hes been found.
 talk Neramo |q Quarry Conundrum/Find the High Elf
 step
-goto 36.13,63.18 |q Quarry Conundrum/Find the Dwarven Control Center
+goto 36.13,63.18 |q Quarry Conundrum/Find the Dwarven Control Center |future
 step
-goto 46.94,57.61 |q Quarry Conundrum/Find the Dwarven Control Center
+goto 46.94,57.61 |q Quarry Conundrum/Find the Dwarven Control Center |future
 step
-goto 49.45,50.56 |q Quarry Conundrum/Find the Dwarven Control Center
+goto 49.45,50.56 |q Quarry Conundrum/Find the Dwarven Control Center |future
+step
+goto 61.63,49.84 |q Quarry Conundrum/Find the Dwarven Control Center |future
+step
+goto 70.46,55.82 |q Quarry Conundrum/Find the Dwarven Control Center |future
+step
+goto 69.37,46.87
+talk Neramo |q Quarry Conundrum/Find the High Elf
 step
 goto 73.69,63.57
 'Find the Dwarven Control Center |q Quarry Conundrum/Find the Dwarven Control Center
@@ -26494,11 +26601,11 @@ goto 90.69,63.57
 'Tell him _"So I can tell the Orcs they can reopen the exterior quarry now?"_
 step
 goto 54.86,40.69
-click the Quarry Depths |q Quarry Conundrum/Talk to Forge-Wife Kharza
+'Open the Quarry Depths |q Quarry Conundrum/Talk to Forge-Wife Kharza
 |tip Manually skip to the next step.
 step
 goto graystonequarrytop_base 42.88,13.85
-click Wrothgar |q Quarry Conundrum/Talk to Forge-Wife Kharza
+'Climb Wrothgar |q Quarry Conundrum/Talk to Forge-Wife Kharza
 |tip Manually skip to the next step.
 step
 goto wrothgar_base 51.83,76.18
@@ -26512,15 +26619,21 @@ step
 goto 51.61,72.29 |q In the Name of the King/Recruit the Chief of Clan Tumnosh
 step
 goto 53.85,71.41
-click Tumnosh Longhouse |q In the Name of the King/Recruit the Chief of Clan Tumnosh
+'Open Tumnosh Longhouse |q In the Name of the King/Recruit the Chief of Clan Tumnosh
 |tip Manually skip to the next step.
 step
 goto 54.07,71.04
 talk Chief Ramash |q In the Name of the King/Recruit the Chief of Clan Tumnosh
 step
-goto 54.49,71.75 |q In the Name of the King/Recruit the Chief of Clan Shatul |tip Leave this house.
+'Open Wrothgar Map
+'Travel to _Orsinium_ in Wrothgar |q In the Name of the King/Recruit the Chief of Clan Shatul
+|tip Manually skip to the next step.
 step
-goto 48.43,44.97 |q In the Name of the King/Recruit the Chief of Clan Shatul
+goto orsinium_base 27.72,80.42 |q In the Name of the King/Recruit the Chief of Clan Shatul
+step
+goto 42.92,62.85 |q In the Name of the King/Recruit the Chief of Clan Shatul
+step
+goto 53.87,30.89 |q In the Name of the King/Recruit the Chief of Clan Shatul
 step
 goto wrothgar_base 76.35,53.03
 talk Glagosh |q In the Name of the King/Recruit the Chief of Clan Shatul
@@ -26577,15 +26690,15 @@ talk Yazara
 'Talk to Yazara |q A Question of Succession/Talk to Yazara
 step
 goto 80.07,47.46
-click the Bloody Knoll |q A Question of Succession/Replace Laurig or Ushruka's Sword
+'Open the Bloody Knoll |q A Question of Succession/Replace Laurig or Ushruka's Sword
 |tip Manually skip to the next step.
 step
 goto bloodyknoll_base 36.30,35.33
 |tip You can pick Ushruka's Weapon Rack if you want.
-click Laurig Weapon Rack |q A Question of Succession/Replace Laurig or Ushruka's Sword
+'Use Laurig Weapon Rack |q A Question of Succession/Replace Laurig or Ushruka's Sword
 step
 goto 35.85,43.54
-click Hiding Spot |q A Question of Succession/Hide Before the Duelists Arrive
+'Use Hiding Spot |q A Question of Succession/Hide Before the Duelists Arrive
 step
 goto wrothgar_base 77.04,50.82
 talk Yazara
@@ -26623,35 +26736,35 @@ step
 |tip Manually skip to the next step.
 step
 goto wrothgar_base 66.59,45.07
-click Morkul Descent |q In the Name of the King/Recruit the Chief of Clan Morkul
+'Open Morkul Descent |q In the Name of the King/Recruit the Chief of Clan Morkul
 |tip Manually skip to the next step.
 step
-goto 36.31,15.08 |q The Hand of Morkul/Search for Ashaka
+goto morkuldescent_map_base 36.31,15.08 |q The Hand of Morkul/Search for Ashaka
 step
 goto 51.03,56.48 |q The Hand of Morkul/Search for Ashaka
 step
 goto 68.17,76.08
-click for Ashaka |q The Hand of Morkul/Search for Ashaka
+'Search for Ashaka |q The Hand of Morkul/Search for Ashaka
 step
 goto 71.41,78.59
 talk Ashaka |q The Hand of Morkul/Talk to Ashaka
 step
 goto 76.03,77.96
-click Brazier |q The Hand of Morkul/Open the Way to Morkuldin
+'Use Brazier |q The Hand of Morkul/Open the Way to Morkuldin
 |tip Manually skip to the next step.
 step
 goto 76.38,83.19
-click Brazier |q The Hand of Morkul/Open the Way to Morkuldin
+'Use Brazier |q The Hand of Morkul/Open the Way to Morkuldin
 |tip Manually skip to the next step.
 step
 goto 71.26,83.24
-click Brazier |q The Hand of Morkul/Open the Way to Morkuldin
+'Use Brazier |q The Hand of Morkul/Open the Way to Morkuldin
 step
 goto 80.03,72.84
-click Morkuldin |q The Hand of Morkul/Explore Morkuldin
+'Use Morkuldin |q The Hand of Morkul/Explore Morkuldin
 |tip Manually skip to the next step.
 step
-goto morkuldin_Map_base 33.39,60.36
+goto morkuldin_map_base 33.39,60.36
 'Explore Morkuldin |q The Hand of Morkul/Explore Morkuldin
 step
 goto 36.17,57.22
@@ -26705,22 +26818,28 @@ talk Ashaka
 turnin The Hand of Morkul
 step
 goto 44.55,60.73
-click Chief Abzug's Longhouse |q In the Name of the King/Recruit the Chief of Clan Morkul
+'Open Chief Abzug's Longhouse |q In the Name of the King/Recruit the Chief of Clan Morkul
 |tip Manually skip to the next step.
 step
 goto 48.57,61.12
 talk Chief Abzug |q In the Name of the King/Recruit the Chief of Clan Morkul
 step
+goto 33.42,70.27 |q In the Name of the King/Report to King Kurog
+step
+goto 64.54,69.78 |q In the Name of the King/Report to King Kurog
+step
+goto wrothgar_base 50.54,52.21 |q In the Name of the King/Report to King Kurog
+step
 goto 44.40,54.44
 wayshrine Morkul Plain
 step
 goto 44.41,54.49
-click Morkul Plains Wayshrine
+'Use Morkul Plains Wayshrine
 'Travel to _Orsinium_ in Wrothgar |q In the Name of the King/Report to King Kurog
 |tip Manually skip to the next step.
 step
 goto orsinium_base 53.39,73.68
-click The King's Cornerclub |q In the Name of the King/Report to King Kurog
+'Open The King's Cornerclub |q In the Name of the King/Report to King Kurog
 |tip Manually skip to the next step.
 step
 goto 51.21,74.83
@@ -26732,27 +26851,23 @@ talk Eveli Sharp-Arrow
 |tip She runs up to you outside the Cornerclub.
 accept To Save a Chief
 step
-goto 37.64,67.25 |q To Save a Chief/Talk to High Priestess Solgra |tip Leave Mages Guild
-step
 goto 44.00,48.28 |q To Save a Chief/Talk to High Priestess Solgra
 step
 goto 30.81,50.41
-click the Temple of Ire |q To Save a Chief/Talk to High Priestess Solgra
+'Open the Temple of Ire |q To Save a Chief/Talk to High Priestess Solgra
 |tip Manually skip to the next step.
 step
 goto orsiniumtemplelower_base 56.02,37.09
 talk High Priestess Solgra |q To Save a Chief/Talk to High Priestess Solgra
 step
 goto wrothgar_base 71.17,50.07
-click Shatul Wayshrine
+'Open Wrothgar Map
 'Travel to _Icy Shore_ in Wrothgar |q To Save a Chief/Meet Eveli at Fharun Stronghold
 |tip Manually skip to the next step.
 step
-goto 09.15,65.65
-click Wrothgar |q To Save a Chief/Meet Eveli at Fharun Stronghold
-|tip Manually skip to the next step.
+goto wrothgar_base 62.68,41.86
 step
-goto wrothgar_base 67.51,32.96 |q To Save a Chief/Meet Eveli at Fharun Stronghold |tip Cross the bridge
+goto 67.51,32.96 |q To Save a Chief/Meet Eveli at Fharun Stronghold |tip Cross the bridge
 step
 goto 65.57,28.10
 'Meet Eveli at Fharun Stronghold |q To Save a Chief/Meet Eveli at Fharun Stronghold
@@ -26796,7 +26911,7 @@ talk Chief Bazrag |q To Save a Chief/Talk to Chief Bazrag
 step
 goto 70.99,30.86
 'Walk with Chief Bazrag:
-click the Chamber of Scorn |q To Save a Chief/Escort Chief Bazrag to Safety
+'Open the Chamber of Scorn |q To Save a Chief/Escort Chief Bazrag to Safety
 |tip Manually skip to the next step.
 step
 goto 65.55,33.15
@@ -26809,7 +26924,7 @@ kill Viras the Red |q To Save a Chief/Escort Chief Bazrag to Safety
 |tip Manually skip to the next step.
 step
 goto 53.61,37.38
-click Fharun Prison |q To Save a Chief/Escort Chief Bazrag to Safety
+'Open Fharun Prison |q To Save a Chief/Escort Chief Bazrag to Safety
 |tip Manually skip to the next step.
 step
 goto 49.25,37.54
@@ -26817,25 +26932,24 @@ talk Chief Bazrag |q To Save a Chief/Escort Chief Bazrag to Safety
 |tip Manually skip to the next step.
 step
 goto 39.87,33.26
-click Pressure Plate Valve |q To Save a Chief/Escort Chief Bazrag to Safety
+'Use Pressure Plate Valve |q To Save a Chief/Escort Chief Bazrag to Safety
 |tip Hitting the last valve first removes the time limit.
 |tip Manually skip to the next step.
 step
 goto 44.69,30.55
-click Pressure Plate Valve |q To Save a Chief/Escort Chief Bazrag to Safety
+'Use Pressure Plate Valve |q To Save a Chief/Escort Chief Bazrag to Safety
 |tip Manually skip to the next step.
 step
 goto 44.83,37.41
-click Pressure Plate Valve |q To Save a Chief/Escort Chief Bazrag to Safety
+'Use Pressure Plate Valve |q To Save a Chief/Escort Chief Bazrag to Safety
 |tip Manually skip to the next step.
 step
 goto 43.01,32.55
-click Pressure Plate Valve |q To Save a Chief/Escort Chief Bazrag to Safety
+'Use Pressure Plate Valve |q To Save a Chief/Escort Chief Bazrag to Safety
 |tip Manually skip to the next step.
 step
 goto 34.74,5.38
-click Fharun Stronghold
-'Escort Chief Bazrag to Safety |q To Save a Chief/Escort Chief Bazrag to Safety |future
+'Open Fharun Stronghold |q To Save a Chief/Escort Chief Bazrag to Safety |future
 |tip Manually skip to the next step.
 step
 goto fharunstronghold01_base 89.57,53.52
@@ -26843,10 +26957,6 @@ talk Chief Bazrag |q To Save a Chief/Talk to Chief Bazrag
 step
 goto 86.67,54.40
 talk Eveli Sharp-Arrow |q To Save a Chief/Talk to Eveli Sharp-Arrow
-step
-goto 66.88,76.74
-click the Fharun Stronghold |q To Save a Chief/Find Ulsha Outside Fharun
-|tip Manually skip to the next step.
 step
 'Open Wrothgar Map
 'Travel to _Icy Shore_ in Wrothgar |q To Save a Chief/Find Ulsha Outside Fharun
@@ -26869,15 +26979,17 @@ step
 talk Shield-Wife Razbela
 accept The Anger of a King
 step
+goto orsinium_base 65.29,62.75 |q The Anger of a King/Talk to King Kurog
+step
 goto 74.01,72.32
-click the Keep |q The Anger of a King/Talk to King Kurog
+'Open the Keep |q The Anger of a King/Talk to King Kurog
 |tip Manually skip to the next step.
 step
 goto scarpkeeplower_base 52.94,51.17
 talk King Kurog |q The Anger of a King/Talk to King Kurog
 step
 goto 35.77,34.32
-'Return to Orsinium |q The Anger of a King/Find Eveli Sharp-Arrow
+'Open Orsinium |q The Anger of a King/Find Eveli Sharp-Arrow
 |tip Manually skip to the next step.
 step
 goto orsinium_base 72.10,71.77
@@ -26885,8 +26997,8 @@ talk Owayine |q The Anger of a King/Find Eveli Sharp-Arrow
 step
 'Press _I_ to open your inventory:
 'Look under the _Quest_ filter:
-click _The Wood Elf's Message_
-click the Letter in Your Inventory |q The Anger of a King/Read the Letter in Your Inventory
+'Highlight _The Wood Elf's Message_
+'Use the Letter in Your Inventory |q The Anger of a King/Read the Letter in Your Inventory
 step
 goto 61.69,63.82 |q The Anger of a King/Decipher the Letter to Find Eveli
 step
@@ -26895,7 +27007,8 @@ step
 goto 42.84,63.02 |q The Anger of a King/Decipher the Letter to Find Eveli
 step
 goto 46.01,51.25
-click The Greedy Gut |q The Anger of a King/Decipher the Letter to Find Eveli
+|tip Do not go up the stairs.
+'Open The Greedy Gut |q The Anger of a King/Decipher the Letter to Find Eveli
 |tip Manually skip to the next step.
 step
 goto 51.13,54.22
@@ -26918,6 +27031,10 @@ step
 'Travel to _Frostbreak Ridge_ in Wrothgar |q The Anger of a King/Meet the Scouts at Paragon's Remembrance
 |tip Manually skip to the next step.
 step
+goto wrothgar_base 36.79,77.39
+step
+goto 30.54,77.62
+step
 goto 31.19,70.51
 wayshrine Great Bay
 step
@@ -26931,22 +27048,17 @@ goto 16.80,75.87
 talk Eveli Sharp-Arrow |q The Anger of a King/Talk to Eveli Sharp-Arrow
 step
 goto 12.77,76.48
-talk Vosh Rakh Overseer
-click Vosh Rakh Overseer |q The Anger of a King/Find a Vosh Rakh Disguise
+'Examine Vosh Rakh Overseer |q The Anger of a King/Find a Vosh Rakh Disguise
 step
 goto 7.62,78.40
-click Paragon's Remembrance |q The Anger of a King/Enter Paragon's Remembrance
-|tip Manually skip to the next step.
-step
-goto 7.62,78.40
-click Paragon's Remembrance |q The Anger of a King/Find Your Companions
+'Open Paragon's Remembrance |q The Anger of a King/Enter Paragon's Remembrance |future
 |tip Manually skip to the next step.
 step
 goto paragonsrememberance_base 87.92,19.66
 talk Eveli Sharp-Arrow |q The Anger of a King/Find Your Companions
 step
 goto 87.34,17.88
-click the Chambers of Loyalty |q The Anger of a King/Enter the Chambers of Loyalty
+'Open the Chambers of Loyalty |q The Anger of a King/Enter the Chambers of Loyalty |future
 |tip Manually skip to the next step.
 step
 goto chambersofloyalty_base 23.06,69.41
@@ -26957,22 +27069,18 @@ talk Elder Azulg |q The Anger of a King/Complete the Trials
 |tip Manually skip to the next step.
 step
 goto 26.31,49.71
-click The Scroll of Usunok |q The Anger of a King/Complete the Trials
-|tip Manually skip to the next step.
+'Examine The Scroll of Usunok |lorebook The Scroll of Usunok/3/25/88
 step
 goto 23.00,53.31
-click The Scroll of Avalian |q The Anger of a King/Complete the Trials
-|tip Manually skip to the next step.
+'Examine The Scroll of Avalian |lorebook The Scroll of Avalian/3/25/86
 step
 goto 19.72,49.63
-click The Scroll of Vaia |q The Anger of a King/Complete the Trials
-|tip Manually skip to the next step.
+'Examine The Scroll of Vaia |lorebook The Scroll of Vaia/3/25/87
 step
 goto 23.00,42.32
 talk Elder Akarah
 'Tell her _"I choose Usunok's strength."_
-'Choose a Blessing |q The Anger of a King/Complete the Trials
-|tip Manually skip to the next step.
+'Choose a Blessing |q The Anger of a King/Talk to Talviah
 step
 goto 45.11,21.45
 '_This Trial is timed!_
@@ -26994,7 +27102,7 @@ goto 59.14,44.19
 'Activate Gauntlet Switch |q The Anger of a King/Complete the Trials
 step
 goto 75.33,39.45
-click the Council Chamber |q The Anger of a King/Find the Vosh Rakh Council
+'Open the Council Chamber |q The Anger of a King/Find the Vosh Rakh Council
 |tip Manually skip to the next step.
 step
 goto 75.45,62.68
@@ -27005,16 +27113,16 @@ goto 75.04,68.80
 kill the Vosh Rakh |q The Anger of a King/Kill the Vosh Rakh
 step
 goto 75.50,70.44
-click Vosh Rakh Orders |q The Anger of a King/Find the Information You Seek
+'Open Vosh Rakh Orders |q The Anger of a King/Find the Information You Seek
 step
 goto 65.93,59.46
-click the Chambers of Loyalty |q The Anger of a King/Rendezvous with Eveli Sharp-Arrow
+'Open the Chambers of Loyalty |q The Anger of a King/Rendezvous with Eveli Sharp-Arrow
 |tip Manually skip to the next step.
 step
 goto 58.22,73.09 |q The Anger of a King/Rendezvous with Eveli Sharp-Arrow
 step
 goto 29.90,72.77
-click the Waiting Chambers |q The Anger of a King/Rendezvous with Eveli Sharp-Arrow
+'Open the Waiting Chambers |q The Anger of a King/Rendezvous with Eveli Sharp-Arrow
 |tip Manually skip to the next step.
 step
 goto 23.09,95.34
@@ -27053,7 +27161,7 @@ goto 16.95,30.01 |q The King's Gambit/Find a Way Inside the Inn
 step
 goto 15.75,35.56
 kill Captain Nulra
-click Leather Pack |q The King's Gambit/Investigate the Guard Meeting Area
+'Search Leather Pack |q The King's Gambit/Investigate the Guard Meeting Area
 step
 goto 16.95,30.01 |q The King's Gambit/Meet Allies in the Greedy Gut
 step
@@ -27062,7 +27170,7 @@ step
 goto 23.97,36.24 |q The King's Gambit/Meet Allies in the Greedy Gut
 step
 goto 45.80,51.20
-click the Greedy Gut |q The King's Gambit/Meet Allies in the Greedy Gut
+'Open the Greedy Gut |q The King's Gambit/Meet Allies in the Greedy Gut
 |tip Manually skip to the next step.
 step
 goto 48.48,52.31 |q The King's Gambit/Meet Allies in the Greedy Gut |tip Go up the stairs.
@@ -27080,7 +27188,7 @@ step
 goto 54.35,71.56 |q The King's Gambit/Talk to King Kurog
 step
 goto 73.93,72.31
-click Scarp Keep |q The King's Gambit/Talk to King Kurog
+'Open Scarp Keep |q The King's Gambit/Talk to King Kurog
 |tip Manually skip to the next step.
 step
 goto scarpkeepupper_base 44.68,31.60
@@ -27106,12 +27214,12 @@ step
 goto 55.37,39.56 |q The King's Gambit/Find the Path in the Throne Room |tip Go up the stairs.
 step
 goto scarpkeepupper_base 77.81,21.29
-click the Throne Room |q The King's Gambit/Find the Path in the Throne Room
+'Open the Throne Room |q The King's Gambit/Find the Path in the Throne Room
 |tip Manually skip to the next step.
 step
 goto orsiniumthroneroom_base 68.20,22.14
 kill Shield-Wife Razbela, Shield-Wife Oshgana
-click The King's Orders |q The King's Gambit/Find the Path in the Throne Room
+'Examine The King's Orders |q The King's Gambit/Find the Path in the Throne Room
 step
 goto orsinium_base 63.38,67.62
 talk Chief Bazrag
@@ -27129,7 +27237,7 @@ step
 goto 33.33,44.39 |q Blood on a King's Hands/Enter the Temple
 step
 goto 30.82,50.34
-click the Temple |q Blood on a King's Hands/Enter the Temple
+'Open the Temple |q Blood on a King's Hands/Enter the Temple |future
 |tip Manually skip to the next step.
 step
 goto orsiniumtemplelower_base 25.93,62.14
@@ -27139,7 +27247,7 @@ goto orsiniumtempleupper_base 30.18,81.38 |q Blood on a King's Hands/Find High P
 step
 goto 38.83,30.64
 |tip Go up stairs and ramps.
-click Orsinium |q Blood on a King's Hands/Find High Priestess Solgra
+'Open Orsinium |q Blood on a King's Hands/Find High Priestess Solgra
 |tip Manually skip to the next step.
 step
 goto orsinium_base 14.15,57.39
@@ -27160,7 +27268,7 @@ goto 17.20,58.91
 talk Penitent Vumnish |q Blood on a King's Hands/Confront the Assassin
 step
 goto 28.39,52.42
-click the Temple of Ire |q Blood on a King's Hands/Check on Solgra in the Temple
+'Open the Temple of Ire |q Blood on a King's Hands/Check on Solgra in the Temple
 |tip Manually skip to the next step.
 step
 goto orsiniumtemplelower_base 29.84,20.46
@@ -27170,7 +27278,7 @@ step
 goto 61.87,78.42 |q Blood on a King's Hands/Go to the Temple Library |tip Go up the stairs.
 step
 goto 62.37,87.18
-click Temple Library |q Blood on a King's Hands/Go to the Temple Library
+'Open Temple Library |q Blood on a King's Hands/Go to the Temple Library |future
 |tip Manually skip to the next step.
 step
 goto pathtothemoo_library_base 56.21,81.26
@@ -27191,11 +27299,11 @@ goto 39.58,57.36
 'Activate Library Switch |q Blood on a King's Hands/Find the Secret Passage
 step
 goto 50.86,84.13
-click the Temple Undertunnels |q Blood on a King's Hands/Go to the Moot
+'Open the Temple Undertunnels |q Blood on a King's Hands/Go to the Moot
 |tip Manually skip to the next step.
 step
 goto pathtothemoot_base 12.29,58.83
-click Temple Undertunnels |q Blood on a King's Hands/Go to the Moot
+'Open Temple Undertunnels |q Blood on a King's Hands/Go to the Moot
 |tip Manually skip to the next step.
 step
 goto 17.77,70.82 |q Blood on a King's Hands/Go to the Moot
@@ -27209,7 +27317,7 @@ step
 goto 79.78,65.50 |q Blood on a King's Hands/Go to the Moot
 step
 goto 79.87,48.36
-click Undertunnels Exit |q Blood on a King's Hands/Go to the Moot
+'Open Undertunnels Exit |q Blood on a King's Hands/Go to the Moot
 step
 goto 80.47,28.39
 'Rescue the Chiefs |q Blood on a King's Hands/Rescue the Chiefs
@@ -27239,7 +27347,7 @@ step
 goto 51.15,71.29 |q Long Live the King/.*Gather Your Allies for the Funeral.* |count 2
 step
 goto 44.63,64.25
-click Mazabakh's House |q Long Live the King/.*Gather Your Allies for the Funeral.* |count 2
+'Open Mazabakh's House |q Long Live the King/.*Gather Your Allies for the Funeral.* |count 2
 |tip Manually skip to the next step.
 step
 goto 48.89,64.47
@@ -27250,7 +27358,7 @@ goto 37.86,65.48
 talk Ulsha |q Long Live the King/.*Gather Your Allies for the Funeral.* |count 3
 step
 goto 45.84,51.22
-click the Greedy Gut |q Long Live the King/.*Gather Your Allies for the Funeral.* |count 4
+'Open the Greedy Gut |q Long Live the King/.*Gather Your Allies for the Funeral.* |count 4
 |tip Manually skip to the next step.
 step
 goto 48.47,52.21 |q Long Live the King/.*Gather Your Allies for the Funeral.* |count 4
@@ -27261,7 +27369,7 @@ step
 goto 35.45,43.81 |q Long Live the King/.*Gather Your Allies for the Funeral.* |count 6
 step
 goto 30.83,50.24
-click the Temple of Ire |q Long Live the King/.*Gather Your Allies for the Funeral.* |count 6
+'Open the Temple of Ire |q Long Live the King/.*Gather Your Allies for the Funeral.* |count 6
 |tip Manually skip to the next step.
 step
 goto orsiniumtemplelower_base 55.55,37.84
@@ -27277,7 +27385,7 @@ step
 goto 43.90,65.99 |q Long Live the King/Go to the King's Cornerclub
 step
 goto 53.43,73.69
-'Go to the King's Cornerclub |q Long Live the King/Go to the King's Cornerclub
+'Open King's Cornerclub |q Long Live the King/Go to the King's Cornerclub
 step
 goto 54.59,76.51
 talk Roxanne
@@ -27285,27 +27393,28 @@ talk Roxanne
 'Get Kurog's Favorite Ale |q Long Live the King/Get Kurog's Favorite Ale
 step
 goto 73.91,72.24
-click Scarp Keep |q Long Live the King/Go to the Castle Overlook
+'Open Scarp Keep |q Long Live the King/Go to the Castle Overlook
 |tip Manually skip to the next step.
 step
 goto scarpkeeplower_base 56.02,39.50 |q Long Live the King/Go to the Castle Overlook
 step
 goto scarpkeepupper_base 51.74,12.81
-click Castle Overlook |q Long Live the King/Go to the Castle Overlook
+|tip Go up the stairs.
+'Open Castle Overlook |q Long Live the King/Go to the Castle Overlook
 |tip Manually skip to the next step.
 step
 goto orsinium_base 79.19,51.16
 talk Chief Bazrag |q Long Live the King/Talk to Chief Bazrag
 step
 goto 78.05,50.37
-click Funeral Pyre |q Long Live the King/Participate in the Funeral
+'Use Funeral Pyre |q Long Live the King/Participate in the Funeral
 |tip Manually skip to the next step.
 step
 goto 80.66,50.14
-click Funeral Pyre |q Long Live the King/Participate in the Funeral
+'Use Funeral Pyre |q Long Live the King/Participate in the Funeral
 step
 goto 77.86,67.63
-'Return to the Keep |q Long Live the King/Talk to King Bazrag
+'Open Scarp Keep |q Long Live the King/Talk to King Bazrag
 |tip Manually skip to the next step.
 step
 goto scarpkeeplower_base 45.47,48.88 |q Long Live the King/Talk to King Bazrag |tip Go up the stairs.
