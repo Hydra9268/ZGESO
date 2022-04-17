@@ -668,15 +668,15 @@ function Utils.DistanceOffsetForGoto(dist,selfdist)
 		-- sorting based on preceived popularity
 			if  GetCurrentMapIndex() == Enums.SummersetMap then	return 1.5
 
-        elseif  GetCurrentMapIndex() == Enums.CraglornMap or
-		        GetCurrentMapIndex() == Enums.SouthernElsweyrMap then   return 2
+        elseif  GetCurrentMapIndex() == Enums.SouthernElsweyrMap then   return 2
 
 		elseif 	GetCurrentMapIndex() == Enums.ArtaeumMap or
 		        GetCurrentMapIndex() == Enums.KhenarthisRoostMap then	return 2.5
 
 		elseif 	GetCurrentMapIndex() == Enums.BlackwoodMap or
 		        GetCurrentMapIndex() == Enums.BlackreachMap or
-			    GetCurrentMapIndex() == Enums.NorthernElsweyrMap or
+			    GetCurrentMapIndex() == Enums.CraglornMap or
+		        GetCurrentMapIndex() == Enums.NorthernElsweyrMap or
 			    GetCurrentMapIndex() == Enums.U28BlackreachMap or
 			    GetCurrentMapIndex() == Enums.MurkmireMap then		return 3
 

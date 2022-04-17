@@ -19922,7 +19922,7 @@ talk Assistant Telixith |q Keepers of the Shell/Find Assistant Telixith
 step
 goto 53.31,49.48
 kill Fimrimion
-click Ceremonial Chest |q Keepers of the Shell/Light the Eastern Xanmeer
+'Open Ceremonial Chest |q Keepers of the Shell/Light the Eastern Xanmeer
 |tip Manually skip to the next step.
 step
 '_In your Inventory:_
@@ -25292,9 +25292,840 @@ step
 
 ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Expansion\\Craglorn",[[
 loadingimage loadscreen_craglorn_01.dds
-description Coming Soon!!
+description The constellations have disappeared. Ancient Yokudan warriors and deadly atronachs menace the rocky expanse of Craglorn.
 step
-'Coming Soon
+'Open Auridon Map
+'Travel to the _Vulkhel Guard_ in Auridon |q The Star-Gazers |future
+|tip Manually skip to the next step.
+|only Aldmeri Dominion
+step
+goto vulkhelguard_base 54.09,63.67
+talk Selandilwen |q The Star-Gazers |future
+'Tell her _I'd like to travel within the Aldmeri Dominion._
+'Tell her _Grahtwood, please._
+|tip Manually skip to the next step.
+|only Aldmeri Dominion
+step
+goto eldenrootgroundfloor_base 66.76,45.06
+talk Star-Gazer Herald
+accept The Star-Gazers
+|only Aldmeri Dominion
+step
+goto 66.76,45.06
+'Use Cart to Belkarth |q The Star-Gazers/Board the Cart |future
+|tip Manually skip to the next step.
+|only Aldmeri Dominion
+step
+'Open Glenumbra_ Map
+'Travel to _Daggerfall_ in Glenumbra |q The Star-Gazers |future
+|tip Manually skip to the next step.
+|only Daggerfall Covenant
+step
+goto daggerfall_base 45.01,30.77 |q The Star-Gazers |future
+|only Daggerfall Covenant
+step
+goto 23.26,24.86 |q The Star-Gazers |future
+|only Daggerfall Covenant
+step
+goto 21.18,11.98
+talk Azoufah |q The Star-Gazers |future
+'Tell her _I'd like to travel within the Daggerfall Covenant._
+'Tell her _Stormhaven, when your ready._
+|tip Manually skip to the next step.
+|only Daggerfall Covenant
+step
+goto wayrest_base 74.50,85.44 |q The Star-Gazers |future
+|only Daggerfall Covenant
+step
+goto 68.10,62.94 |q The Star-Gazers |future
+|only Daggerfall Covenant
+step
+goto 40.65,15.43
+talk Star-Gazer Herald
+accept The Star-Gazers
+|only Daggerfall Covenant
+step
+goto 41.28,16.05
+'Use Cart to _Belkarth_ |q The Star-Gazers/Board the Cart |future
+|tip Manually skip to the next step.
+|only Daggerfall Covenant
+step
+'Open Stonefalls Map
+'Travel to _Davon's Watch_ in Stonefalls |q The Star-Gazers/Board the Cart |future
+|tip Manually skip to the next step
+|only Ebonheart Pact
+step
+goto davonswatch_base 69.54,69.39 |q The Star-Gazers/Board the Cart |future
+|only Ebonheart Pact
+step
+goto 71.20,58.70 |q The Star-Gazers/Board the Cart |future
+|only Ebonheart Pact
+step
+goto 65.75,49.64 |q The Star-Gazers/Board the Cart |future
+|only Ebonheart Pact
+step
+goto 78.26,42.07 |q The Star-Gazers/Board the Cart |future
+|only Ebonheart Pact
+step
+goto 77.98,29.99
+talk Falvis Raram |q The Star-Gazers/Board the Cart |future
+'Tell him _I'd like to travel within the Ebonheart Pact._
+'Tell him _Deshaan, when you're ready._
+|tip Manually skip to the next step.
+|only Ebonheart Pact
+step
+goto mournhold_base 65.87,48.34
+talk Star-Gazer Herald
+accept The Star-Gazers
+|only Ebonheart Pact
+step
+goto 65.87,48.34
+'Use Cart to Belkarth |q The Star-Gazers/Board the Cart |future
+|tip Manually skip to the next step.
+|only Ebonheart Pact
+step
+goto belkarth_base 52.76,39.47 |q The Star-Gazers/Ask About Star-Gazers In Town
+step
+goto 44.97,64.15
+talk Slonn Clod-Kicker |q The Star-Gazers/Ask About Star-Gazers In Town
+step
+goto 25.07,57.11
+'Open Star-Gazers' Observatory |q The Star-Gazers/Find Hara
+step
+goto 24.82,43.86
+talk Hara |q The Star-Gazers/Talk to Hara
+step
+goto 24.86,45.05
+'Use Ritual Circle |q The Star-Gazers/Experience the Ritual
+step
+goto 24.82,44.07
+talk The Thief |q The Star-Gazers/Talk to the Thief
+step
+goto 25.43,43.89
+'Use Portal to Belkarth |q The Star-Gazers/Return to the Star-Gazers
+step
+goto 24.78,43.80
+talk Hara
+turnin The Star-Gazers
+step
+goto 25.72,54.37
+talk Engariel
+accept Elemental Army
+step
+goto 25.10,56.15
+'Open Belkarth |q Elemental Army/Investigate the Proving Grounds Dolmen
+|tip Manually skip to the next step.
+step
+goto 25.96,70.29
+talk Brown-Tooth
+accept The Warrior's Call
+step
+goto 52.47,39.71 |q The Warrior's Call/Search for the Indecent Imperial at Bangkorai Gate
+step
+goto craglorn_base 48.20,57.46
+wayshrine Seeker's Archive
+step
+goto 53.81,62.98 |q The Warrior's Call/Search for the Indecent Imperial at Bangkorai Gate
+step
+goto 57.80,58.67
+wayshrine Spellscar
+step
+goto 57.80,58.67
+'Use Spellscar Wayshrine
+'Travel to _Seeker's Archive_ in Craglorn |q The Warrior's Call/Search for the Indecent Imperial at Bangkorai Gate
+|tip Manually skip to the next step.
+step
+goto 30.81,57.30
+wayshrine Sandy Path
+step
+goto 16.17,51.40
+talk Titus Valerius |q The Warrior's Call/Search for the Indecent Imperial at Bangkorai Gate
+step
+goto 16.17,51.40
+'Free Titus Valerius |q The Warrior's Call/Free Titus Valerius
+step
+goto 15.66,45.03 |q The Warrior's Call/Travel to Buried Sands
+step
+goto 14.35,46.28
+'Open Buried Sands |q The Warrior's Call/Travel to Buried Sands |future
+|tip Manually skip to the next step.
+step
+goto burriedsands_base 40.61,63.69 |q The Warrior's Call/Search for the Burial Chamber
+step
+goto 33.65,37.56 |q The Warrior's Call/Search for the Burial Chamber
+step
+goto 18.33,42.10
+|tip Go down the hill below the statue.
+'Open Forgotten Burial Chamber |q The Warrior's Call/Search for the Burial Chamber
+step
+goto 09.18,50.40
+'Listen to Titus Valerius |q The Warrior's Call/Listen to Titus Valerius
+step
+'Open Craglorn Map
+'Travel to _Sandy Path_ in Craglorn |q The Warrior's Call/Find the Ruined Library
+|tip Manually skip to the next step.
+step
+goto craglorn_base 37.88,71.89
+'Find the Ruined Library |q The Warrior's Call/Find the Ruined Library
+step
+goto 37.88,71.89
+'Open Ruined Library |q The Warrior's Call/Enter the Ruined Library
+|tip Manually skip to the next step.
+step
+'_Go straight then left_
+'Examine Book back left stack |q The Warrior's Call/Help Titus Locate the Legend of Tarish-Zi |future
+|tip Watch Dialogue
+step
+'_Go back straight then right_
+'Open Craglorn |q The Warrior's Call/Retrieve Riza's Royal Seal
+|tip Manually skip to the nextstep.
+step
+goto craglorn_base 37.15,61.86
+'Open Ancient Tomb |q The Warrior's Call/Retrieve Riza's Royal Seal
+|tip Manually skip to the next step.
+step
+goto 37.34,60.13
+'Search Riza's Royal Seal |q The Warrior's Call/Retrieve Riza's Royal Seal
+step
+goto 37.28,61.92
+'Open Craglorn |q The Warrior's Call/Retrieve Tahmin's Royal Seal
+|tip Manually skip to the next step.
+step
+goto 44.15,52.79
+'Open Anicent Tomb |q The Warrior's Call/Retrieve Tahmin's Royal Seal
+|tip Manually skip to the next step.
+step
+goto 42.53,53.91
+'Search Tahmin's Royal Seal |q The Warrior's Call/Retrieve Tahmin's Royal Seal
+step
+'Open Craglorn Map
+'Travel to _Sandy Path_ in Craglorn |q The Warrior's Call/Meet Titus In the Tombs of the Na-Totambu
+|tip Manually skip to the next step.
+step
+goto 31.65,60.37 |q The Warrior's Call/Meet Titus In the Tombs of the Na-Totambu
+step
+goto 32.16,65.50
+'Open Tombs of the Na-Totambu |q The Warrior's Call/Meet Titus In the Tombs of the Na-Totambu
+|tip Manually skip to the next step.
+step
+goto cryptoftarishzizone_base 64.56,36.32 |q The Warrior's Call/Meet Titus In the Tombs of the Na-Totambu
+step
+goto 47.44,36.45 |q The Warrior's Call/Meet Titus In the Tombs of the Na-Totambu
+step
+goto 49.19,55.45 |q The Warrior's Call/Meet Titus In the Tombs of the Na-Totambu
+step
+goto 39.88,49.05 |q The Warrior's Call/Meet Titus In the Tombs of the Na-Totambu |tip Follow steps up and around.
+step
+goto 26.13,63.26 |q The Warrior's Call/Meet Titus In the Tombs of the Na-Totambu
+step
+goto 56.47,65.77 |q The Warrior's Call/Meet Titus In the Tombs of the Na-Totambu
+step
+goto cryptoftarishzi_base 37.91,55.12
+'Meet Titus In the Tombs of the Na-Totambu |q The Warrior's Call/Meet Titus In the Tombs of the Na-Totambu
+step
+goto 40.62,57.33
+'Open Crypt Tarish-Zi |q The Warrior's Call/Search for Emperor Tarish-Zi
+|tip Manually skip to the next step.
+step
+goto cryptoftarishzi2_base 41.40,86.98
+kill Emperor Tarish-Zi |q The Warrior's Call/Defeat Emperor Tarish-Zi |future
+step
+goto 41.48,63.46
+talk Thief
+turnin The Warrior's Call
+step
+'Open Craglorn Map
+'Travel to _Belkarth_ Wayshrine in Craglorn |q Elemental Army/Investigate the Proving Grounds Dolmen
+|tip Manually skip to the next step.
+step
+goto belkarth_base 70.25,23.83 |q Elemental Army/Investigate the Proving Grounds Dolmen
+step
+goto craglorn_base 79.08,63.68
+wayshrine Elinhir
+step
+goto 79.02,52.56
+wayshrine Inazzur's Hold
+step
+goto 66.03,47.13
+wayshrine Mountain Overlook
+step
+goto 69.04,45.90
+'Investigate the Proving Grounds Dolmen |q Elemental Army/Investigate the Proving Grounds Dolmen
+step
+goto 69.04,45.90
+talk The Thief |q Elemental Army/Talk to the Thief
+step
+goto 66.02,47.16
+'Use Mountain Overlook Wayshrine
+'Travel to _Belkarth_ in Craglorn |q Elemental Army/Find Kelmen Locke
+|tip Manually skip to the next step.
+step
+goto belkarth_base 83.80,26.43 |q Elemental Army/Find Kelmen Locke
+step
+goto craglorn_base 66.45,67.80
+'Open Haddock's Market |q Elemental Army/Find Kelmen Locke
+|tip Manually skip to the next step.
+step
+goto haddock_base 38.75,75.92 |q Elemental Army/Find Kelmen Locke
+step
+goto 59.13,60.13 |q Elemental Army/Find Kelmen Locke
+step
+goto 45.56,38.11 |tip Up the steps, across the bridge and down the steps. |q Elemental Army/Find Kelmen Locke
+step
+goto 71.77,16.39
+'Open Tower |q Elemental Army/Find Kelmen Locke
+|tip Manually skip to the next step.
+step
+goto 71.77,16.39
+'Find Kelmen Locke |q Elemental Army/Find Kelmen Locke
+step
+goto 71.77,16.39
+talk Kelmen Locke |q Elemental Army/Talk to Kelmen Locke
+step
+'Open Craglorn Map
+'Travel to _Mountain Overlook_ in Craglorn |q Elemental Army/Defeat the Frost Monarch
+|tip Manually skip to the next step.
+step
+goto craglorn_base 54.48,41.07
+wayshrine Valley of Scars
+step
+goto 54.52,41.04
+'Use Valley of Scars Wayshrine
+'Travel to _Inazzur's Hold_ Wayshrine |q Elemental Army/Defeat the Frost Monarch
+|tip Manually skip to the next step.
+step
+goto 80.51,48.38
+'Open Frost Monarch Lair |q Elemental Army/Defeat the Frost Monarch
+|tip Manually skip to the next step.
+step
+goto frostmonarchlair_base 23.50,42.68 |q Elemental Army/Defeat the Frost Monarch
+step
+goto 73.54,41.24
+kill Nomeg Ozal |q Elemental Army/Defeat the Frost Monarch
+step
+'Open Craglorn Map
+'Travel to _Elinhir_ in Cragslorn |q Elemental Army/Defeat the Storm Monarch
+|tip Manually skip to the next step.
+step
+goto craglorn_base 77.78,61.88
+'Open Storm Monarch Lair |q Elemental Army/Defeat the Storm Monarch
+|tip Manually skip to the next step.
+step
+goto stormlair_base 21.44,47.24 |q Elemental Army/Defeat the Storm Monarch
+step
+goto 50.79,54.50 |q Elemental Army/Defeat the Storm Monarch
+step
+goto 72.86,45.17
+kill Zymel Mirapharrus |q Elemental Army/Defeat the Storm Monarch
+step
+'Open Craglorn Map
+'Travel to _Elinhir_ in Cragslorn |q Elemental Army/Defeat the Flame Monarch
+|tip Manually skip to the next step.
+step
+goto craglorn_base 74.34,70.12 |q Elemental Army/Defeat the Flame Monarch
+step
+goto 74.36,72.65
+'Open Molavar |q Elemental Army/Defeat the Flame Monarch
+|tip Manually skip to the next step.
+step
+goto molavar_base 77.59,56.56 |q Elemental Army/Defeat the Flame Monarch
+step
+goto 48.56,80.45
+'Open Flame Monarch Lair |q Elemental Army/Defeat the Flame Monarch
+|tip Manually skip to the next step.
+step
+goto 52.44,93.57
+kill Magdra Ibrai |q Elemental Army/Defeat the Flame Monarch
+step
+'Open Craglorn Map
+'Travel to _Elinhir_ in Cragslorn |q Elemental Army/Find Kelmen Locke at Ritual Site
+|tip Manually skip to the next step.
+step
+goto craglorn_base 88.60,65.94 |q Elemental Army/Find Kelmen Locke at Ritual Site
+step
+goto 88.44,67.71 |q Elemental Army/Find Kelmen Locke at Ritual Site
+step
+goto 89.81,67.65
+'Find Kelmen Locke |q Elemental Army/Find Kelmen Locke at Ritual Site
+step
+goto 89.65,67.76
+'Use Left Focus |q Elemental Army/Summon the Flame Monarch
+step
+goto 89.65,67.76
+'Use Middle Focus |q Elemental Army/Summon the Frost Monarch
+step
+goto 89.65,67.76
+'Use Right Focus |q Elemental Army/Summon the Storm Monarch
+step
+goto 89.65,67.76
+'Listen to the Atronachs |q Elemental Army/Listen to the Atronachs
+step
+goto 89.65,67.76
+talk Kelmen |q Elemental Army/Talk to Kelmen
+step
+'Open Craglorn Map
+'Travel to _Elinhir_ in Cragslorn |q Elemental Army/Kill the Air Monarch
+|tip Manually skip to the next step.
+step
+goto craglorn_base 82.85,62.94 |q Elemental Army/Kill the Air Monarch
+step
+goto 81.16,57.64 |q Elemental Army/Kill the Air Monarch
+step
+goto 82.44,57.59
+'Open Balamath |q Elemental Army/Kill the Air Monarch
+|tip Manually skip to the next step.
+step
+goto balamath_base 51.49,73.77 |q Elemental Army/Kill the Air Monarch
+step
+goto 56.58,53.26 |q Elemental Army/Kill the Air Monarch
+step
+goto 53.03,47.39 |q Elemental Army/Kill the Air Monarch
+step
+goto 41.77,40.47 |q Elemental Army/Kill the Air Monarch
+step
+goto 24.96,61.70
+'Open Balamath Hall |q Elemental Army/Kill the Air Monarch
+|tip Manually skip to the next step.
+step
+goto balamathairmonarchcham_base 45.24,60.20
+kill Parel Nirus |q Elemental Army/Kill the Air Monarch
+step
+goto balamathairmonarchcham_base 72.02,08.77
+'Open Balamath |q Elemental Army/Talk to Kelmen
+|tip Manually skip to the next step.
+step
+goto balamath_base 26.38,59.73
+talk Kelemen
+turnin Elemental Army
+step
+goto 27.95,55.08
+talk Cursare
+accept The Missing Guardian
+step
+'Open Craglorn Map
+'Travel to _Belkarth_ in Craglorn |q The Missing Guardian/Talk to Nazdura
+|tip Manually skip to the next step.
+step
+goto belkarth_base 42.31,66.99 |q The Missing Guardian/Talk to Nazdura
+step
+goto 24.66,43.89
+|tip Inside Star-Gazers Observatory
+talk Nazdura |q The Missing Guardian/Talk to Nazdura
+step
+goto 25.41,54.44
+|tip Upstairs insde Private Quarters
+'Find Hara at the Star-Gazer's Observatory |q The Missing Guardian/Find Hara at the Star-Gazer's Observatory
+step
+goto 25.44,54.52
+talk Titus Valerius |q The Missing Guardian/Talk to Titus Valerius
+step
+goto 25.05,56.15
+|tip Leave this building.
+'Open Belkarth |q The Missing Guardian/Meet Titus and Kelmen at the Lake
+|tip Manually skip to the next step.
+step
+goto 64.79,86.63
+'Meet Titus and Kelmen at the Lake |q The Missing Guardian/Meet Titus and Kelmen at the Lake
+step
+goto 64.56,86.71
+talk Kelmen Locke |q The Missing Guardian/Talk to Kelmen Locke
+step
+goto craglorn_base 58.39,75.69
+'Activate Guidestone |q The Missing Guardian/Find a Way Inside Reinhold's Retreat
+|tip Manually skip to the next step.
+step
+goto 58.40,76.35
+'Activate Guidestone |q The Missing Guardian/Find a Way Inside Reinhold's Retreat
+|tip Manually skip to the next step.
+step
+goto 57.76,76.31
+'Activate Guidestone |q The Missing Guardian/Find a Way Inside Reinhold's Retreat
+|tip Manually skip to the next step.
+step
+goto 57.78,75.68
+'Activate Guidestone |q The Missing Guardian/Find a Way Inside Reinhold's Retreat
+step
+goto 58.11,75.98
+'Enter Reinhold's Retreat |q The Missing Guardian/Enter Reinhold's Retreat |future
+|tip Manually skip to the next step.
+step
+goto reinholdsretreatcave_base 35.87,54.78 |q The Missing Guardian/Search the Ruins
+step
+goto 41.01,58.73
+'Open Hall of the Oathkeepers |q The Missing Guardian/Search the Ruins
+tip Manually skip to the next step.
+step
+goto 57.26,62.90
+kill Madleena Blackvein |q The Missing Guardian/Defeat Madleena Blackvein
+step
+goto 62.64,47.54 |q The Missing Guardian/Search for the Apex Stone
+step
+goto 69.88,47.45
+'Open Star-Gazer Sanctuary |q The Missing Guardian/Search for the Apex Stone
+step
+goto 82.55,47.36
+|tip Keep the Aetherial stones activated while killing waves of enemies.
+kill The Serpant |q The Missing Guardian/Stop the Serpent and Free the Thief's Apex Stone
+step
+goto 83.30,47.40
+talk Hara |q The Missing Guardian/Talk to Hara
+step
+goto belkarth_base 26.96,70.01 |q The Missing Guardian/Meet Hara at the Star-Gazer Observatory
+step
+goto 24.80,42.47
+talk Hara
+turnin The Missing Guardian
+step
+goto 25.06,56.15
+'Open Belkarth |q Slithering Brood |future
+|tip Manually skip to the next step.
+step
+goto 25.82,60.59
+talk Thaenaneth
+accept Slithering Brood
+step
+goto 40.11,68.22 |q Slithering Brood/Meet Regent Cassipia Near Dragonstar
+step
+goto 49.89,32.36
+'Use Belkarth Wayshrine
+'Travel to _Sandy Path_ in Craglorn |q Slithering Brood/Meet Regent Cassipia Near Dragonstar
+|tip Manually skip to the next step.
+step
+goto craglorn_base 23.02,42.20
+wayshrine Shada's Tear
+step
+goto 22.72,44.10 |q Slithering Brood/Meet Regent Cassipia Near Dragonstar
+step
+goto 16.47,40.34 |q Slithering Brood/Meet Regent Cassipia Near Dragonstar
+step
+goto craglorn_dragonstar_base 41.56,73.65
+wayshrine Dragonstar
+step
+goto 25.87,66.79
+talk Regent Cassipia |q Slithering Brood/Meet Regent Cassipia Near Dragonstar
+step
+goto craglorn_base 08.68,30.54
+'Open Fearfangs Cavern |achieve 897
+|tip Manually skip to the next step.
+step
+goto fearfang_base 81.51,56.32 |q Slithering Brood/.*Destroy the Scorpion Nests.* |count 1
+step
+goto 64.83,34.41 |q Slithering Brood/.*Destroy the Scorpion Nests.* |count 1
+step
+goto 28.38,25.48 |q Slithering Brood/.*Destroy the Scorpion Nests.* |count 1
+step
+goto 18.99,57.46
+kill Lakorrah The Matron |q Slithering Brood/Kill the Scorpion Matron
+step
+goto 28.29,50.47
+'Burn Scorpion Matron's Nest |q Slithering Brood/.*Destroy the Scorpion Nests.* |count 1
+step
+goto 28.96,66.21
+'Burn Scorpion Matron's Nest |q Slithering Brood/.*Destroy the Scorpion Nests.* |count 2
+step
+goto 43.94,61.70
+'Open Fearfangs Cavern |q Slithering Brood/Talk to Cassipia
+|tip Manually skip to the next step.
+step
+goto 47.19,61.97
+talk Regent Cassipia |q Slithering Brood/Talk to Cassipia
+step
+goto 70.16,75.51
+'Open Craglorn |q Slithering Brood/Kill the Wamasu Eggbearer
+|tip Manually skip to the next step.
+step
+goto craglorn_base 09.80,35.86 |q Slithering Brood/Kill the Wamasu Eggbearer
+step
+goto crgwamasucave_base 43.46,59.81
+kill the Wamasu Eggbearer |q Slithering Brood/Kill the Wamasu Eggbearer
+step
+goto 62.64,76.84
+'Burn the Wamasu Eggs |q Slithering Brood/Destroy the Wamasu Eggs
+step
+'Open Craglorn Map
+'Travel to _Dragonstar_ in Craglorn |q Slithering Brood/Meet Regent Cassipia Near Dragonstar
+|tip Manually skip to the next step.
+step
+goto craglorn_dragonstar_base 26.03,66.91
+talk Regent Cassipia |q Slithering Brood/Meet Regent Cassipia Near Dragonstar
+step
+goto craglorn_base 27.98,30.00 |q Slithering Brood/Kill the Progenitor Mantikora
+step
+goto 28.26,26.35
+'Open Serpent's Nest |q Slithering Brood/.*Set the Prisoners Free |count 1
+|tip Manually skip to the next step.
+step
+goto serpentsnest_base 76.10,52.51|q Slithering Brood/.*Set the Prisoners Free |count 1
+step
+goto 75.13,27.41|q Slithering Brood/.*Set the Prisoners Free |count 1
+step
+goto 33.40,30.65 |q Slithering Brood/.*Set the Prisoners Free |count 1
+step
+goto 41.96,52.19 |q Slithering Brood/.*Set the Prisoners Free |count 1
+step
+goto 41.01,52.22 |q Slithering Brood/.*Set the Prisoners Free |count 1
+step
+goto 40.27,59.13
+'Open Spawning Pools Chamber |q Slithering Brood/.*Set the Prisoners Free |count 1
+|tip Manually skip to the next step.
+step
+goto 36.59,69.66
+kill Scaled Court Mobs
+'Set the Prisoners Free |q Slithering Brood/.*Set the Prisoners Free |count 1
+step
+goto 43.41,72.99
+kill Scaled Court Mobs
+'Set the Prisoners Free |q Slithering Brood/.*Set the Prisoners Free |count 2
+step
+goto 32.18,73.27
+kill Scaled Court Mobs
+'Set the Prisoners Free |q Slithering Brood/.*Set the Prisoners Free |count 3
+step
+goto 38.51,78.59
+kill the Progenitor Mantikora |q Slithering Brood/Kill the Progenitor Mantikora
+step
+goto 44.65,78.34
+kill Scaled Court Mobs
+'Set the Prisoners Free |q Slithering Brood/.*Set the Prisoners Free |count 4
+step
+goto 38.48,87.33
+|tip Go up the stairs.
+'Confront Regent Boward |q Slithering Brood/Confront Regent Boward
+step
+goto 39.77,88.28
+'Use Portal to Craglorn |q Slithering Brood/Meet Regent Cassipia Outside
+|tip Manually skip to the next step.
+step
+goto craglorn_base 28.09,26.55
+talk Regent Cassipia
+turnin Slithering Brood
+accept A Leaf in the Wind
+step
+goto 27.92,30.02 |q A Leaf in the Wind/Talk to Little Leaf
+step
+goto 34.99,30.94 |q A Leaf in the Wind/Talk to Little Leaf
+step
+goto 35.12,39.18
+wayshrine Skyreach Wayshrine
+step
+'Use Skyreach Wayshrine
+'Travel to _Valley of Scars_ in Craglorn |q A Leaf in the Wind/Talk to Little Leaf
+|tip Manually skip to the next step.
+step
+goto 55.39,41.69
+talk Little Leaf
+turnin A Leaf in the Wind
+accept The Serpent's Fang
+step
+goto 58.27,42.70
+'Open Ilthag's Undertower |q The Serpent's Fang/Kill Ilthag Ironblood
+|tip Manually skip to the next step.
+step
+goto ilthagsundertower_base 56.05,66.13
+'Drop down in the hole |q The Serpent's Fang/Kill Ilthag Ironblood
+|tip Manually skip to the next step.
+step
+goto ilthagsundertower02_base 67.51,19.70 |q The Serpent's Fang/Kill Ilthag Ironblood
+step
+goto 26.63,11.11 |q The Serpent's Fang/Kill Ilthag Ironblood
+step
+goto ilthagsundertower_base 38.16,23.87 |q The Serpent's Fang/Kill Ilthag Ironblood
+step
+goto 18.26,47.56
+kill Rahk and Vosh
+kill Ilthag Ironblood |q The Serpent's Fang/Kill Ilthag Ironblood
+step
+goto 38.21,61.98
+talk Little Leaf |q The Serpent's Fang/Talk to Little Leaf
+step
+goto 43.56,60.99
+'Open Ilthag's Undertow |q The Serpent's Fang/Meet Little Leaf at the Valley of Scars
+|tip Manually skip to the next step.
+step
+goto 55.53,88.09
+'Climb Craglorn |q The Serpent's Fang/Meet Little Leaf at the Valley of Scars
+|tip Manually skip to the next step.
+step
+goto craglorn_base 53.98,35.51
+'Meet Little Leaf at the Valley of Scars |q The Serpent's Fang/Meet Little Leaf at the Valley of Scars
+step
+goto craglorn_base 51.91,31.10  |q The Serpent's Fang/Kill Runescriber Kulth
+step
+goto 48.41,28.43 |q The Serpent's Fang/Kill Runescriber Kulth
+step
+goto 51.44,29.21
+kill Runescriber Kulth |q The Serpent's Fang/Kill Runescriber Kulth
+step
+goto 48.27,28.16 |q The Serpent's Fang/Kill Armorer Uthik
+step
+goto 52.08,31.12 |q The Serpent's Fang/Kill Armorer Uthik
+step
+goto 57.38,27.90 |q The Serpent's Fang/Kill Armorer Uthik
+step
+goto 57.30,26.67
+kill Armorer Uthik |q The Serpent's Fang/Kill Armorer Uthik
+step
+goto 54.84,24.98
+'Open Exarch's Stronghold |q The Serpent's Fang/Enter Exarch's Stronghold
+|tip Manually skip to the next step.
+step
+goto exarchsstronghold_base 59.99,73.56
+'Open Exarch's Stronghold |q The Serpent's Fang/Enter the Throne Room
+|tip Manually skip to the next step.
+step
+goto 59.37,43.54
+'Open Exarch's Stronghold |q The Serpent's Fang/Enter the Throne Room
+|tip Manually skip to the next step.
+step
+goto 68.69,16.64 |q The Serpent's Fang/Enter the Throne Room
+step
+goto 68.65,11.71 |q The Serpent's Fang/Enter the Throne Room
+step
+goto 49.20,07.99
+'Open Exarch Braadoth's Abode |q The Serpent's Fang/Enter the Throne Room
+|tip Manually skip to the next step.
+step
+goto 37.87,15.86 |tip Go up the steps |q The Serpent's Fang/Enter the Throne Room
+step
+goto 34.17,20.11
+'Open Exarch Braadoth's Throne Room |q The Serpent's Fang/Enter the Throne Room
+step
+goto 17.62,20.50
+kill Exarch Braadoth and Kurzoth |q The Serpent's Fang/Kill Exarch Braadoth and Kurzoth
+step
+goto 33.61,20.08
+'Open Exarch Braadoth's Abode |achieve 898
+|tip Manually skip to the next step.
+step
+goto 41.43,33.59
+|tip Follow top path around
+'Open Exarch Stronghold |q The Serpent's Fang/Talk to Little Leaf Outside
+|tip Manually skip to the next step.
+step
+goto 40.90,70.82
+'Open Exarch Stronghold |q The Serpent's Fang/Talk to Little Leaf Outside
+|tip Manually skip to the next step.
+step
+goto 46.08,83.48
+'Open Exarch Stronghold |q The Serpent's Fang/Talk to Little Leaf Outside
+|tip Manually skip to the next step.
+step
+goto 60.00,96.91
+'Open Craglorn |q The Serpent's Fang/Talk to Little Leaf Outside
+|tip Manually skip to the next step.
+step
+goto craglorn_base 54.89,25.31
+talk Little Leaf
+turnin The Serpent's Fang
+step
+goto 54.73,25.52
+talk Anneke
+|tip She runs up the stairs to you.
+accept Dawn of the Exalted Viper
+step
+'Open Craglorn Map
+'Travel to _Belkarth_ in Craglorn |q Dawn of the Exalted Viper/Talk to Titus in Belkarth
+|tip Manually skip to the next step.
+step
+goto belkarth_base 33.29,69.88 |q Dawn of the Exalted Viper/Talk to Titus in Belkarth
+step
+goto 23.10,59.58
+talk Titus Valerius |q Dawn of the Exalted Viper/Talk to Titus in Belkarth
+step
+goto belkarth_base 33.29,69.88 |q Dawn of the Exalted Viper/Enter the Howling Sepulchers
+step
+goto 49.84,32.64
+'Open Belkarth Wayshrine
+'Travel to _Valley of Scars_ in Craglorn |q Dawn of the Exalted Viper/Enter the Howling Sepulchers
+|tip Manually skip to the next step.
+step
+goto craglorn_base 66.26,33.09 |q Dawn of the Exalted Viper/Enter the Howling Sepulchers
+step
+goto 66.32,33.13
+'Open The Howling Sepulchers |q Dawn of the Exalted Viper/Enter the Howling Sepulchers |future
+|tip Manually skip to the next step
+step
+goto howlingsepulchersoverland_base 43.34,86.67
+'Open The Howling Sepulchers |q Dawn of the Exalted Viper/Enter the Sanctum of Farsight
+|tip Manually skip to the next step.
+step
+goto 60.52,72.12
+'Open Sanctum of Farsight |q Dawn of the Exalted Viper/Enter the Sanctum of Farsight
+step
+goto howlingsepulchersscrying_base 53.94,51.47
+|tip Use Ritual fires quickly its timed.
+'Activate Ritual Fires |q Dawn of the Exalted Viper/Activate the Ritual Fires
+step
+goto 53.94,51.47
+'Observe the Farsight |q Dawn of the Exalted Viper/Observe the Farsight
+step
+goto 53.94,51.47
+talk The Thief |q Dawn of the Exalted Viper/Talk to the Thief
+step
+'Open Craglorn Map
+'Travel to _Skyreach_ in Craglorn |q Dawn of the Exalted Viper/Enter Loth'Na Caverns
+|tip Manually skip to the next step.
+step
+goto craglorn_base 36.01,32.95 |q Dawn of the Exalted Viper/Enter Loth'Na Caverns
+step
+goto 40.02,30.91
+'Open Loth'Na Caverns |q Dawn of the Exalted Viper/Enter Loth'Na Caverns |future
+|tip Manually skip to the next step.
+step
+goto lothna_base 64.41,56.39 |q Dawn of the Exalted Viper/Enter Skyreach Temple |future
+step
+goto 61.67,44.81 |q Dawn of the Exalted Viper/Enter Skyreach Temple |future
+step
+goto 64.18,43.63 |q Dawn of the Exalted Viper/Enter Skyreach Temple |future
+step
+goto 65.78,24.84
+'Activate all 4 bridge triggers |q Dawn of the Exalted Viper/Enter Skyreach Temple |future
+|tip Manually skip to the next step.
+step
+goto 73.00,07.63
+'Open Skyreach Temple |q Dawn of the Exalted Viper/Enter Skyreach Temple |future
+|tip Manually skip to the next step.
+step
+goto skyreachtemple_base 51.94,42.90
+|tip Follow path up the steps
+kill Little Leaf and The Exalted Viper |q Dawn of the Exalted Viper/Defeat the Exalted Viper
+step
+goto 51.59,50.17
+'Use Portal to the Star-Gazer's Observatory |q Dawn of the Exalted Viper/Return to the Star-Gazer's Observatory |future
+|tip Manually skip to the next step.
+step
+goto belkarth_base 29.79,45.30
+talk The Thief
+turnin Dawn of the Exalted Viper
+step
+goto 25.11,61.20
+|tip Outside the building
+talk The Celestial Warrior
+accept The Time-Lost Warrior
+step
+goto 30.47,70.21 |q The Time-Lost Warrior/Find Titus Valerius
+step
+goto 49.78,32.44
+'Use Belkarth Wayshrine
+'Travel to _Valley of Scars_ in Craglorn |q The Time-Lost Warrior/Find Titus Valerius
+|tip Manually skip to the next step.
+step
+goto craglorn_base 64.30,34.57 |q The Time-Lost Warrior/Find Titus Valerius
+step
+goto 64.30,34.57
+talk Titus Valerius |q The Time-Lost Warrior/Talk to Titus Valerius
+step
+goto 63.63,34.41
+talk The Celestial Warrior |q The Time-Lost Warrior/Talk to the Celestial Warrior
+step
+goto 55.61,37.84
+kill Skarath of the Many
+'Retrieve the Warrior's Blade |q The Time-Lost Warrior/Retrieve the Warrior's Blade
+step
+goto 64.27,34.52
+talk Titus Valerius
+turnin The Time-Lost Warrior |next Extra's\\Extra's\\Main Quests Only\\Expansion\\Wrothgar
+step
 ]])
 
 ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Expansion\\Wrothgar",[[
@@ -25306,9 +26137,8 @@ step
 
 ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Expansion\\Thieves Guild",[[
 loadingimage loadscreen_outlaw_refuge_nedic_01.dds
-description Coming Soon
+description Help restore the Thieves Guild in Abah's Landing, currently besieged by the mercenary force known as the Iron Wheel.
 step
-'Coming Soon
 ]])
 
 ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Expansion\\Dark Brotherhood",[[

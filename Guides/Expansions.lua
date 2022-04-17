@@ -7,99 +7,99 @@ loadingimage loadscreen_craglorn_01.dds
 description The constellations have disappeared. Ancient Yokudan warriors and deadly atronachs menace the rocky expanse of Craglorn.
 step
 'Open Auridon Map
-'Travel to the _Vulkhel Guard_ in Grahtwood |q The Star-Gazers |future
+'Travel to the _Elden Root_ in Grahtwood |q The Star-Gazers |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto vulkhelguard_base 54.09,63.67
 talk _Selandilwen_ |q The Star-Gazers |future
 'Tell her _I'd like to travel within the Aldmeri Dominion._
 'Tell her _Grahtwood, please._
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto eldenrootgroundfloor_base 66.76,45.06
 talk _Star-Gazer Herald_
 accept The Star-Gazers
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 66.76,45.06
 click _Cart_ to _Belkarth_ |q The Star-Gazers/Board the Cart |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 'Open Glenumbra_ Map
 'Travel to _Daggerfall_ in Glenumbra |q The Star-Gazers |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto daggerfall_base 45.01,30.77 |q The Star-Gazers |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 23.26,24.86 |q The Star-Gazers |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 21.18,11.98
 talk _Azoufah_ |q The Star-Gazers |future
 'Tell her _I'd like to travel within the Daggerfall Covenant._
 'Tell her _Stormhaven, when your ready._
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto wayrest_base 74.50,85.44 |q The Star-Gazers |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 68.10,62.94 |q The Star-Gazers |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 40.65,15.43
 talk _Star-Gazer Herald_
 accept The Star-Gazers
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 41.28,16.05
 click _Cart_ to _Belkarth_ |q The Star-Gazers/Board the Cart |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 'Open Stonefalls Map
 'Travel to _Davon's Watch_ in Stonefalls |q The Star-Gazers/Board the Cart |future
 |tip Manually skip to the next step
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto davonswatch_base 69.54,69.39 |q The Star-Gazers/Board the Cart |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 71.20,58.70 |q The Star-Gazers/Board the Cart |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 65.75,49.64 |q The Star-Gazers/Board the Cart |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 78.26,42.07 |q The Star-Gazers/Board the Cart |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 77.98,29.99
 talk _Falvis Raram_ |q The Star-Gazers/Board the Cart |future
 'Tell him _I'd like to travel within the Ebonheart Pact._
 'Tell him _Deshaan, when you're ready._
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto mournhold_base 65.87,48.34
 talk _Star-Gazer Herald_
 accept The Star-Gazers
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 65.87,48.34
 click _Cart_ to _Belkarth_ |q The Star-Gazers/Board the Cart |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto belkarth_base 52.76,39.47 |q The Star-Gazers/Ask About Star-Gazers In Town
 step
 goto 44.97,64.15
-talk _Slonn Clod-Kicker_ |q The Star-Gazers/Ask About Star-Gazers In Town
+talk Slonn Clod-Kicker |q The Star-Gazers/Ask About Star-Gazers In Town
 step
 goto 25.07,57.11
 click _Star-Gazers' Observatory_ |q The Star-Gazers/Find Hara
@@ -1301,47 +1301,47 @@ step
 'Open Auridon Map
 'Travel to _Vulkhel Guard_ in Auridon |q Invitation to Orsinium |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto vulkhelguard_base 52.78,40.00
 talk Stuga
 accept Invitation to Orsinium
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 49.36,40.47
 talk Ambassador Lazgara |q Invitation to Orsinium/Talk to Wrothgar Ambassador
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 'Open Glenumbra Map
 'Travel to _Daggerfall_ in Glenumbra |q Invitation to Orsinium |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto daggerfall_base 48.17,24.17
 talk Stuga
 accept Invitation to Orsinium
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 44.42,26.03
 talk Ambassador Lazgara |q Invitation to Orsinium/Talk to Wrothgar Ambassador
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 'Open Stonefalls Map
 'Travel to _Davon's Watch_ in Stonefalls |q Invitation to Orsinium |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto davonswatch_base 48.72,72.16 |future |q Invitation to Orsinium
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 51.81,65.14
 talk Stuga
 accept Invitation to Orsinium
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 51.78,57.88
 talk Ambassador Lazgara |q Invitation to Orsinium/Talk to Wrothgar Ambassador
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto wrothgar_base 60.12,76.43
 |tip Watch dialogue
@@ -4064,103 +4064,103 @@ step
 'Open Greenshade Map
 'Travel to _Marbruk_ in Greenshade |q Partners in Crime |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto marbruk_base 63.44,39.39 |q Partners in Crime |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 61.66,25.85
 click Marbruk Outlaws Refuge |q Partners in Crime |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto MarbrukOutlawsRefuge_base 45.08,32.31
 talk Quen
 accept Partners in Crime
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 'Open Greenshade Map
 'Travel to _Woodheart_ in Greenshade |q Partners in Crime/Meet Quen at the Woodhearth Docks 
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto Woodhearth 76.36,56.80 |q Partners in Crime/Meet Quen at the Woodhearth Docks
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 18.04,53.78
 talk Quen |q Partners in Crime/Meet Quen at the Woodhearth Docks
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 18.04,53.78
 'Travel boat |q Partners in Crime/Travel to Fulstrom Homestead |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 |tip Manually skip to the next step.
 step
 'Open Stormhaven Map
 'Travel to _Wayrest_ in Stormhaven |q Partners in Crime |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto wayrest_base 26.85,48.06
 click Wayrest Outlaws Refuge |q Partners in Crime |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto stormhavenoutlawrefuge_base 54.33,57.77
 talk Quen
 accept Partners in Crime
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 27.16,88.34
 click Wayrest |q Partners in Crime/Meet Quen at the Wayrest Docks
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto wayrest_base 33.86,47.50 |q Partners in Crime/Meet Quen at the Wayrest Docks
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 47.64,69.07 |q Partners in Crime/Meet Quen at the Wayrest Docks
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 79.85,74.52
 talk Quen |q Partners in Crime/Meet Quen at the Wayrest Docks
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 79.85,74.52
 'Travel boat |q Partners in Crime/Travel to Fulstrom Homestead |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 |tip Manually skip to the next step.
 step
 'Open Eastmarch Map
 'Travel to _Windhelm_ in Eastmarch |q Partners in Crime |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto windhelm_base 65.95,44.44
 click Windhelm Outlaws Refuge |q Partners in Crime |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto eastmarchrefuge_base 24.24,47.25
 talk Quen
 accept Partners in Crime
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 91.35,49.77
 click Windhelm |q Partners in Crime/Meet Quen at the Windhelm Docks
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto windhelm_base 76.22,34.41 |q Partners in Crime/Meet Quen at the Windhelm Docks
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 83.60,48.91
 talk Quen |q Partners in Crime/Meet Quen at the Windhelm Docks
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 83.60,48.91
 'Travel boat |q Partners in Crime/Approach Fulstrom Homestead |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 |tip Manually skip to the next step.
 step
 goto fulstromhomestead_base 25.89,62.98 |q Partners in Crime/Approach Fulstrom Homestead |tip Stealth around.
@@ -4854,89 +4854,89 @@ step
 click Abah's Landing Wayshrine
 'Travel to _Rawl'kha_ in Reaper's March |q A Faded Flower/Travel to Rawl'kha in Reaper's March
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto rawlkha_base 58.93,30.31
 talk Faradan |q A Faded Flower/Find the Khajiit |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto rawlkha_base 59.43,28.15
 click The Waxing Crescent |q A Faded Flower/Find the Khajiit
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 61.63,27.01
 |tip Go up the stairs.
 'Find the Khajiit |q A Faded Flower/Find the Khajiit
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 61.63,27.01
 talk Narahni |q A Faded Flower/Talk to Narahni
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 62.01,26.45
 click Portal to Abah's Landing |q A Faded Flower/Meet Narahni in Abah's Landing
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 click Abah's Landing Wayshrine
 'Travel to _Eastern Evermore_ in Bangkorai |q A Faded Flower/Travel to Evermore in Bangkorai
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto evermore_base 44.19,41.44
 click Anchor's Point Inn |q A Faded Flower/Find the Khajiit
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 41.39,41.66
 talk Faradan |q A Faded Flower/Find the Khajiit
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 43.99,40.46
 |tip Go up the stairs.
 'Find the Khajiit |q A Faded Flower/Find the Khajiit
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 42.12,39.83
 talk Narahni |q A Faded Flower/Talk to Narahni
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 41.82,39.79
 click Portal to Abah's Landing |q A Faded Flower/Meet Narahni in Abah's Landing
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 click Abah's Landing Wayshrine
 'Travel to _Riften_ in The Rift |q A Faded Flower/Travel to Riften in The Rift |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto riften_base 68.29,71.11
 talk Faradan |q A Faded Flower/Find the Khajiit
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 69.59,70.64
 click Shadowhome Inn |q A Faded Flower/Find the Khajiit
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 68.85,73.46
 |tip Go up the stairs.
 'Find the Khajiit |q A Faded Flower/Find the Khajiit
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 68.85,73.46
 talk Narahni |q A Faded Flower/Talk to Narahni
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 69.05,73.61
 click Portal to Abah's Landing |q A Faded Flower/Meet Narahni in Abah's Landing
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto abahslanding_base 25.07,68.89
 talk Narahni |q A Faded Flower/Talk to Narahni
@@ -5672,119 +5672,119 @@ step
 'Open Auridon Map
 'Travel to _Skywatch_ in Auridon |q That Which Was Lost/Go to Skywatch in Auridon |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto skywatch_base 31.03,47.35
 talk Erendette |q That Which Was Lost/Find Tashmin's Friend
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 33.62,37.55
 click Locked Chest |q That Which Was Lost/Acquire Erendette's Ledger Page
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 31.03,47.35
 talk Erendette |q That Which Was Lost/Give Erendette the Ledger Page
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 46.07,72.40
 talk Tashmin |q That Which Was Lost/Search for Tashmin by the Docks
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 45.18,73.33
 'Pickpocket the Bounty Hunter when he's standing at the edge of the steps |q That Which Was Lost/Pickpocket the Bounty Hunter
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 46.07,72.40
 'Rescue Tashmin's Post |q That Which Was Lost/Set Tashmin Free
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 39.64,47.01 |q That Which Was Lost/Meet Tashmin in the City
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 10.52,48.01
 talk Tashmin |q That Which Was Lost/Meet Tashmin in the City
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 'Open Stormhaven Map
 'Travel to _Wayrest_ in Stormhaven |q That Which Was Lost/Go to Wayrest in Stormhaven |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto wayrest_base 42.51,35.73
 talk Erendette |q That Which Was Lost/Find Tashmin's Friend
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 40.59,12.07
 click Locked Chest |q That Which Was Lost/Acquire Erendette's Ledger Page
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 42.50,35.72
 talk Erendette |q That Which Was Lost/Give Erendette the Ledger Page
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 76.99,75.35 |q That Which Was Lost/Search for Tashmin by the Docks
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 75.43,80.82
 talk Tashmin |q That Which Was Lost/Search for Tashmin by the Docks
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 73.69,80.82
 'Pickpocket the Bounty Hunter when he's alone in this room |q That Which Was Lost/Pickpocket the Bounty Hunter
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 75.14,80.78
 'Rescue Tashmin's Post |q That Which Was Lost/Set Tashmin Free
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 79.14,78.81 |q That Which Was Lost/Meet Tashmin in the City
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 23.17,53.05
 talk Tashmin |q That Which Was Lost/Meet Tashmin in the City
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 'Open Eastmarch Map
 'Travel to _Windhelm_ in Eastmarch |q That Which Was Lost/Go to Windhelm in Eastmarch
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto windhelm_base 39.42,29.29
 talk Erendette |q That Which Was Lost/Find Tashmin's Friend |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 59.53,38.64
 |tip Go behind the boxes to avoid being detected.
 click Locked Chest |q That Which Was Lost/Acquire Erendette's Ledger Page
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 39.30,29.21
 talk Erendette |q That Which Was Lost/Give Erendette the Ledger Page
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 79.28,25.54 |q That Which Was Lost/Search for Tashmin by the Docks
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 82.23,39.98 |q That Which Was Lost/Search for Tashmin by the Docks
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 80.54,47.98
 talk Tashmin |q That Which Was Lost/Search for Tashmin by the Docks
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 81.07,47.58
 'Pickpocket the Bounty Hunter when he's at this spot |q That Which Was Lost/Pickpocket the Bounty Hunter
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 80.54,47.98
 'Rescue Tashmin's Post |q That Which Was Lost/Set Tashmin Free
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 75.81,34.10 |q That Which Was Lost/Meet Tashmin in the City
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 61.77,58.40
 talk Tashmin |q That Which Was Lost/Meet Tashmin in the City
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 'Open Hew's Bane Map
 'Travel to _Abah's Landing_ in Hew's Bane |q That Which Was Lost/Return to the Thieves Den
@@ -5832,230 +5832,230 @@ step
 'Open Greenshade Map
 'Travel to _Marbruk_ Greenshade |q The One That Got Away/Find the Desert Falcon in Marbruk
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto marbruk_base 49.54,33.69
 click The Parchment & Horn |q The One That Got Away/Find the Desert Falcon in Marbruk
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 49.69,34.35
 talk Rhanbiq |q The One That Got Away/Talk to Rhanbiq
 |tip Persuade him.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 50.48,32.29
 click Rhanbiq's Strongbox |q The One That Got Away/Retrieve Rhanbiq's Notes
 |tip Upstairs in this building.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 64.24,38.77 |q The One That Got Away/Find Bellulor Chatterbeak in the Marbruk Outlaws Refuge
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto marbruk_base 61.81,26.02
 click Marbruk Outlaws Refuge |q The One That Got Away/Find Bellulor Chatterbeak in the Marbruk Outlaws Refuge
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto MarbrukOutlawsRefuge_base 31.08,43.00
 talk Bellulor Chatterbeak |q The One That Got Away/Talk to Bellulor
 |tip Intimidate him.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 'Open Grahtwood Map
 'Travel to _Haven_ in Grahtwood |q The One That Got Away/Find Nicolas in Grahtwood
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto grahtwood_base 82.76,71.13
 'Travel Rowboat |q The One That Got Away/Find Nicolas in Grahtwood
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 84.78,67.20
 click Manor Garden |q The One That Got Away/Find Nicolas in Grahtwood
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 84.91,67.03
 'Find Nicolas in Grahtwood |q The One That Got Away/Find Nicolas in Grahtwood
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 84.69,66.02
 talk Volunidai |q The One That Got Away/Talk to Volunidai
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 84.29,65.19
 'Unlock Manor Kitchen |q The One That Got Away/Find a Way Into Volunidai's Manor
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 85.08,65.51
 |tip He's upstairs
 talk Nicolas |q The One That Got Away/Confront Nicolas
 'Tell him _"I'll be the judge of that."_
 'And "_You don't get to have a happy family. Your wife should know who you really are."_
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 84.86,65.68
 click Manor Garden |q The One That Got Away/Tell Volunidai About Nicolas
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 84.78,66.09
 talk Volunidai |q The One That Got Away/Tell Volunidai About Nicolas
 'Tell her _"Protect yourself. Keep him as far away from your money as you can."_
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 'Open Rivenspire Map
 'Travel to _Shornhelm_ in Rivenspire |q The One That Got Away/Find the Desert Falcon in Shornhelm
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto shornhelm_base 50.40,61.33
 click Dead Wolf Inn |q The One That Got Away/Find the Desert Falcon in Shornhelm
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 47.82,61.33
 talk Rhanbiq |q The One That Got Away/Talk to Rhanbiq
 |tip Persuade him.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 44.09,60.48
 |tip Go up the stairs.
 click Rhanbiq's Strongbox |q The One That Got Away/Retrieve Rhanbiq's Notes
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 70.44,70.72 |q The One That Got Away/Find Bellulor Chatterbeak in the Shornhelm Outlaws Refuge
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 82.36,58.71 |q The One That Got Away/Find Bellulor Chatterbeak in the Shornhelm Outlaws Refuge
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto rivenspire_base 47.35,53.19
 click Shornhelm Outlaws Refuge |q The One That Got Away/Find Bellulor Chatterbeak in the Shornhelm Outlaws Refuge
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto RivenspireOutlaw_Base 36.72,65.97
 talk Bellulor Chatterbeak |q The One That Got Away/Talk to Bellulor
 |tip Intimidate him.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 'Open Alik'r Map
 'Travel to _Aswala Stables_ in Alik'r |q The One That Got Away/Find Nicolas in the Alik'r Desert
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto alikr_base 50.66,34.90
 'Travel Rowboat |q The One That Got Away/Find Nicolas in the Alik'r Desert
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 49.30,32.20
 click Manor Garden |q The One That Got Away/Find Nicolas in the Alik'r Desert
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 49.30,31.87
 'Find Nicolas in the Alik'r Desert |q The One That Got Away/Find Nicolas in the Alik'r Desert
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 49.15,31.47
 talk Volunidai |q The One That Got Away/Talk to Volunidai
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 49.49,31.33 |q The One That Got Away/Find a Way Into Volunidai's Manor
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 49.01,30.55
 'Unlock Manor Kitchen |q The One That Got Away/Find a Way Into Volunidai's Manor
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 49.15,30.91
 |tip Go up the stairs.
 talk Nicolas  |q The One That Got Away/Confront Nicolas
 'Tell him _"I'll be the judge of that."_
 'And "_You don't get to have a happy family. Your wife should know who you really are."_
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 48.89,31.23
 click Manor Garden |q The One That Got Away/Tell Volunidai About Nicolas
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 49.16,31.61
 talk Volunidai |q The One That Got Away/Tell Volunidai About Nicolas
 'Tell her _"Protect yourself. Keep him as far away from your money as you can."_
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 'Open Shadowfen Map
 'Travel to _Stormhold_ in Shadowfen |q The One That Got Away/Find the Desert Falcon in Stormhold
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto stormhold_base 38.51,29.41
 click Coin Brothers' Cornerclub |q The One That Got Away/Find the Desert Falcon in Stormhold
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 35.09,29.25
 talk Rhanbiq |q The One That Got Away/Talk to Rhanbiq
 |tip Persuade him.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 32.85,24.49
 click Rhanbiq's Strongbox |q The One That Got Away/Retrieve Rhanbiq's Notes
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 60.40,16.52
 click Stormhold Outlaws Refuge |q The One That Got Away/Find Bellulor Chatterbeak in the Stormhold Outlaws Refuge
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto shadowfenoutlawrefuge_base 50.69,48.26
 talk Bellulor Chatterbeak |q The One That Got Away/Talk to Bellulor
 |tip Intimidate him.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 'Open Deshaan Map
 'Travel to _Tal'Deic Grounds_ in Deshaan |q The One That Got Away/Find Nicolas in Deshaan
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto deshaan_base 86.06,45.23
 'Travel Rowboat |q The One That Got Away/Find Nicolas in Deshaan
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 92.56,51.47
 click Manor Garden |q The One That Got Away/Find Nicolas in Deshaan
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 93.09,51.52
 'Find Nicolas in Deshaan |q The One That Got Away/Find Nicolas in Deshaan
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 92.97,51.80
 talk Volunidai |q The One That Got Away/Talk to Volunidai
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 91.99,52.06 |q The One That Got Away/Find a Way Into Volunidai's Manor |tip Go back towards the boat.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 93.40,52.01
 'Unlock Manor Kitchen |q The One That Got Away/Find a Way Into Volunidai's Manor
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 93.60,52.20
 |tip Go up the stairs.
 talk Nicolas |q The One That Got Away/Confront Nicolas
 'Tell him _"I'll be the judge of that."_
 'And "_You don't get to have a happy family. Your wife should know who you really are."_
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 92.95,51.58
 talk Volunidai |q The One That Got Away/Tell Volunidai About Nicolas
 'Tell her _"Protect yourself. Keep him as far away from your money as you can."_
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 click Hew's Bane Map
 'Travel to _Abah's Landing_ in Hew's Bane |q The One That Got Away/Report to Zeira
@@ -6079,107 +6079,107 @@ step
 'Open Auridon Map
 'Travel to Vulkhel Guard in Auridon |q Voices in the Dark |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto vulkhelguard_base 44.60,44.88 |q Voices in the Dark |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 41.51,57.91
 click Vulkhel Guard Outlaws Refuge |q Voices in the Dark |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto auridonoutlawrefuge_base 13.42,27.41
 talk Amelie Crowe
 accept Voices in the Dark
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 52.69,69.18
 click Vulkhel Guard |q Voices in the Dark/Kill an Innocent in Anvil
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto vulkhelguard_base 44.60,44.88 |q Voices in the Dark |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 54.97,40.95
 click Vulkhel Guard Wayshrine
 'Travel to _Anvil_ in Gold Coast |q Voices in the Dark/Kill an Innocent in Anvil
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 'Open Glenumbra Map
 'Travel to _Daggerfall_ in Glenumbra |q Voices in the Dark |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto daggerfall_base 45.40,30.73 |q Voices in the Dark |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 26.71,24.73 |q Voices in the Dark |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 30.49,20.61
 click Daggerfall Outlaws Refuge |q Voices in the Dark |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto glenumbraoutlawrefuge_base 51.10,54.78
 talk Amelie Crowe
 accept Voices in the Dark
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 16.08,19.40
 click Daggerfall |q Voices in the Dark/Kill an Innocent in Anvil
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto daggerfall_base 27.17,27.39 |q Voices in the Dark/Kill an Innocent in Anvil
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 45.91,30.83 |q Voices in the Dark/Kill an Innocent in Anvil
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 49.01,20.59
 click Daggerfall Wayshrine
 'Travel to _Anvil_ in Goldcoast |q Voices in the Dark/Kill an Innocent in Anvil
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 'Open Stonefalls Map
 'Travel to Davon's Watch |q Voices in the Dark |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto davonswatch_base 39.29,70.05 |q Voices in the Dark |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 39.18,63.11
 click Davon's Watch Outlaws Refuge |q Voices in the Dark |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto stonefallsoutlawrefuge_base 54.35,70.67 |q Voices in the Dark |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 51.41,30.40
 talk Amelie Crowe
 accept Voices in the Dark
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 40.64,96.11
 click Stonefalls |q Voices in the Dark/Kill an Innocent in Anvil
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto davonswatch_base 40.97,73.52 |q Voices in the Dark/Kill an Innocent in Anvil
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 57.80,77.96
 click Davon's Watch Wayshrine
 'Travel to _Anvil_ in Goldcoast |q Voices in the Dark/Kill an Innocent in Anvil
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 |tip Innocents are located all around this city.
 goto anvilcity_base 56.51,58.85
@@ -13885,40 +13885,40 @@ step
 'Open Auridon Map
 'Travel _Vulkhel Guard_ in Auridon |q Through a Veil Darkly |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto vulkhelguard_base 20.19,50.09
 |tip Inside Mages Guild
 talk Vanus Galerion
 accept Through a Veil Darkly
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 20.19,50.09
 talk Vanus Galerion |q Through a Veil Darkly/Talk to Vanus Galerion in the Mages Guild
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 28.88,61.95 |q Through a Veil Darkly/Travel Via the Enchanted Boat
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 48.96,62.23 |q Through a Veil Darkly/Travel Via the Enchanted Boat
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 77.45,61.06
 click Vanus's Enchanted Boat |q Through a Veil Darkly/Travel Via the Enchanted Boat
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto bleakrock_base 72.17,57.75 |q Through a Veil Darkly/Find the Oracle of the Wyrd |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 72.17,57.75
 |tip Watch dialogue
 talk Wyress Aelynn |q Through a Veil Darkly/Talk to Wyress Aelynn |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 76.42,59.65
 click Vanus's Enchanted Boat |q Through a Veil Darkly/Go to the Mines of Khuras
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 -- END: ALDMERI DOMINION FACTION PROLOGUE GUIDE
 
 -- START: DAGGERFALL COVENANT FACTION
@@ -13926,45 +13926,45 @@ step
 'Open Glenumbra Map
 'Travel _Daggerfall_ in Glenumbra |q Through a Veil Darkly |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto daggerfall_base 51.23,39.08
 click Mages Guild |q Through a Veil Darkly |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 47.16,40.76
 |tip Go up the stairs.
 talk Vanus Galerion
 accept Through a Veil Darkly
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 47.16,40.76
 |tip Go up the stairs.
 talk Vanus Galerion |q Through a Veil Darkly/Talk to Vanus Galerion in the Mages Guild
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 48.45,31.53 |q Through a Veil Darkly/Travel Via the Enchanted Boat |tip Leave the Mages Guild.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 25.15,25.09 |q Through a Veil Darkly/Travel Via the Enchanted Boat
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 24.78,07.87
 'Travel Vanus's Enchanted Boat |q Through a Veil Darkly/Travel Via the Enchanted Boat
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto glenumbra_base 62.61,50.26 |q Through a Veil Darkly/Find the Oracle of the Wyrd |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 62.61,50.26
 talk to Wyress Aelynn |q Through a Veil Darkly/Talk to Wyress Aelynn |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 64.93,51.34
 'Travel Vanus's Enchanted Boat |q Through a Veil Darkly/Go to the Mines of Khuras |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 -- END: DAGGERFALL COVENANT FACTION
 
 -- START: EBONHEART PACT FACTION
@@ -13972,45 +13972,45 @@ step
 'Open Stonefalls Map
 'Travel to _Davon's Watch_ in Stonefalls |q Through a Veil Darkly |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto davonswatch_base 48.92,49.83
 click Mages Guild |q Through a Veil Darkly |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 47.58,40.17
 talk Vanus Galerion
 accept Through a Veil Darkly
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 47.58,40.17
 talk Vanus Galerion |q Through a Veil Darkly/Talk to Vanus Galerion in the Mages Guild
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 72.14,59.56 |q Through a Veil Darkly/Travel Via the Enchanted Boat
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 77.77,42.02 |q Through a Veil Darkly/Travel Via the Enchanted Boat
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 93.31,51.80 
 |tip Follow path to avoid swimming.
 'Travel Vanus's Enchanted Boat |q Through a Veil Darkly/Travel Via the Enchanted Boat
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto bangkorai_base 62.96,21.49 |q Through a Veil Darkly/Find the Oracle of the Wyrd |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 62.96,21.49
 |tip Watch dialogue
 talk Wyress Aelynn |q Through a Veil Darkly/Talk to Wyress Aelynn
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 64.58,20.28
 'Travel Vanus's Enchanted Boat |q Through a Veil Darkly/Go to the Mines of Khuras |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 -- END: EBONHEART PACT FACTION
 
 -- BEGIN: MERGED PROLOGUE FOR ALL FACTIONS
@@ -18643,184 +18643,184 @@ step
 'Open Auridon Map
 'Travel to _Vulkhel Guard_ in Auridon |q Ruthless Competition |future
 |tip Manally skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto vulkhelguard_base 53.00,41.40
 talk Concordia Mercius
 accept Ruthless Competition
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 44.05,45.95 |q Ruthless Competition/Go to the Outlaws Refuge
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 41.69,57.49
 'Open Vulkhel Guard Outlaws Refuge |q Ruthless Competition/Go to the Outlaws Refuge |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto auridonoutlawrefuge_base 52.88,28.90
 talk Eshundir |q Ruthless Competition/Talk to Eshundir
 'Tell him _[Intimidate] I don't have time for this. Tell me about Margus now or I'll beat the information out of you!_
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 36.23,44.13
 talk Grethaa |q Ruthless Competition/Talk to Grethaa
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 28.45,35.77
 talk Urzashi |q Ruthless Competition/Talk to Urzashi
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 52.82,68.24
 'Open Vulkhel Guard |q Ruthless Competition/Gather Information About Margus Derius
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto vulkhelguard_base 45.23,44.97 |q Ruthless Competition/Gather Information About Margus Derius
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 57.37,45.36
 |tip Unlock Watch Captain Astanya's Home
 |tip Make sure guard isn't looking when you loot create upstairs.
 click from Crate |q Ruthless Competition/Gather Information About Margus Derius
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 55.01,41.27
 click Vulkhel Guard Wayshrine
 'Travel to _Quendeluun_ in Auridon |q Ruthless Competition/Gather Information About Margus Derius
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto auridon_base 54.07,43.78 |q Ruthless Competition/Gather Information About Margus Derius
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 45.29,39.17 |q Ruthless Competition/Gather Information About Margus Derius
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 43.48,40.21
 |tip Drop down.
 click Bewan |q Ruthless Competition/Gather Information About Margus Derius
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto bewan_base 30.69,06.69 |q Ruthless Competition/Gather Information About Margus Derius
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 30.32,55.53 |q Ruthless Competition/Gather Information About Margus Derius
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 62.10,55.25 |q Ruthless Competition/Gather Information About Margus Derius
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 58.31,20.28
 'Take Argar's Notched Sword |q Ruthless Competition/Gather Information About Margus Derius
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 'Open Auridon Map
 'Travel to _Vulkhel Guard_ in Auridon |q Ruthless Competition/Talk to Grethaa
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto vulkhelguard_base 44.05,45.95 |q Ruthless Competition/Talk to Grethaa
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 41.69,57.49
 click Vulkhel Guard Outlaws Refuge |q Ruthless Competition/Talk to Grethaa
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto auridonoutlawrefuge_base 36.23,44.13
 talk Grethaa |q Ruthless Competition/Talk to Grethaa
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 28.45,35.77
 talk Uzashi |q Ruthless Competition/Talk to Urzashi
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 52.82,68.24
 click Vulkhel Guard |q Ruthless Competition/Talk to Concordia Mercius
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step 
 goto vulkhelguard_base 44.05,45.95 |q Ruthless Competition/Talk to Concordia Mercius
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 52.61,41.12
 talk Concordia Mercius |q Ruthless Competition/Talk to Concordia Mercius
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 54.85,41.10
 click Vulkhel Guard Wayshrine
 'Travel to _Mathiisen_ in Auridon |q Ruthless Competition/Go to the Sunless Hollow
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto auridon_base 53.33,62.99 |q Ruthless Competition/Go to the Sunless Hollow
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 52.32,64.65
 click Sunless Hollow |q Ruthless Competition/Go to the Sunless Hollow |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto uprootedhideout_ad1_base 58.27,45.41 |q Ruthless Competition/Retrieve Argonian Antiquities
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto uprootedhideout_ad2_base 57.38,82.84 |q Ruthless Competition/Retrieve Argonian Antiquities
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 38.30,72.78 |q Ruthless Competition/Retrieve Argonian Antiquities
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 39.76,51.07
 click Antiquity Chest |q Ruthless Competition/Retrieve First Argonian Antiquity
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 43.98,44.10 
 click Antiquity Chest |q Ruthless Competition/Retrieve Argonian Antiquities
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 'Open Auridon Map
 'Travel to _Vulkhel Guard_ in Auridon |q Ruthless Competition/Talk to Concordia Mercius
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto vulkhelguard_base 52.34,41.33
 talk Concordia Mercius |q Ruthless Competition/Talk to Concordia Mercius
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 44.93,44.92 |q Ruthless Competition/Talk to Eshundir
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 41.76,57.54
 click Auridon Outlaws Refuge |q Ruthless Competition/Talk to Eshundir
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto auridonoutlawrefuge_base 52.50,29.36
 talk Eshundir |q Ruthless Competition/Talk to Eshundir
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 52.50,29.36
 talk Urzashi |q Ruthless Competition/Talk to Urzashi
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 46.53,34.61
 'Take Bone Knife |q Ruthless Competition/Examine the First Clue
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 34.28,46.40 
 'Take Blackguard Note |q Ruthless Competition/Examine the Second Clue
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 52.95,66.75
 talk Jee-Lar |q Ruthless Competition/Talk to Jee-Lar
 'Tell him _I'm ready. Let's Go!_
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 -- END: ALDMERI DOMINION FACTION PROLOGUE GUIDE
 
 -- START: DAGGERFALL COVENANT FACTION
@@ -18828,189 +18828,189 @@ step
 'Open Glenumbra Map
 'Travel to _Daggerfall_ in Glenumbra |q Ruthless Competition |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto daggerfall_base 47.53,19.46
 talk Concordia Mercius
 accept Ruthless Competition
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 44.69,30.81 |q Ruthless Competition/Go to the Outlaws Refuge
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 25.54,25.29 |q Ruthless Competition/Go to the Outlaws Refuge
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 30.55,20.85
 click Daggerfall Outlaws Refuge |q Ruthless Competition/Go to the Outlaws Refuge |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto glenumbraoutlawrefuge_base 35.97,64.89
 talk Urzashi |q Ruthless Competition/Talk to Urzashi
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 39.25,61.11
 talk Eshundir |q Ruthless Competition/Talk to Eshundir
 'Tell him _[Intimidate] I don't have time for this. Tell me about Margus now or I'll beat the information out of you!_
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 51.46,52.76
 talk Grethaa |q Ruthless Competition/Talk to Grethaa
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 16.08,19.13
 click Daggerfall |q Ruthless Competition/Gather Information About Margus Derius
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto daggerfall_base 25.54,25.29 |q Ruthless Competition/Gather Information About Margus Derius
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 62.65,27.41
 |tip Unlock Gane House
 |tip Make sure guard isn't looking when you loot create upstairs.
 click from Crate |q Ruthless Competition/Gather Information About Margus Derius
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 45.74,30.73 |q Ruthless Competition/Gather Information About Margus Derius
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 49.02,20.66
 click Daggerfall Wayshrine
 'Travel to _Crosswych_ in Glenumbra |q Ruthless Competition/Gather Information About Margus Derius
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto glenumbra_base 76.13,13.61
 click Cryptwatch Fort |q Ruthless Competition/Gather Information About Margus Derius
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto cryptwatchfort_base 29.73,09.22 |q Ruthless Competition/Gather Information About Margus Derius
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 31.46,53.49 |q Ruthless Competition/Gather Information About Margus Derius
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 42.01,57.68 |q Ruthless Competition/Gather Information About Margus Derius
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 46.59,77.48
 'Take Argar's Notched Sword |q Ruthless Competition/Gather Information About Margus Derius
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 'Open Glenumbra Map
 'Travel to _Daggerfall_ in Glenumbra |q Ruthless Competition/Talk to Urzashi
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto daggerfall_base 44.69,30.81 |q Ruthless Competition/Talk to Urzashi
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 25.54,25.29 |q Ruthless Competition/Talk to Urzashi
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 30.55,20.85
 click Daggerfall Outlaws Refuge |q Ruthless Competition/Talk to Urzashi
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto glenumbraoutlawrefuge_base 35.97,64.89
 talk Urzashi |q Ruthless Competition/Talk to Urzashi
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 51.46,52.76
 talk Grethaa |q Ruthless Competition/Talk to Grethaa
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 16.08,19.13
 click Daggerfall |q Ruthless Competition/Talk to Concordia Mercius
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto daggerfall_base 25.54,25.29 |q Ruthless Competition/Talk to Concordia Mercius
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 44.69,30.81 |q Ruthless Competition/Talk to Concordia Mercius
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 47.53,19.46
 talk Concordia Mercius |q Ruthless Competition/Talk to Concordia Mercius
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 49.10,20.47
 click Daggerfall Wayshrine
 'Travel to _Wyrd Tree_ in Glenumbra |q Ruthless Competition/Go to the Sunless Hollow
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto glenumbra_base 41.57,63.57
 click Sunless Hollow |q Ruthless Competition/Go to the Sunless Hollow |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto uprootedhideout_dc1_base 58.27,45.41 |q Ruthless Competition/Retrieve Argonian Antiquities
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto uprootedhideout_dc2_base 57.38,82.84 |q Ruthless Competition/Retrieve Argonian Antiquities
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 38.30,72.78 |q Ruthless Competition/Retrieve Argonian Antiquities
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 39.76,51.07
 click Antiquity Chest |q Ruthless Competition/Retrieve First Argonian Antiquity
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 43.98,44.10 
 click Antiquity Chest |q Ruthless Competition/Retrieve Argonian Antiquities
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 'Open Glenumbra Map
 'Travel to _Daggerfall_ in Glenumbra |q Ruthless Competition/Talk to Concordia Mercius
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto daggerfall_base 47.08,18.96
 talk Concordia Mercius |q Ruthless Competition/Talk to Concordia Mercius
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 44.69,30.81 |q Ruthless Competition/Talk to Eshundir
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 25.54,25.29 |q Ruthless Competition/Talk to Eshundir
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 30.55,20.85
 click Daggerfall Outlaws Refuge |q Ruthless Competition/Talk to Eshundir
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto glenumbraoutlawrefuge_base 38.35,60.22
 talk Eshundir |q Ruthless Competition/Talk to Eshundir
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 38.35,60.22
 talk Urzashi |q Ruthless Competition/Talk to Urzashi
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 39.60,62.28
 'Take Bone Knife |q Ruthless Competition/Examine the First Clue
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 37.99,55.10
 'Take Blackguard Note |q Ruthless Competition/Examine the Second Clue
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 16.88,23.26
 talk Jee-Lar |q Ruthless Competition/Talk to Jee-Lar
 'Tell him _I'm ready. Let's Go!_
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 -- END: DAGGERFALL COVENANT FACTION
 
 -- START: EBONHEART PACT FACTION
@@ -19018,177 +19018,177 @@ step
 'Open Stonefalls Map
 'Travel to _Davon's Watch_ in Stonefalls |q Ruthless Competition |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto davonswatch_base 60.27,77.03
 talk Concordia Mercius
 accept Ruthless Competition
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 40.24,71.14 |q Ruthless Competition/Go to the Outlaws Refuge
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 39.33,63.10
 click Davon's Watch Outlaws Refuge |q Ruthless Competition/Go to the Outlaws Refuge |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto stonefallsoutlawrefuge_base 57.39,45.12
 talk Urzashi |q Ruthless Competition/Talk to Urzashi
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 45.87,36.48
 talk Eshundir |q Ruthless Competition/Talk to Eshundir
 'Tell him _[Intimidate] I don't have time for this. Tell me about Margus now or I'll beat the information out of you!_
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 45.07,46.77
 talk Grethaa |q Ruthless Competition/Talk to Grethaa
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 40.69,96.43
 click Stonefalls |q Ruthless Competition/Gather Information About Margus Derius
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto davonswatch_base 24.70,41.90
 click Davon's Watch |q Ruthless Competition/Gather Information About Margus Derius
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 34.91,40.47 |q Ruthless Competition/Gather Information About Margus Derius
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 41.92,31.45
 |tip Unlock Sethri House
 |tip Make sure guard isn't looking when you loot create.
 click from Crate |q Ruthless Competition/Gather Information About Margus Derius
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 'Open Stonefalls Map
 'Travel to _Sathram Plantation_ in Stonefalls |q Ruthless Competition/Gather Information About Margus Derius
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto stonefalls_base 21.42,54.14
 click Sheogorath's Tongue |q Ruthless Competition/Gather Information About Margus Derius
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto sheogorathstongue_base 70.27,49.79 |q Ruthless Competition/Gather Information About Margus Derius
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 66.80,64.37 |q Ruthless Competition/Gather Information About Margus Derius
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 51.43,60.63 |q Ruthless Competition/Gather Information About Margus Derius
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 23.24,60.20
 'Take Argar's Notched Sword |q Ruthless Competition/Gather Information About Margus Derius
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 'Open Stonefalls Map
 'Travel to _Davon's Watch_ in Stonefalls |q Ruthless Competition/Talk to Urzashi
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto davonswatch_base 40.24,71.14 |q Ruthless Competition/Talk to Urzashi
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 39.33,63.10
 click Davon's Watch Outlaws Refuge |q Ruthless Competition/Talk to Urzashi
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto stonefallsoutlawrefuge_base 57.39,45.12
 talk Urzashi |q Ruthless Competition/Talk to Urzashi
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 45.07,46.77
 talk Grethaa |q Ruthless Competition/Talk to Grethaa
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 40.69,96.43
 click Stonefalls |q Ruthless Competition/Talk to Concordia Mercius
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto davonswatch_base 40.24,71.14 |q Ruthless Competition/Talk to Concordia Mercius
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 60.43,76.74
 talk Concordia Mercius |q Ruthless Competition/Talk to Concordia Mercius
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 58.27,77.91
 'Open Stonefalls Map
 'Travel to _Vivec's Antlers_ in Stonefalls |q Ruthless Competition/Go to the Sunless Hollow
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto stonefalls_base 50.92,57.91
 click Sunless Hollow |q Ruthless Competition/Go to the Sunless Hollow |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto epuprootedhideout_ep1_base 58.27,45.41 |q Ruthless Competition/Retrieve Argonian Antiquities
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto epuprootedhideout_ep2_base 57.38,82.84 |q Ruthless Competition/Retrieve Argonian Antiquities
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 42.53,65.72 |q Ruthless Competition/Retrieve Argonian Antiquities
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 39.76,51.07
 click Antiquity Chest |q Ruthless Competition/Retrieve First Argonian Antiquity
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 43.98,44.10 
 click Antiquity Chest |q Ruthless Competition/Retrieve Argonian Antiquities
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 'Open Stonefalls Map
 'Travel to _Davon's Watch_ in Stonefalls |q Ruthless Competition/Talk to Concordia Mercius
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto davonswatch_base 60.04,76.32
 talk Concordia Mercius |q Ruthless Competition/Talk to Concordia Mercius
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 40.24,71.14 |q Ruthless Competition/Talk to Eshundir
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 39.33,63.10
 click Davon's Watch Outlaws Refuge |q Ruthless Competition/Talk to Eshundir
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto stonefallsoutlawrefuge_base 45.76,38.29
 talk Eshundir |q Ruthless Competition/Talk to Eshundir
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 45.76,38.29
 talk Urzashi |q Ruthless Competition/Talk to Urzashi
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 51.15,33.12
 'Take Bone Knife |q Ruthless Competition/Examine the First Clue
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 55.73,28.75
 'Take Blackguard Note |q Ruthless Competition/Examine the Second Clue
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 53.65,10.45
 talk Jee-Lar |q Ruthless Competition/Talk to Jee-Lar
 'Tell him _I'm ready. Let's Go!_
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 -- END: EBONHEART PACT FACTION
 
 -- BEGIN: MERGED PROLOGUE FOR ALL FACTIONS
@@ -21506,24 +21506,24 @@ step
 'Open Auridon Map
 'Travel to _Vulkhel Guard_ in Auridon |q The Demon Weapon |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto vulkhelguard_base 59.58,28.77
 talk Anais Davaux
 accept The Demon Weapon
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 48.03,44.91 |q The Demon Weapon/Talk to Abnur Tharn
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 39.42,40.81
 click Manor House |q The Demon Weapon/Talk to Abnur Tharn
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 38.40,37.26
 talk Abnur Tharn |q The Demon Weapon/Talk to Abnur Tharn
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 38.40,37.26
 talk Abnur Tharn |q The Demon Weapon/.*Gather Mushrooms in Bewan.* |future
@@ -21532,78 +21532,78 @@ talk Abnur Tharn |q The Demon Weapon/.*Gather Mushrooms in Bewan.* |future
 'Tell him _Where do i find the loremaster?_
 'Tell him _You seem to know a lot about the Khajiiti legends already._
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 'Open Auridon Map
 'Travel to _Quendeluum_ in Auridon |q The Demon Weapon/.*Gather Mushrooms in Bewan.*
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto auridon_base 54.13,43.76 |q The Demon Weapon/.*Gather Mushrooms in Bewan.*
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 45.54,39.33 |q The Demon Weapon/.*Gather Mushrooms in Bewan.*
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 43.16,40.07 |q The Demon Weapon/.*Gather Mushrooms in Bewan.*
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 43.48,40.21
 click Bewan |q The Demon Weapon/.*Gather Mushrooms in Bewan.*
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto bewan_base 30.48,08.47 |q The Demon Weapon/.*Gather Mushrooms in Bewan.* |count 1
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 27.15,50.63
 'Take _Dusk Mushroom_ |q The Demon Weapon/.*Gather Mushrooms in Bewan.* |count 1
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 30.85,55.59 |q The Demon Weapon/.*Gather Mushrooms in Bewan.* |count 2
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 24.19,68.57 |q The Demon Weapon/.*Gather Mushrooms in Bewan.* |count 2
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 37.41,77.26
 'Take _Dusk Mushroom_ |q The Demon Weapon/.*Gather Mushrooms in Bewan.* |count 2
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 74.24,74.67 |q The Demon Weapon/.*Gather Mushrooms in Bewan.* |count 3
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 75.62,54.11
 'Take _Dusk Mushroom_ |q The Demon Weapon/.*Gather Mushrooms in Bewan.* |count 3
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 61.82,31.56 |q The Demon Weapon/.*Gather Mushrooms in Bewan.* |count 4
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 44.75,16.33
 'Take _Dusk Mushroom_ |q The Demon Weapon/.*Gather Mushrooms in Bewan.* |count 4
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 'Open Auridon Map
 'Travel to _College_ in Auridon |q The Demon Weapon/Talk to Dagaril-dro
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto auridon_base 55.12,19.88 |q The Demon Weapon/Talk to Dagaril-dro
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 49.24,12.88
 talk Dagaril-dro |q The Demon Weapon/Talk to Dagaril-dro
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 49.24,12.97
 talk Abnur Tharn |q The Demon Weapon/Talk to Abnur Tharn
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 49.24,12.97
 click Portal to _Redfur Trading Post_ |q The Demon Weapon/Find the Moon-Singer at Redfur Trading Post
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 -- END: ALDMERI DOMINION FACTION PROLOGUE GUIDE
 
 -- START: DAGGERFALL COVENANT FACTION
@@ -21611,21 +21611,21 @@ step
 'Open Glenumbra Map
 'Travel to _Baelborne Rock_ in Glenumbra |q The Demon Weapon |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto glenumbra_base 34.21,74.72
 talk Anais Davaux
 accept The Demon Weapon
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto daggerfall_base 33.54,48.66
 click Daggerfall Castle |q The Demon Weapon/Talk to Abnur Tharn
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 30.36,50.45
 talk Abnur Tharn |q The Demon Weapon/Talk to Abnur Tharn
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 30.36,50.45
 talk Abnur Tharn |q The Demon Weapon/.*Gather Mushrooms in Enduum.* |future
@@ -21634,76 +21634,76 @@ talk Abnur Tharn |q The Demon Weapon/.*Gather Mushrooms in Enduum.* |future
 'Tell him _Where do i find the loremaster?_
 'Tell him _You seem to know a lot about the Khajiiti legends already._
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 'Open Glenumbra Map
 'Travel to _Farwatch_ in Glenumbra |q The Demon Weapon/.*Gather Mushrooms in Enduum.*
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto glenumbra_base 35.82,37.21 |q The Demon Weapon/.*Gather Mushrooms in Enduum.*
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 34.22,33.32
 |tip Drop down carefully.
 click Enduum |q The Demon Weapon/.*Gather Mushrooms in Enduum.*
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto enduum_base 25.06,74.79 |q The Demon Weapon/.*Gather Mushrooms in Enduum.*
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 36.96,68.88
 'Take _Dusk Mushroom_ |q The Demon Weapon/.*Gather Mushrooms in Enduum.* |count 1
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 48.22,83.65 |q The Demon Weapon/.*Gather Mushrooms in Enduum.*
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 71.28,87.41
 'Take _Dusk Mushroom_ |q The Demon Weapon/.*Gather Mushrooms in Enduum.* |count 2
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 65.17,54.35 |q The Demon Weapon/.*Gather Mushrooms in Enduum.*
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 33.54,55.55 |q The Demon Weapon/.*Gather Mushrooms in Enduum.*
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 32.21,30.12
 'Take _Dusk Mushroom_ |q The Demon Weapon/.*Gather Mushrooms in Enduum.* |count 3
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 70.01,33.34 |q The Demon Weapon/.*Gather Mushrooms in Enduum.*
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 64.66,18.48
 'Take _Dusk Mushroom_ |q The Demon Weapon/.*Gather Mushrooms in Enduum.* |count 4
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 'Open Glenumbra Map
 'Travel to _Baelborne Rock_ in Glenumbra |q The Demon Weapon/Talk to Dagaril-dro
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto glenumbra_base 33.94,78.75 |q The Demon Weapon/Talk to Dagaril-dro
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 35.10,81.10 |q The Demon Weapon/Talk to Dagaril-dro
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 27.44,86.78
 talk Dagaril-dro |q The Demon Weapon/Talk to Dagaril-dro
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 27.47,86.66
 talk Abnur Tharn |q The Demon Weapon/Talk to Abnur Tharn
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 27.47,86.66
 click Portal to _Redfur Trading Post_ |q The Demon Weapon/Find the Moon-Singer at Redfur Trading Post
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 -- END: DAGGERFALL COVENANT FACTION
 
 -- START: EBONHEART PACT FACTION
@@ -21711,21 +21711,21 @@ step
 'Open Stonefalls Map
 'Travel to _Davon's Watch_ in Stonefalls |q The Demon Weapon |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto davonswatch_base 76.08,77.16
 talk Anais Davaux
 accept The Demon Weapon
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 48.92,49.61
 click Mages Guild |q The Demon Weapon/Talk to Abnur Tharn
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 47.27,44.97
 talk Abnur Tharn |q The Demon Weapon/Talk to Abnur Tharn
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 47.27,44.97
 talk Abnur Tharn |q The Demon Weapon/.*Gather Mushrooms in Hightide Hollow.* |future
@@ -21734,69 +21734,69 @@ talk Abnur Tharn |q The Demon Weapon/.*Gather Mushrooms in Hightide Hollow.* |fu
 'Tell him _Where do i find the loremaster?_
 'Tell him _You seem to know a lot about the Khajiiti legends already._
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 'Open Stonefalls Map
 'Travel to _Hrogar's Hold_ in Stonefalls |q The Demon Weapon/.*Gather Mushrooms in Hightide Hollow.*
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto stonefalls_base 36.01,42.97 |q The Demon Weapon/.*Gather Mushrooms in Hightide Hollow.*
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 35.75,44.90
 click Hightide Hollow |q The Demon Weapon/.*Gather Mushrooms in Hightide Hollow.*
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto hightidehollow_base 64.91,35.59
 'Take _Dusk Mushroom_ |q The Demon Weapon/.*Gather Mushrooms in Hightide Hollow.* |count 1
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 70.10,66.13
 'Take _Dusk Mushroom_ |q The Demon Weapon/.*Gather Mushrooms in Hightide Hollow.* |count 2
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 73.08,49.16 |q The Demon Weapon/.*Gather Mushrooms in Hightide Hollow.*
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 70.10,76.80 |q The Demon Weapon/.*Gather Mushrooms in Hightide Hollow.*
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 45.90,77.12
 'Take _Dusk Mushroom_ |q The Demon Weapon/.*Gather Mushrooms in Hightide Hollow.* |count 3
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 49.66,25.06
 'Take _Dusk Mushroom_ |q The Demon Weapon/.*Gather Mushrooms in Hightide Hollow.* |count 4
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 'Open Stonefalls Map
 'Travel to _Davon's Watch_ in Stonefalls |q The Demon Weapon/Talk to Dagaril-dro
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto stonefalls_base 80.65,39.33 |q The Demon Weapon/Talk to Dagaril-dro
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 73.95,37.01 |q The Demon Weapon/Talk to Dagaril-dro
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 64.85,39.08 |q The Demon Weapon/Talk to Dagaril-dro
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 60.78,40.72
 talk Dagaril-dro |q The Demon Weapon/Talk to Dagaril-dro
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 60.87,40.70
 talk Abnur Tharn |q The Demon Weapon/Talk to Abnur Tharn
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 60.87,40.70
 click Portal to _Redfur Trading Post_ |q The Demon Weapon/Find the Moon-Singer at Redfur Trading Post
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 -- END: EBONHEART PACT FACTION
 
 -- BEGIN: MERGED PROLOGUE FOR ALL FACTIONS
@@ -24999,220 +24999,220 @@ step
 'Open Auridon Map
 'Travel to _Vulkhel Guard_ in Auridon |q The Dragonguard's Legacy |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto vulkhelguard_base 57.72,58.92
 talk Hinzuur
 accept The Dragonguard's Legacy
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 39.38,41.00
 click Manor House |q The Dragonguard's Legacy/Talk to Kasura
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 35.87,38.63
 talk Kasura |q The Dragonguard's Legacy/Talk to Kasura
 |tip She's upstairs in this building.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 35.87,38.63
 click Kasura's Notes |q The Dragonguard's Legacy/Read Kasura's Notes
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 'Open Audiron Map
 'Travel to _Tanzelwil_ in Auridon |q The Dragonguard's Legacy/Find the Eastern Glyph
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto auridon_base 50.63,70.72
 'Activate Hidden Glyph |q The Dragonguard's Legacy/Find the Eastern Glyph
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 44.92,71.08
 'Activate Hidden Glyph |q The Dragonguard's Legacy/Find the Northern Glyph
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 44.70,76.67
 'Activate Hidden Glyph |q The Dragonguard's Legacy/Find the Southern Glyph
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 46.37,73.26
 'Activate Hidden Dragonguard Entrance |q The Dragonguard's Legacy/Reveal the Tomb Entrance
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 46.37,73.26
 click Glyph of Blades, Glyph of Honor, and Glyph of Bravery |q The Dragonguard's Legacy/Reveal the Tomb Door
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 46.37,73.26
 click Dragonguard Tomb |q The Dragonguard's Legacy/Search the Dragonguard Tomb
 tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 46.49,73.30
 click Dragonguard Chest |q The Dragonguard's Legacy/Search the Dragonguard Tomb
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 46.38,73.29
 click Auridon |q The Dragonguard's Legacy/Talk to Kasura
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 46.07,73.53
 talk Kasura |q The Dragonguard's Legacy/Talk to Kasura
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 46.07,73.53
 click Peri |q The Dragonguard's Legacy/Travel to the Valley of Blades
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 'Open Glenumbra Map
 'Travel to _Daggerfall_ in Glenumbra |q The Dragonguard's Legacy |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto daggerfall_base 71.44,67.15
 talk Hinzuur
 accept The Dragonguard's Legacy
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 51.95,26.14
 click The Rosey Lion |q The Dragonguard's Legacy/Talk to Kasura
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 50.67,28.85
 talk Kasura |q The Dragonguard's Legacy/Talk to Kasura
 |tip In the attic
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 50.47,28.73
 click Kasura's Note |q The Dragonguard's Legacy/Read Kasura's Notes
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 'Open Glenumbra Map
 'Travel to _Wyrd Tree_ in Glenumbra |q The Dragonguard's Legacy/Find the Southern Glyph
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto glenumbra_base 26.83,61.48
 'Activate Hidden Glyph |q The Dragonguard's Legacy/Find the Southern Glyph
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 27.87,57.05 |q The Dragonguard's Legacy/Find the Eastern Glyph
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 31.24,57.80
 'Activate Hidden Glyph |q The Dragonguard's Legacy/Find the Eastern Glyph
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 25.23,55.60
 'Activate Hidden Glyph |q The Dragonguard's Legacy/Find the Northern Glyph
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 29.99,56.65
 'Activate the Hidden Dragonguard Entrance |q The Dragonguard's Legacy/Reveal the Tomb Entrance
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 29.99,56.65
 click Glyph of Blades, Glyph of Honor, and Glyph of Bravery |q The Dragonguard's Legacy/Reveal the Tomb Door
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 29.99,56.65
 click Dragonguard Tomb |q The Dragonguard's Legacy/Search the Dragonguard Tomb
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 34.42,62.17
 click Dragonguard Chest |q The Dragonguard's Legacy/Search the Dragonguard Tomb
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 33.70,62.13
 click Glenumbra |q The Dragonguard's Legacy/Talk to Kasura
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 29.77,56.94
 talk Kasura |q The Dragonguard's Legacy/Talk to Kasura
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 29.81,57.05
 click Peri |q The Dragonguard's Legacy/Travel to the Valley of Blades
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 'Open Stonefalls Map
 'Travel to _Devon's Watch_ in Stonefalls |q The Dragonguard's Legacy |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto davonswatch_base 72.24,72.63
 talk Hinzuur
 accept The Dragonguard's Legacy
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 47.36,52.97
 click The Watch House |q The Dragonguard's Legacy/Talk to Kasura
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 46.17,55.22
 talk Kasura |q The Dragonguard's Legacy/Talk to Kasura
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 46.12,55.20
 click Kasura's Notes |q The Dragonguard's Legacy/Read Kasura's Notes
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 'Open Stonefalls Map
 'Travel Othrenis in Stonesfalls |q The Dragonguard's Legacy/Find the Northern Glyph
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto stonefalls_base 76.99,64.29
 'Activate Hidden Glyph |q The Dragonguard's Legacy/Find the Southern Glyph
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 79.18,60.66
 'Activate Hidden Glyph |q The Dragonguard's Legacy/Find the Eastern Glyph
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 75.19,60.28
 'Activate Hidden Glyph |q The Dragonguard's Legacy/Find the Northern Glyph
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 74.30,60.14
 'Activate Hidden Dragonguard Entrance |q The Dragonguard's Legacy/Reveal the Tomb Entrance
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 74.30,60.14
 click Glyph of Blades, Glyph of Honor, and Glyph of Bravery |q The Dragonguard's Legacy/Reveal the Tomb Door
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 74.30,60.14
 click Dragonguard Tomb |q The Dragonguard's Legacy/Search the Dragonguard Tomb
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 76.97,62.65
 click Dragonguard Chest |q The Dragonguard's Legacy/Search the Dragonguard Tomb
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 76.19,62.61
 click Stonefalls |q The Dragonguard's Legacy/Talk to Kasura
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 74.63,60.34
 talk Kasura |q The Dragonguard's Legacy/Talk to Kasura
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 74.78,60.17
 click Peri |q The Dragonguard's Legacy/Travel to the Valley of Blades
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto valleyofblades1_base 50.35,56.37
 talk Sai Sahan |q The Dragonguard's Legacy/Talk to Kasura's Student
@@ -27828,79 +27828,79 @@ step
 'Open Auridon Map
 'Travel to _Vulkhel Guard_ Wayshrine in Audridon |q The Coven Conspiracy |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto vulkhelguard_base 16.34,59.53
 click Fighters Guild |q The Coven Conspiracy |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto vulkhelguard_base 11.15,59.01
 talk Lyris Titanborn
 accept The Coven Conspiracy
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 11.15,59.01
 talk Lyris Titanborn |q The Coven Conspiracy/Talk to Lyris Titanborn
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 11.15,59.01
 talk Lyris Titanborn |q The Coven Conspiracy/Travel to the Overlook
 'Tell her _"I'm Ready to go. (Fast Travel to the Meeting Place)"_
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto grahtwood_base 64.00,40.00
 talk Lyris Titanborn |q The Coven Conspiracy/Talk to Lyris Titanborn
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 69.50,34.55
 click the Corpse |q The Coven Conspiracy/Follow the Magic Trail
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 69.50,34.55
 click the Corpse |q The Coven Conspiracy/Examine the Corpse
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 68.63,34.32
 talk Lyris Titanborn |q The Coven Conspiracy/Talk to Lyris Titanborn
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 'Open Grahtwood Map
 'Travel to _Ossuary_ in Grahtwood |q The Coven Conspiracy/Follow the Magic Trail
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 78.19,57.07
 click Harrowfiend |q The Coven Conspiracy/Follow the Magic Trail
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 78.19,57.07
 click Harrowfiend |q The Coven Conspiracy/Examine the Corpse
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 'Open Map Grahtwood
 'Travel to _Fallinesti Winter_ in Grahtwood |q The Coven Conspiracy/Follow the Magic Trail
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 31.66,60.81
 click Witch Pike |q The Coven Conspiracy/Follow the Magic Trail
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 31.66,60.81
 click Witch Pike |q The Coven Conspiracy/Examine Ritual Object
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 34.04,59.99
 talk Lyris Titanborn |q The Coven Conspiracy/Talk to Lyris Titanborn
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 34.01,60.00
 talk Lyris Titanborn |q The Coven Conspiracy/Travel to Riften
 'Tell her _"I'm ready to depart now.(Fast Travel to Riften)"_
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 -- End: Aldmeri Dominion Faction
 
@@ -27908,78 +27908,78 @@ step
 'Open your Glenumbra Map
 'Travel to _Daggerfall_ Wayshrine in Glenumbra |q The Coven Conspiracy |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto daggerfall_base 55.19,36.27
 click Fighters Guild |q The Coven Conspiracy |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 54.21,34.42
 talk Lyris Titanborn
 accept The Coven Conspiracy
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 54.21,34.42
 talk Lyris Titanborn |q The Coven Conspiracy/Talk to Lyris Titanborn
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 54.21,34.42
 talk Lyris Titanborn |q The Coven Conspiracy/Travel to the Lumber Mill
 'Tell her _"I'm Ready to go. (Fast Travel to the Meeting Place)"_
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto stormhaven_base 80.66,48.45
 talk Lyris |q The Coven Conspiracy/Talk to Lyris Titanborn
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 86.25,46.74
 click Charred Corpse |q The Coven Conspiracy/Follow the Magic Trail
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 86.25,46.74
 click Charred Corpse |q The Coven Conspiracy/Examine the Corpse
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 86.66,46.77
 talk Lyris Titanborn |q The Coven Conspiracy/Talk to Lyris Titanborn
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 'Open Stormhaven Map
 'Travel to _Pariah Abbey_ in Stormhaven |q The Coven Conspiracy/Follow the Magic Trail
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 56.61,40.05
 click Harrowfiend |q The Coven Conspiracy/Follow the Magic Trail
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 56.51,40.05
 click Harrowfiend |q The Coven Conspiracy/Examine the Corpse
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 'Open Stormhaven Map
 'Travel to _Soulshriven_ in Stormhaven |q The Coven Conspiracy/Follow the Magic Trail
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 36.54,49.60
 click Witch Pike |q The Coven Conspiracy/Follow the Magic Trail
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 36.51,49.58
 click Witch Pike |q The Coven Conspiracy/Examine Ritual Object
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 38.00,50.68
 talk Lyris Titanborn |q The Coven Conspiracy/Talk to Lyris Titanborn
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 38.00,50.68
 'Travel to Riften |q The Coven Conspiracy/Travel to Riften
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 -- End: Daggerfall Covenant Faction
 
@@ -27987,92 +27987,92 @@ step
 'Open Stonefalls Map
 'Travel to _Davon's Watch_ Wayshrine in Stonefalls |q The Coven Conspiracy |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto davonswatch_base 70.32,76.86 |q The Coven Conspiracy |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 67.08,65.73 |q The Coven Conspiracy |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 71.65,59.58 |q The Coven Conspiracy |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 69.39,53.85 |q The Coven Conspiracy |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 71.52,52.32
 click Fighters Guild |q The Coven Conspiracy |future
 |tip Go Downstairs.
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 70.26,51.07
 talk Lyris Titanborn
 accept The Coven Conspiracy
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 70.26,51.07
 talk Lyris Titanborn |q The Coven Conspiracy/Talk to Lyris Titanborn
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 70.26,51.07
 talk Lyris Titanborn |q The Coven Conspiracy/Travel to the Shrine
 'Tell her _"I'm Ready to go. (Fast Travel to the Meeting Place)"_
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto deshaan_base 50.75,57.66
 talk Lyris Titanborn |q The Coven Conspiracy/Talk to Lyris Titanborn
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 55.73,55.88
 click the Charred Corpse |q The Coven Conspiracy/Follow the Magic Trail
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 click the Corpse |q The Coven Conspiracy/Examine the Corpse
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 55.76,56.03
 talk Lyris Titanborn |q The Coven Conspiracy/Talk to Lyris Titanborn
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 'Open Deshaan Map
 'Travel to _Eidolon's Hollow_ in Deshaan |q The Coven Conspiracy/Follow the Magic Trail
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 89.23,42.56 |q The Coven Conspiracy/Follow the Magic Trail
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 90.32,38.10
 click Harrowfiend |q The Coven Conspiracy/Follow the Magic Trail
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 90.32,38.10
 click Harrowfiend |q The Coven Conspiracy/Examine the Corpse
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 'Open Deshaan Map
 'Travel to _Shad Astula_ in Deshaan |q The Coven Conspiracy/Follow the Magic Trail
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 55.68,38.65 |q The Coven Conspiracy/Follow the Magic Trail
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 53.57,37.98
 click Witch Pike |q The Coven Conspiracy/Follow the Magic Trail
 tip Manually skip to the next step
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 click Witch Pike |q The Coven Conspiracy/Examine Ritual Object
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 54.19,40.02
 talk Lyris Titanborn |q The Coven Conspiracy/Talk to Lyris Titanborn
 |tip Follow path back down
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 -- End: Ebonheart Pact Faction
 -- END: WESTERN SKYRIM PROLOGUE FACTION GUIDE
@@ -31556,20 +31556,20 @@ step
 -- Start: Aldmeri Dominion Faction
 'Open Audridon Map
 'Travel to the _Harborage_ in Audridon |q The Ravenwatch Inquiry |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto auridon_base 69.34,91.66 |q The Ravenwatch Inquiry |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto vulkhelguard_base 83.05,53.90
 talk Gwendis
 accept The Ravenwatch Inquiry
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 82.81,54.47
 click Gwendis's Cart to Bankorai Garrison |q The Ravenwatch Inquiry/Travel to Bangkorai Garrison
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 -- End Aldmeri Dominion Faction
 
@@ -31577,32 +31577,32 @@ step
 'Open Glenumbra Map
 'Travel to _Baelborne Rock_ in Glenumbra |q The Ravenwatch Inquiry |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto daggerfall_base 74.90,45.97
 talk Gwendis
 accept The Ravenwatch Inquiry
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 74.69,45.65
 click Gwendis's Cart to Bankorai Garrison |q The Ravenwatch Inquiry/Travel to Bangkorai Garrison
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 -- End Daggerfall Covenant Faction
 -- Start Ebonheart Pact Faction
 'Open Stonefalls Map
 'Travel to _Daven's Watch_ in Stonefalls |q The Ravenwatch Inquiry |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto stonefalls_base 90.67,42.03 |q The Ravenwatch Inquiry |future
 talk Gwendis
 accept The Ravenwatch Inquiry
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto
 click Gwendis's Cart to Bankorai Garrison |q The Ravenwatch Inquiry/Travel to Bangkorai Garrison
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 -- End Ebonheart Pact Faction
 
@@ -33822,68 +33822,68 @@ step
 'Travel to the _Vulkhel Guard_ Wayshrine |q A Mortal's Touch |future
 |tip If you do not have the funds use can also run the nearest wayshrine
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto vulkhelguard_base 54.23,63.66
 talk Selandilwen |q A Mortal's Touch |future
 'Select _I'd like to travel within the Aldmeri Dominion._
 'Select _Grahtwood, please._
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 73.58,64.18 |q A Mortal's Touch |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 71.62,78.75
 talk Rogatus Cinna
 accept A Mortal's Touch
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 71.66,79.20
 click Dread Lady's Letter |q A Mortal's Touch/Examine the Letter
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 71.66,79.20
 click Cart to the Location Shown on Your Map |q A Mortal's Touch/Go to the Location Shown on Your Map
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto malabaltor_base 62.56,82.77
 click Shael Ruins |q A Mortal's Touch/Find Lyranth Inside the Delve
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto shaelruins_base 88.41,40.30 |q A Mortal's Touch/Find Lyranth Inside the Delve
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 32.77,39.22 |q A Mortal's Touch/Find Lyranth Inside the Delve
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 32.49,74.73 |q A Mortal's Touch/Find Lyranth Inside the Delve
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 50.43,74.87 |q A Mortal's Touch/Find Lyranth Inside the Delve
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 47.00,88.79 |q A Mortal's Touch/Find Lyranth Inside the Delve
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 38.39,83.20
 'Find Lyranth Inside the Delve |q A Mortal's Touch/Find Lyranth Inside the Delve
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 38.39,83.20
 talk Lyranth |q A Mortal's Touch/Talk to Lyranth
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 38.42,89.90
 click Protective Ward |q A Mortal's Touch/Destroy the Protective Ward
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 38.42,89.90
 click Imperial Cache Annex |q A Mortal's Touch/Enter the Imperial Cache Annex
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 -- END: ALDMERI DOMINION FACTION PROLOGUE GUIDE
 
 -- START: DAGGERFALL COVENANT FACTION
@@ -33892,61 +33892,61 @@ step
 'Travel to the _Daggerfall_ Wayshrine |q A Mortal's Touch |future
 |tip If you do not have the funds use can also run the nearest wayshrine
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto daggerfall_base 45.78,31.11 |q A Mortal's Touch |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 53.69,37.63 |q A Mortal's Touch |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 66.65,40.54 |q A Mortal's Touch |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 68.35,39.25
 talk Rogatus Cinna
 accept A Mortal's Touch
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto daggerfall_base 68.35,39.25
 click Dread Lady's Letter |q A Mortal's Touch/Examine the Letter
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 69.19,38.80
 click Cart to Location Shown on Your Map |q A Mortal's Touch/Go to the Location Shown on Your Map
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto rivenspire_base 40.01,31.14
 click Erokii Ruins |q A Mortal's Touch/Go to the Location Shown on Your Map
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto erokii_base 76.97,38.09 |q A Mortal's Touch/Find Lyranth Inside the Delve
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 12.75,38.41 |q A Mortal's Touch/Find Lyranth Inside the Delve
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 12.03,78.73 |q A Mortal's Touch/Find Lyranth Inside the Delve
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 26.89,78.61
 'Find Lyranth Inside the Delve |q A Mortal's Touch/Find Lyranth Inside the Delve
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 28.88,83.15
 talk Lyranth |q A Mortal's Touch/Talk to Lyranth
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 28.37,86.65
 click Protective Ward |q A Mortal's Touch/Destroy the Protective Ward
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 28.29,88.73
 click Imperial Cache Annex |q A Mortal's Touch/Enter the Imperial Cache Annex
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 -- END: DAGGERFALL COVENANT FACTION
 
 -- START: EBONHEART PACT FACTION
@@ -33955,86 +33955,86 @@ step
 'Travel to the _Davon's Watch_ Wayshrine |q A Mortal's Touch |future
 |tip If you do not have the funds use can also run the nearest wayshrine
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto davonswatch_base 70.58,72.76 |q A Mortal's Touch |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 65.56,64.11 |q A Mortal's Touch |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 70.93,57.74 |q A Mortal's Touch |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 66.24,49.51 |q A Mortal's Touch |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 79.14,41.51 |q A Mortal's Touch |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 76.25,33.58 |q A Mortal's Touch |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 77.94,30.07
 talk Falvis Raram |q A Mortal's Touch |future
 'Select _I'd like to travel within the Ebonheart Pact._
 'Select _Deshaan, when you're ready._
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto mournhold_base 35.26,51.95 |q A Mortal's Touch |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 42.63,57.28 |q A Mortal's Touch |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 42.21,67.86 |q A Mortal's Touch |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 35.54,77.26
 talk Rogatus Cinna
 accept A Mortal's Touch
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 35.82,76.87
 click Dread Lady's Letter |q A Mortal's Touch/Examine the Letter
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 35.91,77.09
 click Cart to the Location Shown on Your Map |q A Mortal's Touch/Go to the Location Shown on Your Map
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto shadowfen_base 28.99,16.90
 click Shrine of the Black Maw |q A Mortal's Touch/Find Lyranth Inside the Delve
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto shrineofblackworm_base 89.49,32.59 |q A Mortal's Touch/Find Lyranth Inside the Delve
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 15.59,35.19 |q A Mortal's Touch/Find Lyranth Inside the Delve
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 14.58,79.98 |q A Mortal's Touch/Find Lyranth Inside the Delve
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 33.50,84.51
 'Find Lyranth Inside the Delve |q A Mortal's Touch/Find Lyranth Inside the Delve
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 33.50,84.51
 talk Lyranth |q A Mortal's Touch/Talk to Lyranth
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 33.09,88.53
 click the Protective Ward |q A Mortal's Touch/Destroy the Protective Ward
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 33.27,91.54
 click Imperial Cache Annex |q A Mortal's Touch/Enter the Imperial Cache Annex
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 -- END: EBONHEART PACT FACTION
 
 -- BEGIN: MERGED PROLOGUE FOR ALL FACTIONS
@@ -37307,35 +37307,35 @@ step
 'Open _Grahtwood Map_
 'Travel to _Elden Root_ in Grahtwood |q An Apocalyptic Situation |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto eldenrootgroundfloor_base 74.05,56.38 |q An Apocalyptic Situation |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 70.66,81.08 |q An Apocalyptic Situation |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 59.54,83.35
 talk Rogatina Cinna
 accept An Apocalyptic Situation
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 60.07,83.49
 'Travel to _Sweet Daffodil_ |q An Apocalyptic Situation/Rogatina Cinna provided a mount to take me to Lyra |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto deadmansdrop_base 68.47,43.35 |q An Apocalyptic Situation/Find Lyranth in Dead Man's Drop
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 44.76,36.95
 'Reveal _Residual Portal Energy_ |q An Apocalyptic Situation/Find Lyranth in Dead Man's Drop
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 step
 goto 44.76,36.95
 'Use Portal to _Lyranth's Hidden Lair_ |q An Apocalyptic Situation/Enter the Portal |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="AD"
+|only Aldmeri Dominion
 -- END: ALDMERI DOMINION FACTION PROLOGUE GUIDE
 
 -- START: DAGGERFALL COVENANT FACTION
@@ -37343,44 +37343,44 @@ step
 'Open _Stormhaven Map_
 'Travel to _Wayrest_ in Stormhaven |q An Apocalyptic Situation |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto wayrest_base 43.32,56.35 |q An Apocalyptic Situation |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 53.50,44.82 |q An Apocalyptic Situation |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 42.83,18.05
 talk Rogatina Cinna
 accept An Apocalyptic Situation
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 42.83,18.05
 'Travel to _Sweet Daffodil_ |q An Apocalyptic Situation/Rogatina Cinna provided a mount to take me to Lyra |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto silumm_base 44.26,43.60 |q An Apocalyptic Situation/Find Lyranth in Silumm
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 44.03,22.68 |q An Apocalyptic Situation/Find Lyranth in Silumm
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 73.11,23.75 |q An Apocalyptic Situation/Find Lyranth in Silumm
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 75.79,57.79 |q An Apocalyptic Situation/Find Lyranth in Silumm
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 81.52,57.15
 'Reveal _Residual Portal Energy_ |q An Apocalyptic Situation/Find Lyranth in Silumm
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 step
 goto 81.52,57.15
 'Use Portal to _Lyranth's Hidden Lair_ |q An Apocalyptic Situation/Enter the Portal |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="DC"
+|only Daggerfall Covenant
 -- END: DAGGERFALL COVENANT FACTION
 
 -- START: EBONHEART PACT FACTION
@@ -37388,35 +37388,35 @@ step
 'Open _Deshaan Map_
 'Travel to _Mournhold_ in Deshaan |q An Apocalyptic Situation |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto mournhold_base 48.55,67.78 |q An Apocalyptic Situation |future
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 45.01,63.64
 talk Rogatina Cinna
 accept An Apocalyptic Situation
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 45.01,63.64
 'Travel to _Sweet Daffodil_ |q An Apocalyptic Situation/Rogatina Cinna provided a mount to take me to Lyra |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto fortgreenwall_base 17.68,44.84
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 20.40,19.99 |q An Apocalyptic Situation/Find Lyranth in Fort Greenwall
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 33.04,24.87
 'Reveal _Residual Portal Energy_ |q An Apocalyptic Situation/Find Lyranth in Fort Greenwall
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 step
 goto 33.04,24.87
 'Use Portal to _Lyranth's Hidden Lair_ |q An Apocalyptic Situation/Enter the Portal |future
 |tip Manually skip to the next step.
-|only if ZGV.Utils.GetFaction("player","notvet")=="EP"
+|only Ebonheart Pact
 -- END: EBONHEART PACT FACTION
 
 -- BEGIN: MERGED PROLOGUE FOR ALL FACTIONS
