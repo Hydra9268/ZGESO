@@ -3784,6 +3784,10 @@ goto 43.10,57.47 |q The King's Gambit/Investigate the Guard Meeting Area
 step
 goto 41.45,47.10 |q The King's Gambit/Investigate the Guard Meeting Area
 step
+goto 39.80,42.88
+talk Sergeant Oufa
+turnin Broken Promises
+step
 goto 23.97,36.24 |q The King's Gambit/Find a Way Inside the Inn
 step
 goto 26.32,35.28 |q The King's Gambit/Find a Way Inside the Inn |tip Go up the stairs.

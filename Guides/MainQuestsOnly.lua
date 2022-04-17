@@ -26865,7 +26865,7 @@ goto wrothgar_base 71.17,50.07
 'Travel to _Icy Shore_ in Wrothgar |q To Save a Chief/Meet Eveli at Fharun Stronghold
 |tip Manually skip to the next step.
 step
-goto wrothgar_base 62.68,41.86
+goto wrothgar_base 62.68,41.86 |q To Save a Chief/Meet Eveli at Fharun Stronghold
 step
 goto 67.51,32.96 |q To Save a Chief/Meet Eveli at Fharun Stronghold |tip Cross the bridge
 step
@@ -27031,9 +27031,9 @@ step
 'Travel to _Frostbreak Ridge_ in Wrothgar |q The Anger of a King/Meet the Scouts at Paragon's Remembrance
 |tip Manually skip to the next step.
 step
-goto wrothgar_base 36.79,77.39
+goto wrothgar_base 36.79,77.39 |q The Anger of a King/Meet the Scouts at Paragon's Remembrance
 step
-goto 30.54,77.62
+goto 30.54,77.62 |q The Anger of a King/Meet the Scouts at Paragon's Remembrance
 step
 goto 31.19,70.51
 wayshrine Great Bay
@@ -27134,7 +27134,7 @@ talk Eveli Sharp-Arrow
 turnin The Anger of a King
 step
 'Open Wrothgar Map
-'Travel to _Orsinium_ in Wrothgar |q accept The King's Gambit |future
+'Travel to _Orsinium_ in Wrothgar |q The King's Gambit |future
 |tip Manually skip to the next step.
 step
 goto orsinium_base 31.57,88.73
@@ -27148,10 +27148,6 @@ step
 goto 43.10,57.47 |q The King's Gambit/Investigate the Guard Meeting Area
 step
 goto 41.45,47.10 |q The King's Gambit/Investigate the Guard Meeting Area
-step
-goto 39.80,42.88
-talk Sergeant Oufa
-turnin Broken Promises
 step
 goto 23.97,36.24 |q The King's Gambit/Find a Way Inside the Inn
 step
@@ -27421,7 +27417,7 @@ goto scarpkeeplower_base 45.47,48.88 |q Long Live the King/Talk to King Bazrag |
 step
 goto scarpkeepupper_base 41.35,40.23
 talk King Bazrag
-turnin Long Live the King |next LEVELING\\Thieves Guild
+turnin Long Live the King |next Extra's\\Extra's\\Main Quests Only\\Expansion\\Thieves Guild
 ]])
 
 ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Expansion\\Thieves Guild",[[
@@ -27437,7 +27433,7 @@ goto marbruk_base 63.44,39.39 |q Partners in Crime |future
 |only Aldmeri Dominion
 step
 goto 61.66,25.85
-click Marbruk Outlaws Refuge |q Partners in Crime |future
+'Open Marbruk Outlaws Refuge |q Partners in Crime |future
 |tip Manually skip to the next step.
 |only Aldmeri Dominion
 step
@@ -27454,12 +27450,15 @@ step
 goto Woodhearth 76.36,56.80 |q Partners in Crime/Meet Quen at the Woodhearth Docks
 |only Aldmeri Dominion
 step
+goto 39.32,51.29 |q Partners in Crime/Meet Quen at the Woodhearth Docks
+|only Aldmeri Dominion
+step
 goto 18.04,53.78
 talk Quen |q Partners in Crime/Meet Quen at the Woodhearth Docks
 |only Aldmeri Dominion
 step
 goto 18.04,53.78
-'Travel boat |q Partners in Crime/Travel to Fulstrom Homestead |future
+'Travel Fulstrom Homestead |q Partners in Crime/Travel to Fulstrom Homestead |future
 |only Aldmeri Dominion
 |tip Manually skip to the next step.
 step
@@ -27537,7 +27536,7 @@ step
 goto 53.45,49.90
 |tip Open Portcullis
 'Wait for Quen to scale the portcullis
-click Portcullis |q Partners in Crime/Approach Fulstrom Homestead
+'Open Portcullis |q Partners in Crime/Approach Fulstrom Homestead
 step
 goto 58.83,44.80 |q Partners in Crime/Enter Fulstrom Manor |tip Stay stealthed
 step
@@ -27550,17 +27549,17 @@ step
 goto 52.31,21.31 |q Partners in Crime/Enter the Treasury |tip Inspect suspicious bookcase.
 step
 goto 52.50,21.50
-click _Left Tumbler to display the Horn_
-click _Middle Tumbler to display the Candle_
-click _Right Tumbler to display the Skull_
+'Use Left Tumbler to display the _Horn_
+'Use Middle Tumbler to display the _Candle_
+'Use Right Tumbler to display the _Skull_
 'Unlock the doors |q Partners in Crime/Enter the Treasury
 |tip Manually skip to the next step.
 step
 goto 50.90,23.48
-click the Treasury |q Partners in Crime/Enter the Treasury
+'Enter the Treasury |q Partners in Crime/Enter the Treasury
 step
 goto 51.93,25.89
-'Take Giovessen Skull |q Partners in Crime/Steal the Giovessen Skull
+'Steal Giovessen Skull |q Partners in Crime/Steal the Giovessen Skull
 step
 goto 52.65,24.90
 'Follow Quen's Lead |q Partners in Crime/Follow Quen's Lead
@@ -27569,7 +27568,7 @@ goto 53.83,23.68
 kill Captain Brand, Yumanam, Sahdabeh |q Partners in Crime/Fight the Iron Wheel
 step
 goto 49.52,22.42
-click Fulstrom Manor Cellar |q Partners in Crime/Talk to Quen in the Cellar
+'Open Fulstrom Manor Cellar |q Partners in Crime/Talk to Quen in the Cellar
 |tip Manually skip to the next step.
 step
 goto fulstromcatacombs_base 58.36,81.26
@@ -27579,7 +27578,7 @@ goto 57.45,85.46
 'Listen to Walks-Softly |q Partners in Crime/Listen to Walks-Softly
 step
 goto 40.04,82.64
-click the Catacombs |q Partners in Crime/Enter the Catacombs
+'Enter the Catacombs |q Partners in Crime/Enter the Catacombs
 step
 goto 36.74,31.79 |q Partners in Crime/Escape From the Catacombs |tip Go downstairs.
 step
@@ -27591,7 +27590,7 @@ step
 goto 70.34,14.64 |q Partners in Crime/Follow Walks-Softly |tip Go up the stairs.
 step
 goto 69.44,13.37
-click Fulstrom Homestead |q Partners in Crime/Follow Walks-Softly
+'Climb Fulstrom Homestead |q Partners in Crime/Follow Walks-Softly
 step
 goto fulstromhomestead_base 84.94,54.52
 talk Walks-Softly
@@ -27601,11 +27600,7 @@ goto abahslanding_base 42.73,52.63
 talk Walks-Softly |q Partners in Crime/Talk to the Guildmaster in the Thieves Den
 |tip Manually skip to the next step.
 step
-goto 70.01,75.69
-click Exit |q Partners in Crime/Talk to the Guildmaster in the Thieves Den
-|tip Manually skip to the next step.
-step
-goto abahslanding_base 37.41,55.17 |q Partners in Crime/Talk to the Guildmaster in the Thieves Den |tip Go up the stairs.
+goto 37.41,55.17 |q Partners in Crime/Talk to the Guildmaster in the Thieves Den |tip Go up the stairs.
 step
 goto 31.29,47.00 |q Partners in Crime/Talk to the Guildmaster in the Thieves Den |tip Go up the stairs.
 step
@@ -27614,11 +27609,11 @@ step
 goto 27.14,37.27 |q Partners in Crime/Talk to the Guildmaster in the Thieves Den
 step
 goto 27.21,33.06
-click the Thieves Den |q Partners in Crime/Talk to the Guildmaster in the Thieves Den
+'Open the Thieves Den |q Partners in Crime/Talk to the Guildmaster in the Thieves Den
 |tip Manually skip to the next step.
 step
 goto safehouse_base 68.68,41.56
-click The Den |q Partners in Crime/Talk to the Guildmaster in the Thieves Den
+'Open The Den |q Partners in Crime/Talk to the Guildmaster in the Thieves Den
 |tip Manually skip to the next step.
 step
 goto 35.21,42.05
@@ -27628,7 +27623,7 @@ accept Cleaning House
 step
 goto 39.23,35.41
 '_**NOTE** must complete The Cutpurse's Craft quest before getting your Thieves Guild Rank up._
-click tip board if dialogue does not begin with "Esteemed Thieves" backout and try again. 
+'Examine tip board if dialogue does not begin with "Esteemed Thieves" backout and try again. 
 |tip Once you have the quest go to Daggerfall docks and steal everything off the two ships, then go to any Outlaws Refuge and DO NOT SELL but launder everything. 
 |tip Then do the quest turn it in rinse and repeat till rank 10 this is the quickest way to through this guide. 
 |tip You should only need to loot the two boats once it should be enough items in your bags to get you to Rank 10 and also open the satchels you get for your turn in they also have some of them supplies as well. |q Cleaning House/Meet Zeira Outside Abah's Landing |future
@@ -27637,7 +27632,7 @@ step
 goto 43.71,63.32 |q Cleaning House/Meet Zeira Outside Abah's Landing
 step
 goto 26.06,63.44
-click Hew's Bane |q Cleaning House/Meet Zeira Outside Abah's Landing
+'Open Hew's Bane |q Cleaning House/Meet Zeira Outside Abah's Landing
 |tip Manually skip to the next step.
 step
 goto hewsbane_base 52.07,54.89
@@ -27652,7 +27647,7 @@ goto 53.28,56.48
 |tip Manually skip to the next step.
 step
 goto 53.08,56.73
-click Abah's Landing |q Cleaning House/Find Velsa's Villa
+'Open Abah's Landing |q Cleaning House/Find Velsa's Villa
 |tip Manually skip to the next step.
 step
 goto 52.04,54.54 |q Cleaning House/Find Velsa's Villa
@@ -27683,11 +27678,11 @@ talk Silver-Claw |q Cleaning House/Meet Velsa Outside Silver-Claw's Warehouse
 |tip Manually skip to the next step.
 step
 goto 53.43,53.04
-click Velsa's Villa |q Cleaning House/Meet Velsa Outside Silver-Claw's Warehouse
+'Open Velsa's Villa |q Cleaning House/Meet Velsa Outside Silver-Claw's Warehouse
 |tip Manually skip to the next step.
 step
 goto 54.17,52.31
-click Secret Passage |q Cleaning House/Meet Velsa Outside Silver-Claw's Warehouse
+'Open Secret Passage |q Cleaning House/Meet Velsa Outside Silver-Claw's Warehouse
 |tip Manually skip to the next step.
 step
 goto abahslanding_base 19.66,72.61
@@ -27695,7 +27690,7 @@ goto abahslanding_base 19.66,72.61
 |tip Manually skip to the next step.
 step
 goto 23.21,70.05
-click Warehouse District |q Cleaning House/Meet Velsa Outside Silver-Claw's Warehouse |tip Its upstairs.
+'Trespass Warehouse District |q Cleaning House/Meet Velsa Outside Silver-Claw's Warehouse |tip Its upstairs.
 step
 goto 23.11,78.52 |q Cleaning House/Meet Velsa Outside Silver-Claw's Warehouse |tip Follow the top across window and around
 step
@@ -27705,12 +27700,12 @@ goto 32.94,90.72
 talk Velsa |q Cleaning House/Meet Velsa Outside Silver-Claw's Warehouse
 step
 goto 32.86,90.03
-click Silver-Claw's Warehouse |q Cleaning House/Enter Silver-Claw's Warehouse
+'Trespass Silver-Claw's Warehouse |q Cleaning House/Enter Silver-Claw's Warehouse
 step
 'Walk to the _North_:
 talk Velsa |q Cleaning House/Talk to Velsa
 step
-click Stink Apples |q Cleaning House/Distract Torkming
+'Use Stink Apples |q Cleaning House/Distract Torkming
 step
 'Go to the _Southeast_ corner of the building:
 |tip Go back the direction you came from go under the stairs and follow the wall and make a right in the doorway and follow steps up.
@@ -27718,8 +27713,8 @@ step
 |tip Manually skip to the next step.
 step
 'Follow the path around the second level of the warehouse
-click Hiding Spots to avoid guards if needed
-click Abah's Landing |q Cleaning House/Search Silver-Claw's Office
+|tip Use Hiding Spots to avoid guards if needed
+'Open Abah's Landing |q Cleaning House/Search Silver-Claw's Office
 |tip Manually skip to the next step.
 step
 goto 30.10,89.51 |q Cleaning House/Search Silver-Claw's Office
@@ -27728,30 +27723,26 @@ goto 33.82,88.50
 'Unlock Silver-Claw's Office |q Cleaning House/Search Silver-Claw's Office
 step
 goto 32.97,86.46
-click Silver-Claw's Stash |q Cleaning House/Steal Silver-Claw's Ledger
+'Search Silver-Claw's Stash |q Cleaning House/Steal Silver-Claw's Ledger
 step
 goto 33.01,87.31
 |tip Watch dialgue.
 'Hide Hiding Spot |q Cleaning House/Hide in Silver-Claw's Office
 step
 goto 32.41,86.60
-click Window |q Cleaning House/Escape Silver-Claw's Warehouse
+'Open Window |q Cleaning House/Escape Silver-Claw's Warehouse
 step
 'Open Hew's Bane Map
 'Travel _Abah's Landing_ in Hew's Bane |q Cleaning House/Return Silver-Claw's Ledger
 |tip Manually skip to the next step.
 step
 goto 21.38,43.10
-click Thieves Den |q Cleaning House/Return Silver-Claw's Ledger
+'Open Thieves Den |q Cleaning House/Return Silver-Claw's Ledger
 |tip Manually skip to the next step.
 step
 goto safehouse_base 43.09,63.20 |q Cleaning House/Return Silver-Claw's Ledger
 step
 goto 50.12,40.73 |q Cleaning House/Return Silver-Claw's Ledger
-step
-goto 66.95,41.12
-click Cistern |q Cleaning House/Return Silver-Claw's Ledger
-|tip Manually skip to the next step.
 step
 goto 87.41,38.80
 'Climb Abah's Landing |q Cleaning House/Return Silver-Claw's Ledger
@@ -27761,27 +27752,18 @@ goto abahslanding_base 27.16,32.64
 talk Silver-Claw |q Cleaning House/Return Silver-Claw's Ledger
 step
 goto 27.23,33.04
-click Thieves Den |q Cleaning House/Talk to Zeira
+'Open Thieves Den |q Cleaning House/Talk to Zeira
 |tip Manually skip to the next step.
 step
 goto safehouse_base 68.79,41.64
-click The Den |q Cleaning House/Talk to Zeira
+'Open The Den |q Cleaning House/Talk to Zeira
 |tip Manually skip to the next step.
 step
 goto 30.74,40.84
 talk Zeira
 turnin Cleaning House
 step
-goto 48.10,27.64 |q The Long Game |future |tip Go upstairs.
-step
-goto 38.07,41.89 |q The Long Game |future
-step
-goto 28.02,32.92
-|tip Go up the stairs.
-click Thieves Den |q The Long Game |future
-|tip Manually skip to the next step.
-step
-goto safehouse_base 32.55,63.78
+goto 32.55,63.78
 talk Andarri
 accept The Long Game
 step
@@ -27806,14 +27788,14 @@ talk Quen |q The Long Game/Meet Quen at the Harbor
 step
 goto 36.41,46.66
 |tip Go up the stairs.
-'Hide Hiding Spot |q The Long Game/Eavesdrop on the Imperial Client
+'Use Hiding Spot |q The Long Game/Eavesdrop on the Imperial Client
 step
 goto 40.32,42.20 |q The Long Game/Meet Velsa at Silver-Claw's Shop
 step
 goto 39.98,47.09 |q The Long Game/Meet Velsa at Silver-Claw's Shop
 step
 goto 45.34,47.32
-click Spotless Goods Shipping Concern |q The Long Game/Meet Velsa at Silver-Claw's Shop
+'Open Spotless Goods Shipping Concern |q The Long Game/Meet Velsa at Silver-Claw's Shop
 step
 goto 46.71,49.44
 talk Silver-Claw |q The Long Game/Talk to Silver-Claw
@@ -27821,7 +27803,7 @@ step
 goto 42.16,48.33 |q The Long Game/Meet Percius Loche at the Diamond Thimble |tip Go up the stairs.
 step
 goto 42.95,42.11
-click The Diamond Thimble |q The Long Game/Meet Percius Loche at the Diamond Thimble
+'Open The Diamond Thimble |q The Long Game/Meet Percius Loche at the Diamond Thimble
 |tip Manually skip to the next step.
 step
 goto 42.81,43.43
@@ -27829,13 +27811,15 @@ talk Percius Loche |q The Long Game/Meet Percius Loche at the Diamond Thimble
 step
 goto 42.87,43.41
 talk Percius Loche
-'Purchase Servant's Outfit |q The Long Game/Purchase Servant's Outfit
+'Purchase Servant's Outfit |q The Long Game/Purchase Servant's Outfiti
 step
-goto 31.36,46.97 |q The Long Game/Meet Velsa Outside No Shira Citadel
+'Open Hew's Bane Map
+'Travel to _Abah's Landing_ Wayshrine
 step
-goto 27.06,44.77 |q The Long Game/Meet Velsa Outside No Shira Citadel |tip Go up the stairs.
+goto hewsbane_base 50.12,48.07
 step
-goto 24.97,47.21 |q The Long Game/Meet Velsa Outside No Shira Citadel |tip Go up the stairs.
+goto 40.58,56.71
+wayshrine Zeht's Displeasure
 step
 goto hewsbane_base 54.19,70.49
 wayshrine No Shira Citadel
@@ -27850,21 +27834,18 @@ step
 goto 59.33,70.23 |q The Long Game/.*Learn the Iron Wheel Headquarters Pass-Phrase.* |future
 step
 goto 58.56,72.44
-click Iron Wheel Precept 21 |q The Long Game/.*Learn the Iron Wheel Headquarters Pass-Phrase.* |future
-|tip Manually skip to the next step.
+'Examine Iron Wheel Precept 21 |lorebook Iron Wheel Precept 21/3/28/44
 step
 goto 60.86,69.06
-click Iron Wheel Precept 15 |q The Long Game/.*Learn the Iron Wheel Headquarters Pass-Phrase.* |future
-|tip Manually skip to the next step.
+'Examine Iron Wheel Precept 15 |lorebook Iron Wheel Precept 15/3/28/43
 step
 goto 62.29,67.89
-click Iron Wheel Precept 38 |q The Long Game/.*Learn the Iron Wheel Headquarters Pass-Phrase.* |future
-|tip Manually skip to the next step.
+'Examine Iron Wheel Precept 38 |lorebook Iron Wheel Precept 38/3/28/45
 step
 goto 64.55,71.29 |q The Long Game/Enter Iron Wheel Headquarters With Pass-Phrase
 step
 goto 64.82,72.51
-click Iron Wheel Headquarters
+'Open Iron Wheel Headquarters
 'Select _"A ring of iron around them."_
 'Select _"We burn our truth upon their canvas."_
 'Select _"The Wheel turns ever onward."_ |q The Long Game/Enter Iron Wheel Headquarters With Pass-Phrase |future
@@ -27872,48 +27853,25 @@ click Iron Wheel Headquarters
 step
 goto hiradirgecitadeltg3_base 32.64,73.92
 |tip Watch dialogue
-click Cosh's Documents |q The Long Game/Learn Cosh's Plans
+'Steal Cosh's Documents |q The Long Game/Learn Cosh's Plans
 step
 goto 30.25,75.88
-click Iron Wheel Administration |q The Long Game/Spy on Chief Inspector Rhanbiq and Cosh
+'Open Iron Wheel Administration |q The Long Game/Spy on Chief Inspector Rhanbiq and Cosh
 |tip Manually skip to the next step.
 step
 goto 28.26,52.41
-click Suspicious Relief |q The Long Game/Spy on Chief Inspector Rhanbiq and Cosh
+'Examine Suspicious Relief |q The Long Game/Spy on Chief Inspector Rhanbiq and Cosh
 |tip Manually skip to the next step.
 step
 goto hiradirgecitadeltg3_s1_base 31.92,45.91
 |tip Watch dialogue
 'Spy on Chief Inspector Rhanbiq and Cosh |q The Long Game/Spy on Chief Inspector Rhanbiq and Cosh
 step
-goto hiradirgecitadeltg3_base 30.00,52.60
-click Iron Wheel Administration |q The Long Game/Escape Iron Wheel Headquarters
-|tip Manually skip to the next step.
-step
-goto 44.23,61.82 |q The Long Game/Escape Iron Wheel Headquarters
-step
-goto 69.35,30.63 |q The Long Game/Escape Iron Wheel Headquarters
-step
-goto 49.66,10.19
-'Climb No Shira Citadel |q The Long Game/Escape Iron Wheel Headquarters
-|tip Manually skip to the next step.
-step
 'Open Hew's Bane Map
-'Travel to _Abah's Landing_ in Hew's Bane |q The Long Game/Meet Zeira at the Thieves Den
-|tip Manually skip to the next step.
+'Travel to _Abah's Landing_ in Hew's Bane |q The Long Game/Escape Iron Wheel Headquarters
 step
-goto abahslanding_base 25.79,57.80 |q The Long Game/Meet Zeira at the Thieves Den
-step
-goto 26.42,44.57 |q A Secret Shame/Talk to Sabileh |tip Go up the stairs.
-step
-goto 24.91,47.10 |q A Secret Shame/Talk to Sabileh |tip Go up the stairs.
-step
-goto 25.16,49.11
-talk Sabileh
-turnin A Secret Shame
-step
-goto 27.18,33.05
-click Thieves Den |q The Long Game/Meet Zeira at the Thieves Den
+goto abahslanding_base 21.47,43.03
+'Open Thieves Den |q The Long Game/Meet Zeira at the Thieves Den
 |tip Manually skip to the next step.
 step
 goto safehouse_base 36.57,42.35
@@ -27924,15 +27882,7 @@ goto 36.57,42.35
 talk Zeira
 turnin The Long Game
 step
-'Open Hew's Bane Map
-'Travel to Abah's Landing in Hew's Bane |q A Flawless Plan/Talk to Zeira |future
-|tip Manually skip to the next step.
-step
-goto abahslanding_base 21.42,43.10
-click Thieves Den |q A Flawless Plan/Talk to Zeira |future
-|tip Manually skip to the next step.
-step
-goto safehouse_base 32.59,64.60
+goto 32.59,64.60
 talk Andarri
 accept A Flawless Plan
 step
@@ -27941,11 +27891,11 @@ goto 37.16,45.26
 talk Zeira |q A Flawless Plan/Talk to Zeira
 step
 goto 87.88,39.15
-click Abah's Landing |q A Flawless Plan/Meet Percius Loche at the Diamond Thimble
+'Open Abah's Landing |q A Flawless Plan/Meet Percius Loche at the Diamond Thimble
 |tip Manually skip to the next step.
 step
 goto abahslanding_base 42.97,42.12
-click The Diamond Thimble |q A Flawless Plan/Meet Percius Loche at the Diamond Thimble
+'Open The Diamond Thimble |q A Flawless Plan/Meet Percius Loche at the Diamond Thimble
 step
 goto 43.95,43.53
 talk Mamaea |q A Flawless Plan/Talk to Mamaea
@@ -27988,17 +27938,17 @@ talk Zeira |q A Flawless Plan/Sneak Past the Iron Wheel
 step
 goto 49.02,46.16
 |tip Wait for Percius Loche
-click Treva's Branch |q A Flawless Plan/Sneak Past the Iron Wheel
+'Open Treva's Branch |q A Flawless Plan/Sneak Past the Iron Wheel
 step
 goto aldanobitombdungeon_base 17.13,63.83
-click Tu'wacca's Pillars |q A Flawless Plan/Explore al-Danobia Tomb
+'Open Tu'wacca's Pillars |q A Flawless Plan/Explore al-Danobia Tomb
 step
 goto 20.13,56.91
-click Faded Texts of Arkishu the Blade |q A Flawless Plan/Bypass Tu'whacca's Pillars
+'Use Faded Texts of Arkishu the Blade |q A Flawless Plan/Bypass Tu'whacca's Pillars
 |tip Manually skip to the next step.
 step
 goto 20.21,62.96
-click Faded Texts of Arkishu the Blade |q A Flawless Plan/Bypass Tu'whacca's Pillars
+'Use Faded Texts of Arkishu the Blade |q A Flawless Plan/Bypass Tu'whacca's Pillars
 |tip Manually skip to the next step.
 step
 goto 20.27,58.75
@@ -28013,7 +27963,7 @@ goto 20.24,61.20
 'Bypass Tu'whacca's Pillars |q A Flawless Plan/Bypass Tu'whacca's Pillars
 step
 goto 20.60,59.96
-click HoonDing's Passage |q A Flawless Plan/Explore HoonDing's Passage
+'Open HoonDing's Passage |q A Flawless Plan/Explore HoonDing's Passage
 |tip Manually skip to the next step.
 step
 goto 38.58,59.89
@@ -28023,7 +27973,7 @@ goto 40.61,60.05
 'Follow Zeira's Lead |q A Flawless Plan/Follow Zeira's Lead
 step
 goto 39.06,56.50
-click Malooc's Path |q A Flawless Plan/Walk Malooc's Path
+'Open Malooc's Path |q A Flawless Plan/Walk Malooc's Path
 |tip Manually skip to the next step.
 step
 goto 31.87,44.40
@@ -28037,23 +27987,23 @@ goto 35.95,23.41
 kill Gargoyle
 step
 goto 38.02,25.06
-click Tall Papa's Ewer |q A Flawless Plan/Recover Tall Papa's Ashes
+'Examine Tall Papa's Ewer |q A Flawless Plan/Recover Tall Papa's Ashes
 step
 goto 37.82,25.42
 talk Zeira |q A Flawless Plan/Talk to Zeira
 step
 goto 40.91,32.87
-click Malooc's Path |q A Flawless Plan/Return to Shinji's Truth
+'Open Malooc's Path |q A Flawless Plan/Return to Shinji's Truth
 |tip Manually skip to the next step.
 step
 goto 36.56,45.32
-click Malooc's Path |q A Flawless Plan/Return to Shinji's Truth
+'Open Malooc's Path |q A Flawless Plan/Return to Shinji's Truth
 |tip Manually skip to the next step.
 step
 goto 31.65,52.42 |q A Flawless Plan/Return to Shinji's Truth
 step
 goto 39.11,55.99
-click HoonDing's Passage |q A Flawless Plan/Return to Shinji's Truth
+'Open HoonDing's Passage |q A Flawless Plan/Return to Shinji's Truth
 |tip Manually skip to the next step.
 step
 goto 41.96,59.90
@@ -28061,37 +28011,37 @@ goto 41.96,59.90
 step
 goto 54.94,59.96
 |tip Follow the Ash Bridge
-click Tall Papa's Ashes |q A Flawless Plan/Cross Shinji's Truth
+'Use Tall Papa's Ashes |q A Flawless Plan/Cross Shinji's Truth
 step
 goto 61.37,59.93
-click Al-Danobia Crypt |q A Flawless Plan/Investigate the Treasure Vaults
+'Open Al-Danobia Crypt |q A Flawless Plan/Investigate the Treasure Vaults
 step
 goto 77.95,60.09
 kill Lakayd the Repentant |q A Flawless Plan/Find a Way into the al-Danobia Vault Room
 step
 goto 80.96,60.02
-click Al-Danobia Treasure Vaults |q A Flawless Plan/Search the al-Danobia Treasure Vaults
+'Open Al-Danobia Treasure Vaults |q A Flawless Plan/Search the al-Danobia Treasure Vaults
 |tip Manually skip to the next step.
 step
 goto 87.46,57.78
-click Headless Skeleton |q A Flawless Plan/Search the al-Danobia Treasure Vaults
+'Examine Headless Skeleton |q A Flawless Plan/Search the al-Danobia Treasure Vaults
 |tip Manually skip to the next step.
 step
 goto 87.73,60.63
-click Coded Map |q A Flawless Plan/Search the al-Danobia Treasure Vaults
+'Read Coded Map |q A Flawless Plan/Search the al-Danobia Treasure Vaults
 |tip Manually skip to the next step.
 step
 goto 86.99,62.38
-click Torn Journal Page |q A Flawless Plan/Search the al-Danobia Treasure Vaults
+'Read Torn Journal Page |q A Flawless Plan/Search the al-Danobia Treasure Vaults
 step
 goto 92.30,59.71 |q A Flawless Plan/Leave al-Danobia Tomb
 step
 goto 92.33,63.31
-click Taneth |q A Flawless Plan/Leave al-Danobia Tomb
+'Open Taneth |q A Flawless Plan/Leave al-Danobia Tomb
 |tip Manually skip to the next step.
 step
 goto aldanobia_base 44.54,64.42
-click Camel |q A Flawless Plan/Leave al-Danobia Tomb
+'Use Camel |q A Flawless Plan/Leave al-Danobia Tomb
 |tip Manually skip to the next step.
 step
 goto hewsbane_base 45.71,46.50 |q A Flawless Plan/Meet Zeira at Nicolas' Desert Retreat
@@ -28104,17 +28054,16 @@ goto 36.38,62.86
 'Unlock Desert Retreat |q A Flawless Plan/Meet Zeira at Nicolas' Desert Retreat
 step
 goto 34.73,63.39
-click Clothing Chest |q A Flawless Plan/.*Search Nicolas' Desert Retreat.* |count 1
+'Examine Clothing Chest |q A Flawless Plan/.*Search Nicolas' Desert Retreat.* |count 1
 step
 goto 34.73,63.55
-click Danobia Coins |q A Flawless Plan/.*Search Nicolas' Desert Retreat.* |count 2
-step
-goto 34.91,63.78
-click Stack of Papers |q A Flawless Plan/.*Search Nicolas' Desert Retreat.* |count 3
+'Examine Danobia Coins |q A Flawless Plan/.*Search Nicolas' Desert Retreat.* |count 2
 step
 goto 34.51,63.98
-click Blood-Filled Crystal |q A Flawless Plan/.*Search Nicolas' Desert Retreat.* |count 4 |future
-|tip Manually skip to the next step.
+'Examine Blood-Filled Crystal |q A Flawless Plan/.*Search Nicolas' Desert Retreat.* |count 3
+step
+goto 34.91,63.78
+'Examine Stack of Papers |lorebook Excerpt from Cosh's Papers/3/28/74
 step
 goto 34.54,64.00
 talk Zeira |q A Flawless Plan/Talk to Zeira
@@ -28124,37 +28073,18 @@ step
 |tip Manually skip to the next step.
 step
 goto abahslanding_base 21.40,42.99
-click Thieves Den |q A Flawless Plan/Return to the Thieves Den
+'Open Thieves Den |q A Flawless Plan/Return to the Thieves Den |future
 |tip Manually skip to the next step.
 step
 goto safehouse_base 35.24,40.14
 talk Zeira
 turnin A Flawless Plan
 step
-goto 54.19,70.56
-click No Shira Citadel Wayshrine
-'Travel to _Abah's Landing_ in Hew's Bane |q Forever Hold Your Peace/Speak to Zeira |future
-|tip Manually skip to the next step.
+goto safehouse_base 43.36,52.43
 step
-goto abahslanding_base 21.56,43.14
-click Thieves Den |q Forever Hold Your Peace/Speak to Zeira |future
-|tip Manually skip to the next step.
-step
-'Open Hew's Bane Map
-'Travel to _Abah's Landing_ in Hew's Bane |q Everyone Has A Price/Meet Walks-Softly at the Thieves Den
-|tip Manually skip to the next step.
-step
-goto abahslanding_base 20.67,43.12
-click Thieves Den |q Everyone Has A Price/Meet Walks-Softly at the Thieves Den
-|tip Manually skip to the next step.
-step
-goto safehouse_base 32.51,64.52
+goto 32.51,64.52
 talk Andarri
 accept Forever Hold Your Peace
-step
-goto 42.66,74.10
-talk Walks-Softly
-turnin Everyone Has A Price
 step
 goto 37.16,45.26
 talk Zeira |q Forever Hold Your Peace/Talk to Zeira
@@ -28166,7 +28096,7 @@ step
 goto abahslanding_base 39.92,47.20 |q Forever Hold Your Peace/Meet Silver-Claw at Spotless Goods
 step
 goto abahslanding_base 45.37,47.28
-click Spotless Goods Shipping Concern |q Forever Hold Your Peace/Meet Silver-Claw at Spotless Goods
+'Open Spotless Goods Shipping Concern |q Forever Hold Your Peace/Meet Silver-Claw at Spotless Goods
 |tip Manually skip to the next step.
 step
 goto 47.15,49.24
@@ -28181,19 +28111,19 @@ step
 goto 51.76,30.41 |q Forever Hold Your Peace/Steal a Wedding Invitation |tip Go up the stairs.
 step
 goto 52.59,26.68
-click Lady Balina's Manion |q Forever Hold Your Peace/Steal a Wedding Invitation
+'Unlock Lady Balina's Manion |q Forever Hold Your Peace/Steal a Wedding Invitation
 |tip Manually skip to the next step.
 step
 goto 53.83,27.60 
 |tip Upstairs sneak to avoid all the npcs.
-click Wedding Invitation |q Forever Hold Your Peace/Steal a Wedding Invitation
+'Examine Wedding Invitation |q Forever Hold Your Peace/Steal a Wedding Invitation
 step
 goto 38.21,41.69 |q Forever Hold Your Peace/Return to the Thieves Den |tip Leave Lady Balina's Manion
 step
 goto 30.66,36.19 |q Forever Hold Your Peace/Return to the Thieves Den |tip Go up the stairs.
 step
 goto 27.19,33.05
-click Thieves Den |q Forever Hold Your Peace/Return to the Thieves Den |future
+'Open Thieves Den |q Forever Hold Your Peace/Return to the Thieves Den |future
 |tip Manually skip to the next step.
 step
 goto safehouse_base 33.65,43.60
@@ -28206,7 +28136,7 @@ goto 87.34,38.42
 'Climb Abah's Landing |q Forever Hold Your Peace/Go to the Diamond Thimble
 step
 goto abahslanding_base 42.97,42.09
-click The Diamond Thimble |q Forever Hold Your Peace/Go to the Diamond Thimble
+'Open The Diamond Thimble |q Forever Hold Your Peace/Go to the Diamond Thimble
 step
 goto 44.93,44.84
 talk Percius Loche |q Forever Hold Your Peace/Talk to the Tailor
@@ -28221,7 +28151,7 @@ goto 58.28,48.74
 talk Muazel |q Forever Hold Your Peace/Give Forged Invitation to the Gatekeeper
 step
 goto 58.65,49.04
-click Hubalajad Palace |q Forever Hold Your Peace/Enter the Wedding |future
+'Open Hubalajad Palace |q Forever Hold Your Peace/Enter the Wedding |future
 |tip Manually skip to the next step.
 step
 goto hubalajadpalace_base 31.18,29.36
@@ -28246,7 +28176,7 @@ talk Turalla |q Forever Hold Your Peace/Determine Magnifica Falorah's Whereabout
 |tip Manually skip to the next step.
 step
 goto 45.23,54.50
-click Summerset Hills 572 |q Forever Hold Your Peace/Determine Magnifica Falorah's Whereabouts
+'Steal Summerset Hills 572 |q Forever Hold Your Peace/Determine Magnifica Falorah's Whereabouts
 |tip Manually skip to the next step.
 step
 goto 61.44,46.07
@@ -28256,7 +28186,7 @@ goto 55.90,68.36
 'Pickpocket the Servant when he's here |q Forever Hold Your Peace/Find a Way Inside the Palace
 step
 goto 57.32,70.18
-click Hubalajad Kitchens |q Forever Hold Your Peace/Enter the Palace |tip Use hiding places to maneuver undetected around the house.
+'Open Hubalajad Kitchens |q Forever Hold Your Peace/Enter the Palace |tip Use hiding places to maneuver undetected around the house.
 step
 goto hubalajadpalaceint_01_h_base 23.52,56.59 |q Forever Hold Your Peace/Sneak Into Magnifica Falorah's Room  |tip Use hiding places to maneuver undetected around the house.
 step
@@ -28265,36 +28195,36 @@ step
 goto 41.27,37.76 |q Forever Hold Your Peace/Sneak Into Magnifica Falorah's Room |tip Use hiding places to maneuver undetected around the house.
 step
 goto 67.59,47.61
-click Cosh's Bedchamber |q Forever Hold Your Peace/Sneak Into Magnifica Falorah's Room |tip Use the sideroom to avoid the guard.
+'Open Cosh's Bedchamber |q Forever Hold Your Peace/Sneak Into Magnifica Falorah's Room |tip Use the sideroom to avoid the guard.
 step
 goto 78.80,43.09
 talk Magnifica Falorah |q Forever Hold Your Peace/Talk to Magnifica Falorah
 step
 goto 71.86,39.63
-click Candle |q Forever Hold Your Peace/Search Cosh's Room
+'Use Candle |q Forever Hold Your Peace/Search Cosh's Room
 |tip Manually skip to the next step.
 step
 goto 78.40,39.41
-click Candle |q Forever Hold Your Peace/Search Cosh's Room
+'Use Candle |q Forever Hold Your Peace/Search Cosh's Room
 |tip Manually skip to the next step.
 step
 goto 75.18,47.74
-click Candle |q Forever Hold Your Peace/Search Cosh's Room
+'Use Candle |q Forever Hold Your Peace/Search Cosh's Room
 |tip Manually skip to the next step.
 step
 goto 83.15,44.97
-click Candle |q Forever Hold Your Peace/Search Cosh's Room
+'Use Candle |q Forever Hold Your Peace/Search Cosh's Room
 |tip Manually skip to the next step.
 step
 goto hubalajadpalaceint_02_base 79.25,49.63
-click Secret Room |q Forever Hold Your Peace/Search Cosh's Room
+'Open Secret Room |q Forever Hold Your Peace/Search Cosh's Room
 step
 goto 84.94,50.55
 talk Zeira |q Forever Hold Your Peace/Talk to Zeira
 step
 goto hubalajadpalaceint_base 81.23,51.37
 |tip Go down the stairs.
-click Storage Room|q Forever Hold Your Peace/Attend the Wedding Ceremony
+'Open Storage Room|q Forever Hold Your Peace/Attend the Wedding Ceremony
 |tip Manually skip to the next step.
 step
 goto hubalajadpalaceint_01_h_base 74.18,24.87 |q Forever Hold Your Peace/Attend the Wedding Ceremony
@@ -28315,7 +28245,7 @@ step
 goto 17.23,50.31 |q Forever Hold Your Peace/Escape to the Courtyard |tip Go down the stairs.
 step
 goto hubalajadpalaceint_01_h_base 9.54,71.75
-click Hubalajad Courtyard |q Forever Hold Your Peace/Escape to the Courtyard |tip Go down the stairs.
+'Open Hubalajad Courtyard |q Forever Hold Your Peace/Escape to the Courtyard |tip Go down the stairs.
 step
 goto hubalajadpalace_base 31.04,29.85
 'Escort Your Date Out Of Hubalajad Palace |q Forever Hold Your Peace/Escort Your Date Out Of Hubalajad Palace
@@ -28329,7 +28259,7 @@ step
 goto 32.47,38.07 |q Forever Hold Your Peace/Return to the Thieves Den |tip Go up the stairs.
 step
 goto 27.21,33.06
-click Thieves Den |q Forever Hold Your Peace/Return to the Thieves Den |future
+'Open Thieves Den |q Forever Hold Your Peace/Return to the Thieves Den |future
 |tip Manually skip to the next step.
 step
 goto safehouse_base 40.77,42.69
@@ -28373,7 +28303,7 @@ goto 59.77,76.28
 'Bypass the Iron Wheel Sentry |q Prison Break/Bypass the Iron Wheel Sentry
 step
 goto 60.13,76.01
-click Old No Shira Gate |q Prison Break/Talk to Walks-Softly
+'Open Old No Shira Gate |q Prison Break/Talk to Walks-Softly
 |tip Manually skip to the next step.
 step
 goto 60.81,75.23
@@ -28393,7 +28323,7 @@ step
 goto 69.62,69.55 |q Prison Break/Find Zeira's Cell Block |tip Follow Falorah as she walks
 step
 goto 69.59,69.37
-click No Shira Prison |q Prison Break/Find Zeira's Cell Block
+'Open No Shira Prison |q Prison Break/Find Zeira's Cell Block
 |tip Manually skip to the next step.
 step
 goto hiradirgecitadeltg6_base 45.51,72.01 |q Prison Break/Find Zeira's Cell Block
@@ -28401,7 +28331,7 @@ step
 goto 51.83,69.93 |q Prison Break/Find Zeira's Cell Block
 step
 goto 75.62,53.57
-click No Shira Prison Cellblock |q Prison Break/Find Zeira's Cell Block
+'Open No Shira Prison Cellblock |q Prison Break/Find Zeira's Cell Block
 |tip Manually skip to the next step.
 step
 goto 55.93,48.09
@@ -28418,12 +28348,12 @@ step
 goto 41.36,37.72 |q Prison Break/Find Zeira on the Prison Ship
 step
 goto 90.53,21.16
-click No Shira Harbor |q Prison Break/Find Zeira on the Prison Ship
+'Open No Shira Harbor |q Prison Break/Find Zeira on the Prison Ship
 |tip Manually skip to the next step.
 step
 goto hewsbane_base 74.08,73.28
 kill Private Brand
-click Small Table |q Prison Break/Get a Key from the Guard
+'Use Small Table |q Prison Break/Get a Key from the Guard
 step
 goto 76.01,72.61
 'Unlock The Anemone |q Prison Break/Find Zeira on the Prison Ship
@@ -28435,13 +28365,13 @@ talk Chief Inspector Rhanbiq |q Prison Break/Free Zeira
 step
 goto 76.01,73.32
 |tip Watch dialogue
-click Cell Door |q Prison Break/Free Zeira
+'Use Cell Door |q Prison Break/Free Zeira
 step
 goto 76.07,73.38
 talk Zeira |q Prison Break/Talk to Zeira
 step
 goto 76.02,72.52
-click No Shira Harbor |q Prison Break/Escape No Shira Citadel
+'Open No Shira Harbor |q Prison Break/Escape No Shira Citadel
 |tip Manually skip to the next step.
 step
 goto 73.83,69.05
@@ -28450,7 +28380,7 @@ step
 goto abahslanding_base 39.66,39.30 |q Prison Break/Meet Zeira at the Den |tip Go up all the steps.
 step
 goto abahslanding_base 27.20,33.02
-click Thieves Den |q Prison Break/Meet Zeira at the Den
+'Open Thieves Den |q Prison Break/Meet Zeira at the Den
 |tip Manually skip to the next step.
 step
 goto safehouse_base 35.26,40.17
@@ -28458,17 +28388,17 @@ talk Zeira
 turnin Prison Break
 step
 goto 53.36,43.98
-click Note from Zeira
+'Examine Note from Zeira
 accept The One That Got Away
 step
 goto 87.77,39.32
-click Abah's Landing |q The One That Got Away/Talk to Zeira
+'Climb Abah's Landing |q The One That Got Away/Talk to Zeira
 |tip Manually skip to the next step.
 step
 goto abahslanding_base 32.55,38.08 |q The One That Got Away/Talk to Zeira
 step
 goto 47.26,37.95
-click Hew's Mane |q The One That Got Away/Talk to Zeira
+'Open Hew's Mane |q The One That Got Away/Talk to Zeira
 |tip Manually skip to the next step.
 step
 goto 46.59,35.30
@@ -28480,7 +28410,7 @@ step
 |only Aldmeri Dominion
 step
 goto marbruk_base 49.54,33.69
-click The Parchment & Horn |q The One That Got Away/Find the Desert Falcon in Marbruk
+'Open The Parchment & Horn |q The One That Got Away/Find the Desert Falcon in Marbruk
 |only Aldmeri Dominion
 step
 goto 49.69,34.35
@@ -28489,7 +28419,7 @@ talk Rhanbiq |q The One That Got Away/Talk to Rhanbiq
 |only Aldmeri Dominion
 step
 goto 50.48,32.29
-click Rhanbiq's Strongbox |q The One That Got Away/Retrieve Rhanbiq's Notes
+'Open Rhanbiq's Strongbox |q The One That Got Away/Retrieve Rhanbiq's Notes
 |tip Upstairs in this building.
 |only Aldmeri Dominion
 step
@@ -28497,7 +28427,7 @@ goto 64.24,38.77 |q The One That Got Away/Find Bellulor Chatterbeak in the Marbr
 |only Aldmeri Dominion
 step
 goto marbruk_base 61.81,26.02
-click Marbruk Outlaws Refuge |q The One That Got Away/Find Bellulor Chatterbeak in the Marbruk Outlaws Refuge
+'Open Marbruk Outlaws Refuge |q The One That Got Away/Find Bellulor Chatterbeak in the Marbruk Outlaws Refuge |future
 |tip Manually skip to the next step.
 |only Aldmeri Dominion
 step
@@ -28517,7 +28447,7 @@ goto grahtwood_base 82.76,71.13
 |only Aldmeri Dominion
 step
 goto 84.78,67.20
-click Manor Garden |q The One That Got Away/Find Nicolas in Grahtwood
+'Open Manor Garden |q The One That Got Away/Find Nicolas in Grahtwood
 |tip Manually skip to the next step.
 |only Aldmeri Dominion
 step
@@ -28541,7 +28471,7 @@ talk Nicolas |q The One That Got Away/Confront Nicolas
 |only Aldmeri Dominion
 step
 goto 84.86,65.68
-click Manor Garden |q The One That Got Away/Tell Volunidai About Nicolas
+'Open Manor Garden |q The One That Got Away/Tell Volunidai About Nicolas
 |tip Manually skip to the next step.
 |only Aldmeri Dominion
 step
@@ -28702,14 +28632,14 @@ talk Volunidai |q The One That Got Away/Tell Volunidai About Nicolas
 'Tell her _"Protect yourself. Keep him as far away from your money as you can."_
 |only Ebonheart Pact
 step
-click Hew's Bane Map
+'Open Hew's Bane Map
 'Travel to _Abah's Landing_ in Hew's Bane |q The One That Got Away/Report to Zeira
 |tip Manually skip to the next step.
 step
 goto abahslanding_base 25.76,57.82 |q The One That Got Away/Report to Zeira
 step
 goto 47.21,38.02
-click Hew's Mane |q The One That Got Away/Report to Zeira
+'Open Hew's Mane |q The One That Got Away/Report to Zeira
 |tip Manually skip to the next step.
 step
 goto 46.65,35.23
