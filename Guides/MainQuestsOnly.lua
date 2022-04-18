@@ -25316,7 +25316,7 @@ goto 66.76,45.06
 |tip Manually skip to the next step.
 |only Aldmeri Dominion
 step
-'Open Glenumbra_ Map
+'Open Glenumbra Map
 'Travel to _Daggerfall_ in Glenumbra |q The Star-Gazers |future
 |tip Manually skip to the next step.
 |only Daggerfall Covenant
@@ -25346,7 +25346,7 @@ accept The Star-Gazers
 |only Daggerfall Covenant
 step
 goto 41.28,16.05
-'Use Cart to _Belkarth_ |q The Star-Gazers/Board the Cart |future
+'Use Cart to Belkarth |q The Star-Gazers/Board the Cart |future
 |tip Manually skip to the next step.
 |only Daggerfall Covenant
 step
@@ -25502,7 +25502,7 @@ step
 'Travel to _Sandy Path_ in Craglorn |q The Warrior's Call/Meet Titus In the Tombs of the Na-Totambu
 |tip Manually skip to the next step.
 step
-goto 31.65,60.37 |q The Warrior's Call/Meet Titus In the Tombs of the Na-Totambu
+goto 32.17,61.14 |q The Warrior's Call/Meet Titus In the Tombs of the Na-Totambu |tip Go across the bridge.
 step
 goto 32.16,65.50
 'Open Tombs of the Na-Totambu |q The Warrior's Call/Meet Titus In the Tombs of the Na-Totambu
@@ -25515,6 +25515,8 @@ step
 goto 49.19,55.45 |q The Warrior's Call/Meet Titus In the Tombs of the Na-Totambu
 step
 goto 39.88,49.05 |q The Warrior's Call/Meet Titus In the Tombs of the Na-Totambu |tip Follow steps up and around.
+step
+goto 28.84,49.02 |q The Warrior's Call/Meet Titus In the Tombs of the Na-Totambu
 step
 goto 26.13,63.26 |q The Warrior's Call/Meet Titus In the Tombs of the Na-Totambu
 step
@@ -25586,7 +25588,9 @@ step
 'Travel to _Mountain Overlook_ in Craglorn |q Elemental Army/Defeat the Frost Monarch
 |tip Manually skip to the next step.
 step
-goto craglorn_base 54.48,41.07
+goto craglorn_base 61.77,43.07 |q Elemental Army/Defeat the Frost Monarch
+step
+goto 54.48,41.07
 wayshrine Valley of Scars
 step
 goto 54.52,41.04
@@ -25618,8 +25622,10 @@ step
 goto 72.86,45.17
 kill Zymel Mirapharrus |q Elemental Army/Defeat the Storm Monarch
 step
-'Open Craglorn Map
-'Travel to _Elinhir_ in Cragslorn |q Elemental Army/Defeat the Flame Monarch
+goto 48.33,51.64 |q Elemental Army/Defeat the Flame Monarch
+step
+goto 12.15,62.07
+'Open Craglorn |q Elemental Army/Defeat the Flame Monarch
 |tip Manually skip to the next step.
 step
 goto craglorn_base 74.34,70.12 |q Elemental Army/Defeat the Flame Monarch
@@ -25637,11 +25643,21 @@ step
 goto 52.44,93.57
 kill Magdra Ibrai |q Elemental Army/Defeat the Flame Monarch
 step
-'Open Craglorn Map
-'Travel to _Elinhir_ in Cragslorn |q Elemental Army/Find Kelmen Locke at Ritual Site
+goto 48.59,85.33
+'Open Cavern |q Elemental Army/Find Kelmen Locke at Ritual Site
 |tip Manually skip to the next step.
 step
-goto craglorn_base 88.60,65.94 |q Elemental Army/Find Kelmen Locke at Ritual Site
+goto 77.59,56.56 |q Elemental Army/Find Kelmen Locke at Ritual Site
+step
+goto 84.30,14.26
+'Open Craglorn |q Elemental Army/Find Kelmen Locke at Ritual Site
+|tip Manually skip to the next step.
+step
+goto craglorn_base 73.67,68.94 |q Elemental Army/Find Kelmen Locke at Ritual Site
+step
+goto 78.51,65.18 |q Elemental Army/Find Kelmen Locke at Ritual Site
+step
+goto 88.60,65.94 |q Elemental Army/Find Kelmen Locke at Ritual Site
 step
 goto 88.44,67.71 |q Elemental Army/Find Kelmen Locke at Ritual Site
 step
@@ -25663,9 +25679,7 @@ step
 goto 89.65,67.76
 talk Kelmen |q Elemental Army/Talk to Kelmen
 step
-'Open Craglorn Map
-'Travel to _Elinhir_ in Cragslorn |q Elemental Army/Kill the Air Monarch
-|tip Manually skip to the next step.
+goto 88.39,65.82 |q Elemental Army/Kill the Air Monarch
 step
 goto craglorn_base 82.85,62.94 |q Elemental Army/Kill the Air Monarch
 step
@@ -25805,12 +25819,14 @@ goto 25.87,66.79
 talk Regent Cassipia |q Slithering Brood/Meet Regent Cassipia Near Dragonstar
 step
 goto craglorn_base 08.68,30.54
-'Open Fearfangs Cavern |achieve 897
+'Open Fearfangs Cavern |q Slithering Brood/.*Destroy the Scorpion Nests.* |count 1
 |tip Manually skip to the next step.
 step
 goto fearfang_base 81.51,56.32 |q Slithering Brood/.*Destroy the Scorpion Nests.* |count 1
 step
 goto 64.83,34.41 |q Slithering Brood/.*Destroy the Scorpion Nests.* |count 1
+step
+goto 57.81,39.44 |q Slithering Brood/.*Destroy the Scorpion Nests.* |count 1
 step
 goto 28.38,25.48 |q Slithering Brood/.*Destroy the Scorpion Nests.* |count 1
 step
@@ -25918,7 +25934,7 @@ turnin A Leaf in the Wind
 accept The Serpent's Fang
 step
 goto 58.27,42.70
-'Open Ilthag's Undertower |q The Serpent's Fang/Kill Ilthag Ironblood
+'Open Ilthag's Undertower |q The Serpent's Fang/Meet Little Leaf in Ilthag's Undertower |future
 |tip Manually skip to the next step.
 step
 goto ilthagsundertower_base 56.05,66.13
@@ -26072,7 +26088,9 @@ goto 40.02,30.91
 'Open Loth'Na Caverns |q Dawn of the Exalted Viper/Enter Loth'Na Caverns |future
 |tip Manually skip to the next step.
 step
-goto lothna_base 64.41,56.39 |q Dawn of the Exalted Viper/Enter Skyreach Temple |future
+goto lothna_base 35.00,62.11 |q Dawn of the Exalted Viper/Enter Skyreach Temple |future
+step
+goto 64.41,56.39 |q Dawn of the Exalted Viper/Enter Skyreach Temple |future
 step
 goto 61.67,44.81 |q Dawn of the Exalted Viper/Enter Skyreach Temple |future
 step
@@ -26384,7 +26402,7 @@ goto 34.07,82.85
 'Open Main Hall |q A King-Sized Problem |future
 |tip Manually skip to the next step.
 step
-goto 35.48,34.08
+goto scarpkeeplower_base 35.48,34.08
 'Open Orsinium |q A King-Sized Problem |future
 |tip Manually skip to the next step.
 step
@@ -26454,7 +26472,8 @@ step
 goto 40.22,81.17
 |tip Enter _Stealth_ mode by pressing Control and Avoid the NPC patrols as you go:
 'Open Temple Rectory |q A King-Sized Problem/Enter the Temple Rectory
-goto 50.47,38.22
+step
+goto rectory01_base 50.47,38.22
 kill the Malacath Forces
 talk Priest Uugus |q A King-Sized Problem/Save Priest Uugus
 step
@@ -26553,7 +26572,7 @@ step
 goto 37.89,78.55 |q Quarry Conundrum/Find the High Elf
 step
 goto 32.41,72.16
-|tip If not here go to the next spot hes been found.
+|tip If not here skip this step and the guide will take you to the next spot hes been found.
 talk Neramo |q Quarry Conundrum/Find the High Elf
 step
 goto 36.13,63.18 |q Quarry Conundrum/Find the Dwarven Control Center |future
@@ -26599,6 +26618,8 @@ step
 goto 90.69,63.57
 'Talk to Neramo |q Quarry Conundrum/Talk to Neramo
 'Tell him _"So I can tell the Orcs they can reopen the exterior quarry now?"_
+step
+goto 64.71,55.76 |q Quarry Conundrum/Talk to Forge-Wife Kharza
 step
 goto 54.86,40.69
 'Open the Quarry Depths |q Quarry Conundrum/Talk to Forge-Wife Kharza
@@ -26962,7 +26983,7 @@ step
 'Travel to _Icy Shore_ in Wrothgar |q To Save a Chief/Find Ulsha Outside Fharun
 |tip Manually skip to the next step.
 step
-goto wrothgar_base 66.98,33.64 |q To Save a Chief/Find Ulsha Outside Fharun
+goto wrothgar_base 67.13,34.69 |q To Save a Chief/Find Ulsha Outside Fharun
 step
 goto 68.74,35.31
 talk Ulsha
@@ -26971,7 +26992,7 @@ step
 goto 75.32,33.61
 wayshrine Two Rivers
 step
-'Open Wrothgar Map
+'Use Two Rivers Wayshrine
 'Travel to _Orsinium_ in Wrothgar |q The Anger of a King |future
 |tip Manually skip to the next step.
 step
@@ -27080,7 +27101,12 @@ step
 goto 23.00,42.32
 talk Elder Akarah
 'Tell her _"I choose Usunok's strength."_
-'Choose a Blessing |q The Anger of a King/Talk to Talviah
+'Choose a Blessing |q The Anger of a King/Complete the Trials
+|tip Manually skip to the next step.
+step
+goto 26.94,33.53
+talk Elder Yozth |q The Anger of a King/Complete the Trials
+|tip Manually skip to the next step.
 step
 goto 45.11,21.45
 '_This Trial is timed!_
@@ -27106,6 +27132,7 @@ goto 75.33,39.45
 |tip Manually skip to the next step.
 step
 goto 75.45,62.68
+|tip Run up to the tablet.
 'Find the Vosh Rakh Council |q The Anger of a King/Find the Vosh Rakh Council
 step
 goto 75.04,68.80
@@ -27113,20 +27140,20 @@ goto 75.04,68.80
 kill the Vosh Rakh |q The Anger of a King/Kill the Vosh Rakh
 step
 goto 75.50,70.44
-'Open Vosh Rakh Orders |q The Anger of a King/Find the Information You Seek
+'Examine Vosh Rakh Orders |q The Anger of a King/Find the Information You Seek
 step
 goto 65.93,59.46
-'Open the Chambers of Loyalty |q The Anger of a King/Rendezvous with Eveli Sharp-Arrow
+'Open Chambers of Loyalty |q The Anger of a King/Rendezvous with Eveli Sharp-Arrow
 |tip Manually skip to the next step.
 step
 goto 58.22,73.09 |q The Anger of a King/Rendezvous with Eveli Sharp-Arrow
 step
 goto 29.90,72.77
-'Open the Waiting Chambers |q The Anger of a King/Rendezvous with Eveli Sharp-Arrow
+'Open Waiting Chambers |q The Anger of a King/Rendezvous with Eveli Sharp-Arrow
 |tip Manually skip to the next step.
 step
 goto 23.09,95.34
-'Return to Paragon's Remembrance |q The Anger of a King/Rendezvous with Eveli Sharp-Arrow
+'Open Paragon's Remembrance |q The Anger of a King/Rendezvous with Eveli Sharp-Arrow
 |tip Manually skip to the next step.
 step
 goto paragonsrememberance_base 90.50,22.93
@@ -27468,7 +27495,7 @@ step
 |only Daggerfall Covenant
 step
 goto wayrest_base 26.85,48.06
-click Wayrest Outlaws Refuge |q Partners in Crime |future
+'Open Wayrest Outlaws Refuge |q Partners in Crime |future
 |tip Manually skip to the next step.
 |only Daggerfall Covenant
 step
@@ -27478,7 +27505,7 @@ accept Partners in Crime
 |only Daggerfall Covenant
 step
 goto 27.16,88.34
-click Wayrest |q Partners in Crime/Meet Quen at the Wayrest Docks
+'Open Wayrest |q Partners in Crime/Meet Quen at the Wayrest Docks
 |tip Manually skip to the next step.
 |only Daggerfall Covenant
 step
@@ -27493,7 +27520,7 @@ talk Quen |q Partners in Crime/Meet Quen at the Wayrest Docks
 |only Daggerfall Covenant
 step
 goto 79.85,74.52
-'Travel boat |q Partners in Crime/Travel to Fulstrom Homestead |future
+'Travel Fulstrom Homestead |q Partners in Crime/Travel to Fulstrom Homestead |future
 |only Daggerfall Covenant
 |tip Manually skip to the next step.
 step
@@ -27503,7 +27530,7 @@ step
 |only Ebonheart Pact
 step
 goto windhelm_base 65.95,44.44
-click Windhelm Outlaws Refuge |q Partners in Crime |future
+'Open Windhelm Outlaws Refuge |q Partners in Crime |future
 |tip Manually skip to the next step.
 |only Ebonheart Pact
 step
@@ -27513,7 +27540,7 @@ accept Partners in Crime
 |only Ebonheart Pact
 step
 goto 91.35,49.77
-click Windhelm |q Partners in Crime/Meet Quen at the Windhelm Docks
+'Open Windhelm |q Partners in Crime/Meet Quen at the Windhelm Docks
 |tip Manually skip to the next step.
 |only Ebonheart Pact
 step
@@ -27525,7 +27552,7 @@ talk Quen |q Partners in Crime/Meet Quen at the Windhelm Docks
 |only Ebonheart Pact
 step
 goto 83.60,48.91
-'Travel boat |q Partners in Crime/Approach Fulstrom Homestead |future
+'Travel Fulstrom Homestead |q Partners in Crime/Approach Fulstrom Homestead |future
 |only Ebonheart Pact
 |tip Manually skip to the next step.
 step
@@ -27544,7 +27571,7 @@ goto 66.34,43.31 |q Partners in Crime/Enter Fulstrom Manor |tip Stay stealthed
 step
 goto 58.60,22.11
 |tip You'll have to pick the lock.
-click Fulstrom Manor |q Partners in Crime/Enter Fulstrom Manor
+'Unlock Fulstrom Manor |q Partners in Crime/Enter Fulstrom Manor
 step
 goto 52.31,21.31 |q Partners in Crime/Enter the Treasury |tip Inspect suspicious bookcase.
 step
@@ -27612,11 +27639,7 @@ goto 27.21,33.06
 'Open the Thieves Den |q Partners in Crime/Talk to the Guildmaster in the Thieves Den
 |tip Manually skip to the next step.
 step
-goto safehouse_base 68.68,41.56
-'Open The Den |q Partners in Crime/Talk to the Guildmaster in the Thieves Den
-|tip Manually skip to the next step.
-step
-goto 35.21,42.05
+goto safehouse_base 35.21,42.05
 talk Zeira
 turnin Partners in Crime
 accept Cleaning House
@@ -27729,11 +27752,8 @@ goto 33.01,87.31
 |tip Watch dialgue.
 'Hide Hiding Spot |q Cleaning House/Hide in Silver-Claw's Office
 step
-goto 32.41,86.60
-'Open Window |q Cleaning House/Escape Silver-Claw's Warehouse
-step
 'Open Hew's Bane Map
-'Travel _Abah's Landing_ in Hew's Bane |q Cleaning House/Return Silver-Claw's Ledger
+'Travel _Abah's Landing_ in Hew's Bane |q Cleaning House/Return Silver-Claw's Ledger |future
 |tip Manually skip to the next step.
 step
 goto 21.38,43.10
@@ -27755,11 +27775,7 @@ goto 27.23,33.04
 'Open Thieves Den |q Cleaning House/Talk to Zeira
 |tip Manually skip to the next step.
 step
-goto safehouse_base 68.79,41.64
-'Open The Den |q Cleaning House/Talk to Zeira
-|tip Manually skip to the next step.
-step
-goto 30.74,40.84
+goto safehouse_base 30.74,40.84
 talk Zeira
 turnin Cleaning House
 step
@@ -27780,7 +27796,7 @@ goto 46.23,56.50
 talk Walks-Softly |q The Long Game/Meet Walks-Softly at the Harbor
 step
 goto 55.97,71.71
-'Hide Hiding Spot |q The Long Game/Eavesdrop on Captain Evani |tip Go up the stairs.
+'Use Hiding Spot |q The Long Game/Eavesdrop on Captain Evani |tip Go up the stairs.
 step
 goto 40.78,49.18
 |tip Go up the stairs.
@@ -27811,7 +27827,7 @@ talk Percius Loche |q The Long Game/Meet Percius Loche at the Diamond Thimble
 step
 goto 42.87,43.41
 talk Percius Loche
-'Purchase Servant's Outfit |q The Long Game/Purchase Servant's Outfiti
+'Purchase Servant's Outfit |q The Long Game/Purchase Servant's Outfit
 step
 'Open Hew's Bane Map
 'Travel to _Abah's Landing_ Wayshrine |q The Long Game/Meet Velsa Outside No Shira Citadel
@@ -27870,6 +27886,7 @@ goto hiradirgecitadeltg3_s1_base 31.92,45.91
 step
 'Open Hew's Bane Map
 'Travel to _Abah's Landing_ in Hew's Bane |q The Long Game/Escape Iron Wheel Headquarters
+|tip Manually skip to the next step.
 step
 goto abahslanding_base 21.47,43.03
 'Open Thieves Den |q The Long Game/Meet Zeira at the Thieves Den
@@ -27901,25 +27918,11 @@ step
 goto 43.95,43.53
 talk Mamaea |q A Flawless Plan/Talk to Mamaea
 step
-goto 41.71,39.61
+goto 43.04,38.00
 'Find Percius Loche's Trail |q A Flawless Plan/Find Percius Loche's Trail
 step
-goto 44.18,32.13 |q A Flawless Plan/Find Percius Loche Before the Iron Wheel Does |tip Follow the green foot prints.
-step
-goto 36.93,27.85 |q A Flawless Plan/Find Percius Loche Before the Iron Wheel Does |tip Follow the green foot prints.
-step
-goto 37.57,31.89 |q A Flawless Plan/Find Percius Loche Before the Iron Wheel Does |tip Follow the green foot prints.
-step
-goto 32.09,36.45 |q A Flawless Plan/Find Percius Loche Before the Iron Wheel Does |tip Follow the green foot prints. |tip Drop down.
-step
-goto 28.54,40.35 |q A Flawless Plan/Find Percius Loche Before the Iron Wheel Does |tip Follow the green foot prints.
-step
-goto 25.23,43.84 |q A Flawless Plan/Find Percius Loche Before the Iron Wheel Does |tip Follow the green foot prints.
-step
-goto 27.28,63.81 |q A Flawless Plan/Find Percius Loche Before the Iron Wheel Does |tip Follow the green foot prints.
-step
 goto 25.79,63.04
-talk Percius Loche |q A Flawless Plan/Talk to Percius Loche
+talk Percius Loche |q A Flawless Plan/Talk to Percius Loche |future
 step
 goto 29.15,57.55 |q A Flawless Plan/Talk to Zeira
 step
@@ -28487,7 +28490,7 @@ step
 |only Daggerfall Covenant
 step
 goto shornhelm_base 50.40,61.33
-click Dead Wolf Inn |q The One That Got Away/Find the Desert Falcon in Shornhelm
+'Open Dead Wolf Inn |q The One That Got Away/Find the Desert Falcon in Shornhelm
 |only Daggerfall Covenant
 step
 goto 47.82,61.33
@@ -28497,7 +28500,7 @@ talk Rhanbiq |q The One That Got Away/Talk to Rhanbiq
 step
 goto 44.09,60.48
 |tip Go up the stairs.
-click Rhanbiq's Strongbox |q The One That Got Away/Retrieve Rhanbiq's Notes
+'Open Rhanbiq's Strongbox |q The One That Got Away/Retrieve Rhanbiq's Notes
 |only Daggerfall Covenant
 step
 goto 70.44,70.72 |q The One That Got Away/Find Bellulor Chatterbeak in the Shornhelm Outlaws Refuge
@@ -28507,7 +28510,7 @@ goto 82.36,58.71 |q The One That Got Away/Find Bellulor Chatterbeak in the Shorn
 |only Daggerfall Covenant
 step
 goto rivenspire_base 47.35,53.19
-click Shornhelm Outlaws Refuge |q The One That Got Away/Find Bellulor Chatterbeak in the Shornhelm Outlaws Refuge
+'Open Shornhelm Outlaws Refuge |q The One That Got Away/Find Bellulor Chatterbeak in the Shornhelm Outlaws Refuge |future
 |tip Manually skip to the next step.
 |only Daggerfall Covenant
 step
@@ -28527,7 +28530,7 @@ goto alikr_base 50.66,34.90
 |only Daggerfall Covenant
 step
 goto 49.30,32.20
-click Manor Garden |q The One That Got Away/Find Nicolas in the Alik'r Desert
+'Open Manor Garden |q The One That Got Away/Find Nicolas in the Alik'r Desert
 |tip Manually skip to the next step.
 |only Daggerfall Covenant
 step
@@ -28539,7 +28542,7 @@ goto 49.15,31.47
 talk Volunidai |q The One That Got Away/Talk to Volunidai
 |only Daggerfall Covenant
 step
-goto 49.49,31.33 |q The One That Got Away/Find a Way Into Volunidai's Manor
+goto 49.61,30.54 |q The One That Got Away/Find a Way Into Volunidai's Manor
 |only Daggerfall Covenant
 step
 goto 49.01,30.55
@@ -28554,7 +28557,7 @@ talk Nicolas  |q The One That Got Away/Confront Nicolas
 |only Daggerfall Covenant
 step
 goto 48.89,31.23
-click Manor Garden |q The One That Got Away/Tell Volunidai About Nicolas
+'Open Manor Garden |q The One That Got Away/Tell Volunidai About Nicolas
 |tip Manually skip to the next step.
 |only Daggerfall Covenant
 step
@@ -28569,7 +28572,7 @@ step
 |only Ebonheart Pact
 step
 goto stormhold_base 38.51,29.41
-click Coin Brothers' Cornerclub |q The One That Got Away/Find the Desert Falcon in Stormhold
+'Open Coin Brothers' Cornerclub |q The One That Got Away/Find the Desert Falcon in Stormhold
 |only Ebonheart Pact
 step
 goto 35.09,29.25
@@ -28578,11 +28581,11 @@ talk Rhanbiq |q The One That Got Away/Talk to Rhanbiq
 |only Ebonheart Pact
 step
 goto 32.85,24.49
-click Rhanbiq's Strongbox |q The One That Got Away/Retrieve Rhanbiq's Notes
+'Open Rhanbiq's Strongbox |q The One That Got Away/Retrieve Rhanbiq's Notes
 |only Ebonheart Pact
 step
 goto 60.40,16.52
-click Stormhold Outlaws Refuge |q The One That Got Away/Find Bellulor Chatterbeak in the Stormhold Outlaws Refuge
+'Open Stormhold Outlaws Refuge |q The One That Got Away/Find Bellulor Chatterbeak in the Stormhold Outlaws Refuge
 |tip Manually skip to the next step.
 |only Ebonheart Pact
 step
@@ -28602,7 +28605,7 @@ goto deshaan_base 86.06,45.23
 |only Ebonheart Pact
 step
 goto 92.56,51.47
-click Manor Garden |q The One That Got Away/Find Nicolas in Deshaan
+'Open Manor Garden |q The One That Got Away/Find Nicolas in Deshaan
 |tip Manually skip to the next step.
 |only Ebonheart Pact
 step
@@ -28751,7 +28754,7 @@ step
 |tip Manually skip to the next step.
 step
 goto anvilcity_base 22.62,67.00
-'Open Anvil Lighthouse |q Signed in Blood/Report to Speaker Terenus
+'Open Anvil Lighthouse |q Signed in Blood/Report to Speaker Terenus |future
 |tip Manually skip to the next step.
 step
 goto 23.57,68.84
@@ -29158,9 +29161,8 @@ goto 46.65,39.49
 talk Astara Caerellius
 turnin A Special Request
 step
-goto 56.44,17.63 |q Dark Revelations |future |tip Leave the room to make quest appear
-step
 goto 46.65,39.49
+|tip If quest not available leave the room and come back.
 accept Dark Revelations
 step
 goto 46.92,33.43
@@ -29208,7 +29210,7 @@ goto 29.38,73.91
 |tip Manually skip to the next step.
 step
 goto 26.81,82.60
-'Burn Red Sails Crew Pardons |q Dark Revelations/Search the Enclave of the Hourglass
+'Burn Red Sails Crew Pardons |q Dark Revelations/Burn the Pardon
 |tip Manually skip to the next step.
 step
 goto 48.73,78.85 |q Dark Revelations/Search the Enclave of the Hourglass
@@ -29230,7 +29232,7 @@ goto 73.04,79.31
 step
 goto 77.64,79.13
 |tip Watch dialogue
-'Examine The Black Dragon's Journal |lorebook The Black Dragon's Journal/3/29/23
+'Examine The Black Dragon's Journal |q Dark Revelations/Search the Black Dragon's Chamber
 step
 'Open Gold Coast Map
 'Travel to _Gold Coast_ in Gold Coast |q Dark Revelations/Talk to Astara Caerellius
@@ -29247,9 +29249,8 @@ goto 52.41,43.97
 talk Astara Caerellius
 turnin Dark Revelations
 step
-goto 56.44,17.63 |q A Ghost from the Past |future |tip Leave the room to make quest appear
-step
 goto 50.10,56.14
+|tip If quest not available leave the room and come back.
 talk Green-Venom-Tongue
 accept A Ghost from the Past
 step
@@ -29275,7 +29276,7 @@ goto 73.12,52.03
 'Open Ruins of Xith-Izkul |q A Ghost from the Past/Enter the Purified Sanctuary
 |tip Manually skip to the next step.
 step
-goto 35.18,43.89
+goto blackwoodsborderlands02_base 35.18,43.89
 'Wait for Green-Venom-Tongue to Open the Door
 'Open Xith-Izkul Sanctuary |q A Ghost from the Past/Talk to Green-Venom-Tongue
 |tip Manually skip to the next step.
@@ -29304,7 +29305,7 @@ step
 goto 46.83,75.84 |q A Ghost from the Past/Search the Sanctuary |tip Drop down
 step
 goto 46.90,64.56
-click Remains |q A Ghost from the Past/Search the Sanctuary
+'Examine Remains |q A Ghost from the Past/Search the Sanctuary
 step
 'Next to you:
 talk Green-Venom-Tongue |q A Ghost from the Past/Talk to Green-Venom-Tongue
@@ -29349,9 +29350,8 @@ goto 46.98,39.55
 talk Astara Caerellius
 turnin A Ghost from the Past
 step
-goto 56.44,17.63 |q The Wrath of Sithis |future |tip Leave the room to make quest appear
-step
 goto 47.12,39.52
+|tip If quest not available leave the room and come back.
 talk Astara Caerellius
 accept The Wrath of Sithis
 step
@@ -29449,9 +29449,8 @@ goto dbsanctuary_base 47.12,39.52
 talk Astara Caerellius
 turnin The Wrath of Sithis
 step
-goto 56.44,17.63 |q Filling the Void |future |tip Leave the room to make quest appear
-step
 goto 51.99,44.31
+|tip If quest not available leave the room and come back.
 talk Speaker Terenus
 accept Filling the Void
 step
