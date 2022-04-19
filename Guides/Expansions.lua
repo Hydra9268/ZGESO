@@ -10732,7 +10732,7 @@ click Wise-Woman Dovrosi's Hute |q Divine Delusions/Go to the Cavern of the Inca
 |tip Manually skip to the next step.
 step
 goto 40.29,46.56
-talk Seryn |q Divine Delusions/ |q At Any Cost/Retrieve the Stones of Cold Fire
+talk Seryn |q At Any Cost/Retrieve the Stones of Cold Fire
 |tip Manually skip to the next step.
 step
 goto 36.44,48.23
@@ -33814,7 +33814,7 @@ turnin The Gates of Adamant |next Common Leveling Guides\\The Wailing Prison
 
 ZGV:RegisterGuide("LEVELING\\Blackwood",[[
 loadingimage loadscreen_u30_blackwood_zone_01.dds
-description In the new tutorial, you start on the mysterious Isle of Balfiera, a small island within the Iliac Bay last seen in The Elder Scrolls II: Daggerfall. Home to ancient Direnni ruins, the isle is beset by dangerous monsters thanks to the appearance of strange portals, and it’s up to you to help the mage Norianwe investigate their emergence—all the while, learning how to play the game!
+description Blackwood needs heroes to stand against Oblivion. Retake the village of Rockgrove from Daedric-worshipping Argonians
 -- BEGIN: BLACKWOOD PROLOGUE GUIDE
 
 -- START: ALDMERI DOMINION FACTION PROLOGUE GUIDE
@@ -39642,4 +39642,11 @@ talk Eveli Sharp-Arrow
 turnin Hope Springs Eternal
 step
 '_Congratulations You have completed The Deadlands DLC Guide_!
+]])
+
+ZGV:RegisterGuide("LEVELING\\High Isle",[[
+loadingimage loadscreen_hi_systres_zone_01.dds
+description Coming Soon
+step
+'Coming Soon
 ]])
