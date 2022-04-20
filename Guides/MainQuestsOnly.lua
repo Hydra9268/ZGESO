@@ -29553,7 +29553,7 @@ talk Canon Llevule |q Divine Conundrum/Talk to Canon Llevule
 'Tell him _"I'm ready. Let's enter your family tomb."_
 step
 goto 43.15,79.30
-click Andrano Ancestral Tomb |q Divine Conundrum/Enter the Andrano Ancestral Tomb
+'Open Andrano Ancestral Tomb |q Divine Conundrum/Enter the Andrano Ancestral Tomb |future
 |tip Manually skip to the next step.
 step
 goto andrano_base 31.24,79.05 |q Divine Conundrum/Escort Canon Llevule to the Summoning Chamber
@@ -29570,11 +29570,11 @@ talk Farena Andrano |q Divine Conundrum/Talk to Canon Llevule Outside the Tomb |
 |tip Manually skip to the next step.
 step
 goto 32.10,47.75
-click Hall of Remembrance |q Divine Conundrum/Talk to Canon Llevule Outside the Tomb
+'Open Hall of Remembrance |q Divine Conundrum/Talk to Canon Llevule Outside the Tomb
 |tip Manually skip to the next step.
 step
 goto 44.12,60.44
-click Vvardenfell |q Divine Conundrum/Talk to Canon Llevule Outside the Tomb
+'Open Vvardenfell |q Divine Conundrum/Talk to Canon Llevule Outside the Tomb
 |tip Manually skip to the next step.
 step
 goto vvardenfell_base 43.63,79.13
@@ -29597,21 +29597,21 @@ goto 52.03,58.61
 wayshrine Vivec Temple
 step
 goto 50.19,71.68
-click Vivec's Palace |q Divine Conundrum/Enter Vivec's Palace
+'Open Vivec's Palace |q Divine Conundrum/Enter Vivec's Palace
 step
 goto vivecthroneroom01_base 50.96,63.63
 talk Vivec |q Divine Conundrum/Talk to Archcanon Tarvus |future
 |tip Manually skip to the next step.
 step
 goto viviccity_base 51.69,55.41
-click Archcanon's Office |q Divine Conundrum/Talk to Archcanon Tarvus
+'Open Archcanon's Office |q Divine Conundrum/Talk to Archcanon Tarvus
 |tip Manually skip to the next step.
 step
 goto vivechow02_base 73.24,36.09
 talk Archcanon Tarvus |q Divine Conundrum/Talk to Archcanon Tarvus
 step
 goto viviccity_base 52.43,58.63
-click Vivec Temple Wayshrine
+'Use Vivec Temple Wayshrine
 'Travel to _Vivec City_ in Vvardenfell |q Divine Conundrum/Talk to Overseer Shiralas
 |tip Manually skip to the next step.
 step
@@ -29627,7 +29627,7 @@ goto 33.42,28.24
 step
 goto 32.41,29.29
 |tip Go up the ramp.
-'Take Blessing Stone |q Divine Conundrum/Retrieve the Blessing Stone
+'Tak Blessing Stone |q Divine Conundrum/Retrieve the Blessing Stone
 step
 goto vvardenfell_base 47.52,85.83
 'Open Vivec City Map
@@ -29635,7 +29635,7 @@ goto vvardenfell_base 47.52,85.83
 |tip Manually skip to the next step.
 step
 goto viviccity_base 50.19,71.73
-click Vivec's Palace |q Divine Conundrum/Talk to Archcanon Tarvus
+'Open Vivec's Palace |q Divine Conundrum/Talk to Archcanon Tarvus
 |tip Manually skip to the next step.
 step
 goto vivecthroneroom01_base 53.71,59.92
@@ -29653,25 +29653,46 @@ turnin Divine Conundrum
 accept Divine Inquiries
 step
 goto viviccity_base 51.71,55.34
-click Archcanon's Office |q Divine Inquiries/Talk to Archcanon Tarvus
+'Open Archcanon's Office |q Divine Inquiries/Talk to Archcanon Tarvus
 |tip Manually skip to the next step.
 step
 goto vivechow02_base 73.24,36.09
 talk Archcanon Tarvus |q Divine Inquiries/Talk to Archcanon Tarvus
 step
-goto 81.43,71.46 |q Divine Inquiries/Investigate Barilzar's Tower
+'Open Vvardenfell Map
+'Travel to _Seyda Neen_ in Vvardenfell |q Divine Inquiries/Investigate Barilzar's Tower
+|tip Manually skip to the next step.
+step
+goto vvardenfell_base 49.86,79.03 |q Divine Inquiries/Investigate Barilzar's Tower
+step
+goto 54.00,73.15 |q Divine Inquiries/Investigate Barilzar's Tower
+step
+goto 55.45,73.20
+wayshrine Suran
+step
+goto 58.19,73.24 |q Divine Inquiries/Investigate Barilzar's Tower
+step
+goto 58.54,76.70 |q Divine Inquiries/Investigate Barilzar's Tower
+step
+goto 61.63,79.10 |q Divine Inquiries/Investigate Barilzar's Tower
+step
+goto 61.96,75.86 |q Divine Inquiries/Investigate Barilzar's Tower
+step
+goto 62.67,75.06 |q Divine Inquiries/Investigate Barilzar's Tower
+step
+goto 67.35,76.99 |q Divine Inquiries/Investigate Barilzar's Tower
+step
+goto 73.45,75.91 |q Divine Inquiries/Investigate Barilzar's Tower
 step
 goto 76.78,76.58
 wayshrine Molag Mar
 step
-goto 82.49,77.82 |q Divine Inquiries/Investigate Barilzar's Tower
-step
 goto 82.94,77.27
-click Barilzar's Tower |q Divine Inquiries/Investigate Barilzar's Tower
+'Open Barilzar's Tower |q Divine Inquiries/Investigate Barilzar's Tower
 |tip Manually skip to the next step.
 step
 goto odirniran_base 27.62,72.38
-click Barilzar's Laboratory |q Divine Inquiries/Investigate Barilzar's Tower
+'Open Barilzar's Laboratory |q Divine Inquiries/Investigate Barilzar's Tower
 |tip Manually skip to the next step.
 step
 goto 56.62,64.30
@@ -29690,52 +29711,42 @@ step
 goto 56.62,64.30
 talk Barilzar |q Divine Inquiries/Investigate Barilzar's Tower
 step
-goto 30.56,55.04 |q Divine Inquiries/Investigate Balmora
-step
-goto 48.54,72.98 |q Divine Inquiries/Investigate Balmora
-step
-goto 76.77,79.46
-click Bal Ur |q Divine Inquiries/Investigate Balmora
+goto vvardenfell_base 76.78,76.58
+'Use Molag Mar Wayshrine
+'Travel to _Seyda Neen_ in Vvardenfell |q Divine Inquiries/Investigate Balmora
 |tip Manually skip to the next step.
 step
-goto 95.23,86.40
-click Vvardenfell |q Divine Inquiries/Investigate Balmora
-|tip Manually skip to the next step.
+goto 43.64,79.15 |q Divine Inquiries/Investigate Balmora
 step
-goto vvardenfell_base 55.52,73.21
-wayshrine Suran
-step
-goto 39.96,80.23
-click Seyda Neen Wayshrine
-'Travel to the _Balmora_ in Vvardenfell |q Divine Inquiries/Investigate Balmora
-|tip Manually skip to the next step.
+goto 38.94,68.14
+wayshrine Balmora
 step
 goto balmora_base 51.72,47.54
 talk Renaku |q Divine Inquiries/Investigate Balmora
 |tip Intimidate him.
 |tip Manually skip to the next step.
 step
-goto 33.23,71.58
-click Vvardenfell |q Divine Inquiries/Investigate Balmora
-|tip Manually skip to the next step.
+goto 55.05,41.11 |q Divine Inquiries/Investigate Balmora
+step
+goto 30.74,62.58 |q Divine Inquiries/Investigate Balmora
 step
 goto vvardenfell_base 34.07,67.17
 talk Crew Chief Hondulf |q Divine Inquiries/Investigate Balmora
 |tip Manually skip to the next step.
 step
 goto 34.18,67.53
-click Shulk Ore Mine |q Divine Inquiries/Investigate Balmora
+'Open Shulk Ore Mine |q Divine Inquiries/Investigate Balmora
 |tip Manually skip to the next step.
 step
 goto shulk_base 48.72,39.81
-click Red Exile Instructions |q Divine Inquiries/Learn About Ashlander Thief
+'Examine Red Exile Instructions |q Divine Inquiries/Learn About Ashlander Thief
 step
 goto 68.81,38.72
-click Deep Mine Chambers |q Divine Inquiries/Investigate Balmora
+'Open Deep Mine Chambers |q Divine Inquiries/Investigate Balmora
 |tip Manually skip to the next step.
 step
 goto 79.28,71.41
-click Nycotic Ritual Bag |q Divine Inquiries/Investigate Balmora
+'Take Nycotic Ritual Bag |q Divine Inquiries/Investigate Balmora
 |tip Manually skip to the next step.
 step
 goto 47.72,41.66 |q Divine Inquiries/Investigate Balmora
@@ -29743,33 +29754,39 @@ step
 goto vvardenfell_base 34.07,67.22
 talk Crew Chief Hondulf |q Divine Inquiries/Investigate Balmora
 step
-goto vvardenfell_base 35.74,50.09
+goto 32.72,63.68 |q Divine Inquiries/Investigate Ald'ruhn
+step
+goto 33.25,55.04 |q Divine Inquiries/Investigate Ald'ruhn
+step
+goto 37.05,54.44 |q Divine Inquiries/Investigate Ald'ruhn
+step
+goto 35.74,50.09
 talk Seryn |q Divine Inquiries/Investigate Ald'ruhn
 |tip Manually skip to the next step.
 step
 goto 33.97,48.76
-'Take Meeting with Chodala |q Divine Inquiries/Investigate Ald'ruhn
-|tip Manually skip to the next step.
+'Take Meeting with Chodala |lorebook Meeting with Chodala/3/30/87
 step
 goto 35.57,49.65
 talk Seryn |q Divine Inquiries/Investigate Ald'ruhn
 step
-goto 36.43,48.25
+goto 36.43,48.24
 wayshrine Ald'ruhn
 step
-goto 36.43,48.24
-click Ald'ruhn Wayshrine
+'Use' Ald'ruhn Wayshrine
 'Travel to the _Vivec Temple_ in Vvardenfell |q Divine Inquiries/Return to the Archcanon's Office
 |tip Manually skip to the next step.
 step
 goto viviccity_base 51.70,55.34
-click Archcanon's Office |q Divine Inquiries/Return to the Archcanon's Office
+|tip Go upstairs.
+'Open Archcanon's Office |q Divine Inquiries/Return to the Archcanon's Office
 step
 goto vivechow02_base 75.20,36.69
 talk Archcanon Tarvus |q Divine Inquiries/Talk to Archcanon Tarvus
 step
 goto viviccity_base 50.19,71.71
-click Vivec's Palace |q Divine Inquiries/Talk to Vivec
+|tip Leave Archcanon's Office
+'Open Vivec's Palace |q Divine Inquiries/Talk to Vivec
 |tip Manually skip to the next step.
 step
 goto vivecthroneroom01_base 49.89,66.29
@@ -29784,7 +29801,7 @@ step
 'Travel to _Ald'ruhn_ in Vvardenfell |q Divine Delusions/Return to Ald'ruhn
 |tip Manually skip to the next step.
 step
-goto 39.87,46.47
+goto vvardenfell_base 39.87,46.47
 'Return to Ald'ruhn |q Divine Delusions/Return to Ald'ruhn
 step
 goto 40.02,46.52
@@ -29792,17 +29809,98 @@ talk Seryn |q Divine Delusions/Talk to Seryn
 step
 goto 40.27,46.57
 |tip It's inside the small hut.
-click Wise-Woman Dovrosi's Hute |q Divine Delusions/Go to the Cavern of the Incarnate |future
+'Open Wise-Woman Dovrosi's Hute |q Divine Delusions/Go to the Cavern of the Incarnate |future
 |tip Manually skip to the next step.
+step
+goto 40.02,46.52
+talk Seryn |q Divine Delusions/Go to the Cavern of the Incarnate |future
+|tip Manually skip to the next step.
+step
+goto 40.19,46.55
+'Open Ald'ruhn |q Divine Delusions/Go to the Cavern of the Incarnate |future
+|tip Manually skip to the next step.
+step
+goto 35.77,49.31 |q Divine Delusions/Go to the Cavern of the Incarnate |future
+step
+goto 35.94,53.32 |q Divine Delusions/Go to the Cavern of the Incarnate |future
+step
+goto 31.62,50.90 |q Divine Delusions/Go to the Cavern of the Incarnate |future
+step
+goto 31.99,46.93 |q Divine Delusions/Go to the Cavern of the Incarnate |future
+step
+goto 28.97,44.70
+wayshrine West Gash
 step
 goto 18.82,38.69
 wayshrine Gnisis
 step
-'Open Vvardenfell Map
-'Travel to _Valley of the Wind_ in Vvardenfell |q Divine Delusions/Go to the Cavern of the Incarnate
+'Use Gnisis Wayshrine
+'Travel to _Molag Mar_ Wayshrine |q Divine Delusions/Go to the Cavern of the Incarnate
 |tip Manually skip to the next step.
 step
-goto 59.87,29.41 |q Divine Delusions/Go to the Cavern of the Incarnate
+goto 76.93,89.84
+wayshrine Tel Branora
+step
+'Use Tel Branora Wayshrine
+'Travel to _Molag Mar_ Wayshrine |q Divine Delusions/Go to the Cavern of the Incarnate
+|tip Manually skip to the next step.
+step
+goto 74.81,75.50 |q Divine Delusions/Go to the Cavern of the Incarnate
+step
+goto 76.09,69.30 |q Divine Delusions/Go to the Cavern of the Incarnate
+step
+goto 72.16,65.63 |q Divine Delusions/Go to the Cavern of the Incarnate
+step
+goto 71.71,61.17 |q Divine Delusions/Go to the Cavern of the Incarnate
+step
+goto 69.41,59.73 |q Divine Delusions/Go to the Cavern of the Incarnate
+step
+goto 69.98,61.28 |q Divine Delusions/Go to the Cavern of the Incarnate
+step
+goto 66.00,62.05
+wayshrine Nchuleftingth
+step
+goto 63.34,58.84 |q Divine Delusions/Go to the Cavern of the Incarnate
+step
+goto 63.21,53.85 |q Divine Delusions/Go to the Cavern of the Incarnate
+step
+goto 65.82,53.38 |q Divine Delusions/Go to the Cavern of the Incarnate
+step
+goto 62.95,51.40 |q Divine Delusions/Go to the Cavern of the Incarnate
+step
+goto 63.55,41.96 |q Divine Delusions/Go to the Cavern of the Incarnate
+step
+goto 66.21,41.85 |q Divine Delusions/Go to the Cavern of the Incarnate
+step
+goto 
+goto 67.40,31.29
+wayshrine Tel Mora
+step
+goto 61.10,24.73 |q Divine Delusions/Go to the Cavern of the Incarnate
+step
+goto 59.07,25.27
+wayshrine Valley of the Wind
+step
+goto 52.31,25.56 |q Divine Delusions/Go to the Cavern of the Incarnate
+step
+goto 51.50,23.90 |q Divine Delusions/Go to the Cavern of the Incarnate
+step
+goto 40.51,22.12 |q Divine Delusions/Go to the Cavern of the Incarnate
+step
+goto 39.21,20.37 |q Divine Delusions/Go to the Cavern of the Incarnate
+step
+goto 34.35,22.09 |q Divine Delusions/Go to the Cavern of the Incarnate
+step
+goto 32.83,20.27 |q Divine Delusions/Go to the Cavern of the Incarnate
+step
+goto 29.73,19.71 |q Divine Delusions/Go to the Cavern of the Incarnate
+step
+goto 26.00,25.78
+wayshrine Urshilaku Camp
+step
+'Use Urshilaku Camp Wayshrine
+'Travel to _Valley of the Wind_ in Vvardenfell |q Divine Delusions/Go to the Cavern of the Incarnate
+|tip Manually skip to the next step.
 step
 goto 58.83,30.54
 'Go to the Cavern of the Incarnate |q Divine Delusions/Go to the Cavern of the Incarnate
@@ -29811,37 +29909,37 @@ goto 58.66,30.30
 kill Skaafin Tracker+, Skaafin Miscreal+ |q Divine Delusions/Rescue the Wise Woman
 step
 goto 58.59,29.82
-click Cavern of the Incarnate |q Divine Delusions/Talk to the Wise Woman in the Cavern
+'Open Cavern of the Incarnate |q Divine Delusions/Talk to the Wise Woman in the Cavern
 |tip Manually skip to the next step.
 step
 goto cavernoftheincarnate_base 45.51,39.78
 talk Wise Woman Dovrosi |q Divine Delusions/Talk to the Wise Woman in the Cavern
 step
 goto 40.97,42.76
-click Incarnate Corpse
+'Use Grave Dust on Incarnate Corpse
 talk Incarnate Aduri |q Divine Delusions/Commune with Incarnate Aduri
 step
 goto 47.98,47.34
-click Incarnate Corpse
+'Use Grave Dust on Incarnate Corpse
 talk Incarnate Danaat |q Divine Delusions/Commune with Incarnate Danaat
 step
 goto 59.17,51.74
-click Incarnate Corpse
+'Use Grave Dust on Incarnate Corpse
 talk Incarnate Ranso |q Divine Delusions/Commune with Incarnate Ranso
 step
 goto 48.21,34.33
 talk Statue of Azura |q Divine Delusions/Talk to Azura
 step
-click Vvardenfell
+'Open Vvardenfell Map
 'Travel to _Ald'ruhn_ in Vvardenfell |q Divine Delusions/Talk to Seryn
 |tip Manually skip to the next step.
 step
-goto 39.30,46.30
+goto vvardenfell_base 39.30,46.30
 talk Seryn |q Divine Delusions/Talk to Seryn
 'Tell her _"All right, let's go dispute your brother's claim."_
 step
 goto 39.70,45.54
-click Skar|q Divine Delusions/Enter Skar
+'Open Skar|q Divine Delusions/Enter Skar |future
 |tip Manually skip to the next step.
 step
 goto skar_base 52.92,46.62
@@ -29855,7 +29953,7 @@ goto 55.89,48.60
 kill Gulakhan Yus-Zashten |q Divine Delusions/Defeat the Red Exiles
 step
 goto 55.34,70.79
-click Ald'ruhn |q Divine Delusions/Follow Seryn
+'Open Ald'ruhn |q Divine Delusions/Follow Seryn
 |tip Manually skip to the next step.
 step
 goto vvardenfell_base 39.05,46.63 |q Divine Delusions/Follow Seryn
@@ -29864,12 +29962,12 @@ goto 39.01,46.68
 talk Azura |q Divine Delusions/Talk to Azura
 step
 goto 36.41,48.20
-click Ald'ruhn Wayshrine
+'Use Ald'ruhn Wayshrine
 'Travel to _Vivec Temple_ in Vvardenfell |q Divine Delusions/Return to Vivec's Palace
 |tip Manually skip to the next step.
 step
 goto viviccity_base 50.19,71.80
-click Vivec's Palace |q Divine Delusions/Return to Vivec's Palace
+'Open Vivec's Palace |q Divine Delusions/Return to Vivec's Palace
 step
 goto vivecthroneroom01_base 49.83,65.91
 talk Vivec
@@ -29887,11 +29985,11 @@ goto vvardenfell_base 82.83,77.44
 'Return to Barilzar's Tower |q Divine Intervention/Return to Barilzar's Tower
 step
 goto 82.94,77.28
-click Barilzar's Tower |q Divine Intervention/Find Barilzar
+'Open Barilzar's Tower |q Divine Intervention/Find Barilzar
 |tip Manually skip to the next step.
 step
 goto odirniran_base 62.95,72.38
-click Tower Understructure |q Divine Intervention/Find Barilzar
+'Open Tower Understructure |q Divine Intervention/Find Barilzar
 |tip Manually skip to the next step.
 step
 goto 73.83,28.13
@@ -29904,11 +30002,7 @@ step
 goto 41.66,25.66
 talk Barilzar |q Divine Intervention/Talk to Barilzar
 step
-'Open Vvardenfell Map
-'Travel to _Molag Mar_ in Vvardenfell |q Divine Intervention/Talk to Leona Blasio
-|tip Manually skip to the next step.
-step
-goto vvardenfell_base 74.92,77.89 |q Divine Intervention/Talk to Snorfin
+goto vvardenfell_base 74.92,77.89 |q Divine Intervention/Talk to Snorfin |tip Leave this building.
 step
 goto 74.53,77.21
 talk Snorfin |q Divine Intervention/Talk to Snorfin
@@ -29919,7 +30013,7 @@ goto 73.69,78.18
 talk Leona Blasio |q Divine Intervention/Talk to Leona Blasio |tip Go up the stairs.
 step
 goto 73.24,78.14
-click The Penitent Pilgrim Inn |q Divine Intervention/Talk to Volrina Quarra
+'Open The Penitent Pilgrim Inn |q Divine Intervention/Talk to Volrina Quarra
 |tip Manually skip to the next step.
 step
 goto 73.30,78.28
@@ -29927,12 +30021,12 @@ goto 73.30,78.28
 talk Volrina Quarra |q Divine Intervention/Talk to Volrina Quarra
 step
 goto 76.71,76.60
-click Molag Mar Wayshrine
+'Use Molag Mar Wayshrine
 'Travel to _Nchuleftingth_ in Vvardenfell |q Divine Intervention/Retrieve Galom Daeus Component
 |tip Manually skip to the next step.
 step
 goto 62.18,60.19
-click Galom Daeus |q Divine Intervention/Retrieve Galom Daeus Component
+'Open Galom Daeus |q Divine Intervention/Retrieve Galom Daeus Component
 |tip Manually skip to the next step.
 step
 goto galomdaeus_base 73.36,69.32 |q Divine Intervention/Retrieve Galom Daeus Component
@@ -29940,58 +30034,73 @@ step
 goto 61.45,41.21 |q Divine Intervention/Retrieve Galom Daeus Component
 step
 goto 27.36,40.31
-click Volrina's Notes |q Divine Intervention/Retrieve Galom Daeus Component
-|tip Manually skip to the next step.
+'Examine Volrina's Notes |lorebook Volrina's Notes/3/30/93
 step
 goto 25.73,41.00
-click Galom Daeus Manufactory |q Divine Intervention/Retrieve Galom Daeus Component
+'Open Galom Daeus Manufactory |q Divine Intervention/Retrieve Galom Daeus Component
 |tip Manually skip to the next step.
 step
 goto galomdaeusend_base 12.43,39.58
-click Dwarven Spider |q Divine Intervention/Retrieve Galom Daeus Component
+'Search Dwarven Spider |q Divine Intervention/Retrieve Galom Daeus Component
 |tip Manually skip to the next step.
 step
 'All around this room:
-click Dwarven Spider |q Divine Intervention/Retrieve Galom Daeus Component
-|tip You will have to find and click multiple spiders.
+'Use Dwarven Spider |q Divine Intervention/Retrieve Galom Daeus Component
+|tip You will have to find and 'use multiple spiders.
 |tip Manually skip to the next step.
 step
 goto 14.52,40.98
-click Inversion Conduit |q Divine Intervention/Retrieve Galom Daeus Component
+'Take Inversion Conduit |q Divine Intervention/Retrieve Galom Daeus Component
 step
 'Open Vvardenfell Map
 'Travel to _Tel Mora_ in Vvardenfell |q Divine Intervention/Retrieve Nchuleft Component
 |tip Manually skip to the next step.
 step
-goto vvardenfell_base 61.19,32.94
-click Nchuleft |q Divine Intervention/Retrieve Nchuleft Component
+goto vvardenfell_base 62.95,31.52 |q Divine Intervention/Retrieve Nchuleft Component
+step
+goto 61.19,32.94
+'Open Nchuleft |q Divine Intervention/Retrieve Nchuleft Component
 |tip Manually skip to the next step.
 step
 goto nchuleft_base 52.90,43.34 |q Divine Intervention/Retrieve Nchuleft Component
 step
 goto 19.26,43.56
-click Nchuleft Depths |q Divine Intervention/Retrieve Nchuleft Component
+'Open Nchuleft Depths |q Divine Intervention/Retrieve Nchuleft Component
 |tip Manually skip to the next step.
 step
-goto nchuleftdepths_base 57.84,16.08
-|tip Jump down
-click Dwarven Chest |q Divine Intervention/Retrieve Nchuleft Component
+goto nchuleftdepths_base 51.80,41.49 |q Divine Intervention/Retrieve Nchuleft Component
+step
+goto 44.18,21.96 |q Divine Intervention/Retrieve Nchuleft Component
+step
+goto 24.64,21.03 |q Divine Intervention/Retrieve Nchuleft Component
+step
+goto 28.71,37.01 |q Divine Intervention/Retrieve Nchuleft Component
+step
+goto 48.45,41.80 |q Divine Intervention/Retrieve Nchuleft Component
+step
+goto 49.43,14.85 |q Divine Intervention/Retrieve Nchuleft Component
+step
+goto 57.84,16.08
+'Search Dwarven Chest |q Divine Intervention/Retrieve Nchuleft Component
 step
 'Open Vvardenfell Map
 'Travel to _Gnisis_ in Vvardenfell |q Divine Intervention/Retrieve Arkngthunch-Sturdumz Component
 |tip Manually skip to the next step.
 step
-goto vvardenfell_base 17.11,31.77 |q Divine Intervention/Retrieve Arkngthunch-Sturdumz Component
+goto vvardenfell_base 17.26,35.38 |q Divine Intervention/Retrieve Arkngthunch-Sturdumz Component
+step
+goto 19.37,35.90 |q Divine Intervention/Retrieve Arkngthunch-Sturdumz Component
+step
+goto 17.11,31.77 |q Divine Intervention/Retrieve Arkngthunch-Sturdumz Component
 step
 goto 17.75,29.64 |q Divine Intervention/Retrieve Arkngthunch-Sturdumz Component
 step
 goto 14.96,29.51
-click Arkngthunch-Sturdumz |q Divine Intervention/Retrieve Arkngthunch-Sturdumz Component
+'Open Arkngthunch-Sturdumz |lorebook Snorfin's Notes/3/30/92
 |tip Manually skip to the next step.
 step
 goto arkngthunch_base 58.37,75.97
-click Snorfin's Notes |q Divine Intervention/Retrieve Arkngthunch-Sturdumz Component
-|tip Manually skip to the next step.
+'Examine Snorfin's Notes |lorebook Snorfin's Notes/3/30/92
 step
 goto 27.77,75.32 |q Divine Intervention/Retrieve Arkngthunch-Sturdumz Component
 step
@@ -30000,44 +30109,44 @@ step
 goto 67.01,45.42 |q Divine Intervention/Retrieve Arkngthunch-Sturdumz Component
 step
 goto 76.25,17.73
-click Eastern Furnace Release Valve |q Divine Intervention/Retrieve Arkngthunch-Sturdumz Component
+'Use Eastern Furnace Release Valve |q Divine Intervention/Retrieve Arkngthunch-Sturdumz Component
 |tip Manually skip to the next step.
 step
 goto 70.85,12.35
-click Northern Furnace Release Valve |q Divine Intervention/Retrieve Arkngthunch-Sturdumz Component
+'Use Northern Furnace Release Valve |q Divine Intervention/Retrieve Arkngthunch-Sturdumz Component
 |tip Manually skip to the next step.
 step
 goto 66.28,17.85
-click Western Furnace Release Valve |q Divine Intervention/Retrieve Arkngthunch-Sturdumz Component
+'Use Western Furnace Release Valve |q Divine Intervention/Retrieve Arkngthunch-Sturdumz Component
 |tip Manually skip to the next step.
 step
 goto 71.15,17.68
-click Dwarven Chest |q Divine Intervention/Retrieve Arkngthunch-Sturdumz Component
+'Search Dwarven Chest |q Divine Intervention/Retrieve Arkngthunch-Sturdumz Component
 step
 'Open Vvardenfell Map
 'Travel to _Molag Mar_ in Vvardenfell |q Divine Intervention/Give Barilzar the Components
 |tip Manually skip to the next step.
 step
 goto vvardenfell_base 82.94,77.27
-click Barilzar's Tower |q Divine Intervention/Give Barilzar the Components
+'Open Barilzar's Tower |q Divine Intervention/Give Barilzar the Components
 |tip Manually skip to the next step.
 step
 goto odirniran_base 55.93,66.71
 talk Barilzar |q Divine Intervention/Give Barilzar the Components
 step
 goto 57.51,63.41
-click Tonal Inverter |q Divine Intervention/Get the Tonal Inverter
+'Take Tonal Inverter |q Divine Intervention/Get the Tonal Inverter
 step
 goto 55.42,65.36
 talk Barilzar |q Divine Intervention/Talk to Barilzar
 step
 goto vvardenfell_base 76.80,76.57
-click Molag Mar Wayshrine
+'Use Molag Mar Wayshrine
 'Travel to _Vivec Temple_ in Vvardenfell |q Divine Intervention/Report to Archcanon Tarvus
 |tip Manually skip to the next step.
 step
 goto viviccity_base 51.70,55.39
-click Archcanon's Office |q Divine Intervention/Report to Archcanon Tarvus
+'Open Archcanon's Office |q Divine Intervention/Report to Archcanon Tarvus
 step
 goto vivechow02_base 80.31,50.26
 talk Archcanon Tarvus |q Divine Intervention/Talk to Archcanon Tarvus
@@ -30046,7 +30155,7 @@ goto 76.69,51.00
 talk Seryn |q Divine Intervention/Talk to Seryn
 step
 goto viviccity_base 52.41,58.84
-click Vivec Temple Wayshrine
+'Use Vivec Temple Wayshrine
 'Travel to _Sadrith Mora_ in Vvardenfell |q Divine Intervention/Meet Seryn at Kaushtarari
 |tip Manually skip to the next step.
 step
@@ -30057,7 +30166,7 @@ goto 84.31,59.48
 talk Seryn |q Divine Intervention/Give Seryn the Tonal Inverter
 step
 goto 84.07,59.52
-click Kaushtarari |q Divine Intervention/Enter Kaushtarari
+'Open Kaushtarari |q Divine Intervention/Enter Kaushtarari
 |tip Manually skip to the next step.
 step
 goto kaushtarari_base 43.61,29.99
@@ -30065,29 +30174,29 @@ talk Renos Oran |q Divine Intervention/Defeat Chodala
 |tip Manually skip to the next step.
 step
 goto 45.34,53.73
-click Malacath's Shrine |q Divine Intervention/Defeat Chodala
+'Open Malacath's Shrine |q Divine Intervention/Defeat Chodala
 |tip Manually skip to the next step.
 step
 goto kaushtarari02_base 44.79,73.84
 kill the Skaafin enemies that attack
-'Press _X_ to use the Tonal Inverter 
+'Stand in Glowing Circle and Press _X_ to use the Tonal Inverter 
 kill Chodala |q Divine Intervention/Defeat Chodala
 step
 goto 44.81,68.45
 talk Seryn |q Divine Intervention/Talk to Seryn
 step
 goto 44.43,77.25
-click Sunna'rah |q Divine Intervention/Take Sunna'rah
+'Take Sunna'rah |q Divine Intervention/Take Sunna'rah
 step
 'Open Vvardenfell Map
 'Travel to _Vivec Temple_ in Vvardenfell |q Divine Intervention/Return to Vivec's Palace
 |tip Manually skip to the next step.
 step
 goto viviccity_base 50.19,71.79
-click Vivec's Palace |q Divine Intervention/Return to Vivec's Palace
+'Open Vivec's Palace |q Divine Intervention/Return to Vivec's Palace
 step
 goto vivecthroneroom01_base 73.18,49.60
-click Vivec's Private Chambers |q Divine Intervention/Talk to Archcanon Tarvus
+'Open Vivec's Private Chambers |q Divine Intervention/Talk to Archcanon Tarvus
 |tip Manually skip to the next step.
 step
 goto vivecthroneroom02_base 84.56,82.14 |q Divine Intervention/Talk to Archcanon Tarvus
@@ -30096,8 +30205,8 @@ goto 53.83,31.89
 talk Archcanon Tarvus |q Divine Intervention/Talk to Archcanon Tarvus
 step
 goto 50.37,37.91
-click Sunna'rah
-click Tonal Inverter |q Divine Intervention/Use Sunna'rah
+'Place Sunna'rah
+'Activate Tonal Inverter |q Divine Intervention/Use Sunna'rah
 step
 goto 50.11,32.26
 'Witness the Archcanon's Betrayal |q Divine Intervention/Witness the Archcanon's Betrayal
@@ -30116,7 +30225,7 @@ step
 goto 09.27,70.48 |q Divine Disaster/Find the Overseer
 step
 goto vivecthroneroom01_base 24.12,49.64
-click Vivec's Receiving Hall |q Divine Disaster/Find the Overseer
+'Open Vivec's Receiving Hall |q Divine Disaster/Find the Overseer
 |tip Manually skip to the next step.
 step
 goto viviccity_base 41.35,41.66
@@ -30127,13 +30236,13 @@ talk Thaleft |q Divine Disaster/Search the Construction Site
 |tip Manually skip to the next step.
 step
 goto 46.33,38.50
-click Construction Site |q Divine Disaster/Search the Construction Site
+'Open Construction Site |q Divine Disaster/Search the Construction Site
 |tip Manually skip to the next step.
 step
 goto 48.66,32.45 |q Divine Disaster/Search the Construction Site
 step
 goto 46.27,32.58
-click the Construction Site |q Divine Disaster/Search the Construction Site
+'Search the Construction Site |q Divine Disaster/Search the Construction Site
 step
 goto 44.88,37.30
 talk Overseer Shiralas |q Divine Disaster/Talk to Overseer Shiralas
@@ -30141,7 +30250,7 @@ step
 goto 49.11,32.78 |q Divine Disaster/Retrieve the Blessing Stone
 step
 goto 51.04,32.76
-click Third Canton |q Divine Disaster/Retrieve the Blessing Stone
+'Open Third Canton |q Divine Disaster/Retrieve the Blessing Stone
 |tip Manually skip to the next step.
 step
 goto 56.39,31.14 |q Divine Disaster/Retrieve the Blessing Stone
@@ -30153,18 +30262,18 @@ step
 goto 52.21,35.35 |q Divine Disaster/Retrieve the Blessing Stone
 step
 goto 52.31,33.74
-click Blessing Stone |q Divine Disaster/Retrieve the Blessing Stone
+'Take Blessing Stone |q Divine Disaster/Retrieve the Blessing Stone
 step
 'Open Vvardenfell Map
 'Travel to _Vivec Temple_ in Vvardenfell |q Divine Disaster/Return to Vivec's Chambers
 |tip Manually skip to the next step.
 step
 goto 50.19,71.71
-click Vivec's Palace |q Divine Disaster/Return to Vivec's Chambers
+'Open Vivec's Palace |q Divine Disaster/Return to Vivec's Chambers
 |tip Manually skip to the next step.
 step
 goto vivecthroneroom01_base 26.88,49.94
-click Vivec's Private Chambers |q Divine Disaster/Return to Vivec's Chambers
+'Open Vivec's Private Chambers |q Divine Disaster/Return to Vivec's Chambers
 |tip Manually skip to the next step.
 step
 goto vivecthroneroom02_base 22.78,77.22
@@ -30184,7 +30293,7 @@ step
 goto 83.07,82.16 |q Divine Restoration/Find Seryn
 step
 goto viviccity_base 51.69,55.38
-click Archcanon's Office |q Divine Restoration/Find Seryn
+'Open Archcanon's Office |q Divine Restoration/Find Seryn
 step
 goto vivechow02_base 74.76,51.24
 talk Azura |q Divine Restoration/Talk to Azura
@@ -30193,7 +30302,7 @@ goto 74.97,48.72
 talk Barilzar |q Divine Restoration/Talk to Barilzar
 step
 goto 84.66,45.44
-click Portal to Seht's Vault |q Divine Restoration/Reach the Entrance to the Clockwork City |future
+'Use Portal to Seht's Vault |q Divine Restoration/Reach the Entrance to the Clockwork City |future
 |tip Manually skip to the next step.
 step
 goto clockwork01_base 39.74,48.95 |q Divine Restoration/Reach the Entrance to the Clockwork City
@@ -30202,11 +30311,11 @@ goto 68.02,66.12
 kill Clockwork Guardian |q Divine Restoration/Reach the Entrance to the Clockwork City
 step
 goto 72.10,64.10
-click The Clockwork City |q Divine Restoration/Explore the Clockwork City
+'Open The Clockwork City |q Divine Restoration/Explore the Clockwork City
 |tip Manually skip to the next step.
 step
 goto clockwork05_base 47.21,66.86
-click Maintenance Junction |q Divine Restoration/Explore the Clockwork City
+'Open Maintenance Junction |q Divine Restoration/Explore the Clockwork City
 step
 goto clockwork02_base 15.27,84.89
 talk Barilzar |q Divine Restoration/Navigate the Maintenance Junction
@@ -30216,39 +30325,35 @@ goto 59.65,67.93
 'Navigate the Maintenance Junction |q Divine Restoration/Navigate the Maintenance Junction
 step
 goto 73.42,64.36
-click Spring-Wound Gate Coupling |q Divine Restoration/Get Past the Gate
+'Disable Spring-Wound Gate Coupling |q Divine Restoration/Get Past the Gate
 |tip Manually skip to the next step.
 step
 goto 47.09,64.27
-click Spring-Wound Gate Coupling |q Divine Restoration/Get Past the Gate
+'Disable Spring-Wound Gate Coupling |q Divine Restoration/Get Past the Gate
 |tip Manually skip to the next step.
 step
-goto 65.51,62.22 |q Divine Restoration/Get Past the Gate
-step
-goto 65.44,51.87 |q Divine Restoration/Follow Barbas |future
-step
-goto 65.44,53.03 |q Divine Restoration/Follow Barbas |tip Go up the Ramp.
+goto 65.51,62.22 |q Divine Restoration/Follow Barbas
 step
 goto 82.53,6.96
-click Access Bridge |q Divine Restoration/Follow Barbas
+'Open Access Bridge |q Divine Restoration/Follow Barbas
 |tip Manually skip to the next step.
 step
 goto clockwork06_base 53.93,46.70
-click Engineering Junction |q Divine Restoration/Follow Barbas
+'Open Engineering Junction |q Divine Restoration/Follow Barbas
 |tip Manually skip to the next step.
 step
 goto clockwork03_base 50.31,19.69
-click Atelier Courtyard |q Divine Restoration/Follow Barbas
+'Open Atelier Courtyard |q Divine Restoration/Follow Barbas
 step
 goto clockwork07_base 52.09,52.02
 talk Barilzar |q Divine Restoration/Enter the Divinity Atelier
 |tip Manually skip to the next step.
 step
 goto 33.63,51.04
-click The Divinity Atelier |q Divine Restoration/Enter the Divinity Atelier
+'Open The Divinity Atelier |q Divine Restoration/Enter the Divinity Atelier
 step
 goto clockwork04_base 70.89,51.64
-kill Clockwork Defense Core |q Divine Restoration/Destroy Central Core and Unlock South Platform
+kill Clockwork Defense Core |q Divine Restoration/Destroy Central Core and Unlock South Platform |future
 |tip Manually skip to the next step.
 step
 goto 68.57,63.23
@@ -30256,7 +30361,6 @@ goto 68.57,63.23
 |tip Manually skip to the next step.
 step
 goto 70.14,79.30
-kill Clockwork Mediator+
 kill Clockwork Mediator Core |q Divine Restoration/Enter the Energy Reservoir
 |tip Manually skip to the next step.
 step
@@ -30265,7 +30369,6 @@ goto 68.53,39.88
 |tip Manually skip to the next step.
 step
 goto 70.13,23.66
-kill Fabricant Beetle+
 kill Clockwork Assembly Core |q Divine Restoration/Enter the Energy Reservoir
 |tip Manually skip to the next step.
 step
@@ -30276,14 +30379,14 @@ goto 34.92,51.60
 kill Barbas |q Divine Restoration/Defeat Barbas
 step
 goto 34.84,51.74
-click Sunna'rah |q Divine Restoration/Reverse the Energy Flow
+'Take Sunna'rah |q Divine Restoration/Reverse the Energy Flow
 |tip Manually skip to the next step.
 step
 goto 24.07,51.65
-click Divinity Reservoir |q Divine Restoration/Reverse the Energy Flow
+'Use Divinity Reservoir |q Divine Restoration/Reverse the Energy Flow
 step
 goto 41.57,49.91
-click Portal to Vivec City |q Divine Restoration/Return to Vivec's Palace
+'Use Portal to Vivec City |q Divine Restoration/Return to Vivec's Palace
 step
 goto clockwork08_base 20.99,50.13
 talk Clavicus Vile |q Divine Restoration/Talk to Clavicus Vile
@@ -30292,13 +30395,13 @@ goto 19.61,45.98
 talk Barilzar |q Divine Restoration/Talk to Barilzar
 step
 goto 22.91,50.06
-click Sunna'rah on Clavicus Vile |q Divine Restoration/Use Sunna'rah on Clavicus Vile
+'Use Sunna'rah on Clavicus Vile |q Divine Restoration/Use Sunna'rah on Clavicus Vile
 step
 goto vivecthroneroom02_base 49.86,31.29
 talk Vivec |q Divine Restoration/Talk to Vivec
 step
 goto 49.89,36.53
-click Sunna'rah to Restore Vivec |q Divine Restoration/Use Sunna'rah to Restore Vivec
+'Use Sunna'rah to Restore Vivec |q Divine Restoration/Use Sunna'rah to Restore Vivec
 step
 goto 50.00,31.27
 talk Vivec
@@ -30308,11 +30411,11 @@ step
 goto 07.15,66.65 |q Divine Blessings/Retrieve the Archcanon's Signet
 step
 goto viviccity_base 51.70,55.40
-click Archcanon's Office |q Divine Blessings/Retrieve the Archcanon's Signet
+'Open Archcanon's Office |q Divine Blessings/Retrieve the Archcanon's Signet
 |tip Manually skip to the next step.
 step
 goto vivechow02_base 23.14,66.64
-click Archcanon's Lockbox |q Divine Blessings/Retrieve the Archcanon's Signet
+'Search Archcanon's Lockbox |q Divine Blessings/Retrieve the Archcanon's Signet
 step
 goto viviccity_base 48.06,54.43
 talk Vivec |q Divine Blessings/Talk to Vivec |future
@@ -30872,9 +30975,6 @@ goto 30.70,42.93
 talk Whispering Sorcerer |q Deepening Shadows/Talk to the Wounded Cultist
 step
 goto 30.27,44.25 |q Deepening Shadows/Find Gascone's Hideout |tip Go up the hill.
-step
-goto 32.46,53.57
-wayshrine Sanctuary
 step
 goto 23.01,55.92 |q Deepening Shadows/Find Gascone's Hideout
 step
@@ -32478,9 +32578,6 @@ step
 goto 66.93,40.50
 talk Valsirenn |q A Necessary Alliance/Talk to Valsirenn
 step
-goto 28.27,24.81
-wayshrine The Crystal Tower
-step
 goto 28.22,21.66 |q A Necessary Alliance/Go to the Crystal Tower Gatehouse
 step
 goto 28.27,24.81 |q A Necessary Alliance/Go to the Crystal Tower Gatehouse
@@ -33099,9 +33196,6 @@ step
 goto 66.58,70.32
 talk Famia Mercius |q Sunken Treasure/Talk to Famia
 step
-goto 69.88,61.34
-wayshrine Bright-Throat
-step
 goto 69.87,61.59
 click Bright-Throat Wayshrine
 'Travel to _Lilmoth_ in Murkmire |q Sunken Treasure/Meet Famia in Her Office
@@ -33345,10 +33439,7 @@ step
 goto 31.80,62.06
 talk Kassandra |q Whispers in the Wood/Talk to Kassandra
 step
-goto deadwatervillage_base 72.52,62.82
-wayshrine Dead-Water
-step
-goto 57.98,59.11
+goto deadwatervillage_base 57.98,59.11
 talk Jaxsik-Orrn |q Whispers in the Wood/Talk to Jaxsik-Orrn
 step
 goto 41.60,74.18
@@ -33693,9 +33784,6 @@ goto 42.04,49.42
 talk Famia Mercius
 turnin The Swamp and the Serpent
 accept The Remnant of Argon
-step
-goto 60.32,62.48
-wayshrine Root-Whisper
 step
 goto 77.26,34.59
 click Vakka-Bok Xanmeer |q The Remnant of Argon/Search the Xanmeer for Kassandra
@@ -35015,10 +35103,7 @@ talk Za'ji |q The Dragon's Lair/Talk to Za'ji
 step
 goto 57.55,93.98 |q The Dragon's Lair/Go to South Guard Ruins
 step
-goto southernelsweyr_base 59.73,66.02
-wayshrine South Guard Ruins
-step
-goto 61.05,66.73
+goto southernelsweyr_base 61.05,66.73
 'Go to South Guard Ruins |q The Dragon's Lair/Go to South Guard Ruins
 step
 goto 61.05,66.73
@@ -35453,9 +35538,6 @@ step
 goto 25.72,33.55 |q Order of the New Moon/Travel to the New Moon Fortress
 step
 goto 33.72,28.72 |q Order of the New Moon/Travel to the New Moon Fortress
-step
-goto 41.95,28.36
-wayshrine Pridehome
 step
 goto 46.98,28.74 |q Order of the New Moon/Travel to the New Moon Fortress
 step
@@ -36553,9 +36635,6 @@ step
 goto 46.53,34.89
 talk Lyris Titanborn |q The Gathering Storm/Talk to Lyris Titanborn
 step
-goto 42.95,35.80
-wayshrine Kilkreath Temple
-step
 goto 42.29,37.32
 'Follow the Road to Kilkreath Temple |q The Gathering Storm/Follow the Road to Kilkreath Temple
 step
@@ -36614,9 +36693,6 @@ accept Dark Clouds Over Solitude
 step
 goto 34.08,31.97
 talk Lyris |q Dark Clouds Over Solitude/Talk to Lyris Titanborn
-step
-goto 48.10,25.91
-wayshrine Northern Watch
 step
 'Use  Northern Watch Wayshrine
 'Travel to _Solitude_ in Western Skyrim |q Dark Clouds Over Solitude/Return to Solitude
@@ -36848,9 +36924,6 @@ goto 82.32,75.01
 talk Svana |q Danger in the Holds/Talk to Svana
 |tip go upstairs
 step
-goto 45.61,76.79
-wayshrine Southern Watch
-step
 goto 65.83,59.12
 click Jarl Reddharn's Hall |q Danger in the Holds/Talk to Jarl Reddharn
 |tip Manually skip to the next step.
@@ -37026,9 +37099,6 @@ goto 70.90,76.00
 click Blackreach: Lightless Hollow |q The Vampire Scholar/Free Edjar's Pack
 |tip Manually skip to the next step.
 step
-goto 77.63,67.28
-wayshrine Deep Overlook
-step
 goto 76.99,67.59
 talk to Breyfridde |q The Vampire Scholar/Free Edjar's Pack
 |tip Manually skip to the next step.
@@ -37127,9 +37197,6 @@ click Gray Host Communique |q The Vampire Scholar/Search Tzinghalis's Sanctum
 step
 goto 67.87,59.09
 talk Lyris Titanborn |q The Vampire Scholar/Talk to Lyris Titanborn
-step
-goto 89.87,38.11
-wayshrine Lightless Hollow
 step
 'Open Western Skyrim Map
 'Travel to _Solitude_ in Western Skyrim |q The Vampire Scholar/Return to the Blue Palace
@@ -37234,9 +37301,6 @@ step
 goto 16.59,56.89
 click Blackreach: Dark Moon Grotto |q The Gray Host/Investigate the Blackreach Camp
 |tip anually skip to the next step.
-step
-goto blackreach_base 23.65,31.85
-wayshrine Dwarven Run
 step
 goto 19.53,68.76 |q The Gray Host/Investigate the Blackreach Camp
 step
@@ -37421,9 +37485,6 @@ click Blackreach: Greymoor Caverns |q Greymoor Rising/Find the Ritual Site in Bl
 |tip Manually skip to the next step.
 step
 goto blackreach_base 56.74,41.87 |q Greymoor Rising/Find the Ritual Site in Blackreach
-step
-goto 57.22,36.14
-wayshrine Greymoor Keep
 step
 goto 58.88,34.73
 'Find the Ritual Site in Blackreach |q Greymoor Rising/Find the Ritual Site in Blackreach
@@ -37690,9 +37751,6 @@ goto 63.45,27.38
 talk Count Verandis Ravenwatch |q The Despot of Markarth/Talk to Count Verandis Ravenwatch
 |tip Manually skip to the next step.
 step
-goto 74.63,75.97
-wayshrine Markarth
-step
 goto 58.69,43.29
 click Markarth |q The Despot of Markarth/Find the Rebels
 |tip Manually skip to the next step.
@@ -37855,9 +37913,6 @@ step
 goto 57.24,49.60
 talk Arana |q Blood of the Reach/Talk to Arana
 step
-goto 52.04,54.68
-wayshrine Rebel's Retreat
-step
 click Rebel's Retreat Wayshrine
 'Travel to _North Markarth_ in The Reach |q Blood of the Reach/.*Investigate Map Locations.* |count 1
 |tip Manually skip to the next step.
@@ -37873,9 +37928,6 @@ goto 36.62,23.67
 step
 goto 36.68,23.72
 talk Arana |q Blood of the Reach/Talk to Arana
-step
-goto 33.77,23.10
-wayshrine Druadach Mountains
 step
 'Open The Reach Map
 'Travel to _Druadach Mountains_ in The Reach |q Blood of the Reach/Find the Entrance to Bthar-Zel
@@ -38077,9 +38129,6 @@ turnin The Study of Souls
 accept The Awakening Darkness
 step
 goto 55.60,60.86 |q The Awakening Darkness/Find Bradan at Hroldan Ring
-step
-goto 71.78,61.67
-wayshrine Lost Valley
 step
 goto 61.73,60.03
 'Find Braden at Hroldan Ring |q The Awakening Darkness/Find Bradan at Hroldan Ring
@@ -38814,9 +38863,6 @@ goto u30_leyawiincity_base 40.13,70.68
 click Leyawiin |q A Deadly Secret/Investigate Councilor Jirich's Manor
 |tip Manually skip to the next step.
 step
-goto 23.60,64.69
-wayshrine Leyawiin
-step
 goto 52.89,58.05
 click Councilor Jirich's Manor |q A Deadly Secret/Investigate Councilor Jirich's Manor
 step
@@ -38935,9 +38981,6 @@ talk Commander Ortin |q A Deadly Secret/Talk to Commander Ortin
 step
 goto 36.41,59.25 |achieve 2982/1
 step
-goto blackwood_base 36.24,66.51
-wayshrine Blueblood
-step
 goto blackwood_base 31.01,68.25
 click Tidewater Cave |q A Deadly Secret/Find Councilor Faleria
 |tip Manually skip to the next step.
@@ -38953,9 +38996,6 @@ step
 'Open Blackwood Map
 'Travel to _Blackwood Crossroads_ in Blackwood |q A Deadly Secret/Warn Councilor Vandacia
 |tip Manually skip to the next step.
-step
-goto 55.54,30.35
-wayshrine Gideon
 step
 goto 49.10,36.84
 click Gideon Courthouse |q A Deadly Secret/Warn Councilor Vandacia
@@ -39218,9 +39258,6 @@ click Gideon |q A Hidden Vault/Meet Eveli Near Sul-Xan Territory
 |tip Manually skip to the next step.
 step
 goto 10.04,45.22 |q A Hidden Vault/Meet Eveli Near Sul-Xan Territory
-step
-goto 60.41,77.85
-wayshrine Stonewastes
 step
 goto 67.28,88.23
 'Meet Eveli Near Sul-Xan Territory |q A Hidden Vault/Meet Eveli Near Sul-Xan Territory
@@ -39711,9 +39748,6 @@ step
 goto 70.80,73.45
 'Reach the Portal Site |q Weapons of Destruction/Reach the Portal Site
 step
-goto 76.93,73.33
-wayshrine Vunalk
-step
 'Open Blackwood Map
 'Travel to _Vunalk_ in Blackwood |q Weapons of Destruction/Enter the Portal
 |tip Manually skip to the next step.
@@ -40056,9 +40090,6 @@ step
 goto 53.01,61.87 |q The Celestial Palanquin/Talk to Initiate Tilgo
 step
 goto 53.87,59.47
-wayshrine Wounded Crossing
-step
-goto 53.87,59.47
 'Use _Wounded Crossing Wayshrine_
 'Travel to _Raging Coast_ in The Deadlands |q The Celestial Palanquin/Talk to Initiate Tilgo
 |tip Manually skip to the next step.
@@ -40070,18 +40101,12 @@ step
 goto 34.77,70.36
 talk Initiate Tilgo |q The Celestial Palanquin/Talk to Initiate Tilgo
 step
-goto 35.77,59.05
-wayshrine Ardent Hope
-step
 goto 70.28,40.27
 'Open _Fargrave Crafting Plaza_ |q The Celestial Palanquin/Go to the Fargrave Crafting Plaza
 |tip Manually skip to the next step.
 step
 goto u32_fargrave_base 78.63,23.59
 talk The Anchorite |q The Celestial Palanquin/Talk to The Anchorite |future
-step
-goto 34.69,37.97
-wayshrine The Shambles
 step
 goto 68.56,52.26 |q The Celestial Palanquin/Reach the Bathhouse
 step

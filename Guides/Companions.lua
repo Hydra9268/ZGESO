@@ -161,7 +161,8 @@ goto 91.26,63.28
 'Destroy the Anchor Stone Array |q Shattered and Scattered/Destroy the Anchor Stone Array
 step
 goto 95.41,64.34
-'Open Blackwood |q Shattered and Scattered/Exit the Ruin
+'Open Blackwood |q Shattered and Scattered/Exit the Ruin |future
+|tip Manually skip to the next step.
 step
 goto blackwood_base 37.71,12.89
 talk Mirri Elendis
