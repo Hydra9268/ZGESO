@@ -34107,10 +34107,15 @@ goto rimmen_base 26.06,55.18
 talk Anais Davaux
 accept A Rage of Dragons
 step
-goto 49.25,21.74 |q A Rage of Dragons/Talk to Abnur Tharn
+goto elsweyr_base 70.50,28.92
+step
+goto 49.20,22.75 |q A Rage of Dragons/Talk to Abnur Tharn
+step
+goto 51.33,20.65
+wayshrine Riverhold
 step
 goto riverholdcity_base 56.47,68.73
-click K'har Zhab Hall |q A Rage of Dragons/Talk to Abnur Tharn
+'Open K'har Zhab Hall |q A Rage of Dragons/Talk to Abnur Tharn
 |tip Manually skip to the next step.
 step
 goto 55.98,72.54
@@ -34123,19 +34128,24 @@ goto 55.64,72.69
 talk Lord Gharesh-ri |q A Rage of Dragons/Talk to Lord Gharesh-ri |future
 |tip Manually skip to the next step.
 step
+goto elsweyr_base 49.20,22.75 |q A Rage of Dragons/.*Investigate Power Surge Locations.* |count 1
+step
 goto 45.24,23.54
 talk Asazeh |q A Rage of Dragons/.*Investigate Power Surge Locations.* |count 1
 step
 goto 44.60,19.46
-click Foul-Smelling Sack |q A Rage of Dragons/.*Investigate Power Surge Locations.* |count 2
+'Examine Foul-Smelling Sack |q A Rage of Dragons/.*Investigate Power Surge Locations.* |count 2
 step
 goto 44.70,14.15
-click Discarded Orders |q A Rage of Dragons/.*Investigate Power Surge Locations.* |count 3
+'Examine Discarded Orders |q A Rage of Dragons/.*Investigate Power Surge Locations.* |count 3
 step
 goto 44.59,14.24
 talk Lharahad |q A Rage of Dragons/Talk to Lharahad
 step
-goto 51.46,22.56 |q A Rage of Dragons/Find the Outsider with a Pot on His Head
+goto 51.33,20.65
+'Open Northern Elsweyr Map
+'Travel to _Riverhold_ |q A Rage of Dragons/Find the Outsider with a Pot on His Head
+|tip Manually skip to the next step.
 step
 goto 52.67,23.53
 'Find the Outsider with a Pot on His Head |q A Rage of Dragons/Find the Outsider with a Pot on His Head
@@ -34144,12 +34154,10 @@ goto 52.67,23.53
 talk Cadwell |q A Rage of Dragons/Talk to Cadwell
 step
 goto 52.77,23.46
-click Ancient Gravestone |q A Rage of Dragons/Examine the Gravestone
+'Examine Ancient Gravestone |q A Rage of Dragons/Examine the Gravestone
 step
 goto 52.71,23.50
 talk Cadwell |q A Rage of Dragons/Talk to Cadwell
-step
-goto 60.81,28.40 |q A Rage of Dragons/Find the Defense Force Outpost
 step
 goto 51.69,24.36 |q A Rage of Dragons/Find the Defense Force Outpost
 step
@@ -34166,22 +34174,24 @@ goto 49.83,26.61
 talk Khamira |q A Rage of Dragons/Talk to Khamira
 step
 goto 49.60,28.51
-click Mail Sack |q A Rage of Dragons/.*Recover Military Documents.* |count 1
+'Search Mail Sack |q A Rage of Dragons/.*Recover Military Documents.* |count 1
 step
 goto 50.39,28.05
-click Mail Sack |q A Rage of Dragons/.*Recover Military Documents.* |count 2
+'Search Mail Sack |q A Rage of Dragons/.*Recover Military Documents.* |count 2
 step
 goto 50.92,30.02
-click Mail Sack |q A Rage of Dragons/.*Recover Military Documents.* |count 3
+'Search Mail Sack |q A Rage of Dragons/.*Recover Military Documents.* |count 3
+step
+goto 52.92,28.83 |q A Rage of Dragons/.*Recover Military Documents.* |count 4
 step
 goto 51.83,29.27 |q A Rage of Dragons/.*Recover Military Documents.* |count 4
 step
 goto 51.97,28.82
-click Mail Sack |q A Rage of Dragons/.*Recover Military Documents.* |count 
+'Search Mail Sack |q A Rage of Dragons/.*Recover Military Documents.* |count 
 step
 goto 52.86,28.72 |q A Rage of Dragons/Find Captain Nala-do
 step
-goto 51.82,29.36 |q A Rage of Dragons/Find Captain Nala-do
+goto 52.87,28.80 |q A Rage of Dragons/Find Captain Nala-do
 step
 goto 52.24,29.94
 'Find Captain Nala-do |q A Rage of Dragons/Find Captain Nala-do
@@ -34194,13 +34204,30 @@ step
 goto 48.10,30.82
 talk Abnur Tharn |q A Rage of Dragons/Talk to Abnur Tharn
 step
-goto 59.77,54.17
-click Elsweyr |q A Rage of Dragons/Find the Source of Undead
+goto 46.51,30.59 |q A Rage of Dragons/Find the Source of Undead
+step
+goto 51.33,20.65 |q A Rage of Dragons/Find the Source of Undead
+step
+goto 40.86,25.98
+wayshrine Star Haven
+step
+goto 40.86,25.98
+'Use Star Haven Wayshrine
+'Travel to _Riverhold_ in Northern Elsweyr |q A Rage of Dragons/Find the Source of Undead
 |tip Manually skip to the next step.
 step
-goto 50.62,52.90 |q A Rage of Dragons/Find the Source of Undead
+goto 49.35,23.04 |q A Rage of Dragons/Find the Source of Undead
 step
-goto elsweyr_base 37.29,47.89 |q A Rage of Dragons/Find the Source of Undead
+goto 46.54,30.33 |q A Rage of Dragons/Find the Source of Undead
+step
+goto 48.78,31.58 |q A Rage of Dragons/Find the Source of Undead
+step
+goto 45.15,36.13 |q A Rage of Dragons/Find the Source of Undead
+step
+goto 43.96,43.66 |q A Rage of Dragons/Find the Source of Undead
+step
+goto 36.70,48.66
+wayshrine The Stitches
 step
 goto 28.33,49.71 |q A Rage of Dragons/Find the Source of Undead
 step
@@ -34211,7 +34238,7 @@ goto 25.02,50.11
 talk Khamira |q A Rage of Dragons/Talk to Khamira
 step
 goto 24.85,50.14
-click Sleepy Senche Mine |q A Rage of Dragons/Enter the Mine
+'Open Sleepy Senche Mine |q A Rage of Dragons/Enter the Mine
 |tip Manually skip to the next step.
 step
 goto mulaamnirslair_base 48.46,18.90 |q A Rage of Dragons/Find the Source of the Undead
@@ -34230,6 +34257,7 @@ goto 73.92,54.02
 kill Gravestalker Gemmia |q A Rage of Dragons/Kill Gravestalker Gemmia
 step
 goto 63.51,53.56
+|tip Don't leave before dialogue completes.
 'Enter Elsweyr |q A Rage of Dragons/Follow the Dragon |future
 |tip Manually skip to the next step.
 step
@@ -34239,19 +34267,23 @@ step
 goto 22.81,50.15
 talk Khamira |q A Rage of Dragons/Talk to Khamira
 step
+goto 25.87,54.29 |q A Rage of Dragons/Return to Riverhold
+step
+goto 16.66,64.16 |q A Rage of Dragons/Return to Riverhold |tip Follow the road.
+step
 goto 16.38,70.66
-click Scar's End Wayshrine
+wayshrine Scar's End |tip Follow the road.
+step
+goto 16.38,70.66
+'Use Scar's End Wayshrine
 'Travel to _Riverhold_ in Northern Elsweyr |q A Rage of Dragons/Return to Riverhold
 |tip Manually skip to the next step.
 step
 goto riverholdcity_base 54.27,68.22
-'Return to Riverhold |q A Rage of Dragons/Return to Riverhold
-step
-goto 54.27,68.22
-talk Cadwell |q A Rage of Dragons/Talk to Cadwell
+talk Cadwell |q A Rage of Dragons/Talk to Cadwell |future
 step
 goto 56.70,69.07
-click K'har Zhab Hall |q A Rage of Dragons/Talk to Abnur Tharn
+'Open K'har Zhab Hall |q A Rage of Dragons/Talk to Abnur Tharn
 |tip Manually skip to the next step.
 step
 goto 54.75,70.85
@@ -34275,14 +34307,14 @@ step
 goto 52.21,34.23 |q The Usurper Queen/Go to Euraxia's Throne Room
 step
 goto 73.65,38.38
-click Rimmen Palace |q The Usurper Queen/Go to Euraxia's Throne Room
+'Open Rimmen Palace |q The Usurper Queen/Go to Euraxia's Throne Room
 |tip Manually skip to the next step.
 step
 goto 76.45,37.24
 talk Zumog Phoom |q The Usurper Queen/Talk to Zumog Phoom |future
 step
 goto 76.52,37.21
-click Rimmen Palace Throne Room |q The Usurper Queen/Enter the Rimmen Palace Throne Room
+'Open Rimmen Palace Throne Room |q The Usurper Queen/Enter the Rimmen Palace Throne Room
 |tip Manually skip to the next step.
 step
 goto 77.49,36.82
@@ -34312,25 +34344,35 @@ step
 goto 40.77,52.61 |q The Usurper Queen/Escort Tharn Out of the Sewers
 step
 goto 39.57,03.49
-click Rimmen |q The Usurper Queen/Escort Tharn Out of the Sewers
+'Open Rimmen |q The Usurper Queen/Escort Tharn Out of the Sewers
 |tip Manually skip to the next step.
 step
 goto rimmen_base 66.01,28.77
 talk Abnur Tharn |q The Usurper Queen/Talk to Abnur Tharn
 step
-goto 54.92,35.47 |q Beware the Purring Liar/Steal the Golden Cat Idol
-step
-goto 29.85,53.04 |q Beware the Purring Liar/Steal the Golden Cat Idol
+goto 54.92,35.47 |q The Usurper Queen/Go to Desert Wind Adeptorium
 step
 goto 30.16,55.55
-click Rimmen Wayshrine
+'Use Rimmen Wayshrine
 'Travel to _The Stitches_ in Northern Elsweyr |q The Usurper Queen/Go to Desert Wind Adeptorium
 |tip Manually skip to the next step.
 step
 goto elsweyr_base 41.44,44.20
 'Go to Desert Wind Adeptorium |q The Usurper Queen/Go to Desert Wind Adeptorium
 step
-goto DesertWind_Base 65.79,22.06 |q The Usurper Queen/Enter the Adeptorium
+goto 41.49,44.74 |q The Usurper Queen/Find a Way Into the Adeptorium
+step
+goto 39.68,43.10
+'Enter Desert Wind Caverns |q The Usurper Queen/Find a Way Into the Adeptorium |future
+|tip Manually skip to the next step.
+step
+goto DesertWind_Base 34.02,84.85 |q The Usurper Queen/Enter the Adeptorium
+step
+goto 30.31,56.78 |q The Usurper Queen/Enter the Adeptorium
+step
+goto 48.08,45.27 |q The Usurper Queen/Enter the Adeptorium
+step
+goto 48.02,56.33 |q The Usurper Queen/Enter the Adeptorium
 step
 goto 64.19,46.99
 'Enter the Adeptorium |q The Usurper Queen/Enter the Adeptorium
@@ -34339,7 +34381,7 @@ goto 64.19,46.99
 talk Zamarak |q The Usurper Queen/Talk to Zamarak
 step
 goto 64.64,47.06
-click Desert Wind Adeptorium |q The Usurper Queen/Enter the Desert Wind Adeptorium
+'Open Desert Wind Adeptorium |q The Usurper Queen/Enter the Desert Wind Adeptorium
 |tip Manually skip to the next step.
 step
 goto 69.76,46.87
@@ -34349,7 +34391,7 @@ goto 81.07,46.87
 kill Lieutenant Lepida |q The Usurper Queen/Defeat Lieutenant Lepida
 step
 goto 82.93,46.80
-click Grand Adept Chambers |q The Usurper Queen/Talk to Lieutenant Lepida's Shade
+'Open Grand Adept Chambers |q The Usurper Queen/Talk to Lieutenant Lepida's Shade
 |tip Manually skip to the next step.
 step
 goto DesertWind2_Base 38.76,49.44
@@ -34366,7 +34408,7 @@ step
 |tip Manually skip to the next step.
 step
 goto riverholdcity_base 56.79,68.94
-click K'har Zhab Hall |q The Usurper Queen/Talk to Abnur Tharn
+'Open K'har Zhab Hall |q The Usurper Queen/Talk to Abnur Tharn
 |tip Manually skip to the next step.
 step
 goto 54.61,71.51
@@ -34375,11 +34417,11 @@ turnin The Usurper Queen
 accept The Battle for Riverhold
 step
 goto 54.61,71.51
-talk Gharesh-ri |q The Battle for Riverhold/Talk to Gharesh-ri |future
+talk Lord Gharesh-ri |q The Battle for Riverhold/Talk to Gharesh-ri |future
 |tip Manually skip to the next step.
 step
 goto 57.04,69.04
-click Riverhold |q The Battle for Riverhold/Talk to Khamira
+'Open Riverhold |q The Battle for Riverhold/Talk to Khamira
 |tip Manually skip to the next step.
 step
 goto 54.42,80.01
@@ -34396,7 +34438,7 @@ step
 goto elsweyr_base 46.77,11.49 |q The Battle for Riverhold/Go to the Greenleaf Farm
 step
 goto 46.77,11.49
-click Greenleaf Farmhouse |q The Battle for Riverhold/Talk to Tsazii
+'Open Greenleaf Farmhouse |q The Battle for Riverhold/Talk to Tsazii
 |tip Manually skip to the next step.
 step
 goto 46.78,11.61
@@ -34408,7 +34450,7 @@ goto 42.15,11.92
 talk Kinaro |q The Battle for Riverhold/Find Tsazii's Brother and Mate
 step
 goto 46.77,11.49
-click Greenleaf Farmhouse |q The Battle for Riverhold/Talk to Tsazii
+'Open Greenleaf Farmhouse |q The Battle for Riverhold/Talk to Tsazii
 |tip Manually skip to the next step.
 step
 goto 46.78,11.61
@@ -34424,22 +34466,22 @@ goto 42.55,14.84
 |tip Manually skip to the next step.
 step
 goto 42.53,15.02
-click Euraxia Supply Cart |q The Battle for Riverhold/Disrupt the North Supply Camp
+'Burn Euraxia Supply Cart |q The Battle for Riverhold/Disrupt the North Supply Camp
 |tip Manually skip to the next step.
 step
 goto 42.27,15.10
-click Euraxia Supply Cart |q The Battle for Riverhold/Disrupt the North Supply Camp
+'Burn Euraxia Supply Cart |q The Battle for Riverhold/Disrupt the North Supply Camp
 step
 goto 43.75,17.72
 'Startle the Horses |q The Battle for Riverhold/Disrupt the South Supply Camp
 |tip Manually skip to the next step.
 step
 goto 43.62,17.82
-click Euraxia Supply Cart |q The Battle for Riverhold/Disrupt the South Supply Camp
+'Burn Euraxia Supply Cart |q The Battle for Riverhold/Disrupt the South Supply Camp
 |tip Manually skip to the next step.
 step
 goto 43.85,18.13
-click Euraxia Supply Cart |q The Battle for Riverhold/Disrupt the South Supply Camp
+'Burn Euraxia Supply Cart |q The Battle for Riverhold/Disrupt the South Supply Camp
 step
 goto 45.97,18.32
 talk Captain Nala-do |q The Battle for Riverhold/Talk to Captain Nala-do
@@ -34456,7 +34498,7 @@ goto 48.94,23.43
 |tip Manually skip to the next step.
 step
 goto 49.37,22.98
-talk Cadwell |q The Battle for Riverhold/Talk to Cadwell
+talk Cadwell |q The Battle for Riverhold/Talk to Cadwell |future |tip Wait for him to finish his spell.
 step
 goto 50.36,20.02
 talk Khamira |q The Battle for Riverhold/Talk to Khamira
@@ -34472,13 +34514,13 @@ goto 49.24,54.82
 'Defend Town Center |q The Battle for Riverhold/Defend Town Center
 step
 goto 49.40,31.91
-click Temple of the Purifying Moons |q The Battle for Riverhold/Meet Zamarak at the Temple
+'Open Temple of the Purifying Moons |q The Battle for Riverhold/Meet Zamarak at the Temple
 step
 goto 49.44,16.66
 'Protect Zamarak |q The Battle for Riverhold/Protect Zamarak
 step
 goto 48.63,49.20
-click Riverhold |q The Battle for Riverhold/Activate the Blessed Pillar of the Spring Moon
+'Open Riverhold |q The Battle for Riverhold/Activate the Blessed Pillar of the Spring Moon
 |tip Manually skip to the next step.
 step
 goto 44.41,47.50 |q The Battle for Riverhold/Activate the Blessed Pillar of the Spring Moon
@@ -34500,18 +34542,50 @@ goto 48.17,62.35
 'Watch the Dragons |q The Battle for Riverhold/Watch the Dragons
 step
 goto 48.17,62.35
-click Ballista |q The Battle for Riverhold/Ground the Dragon
+'Use Ballista |q The Battle for Riverhold/Ground the Dragon
 step
 goto 49.05,57.17
 kill the Dragon |q The Battle for Riverhold/Kill the Dragon
 step
 goto 56.63,69.18
-click K'har Zhab Hall |q The Battle for Riverhold/Go to K'har Zhab Hall
+'Open K'har Zhab Hall |q The Battle for Riverhold/Go to K'har Zhab Hall |future
+|tip Manually skip to the next step.
 step
 goto riverholdcity_base 57.96,72.51
 talk Abnur Tharn
 turnin The Battle for Riverhold
 accept Two Queens
+step
+goto 55.57,72.08
+talk Lord Gharesh-ri |q Two Queens/Talk to Lord Gharesh-ri
+step
+'Open Northern Elsweyr Map
+'Travel to _Rimmen_ in Northern Elsweyr |q Two Queens/Find Aneshi
+|tip Manually skip to the next step.
+step
+goto rimmen_base 28.85,71.57 |q Two Queens/Find Aneshi
+step
+goto 43.66,66.63 |q Two Queens/Find Aneshi
+step
+goto elsweyr_base 74.66,36.92 |q Two Queens/Find Aneshi
+step
+goto 77.72,41.24 |q Two Queens/Find Aneshi
+step
+goto 70.53,45.72
+wayshrine Hakoshae
+step
+goto 69.03,45.15 |q Two Queens/Find Aneshi
+step
+goto 66.03,49.13 |q Two Queens/Find Aneshi
+step
+goto 59.04,66.15
+wayshrine Tenmar Temple
+step
+'Use Tenmar Temple Wayshrine
+'Travel to _Hakoshae_ in Northern Elsweyr |q Two Queens/Find Aneshi
+|tip Manually skip to the next step.
+step
+goto 67.45,44.21 |q Two Queens/Find Aneshi
 step
 goto 68.23,40.81 
 'Find Aneshi |q Two Queens/Find Aneshi
@@ -34520,7 +34594,7 @@ goto 68.23,40.81
 talk Aneshi the Shrine Keeper |q Two Queens/Talk to Aneshi
 step
 goto 68.21,40.74
-click Aneshi's Note |q Two Queens/Take Aneshi's Note
+'Examine Aneshi's Note |q Two Queens/Take Aneshi's Note
 step
 goto 66.57,38.49 |q Two Queens/Find the Master Key
 step
@@ -34528,7 +34602,7 @@ goto 60.03,39.12
 'Dig Aneshi's Mound |q Two Queens/Find the Master Key
 step
 goto 70.53,45.76
-click Hakoshae Wayshrine
+'Open Northern Elsweyr Map
 'Travel to _Rimmen_ in Northern Elsweyr |q Two Queens/Rendezvous in Rimmen
 |tip Manually skip to the next step.
 step
@@ -34560,42 +34634,45 @@ goto 68.23,43.62 |q Two Queens/Talk to Captain Nala-do
 talk Captain Nala-do |q Two Queens/Talk to Captain Nala-do
 step
 goto 67.69,50.25
-click South Weapons Platform |q Two Queens/Destroy the South Siege Weapons
+'Open South Weapons Platform |q Two Queens/Destroy the South Siege Weapons
 |tip Manually skip to the next step.
 step
 goto 63.15,54.42
-click Siege Weapon |q Two Queens/Destroy the South Siege Weapons
+'Burn Siege Weapon |q Two Queens/Destroy the South Siege Weapons
 |tip Manually skip to the next step.
 step
 goto 61.85,56.76
-click Siege Weapon |q Two Queens/Destroy the South Siege Weapons
+'Burn Siege Weapon |q Two Queens/Destroy the South Siege Weapons
 |tip Manually skip to the next step.
 step
 goto 64.60,58.76
-click Siege Weapon |q Two Queens/Destroy the South Siege Weapons
+'Burn Siege Weapon |q Two Queens/Destroy the South Siege Weapons
 step
 goto 67.50,50.55
-click Rimmen |q Two Queens/Destroy the North Siege Weapons
+'Open Rimmen |q Two Queens/Destroy the North Siege Weapons
 |tip Manually skip to the next step.
 step
 goto 62.58,33.49
-click North Weapons Platform |q Two Queens/Destroy the North Siege Weapons
+'Open North Weapons Platform |q Two Queens/Destroy the North Siege Weapons
 |tip Manually skip to the next step.
 step
 goto 57.15,31.48
-click Siege Weaon |q Two Queens/Destroy the North Siege Weapons
+'Burn Siege Weapon |q Two Queens/Destroy the North Siege Weapons
 |tip Manually skip to the next step.
 step
 goto 54.72,29.96
-click Siege Weaon |q Two Queens/Destroy the North Siege Weapons
+'Burn Siege Weapon |q Two Queens/Destroy the North Siege Weapons
 |tip Manually skip to the next step.
 step
 goto 57.45,27.96
-click Siege Weaon |q Two Queens/Destroy the North Siege Weapons
+|tip Wait for this step to complete.
+'Burn Siege Weapon |q Two Queens/Destroy the North Siege Weapons
 step
 goto 62.29,33.33
-click Rimmen |q Two Queens/Rendezvous at the Sewer Entrance
+'Open Rimmen |q Two Queens/Rendezvous at the Sewer Entrance
 |tip Manually skip to the next step.
+step
+goto 66.19,40.63 |q Two Queens/Rendezvous at the Sewer Entrance
 step
 goto 55.96,35.68 |q Two Queens/Rendezvous at the Sewer Entrance
 step
@@ -34606,11 +34683,11 @@ goto 61.67,31.94
 talk Captain Nala-do |q Two Queens/Talk to Captain Nala-do
 step
 goto 66.74,28.95
-click Rimmen Palace Recesses |q Two Queens/Enter the Palace Sewer |future
+'Open Rimmen Palace Recesses |q Two Queens/Enter the Palace Sewer |future
 |tip Manually skip to the next step.
 step
 goto rimmensewer_base 44.02,12.47
-click Rimmen Palace Crypts |q Two Queens/Find a Way into the Palace
+'Open Rimmen Palace Crypts |q Two Queens/Find a Way into the Palace
 |tip Manually skip to the next step.
 step
 goto rimmencrypts_base 09.92,46.46 |q Two Queens/Find a Way into the Palace
@@ -34625,13 +34702,13 @@ goto 79.46,34.99
 'Find a Way into the Palace |q Two Queens/Find a Way into the Palace
 step
 goto 78.71,27.75
-click King Hemakar's Grave |q Two Queens/Examine the Royal Crypt
+'Examine King Hemakar's Grave |q Two Queens/Examine the Royal Crypt
 step
 goto 78.71,27.75
 talk Zamarak |q Two Queens/Talk to Zamarak
 step
 goto 90.93,36.61
-click Rimmen Palace |q Two Queens/Enter Rimmen Palace |future
+'Open Rimmen Palace |q Two Queens/Enter Rimmen Palace |future
 |tip Manually skip to the next step.
 step
 goto rimmenpalaceinterior_base 51.27,47.77 |q Two Queens/Go to the Chapel of the Guiding Moons
@@ -34641,7 +34718,7 @@ step
 goto 23.27,24.59 |q Two Queens/Go to the Chapel of the Guiding Moons
 step
 goto 29.84,42.82
-click Chapel of the Guiding Moons |q Two Queens/Go to the Chapel of the Guiding Moons
+'Open Chapel of the Guiding Moons |q Two Queens/Go to the Chapel of the Guiding Moons
 |tip Manually skip to the next step.
 step
 goto 34.02,52.21
@@ -34650,7 +34727,7 @@ goto 34.02,52.21
 |tip Manually skip to the next step.
 step
 goto 55.97,85.13
-click The Great Hall |q Two Queens/Enter the Great Hall |future
+'Open The Great Hall |q Two Queens/Enter the Great Hall |future
 |tip Manually skip to the next step.
 step
 goto 73.15,75.11
@@ -34662,14 +34739,14 @@ goto 73.87,78.73
 step
 goto 73.41,55.51
 |tip Go up the stairs.
-click Royal Chambers |q Two Queens/Go to the Royal Chambers
+'Open Royal Chambers |q Two Queens/Go to the Royal Chambers
 |tip Manually skip to the next step.
 step
 goto 69.80,46.10
 'Watch dialogue |q Two Queens/Go to the Royal Chambers
 step
 goto 76.47,43.83
-click Rimmen Palace Courtyard |q Two Queens/Enter the Palace Courtyard
+'Open Rimmen Palace Courtyard |q Two Queens/Enter the Palace Courtyard
 |tip Manually skip to the next step.
 step
 goto rimmenpalacecourtyard_base 56.13,46.86
@@ -34683,7 +34760,7 @@ talk to Abnur Tharn |q Two Queens/Talk to Abnur Tharn |future
 |tip Manually skip to the next step.
 step
 goto 43.17,75.01
-click Palace Throne Room |q Two Queens/Go to the Palace Throne Room
+'Open Palace Throne Room |q Two Queens/Go to the Palace Throne Room
 step
 goto rimmen_base 77.67,36.80
 talk Khamira
@@ -34694,36 +34771,34 @@ talk Lord Gharesh-ri
 accept The Final Order
 step
 goto 77.69,36.32
-click Royal Study |q The Final Order/Talk to Abnur Tharn
+'Open Royal Study |q The Final Order/Talk to Abnur Tharn
 |tip Manually skip to the next step.
 step
 goto 77.39,35.57
 talk Abnur Tharn |q The Final Order/Talk to Abnur Tharn
 step
 goto 77.25,36.03
-click Dragons: A Report for the Queens |q The Final Order/Search the Royal Study
-|tip Manually skip to the next step.
+'Examine Dragons: A Report for the Queens |lorebook Dragons: A Report for the Queen/3/37/20
 step
 goto 77.76,35.96
-click Euraxia's Personal Journal |q The Final Order/Search the Royal Study
-|tip Manually skip to the next step.
+'Examine Euraxia's Personal Journal |lorebook Euraxia's Personal Journal/3/37/22
 step
 goto 77.65,35.56
-click Captain's Letter |q The Final Order/Search the Royal Study
+'Examine Captain's Letter |lorebook Captain's Letter/3/37/21
 step
 goto 77.54,35.89
 talk Abnur Tharn |q The Final Order/Talk to Abnur Tharn
 step
 goto 77.60,36.10
-click Rimmen Palace Throne Room |q The Final Order/Rendezvous at Sandswirl Manor
+'Open Rimmen Palace Throne Room |q The Final Order/Rendezvous at Sandswirl Manor
 |tip Manually skip to the next step.
 step
 goto 76.56,37.20
-click Rimmen Palace |q The Final Order/Rendezvous at Sandswirl Manor
+'Open Rimmen Palace |q The Final Order/Rendezvous at Sandswirl Manor
 |tip Manually skip to the next step.
 step
 goto 75.69,37.54
-click Rimmen |q The Final Order/Rendezvous at Sandswirl Manor
+'Open1 Rimmen |q The Final Order/Rendezvous at Sandswirl Manor
 |tip Manually skip to the next step.
 step
 goto 61.10,42.14 |q The Final Order/Rendezvous at Sandswirl Manor
@@ -34747,18 +34822,17 @@ step
 goto 65.86,25.97 |q The Final Order/Find a Way Inside the Manor
 step
 goto 64.70,23.80
-click Letter for Vittoria
-lorebook Letter for Vittoria 3/37/23
+'Examine Letter for Vittoria |lorebook Letter for Vittoria 3/37/23
 step
 goto 66.28,24.05
-click Well Bucket |q The Final Order/Find a Way Inside the Manor
+'Search Well Bucket |q The Final Order/Find a Way Inside the Manor
 step
 goto 66.69,24.56
-click Sandswirl Manor Cellar |q The Final Order/Enter the Cellar
+'Open Sandswirl Manor Cellar |q The Final Order/Enter the Cellar
 |tip Manually skip to the next step.
 step
 goto 66.68,24.78
-talk Abnur Tharn |q The Final Order/Talk to Abnur Tharn
+talk Abnur Tharn |q The Final Order/Talk to Abnur Tharn |future
 step
 goto 65.65,24.59 |q The Final Order/Find Prefect Calo
 step
@@ -34775,11 +34849,11 @@ goto 65.63,23.84
 talk Prefect Calo |q The Final Order/Talk to Prefect Calo
 step
 goto 65.21,23.52
-click Manor Main Hall |q The Final Order/Find the Dragonguard Report
+'Open Manor Main Hall |q The Final Order/Find the Dragonguard Report
 |tip Manually skip to the next step.
 step
 goto 65.16,22.63
-click Dragonguard Report |q The Final Order/Find the Dragonguard Report
+'Examine Dragonguard Report |q The Final Order/Find the Dragonguard Report
 step
 goto 65.23,22.89
 talk Prefect Calo |q The Final Order/Talk to Prefect Calo |future
@@ -34795,30 +34869,19 @@ step
 goto 42.49,58.27
 talk Zamarak |q The Final Order/Talk to Zamarak |future
 step
-goto 48.35,75.23 |q The Final Order/Track Down the Assassination Squad
+goto 49.24,35.92 |q The Final Order/Track Down the Assassination Squad
 step
-goto 46.59,27.34 |q The Final Order/Track Down the Assassination Squad
+goto elsweyr_base 34.42,51.85 |q The Final Order/Track Down the Assassination Squad
 step
-goto elsweyr_base 33.09,49.38 |q The Final Order/Track Down the Assassination Squad
-step
-goto 34.13,50.26 |q The Final Order/Track Down the Assassination Squad |tip Follow patch down.
-step
-goto 31.38,53.11 |q The Final Order/Track Down the Assassination Squad
-step
-goto 31.57,54.98 |q The Final Order/Track Down the Assassination Squad
-step
-goto 31.89,56.05 |q The Final Order/Track Down the Assassination Squad
+goto 31.38,53.11 |q The Final Order/Track Down the Assassination Squad |future
 step
 goto 32.36,56.10
-click Dov-Vahl Shrine |q The Final Order/Enter the Hidden Shrine |future
+'Open Dov-Vahl Shrine |q The Final Order/Enter the Hidden Shrine |future
 |tip Manually skip to the next step.
 step
 goto dragonguardoutpost_base 61.84,17.18
 |tip Follow path down.
-click the Hidden Shrine |q The Final Order/Search the Hidden Shrine
-step
-goto 61.84,17.18
-click Stone Pedestal |q The Final Order/Examine the Stone Pedestal
+'Examine the Hidden Shrine |q The Final Order/Search the Hidden Shrine
 step
 goto 61.84,17.18
 talk Zamarak |q The Final Order/Talk to Zamarak |future
@@ -34835,13 +34898,13 @@ step
 goto 33.63,68.72 |q The Final Order/Follow Captain Saulinia |tip Watch traps and Go up the stairs.
 step
 goto 36.17,62.03
-click Training Chamber |q The Final Order/Follow Captain Saulinia
+'Open Training Chamber |q The Final Order/Follow Captain Saulinia
 step
 goto 30.20,55.88
 kill Captain Saulinia |q The Final Order/Kill Captain Saulinia
 step
 goto 30.56,51.36
-click Dov-Vahl Shrine |q The Final Order/Talk to Dragonguard Orland
+'Open Dov-Vahl Shrine |q The Final Order/Talk to Dragonguard Orland
 |tip Manually skip to the next step.
 step
 goto 42.68,33.27
@@ -34852,7 +34915,7 @@ goto 61.84,17.18
 'Insert Ring into Stone Pedastal |q The Final Order/Open the Dragonguard Sanctuary
 step
 goto 63.65,16.64
-click Dov-Vahl Sanctuary |q The Final Order/Claim the Dragonhorn
+'Open Dov-Vahl Sanctuary |q The Final Order/Claim the Dragonhorn
 |tip Manually skip to the next step.
 step
 goto 91.14,15.01
@@ -34873,11 +34936,11 @@ goto 72.78,39.27
 talk Cadwell |q The Final Order/Talk to Cadwell
 step
 goto 73.66,38.42
-click Rimmen Palace |q The Final Order/Attend the Meeting in the Throne Room
+'Open Rimmen Palace |q The Final Order/Attend the Meeting in the Throne Room
 |tip Manually skip to the next step.
 step
 goto 76.52,37.22
-click Rimmen Palace Throne Room |q The Final Order/Attend the Meeting in the Throne Room
+'Open Rimmen Palace Throne Room |q The Final Order/Attend the Meeting in the Throne Room
 |tip Manually skip to the next step.
 step
 goto 77.66,36.76
@@ -34889,7 +34952,7 @@ turnin The Final Order
 accept Cadwell the Betrayer
 step
 goto 76.56,37.20
-click Rimmen Palace |q Cadwell the Betrayer/Find Abnur Tharn
+'Open Rimmen Palace |q Cadwell the Betrayer/Find Abnur Tharn
 |tip Manually skip to the next step.
 step
 goto 76.40,38.69
@@ -34920,14 +34983,14 @@ goto 42.10,51.46
 talk Abnur Tharn |q Cadwell the Betrayer/Talk to Abnur Tharn
 step
 goto 42.23,51.49
-click Sepulcher of Mischance |q Cadwell the Betrayer/Enter the Sepulcher of Mischance |future
+'Open Sepulcher of Mischance |q Cadwell the Betrayer/Enter the Sepulcher of Mischance |future
 |tip Manually skip to the next step.
 step
 goto SepulcherofMischance00_base 33.56,50.68
 talk Cadwell |q Cadwell the Betrayer/Talk to Cadwell
 step
 goto 21.23,58.90
-click Lower Crypts |q Cadwell the Betrayer/Recover Cadwell's Stolen Energy
+'Open Lower Crypts |q Cadwell the Betrayer/Recover Cadwell's Stolen Energy
 |tip Manually skip to the next step.
 step
 goto SepulcherofMischance01_base 51.00,65.00
@@ -34935,7 +34998,7 @@ goto SepulcherofMischance01_base 51.00,65.00
 |tip Manually skip to the next step.
 step
 goto 70.00,65.00
-click Crypt Library |q Cadwell the Betrayer/Recover Cadwell's Stolen Energy
+'Open Crypt Library |q Cadwell the Betrayer/Recover Cadwell's Stolen Energy
 |tip Manually skip to the next step.
 step
 goto SepulcherofMischance02_base 53.54,67.68
@@ -34943,7 +35006,7 @@ goto SepulcherofMischance02_base 53.54,67.68
 |tip Manually skip to the next step.
 step
 goto 52.53,87.88
-click Funerary Chamber |q Cadwell the Betrayer/Recover Cadwell's Stolen Energy
+'Open Funerary Chamber |q Cadwell the Betrayer/Recover Cadwell's Stolen Energy
 |tip Manually skip to the next step.
 step
 goto SepulcherofMischance03_base 67.68,46.46
@@ -34951,7 +35014,7 @@ goto SepulcherofMischance03_base 67.68,46.46
 |tip Manually skip to the next step.
 step
 goto 69.70,63.64
-click Necromancer Workshop |q Cadwell the Betrayer/Recover Cadwell's Stolen Energy
+'Open Necromancer Workshop |q Cadwell the Betrayer/Recover Cadwell's Stolen Energy
 |tip Manually skip to the next step.
 step
 goto SepulcherofMischance04_base 38.38,51.52
@@ -34962,7 +35025,7 @@ talk Captain Nala-do |q Cadwell the Betrayer/Talk to Nala-do's Spirit |future
 |tip Manually skip to the next step.
 step
 goto 32.32,69.70
-click Zumog Phoom's Lair |q Cadwell the Betrayer/Stop Zumog Phoom's Ritual
+'Open Zumog Phoom's Lair |q Cadwell the Betrayer/Stop Zumog Phoom's Ritual
 |tip Manually skip to the next step.
 step
 goto SepulcherofMischance00B_base 53.42,51.37
@@ -34975,18 +35038,18 @@ goto 53.42,50.68
 talk Cadwell |q Cadwell the Betrayer/Talk to Cadwell
 step
 goto 52.74,52.05
-click Portal to Rimmen |q Cadwell the Betrayer/Return to Rimmen Palace
+'Use Portal to Rimmen |q Cadwell the Betrayer/Return to Rimmen Palace
 |tip Manually skip to the next step.
 step
 goto rimmen_base 76.52,37.21
-click Rimmen Palace Throne Room |q Cadwell the Betrayer/Talk to Khamira |future
+'Open Rimmen Palace Throne Room |q Cadwell the Betrayer/Talk to Khamira |future
 |tip Manually skip to the next step.
 step
 goto 77.73,36.74
 talk Khamira |q Cadwell the Betrayer/Talk to Khamira
 step
 goto 77.69,36.32
-click Rimmen Palace Royal Study |q Cadwell the Betrayer/Enter the Royal Study
+'Open Rimmen Palace Royal Study |q Cadwell the Betrayer/Enter the Royal Study
 step
 goto 77.39,35.57
 'Listen to Khamira |q Cadwell the Betrayer/Listen to Khamira
@@ -35005,28 +35068,26 @@ step
 goto 64.46,49.11 |q Cadwell the Betrayer/Go to the Shadow Dance Ruins
 step
 goto 63.88,48.45
-click Shadow Dance Ruins |q Cadwell the Betrayer/Go to the Shadow Dance Ruins
+'Open Shadow Dance Ruins |q Cadwell the Betrayer/Go to the Shadow Dance Ruins
 step
 goto 63.96,48.35
 talk Khamira |q Cadwell the Betrayer/Talk to Khamira
 step
 goto 63.87,48.15
-click Portal to Shadow Dance Temple |q Cadwell the Betrayer/Follow Khamira |future
+'Use Portal to Shadow Dance Temple |q Cadwell the Betrayer/Follow Khamira |future
 |tip Manually skip to the next step.
 step
 goto dancingmoon01_base 66.24,47.64
-click Shadow Dance Temple |q Cadwell the Betrayer/Search the Shadow Dance Temple
+'Open Shadow Dance Temple |q Cadwell the Betrayer/Search the Shadow Dance Temple
 |tip Manually skip to the next step.
 step
 goto dancingmoon02_base 12.33,37.19
-click Temple Relic |q Cadwell the Betrayer/Examine the Temple Relic |future
+'Examine Temple Relic |q Cadwell the Betrayer/Examine the Temple Relic |future
 step
 goto 40.56,31.12 |q Cadwell the Betrayer/Find the Next Temple Relic
 step
 goto 62.04,45.66
 'Activate Temple Relic |q Cadwell the Betrayer/Activate the Temple Relic |future
-step
-goto 70.62,49.71 |q Cadwell the Betrayer/Find the Final Temple Relic
 step
 goto 72.45,71.29 |q Cadwell the Betrayer/Find the Final Temple Relic
 step
@@ -35040,7 +35101,7 @@ goto 86.51,45.66
 talk Khamira |q Cadwell the Betrayer/Talk to Khamira |future
 step
 goto 86.42,44.70
-click Vault of the Heavenly Scourage |q Cadwell the Betrayer/Enter the Temple Sanctuary |future
+'Open Vault of the Heavenly Scourage |q Cadwell the Betrayer/Enter the Temple Sanctuary |future
 |tip Manually skip to the next step.
 step
 goto dancingmoon03_base 49.16,48.92
@@ -35059,7 +35120,7 @@ goto 54.20,32.85
 talk Cadwell |q Cadwell the Betrayer/Talk to Cadwell
 step
 goto 54.20,32.85
-click Portal to Rimmen |q Cadwell the Betrayer/Return to Rimmen Palace |future
+'Use Portal to Rimmen |q Cadwell the Betrayer/Return to Rimmen Palace |future
 |tip Manually skip to the next step.
 step
 goto rimmen_base 77.72,36.72
@@ -35068,11 +35129,11 @@ turnin Cadwell the Betrayer
 accept Jode's Core
 step
 goto 76.56,37.20
-click Rimmen Palace |q Jode's Core/Gather Your Companions
+'Open Rimmen Palace |q Jode's Core/Gather Your Companions
 |tip Manually skip to the next step.
 step
 goto 75.69,37.54
-click Rimmen |q Jode's Core/Gather Your Companions
+'Open Rimmen |q Jode's Core/Gather Your Companions
 |tip Manually skip to the next step.
 step
 goto 57.84,47.16
@@ -35098,7 +35159,7 @@ step
 goto 25.64,73.75 |q Jode's Core/Go to the Moon Gate of Anequina
 step
 goto 25.47,72.21
-click Moon Gate of Anequina |q Jode's Core/Go to the Moon Gate of Anequina
+'Open Moon Gate of Anequina |q Jode's Core/Go to the Moon Gate of Anequina
 |tip Manually skip to the next step.
 step
 goto moongate_base 34.09,77.19 |q Jode's Core/Talk to Prefect Calo
@@ -35115,7 +35176,7 @@ goto 51.69,54.64
 talk Zamarak |q Jode's Core/Talk to Zamarak |future
 step
 goto 42.52,60.16
-click Upper Moon Gate Landing |q Jode's Core/Ascend the Moon Gate
+'Open Upper Moon Gate Landing |q Jode's Core/Ascend the Moon Gate
 |tip Manually skip to the next step.
 step
 goto 35.49,45.46
@@ -35124,7 +35185,7 @@ step
 goto 38.07,34.28 |q Jode's Core/Ascend the Moon Gate
 step
 goto 68.75,22.07
-click Combat Dragonhorn |q Jode's Core/Sound the Dragonhorn |future
+'Use Combat Dragonhorn |q Jode's Core/Sound the Dragonhorn |future
 step
 goto 68.75,22.07
 talk Khamira |q Jode's Core/Talk to Khamira
@@ -35134,7 +35195,7 @@ goto 68.75,22.07
 kill Euraxian Forces |q Jode's Core/Defend the Moon Gate
 step
 goto 76.34,22.18
-click Portal to Plane of Jode |q Jode's Core/Enter the Moon Gate
+'Use Portal to Plane of Jode |q Jode's Core/Enter the Moon Gate
 step
 goto moonsurface_base 16.28,42.57
 talk Khamira |q Jode's Core/Talk to Khamira
@@ -35146,22 +35207,71 @@ step
 goto 42.24,34.58 |q Jode's Core/Reach Jode's Core
 step
 goto 55.39,42.97
-click Jode's Core |q Jode's Core/Reach Jode's Core
+'Open Jode's Core |q Jode's Core/Reach Jode's Core
 step
 goto 69.09,42.19
 |tip Use Combat Dragonhorn when instructed to.
-|tip Loot Mulaamnir after battle.
+|tip Loot Mulaamnir after battle then watch dialogue.
 kill Mulaamnir |q Jode's Core/Kill Mulaamnir
 step
 goto 74.55,43.12
-click Dragonhorn |q Jode's Core/Sound the Dragonhorn
+'Use Dragonhorn |q Jode's Core/Sound the Dragonhorn
 step
 goto 73.65,43.64
-click Elsweyr |q Jode's Core/Leave the Plane of Jode
+'Open Elsweyr |q Jode's Core/Leave the Plane of Jode |future
 |tip Manually skip to the next step.
 step
 goto rimmen_base 70.91,41.98
-turnin Jode's Core |next Extra's\\Extra's\\Main Quests Only\\Expansion\\Southern Elsweyr
+talk Khamira
+turnin Jode's Core
+accept The Heir of Anequina
+step
+goto 61.79,42.18 |q The Heir of Anequina/Determine the Fate of Khamira's Soldiers
+step
+goto 41.66,59.26 |q The Heir of Anequina/Determine the Fate of Khamira's Soldiers
+step
+goto 18.52,55.22
+'Determine the Fate of Khamira's Soldiers |q The Heir of Anequina/Determine the Fate of Khamira's Soldiers
+step
+goto 18.52,55.22
+talk Lord Gharesh-ri |q The Heir of Anequina/Talk to Lord Gharesh-ri
+step
+goto 17.34,53.68
+talk Zamarak |q The Heir of Anequina/Talk to Zamarak
+step
+goto 17.14,56.69
+talk Prefect Calo |q The Heir of Anequina/Talk to Prefect Calo
+step
+goto 41.66,59.26 |q The Heir of Anequina/Return to the Palace 
+step
+goto 50.35,39.45
+'Return to the Palace |q The Heir of Anequina/Return to the Palace
+step
+goto 50.35,39.45
+talk Envoy Cashia |q The Heir of Anequina/Talk to Envoy Cashia
+step
+goto 71.93,38.95
+talk Abnur Tharn |q The Heir of Anequina/Talk to Abnur Tharn |future
+step
+goto 73.62,38.33
+'Open Rimmin Palace |q The Heir of Anequina/Talk to Khamira
+|tip Manually skip to the next step.
+step
+goto 75.28,36.13
+talk Khamira |q The Heir of Anequina/Talk to Khamira
+step
+goto 76.52,37.22
+'Open Rimmin Palace Throne Room |q The Heir of Anequina/Enter the Throne Room
+step
+goto 77.75,36.77
+talk Lord Gharesh-ri |q The Heir of Anequina/Talk to Lord Gharesh-ri
+step
+goto 77.75,36.77
+'Attend the Coronation |q The Heir of Anequina/Attend the Coronation
+step
+goto 77.75,36.77
+talk Queen Khamira
+turnin The Heir of Anequina |next Extra's\\Extra's\\Main Quests Only\\Expansion\\Southern Elsweyr
 ]])
 
 ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Expansion\\Southern Elsweyr",[[

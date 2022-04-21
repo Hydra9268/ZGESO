@@ -24990,7 +24990,27 @@ click Elsweyr |q Jode's Core/Leave the Plane of Jode
 |tip Manually skip to the next step.
 step
 goto rimmen_base 70.91,41.98
-turnin Jode's Core |next LEVELING\\Southern Elsweyr
+turnin Jode's Core
+accept The Heir of Anquina
+step
+goto 61.79,42.18 |q The Heir of Anquina/Determine the Fate of Khamira's Soldiers
+step
+goto 52.72,34.39 |q The Heir of Anquina/Determine the Fate of Khamira's Soldiers
+step
+goto 41.66,59.26 |q The Heir of Anquina/Determine the Fate of Khamira's Soldiers
+step
+goto 18.52,55.22
+'Determine the Fate of Khamira's Soldiers |q The Heir of Anquina/Determine the Fate of Khamira's Soldiers
+step
+goto 18.52,55.22
+talk Lord Gharesh-ri |q The Heir of Anquina/Talk to Lord Gharesh-ri
+step
+goto 17.34,53.68
+talk Zamarak |q The Heir of Anquina/Talk to Zamarak
+step
+goto 17.14,56.69
+talk Prefect Calo |q The Heir of Anquina/Talk to Prefect Calo
+step|next LEVELING\\Southern Elsweyr
 ]])
 
 ZGV:RegisterGuide("LEVELING\\Southern Elsweyr",[[
