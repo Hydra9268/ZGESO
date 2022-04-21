@@ -2333,7 +2333,7 @@ ZGV.MapData = {
 		["kiergofightingpit_top_base"] =        { name = "Black Kiergo Arena",                      id = 715, xoffset = 0.558730, yoffset = 0.765019, scale = 0.004717, },
 		["houseofembersinside_base"] =          { name = "Forsaken Citadel",                        id = 716, xoffset = 0.555348, yoffset = 0.725437, scale = 0.004476, },
 		["houseofembersoutside_base"] =         { name = "Forsaken Citadel",                        id = 716, xoffset = 0.556096, yoffset = 0.723532, scale = 0.003924, },
-		["newmoonfortress1_base"] =             { name = "New Moon Fortress",                       id = 717, xoffset = 0.524730, yoffset = 0.713187, scale = 0.008879, },
+		["newmoonfortress1_base"] =             { name = "New Moon Fortress",                       id = 717, xoffset = 0.524730, yoffset = 0.713187, scale = 0.012879, },
 		["newmoonfortress2_base"] =             { name = "New Moon Fortress",                       id = 717, xoffset = 0.516272, yoffset = 0.714357, scale = 0.008483, },
 		["newmooncapper_base"] =                { name = "New Moon Fortress",                       id = 717, xoffset = 0.519874, yoffset = 0.713990, scale = 0.008816, },
 		["HallsOfHighmane_EXT_base"] =          { name = "Halls of the Highmane",                   id = 718, xoffset = 0.514867, yoffset = 0.747852, scale = 0.008361, },

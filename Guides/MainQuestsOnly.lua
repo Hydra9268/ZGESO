@@ -35294,14 +35294,26 @@ goto 38.35,67.35
 talk Darkhu |q The Dragon's Lair/Obtain Forged Credentials
 step
 goto 29.91,61.22
-click The Sweet Breeze Inn |q The Dragon's Lair/Bribe Renmus's Clerk
+'Open The Sweet Breeze Inn |q The Dragon's Lair/Bribe Renmus's Clerk
 |tip Manually skip to the next step.
 step
 goto 29.33,61.76
 talk Nadama |q The Dragon's Lair/Bribe Renmus's Clerk
 step
+goto 26.42,61.30 |q The Dragon's Lair/Steal Merchant's Manifest |tip Leave this building.
+step
+goto 26.19,52.25 |q The Dragon's Lair/Steal Merchant's Manifest
+step
+goto 47.77,39.73 |q The Dragon's Lair/Steal Merchant's Manifest
+step
+goto 59.51,29.75 |q The Dragon's Lair/Steal Merchant's Manifest
+step
 goto 54.69,22.66
-click Merchant's Manifest |q The Dragon's Lair/Steal Merchant's Manifest
+'Steal Arniel Branck's Manifest |q The Dragon's Lair/Steal Merchant's Manifest
+step
+goto 46.48,36.77 |q The Dragon's Lair/Talk to Sai Sahan
+step
+goto 40.02,54.01 |q The Dragon's Lair/Talk to Sai Sahan
 step
 goto 54.31,54.27
 talk Sai Sahan |q The Dragon's Lair/Talk to Sai Sahan
@@ -35310,25 +35322,30 @@ goto 54.31,54.27
 'Wait for Sai Sahan |q The Dragon's Lair/Wait for Sai Sahan
 step
 goto 55.82,52.54
-click Senchal Palace |q The Dragon's Lair/Meet General Renmus
+'Open Senchal Palace |q The Dragon's Lair/Meet General Renmus
 |tip Manually skip to the next step.
 step
 goto Senchalpalace01_base 80.98,60.55
-click General Renmus's Office |q The Dragon's Lair/Meet General Renmus
+'Open General Renmus's Office |q The Dragon's Lair/Meet General Renmus
 step
 goto 84.92,56.49
 talk General Renmus |q The Dragon's Lair/Talk to General Renmus
 step
 goto 82.43,59.19
-click Senchal Palace |q The Dragon's Lair/Meet Sai Sahan Outside
+'Open Senchal Palace |q The Dragon's Lair/Meet Sai Sahan Outside
 |tip Manually skip to the next step.
 step
 goto 35.06,68.39
-click Senchal |q The Dragon's Lair/Meet Sai Sahan Outside
+'Open Senchal |q The Dragon's Lair/Meet Sai Sahan Outside
 |tip Manually skip to the next step.
 step
 goto senchal_base 52.93,55.72
 'Meet Sai Sahan Outside |q The Dragon's Lair/Meet Sai Sahan Outside
+step
+goto 53.31,55.33
+talk Aeliah Renmus |q The Dragon's Lair/Talk to Aeliah Renmus
+step
+goto 59.17,81.83 |q The Dragon's Lair/Find Za'ji in Senchal's Outskirts
 step
 goto 46.03,83.73
 'Find Za'ji in Senchal's Outskirts |q The Dragon's Lair/Find Za'ji in Senchal's Outskirts
@@ -35339,30 +35356,33 @@ talk Za'ji |q The Dragon's Lair/Talk to Za'ji
 step
 goto 57.55,93.98 |q The Dragon's Lair/Go to South Guard Ruins
 step
-goto southernelsweyr_base 61.05,66.73
+goto southernelsweyr_base 59.73,66.02
+wayshrine South Guard Ruins
+step
+goto 61.05,66.73
 'Go to South Guard Ruins |q The Dragon's Lair/Go to South Guard Ruins
 step
 goto 61.05,66.73
 talk Sai Sahan |q The Dragon's Lair/Talk to Sai Sahan
 step
 goto 64.25,68.37
-click for Nartise Merys |q The Dragon's Lair/Search for Nartise Merys
+'Search for Nartise Merys |q The Dragon's Lair/Search for Nartise Merys
 |tip Manually skip to the next step.
 step
 goto 66.91,71.68
-click for Nartise Merys |q The Dragon's Lair/Search for Nartise Merys
+'Search for Nartise Merys |q The Dragon's Lair/Search for Nartise Merys
 |tip Manually skip to the next step.
 step
 goto 69.17,71.00 |q The Dragon's Lair/Search for Nartise Merys
 step
 goto 71.55,68.05
-click Desolate House |q The Dragon's Lair/Search for Nartise Merys
+'Search Desolate House |q The Dragon's Lair/Search for Nartise Merys
 step
 goto 71.56,68.08
 'Wait for Sai Sahan |q The Dragon's Lair/Wait for Sai Sahan
 step
 goto 71.75,67.99
-click Escape Tunnel |q The Dragon's Lair/Pursue Nartise Merys
+'Open Escape Tunnel |q The Dragon's Lair/Pursue Nartise Merys
 |tip Manually skip to the next step.
 step
 goto 71.25,66.45
@@ -35372,8 +35392,8 @@ goto 71.25,66.45
 talk Nartise Merys |q The Dragon's Lair/Talk to Nartise Merys
 step
 goto 71.25,66.45
-talk Za'ji |q The Dragon's Lair/Talk to Za'ji
-talk Sai Sahan |q The Dragon's Lair/Talk to Sai Sahan
+talk Za'ji
+talk Sai Sahan |q The Dragon's Lair/Talk to Sai Sahan |future
 step
 goto 74.80,71.96
 'Find the Perfect Pounce |q The Dragon's Lair/Find the Perfect Pounce
@@ -35386,7 +35406,7 @@ goto 74.45,72.23
 'Wait for Za'ji to Board |q The Dragon's Lair/Wait for Za'ji to Board
 step
 goto 74.45,72.23
-click Boat Wheel |q The Dragon's Lair/Return Ship to Senchal
+'Travel Boat Wheel |q The Dragon's Lair/Return Ship to Senchal
 step
 goto senchal_base 78.61,25.85
 talk Aeliah Renmus |q The Dragon's Lair/Talk to Aeliah Renmus
@@ -35395,56 +35415,56 @@ goto 80.11,26.43
 talk Sai Sahan |q The Dragon's Lair/Talk to Sai Sahan
 step
 goto 79.70,26.52
-'Travel to Tideholm |q The Dragon's Lair/Sail to the Island
+'Travel to Tideholm |q The Dragon's Lair/Sail to the Island |future
 |tip Manually skip to the next step.
 step
 goto ELS_Dragonguard_island01_base 53.56,81.85
 talk Sai Sahan |q The Dragon's Lair/Talk to Sai Sahan
 step
 goto 64.92,69.46
-click Tideholm Cavern |q The Dragon's Lair/Search for the Dragon
+'Enter Tideholm Cavern |q The Dragon's Lair/Search for the Dragon
 |tip Manually skip to the next step.
 step
 goto ELS_Dragonguard_island02_base 20.26,69.75
-click Lever |q The Dragon's Lair/Search for the Dragon
+'Use Lever |q The Dragon's Lair/Search for the Dragon
 |tip Manually skip to the next step.
 step
 goto 11.17,62.47
-click Ancient Sanctum |q The Dragon's Lair/Search for the Dragon
+'Open Ancient Sanctum |q The Dragon's Lair/Search for the Dragon
 |tip Manually skip to the next step.
 step
 goto 46.30,23.03 |q The Dragon's Lair/Search for the Dragon
 step
 goto 20.68,25.05
 |tip Follow path up the stairs.
-click Sanctum Balcony |q The Dragon's Lair/Search for the Dragon
+'Open Sanctum Balcony |q The Dragon's Lair/Search for the Dragon
 |tip Manually skip to the next step.
 step
 goto ELS_Dragonguard_island05_base 37.11,74.50
-click Lever |q The Dragon's Lair/Search for the Dragon
+'Use Lever |q The Dragon's Lair/Search for the Dragon
 |tip Manually skip to the next step.
 step
 goto 27.40,66.89
-click Ancient Sanctum |q The Dragon's Lair/Search for the Dragon
+'Open Ancient Sanctum |q The Dragon's Lair/Search for the Dragon
 |tip Manually skip to the next step.
 step
 goto ELS_Dragonguard_island03_base 79.51,66.53
 |tip Follow path through 2 broken walls to the next door.
-click Sanctum Balcony |q The Dragon's Lair/Search for the Dragon
+'Open Sanctum Balcony |q The Dragon's Lair/Search for the Dragon
 |tip Manually skip to the next step.
 step
 goto 72.44,64.88
-click Lever |q The Dragon's Lair/Search for the Dragon
+'Use Lever |q The Dragon's Lair/Search for the Dragon
 |tip Manually skip to the next step.
 step
 goto 73.85,61.59
-click Ancient Sanctum |q The Dragon's Lair/Search for the Dragon
+'Open Ancient Sanctum |q The Dragon's Lair/Search for the Dragon
 step
 goto ELS_DG_Sanctuary02_base 48.01,54.46
 talk Sai Sahan |q The Dragon's Lair/Talk to Sai Sahan
 step
 goto 52.55,36.81
-click Dragon Chamber |q The Dragon's Lair/Enter the Dragonguard Chamber
+'Open Dragon Chamber |q The Dragon's Lair/Enter the Dragonguard Chamber
 step
 goto ELS_Dragonguard_island01_base 51.29,35.36
 'Find the Dragon |q The Dragon's Lair/Find the Dragon
@@ -35458,7 +35478,7 @@ turnin The Dragon's Lair
 accept Reformation
 step
 goto 46.37,37.41
-click Dragonguard Sanctum |q Reformation/Enter Dragonguard Sanctum
+'Open Dragonguard Sanctum |q Reformation/Enter Dragonguard Sanctum
 step
 goto ELS_DG_Sanctuary_base 26.24,69.13 |q Reformation/Talk to Za'ji
 step
@@ -35469,7 +35489,7 @@ step
 goto 19.76,74.16 |q Reformation/Return to Sai
 step
 goto 33.27,74.69
-click Nahfahlaar Chamber |q Reformation/Return to Sai
+'Open Nahfahlaar Chamber |q Reformation/Return to Sai
 step
 goto ELS_Dragonguard_island01_base 49.70,37.63
 talk Sai Sahan
@@ -35480,8 +35500,7 @@ talk Nahfahlaar
 accept Uneasy Alliances
 step
 goto 46.37,37.40
-click Dragonguard Sanctum |q Uneasy Alliances/Talk to Your Companions
-|tip Manually skip to the next step.
+'Open Dragonguard Sanctum |q Uneasy Alliances/Talk to Your Companions
 step
 goto ELS_DG_Sanctuary_base 26.27,68.95 |q Uneasy Alliances/Talk to Your Companions
 step
@@ -35489,7 +35508,7 @@ goto 26.27,68.95
 talk Za'ji |q Uneasy Alliances/Talk to Za'ji
 step
 goto 42.10,43.03
-click Dragonguard Sanctum Wayshrine
+'Use Dragonguard Sanctum Wayshrine
 'Travel to _Senchal_ in Southern Elsweyr |q Uneasy Alliances/Meet Za'ji at Black Heights
 |tip Manually skip to the next step.
 step
@@ -35499,35 +35518,59 @@ goto 34.47,79.49 |q Uneasy Alliances/Meet Za'ji at Black Heights
 step
 goto southernelsweyr_base 38.41,60.96 |q Uneasy Alliances/Meet Za'ji at Black Heights
 step
-'Open Southern Elsweyr Map
-'Travel to _Black Heights_ in  Southern Elsweyr |q Uneasy Alliances/Meet Za'ji at Black Heights
-|tip Manually skip to the next step.
+goto 37.08,59.23 |q Uneasy Alliances/Meet Za'ji at Black Heights
+step
+goto 37.67,56.14 |q Uneasy Alliances/Meet Za'ji at Black Heights
+step
+goto 31.39,55.28 |q Uneasy Alliances/Meet Za'ji at Black Heights
+step
+goto 32.42,57.71
+wayshrine Western Plains
+step
+goto 34.34,51.72 |q Uneasy Alliances/Meet Za'ji at Black Heights
+step
+goto 35.15,42.37 |q Uneasy Alliances/Meet Za'ji at Black Heights
+step
+goto 27.95,39.31
+wayshrine Black Heights Wayshrine
 step
 goto southernelsweyr_base 21.21,35.40
 'Meet Za'ji at Black Heights |q Uneasy Alliances/Meet Za'ji at Black Heights
 step
 goto 21.08,35.64
-click Khenarthi's Breath Temple Grounds |q Uneasy Alliances/Enter Khenarthi's Breath Temple
+'Open Khenarthi's Breath Temple Grounds |q Uneasy Alliances/Enter Khenarthi's Breath Temple
 step
 goto 20.60,36.14
 talk Clan Mother Tadali |q Uneasy Alliances/Talk to Clan Mother Tadali
 step
 goto 21.04,35.71
-click Elsweyr |q Uneasy Alliances/Talk to Za'ji
+'Open Elsweyr |q Uneasy Alliances/Talk to Za'ji
 |tip Manually skip to the next step.
 step
 goto 21.24,35.54
 talk Za'ji |q Uneasy Alliances/Talk to Za'ji
 step
-'Open Southern Elsweyr Map
+goto 27.89,39.28
+'Use Black Heights Wayshrine
 'Travel to _Western Plains_ in Southern Elsweyr |q Uneasy Alliances/Enter Moonlit Cove
 |tip Manually skip to the next step.
+step
+goto 21.19,63.90 |q Uneasy Alliances/Enter Moonlit Cove
+step
+goto 16.52,61.96
+'Open Moonlit Cove |q Uneasy Alliances/Enter Moonlit Cove |future
+|tip Manually skip to the next step.
+step
+goto moonlitcove05_base 56.66,54.39 |q Uneasy Alliances/Find Bahzahar's Hideout
+step
+goto moonlitcove01_base 74.15,37.09 |q Uneasy Alliances/Find Bahzahar's Hideout
 step
 goto 84.95,40.64
 'Find Bahzahar's Hideout |q Uneasy Alliances/Find Bahzahar's Hideout
 |tip Jump down
 step
 goto 87.79,41.40
+|tip Takes him a few minutes to make his way to you.
 talk Za'ji |q Uneasy Alliances/Talk to Za'ji
 step
 goto 70.64,50.74 |q Uneasy Alliances/Follow Za'ji
@@ -35539,30 +35582,30 @@ goto 71.82,30.82
 talk Za'ji |q Uneasy Alliances/Talk to Za'ji
 step
 goto 71.88,33.07
-|tip Look in the quest  area
-click Grappling Point |q Uneasy Alliances/Find the Key
+|tip Look up in the quest area and get on the tallest part of the rock so you can use the grappling hook.
+'Use Grappling Point |q Uneasy Alliances/Find the Key
 |tip Manually skip to the next step.
 step
 goto 64.88,31.19
-click Za'ji's Lockbox |q Uneasy Alliances/Find the Key
+'Open Za'ji's Lockbox |q Uneasy Alliances/Find the Key
 step
 goto 89.89,40.96
 |tip Jump down in the water.
-click Bahzahar's Hideout |q Uneasy Alliances/Enter Bahzahar's Hideout
+'Open Bahzahar's Hideout |q Uneasy Alliances/Enter Bahzahar's Hideout
 step
 goto moonlitcove04_base 93.09,34.38
 'Take Temple Bell |q Uneasy Alliances/Retrieve Temple Bell
 step
 goto 32.47,57.78
-click Western Plains Wayshrine
+'Open Southern Elsweyr
 'Travel to _Black Heights_ in Southern Elsweyr |q Uneasy Alliances/Return to Khenarthi's Breath Temple
 |tip Manually skip to the next step.
 step
-goto 21.07,35.66
-click Khenarthi's Breath Temple |q Uneasy Alliances/Return to Khenarthi's Breath Temple
+goto southernelsweyr_base 21.07,35.66
+'Open Khenarthi's Breath Temple |q Uneasy Alliances/Return to Khenarthi's Breath Temple
 step
 goto 20.46,36.49
-click Bell Hook |q Uneasy Alliances/Place the Temple Bell
+'Place Bell Hook |q Uneasy Alliances/Place the Temple Bell
 step
 goto 20.42,36.41
 talk Clan Mother Tadali |q Uneasy Alliances/Talk to Clan Mother Tadali
@@ -35577,19 +35620,19 @@ goto 20.47,36.47
 'Wait for Za'ji |q Uneasy Alliances/Wait for Za'ji
 step
 goto 20.19,37.34
-click Khenarthic Bell |q Uneasy Alliances/Cleanse the Temple Bell
+'Use Khenarthic Bell |q Uneasy Alliances/Cleanse the Temple Bell
 |tip Manually skip to the next step.
 step
 goto 19.69,36.29
-click Khenarthic Bell |q Uneasy Alliances/Cleanse the Temple Bell
+'Use Khenarthic Bell |q Uneasy Alliances/Cleanse the Temple Bell
 |tip Manually skip to the next step.
 step
 goto 20.87,36.79
-click Khenarthic Bell |q Uneasy Alliances/Cleanse the Temple Bell
+'Use Khenarthic Bell |q Uneasy Alliances/Cleanse the Temple Bell
 |tip Manually skip to the next step.
 step
 goto 20.58,35.85
-click Khenarthic Bell |q Uneasy Alliances/Cleanse the Temple Bell
+'Use Khenarthic Bell |q Uneasy Alliances/Cleanse the Temple Bell
 step
 goto 20.43,36.38
 talk Clan Mother Tadali |q Uneasy Alliances/Talk to Tadali
@@ -35616,25 +35659,22 @@ goto 49.21,70.50
 'Find the Mine |q Uneasy Alliances/Find the Mine
 step
 goto 49.21,70.50
-click Zazaradi's Quarry and Mine |q Uneasy Alliances/Enter the Mine
+'Open Zazaradi's Quarry and Mine |q Uneasy Alliances/Enter the Mine
 |tip Manually skip to the next step.
 step
 goto empyreanquarry_base 41.03,30.52
 |tip Follow path around to the door.
-click The Door |q Uneasy Alliances/Find Yahgrondu
+'Open The Door |q Uneasy Alliances/Find Yahgrondu
 |tip Manually skip to the next step.
 step
-goto 43.15,39.37
-click The Door |q Uneasy Alliances/Find Yahgrondu
-step
 goto 44.61,50.92
-kill Yahgrondu |q Uneasy Alliances/Defeat Yahgrondu
+kill Yahgrondu |q Uneasy Alliances/Defeat Yahgrondu |future
 step
 goto 41.87,49.05
 talk Nahfahlaar |q Uneasy Alliances/Talk to Nahfahlaar
 step
 goto 59.86,65.90
-click South Guard Ruins Wayshrine
+'Open Southern Elsweyr Map
 'Travel to _Dragonguard Sanctum_ in Southern Elsweyr |q Uneasy Alliances/Return to the Dragonguard Sanctum
 |tip Manually skip to the next step.
 step
@@ -35643,26 +35683,27 @@ talk Sai Sahan
 turnin Uneasy Alliances
 accept Order of the New Moon
 step
-goto 47.09,39.90 |q Order of the New Moon/Meet Aeliah Renmus in Senchal
+goto 42.27,43.29
+'Use Dragonguard Sanctum Wayshrine
+'Travel to _Senchal_ in Southern Elsweyr |q Order of the New Moon/Meet Aeliah Renmus in Senchal
+|tip Manually skip to the next step.
 step
-goto 38.58,53.64 |q Order of the New Moon/Meet Aeliah Renmus in Senchal
-step
-goto 54.68,53.74
+goto senchal_base 54.68,53.74
 'Meet Aeliah Renmus |q Order of the New Moon/Meet Aeliah Renmus in Senchal
 step
 goto 55.76,52.49
-click Senchal Palace |q Order of the New Moon/Talk to General Renmus
+'Open Senchal Palace |q Order of the New Moon/Talk to General Renmus
 |tip Manually skip to the next step.
 step
 goto Senchalpalace01_base 80.85,60.53
-click General Renmus's Office |q Order of the New Moon/Talk to General Renmus
+'Open General Renmus's Office |q Order of the New Moon/Talk to General Renmus
 |tip Manually skip to the next step.
 step
 goto 82.35,55.26
 talk General Renmus |q Order of the New Moon/Talk to General Renmus
 step
 goto 81.79,59.82
-click Senchal Palace  |q Order of the New Moon/Talk to Buzinda
+'Open Senchal Palace  |q Order of the New Moon/Talk to Buzinda
 |tip Manually skip to the next step.
 step
 goto 75.80,66.02
@@ -35673,15 +35714,11 @@ talk Aeliah Renmus |q Order of the New Moon/Go to the Sweet Breezes Inn
 |tip Manually skip to the next step.
 step
 goto 35.07,68.40
-click Senchal |q Order of the New Moon/Go to the Sweet Breezes Inn
+'Open Senchal |q Order of the New Moon/Go to the Sweet Breezes Inn
 |tip Manually skip to the next step.
 step
-goto senchal_base 40.49,53.69 |q Order of the New Moon/Go to the Sweet Breezes Inn
-step
-goto 40.82,41.30 |q Order of the New Moon/Go to the Sweet Breezes Inn
-step
-goto 34.10,55.38
-click Sweet Breezes Inn |q Order of the New Moon/Go to the Sweet Breezes Inn
+goto senchal_base 34.10,55.38
+'Open Sweet Breezes Inn |q Order of the New Moon/Go to the Sweet Breezes Inn
 step
 goto 29.76,60.83
 'Find Kazahn |q Order of the New Moon/Find Kazahn
@@ -35689,7 +35726,7 @@ goto 29.76,60.83
 step
 goto 29.76,60.83
 talk Kazahn |q Order of the New Moon/Talk to Kazahn
-'Tell her _"[Persuade] We're trying to find  Lahini to help her. If she meant anythiing to you, you'll help us."_"
+'Tell her _[Persuade] We're trying to find  Lahini to help her. If she meant anythiing to you, you'll help us._
 step
 goto 29.76,60.83
 talk Kazahn |q Order of the New Moon/Talk to Kazahn
@@ -35700,44 +35737,40 @@ step
 goto 29.73,60.12
 'Take Map |q Order of the New Moon/Take Ranza's Map
 step
-'Open Southern Elsweyr Map
-'Travel to _Senchal_ in Southern Elsweyr |q Order of the New Moon/Follow Ranza's Map
+goto 33.67,55.91
+|tip Follow the stairs all the way to the top.
+'Open Senchal |q Order of the New Moon/Follow Ranza's Map
 |tip Manually skip to the next step.
 step
-goto 56.32,67.19 |q Order of the New Moon/Follow Ranza's Map
-step
-goto 68.36,65.73 |q Order of the New Moon/Follow Ranza's Map
-step
-goto 72.04,43.48 |q Order of the New Moon/Follow Ranza's Map
+goto 59.55,70.56 |q Order of the New Moon/Explore House |future
 step
 goto 72.04,43.48
-click House |q Order of the New Moon/Explore House
+'Open House |q Order of the New Moon/Explore House |future
 |tip Manually skip to the next step.
 step
 goto 74.31,41.82
-click Attic |q Order of the New Moon/Explore House
+'Open Attic |q Order of the New Moon/Explore House
 |tip Upstairs in this house.
 step
 goto 73.85,43.35
-click Letter to Shirnama |q Order of the New Moon/Read the Note
+'Examine Letter to Shirnama |q Order of the New Moon/Read the Note
 step
 goto 74.18,42.48
-click House |q Order of the New Moon/Talk to Caska
+'Open House |q Order of the New Moon/Talk to Caska
 |tip Manually skip to the next step.
 step
 goto 74.36,43.06
 talk Caska |q Order of the New Moon/Talk to Caska
 step
 goto 72.31,43.39
-click Senchal |q Order of the New Moon/Enter the Black Kiergo
+|tip Go down the stairs.
+'Open Senchal |q Order of the New Moon/Enter the Black Kiergo
 |tip Manually skip to the next step.
-step
-goto 56.92,70.90  |q Order of the New Moon/Enter the Black Kiergo
 step
 goto 59.07,81.59 |q Order of the New Moon/Enter the Black Kiergo
 step
 goto 51.51,82.09
-click Senchal Outlaws Refuge |q Order of the New Moon/Enter the Black Kiergo
+'Open Senchal Outlaws Refuge |q Order of the New Moon/Enter the Black Kiergo
 |tip Manually skip to the next step.
 step
 goto Senchal Outlaws Refuge 42.05,61.76 |q Order of the New Moon/Enter the Black Kiergo
@@ -35752,30 +35785,38 @@ goto 34.76,84.04
 talk Caska |q Order of the New Moon/Talk to Caska
 step
 goto 34.60,89.18
-click Black Kiergo Arena |q Order of the New Moon/Compete in the Arena
+'Open Black Kiergo Arena |q Order of the New Moon/Compete in the Arena
 |tip Manually skip to the next step.
 step
 goto kiergofightingpit_base 51.28,52.96
 'Compete in the Arena |q Order of the New Moon/Compete in the Arena
 step
 goto 67.63,52.79
-click Black Kiergo Terrace |q Order of the New Moon/Talk to Shirnama
+'Open Black Kiergo Terrace |q Order of the New Moon/Talk to Shirnama
 |tip Manually skip to the next step.
 step
 goto kiergofightingpit_top_base 68.02,53.57
 talk Shirnama |q Order of the New Moon/Talk to Shirnama
 |tip Follow Caska Upstairs
 step
-goto 32.46,57.72
-click Western Plains Wayshrine
+'Open Southern Elsweyr
 'Travel to _Black Heights_ in Southern Elsweyr |q Order of the New Moon/Travel to the New Moon Fortress
 |tip Manually skip to the next step.
+step
+goto southernelsweyr_base 26.69,40.03 |q Order of the New Moon/Travel to the New Moon Fortress
+step
+goto 22.42,34.49 |q Order of the New Moon/Travel to the New Moon Fortress
 step
 goto 25.72,33.55 |q Order of the New Moon/Travel to the New Moon Fortress
 step
 goto 33.72,28.72 |q Order of the New Moon/Travel to the New Moon Fortress
 step
-goto 46.98,28.74 |q Order of the New Moon/Travel to the New Moon Fortress
+goto 41.95,28.36
+wayshrine Pridehome
+step
+goto 34.33,28.68 |q Order of the New Moon/Travel to the New Moon Fortress
+step
+goto 30.52,27.18 |q Order of the New Moon/Travel to the New Moon Fortress
 step
 goto 29.80,22.14
 'Travel to the New Moon Fortress |q Order of the New Moon/Travel to the New Moon Fortress
@@ -35784,13 +35825,15 @@ goto 29.80,22.14
 talk Vinbaza |q Order of the New Moon/Talk to New Moon Fortress Guard
 step
 goto 29.71,21.93
-click New Moon Fortress |q Order of the New Moon/Enter the New Moon Fortress
+'Open New Moon Fortress |q Order of the New Moon/Enter the New Moon Fortress |future
 |tip Manually skip to the next step.
 step
 goto newmoonfortress1_base 79.40,39.98
 talk Trial Master Zayri |q Order of the New Moon/Talk to Trial Master Zayri
 step
 goto 89.09,40.76 |q Order of the New Moon/Complete the First Trial
+step
+goto 89.20,30.39 |q Order of the New Moon/Complete the First Trial |tip Go down the stairs.
 step
 goto 82.51,36.85 |q Order of the New Moon/Complete the First Trial
 step
@@ -35803,11 +35846,11 @@ goto 81.26,25.13
 |tip Manually skip to the next step.
 step
 goto 76.12,30.67
+|tip Move Cube with light attacks.
 'Move Game Cube on Square |q Order of the New Moon/Complete the First Trial
-|tip Manually skip to the next step.
 step
 goto 73.39,30.35
-click New Moon Temple
+'Open New Moon Temple
 'Continue the Trial Path |q Order of the New Moon/Continue the Trial Path
 step
 goto 66.74,30.33
@@ -35822,7 +35865,7 @@ step
 goto 66.49,30.42 |q Order of the New Moon/Complete the Trial Path
 step
 goto 67.13,27.01
-'Move Game Cube on Square |q Order of the New Moon/Complete the First Trial
+'Move Game Cube on Square |q Order of the New Moon/Complete the Trial Path
 |tip Manually skip to the next step.
 step
 goto 66.24,21.42 |q Order of the New Moon/Complete the Trial Path
@@ -35873,7 +35916,7 @@ goto 57.00,31.06
 |tip Move Game Cube to this spot using attacks.
 step
 goto 55.74,30.47
-click New Moon Temple |q Order of the New Moon/Talk to Trial Master Zayri
+'Open New Moon Temple |q Order of the New Moon/Talk to Trial Master Zayri
 |tip Manually skip to the next step.
 step
 goto 50.53,30.33
@@ -35887,7 +35930,7 @@ goto 49.69,30.39
 talk Caska |q Order of the New Moon/Talk to Caska
 step
 goto 49.62,38.41
-click New Moon Ritual Chamber |q Order of the New Moon/Explore the Fortress
+'Open New Moon Ritual Chamber |q Order of the New Moon/Explore the Fortress
 |tip Manually skip to the next step.
 step
 goto 49.49,51.39
@@ -35903,10 +35946,10 @@ goto 49.49,51.39
 'Wait for Caska |q Order of the New Moon/Wait for Caska
 step
 goto 44.73,55.23
-click the Aeonstone |q Order of the New Moon/Destroy the Aeonstone
+'Destroy the Aeonstone |q Order of the New Moon/Destroy the Aeonstone
 step
 goto 40.32,52.80
-click New Moon Fortress |q Order of the New Moon/Meet Up With Caska
+'Open New Moon Fortress |q Order of the New Moon/Meet Up With Caska
 |tip Manually skip to the next step.
 step
 goto 25.56,50.21 |q Order of the New Moon/Meet Up With Caska
@@ -35932,10 +35975,7 @@ step
 goto 24.92,47.28
 talk Caska |q Order of the New Moon/Talk to Caska
 step
-goto 58.15,69.72 |q Order of the New Moon/Return to the Dragonguard Sanctum
-step
-goto 59.04,62.54
-click Senchal Wayshrine
+'Open Southern Elsweyr Map
 'Travel to _Dragonguard Sanctum_ in Southern Elsweyr |q Order of the New Moon/Return to the Dragonguard Sanctum
 |tip Manually skip to the next step.
 step
@@ -35948,7 +35988,7 @@ step
 goto 19.87,74.88 |q The Pride of Alkosh/Talk to Nahfahlaar
 step
 goto 33.27,74.78
-click Nahfahlaar's Chamber |q The Pride of Alkosh/Talk to Nahfahlaar
+'Open Nahfahlaar's Chamber |q The Pride of Alkosh/Talk to Nahfahlaar
 |tip Manually skip to the next step.
 step
 goto ELS_Dragonguard_island01_base 51.32,36.98
@@ -35962,19 +36002,19 @@ goto southernelsweyr_base 40.99,26.72
 'Go to Pridehome |q The Pride of Alkosh/Go to Pridehome
 step
 goto 41.70,23.53
-click The Pride of Alkosh |q The Pride of Alkosh/Search the Area
+'Examine The Pride of Alkosh |q The Pride of Alkosh/Search the Area
 step
 goto 41.70,23.53
 talk Caska |q The Pride of Alkosh/Talk to Caska
 step
 goto 36.64,23.82
-click Letter from Clan Mother Tadali |q The Pride of Alkosh/Search the Area
+'Examine Letter from Clan Mother Tadali |q The Pride of Alkosh/Search the Area
 step
 goto 41.70,23.53
 talk Za'ji |q The Pride of Alkosh/Talk to Za'ji
 step
 goto 40.85,20.29
-click the Area |q The Pride of Alkosh/Search the Area
+'Search the Area |q The Pride of Alkosh/Search the Area
 step
 goto 40.85,20.29
 talk Moon-Priest Nuziwa |q The Pride of Alkosh/Talk to Moon-Priest Nuziwa
@@ -35983,30 +36023,31 @@ goto 37.02,21.26
 talk Sai Sahan |q The Pride of Alkosh/Talk to Sai Sahan
 step
 goto 36.66,21.42
-click Pridehome Temple Grounds |q The Pride of Alkosh/Search for the Clan Mother
+'Open Pridehome Temple Grounds |q The Pride of Alkosh/Search for the Clan Mother
 |tip Manually skip to the next step.
 step
 goto 39.00,18.11 |q The Pride of Alkosh/Search for the Clan Mother
 step
 goto 36.05,17.88
-click for the Clan Mother |q The Pride of Alkosh/Search for the Clan Mother
+'Search for the Clan Mother |q The Pride of Alkosh/Search for the Clan Mother
 |tip Manually skip to the next step.
 step
 goto 34.80,17.76
-click Pridehome Temple |q The Pride of Alkosh/Enter the Temple
+'Open Pridehome Temple |q The Pride of Alkosh/Enter the Temple
 |tip Manually skip to the next step.
 step
 goto 33.86,17.37
 talk Clan Mother Hizuni |q The Pride of Alkosh/Talk to Clan Mother Hizuni
 step
 goto 33.48,17.25
-click Statue of Ja'darri |q The Pride of Alkosh/Examine the Statue
+'Examine Statue of Ja'darri |q The Pride of Alkosh/Examine the Statue
 step
 goto 34.03,17.44
-talk Sai Sahan |q The Pride of Alkosh/Talk to Sai Sahan
+talk Sai Sahan |q The Pride of Alkosh/Find Nahfahlaar |future
+|tip Manually skip to the next step.
 step
 goto 35.40,18.00
-click Pridehome Temple Grounds |q The Pride of Alkosh/Find Nahfahlaar
+'Open Pridehome Temple Grounds |q The Pride of Alkosh/Find Nahfahlaar
 |tip Manually skip to the next step.
 step
 goto 35.30,18.66
@@ -36020,7 +36061,9 @@ step
 |tip Manually skip to the next step.
 step
 goto 19.67,37.52
-click Khenarthi's Breath Temple |q The Pride of Alkosh/Go to Khenarthi's Breath Temple
+|tip Go Inside Khenarthi's Breath Temple.
+|tip Watch the dialogue.
+'Open Khenarthi's Breath Temple |q The Pride of Alkosh/Go to Khenarthi's Breath Temple
 step
 goto 19.09,38.28
 talk Clan Mother Tadali |q The Pride of Alkosh/Talk to Clan Mother Tadali
@@ -36029,154 +36072,140 @@ goto 19.20,38.11
 talk Aeliah Renmus |q The Pride of Alkosh/Talk to Aeliah Renmus
 step
 goto 19.59,37.59
-click Khenarthi's Temple Grounds |q The Pride of Alkosh/Meet Aeliah Renmus at the Statue
+'Open Khenarthi's Temple Grounds |q The Pride of Alkosh/Meet Aeliah Renmus at the Statue
 |tip Manually skip to the next step.
 step
 goto 21.03,35.72
-click Elsweyr |q The Pride of Alkosh/Meet Aeliah Renmus at the Statue
+'Open Elsweyr |q The Pride of Alkosh/Meet Aeliah Renmus at the Statue
 |tip Manually skip to the next step.
 step
 goto 27.95,39.35
-click Black Heights Wayshrine
+'Use Black Heights Wayshrine
 'Travel to _Western Plains_ in Southern Elsweyr |q The Pride of Alkosh/Meet Aeliah Renmus at the Statue
 |tip Manually skip to the next step.
+step
+goto 27.53,47.21 |q The Pride of Alkosh/Meet Aeliah Renmus at the Statue
 step
 goto southernelsweyr_base 22.31,46.90
 talk Aeliah Renmus |q The Pride of Alkosh/Meet Aeliah Renmus at the Statue
 step
 goto 22.16,46.87
-click Bell Stand |q The Pride of Alkosh/Press the Pedal
+'Use Bell Stand |q The Pride of Alkosh/Press the Pedal
 step
 goto 22.12,46.26
-click Khenarthic Bell |q The Pride of Alkosh/Cleanse the Bells
+'Use Khenarthic Bell |q The Pride of Alkosh/Cleanse the Bells
 |tip Manually skip to the next step.
 step
 goto 21.48,47.24
-click Khenarthic Bell |q The Pride of Alkosh/Cleanse the Bells
+'Use Khenarthic Bell |q The Pride of Alkosh/Cleanse the Bells
 |tip Manually skip to the next step.
 step
 goto 21.67,46.56
-click Khenarthic Bell |q The Pride of Alkosh/Cleanse the Bells
+'Use Khenarthic Bell |q The Pride of Alkosh/Cleanse the Bells
 |tip Manually skip to the next step.
 step
 goto 22.23,47.46
-click Khenarthic Bell |q The Pride of Alkosh/Cleanse the Bells
+'Use Khenarthic Bell |q The Pride of Alkosh/Cleanse the Bells
 step
 goto 22.18,46.87
 talk Clan Mother Tadali |q The Pride of Alkosh/Talk to Clan Mother Tadali
 step
 goto 21.81,46.87
-click Halls of the Highmane |q The Pride of Alkosh/Enter the Halls of the Highmane
+'Open Halls of the Highmane |q The Pride of Alkosh/Enter the Halls of the Highmane |future
 |tip Manually skip to the next step.
 step
 goto HallsOfHighmane_EXT_base 58.85,50.03
 talk Aeliah Renmus |q The Pride of Alkosh/Talk to Aeliah Renmus
 step
 goto HallsOfHighmane_EXT_base 58.88,50.00
-click Grappling Point |q The Pride of Alkosh/Pass the First Trial
+'Use Grappling Point |q The Pride of Alkosh/Pass the First Trial
 |tip Manually skip to the next step.
 step
 goto 52.38,50.94
-click Grappling Point |q The Pride of Alkosh/Pass the First Trial
+'Use Grappling Point |q The Pride of Alkosh/Pass the First Trial
 |tip Manually skip to the next step.
 step
 goto 47.62,56.00
-click Grappling Point |q The Pride of Alkosh/Pass the First Trial
+'Use Grappling Point |q The Pride of Alkosh/Pass the First Trial
 |tip Manually skip to the next step.
 step
 goto 36.48,58.29
-click Grappling Point |q The Pride of Alkosh/Pass the First Trial
+'Use Grappling Point |q The Pride of Alkosh/Pass the First Trial
 |tip Manually skip to the next step.
 step
 goto 41.50,57.47
-click Grappling Point |q The Pride of Alkosh/Pass the First Trial
+'Use Grappling Point |q The Pride of Alkosh/Pass the First Trial
 |tip Manually skip to the next step.
 step
 goto 52.44,58.50
-click Grappling Point |q The Pride of Alkosh/Pass the First Trial
+'Use Grappling Point |q The Pride of Alkosh/Pass the First Trial
 |tip Manually skip to the next step.
 step
 goto 56.88,58.32
-click Grappling Point |q The Pride of Alkosh/Pass the First Trial
+'Use Grappling Point |q The Pride of Alkosh/Pass the First Trial
 |tip Manually skip to the next step.
 step
 goto 57.61,44.42
-click Grappling Point |q The Pride of Alkosh/Pass the First Trial
+'Use Grappling Point |q The Pride of Alkosh/Pass the First Trial
 |tip Manually skip to the next step.
 step
 goto 46.15,39.80
-click Grappling Point |q The Pride of Alkosh/Pass the First Trial
+'Use Grappling Point |q The Pride of Alkosh/Pass the First Trial
 |tip Manually skip to the next step.
 step
 goto 37.42,43.45
 'Activate Shrine to Khenarthi |q The Pride of Alkosh/Pass the First Trial
 step
-goto 46.15,39.80
-click Grappling Point |q The Pride of Alkosh/Reach the Second Trial
-|tip Manually skip to the next step.
-step
 goto 32.60,46.24
-click Grappling Point |q The Pride of Alkosh/Reach the Second Trial
+'Use Grappling Point |q The Pride of Alkosh/Reach the Second Trial
 |tip Manually skip to the next step.
 step
 goto 29.07,50.09
-click Path of the Moon Prince |q The Pride of Alkosh/Reach the Second Trial
+'Open Path of the Moon Prince |q The Pride of Alkosh/Reach the Second Trial
 |tip Manually skip to the next step.
 step
 goto HallsOfHighmane_INT_base 47.92,31.08
 'Reach of the Second Trial |q The Pride of Alkosh/Reach the Second Trial
 step
 goto 56.17,21.80
-click Brazier |q The Pride of Alkosh/Pass the Second Trial
+'Use Brazier |q The Pride of Alkosh/Pass the Second Trial
 |tip Fight the Waves of Dro'm'Athra Enemies then move to next Brazier
 |tip Manually skip to the next step.
 step
 goto 36.45,21.74
-click Brazier |q The Pride of Alkosh/Pass the Second Trial
+'Use Brazier |q The Pride of Alkosh/Pass the Second Trial
 |tip Fight the Waves of Dro'm'Athra Enemies then move to next Brazier
 |tip Manually skip to the next step.
 step
 goto 56.23,41.29
-click Brazier |q The Pride of Alkosh/Pass the Second Trial
+'Use Brazier |q The Pride of Alkosh/Pass the Second Trial
 |tip Fight the Waves of Dro'm'Athra Enemies then move to next Brazier
 |tip Manually skip to the next step.
 step
 goto 36.74,41.35
-click Brazier |q The Pride of Alkosh/Pass the Second Trial
+'Use Brazier |q The Pride of Alkosh/Pass the Second Trial
 |tip Fight the Waves of Dro'm'Athra Enemies then move to next Brazier
 step
 goto 29.47,32.01
-click The Inner Halls |q The Pride of Alkosh/Reach the Third Trial
+'Open The Inner Halls |q The Pride of Alkosh/Reach the Third Trial
 |tip Manually skip to the next step.
 step
 goto 23.47,51.21 |q The Pride of Alkosh/Reach the Third Trial
 step
 goto 48.90,64.42
-click Path of Pride |q The Pride of Alkosh/Reach the Third Trial
+'Open Path of Pride |q The Pride of Alkosh/Reach the Third Trial
 |tip Manually skip to the next step.
 step
 goto HallsOfHighmaneBoss_base 77.01,86.39
-click Path of Mending |q The Pride of Alkosh/Pass the Third Trial
-|tip Manually skip to the next step.
-step
-goto 76.92,82.85
-'Move Game Cube towards twice the door you came in once with heavy attacks |q The Pride of Alkosh/Pass the Third Trial
+'Open Path of Mending |q The Pride of Alkosh/Pass the Third Trial
 |tip Manually skip to the next step.
 step
 goto 79.90,82.48
 'Move Game Cube to this location |q The Pride of Alkosh/Pass the Third Trial
 |tip Manually skip to the next step.
 step
-goto 78.51,73.94
-'Move Next gamne cube through doorway then to the right |q The Pride of Alkosh/Pass the Third Trial
-|tip Manually skip to the next step.
-step
 goto 67.56,79.70
 'Move Game Cube to this location |q The Pride of Alkosh/Pass the Third Trial
-|tip Manually skip to the next step.
-step
-goto 71.08,84.52
-'Move Game Cube through doorway then to the right over the square |q The Pride of Alkosh/Pass the Third Trial
 |tip Manually skip to the next step.
 step
 goto 67.56,79.70
@@ -36184,37 +36213,33 @@ goto 67.56,79.70
 |tip Manually skip to the next step.
 step
 goto 71.22,76.86
-click Grappling Point |q The Pride of Alkosh/Pass the Third Trial
+'Use Grappling Point |q The Pride of Alkosh/Pass the Third Trial
 |tip Corner of platform where you can in.
 |tip Manually skip to the next step.
 step
 goto 76.92,83.73
-click Stone Reconsturction |q The Pride of Alkosh/Pass the Third Trial
+'Use Stone Reconsturction |q The Pride of Alkosh/Pass the Third Trial
 |tip Manually skip to the next step.
 step
 goto 75.30,80.49
 'Move Game Cube to this location |q The Pride of Alkosh/Pass the Third Trial
 |tip Manually skip to the next step.
 step
-goto 67.51,80.64
-|tip Move Game Cube through newly opened door |q The Pride of Alkosh/Pass the Third Trial
-|tip Manually skip to the next step.
-step
 goto 64.90,76.04
 'Move Game Cube to this location |q The Pride of Alkosh/Pass the Third Trial
 step
 goto 58.83,77.52
-click Hall of Guardians |q The Pride of Alkosh/Search for the Mask
+'Open Hall of Guardians |q The Pride of Alkosh/Search for the Mask
 |tip Manually skip to the next step.
 step
 goto 53.39,77.57
-click Tomb of Ja'darri |q The Pride of Alkosh/Search for the Mask
+'Examine Tomb of Ja'darri |q The Pride of Alkosh/Search for the Mask
 step
 goto 54.24,77.46
 talk Aeliah Renmus |q The Pride of Alkosh/Talk to Aeliah Renmus
 step
 goto 49.82,77.52
-click Walk of the Ancient Kings |q The Pride of Alkosh/Find the Mask
+'Open Walk of the Ancient Kings |q The Pride of Alkosh/Find the Mask
 |tip Manually skip to the next step.
 step
 goto 40.80,35.75
@@ -36233,7 +36258,7 @@ step
 goto ELS_DG_Sanctuary_base 19.95,74.14 |q The Pride of Alkosh/Talk to Sai Sahan
 step
 goto 33.27,74.68
-click Nahfahlaar's Chamber |q The Pride of Alkosh/Talk to Sai Sahan
+'Open Nahfahlaar's Chamber |q The Pride of Alkosh/Talk to Sai Sahan
 |tip Manually skip to the next step.
 step
 goto ELS_Dragonguard_island01_base 50.47,35.90
@@ -36248,14 +36273,16 @@ step
 'Travel to _Black Heights_ in Southern Elsweyr |q The Dragonguard/Go to the Sentry Tower
 |tip Manually skip to the next step.
 step
-goto southernelsweyr_base 37.80,42.23
+goto southernelsweyr_base 28.19,40.66 |q The Dragonguard/Go to the Sentry Tower
+step
+goto 37.80,42.23
 'Go to the Sentry Tower |q The Dragonguard/Go to the Sentry Tower
 step
 goto 37.80,42.23
 talk Caska |q The Dragonguard/Talk to Caska
 step
 goto 37.79,43.50
-click West Sentry Tower |q The Dragonguard/Talk to Za'ji
+'Open West Sentry Tower |q The Dragonguard/Talk to Za'ji
 |tip Manually skip to the next step.
 step
 goto 37.79,43.28
@@ -36270,20 +36297,22 @@ step
 goto 50.37,24.94 |q The Dragonguard/Follow Nahfahlaar
 step
 goto 54.45,20.37
-click Doomstone Keep |q The Dragonguard/Follow Nahfahlaar
+'Open Doomstone Keep |q The Dragonguard/Follow Nahfahlaar
 step
 goto 54.94,19.72
 talk Sai Sahan  |q The Dragonguard/Talk to Sai Sahan
 step
+goto 56.17,20.17 |q The Dragonguard/Find a Way Into Doomstone Keep
+step
 goto 59.54,17.68
-click Doomstone Caverns |q The Dragonguard/Find a Way Into Doomstone Keep
+'Open Doomstone Caverns |q The Dragonguard/Find a Way Into Doomstone Keep |future
 |tip Follow path to the right
 step
 goto doomstonkeep_base 57.58,51.77
-click the Caverns |q The Dragonguard/Search the Caverns
+'Search the Caverns |q The Dragonguard/Search the Caverns
 step
 goto 57.58,51.77
-click Battle of the Black Beast |q The Dragonguard/Read the Tablet
+'Examine Battle of the Black Beast |q The Dragonguard/Read the Tablet
 step
 goto 57.58,51.95
 talk Sai Sahan |q The Dragonguard/Talk to Sai Sahan
@@ -36308,17 +36337,17 @@ goto 35.60,54.86
 talk Sai Sahan |q The Dragonguard/Talk to Sai Sahan
 step
 goto 35.60,42.23
-click Sealing Chamber |q The Dragonguard/Enter the Sealing Chamber
+'Open Sealing Chamber |q The Dragonguard/Enter the Sealing Chamber
 |tip Manually skip to the next step.
 step
 goto 34.97,24.16
-click the Sealing Chamber |q The Dragonguard/Enter the Sealing Chamber
+'Open the Sealing Chamber |q The Dragonguard/Enter the Sealing Chamber
 step
 goto 34.97,24.16
 talk Nahfahlaar |q The Dragonguard/Talk to Nahfahlaar
 step
 goto 34.97,24.16
-'Raise the Mask |q The Dragonguard/Raise the Mask
+'Use the Mask |q The Dragonguard/Raise the Mask
 step
 goto ELS_DG_DQ5Oasis_base 49.31,33.33
 'Explore the Spilled Sand |q The Dragonguard/Explore the Spilled Sand
@@ -36327,10 +36356,10 @@ goto 49.31,33.33
 talk Ja'darri |q The Dragonguard/Talk to Ja'darri
 step
 goto 49.31,26.22
-click the Mask of Alkosh |q The Dragonguard/Awaken the Mask of Alkosh
+'Use the Mask of Alkosh |q The Dragonguard/Awaken the Mask of Alkosh
 step
 goto doomstonkeep_base 43.78,14.90
-click Doomstone Keep |q The Dragonguard/Return to the Surface
+'Open Doomstone Keep |q The Dragonguard/Return to the Surface
 |tip Manually skip to the next step.
 step
 goto ELS_DG_LaatvulonsCavern_base 51.19,32.92
@@ -36340,14 +36369,14 @@ goto 53.58,46.81
 kill the Cultists |q The Dragonguard/Defeat the Cultists
 step
 goto 48.27,48.61
-click Doomstone Keep |q The Dragonguard/Defeat the Cult Reinforcements
+'Open Doomstone Keep |q The Dragonguard/Defeat the Cult Reinforcements
 |tip Manually skip to the next step.
 step
 goto 28.99,52.99
 kill the Cult Reinforcements |q The Dragonguard/Defeat the Cult Reinforcements
 step
 goto 46.42,55.82
-click Doomstone Keep |q The Dragonguard/Reach Laatvulon
+'Open Doomstone Keep |q The Dragonguard/Reach Laatvulon
 |tip Manually skip to the next step.
 step
 goto 60.15,73.47
@@ -36366,7 +36395,7 @@ step
 goto 19.80,74.34 |q The Dragonguard/Talk to Nahfahlaar
 step
 goto 33.27,74.67
-click Nahfahlaar's Chamber |q The Dragonguard/Talk to Nahfahlaar
+'Open Nahfahlaar's Chamber |q The Dragonguard/Talk to Nahfahlaar
 |tip Manually skip to the next step.
 step
 goto ELS_Dragonguard_island01_base 51.16,36.72
@@ -36381,7 +36410,7 @@ goto 51.32,35.75
 talk Nahfahlaar |q The Dark Aeon/Talk to Nahfahlaar
 step
 goto 49.82,37.39
-click Portal |q The Dark Aeon/Investigate the Portal
+'Use Portal |q The Dark Aeon/Investigate the Portal
 step
 goto 49.60,36.40
 talk Abnur Tharn |q The Dark Aeon/Talk to Abnur Tharn
@@ -36390,7 +36419,9 @@ step
 'Travel to _Pridehome_ in Southern Elsweyr |q The Dark Aeon/Go to the New Moon Fortress
 |tip Manually skip to the next step.
 step
-goto southernelsweyr_base 30.30,26.96
+goto southernelsweyr_base 36.66,29.56 |q The Dark Aeon/Go to the New Moon Fortress
+step
+goto 30.30,26.96
 'Go to the New Moon Fortress |q The Dark Aeon/Go to the New Moon Fortress
 step
 goto 30.30,26.96
@@ -36400,7 +36431,7 @@ goto 27.01,24.39
 'Find a Way Inside |q The Dark Aeon/Find a Way Inside
 step
 goto 27.01,24.39
-click New Moon Fortress |q The Dark Aeon/Enter the New Moon Fortress
+'Open New Moon Fortress |q The Dark Aeon/Enter the New Moon Fortress
 |tip Manually skip to the next step.
 step
 goto newmooncapper_base 46.22,52.96 |q The Dark Aeon/Go to the Amphitheater
@@ -36409,7 +36440,7 @@ goto 09.19,27.52
 'Go to the Amphitheater |q The Dark Aeon/Go to the Amphitheater
 step
 goto 09.19,27.52
-click New Moon Amphitheater |q The Dark Aeon/Find Kaalgrontiid
+'Open New Moon Amphitheater |q The Dark Aeon/Find Kaalgrontiid
 step
 goto newmoonfortress1_base 50.69,60.23
 'Confront Kaalgrontiid |q The Dark Aeon/Confront Kaalgrontiid
@@ -36432,7 +36463,7 @@ goto 49.34,61.60
 'Wait for Tharn to Open the Portal |q The Dark Aeon/Wait for Tharn to Open the Portal
 step
 goto 49.34,61.60
-click the Portal to Dragonhold |q The Dark Aeon/Enter the Portal to Dragonhold
+'Use the Portal to Dragonhold |q The Dark Aeon/Enter the Portal to Dragonhold
 |tip Manually skip to the next step.
 step
 goto dragonholdlower01_base 83.77,13.29
@@ -36451,7 +36482,8 @@ goto 35.80,41.51
 talk Abnur Tharn |q The Dark Aeon/Talk to Abnur Tharn
 step
 goto 44.90,62.50
-click Audience Chamber |q The Dark Aeon/Explore the Ancient Ruins
+'Open Audience Chamber |q The Dark Aeon/Explore the Ancient Ruins
+|tip Watch the dialogue.
 step
 goto 34.05,63.26 |q The Dark Aeon/.*Disrupt the Ritual Sites.* |count 1
 step
@@ -36460,7 +36492,7 @@ step
 goto dragonholdlower02_base 23.40,87.07
 'Disrupt the Ritual Sites |q The Dark Aeon/.*Disrupt the Ritual Sites.* |count 1
 step
-goto 32.18,68.08 |q The Dark Aeon/.*Disrupt the Ritual Sites.* |count 1
+goto 32.18,68.08 |q The Dark Aeon/.*Disrupt the Ritual Sites.* |count 2
 step
 goto 66.38,54.13
 'Disrupt the Ritual Sites |q The Dark Aeon/.*Disrupt the Ritual Sites.* |count 2
@@ -36479,7 +36511,7 @@ goto 45.01,66.56
 talk Abnur Tharn |q The Dark Aeon/Talk to Abnur Tharn
 step
 goto 55.22,69.65
-click Dragonhold Depths |q The Dark Aeon/Find the Aegis
+'Open Dragonhold Depths |q The Dark Aeon/Find the Aegis
 |tip Manually skip to the next step.
 step
 goto dragonholdlower03_base 44.34,31.44 |q The Dark Aeon/Find the Aegis
@@ -36493,21 +36525,21 @@ goto 24.82,33.58
 talk Abnur Tharn |q The Dark Aeon/Talk to Abnur Tharn
 step
 goto 24.92,51.16
-click Inner Sanctum |q The Dark Aeon/Find the Aegis
+'Open Inner Sanctum |q The Dark Aeon/Find the Aegis
 step
 goto 22.28,82.19
 kill Joorahmaar |q The Dark Aeon/Kill Joorahmaar
 step
 goto 33.93,82.14
-click Upper Tunnels |q The Dark Aeon/Escape Dragonhold
+'Use Upper Tunnels |q The Dark Aeon/Escape Dragonhold
 |tip Manually skip to the next step.
 step
 goto 57.12,77.41
-click Dragonhold Surface |q The Dark Aeon/Escape Dragonhold
+'Open Dragonhold Surface |q The Dark Aeon/Escape Dragonhold
 |tip Manually skip to the next step.
 step
 goto 57.02,71.35
-click Portal to Elsweyr |q The Dark Aeon/Escape Dragonhold
+'Use Portal to Elsweyr |q The Dark Aeon/Escape Dragonhold
 |tip Manually skip to the next step.
 step
 goto southernelsweyr_base 33.57,66.98
@@ -36523,7 +36555,7 @@ step
 goto ELS_DG_Sanctuary_base 20.40,74.90 |q The Dark Aeon/Go to Nahfahlaar's Chamber
 step
 goto 33.27,74.60
-click Nahfahlaar's Chamber |q The Dark Aeon/Go to Nahfahlaar's Chamber
+'Open Nahfahlaar's Chamber |q The Dark Aeon/Go to Nahfahlaar's Chamber
 step
 goto ELS_Dragonguard_island01_base 50.28,35.52
 talk Sai Sahan
@@ -36531,7 +36563,7 @@ turnin The Dark Aeon
 accept New Moon Rising
 step
 goto 46.37,37.41
-click Dragonguard Sanctum |q New Moon Rising/Talk to Khamira
+'Open Dragonguard Sanctum |q New Moon Rising/Talk to Khamira
 |tip Manually skip to the next step.
 step
 goto ELS_DG_Sanctuary_base 19.19,69.34 |q New Moon Rising/Talk to Khamira
@@ -36549,8 +36581,10 @@ step
 'Travel to _Western Plains_ in Southern Elsweyr |q New Moon Rising/Go to Moonlit Cove
 |tip Manually skip to the next step.
 step
-goto southernelsweyr_base 16.52,61.97
-click Moonlit Cove |q New Moon Rising/Go to Moonlit Cove
+goto southernelsweyr_base 20.46,63.61
+step
+goto 16.52,61.97
+'Open Moonlit Cove |q New Moon Rising/Go to Moonlit Cove |future
 |tip Manually skip to the next step.
 step
 goto moonlitcove05_base 67.16,63.54
@@ -36563,6 +36597,10 @@ goto 45.07,85.42
 step
 goto 44.6,85.31
 talk Sai Sahan |q New Moon Rising/Talk to Sai Sahan
+step
+goto 31.88,68.62 |q New Moon Rising/.*Find the Missing Tablet Pieces.* |count 1
+step
+goto 47.13,66.71 |q New Moon Rising/.*Find the Missing Tablet Pieces.* |count 1
 step
 goto moonlitcove02_base 57.82,62.16
 |tip Follow Spirit Alfiq
@@ -36597,24 +36635,24 @@ step
 goto 32.15,72.12 |q New Moon Rising/Restore the Tablet
 step
 goto 44.89,85.01
-click Broken Tablet |q New Moon Rising/Restore the Tablet
+'Read Broken Tablet |q New Moon Rising/Restore the Tablet
 step
 goto 45.37,85.43
-click Ancient Tomb |q New Moon Rising/Open the Door
+'Open Ancient Tomb |q New Moon Rising/Open the Door
 step
 goto moonlitcove03_base 67.25,79.49
 'Approach the Sarcophagus |q New Moon Rising/Approach the Sarcophagus
 step
 goto 67.25,79.49
-click the Sarcophagus |q New Moon Rising/Open the Sarcophagus
+'Open the Sarcophagus |q New Moon Rising/Open the Sarcophagus
 step
 goto 67.25,79.49
 talk Khunzar-ri |q New Moon Rising/Talk to Khunzar-ri
 step
 goto 67.25,79.49
-click the Sarcophagus |q New Moon Rising/Take Khunzar-ri's Claw
+'Search the Sarcophagus |q New Moon Rising/Take Khunzar-ri's Claw
 step
-'Open Souther Elsweyr Map
+'Open Southern Elsweyr Map
 'Travel to _Dragonguard Sanctum_ in Southern Elsweyr |q New Moon Rising/Go to the Dragonguard Sanctum
 |tip Manually skip to the next step.
 step
@@ -36628,7 +36666,7 @@ goto 28.65,69.07
 talk Khamira |q New Moon Rising/Talk to Khamira
 step
 goto 29.98,69.92
-click Portal to Jonelight Path |q New Moon Rising/Enter the Portal
+'Use Enter to Jonelight Path |q New Moon Rising/Enter the Portal |future
 |tip Manually skip to the next step.
 step
 goto jonelightpassage_base 37.79,68.32 |q New Moon Rising/Explore the Jonelight Path
@@ -36644,29 +36682,29 @@ goto 80.92,80.15
 |tip Follow the light path
 step
 goto 81.68,80.34
-click Portal to Dragonhold |q New Moon Rising/Enter the Portal
+'Enter Portal to Dragonhold |q New Moon Rising/Enter the Portal
 step
 goto dragonholdisland_base 87.84,35.16
 talk Khamira |q New Moon Rising/Talk to Khamira
 step
 goto 68.06,50.54
-click the First Dark Aeon Focal Point |q New Moon Rising/Destroy the First Dark Aeon Focal Point
+kill the Dark Aeon Forces |q New Moon Rising/Destroy the First Dark Aeon Focal Point
 step
 goto 91.06,70.68 |q New Moon Rising/Destroy the Second Dark Aeon Focal Point
 step
 goto 68.65,74.37
-click the Second Dark Aeon Focal Point |q New Moon Rising/Destroy the Second Dark Aeon Focal Point
+kill the Dark Aeon Forces |q New Moon Rising/Destroy the Second Dark Aeon Focal Point
 step
 goto 65.20,66.98 |q New Moon Rising/Destroy the Third Dark Aeon Focal Point
 step
 goto dragonholdisland_int02_base 96.17,56.01
-click Dragonhold Ruins |q New Moon Rising/Destroy the Third Dark Aeon Focal Point
+'Open Dragonhold Ruins |q New Moon Rising/Destroy the Third Dark Aeon Focal Point
 |tip Manually skip to the next step.
 step
 goto 10.93,54.92 |q New Moon Rising/Destroy the Third Dark Aeon Focal Point
 step
 goto dragonholdisland_base 28.25,68.89
-click the Third Dark Aeon Focal Point |q New Moon Rising/Destroy the Third Dark Aeon Focal Point
+kill the Dark Aeon Forces |q New Moon Rising/Destroy the Third Dark Aeon Focal Point
 step
 goto 09.42,53.40 |q New Moon Rising/Reach Kaalgrontiid
 step
@@ -36676,14 +36714,12 @@ step
 goto 23.00,49.58
 talk Abnur Tharn |q New Moon Rising/Talk to Abnur Tharn
 step
-goto dragonholdisland_int03_base 89.24,39.24 |q New Moon Rising/Reach Kaalgrontiid
-step
 goto dragonholdisland_int03_base 12.97,83.54 |q New Moon Rising/Reach Kaalgrontiid
 step
 goto 91.46,40.82 |q New Moon Rising/Reach Kaalgrontiid
 step
 goto 84.81,80.70
-click Dragonhold Summit |q New Moon Rising/Reach Kaalgrontiid
+'Open Dragonhold Summit |q New Moon Rising/Reach Kaalgrontiid
 step
 goto dragonholdisland_base 49.11,59.48
 kill Kaalgrontiid |q New Moon Rising/Kill Kaalgrontiid
@@ -36696,7 +36732,7 @@ goto 49.58,62.10
 |tip Manually skip to the next step.
 step
 goto 48.39,62.69
-click Khamira's Portal |q New Moon Rising/Use Khamira's Portal
+'Enter Khamira's Portal |q New Moon Rising/Use Khamira's Portal |future
 step
 goto southernelsweyr_base 33.58,66.89
 talk Khamira |q New Moon Rising/Talk to Khamira
@@ -36713,7 +36749,7 @@ step
 goto 20.02,74.38 |q The Pride of Elsweyr/Talk to Nahfahlaar
 step
 goto 33.27,74.62
-click Nahfahlaar's Chamber |q The Pride of Elsweyr/Talk to Nahfahlaar
+'Open Nahfahlaar's Chamber |q The Pride of Elsweyr/Talk to Nahfahlaar
 |tip Manually skip to the next step.
 step
 goto ELS_Dragonguard_island01_base 51.32,31.39
@@ -36727,13 +36763,13 @@ step
 |tip Manually skip to the next s tep.
 step
 goto senchal_base 55.93,52.35
-click Senchal Palace |q The Pride of Elsweyr/Go to Senchal Palace
+'Open Senchal Palace |q The Pride of Elsweyr/Go to Senchal Palace
 step
 goto Senchalpalace01_base 49.62,52.18
 talk Khamira |q The Pride of Elsweyr/Talk to Khamira
 step
 goto 80.57,60.56
-click General Renmus's Office |q The Pride of Elsweyr/Talk to General Renmus
+'Open General Renmus's Office |q The Pride of Elsweyr/Talk to General Renmus
 |tip Manually skip to the next step.
 step
 goto 85.77,58.33
@@ -36743,11 +36779,11 @@ talk General Renmus |q The Pride of Elsweyr/Talk to General Renmus
 'Tell him _Accept the Queen's Offer. Senchal needs the Shields, and the Shields need support."_
 step
 goto 81.89,59.92
-click Senchal Palace |q The Pride of Elsweyr/Attend the Queen's Ceremony
+'Open Senchal Palace |q The Pride of Elsweyr/Attend the Queen's Ceremony
 |tip Manually skip to the next step.
 step
 goto 65.78,33.27
-click Senchal |q The Pride of Elsweyr/Attend the Queen's Ceremony
+'Open Senchal |q The Pride of Elsweyr/Attend the Queen's Ceremony
 |tip Manually skip to the next step.
 step
 goto senchal_base 66.09,41.25
@@ -36774,12 +36810,11 @@ goto 51.25,43.10
 talk Shield-Corporal Thjol |q The Gathering Storm/Talk to Shield-Corporal Thjol
 step
 goto 51.15,43.19
-click Brondold's Papers |q The Gathering Storm/Read Brondold's Papers
+'Use Brondold's Papers |q The Gathering Storm/Read Brondold's Papers
 step
 goto 48.06,44.49
 |tip Follow path to barn.
-talk Korvynn
-'Meet Brondold's Contact |q The Gathering Storm/Meet Brondold's Contact
+talk Korvynn |q The Gathering Storm/Meet Brondold's Contact
 step
 goto 54.58,43.35
 click a Marked Crate |q The Gathering Storm/Search a Marked Crate
