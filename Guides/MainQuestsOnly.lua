@@ -31720,7 +31720,20 @@ goto 67.05,56.36
 talk Kinlady Avinisse |q The Queen's Decree/Confront Kinlady Avinisse |future
 |tip Manually skip to the next step.
 step
-goto summerset_base 55.49,53.29 |q The Queen's Decree/Travel to Artaeum
+goto 66.87,58.08
+wayshrine Sil-Var-Woad
+step
+goto 62.58,65.72
+wayshrine Eastern Pass
+step
+goto 48.35,70.79
+wayshrine Sunhold
+step
+'Use Sunhold Wayshrine
+'Travel to _Shimmerene_ in Summerset |q The Queen's Decree/Travel to Artaeum
+|tip Manually skip to the next step.
+step
+goto 55.49,53.29 |q The Queen's Decree/Travel to Artaeum
 step
 goto 55.49,54.52
 'Open Portal to Artaeum |q The Queen's Decree/Travel to Artaeum |future
@@ -31729,9 +31742,6 @@ step
 goto artaeum_base 64.49,27.12
 talk Ritemaster Iachesis
 turnin The Queen's Decree
-step
-goto 64.49,27.12
-talk Ritemaster Iachesis
 accept A Pearl of Great Price
 step
 goto 64.82,26.64
@@ -31962,7 +31972,7 @@ goto 47.91,58.58
 talk Valsirenn |q Buried Memories/Talk to Valsirenn
 step
 goto 49.10,56.71
-click _Ul'vor Staff_ |q Buried Memories/Enter the Mindscape
+'Use _Ul'vor Staff_ |q Buried Memories/Enter the Mindscape
 step
 goto sq3sloadmindscape_base 55.27,26.80
 |tip 'Watch the First Memory dialogue 
@@ -31985,7 +31995,7 @@ goto 45.61,57.35
 kill K'Tora |q Buried Memories/Defeat K'Tora
 step
 goto 49.56,54.24
-click _Ul'vor Staff_ |q Buried Memories/Use the Staff to Exit the Mindscape
+'Use _Ul'vor Staff_ |q Buried Memories/Use the Staff to Exit the Mindscape
 step
 goto psijicrelicvaults01_base 53.06,56.85
 talk Sotha Sil |q Buried Memories/Talk to Sotha Sil
@@ -31994,11 +32004,11 @@ step
 'Travel to the _Artaeum_ in Artaeum |q Buried Memories/Exit the Vaults
 step
 goto artaeum_base 64.96,26.72
-click Portal to Ceporah Tower |q Buried Memories/Talk to Ritemaster Iachesis
+'Use Portal to Ceporah Tower |q Buried Memories/Talk to Ritemaster Iachesis
 |tip Manually skip to the next step.
 step
 goto dreamingcave02_base 56.25,64.66
-click Portal to Ritemaster's Study |q Buried Memories/Talk to Ritemaster Iachesis
+'Use Portal to Ritemaster's Study |q Buried Memories/Talk to Ritemaster Iachesis
 |tip Manually skip to the next step.
 step
 goto dreamingcave03_base 62.16,75.97
@@ -32007,19 +32017,53 @@ turnin Buried Memories
 accept The Tower Sentinels
 step
 'Open Summerset Map
-'Travel to the _Alinor_ in Summerset |q The Tower Sentinels/Go to Alinor's Royal Palace
+'Travel to the _Russafeld Heights_ in Summerset |q The Tower Sentinels/Go to Alinor's Royal Palace
 |tip Manually skip to the next step.
 step
-goto alinor_base 41.90,76.59 |q The Tower Sentinels/Go to Alinor's Royal Palace
+goto summerset_base 29.46,51.27
+wayshrine Cey-Tarn Keep
+step
+goto 27.07,56.05 |q The Tower Sentinels/Go to Alinor's Royal Palace
+step
+goto alinor_base 31.70,43.44 |q The Tower Sentinels/Go to Alinor's Royal Palace
+step
+goto 46.00,58.84 |q The Tower Sentinels/Go to Alinor's Royal Palace
+step
+goto 54.97,57.25
+wayshrine Alinor
+step
+goto 41.90,76.59 |q The Tower Sentinels/Go to Alinor's Royal Palace
 step
 goto 56.67,85.58 |q The Tower Sentinels/Go to Alinor's Royal Palace
 step
 goto 64.50,46.25
-click Alinor's Royal Palace |q The Tower Sentinels/Go to Alinor's Royal Palace |future
+'Open Alinor's Royal Palace |q The Tower Sentinels/Go to Alinor's Royal Palace |future
 |tip Manually skip to the next step.
 step
-goto 40.24,30.89
+goto alinorroyalpalace1_base 40.24,30.89
 talk Proxy Queen Alwinarwe |q The Tower Sentinels/Talk to Proxy Queen Alwinarwe
+step
+'Open Summerset Map
+'Travel to _Russafeld Heights_ in Summerset |q The Tower Sentinels/Talk to the Portal Master in Lillandril
+|tip Manually skip to the next step.
+step
+goto summerset_base 38.72,43.17 |q The Tower Sentinels/Talk to the Portal Master in Lillandril
+step
+goto 34.82,36.23
+wayshrine Ebon Stadmont
+step
+goto 30.07,35.58 |q The Tower Sentinels/Talk to the Portal Master in Lillandril
+step
+goto 26.18,38.71 |q The Tower Sentinels/Talk to the Portal Master in Lillandril
+step
+goto 22.26,38.43 |q The Tower Sentinels/Talk to the Portal Master in Lillandril
+step
+goto lillandrill_base 49.44,71.80
+wayshrine Lillandril
+step
+goto 40.69,62.62 |q The Tower Sentinels/Talk to the Portal Master in Lillandril
+step
+goto 48.22,36.06 |q The Tower Sentinels/Talk to the Portal Master in Lillandril
 step
 goto 30.80,48.49
 talk Valsirenn |q The Tower Sentinels/Talk to the Portal Master in Lillandril
@@ -32029,13 +32073,13 @@ goto 27.73,50.57
 talk Portal Master Astirhil |q The Tower Sentinels/Talk to the Portal Master in Lillandril
 step
 goto 26.24,50.07
-click _Portal to the College of Sapiarchs_ |q The Tower Sentinels/Use the Portal Dais
+'Use _Portal to the College of Sapiarchs_ |q The Tower Sentinels/Use the Portal Dais
 step
 goto summerset_base 11.76,39.82
 talk Sapiarch Ellimil |q The Tower Sentinels/Talk to Sapiarch Ellimil
 step
 goto 10.55,40.08
-click College of Sapiarchs' Labyrinth |q The Tower Sentinels/Enter the Sapiarchs' Labyrinth |future
+'Open College of Sapiarchs' Labyrinth |q The Tower Sentinels/Enter the Sapiarchs' Labyrinth |future
 |tip Maually skip to the next step.
 step
 goto SQ4Sapiarch01_base 90.01,73.11
@@ -32049,10 +32093,10 @@ goto SQ4Sapiarch03_base 22.46,84.87 |q The Tower Sentinels/Navigate the Labyrint
 step
 goto 15.25,77.04 |q The Tower Sentinels/Navigate the Labyrinth
 step
-goto 71.41,41.52 |q The Tower Sentinels/Navigate the Labyrinth
+goto 71.41,41.52 |q The Tower Sentinels/Navigate the Labyrinth |tip Go up the stairs.
 step
 goto 92.20,72.52
-click College of Sapiarchs |q The Tower Sentinels/Navigate the Labyrinth
+'Open College of Sapiarchs |q The Tower Sentinels/Navigate the Labyrinth
 step
 goto SQ4Sapiarch02_base 71.32,76.26 |q The Tower Sentinels/Find Sapiarch Larnatille
 step
@@ -32063,7 +32107,7 @@ kill Hoarvor Draedra |q The Tower Sentinels/Find Sapiarch Larnatille
 |tip Manually skip to the next step.
 step
 goto 30.91,35.23
-click Sapiarch of Arcanology's Study |q The Tower Sentinels/Find Sapiarch Larnatille
+'Open Sapiarch of Arcanology's Study |q The Tower Sentinels/Find Sapiarch Larnatille
 |tip Manually skip to the next step.
 step
 goto 68.80,24.22
@@ -32082,7 +32126,7 @@ step
 'Travel to _Ebon Stadmont_ in Summerset |q The Tower Sentinels/Go to the Illumination Academy
 |tip Manually skip to the next step.
 step
-goto 32.78,33.17 |q The Tower Sentinels/Go to the Illumination Academy
+goto summerset_base 32.78,33.17 |q The Tower Sentinels/Go to the Illumination Academy
 step
 goto 31.74,33.45
 'Go to the Illumination Academy |q The Tower Sentinels/Go to the Illumination Academy
@@ -32091,7 +32135,7 @@ goto 31.23,33.75
 talk Razum-dar |q The Tower Sentinels/Talk to Razum-dar
 step
 goto 30.04,33.49
-click Academy Guest Wing |q The Tower Sentinels/Find the Tower Sentinels
+'Open Academy Guest Wing |q The Tower Sentinels/Find the Tower Sentinels
 |tip Manually skip to the next step.
 step
 goto 30.12,33.54
@@ -32102,40 +32146,32 @@ goto 30.29,33.58
 'Take _Letter to Imedril_ |q The Tower Sentinels/Search Hannayel's Room
 step
 goto 30.29,33.58
-|tip Double check step on next pass.
-talk Razum-dar |q The Tower Sentinels/Talk to Razum-dar
-step
-goto 30.24,33.60
-click Academy Guest Wing |q The Tower Sentinels/Find Hannayel's Quiet Room
+talk Razum-dar |q The Tower Sentinels/Talk to Razum-dar |future
 |tip Manually skip to the next step.
 step
 goto 30.16,33.48
-click Illumination Academy |q The Tower Sentinels/Find Hannayel's Quiet Room
+'Open Illumination Academy |q The Tower Sentinels/Find Hannayel's Quiet Room
 |tip Manually skip to the next step.
 step
 goto 31.71,32.73
-click Hall of Illumination |q The Tower Sentinels/Find Hannayel's Quiet Room
+'Open Hall of Illumination |q The Tower Sentinels/Find Hannayel's Quiet Room
 |tip Manually skip to the next step.
 step
 goto 31.75,32.82
 |tip Go up the stairs to the second floor
-'Take _Further Notes on the Sload_ |q The Tower Sentinels/Gather Hannayel's Books
-|tip Manually skip to the next step.
+'Take _Further Notes on the Sload_ |lorebook Further Notes on the Sload/3/35/6
 step
 goto 31.58,32.73
-'Take _The Maormer of Pyandonea_ |q The Tower Sentinels/Gather Hannayel's Books
-|tip Manually skip to the next step.
+'Take _The Maormer of Pyandonea_ |lorebook The Maormer of Pyandonea/3/20/8
 step
 goto 31.39,32.40
-'Take _The Year 2920, Vol. 4_ |q The Tower Sentinels/Gather Hannayel's Books
-|tip Manually skip to the next step.
+'Take _The Year 2920, Vol. 4_ |lorebook The Year 2920, Vol. 4/3/17/98
 step
 goto 32.03,32.57
-'Take _Sages of the Crystal Tower_ |q The Tower Sentinels/Find Hannayel's Quiet Room
-|tip Manually skip to the next step.
+'Take _Sages of the Crystal Tower_ |lorebook Sages of the Crystal Tower/3/35/1
 step
 goto 31.79,32.75
-click Study Hall |q The Tower Sentinels/Find Hannayel's Quiet Room
+'Open Study Hall |q The Tower Sentinels/Find Hannayel's Quiet Room
 |tip Manually skip to the next step.
 step
 goto 31.90,32.76
@@ -32160,12 +32196,62 @@ step
 goto 32.16,32.73
 talk Sapiarch Hannayel |q The Tower Sentinels/Talk to Sapiarch Hannayel
 step
-'Open Summerset Map
-'Travel to _King's Haven Pass_ in Summerset |q The Tower Sentinels/Find the King's Haven Pass Ruins
+goto 29.87,31.95 |q The Tower Sentinels/Find the King's Haven Pass Ruins |tip Leave this building.
+step
+goto 28.65,31.66 |q The Tower Sentinels/Find the King's Haven Pass Ruins
+step
+goto 28.27,24.81
+wayshrine The Crystal Tower
+step
+'Use The Crystal Tower Wayshrine
+'Travel to _Shimmerene_ in Summerset |q The Tower Sentinels/Find the King's Haven Pass Ruins
 |tip Manually skip to the next step.
 step
-goto 51.40,53.80
-click Ancient Ruins |q The Tower Sentinels/Find the King's Haven Pass Ruins
+goto 53.26,45.92 |q The Tower Sentinels/Find the King's Haven Pass Ruins
+step
+goto 52.21,41.49 |q The Tower Sentinels/Find the King's Haven Pass Ruins
+step
+goto 56.91,39.86 |q The Tower Sentinels/Find the King's Haven Pass Ruins
+step
+goto 56.29,37.70 |q The Tower Sentinels/Find the King's Haven Pass Ruins
+step
+goto 55.41,36.94
+wayshrine Eldbur Ruins
+step
+goto 53.98,34.60 |q The Tower Sentinels/Find the King's Haven Pass Ruins
+step
+goto 53.29,26.28
+wayshrine King's Haven Pass
+step
+goto 53.15,22.15 |q The Tower Sentinels/Find the King's Haven Pass Ruins
+step
+goto 48.89,15.91 |q The Tower Sentinels/Find the King's Haven Pass Ruins
+step
+goto 47.44,15.74 |q The Tower Sentinels/Find the King's Haven Pass Ruins
+step
+goto 46.17,12.99 |q The Tower Sentinels/Find the King's Haven Pass Ruins
+step
+goto 44.46,13.80
+wayshrine Veyond Wyte
+step
+'Use Veyond Wyte
+'Travel to _King's Haven Pass_ |q The Tower Sentinels/Find the King's Haven Pass Ruins
+|tip Manually skip to the next step.
+step
+goto 51.01,27.92 |q The Tower Sentinels/Find the King's Haven Pass Ruins
+step
+goto 48.94,27.52
+'Open King's Haven Pass |q The Tower Sentinels/Find the King's Haven Pass Ruins
+|tip Manually skip to the next step.
+step
+goto kingshavenext_base 70.71,33.94
+'Open Coral-Splitter Caves |q The Tower Sentinels/Find the King's Haven Pass Ruins
+|tip Manually skip to the next step.
+step
+goto kingshavenint1_base 35.99,31.97 |q The Tower Sentinels/Find the King's Haven Pass Ruins
+step
+goto 51.32,53.87
+'Open Ancient Ruins |q The Tower Sentinels/Find the King's Haven Pass Ruins
 step
 goto 60.54,69.13 |q The Tower Sentinels/Find Sapiarch Imedril
 step
@@ -32176,11 +32262,11 @@ kill Keetas the Weaver |q The Tower Sentinels/Find Sapiarch Imedril
 |tip Manually skip to the next step.
 step
 goto 72.84,49.83
-click _Webbed Barrier_ 
-click Ancient Ruins |q The Tower Sentinels/Find Sapiarch Imedril
+'Burn _Webbed Barrier_ 
+'Open Ancient Ruins |q The Tower Sentinels/Find Sapiarch Imedril
 step
 goto 64.11,35.43
-click _Mephala's Webs_ |q The Tower Sentinels/Help Save Sapiarch Imedril
+'Burn _Mephala's Webs_ |q The Tower Sentinels/Help Save Sapiarch Imedril
 step
 goto 64.78,37.12
 'Take Dawnstar Gem |q The Tower Sentinels/Take the Dawnstar Gem
@@ -32189,20 +32275,19 @@ goto 64.61,36.88
 talk Sapiarch Imedril |q The Tower Sentinels/Talk to Sapiarch Imedril
 step
 goto 60.30,36.52
-click Coral-Splitter Caves |q The Tower Sentinels/Leave the Ruins
-step
-|tip finish this step Leave the ruins.
+'Open Coral-Splitter Caves |q The Tower Sentinels/Leave the Ruins
 step
 'Open Artaeum Map
+|tip Watch the dialogue.
 'Travel to the _Artaeum_ in Artaeum |q The Tower Sentinels/Return to Artaeum
 |tip Manually skip to the next step.
 step
 goto artaeum_base 64.90,26.62
-click _Portal to Ceporah Tower_ |q The Tower Sentinels/Talk to Ritemaster Iachesis
+'Use _Portal to Ceporah Tower_ |q The Tower Sentinels/Talk to Ritemaster Iachesis |future
 |tip Manually skip to the next step.
 step
 goto dreamingcave02_base 55.80,64.14
-click _Portal to Ritemaster's Study_ |q The Tower Sentinels/Talk to Ritemaster Iachesis
+'Use _Portal to Ritemaster's Study_ |q The Tower Sentinels/Talk to Ritemaster Iachesis
 |tip Manually skip to the next step.
 step
 goto dreamingcave03_base 66.69,70.36
@@ -32211,16 +32296,16 @@ turnin The Tower Sentinels
 accept The Dreaming Cave
 step
 goto 59.50,70.89
-click _Portal to Ceporah Main Gallery_ |q The Dreaming Cave/Meet the Ritemaster in the Dreaming Cave
+'Use _Portal to Ceporah Main Gallery_ |q The Dreaming Cave/Meet the Ritemaster in the Dreaming Cave
 |tip Manually skip to the next step.
 step
 goto 36.28,31.94
-click _Portal to Artaeum_ |q The Dreaming Cave/Meet the Ritemaster in the Dreaming Cave
+'Use _Portal to Artaeum_ |q The Dreaming Cave/Meet the Ritemaster in the Dreaming Cave
 |tip Manually skip to the next step.
 step
 goto artaeum_base 65.92,27.03
 |tip Go down the steps next to the Portal
-click The Dreaming Cave |q The Dreaming Cave/Meet the Ritemaster in the Dreaming Cave
+'Open The Dreaming Cave |q The Dreaming Cave/Meet the Ritemaster in the Dreaming Cave
 |tip Manually skip to the next step.
 step
 goto dreamingcave01_base 39.50,54.50
@@ -32233,7 +32318,7 @@ goto 39.50,54.50
 talk Ritemaster Iachesis |q The Dreaming Cave/Talk to Ritemaster Iachesis
 step
 goto 45.29,23.58
-click Artaeum |q The Dreaming Cave/Talk to Earl Leythen
+'Open Artaeum |q The Dreaming Cave/Talk to Earl Leythen
 |tip Manually skip to the next step.
 step
 goto artaeum_base 54.60,31.49
@@ -32272,11 +32357,15 @@ step
 goto 51.56,32.41
 talk Sadara-do |q The Dreaming Cave/Talk to Sadara-do
 step
-goto 16.26,34.75
-click Eton Nir Grotto for the Meridia Shrine |q The Dreaming Cave/Search Eton Nir Grotto for the Meridia Shrine
+50.97,32.72
+'Open Eton Nir Grotto |q The Dreaming Cave/Search Eton Nir Grotto for the Meridia Shrine
+|tip Manually skip to the next step.
+step
+goto etonnir_01_base 16.26,34.75
+'Open Eton Nir Grotto for the Meridia Shrine |q The Dreaming Cave/Search Eton Nir Grotto for the Meridia Shrine
 step
 goto 16.96,34.86
-click Merdia Shrine |q The Dreaming Cave/Investigate the Shrine
+'Open Merdia Shrine |q The Dreaming Cave/Investigate the Shrine
 step
 goto etonnir_02_base 36.70,51.70
 'Run over to Meridia's statue and look up to talk to Meridia |q The Dreaming Cave/Talk to Meridia
@@ -32291,23 +32380,23 @@ step
 step
 goto artaeum_base 66.06,27.02
 |tip Go down the stairs.
-click The Dreaming Cave |q The Dreaming Cave/Tell the Ritemaster What You Learned
+'Open The Dreaming Cave |q The Dreaming Cave/Tell the Ritemaster What You Learned
 |tip Manually skip to the next step.
 step
 goto dreamingcave01_base 65.68,54.77
 talk Ritemaster Iachesis |q The Dreaming Cave/Tell the Ritemaster What You Learned
 step
 goto 52.38,51.11
-click _The Dreaming Cave Portal_ |q The Dreaming Cave/Use the Dreaming Cave Portal
+'Enter _The Dreaming Cave Portal_ |q The Dreaming Cave/Use the Dreaming Cave Portal
 step
 goto sq5mephalaint01_base 78.31,16.19
-click _Webbing_ |q The Dreaming Cave/Find Valsirenn
+'Burn _Webbing_ |q The Dreaming Cave/Find Valsirenn
 |tip Manually skip to the next step.
 step
 goto sq5mephalaext01_base 70.99,61.58 |q The Dreaming Cave/Find Valsirenn
 step
 goto sq5mephalaint01b_base 23.88,52.27
-click _Webbing_ |q The Dreaming Cave/Find Valsirenn
+'Burn _Webbing_ |q The Dreaming Cave/Find Valsirenn
 |tip Manually skip to the next step.
 step
 goto 42.12,81.69
@@ -32315,7 +32404,7 @@ goto 42.12,81.69
 |tip Manually skip to the next step.
 step
 goto 59.83,82.36
-click _Revealed Path_ |q The Dreaming Cave/Find Valsirenn
+'Enter _Revealed Path_ |q The Dreaming Cave/Find Valsirenn
 |tip Manually skip to the next step.
 step
 goto sq5mephalaint02_base 79.94,28.84 |q The Dreaming Cave/Find Valsirenn
@@ -32331,28 +32420,28 @@ goto sq5mephalaint02b_base 49.07,75.57
 |tip Manually skip to the next step.
 step
 goto 39.07,81.26
-click _Revealed Path_ |q The Dreaming Cave/Find Valsirenn
+'Enter _Revealed Path_ |q The Dreaming Cave/Find Valsirenn
 |tip Manually skip to the next step.
 step
 goto sq5mephalaint03_base 82.27,52.39 |q The Dreaming Cave/Find Valsirenn
 step
 goto 62.32,73.80
-click _Web Cocoon_ |q The Dreaming Cave/Find Valsirenn
+'Open _Web Cocoon_ |q The Dreaming Cave/Find Valsirenn
 step
 goto 62.32,73.80
 talk Valsirenn |q The Dreaming Cave/Talk to Valsirenn
 step
 goto 49.37,55.71
-'_Use Dawnstar Gem_ |q The Dreaming Cave/Find Darien Gautier
+'Use _Dawnstar Gem_ |q The Dreaming Cave/Find Darien Gautier
 |tip Manually skip to the next step.
 step
 goto 38.89,56.46
-click _Revealed Path_ |q The Dreaming Cave/Find Darien Gautier
+'Enter _Revealed Path_ |q The Dreaming Cave/Find Darien Gautier
 |tip Manually skip to the next step.
 step
 goto 09.17,41.16 |q The Dreaming Cave/Find Darien Gautier
 step
-goto sq5mephalaext01_base 19.35,89.50 |q The Dreaming Cave/Find Darien Gautier
+goto sq5mephalaext01_base 19.35,89.50 |q The Dreaming Cave/Find Darien Gautier |tip Following path arrow will go crazy for a second stay to your right.
 step
 goto 25.29,85.29 |q The Dreaming Cave/Find Darien Gautier
 step
@@ -32363,7 +32452,7 @@ kill Gwarchodwyr |q The Dreaming Cave/Find Darien Gautier
 |tip Manually skip to the next step.
 step
 goto 46.63,55.60
-click _Webbing_ |q The Dreaming Cave/Find Darien Gautier
+'Burn _Webbing_ |q The Dreaming Cave/Find Darien Gautier
 |tip Manually skip to the next step.
 step
 goto 25.36,25.88
@@ -32380,7 +32469,7 @@ goto 18.77,16.73
 talk Darien Gautier |q The Dreaming Cave/Talk to Darien Gautier
 step
 goto 24.01,17.20
-click The Spiral Skein |q The Dreaming Cave/Talk to Valsirenn
+'Open The Spiral Skein |q The Dreaming Cave/Talk to Valsirenn
 |tip Manually skip to the next step.
 step
 goto 35.87,19.08
@@ -32391,7 +32480,7 @@ kill Brevorra Poisonclaw |q The Dreaming Cave/Wait for the Portal to Open
 |tip Kill the multiple waves on incoming mobs, and finally Brevorra Poisonclaw. Brevorra is a simple boss fight. Her only powerful attack is a ranged poison cloud telegraph that follows you around for a little while. She also summons a minion. Ignore those and focus on Brevorra.
 step
 goto 36.52,20.13
-click _Portal to the Dreaming Cave_ |q The Dreaming Cave/Talk to Ritemaster Iachesis
+'Use _Portal to the Dreaming Cave_ |q The Dreaming Cave/Talk to Ritemaster Iachesis
 |tip Manually skip to the next step.
 step
 goto dreamingcave01_base 57.52,54.10
@@ -32400,15 +32489,15 @@ turnin The Dreaming Cave
 accept Lost in Translation
 step
 goto 47.25,23.02
-click Artaeum |q Lost in Translation/Talk to Oriandra in the Ritemaster's Study
+'Open Artaeum |q Lost in Translation/Talk to Oriandra in the Ritemaster's Study
 |tip Manually skip to the next step.
 step
 goto artaeum_base 65.06,26.59
-click Portal to Ceporah Tower |q Lost in Translation/Talk to Oriandra in the Ritemaster's Study
+'Use Portal to Ceporah Tower |q Lost in Translation/Talk to Oriandra in the Ritemaster's Study
 |tip Manually skip to the next step.
 step
 goto dreamingcave02_base 56.23,65.08
-click _Portal to Ritemaster's Study_ |q Lost in Translation/Talk to Oriandra in the Ritemaster's Study
+'Use _Portal to Ritemaster's Study_ |q Lost in Translation/Talk to Oriandra in the Ritemaster's Study
 |tip Manually skip to the next step.
 step
 goto dreamingcave03_base 65.52,69.35
@@ -32418,11 +32507,11 @@ goto 67.02,66.29
 'Take _Grand Maestro Forte's Research_ |q Lost in Translation/Take the Notes on the Ancient Language
 step
 goto 58.34,70.87
-click _Portal to Ceporah Main Gallery_ |q Lost in Translation/Talk to Earl Leythen
+'Use _Portal to Ceporah Main Gallery_ |q Lost in Translation/Talk to Earl Leythen
 |tip Manually skip to the next step.
 step
 goto dreamingcave02_base 56.44,20.30
-click _Portal to Valsirenn's Study_ |q Lost in Translation/Talk to Earl Leythen
+'Use _Portal to Valsirenn's Study_ |q Lost in Translation/Talk to Earl Leythen
 |tip Manually skip to the next step.
 step
 goto dreamingcave03_base 62.45,35.82
@@ -32432,17 +32521,22 @@ step
 'Travel to the _Ebon Stadmont_ in Summerset |q Lost in Translation/Use Leythen's Rune in Ebon Stadmont
 |tip Manually skip to the next step.
 step
-goto summerset_base 37.69,38.39
+goto summerset_base 37.15,37.30 |q Lost in Translation/Use Leythen's Rune in Ebon Stadmont
+step
+goto 37.69,38.39
 '_Use Leythen's Rune_ |q Lost in Translation/Use Leythen's Rune in Ebon Stadmont
 step
 goto 37.76,38.24
 talk Earl Leythen |q Lost in Translation/Talk to Earl Leythen
 step
-goto 37.40,36.32
-click Ebon Stadmont |q Lost in Translation/Locate the Inscribed Stone
+goto 36.04,37.49
+'Open Ebon Stadmont |q Lost in Translation/Navigate the Ebon Stadmont Forest
 |tip Manually skip to the next step.
 step
-goto 61.09,59.69
+goto 37.19,37.82
+'Open Ebon Stadmont |q Lost in Translation/Navigate the Ebon Stadmont Forest
+step
+goto ebonStadmont_base 61.09,59.69
 '_Use Leythen's Rune_ |q Lost in Translation/Locate the Inscribed Stone
 |tip Manually skip to the next step.
 step
@@ -32454,7 +32548,7 @@ goto 69.41,52.55
 '_Use Leythen's Rune_ |q Lost in Translation/Locate the Inscribed Stone
 step
 goto 68.86,52.69
-talk Veya Releth |q Lost in Translation/Talk to Nocturnal's Earl
+talk Earl Tundilwen |q Lost in Translation/Talk to Nocturnal's Earl
 step
 goto 72.16,53.73
 talk Earl Leythen |q Lost in Translation/Talk to Earl Leythen
@@ -32463,15 +32557,14 @@ step
 'Travel to _Artaeum_ in Artaeum |q Lost in Translation/Talk to Ritemaster Iachesis in Ceporah Tower
 |tip Manually skip to the next step.
 step
-goto artaeum_base 64.99,25.56
-click Portal to Ceporah Tower |q Lost in Translation/Talk to Ritemaster Iachesis in Ceporah Tower
+goto artaeum_base 64.91,26.62
+'Use Portal to Ceporah Tower |q Lost in Translation/Talk to Ritemaster Iachesis in Ceporah Tower
 |tip Manually skip to the next step.
 step
 goto dreamingcave02_base 17.25,43.55 |q Lost in Translation/Talk to Ritemaster Iachesis in Ceporah Tower
 step
 goto 22.98,74.43
 talk Ritemaster Iachesis |q Lost in Translation/Talk to Ritemaster Iachesis in Ceporah Tower
-|tip Select either choice.
 step
 'Open Artaeum Map
 'Travel to _Artaeum_ in Artaeum |q Lost in Translation/Talk to Darien Gautier
@@ -32480,17 +32573,16 @@ step
 goto artaeum_base 68.31,34.24
 talk Darien Gautier |q Lost in Translation/Talk to Darien Gautier
 step
-goto 64.52,26.54 |q Lost in Translation/Meet in the Dreaming Cave
-step
 goto 65.92,27.03
-click The Dreaming Cave |q Lost in Translation/Meet in the Dreaming Cave
+|tip Down the stairs.
+'Open The Dreaming Cave |q Lost in Translation/Meet in the Dreaming Cave
 |tip Manually skip to the next step.
 step
 goto dreamingcave01_base 39.06,54.50
 talk Ritemaster Iachesis |q Lost in Translation/Meet in the Dreaming Cave
 step
 goto 44.55,52.82
-click _The Dreaming Cave Portal_ |q Lost in Translation/Use the Dreaming Cave Portal
+'Enter _The Dreaming Cave Portal_ |q Lost in Translation/Use the Dreaming Cave Portal
 step
 goto sq6evergloam_base 54.31,80.50
 talk Ritemaster Iachesis |q Lost in Translation/Talk to Ritemaster Iachesis
@@ -32500,10 +32592,8 @@ step
 goto 43.90,62.53 |q Lost in Translation/Follow the Path
 step
 goto 60.32,68.87
-'Follow the Path |q Lost in Translation/Follow the Path
-step
-goto 60.32,68.87
-talk Ritemaster Iachesis |q Lost in Translation/Talk to Ritemaster Iachesis
+|tip Wait for him to catch up.
+talk Ritemaster Iachesis |q Lost in Translation/Talk to Ritemaster Iachesis |future
 step
 goto 65.29,63.36 |q Lost in Translation/Follow the Path
 step
@@ -32518,10 +32608,8 @@ step
 goto 49.33,44.01 |q Lost in Translation/Follow the Path
 step
 goto 39.21,46.60
-'Follow the Path |q Lost in Translation/Follow the Path
-step
-goto 39.21,46.60
-talk Ritemaster Iachesis |q Lost in Translation/Talk to Ritemaster Iachesis
+|tip Wait for him to catch up.
+talk Ritemaster Iachesis |q Lost in Translation/Talk to Ritemaster Iachesis |future
 step
 goto 35.31,47.32 |q Lost in Translation/Follow the Path
 step
@@ -32532,13 +32620,11 @@ step
 goto 18.91,29.44 |q Lost in Translation/Follow the Path
 step
 goto 26.82,34.44
-'Follow the Path |q Lost in Translation/Follow the Path
-step
-goto 26.82,34.44
-talk Ritemaster Iachesis |q Lost in Translation/Talk to Ritemaster Iachesis
+|tip Wait for him to catch up.
+talk Ritemaster Iachesis |q Lost in Translation/Talk to Ritemaster Iachesis |future
 step
 goto 26.91,35.34
-click _Portal to Mountain Top_ |q Lost in Translation/Use the Portal
+'Use _Portal to Mountain Top_ |q Lost in Translation/Use the Portal
 step
 goto 44.36,38.51 |q Lost in Translation/Approach the Mountain Top Ruin
 step
@@ -32561,38 +32647,32 @@ goto 52.94,30.61
 'Escape Nocturnal's Realm |q Lost in Translation/Escape Nocturnal's Realm
 step
 goto dreamingcave01_base 37.86,35.46
-talk Oriandra |q Lost in Translation/Talk to Oriandra
-step
-goto 37.86,35.46
 talk Oriandra
 turnin Lost in Translation
-step
-goto 37.86,35.46
-talk Oriandra
 accept A Necessary Alliance
 step
 goto 46.60,22.86
-click Artaeum |q A Necessary Alliance/Talk to Sotha Sil
+'Open Artaeum |q A Necessary Alliance/Talk to Sotha Sil
 |tip Manually skip to the next step.
 step
 goto artaeum_base 64.96,26.63 
 |tip Go up the stairs.
-click _Portal to Ceporah Tower_ |q A Necessary Alliance/Talk to Sotha Sil
+'Use _Portal to Ceporah Tower_ |q A Necessary Alliance/Talk to Sotha Sil
 |tip Manually skip to the next step.
 step
 goto dreamingcave02_base 14.92,42.18
-click _Portal to Sotha Sil's Study_ |q A Necessary Alliance/Talk to Sotha Sil
+'Use _Portal to Sotha Sil's Study_ |q A Necessary Alliance/Talk to Sotha Sil
 |tip Manually skip to the next step.
 step
 goto dreamingcave03_base 19.86,49.48
 talk Sotha Sil |q A Necessary Alliance/Talk to Sotha Sil
 step
 goto 34.84,49.78
-click _Portal to Ceporah Main Gallery_ |q A Necessary Alliance/Go to Valsirenn's Study
+'Use _Portal to Ceporah Main Gallery_ |q A Necessary Alliance/Go to Valsirenn's Study
 |tip Manually skip to the next step.
 step
 goto dreamingcave02_base 56.04,21.02
-click _Portal to Valsirenn's Study_ |q A Necessary Alliance/Go to Valsirenn's Study
+'Use _Portal to Valsirenn's Study_ |q A Necessary Alliance/Go to Valsirenn's Study
 step
 goto dreamingcave03_base 68.22,39.11
 talk Earl Leythen |q A Necessary Alliance/Interrogate Earl Leythen
@@ -32600,15 +32680,16 @@ step
 goto 66.93,40.50
 talk Valsirenn |q A Necessary Alliance/Talk to Valsirenn
 step
-goto 28.22,21.66 |q A Necessary Alliance/Go to the Crystal Tower Gatehouse
+'Open Summerset Map
+'Travel to _The Crystal Tower_ in Summerset |q A Necessary Alliance/Go to the Crystal Tower Gatehouse
+|tip Manually skip to the next step.
 step
-goto 28.27,24.81 |q A Necessary Alliance/Go to the Crystal Tower Gatehouse
-step
-goto 29.47,25.36
+goto summerset_base 29.47,25.36
+|tip Watch the dialogue.
 'Go to the Crystal Tower Gatehouse |q A Necessary Alliance/Go to the Crystal Tower Gatehouse
 step
 goto 29.12,25.69
-click Watchtower |q A Necessary Alliance/Talk to Razum-dar in the Watchtower
+'Open Watchtower |q A Necessary Alliance/Talk to Razum-dar in the Watchtower
 |tip Manually skip to the next step.
 step
 goto 28.93,25.72
@@ -32616,10 +32697,11 @@ goto 28.93,25.72
 talk Razum-dar |q A Necessary Alliance/Talk to Razum-dar in the Watchtower
 step
 goto 28.86,25.84
-click Watchtower |q A Necessary Alliance/Go to the Crystal Tower Gatehouse
+'Open Watchtower |q A Necessary Alliance/Go to the Crystal Tower Gatehouse
 |tip Manually skip to the next step.
 step
 goto 31.97,24.77
+|tip Go down the stairs.
 talk Valsirenn |q A Necessary Alliance/Talk to Valsirenn |future
 step
 goto 32.05,25.75
@@ -32631,17 +32713,17 @@ goto 31.44,24.03
 'Defend the North Ritual Platform |q A Necessary Alliance/Defend the North Ritual Platform
 step
 goto 31.96,24.78
+|tip Watch the dialogue.
 'Check on the Tower Sentinels |q A Necessary Alliance/Check on the Tower Sentinels
 step
 goto 31.96,24.78
-|tip Pick either choice. It doesn't matter which. Both lead to the same outcome.
 talk Valsirenn |q A Necessary Alliance/Talk to Valsirenn
 step
 'Open Summerset Map
 'Travel to the _Alinor_ in Summerset |q A Necessary Alliance/Talk to Razum-dar in Alinor
 |tip Manually skip to the next step.
 step
-goto 36.49,32.65
+goto alinor_base 36.49,32.65
 talk Razum-dar |q A Necessary Alliance/Talk to Razum-dar in Alinor
 step
 goto 35.14,52.74 |q A Necessary Alliance/Meet the Dog in the Alinor Gardens
@@ -32659,7 +32741,7 @@ step
 'Travel to _Cey-Tarn Keep_ in Summerset |q A Necessary Alliance/Find Clavicus Vile's Cave
 |tip Manually skip to the next step.
 step
-goto 30.72,51.25 |q A Necessary Alliance/Find Clavicus Vile's Cave
+goto summerset_base 30.72,51.25 |q A Necessary Alliance/Find Clavicus Vile's Cave
 step
 goto 34.42,51.54 |q A Necessary Alliance/Find Clavicus Vile's Cave
 step
@@ -32673,13 +32755,13 @@ goto 34.95,55.18
 'Find Clavicus Vile's Cave |q A Necessary Alliance/Find Clavicus Vile's Cave
 step
 goto 34.95,55.18
-click The Vaults of Heinarwe |q A Necessary Alliance/Find Clavicus Vile
+'Enter The Vaults of Heinarwe |q A Necessary Alliance/Find Clavicus Vile
 |tip Manually skip to the next step.
 step
 goto ceytarncaveExt01_base 51.60,60.50 |q A Necessary Alliance/Find Clavicus Vile
 step
 goto 26.29,35.10
-click The Vaults of Heinarwe |q A Necessary Alliance/Find Clavicus Vile
+'Open The Vaults of Heinarwe |q A Necessary Alliance/Find Clavicus Vile
 |tip Manually skip to the next step.
 step
 goto ceytarncaveInt01_base 16.34,67.24
@@ -32688,7 +32770,7 @@ step
 goto 40.87,35.58 |q A Necessary Alliance/Gather Vile's Key
 step
 goto 88.70,42.86
-click _Fields of Regret Safebox_ |q A Necessary Alliance/Gather Vile's Key
+'Examine _Fields of Regret Safebox_ |q A Necessary Alliance/Gather Vile's Key
 'Take _Fields of Regret Key_
 step
 goto 75.89,42.94
@@ -32698,11 +32780,9 @@ step
 'Travel to _Lillandril_ in Summerset |q A Necessary Alliance/Search for Darien and Leythen
 |tip Manually skip to the next step.
 step
-goto lillandrill_base 64.39,67.93
-'Cross the bridge from here |q A Necessary Alliance/Search for Darien and Leythen
-|tip Manually skip to the next step.
+goto summerset_base 18.97,40.76 |q A Necessary Alliance/Search for Darien and Leythen
 step
-goto summerset_base 22.36,38.00 |q A Necessary Alliance/Search for Darien and Leythen
+goto 22.36,38.00 |q A Necessary Alliance/Search for Darien and Leythen
 step
 goto 21.97,33.25 |q A Necessary Alliance/Search for Darien and Leythen
 step
@@ -32710,7 +32790,7 @@ goto 20.58,33.33 |q A Necessary Alliance/Search for Darien and Leythen
 step
 goto 20.38,29.29
 |tip Follow south path.
-click for Darien and Leythen |q A Necessary Alliance/Search for Darien and Leythen
+'Search for Darien and Leythen |q A Necessary Alliance/Search for Darien and Leythen
 step
 goto 20.38,29.29
 talk Darien Gautier |q A Necessary Alliance/Talk to Darien Gautier
@@ -32719,7 +32799,7 @@ goto 20.28,29.15
 talk Earl Leythen |q A Necessary Alliance/Talk to Earl Leythen
 step
 goto 20.28,29.15
-click Cathedral of Webs |q A Necessary Alliance/Enter the Cathedral of Webs |future
+'Open Cathedral of Webs |q A Necessary Alliance/Enter the Cathedral of Webs |future
 |tip Manually skip to the next step.
 step
 goto sq7courtofbedlamruins_base 29.78,36.54 |q A Necessary Alliance/Explore the Cathedral of Webs
@@ -32731,7 +32811,7 @@ goto 37.47,42.21
 talk Earl Leythen |q A Necessary Alliance/Talk to Earl Leythen
 step
 goto 45.80,43.60
-click Cathedral of Webs |q A Necessary Alliance/Follow Leythen and Nocturnal's Earl
+'Open Cathedral of Webs |q A Necessary Alliance/Follow Leythen and Nocturnal's Earl
 |tip Manually skip to the next step.
 step
 goto 69.88,37.39 |q A Necessary Alliance/Follow Leythen and Nocturnal's Earl
@@ -32745,7 +32825,7 @@ goto 37.85,77.36
 'Follow Leythen and Nocturnal's Earl |q A Necessary Alliance/Follow Leythen and Nocturnal's Earl
 step
 goto 37.85,77.36
-talk Earl Veya Releth |q A Necessary Alliance/Talk to Nocturnal's Earl
+talk Earl Tundilwen |q A Necessary Alliance/Talk to Nocturnal's Earl
 step
 goto 37.85,77.36
 talk Earl Leythen |q A Necessary Alliance/Talk to Earl Leythen
@@ -32755,18 +32835,18 @@ step
 goto 63.66,91.53 |q A Necessary Alliance/Go to Leythen's Chamber
 step
 goto 63.67,76.05
-click Leythen's Chambers |q A Necessary Alliance/Go to Leythen's Chamber
+'Open Leythen's Chambers |q A Necessary Alliance/Go to Leythen's Chamber
 |tip Manually skip to the next step.
 step
 goto 69.58,75.24
 kill Krezzinlor |q A Necessary Alliance/Go to Leythen's Chamber
 step
 goto 73.30,71.31
-click Cathedral of Webs |q A Necessary Alliance/Contact Mephala Outside the Ruins
+'Open Cathedral of Webs |q A Necessary Alliance/Contact Mephala Outside the Ruins
 |tip Manually skip to the next step.
 step
 goto 80.57,56.61
-click Summerset |q A Necessary Alliance/Contact Mephala Outside the Ruins
+'Open Summerset |q A Necessary Alliance/Contact Mephala Outside the Ruins
 |tip Manually skip to the next step.
 step
 goto summerset_base 21.60,30.86
@@ -32780,7 +32860,7 @@ step
 |tip Manually skip to the next step.
 step
 goto artaeum_base 64.85,26.66
-click Portal to Ceporah Tower |q A Necessary Alliance/Talk to Valsirenn
+'Open Portal to Ceporah Tower |q A Necessary Alliance/Talk to Valsirenn
 |tip Manually skip to the next step.
 step
 goto dreamingcave02_base 40.88,43.35
@@ -32789,28 +32869,29 @@ step
 goto 40.88,43.35
 talk Valsirenn
 turnin A Necessary Alliance
-step
-goto 40.88,43.35
-talk Valsirenn
 accept The Crystal Tower
 step
 goto 16.34,42.74
-click _Portal to Sotha Sil's Study_ |q The Crystal Tower/Talk to Sotha Sil
+'Use _Portal to Sotha Sil's Study_ |q The Crystal Tower/Talk to Sotha Sil
 |tip Manually skip to the next step.
 step
 goto dreamingcave03_base 29.92,40.13
 talk Sotha Sil |q The Crystal Tower/Talk to Sotha Sil
 step
 goto 36.46,48.92
-click _Portal to Ceporah Main Gallery_ |q The Crystal Tower/Talk to Your Companions
+'Use _Portal to Ceporah Main Gallery_ |q The Crystal Tower/Talk to Your Companions
 |tip Manually skip to the next step.
 step
 goto dreamingcave02_base 24.12,76.49
 talk Darien Gautier |q The Crystal Tower/Talk to Your Companions
 |tip Manually skip to the next step.
 step
-'Open Artaeum Map
-'Travel to _Artaeum_ in Artaeum |q The Crystal Tower/Talk to Your Companions
+goto 29.72,65.96 |q The Crystal Tower/Talk to Your Companions
+step
+goto 56.44,65.61 |q The Crystal Tower/Talk to Your Companions
+step
+goto 36.34,31.94
+'Use Portal to Artaeum |q The Crystal Tower/Talk to Your Companions
 |tip Manually skip to the next step.
 step
 goto artaeum_base 67.72,35.10
@@ -32826,7 +32907,7 @@ talk Earl Leythen |q The Crystal Tower/Talk to Your Companions
 step
 goto 66.04,27.02
 |tip Go down the stairs.
-click The Dreaming Cave |q The Crystal Tower/Enter the Dreaming Cave
+'Open The Dreaming Cave |q The Crystal Tower/Enter the Dreaming Cave
 step
 goto dreamingcave01_base 55.38,62.35
 talk Sotha Sil |q The Crystal Tower/Talk to Sotha Sil
@@ -32841,7 +32922,7 @@ goto 55.38,62.35
 'Wait for the Portal to Reset |q The Crystal Tower/Wait for the Portal to Reset
 step
 goto 50.99,53.02
-click The Dreaming Cave Portal |q The Crystal Tower/Follow Barbas into the Fields of Regret |future
+'Enter The Dreaming Cave Portal |q The Crystal Tower/Follow Barbas into the Fields of Regret |future
 |tip Manually skip to the next step.
 step
 goto crystaltower_approach_base 26.07,38.53 |q The Crystal Tower/Reach the Entrance of the Crystal Tower
@@ -32855,7 +32936,7 @@ goto 67.19,59.58
 talk Barbas |q The Crystal Tower/Talk to Barbas
 step
 goto 68.10,60.54
-click The Crystal Tower |q The Crystal Tower/Enter the Crystal Tower
+'Open The Crystal Tower |q The Crystal Tower/Enter the Crystal Tower
 step
 goto crystaltower_entryway_base 54.60,48.14 |q The Crystal Tower/Ascend the Crystal Tower
 step
@@ -32863,11 +32944,12 @@ goto 59.38,74.78 |q The Crystal Tower/Ascend the Crystal Tower |tip Go up the st
 step
 goto crystaltower_entryway02_base 49.87,48.59
 |tip Go up the stairs.
-click Tower Walkway |q The Crystal Tower/Ascend the Crystal Tower
+'Open Tower Walkway |q The Crystal Tower/Ascend the Crystal Tower
 |tip Manually skip to the next step.
 step
 goto crystaltower_unfolding_base 49.99,89.53
-click Tower Artifact Vault |q The Crystal Tower/Ascend the Crystal Tower
+|tip Wait for the transformation.
+'Open Tower Artifact Vault |q The Crystal Tower/Ascend the Crystal Tower
 step
 goto crystaltower_trophy01_base 51.59,34.09
 kill Guardian Atronach |q The Crystal Tower/Find a Way Out of the Artifact Vault
@@ -32879,7 +32961,7 @@ goto 49.03,46.88 |q The Crystal Tower/Find the Broken Ballista
 step
 goto crystaltower_trophy02_base 52.04,48.55
 |tip Go up both sets of stairs from here
-click _Ancient Ballista_ |q The Crystal Tower/Find the Broken Ballista
+'Examine _Ancient Ballista_ |q The Crystal Tower/Find the Broken Ballista
 step
 goto crystaltower_trophy01_base 37.69,61.98 |q The Crystal Tower/Find the Missing Pieces to the Ballista |tip Go down both sets of stairs.
 step
@@ -32903,45 +32985,38 @@ goto crystaltower_trophy02_base 52.80,47.45
 talk Darien Gautier |q The Crystal Tower/Bring the Ballista Parts to Darien
 step
 goto 52.80,47.45
-click _Repaired Ballista_ |q The Crystal Tower/Use the Ballista on the Blocked Passage
+'Use _Repaired Ballista_ |q The Crystal Tower/Use the Ballista on the Blocked Passage
 |tip Aim and fire the Ballista towards the rubble on the far end of the bridge.
 step
 goto 51.63,70.09
-click Tower Library |q The Crystal Tower/Ascend the Crystal Tower
+'Open Tower Library |q The Crystal Tower/Ascend the Crystal Tower
 |tip Manually skip to the next step.
 step
 goto crystaltower_library_base 42.94,21.42
 |tip Go up the stairs.
 'Ascend the Crystal Tower |q The Crystal Tower/Ascend the Crystal Tower
 step
-goto 42.94,21.42
-click _Key Pedestal_ |q The Crystal Tower/Find a Way Through the Library
-|tip Manually skip to the next step.
-step
 goto 48.41,12.49
-'Take _Library Gate Key_ |q The Crystal Tower/Find a Way Through the Library
-step
-goto 43.20,62.25
+'Take _Library Gate Key_
 kill Gloam Minotaur
-kill Custodian Simohil |q The Crystal Tower/Open the Library Gate
-|tip Manually skip to the next step.
+kill Custodian Simohil |q The Crystal Tower/Find a Way Through the Library
 step
 goto 42.94,21.42
 |tip Go up the stairs.
-click _Key Pedestal_ |q The Crystal Tower/Open the Library Gate
+'Use _Key Pedestal_ |q The Crystal Tower/Open the Library Gate
 step
 goto 42.94,21.42
 talk Earl Leythen |q The Crystal Tower/Talk to Earl Leythen
 step
 goto 56.62,19.66
+|tip Watch the dialogue.
 'Get Through the Opened Gate |q The Crystal Tower/Get Through the Opened Gate
 step
 goto 56.62,19.66
 talk Earl Leythen |q The Crystal Tower/Talk to Earl Leythen
-|tip Either choice is up to you.
 step
 goto 69.53,31.52
-click Tower Mausoleum |q The Crystal Tower/Ascend the Tower
+'Open Tower Mausoleum |q The Crystal Tower/Ascend the Tower
 |tip Manually skip to the next step.
 step
 goto crystaltower_mausoleum_base 50.33,40.56 |q The Crystal Tower/Ascend the Tower
@@ -32961,13 +33036,14 @@ step
 goto 43.96,57.95 |q The Crystal Tower/Ascend the Tower
 step
 goto 10.58,37.15
-click Tower Summit Approach |q The Crystal Tower/Ascend the Tower
+'Open Tower Summit Approach |q The Crystal Tower/Ascend the Tower
 |tip Manually skip to the next step.
 step
 goto crystaltower_barrier_base 58.29,50.11
 'Ascend the Tower |q The Crystal Tower/Ascend the Tower
 step
 goto 58.29,50.11
+|tip Watch dialogue.
 kill Veya Releth |q The Crystal Tower/Defeat Nocturnal's Champion
 |tip Hide behind any pillar to protect yourself from Tundilwen's AOE telegraphs. They travel out of her in random patterns. Interrupt her red telegraphs and block her yellow telegraphs whenever possible. Get behind Darien when he yells to do so as failure will result in an instant kill from Duskbringer (the weapon Tundilwen wields).
 step
@@ -32981,11 +33057,11 @@ goto 86.02,51.28
 'Take _Restored Dawnbreaker_ |q The Crystal Tower/Take the Restored Dawnbreaker
 step
 goto 89.52,50.96
-click Pinnacle of Transparent Law |q The Crystal Tower/Use the Dawnbreaker to Confront Nocturnal
+'Open Pinnacle of Transparent Law |q The Crystal Tower/Use the Dawnbreaker to Confront Nocturnal
 |tip Manually skip to the next step.
 step
 goto crystaltower_top_base 80.47,64.08
-click _Portal to the Crystal Summit_ |q The Crystal Tower/Use the Dawnbreaker to Confront Nocturnal
+'Use _Portal to the Crystal Summit_ |q The Crystal Tower/Use the Dawnbreaker to Confront Nocturnal
 |tip Manually skip to the next step.
 step
 goto crystaltower_top02_base 77.05,49.40 |q The Crystal Tower/Use the Dawnbreaker to Confront Nocturnal
@@ -32997,7 +33073,7 @@ step
 goto 30.58,37.15 |q The Crystal Tower/Use the Dawnbreaker to Confront Nocturnal
 step
 goto 48.56,49.76
-click the Dawnbreaker to Confront Nocturnal |q The Crystal Tower/Use the Dawnbreaker to Confront Nocturnal
+'Use The Dawnbreaker to Confront Nocturnal |q The Crystal Tower/Use the Dawnbreaker to Confront Nocturnal
 step
 goto 48.56,49.76
 kill Shadow Veya |q The Crystal Tower/Stop Nocturnal
@@ -33005,18 +33081,18 @@ kill Shadow Veya |q The Crystal Tower/Stop Nocturnal
 'Meanwhile, use the Dawnbreaker's abilities when waves of mobs appear.
 step
 goto 48.56,49.76
-kill Shadow Veya |q The Crystal Tower/Stop Nocturnal
+kill Shadow Veya |q The Crystal Tower/Destroy Nocturnal's Shadow
 '_PHASE 2._ After you kill her, Nocturnal will raise her as a more powerful Six-Handed version where she has greater AOE damage abilities. The most powerful of these is Singularity.
 'Meanwhile, use the Dawnbreaker's abilities when waves of mobs appear.
 step
 goto 54.85,55.68
-click _Transparent Law_ |q The Crystal Tower/Reforge Transparent Law
+'Use _Transparent Law_ |q The Crystal Tower/Reforge Transparent Law
 step
 goto 50.01,49.56
 talk Valsirenn |q The Crystal Tower/Talk to Valsirenn
 step
 goto 47.89,47.98
-click _Portal to Artaeum_ |q The Crystal Tower/Leave the Crystal Tower |future
+'Use _Portal to Artaeum_ |q The Crystal Tower/Leave the Crystal Tower |future
 |tip Manually skip to the next step.
 step
 goto dreamingcave01_base 57.18,40.95
@@ -33028,19 +33104,19 @@ talk Valsirenn
 accept A New Alliance
 step
 goto 44.84,23.45
-click Artaeum |q A New Alliance/Talk to Oriandra
+'Open Artaeum |q A New Alliance/Talk to Oriandra
 |tip Manually skip to the next step.
 step
 goto artaeum_base 64.98,26.62
 |tip Go up the stairs.
-click Portal to Ceporah Tower |q A New Alliance/Talk to Oriandra
+'Use Portal to Ceporah Tower |q A New Alliance/Talk to Oriandra
 |tip Manually skip to the next step.
 step
 goto dreamingcave02_base 42.93,59.36
 talk Oriandra |q A New Alliance/Talk to Oriandra
 step
 goto 15.94,42.47
-click Portal to Sotha Sil's Study |q A New Alliance/Talk to Sotha Sil
+'Use Portal to Sotha Sil's Study |q A New Alliance/Talk to Sotha Sil
 |tip Manually skip to the next step.
 step
 goto dreamingcave03_base 25.24,49.52
@@ -33061,11 +33137,11 @@ goto 64.35,46.95
 talk Oriandra |q A New Alliance/Talk to Oriandra
 step
 goto 64.50,46.25
-click Alinor's Royal Palace |q A New Alliance/Attend the Palace Meeting
+'Open Alinor's Royal Palace |q A New Alliance/Attend the Palace Meeting
 |tip Manually skip to the next step.
 step
 goto alinorroyalpalace1_base 63.12,64.13
-click Council Chamber |q A New Alliance/Attend the Palace Meeting
+'Open Council Chamber |q A New Alliance/Attend the Palace Meeting
 |tip Manually skip to the next step.
 step
 goto 72.36,64.80
@@ -33085,7 +33161,7 @@ goto 80.53,62.67
 talk Valsirenn |q A New Alliance/Talk to Valsirenn
 step
 goto 67.77,64.86
-click _Palace Throne Room_ |q A New Alliance/Talk to Razum-dar
+'Open _Palace Throne Room_ |q A New Alliance/Talk to Razum-dar
 |tip Manually skip to the next step.
 step
 |tip The throne room will be filled with many of those you've helped on your Summerset adventure. Talk with them to see how they're doing.
