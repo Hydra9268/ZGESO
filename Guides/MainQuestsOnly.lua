@@ -33184,7 +33184,7 @@ talk Famia Mercius
 accept Sunken Treasure
 step
 goto 22.41,38.85
-talk Zadaza |q Sunken Treasure/Talk to Zadaza
+talk Zadaza |q Sunken Treasure/Talk to Zadaza |future
 step
 goto 23.20,39.41
 talk Famia Mercius |q Sunken Treasure/Talk to Famia
@@ -33192,32 +33192,36 @@ step
 goto 10.91,25.44 |q Sunken Treasure/Meet Famia's Contact
 step
 goto murkmire_base 70.34,67.77
-click _Eshraf's Backpack_ |q Sunken Treasure/.*Search for Famia's Explorers.* |count 1
+'Search _Eshraf's Backpack_ |q Sunken Treasure/.*Search for Famia's Explorers.* |count 1
 step
 goto 63.44,67.12
 'Take _Dinia's Sword_ |q Sunken Treasure/.*Search for Famia's Explorers.* |count 2
 step
 goto 57.38,74.64
-click _Eshraf's Journal_ |q Sunken Treasure/.*Search Hut for Clues.* |count 1 |future
+'Examine _Eshraf's Journal_ |q Sunken Treasure/.*Search Hut for Clues.* |count 1 |future
 step
 goto 57.38,74.51
-click _Dinia's Bag_ |q Sunken Treasure/.*Search Hut for Clues.* |count 2
+'Search _Dinia's Bag_ |q Sunken Treasure/.*Search Hut for Clues.* |count 2
 step
 goto 57.39,75.46
-talk Xukas |q Sunken Treasure/Talk to Xukas
+'Listen to Famia Mercius |q Sunken Treasure/Listen to Famia
+step
+goto 57.39,75.46
+talk Xukas |q Sunken Treasure/Talk to Xukas |future
 step
 goto 57.39,75.46
 talk Famia Mercius |q Sunken Treasure/Talk to Famia |future
 step
 goto 64.43,76.71
-click Ixtaxh Xanmeer |q Sunken Treasure/Enter the Xanmeer |future
+'Open Ixtaxh Xanmeer |q Sunken Treasure/Enter the Xanmeer |future
 |tip Manually skip to the next step.
 step
 goto sunkenxanmeer01_base 27.98,85.19
-click Hidden Lever |q Sunken Treasure/Explore the Xanmeer
+'Use Hidden Lever |q Sunken Treasure/Explore the Xanmeer
 step
 goto sunkenxanmeer02_base 28.92,81.75
-click Xanmeer Depths |q Sunken Treasure/Pick the Lock on the Door |future
+|tip Watch dialogue then you may have to move your mouse around for it to let you open the door.
+'Open Simple Xanmeer Depths |q Sunken Treasure/Pick the Lock on the Door |future
 step
 goto 22.18,66.73
 'On the left use the Pulley Levers to match the height:
@@ -33235,15 +33239,15 @@ goto 22.18,66.73
 step
 goto 40.20,52.20 |q Sunken Treasure/Find the Missing Explorers |tip |tip Watch the dialogue. scene
 step
-goto 35.76,37.48 |q Sunken Treasure/.*Gather Flint Vine.* |count 1
+goto 35.76,37.48 |q Sunken Treasure/.*Gather Flint Vine.* |count 1 |tip Listen to Famia
 step
 goto 25.96,37.27 |q Sunken Treasure/.*Gather Flint Vine.* |count 1
 step
 goto 25.52,24.85
-click Flint Vine |q Sunken Treasure/.*Gather Flint Vine.* |count 1
+'Take Flint Vine |q Sunken Treasure/.*Gather Flint Vine.* |count 1
 step
 goto 34.03,24.19
-click Flint Vine |q Sunken Treasure/.*Gather Flint Vine.* |count 2
+'Take Flint Vine |q Sunken Treasure/.*Gather Flint Vine.* |count 2
 step
 goto 46.31,60.42 |q Sunken Treasure/.*Gather Flint Vine.* |count 3 |tip Drop down.
 step
@@ -33252,20 +33256,21 @@ step
 goto 56.22,47.92 |q Sunken Treasure/.*Gather Flint Vine.* |count 3
 step
 goto 45.04,50.31
-click Flint Vine |q Sunken Treasure/.*Gather Flint Vine.* |count 3
+'Take Flint Vine |q Sunken Treasure/.*Gather Flint Vine.* |count 3
 step
 goto 45.55,73.51 |q Sunken Treasure/.*Gather Flint Vine.* |count 4 |tip Drop down.
 step
 goto 41.54,78.12 |q Sunken Treasure/.*Gather Flint Vine.* |count 4
 step
 goto 45.26,80.19
-click Flint Vine |q Sunken Treasure/.*Gather Flint Vine.* |count 4
+'Take Flint Vine |q Sunken Treasure/.*Gather Flint Vine.* |count 4
 step
 goto 39.26,58.00
 'Place _Stone Outcropping_ |q Sunken Treasure/Lower the Flint Vine Ladder
 step
 goto 45.25,37.40
-click Skittering Cavern |q Sunken Treasure/Search for Varo
+'Open Skittering Cavern |q Sunken Treasure/Search for Varo |future
+|tip Wait for Famia to climb up rope.
 |tip Manually skip to the next step.
 step
 goto 58.84,34.76
@@ -33273,42 +33278,48 @@ kill 4 waves of low-level mobs, then
 kill Websnare Spider Matriarch |q Sunken Treasure/Defeat the Spiders |future
 step
 goto 61.87,34.63
-click Stone Furnace |q Sunken Treasure/Explore the Xanmeer
+'Open Stone Furnace |q Sunken Treasure/Explore the Xanmeer
 step
 goto 70.40,30.31
 |tip Dodge the traps until complete.
-click Kajin-Jat Vault |q Sunken Treasure/Enter the Treasure Vault |future
+'Open Kajin-Jat Vault |q Sunken Treasure/Enter the Treasure Vault |future
 step
 goto 70.17,15.91
 kill Ixtaxh Voriplasm |q Sunken Treasure/Kill the Ixtaxh Voriplasm |future
 step
 goto 77.93,45.39
-|tip Go around unlocking chests until you pass out.
-click Murkmire |q Sunken Treasure/Return to the Surface
+|tip Go around unlocking chests until you pass out which is a 2 minute timer.
+'Climb Murkmire |q Sunken Treasure/Return to the Surface |future
 |tip Manually skip to the next step.
 step
 goto murkmire_base 66.58,70.32
 talk Xukas |q Sunken Treasure/Talk to Xukas
-|tip Manually skip to the next step.
 step
 goto 66.58,70.32
 talk Famia Mercius |q Sunken Treasure/Talk to Famia
 step
+goto 69.88,61.34
+wayshrine Bright-Throat
+step
 goto 69.87,61.59
-click Bright-Throat Wayshrine
+'Use Bright-Throat Wayshrine
 'Travel to _Lilmoth_ in Murkmire |q Sunken Treasure/Meet Famia in Her Office
 |tip Manually skip to the next step.
 step
 goto lilmothcity_base 48.77,26.41
-click Cyrodilic Collections |q Sunken Treasure/Meet Famia in Her Office
-|tip Manually skip to the next step.
+'Open Cyrodilic Collections |q Sunken Treasure/Meet Famia in Her Office
 step
 goto 49.34,24.46
 talk Famia Mercius
 turnin Sunken Treasure
 accept Missing in Murkmire
 step
-goto 49.74,68.23
+goto 45.29,43.43
+'Use Lilmoth Wayshrine
+'Travel to _Bright-Throat_ in Murkmire |q Missing in Murkmire/Talk to Xukas
+|tip Manually skip to the next step.
+step
+goto murkmire_base 49.74,68.23
 talk Xukas |q Missing in Murkmire/Talk to Xukas
 step
 goto 50.00,68.05
@@ -33317,29 +33328,35 @@ step
 goto 49.75,68.97
 talk Xukas |q Missing in Murkmire/Talk to Xukas |future
 step
-goto 38.80,31.95
-click Lilmoth |q Missing in Murkmire/Get Zadaza Dossier
+goto 42.69,59.65
+wayshrine Blackrose Prison
+step
+goto 42.69,59.65
+'Use Blackrose Prison Wayshrine
+'Travel to _Lilmoth_ in Murkmire |q Missing in Murkmire/Get Zadaza Dossier
 |tip Manually skip to the next step.
 step
+goto lilmothcity_base 46.65,33.86 |q Missing in Murkmire/Get Zadaza Dossier
+step
 goto 60.26,32.70
-click Dragonstar Stockade |q Missing in Murkmire/Get Zadaza Dossier
+'Trespass Dragonstar Stockade |q Missing in Murkmire/Get Zadaza Dossier
 |tip Sneak around and watch for sentries.
 |tip Manually skip to the next step.
 step
 goto 64.01,34.88
-click _Dragonstar Chest_ |q Missing in Murkmire/Get Zadaza Dossier
+'Search _Dragonstar Chest_ |q Missing in Murkmire/Get Zadaza Dossier
 step
 goto 61.35,27.75 |q Missing in Murkmire/Gather Any Other Clues
 step
 goto 67.70,24.92
-click Sunken House |q Missing in Murkmire/Gather Any Other Clues
+'Open Sunken House |q Missing in Murkmire/Gather Any Other Clues
 |tip Manually skip to the next step.
 step
 goto 65.82,24.81
-click _Dragonstar Chest_ |q Missing in Murkmire/Gather Any Other Clues
+'Search _Dragonstar Chest_ |q Missing in Murkmire/Gather Any Other Clues
 step
 goto 66.76,24.65
-click Dragonstar Stoackade |q Missing in Murkmire/Get Varo Dossier
+'Open Dragonstar Stoackade |q Missing in Murkmire/Get Varo Dossier
 |tip Manually skip to the next step.
 step
 goto 72.94,25.43 |q Missing in Murkmire/Get Varo Dossier
@@ -33347,16 +33364,16 @@ step
 goto 73.88,34.00 |q Missing in Murkmire/Get Varo Dossier |tip Go up the ramp.
 step
 goto 74.76,33.60
-click _Dragonstar Chest_ |q Missing in Murkmire/Get Varo Dossier
+'Search _Dragonstar Chest_ |q Missing in Murkmire/Get Varo Dossier
 step
 goto 74.28,37.03 |q Missing in Murkmire/Get Newcomer Dossier
 step
 goto 77.73,39.53
-click Dragonstar Hut |q Missing in Murkmire/Get Newcomer Dossier
+'Open Dragonstar Hut |q Missing in Murkmire/Get Newcomer Dossier
 |tip Manually skip to the next step.
 step
 goto 79.55,39.62
-click _Dragonstar Chest_ |q Missing in Murkmire/Get Newcomer Dossier
+'Search _Dragonstar Chest_ |q Missing in Murkmire/Get Newcomer Dossier
 step
 'Open Murkmire Map
 'Travel to the _Lilmoth_ in Murkmire |q Missing in Murkmire/Talk to Xukas
@@ -33366,7 +33383,7 @@ goto 53.67,33.81
 talk Xukas |q Missing in Murkmire/Talk to Xukas
 step
 goto 48.77,26.41
-click Cyrodilic Collections |q Missing in Murkmire/Talk to Famia
+'Open Cyrodilic Collections |q Missing in Murkmire/Talk to Famia
 |tip Manually skip to the next step.
 step
 goto 49.34,24.46
@@ -33375,11 +33392,12 @@ step
 goto 49.46,24.93
 talk Kassandra |q Missing in Murkmire/Talk to Kassandra
 step
-goto 43.04,18.18 |q Missing in Murkmire/Talk to Xukas
+goto 45.29,43.43
+'Use Lilmoth Wayshrine
+'Travel to _Bright-Throat_ in Murkmire |q Missing in Murkmire/Talk to Xukas
+|tip Manually skip to the next step.
 step
-goto 14.62,63.69 |q Missing in Murkmire/Talk to Xukas
-step
-goto 22.38,92.70
+goto brightthroatvillage_base 22.38,92.70
 talk Xukas |q Missing in Murkmire/Talk to Xukas
 step
 goto murkmire_base 62.57,62.91
@@ -33389,7 +33407,7 @@ goto 62.57,62.91
 |tip Watch the dialogue.
 talk Xukas |q Missing in Murkmire/Talk to Xukas |future
 step
-goto 59.94,58.18 |q Missing in Murkmire/Track Jaxsik-Orrn
+goto 59.94,58.18 |q Missing in Murkmire/Track Jaxsik-Orrn |future
 step
 goto 57.57,53.98 |q Missing in Murkmire/Continue Tracking Jaxsik-Orrn
 step
@@ -33399,37 +33417,37 @@ goto 52.14,52.92
 talk Jaxsik-Orrn |q Missing in Murkmire/Talk to Jaxsik-Orrn |future
 step
 goto 50.32,53.23
-click _Supply Crate_ |q Missing in Murkmire/.*Smash Crates.* |count 1
+'Destroy _Supply Crate_ |q Missing in Murkmire/.*Smash Crates.* |count 1
 step
 goto 51.89,55.12
-click _Supply Crate_ |q Missing in Murkmire/.*Smash Crates.* |count 2
+'Destroy _Supply Crate_ |q Missing in Murkmire/.*Smash Crates.* |count 2
 step
 goto 51.92,56.07
-click _Blackguard Supply Wagon_ |q Missing in Murkmire/.*Burn Wagons.* |count 1
+'Burn _Blackguard Supply Wagon_ |q Missing in Murkmire/.*Burn Wagons.* |count 1
 step
 goto 50.40,55.10
-click _Blackguard Supply Wagon_ |q Missing in Murkmire/.*Burn Wagons.* |count 2
+'Burn _Blackguard Supply Wagon_ |q Missing in Murkmire/.*Burn Wagons.* |count 2
 step
 goto 49.98,54.78
-click _Supply Crate_ |q Missing in Murkmire/.*Smash Crates.* |count 3
+'Destroy _Supply Crate_ |q Missing in Murkmire/.*Smash Crates.* |count 3
 step
 goto 49.18,54.54
-click _Blackguard Supply Wagon_ |q Missing in Murkmire/.*Burn Wagons.* |count 3
+'Burn _Blackguard Supply Wagon_ |q Missing in Murkmire/.*Burn Wagons.* |count 3
 step
 goto 47.42,53.84
-click _Blackguard Supply Wagon_ |q Missing in Murkmire/.*Burn Wagons.* |count 4
+'Burn _Blackguard Supply Wagon_ |q Missing in Murkmire/.*Burn Wagons.* |count 4
 step
 goto 46.71,52.54
-click _Supply Crate_ |q Missing in Murkmire/.*Smash Crates.* |count 4
+'Destroy _Supply Crate_ |q Missing in Murkmire/.*Smash Crates.* |count 4
 step
 goto 46.90,57.43
-click _Paddock Gate_ |q Missing in Murkmire/Free the Prisoners
+'Open _Paddock Gate_ |q Missing in Murkmire/Free the Prisoners
 step
 goto 48.50,56.09
-click _Supply Crate_ |q Missing in Murkmire/.*Smash Crates.* |count 5
+'Destroy _Supply Crate_ |q Missing in Murkmire/.*Smash Crates.* |count 5
 step
 goto 48.83,57.19
-click _Supply Crate_ |q Missing in Murkmire/.*Smash Crates.* |count 6
+'Destroy _Supply Crate_ |q Missing in Murkmire/.*Smash Crates.* |count 6
 step
 goto 42.73,55.95
 talk Jaxsik-Orrn |q Missing in Murkmire/Talk to Jaxsik-Orrn |future
@@ -33448,12 +33466,12 @@ goto 42.61,56.06
 talk Jaxsik-Orrn |q Missing in Murkmire/Talk to Jaxsik-Orrn
 step
 goto 42.62,59.18
-click Blackrose Wayshrine
+'Use Blackrose Prison Wayshrine
 'Travel to _Lilmoth_ in Murkmire |q Missing in Murkmire/Talk to Famia
 |tip Manually skip to the next step.
 step
 goto lilmothcity_base 48.70,26.31
-click Cyrodilic Collections |q Missing in Murkmire/Talk to Famia
+'Open Cyrodilic Collections |q Missing in Murkmire/Talk to Famia
 |tip Manually skip to the next step.
 step
 goto 49.66,24.70
@@ -33466,7 +33484,7 @@ turnin Missing in Murkmire
 accept Whispers in the Wood
 step
 goto 45.44,43.19
-click Lilmoth Wayshrine
+'Use Lilmoth Wayshrine
 'Travel to the _Bright-Throat_ in Murkmire |q Whispers in the Wood/Talk to Xukas
 |tip Manually skip to the next step.
 step
@@ -33480,16 +33498,22 @@ step
 goto murkmire_base 66.28,49.49
 talk Chime-Maker Shuvu |q Whispers in the Wood/Talk to Chime-Maker Shuvu |future
 step
+goto 70.20,45.73 |q Whispers in the Wood/Go to the Wither-Vault
+step
+goto 70.35,43.05 |q Whispers in the Wood/Go to the Wither-Vault
+step
+goto 67.13,38.17 |q Whispers in the Wood/Go to the Wither-Vault
+step
 goto 69.52,34.48 |q Whispers in the Wood/Go to the Wither-Vault
 step
 goto 70.36,33.95
-click Wither-Vault |q Whispers in the Wood/Go to the Wither-Vault
+'Open Wither-Vault |q Whispers in the Wood/Go to the Wither-Vault
 step
 goto withervault_base 36.70,36.57
 'Take _The Remnant Chime_ |q Whispers in the Wood/Take the Remnant Chime
 step
 goto 85.80,78.20
-click Murkmire |q Whispers in the Wood/Talk to Chime-Maker Shuvu
+'Open Murkmire |q Whispers in the Wood/Talk to Chime-Maker Shuvu
 |tip Manually skip to the next step.
 step
 goto murkmire_base 70.74,34.55 |q Whispers in the Wood/Talk to Chime-Maker Shuvu |tip Drop down.
@@ -33514,7 +33538,7 @@ goto 66.18,49.56
 talk Xukas |q Whispers in the Wood/Talk to Xukas |future
 step
 'Open Murkmire Map
-'Travel to the _Blackrose_ in Murkmire |q Whispers in the Wood/Meet Kassandra at Alten Meerhleel
+'Travel to the _Blackrose Prison_ in Murkmire |q Whispers in the Wood/Meet Kassandra at Alten Meerhleel
 |tip Manually skip to the next step.
 step
 goto 47.49,62.36 |q Whispers in the Wood/Meet Kassandra at Alten Meerhleel
@@ -33522,58 +33546,61 @@ step
 goto 50.72,71.96
 talk Famia Mercius |q Whispers in the Wood/Talk to Famia |future
 step
+goto 37.12,69.74 |q Whispers in the Wood/Talk to Kassandra |future
+step
 goto 31.84,62.20
 talk Kassandra |q Whispers in the Wood/Talk to Kassandra |future
 step
 goto 32.06,62.08
-click _Heetzasi's Journal, Page 1_ |q Whispers in the Wood/.*Search for Clues.* |count 1
+'Examine _Heetzasi's Journal, Page 1_ |q Whispers in the Wood/.*Search for Clues.* |count 1
 step
 goto 32.06,61.95
-click _Heetzasi's Journal, Page 3_ |q Whispers in the Wood/.*Search for Clues.* |count 2
+'Examine _Heetzasi's Journal, Page 3_ |q Whispers in the Wood/.*Search for Clues.* |count 2
 step
 goto 31.85,61.75
-click _Heetzasi's Journal, Page 2_ |q Whispers in the Wood/.*Search for Clues.* |count 3
+'Examine _Heetzasi's Journal, Page 2_ |q Whispers in the Wood/.*Search for Clues.* |count 3
 step
 goto 31.80,62.06
 talk Kassandra |q Whispers in the Wood/Talk to Kassandra
 step
-goto deadwatervillage_base 57.98,59.11
-talk Jaxsik-Orrn |q Whispers in the Wood/Talk to Jaxsik-Orrn
+goto 36.97,56.38 |q Whispers in the Wood/Find Jaxsik-Orrn
 step
-goto 41.60,74.18
-click Dead-Water Village |q Whispers in the Wood/Talk to Jaxsik-Orrn
-|tip Manually skip to the next step.
+goto deadwatervillage_base 72.52,62.82
+wayshrine Dead-Water
+step
+goto 57.98,59.11
+talk Jaxsik-Orrn |q Whispers in the Wood/Talk to Jaxsik-Orrn |future
+step
+goto 70.95,49.06 |q Whispers in the Wood/Go to the Hunting Grounds
+step
+goto murkmire_base 34.44,37.70
+'Go to the Hunting Grounds |q Whispers in the Wood/Go to the Hunting Grounds
 step
 goto 58.05,58.98
 talk Jaxsik-Orrn |q Whispers in the Wood/Talk to Jaxsik-Orrn
 step
-goto deadwatervillage_base 36.96,87.58 |q Whispers in the Wood/Go to the Hunting Grounds
-step
-goto 34.44,37.70
-talk Jaxsik-Orrn |q Whispers in the Wood/Talk to Jaxsik-Orrn
-step
 goto 36.63,37.30
-click _Bog-Blight Fumer_ |q Whispers in the Wood/Destroy the Fumers
+'Destroy _Bog-Blight Fumer_ |q Whispers in the Wood/Destroy the Fumers
 |tip Manually skip to the next step.
 step
 goto 38.57,32.02
-click _Blackguard Ranger_ |q Whispers in the Wood/Collect Histwood Grave-Stakes
+'Search _Blackguard Ranger_ |q Whispers in the Wood/Collect Histwood Grave-Stakes
 |tip Manually skip to the next step.
 step
 goto 35.50,33.08
-click _Bog-Blight Fumer_ |q Whispers in the Wood/Destroy the Fumers
+'Destroy _Bog-Blight Fumer_ |q Whispers in the Wood/Destroy the Fumers
 |tip Manually skip to the next step.
 step
 goto 34.60,35.92
-click _Blackguard Ranger_ |q Whispers in the Wood/Collect Histwood Grave-Stakes
+'Search _Blackguard Stalker_ |q Whispers in the Wood/Collect Histwood Grave-Stakes
 |tip Manually skip to the next step.
 step
 goto 30.43,34.07
-click _Bog-Blight Fumer_ |q Whispers in the Wood/Destroy the Fumers |future
+'Destroy _Bog-Blight Fumer_ |q Whispers in the Wood/Destroy the Fumers |future
 |tip Manually skip to the next step.
 step
 goto 27.50,33.11
-click _Blackguard Chemist_ |q Whispers in the Wood/Collect Histwood Grave-Stakes
+'Search _Blackguard Chemist_ |q Whispers in the Wood/Collect Histwood Grave-Stakes
 step
 goto 28.45,28.99 |q Whispers in the Wood/Go to the Main Blackguard Camp
 step
@@ -33585,8 +33612,10 @@ step
 goto 29.92,27.17 |q Whispers in the Wood/Kill Etra of the Many Spears
 step
 goto 22.39,28.24
-click Tomb of Many Spears |q Whispers in the Wood/Kill Etra of the Many Spears
+'Enter Tomb of Many Spears |q Whispers in the Wood/Kill Etra of the Many Spears
 |tip Manually skip to the next step.
+step
+goto Tombofspears_base 57.41,56.14
 step
 goto 39.85,60.94
 kill Etra of the Many Spears |q Whispers in the Wood/Kill Etra of the Many Spears
@@ -33600,18 +33629,19 @@ goto 39.85,60.94
 |tip Manually skip to the next step.
 step
 goto deadwatervillage_base 54.74,77.37
-click Grave-Singer's Lodge |q Whispers in the Wood/Talk to Jaxsik-Orrn
+'Open Grave-Singer's Lodge |q Whispers in the Wood/Talk to Jaxsik-Orrn
 |tip Manually skip to the next step.
 step
 goto 56.25,78.05
 talk Jaxsik-Orrn |q Whispers in the Wood/Talk to Jaxsik-Orrn
 step
-'Open Murkmire Map
+goto 73.51,63.80
+'Use Dead-Water Wayshrine
 'Travel to _Lilmoth_ in Murkmire |q Whispers in the Wood/Go to Cyrodilic Collections Headquarters
 |tip Manually skip to the next step.
 step
 goto lilmothcity_base 48.77,26.41
-click Cyrodilic Collections |q Whispers in the Wood/Go to Cyrodilic Collections Headquarters
+'Open Cyrodilic Collections |q Whispers in the Wood/Go to Cyrodilic Collections Headquarters
 step
 goto 49.56,25.15
 talk Famia Mercius |q Whispers in the Wood/Talk to Famia
@@ -33622,12 +33652,7 @@ turnin Whispers in the Wood
 accept Death and Dreaming
 step
 goto 48.96,25.88
-click Lilmoth |q Death and Dreaming/Enter the Swallowed Grove
-|tip Manually skip to the next step.
-step
-goto 73.50,63.81
-click Dead-Water Wayshrine
-'Travel to _Lilmoth_ |q Death and Dreaming/Enter the Swallowed Grove
+'Open Lilmoth |q Death and Dreaming/Enter the Swallowed Grove
 |tip Manually skip to the next step.
 step
 goto 40.33,52.63
@@ -33636,9 +33661,10 @@ goto 40.33,52.63
 step
 goto murkmire_base 40.37,47.13
 |tip Watch the dialogue
-click Swallowed Grove |q Death and Dreaming/Enter the Swallowed Grove
+'Enter Swallowed Grove |q Death and Dreaming/Enter the Swallowed Grove
 step
-goto UI_map_swallowedgrove_base 28.54,79.93 |q Death and Dreaming/Explore the Swallowed Grove
+goto UI_Map_swallowedgrove_base 22.09,79.68 |q Death and Dreaming/Explore the Swallowed Grove |future
+step
 step
 goto 38.48,86.94 |q Death and Dreaming/Explore the Swallowed Grove
 step
@@ -33670,7 +33696,7 @@ kill Aki-Kahz, Bringer of Dust |q Death and Dreaming/Explore the Swallowed Grove
 |tip Manually skip to the next step.
 step
 goto 67.52,30.06
-click The Dreaming Nest |q Death and Dreaming/Enter the Dreaming Nest |future
+'Open The Dreaming Nest |q Death and Dreaming/Enter the Dreaming Nest |future
 |tip Manually skip to the next step.
 step
 goto themists01_base 63.01,31.51
@@ -33680,7 +33706,7 @@ goto 63.01,31.51
 'Inhale _Ceremonial Brazier_ |q Death and Dreaming/Breathe the Smoke
 step
 goto 56.16,26.03
-click _Hunting Party Mural_ |q Death and Dreaming/Examine the Hunting Party Mural
+'Examine _Hunting Party Mural_ |q Death and Dreaming/Examine the Hunting Party Mural
 step
 goto themists02_base 27.17,55.09 |q Death and Dreaming/Explore the Marsh
 step
@@ -33694,14 +33720,14 @@ step
 goto 65.66,58.49
 kill Fat Gixthi |q Death and Dreaming/Kill Fat Gixthi
 step
-goto 87.17,30.19 
+goto 87.17,30.19
+|tip Watch the dialogue.
 'Find Uraz |q Death and Dreaming/Find Uraz
 step
 goto themists01_base 71.23,27.40
-click _Burned Village Mural_ |q Death and Dreaming/Examine the Village Mural
+'Examine _Burned Village Mural_ |q Death and Dreaming/Examine the Village Mural
 step
 goto themists03_base 38.78,42.45
-'_******Fix Map**********_
 'Listen to Raj-Kaal Druxith |q Death and Dreaming/Listen to Raj-Kaal Druxith
 step
 goto 35.51,57.96
@@ -33711,26 +33737,26 @@ step
 goto 48.57,50.61 |q Death and Dreaming/.*Rally the Survivors.* |count 2
 step
 goto 34.69,43.67
-click Sap-Speaker's Lodge |q Death and Dreaming/.*Rally the Survivors.* |count 2
+'Open Sap-Speaker's Lodge |q Death and Dreaming/.*Rally the Survivors.* |count 2
 |tip Manually skip to the next step.
 step
 goto 32.24,37.55
-click _ Sap-Speaker's Chest_ |q Death and Dreaming/.*Rally the Survivors.* |count 2
+'Search _ Sap-Speaker's Chest_ |q Death and Dreaming/.*Rally the Survivors.* |count 2
 |tip Manually skip to the next step.
 step
 goto 34.29,42.86
-click Murkmire |q Death and Dreaming/.*Rally the Survivors.* |count 2
+'Open Murkmire |q Death and Dreaming/.*Rally the Survivors.* |count 2
 |tip Manually skip to the next step.
 step
 goto 48.57,50.61
-click Storehouse |q Death and Dreaming/.*Rally the Survivors.* |count 2
+'Open Storehouse |q Death and Dreaming/.*Rally the Survivors.* |count 2
 |tip Manually skip to the next step.
 step
 goto 50.20,50.20
 'Bandage _Peexalt_ |q Death and Dreaming/.*Rally the Survivors.* |count 2
 step
 goto 49.39,50.20
-click Murkmire |q Death and Dreaming/.*Rally the Survivors.* |count 3
+'Open Murkmire |q Death and Dreaming/.*Rally the Survivors.* |count 3
 |tip Manually skip to the next step.
 step
 goto 70.20,58.37
@@ -33742,7 +33768,7 @@ talk Kasa-Jeen |q Death and Dreaming/.*Rally the Survivors.* |count 4
 |tip Manually skip to the next step.
 step
 goto 49.39,28.16
-click _Honei_ |q Death and Dreaming/.*Rally the Survivors.* |count 4
+'Search _Honei_ |q Death and Dreaming/.*Rally the Survivors.* |count 4
 |tip Manually skip to the next step.
 step
 goto 62.04,39.59
@@ -33753,12 +33779,12 @@ goto 37.55,39.59
 'Find Raj-Kaal Druxith |q Death and Dreaming/Find Raj-Kaal Druxith
 step
 goto themists01_base 63.01,23.29
-click _Hist Tree Mural_ |q Death and Dreaming/Examine the Hist Tree Mural
+'Examine _Hist Tree Mural_ |q Death and Dreaming/Examine the Hist Tree Mural
 step
 goto themists04_base 48.44,39.06
 'Explore the Cavern |q Death and Dreaming/Explore the Cavern
 step
-goto 48.44,361.72
+goto 47.66,62.50
 'Listen to Sap-Speaker Kuzei |q Death and Dreaming/Listen to Sap-Speaker Kuzei
 step
 goto 48.44,60.94
@@ -33770,16 +33796,17 @@ goto 48.44,64.06
 talk Sap-Speaker Kuzei |q Death and Dreaming/Talk to Sap-Speaker Kuzei
 step
 goto 48.44,64.06
+|tip Watch the dialogue.
 'Take _Sap-Speaker's Staff_ |q Death and Dreaming/Take the Sap-Speaker's Staff
 step
 goto themists01_base 20.55,80.82
-click Swallowed Grove |q Death and Dreaming/Talk to Xukas
+'Open Swallowed Grove |q Death and Dreaming/Talk to Xukas
 |tip Manually skip to the next step.
 step
-goto UI_map_swallowedgrove_base 56.23,42.61 |q Death and Dreaming/Talk to Xukas |tip Drop down.
+goto UI_Map_swallowedgrove_base 56.23,42.61 |q Death and Dreaming/Talk to Xukas |tip Drop down.
 step
 goto 56.23,48.26
-click Murkmire |q Death and Dreaming/Talk to Xukas
+'Enter Murkmire |q Death and Dreaming/Talk to Xukas
 |tip Manually skip to the next step.
 step
 goto murkmire_base 42.21,48.89
@@ -33808,7 +33835,7 @@ step
 goto 60.61,23.84 |q The Swamp and the Serpent/Traverse the Deepmire
 step
 goto 63.35,23.78
-click Xul-Thuxis |q The Swamp and the Serpent/Traverse the Deepmire
+'Enter Xul-Thuxis |q The Swamp and the Serpent/Traverse the Deepmire
 |tip Manually skip to the next step.
 step
 goto DeepMire01_base 36.93,19.07 |q The Swamp and the Serpent/Search for Signs of Kassandra
@@ -33816,11 +33843,11 @@ step
 goto 43.47,40.81 |q The Swamp and the Serpent/Search for Signs of Kassandra
 step
 goto 68.47,40.15
-click _Letter to Kassandra_ |q The Swamp and the Serpent/Search for Signs of Kassandra
+'Examine _Letter to Kassandra_ |q The Swamp and the Serpent/Search for Signs of Kassandra
 step
 goto 69.25,41.54
 |tip Watch the dialogue
-click _Crumbled Wall_ |q The Swamp and the Serpent/Search Xul-Thuxis Temple for Kassandra
+'Examine _Crumbled Wall_ |q The Swamp and the Serpent/Search Xul-Thuxis Temple for Kassandra
 |tip Manually skip to the next step.
 step
 goto 56.33,44.92 |q The Swamp and the Serpent/Search Xul-Thuxis Temple for Kassandra
@@ -33830,18 +33857,18 @@ step
 goto 45.41,60.98 |q The Swamp and the Serpent/Search Xul-Thuxis Temple for Kassandra |tip Drop down.
 step
 goto 48.98,77.93
-click Xul-Thuxis Temple |q The Swamp and the Serpent/Search Xul-Thuxis Temple for Kassandra
+'Open Xul-Thuxis Temple |q The Swamp and the Serpent/Search Xul-Thuxis Temple for Kassandra
 |tip Manually skip to the next step.
 step
 goto DeepMire02_base 83.11,53.11 |q The Swamp and the Serpent/Search Xul-Thuxis Temple for Kassandra
 step
 goto 73.01,68.08
-click Xul-Thuxis Antechamber |q The Swamp and the Serpent/Search Xul-Thuxis Temple for Kassandra
+'Open Xul-Thuxis Antechamber |q The Swamp and the Serpent/Search Xul-Thuxis Temple for Kassandra
 |tip Manually skip to the next step.
 step
 goto 60.10,63.31
 |tip Watch dialogue
-click Xul-Thuxis Passage |q The Swamp and the Serpent/Rescue Famia
+'Open Xul-Thuxis Passage |q The Swamp and the Serpent/Rescue Famia
 |tip Manually skip to the next step.
 step
 goto 40.62,48.30 |q The Swamp and the Serpent/Rescue Famia
@@ -33850,11 +33877,11 @@ goto 20.33,40.49 |q The Swamp and the Serpent/Rescue Famia |tip Go up the stairs
 step
 goto 23.46,25.14
 |tip Go up the stairs.
-click Xul-Thuxis Overlook |q The Swamp and the Serpent/Rescue Famia
+'Open Xul-Thuxis Overlook |q The Swamp and the Serpent/Rescue Famia
 |tip Manually skip to the next step.
 step
 goto DeepMire01_base 24.58,52.88
-click Hall of Shadows |q The Swamp and the Serpent/Rescue Famia
+'Open Hall of Shadows |q The Swamp and the Serpent/Rescue Famia
 |tip Manually skip to the next step.
 step
 goto DeepMire03_base 64.34,67.58 |q The Swamp and the Serpent/Rescue Famia
@@ -33867,13 +33894,14 @@ kill Whiptail |q The Swamp and the Serpent/Kill Whiptail
 step
 goto 27.08,49.02
 |tip Follow Famia
-click Hall of Memories |q The Swamp and the Serpent/Follow Famia
+'Open Hall of Memories |q The Swamp and the Serpent/Follow Famia
 step
 goto 37.40,61.83
 talk Xukas |q The Swamp and the Serpent/Talk to Xukas
 step
 goto 61.51,91.28
-click Root-Whisper Village |q The Swamp and the Serpent/Find the Dreaming Hist Tree
+'Open Root-Whisper Village |q The Swamp and the Serpent/Find the Dreaming Hist Tree |future
+|tip Manually skip to the next step.
 step
 goto rootwhisper_base 43.25,52.04
 talk Jaxsik-Orrn |q The Swamp and the Serpent/Talk to Jaxsik-Orrn
@@ -33883,11 +33911,14 @@ talk Famia Mercius
 turnin The Swamp and the Serpent
 accept The Remnant of Argon
 step
+goto 60.32,62.48
+wayshrine Root-Whisper
+step
 goto 77.26,34.59
-click Vakka-Bok Xanmeer |q The Remnant of Argon/Search the Xanmeer for Kassandra
+'Open Vakka-Bok Xanmeer |q The Remnant of Argon/Search the Xanmeer for Kassandra
 |tip Manually skip to the next step.
 step
-goto UI_map_Xal-Vakka01_base 25.08,42.58 |q The Remnant of Argon/Search the Xanmeer for Kassandra
+goto UI_Map_Xal-Vakka01_base 25.08,42.58 |q The Remnant of Argon/Search the Xanmeer for Kassandra
 step
 goto 29.45,51.82 |q The Remnant of Argon/Search the Xanmeer for Kassandra
 step
@@ -33903,19 +33934,16 @@ goto 79.91,57.01 |q The Remnant of Argon/Search the Xanmeer for Kassandra
 step
 goto 88.05,57.49 |q The Remnant of Argon/Search the Xanmeer for Kassandra
 step
-goto UI_map_Xal-Vakka02_base 45.04,53.50 |q The Remnant of Argon/Search the Xanmeer for Kassandra
+goto UI_Map_Xal-Vakka02_base 45.04,53.50 |q The Remnant of Argon/Search the Xanmeer for Kassandra
 step
-goto 48.16,53.64 |q The Remnant of Argon/Search the Xanmeer for Kassandra
-step
-goto 46.36,53.52
-click the Xanmeer for Kassandra |q The Remnant of Argon/Search the Xanmeer for Kassandra
+goto 46.36,53.52 |q The Remnant of Argon/Search the Xanmeer for Kassandra
 step
 goto 57.38,66.71 |q The Remnant of Argon/Acquire a Welkynd Stone |tip Drop down
 step
 goto 73.45,68.45 |q The Remnant of Argon/Acquire a Welkynd Stone
 step
 goto 67.18,58.21
-kill Guardian of t he Blue Stone
+kill Guardian of the Blue Stone
 'Acquire a Welkynd Stone |q The Remnant of Argon/Acquire a Welkynd Stone
 step
 goto 55.27,63.15 |q The Remnant of Argon/Activate the Ayleid Gate |tip Drop down.
@@ -33926,82 +33954,82 @@ goto 45.88,51.66
 'Place Ayleid Sconce |q The Remnant of Argon/Activate the Ayleid Gate
 step
 goto 45.94,52.98
-click Nexus Gate |q The Remnant of Argon/Search for Signs of Kassandra
+'Use Nexus Gate |q The Remnant of Argon/Search for Signs of Kassandra
 |tip Manually skip to the next step.
 step
-goto UI_map_Xal-Vakka03_base 73.18,51.28
+goto UI_Map_Xal-Vakka03_base 73.18,51.28
 |tip Go down to the stairs.
 talk Famia Mercius |q The Remnant of Argon/Talk to Famia |future
 step
 goto 25.90,29.58
-click Nexus Gate |q The Remnant of Argon/Acquire a Vakka Stone
+'Use Nexus Gate |q The Remnant of Argon/Acquire a Vakka Stone
 |tip Manually skip to the next step.
 step
-goto UI_map_Xal-Vakka04_base 69.18,43.18
-click Nexus Gate |q The Remnant of Argon/Acquire a Vakka Stone
+goto UI_Map_Xal-Vakka04_base 69.18,43.18
+'Use Nexus Gate |q The Remnant of Argon/Acquire a Vakka Stone
 |tip Manually skip to the next step.
 step
-goto UI_map_Xal-Vakka05_base 52.39,79.53
-click Nexus Gate |q The Remnant of Argon/Acquire a Vakka Stone
+goto UI_Map_Xal-Vakka05_base 52.39,79.53
+'Use Nexus Gate |q The Remnant of Argon/Acquire a Vakka Stone
 |tip Manually skip to the next step.
 step
 goto 76.08,43.94
-click Nexus Gate |q The Remnant of Argon/Acquire a Vakka Stone
+'Use Nexus Gate |q The Remnant of Argon/Acquire a Vakka Stone
 |tip Manually skip to the next step.
 step
 goto 21.91,42.71 |q The Remnant of Argon/Acquire a Vakka Stone
 step
 goto 23.92,35.93
-click Nexus Gate |q The Remnant of Argon/Acquire a Vakka Stone
+'Use Nexus Gate |q The Remnant of Argon/Acquire a Vakka Stone
 |tip Manually skip to the next step.
 step
-goto UI_map_Xal-Vakka04_base 64.04,28.97
+goto UI_Map_Xal-Vakka04_base 64.04,28.97
 'Listen to the Lore |q The Remnant of Argon/Acquire a Vakka Stone
 |tip Manually skip to the next step.
 step
 goto 64.21,39.49
-click _Nexus Gate_ |q The Remnant of Argon/Acquire a Vakka Stone
+'Use Nexus Gate |q The Remnant of Argon/Acquire a Vakka Stone
 |tip Manually skip to the next step.
 step
-goto UI_map_Xal-Vakka06_base 60.59,50.83 |q The Remnant of Argon/Acquire a Vakka Stone
+goto UI_Map_Xal-Vakka06_base 60.59,50.83 |q The Remnant of Argon/Acquire a Vakka Stone
 step
 goto 69.19,43.65 |q The Remnant of Argon/Acquire a Vakka Stone
 step
 goto 86.01,64.44
-click _Nexus Gate_ |q The Remnant of Argon/Acquire a Vakka Stone
+'Use Nexus Gate |q The Remnant of Argon/Acquire a Vakka Stone
 |tip Manually skip to the next step.
 step
-goto UI_map_Xal-Vakka04_base 68.54,18.30
-click _Nexus Gate_ |q The Remnant of Argon/Acquire a Vakka Stone
+goto UI_Map_Xal-Vakka04_base 68.54,18.30
+'Use Nexus Gate |q The Remnant of Argon/Acquire a Vakka Stone
 |tip Manually skip to the next step.
 step
-goto UI_map_Xal-Vakka07_base 50.00,46.67
+goto UI_Map_Xal-Vakka07_base 50.00,46.67
 kill Myndhal |q The Remnant of Argon/Acquire a Vakka Stone
 |tip Manually skip to the next step.
 step
 goto 48.48,84.63
-click _Nexus Gate_ |q The Remnant of Argon/Acquire a Vakka Stone
+'Use Nexus Gate |q The Remnant of Argon/Acquire a Vakka Stone
 |tip Manually skip to the next step.
 step
-goto UI_map_Xal-Vakka04_base 08.27,80.42
-click _Nexus Gate_ |q The Remnant of Argon/Acquire a Vakka Stone
+goto UI_Map_Xal-Vakka04_base 08.27,80.42
+'Use Nexus Gate |q The Remnant of Argon/Acquire a Vakka Stone
 |tip Manually skip to the next step.
 step
-goto UI_map_Xal-Vakka09_base 49.35,55.22
+goto UI_Map_Xal-Vakka09_base 49.35,55.22
 'Take Vakka Stone |q The Remnant of Argon/Acquire a Vakka Stone
 step
 goto 49.35,81.96
-click _Nexus Gate_ |q The Remnant of Argon/Return to Famia
+'Use Nexus Gate |q The Remnant of Argon/Return to Famia
 |tip Manually skip to the next step.
 step
-goto UI_map_Xal-Vakka03_base 76.56,48.72
+goto UI_Map_Xal-Vakka03_base 76.56,48.72
 'Return to Famia |q The Remnant of Argon/Return to Famia
 step
 goto 76.25,48.93
-click the Gateway |q The Remnant of Argon/Enter the Gateway |future
+'Use Grand Nexus Gate |q The Remnant of Argon/Enter the Gateway |future
 |tip Manually skip to the next step.
 step
-goto UI_map_DeepRoot_base01 40.93,22.73 |q The Remnant of Argon/Pursue Kassandra
+goto UI_Map_DeepRoot_base01 40.93,22.73 |q The Remnant of Argon/Pursue Kassandra
 step
 goto 35.65,31.05 |q The Remnant of Argon/Pursue Kassandra
 step
@@ -34012,7 +34040,7 @@ step
 goto 58.59,52.11 |q The Remnant of Argon/Reach the Remnant of Argon |future
 step
 goto 58.56,63.21
-click Remnant Chamber |q The Remnant of Argon/Reach the Remnant of Argon
+'Open Remnant Chamber |q The Remnant of Argon/Reach the Remnant of Argon
 |tip Manually skip to the next step.
 step
 goto 52.91,87.78
@@ -34038,7 +34066,7 @@ goto 43.69,53.25
 'Return to Famia at the Hist Tree |q By River and Root/Return to Famia at the Hist Tree
 step
 goto 43.62,53.04
-click _Remnant of Argon_ |q By River and Root/Touch the Remnant of Argon
+'Use _Remnant of Argon_ |q By River and Root/Touch the Remnant of Argon
 step
 goto remnantofargon_base 54.95,44.92
 'Explore the Remnant |q By River and Root/Explore the Remnant
@@ -34057,7 +34085,7 @@ talk Sap-Speaker Kuzei |q By River and Root/Talk to the Sap-Speaker
 'Tell her _I think Jaxsik-Orrn should guide your tribe to lives of courage and commitment. [Jaxsik-Orrn Dies]_
 step
 goto 57.98,37.10
-click Murkmire |q By River and Root/Leave the Remnant
+'Travel Murkmire |q By River and Root/Leave the Remnant
 step
 goto rootwhisper_base 49.42,69.74
 talk Famia Mercius |q By River and Root/Talk to Famia
