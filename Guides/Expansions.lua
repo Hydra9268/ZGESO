@@ -34918,7 +34918,7 @@ goto 33.49,51.70
 click Gideon |q Haunted Legacy |future
 |tip Manually skip to the next step.
 step
-goto 55.54,30.35
+goto u30_Gideoncity_base 55.54,30.35
 wayshrine Gideon
 step
 goto 59.06,30.71
@@ -38530,6 +38530,12 @@ talk Noroth |q Peace's Wretched Price/Talk to Noroth |future
 step
 goto 70.73,58.40
 talk Faven Indoril |q Peace's Wretched Price/Talk to Faven Indoril
+step
+'Open The Deadlands Map
+'Travel to _The Scourshales_ |q Born of Grief/Return to Wretched Spire
+|tip Manually skip to the next step.
+step
+goto 68.02,43.77 |q Born of Grief/Return to Wretched Spire
 step
 goto 70.81,45.57
 talk Lyranth

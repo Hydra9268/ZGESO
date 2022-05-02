@@ -666,9 +666,7 @@ function Utils.DistanceOffsetForGoto(dist,selfdist)
 	else -- zone maps
 		-- Created Utils.DistanceOffset in functions
 		-- sorting based on preceived popularity
-			if  GetCurrentMapIndex() == Enums.SummersetMap then	return 1.5
-
-        elseif  GetCurrentMapIndex() == Enums.SouthernElsweyrMap then   return 2
+			if  GetCurrentMapIndex() == Enums.SouthernElsweyrMap then   return 2
 
 		elseif 	GetCurrentMapIndex() == Enums.ArtaeumMap or
 		        GetCurrentMapIndex() == Enums.KhenarthisRoostMap then	return 2.5
@@ -678,7 +676,7 @@ function Utils.DistanceOffsetForGoto(dist,selfdist)
 			    GetCurrentMapIndex() == Enums.CraglornMap or
 		        GetCurrentMapIndex() == Enums.NorthernElsweyrMap or
 			    GetCurrentMapIndex() == Enums.U28BlackreachMap or
-			    GetCurrentMapIndex() == Enums.MurkmireMap then		return 3
+			    GetCurrentMapIndex() == Enums.MurkmireMap then  return 3
 
 		elseif	GetCurrentMapIndex() == Enums.ColdharbourMap or
 		        GetCurrentMapIndex() == Enums.StrosMkaiMap or
@@ -691,15 +689,16 @@ function Utils.DistanceOffsetForGoto(dist,selfdist)
                 GetCurrentMapIndex() == Enums.StonefallsMap or
 				GetCurrentMapIndex() == Enums.VvardenfellMap then   return 5
 
-		elseif 	GetCurrentMapIndex() == Enums.ClockworkCityMap or
-	            GetCurrentMapIndex() == Enums.DeadlandsMap or
+		elseif 	GetCurrentMapIndex() == Enums.DeadlandsMap or
 				GetCurrentMapIndex() == Enums.FargraveMap or
-			    GetCurrentMapIndex() == Enums.GreenshadeMap then	return 7
+			    GetCurrentMapIndex() == Enums.GreenshadeMap or
+				GetCurrentMapIndex() == Enums.SummersetMap then	return 7
 
 		elseif 	
 				GetCurrentMapIndex() == Enums.AlikrDesertMap then	return 8
 
-		elseif 	GetCurrentMapIndex() == Enums.AuridonMap or
+		elseif 	GetCurrentMapIndex() == Enums.ClockworkCityMap or
+	            GetCurrentMapIndex() == Enums.AuridonMap or
 			    GetCurrentMapIndex() == Enums.BalFoyenMap or
 			    GetCurrentMapIndex() == Enums.BangkoraiMap or
 			    GetCurrentMapIndex() == Enums.DeshaanMap or
@@ -716,8 +715,6 @@ function Utils.DistanceOffsetForGoto(dist,selfdist)
 		elseif 	GetCurrentMapIndex() == Enums.ShadowfenMap or
 			    GetCurrentMapIndex() == Enums.TheRiftMap or
 			    GetCurrentMapIndex() == Enums.HewsBaneMap then		return 11
-				
-		elseif  GetCurrentMapIndex() == Enums.SummersetMap then	    return 20		
 
 		else return dist or selfdist or 1 -- default value
 		end
@@ -731,9 +728,7 @@ function Utils.DistanceOffsetForIsComplete()
 		-- Create a Utils function in function at the bottom of the file
 		-- sorting based on preceived popularity
 
-		    if GetCurrentMapIndex() == Enums.SummersetMap then		return 1.5
-
-        elseif  GetCurrentMapIndex() == Enums.SouthernElsweyrMap then   return 2
+		    if  GetCurrentMapIndex() == Enums.SouthernElsweyrMap then   return 2
 
 		elseif 	GetCurrentMapIndex() == Enums.ArtaeumMap or
 		        GetCurrentMapIndex() == Enums.KhenarthisRoostMap then	return 2.5
@@ -743,7 +738,7 @@ function Utils.DistanceOffsetForIsComplete()
 			    GetCurrentMapIndex() == Enums.CraglornMap or
 		        GetCurrentMapIndex() == Enums.NorthernElsweyrMap or
 			    GetCurrentMapIndex() == Enums.U28BlackreachMap or
-			    GetCurrentMapIndex() == Enums.MurkmireMap then		return 3
+			    GetCurrentMapIndex() == Enums.MurkmireMap then  return 3
 
 		elseif	GetCurrentMapIndex() == Enums.ColdharbourMap or
 		        GetCurrentMapIndex() == Enums.StrosMkaiMap or
@@ -756,14 +751,15 @@ function Utils.DistanceOffsetForIsComplete()
                 GetCurrentMapIndex() == Enums.StonefallsMap or
 				GetCurrentMapIndex() == Enums.VvardenfellMap then	return 5
 
-		elseif 	GetCurrentMapIndex() == Enums.ClockworkCityMap or
-		        GetCurrentMapIndex() == Enums.DeadlandsMap or
+		elseif 	GetCurrentMapIndex() == Enums.DeadlandsMap or
 				GetCurrentMapIndex() == Enums.FargraveMap or
-			    GetCurrentMapIndex() == Enums.GreenshadeMap then	return 7
+			    GetCurrentMapIndex() == Enums.GreenshadeMap or
+				GetCurrentMapIndex() == Enums.SummersetMap then	return 7
 
 		elseif  GetCurrentMapIndex() == Enums.AlikrDesertMap then	return 8
 
-		elseif 	GetCurrentMapIndex() == Enums.AuridonMap or
+		elseif 	GetCurrentMapIndex() == Enums.ClockworkCityMap or
+		        GetCurrentMapIndex() == Enums.AuridonMap or
 			    GetCurrentMapIndex() == Enums.BalFoyenMap or
 			    GetCurrentMapIndex() == Enums.BangkoraiMap or
 			    GetCurrentMapIndex() == Enums.DeshaanMap or
@@ -779,9 +775,7 @@ function Utils.DistanceOffsetForIsComplete()
 
 		elseif 	GetCurrentMapIndex() == Enums.ShadowfenMap or
 			    GetCurrentMapIndex() == Enums.TheRiftMap or
-			    GetCurrentMapIndex() == Enums.HewsBaneMap then		return 11
-				
-		elseif  GetCurrentMapIndex() == Enums.SummersetMap then	    return 20		
+			    GetCurrentMapIndex() == Enums.HewsBaneMap then		return 11		
 
 		else return 1 -- default value
 		end
