@@ -33214,22 +33214,21 @@ goto sunkenxanmeer02_base 28.92,81.75
 'Open Simple Xanmeer Depths |q Sunken Treasure/Pick the Lock on the Door |future
 step
 goto 22.18,66.73
-'On the left use the Pulley Levers to match the height:
+|tip On the left use the Pulley Levers to match the height:
 '1. Highest height: Anchor
 '2. Lowest height: Hook
 '3. Medium height: Clouds |q Sunken Treasure/Lower the Ancient Drawbridge |future
 |tip Manually skip to the next step.
 step
 goto 22.18,66.73
-'On the right use the Pulley Levers to match the height:
+|tip On the right use the Pulley Levers to match the height:
 '1. Highest height: Dagger Point
 '2. Medium height: Egg
-'3. Lowest height: Lizard Creature |q Sunken Treasure/Lower the Ancient Drawbridge
-|tip Manually skip to the next step.
+'3. Lowest height: Lizard Creature |q Sunken Treasure/Lower the Ancient Drawbridge |future
 step
 goto 40.20,52.20 |q Sunken Treasure/Find the Missing Explorers |tip |tip Watch the dialogue. scene
 step
-goto 35.76,37.48 |q Sunken Treasure/.*Gather Flint Vine.* |count 1 |tip Listen to Famia
+goto 35.76,37.48 |q Sunken Treasure/.*Gather Flint Vine.* |count 1 |future
 step
 goto 25.96,37.27 |q Sunken Treasure/.*Gather Flint Vine.* |count 1
 step
@@ -33279,6 +33278,7 @@ kill Ixtaxh Voriplasm |q Sunken Treasure/Kill the Ixtaxh Voriplasm |future
 step
 goto 77.93,45.39
 |tip Go around unlocking chests until you pass out which is a 2 minute timer.
+|tip If you want to skip the chests follow your party.
 'Climb Murkmire |q Sunken Treasure/Return to the Surface |future
 |tip Manually skip to the next step.
 step
@@ -33394,8 +33394,10 @@ goto murkmire_base 62.57,62.91
 'Go to the Meeting Spot |q Missing in Murkmire/Go to the Meeting Spot
 step
 goto 62.57,62.91
-|tip Watch the dialogue.
-talk Xukas |q Missing in Murkmire/Talk to Xukas |future
+'Negotiate with Jaxsik-Orrn |q Missing in Murkmire/Negotiate with Jaxsik-Orrn
+step
+goto 62.57,62.91
+talk Xukas |q Missing in Murkmire/Talk to Xukas
 step
 goto 59.94,58.18 |q Missing in Murkmire/Track Jaxsik-Orrn |future
 step
@@ -33518,7 +33520,7 @@ goto 66.17,49.40
 talk Chime-Maker Shuvu |q Whispers in the Wood/Talk to Chime-Maker Shuvu
 step
 goto 65.59,49.41
-click Listening-Tree Branch |q Whispers in the Wood/Hang the Remnant Chime
+'Use Listening-Tree Branch |q Whispers in the Wood/Hang the Remnant Chime
 step
 goto 66.32,49.88
 'Use Argonian Prayer-Stone |q Whispers in the Wood/Pray to the Remnant Chime
@@ -33613,9 +33615,8 @@ step
 goto 39.85,60.94
 'Take Etra's Grave-Stake |q Whispers in the Wood/Take the Grave-Stake
 step
-goto 39.85,60.94
 'Open Murkmire Map
-'Travel to _Dead-Water_ in Murkmire |q Whispers in the Wood/Talk to Jaxsik-Orrn
+'Travel to _Dead-Water_ |q Whispers in the Wood/Talk to Jaxsik-Orrn
 |tip Manually skip to the next step.
 step
 goto deadwatervillage_base 54.74,77.37
@@ -33723,8 +33724,6 @@ goto 35.51,57.96
 |tip Douse all three flames
 'Free Anash |q Death and Dreaming/.*Rally the Survivors.* |count 1
 step
-goto 48.57,50.61 |q Death and Dreaming/.*Rally the Survivors.* |count 2
-step
 goto 34.69,43.67
 'Open Sap-Speaker's Lodge |q Death and Dreaming/.*Rally the Survivors.* |count 2
 |tip Manually skip to the next step.
@@ -33807,6 +33806,10 @@ goto 40.83,48.45 |q The Swamp and the Serpent/Find Jaxsik-Orrn
 step
 goto 38.67,42.10 |q The Swamp and the Serpent/Find Jaxsik-Orrn
 step
+goto 41.21,43.95 |q The Swamp and the Serpent/Find Jaxsik-Orrn
+step
+goto 44.28,37.82 |q The Swamp and the Serpent/Find Jaxsik-Orrn
+step
 goto 61.29,33.75 |q The Swamp and the Serpent/Find Jaxsik-Orrn
 step
 goto 54.15,29.13
@@ -33824,7 +33827,7 @@ step
 goto 60.61,23.84 |q The Swamp and the Serpent/Traverse the Deepmire
 step
 goto 63.35,23.78
-'Enter Xul-Thuxis |q The Swamp and the Serpent/Traverse the Deepmire
+'Enter Xul-Thuxis |q The Swamp and the Serpent/Traverse the Deepmire |future
 |tip Manually skip to the next step.
 step
 goto DeepMire01_base 36.93,19.07 |q The Swamp and the Serpent/Search for Signs of Kassandra
@@ -33841,9 +33844,9 @@ goto 69.25,41.54
 step
 goto 56.33,44.92 |q The Swamp and the Serpent/Search Xul-Thuxis Temple for Kassandra
 step
-goto 47.86,52.57 |q The Swamp and the Serpent/Search Xul-Thuxis Temple for Kassandra |tip Go up the stairs.
+goto 47.86,52.57 |q The Swamp and the Serpent/Search Xul-Thuxis Temple for Kassandra
 step
-goto 45.41,60.98 |q The Swamp and the Serpent/Search Xul-Thuxis Temple for Kassandra |tip Drop down.
+goto 45.41,60.98 |q The Swamp and the Serpent/Search Xul-Thuxis Temple for Kassandra
 step
 goto 48.98,77.93
 'Open Xul-Thuxis Temple |q The Swamp and the Serpent/Search Xul-Thuxis Temple for Kassandra
@@ -33852,12 +33855,12 @@ step
 goto DeepMire02_base 83.11,53.11 |q The Swamp and the Serpent/Search Xul-Thuxis Temple for Kassandra
 step
 goto 73.01,68.08
-'Open Xul-Thuxis Antechamber |q The Swamp and the Serpent/Search Xul-Thuxis Temple for Kassandra
+'Open Xul-Thuxis Antechamber |q The Swamp and the Serpent/Search Xul-Thuxis Temple for Kassandra |tip Go up the stairs.
 |tip Manually skip to the next step.
 step
 goto 60.10,63.31
 |tip Watch dialogue
-'Open Xul-Thuxis Passage |q The Swamp and the Serpent/Rescue Famia
+'Open Xul-Thuxis Passage |q The Swamp and the Serpent/Rescue Famia |future
 |tip Manually skip to the next step.
 step
 goto 40.62,48.30 |q The Swamp and the Serpent/Rescue Famia
@@ -33876,6 +33879,7 @@ step
 goto DeepMire03_base 64.34,67.58 |q The Swamp and the Serpent/Rescue Famia
 step
 goto 32.31,27.01
+|tip Drop down.
 'Rescue Famia |q The Swamp and the Serpent/Rescue Famia
 step
 goto 32.31,27.01
@@ -33927,7 +33931,7 @@ goto UI_Map_Xal-Vakka02_base 45.04,53.50 |q The Remnant of Argon/Search the Xanm
 step
 goto 46.36,53.52 |q The Remnant of Argon/Search the Xanmeer for Kassandra
 step
-goto 57.38,66.71 |q The Remnant of Argon/Acquire a Welkynd Stone |tip Drop down
+goto 57.38,66.71 |q The Remnant of Argon/Acquire a Welkynd Stone |future |tip Drop down
 step
 goto 73.45,68.45 |q The Remnant of Argon/Acquire a Welkynd Stone
 step
@@ -33972,11 +33976,7 @@ goto 23.92,35.93
 'Use Nexus Gate |q The Remnant of Argon/Acquire a Vakka Stone
 |tip Manually skip to the next step.
 step
-goto UI_Map_Xal-Vakka04_base 64.04,28.97
-'Listen to the Lore |q The Remnant of Argon/Acquire a Vakka Stone
-|tip Manually skip to the next step.
-step
-goto 64.21,39.49
+goto UI_Map_Xal-Vakka04_base 64.21,39.49
 'Use Nexus Gate |q The Remnant of Argon/Acquire a Vakka Stone
 |tip Manually skip to the next step.
 step
