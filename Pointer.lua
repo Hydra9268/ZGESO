@@ -1,6 +1,6 @@
 if not ZGV then return end
 
-local GPS = LibGPS2
+local GPS = LibGPS3
 
 MEMORYSPAM = false
 
@@ -1222,18 +1222,12 @@ SLASH_COMMANDS["/zgsurvey"] = function()
 end
 
 SLASH_COMMANDS["/zgpos"] = function(checker)
-	local gps = GPS:GetCurrentMapMeasurements()
+	local gps = GPS:GetCurrentMapMeasurement()
     local tex = gps.id
 	if checker == "gps" then
 		d(("|cffffff%s|r"):format(tex))
 		d(("zone id: |c88ff88%d|r"):format(gps.zoneId))
-		d(("map index: |c88ff88%d|r"):format(gps.mapIndex))
-		if _G.GetCurrentMapIndex() ~= nil then
-			d(("GetCurrentMapIndex: |c88ff88%d|r - ESO Global function"):format(_G.GetCurrentMapIndex()))
-		end
-		if _G.GetCurrentMapZoneIndex() ~= nil then
-			d(("GetCurrentMapZoneIndex: |c88ff88%d|r - ESO Global function"):format(_G.GetCurrentMapZoneIndex()))
-		end
+		d(("GetCurrentMapZoneIndex: |c88ff88%d|r - ESO Global function"):format(_G.GetCurrentMapZoneIndex()))
 		d(("xoffset: |c88ff88%.19f|r"):format(gps.offsetX))
 		d(("yoffset: |c88ff88%.19f|r"):format(gps.offsetY))
 		d(("xscale: |c88ff88%.19f|r"):format(gps.scaleX))
@@ -1246,13 +1240,7 @@ SLASH_COMMANDS["/zgpos"] = function(checker)
 		d(("xoffset: |c88ff88%.19f|r"):format(Z.xoffset))
 		d(("yoffset: |c88ff88%.19f|r"):format(Z.yoffset))
 		d(("xscale: |c88ff88%.19f|r"):format(gps.scaleX))
-		d(("map index: |c88ff88%d|r"):format(gps.mapIndex))
-		if _G.GetCurrentMapIndex() ~= nil then
-			d(("GetCurrentMapIndex: |c88ff88%d|r - ESO Global function"):format(_G.GetCurrentMapIndex()))
-		end
-		if _G.GetCurrentMapZoneIndex() ~= nil then
-			d(("GetCurrentMapZoneIndex: |c88ff88%d|r - ESO Global function"):format(_G.GetCurrentMapZoneIndex()))
-		end
+		d(("GetCurrentMapZoneIndex: |c88ff88%d|r - ESO Global function"):format(_G.GetCurrentMapZoneIndex()))
 	end
 end
 
