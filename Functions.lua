@@ -666,32 +666,27 @@ function Utils.DistanceOffsetForGoto(dist,selfdist)
 	else -- zone maps
 		-- Created Utils.DistanceOffset in functions
 		-- sorting based on preceived popularity
-			if  GetCurrentMapIndex() == Enums.SouthernElsweyrMap then   return 2
-
-		elseif 	GetCurrentMapIndex() == Enums.ArtaeumMap or
-		        GetCurrentMapIndex() == Enums.KhenarthisRoostMap then	return 2.5
-
-		elseif 	GetCurrentMapIndex() == Enums.BlackwoodMap or
-		        GetCurrentMapIndex() == Enums.BlackreachMap or
-			    GetCurrentMapIndex() == Enums.CraglornMap or
-		        GetCurrentMapIndex() == Enums.NorthernElsweyrMap or
-			    GetCurrentMapIndex() == Enums.U28BlackreachMap then  return 3
-
-		elseif	GetCurrentMapIndex() == Enums.ColdharbourMap or
-		        GetCurrentMapIndex() == Enums.StrosMkaiMap or
-		        GetCurrentMapIndex() == Enums.WesternSkyrimMap or
-		        GetCurrentMapIndex() == Enums.TheReachMap then 		return 4
-
-		elseif 	GetCurrentMapIndex() == Enums.BetnikhMap or
-			    GetCurrentMapIndex() == Enums.BleakrockIsleMap or 
+			if  GetCurrentMapIndex() == Enums.ArkthzandCavernMap or
+			    GetCurrentMapIndex() == Enums.ArtaeumMap or
+			    GetCurrentMapIndex() == Enums.BetnikhMap or
+		        GetCurrentMapIndex() == Enums.BlackwoodMap or
+			    GetCurrentMapIndex() == Enums.BleakrockIsleMap or
+				GetCurrentMapIndex() == Enums.ColdharbourMap or
+				GetCurrentMapIndex() == Enums.CraglornMap or
 				GetCurrentMapIndex() == Enums.CyrodiilMap or
+				GetCurrentMapIndex() == Enums.GreymoorCavernsMap or
+				GetCurrentMapIndex() == Enums.KhenarthisRoostMap or
 				GetCurrentMapIndex() == Enums.MurkmireMap or
+				GetCurrentMapIndex() == Enums.NorthernElsweyrMap or
+				GetCurrentMapIndex() == Enums.SouthernElsweyrMap or
                 GetCurrentMapIndex() == Enums.StonefallsMap or
-				GetCurrentMapIndex() == Enums.VvardenfellMap then   return 5
+				GetCurrentMapIndex() == Enums.StrosMkaiMap or
+				GetCurrentMapIndex() == Enums.TheReachMap or
+				GetCurrentMapIndex() == Enums.VvardenfellMap or
+				GetCurrentMapIndex() == Enums.WesternSkyrimMap then   return 5
 
 		elseif 	GetCurrentMapIndex() == Enums.DeadlandsMap or
-				GetCurrentMapIndex() == Enums.FargraveMap or
-			    GetCurrentMapIndex() == Enums.GreenshadeMap or
+				GetCurrentMapIndex() == Enums.GreenshadeMap or
 				GetCurrentMapIndex() == Enums.SummersetMap then	return 7
 
 		elseif 	GetCurrentMapIndex() == Enums.AlikrDesertMap then	return 8
@@ -702,6 +697,7 @@ function Utils.DistanceOffsetForGoto(dist,selfdist)
 			    GetCurrentMapIndex() == Enums.BangkoraiMap or
 			    GetCurrentMapIndex() == Enums.DeshaanMap or
 			    GetCurrentMapIndex() == Enums.EastmarchMap or
+				GetCurrentMapIndex() == Enums.FargraveMap or
 			    GetCurrentMapIndex() == Enums.GlenumbraMap or
 			    GetCurrentMapIndex() == Enums.GoldCoastMap or
 			    GetCurrentMapIndex() == Enums.GrahtwoodMap or
@@ -727,32 +723,27 @@ function Utils.DistanceOffsetForIsComplete()
 		-- Create a Utils function in function at the bottom of the file
 		-- sorting based on preceived popularity
 
-		    if  GetCurrentMapIndex() == Enums.SouthernElsweyrMap then   return 2
-
-		elseif 	GetCurrentMapIndex() == Enums.ArtaeumMap or
-		        GetCurrentMapIndex() == Enums.KhenarthisRoostMap then	return 2.5
-
-		elseif 	GetCurrentMapIndex() == Enums.BlackwoodMap or
-		        GetCurrentMapIndex() == Enums.BlackreachMap or
-			    GetCurrentMapIndex() == Enums.CraglornMap or
-		        GetCurrentMapIndex() == Enums.NorthernElsweyrMap or
-			    GetCurrentMapIndex() == Enums.U28BlackreachMap then  return 3
-
-		elseif	GetCurrentMapIndex() == Enums.ColdharbourMap or
-		        GetCurrentMapIndex() == Enums.StrosMkaiMap or
-		        GetCurrentMapIndex() == Enums.WesternSkyrimMap or
-		        GetCurrentMapIndex() == Enums.TheReachMap then 		return 4
-
-		elseif 	GetCurrentMapIndex() == Enums.BetnikhMap or
-			    GetCurrentMapIndex() == Enums.BleakrockIsleMap or
+		    if  GetCurrentMapIndex() == Enums.ArkthzandCavernMap or
+			    GetCurrentMapIndex() == Enums.ArtaeumMap or
+		        GetCurrentMapIndex() == Enums.BlackwoodMap or
+				GetCurrentMapIndex() == Enums.BetnikhMap or
+				GetCurrentMapIndex() == Enums.BleakrockIsleMap or
+				GetCurrentMapIndex() == Enums.ColdharbourMap or
+				GetCurrentMapIndex() == Enums.CraglornMap or
 				GetCurrentMapIndex() == Enums.CyrodiilMap or
-				GetCurrentMapIndex() == Enums.MurkmireMap or
+				GetCurrentMapIndex() == Enums.KhenarthisRoostMap or
+                GetCurrentMapIndex() == Enums.GreymoorCavernsMap or
+		        GetCurrentMapIndex() == Enums.MurkmireMap or
+				GetCurrentMapIndex() == Enums.NorthernElsweyrMap or
+				GetCurrentMapIndex() == Enums.SouthernElsweyrMap or
                 GetCurrentMapIndex() == Enums.StonefallsMap or
+				GetCurrentMapIndex() == Enums.StrosMkaiMap or
+				GetCurrentMapIndex() == Enums.TheReachMap or
+		        GetCurrentMapIndex() == Enums.WesternSkyrimMap or
 				GetCurrentMapIndex() == Enums.VvardenfellMap then	return 5
 
 		elseif 	GetCurrentMapIndex() == Enums.DeadlandsMap or
-				GetCurrentMapIndex() == Enums.FargraveMap or
-			    GetCurrentMapIndex() == Enums.GreenshadeMap or
+				GetCurrentMapIndex() == Enums.GreenshadeMap or
 				GetCurrentMapIndex() == Enums.SummersetMap then	return 7
 
 		elseif  GetCurrentMapIndex() == Enums.AlikrDesertMap then	return 8
@@ -763,6 +754,7 @@ function Utils.DistanceOffsetForIsComplete()
 			    GetCurrentMapIndex() == Enums.BangkoraiMap or
 			    GetCurrentMapIndex() == Enums.DeshaanMap or
 			    GetCurrentMapIndex() == Enums.EastmarchMap or
+				GetCurrentMapIndex() == Enums.FargraveMap or
 			    GetCurrentMapIndex() == Enums.GlenumbraMap or
 			    GetCurrentMapIndex() == Enums.GoldCoastMap or
 			    GetCurrentMapIndex() == Enums.GrahtwoodMap or

@@ -2466,7 +2466,7 @@ ZGV.MapData = {
 		["u29_imperialsewers_base"] =           { name = "Imperial Sewers",                         id = 783, xoffset = 0.546138, yoffset = 0.473924, scale = 0.008780, },
 		["bwp2deadlands_base"] =                { name = "Deadlands",                               id = 784, xoffset = -0.042180, yoffset = 0.113679, scale = 0.019270, },
 		["u30_leyawiincity_base"] =             { name = "Leyawiin",                                id = 785, xoffset = 0.594919, yoffset = 0.670103, scale = 0.017070, },
-		["blackwood_base"] =                    { name = "Blackwood",                               id = 786, xoffset = 0.562803, yoffset = 0.584511, scale = 0.170897, },
+		["blackwood_base"] =                    { name = "Blackwood",                               id = 786, xoffset = 0.562803, yoffset = 0.584510, scale = 0.170898, },
 		["u30_undertowcavern_base"] =           { name = "Undertow Cavern",                         id = 787, xoffset = 0.593269, yoffset = 0.664773, scale = 0.006262, },
 		["u30_borderwatch_sewers_base"] =       { name = "Borderwatch Sewers",                      id = 788, xoffset = 0.589694, yoffset = 0.636512, scale = 0.011906, },
 		["u30_borderwatchkeep"] =               { name = "Borderwatch Courtyard",                   id = 789, xoffset = 0.595166, yoffset = 0.642513, scale = 0.012568, },
