@@ -1280,6 +1280,8 @@ ZGV.MapData = {
 	["Destruction's Solace"]                = [[u32_dsolace_int2_base]],
 	["Destruction's Solace"]                = [[u32_dsolace_ext2_base]],
 	["Fort Sundercliff"]                    = [[u32_Sundercliff_base]],
+	
+	-- High Isle
 
 	},
 
@@ -2565,6 +2567,13 @@ ZGV.MapData = {
 		["u32_dsolace_int2_base"] =             { name = "Destruction's Solace",                    id = 844, xoffset = 1.054390, yoffset = 0.732081, scale = 0.010846, },
 		["u32_dsolace_ext2_base"] =             { name = "Destruction's Solace",                    id = 844, xoffset = 1.047810, yoffset = 0.732272, scale = 0.011742, },
 		["u32_Sundercliff_base"] =              { name = "Fort Sundercliff",                        id = 845, xoffset = 1.053800, yoffset = 0.724230, scale = 0.016052, },
+		
+		-- High Isle
+		["u33_Prologue1aINT_base"] =            { name = "Ascendant Order Hideout",                 id = 846, xoffset = -0.128792, yoffset = 0.308362, scale = 0.014643, },
+		["u33_Prologue1bINT_base"] =            { name = "Sareloth Grotto",                         id = 847, xoffset = 0.735202, yoffset = 0.281774, scale = 0.007393, },
+		["u33_P2_EmericRtrt_Ext_base"] =        { name = "Sword's Rest Isle",                       id = 848, xoffset = -0.174630, yoffset = 0.299971, scale = 0.023715, },
+		["u33_P2_EmericRtrt_Int1_base" ] =      { name = "Sword's Rest Keep",                       id = 849, xoffset = -0.180106, yoffset = 0.300292, scale = 0.004316, },
+		["u33_P2_EmericRtrt_Int2_base"] =       { name = "Sword's Rest Keep Basement",              id = 850, xoffset = -0.182664, yoffset = 0.296235, scale = 0.008263, },
 	},
 }
 

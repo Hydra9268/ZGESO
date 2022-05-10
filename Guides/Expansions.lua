@@ -39673,6 +39673,360 @@ step
 ZGV:RegisterGuide("LEVELING\\High Isle",[[
 loadingimage loadscreen_hi_systres_zone_01.dds
 description Coming Soon
+-- BEGIN: HIGH ISLE PROLOGUE GUIDE
+
+-- START: ALDMERI DOMINION FACTION PROLOGUE GUIDE
 step
-'Coming Soon
+'Open Grahtwood Map 
+'Travel to _Elden Root_ Wayshrine |q Ascending Doubt |future
+|tip Manually skip to the next step.
+|only Aldmeri Dominion
+step
+goto eldenrootgroundfloor_base 55.71,65.38 |q Ascending Doubt |future
+|only Aldmeri Dominion
+step
+goto 49.92,70.69
+talk Jakarn
+accept Ascending Doubt
+|only Aldmeri Dominion
+step
+goto 50.44,70.14
+'Travel Wagon to Jakarn's Contact |q Ascending Doubt/Meet Jakarn's Contact
+|tip Manually skip to the next step.
+|only Aldmeri Dominion
+step
+goto vvardenfell_base 66.68,42.05
+talk Tarazka |q Ascending Doubt/Talk to Tarazka |future
+|only Aldmeri Dominion
+step
+goto 66.88,42.05
+talk Jakarn |q Ascending Doubt/Talk to Jakarn
+|only Aldmeri Dominion
+step
+goto 67.20,42.00
+'Open Pulk |q Ascending Doubt/Enter Pulk |future
+|tip Manually skip to the next step.
+|only Aldmeri Dominion
+step
+goto pulkupper_base 28.11,13.81
+talk Jakarn |q Ascending Doubt/Talk to Jakarn |future
+|tip Manually skip to the next step.
+|only Aldmeri Dominion
+step
+goto 45.14,44.26 |q Ascending Doubt/Search for the Ascendant Order Hideout
+|only Aldmeri Dominion
+step
+goto 61.87,49.32 |q Ascending Doubt/Search for the Ascendant Order Hideout
+|only Aldmeri Dominion
+step
+goto 56.52,70.53 |q Ascending Doubt/Search for the Ascendant Order Hideout
+|only Aldmeri Dominion
+step
+goto pulklower_base 32.78,75.58 |q Ascending Doubt/Search for the Ascendant Order Hideout
+|only Aldmeri Dominion
+step
+goto 44.16,79.38
+'Enter Ascendant Order Hideout |q Ascending Doubt/Enter the Ascendant Order Hideout |future
+|tip Manually skip to the next step.
+|only Aldmeri Dominion
+-- END: ALDMERI DOMINION FACTION PROLOGUE GUIDE
+
+-- START: DAGGERFALL COVENANT FACTION
+step
+'Open Stormhaven Map
+'Travel to _Wayrest_ Wayshrine |q Ascending Doubt |future
+|tip Manually skip to the next step.
+|only Daggerfall Covenant
+step
+goto wayrest_base 37.42,50.73
+talk Jakarn
+accept Ascending Doubt
+|only Daggerfall Covenant
+step
+goto 37.42,50.73
+'Travel Wagon to Jakarn's Contact |q Ascending Doubt/Meet Jakarn's Contact
+|tip Manually skip to the next step
+|only Daggerfall Covenant
+step
+goto vvardenfell_base 35.88,75.92
+talk Tarazka |q Ascending Doubt/Talk to Tarazka |future
+|only Daggerfall Covenant
+step
+goto 35.89,75.94
+talk Jakarn |q Ascending Doubt/Talk to Jakarn
+|only Daggerfall Covenant
+step
+goto 35.84,75.12
+'Open Zainsipilu |q Ascending Doubt/Enter Zainsipilu |future
+|tip Manually skip to the next step.
+|only Daggerfall Covenant
+step
+goto zainsipilu_base 92.44,86.47
+talk Jakarn |q Ascending Doubt/Search for the Ascendant Order Hideout
+|tip Manually skip to the next step.
+|only Daggerfall Covenant
+step
+goto 93.08,67.80 |q Ascending Doubt/Search for the Ascendant Order Hideout
+|only Daggerfall Covenant
+step
+goto 81.00,62.61 |q Ascending Doubt/Search for the Ascendant Order Hideout
+|only Daggerfall Covenant
+step
+goto 69.86,55.28 |q Ascending Doubt/Search for the Ascendant Order Hideout
+|only Daggerfall Covenant
+step
+goto 56.46,76.48 |q Ascending Doubt/Search for the Ascendant Order Hideout
+|only Daggerfall Covenant
+step
+goto 49.34,71.35 |q Ascending Doubt/Search for the Ascendant Order Hideout
+|only Daggerfall Covenant
+step
+goto 43.91,83.09
+'Enter Ascendant Order Hideout |q Ascending Doubt/Enter the Ascendant Order Hideout |future
+|tip Manually skip to the next step.
+|only Daggerfall Covenant
+-- END: DAGGERFALL COVENANT FACTION
+
+-- START: EBONHEART PACT FACTION
+'Open Deshaan Map
+'Travel to _Mournhold_ Wayshrine |q Ascending Doubt |future
+|tip Manually skip to the next step.
+step
+goto deshaan_base 49.98,57.13
+talk Jakarn
+accept Ascending Doubt
+step
+goto 49.98,57.13
+'Travel Wagon to Jakarn's Contact |q Ascending Doubt/Meet Jakarn's Contact
+|tip Manually skip to the next step
+|only Ebonheart Pact
+step
+goto vvardenfell_base 26.97,50.36
+talk Tarazka |q Ascending Doubt/Talk to Tarazka |future
+|only Ebonheart Pact
+step
+goto 26.97,50.36
+talk Jakarn |q Ascending Doubt/Talk to Jakarn
+|only Ebonheart Pact
+step
+goto 24.53,49.90
+'Open Khartag Point |q Ascending Doubt/Enter Khartag Point |future
+|tip Manually skip to the next step.
+|only Ebonheart Pact
+step
+goto khartagpoint_base 52.50,94.11
+talk Jakarn |q Ascending Doubt/Search for the Ascendant Order Hideout
+|tip Manually skip to the next step.
+|only Ebonheart Pact
+step
+goto 52.48,78.72 |q Ascending Doubt/Search for the Ascendant Order Hideout
+|only Ebonheart Pact
+step
+goto 21.05,46.74 |q Ascending Doubt/Search for the Ascendant Order Hideout
+|only Ebonheart Pact
+step
+goto 41.92,50.45
+'Enter Ascendant Order Hideout |q Ascending Doubt/Enter the Ascendant Order Hideout |future
+|tip Manually skip to the next step.
+|only Ebonheart Pact
+-- END: EBONHEART PACT FACTION
+
+-- BEGIN: MERGED PROLOGUE FOR ALL FACTIONS
+step
+goto u33_Prologue1aINT_base 41.93,28.01 |q Ascending Doubt/Search the Ascendant Order Hideout
+step
+goto 48.33,25.74
+'Enter Cavern |q Ascending Doubt/Talk to Guild Scholar Valessea |future
+|tip Manually skip to the next step.
+step
+goto 60.49,18.75
+talk Guild Scholar Valessea |q Ascending Doubt/Talk to Guild Scholar Valessea
+step
+goto 56.27,21.74
+'Enter Ascendant Order Hideout |q Ascending Doubt/Search the Hideout for the Medallions
+|tip Manually skip to the next step.
+step
+goto 54.93,39.28
+'Examine Ascendant Champion Orders |q Ascending Doubt/Search the Hideout for the Medallions
+step
+goto 53.76,40.22
+talk Guild Scholar Valessea |q Ascending Doubt/Talk to Guild Scholar Valessea
+step
+'Open Vvardenfell Map
+'Travel to _Urshilaku Camp_ Wayshrine |q Ascending Doubt/Meet Jakarn at Sareloth Grotto
+|tip Manually skip to the next step.
+step
+goto vvardenfell_base 31.40,33.74
+'Meet Jakarn at Sareloth Grotto |q Ascending Doubt/Meet Jakarn at Sareloth Grotto
+step
+goto 31.40,33.74
+talk Jakarn |q Ascending Doubt/Talk to Jakarn
+step
+goto 31.46,33.64
+'Open Sareloth Grotto |q Ascending Doubt/Enter Sareloth Grotto |future
+|tip Manually skip to the next step.
+step
+goto u33_Prologue1bINT_base 48.85,22.97
+'Search Sareloth Grotto |q Ascending Doubt/Search Sareloth Grotto
+step
+goto 49.25,26.18
+|tip Use Valessea's Shell
+'Search Weathered Chest |q Ascending Doubt/.*Use Valessea's Shell to Find the Medallions.* |count 1
+step
+goto 65.69,23.51
+|tip Use Valessea's Shell
+'Search Weathered Chest |q Ascending Doubt/.*Use Valessea's Shell to Find the Medallions.* |count 2
+step
+goto 64.22,43.92
+|tip Use Valessea's Shell
+'Search Weathered Chest |q Ascending Doubt/.*Use Valessea's Shell to Find the Medallions.* |count 3
+step
+goto 43.51,42.50
+|tip Use Valessea's Shell
+'Search Weathered Chest |q Ascending Doubt/.*Use Valessea's Shell to Find the Medallions.* |count 4
+step
+goto 35.96,56.42 |q Ascending Doubt/.*Use Valessea's Shell to Find the Medallions.*
+step
+goto 49.88,66.28 |q Ascending Doubt/.*Use Valessea's Shell to Find the Medallions.*
+step
+goto 50.17,81.84
+|tip Use Valessea's Shell
+'Search Weathered Chest |q Ascending Doubt/.*Use Valessea's Shell to Find the Medallions.* |count 5
+step
+goto 45.16,75.66
+talk Jakarn |q Ascending Doubt/Talk to Jakarn
+step
+'Open Vvardenfell Map
+'Travel to _Vivec City Temple_ Wayshrine |q Ascending Doubt/Travel to Lady Arabelle's Camp
+|tip Manually skip to the next step.
+step
+goto viviccity_base 51.71,41.50 |q Ascending Doubt/Travel to Lady Arabelle's Camp
+step
+goto 65.15,44.11 |q Ascending Doubt/Travel to Lady Arabelle's Camp
+step
+goto vvardenfell_base 59.29,86.59 |q Ascending Doubt/Travel to Lady Arabelle's Camp
+step
+goto 58.49,89.94 |q Ascending Doubt/Travel to Lady Arabelle's Camp
+step
+goto 57.73,89.79
+talk Lady Arabelle
+turnin Ascending Doubt
+accept A King's Retreat
+step
+goto 57.99,89.59
+talk Arch-Magister Delric |q A King's Retreat/Talk to Arch-Magister Delric
+step
+goto 57.99,89.59
+talk Guild Scholar Valessea |q A King's Retreat/Talk to Guild Scholar Valessea
+step
+goto 57.79,89.87
+'Place Fighters Guild Invitation Medallion |q A King's Retreat/Place the Fighters Guild Medallion on the Table
+step
+goto 57.79,89.87
+talk Guild Scholar Valessea |q A King's Retreat/Talk to Guild Scholar Valessea
+step
+goto 57.79,89.87
+'Take Dispelling Powder |q A King's Retreat/Take the Dispelling Powder
+step
+goto 57.86,90.01
+'Use Portal to Windhelm |q A King's Retreat/Go to Windhelm |future
+|tip Manually skip to the next step.
+step
+goto windhelm_base 74.45,30.91 |q A King's Retreat/Go to the Palace of Kings
+step
+goto 68.88,24.54 |q A King's Retreat/Go to the Palace of Kings
+step
+goto 50.54,30.74
+'Open Palace of Kings |q A King's Retreat/Go to the Palace of Kings
+ step
+goto palaceofkingsmain_base 47.37,72.09
+talk Captain Danylva |q A King's Retreat/Talk to Captain Danylva
+step
+goto 21.70,47.07
+'Dispel Ebonheart Pact Invitation Medallion |q A King's Retreat/Use the Dispelling Powder
+step
+goto 27.32,51.33
+talk Captain Danylva |q A King's Retreat/Talk to Captain Danylva
+step
+'Open Auridon Map
+'Travel to _Skywatch_ Wayshrine |q A King's Retreat/Go to Skywatch |future
+|tip Manually skip to to the next step.
+step
+goto skywatch_base 23.44,47.30 |q A King's Retreat/Find Jakarn
+step
+goto 39.79,46.85 |q A King's Retreat/Find Jakarn
+step
+goto 40.82,67.40 |q A King's Retreat/Find Jakarn
+step
+goto 46.46,68.31
+'Find Jakarn |q A King's Retreat/Find Jakarn
+step
+goto 46.46,68.31
+talk Jakarn |q A King's Retreat/Talk to Jakarn
+step
+goto 46.16,67.80
+'Dispel Aldmeri Dominion Invitation Medallion |q A King's Retreat/Use the Dispelling Powder
+step
+goto 46.52,67.47
+talk Guild Scholar Valessea |q A King's Retreat/Talk to Valessea
+step
+goto 45.55,76.91 |q A King's Retreat/Go to Sword's Rest Isle
+step
+goto 57.26,76.58
+'Travel Boat to Sword's Rest Isle |q A King's Retreat/Go to Sword's Rest Isle |future
+|tip Manually skip to the next step.
+step
+goto u33_P2_EmericRtrt_Ext_base 50.79,52.28
+'Open Sword's Rest Keep |q A King's Retreat/Search the Landing Site
+step
+goto u33_P2_EmericRtrt_Int2_base 65.55,77.49
+|tip Go downstairs.
+'Open Sword's Rest Keep Basement |q A King's Retreat/Search Sword's Rest Keep
+|tip Manually skip to the next step.
+step
+goto 67.32,25.48 |q A King's Retreat/Search Sword's Rest Keep
+step
+goto 33.37,37.20 |q A King's Retreat/Search Sword's Rest Keep
+step
+goto 28.17,25.53
+talk Lady Arabelle |q A King's Retreat/Talk to Lady Arabelle |future
+step
+goto 26.76,25.03
+'Climb Keep Courtyard |q A King's Retreat/Enter the Courtyard
+|tip Manually skip to the next step.
+step
+goto u33_P2_EmericRtrt_Int2_base 29.69,27.26
+'Open Keep Courtyard |q A King's Retreat/Enter the Courtyard
+step
+goto u33_P2_EmericRtrt_Ext_base 51.12,35.16
+|tip When he has a shield up kill the mobs quickly to bring down his shield.
+kill Ascendant Champion |q A King's Retreat/Kill the Ascendant Champion
+step
+goto 53.53,37.39
+talk Lady Arabelle |q A King's Retreat/Talk to Lady Arabelle
+step
+'Open Vvardenfell Map
+'Travel to _Vivec City Temple_ Wayshrine |q A King's Retreat/Go to Lady Arabelle's Camp
+|tip Manually skip to the next step.
+step
+goto viviccity_base 51.71,41.50 |q A King's Retreat/Go to Lady Arabelle's Camp
+step
+goto 65.15,44.11 |q A King's Retreat/Go to Lady Arabelle's Camp
+step
+goto vvardenfell_base 59.29,86.59 |q A King's Retreat/Go to Lady Arabelle's Camp
+step
+goto 57.73,89.79
+'Go to Lady Arabelle's Camp |q A King's Retreat/Go to Lady Arabelle's Camp
+step
+goto 57.73,89.79
+talk Lady Arabelle
+turnin A King's Retreat
+-- END: MERGED PROLOGUE GUIDE FOR NEW AND EXISTING PLAYERS
+
+-- BEGIN HIGH ISLE GUIDE FOR EXISTING PLAYERS
+step
+'Open High Isle and Amenos Map
+'Travel to _Westbay_ Wayshrine |q Of Knights and Knaves |future
+|tip Manually skip to the next step.
+step
 ]])
