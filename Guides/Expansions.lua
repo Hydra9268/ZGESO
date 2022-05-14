@@ -40029,4 +40029,19 @@ step
 'Travel to _Westbay_ Wayshrine |q Of Knights and Knaves |future
 |tip Manually skip to the next step.
 step
+goto u34_gonfalonbaycity_base 7.09,46.89
+talk Jakarn
+accept Of Knights and Knaves
+step
+goto 17.11,56.98
+talk Lady Arabelle Davaux |q Of Knights and Knaves/Talk to Lady Arabelle Davaux
+step
+goto 17.11,56.98
+talk to Lord Bacaro Volorus |q Of Knights and Knaves/Talk to Lord Bacaro
+step
+goto 17.11,56.98
+talk Dockmaster Arnauld |q Of Knights and Knaves/Talk to Dockmaster |future
+|tip Manually skip to the next step.
+step
+goto 19.40,57.75
 ]])
