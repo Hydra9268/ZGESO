@@ -41815,8 +41815,6 @@ goto 19.41,57.82
 'Open Gonfalon Bay |q Of Knights and Knaves/Talk to Lady Arabelle Davaux
 |tip Manually skip to the next step.
 step
-goto 33.32,56.60 |q Of Knights and Knaves/Talk to Lady Arabelle Davaux
-step
 goto 46.87,42.84
 wayshrine Gonfalon Square
 step
@@ -41827,7 +41825,8 @@ goto 47.08,50.66
 talk Lord Bacaro |q Of Knights and Knaves/Talk to Lord Bacaro
 step
 goto 47.08,50.66
-talk Dockmaster |q Of Knights and Knaves/Talk to Dockmaster
+talk Dockmaster Arnauld |q Of Knights and Knaves/Talk to Dockmaster |future
+|tip Manually skip to the next step.
 step
 goto 43.75,37.25
 'Open The Ancient Anchor Inn |q Of Knights and Knaves/Investigate the Inn
@@ -41841,7 +41840,6 @@ goto 42.54,34.10
 talk Sergeant Dayne |q Of Knights and Knaves/Investigate the Inn
 step
 goto 47.71,42.85
-|tip Leave the Inn.
 'Use Gonfalon Square Wayshrine
 'Travel to _Westbay_ |q Of Knights and Knaves/Investigate the Lighthouse
 |tip Manually skip to the next step.
@@ -41860,14 +41858,16 @@ talk Light-Keeper Menoit |q Of Knights and Knaves/Investigate the Lighthouse
 step
 goto 39.13,91.64
 |tip Leave the Lighthouse.
-'Take Idol of Kynareth |q Of Knights and Knaves/Retrieve the Lighthouse Idol
+'Take Idol of Kynareth |q Of Knights and Knaves/Investigate the Lighthouse
+|tip Manually skip to the next step.
 step
 goto 45.88,91.52
 'Open Gonfalon Head Lighthouse |q Of Knights and Knaves/Investigate the Lighthouse
 |tip Manually skip to the next step.
 step
 goto 46.01,91.66
-'Place Idol of Kynareth |q Of Knights and Knaves/Place Idol of Kynareth
+'Place Idol of Kynareth |q Of Knights and Knaves/Investigate the Lighthouse
+|tip Manually skip to the next step.
 step
 goto 46.04,91.70
 talk Light-Keeper Menoit |q Of Knights and Knaves/Investigate the Lighthouse
@@ -41876,13 +41876,11 @@ step
 'Travel to _Westbay_ Wayshrine |q Of Knights and Knaves/Investigate the Shallows
 |tip Manually skip to the next step.
 step
-goto 06.44,36.45 |q Of Knights and Knaves/Investigate the Shallows
-step
 goto 49.99,79.22 |q Of Knights and Knaves/Investigate the Shallows
 step
 goto 52.75,72.83 |q Of Knights and Knaves/Investigate the Shallows
 step
-goto 57.05,79.97
+goto 57.05,70.94
 wayshrine Tor Draioch
 step
 goto 52.75,72.83 |q Of Knights and Knaves/Investigate the Shallows
@@ -41893,21 +41891,27 @@ goto 49.60,74.08
 talk Orguerite Onis |q Of Knights and Knaves/Investigate the Shallows
 |tip Manually skip to the next step.
 step
+goto 51.97,74.57 |q Of Knights and Knaves/Investigate the Shallows
+step
 goto 47.72,73.62 |q Of Knights and Knaves/Investigate the Shallows
 step
 goto 48.53,71.75
 'Examine Knight Ondrisse's Orders |q Of Knights and Knaves/Investigate the Shallows
 step
-goto 47.72,73.62 |q Of Knights and Knaves/Talk to Lady Arabelle Davaux
-step
 goto 58.56,78.26 |q Of Knights and Knaves/Talk to Lady Arabelle Davaux
 step
-goto u34_gonfalonbaycity_base 62.15,25.62 |q Of Knights and Knaves/Talk to Lady Arabelle Davaux
+goto 51.97,74.57 |q Of Knights and Knaves/Talk to Lady Arabelle Davaux
 step
-goto 41.75,17.63
+goto 49.99,79.22 |q Of Knights and Knaves/Talk to Lady Arabelle Davaux
+step
+goto u34_gonfalonbaycity_base 41.75,17.63
 talk Lady Arabelle Davaux |q Of Knights and Knaves/Talk to Lady Arabelle Davaux
 step
-goto u34_systreszone_base |q Of Knights and Knaves/Go to the Druid's Hut
+goto 20.56,21.53 |q Of Knights and Knaves/Go to the Druid's Hut
+step
+goto u34_systreszone_base 47.64,83.31 |q Of Knights and Knaves/Go to the Druid's Hut
+step
+goto 45.67,82.01 |q Of Knights and Knaves/Go to the Druid's Hut
 step
 goto 45.60,79.33
 talk Druid Ryvana |q Of Knights and Knaves/Talk to Druid Ryvana |future
@@ -41916,32 +41920,25 @@ goto 40.44,84.83
 talk Guild Magister Valessea |q Of Knights and Knaves/Talk to Guild Magister Valessea |future
 step
 goto 45.81,80.07
+'Return to Druid Ryvana's Hut |q Of Knights and Knaves/Return to Druid Ryvana's Hut
+step
+goto 45.81,80.07
 talk Guild Magister Valessea |q Of Knights and Knaves/Talk to Guild Magister Valessea |future
 step
-goto 45.54,81.85 |q Of Knights and Knaves/Talk to Lady Arabelle Davaux
+goto 44.61,77.06 |q Of Knights and Knaves/Talk to Lady Arabelle Davaux
 step
-goto u34_gonfalonbaycity_base 5.87,37.45 |q Of Knights and Knaves/Talk to Lady Arabelle Davaux
-step
-goto 21.20,21.54 |q Of Knights and Knaves/Talk to Lady Arabelle Davaux
-step
-goto 41.75,17.63
+goto u34_gonfalonbaycity_base 41.75,17.63
 talk Lady Arabelle Davaux |q Of Knights and Knaves/Talk to Lady Arabelle Davaux
 step
 goto 62.91,26.41 |q Of Knights and Knaves/Enter the Abhain Chapel Crypts
 step
-goto u34_systreszone_base 60.64,77.55 |q Of Knights and Knaves/Enter the Abhain Chapel Crypts
-step
-goto 60.48,75.94 |q Of Knights and Knaves/Enter the Abhain Chapel Crypts
+goto u34_systreszone_base 60.48,75.94 |q Of Knights and Knaves/Enter the Abhain Chapel Crypts
 step
 goto 64.11,77.71
-'Open Abhain Chapel Crypts |q Of Knights and Knaves/Enter the Abhain Chapel Crypts
+'Open Abhain Chapel Crypts |q Of Knights and Knaves/Enter the Abhain Chapel Crypts |future
 |tip Manually skip to the next step.
 step
-goto u34_dufortcrypt_base 26.33,8.56 |q Of Knights and Knaves/Search the Crypts
-step
-goto 38.22,20.49 |q Of Knights and Knaves/Search the Crypts
-step
-goto 33.32,24.80
+goto u34_dufortcrypt_base 33.32,24.80
 'Examine The Ascendant Proclamation |q Of Knights and Knaves/Search the Crypts
 step
 goto 45.55,32.47
@@ -41952,6 +41949,7 @@ goto 37.71,39.71
 |tip Manually skip to the next step.
 step
 goto 29.40,43.67
+|tip Watch the dialogue.
 'Locate the Captains |q Of Knights and Knaves/Locate the Captains
 step
 goto 33.87,47.68
@@ -41964,44 +41962,48 @@ step
 goto 58.12,66.25
 'Find Guild General Quentyn |q Of Knights and Knaves/Find Guild General Quentyn
 step
-goto 60.84,79.12 |q Of Knights and Knaves/Reach Guild General Quentyn
-step
 goto 66.85,79.12 |q Of Knights and Knaves/Reach Guild General Quentyn
 step
+goto 72.48,72.82 |q Of Knights and Knaves/Reach Guild General Quentyn
+step
 goto 74.69,86.75 |q Of Knights and Knaves/Reach Guild General Quentyn
+step
+goto 68.56,85.56 |q Of Knights and Knaves/Reach Guild General Quentyn
 step
 goto 62.25,63.40 |q Of Knights and Knaves/Reach Guild General Quentyn
 step
 goto 70.56,65.96
-kill Guild General Quentyn |q Of Knights and Knaves/Defeat Guild General Quentyn
+kill Guild General Quentyn |q Of Knights and Knaves/Defeat Guild General Quentyn |future
 step
-'_Fix Door Leave_
+goto 74.18,66.25
+'Open High Isle |q Of Knights and Knaves/Leave the Abhain Crypts
 step
 goto u34_systreszone_base 62.52,77.88
 talk Lady Arabelle Davaux |q Of Knights and Knaves/Talk to Lady Arabelle Davaux
 step
-'Open High Isle and Amenos Map
+goto 57.11,70.99
+'Use Tor Draioch Wayshrine
 'Travel to _Gonfalon Square_ Wayshrine |q Of Knights and Knaves/Go to Mandrake Manor
-'tip Manually skip to the next step.
+|tip Manually skip to the next step.
 step
-goto u34_gonfalonbaycity_base 56.78,36.24 |q Of Knights and Knaves/Go to Mandrake Manor
+goto u34_gonfalonbaycity_base 72.65,45.36
+'Open Mandrake Manor |q Of Knights and Knaves/Talk to Captain Kaleen |future
+|tip Manually skip to the next step.
 step
-goto 65.65,44.31 |q Of Knights and Knaves/Go to Mandrake Manor
+goto 73.87,43.53
+talk Captain Za'ji |q Of Knights and Knaves/Talk to Captain Za'ji
 step
-goto 72.65,45.36
-'Open Mandrake Manor |q Of Knights and Knaves/Talk to Captain Kaleen
+goto 73.87,43.53
+talk Captain Tsuzo |q Of Knights and Knaves/Talk to Captain Tsuzo |future
 |tip Manually skip to the next step.
 step
 goto 73.87,43.53
 talk Captain Kaleen |q Of Knights and Knaves/Talk to Captain Kaleen
 step
 goto 74.02,47.72
-|tip Leave Mandrake Manor.
 talk Lady Arabelle Davaux
 turnin Of Knights and Knaves
 accept People of Import
-step
-goto 57.03,36.15 |q People of Import/Go to Dockmaster Arnauld's House
 step
 goto 47.37,42.97
 'Use Gonfalon Square Wayshrine
@@ -42015,14 +42017,14 @@ step
 goto 46.86,88.75
 'Open Dockmaster Arnauld's House |q People of Import/Go to Dockmaster Arnauld's House
 step
-goto 46.73,88.62
-'Examine Letter to Dockmaster Arnauld |q People of Import/.*Search Dockmaster Arnauld's House. |count 1
+goto 46.64,88.86
+'Examine Prepared Meal |q People of Import/.*Search Dockmaster Arnauld's House. |count 1
 step
 goto 46.67,88.71
 'Examine Ransacked Belongings |q People of Import/.*Search Dockmaster Arnauld's House. |count 2
 step
-goto 46.64,88.86
-'Examine Prepared Meal |q People of Import/.*Search Dockmaster Arnauld's House. |count 3
+goto 46.73,88.62
+'Examine Letter to Dockmaster Arnauld |q People of Import/.*Search Dockmaster Arnauld's House. |count 3
 step
 goto 46.69,88.75
 talk Lady Arabelle Davaux |q People of Import/Talk to Lady Arabelle Davaux
@@ -42056,12 +42058,10 @@ goto 33.00,91.27
 'Open Breakwater Cave |q People of Import/Search Breakwater Cave |future
 |tip Manually skip to the next step.
 step
-goto u34_breakwatercave_base 35.70,76.47 |q People of Import/Search Breakwater Cave
-step
-goto 56.87,76.47 |q People of Import/Search Breakwater Cave
+goto u34_breakwatercave_base 56.87,76.47 |q People of Import/Search Breakwater Cave
 step
 goto 67.45,85.48
-'Examine Knight Richel's Orders |q People of Import/Search the Area
+'Examine Knight Richel's Orders |q People of Import/Search the Area |future
 step
 'Open High Isle and Amenos Map
 'Travel to _Steadfast Manor_ |q People of Import/Talk to Lord Bacaro Volorus
@@ -42076,13 +42076,11 @@ talk Lord Bacaro Volorus |q People of Import/Talk to Lord Bacaro Volorus
 step
 goto 37.45,77.11
 'Use Steadfast Manor Wayshrine
-'Travel to _Coral Road_ |q People of Import/Go to Castle Navire |tip Leave Steadfast Manor
+'Travel to _Coral Road_ |q People of Import/Go to Castle Navire
 |tip Manually skip to the next step.
 step
 goto 20.02,76.13
 wayshrine Castle Navire
-step
-goto 18.23,76.95 |q People of Import/Go to Castle Navire
 step
 goto 16.45,74.76
 'Open Castle Navire Courtyard |q People of Import/Go to Castle Navire |future
@@ -42090,14 +42088,14 @@ goto 16.45,74.76
 step
 goto u34_CastleNaviresExt_base 39.39,63.16
 |tip Go upstairs.
-talk Count Damard Dufont |q People of Import/Talk to Count Damard Dufont
+talk Count Damard Dufort |q People of Import/Talk to Count Damard Dufort
 step
 goto 29.60,69.92
 talk Viscount Jonne Mornard |q People of Import/Talk to Viscount Jonne Mornard
 step
 goto 18.76,58.97
 |tip Go upstairs.
-talk Duchess Elea Dufont |q People of Import/Talk to Duchess Elea Dufont
+talk Duchess Elea Dufort |q People of Import/Talk to Duchess Elea Dufort
 step
 goto 23.14,63.02
 |tip Go down the stairs.
@@ -42111,9 +42109,7 @@ goto 32.92,54.75
 'Open Lower Castle Navire |q People of Import/Enter Lower Castle Navire
 |tip Manually skip to the next step.
 step
-goto u34_CastleNavireInt_base 22.04,75.38 |q People of Import/.*Find Duchess Elea's Notes.*
-step
-goto 28.72,29.03 |q People of Import/.*Find Duchess Elea's Notes.*
+goto u34_CastleNavireInt_base 28.72,29.03 |q People of Import/.*Find Duchess Elea's Notes.* |future
 step
 goto 44.98,29.03 |q People of Import/.*Find Duchess Elea's Notes.*
 step
@@ -42137,7 +42133,7 @@ goto 72.95,47.72
 'Open Castle Navire South Courtyard |q People of Import/Return to the Courtyard
 |tip Manually skip to the next step.
 step
-goto 70.75,52.98 |q People of Import/Return to the Courtyard
+goto u34_CastleNaviresExt_base 70.75,52.98 |q People of Import/Return to the Courtyard
 step
 goto 57.77,66.90
 'Open Castle Navire Courtyard |q People of Import/Return to the Courtyard
@@ -42152,11 +42148,7 @@ step
 'Travel to _Gonfalon Square_ Wayshrine |q People of Import/Return to Mandrake Manor
 |tip Manually skip to the next step.
 step
-goto u34_gonfalonbaycity_base 57.39,35.84 |q People of Import/Return to Mandrake Manor
-step
-goto 65.65,44.31 |q People of Import/Return to Mandrake Manor
-step
-goto 73.37,46.79
+goto u34_gonfalonbaycity_base 73.37,46.79
 talk Captain Tsuzo |q People of Import/Talk to Captain Tsuzo |future
 step
 goto 72.81,45.32
@@ -42166,18 +42158,14 @@ step
 goto 74.38,43.81
 talk Lady Arabelle Davaux
 turnin People of Import
-accept  |q  |q Deadly Investigations
-step
-goto 65.65,44.31 |q  |q Deadly Investigations/.*Investigate Ascendant Order Sites.*
-step
-goto 57.39,35.84 |q  |q Deadly Investigations/.*Investigate Ascendant Order Sites.*
+accept Deadly Investigations
 step
 goto 47.37,42.97
 'Use Gonfalon Square Wayshrine
-'Travel to _Castle Navire_ |q  |q Deadly Investigations/.*Investigate Ascendant Order Sites.*
+'Travel to _Castle Navire_ |q Deadly Investigations/.*Investigate Ascendant Order Sites.*
 |tip Manually skip to the next step.
 step
-goto u34_systreszone_base 20.69,73.57 |q  |q Deadly Investigations/.*Investigate Ascendant Order Sites.*
+goto u34_systreszone_base 20.65,73.53 |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 1
 step
 goto 18.35,68.34
 talk Guild Magister Valessea |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 1
@@ -42202,11 +42190,12 @@ goto 14.55,65.39
 'Take Bloomingsong Flower |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 1
 |tip Manually skip to the next step.
 step
-goto 18.38,68.29
+goto u34_systreszone_base 18.38,68.29
 talk Druid Ryvana |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 1
 |tip Manually skip to the next step.
 step
 goto 12.98,68.80
+|tip Wait for her to cast her spell then follow the blue balls.
 'Enter Druid Circle |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 1
 |tip Manually skip to the next step.
 step
@@ -42218,7 +42207,7 @@ goto 13.57,69.13
 'Examine Lava Vent |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 1
 |tip Manually skip to the next step.
 step
-goto 13.71,66.29
+goto 13.72,66.32
 'Examine Cracked Staff |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 1
 |tip Manually skip to the next step.
 step
@@ -42229,27 +42218,23 @@ step
 'Travel to _Tor Draioch_ |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 2
 |tip Manually skip to the next step.
 step
-goto 57.85,67.78 |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 2
-step
 goto 60.50,66.21
 talk Captain Kaleen |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 2
 |tip Manually skip to the next step.
 step
 goto 60.44,66.14
-'Open Tarnished Grotto |q  |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 2
+'Open Tarnished Grotto |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 2
 |tip Manually skip to the next step.
 step
 goto u34_ZQ3Cave_base 57.70,51.17
-'Examine Transport Plans |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 2
-|tip Manually skip to the next step.
+'Examine Transport Plans |lorebook Transport Plans/3/45/28
 step
 goto 38.40,31.29 |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 2
 step
 goto 15.50,32.36 |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 2
 step
 goto 16.28,50.68
-'Examine Orders for the Recruits |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 2
-|tip Manually skip to the next step.
+'Examine Orders for the Recruits |lorebook Orders for the Recruits/3/45/29
 step
 goto 16.37,49.81
 talk Captain Kaleen |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 2
@@ -42260,6 +42245,7 @@ goto 38.40,31.29 |q Deadly Investigations/.*Investigate Ascendant Order Sites.* 
 step
 goto 90.84,48.25
 'Enter High Isle |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 3
+|tip Manually skip to the next step.
 step
 goto u34_systreszone_base 57.50,65.64 |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 3
 step
@@ -42270,18 +42256,11 @@ wayshrine Dufort Shipyards
 step
 goto 55.45,56.32
 talk Jakarn |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 3
-step
-goto 53.41,54.98 |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 3
+|tip Manually skip to the next step.
 step
 goto 53.81,52.68 |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 3
 step
-goto 55.57,51.81 |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 3
-step
-goto 56.34,52.52 |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 3
-step
 goto 56.82,52.04 |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 3
-step
-goto 55.65,50.81 |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 3
 step
 goto 56.30,50.12 |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 3
 step
@@ -42294,35 +42273,25 @@ step
 'Travel to _Gonfalon Square_ |q Deadly Investigations/Talk to Lady Arabelle
 |tip Manually skip to the next step.
 step
-goto u34_gonfalonbaycity_base 57.39,35.84 |q Deadly Investigations/Talk to Lady Arabelle
-step
-goto 65.65,44.31 |q Deadly Investigations/Talk to Lady Arabelle
-step
-goto 72.81,45.32
+goto u34_gonfalonbaycity_base 72.81,45.32
 'Open Mandrake Manor |q Deadly Investigations/Talk to Lady Arabelle
 |tip Manually skip to the next step.
 step
 goto 73.44,43.84
 talk Lady Arabelle |q Deadly Investigations/Talk to Lady Arabelle
 step
-goto 65.65,44.31 |q Deadly Investigations/Enter Shipwreck Shoals
-step
-goto 57.39,35.84 |q Deadly Investigations/Enter Shipwreck Shoals
-step
 goto 47.37,42.97
 'Use Gonfalon Square Wayshrine
 'Travel to _Dufort Shipyards_ |q Deadly Investigations/Enter Shipwreck Shoals
 |tip Manually skip to the next step.
 step
-goto 51.88,53.96 |q Deadly Investigations/Enter Shipwreck Shoals
-step
-goto 48.50,52.31 |q Deadly Investigations/Enter Shipwreck Shoals
-step
-goto 48.39,48.90 |q Deadly Investigations/Enter Shipwreck Shoals
+goto u34_systreszone_base 48.39,48.90 |q Deadly Investigations/Enter Shipwreck Shoals 
 step
 goto 48.04,48.56
-'Travel Shipwreck Shoals |q Deadly Investigations/Enter Shipwreck Shoals
+'Travel Shipwreck Shoals |q Deadly Investigations/Enter Shipwreck Shoals |future
 |tip Manually skip to the next step.
+step
+goto u34_shipwreckshoalsext_base 62.32,80.88 |q Deadly Investigations/Find Captain Tsuzo
 step
 goto 71.37,44.21 |q Deadly Investigations/Find Captain Tsuzo
 step
@@ -42332,32 +42301,25 @@ goto 55.94,27.36
 talk Captain Tsuzo |q Deadly Investigations/Talk to Captain Tsuzo |future
 step
 goto 53.92,13.86
-talk Boatswain Islinne |q Deadly Investigations/Talk to Boatswain Islinne |future
+talk Boatswain Islinne |q Deadly Investigations/Talk to the Boatswain Islinne |future
 step
 'Open High Isle and Amenos Map
 'Travel to _Gonfalon Square_ |q Deadly Investigations/Return to Mandrake Manor
 |tip Manually skip to the next step.
 step
-goto u34_gonfalonbaycity_base 57.39,35.84 |q Deadly Investigations/Return to Mandrake Manor
-step
-goto 65.65,44.31 |q Deadly Investigations/Return to Mandrake Manor
-step
-goto 72.81,45.32
+goto u34_gonfalonbaycity_base 72.81,45.32
 'Open Mandrake Manor |q Deadly Investigations/Talk to Lady Arabelle |future
 |tip Manually skip to the next step.
 step
 goto 73.77,44.63
 |tip Go upstairs.
 talk Lady Arabelle Davaux
+turnin Deadly Investigations
 accept Escape from Amenos
-step
-goto 65.65,44.31 |q Escape from Amenos/Meet Captain Basrush |tip Leave Mandrake Manor.
-step
-goto 57.39,35.84 |q Escape from Amenos/Meet Captain Basrush
 step
 goto 47.37,42.97
 'Use Gonfalon Square Wayshrine
-'Travel to _Westbay_ Wayshrine |q Escape from Amenos/Meet Captain Basrush
+'Travel to _Dufort Shipyards_ Wayshrine |q Escape from Amenos/Meet Captain Basrush
 |tip Manually skip to the next step.
 step
 goto u34_systreszone_base 57.24,55.12
@@ -42367,28 +42329,32 @@ goto 57.03,55.16
 'Use Prisoner Disguise |q Escape from Amenos/Use Prisoner Disguise
 step
 goto 58.27,54.31
-'Travel The Shackled Guar to Amenos |q Escape from Amenos/Board the Shackeled Guar
+'Travel The Shackled Guar to Amenos |q Escape from Amenos/Board the Shackeled Guar |future
+|tip Manually skip to the next step.
 step
 goto u34_amenosstation_city_base 59.55,71.88
+|tip Re-equip Prisoner disguide.
 'Open Amenos Station Stockade |q Escape from Amenos/Explore Amenos Station
 |tip Manually skip to the next step.
 step
 goto 60.11,60.18
-'Open Amenos Station |q Escape from Amenos/Talk to Jakarn
+'Open Amenos Station |q Escape from Amenos/Explore Amenos Station
 |tip Manually skip to the next step.
 step
 goto 51.08,54.56
 wayshrine Amenos Station
 step
+goto 58.62,59.42
+'Open Amenos Station |q Escape from Amenos/Explore Amenos Station
+|tip Manually skip to the next step.
+step
 goto 64.89,57.35
 |tip Use Prisoner Disguise.
-talk Jakarn |q Escape from Amenos/Talk to Jakarn
-step
-goto 71.88,51.80
-talk Halgrel |q Escape from Amenos/Talk to the Prisoner
+talk Jakarn |q Escape from Amenos/Talk to Jakarn |future
 step
 goto 71.33,50.32
 'Open Amenos Station |q Escape from Amenos/Find the Camp Northeast of the Gate
+|tip Manually skip to the next step.
 step
 goto 64.96,20.29 |q Escape from Amenos/Find the Camp Northeast of the Gate
 step
@@ -42396,7 +42362,7 @@ goto 82.44,21.75
 'Open Amenos Jungle |q Escape from Amenos/Find the Camp Northeast of the Gate
 |tip Manually skip to the next step.
 step
-goto u34_systreszone_base  78.96,41.31
+goto u34_systreszone_base 78.96,41.31
 'Examine Green Serpent Bounty |lorebook Green Serpent Bounty/3/45/30
 step
 goto 79.77,41.18
@@ -42405,7 +42371,22 @@ step
 goto 78.91,40.45
 'Examine Map of Amenos |q Escape from Amenos/Investigate the Green Serpent Camp
 step
-goto 81.62,41.01 |q Escape from Amenos/Reach the Northeast Shore
+goto 73.52,34.63
+wayshrine Serpents Hollow
+step
+goto 67.69,36.87 |q Escape from Amenos/Talk to Caska |future
+step
+goto 61.22,36.43 |q Escape from Amenos/Talk to Caska |future |tip Pass through the tunnel to the other side.
+step
+goto 62.95,31.52
+wayshrine Trappers Peak
+step
+goto 62.95,31.52
+'use Trappers Peak Wayshrine
+'Travel to _Serpents Hollow_ |q Escape from Amenos/Talk to Caska |future
+|tip Manually skip to the next step.
+step
+goto 40.62,36.67 |q Escape from Amenos/Talk to Caska |future
 step
 goto 88.25,35.62
 wayshrine Brokerock
@@ -42414,25 +42395,28 @@ goto 92.95,31.91
 talk Caska |q Escape from Amenos/Talk to Caska |future
 step
 goto 91.71,31.56
-'Search Crude Shelter |q Escape from Amenos/Search Area |future
+'Search Crude Shelter
+'Follow Caska |q Escape from Amenos/Follow Caska
+|tip Manually skip to the next step.
 step
 goto 90.87,31.64
-'Examine Old Campfire |q Escape from Amenos/Search Area |future
+'Examine Old Campfire
+'Follow Caska |q Escape from Amenos/Follow Caska
+|tip Manually skip to the next step.
 step
 goto 90.28,31.17
 'Examine Disturbed Dirt
-'Examine Invitation Medallion |q Escape from Amenos/Search Area
+'Examine Invitation Medallion |q Escape from Amenos/Follow Caska
+|tip Manually skip to the next step.
 step
 goto 87.63,30.37
-talk Queen Ayrenn |q Escape from Amenos/Talk to Queen Ayrenn
+talk Queen Ayrenn |q Escape from Amenos/Talk to Queen Ayrenn |future
 step
 goto 84.00,30.57
 'Take Vulk'esh Claw |q Escape from Amenos/.*Gather Ritual Items.* |count 1
 step
 goto 85.50,26.08
 'Take Sailor's Bone |q Escape from Amenos/.*Gather Ritual Items.* |count 2
-step
-goto 84.15,27.28 |q Escape from Amenos/.*Gather Ritual Items.* |count 3
 step
 goto 80.95,27.72
 'Take Harpy Feather |q Escape from Amenos/.*Gather Ritual Items.* |count 3
@@ -42444,37 +42428,36 @@ goto 84.02,24.42
 wayshrine Flooded Coast
 step
 goto 83.38,22.01
-'Find High King Emeric
+'Find High King Emeric |q Escape from Amenos/Find High King Emeric
 step
 goto 83.38,22.01
 talk Queen Ayrenn |q Escape from Amenos/Talk to Queen Ayrenn
 'Tell her _Any ideas on how we can find High King Emeric now?_
 step
 goto 81.60,20.27
-'Open Coral Cliffs
-step
-goto u34_coralcliffsext_base 52.87,29.03
-'Open Coral Cliffs |q Escape from Amenos/Search the Nearby Cave
+'Open Coral Cliffs |q Escape from Amenos/Search the Nearby Cave |future
 |tip Manually skip to the next step.
 step
-goto u34_coralcliffsint_base 69.01,48.11 |q Escape from Amenos/Search the Nearby Cave
+goto u34_coralcliffsext_base 66.75,30.11 |q Escape from Amenos/Search the Nearby Cave
 step
-goto 70.48,64.92 |q Escape from Amenos/Search the Nearby Cave
-step
-goto 39.60,72.06 |q Escape from Amenos/Search the Nearby Cave
-step
-goto 23.74,86.13
+goto 52.87,29.03
 'Enter Coral Cliffs |q Escape from Amenos/Search the Nearby Cave
 |tip Manually skip to the next step.
 step
-goto u34_coralcliffsext_base 17.92,58.00 |q Escape from Amenos/Search the Nearby Cave
+goto u34_coralcliffsint_base 70.48,64.92 |q Escape from Amenos/Search the Nearby Cave
+step
+goto 23.84,86.45
+'Enter Coral Cliffs |q Escape from Amenos/Search the Nearby Cave
+|tip Manually skip to the next step.
+step
+goto u34_coralcliffsext_base 19.43,60.17 |q Escape from Amenos/Search the Nearby Cave
 step
 goto 40.37,77.91 |q Escape from Amenos/Search the Nearby Cave
 step
 goto 60.65,64.94 |q Escape from Amenos/Search the Nearby Cave
 step
 goto 72.48,54.38
-talk High King Emeric |q Escape from Amenos/Talk to High King Emeric
+talk High King Emeric |q Escape from Amenos/Talk to High King Emeric |future
 step
 goto 74.11,54.98
 'Examine Letter from Deesh-Jee |lorebook Letter from Deesh-Jee/3/45/32
@@ -42491,19 +42474,22 @@ goto u34_systreszone_base 83.31,21.90
 talk High King Emeric |q Escape from Amenos/Talk to High King Emeric |future
 'Tell himn _We found a note from the Green Serpent leader._
 step
-goto 81.88,21.31 |q Escape from Amenos/Meet Allies at the Coin Fort
+goto 84.01,24.37
+'Use Flooded Coast Wayshrine
+'Travel to _Serpents Hollow_ |q The Missing Prowler |future
+|tip Manually skip to the next step.
 step
-goto 81.22,21.85 |q Escape from Amenos/Meet Allies at the Coin Fort
+goto 70.85,30.77 |q Escape from Amenos/Talk to Caska |future
 step
-goto 81.40,26.50 |q Escape from Amenos/Meet Allies at the Coin Fort
-step
-goto 74.77,24.76 |q Escape from Amenos/Meet Allies at the Coin Fort
+goto 74.29,28.40 |q Escape from Amenos/Talk to Caska |future
 step
 goto 74.15,24.83
-talk Caska |q Escape from Amenos/Talk to Caska
+|tip Your allies will walk to this spot.
+talk Caska |q Escape from Amenos/Talk to Caska |future
 step
 goto 73.26,23.70
-'Open Old Coin Fort |q Escape from Amenos/Enter the Coin Fort
+'Open Old Coin Fort |q Escape from Amenos/Enter the Coin Fort |future
+|tip Manually skip to the next step.
 step
 goto u34_GrnSrpntLr_Ext1_base 45.07,36.02
 |tip Watch the dialogue.
@@ -42515,15 +42501,15 @@ goto 42.13,23.62
 step
 goto u34_GrnSrpntLrInt_base 32.96,46.48
 |tip Take the right path to Prince Irnskar.
-talk Prince Irnskar |q Escape from Amenos/Talk to Prince Irnskar
-'Tell him _I'm here with High King Emeric and Queen Ayrenn. We came to rescue you._
+talk Prince Irnskar |q Escape from Amenos/Talk to Prince Irnskar |future
+'Tell him _I'm here with High King Emeric and Queen Ayrenn. We came to rescue you._ 
 step
 goto 74.09,43.65 |q Escape from Amenos/Find the Ascendant Lord and Magus
 step
 goto 75.43,26.49 |q Escape from Amenos/Find the Ascendant Lord and Magus
 step
 goto 57.29,22.02
-'Listen
+'Listen to the Ascendant Lord |q Escape from Amenos/Listen to the Ascendant Lord |future
 step
 goto 52.04,22.93
 'Defend Prince Irnskar |q Escape from Amenos/Defend Prince Irnskar |future
@@ -42534,6 +42520,8 @@ goto 32.53,17.71
 step
 goto u34_GrnSrpntLr_Ext2_base 22.71,63.60
 'Place Signal Flare |q Escape from Amenos/Signal the Ship
+step
+goto 13.48,73.10 |q Escape from Amenos/Escape the Fort
 step
 goto 53.94,84.67 |q Escape from Amenos/Escape the Fort
 step
@@ -42548,9 +42536,7 @@ goto 73.89,15.54
 'Travel Boat to High Isle |q Escape from Amenos/Return to Mandrake Manor
 |tip Manually skip to the next step.
 step
-goto u34_gonfalonbaycity_base 46.06,51.09 |q Escape from Amenos/Return to Mandrake Manor
-step
-goto 76.52,48.28 |q Escape from Amenos/Return to Mandrake Manor
+goto u34_gonfalonbaycity_base 53.25,43.03 |q Escape from Amenos/Return to Mandrake Manor
 step
 goto 72.58,45.35
 'Open Mandrake Manor |q Escape from Amenos/Return to Mandrake Manor
@@ -42564,25 +42550,17 @@ talk Lady Arabelle Davaux
 turnin Escape from Amenos
 accept To Catch a Magus
 step
-goto 65.65,44.31
-step
-goto 57.39,35.84 |q To Catch a Magus/Meet Lady Arabelle at Mistmouth Cave |tip Leave Mandrake Manor.
-step
 goto 47.37,42.97
 'Use Gonfalon Square Wayshrine
 'Travel to _Stonelore Grove_ Wayshrine |q To Catch a Magus/Meet Lady Arabelle at Mistmouth Cave
 |tip Manually skip to the next step.
 step
-goto u34_systreszone_base 17.24,59.08 |q To Catch a Magus/Meet Lady Arabelle at Mistmouth Cave
-step
-goto 21.83,54.27 |q To Catch a Magus/Meet Lady Arabelle at Mistmouth Cave
-step
-goto 24.28,47.48 |q To Catch a Magus/Meet Lady Arabelle at Mistmouth Cave
+goto u34_systreszone_base 19.22,54.61 |q To Catch a Magus/Meet Lady Arabelle at Mistmouth Cave
 step
 goto 28.16,45.08
 wayshrine Garick's Rest
 step
-goto 34.97,37.59 |q To Catch a Magus/Meet Lady Arabelle at Mistmouth Cave
+goto 34.86,37.75 |q To Catch a Magus/Meet Lady Arabelle at Mistmouth Cave
 step
 goto 34.12,35.53
 talk Lady Arabelle Davaux |q To Catch a Magus/Talk to Lady Arabelle Davaux |future
@@ -42591,13 +42569,9 @@ goto 32.20,34.95
 'Open Mistmouth Cave |q To Catch a Magus/Search Mistmouth Cave
 |tip Manually skip to the next step.
 step
-goto u34_ZQ5Cave_base 42.27,30.25 |q To Catch a Magus/Search Mistmouth Cave
-step
-goto 36.37,44.29
+goto u34_ZQ5Cave_base 36.37,44.29
 'Examine Map of Castle Navire |q To Catch a Magus/Search Mistmouth Cave
 |tip Manually skip to the next step.
-step
-goto 24.65,47.35 |q To Catch a Magus/Search Mistmouth Cave
 step
 goto 17.55,66.54
 'Examine Burned Research Notes |lorebook Burned Research Notes/3/45/33
@@ -42608,14 +42582,14 @@ goto 66.77,72.96
 'Examine Banneret Jenine's Orders |lorebook Banneret Jenine's Orders/3/45/34
 step
 goto 67.81,72.22
-talk Lady Arabelle Davaux |q To Catch a Magus/Talk to Lady Arabelle Davaux
+talk Lady Arabelle Davaux |q To Catch a Magus/Talk to Lady Arabelle Davaux |future
 step
 'Open High Isle and Amenos Map
 'Travel to _Castle Navire_ |q To Catch a Magus/Go to the Navire Dungeons
 |tip Manually skip to the next step.
 step
 goto u34_systreszone_base 20.40,78.62
-talk Lady Arabelle Davaux |q To Catch a Magus/Talk to Lady Arabelle Davaux
+talk Lady Arabelle Davaux |q To Catch a Magus/Talk to Lady Arabelle Davaux |future
 step
 goto 20.34,78.67
 'Use Ascendant Order Disguise |q To Catch a Magus/Equip Ascendant Order Disguise
@@ -42638,18 +42612,16 @@ goto 37.35,23.13
 'Open Lower Catacombs |q To Catch a Magus/Find the Ascendant Magus
 |tip Manually skip to the next step.
 step
-goto 22.52,55.99 |q To Catch a Magus/Find the Ascendant Magus
+goto 21.90,38.23 |q To Catch a Magus/Find the Ascendant Magus
 step
-goto 41.56,60.34 |q To Catch a Magus/Find the Ascendant Magus
-step
-goto 44.83,72.45 |q To Catch a Magus/Find the Ascendant Magus
+goto 48.71,72.52 |q To Catch a Magus/Find the Ascendant Magus
 step
 goto 61.36,69.25
 'Examine Sailing Order |q To Catch a Magus/Search the Underground Dock |future
 step
 goto 62.04,65.24
 talk The Ascendant Magus |q To Catch a Magus/Talk to the Ascendant Magus
-'Tell him _Count Dufont fix is correctly_
+'Tell him _You're Count Damard Defort._
 step
 goto 61.90,61.97
 'Open Abandoned Dungeon |q To Catch a Magus/Find Lady Arabelle Davaux
@@ -42658,7 +42630,7 @@ step
 goto 68.30,28.23 |q To Catch a Magus/Find Lady Arabelle Davaux
 step
 goto 60.61,28.10
-talk Lady Arabelle Davaux |q To Catch a Magus/Talk to Lady Arabelle Davaux
+talk Lady Arabelle Davaux |q To Catch a Magus/Talk to Lady Arabelle Davaux |future
 step
 'Open High Isle and Amenos Map
 'Travel to _Castle Navire_ |q To Catch a Magus/Go to the Navire Docks
@@ -42680,7 +42652,7 @@ goto 4.56,76.06
 'Open Duchess Elea's Cabin |q To Catch a Magus/Find Duchess Elea Dufort
 step
 goto 4.78,75.98
-talk Duchess Elea Dufort |q To Catch a Magus/Talk to Duchess Ela Dufort
+talk Duchess Elea Dufort |q To Catch a Magus/Talk to Duchess Elea Dufort
 step
 goto 4.29,75.72
 'Examine The Ascendant Magus's Commission |q To Catch a Magus/Search the Cabin
@@ -42692,11 +42664,7 @@ step
 'Travel to _Gonfalon Square_ |q To Catch a Magus/Return to Mandrake Manor
 |tip Manually skip to the next step.
 step
-goto u34_gonfalonbaycity_base 57.39,35.84 |q To Catch a Magus/Return to Mandrake Manor
-step
-goto 65.65,44.31 |q To Catch a Magus/Return to Mandrake Manor
-step
-goto 72.81,45.32
+goto u34_gonfalonbaycity_base 72.81,45.32
 'Open Mandrake Manor |q To Catch a Magus/Return to Mandrake Manor
 step
 goto 74.38,43.80
@@ -42708,7 +42676,7 @@ goto 48.73,50.42 |q The Ascendant Storm/Find Captain Kaleen
 step
 goto 61.70,70.99
 |tip Cross Bridge.
-talk Captain Kaleen |q The Ascendant Storm/Talk to Captain Kaleen
+talk Captain Kaleen |q The Ascendant Storm/Talk to Captain Kaleen |future
 step
 goto 47.37,42.97
 |tip Go up the stairs.
@@ -42716,7 +42684,10 @@ goto 47.37,42.97
 'Travel to _Stonelore Grove_ |q The Ascendant Storm/Meet Your Allies at Jheury's Cove
 |tip Manually skip to the next step.
 step
-goto u34_systreszone_base 18.01,55.66 |q The Ascendant Storm/Meet Your Allies at Jheury's Cove
+goto u34_systreszone_base 15.07,58.97 |q The Ascendant Storm/Meet Your Allies at Jheury's Cove
+step
+goto 15.12,56.40
+'Meet Your Allies at Jheury's Cove |q The Ascendant Storm/Meet Your Allies at Jheury's Cove
 step
 goto 15.12,56.40
 |tip Follow the Docks around.
@@ -42732,10 +42703,11 @@ goto 14.38,55.65
 'Destroy Mooring Line |q The Ascendant Storm/Line 2
 step
 goto 14.17,55.80
-'Travel Ship to All Flags Islet |q The Ascendant Storm/Travel to All Flags Islet
+'Travel Ship to All Flags Islet |q The Ascendant Storm/Travel to All Flags Islet |future
+|tip Manually skip to the next step.
 step
-goto 
-'_Fix this step._
+goto U34_AllFlags_ext_base 55.45,56.86
+'Open All Flags Castle |q The Ascendant Storm/Enter All Flags Castle
 step
 goto U34_AllFlags_int1_base 36.43,79.49
 talk Lady Arabelle Davaux |q The Ascendant Storm/Talk to Lady Arabelle
@@ -42743,7 +42715,7 @@ step
 goto 33.35,64.06 |q The Ascendant Storm/Find the Alliance Leaders |tip Go down the stairs.
 step
 goto 66.31,58.30
-kill the Vulk'esh |q The Ascendant Storm/Stop the Vulk'esh Assault
+kill the Vulk'esh |q The Ascendant Storm/Stop the Vulk'esh Assault |future
 step
 goto 70.95,53.91
 talk Queen Ayrenn |q The Ascendant Storm/Talk to Queen Ayrenn
@@ -42755,7 +42727,7 @@ goto 41.80,12.06
 |tip Manually skip to the next step.
 step
 goto U34_AllFlags_ext_base 49.13,31.17
-'Clear the Battlements |q The Ascendant Storm/Clear the Battlements
+'Clear the Battlements |q The Ascendant Storm/Clear the Battlements |future
 step
 goto 46.73,31.43
 talk Prince Irnskar |q The Ascendant Storm/Talk to Prince Irnskar
@@ -42775,8 +42747,8 @@ goto 46.01,35.28
 |tip Manually skip to the next step.
 step
 goto 59.44,33.76
-|tip Do not go in the middle of the circle just kill the ones with the lightning coming off of them.
-'Disrupt the Storm Ritual |q The Ascendant Storm/Disrupt the Storm Ritual
+|tip Do not go in the middle of the circle just kill the 3 on the outside.
+'Disrupt the Storm Ritual |q The Ascendant Storm/Disrupt the Storm Ritual |future
 step
 goto 57.42,36.86
 talk High King Emeric |q The Ascendant Storm/Talk to High King Emeric
@@ -42789,7 +42761,8 @@ goto 55.00,45.48
 |tip Manually skip to the next step.
 step
 goto U34_AllFlags_int2_base 41.54,61.95
-'Defend the Memorial Hall |q The Ascendant Storm/Defend the Memorial Hall
+|tip Watch the dialogue after killing the forces.
+'Defend Memorial Hall |q The Ascendant Storm/Defend Memorial Hall |future
 step
 goto 17.99,65.44
 'Open West Courtyard |q The Ascendant Storm/Defeat the Ascendant Magus
@@ -42802,7 +42775,8 @@ goto U34_AllFlags_ext_base 40.49,54.93
 kill Ascendant Magus |q The Ascendant Storm/Defeat the Ascendant Magus
 step
 goto 44.36,62.85
-'Open All Flags Islet |q The Ascendant Storm/Exit All Flags Castle
+'Open All Flags Islet |q The Ascendant Storm/Exit All Flags Castle |future
+|tip Manually skip to the next step.
 step
 goto u34_systreszone_base 31.11,65.63
 talk Lady Arabelle Davaux
@@ -42815,6 +42789,7 @@ goto 30.42,66.11
 |tip Manually skip to the next step.
 step
 goto 38.23,72.49
+|tip Behind the Manor.
 talk Lord Bacaro Volorus |q A Chance for Peace/Talk to Lord Bacaro Volorus |future
 step
 goto 37.43,77.05
@@ -42822,11 +42797,7 @@ goto 37.43,77.05
 'Travel to _Gonfalon Square_ |q A Chance for Peace/Go to Mandrake Manor
 |tip Manually skip to the next step.
 step
-goto u34_gonfalonbaycity_base 57.39,35.84 |q A Chance for Peace/Go to Mandrake Manor
-step
-goto 65.65,44.31 |q A Chance for Peace/Go to Mandrake Manor
-step
-goto 72.81,45.32
+goto u34_gonfalonbaycity_base 72.81,45.32
 'Open Mandrake Manor |q A Chance for Peace/Go to Mandrake Manor
 step
 goto 73.45,43.98
@@ -42853,6 +42824,8 @@ goto 50.71,73.79
 talk Queen Ayrenn |q A Chance for Peace/.*Talk to the Alliance Leaders.* |count 3
 step
 goto 42.30,39.51 |q A Chance for Peace/Meet Lady Arabelle in Gonfalon Palace
+step
+goto 29.59,55.90 |q A Chance for Peace/Meet Lady Arabelle in Gonfalon Palace
 step
 goto 28.61,44.43
 'Open Gonfalon Palace |q A Chance for Peace/Meet Lady Arabelle in Gonfalon Palace

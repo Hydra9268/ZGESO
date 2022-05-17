@@ -676,6 +676,7 @@ function Utils.DistanceOffsetForGoto(dist,selfdist)
 				GetCurrentMapIndex() == Enums.CyrodiilMap or
 				GetCurrentMapIndex() == Enums.GreymoorCavernsMap or
 				GetCurrentMapIndex() == Enums.KhenarthisRoostMap or
+				GetCurrentMapIndex() == Enums.HighIsleMap or
 				GetCurrentMapIndex() == Enums.MurkmireMap or
 				GetCurrentMapIndex() == Enums.NorthernElsweyrMap or
 				GetCurrentMapIndex() == Enums.SouthernElsweyrMap or
@@ -733,6 +734,7 @@ function Utils.DistanceOffsetForIsComplete()
 				GetCurrentMapIndex() == Enums.CyrodiilMap or
 				GetCurrentMapIndex() == Enums.KhenarthisRoostMap or
                 GetCurrentMapIndex() == Enums.GreymoorCavernsMap or
+				GetCurrentMapIndex() == Enums.HighIsleMap or
 		        GetCurrentMapIndex() == Enums.MurkmireMap or
 				GetCurrentMapIndex() == Enums.NorthernElsweyrMap or
 				GetCurrentMapIndex() == Enums.SouthernElsweyrMap or
