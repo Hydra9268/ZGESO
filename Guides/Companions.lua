@@ -156,22 +156,393 @@ goto 81.93,80.96
 talk Bastian Hallix |q Competition and Contracts/Talk to Bastian Hallix
 step
 talk Bastian
-turnin Competition and Contracts
+turnin Competition and Contracts |next Extra's\\Extra's\\Companions\\Ember
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Companions\\Bastian Hallix",[[
+ZGV:RegisterGuide("Extra's\\Extra's\\Companions\\Ember",[[
 loadingimage loadscreen_u30_blackwood_zone_01.dds
 description Ember Unlock quest and Levling up Quests
 step
-goto u34_systreszone_base 50.13,78.92
+'Open High Isle and Amenos Map
+'Travel to _Westbay_ |q Tower Full of Trouble |future
+|tip Manually skip to the next step.
+step
+goto u34_gonfalonbaycity_base 5.77,37.85 |q Tower Full of Trouble |future
+step
+goto u34_systreszone_base 50.13,78.92 |q Tower Full of Trouble |future
 step
 goto 52.46,73.25
 talk Ladlow Meant
 accept Tower Full of Trouble
 step
-goto 56.82,66.63
+goto 53.83,71.96
+talk Ember |q Tower Full of Trouble/Talk to Ember |future
+step
+goto 56.29,70.00
+'Place Protection Wardstone |q Tower Full of Trouble/Restore the Meadow Ward
+step
+goto 51.77,66.87
+'Place Protection Wardstone |q Tower Full of Trouble/Restore the Glade Ward
+step
+goto 50.40,68.53
+'Open Tor Draioch Cave |q Tower Full of Trouble/Restore the Cave Ward
+|tip Manually skip to the next step.
+step
+goto 48.56,68.57
+'Place Protection Wardstone |q Tower Full of Trouble/Restore the Cave Ward
+step
+goto 50.21,68.56
+'Open Tor Draioch |q Tower Full of Trouble/Talk to Ember
+|tip Manually skip to the next step.
+step
+goto 50.48,68.54
 talk Ember |q Tower Full of Trouble/Talk to Ember
 step
+goto 53.04,69.74
+'Open Tor Draioch |q Tower Full of Trouble/Find Information in the Tower
+|tip Manually skip to the next step.
+step
+goto 62.89,69.84
+|tip Go upstairs.
+'Examine Sorrows of the Wind |lorebook Sorrows of the Wind/3/45/48
+step
+goto 52.90,69.68
+|tip Go downstairs.
+talk Ember |q Tower Full of Trouble/Talk to Ember
+step
+goto 52.99,69.76
+'Open Tor Draioch |q Tower Full of Trouble/Take Ember's Traps
+|tip Manually skip to the next step.
+step
+goto 53.45,69.40
+'Take Ember's Pack |q Tower Full of Trouble/Take Ember's Traps
+step
+goto 54.12,70.14
+'Place Mote Trap |q Tower Full of Trouble/.*Set the Mote Traps.* |count 1
+step
+goto 52.78,70.67
+'Place Mote Trap |q Tower Full of Trouble/.*Set the Mote Traps.* |count 2
+step
+goto 51.32,69.16
+'Place Mote Trap |q Tower Full of Trouble/.*Set the Mote Traps.* |count 3
+step
+goto 52.76,68.71
+'Place Mote Trap |q Tower Full of Trouble/.*Set the Mote Traps.* |count 4
+step
+goto 55.03,69.25
+'Meet Ember at the Livestock Shed |q Tower Full of Trouble/Meet Ember at the Livestock Shed
+step
+goto 55.03,69.25
+talk Ember |q Tower Full of Trouble/Talk to Ember
+step
+goto 55.02,67.99
+|tip Run through the two Enchanted Cows.
+'Use Spoon of Undo on Enchanted Cow |q Tower Full of Trouble/.*Restore the Livestock.* |count 1
+step
+goto 54.61,68.95
+'Use Spoon of Undo on Enchanted Cow |q Tower Full of Trouble/.*Restore the Livestock.* |count 2
+step
+goto 54.42,69.74
+'Use Spoon of Undo on Enchanted Cow |q Tower Full of Trouble/.*Restore the Livestock.* |count 3
+step
+goto 53.76,70.92
+'Use Spoon of Undo on Enchanted Cow |q Tower Full of Trouble/.*Restore the Livestock.* |count 4
+step
+goto 52.33,67.79 |q Tower Full of Trouble/Find and Restore Huldressa
+step
+goto 52.96,68.29
+|tip Find Huldressa and follow her to this spot she will stop a couple times but cant use Sppon until she gets on the bridge.
+'Use Spoon of Undo on Huldressa |q Tower Full of Trouble/Find and Restore Huldressa
+step
+goto 53.04,69.74
+'Open Tor Draioch |q Tower Full of Trouble/Find Ember in the Tower
+step
+goto 52.86,69.66
+talk Ember |q Tower Full of Trouble/Talk to Ember
+step
+goto 52.76,69.95
+|tip Follow Ember downstairs or she will stop at the bottom of the staircase downstairs.
+'Open Arcane Library |q Tower Full of Trouble/Find The Mirrored Way
+|tip Manually skip to the next step.
+step
+goto 52.06,70.88
+'Examine The Mirrored Way |q Tower Full of Trouble/Find The Mirrored Way
+step
+goto 52.70,70.10
+'Open Tor Draioch |q Tower Full of Trouble/Talk to Ember
+|tip Manually skip to the next step.
+step
+goto 52.72,69.82
+talk Ember |q Tower Full of Trouble/Talk to Ember
+step
+goto 52.99,69.77
+'Open Tor Draioch |q Tower Full of Trouble/Go to the Ritual Circle
+|tip Manually skip to the next step.
+step
+goto 50.93,70.63 |q Tower Full of Trouble/Go to the Ritual Circle
+step
+goto 50.43,71.63
+'Go to the Ritual Circle |q Tower Full of Trouble/Go to the Ritual Circle
+step
+goto 50.40,71.84
+'Ignite Ritual Sconce |q Tower Full of Trouble/Help Ember at the Ritual Circle
+|tip Manually skip to the next step.
+step
+goto 50.72,71.47
+'Ignite Ritual Sconce |q Tower Full of Trouble/Help Ember at the Ritual Circle
+|tip Manually skip to the next step.
+step
+goto 51.16,71.36
+'Ignite Ritual Sconce |q Tower Full of Trouble/Help Ember at the Ritual Circle
+step
+goto 52.49,71.44
+|tip Watch dialogue.
+'Follow Ember |q Tower Full of Trouble/Follow Ember
+step
+goto 53.24,69.77
+'Open Tor Draioch |q Tower Full of Trouble/Return to the Tower
+step
+goto 53.24,69.77
+talk Magister Irin |q Tower Full of Trouble/Talk to Magister Irin
+step
+goto 53.21,69.86
+talk Ember
+turnin Tower Full of Trouble |next Extra's\\Extra's\\Companions\\Isobel Veloise
+]])
+
+ZGV:RegisterGuide("Extra's\\Extra's\\Companions\\Isobel Veloise",[[
+loadingimage loadscreen_u30_blackwood_zone_01.dds
+description Isobel Veloise Unlock quest and Levling up Quests
+step
+'Open High Isle and Amenos Map
+'Travel to _Westbay_ |q Tournament of the Heart |future
+|tip Manually skip to the next step.
+step
+goto u34_systreszone_base 43.21,78.03 |q Tournament of the Heart |future
+step
+goto 29.41,80.51
+wayshrine Coral Road
+step
+goto 20.02,76.13
+wayshrine Castle Navire
+step
+goto 20.02,76.60
+talk Lord Remard DeFulley
+accept Tournament of the Heart
+step
+goto 16.09,77.72
+talk Isobel Veloise |q Tournament of the Heart/Choose a Trial |future
+'Tell her _What do you know about the Order of the Iron Knot?_
+'Tell her _Where was the sword lost?_
+'Tell her _Let find that hilt for the Iron Knot. To the Library!_
+step
+goto 18.09,76.83 |q Tournament of the Heart/Meet Isobel at the Castle Library
+step
+goto 16.49,75.02
+'Open Castle Navire Knight's Wing |q Tournament of the Heart/Meet Isobel at the Castle Library |future
+|tip Manually skip to the next step.
+step
+goto u34_navirecommander_base 47.08,19.59
+'Examine The Battle of Meadow Fort |lorebook The Battle of Meadow Fort/3/45/41
+step
+goto 40.09,17.64
+talk Isobel Veloise |q Tournament of the Heart/Talk to Isobel Veloise
+step
+goto 78.92,29.67
+'Open Castle Navire Courtyard |q Tournament of the Heart/Go to the Dufort Ruin
+|tip Manually skip to the next step.
+step
+goto u34_systreszone_base 19.91,76.73 |q Tournament of the Heart/Go to the Dufort Ruin
+step
+goto 28.90,80.30 |q Tournament of the Heart/Go to the Dufort Ruin
+step
+goto 35.63,84.13
+'Go to the Dufort Ruin |q Tournament of the Heart/Go to the Dufort Ruin
+step
+goto 35.63,84.13
+talk Isobel Veloise |q Tournament of the Heart/Talk to Isobel Veloise |future
+step
+goto 34.42,86.13 |q Tournament of the Heart/Find Isobel's Path
+step
+goto 38.14,85.67
+'Find Isobel's Path |q Tournament of the Heart/Find Isobel's Path
+step
+goto 37.86,83.51 |q Tournament of the Heart/Find the Ruin
+step
+goto 35.75,83.04
+'Take Redheart's Hilt |q Tournament of the Heart/Search for the Sword Hilt |future
+step
+goto 35.71,81.63
+'Follow Isobel Veloise |q Tournament of the Heart/Follow Isobel
+step
+goto 35.71,81.63
+talk Isobel Veloise |q Tournament of the Heart/Talk to Isobel
+'Tell her _Tell me about the Oaken Order._
+'Tell her _Do we talk to the mage, or fight them?_
+'Tell her_ Let's get that staff for the Oaken Order._
+step
+goto 29.30,80.85
+talk Isobel Veloise |q Tournament of the Heart/Talk to Isobel Veloise |future
+step
+goto 32.64,85.82 |q Tournament of the Heart/Find the Wizard's Grotto
+step
+goto 29.22,86.46 |q Tournament of the Heart/Find the Wizard's Grotto
+step
+goto 29.27,85.73
+|tip Watch the dialogue.
+'Find the Wizard's Grotto |q Tournament of the Heart/Find the Wizard's Grotto
+step
+goto 29.21,85.48
+'Examine Cat's Paw Pillar |q Tournament of the Heart/Examine A
+step
+goto 29.33,85.43
+'Examine Wooden Knot Pillar |q Tournament of the Heart/Examine B
+step
+goto 29.42,85.40
+'Examine Forest Heron Pillar |q Tournament of the Heart/Examine the Pillars
+step
+goto 29.35,85.51
+talk Isobel Veloise |q Tournament of the Heart/Talk to Isobel Veloise
+step
+goto 31.95,87.29
+'Take Cat's Paw |q Tournament of the Heart/Gather a Cat's Paw Flower
+step
+goto 31.46,89.34
+'Take Spriggan's Veil |q Tournament of the Heart/Gather a Spriggan's Veil
+step
+goto 28.45,90.12
+'Take Heron's Feather |q Tournament of the Heart/Gather a Heron's Feather
+step
+goto 29.21,85.51
+'Place Cat's Paw Pillar |q Tournament of the Heart/Place the Cat's Paw
+step
+goto 29.31,85.42
+'Place Wooden Knot Pillar |q Tournament of the Heart/Place the Spriggan Veil
+step
+goto 29.42,85.36
+'Place Forest Heron Pillar |q Tournament of the Heart/Place the Heron Feather
+step
+goto 28.04,84.16
+'Open Erlibru's Cottage |q Tournament of the Heart/Enter the Elder's Cottage
+step
+goto 27.81,84.27
+talk Erlibru |q Tournament of the Heart/Talk to Erlibru
+step
+goto 28.02,84.15
+'Open High Isle |q Tournament of the Heart/Take the Staff
+|tip Manually skip to the next step.
+step
+goto 27.93,83.97
+'Take Staff of the Wild Woods |q Tournament of the Heart/Take the Staff
+step
+goto 28.08,84.01
+talk Isobel Veloise |q Tournament of the Heart/Talk to Isobel
+step
+'Open High Isle and Amenos Map
+'Travel to _Castle Navire_ |q Tournament of the Heart/Meet Isobel at the Castle Chapel
+|tip Manually skip to the next step.
+step
+goto 19.06,75.38
+talk Isobel Veloise |q Tournament of the Heart/Talk to Isobel Veloise |future
+step
+goto 16.47,75.02
+'Open Castle Navire Knight's Wing |q Tournament of the Heart/Get a Key to the Catacombs
+|tip Manually skip to the next step.
+step
+goto u34_navirecommander_base 78.47,50.74
+'Open Office of the Knight Commander |q Tournament of the Heart/Get a Key to the Catacombs
+|tip Manually skip to the next step.
+step
+goto 86.48,63.23
+talk Dame Hendra Trieve |q Tournament of the Heart/Get a Key to the Catacombs
+'Tell her _I'm a peasant with a surprisingly full coin purse. [18]_
+step
+goto 79.73,52.23
+'Open Castle Navire |q Tournament of the Heart/Meet Isobel in the Chapel
+|tip Manually skip to the next step.
+step
+goto 78.92,29.78
+'Open Castle Navire Courtyard |q Tournament of the Heart/Meet Isobel in the Chapel
+|tip Manually skip to the next step.
+step
+goto u34_systreszone_base 19.12,75.28
+'Open Castle Navire Chapel |q Tournament of the Heart/Meet Isobel in the Chapel |future
+|tip Manually skip to the next step.
+step
+goto u34_NavireCryptInt_base 10.46,9.03
+'Unlock Castle Navire Crypts |q Tournament of the Heart/Unlock the Catacombs
+step
+goto 10.46,9.03
+'Open Castle Navire Crypts |q Tournament of the Heart/Find the Gilded Lute
+|tip Manually skip to the next step.
+step
+goto 39.32,29.63 |q Tournament of the Heart/Find the Gilded Lute
+step
+goto 42.34,25.32
+talk Aspirant Mortens |q Tournament of the Heart/Talk to Aspirant Mortens
+step
+goto 38.97,60.37 |q Tournament of the Heart/Find Aspirant Mortens' Sword
+step
+goto 44.95,63.32
+'Take Aspirant Mortens' Sword |q Tournament of the Heart/Find Aspirant Mortens' Sword
+step
+goto 36.71,65.27 |q Tournament of the Heart/Talk to Aspirant Mortens
+step
+goto 42.48,25.32
+talk Aspirant Mortens |q Tournament of the Heart/Talk to Aspirant Mortens |future
+step
+goto 57.00,35.43
+'Open Deep Crypts |q Tournament of the Heart/Find the Gilded Lute
+|tip Manually skip to the next step.
+step
+goto 80.65,42.13 |q Tournament of the Heart/Find the Gilded Lute
+step
+goto 72.00,62.45 |q Tournament of the Heart/Defeat the Mad Duke
+step
+goto 78.99,85.38
+'Take The Gilded Lute of Sir Brenvale |q Tournament of the Heart/Find the Gilded Lute
+step
+goto 84.30,80.06 |q Tournament of the Heart/Leave the Catacombs
+step
+goto 80.69,89.27
+'Open High Isle |q Tournament of the Heart/Leave the Catacombs |future
+|tip Manually skip to the next step.
+step
+goto u34_systreszone_base 21.34,78.55
+talk Isobel Veloise |q Tournament of the Heart/Talk to Isobel
+step
+goto 13.51,76.32
+talk Isobel Veloise |q Tournament of the Heart/Talk to Isobel at the Tourney Pavilion
+step
+goto 13.95,75.70
+'Present Redheart's Hilt |q Tournament of the Heart/Present Redheart's Hilt
+step
+goto 13.87,75.78
+'Present the Gilded Lute |q Tournament of the Heart/Present the Gilded Lute
+step
+goto 13.92,75.74
+'Present Staff of the Wild Woods |q Tournament of the Heart/Present the Staff
+step
+goto 13.92,75.74
+'Watch the Ceremony |q Tournament of the Heart/Watch the Ceremony
+step
+goto 14.61,75.61
+'Open Castle Navire Knight's Wing |q Tournament of the Heart/Go to the Knight Commander's Office
+|tip Manually skip to the next step.
+step
+goto u34_navirecommander_base 78.69,50.86
+'Open Office of the Knight Commander |q Tournament of the Heart/Go to the Knight Commander's Office
+|tip Manually skip to the next step.
+step
+goto 79.73,71.82
+'Open Knight Commander's Private Chamber |q Tournament of the Heart/Go to the Knight Commander's Office
+step
+goto 66.90,83.85
+talk Knight Commander Jourvel |q Tournament of the Heart/Talk to the Knight Commander
+step
+goto 66.90,83.85
+talk Isobel Veloise
+turnin Tournament of the Heart
 ]])
 
 ZGV:RegisterGuide("Extra's\\Extra's\\Companions\\Mirri Elendis",[[
