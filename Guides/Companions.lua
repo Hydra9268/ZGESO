@@ -6,18 +6,20 @@ ZGV:RegisterGuide("Extra's\\Extra's\\Companions\\Bastian Hallix",[[
 loadingimage loadscreen_u30_blackwood_zone_01.dds
 description Bastian Hallix Unlock quest and Levling up Quests
 step
+'Open Blackwood Map
+'Travel to Leyawiin Outskirts Wayshrine |q Competition and Contracts |future
+|tip Manually skip to the next step.
+step
 goto u30_leyawiincity_base 72.11,28.52 |q Competition and Contracts |future
 step
 goto blackwood_base 30.02,54.17 |q Competition and Contracts |future
 step
-goto 41.32,52.87 |q Competition and Contracts |future
+goto 39.08,55.41 |q Competition and Contracts |future
 step
 goto 36.99,59.76 |q Competition and Contracts |future
 step
-goto 36.26,66.50
-wayshrine Blueblood
-step
 goto 37.38,71.47
+talk Zeechis
 accept Competition and Contracts
 step
 goto 39.76,74.80
@@ -27,23 +29,23 @@ goto 39.77,74.78
 talk Bastian Hallix |q Competition and Contracts/Talk to Bastian Hallix
 step
 goto 39.25,75.43
-click Tenarei's Contract |q Competition and Contracts/Search the Area
+'Examine Tenarei's Contract |q Competition and Contracts/Search the Area
 step
 goto 39.77,74.78
 talk Bastian Hallix |q Competition and Contracts/Talk to Bastian Hallix
 step
 goto 39.81,75.40
-click Deepscorn Hollow |q Competition and Contracts/Enter Deepscorn Hollow
+'Open Deepscorn Hollow |q Competition and Contracts/Enter Deepscorn Hollow
 |tip Manually skip to the next step.
 step
 goto u30_deepscorn_hollow_base 36.16,39.86
-click Ruined Shrine |q Competition and Contracts/Explore Deepscorn Hollow
+'Open Ruined Shrine |q Competition and Contracts/Explore Deepscorn Hollow
 |tip Manually skip to the next step.
 step
 goto 31.52,48.57 |q Competition and Contracts/Explore Deepscorn Hollow
 step
 goto 26.76,46.31
-click Deepscorn Cavern |q Competition and Contracts/Explore Deepscorn Hollow
+'Open Deepscorn Cavern |q Competition and Contracts/Explore Deepscorn Hollow
 |tip Manually skip to the next step.
 step
 goto 25.05,12.90
@@ -66,36 +68,33 @@ goto 48.70,35.31
 'Continue Exploring Deepscorn Hollow |q Competition and Contracts/Continue Exploring Deepscorn Hollow
 step
 goto 48.70,35.31
-click Abandoned Excavation |q Competition and Contracts/Follow the Cultist
+'Open Abandoned Excavation |q Competition and Contracts/Follow the Cultist
 step
 goto 48.40,39.66
 talk Fluvius Salva |q Competition and Contracts/Talk to the Cultist
 'Tell him _"[Intimidate] If anything happens to Quistley, you're not walking out of here."_
-|tip If you don't have Intimidate yet just talk to him.
 step
 goto 48.09,39.79
 talk Bastian Hallix |q Competition and Contracts/Talk to Bastian Hallix
 step
 goto 53.95,44.33
-click Deepscorn Hollow |q Competition and Contracts/Find Tenarei Vels
+'Open Deepscorn Hollow |q Competition and Contracts/Find Tenarei Vels
 |tip Manually skip to the next step.
 step
 goto 63.56,56.44
 'Find Tenarei Vels |q Competition and Contracts/Find Tenarei Vels
 step
 goto 63.36,56.44
-'Break Crystal Fang |q Competition and Contracts/Free Tenarei Vels
-|tip Manually skip to the next step.
+'Break Crystal Fang |q Competition and Contracts/Ritual Orb 1
 step
 goto 60.29,57.56
-'Break Crystal Fang |q Competition and Contracts/Free Tenarei Vels
-|tip Manually skip to the next step.
+'Break Crystal Fang |q Competition and Contracts/Ritual Orb 2
 step
 goto 60.34,60.90
 'Break Crystal Fang |q Competition and Contracts/Free Tenarei Vels
 step
 goto 52.87,56.77
-click Deepscorn Caves |q Competition and Contracts/Talk to Tenarei Vels
+'Open Deepscorn Caves |q Competition and Contracts/Talk to Tenarei Vels
 |tip Manually skip to the next step.
 step
 goto 45.64,56.78
@@ -110,13 +109,13 @@ goto 15.20,62.04
 talk Greywyn Blenwyth |q Competition and Contracts/Talk to the Imprisoned Vampire
 step
 goto 21.09,64.52
-click Crate |q Competition and Contracts/Find the Switch for a Hidden Door
+'Destroy Crate |q Competition and Contracts/Find the Switch for a Hidden Door
 step
 goto 21.09,64.52
-click Switch |q Competition and Contracts/Open the Hidden Passage
+'Use Switch |q Competition and Contracts/Open the Hidden Passage
 step
 goto 21.42,65.71
-click Inner Sanctum Passage |q Competition and Contracts/Go to the Inner Sanctum
+'Open Inner Sanctum Passage |q Competition and Contracts/Go to the Inner Sanctum
 |tip Manually skip to the next step.
 step
 goto 28.92,85.24
@@ -129,11 +128,11 @@ goto 28.88,85.15
 talk Bastian Hallix |q Competition and Contracts/Talk to Bastian Hallix
 step
 goto 29.92,85.34
-click Hall of Sithis |q Competition and Contracts/Reach the Fane of Scorn
+'Open Hall of Sithis |q Competition and Contracts/Reach the Fane of Scorn
 |tip Manually skip to the next step.
 step
 goto 48.47,85.41
-click Fane of Scorn |q Competition and Contracts/Reach the Fane of Scorn
+'Open Fane of Scorn |q Competition and Contracts/Reach the Fane of Scorn
 |tip Manually skip to the next step.
 step
 goto 65.11,80.17
@@ -143,7 +142,7 @@ goto 65.11,80.17
 kill the Daughter of Sithis |q Competition and Contracts/Kill the Daughter of Sithis
 step
 goto 70.91,80.47
-click Private Chambers |q Competition and Contracts/Talk to Quistley Silvelle
+'Open Private Chambers |q Competition and Contracts/Talk to Quistley Silvelle
 |tip Manually skip to the next step.
 step
 goto 81.85,80.52
