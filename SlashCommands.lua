@@ -11,6 +11,8 @@ local help_string = [[	Options:
 	show - Show the Guide Viewer.
 	hide - Hide the Guide Viewer.
 	config - Show configuration.
+	creator - Switch to Creator Mode.
+	devoloper - Switch to Developer Mode.
 ]]
 
 if ZGV.DEV then

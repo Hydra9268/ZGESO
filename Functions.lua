@@ -3,7 +3,7 @@
 -----------------------------------------
 
 local ZGV = _G.ZGV
-local GPS = LibGPS2
+local GPS = LibGPS3
 
 local GetAbilityProgressionXPInfoFromAbilityId = _G.GetAbilityProgressionXPInfoFromAbilityId
 local GetAddOnManager = _G.GetAddOnManager
@@ -707,10 +707,11 @@ function Utils.DistanceOffsetForGoto(dist,selfdist)
 			    GetCurrentMapIndex() == Enums.StormhavenMap or
 			    GetCurrentMapIndex() == Enums.WrothgarMap then		return 10
 
-		elseif 	GetCurrentMapIndex() == Enums.FargraveMap or
-			    GetCurrentMapIndex() == Enums.HewsBaneMap or
+		elseif 	GetCurrentMapIndex() == Enums.HewsBaneMap or
 				GetCurrentMapIndex() == Enums.ShadowfenMap or
 			    GetCurrentMapIndex() == Enums.TheRiftMap then		return 11
+
+        elseif	GetCurrentMapIndex() == Enums.FargraveMap then      return 15
 
 		else return dist or selfdist or 1 -- default value
 		end
@@ -765,10 +766,11 @@ function Utils.DistanceOffsetForIsComplete()
 			    GetCurrentMapIndex() == Enums.StormhavenMap or
 			    GetCurrentMapIndex() == Enums.WrothgarMap then		return 10
 
-		elseif 	GetCurrentMapIndex() == Enums.FargraveMap or
-		        GetCurrentMapIndex() == Enums.HewsBaneMap or
+		elseif 	GetCurrentMapIndex() == Enums.HewsBaneMap or
 				GetCurrentMapIndex() == Enums.ShadowfenMap or
-			    GetCurrentMapIndex() == Enums.TheRiftMap then		return 11		
+			    GetCurrentMapIndex() == Enums.TheRiftMap then		return 11
+
+        elseif	GetCurrentMapIndex() == Enums.FargraveMap then      return 15
 
 		else return 1 -- default value
 		end

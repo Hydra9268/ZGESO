@@ -41073,7 +41073,7 @@ goto 24.08,67.76
 talk Elegian |q The Durance Vile/Talk to Elegian
 step
 |tip Listen to the Conversation.
-'Open _The Deadlands Map_
+'Open The Deadlands Map
 'Travel to _The Scourshales_ |q The Durance Vile/Return to Wretched Spire |future
 |tip Manually skip to the next step.
 step
@@ -41179,7 +41179,7 @@ goto 51.16,59.73
 'Destroy Cataclyst Core |q Born of Grief/Destroy the Riven Cataclyst
 step
 goto 52.61,65.71
-'Use Portal to Wretched Spire in The Deadlands |q Born of Grief/Exit Fort Grief
+'Use Portal to Wretched Spire in The Deadlands |q Born of Grief/Exit Fort Grief |future
 |tip Manually skip to the next step.
 step
 goto u32deadlandszone_base 70.59,45.60
@@ -41542,7 +41542,7 @@ goto 51.90,48.79
 'Place Discharge Labrum |q The Last Ambition/Ignite the Furnace
 step
 goto 54.52,45.59
-talk Emperor Moricar |q The Last Ambition/Talk to Emperor Moricar
+talk Emperor Moricar |q The Last Ambition/Talk to Emperor Moricar |future
 step
 goto 59.59,48.06
 |tip Observe Sombren
@@ -41893,14 +41893,12 @@ goto 49.60,74.08
 talk Orguerite Onis |q Of Knights and Knaves/Investigate the Shallows
 |tip Manually skip to the next step.
 step
-goto 51.97,74.57 |q Of Knights and Knaves/Investigate the Shallows
-step
 goto 47.72,73.62 |q Of Knights and Knaves/Investigate the Shallows
 step
 goto 48.53,71.75
 'Examine Knight Ondrisse's Orders |q Of Knights and Knaves/Investigate the Shallows
 step
-goto 58.56,78.26 |q Of Knights and Knaves/Talk to Lady Arabelle Davaux
+goto 48.49,73.69 |q Of Knights and Knaves/Talk to Lady Arabelle Davaux
 step
 goto 51.97,74.57 |q Of Knights and Knaves/Talk to Lady Arabelle Davaux
 step
@@ -42108,7 +42106,7 @@ talk Bard Adistair Virane |q People of Import/Make a Song Request
 'Tell him _Would this buy me a song? [69]_
 step
 goto 32.92,54.75
-'Open Lower Castle Navire |q People of Import/Enter Lower Castle Navire
+'Open Castle Navire Lower Halls |q People of Import/Enter Lower Castle Navire
 |tip Manually skip to the next step.
 step
 goto u34_CastleNavireInt_base 28.72,29.03 |q People of Import/.*Find Duchess Elea's Notes.* |future
@@ -42128,7 +42126,7 @@ goto 96.50,41.03
 'Examine Duchess Elea's Investigation Notes |q People of Import/.*Find Duchess Elea's Notes.* |count 2
 step
 goto 76.14,40.27
-'Open Lower Castle Navire |q People of Import/Return to the Courtyard
+'Open Castle Navire Lower Halls |q People of Import/Return to the Courtyard
 |tip Manually skip to the next step.
 step
 goto 72.95,47.72
@@ -42388,7 +42386,7 @@ goto 62.95,31.52
 'Travel to _Serpents Hollow_ |q Escape from Amenos/Talk to Caska |future
 |tip Manually skip to the next step.
 step
-goto 40.62,36.67 |q Escape from Amenos/Talk to Caska |future
+goto 80.62,36.67 |q Escape from Amenos/Talk to Caska |future
 step
 goto 88.25,35.62
 wayshrine Brokerock
@@ -42557,7 +42555,9 @@ goto 47.37,42.97
 'Travel to _Stonelore Grove_ Wayshrine |q To Catch a Magus/Meet Lady Arabelle at Mistmouth Cave
 |tip Manually skip to the next step.
 step
-goto u34_systreszone_base 19.22,54.61 |q To Catch a Magus/Meet Lady Arabelle at Mistmouth Cave
+goto u34_systreszone_base 17.51,57.76
+step
+goto 22.53,53.85 |q To Catch a Magus/Meet Lady Arabelle at Mistmouth Cave
 step
 goto 28.16,45.08
 wayshrine Garick's Rest
@@ -42681,7 +42681,6 @@ goto 61.70,70.99
 talk Captain Kaleen |q The Ascendant Storm/Talk to Captain Kaleen |future
 step
 goto 47.37,42.97
-|tip Go up the stairs.
 'Use Gonfalon Square Wayshrine
 'Travel to _Stonelore Grove_ |q The Ascendant Storm/Meet Your Allies at Jheury's Cove
 |tip Manually skip to the next step.

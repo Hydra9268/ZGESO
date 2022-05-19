@@ -1,6 +1,6 @@
 if not ZGV then return end
 
-local GPS = LibGPS2
+local GPS = LibGPS3
 
 MEMORYSPAM = false
 
@@ -1222,7 +1222,7 @@ SLASH_COMMANDS["/zgsurvey"] = function()
 end
 
 SLASH_COMMANDS["/zgpos"] = function(checker)
-	local gps = GPS:GetCurrentMapMeasurements()
+	local gps = GPS:GetCurrentMapMeasurement()
     local tex = gps.id
 	if checker == "gps" then
 	local tex = Pointer:GetMapTex()

@@ -40143,7 +40143,11 @@ step
 'Travel to _Westbay_ Wayshrine |q Of Knights and Knaves/Investigate the Shallows
 |tip Manually skip to the next step.
 step
-goto u34_systreszone_base 49.99,79.22 |q Of Knights and Knaves/Investigate the Shallows
+goto u34_systreszone_base 51.48,78.24
+'Use Skyshard |q Of Knights and Knaves/Investigate the Shallows
+|tip Manually skip to the next step.
+step
+goto 49.99,79.22 |q Of Knights and Knaves/Investigate the Shallows
 step
 goto 57.05,70.97
 wayshrine Tor Draioch
@@ -40500,6 +40504,10 @@ step
 goto 51.01,23.36
 talk Moric Guidroz |q A Sheep in Need/Talk to Moric Guidroz
 step
+goto 51.36,19.69
+'Use Skyshard |q A Sheep in Need/Search the Hadolid Lair
+|tip Manually skip to the next step.
+step
 goto 59.06,30.53 |q A Sheep in Need/Search the Hadolid Lair
 step
 goto 17.85,46.98 |q A Sheep in Need/Search the Hadolid Lair
@@ -40644,6 +40652,24 @@ goto 27.54,70.65
 step
 goto u34_firepotcave_base 76.15,73.74
 'Take Vulk'esh Scoria |q Scalding Scavengers/.*Gather Vulk'esh Scoria.* |count 2
+step
+goto 57.55,84.49 |q Scalding Scavengers/Find Tarrinore
+step
+goto 30.05,63.54 |q Scalding Scavengers/Find Tarrinore
+step
+goto 16.95,43.83 |q Scalding Scavengers/Find Tarrinore
+step
+goto 31.01,21.78 |q Scalding Scavengers/Find Tarrinore
+step
+goto 34.32,30.67 |q Scalding Scavengers/Find Tarrinore
+step
+goto 38.53,46.24 |q Scalding Scavengers/Find Tarrinore
+step
+goto 37.90,60.65
+'Use Skyshard |q Scalding Scavengers/Find Tarrinore
+|tip Manually skip to the next step.
+step
+goto 30.46,63.34 |q Scalding Scavengers/Find Tarrinore |tip Drop down carefully.
 step
 goto 57.55,84.49 |q Scalding Scavengers/Find Tarrinore
 step
@@ -40820,6 +40846,14 @@ talk Guild Magister Valessea |q Deadly Investigations/.*Investigate Ascendant Or
 step
 'Open High Isle and Amenos Map
 'Travel to _Tor Draioch_ |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 2
+|tip Manually skip to the next step.
+step
+goto 50.81,67.97 |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 2
+step
+goto 49.37,66.48 |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 2
+step
+goto 50.05,65.51
+'Use Skyshard |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 2
 |tip Manually skip to the next step.
 step
 goto 60.50,66.21
@@ -41114,8 +41148,15 @@ goto 27.82,92.23
 'Open Shipwreck Shoals |q Spies in the Shallows/Talk to Titus Stolo
 |tip Manually skip to the next step.
 step
-goto u34_shipwreckshoalsext_base 55.18,91.45
-'Travel High Isle |q Spies in the Shallows/Talk to Titus Stolo
+goto u34_shipwreckshoalsext_base 34.34,56.25
+step
+goto 35.56,65.81
+'Use Skyshard |q Spies in the Shallows/Talk to Titus Stolo
+|tip Manually skip to the next step.
+step
+goto 55.18,91.45
+'Travel High Isle |q Spies in the Shallows/Talk to Titus Stolo 
+|tip  Go around and drop down carefully.
 |tip Manually skip to the next step.
 step
 goto u34_systreszone_base 47.91,48.53
@@ -41216,6 +41257,10 @@ goto 78.91,40.45
 step
 goto 77.62,44.07 |q The Long Game/Find the South Key
 step
+goto 78.17,45.15
+'Use Skyshard |q The Long Game/Find the South Key
+|tip Manually skip to the next step.
+step
 goto 81.09,48.38 |q The Long Game/Find the South Key
 step
 goto 80.86,46.79 |q The Long Game/Find the South Key
@@ -41290,7 +41335,14 @@ step
 goto 45.55,36.34
 'Search Abandoned Coffer |q Rhadh's Map Fragment/Retrieve the Map Fragment
 step
-goto 55.06,74.80 |q Pursuit of Freedom/Escort Louna and Anton to Safety
+goto 44.51,52.49 |q Pursuit of Freedom/Escort Louna and Anton to Safety
+step
+goto 47.15,58.84
+|tip Follow path up on the rock.
+'Use Skyshard |q Pursuit of Freedom/Escort Louna and Anton to Safety
+|tip Manually skip to the next step.
+step
+goto 55.06,74.80 |q Pursuit of Freedom/Escort Louna and Anton to Safety |tip Drop down carefully.
 step
 goto 93.12,69.95
 'Travel Raft to Amenos |q Pursuit of Freedom/Escape Whalefall |future
@@ -41551,6 +41603,11 @@ step
 goto 81.00,27.72
 talk Queen Ayrenn |q Escape from Amenos/Talk to Queen Ayrenn
 step
+goto 80.03,26.36
+|tip Drop down carefully.
+'Use Skyshard |q Escape from Amenos/Find High King Emeric
+|tip Manually skip to the next step.
+step
 goto 84.02,24.42
 wayshrine Flooded Coast
 step
@@ -41575,7 +41632,9 @@ step
 goto 53.59,46.95
 'Destroy Corrupted Coral |q Coral Conundrum/.*Destroy the Coral.* |count 1
 step
-goto 66.75,30.11 |q Coral Conundrum/.*Destroy the Coral.* |count 2
+goto 31.62,34.77
+'Use Skyshard |q Coral Conundrum/.*Destroy the Coral.* |count 2
+|tip Manually skip to the next step.
 step
 goto 52.87,29.03
 'Enter Coral Cliffs |q Escape from Amenos/Search the Nearby Cave
@@ -41641,17 +41700,11 @@ goto 67.97,29.59
 talk Captain Jimila
 accept The Missing Prowler
 step
-goto 66.52,27.82
-'Examine Smuggler's Mark |q The Missing Prowler/Search for Quartermaster Oblan
-|tip Manually skip to the next step.
+goto 66.52,27.82 |q The Missing Prowler/Search for Quartermaster Oblan
 step
-goto 66.68,25.10
-'Examine Smuggler's Mark |q The Missing Prowler/Search for Quartermaster Oblan
-|tip Manually skip to the next step.
+goto 66.68,25.10 |q The Missing Prowler/Search for Quartermaster Oblan
 step
-goto 68.78,25.40
-'Examine Smuggler's Mark |q The Missing Prowler/Search for Quartermaster Oblan
-|tip Manually skip to the next step.
+goto 68.78,25.40 |q The Missing Prowler/Search for Quartermaster Oblan
 step
 goto 69.55,25.77
 |tip Go up the stairs.
@@ -41663,6 +41716,10 @@ talk Adwig Racicot |q The Missing Prowler/Talk to Adwig
 step
 goto 67.32,24.19
 'Take Adwig's Pack |q The Missing Prowler/Find Adwig's Pack
+step
+goto 66.86,20.67
+'Use Skyshard |q The Missing Prowler/Talk to Adwig Racicot
+|tip Manually skip to the next step.
 step
 goto 69.59,25.62
 |tip Go up the stairs
@@ -41880,7 +41937,11 @@ goto 21.41,44.69
 'Open Death's Valor Keep |q In Secret and Shadow/Enter Death's Valor Keep |future
 |tip Manually skip to the next step.
 step
-goto u34_hauntedsepulcherext_base 51.17,53.67 |q In Secret and Shadow/.*Recover the Items Sir Nathain Hid.* |count 1
+goto u34_hauntedsepulcherext_base 56.74,81.84 |q In Secret and Shadow/.*Recover the Items Sir Nathain Hid.* |count 1
+step
+goto 48.59,92.41
+'Use Skyshard |q In Secret and Shadow/.*Recover the Items Sir Nathain Hid.* |count 1
+|tip Manually skip to the next step.
 step
 goto 69.41,66.91
 |tip Use Alter of Fidelity and Open Chest
@@ -41943,6 +42004,10 @@ goto 34.86,37.75 |q To Catch a Magus/Talk to Lady Arabelle Davaux |future
 step
 goto 34.12,35.53
 talk Lady Arabelle Davaux |q To Catch a Magus/Talk to Lady Arabelle Davaux |future
+step
+goto 31.30,34.04
+'Use Skyshard |q To Catch a Magus/Search Mistmouth Cave
+|tip Manually skip to the next step.
 step
 goto 32.20,34.95
 'Open Mistmouth Cave |q To Catch a Magus/Search Mistmouth Cave
@@ -42063,7 +42128,11 @@ goto 47.37,42.97
 'Travel to _Stonelore Grove_ |q The Ascendant Storm/Meet Your Allies at Jheury's Cove
 |tip Manually skip to the next step.
 step
-goto u34_systreszone_base 15.07,58.97 |q The Ascendant Storm/Meet Your Allies at Jheury's Cove
+goto u34_systreszone_base 15.47,56.93 |q The Ascendant Storm/Meet Your Allies at Jheury's Cove |tip drop down carefully on the rock bridge.
+step
+goto 14.40,56.68
+'Use Skyshard |q The Ascendant Storm/Meet Your Allies at Jheury's Cove
+|tip Manually skip to the next step.
 step
 goto 15.12,56.40
 'Meet Your Allies at Jheury's Cove |q The Ascendant Storm/Meet Your Allies at Jheury's Cove
