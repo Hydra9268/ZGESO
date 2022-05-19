@@ -40342,12 +40342,7 @@ step
 goto 38.03,73.13
 talk Milagi |q An Experiment with Peace/.*Talk to Steadfast Manor Residents.* |count 2
 step
-goto 37.57,71.51
-talk Stibbons
-accept The All Flags Curse
-step
 goto 37.39,73.97
-|tip Inside Steadfast Manor
 talk Mender Teliel |q An Experiment with Peace/.*Talk to Steadfast Manor Residents.* |count 3
 step
 goto 37.67,74.18
@@ -42230,6 +42225,10 @@ talk Lady Arabelle Davaux
 turnin The Ascendant Storm
 accept A Chance for Peace
 step
+goto 31.89,65.59
+talk Stibbbons
+accept The All Flags Curse
+step
 goto 32.83,66.31
 talk Lady Clarisse Laurent |q The All Flags Curse/Talk to Lady Clarisse Laurent |future
 step
@@ -42291,6 +42290,12 @@ step
 goto 33.93,63.65
 talk Stibbons
 turnin The All Flags Curse
+step
+goto 32.43,62.01
+'Use Skyshard |q A Chance for Peace/Go to Steadfast Manor
+|tip Manually skip to the next step.
+step
+goto 32.65,65.78 |q A Chance for Peace/Go to Steadfast Manor
 step
 goto 30.42,66.11
 'Use All Flags Wayshrine

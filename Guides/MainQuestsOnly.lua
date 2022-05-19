@@ -41914,6 +41914,7 @@ step
 goto 45.67,82.01 |q Of Knights and Knaves/Go to the Druid's Hut
 step
 goto 45.60,79.33
+|tip Go inside the hut.
 talk Druid Ryvana |q Of Knights and Knaves/Talk to Druid Ryvana |future
 step
 goto 40.44,84.83
@@ -41925,7 +41926,7 @@ step
 goto 45.81,80.07
 talk Guild Magister Valessea |q Of Knights and Knaves/Talk to Guild Magister Valessea |future
 step
-goto 44.61,77.06 |q Of Knights and Knaves/Talk to Lady Arabelle Davaux
+goto 43.24,78.17 |q Of Knights and Knaves/Talk to Lady Arabelle Davaux
 step
 goto u34_gonfalonbaycity_base 41.75,17.63
 talk Lady Arabelle Davaux |q Of Knights and Knaves/Talk to Lady Arabelle Davaux
@@ -42106,7 +42107,7 @@ talk Bard Adistair Virane |q People of Import/Make a Song Request
 'Tell him _Would this buy me a song? [69]_
 step
 goto 32.92,54.75
-'Open Castle Navire Lower Halls |q People of Import/Enter Lower Castle Navire
+'Open Lower Castle Navire |q People of Import/Enter Lower Castle Navire
 |tip Manually skip to the next step.
 step
 goto u34_CastleNavireInt_base 28.72,29.03 |q People of Import/.*Find Duchess Elea's Notes.* |future
@@ -42207,7 +42208,7 @@ goto 13.57,69.13
 'Examine Lava Vent |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 1
 |tip Manually skip to the next step.
 step
-goto 13.72,66.32
+goto 13.67,69.34
 'Examine Cracked Staff |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 1
 |tip Manually skip to the next step.
 step
@@ -42285,7 +42286,7 @@ goto 47.37,42.97
 'Travel to _Dufort Shipyards_ |q Deadly Investigations/Enter Shipwreck Shoals
 |tip Manually skip to the next step.
 step
-goto u34_systreszone_base 48.39,48.90 |q Deadly Investigations/Enter Shipwreck Shoals 
+goto u34_systreszone_base 52.28,56.13 |q Deadly Investigations/Enter Shipwreck Shoals 
 step
 goto 48.04,48.56
 'Travel Shipwreck Shoals |q Deadly Investigations/Enter Shipwreck Shoals |future
@@ -42337,19 +42338,10 @@ goto u34_amenosstation_city_base 59.55,71.88
 'Open Amenos Station Stockade |q Escape from Amenos/Explore Amenos Station
 |tip Manually skip to the next step.
 step
-goto 60.11,60.18
-'Open Amenos Station |q Escape from Amenos/Explore Amenos Station
-|tip Manually skip to the next step.
-step
 goto 51.08,54.56
 wayshrine Amenos Station
 step
-goto 58.62,59.42
-'Open Amenos Station |q Escape from Amenos/Explore Amenos Station
-|tip Manually skip to the next step.
-step
 goto 64.89,57.35
-|tip Use Prisoner Disguise.
 talk Jakarn |q Escape from Amenos/Talk to Jakarn |future
 step
 goto 71.33,50.32
@@ -42373,6 +42365,8 @@ goto 78.91,40.45
 step
 goto 73.52,34.63
 wayshrine Serpents Hollow
+step
+goto 72.28,36.86 |q Escape from Amenos/Talk to Caska |future
 step
 goto 67.69,36.87 |q Escape from Amenos/Talk to Caska |future
 step
