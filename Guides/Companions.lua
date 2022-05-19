@@ -128,8 +128,7 @@ goto 28.88,85.15
 talk Bastian Hallix |q Competition and Contracts/Talk to Bastian Hallix
 step
 goto 29.92,85.34
-'Open Hall of Sithis |q Competition and Contracts/Reach the Fane of Scorn
-|tip Manually skip to the next step.
+'Open Hall of Sithis |q Competition and Contracts/Enter the Hall of Sithis
 step
 goto 48.47,85.41
 'Open Fane of Scorn |q Competition and Contracts/Reach the Fane of Scorn
@@ -155,7 +154,74 @@ goto 81.93,80.96
 talk Bastian Hallix |q Competition and Contracts/Talk to Bastian Hallix
 step
 talk Bastian
-turnin Competition and Contracts |next Extra's\\Extra's\\Companions\\Ember
+turnin Competition and Contracts
+step
+'_Next group of quests unlock based on Bastian Hallix's Rapport Level_
+|tip Manually skip to the next step.
+step
+'_Next to you_
+talk Bastian Hallix
+accept Things Lost, Things Found
+step
+'Use Closest Wayshrine
+'Travel to _Daggerfall_ in Glenumbra |q Things Lost, Things Found/Meet Quistley Silvelle in Daggerfall
+|tip Manually skip to the next step.
+step
+goto daggerfall_base 51.76,26.03
+'Open Rosy Lion Inn |q Things Lost, Things Found/Meet Quistley Silvelle in Daggerfall
+|tip Manually skip to the next step.
+step
+goto 48.61,26.23
+|tip Go upstairs.
+talk Quistley Silvelle |q Things Lost, Things Found/Talk to Quistley Silvelle |future
+step
+goto 64.80,39.74 |q Things Lost, Things Found/Go to Illessan Tower |tip Leave Rosy Lion Inn
+step
+goto glenumbra_base 34.81,72.59
+talk Bastian Hallix |q Things Lost, Things Found/Talk to Bastian Hallix |future
+step
+goto 34.81,72.59
+'Open Illessan Tower |q Things Lost, Things Found/Find the Silvelle Ring
+|tip Manually skip to the next step.
+step
+goto ilessantower_base 11.64,80.04 |q Things Lost, Things Found/Find the Silvelle Ring
+step
+goto 67.75,80.09 |q Things Lost, Things Found/Find the Silvelle Ring
+step
+goto 60.38,33.31
+'Search Coffer |q Things Lost, Things Found/Find the Silvelle Ring
+step
+'Open Glenumbra Map
+'Travel to _Baelborne Rock_ |q Things Lost, Things Found/Talk to Quistley Silvelle
+|tip Manually skip to the next step.
+step
+goto glenumbra_base 35.33,74.21
+talk Quistley Silvelle |q Things Lost, Things Found/Talk to Quistley Silvelle
+step
+goto 35.35,74.24
+'Examine Letter from Inalieth |q Things Lost, Things Found/Read the Undelivered Letter
+step
+goto 35.37,74.11
+talk Bastian Hallix |q Things Lost, Things Found/Talk to Bastian Hallix
+step
+goto 37.40,73.03
+'Use Baelbourne Rock
+'Travel to _Redfur Trading Post_ |q Things Lost, Things Found/Go to the Hearty Hoarvor Inn in Grahtwood
+|tip Manually skip to the next step.
+step
+goto redfurtradingpost_base 66.64,48.00
+talk Vayzah |q Things Lost, Things Found/Ask About Inalieth |future
+step
+goto grahtwood_base 32.18,27.32
+talk Inalieth |q Things Lost, Things Found/Talk to Inalieth |future
+step
+goto 32.07,27.31
+talk Bastian Hallix
+turnin Things Lost, Things Found
+step
+'_Next to you_
+talk Bastian Hallix
+accept Family Secrets
 ]])
 
 ZGV:RegisterGuide("Extra's\\Extra's\\Companions\\Ember",[[
@@ -595,7 +661,7 @@ step
 goto 45.51,12.18
 talk Mirri |q Shattered and Scattered/Talk to Mirri Elendis
 step
-goto 53.87,04.62
+goto 53.57,8.01
 'Open Inner Ruins |q Shattered and Scattered/Find the Remaining Expedition Members
 |tip Manually skip to the next step.
 step

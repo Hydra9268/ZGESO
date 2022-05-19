@@ -698,8 +698,7 @@ function Utils.DistanceOffsetForGoto(dist,selfdist)
 			    GetCurrentMapIndex() == Enums.BangkoraiMap or
 			    GetCurrentMapIndex() == Enums.DeshaanMap or
 			    GetCurrentMapIndex() == Enums.EastmarchMap or
-				GetCurrentMapIndex() == Enums.FargraveMap or
-			    GetCurrentMapIndex() == Enums.GlenumbraMap or
+				GetCurrentMapIndex() == Enums.GlenumbraMap or
 			    GetCurrentMapIndex() == Enums.GoldCoastMap or
 			    GetCurrentMapIndex() == Enums.GrahtwoodMap or
 			    GetCurrentMapIndex() == Enums.MalabalTorMap or
@@ -708,9 +707,10 @@ function Utils.DistanceOffsetForGoto(dist,selfdist)
 			    GetCurrentMapIndex() == Enums.StormhavenMap or
 			    GetCurrentMapIndex() == Enums.WrothgarMap then		return 10
 
-		elseif 	GetCurrentMapIndex() == Enums.ShadowfenMap or
-			    GetCurrentMapIndex() == Enums.TheRiftMap or
-			    GetCurrentMapIndex() == Enums.HewsBaneMap then		return 11
+		elseif 	GetCurrentMapIndex() == Enums.FargraveMap or
+			    GetCurrentMapIndex() == Enums.HewsBaneMap or
+				GetCurrentMapIndex() == Enums.ShadowfenMap or
+			    GetCurrentMapIndex() == Enums.TheRiftMap then		return 11
 
 		else return dist or selfdist or 1 -- default value
 		end
@@ -756,8 +756,7 @@ function Utils.DistanceOffsetForIsComplete()
 			    GetCurrentMapIndex() == Enums.BangkoraiMap or
 			    GetCurrentMapIndex() == Enums.DeshaanMap or
 			    GetCurrentMapIndex() == Enums.EastmarchMap or
-				GetCurrentMapIndex() == Enums.FargraveMap or
-			    GetCurrentMapIndex() == Enums.GlenumbraMap or
+				GetCurrentMapIndex() == Enums.GlenumbraMap or
 			    GetCurrentMapIndex() == Enums.GoldCoastMap or
 			    GetCurrentMapIndex() == Enums.GrahtwoodMap or
 			    GetCurrentMapIndex() == Enums.MalabalTorMap or
@@ -766,9 +765,10 @@ function Utils.DistanceOffsetForIsComplete()
 			    GetCurrentMapIndex() == Enums.StormhavenMap or
 			    GetCurrentMapIndex() == Enums.WrothgarMap then		return 10
 
-		elseif 	GetCurrentMapIndex() == Enums.ShadowfenMap or
-			    GetCurrentMapIndex() == Enums.TheRiftMap or
-			    GetCurrentMapIndex() == Enums.HewsBaneMap then		return 11		
+		elseif 	GetCurrentMapIndex() == Enums.FargraveMap or
+		        GetCurrentMapIndex() == Enums.HewsBaneMap or
+				GetCurrentMapIndex() == Enums.ShadowfenMap or
+			    GetCurrentMapIndex() == Enums.TheRiftMap then		return 11		
 
 		else return 1 -- default value
 		end

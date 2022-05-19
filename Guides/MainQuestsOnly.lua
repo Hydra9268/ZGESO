@@ -39307,7 +39307,7 @@ loadingimage loadscreen_u30_blackwood_zone_01.dds
 description Blackwood needs heroes to stand against Oblivion. Retake the village of Rockgrove from Daedric-worshipping Argonians
 step
 'Open Blackwood Map
-'Travel to _Leyawiin_ in Blackwood |q A Deadly Secret |future
+'Travel to _Leyawiin Outskirts_ in Blackwood |q A Deadly Secret |future
 |tip Manually skip to the next step.
 step
 goto u30_leyawiincity_base 47.13,07.73
@@ -39376,8 +39376,8 @@ goto 52.69,56.65
 talk Eveli Sharp-Arrow |q A Deadly Secret/Talk to Eveli Sharp-Arrow
 step
 goto 56.16,53.38
-'Search Nightstand |q A Deadly Secret/Find Councilor Jirich's Records
 |tip Upstairs
+'Search Nightstand |q A Deadly Secret/Find Councilor Jirich's Records
 step
 goto 56.16,53.38
 'Examine Councilor Jirich's Records |q A Deadly Secret/Examine Councilor Jirich's Records
@@ -39386,8 +39386,8 @@ goto 56.00,53.48
 talk Eveli Sharp-Arrow |q A Deadly Secret/Talk to Eveli Sharp-Arrow
 step
 goto 53.70,58.18
-'Open Leyawiin |q A Deadly Secret/Go to Leyawiin Castle
 |tip Downstairs
+'Open Leyawiin |q A Deadly Secret/Go to Leyawiin Castle
 |tip Manually skip to the next step.
 step
 goto 79.54,53.17
@@ -39483,7 +39483,7 @@ step
 goto 37.93,60.71
 talk Commander Ortin |q A Deadly Secret/Talk to Commander Ortin
 step
-goto 36.41,59.25 |achieve 2982/1
+goto 36.41,59.25 |q A Deadly Secret/Find Councilor Faleria
 step
 goto 36.24,66.51
 wayshrine Blueblood
@@ -39506,7 +39506,7 @@ step
 'Travel to _Blackwood Crossroads_ in Blackwood |q A Deadly Secret/Warn Councilor Vandacia
 |tip Manually skip to the next step.
 step
-goto u30_Gideoncity_base 13.80,45.16
+goto u30_Gideoncity_base 13.80,45.16 |q A Deadly Secret/Warn Councilor Vandacia
 step
 goto 55.54,30.35
 wayshrine Gideon
@@ -39518,8 +39518,8 @@ goto 46.12,34.40
 talk Councilor Vandacia |q A Deadly Secret/Talk to Councilor Vandacia
 step
 goto 46.25,34.15
-talk Assassin |q A Deadly Secret/Talk to the Assassin
 |tip Downstairs
+talk Assassin |q A Deadly Secret/Talk to the Assassin
 step
 goto 46.25,34.15
 'Examine Corroded Lock |q A Deadly Secret/Examine the Corroded Lock
@@ -39542,7 +39542,7 @@ goto 69.73,46.14
 'Open Hidden Chamber |q A Deadly Secret/Examine the Bookshelf |future
 step
 goto U30_castleGiovesse2_base 85.48,47.36
-'Open Letter from Astra |q A Deadly Secret/Search the Hidden Chamber
+'Examine Letter from Astra |q A Deadly Secret/Search the Hidden Chamber
 step
 goto 88.14,46.43
 talk Elam Drals |q A Deadly Secret/Talk to Elam Drals
@@ -39666,8 +39666,8 @@ goto 36.12,69.14
 |tip Manually skip to the next step.
 step
 goto 41.66,58.82
-'Examine Dead Cultist |q An Unexpected Adversary/Explore the Ayleid Ruins
 |tip Downstairs
+'Examine Dead Cultist |q An Unexpected Adversary/Explore the Ayleid Ruins
 step
 goto 41.54,60.40
 talk Elam Drals |q An Unexpected Adversary/Talk to Elam Drals
@@ -39710,7 +39710,7 @@ step
 goto 32.00,61.57
 talk Elam Drals |q An Unexpected Adversary/Talk to Elam Drals
 step
-goto 66.36,22.11
+goto 32.00,61.57
 'Open Blackwood Map
 'Travel to _Leyawiin_ in Blackwood |q An Unexpected Adversary/Warn the Councilors
 |tip Manually skip to the next step.
@@ -39723,8 +39723,8 @@ talk Captain Rian Liore |q An Unexpected Adversary/Find Eveli Sharp-Arrow
 |tip Manually skip to the next step.
 step
 goto 78.06,67.01
-'Find Eveli Sharp-Arrow |q An Unexpected Adversary/Find Eveli Sharp-Arrow
 |tip Up the ramp
+'Find Eveli Sharp-Arrow |q An Unexpected Adversary/Find Eveli Sharp-Arrow
 step
 goto 78.06,67.01
 talk Eveli Sharp-Arrow |q An Unexpected Adversary/Talk to Eveli Sharp-Arrow
@@ -39733,12 +39733,14 @@ goto 78.35,68.04
 'Open Leyawiin Castle |q An Unexpected Adversary/Enter Leyawiin Castle |future
 |tip Manually skip to the next step.
 step
-goto u30_leyawiincastleint02_base 21.63,48.10 |q An Unexpected Adversary/Find the Councilors
+goto u30_leyawiincastleint02_base 21.63,48.10 |q An Unexpected Adversary/Find the Councilors |tip Go upstairs.
 step
 goto 62.50,61.33 
 'Find the Councilors |q An Unexpected Adversary/Find the Councilors
 step
-goto u30_leyawiincastleint01_base 49.15,61.84
+goto u30_leyawiincastleint01_base 49.15,61.84 |q An Unexpected Adversary/Find Councilor Lovidicus
+step
+goto 55.73,75.34 |q An Unexpected Adversary/Find Councilor Lovidicus
 step
 goto 83.82,75.49 |q An Unexpected Adversary/Find Councilor Lovidicus
 step
@@ -39780,8 +39782,8 @@ goto u30_Gideoncity_base 63.69,40.02
 |tip Manually skip to the next step.
 step
 goto 63.37,38.37
-talk Keshu The Black Fin |q A Hidden Vault/Talk to Keshu the Black Fin
 |tip Upstairs
+talk Keshu The Black Fin |q A Hidden Vault/Talk to Keshu the Black Fin
 step
 goto 63.82,40.37
 |tip Downstairs.
@@ -39980,8 +39982,8 @@ goto u30_Gideoncity_base 63.69,40.04
 |tip Manually skip to the next step.
 step
 goto 63.73,39.73
-talk Keshu the Black Fin |q A Hidden Vault/Talk to Keshu the Black Fin
 |tip Upstairs
+talk Keshu the Black Fin |q A Hidden Vault/Talk to Keshu the Black Fin
 step
 goto 63.53,38.89
 talk Eveli
@@ -39995,8 +39997,8 @@ goto 63.67,38.74
 talk Eveli Sharp-Arrow |q A Mysterious Event/Talk to Eveli Sharp-Arrow
 step
 goto 63.82,40.44
-'Open Gideon |q A Mysterious Event/Go to Amnis Manor
 |tip Downstairs
+'Open Gideon |q A Mysterious Event/Go to Amnis Manor
 |tip Manually skip to the next step.
 step
 goto 40.17,58.94
@@ -40012,8 +40014,8 @@ goto 42.69,62.46
 'Examine Letter to Matus Amnis |q A Mysterious Event/.*Search the Manor.* |count 1
 step
 goto 41.35,65.93
-'Examine Wardrobe |q A Mysterious Event/.*Search the Manor.* |count 2
 |tip Upstairs
+'Examine Wardrobe |q A Mysterious Event/.*Search the Manor.* |count 2
 step
 goto 41.28,62.62
 'Examine Invitation Cover Letter |q A Mysterious Event/.*Search the Manor.* |count 3
@@ -40033,12 +40035,12 @@ goto 56.99,37.14
 |tip Manually skip to the next step.
 step
 goto 57.04,36.90
-'Search Salvitto Estate |q A Mysterious Event/Search the Salvitto Estate
 |tip Upstairs
+'Search Salvitto Estate |q A Mysterious Event/Search the Salvitto Estate
 step
 goto 56.99,37.15
-'Open Blackwood |q A Mysterious Event/Pursue Gracian Salvitto
 |tip Downstairs
+'Open Blackwood |q A Mysterious Event/Pursue Gracian Salvitto
 |tip Manually skip to the next step.
 step
 goto 56.13,37.45 |q A Mysterious Event/Pursue Gracian Salvitto
@@ -40116,7 +40118,7 @@ goto 66.81,67.19
 |tip Manually skip to the next step.
 step
 goto 79.07,67.16
-talk Sombren |q A Mysterious Event/Talk to Sombren
+talk Sombren |q A Mysterious Event/Talk to Sombren |future
 step
 goto 67.60,67.17
 'Open Inner Keep Chambers |q A Mysterious Event/Find the Key
@@ -40275,7 +40277,7 @@ step
 goto 71.93,74.80 |q Weapons of Destruction/Enter the Portal
 step
 goto 70.80,73.45
-'Use Portal to the Ashen Forest |q Weapons of Destruction/Enter the Portal
+'Use Portal to the Ashen Forest |q Weapons of Destruction/Enter the Portal |future
 |tip Manually skip to the next step.
 step
 goto u30_ashenforest_ext_base 29.45,78.59
@@ -40295,9 +40297,7 @@ step
 goto 78.76,47.93
 'Activate Obelisk of Empowerment |q Weapons of Destruction/Activate the Obelisk of Empowerment
 step
-goto 44.20,58.07 |q Weapons of Destruction/Reach the Obelisk of Inevitability
-step
-goto 35.45,43.41 |q Weapons of Destruction/Reach the Obelisk of Inevitability
+goto 70.61,33.47 |q Weapons of Destruction/Reach the Obelisk of Inevitability
 step
 goto 45.09,36.01
 'Reach Obelisk Inevitability |q Weapons of Destruction/Reach the Obelisk of Inevitability
@@ -40384,7 +40384,7 @@ step
 goto 49.16,25.43
 'Examine Xynaa's Book of Contracts |q Weapons of Destruction/Examine Xynaa's Book
 step
-goto 50.61.23,28
+goto 50.61,23.28
 'Open Xynaa's Sanctuary |q Weapons of Destruction/Enter Xynaa's Sanctuary
 step
 goto 50.86,10.29
@@ -40512,6 +40512,7 @@ goto 38.02,35.36
 'Listen to Sombren |q Pyre of Ambition/Listen to Sombren
 step
 goto 38.04,41.68
+|tip Talk to your allies (optional)
 'Open Fort Redmane Museum Hall |q Pyre of Ambition/Reach the Courtyard
 |tip Manually skip to the next step.
 step
@@ -40526,8 +40527,8 @@ step
 goto 63.66,53.59
 'Listen to Mehrunes Dagon |q Pyre of Ambition/Listen to Mehrunes Dagon
 step
-'Open Blackwood Map
-'Travel to _Fort Redmane_ in Blackwood |q Pyre of Ambition/Leave Fort Redmane
+goto 71.33,44.03
+'Open Blackwood |q Pyre of Ambition/Leave Fort Redmane |future
 |tip Manually skip to the next step.
 step
 goto blackwood_base 28.20,28.85
@@ -40612,6 +40613,7 @@ goto 59.23,33.80 |q The Celestial Palanquin/Talk to Initiate Tilgo
 step
 goto 62.93,45.60
 'Use Portal to the Sever |q The Celestial Palanquin/Talk to Initiate Tilgo
+|tip Manually skip to the next step.
 step
 goto u32deadlandszone_base 83.65,32.83
 wayshrine False Martyrs' Folly

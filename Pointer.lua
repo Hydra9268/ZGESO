@@ -1227,8 +1227,8 @@ SLASH_COMMANDS["/zgpos"] = function(checker)
 	if checker == "gps" then
 	local tex = Pointer:GetMapTex()
 		d(("|cffffff%s|r"):format(tex))
-		--d(("MapIndex: |c88ff88%d|r"):format(_G.GetCurrentMapIndex()))
-	    d(("xoffset: |c88ff88%.19f|r"):format(gps.offsetX))
+		d(("GetCurrentMapIndex: |c88ff88%d|r - ESO Global function"):format(_G.GetCurrentMapIndex()))
+        d(("xoffset: |c88ff88%.19f|r"):format(gps.offsetX))
 		d(("yoffset: |c88ff88%.19f|r"):format(gps.offsetY))
 		d(("scale: |c88ff88%.19f|r"):format(gps.scaleX))
 	else
