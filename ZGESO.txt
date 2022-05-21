@@ -1,8 +1,8 @@
 ## Title: |cfd5b02Community Leveling Guides|r v977
 ## Description: A Zygor addon updated by snichols7778, Hydra9268, Krandor1, and Sharlikran for the Blackwood expansion.
 ## Author: snichols7778, Hydra9268
-## Version: 977
-## AddOnVersion: 977
+## Version: 1000
+## AddOnVersion: 1000
 ## APIVersion: 101033 101034
 ; ## DependsOn: LibGPS AceTimer-3.0>=146
 ## DependsOn: LibGPS>=66
@@ -133,8 +133,6 @@ GuideMenu.lua
 
 -- Guides
 Guides/LevelingCommon.lua
-; Guides/SD.lua
-; future rename Guides/Legacy.lua
 Guides/MainQuestsOnly.lua
 Guides/Expansions.lua
 Guides/Companions.lua

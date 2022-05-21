@@ -41933,7 +41933,7 @@ talk Lady Arabelle Davaux |q Of Knights and Knaves/Talk to Lady Arabelle Davaux
 step
 goto 62.91,26.41 |q Of Knights and Knaves/Enter the Abhain Chapel Crypts
 step
-goto u34_systreszone_base 60.48,75.94 |q Of Knights and Knaves/Enter the Abhain Chapel Crypts
+goto u34_systreszone_base 62.91,26.41 |q Of Knights and Knaves/Enter the Abhain Chapel Crypts
 step
 goto 64.11,77.71
 'Open Abhain Chapel Crypts |q Of Knights and Knaves/Enter the Abhain Chapel Crypts |future

@@ -39787,13 +39787,16 @@ goto 43.91,83.09
 -- END: DAGGERFALL COVENANT FACTION
 
 -- START: EBONHEART PACT FACTION
+step
 'Open Deshaan Map
 'Travel to _Mournhold_ Wayshrine |q Ascending Doubt |future
 |tip Manually skip to the next step.
+|only Ebonheart Pact
 step
 goto deshaan_base 49.98,57.13
 talk Jakarn
 accept Ascending Doubt
+|only Ebonheart Pact
 step
 goto 49.98,57.13
 'Travel Wagon to Jakarn's Contact |q Ascending Doubt/Meet Jakarn's Contact
@@ -39931,13 +39934,14 @@ goto 57.86,90.01
 'Use Portal to Windhelm |q A King's Retreat/Go to Windhelm |future
 |tip Manually skip to the next step.
 step
-goto windhelm_base 74.45,30.91 |q A King's Retreat/Go to the Palace of Kings
+goto windhelm_base 76.52,34.53 |q A King's Retreat/Go to the Palace of Kings
 step
 goto 68.88,24.54 |q A King's Retreat/Go to the Palace of Kings
 step
 goto 50.54,30.74
+|tip Takes a few moments to complete.
 'Open Palace of Kings |q A King's Retreat/Go to the Palace of Kings
- step
+step
 goto palaceofkingsmain_base 47.37,72.09
 talk Captain Danylva |q A King's Retreat/Talk to Captain Danylva
 step
@@ -40147,9 +40151,10 @@ goto u34_systreszone_base 51.48,78.24
 'Use Skyshard |q Of Knights and Knaves/Investigate the Shallows
 |tip Manually skip to the next step.
 step
-goto 49.99,79.22 |q Of Knights and Knaves/Investigate the Shallows
+goto u34_gonfalonbaycity_base 23.22,17.26 |q Of Knights and Knaves/Investigate the Shallows
 step
-goto 57.05,70.97
+goto u34_systreszone_base 57.05,70.97
+|tip Go across the bridge.
 wayshrine Tor Draioch
 step
 goto 52.70,72.83 |q Of Knights and Knaves/Investigate the Shallows
@@ -40174,13 +40179,14 @@ step
 goto u34_gonfalonbaycity_base 41.75,17.63
 talk Lady Arabelle Davaux |q Of Knights and Knaves/Talk to Lady Arabelle Davaux
 step
-goto 19.83,22.65 |q Of Knights and Knaves/Go to the Druid's Hut
+goto 20.56,21.53 |q Of Knights and Knaves/Go to the Druid's Hut
 step
-goto 6.09,38.01 |q Of Knights and Knaves/Go to the Druid's Hut
+goto u34_systreszone_base 47.64,83.31 |q Of Knights and Knaves/Go to the Druid's Hut
 step
-goto u34_systreszone_base 45.57,81.88 |q Of Knights and Knaves/Go to the Druid's Hut
+goto 45.67,82.01 |q Of Knights and Knaves/Go to the Druid's Hut
 step
 goto 45.60,79.33
+|tip Go inside the hut.
 talk Druid Ryvana |q Of Knights and Knaves/Talk to Druid Ryvana |future
 step
 goto 43.97,80.82
@@ -40205,6 +40211,8 @@ goto 45.81,80.07
 step
 goto 45.81,80.07
 talk Guild Magister Valessea |q Of Knights and Knaves/Talk to Guild Magister Valessea |future
+step
+goto 46.81,77.56 |q The Intoxicating Mix/.*Gather Drink Ingredients.* |count 2
 step
 goto 44.61,77.06
 'Take Druid's Bane Mushroom |q The Intoxicating Mix/.*Gather Drink Ingredients.* |count 2
@@ -40515,7 +40523,8 @@ goto 7.85,69.55
 'Open Animal Pen Door |q A Sheep in Need/Free Privette |future
 step
 goto 12.60,73.40
-'Enter High Isle |q A Sheep in Need/Exit Breakwater Cave
+'Enter High Isle |q A Sheep in Need/Exit Breakwater Cave |future
+|tip Manually skip to the next step.
 step
 goto u34_systreszone_base 31.68,91.22
 talk Moric Guidroz
@@ -40587,7 +40596,7 @@ goto 96.50,41.03
 'Examine Duchess Elea's Investigation Notes |q People of Import/.*Find Duchess Elea's Notes.* |count 2
 step
 goto 76.14,40.27
-'Open Lower Castle Navire |q People of Import/Return to the Courtyard
+'Open Castle Navire Lower Halls |q People of Import/Return to the Courtyard
 |tip Manually skip to the next step.
 step
 goto 72.95,47.72
@@ -40614,7 +40623,7 @@ goto u34_gonfalonbaycity_base 42.75,35.87
 talk Marisette Lemaitre |q The Large Delegate/Talk to Marisette Lemaitre |future
 step
 goto 42.75,35.87
-talk Rigurt the Brash
+talk Confront Tanillin
 turnin The Large Delegate
 step
 goto 73.37,46.79
@@ -40650,23 +40659,13 @@ goto u34_firepotcave_base 76.15,73.74
 step
 goto 57.55,84.49 |q Scalding Scavengers/Find Tarrinore
 step
-goto 30.05,63.54 |q Scalding Scavengers/Find Tarrinore
-step
-goto 16.95,43.83 |q Scalding Scavengers/Find Tarrinore
-step
-goto 31.01,21.78 |q Scalding Scavengers/Find Tarrinore
-step
-goto 34.32,30.67 |q Scalding Scavengers/Find Tarrinore
-step
-goto 38.53,46.24 |q Scalding Scavengers/Find Tarrinore
+goto 55.07,66.37 |q Scalding Scavengers/Find Tarrinore
 step
 goto 37.90,60.65
 'Use Skyshard |q Scalding Scavengers/Find Tarrinore
 |tip Manually skip to the next step.
 step
-goto 30.46,63.34 |q Scalding Scavengers/Find Tarrinore |tip Drop down carefully.
-step
-goto 57.55,84.49 |q Scalding Scavengers/Find Tarrinore
+goto 55.07,66.37 |q Scalding Scavengers/Find Tarrinore
 step
 goto 52.65,52.03 |q Scalding Scavengers/Find Tarrinore
 step
@@ -40674,7 +40673,8 @@ goto 58.30,54.93
 |tip Watch the dialogue.
 talk Tarrinore |q Scalding Scavengers/Find Tarrinore |future
 step
-kill Esh'curnu the Behemoth
+goto 63.61,49.55
+kill Esh'curnu the Behemoth 
 'Explore The Firepot |q Scalding Scavengers/.*Gather Vulk'esh Scoria.*
 |tip Manually skip to the next step.
 step
@@ -40710,7 +40710,7 @@ step
 goto u34_systreszone_base 16.49,64.56
 'Burn Corrupted Deer |q The Corrupted Grove/.*Cleanse the Corruption.* |count 1
 step
-goto 16.04,65.47
+goto 16.12,64.62
 'Take Bloomingsong Flower |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 1
 |tip Manually skip to the next step.
 step
@@ -40737,15 +40737,20 @@ goto u34_stoneloregrove_base 50.30,79.63
 step
 goto 21.93,53.65 |q The Corrupted Grove/Meet Druid Audrine at the Ritual Circle
 step
+goto 18.22,78.50 |q The Corrupted Grove/Meet Druid Audrine at the Ritual Circle
+step
 goto 28.69,85.23
 talk Druid Audrine |q The Corrupted Grove/Talk to Druid Audrine |future
 step
 goto 24.72,53.14 |q The Corrupted Grove/.*Investigate the Village.* |count 1
 step
-goto 53.56,13.28
+goto u34_systreszone_base 18.56,58.89 |q The Corrupted Grove/.*Investigate the Village.* |count 1
+step
+goto u34_stoneloregrove_base 53.56,13.28
 'Search Disturbing Basket |q The Corrupted Grove/.*Investigate the Village.* |count 1
 step
 goto 59.62,40.73
+|tip Go inside the hut.
 'Examine Evergrowth Restoration Ritual |q The Corrupted Grove/.*Investigate the Village.* |count 2
 step
 goto 62.67,70.75
@@ -40809,9 +40814,7 @@ step
 goto u34_systreszone_base 20.10,59.60 |q The Corrupted Grove/Return to Stonelore Grove's Village
 step
 goto u34_stoneloregrove_base 50.89,78.20
-talk The Evergrowth |q The Corrupted Grove/Talk to The Evergrowth |future
-step
-goto 50.89,78.20
+talk The Evergrowth
 talk Druid Audrine
 turnin The Corrupted Grove
 step
@@ -40832,7 +40835,7 @@ goto 13.57,69.13
 'Examine Lava Vent |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 1
 |tip Manually skip to the next step.
 step
-goto 13.72,66.32
+goto 13.67,69.34
 'Examine Cracked Staff |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 1
 |tip Manually skip to the next step.
 step
@@ -40850,6 +40853,8 @@ step
 goto 50.05,65.51
 'Use Skyshard |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 2
 |tip Manually skip to the next step.
+step
+goto 50.11,67.49 |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 2
 step
 goto 60.50,66.21
 talk Captain Kaleen |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 2
@@ -40985,7 +40990,7 @@ goto 43.19,68.53
 'Use Lever |q Race for Honor/Pass the Trial of Perseverance
 step
 goto 45.35,70.81
-'Open Garrick's Rest |q Race for Honor/Examine the Tablet
+'Open Garrick's Rest |q Race for Honor/Examine the Tablet |future
 |tip Manually skip to the next step.
 step
 goto 47.88,70.90
@@ -41052,7 +41057,6 @@ goto 63.66,38.79
 |tip Manually skip to the next step.
 step
 goto 66.96,32.23
-|tip Kill Summoned Champion
 'Open Garick's Rest |q Race for Honor/Meet Cynric at the Shield Hall
 |tip Manually skip to the next step.
 step
@@ -41082,7 +41086,7 @@ step
 'Travel to _Dufort Shipyards_ |q Deadly Investigations/Enter Shipwreck Shoals
 |tip Manually skip to the next step.
 step
-goto u34_systreszone_base 51.88,53.96 |q Deadly Investigations/Enter Shipwreck Shoals
+goto u34_systreszone_base 52.28,56.13 |q Deadly Investigations/Enter Shipwreck Shoals 
 step
 goto 48.50,52.31 |q Deadly Investigations/Enter Shipwreck Shoals
 step
@@ -41105,6 +41109,8 @@ goto 87.30,50.43
 step
 goto 76.99,34.55
 'Take Enemy Intelligence |q Spies in the Shallows/.*Locate Sensitive Documents.* |count 2
+step
+goto 69.95,43.40 |q Deadly Investigations/Find Captain Tsuzo
 step
 goto 31.61,40.97 |q Deadly Investigations/Find Captain Tsuzo
 step
@@ -41143,15 +41149,10 @@ goto 27.82,92.23
 'Open Shipwreck Shoals |q Spies in the Shallows/Talk to Titus Stolo
 |tip Manually skip to the next step.
 step
-goto u34_shipwreckshoalsext_base 34.34,56.25
-step
-goto 35.56,65.81
-'Use Skyshard |q Spies in the Shallows/Talk to Titus Stolo
-|tip Manually skip to the next step.
+goto u34_shipwreckshoalsext_base 45.12,79.77 |q Spies in the Shallows/Talk to Titus Stolo |tip Drop down.
 step
 goto 55.18,91.45
 'Travel High Isle |q Spies in the Shallows/Talk to Titus Stolo 
-|tip  Go around and drop down carefully.
 |tip Manually skip to the next step.
 step
 goto u34_systreszone_base 47.91,48.53
@@ -41190,10 +41191,6 @@ step
 goto u34_amenosstation_city_base 59.55,71.88
 |tip Re-equip Prisoner disguide.
 'Open Amenos Station Stockade |q Escape from Amenos/Explore Amenos Station
-|tip Manually skip to the next step.
-step
-goto 60.11,60.18
-'Open Amenos Station |q Escape from Amenos/Explore Amenos Station
 |tip Manually skip to the next step.
 step
 goto 51.08,54.56
@@ -41258,13 +41255,9 @@ goto 78.17,45.15
 step
 goto 81.09,48.38 |q The Long Game/Find the South Key
 step
-goto 80.86,46.79 |q The Long Game/Find the South Key
-step
 goto 80.30,46.15
-|tip Go up the ramp and follow it around and jump off the left side at this point.
+|tip Follow patch around watch the traps as you.
 'Search Weathered Lockbox |q The Long Game/Find the South Key
-step
-goto 81.19,48.35 |q The Long Game/Find the West Key |tip Follow path out of the gauntlet.
 step
 goto 75.81,43.25 |q The Long Game/Find the West Key
 step
@@ -41330,18 +41323,16 @@ step
 goto 45.55,36.34
 'Search Abandoned Coffer |q Rhadh's Map Fragment/Retrieve the Map Fragment
 step
-goto 44.51,52.49 |q Pursuit of Freedom/Escort Louna and Anton to Safety
+goto 44.72,58.20 |q Pursuit of Freedom/Escort Louna and Anton to Safety
 step
-goto 47.15,58.84
-|tip Follow path up on the rock.
+goto 47.08,58.90
 'Use Skyshard |q Pursuit of Freedom/Escort Louna and Anton to Safety
 |tip Manually skip to the next step.
 step
-goto 55.06,74.80 |q Pursuit of Freedom/Escort Louna and Anton to Safety |tip Drop down carefully.
+goto 55.06,74.80 |q Pursuit of Freedom/Escort Louna and Anton to Safety
 step
 goto 93.12,69.95
 'Travel Raft to Amenos |q Pursuit of Freedom/Escape Whalefall |future
-|tip Manually skip to the next step.
 step
 goto u34_systreszone_base 60.16,39.95
 talk Louna Jolvanne
@@ -41433,11 +41424,16 @@ goto 64.66,42.89
 talk Valentyn Dantaine
 turnin The Long Game
 step
-'Open High Isle and Amenos Map
+goto 64.58,43.42
+'Open Amenos Station |q A Father's Pride |future
+|tip Manually skip to the next step.
+step
+goto u34_amenosstation_city_base 51.08,54.56
+'Use Amenos Station Wayshrine
 'Travel to _Serpents Hollow_ |q A Father's Pride |future
 |tip Manually skip to the next step.
 step
-goto 83.15,37.23
+goto u34_systreszone_base 83.15,37.23
 talk Meryline Barthel
 accept A Father's Pride
 step
@@ -41529,9 +41525,8 @@ step
 goto 58.92,39.32
 'Place Loose Dirt |q A Father's Pride/.*Place Resonance Crystals.* |count 2
 step
-goto 63.23,43.41 |q A Father's Pride/.*Place Resonance Crystals.* |count 3 |tip Go up the stairs and cross the platform.
-step
 goto 72.06,44.38
+|tip Go up the stairs and cross the platform.
 'Place Loose Dirt |q A Father's Pride/.*Place Resonance Crystals.* |count 3
 step
 goto 84.26,30.32
@@ -41627,18 +41622,18 @@ step
 goto 53.59,46.95
 'Destroy Corrupted Coral |q Coral Conundrum/.*Destroy the Coral.* |count 1
 step
-goto 31.62,34.77
-'Use Skyshard |q Coral Conundrum/.*Destroy the Coral.* |count 2
-|tip Manually skip to the next step.
+goto 68.20,36.27 |q Coral Conundrum/.*Destroy the Coral.* |count 2
 step
 goto 52.87,29.03
-'Enter Coral Cliffs |q Escape from Amenos/Search the Nearby Cave
+'Enter Coral Cliffs |q Coral Conundrum/.*Destroy the Coral.* |count 2
 |tip Manually skip to the next step.
 step
 goto u34_coralcliffsint_base 71.64,34.77
 'Destroy Corrupted Coral |q Coral Conundrum/.*Destroy the Coral.* |count 2
 step
-goto 70.48,64.92 |q Escape from Amenos/Search the Nearby Cave
+goto 31.62,34.77
+'Use Skyshard |q Coral Conundrum/.*Destroy the Coral.* |count 3
+|tip Manually skip to the next step.
 step
 goto 28.05,69.64
 'Destroy Corrupted Coral |q Coral Conundrum/.*Destroy the Coral.* |count 3
@@ -41650,8 +41645,6 @@ step
 goto u34_coralcliffsext_base 17.92,58.00 |q Escape from Amenos/Search the Nearby Cave
 step
 goto 40.37,77.91 |q Escape from Amenos/Search the Nearby Cave
-step
-goto 60.65,64.94 |q Escape from Amenos/Search the Nearby Cave
 step
 goto 56.07,71.21
 kill Madena Braques
@@ -41779,10 +41772,10 @@ goto 66.00,12.18
 'Place Flammable Cargo |q The Missing Prowler/.*Rig the Slithermist with Kindlepitch.* |count 4
 step
 goto 66.06,12.36
-|tip Jump down after Using Whistle.
 'Use Whistle |q The Missing Prowler/Signal Oblan from the Rear Ship Deck
 step
 goto 69.39,13.27
+|tip Drop down.
 'Remove Wheel Lock |q The Missing Prowler/Free the Prowler |future
 step
 goto 69.39,13.27
@@ -41796,6 +41789,10 @@ goto 63.03,31.51
 'Use Trappers Peak Wayshrine
 'Travel to _Serpents Hollow_ |q Escape from Amenos/Meet Allies at the Coin Fort
 |tip Manually skip to the next step.
+step
+goto 70.85,30.77 |q Escape from Amenos/Talk to Caska |future
+step
+goto 74.29,28.40 |q Escape from Amenos/Talk to Caska |future
 step
 goto 74.15,24.83
 |tip Your allies will walk to this spot.
@@ -41889,9 +41886,15 @@ goto 48.11,48.66
 'Travel Shipwreck Shoals |q The Long Way Home/Find the Scourge of Sentinel's Treasure
 |tip Manually skip to the next step.
 step
-goto u34_shipwreckshoalsext_base 53.77,84.72
+goto u34_shipwreckshoalsext_base 34.34,56.25 |q The Long Way Home/Find the Scourge of Sentinel's Treasure
 step
-goto 39.66,74.86 |q The Long Way Home/Find the Scourge of Sentinel's Treasure
+goto 27.52,58.98 |q The Long Way Home/Find the Scourge of Sentinel's Treasure
+step
+goto 35.56,65.81
+'Use Skyshard |q The Long Way Home/Find the Scourge of Sentinel's Treasure
+|tip Manually skip to the next step.
+step
+goto 32.42,55.49 |q The Long Way Home/Find the Scourge of Sentinel's Treasure |tip Follow path back around.
 step
 goto 25.44,27.42
 'Dig Dirt Mound |q The Long Way Home/Find the Scourge of Sentinel's Treasure
@@ -41939,22 +41942,16 @@ goto 48.59,92.41
 |tip Manually skip to the next step.
 step
 goto 69.41,66.91
-|tip Use Alter of Fidelity and Open Chest
+|tip Use Altar of Fidelity and Open Chest
 'Take Ritual Dagger |q In Secret and Shadow/.*Recover the Items Sir Nathain Hid.* |count 1
 step
-goto 51.17,53.67 |q In Secret and Shadow/.*Recover the Items Sir Nathain Hid.* |count 2
-step
 goto 82.65,15.01
-|tip Use Alter of Faith and Open Chest
+|tip Use Altar of Faith and Open Chest
 'Take Valor's Chalice |q In Secret and Shadow/.*Recover the Items Sir Nathain Hid.* |count 2
 step
-goto 61.18,36.08 |q In Secret and Shadow/.*Recover the Items Sir Nathain Hid.* |count 3
-step
 goto 40.84,18.64
-|tip Use Alter of Obligation and Open Chest
+|tip Use Altar of Obligation and Open Chest
 'Take Tattered Tome of Incantation |q In Secret and Shadow/.*Recover the Items Sir Nathain Hid.* |count 3
-step
-goto 55.77,11.62 |q In Secret and Shadow/.*Recover the Items Sir Nathain Hid.* |count 4
 step
 goto 62.71,18.72
 'Open Death's Valor Keep Catacombs |q In Secret and Shadow/.*Recover the Items Sir Nathain Hid.* |count 4
@@ -41962,13 +41959,13 @@ goto 62.71,18.72
 step
 goto u34_hauntedsepulcherint_base 53.22,33.89 |q In Secret and Shadow/.*Recover the Items Sir Nathain Hid.* |count 4
 step
-goto 
+goto 35.80,46.69
 kill Lord Leobert
 'Explore Death's Valor Keep |q In Secret and Shadow/.*Recover the Items Sir Nathain Hid.* |count 4
 |tip Manually skip to the next step.
 step
 goto 34.49,47.13
-|tip Use Alter of Valor and Open Chest
+|tip Use Altar of Valor and Open Chest
 'Take Stopped Heart |q In Secret and Shadow/.*Recover the Items Sir Nathain Hid.* |count 4
 step
 goto 18.12,47.21
@@ -42123,14 +42120,12 @@ goto 47.37,42.97
 'Travel to _Stonelore Grove_ |q The Ascendant Storm/Meet Your Allies at Jheury's Cove
 |tip Manually skip to the next step.
 step
-goto u34_systreszone_base 15.47,56.93 |q The Ascendant Storm/Meet Your Allies at Jheury's Cove |tip drop down carefully on the rock bridge.
+goto u34_systreszone_base 15.47,56.93 |q The Ascendant Storm/Meet Your Allies at Jheury's Cove
 step
 goto 14.40,56.68
-'Use Skyshard |q The Ascendant Storm/Meet Your Allies at Jheury's Cove
+|tip drop down carefully on the rock bridge.
+'Use Skyshard |q The Ascendant Storm |future
 |tip Manually skip to the next step.
-step
-goto 15.12,56.40
-'Meet Your Allies at Jheury's Cove |q The Ascendant Storm/Meet Your Allies at Jheury's Cove
 step
 goto 15.12,56.40
 |tip Follow the Docks around.
@@ -42173,6 +42168,7 @@ goto U34_AllFlags_ext_base 49.13,31.17
 'Clear the Battlements |q The Ascendant Storm/Clear the Battlements |future
 step
 goto 46.73,31.43
+|tip Kill the mobs attacking him first or it might glitch and you will have to logout and back in to fix.
 talk Prince Irnskar |q The Ascendant Storm/Talk to Prince Irnskar
 step
 goto 47.17,43.58
@@ -42204,6 +42200,7 @@ goto 55.00,45.48
 |tip Manually skip to the next step.
 step
 goto U34_AllFlags_int2_base 41.54,61.95
+|tip Watch dialogue.
 'Defend Memorial Hall |q The Ascendant Storm/Defend Memorial Hall |future
 step
 goto 17.99,65.44
