@@ -40222,7 +40222,7 @@ talk Lady Arabelle Davaux |q Of Knights and Knaves/Talk to Lady Arabelle Davaux
 step
 goto 62.91,26.41 |q Of Knights and Knaves/Enter the Abhain Chapel Crypts
 step
-goto u34_systreszone_base 62.61,76.45
+goto u34_systreszone_base 62.01,77.05
 |tip Island Fleshflies flies around this area.
 'Take Island Fleshflies |q The Intoxicating Mix/.*Gather Drink Ingredients.* |count 3
 step
@@ -40462,7 +40462,7 @@ goto 29.41,80.51
 |tip Leave the Manor.
 wayshrine Coral Road
 step
-goto 25.19,83.55
+goto 25.19,83.55 |q People of Import/.*Search the Area.* |count 1 |future
 step
 goto 26.04,85.28
 'Use Skyshard |q People of Import/.*Search the Area.* |count 1 |future
@@ -40823,7 +40823,7 @@ talk Druid Ryvana |q Deadly Investigations/.*Investigate Ascendant Order Sites.*
 |tip Manually skip to the next step.
 step
 goto 12.98,68.80
-|tip Wait for her to cast her spell then follow the blue balls.
+|tip Wait for her to cast her spell then follow the insects in the blue balls.
 'Enter Druid Circle |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 1
 |tip Manually skip to the next step.
 step
@@ -41087,8 +41087,6 @@ step
 |tip Manually skip to the next step.
 step
 goto u34_systreszone_base 52.28,56.13 |q Deadly Investigations/Enter Shipwreck Shoals 
-step
-goto 48.50,52.31 |q Deadly Investigations/Enter Shipwreck Shoals
 step
 goto 48.39,48.90 |q Deadly Investigations/Enter Shipwreck Shoals
 step
@@ -41573,9 +41571,8 @@ goto 90.87,31.64
 |tip Manually skip to the next step.
 step
 goto 90.28,31.17
-'Examine Disturbed Dirt
-'Examine Invitation Medallion
-'Follow Caska |q Escape from Amenos/Follow Caska
+'Examine Disturbed Sand
+'Examine Invitation Medallion |q Escape from Amenos/Follow Caska
 |tip Manually skip to the next step.
 step
 goto 87.63,30.37
@@ -41975,7 +41972,8 @@ step
 goto u34_hauntedsepulcherext_base 43.50,54.48 |q In Secret and Shadow/Exit Death's Valor Keep
 step
 goto 25.10,72.80
-'Open High Isle |q In Secret and Shadow/Exit Death's Valor Keep
+'Open High Isle |q In Secret and Shadow/Exit Death's Valor Keep |future
+|tip Manually skip to the next step.
 step
 goto u34_systreszone_base 21.10,44.98
 'Place Open Grave |q In Secret and Shadow/Place Items into Open Grave
@@ -42183,7 +42181,6 @@ goto 32.96,35.88
 step
 goto 46.01,35.28
 'Open All Flags Courtyard |q The Ascendant Storm/Find High King Emeric
-|tip Manually skip to the next step.
 step
 goto 59.44,33.76
 |tip Do not go in the middle of the circle just kill the ones with the lightning coming off of them.

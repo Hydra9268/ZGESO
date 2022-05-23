@@ -41817,9 +41817,6 @@ goto 19.41,57.82
 'Open Gonfalon Bay |q Of Knights and Knaves/Talk to Lady Arabelle Davaux
 |tip Manually skip to the next step.
 step
-goto 46.87,42.84
-wayshrine Gonfalon Square
-step
 goto 47.08,50.66
 talk Lady Arabelle Davaux |q Of Knights and Knaves/Talk to Lady Arabelle Davaux
 step
@@ -41829,6 +41826,9 @@ step
 goto 47.08,50.66
 talk Dockmaster Arnauld |q Of Knights and Knaves/Talk to Dockmaster |future
 |tip Manually skip to the next step.
+step
+goto 46.87,42.84
+wayshrine Gonfalon Square
 step
 goto 43.75,37.25
 'Open The Ancient Anchor Inn |q Of Knights and Knaves/Investigate the Inn
@@ -41933,9 +41933,7 @@ talk Lady Arabelle Davaux |q Of Knights and Knaves/Talk to Lady Arabelle Davaux
 step
 goto 62.91,26.41 |q Of Knights and Knaves/Enter the Abhain Chapel Crypts
 step
-goto u34_systreszone_base 62.91,26.41 |q Of Knights and Knaves/Enter the Abhain Chapel Crypts
-step
-goto 64.11,77.71
+goto u34_systreszone_base 64.11,77.71
 'Open Abhain Chapel Crypts |q Of Knights and Knaves/Enter the Abhain Chapel Crypts |future
 |tip Manually skip to the next step.
 step
@@ -41977,7 +41975,8 @@ goto 70.56,65.96
 kill Guild General Quentyn |q Of Knights and Knaves/Defeat Guild General Quentyn |future
 step
 goto 74.18,66.25
-'Open High Isle |q Of Knights and Knaves/Leave the Abhain Crypts
+'Open High Isle |q Of Knights and Knaves/Leave the Abhain Crypts |future
+|tip Manually skip to the next step.
 step
 goto u34_systreszone_base 62.52,77.88
 talk Lady Arabelle Davaux |q Of Knights and Knaves/Talk to Lady Arabelle Davaux
@@ -42179,7 +42178,7 @@ step
 goto u34_stoneloregrove_base 82.06,65.45
 wayshrine Stonelore Grove
 step
-goto u34_systreszone_base 16.04,65.47
+goto u34_systreszone_base 16.12,64.61
 'Take Bloomingsong Flower |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 1
 |tip Manually skip to the next step.
 step
@@ -42196,7 +42195,7 @@ talk Druid Ryvana |q Deadly Investigations/.*Investigate Ascendant Order Sites.*
 |tip Manually skip to the next step.
 step
 goto 12.98,68.80
-|tip Wait for her to cast her spell then follow the blue balls.
+|tip Wait for her to cast her spell then follow the insects in the blue balls.
 'Enter Druid Circle |q Deadly Investigations/.*Investigate Ascendant Order Sites.* |count 1
 |tip Manually skip to the next step.
 step
@@ -42287,6 +42286,8 @@ goto 47.37,42.97
 |tip Manually skip to the next step.
 step
 goto u34_systreszone_base 52.28,56.13 |q Deadly Investigations/Enter Shipwreck Shoals 
+step
+goto 48.39,48.90 |q Deadly Investigations/Enter Shipwreck Shoals
 step
 goto 48.04,48.56
 'Travel Shipwreck Shoals |q Deadly Investigations/Enter Shipwreck Shoals |future
@@ -42399,7 +42400,7 @@ goto 90.87,31.64
 |tip Manually skip to the next step.
 step
 goto 90.28,31.17
-'Examine Disturbed Dirt
+'Examine Disturbed Sand
 'Examine Invitation Medallion |q Escape from Amenos/Follow Caska
 |tip Manually skip to the next step.
 step
@@ -42438,7 +42439,7 @@ goto 52.87,29.03
 'Enter Coral Cliffs |q Escape from Amenos/Search the Nearby Cave
 |tip Manually skip to the next step.
 step
-goto u34_coralcliffsint_base 70.48,64.92 |q Escape from Amenos/Search the Nearby Cave
+goto u34_coralcliffsint_base 31.62,34.77 |q Escape from Amenos/Search the Nearby Cave
 step
 goto 23.84,86.45
 'Enter Coral Cliffs |q Escape from Amenos/Search the Nearby Cave
@@ -42470,7 +42471,7 @@ talk High King Emeric |q Escape from Amenos/Talk to High King Emeric |future
 step
 goto 84.01,24.37
 'Use Flooded Coast Wayshrine
-'Travel to _Serpents Hollow_ |q The Missing Prowler |future
+'Travel to _Serpents Hollow_ |q Escape from Amenos/Talk to Caska |future
 |tip Manually skip to the next step.
 step
 goto 70.85,30.77 |q Escape from Amenos/Talk to Caska |future
@@ -42549,7 +42550,7 @@ goto 47.37,42.97
 'Travel to _Stonelore Grove_ Wayshrine |q To Catch a Magus/Meet Lady Arabelle at Mistmouth Cave
 |tip Manually skip to the next step.
 step
-goto u34_systreszone_base 17.51,57.76
+goto u34_systreszone_base 17.51,57.76 |q To Catch a Magus/Meet Lady Arabelle at Mistmouth Cave
 step
 goto 22.53,53.85 |q To Catch a Magus/Meet Lady Arabelle at Mistmouth Cave
 step

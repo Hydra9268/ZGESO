@@ -270,6 +270,7 @@ ZGV.MapData = {
 	["Erokii Ruins"]                        = [[erokii_base]],
 	["Shrouded Pass"]                       = [[shroudedpass_base]],
 	["Shrouded Pass"]                       = [[shroudedpass2_base]],
+	["Obsidian Scar"]                       = [[obsidianscar_base]],
 
 	-- Alik'r Desert
 	["Sentinel"]                            = [[sentinel_base]],
@@ -1287,6 +1288,7 @@ ZGV.MapData = {
 	["Sword's Rest Keep"]                   = [[u33_P2_EmericRtrt_Int1_base]],
 	["Sword's Rest Keep"]                   = [[u33_P2_EmericRtrt_Int2_base]],
 	["Gonfalon Bay"]                        = [[u34_gonfalonbaycity_base]],
+	["Gonfalon Bay Outlaws Refuge"]         = [[u34_gonfalonoutlaw_base]],
 	["High Isle and Amenos"]                = [[u34_systreszone_base]],
 	["Abhain Chapel Crypts"]                = [[u34_dufortcrypt_base]],
 	["Mysterious Cave"]                     = [[U34_SteadfastManor_int1_base]],
@@ -1566,6 +1568,7 @@ ZGV.MapData = {
 
 		-- Rivenspire
 		["rivenspire_base"] =                   { name = "Rivenspire",                              id = 196, xoffset = 0.118476, yoffset = 0.181562, scale = 0.121484, },
+		["obsidianscar_base"] =                 { name = "Obsidian Scar",                           id = 196, xoffset = 0.182284, yoffset = 0.226734, scale = 0.011367, },
 		["shornhelm_base"] =                    { name = "Shornhelm",                               id = 197, xoffset = 0.161171, yoffset = 0.239609, scale = 0.018828, },
 		["RivenspireOutlaw_Base"] =             { name = "Shornhelm Outlaws Refuge",                id = 198, xoffset = 0.169846, yoffset = 0.249041, scale = 0.000461, },
 		["fevered_mews_base"] =                 { name = "Fevered Mews",                            id = 199, xoffset = 0.168911, yoffset = 0.235545, scale = 0.009297, },
@@ -2609,6 +2612,7 @@ ZGV.MapData = {
 		["u33_P2_EmericRtrt_Int1_base" ] =      { name = "Sword's Rest Keep",                       id = 848, xoffset = -0.180106, yoffset = 0.300292, scale = 0.004316, },
 		["u33_P2_EmericRtrt_Int2_base"] =       { name = "Sword's Rest Keep",                       id = 848, xoffset = -0.182664, yoffset = 0.296235, scale = 0.008263, },
 		["u34_gonfalonbaycity_base"] =          { name = "Gonfalon Bay",                            id = 849, xoffset = 0.066449, yoffset = 0.600421, scale = 0.006688, },
+		["u34_gonfalonoutlaw_base"] =           { name = "Gonfalon Bay Outlaws Refuge",             id = 849, xoffset = 0.068671, yoffset = 0.602175, scale = 0.001988, },
 		["u34_systreszone_base"] =              { name = "High Isle and Amenos",                    id = 850, xoffset = 0.044148, yoffset = 0.563533, scale = 0.047347, },
 		["u34_dufortcrypt_base"] =              { name = "Abhain Chapel Crypts",                    id = 851, xoffset = 0.072856, yoffset = 0.599493, scale = 0.009388, },
 		["U34_SteadfastManor_int1_base"] =      { name = "Mysterious Cave",                         id = 852, xoffset = 0.052080, yoffset = 0.586395, scale = 0.015136, },
