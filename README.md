@@ -1,6 +1,6 @@
-# ZGESO
+# CGESO
 
-<img src="https://imgur.com/0J1VYya.png">
+<img src="https://i.imgur.com/0Wvgahq.png">
 
 A Public Domain leveling guide produced by Zygor Guides, updated and maintained by Hydra9268. The purpose of this project is to add leveling guides for new content and extend the life for as long as ESO is available.
 
@@ -21,11 +21,28 @@ Install through the excellent add-on manager <a href="https://minion.mmoui.com/"
 ----
 
 <br/>
-### 10/31/21 Remaster All DLCs guides and Deadlands DLC Guide.
-<img src="https://imgur.com/0J1VYya.png">
+<img src="https://i.imgur.com/RgCSUUO.png">
 <i>artwork &copy; ZeniMax Media</i>
 
 ### Recent Updates
+
+# 2022/06/06 Changelog 1000
+* Completed All DLC Main Quest Only Guides.
+* Added Ember and Isobel Veloise Companion Guides.
+* Added All Rapport Guide for all 4 Companions.
+* Added Main Guide Only for High Isle and Amenos
+* Complete High Isle and Amenos Leveling Guide.
+
+# 2022/04/16 Changelog 973
+* Fixed Map name bug in Northern Elsweyr
+
+# 2022/04/16 Changelog 971
+* Created Legacy Main Quest Only Guides
+* Fixed Various Issues
+
+# 2021/11/2 Changelog 950
+* Fixed Typo in Southern Elsweyr
+
 # 2021/11/2 Changelog 949
 * Fixed Vulkhel Guard Map issues in Blackwood Prologue guide.
 
