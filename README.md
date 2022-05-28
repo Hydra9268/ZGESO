@@ -1,6 +1,6 @@
 # CGESO
 
-<img src="https://i.imgur.com/0Wvgahq.png">
+<img src="https://imgur.com/gN4hkE2.png">
 
 A Public Domain leveling guide produced by Zygor Guides, updated and maintained by Hydra9268. The purpose of this project is to add leveling guides for new content and extend the life for as long as ESO is available.
 
@@ -21,7 +21,7 @@ Install through the excellent add-on manager <a href="https://minion.mmoui.com/"
 ----
 
 <br/>
-<img src="https://i.imgur.com/RgCSUUO.png">
+<img src="https://imgur.com/gN4hkE2.png">
 <i>artwork &copy; ZeniMax Media</i>
 
 ### Recent Updates
