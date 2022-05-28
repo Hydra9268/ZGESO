@@ -132,10 +132,11 @@ Viewer/GuideViewerFrame.xml
 GuideMenu.lua
 
 -- Guides
-Guides/LevelingCommon.lua
 Guides/MainQuestsOnly.lua
-Guides/Expansions.lua
+; Guides/Expansions.lua
 Guides/Companions.lua
+Guides/Legacy.lua
+Guides/DSL.lua
 
 -- Bindings
 Bindings.xml

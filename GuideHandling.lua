@@ -379,7 +379,7 @@ function ZGV:SanitizeGuideTitle(title)
 	title = title:gsub("//","/")
 	title = title :gsub("ZGV's ","")
 	title = title
-	:gsub("^Common ","")
+	:gsub("^Legacy ","")
 	:gsub("^Aldmeri Dominion ","")
 	:gsub("^Ebonheart Pact ","")
 	:gsub("^Daggerfall Covenant ","")

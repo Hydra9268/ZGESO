@@ -468,7 +468,7 @@ step
 goto 37.63,47.03 |q The Perils of Diplomacy/Sneak into the Maormer Embassy's Private Quarters
 step
 goto 18.23,38.47
-|tip Enter the building and go Go upstairs inside the building.
+|tip Enter the building and go upstairs inside the building.
 talk Warden |q The Perils of Diplomacy/Sneak into the Maormer Embassy's Private Quarters
 |tip Manually skip to the next step.
 step
@@ -7434,7 +7434,7 @@ goto stonefalls_base 77.45,36.57
 step
 goto the_ebonheart_harborage_base 70.90,32.79
 talk Cadwell
-turnin Cadwell's Gold |next Extra's\\Extra's\\Main Quests Only\\Expansion\\Craglorn
+turnin Cadwell's Gold |next Extra's\\Extra's\\Main Quests Only\\DLC\\Craglorn
 'Congratulations, you've explored all of the factions!
 |only Ebonheart Pact
 ]])
@@ -15767,7 +15767,7 @@ goto auridon_base 69.65,92.87
 step
 goto the_aldmiri_harborage_map_base 73.98,22.34
 talk Cadwell
-turnin Cadwell's Gold |next Extra's\\Extra's\\Main Quests Only\\Expansion\\Craglorn
+turnin Cadwell's Gold |next Extra's\\Extra's\\Main Quests Only\\DLC\\Craglorn
 'Congratulations, you've explored all of the factions! 
 |only Aldmeri Dominion
 step
@@ -23394,7 +23394,7 @@ goto glenumbra_base 35.49,79.27
 step
 goto the_daggerfall_harborage 54.79,69.80
 talk Cadwell
-turnin Cadwell's Gold |next Extra's\\Extra's\\Main Quests Only\\Expansion\\Craglorn
+turnin Cadwell's Gold |next Extra's\\Extra's\\Main Quests Only\\DLC\\Craglorn
 'Congratulations, you've explored all of the factions!
 |only Daggerfall Covenant
 ]])
@@ -25290,7 +25290,7 @@ goto northmorrowgate_base 56.88,45.03
 step
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Expansion\\Craglorn",[[
+ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\Craglorn",[[
 loadingimage loadscreen_craglorn_01.dds
 description The constellations have disappeared. Ancient Yokudan warriors and deadly atronachs menace the rocky expanse of Craglorn.
 step
@@ -26147,11 +26147,11 @@ kill Skarath of the Many
 step
 goto 64.27,34.52
 talk Titus Valerius
-turnin The Time-Lost Warrior |next Extra's\\Extra's\\Main Quests Only\\Expansion\\Wrothgar
+turnin The Time-Lost Warrior |next Extra's\\Extra's\\Main Quests Only\\DLC\\Wrothgar
 step
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Expansion\\Wrothgar",[[
+ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\Wrothgar",[[
 loadingimage loadscreen_wrothgar_01.dds
 description King Kurog has begun to rebuild the great city of Orsinium, the long-abandoned capital city of the Orcs. But already there are whispered plots from those who would seize power for themselves.
 step
@@ -27452,10 +27452,10 @@ goto scarpkeeplower_base 45.47,48.88 |q Long Live the King/Talk to King Bazrag |
 step
 goto scarpkeepupper_base 41.35,40.23
 talk King Bazrag
-turnin Long Live the King |next Extra's\\Extra's\\Main Quests Only\\Expansion\\Thieves Guild
+turnin Long Live the King |next Extra's\\Extra's\\Main Quests Only\\DLC\\Thieves Guild
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Expansion\\Thieves Guild",[[
+ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\Thieves Guild",[[
 loadingimage loadscreen_outlaw_refuge_nedic_01.dds
 description Help restore the Thieves Guild in Abah's Landing, currently besieged by the mercenary force known as the Iron Wheel.
 step
@@ -28658,10 +28658,10 @@ goto 47.21,38.02
 step
 goto 46.65,35.23
 talk Zeira
-turnin The One That Got Away |next Extra's\\Extra's\\Main Quests Only\\Expansion\\Dark Brotherhood
+turnin The One That Got Away |next Extra's\\Extra's\\Main Quests Only\\DLC\\Dark Brotherhood
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Expansion\\Dark Brotherhood",[[
+ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\Dark Brotherhood",[[
 loadingimage loadscreen_dbsanctuary_01.dds
 description Sometimes the best way to deal with a troublesome person is permanent removal. As a Dark Brotherhood assassin, you'll be tasked to fill that need.
 step
@@ -29542,10 +29542,10 @@ goto dbsanctuary_base 49.81,74.82 |q Filling the Void/Return to Speaker Terenus
 step
 goto dbsanctuary_base 51.99,44.31
 talk Speaker Terenus
-turnin Filling the Void |next Extra's\\Extra's\\Main Quests Only\\Expansion\\Vvardenfell
+turnin Filling the Void |next Extra's\\Extra's\\Main Quests Only\\DLC\\Vvardenfell
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Expansion\\Vvardenfell",[[
+ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\Vvardenfell",[[
 loadingimage loadscreen_balfoyen_01.dds
 description Stop a meteor from crashing into Vivec City by helping a demi-god regain his lost powers in this Morrowind expansion.
 step
@@ -30436,10 +30436,10 @@ goto 48.08,54.70
 step
 goto 48.06,54.43
 talk Vivec
-turnin Divine Blessings |next Extra's\\Extra's\\Main Quests Only\\Expansion\\Clockwork City
+turnin Divine Blessings |next Extra's\\Extra's\\Main Quests Only\\DLC\\Clockwork City
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Expansion\\Clockwork City",[[
+ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\Clockwork City",[[
 loadingimage loadscreen_clockworkcity_zone_01.dds
 description The Clockwork City is a giant complex the size of a world, but it fits inside a glass dome no larger than a good-sized netch.
 step
@@ -31530,10 +31530,10 @@ goto 58.95,68.37
 step
 goto 58.94,68.36
 talk Sotha Sil
-turnin The Light of Knowledge |next Extra's\\Extra's\\Main Quests Only\\Expansion\\Summerset
+turnin The Light of Knowledge |next Extra's\\Extra's\\Main Quests Only\\DLC\\Summerset
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Expansion\\Summerset",[[
+ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\Summerset",[[
 loadingimage loadscreen_summerset_01.dds
 description The land called Summerset is the birthplace of civilization and magic as we know it in Tamriel. On its idyllic sea-kissed shores live the Altmer, the High Elves.
 step
@@ -33158,10 +33158,10 @@ goto 41.24,27.70
 talk Razum-dar
 |tip Leave the Council Chamber.
 |tip The throne room will be filled with many of those you've helped on your Summerset adventure. Talk with them to see how they're doing.
-turnin A New Alliance |next Extra's\\Extra's\\Main Quests Only\\Expansion\\Murkmire
+turnin A New Alliance |next Extra's\\Extra's\\Main Quests Only\\DLC\\Murkmire
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Expansion\\Murkmire",[[
+ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\Murkmire",[[
 loadingimage loadscreen_murkmire_01.dds
 description Investigate Murkmire's long-forgotten past and help an Imperial scholar recover a mysterious and powerful relic that will take you deep into Black Marsh, its history, and its people.
 step
@@ -34081,10 +34081,10 @@ talk Famia Mercius |q By River and Root/Talk to Famia
 step
 goto 44.12,54.63
 talk Xukas
-turnin By River and Root |next Extra's\\Extra's\\Main Quests Only\\Expansion\\Northern Elsweyr
+turnin By River and Root |next Extra's\\Extra's\\Main Quests Only\\DLC\\Northern Elsweyr
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Expansion\\Northern Elsweyr",[[
+ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\Northern Elsweyr",[[
 loadingimage loadscreen_elsweyr_zone_01.dds
 description This region, also known as Anequina, merged with the southern region of Pellitine several centuries ago to form the province of Elsweyr. It's a patchwork that united many former small kingdoms, including Rimmen, Orcrest, Riverhold, and Meirvale.
 step
@@ -35272,10 +35272,10 @@ goto 77.75,36.77
 step
 goto 77.75,36.77
 talk Queen Khamira
-turnin The Heir of Anequina |next Extra's\\Extra's\\Main Quests Only\\Expansion\\Southern Elsweyr
+turnin The Heir of Anequina |next Extra's\\Extra's\\Main Quests Only\\DLC\\Southern Elsweyr
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Expansion\\Southern Elsweyr",[[
+ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\Southern Elsweyr",[[
 loadingimage loadscreen_southernelsweyr_01.dds
 description Devastated by a terrible plague and its purging fire decades ago, Southern Elsweyr devolved into a lawless region beset by slavers, pirates, and brigands.
 step
@@ -36817,10 +36817,10 @@ goto senchal_base 66.09,41.25
 step
 goto 66.09,41.25
 talk Queen Khamira
-turnin The Pride of Elsweyr |next Extra's\\Extra's\\Main Quests Only\\Expansion\\Western Skyrim
+turnin The Pride of Elsweyr |next Extra's\\Extra's\\Main Quests Only\\DLC\\Western Skyrim
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Expansion\\Western Skyrim",[[
+ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\Western Skyrim",[[
 loadingimage loadscreen_westernskyrim_01.dds
 description Sundered from Eastern Skyrim in years past, High King Svargrim rules the cold and unforgiving land known as Western Skyrim. Consisting of the holds of Haafingar, Karthald, and Hjaalmarch, the realm gives rise to hardy natures, brave warriors, and suspicious townsfolk.
 step
@@ -38158,10 +38158,10 @@ goto 76.87,70.66
 step
 goto 76.87,70.66
 talk Svana
-turnin Daughter of the Wolf |next Extra's\\Extra's\\Main Quests Only\\Expansion\\The Reach
+turnin Daughter of the Wolf |next Extra's\\Extra's\\Main Quests Only\\DLC\\The Reach
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Expansion\\The Reach",[[
+ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\The Reach",[[
 loadingimage loadscreen_thereach_01.dds
 description The Gray Host marches on the Reach in The Elder Scrolls Online: Markarth, the epic conclusion to the Dark Heart of Skyrim storyline. Explore a dangerous new zone, gather a band of unlikely allies, and confront a Vampire Lord and his ancient army.
 step
@@ -39299,10 +39299,10 @@ talk Arana |q Second Chances/Talk to Arana
 step
 goto 24.37,52.27
 talk Ard Caddach
-turnin Second Chances |next Extra's\\Extra's\\Main Quests Only\\Expansion\\Blackwood
+turnin Second Chances |next Extra's\\Extra's\\Main Quests Only\\DLC\\Blackwood
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Expansion\\Blackwood",[[
+ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\Blackwood",[[
 loadingimage loadscreen_u30_blackwood_zone_01.dds
 description Blackwood needs heroes to stand against Oblivion. Retake the village of Rockgrove from Daedric-worshipping Argonians
 step
@@ -40580,10 +40580,10 @@ talk Keshu the Black Fin |q Heroes of Blackwood/Talk to Keshu the Black Fin
 step
 goto 77.11,44.85
 talk Eveli Sharp-Arrow
-turnin Heroes of Blackwood |next Extra's\\Extra's\\Main Quests Only\\Expansion\\The Deadlands
+turnin Heroes of Blackwood |next Extra's\\Extra's\\Main Quests Only\\DLC\\The Deadlands
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Expansion\\The Deadlands",[[
+ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\The Deadlands",[[
 loadingimage loadscreen_ardent_hope_01.dds
 description The Deadlands is Mehrunes Dagon's realm of Oblivion.
 step
@@ -41797,11 +41797,11 @@ talk The Anchorite |q Hope Springs Eternal/Talk to the Anchorite |future
 step
 goto 81.59,66.30
 talk Eveli Sharp-Arrow
-turnin Hope Springs Eternal |next Extra's\\Extra's\\Main Quests Only\\Expansion\\High Isle
+turnin Hope Springs Eternal |next Extra's\\Extra's\\Main Quests Only\\DLC\\High Isle
 step
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Expansion\\High Isle",[[
+ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\High Isle",[[
 loadingimage loadscreen_hi_systres_zone_01.dds
 description Explore High Isle and Amenos, a land never-before-seen in The Elder Scrolls. Traverse stunning white cliffs, majestic castles, and perilous jungles as you encounter a chivalrous Breton society.
 step

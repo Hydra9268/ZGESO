@@ -1,6 +1,5 @@
 local ZGV = _G.ZGV
-if ZGV:DoMutex("Miscellaneous") then return end
-ZGV.GuideMenuTier = "MOR"
+ZGV.GuideMenuTier = "TAM"
 
 ZGV:RegisterGuide("Extra's\\Extra's\\Companions\\Bastian Hallix",[[
 loadingimage loadscreen_u30_blackwood_zone_01.dds
