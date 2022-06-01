@@ -3,7 +3,7 @@
 -----------------------------------------
 
 local ZGV = _G.ZGV
-local GPS = LibGPS3
+local GPS = LibGPS2
 
 local GetAbilityProgressionXPInfoFromAbilityId = _G.GetAbilityProgressionXPInfoFromAbilityId
 local GetAddOnManager = _G.GetAddOnManager
@@ -192,15 +192,6 @@ function Utils.GetMapNameByDDSFile()
 		return 0
 	end
 end
-
-function Utils.IsIntroTutorial()
-	if ZGV.Utils.GetPlayerPreciseLevel() < 6 and Utils.MapIndex() == 24 and Utils.GetMapNameByDDSFile() ~= "u29_ne_salas_vault_base" then
-		return true
-	else
-		return false
-	end
-end
-
 function Utils.GetMapNameByTexture()
 	local _,_,word = string.find( GetMapTileTexture(), "%a+/%a+/(%a+)/" ) -- pattern "Art/maps/mapname <- we want this
 	local name = zo_strformat("<<C:1>>", word) -- Uppercase first letter
@@ -668,10 +659,13 @@ function Utils.DistanceOffsetForGoto(dist,selfdist)
 		-- sorting based on preceived popularity
 			
 			if  GetCurrentMapIndex() == Enums.CyrodiilMap or
+			    GetCurrentMapIndex() == Enums.GrahtwoodMap or
 			    GetCurrentMapIndex() == Enums.HighIsleMap or
 			    GetCurrentMapIndex() == Enums.KhenarthisRoostMap then return 2
 			
 		elseif 	GetCurrentMapIndex() == Enums.AuridonMap then return 4
+				
+		elseif  GetCurrentMapIndex() == Enums.GrahtwoodMap then return 5
 		
 		else return dist or selfdist or 1 -- default value
 		end
@@ -690,6 +684,8 @@ function Utils.DistanceOffsetForIsComplete()
 			    GetCurrentMapIndex() == Enums.KhenarthisRoostMap then return 2
 			
 		elseif 	GetCurrentMapIndex() == Enums.AuridonMap then return 4
+				
+		elseif  GetCurrentMapIndex() == Enums.GrahtwoodMap then return 5		
 			
 		else return dist or selfdist or 1 -- default value
 		end	

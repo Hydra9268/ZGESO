@@ -2,7 +2,7 @@ local ZGV = _G.ZGV
 if ZGV:DoMutex("MainQuestsOnly") then return end
 ZGV.GuideMenuTier = "MOR"
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\The Wailing Prison",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\The Wailing Prison",[[
 loadingimage loadscreen_chapter1_01.dds
 description Brave The Wailing Prison, a prisoner stronghold in Coldharbour.
 step
@@ -172,21 +172,21 @@ goto 49.40,51.56
 step
 goto khenarthisroost_base 55.70,75.41
 talk The Prophet
-turnin Soul Shriven in Coldharbour |next Extra's\\Extra's\\Main Quests Only\\Aldmeri Dominion\\Khenarthi's Roost
+turnin Soul Shriven in Coldharbour |next Extras\\Extras\\Main Quests Only\\Aldmeri Dominion\\Khenarthi's Roost
 |only Aldmeri Dominion
 step
 goto porthunding_base 36.16,87.59
 talk The Prophet
-turnin Soul Shriven in Coldharbour |next Extra's\\Extra's\\Main Quests Only\\Daggerfall Covenant\\Stros M'Kai
+turnin Soul Shriven in Coldharbour |next Extras\\Extras\\Main Quests Only\\Daggerfall Covenant\\Stros M'Kai
 |only Daggerfall Covenant
 step
 goto bleakrockvillage_base 78.54,47.49
 talk The Prophet
-turnin Soul Shriven in Coldharbour |next Extra's\\Extra's\\Main Quests Only\\Ebonheart Pact\\Bleakrock Isle
+turnin Soul Shriven in Coldharbour |next Extras\\Extras\\Main Quests Only\\Ebonheart Pact\\Bleakrock Isle
 |only Ebonheart Pact
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Aldmeri Dominion\\Khenarthi's Roost",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\Aldmeri Dominion\\Khenarthi's Roost",[[
 loadingimage loadscreen_kenathis_roost_01.dds
 description This island off the south coast of Elsweyr is named after the Khajiiti goddess of weather and the sky, who is usually represented as a great hawk. She finds many worshipers among the cat-folk's sailors and farmers, especially those who grow moon-sugar cane.
 step
@@ -668,10 +668,10 @@ accept To Auridon
 step
 goto 61.53,29.33
 'Use Prowler Skiff |q To Auridon/Board the Skiff |future 
-|tip Manually skip to the next step. |next Extra's\\Extra's\\Main Quests Only\\Aldmeri Dominion\\Auridon
+|tip Manually skip to the next step. |next Extras\\Extras\\Main Quests Only\\Aldmeri Dominion\\Auridon
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Aldmeri Dominion\\Auridon",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\Aldmeri Dominion\\Auridon",[[
 loadingimage loadscreen_auridon_01.dds
 description The second largest of the Summerset Isles, Auridon has always served the High Elves as a buffer between their serene archipelago and the turmoil of Tamriel. The Altmer of Auridon have been hardened by generations of repelling invaders, pirates, and plagues.
 step
@@ -679,7 +679,7 @@ accept The Harborage
 |only Aldmeri Dominion
 step
 'If your are level 10 or higher use Cyrodiil Introduction guide and and complete it to gain a healing spell and 30% gallop mount speed through the Assault War/Alliance Skill Line. |q Welcome to Cyrodiil |future 
-|tip Located in Extra's Main Quest Only Folders.
+|tip Located in Extras Main Quest Only Folders.
 |tip If your not Level 10 once your are level it is recommended.
 |tip Manually skip to the next step.
 |only Aldmeri Dominion
@@ -1115,7 +1115,7 @@ goto 51.03,56.58
 wayshrine Mathiisen
 step
 goto 51.03,56.58
-'Use _Mathiisen_ Wayshrine
+'Use Mathiisen Wayshrine
 'Travel to the _Vulkhel Guard_ Wayshrine |q Long Lost Lore/Return to the Mages Guild
 |tip Manually skip to the next step.
 |only Aldmeri Dominion
@@ -1205,9 +1205,8 @@ goto 23.15,57.37 |q To Mathiisen/Meet with Razum-dar near Mathiisen
 |only Aldmeri Dominion
 step
 goto 54.85,41.07
-|tip Leave the Mages Guild.
-'Use _Vulkhel Guard_ Wayshrine
-'Travel to the _Mathiisen_ Wayshrine |q To Mathiisen/Meet with Razum-dar near Mathiisen
+'Use Vulkhel Guard Wayshrine
+'Travel to the _Mathiisen_ |q To Mathiisen/Meet with Razum-dar near Mathiisen
 |tip Manually skip to the next step.
 |only Aldmeri Dominion
 step
@@ -2087,10 +2086,10 @@ step
 step
 goto vulkhelguard_base 59.98,66.83
 talk Captain Jimila |q The Great Tree/Talk to Captain Jimila in Vulkhel Guard |future
-'Tell her _I'm ready to leave for Haven._ |next Extra's\\Extra's\\Main Quests Only\\Aldmeri Dominion\\Grahtwood
+'Tell her _I'm ready to leave for Haven._ |next Extras\\Extras\\Main Quests Only\\Aldmeri Dominion\\Grahtwood
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Aldmeri Dominion\\Grahtwood",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\Aldmeri Dominion\\Grahtwood",[[
 loadingimage loadscreen_grahtwood_01.dds
 description This region is the southern heart of the Wood Elves' great forest, and home to more of the gigantic graht-oaks than any other part of Valenwood. Its capital, now also the capital of the entire Aldmeri Dominion, is Elden Root.
 step
@@ -2530,8 +2529,7 @@ step
 goto 59.22,77.34 |q The Honor of the Queen/Search the Middens for Ambassador Tarinwe
 step
 goto 65.44,77.70
-|tip Kill Falion
-'Search the Middens for Ambassador Tarinwe |q The Honor of the Queen/Search the Middens for Ambassador Tarinwe
+kill Falion |q The Honor of the Queen/Search the Middens for Ambassador Tarinwe
 step
 'Open Grahtwood Map
 'Travel to _Elden Root_ Wayshrine |q The Honor of the Queen/Return to Elden Root |future
@@ -3356,10 +3354,10 @@ goto 26.70,57.27 |q The Staff of Magnus/Find Captain Sarandil
 step
 goto grahtwood_base 17.52,19.51
 'Open Greenshade |q The Staff of Magnus/Find Captain Sarandil
-|tip Manually skip to the next step. |next Extra's\\Extra's\\Main Quests Only\\Aldmeri Dominion\\Greenshade
+|tip Manually skip to the next step. |next Extras\\Extras\\Main Quests Only\\Aldmeri Dominion\\Greenshade
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Aldmeri Dominion\\Greenshade",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\Aldmeri Dominion\\Greenshade",[[
 loadingimage loadscreen_greenshade_01.dds
 description As the region of Valenwood farthest from all other realms, Greenshade's graht-oak forest is virtually pristine, the Tamriel jungle at its most primeval. Its capital is the trading port of Woodhearth.
 step
@@ -4644,10 +4642,10 @@ wayshrine Moonhenge
 step
 goto malabaltor_base 09.48,60.16
 'Open Malabal Tor |q To Velyn Harbor/Go to Velyn Harbor |future
-|tip Manually skip to the next step. |next Extra's\\Extra's\\Main Quests Only\\Aldmeri Dominion\\Malabal Tor
+|tip Manually skip to the next step. |next Extras\\Extras\\Main Quests Only\\Aldmeri Dominion\\Malabal Tor
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Aldmeri Dominion\\Malabal Tor",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\Aldmeri Dominion\\Malabal Tor",[[
 loadingimage loadscreen_malabaltor_01.dds
 description Malabal Tor is the northwest region of Valenwood, on the coast of the Abecean Sea and the Strid River estuary. Its capital is Silvenar, the spiritual home of all Wood Elves.
 step
@@ -5961,10 +5959,10 @@ step
 step
 goto baandaritradingpost_base 78.59,50.24
 'Open Reaper's March |q The Dark Mane/Go to Fort Grimwatch
-|tip Manually skip to the next step. |next Extra's\\Extra's\\Main Quests Only\\Aldmeri Dominion\\Reaper's March
+|tip Manually skip to the next step. |next Extras\\Extras\\Main Quests Only\\Aldmeri Dominion\\Reaper's March
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Aldmeri Dominion\\Reaper's March",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\Aldmeri Dominion\\Reaper's March",[[
 loadingimage loadscreen_reapersmarch_01.dds
 description Once known simply as Northern Valenwood, this region that borders Cyrodiil and Elsweyr has seen so much bloody warfare since the fall of the Second Empire that it's now known as Reaper's March, even to its battle-scarred inhabitants.
 step
@@ -7397,7 +7395,7 @@ goto 12.51,59.43
 step
 goto 12.51,59.43
 'Use Portal to Stirk |q The Weight of Three Crowns/Enter Portal to Stirk |future
-|tip Manually skip to the next step. |next Extra's\\Extra's\\Main Quests Only\\Coldharbour
+|tip Manually skip to the next step. |next Extras\\Extras\\Main Quests Only\\Coldharbour
 |only Aldmeri Dominion
 step
 goto dune_base 33.13,25.82
@@ -7418,7 +7416,7 @@ accept Cadwell's Gold
 |only Daggerfall Covenant
 step
 goto 53.70,72.08
-'Use Light of Meridia |q Cadwell's Gold/Use the Light of Meridia |future |next Extra's\\Extra's\\Main Quests Only\\Ebonheart Pact\\Bleakrock Isle
+'Use Light of Meridia |q Cadwell's Gold/Use the Light of Meridia |future |next Extras\\Extras\\Main Quests Only\\Ebonheart Pact\\Bleakrock Isle
 |only Daggerfall Covenant
 step
 goto dune_base 33.13,25.82
@@ -7434,12 +7432,12 @@ goto stonefalls_base 77.45,36.57
 step
 goto the_ebonheart_harborage_base 70.90,32.79
 talk Cadwell
-turnin Cadwell's Gold |next Extra's\\Extra's\\Main Quests Only\\DLC\\Craglorn
+turnin Cadwell's Gold |next Extras\\Extras\\Main Quests Only\\DLC\\Craglorn
 'Congratulations, you've explored all of the factions!
 |only Ebonheart Pact
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Daggerfall Covenant\\Stros M'Kai",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\Daggerfall Covenant\\Stros M'Kai",[[
 loadingimage loadscreen_strosmkai_01.dds
 description One of the first landfalls settled by the Redguards when they sailed east from their lost homeland of Yokuda, the island of Stros M'Kai is now a haven for freebooters, sea-rovers, and other nautical entrepeneurs who roam the Abecean Sea.
 step
@@ -7791,11 +7789,11 @@ goto 43.88,89.73
 'Follow Captain Kaleen |q Tip of the Spearhead/Follow Captain Kaleen
 step
 goto 43.88,89.73
-talk Captain Kaleen |q Tip of the Spearhead/Talk to Captain Kaleen |next Extra's\\Extra's\\Main Quests Only\\Daggerfall Covenant\\Betnikh
+talk Captain Kaleen |q Tip of the Spearhead/Talk to Captain Kaleen |next Extras\\Extras\\Main Quests Only\\Daggerfall Covenant\\Betnikh
 'Tell her _I'm ready to leave now. Let's sail._
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Daggerfall Covenant\\Betnikh",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\Daggerfall Covenant\\Betnikh",[[
 loadingimage loadscreen_betnikh_01.dds
 description Nine generations ago, the island of Betony was conquered by the Stonetooth Orcs, who renamed it Betnikh. A proud, self-reliant people, the Orcs fiercely protect their new home from incursion by outsiders.
 step
@@ -8160,10 +8158,10 @@ goto daggerfall_base 64.56,80.30 |q On to Glenumbra/Talk to Sir Lanis Shaldon
 step
 goto 71.79,65.73
 talk Sir Lanis Shaldon
-turnin On to Glenumbra |next Extra's\\Extra's\\Main Quests Only\\Daggerfall Covenant\\Glenumbra
+turnin On to Glenumbra |next Extras\\Extras\\Main Quests Only\\Daggerfall Covenant\\Glenumbra
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Daggerfall Covenant\\Glenumbra",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\Daggerfall Covenant\\Glenumbra",[[
 loadingimage loadscreen_glenumbra_01.dds
 description Glenumbra, the westernmost region of High Rock, contains the city-states of Daggerfall and Camlorn, the great cemetery of Cath Bedraud, and the wild areas of Hag Fen, Glenumbra Moors, and the forests of Daenia.
 step
@@ -8174,7 +8172,7 @@ step
 |only Daggerfall Covenant
 step
 'If your are level 10 or higher use Cyrodiil Introduction guide and and complete it to gain a healing spell and 30% gallop mount speed through the Assault War/Alliance Skill Line. |q Welcome to Cyrodiil |future 
-|tip Located in Extra's Main Quest Only Folders.
+|tip Located in Extras Main Quest Only Folders.
 |tip If your not Level 10 once your are level it is recommended.
 |only Daggerfall Covenant
 step
@@ -9862,10 +9860,10 @@ step
 goto koeglinvillage_base 45.77,29.18
 |tip Inside the building.
 talk Captain Jerick
-turnin A Dangerous Dream |next Extra's\\Extra's\\Main Quests Only\\Daggerfall Covenant\\Stormhaven
+turnin A Dangerous Dream |next Extras\\Extras\\Main Quests Only\\Daggerfall Covenant\\Stormhaven
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Daggerfall Covenant\\Stormhaven",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\Daggerfall Covenant\\Stormhaven",[[
 loadingimage loadscreen_stormhaven_01.dds
 description I spent some time studying and painting in the Stormhaven countryside; a charming realm of rolling hills, lush flood plains, rocky outcrops, and copses of ancient woodland. The place would be idyllic were it not for the perpetual unsettled gloom, occasional crackles of thunder, and bolts of Kynareth’s rage that arc across the skies.
 step
@@ -11379,10 +11377,10 @@ goto wayrest_base 40.07,50.16
 step
 goto stormhaven_base 23.01,19.57
 'Open Rivenspire |q The Road to Rivenspire/Go to Rivenspire |future
-|tip Manually skip to the next step. |next Extra's\\Extra's\\Main Quests Only\\Daggerfall Covenant\\Rivenspire
+|tip Manually skip to the next step. |next Extras\\Extras\\Main Quests Only\\Daggerfall Covenant\\Rivenspire
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Daggerfall Covenant\\Rivenspire",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\Daggerfall Covenant\\Rivenspire",[[
 loadingimage loadscreen_rivenspire_01.dds
 description This northwestern region of High Rock contains some of the province's most dramatic terrain, including towering, flinty crags, windswept moors, and narrow canyons. Many folk find the environment oppressive, even threatening.
 step
@@ -12671,10 +12669,10 @@ talk First Mate Elvira Derre |q Favor for the Queen/Talk to Elvira |future
 step
 goto sentinel_base 27.79,15.53
 talk First Mate Elvira Derre
-turnin Favor for the Queen |next Extra's\\Extra's\\Main Quests Only\\Daggerfall Covenant\\Alik'r Desert
+turnin Favor for the Queen |next Extras\\Extras\\Main Quests Only\\Daggerfall Covenant\\Alik'r Desert
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Daggerfall Covenant\\Alik'r Desert",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\Daggerfall Covenant\\Alik'r Desert",[[
 loadingimage loadscreen_alikir_01.dds
 description A sacred flame rises above the fire, The ghosts of great men and women without names, Cities long dead rise and fall in the flame, The Dioscori Song of Revelation, Bursting walls and deathless rock, Fiery sand that heals and destroys.
 step
@@ -13827,10 +13825,10 @@ goto 78.21,52.44
 step
 goto evermore_base 24.08,59.86
 talk Sergeant Antieve
-accept A City in Black |next Extra's\\Extra's\\Main Quests Only\\Daggerfall Covenant\\Bangkorai
+accept A City in Black |next Extras\\Extras\\Main Quests Only\\Daggerfall Covenant\\Bangkorai
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Daggerfall Covenant\\Bangkorai",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\Daggerfall Covenant\\Bangkorai",[[
 loadingimage loadscreen_bankorai_01.dds
 description This region takes its name from its most famous feature, the Bangkorai Pass, which has served as High Rock's defense against the wild raiders of Hammerfell for countless generations. The uplands north of the pass and the desert to the south are both ruled from the port city of Evermore.
 step
@@ -15730,7 +15728,7 @@ goto 36.46,29.97
 step
 goto 36.46,29.97
 'Use Portal to Stirk |q The Weight of Three Crowns/Enter Portal to Stirk |future
-|tip Manually skip to the next step. |next Extra's\\Extra's\\Main Quests Only\\Coldharbour
+|tip Manually skip to the next step. |next Extras\\Extras\\Main Quests Only\\Coldharbour
 |only Daggerfall Covenant
 step
 goto bangkorai_base 67.90,19.30
@@ -15751,7 +15749,7 @@ accept Cadwell's Gold
 |only Ebonheart Pact
 step
 goto 87.70,39.03
-'Use Light of Meridia |q Cadwell's Gold/Use the Light of Meridia |future |next Extra's\\Extra's\\Main Quests Only\\Aldmeri Dominion\\Khenarthi's Roost
+'Use Light of Meridia |q Cadwell's Gold/Use the Light of Meridia |future |next Extras\\Extras\\Main Quests Only\\Aldmeri Dominion\\Khenarthi's Roost
 |only Ebonheart Pact
 step
 goto bangkorai_base 67.90,19.30
@@ -15767,13 +15765,13 @@ goto auridon_base 69.65,92.87
 step
 goto the_aldmiri_harborage_map_base 73.98,22.34
 talk Cadwell
-turnin Cadwell's Gold |next Extra's\\Extra's\\Main Quests Only\\DLC\\Craglorn
+turnin Cadwell's Gold |next Extras\\Extras\\Main Quests Only\\DLC\\Craglorn
 'Congratulations, you've explored all of the factions! 
 |only Aldmeri Dominion
 step
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Ebonheart Pact\\Bleakrock Isle",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\Ebonheart Pact\\Bleakrock Isle",[[
 loadingimage loadscreen_bleakrock_01.dds
 description Bleakrock is an island off the northeast coast of Skyrim between Windhelm and Solstheim. The hardy Nords who inhabit Bleakrock are mostly farmers and fisherfolk. A small contingent of Pact soldiers keeps a sharp lookout for pirates and raiders.
 step
@@ -16066,10 +16064,10 @@ step
 goto balfoyen_base 72.87,57.75
 talk Captain Rana
 turnin Escape from Bleakrock
-accept If By Sea |next Extra's\\Extra's\\Main Quests Only\\Ebonheart Pact\\Stonefalls
+accept If By Sea |next Extras\\Extras\\Main Quests Only\\Ebonheart Pact\\Stonefalls
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Ebonheart Pact\\Stonefalls",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\Ebonheart Pact\\Stonefalls",[[
 loadingimage loadscreen_stonefalls_01.dds
 description The ashfall from the volcanoes of the Velothi Mountains and from great Ash Mountain itself is Stonefalls' bane and benefit, fertilizing the soil where the land isn't too arid to grow crops. It was here that the recent invading army from Akavir met its bloody end.
 step
@@ -16198,7 +16196,7 @@ goto 18.49,56.21
 |tip Manually skip to the next step.
 step
 'If your are level 10 or higher use Cyrodiil Introduction guide and and complete it to gain a healing spell and 30% gallop mount speed through the Assault War/Alliance Skill Line. |q Welcome to Cyrodiil |future 
-|tip Located in Extra's Main Quest Only Folders.
+|tip Located in Extras Main Quest Only Folders.
 |tip If your not Level 10 once your are level it is recommended.
 |tip Manually skip to the next step.
 |only Ebonheart Pact
@@ -17711,10 +17709,10 @@ goto deshaan_base 15.28,40.49
 step
 goto 15.28,40.66
 talk Dandrii Dran
-turnin A Letter for Deshaan |next Extra's\\Extra's\\Main Quests Only\\Ebonheart Pact\\Deshaan
+turnin A Letter for Deshaan |next Extras\\Extras\\Main Quests Only\\Ebonheart Pact\\Deshaan
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Ebonheart Pact\\Deshaan",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\Ebonheart Pact\\Deshaan",[[
 loadingimage loadscreen_deshaan_01.dds
 description Deshaan is the fertile, central plain of Morrowind and the triumphant fruition of Dunmeri agriculture. Primitive irrigation along low-lying lands around the Lake Amaya basin provide all the water needed to sustain both plants and animals, although the tribes seem more concerned with rituals than recompense.
 step
@@ -19378,10 +19376,10 @@ lorebook Kwama Mining for Fun and Profit/1/23/3
 step
 goto 38.79,65.98 |q Onward to Shadowfen/Find the Shadowfen Border
 step
-goto shadowfen_base 57.28,20.73 |q Onward to Shadowfen/Find the Shadowfen Border |future |next Extra's\\Extra's\\Main Quests Only\\Ebonheart Pact\\Shadowfen
+goto shadowfen_base 57.28,20.73 |q Onward to Shadowfen/Find the Shadowfen Border |future |next Extras\\Extras\\Main Quests Only\\Ebonheart Pact\\Shadowfen
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Ebonheart Pact\\Shadowfen",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\Ebonheart Pact\\Shadowfen",[[
 loadingimage loadscreen_shadowfen_01.dds
 description On the border with Morrowind, the Shadowfen region has had more contact with Tamrielic civilization than most of Black Marsh—due primarily to the activities of the Dunmeri slavers who once operated out of the city of Stormhold. Now the Argonians are back in charge.
 step
@@ -20361,11 +20359,11 @@ step
 |only Ebonheart Pact
 step
 goto altencorimont_base 62.14,68.73
-talk Muz-Muz |q Swamp to Snow/Talk to the Boatmaster |next Extra's\\Extra's\\Main Quests Only\\Ebonheart Pact\\Eastmarch
+talk Muz-Muz |q Swamp to Snow/Talk to the Boatmaster |next Extras\\Extras\\Main Quests Only\\Ebonheart Pact\\Eastmarch
 'Tell her _I need to arrange travel to Skyrim._
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Ebonheart Pact\\Eastmarch",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\Ebonheart Pact\\Eastmarch",[[
 loadingimage loadscreen_eastmarch_01.dds
 description One of the "Old Holds," Eastmarch was among the first regions of Skyrim settled by the Nords when they arrived from Atmora. Its capital, Windhelm, is the oldest continuously inhabited human settlement in Tamriel, and was founded by Ysgramor himself.
 step
@@ -21814,10 +21812,10 @@ step
 goto 67.21,71.28 |q Beneath the Stone/Talk to Vigrod Wraithbane
 step
 goto shorsstone_base 55.78,43.67
-talk Vigrod Wraithbane |q Beneath the Stone/Talk to Vigrod Wraithbane |next Extra's\\Extra's\\Main Quests Only\\Ebonheart Pact\\The Rift
+talk Vigrod Wraithbane |q Beneath the Stone/Talk to Vigrod Wraithbane |next Extras\\Extras\\Main Quests Only\\Ebonheart Pact\\The Rift
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Ebonheart Pact\\The Rift",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\Ebonheart Pact\\The Rift",[[
 loadingimage loadscreen_rift_01.dds
 description Skyrim's southernmost hold has a relatively temperate climate, thanks to northern mountains that block the frigid gales of the Sea of Ghosts, and warming volcanoes in the Velothi Mountains to the east. Its capital is Riften, on the shores of broad Lake Honrich.
 step
@@ -23357,7 +23355,7 @@ goto 52.04,70.85
 step
 goto 52.04,70.85
 'Use Portal to Stirk |q The Weight of Three Crowns/Enter Portal to Stirk |future
-|tip Manually skip to the next step. |next Extra's\\Extra's\\Main Quests Only\\Coldharbour
+|tip Manually skip to the next step. |next Extras\\Extras\\Main Quests Only\\Coldharbour
 |only Ebonheart Pact
 step
 goto therift_base 78.38,75.01
@@ -23378,7 +23376,7 @@ accept Cadwell's Gold
 |only Aldmeri Dominion
 step
 goto 71.98,22.09
-'Use Light of Meridia |q Cadwell's Gold/Use the Light of Meridia |future |next Extra's\\Extra's\\Main Quests Only\\Daggerfall Covenant\\Stros M'Kai
+'Use Light of Meridia |q Cadwell's Gold/Use the Light of Meridia |future |next Extras\\Extras\\Main Quests Only\\Daggerfall Covenant\\Stros M'Kai
 |only Aldmeri Dominion
 step
 goto therift_base 78.38,75.01
@@ -23394,12 +23392,12 @@ goto glenumbra_base 35.49,79.27
 step
 goto the_daggerfall_harborage 54.79,69.80
 talk Cadwell
-turnin Cadwell's Gold |next Extra's\\Extra's\\Main Quests Only\\DLC\\Craglorn
+turnin Cadwell's Gold |next Extras\\Extras\\Main Quests Only\\DLC\\Craglorn
 'Congratulations, you've explored all of the factions!
 |only Daggerfall Covenant
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Coldharbour",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\Coldharbour",[[
 loadingimage loadscreen_coldharbor_01.dds
 description Skyrim's southernmost hold has a relatively temperate climate, thanks to northern mountains that block the frigid gales of the Sea of Ghosts, and warming volcanoes in the Velothi Mountains to the east. Its capital is Riften, on the shores of broad Lake Honrich.
 step
@@ -24920,7 +24918,7 @@ accept Cadwell's Silver
 |only Aldmeri Dominion
 step
 goto 72.80,22.40
-'Use Light of Meridia |q Cadwell's Silver /Use the Light of Meridia |future  |next Extra's\\Extra's\\Main Quests Only\\Ebonheart Pact\\Bleakrock Isle
+'Use Light of Meridia |q Cadwell's Silver /Use the Light of Meridia |future  |next Extras\\Extras\\Main Quests Only\\Ebonheart Pact\\Bleakrock Isle
 |only Aldmeri Dominion
 step
 goto the_daggerfall_harborage 71.12,53.92
@@ -24947,7 +24945,7 @@ accept Cadwell's Silver
 |only Daggerfall Covenant
 step
 goto 53.76,72.17
-'Use Light of Meridia |q Cadwell's Silver /Use the Light of Meridia |future |next Extra's\\Extra's\\Main Quests Only\\Aldmeri Dominion\\Khenarthi's Roost
+'Use Light of Meridia |q Cadwell's Silver /Use the Light of Meridia |future |next Extras\\Extras\\Main Quests Only\\Aldmeri Dominion\\Khenarthi's Roost
 |only Daggerfall Covenant
 step
 goto the_ebonheart_harborage_base 65.57,35.55
@@ -24974,12 +24972,12 @@ accept Cadwell's Silver
 |only Ebonheart Pact
 step
 goto 87.70,39.05
-'Use Light of Meridia |q Cadwell's Silver/Use the Light of Meridia |future  |next Extra's\\Extra's\\Main Quests Only\\Daggerfall Covenant\\Stros M'Kai
+'Use Light of Meridia |q Cadwell's Silver/Use the Light of Meridia |future  |next Extras\\Extras\\Main Quests Only\\Daggerfall Covenant\\Stros M'Kai
 |only Ebonheart Pact
 ]])
 
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\Cyrodiil Tutorial",[[\
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\Cyrodiil Tutorial",[[\
 loadingimage loadscreen_cyrodiil_01.dds
 description Tutorial into the Cyrodil Zone to unlock a healing spell or 30% Gallop for your character at level 10.
 step
@@ -25290,7 +25288,7 @@ goto northmorrowgate_base 56.88,45.03
 step
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\Craglorn",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\DLC\\Craglorn",[[
 loadingimage loadscreen_craglorn_01.dds
 description The constellations have disappeared. Ancient Yokudan warriors and deadly atronachs menace the rocky expanse of Craglorn.
 step
@@ -26147,11 +26145,11 @@ kill Skarath of the Many
 step
 goto 64.27,34.52
 talk Titus Valerius
-turnin The Time-Lost Warrior |next Extra's\\Extra's\\Main Quests Only\\DLC\\Wrothgar
+turnin The Time-Lost Warrior |next Extras\\Extras\\Main Quests Only\\DLC\\Wrothgar
 step
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\Wrothgar",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\DLC\\Wrothgar",[[
 loadingimage loadscreen_wrothgar_01.dds
 description King Kurog has begun to rebuild the great city of Orsinium, the long-abandoned capital city of the Orcs. But already there are whispered plots from those who would seize power for themselves.
 step
@@ -27452,10 +27450,10 @@ goto scarpkeeplower_base 45.47,48.88 |q Long Live the King/Talk to King Bazrag |
 step
 goto scarpkeepupper_base 41.35,40.23
 talk King Bazrag
-turnin Long Live the King |next Extra's\\Extra's\\Main Quests Only\\DLC\\Thieves Guild
+turnin Long Live the King |next Extras\\Extras\\Main Quests Only\\DLC\\Thieves Guild
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\Thieves Guild",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\DLC\\Thieves Guild",[[
 loadingimage loadscreen_outlaw_refuge_nedic_01.dds
 description Help restore the Thieves Guild in Abah's Landing, currently besieged by the mercenary force known as the Iron Wheel.
 step
@@ -28658,10 +28656,10 @@ goto 47.21,38.02
 step
 goto 46.65,35.23
 talk Zeira
-turnin The One That Got Away |next Extra's\\Extra's\\Main Quests Only\\DLC\\Dark Brotherhood
+turnin The One That Got Away |next Extras\\Extras\\Main Quests Only\\DLC\\Dark Brotherhood
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\Dark Brotherhood",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\DLC\\Dark Brotherhood",[[
 loadingimage loadscreen_dbsanctuary_01.dds
 description Sometimes the best way to deal with a troublesome person is permanent removal. As a Dark Brotherhood assassin, you'll be tasked to fill that need.
 step
@@ -29542,10 +29540,10 @@ goto dbsanctuary_base 49.81,74.82 |q Filling the Void/Return to Speaker Terenus
 step
 goto dbsanctuary_base 51.99,44.31
 talk Speaker Terenus
-turnin Filling the Void |next Extra's\\Extra's\\Main Quests Only\\DLC\\Vvardenfell
+turnin Filling the Void |next Extras\\Extras\\Main Quests Only\\DLC\\Vvardenfell
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\Vvardenfell",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\DLC\\Vvardenfell",[[
 loadingimage loadscreen_balfoyen_01.dds
 description Stop a meteor from crashing into Vivec City by helping a demi-god regain his lost powers in this Morrowind expansion.
 step
@@ -30436,10 +30434,10 @@ goto 48.08,54.70
 step
 goto 48.06,54.43
 talk Vivec
-turnin Divine Blessings |next Extra's\\Extra's\\Main Quests Only\\DLC\\Clockwork City
+turnin Divine Blessings |next Extras\\Extras\\Main Quests Only\\DLC\\Clockwork City
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\Clockwork City",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\DLC\\Clockwork City",[[
 loadingimage loadscreen_clockworkcity_zone_01.dds
 description The Clockwork City is a giant complex the size of a world, but it fits inside a glass dome no larger than a good-sized netch.
 step
@@ -31530,10 +31528,10 @@ goto 58.95,68.37
 step
 goto 58.94,68.36
 talk Sotha Sil
-turnin The Light of Knowledge |next Extra's\\Extra's\\Main Quests Only\\DLC\\Summerset
+turnin The Light of Knowledge |next Extras\\Extras\\Main Quests Only\\DLC\\Summerset
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\Summerset",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\DLC\\Summerset",[[
 loadingimage loadscreen_summerset_01.dds
 description The land called Summerset is the birthplace of civilization and magic as we know it in Tamriel. On its idyllic sea-kissed shores live the Altmer, the High Elves.
 step
@@ -33158,10 +33156,10 @@ goto 41.24,27.70
 talk Razum-dar
 |tip Leave the Council Chamber.
 |tip The throne room will be filled with many of those you've helped on your Summerset adventure. Talk with them to see how they're doing.
-turnin A New Alliance |next Extra's\\Extra's\\Main Quests Only\\DLC\\Murkmire
+turnin A New Alliance |next Extras\\Extras\\Main Quests Only\\DLC\\Murkmire
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\Murkmire",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\DLC\\Murkmire",[[
 loadingimage loadscreen_murkmire_01.dds
 description Investigate Murkmire's long-forgotten past and help an Imperial scholar recover a mysterious and powerful relic that will take you deep into Black Marsh, its history, and its people.
 step
@@ -34081,10 +34079,10 @@ talk Famia Mercius |q By River and Root/Talk to Famia
 step
 goto 44.12,54.63
 talk Xukas
-turnin By River and Root |next Extra's\\Extra's\\Main Quests Only\\DLC\\Northern Elsweyr
+turnin By River and Root |next Extras\\Extras\\Main Quests Only\\DLC\\Northern Elsweyr
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\Northern Elsweyr",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\DLC\\Northern Elsweyr",[[
 loadingimage loadscreen_elsweyr_zone_01.dds
 description This region, also known as Anequina, merged with the southern region of Pellitine several centuries ago to form the province of Elsweyr. It's a patchwork that united many former small kingdoms, including Rimmen, Orcrest, Riverhold, and Meirvale.
 step
@@ -35272,10 +35270,10 @@ goto 77.75,36.77
 step
 goto 77.75,36.77
 talk Queen Khamira
-turnin The Heir of Anequina |next Extra's\\Extra's\\Main Quests Only\\DLC\\Southern Elsweyr
+turnin The Heir of Anequina |next Extras\\Extras\\Main Quests Only\\DLC\\Southern Elsweyr
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\Southern Elsweyr",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\DLC\\Southern Elsweyr",[[
 loadingimage loadscreen_southernelsweyr_01.dds
 description Devastated by a terrible plague and its purging fire decades ago, Southern Elsweyr devolved into a lawless region beset by slavers, pirates, and brigands.
 step
@@ -36817,10 +36815,10 @@ goto senchal_base 66.09,41.25
 step
 goto 66.09,41.25
 talk Queen Khamira
-turnin The Pride of Elsweyr |next Extra's\\Extra's\\Main Quests Only\\DLC\\Western Skyrim
+turnin The Pride of Elsweyr |next Extras\\Extras\\Main Quests Only\\DLC\\Western Skyrim
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\Western Skyrim",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\DLC\\Western Skyrim",[[
 loadingimage loadscreen_westernskyrim_01.dds
 description Sundered from Eastern Skyrim in years past, High King Svargrim rules the cold and unforgiving land known as Western Skyrim. Consisting of the holds of Haafingar, Karthald, and Hjaalmarch, the realm gives rise to hardy natures, brave warriors, and suspicious townsfolk.
 step
@@ -38158,10 +38156,10 @@ goto 76.87,70.66
 step
 goto 76.87,70.66
 talk Svana
-turnin Daughter of the Wolf |next Extra's\\Extra's\\Main Quests Only\\DLC\\The Reach
+turnin Daughter of the Wolf |next Extras\\Extras\\Main Quests Only\\DLC\\The Reach
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\The Reach",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\DLC\\The Reach",[[
 loadingimage loadscreen_thereach_01.dds
 description The Gray Host marches on the Reach in The Elder Scrolls Online: Markarth, the epic conclusion to the Dark Heart of Skyrim storyline. Explore a dangerous new zone, gather a band of unlikely allies, and confront a Vampire Lord and his ancient army.
 step
@@ -39299,10 +39297,10 @@ talk Arana |q Second Chances/Talk to Arana
 step
 goto 24.37,52.27
 talk Ard Caddach
-turnin Second Chances |next Extra's\\Extra's\\Main Quests Only\\DLC\\Blackwood
+turnin Second Chances |next Extras\\Extras\\Main Quests Only\\DLC\\Blackwood
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\Blackwood",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\DLC\\Blackwood",[[
 loadingimage loadscreen_u30_blackwood_zone_01.dds
 description Blackwood needs heroes to stand against Oblivion. Retake the village of Rockgrove from Daedric-worshipping Argonians
 step
@@ -40580,10 +40578,10 @@ talk Keshu the Black Fin |q Heroes of Blackwood/Talk to Keshu the Black Fin
 step
 goto 77.11,44.85
 talk Eveli Sharp-Arrow
-turnin Heroes of Blackwood |next Extra's\\Extra's\\Main Quests Only\\DLC\\The Deadlands
+turnin Heroes of Blackwood |next Extras\\Extras\\Main Quests Only\\DLC\\The Deadlands
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\The Deadlands",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\DLC\\The Deadlands",[[
 loadingimage loadscreen_ardent_hope_01.dds
 description The Deadlands is Mehrunes Dagon's realm of Oblivion.
 step
@@ -41797,11 +41795,11 @@ talk The Anchorite |q Hope Springs Eternal/Talk to the Anchorite |future
 step
 goto 81.59,66.30
 talk Eveli Sharp-Arrow
-turnin Hope Springs Eternal |next Extra's\\Extra's\\Main Quests Only\\DLC\\High Isle
+turnin Hope Springs Eternal |next Extras\\Extras\\Main Quests Only\\DLC\\High Isle
 step
 ]])
 
-ZGV:RegisterGuide("Extra's\\Extra's\\Main Quests Only\\DLC\\High Isle",[[
+ZGV:RegisterGuide("Extras\\Extras\\Main Quests Only\\DLC\\High Isle",[[
 loadingimage loadscreen_hi_systres_zone_01.dds
 description Explore High Isle and Amenos, a land never-before-seen in The Elder Scrolls. Traverse stunning white cliffs, majestic castles, and perilous jungles as you encounter a chivalrous Breton society.
 step

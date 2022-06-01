@@ -1238,7 +1238,7 @@ SLASH_COMMANDS["/zgpos"] = function(checker)
 		d(("xoffset: |c88ff88%.19f|r"):format(Z.xoffset))
 		d(("yoffset: |c88ff88%.19f|r"):format(Z.yoffset))
 		d(("scale: |c88ff88%.19f|r"):format(gps.scaleX))
-		d(("map index |c88ff88%d|r"):format(_G.GetCurrentMapIndex()))
+		--d(("mapindex |c88ff88%d|r"):format(_G.GetCurrentMapIndex()))
 	end
 end
 

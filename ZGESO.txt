@@ -133,7 +133,7 @@ GuideMenu.lua
 
 -- Guides
 Guides/MainQuestsOnly.lua
-; Guides/Expansions.lua
+Guides/Expansions.lua
 Guides/Companions.lua
 Guides/Legacy.lua
 Guides/DSL.lua

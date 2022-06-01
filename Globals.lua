@@ -10,6 +10,7 @@ MIDDLE_MOUSE_BUTTON = 3
 Enums = {
 AuridonMap = 15,
 CyrodiilMap = 14,
+GrahtwoodMap = 7,
 KhenarthisRoostMap = 21,
 HighIsleMap = 46,
 }
