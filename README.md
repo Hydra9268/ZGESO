@@ -1,6 +1,6 @@
 # ZGESO
 
-DEPRECATED: PLEASE VISIT https://github.com/Gator7778/CGESO
+**DEPRECATED: PLEASE VISIT https://github.com/Gator7778/CGESO**
 
 ----
 
