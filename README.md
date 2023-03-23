@@ -1,5 +1,9 @@
 # ZGESO
 
+DEPRECATED: PLEASE VISIT https://github.com/Gator7778/CGESO
+
+----
+
 <img src="https://i.imgur.com/RzUTk8n.png">
 
 A Public Domain leveling guide produced by Zygor Guides, updated and maintained by Hydra9268. The purpose of this project is to add leveling guides for new content and extend the life for as long as ESO is available.
