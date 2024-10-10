@@ -104,7 +104,13 @@ end
 function ZGV:Print(str,...)
 	str = string.format(tostring(str),...)
 	-- TODO
-	print(L['name']..": "..str)
+	if (ZGV.Creator) then
+		print(L['name'].." |ceeeecc[Creator]|r: "..str)
+	elseif (ZGV.DEV) then
+		print(L['name'].." |ceeeecc[DEV]|r: "..str)
+	else
+		print(L['name']..": "..str)
+	end
 end
 
 -----------------------------------------

@@ -192,15 +192,6 @@ function Utils.GetMapNameByDDSFile()
 		return 0
 	end
 end
-
-function Utils.IsIntroTutorial()
-	if ZGV.Utils.GetPlayerPreciseLevel() < 6 and Utils.MapIndex() == 24 and Utils.GetMapNameByDDSFile() ~= "u29_ne_salas_vault_base" then
-		return true
-	else
-		return false
-	end
-end
-
 function Utils.GetMapNameByTexture()
 	local _,_,word = string.find( GetMapTileTexture(), "%a+/%a+/(%a+)/" ) -- pattern "Art/maps/mapname <- we want this
 	local name = zo_strformat("<<C:1>>", word) -- Uppercase first letter
@@ -666,55 +657,16 @@ function Utils.DistanceOffsetForGoto(dist,selfdist)
 	else -- zone maps
 		-- Created Utils.DistanceOffset in functions
 		-- sorting based on preceived popularity
-		if GetCurrentMapIndex() == Enums.SouthernElsweyrMap then    	return dist or selfdist or 2
-
-		elseif 	GetCurrentMapIndex() == Enums.BlackwoodMap or
-		        GetCurrentMapIndex() == Enums.BlackreachMap or
-		        GetCurrentMapIndex() == Enums.U28BlackreachMap or
-				GetCurrentMapIndex() == Enums.MurkmireMap then			return dist or selfdist or 3
-
-		elseif GetCurrentMapIndex() == Enums.NorthernElsweyrMap then	return dist or selfdist or 1.75
-
-		elseif GetCurrentMapIndex() == Enums.SummersetMap then 			return dist or selfdist or 1.5
-
-		elseif 	GetCurrentMapIndex() == Enums.AuridonMap or
-				GetCurrentMapIndex() == Enums.BalFoyenMap or
-				GetCurrentMapIndex() == Enums.BangkoraiMap or
-				GetCurrentMapIndex() == Enums.DeshaanMap or
-				GetCurrentMapIndex() == Enums.EastmarchMap or
-				GetCurrentMapIndex() == Enums.GlenumbraMap or
-				GetCurrentMapIndex() == Enums.GoldCoastMap or
-				GetCurrentMapIndex() == Enums.GrahtwoodMap or
-				GetCurrentMapIndex() == Enums.MalabalTorMap or
-				GetCurrentMapIndex() == Enums.ReapersMarchMap or
-				GetCurrentMapIndex() == Enums.RivenspireMap or
-				GetCurrentMapIndex() == Enums.StormhavenMap or
-				GetCurrentMapIndex() == Enums.WrothgarMap then			return dist or selfdist or 10
-
-		elseif 	GetCurrentMapIndex() == Enums.ArtaeumMap or
-		        GetCurrentMapIndex() == Enums.KhenarthisRoostMap then		return dist or selfdist or 2.5
-
-		elseif 	GetCurrentMapIndex() == Enums.StonefallsMap or
-				GetCurrentMapIndex() == Enums.VvardenfellMap then		return dist or selfdist or 9
-
-		elseif 	GetCurrentMapIndex() == Enums.AlikrDesertMap or
-		        GetCurrentMapIndex() == Enums.ColdharbourMap or
-				GetCurrentMapIndex() == Enums.CraglornMap then			return dist or selfdist or 8
-
-		elseif	GetCurrentMapIndex() == Enums.ShadowfenMap or
-				GetCurrentMapIndex() == Enums.TheRiftMap or
-				GetCurrentMapIndex() == Enums.HewsBaneMap then 			return dist or selfdist or 11
-
-		elseif 	GetCurrentMapIndex() == Enums.StrosMkaiMap or
-		        GetCurrentMapIndex() == Enums.WesternSkyrimMap or
-				GetCurrentMapIndex() == Enums.TheReachMap then 			return dist or selfdist or 4
-
-		elseif GetCurrentMapIndex() == Enums.ClockworkCityMap then		return dist or selfdist or 15
-		elseif GetCurrentMapIndex() == Enums.GreenshadeMap then			return dist or selfdist or 7
-
-		elseif 	GetCurrentMapIndex() == Enums.BetnikhMap or
-		        GetCurrentMapIndex() == Enums.BleakrockIsleMap then		return dist or selfdist or 5
-
+			
+			if  GetCurrentMapIndex() == Enums.CyrodiilMap or
+			    GetCurrentMapIndex() == Enums.GrahtwoodMap or
+			    GetCurrentMapIndex() == Enums.HighIsleMap or
+			    GetCurrentMapIndex() == Enums.KhenarthisRoostMap then return 2
+			
+		elseif 	GetCurrentMapIndex() == Enums.AuridonMap then return 4
+				
+		elseif  GetCurrentMapIndex() == Enums.GrahtwoodMap then return 5
+		
 		else return dist or selfdist or 1 -- default value
 		end
 	end
@@ -726,57 +678,16 @@ function Utils.DistanceOffsetForIsComplete()
 	else -- zone maps
 		-- Create a Utils function in function at the bottom of the file
 		-- sorting based on preceived popularity
-
-		if GetCurrentMapIndex() == Enums.SouthernElsweyrMap then    	return 2
-
-		elseif 	GetCurrentMapIndex() == Enums.BlackwoodMap or
-		        GetCurrentMapIndex() == Enums.BlackreachMap or
-				GetCurrentMapIndex() == Enums.U28BlackreachMap or
-				GetCurrentMapIndex() == Enums.MurkmireMap then			return 3
-
-		elseif GetCurrentMapIndex() == Enums.NorthernElsweyrMap then	return 1.75
-
-		elseif GetCurrentMapIndex() == Enums.SummersetMap then			return 1.5
-
-		elseif 	GetCurrentMapIndex() == Enums.AuridonMap or
-				GetCurrentMapIndex() == Enums.BalFoyenMap or
-				GetCurrentMapIndex() == Enums.BangkoraiMap or
-				GetCurrentMapIndex() == Enums.DeshaanMap or
-				GetCurrentMapIndex() == Enums.EastmarchMap or
-				GetCurrentMapIndex() == Enums.GlenumbraMap or
-				GetCurrentMapIndex() == Enums.GoldCoastMap or
-				GetCurrentMapIndex() == Enums.GrahtwoodMap or
-				GetCurrentMapIndex() == Enums.MalabalTorMap or
-				GetCurrentMapIndex() == Enums.ReapersMarchMap or
-				GetCurrentMapIndex() == Enums.RivenspireMap or
-				GetCurrentMapIndex() == Enums.StormhavenMap or
-				GetCurrentMapIndex() == Enums.WrothgarMap then			return 10
-
-		elseif 	GetCurrentMapIndex() == Enums.ArtaeumMap or
-		        GetCurrentMapIndex() == Enums.KhenarthisRoostMap then		return 2.5
-
-		elseif	GetCurrentMapIndex() == Enums.StonefallsMap or
-				GetCurrentMapIndex() == Enums.VvardenfellMap then		return 9
-
-		elseif 	GetCurrentMapIndex() == Enums.AlikrDesertMap or
-		        GetCurrentMapIndex() == Enums.ColdharbourMap or
-				GetCurrentMapIndex() == Enums.CraglornMap then			return 8
-
-		elseif 	GetCurrentMapIndex() == Enums.ShadowfenMap or
-				GetCurrentMapIndex() == Enums.TheRiftMap or
-				GetCurrentMapIndex() == Enums.HewsBaneMap then			return 11
-
-		elseif	GetCurrentMapIndex() == Enums.StrosMkaiMap or
-		        GetCurrentMapIndex() == Enums.WesternSkyrimMap or
-		        GetCurrentMapIndex() == Enums.TheReachMap then 			return 4
-
-		elseif 	GetCurrentMapIndex() == Enums.ClockworkCityMap or
-				GetCurrentMapIndex() == Enums.GreenshadeMap then		return 7
-
-		elseif 	GetCurrentMapIndex() == Enums.BetnikhMap or
-				GetCurrentMapIndex() == Enums.BleakrockIsleMap then		return 5
-
-		else return 1 -- default value
-		end
-	end
+		
+		    if  GetCurrentMapIndex() == Enums.CyrodiilMap or
+			    GetCurrentMapIndex() == Enums.HighIsleMap or
+			    GetCurrentMapIndex() == Enums.KhenarthisRoostMap then return 2
+			
+		elseif 	GetCurrentMapIndex() == Enums.AuridonMap then return 4
+				
+		elseif  GetCurrentMapIndex() == Enums.GrahtwoodMap then return 5		
+			
+		else return dist or selfdist or 1 -- default value
+		end	
+    end
 end

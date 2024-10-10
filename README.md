@@ -4,7 +4,7 @@
 
 ----
 
-<img src="https://i.imgur.com/RzUTk8n.png">
+<img src="https://imgur.com/gN4hkE2.png">
 
 A Public Domain leveling guide produced by Zygor Guides, updated and maintained by Hydra9268. The purpose of this project is to add leveling guides for new content and extend the life for as long as ESO is available.
 
@@ -25,39 +25,234 @@ Install through the excellent add-on manager <a href="https://minion.mmoui.com/"
 ----
 
 <br/>
-
-
-### 7/24/21 Remaster Legacy guides and Stand-alone Blackwood Companions guide (Thank you, snichols7778)! 
-<img src="https://i.imgur.com/5DZTFBl.png">
+<img src="https://imgur.com/gN4hkE2.png">
 <i>artwork &copy; ZeniMax Media</i>
 
 ### Recent Updates
 
-* 6/1/21 Blackwood, Dragonhold (Southern Elsweyr), and Craglorn guides now available (Thank you, snichols7778)! 
-* 3/27/21 Skyrim Guides Now Available (Thanks to snichols7778)!
-* 3/13/21 merge: Sharlikran: Misc changes and updates
-* 3/13/21 merge: Sharlikran: Removed embedded libraries. Fixed /zgpos output
-* 3/13/21 merge: Krandor1: Fix for the two glumbra bugs reported by AegonVI
-* 3/13/21 merge: Krandor1: Reorder bleakrock quests so hero of bleakrock achivement can be earned. Bug request from Cavanoskus on forums.
-* 11/2/20: API version now supports Dragonhold
-* 8/12/20: API version now supports Scalebreaker
-* 7/27/20: Northern Elsweyr Guide Out Now!
+# 2022/06/06 Changelog 1000
+* Completed All DLC Main Quest Only Guides.
+* Added Ember and Isobel Veloise Companion Guides.
+* Added All Rapport Guide for all 4 Companions.
+* Added Main Guide Only for High Isle and Amenos
+* Complete High Isle and Amenos Leveling Guide.
+
+# 2022/04/16 Changelog 973
+* Fixed Map name bug in Northern Elsweyr
+
+# 2022/04/16 Changelog 971
+* Created Legacy Main Quest Only Guides
+* Fixed Various Issues
+
+# 2021/11/2 Changelog 950
+* Fixed Typo in Southern Elsweyr
+
+# 2021/11/2 Changelog 949
+* Fixed Vulkhel Guard Map issues in Blackwood Prologue guide.
+
+# 2021/10/31 Changelog 947
+* Deadlands DLC Guide Added.
+* Include Skyshards, Delves and all quests.
+
+# Remastered Guides
+Wrothgar
+* Added Skyshards, Delves, and Missing Quests
+* Reorganized quest order to have sidequests done along side storyline to speed up guide.
+
+Thieves Guild
+* Added Skyshards, Delves, and Faction commands for certain quests that require it.
+
+Dark Brotherhood
+* Added Skyshards ,Delves, and Added missing quests.
+
+Vvardenfell
+* Added Prologue, Skyshards, Delves, Missing Quests, and Clarification steps.
+
+Clockwork City
+* Added Prologue, Skyshards, Delves, Missing Quests, and Clarification steps.
+
+Summerset
+* Added Prologue, Missing Quests, Skyshards, Delves, and Commands to steps to alieviate alot of Manual skips
+
+Murkmire
+* Added Prologue, Missing Quests, Skyshards, Delves
+* Commands to steps to alieviate alot of Manual --skips
+
+Northern Elsweyr
+* Added Prologue, Missing Quest, Skyshards, Delves, Commands to steps to alieviate alot of Manual skips
+* Reordered Quest for faster guide
+
+Blackwood
+* Removed Companion quests from main guide and moved them into miscellanous
+* Each Companion has its own guide now.
+
+# 2021/07/24 Changelog 891
+New Guides
+* Blackwood Companions stand-alone guide
+* Blackwood guide updated to skip companion quests if completed in the stand-alone guide
+
+Remastered Guides*
+* Vvardenfell (Morrowind)
+
+Aldmeri Dominion
+* Khenarthi's Roost, Auridon, Grahtwood, Greenshade, Malabal Tor, Reapers March
+
+Daggerfall Covenant
+* Stros M'Kai, Betnikh, Glenumbra, Stormhaven, Rivenspire, Alik'r Desert, Bangkorai
+
+Ebonheart Pact
+* Bleakrock Isle, Bal Foyen, Deshaan, Eastmarch, Shadowfen, Stonefalls
+* Coldharbour
+
+Updates and Additions
+* The Wailing Prison guide update
+* Tooltip added to the "Start Guide" button warning about losing progress if changing guides
+* Small updates to the Blackwood guide
+* In the Controls menu, "Leveling Guides Viewer" now appears as "Community Leveling Guides"
+
+Fixes
+* Fixed map data for Vvardenfell (Morrowind)
+* Murkmire wayshrine fixes*
+* Northern Elsweyr step coordinate fixes
+* Fixed a bug on steps 2 and 6 of the Grahtwood guide
++ Added boilerplate to prevent addon from throwing an error when quest steps value is nil
+
+Development / Github
+* General code clean-up
+* Dropped Zygor's old version 1.4. Versions will now appear as a whole number (e.g., 891) representing the total number of Github check-ins up to the current addon version
+
+* thanks snichols7778!
+
+# 2021/06/02 Changelog 840
+* A decision tip added to the turn-in step for the Blackwood quest "Relics and Rumblings"
+* Updated The Reach's map data and quest steps
+* Updated the Development Guide on the project's Github
+
+# 2021/06/02 Changelog 828
+* Clarified an early Blackwood step to make it easier to find the objective (One step added. Decrease you progress by one step to realign your progress.)
+
+# 2021/06/01 Changelog 826
+New Guides by snichols7778!
+* Blackwood
+* Includes new Isle of Balfiera intro tutorial for new players
+* Includes the Prologue quest "A Mortal's Touch" for all three factions
+* Includes companion guides for Bastian Hallix and Mirri Elendis
+* Includes 16/18 skyshards (The remaining two are found in public dungeons Zeithar's Abbey and The Silent Halls)
+* Southern Elsweyr
+* Craglorn
+
+Updates and Additions
+* Addon's name officially changed
+* Zygor's logo changed to new Community Leveling Guides logo
+* Updated map data for Western Skyrim
+* Updated map data for The Reach, including the Blackreach caverns
+* Bankorai guide 30% remastered (Note: If you're going through the zone with the addon, please move the steps back or forwards to realign with your progress)
+* Northern Elsweyr's description updated
+* Moved Orsinium to the main list and renamed to Wrothgar
+
+Fixes
+* Fixed map data for The Reach, including the Blackreach caverns
+* Fixed the width and height for the new guide suggestion popup
+* Fixed the width and height for the help popup
+* Fixed a bug in the Main Quests Only guides
+
+Development / Github
+* General code clean-up
+* Updated the Development Guide on the project's Github
+* Created a range function for handling varying distances in zone maps
+* Code updated to reduce its memory footprint
+* Created new addon functions (helped with Isle of Balfiera's strange zone data):
+* ZGV.Utils.MapIndex()
+* ZGV.Utils.GetMapNameByDDSFile()
+* ZGV.Utils.IsIntroTutorial()
+
+# 2021/04/05 Changelog 707
+* Fixed a bug where the arrow in the Bankorai zone pointed to the wrong location
+
+# 2021/04/04 Changelog 702
+* Addon now sports a new Zygor Community logo
+
+The following zones have been updated by snichols7778!:
+* Auridon
+* Glenumbra
+* Grahtwood
+* Greenshade
+* Malabal Tor
+* Reaper's March
+* Stonefalls
+* Summerset
+* The Wailing Prison
+
+# 2021/03/30 Changelog 672
+* Fixed a bug in the Western Skyrim newbie intro guide (Note: this fix adds 3-4 steps to the Western Skyrim guide. If you're using that guide, go back 3-4 steps to realign with your current progress.)
+
+# 2021/03/27 Changelog 669
+* Western Skyrim (Greymoor) and The Reach (Markarth) guides by snichols7778
+
+# 2020/06/29 Changelog 575 (courtesy of Krandor1)
+* Added Stormhaven, Bleakrock, Glenumbra
+* Added Auridon MQO Guide 
+* Misc Auridon changes
+* Updated various coordinates
+
+# 2020/06/29 Changelog 574
+* Fix issue in Goal.lua Line 367 reported by Sekkerhund
+
+# 2020/05/10 Changelog 573
+* Removed LibStub Requirement
+* Removed Embedded Libraries
+
+# 2020/04/26 Changelog 572
+* Fixes error related to AceTimer-3.0
+* Updated API version for Greymoor
+
+# 2020/03/06 Changelog 566
+* Removed a noisy debugger
+
+# 2020/03/03 Changelog 565
+* Restored AceTimer (Critical update)
+
+# 2020/03/02 Changelog 564
+* LibGPS r21, LibMapPing r12, and LibStub r7 all updated for Harrowstorm (5.3.4)
+* Deprecated LibGPS and AceTimer
+* Removed the popup that appears after completing a guide
+* Identified where lua-bit-numberlua is used in Parser
+
+# 2020/03/02 Changelog 562
+* Revamped Summerset guide!
+
+# 2019/11/2 Changelog 472
+* Updated LibGPS, LibMapPing, LibStub (a few of the main supporting libraries) to their latest versions
+
+# 2019/11/2 Changelog 471
+* Updated API version for Dragonhold
+
+# 2019/08/12 Changelog 470
+* Updated API version for Scalebreaker
+
+# 2019/07/27 Changelog 469
+* Elsweyr added to Addon's authorship credits
+
+# 2019/07/27 Changelog 468
+* Changed Addon's cover art to Elsweyr
+
+# 2019/07/27 Changelog 465
+* Elsweyr guide!
 
 <!--
 ### Coming Soon
 
-* Western Skyrim guide by snichols7778
+* Main Quest Only Guides
+* Skyshards, Delves, and Lorebooks Stand-Alone Guide.
 -->
 
 # Development Guide
 
 ### ZGESO Version Breakdown
 
-For example, 1.4.96
+For example, 949
 
-* `1` = Major version and authored by Zygor
-* `4` = Minor version authored by Zygor, or with substantial improvements
-* `96` = Community version based on the total number of Github commits (This is the version number on the ESOUI website)
+* `949` = Community version based on the total number of Github commits (This is the version number on the ESOUI website)
 
 ----
 

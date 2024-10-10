@@ -82,6 +82,8 @@ local defaultChar = {
   stephistory = {},
   goodbadguides = {},
   ignoredguides = {},
+  creator = false,
+  developer = false,
 }
 
 -- These are the account settings like options that will likely be the same for all characters.
