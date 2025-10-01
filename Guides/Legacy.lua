@@ -16018,6 +16018,7 @@ step
 step
 goto daggerfall_base 71.48,65.71
 talk Prophet |q The Harborage/Talk to the Prophet
+|only Daggerfall Covenant
 step
 goto daggerfall_base 75.20,70.06
 'Examine _The Code of Mauloch_ |lorebook The Code of Mauloch/1/1/1
@@ -16689,7 +16690,7 @@ goto 18.50,68.50
 'Climb _North Hut_ |q Reclaiming the Elements/Open a Portal for Wyress Gwen
 |tip Manually skip to the next step.
 step
-goto glenumbra_base 33.68,52.78
+goto glenumbra_base 33.83,52.58
 'Use _Wyress Gwen's Portal Stone_ |q Reclaiming the Elements/Open a Portal for Wyress Gwen
 step
 goto 33.71,52.61
@@ -22131,13 +22132,11 @@ step
 goto 48.49,63.33
 talk Baron Wylon Montclair |q Dream-Walk Into Darkness/Talk to Baron Montclair
 step
-goto 46.32,66.98
 'Observe the _Ritual_ |q Dream-Walk Into Darkness/Observe the Ritual
 step
 goto 47.40,68.48
 'Use _Lightless Remnant_ |q Dream-Walk Into Darkness/Use the Lightless Remnant
 step
-goto 47.15,66.58
 'Observe the _Ritual_ |q Dream-Walk Into Darkness/Observe the Ritual
 step
 goto 47.15,66.58
@@ -22255,12 +22254,9 @@ goto 20.35,65.56
 'Open _Shadowfate Cavern_ |q The Blood-Splattered Shield/Find Captain Janeve
 |tip Manually skip to the next step.
 step
-goto 16.30,41.21
-|tip Watch the dialogue
-'Find _Captain Janeve_ |q The Blood-Splattered Shield/Find Captain Janeve
-step
 goto 16.64,40.69
-talk Countess Eselde Tamrith |q The Blood-Splattered Shield/Talk to Countess Eselde Tamrith
+|tip Watch the dialogue
+talk Countess Eselde Tamrith |q The Blood-Splattered Shield/Talk to Countess Eselde Tamrith |future
 step
 goto 15.87,40.82
 talk Captain Janeve |q The Blood-Splattered Shield/Decide Captain Janeve's Fate
@@ -22844,7 +22840,6 @@ talk Count Verandis Ravenwatch |q The Concealing Veil/Talk to Verandis Ravenwatc
 step
 goto 36.16,31.50
 'Examine _Tear_ |q The Concealing Veil/Find a Way to Exit the Veil |future
-|tip Manually skip to the next step.
 step
 goto rivenspire_base 59.96,48.02
 talk Count Verandis Ravenwatch
@@ -23244,10 +23239,7 @@ goto 54.32,59.58
 'Unlock _Locked Barrier_ |q The Liberation of Northpoint/Unlock Dorell Manor
 step
 goto 62.67,63.51
-'Find _Lord Ellic Dorell_ |q The Liberation of Northpoint/Find Lord Ellic Dorell
-step
-goto 62.67,63.51
-talk Lord Ellic Dorell |q The Liberation of Northpoint/Talk to Lord Ellic Dorell
+talk Lord Ellic Dorell |q The Liberation of Northpoint/Talk to Lord Ellic Dorell |future
 step
 goto 59.06,56.80
 |tip Go upstairs.
@@ -23887,10 +23879,10 @@ goto 63.57,20.87 |q The Lightless Remnant/Follow Verandis Ravenwatch |tip Follow
 step
 goto 50.51,51.45
 |tip Watch the dialogue.
-talk Count Verandis Ravenwatch |q The Lightless Remnant/Talk to Verandis Ravenwatch |future
+talk Count Verandis Ravenwatch |q The Lightless Remnant |future
+|tip Manually skip to the next step.
 step
-goto 46.49,44.39
-|tip In order to kill the gargoyle, don't focus on damaging it, just focus on staying alive.  There are 4 statues in the room with a black spell chaneling from them toward the altar.  Run to each statue and position yourself so the statues are between you and the gargoyle.  When the gargoyle attacks you, it will destroy the statue.  Do this for all 4 statues to kill the gargoyle.
+|tip There are 4 statues in the room with a black spell chaneling from them toward the altar.  Run to each statue and position yourself so the statues are between you and the gargoyle.  When the gargoyle attacks you, it will destroy the statue.  Do this for all 4 statues to kill the gargoyle.
 kill Gargoyle |q The Lightless Remnant/Protect Verandis Ravenwatch
 step
 goto 33.40,45.59
@@ -24197,12 +24189,8 @@ step
 goto 22.84,41.09
 talk Watchman Pierjean |q Risen From the Depths/Rescue Watchman Pierjean
 step
-goto 36.58,35.06
-|tip Inside the building.
-'Meet _Watchman Maujad_ |q Risen From the Depths/Meet Watchman Maujad
-step
 goto 35.98,34.82
-|tip Go upstairs.
+|tip Go upstairs inside this building.
 talk Dockmaster Bahir |q Risen From the Depths/Find the Dockmaster
 step
 goto 10.42,44.68
@@ -24441,11 +24429,9 @@ step
 goto 67.76,69.56
 talk King Fahara'jad |q The Impervious Vault/Talk to King Fahara'jad
 step
-goto 67.76,69.56
-'Wait for _Gabrielle Benele to Open the Vault_ |q The Impervious Vault/Wait for Gabrielle Benele to Open Vault
-step
 goto 68.56,69.91
-'Open _Impervious Vault_ |q The Impervious Vault/Explore the Impervious Vault
+|tip Watch the dialogue.
+'Open _Impervious Vault_ |q The Impervious Vault/Explore the Impervious Vault |future
 |tip Manually skip to the next step.
 step
 goto imperviousvault_base 17.65,29.83 |q The Impervious Vault/Explore the Impervious Vault
@@ -24653,9 +24639,6 @@ goto 30.47,64.82
 |tip Inside the tent.
 'Examine _Sacrilege and Mayhem in the Alik'r_ |lorebook Sacrilege and Mayhem in the Alik'r/1/5/10
 step
-goto 29.81,65.42
-'Find the _Ash'abah Camp_ |q In Search of the Ash'abah/Find the Ash'abah Camp
-step
 goto 29.93,65.73
 talk Mazra
 turnin In Search of the Ash'abah
@@ -24846,13 +24829,9 @@ step
 goto ashaba_base 41.69,74.96
 talk Prince Haqmir |q The Initiation/Talk to Prince Haqmir
 step
-goto 40.20,68.66
-|tip Watch the dialogue.
-'Listen to the _King's Speech_ |q The Initiation/Listen to the King's Speech |future
-step
 goto 37.50,68.19
 |tip Watch the dialogue.
-talk King Xakhwan |q The Initiation/Talk to the King
+talk King Xakhwan |q The Initiation/Talk to the King |future
 step
 goto 36.88,69.13
 'Use _Haqmir's Tent_ |q The Initiation/Collect Your Brother From His Tent
@@ -25157,11 +25136,8 @@ step
 goto 24.72,42.80
 'Examine _Bailiff Fakimal_ |q Gone Missing/.*Search House for Clues.* |count 3
 step
-goto 52.07,47.23
-talk Justice Istah |q Gone Missing/Talk to Justice Istah
-step
 goto 52.14,47.15
-'Watch the _Magistrate put Ishtah in the Stocks_ |q Gone Missing/Watch the Magistrate Put Istah in the Stocks
+'Watch the _Dialogue._ |q Gone Missing/Watch the Magistrate Put Istah in the Stocks |future
 step
 goto 52.71,47.36
 talk Justice Istah |q Gone Missing/Talk to Justice Istah
@@ -27988,9 +27964,7 @@ goto 37.84,45.90
 talk Prince Adrien |q The Waking Darkness/Talk to Prince Adrien
 step
 goto 37.84,45.90
-'Wait for _Prince Adrien to Be Put to Rest_ |q The Waking Darkness/Wait for Prince Adrien to Be Put to Rest
-step
-goto 37.84,45.90
+|tip Watch the dialogue.
 talk Dame Valyrie Spenard
 turnin The Waking Darkness
 step
@@ -28080,8 +28054,6 @@ goto 39.35,35.10
 'Use _Inconspicuous Rock_ |q A City in Black/Spy on Captain Ahnu in the Alley
 step
 goto 41.81,37.80 |q A City in Black/Talk to Queen Arzhela
-step
-goto 40.83,38.85 |q A City in Black/Talk to Queen Arzhela
 step
 goto 48.32,41.54 |q A City in Black/Talk to Queen Arzhela
 step
@@ -28425,9 +28397,7 @@ step
 'Travel to _Eastern Evermore_ |q The Parley/Return to Queen Arzhela
 |tip Manually skip to the next step.
 step
-goto evermore_base 70.17,53.77 |q The Parley/Return to Queen Arzhela
-step
-goto 60.62,56.22 |q The Parley/Return to Queen Arzhela
+goto evermore_base 60.62,56.22 |q The Parley/Return to Queen Arzhela
 step
 goto 62.77,61.89 |q The Parley/Return to Queen Arzhela
 step
@@ -42748,12 +42718,8 @@ goto 41.04,27.15
 'Open _Thane's Hall_ |q Concealed Weapons/Find Thane Fjora
 |tip Manually skip to the next step.
 step
-goto nimalten_base 58.78,64.36
-|tip Go upstairs.
-'Find _Thane Fjora_ |q Concealed Weapons/Find Thane Fjora
-step
-goto 58.82,64.45
-talk Thane Fjora |q Concealed Weapons/Talk to the Thane
+goto nimalten_base 58.82,64.45
+talk Thane Fjora |q Concealed Weapons/Talk to the Thane |future
 step
 goto 56.79,59.36
 'Open _Nimalten_ |q Concealed Weapons/Exit Thane's Hall
@@ -42784,22 +42750,19 @@ goto 49.07,57.93
 kill Morgane or Aera Earth-Turner |q Concealed Weapons/Kill Worm Cultist and Leave the Crypt |future
 |tip Manually skip to the next step.
 step
-goto 48.94,72.08
-'Open _Nimalten Barrow_ |q Concealed Weapons/Talk to Thane in Throne Room
+goto 48.94,32.30
+'Open _Nimalten Crypt_ |q Concealed Weapons/Talk to Thane in Throne Room
 |tip Manually skip to the next step.
 step
-goto 28.76,80.26
-'Climb _Nimalten Barrow_ |q Concealed Weapons/Talk to Thane in Throne Room
-|tip Manually skip to the next step.
-step
-goto nimaltenpart1_base 91.55,40.59
+goto 85.25,11.98
 'Open _Nimalten_ |q Concealed Weapons/Talk to Thane in Throne Room
 |tip Manually skip to the next step.
 step
-goto nimalten_base 61.85,50.34 |q Concealed Weapons/Talk to Thane in Throne Room
+goto nimalten_base 56.71,58.87
+'Open _Thane's Hall_ |q Concealed Weapons/Talk to Thane in Throne Room
+|tip Manually skip to the next step.
 step
 goto 58.87,64.97
-|tip Go upstairs inside the building.
 talk Thane Fjora
 turnin Concealed Weapons
 step
@@ -43285,7 +43248,6 @@ step
 goto 37.24,38.53
 talk Daneras |q The Shackled Guardian/Find a Way to Go Deeper into the Barrow
 step
-goto 39.02,39.75
 'Use the _Delver Notes_ |q The Shackled Guardian/Read Delver Notes
 step
 goto 32.46,38.55
