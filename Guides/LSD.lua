@@ -1710,10 +1710,10 @@ step
 step
 goto u48_overland_base 36.75,72.53 |lorebook The Order of the Black Worm/1/19/8
 step
-goto 36.18,73.02
+goto 36.01,73.29
 'Examine _The Order of the Black Worm_ |lorebook The Order of the Black Worm/1/19/8
 step
-goto 41.91,72.68
+goto 41.91,72.94
 'Use _Vale of Revelry_
 'Travel to _Shell-Tide Village_ |lorebook Exegesis of Merid-Nunda/1/29/1
 |tip Manually skip to the next step.
@@ -1722,9 +1722,9 @@ goto 55.33,63.34 |lorebook Exegesis of Merid-Nunda/1/29/1
 step
 goto 55.07,61.32 |lorebook Exegesis of Merid-Nunda/1/29/1
 step
-goto 56.45,61.96 |lorebook Exegesis of Merid-Nunda/1/29/1
+goto 56.49,61.84 |lorebook Exegesis of Merid-Nunda/1/29/1
 step
-goto 55.31,61.64
+goto 55.57,61.66
 'Examine _Exegesis of Merid-Nunda_ |lorebook Exegesis of Merid-Nunda/1/29/1
 step
 'Congradualations _Guild is Now Complete._
