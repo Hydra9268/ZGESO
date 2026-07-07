@@ -1171,32 +1171,6 @@ Data.MapIdsByName = {
    ["The Great Darkness"]                  = 1054,
 
    -- Solstice
-   ["Underground Sanctum"]                 = 1055,
-   ["Worm Cult Nest"]                      = 1056,
-   ["Stirk"]                               = 1057,
-   ["Sunport"]                             = 1058,
-   ["Solstice"]                            = 1059,
-   ["Corelanya Manor"]                     = 1060,
-   ["Corelanya Manor Reanimatorium"]       = 1061,
-   ["Wailing Garden"]                      = 1062,
-   ["Corelanya Manor Vaults"]              = 1063,
-   ["Corelanya Manor Ossuarium"]           = 1064,
-   ["Vale of Revelry"]                     = 1065,
-   ["Misfortune Teller's Garden"]          = 1066,
-   ["Blood 'n' Baubles"]                   = 1067,
-   ["Tent of Dark Joy"]                    = 1068,
-   ["Shell-Tide Village"]                  = 1069,
-   ["Senik-Haas's Dream-Wallow"]           = 1070,
-   ["Tlali-Haas's Dream-Wallow"]           = 1071,
-   ["Shrine of Sithis"]                    = 1072,
-   ["Tainted Leel"]                        = 1073,
-   ["Carapace Cavern"]                     = 1074,
-   ["Shor's Stand"]                        = 1075,
-   ["Broken Light Temple"]                 = 1076,
-   ["Sunport"]                             = 1077,
-   ["Tarnur Mine"]                         = 1078,
-   ["Li-Xal Pass"]                         = 1079,
-   ["Vosgah Shrine"]                       = 1080,
 }
 
    -----------------------------------------

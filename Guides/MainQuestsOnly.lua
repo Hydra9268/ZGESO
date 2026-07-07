@@ -48181,7 +48181,7 @@ goto 76.13,51.33
 |tip Go upstairs.
 talk Viniama |q The Regent of Sunport/Talk to the Palace Servant |future
 step
-'Open _Solstice Map_
+'Open _Solstice_ Map
 'Travel to _Western Bay_ |q The Regent of Sunport/Go to Swencoast Cottage
 |tip Manually skip to the next step.
 step
@@ -48276,8 +48276,6 @@ accept The Passages Beneath
 step
 goto 71.67,54.88
 talk Walks-In-Ashes |q The Passages Beneath/Talk to Walks-In-Ashes |future
-'Tell her _Prince Azah wants us to find the Worm Cult's Passage Beneath, but we don't have much to go on._
-'Tell her _Where's this worm cult prisoner now?_
 |tip Manually skip to the next step.
 step
 goto 65.67,49.73
@@ -48509,7 +48507,1464 @@ step
 goto 75.88,51.05
 talk Prince Azah
 turnin The Writhing Wall
+accept The Gift of Death
 step
-wayshrine Grand Juncture Pass
+goto 75.88,51.05
+talk Gabrielle Benele |q The Gift of Death/Talk to Gabrielle Benele |future
+step
+goto 75.70,51.41
+'Open _Palace District_ |q The Gift of Death/Go to Corelanya Crypt
+|tip Manually skip to the next step.
+step
+goto 65.67,49.75
+'Open _Central Square_ |q The Gift of Death/Go to Corelanya Crypt
+|tip Manually skip to the next step.
+step
+goto 58.80,70.53
+'Open _Solstice_ |q The Gift of Death/Go to Corelanya Crypt
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 53.59,55.01
+'Discover _Shor's Stand_ Wayshrine_ |q The Gift of Death/Go to Corelanya Crypt
+|tip Manually skip to the next step.
+step
+goto 53.59,55.01
+'Use _Rampart Camp_
+'Travel to _Corelanya Manor_ |q The Gift of Death/Go to Corelanya Crypt
+|tip Manually skip to the next step.
+step
+goto 49.72,60.34 |q The Gift of Death/Go to Corelanya Crypt
+step
+goto 50.15,61.57
+'Open _Corelanya Crypt_ |q The Gift of Death/Search Corelanya Crypt |future
+|tip Manually skip to the next step.
+step
+goto U46_ZQ3_Corelanya_Crypt_01 38.65,87.84 |q The Gift of Death/Search Corelanya Crypt
+step
+goto 50.00,69.73 |q The Gift of Death/Search Corelanya Crypt
+step
+goto 70.54,68.92 |q The Gift of Death/Search Corelanya Crypt
+step
+goto 71.89,52.43 |q The Gift of Death/Search Corelanya Crypt
+step
+goto 55.41,52.16 |q The Gift of Death/Search Corelanya Crypt
+step
+goto 55.14,33.24 |q The Gift of Death/Search Corelanya Crypt
+step
+goto 38.11,17.30 |q The Gift of Death/Search Corelanya Crypt
+step
+goto 39.73,68.65
+|tip Watch the dialogue.
+'Destroy _Barrier Vessel_ |q The Gift of Death/Destroy the Tomb's Barrier |future
+|tip Manually skip to the next step.
+step
+goto 36.22,69.46
+'Destroy _Barrier Vessel_ |q The Gift of Death/Destroy the Tomb's Barrier
+step
+goto 37.30,68.65
+talk Arvoril |q The Gift of Death/Talk to Arvoril
+step
+goto 37.30,68.65
+'Take _Ghostweld Crystal_ |q The Gift of Death/Take the Ghostweld Crystal
+step
+'Open _Solstice_ Map
+'Travel to _Sunport_  |q The Gift of Death/Meet Gabrielle Benele at Vinutilmo Palace
+|tip Manually skip to the next step.
+step
+goto u46_Sunport_base 61.34,49.59
+'Open _Palace District_ |q The Gift of Death/Meet Gabrielle Benele at Vinutilmo Palace
+|tip Manually skip to the next step.
+step
+goto 74.19,51.76
+'Open _Vinutilmo Palace_ |q The Gift of Death/Meet Gabrielle Benele at Vinutilmo Palace
+|tip Manually skip to the next step.
+step
+goto 76.05,51.58
+'Open _Regent's Study_ |q The Gift of Death/Meet Gabrielle Benele at Vinutilmo Palace
+step
+goto 76.24,51.81
+talk Gabrielle Benele |q The Gift of Death/Talk to Gabrielle Benele |future
+step
+goto 76.20,51.76
+'Place _Ghostweld Crystal_ |q The Gift of Death/Place the Ghostweld Crystal
+step
+goto 76.17,51.73
+|tip Watch the dialogue.
+talk Wormblood |q The Gift of Death/Talk to Wormblood
+step
+goto 76.23,51.75
+talk Gabrielle Benele |q The Gift of Death/Talk to Gabrielle Benele
+step
+goto 76.07,51.61
+'Open _Vinutilmo Palace_ |q The Gift of Death/Go to Broken Light Courtyard
+|tip Manually skip to the next step.
+step
+goto 75.69,51.41
+'Open _Palace District_ |q The Gift of Death/Go to Broken Light Courtyard
+|tip Manually skip to the next step.
+step
+goto 65.67,49.73
+'Open _Central Square_ |q The Gift of Death/Go to Broken Light Courtyard
+|tip Manually skip to the next step.
+step
+goto 58.27,49.93
+'Use _Sunport_
+'Travel to _Shor's Stand_ |q The Gift of Death/Go to Broken Light Courtyard
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 40.14,44.16 |q The Gift of Death/Go to Broken Light Courtyard
+step
+goto 40.69,40.67 |q The Gift of Death/Go to Broken Light Courtyard
+step
+goto 39.77,39.43
+'Open _Broken Light Courtyard_ |q The Gift of Death/Go to Broken Light Courtyard
+step
+goto 40.22,38.97
+talk Prince Azah |q The Gift of Death/Talk to Prince Azah
+step
+|tip Pick your champion.
+talk Razum-dar |q The Gift of Death/Choose a Champion
+talk Walks-in-Ash |q The Gift of Death/Choose a Champion
+talk Skordo the Knife |q The Gift of Death/Choose a Champion
+step
+goto 40.30,39.40
+|tip Go up the stairs.
+'Take _Bell Mallet_ |q The Gift of Death/Take the Mallet
+step
+goto 40.10,39.43
+|tip Watch the dialogue.
+'Use _Temple Bell_ |q The Gift of Death/Strike the Temple Bell |future
+step
+goto 40.11,39.15
+'Use _Colored Rooms_ |q The Gift of Death/Enter the Colored Rooms |future
+|tip Manually skip to the next step.
+step
+goto U46_ZQ3_Colored_Rooms_01 26.78,41.35 |q The Gift of Death/Search for Wormblood |future
+step
+goto 56.64,46.56 |q The Gift of Death/Search for Wormblood
+step
+goto 61.26,51.54
+|tip Watch the dialogue.
+talk Gabrielle Benele |q The Gift of Death/Talk to Gabrielle Benele |future
+step
+goto 61.26,51.54
+'Use _Gift of Death_ |q The Gift of Death/Use the Gift of Death
+step
+goto 61.37,51.78
+|tip Watch the dialogue.
+'Take _Light of Meridia_ |q The Gift of Death/Take the Light of Meridia |future
+step
+goto 63.63,47.51
+'Use _The Light of Meridia_ on Barrier |q The Gift of Death/Remove the Barrier
+step
+goto 77.13,45.85
+|tip Watch the dialogue.
+kill Farinor |q The Gift of Death/Kill Farinor |future
+step
+goto 79.15,44.79
+|tip Watch the dialogue.
+'Use _Light of Meridia_ |q The Gift of Death/Use the Light of Meridia
+step
+goto 80.09,44.79
+talk Darien Gaultier |q The Gift of Death/Talk to Darien Gaultier
+step
+goto 82.82,45.26
+'Use _Portal to Sunport_ |q The Gift of Death/Return to Vinutilmo Palace
+|tip Manually skip to the next step.
+step
+goto u46_Sunport_base 74.18,51.73
+'Open _Vinutilmo Palace_ |q The Gift of Death/Return to Vinutilmo Palace
+step
+goto 76.09,51.02
+|tip Watch the dialogue.
+talk Prince Azah
+turnin The Gift of Death
+accept Crossing the Wall
+step
+goto 75.69,51.41
+'Open _Palace District_ |q Crossing the Wall/Find Midconjuror Mirmal at the Meridian Lens
+|tip Manually skip to the next step.
+step
+goto 65.67,49.71
+'Open _Central Square_ |q Crossing the Wall/Find Midconjuror Mirmal at the Meridian Lens
+|tip Manually skip to the next step.
+step
+goto 58.36,49.94
+'Use _Sunport_
+'Travel to _Rampart Camp_ |q Crossing the Wall/Find Midconjuror Mirmal at the Meridian Lens
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 52.36,55.04 |q Crossing the Wall/Find Midconjuror Mirmal at the Meridian Lens
+step
+goto 53.03,55.89 |q Crossing the Wall/Find Midconjuror Mirmal at the Meridian Lens
+step
+goto 53.52,55.93
+talk Midconjuror Mirmal |q Crossing the Wall/Talk to Midconjuror Mirmal |future
+step
+goto 53.60,55.02
+'Use _Rampart Camp_
+'Travel to _Sunport_ |q Crossing the Wall/Meet Darien Gautier in the Regent's Study
+|tip Manually skip to the next step.
+step
+goto u46_Sunport_base 61.34,49.64
+'Open _Palace District_ |q Crossing the Wall/Meet Darien Gautier in the Regent's Study
+|tip Manually skip to the next step.
+step
+goto 74.23,51.80
+'Open _Vinutilmo Palace_ |q Crossing the Wall/Meet Darien Gautier in the Regent's Study
+|tip Manually skip to the next step.
+step
+goto 76.06,51.59
+'Open _Regent's Study_ |q Crossing the Wall/Meet Darien Gautier in the Regent's Study
+step
+goto 76.23,51.64
+talk Darien Gautier |q Crossing the Wall/Talk to Darien Gautier
+step
+goto 76.21,51.67
+'Examine _Gabrielle's Journal_ |lorebook Gabrielle's Journal/3/55/82
+step
+goto 76.11,51.80
+'Examine _Gabrielle's Research Notes_ |lorebook Gabrielle's Research Notes/3/55/83
+step
+goto 76.23,51.64
+talk Darien Gautier |q Crossing the Wall/Talk to Darien Gautier
+step
+goto 76.07,51.62
+'Open _Vinutilmo Palace_ |q Crossing the Wall/Investigate the North and South Wall
+|tip Manually skip to the next step.
+step
+goto 75.69,51.41
+'Open _Palace District_ |q Crossing the Wall/Investigate the North and South Wall
+|tip Manually skip to the next step.
+step
+goto 65.67,49.71
+'Open _Central Square_ |q Crossing the Wall/Investigate the North and South Wall
+|tip Manually skip to the next step.
+step
+goto 58.36,49.94
+'Use _Sunport_
+'Travel to _Sunport Docks_ |q Crossing the Wall/Investigate the North and South Wall
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 49.65,45.93 |q Crossing the Wall/Investigate the North and South Wall
+step
+goto 50.67,43.20 |q Crossing the Wall/Investigate the North and South Wall |tip Go around the mountain.
+step
+goto 49.24,40.56 |q Crossing the Wall/Investigate the North and South Wall
+step
+goto 50.27,39.66
+'Examine _Writhing Distortion_ |q Crossing the Wall/Examine Writhing Distortion |future
+step
+goto 49.98,39.75
+|tip Watch the dialogue.
+'Enter _Binding Chain Portal_ |q Crossing the Wall/Enter Portal |future
+step
+goto 27.23,45.37
+'Open _Carapace Caverns_ |q Crossing the Wall/Investigate Carapace Caverns
+|tip Manually skip to the next step.
+step
+goto u46_carapacecaverns_base 11.53,14.19 |q Crossing the Wall/Investigate Carapace Caverns
+step
+goto 52.11,16.19 |q Crossing the Wall/Investigate Carapace Caverns
+step
+goto 57.21,28.16 |q Crossing the Wall/Investigate Carapace Caverns
+step
+goto 64.75,47.89 |q Crossing the Wall/Investigate Carapace Caverns
+step
+goto 69.62,69.84 |q Crossing the Wall/Investigate Carapace Caverns
+step
+goto 61.64,84.04
+'Open _Anchor Shrine Chamber_ |q Crossing the Wall/Find the Anchor Shrine |future
+|tip Manually skip to the next step.
+step
+goto u47_base_CarapaceShrine 61.17,50.97 |q Crossing the Wall/Find the Anchor Shrine
+step
+goto 68.93,64.56 |q Crossing the Wall/Find the Anchor Shrine
+step
+goto 44.17,53.88 |q Crossing the Wall/Find the Anchor Shrine
+step
+goto 12.14,46.60
+'Destroy _Anchor Shrine_ |q Crossing the Wall/Destroy the Anchor Shrine |future
+step
+'Open _Solstice_ Map
+'Travel to _Shell-Tide Village_ |q Crossing the Wall/Investigate Wall by Shell-Tide Village
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 61.53,69.43
+'Examine _Writhing Distortion_ |q Crossing the Wall/Examine Writhing Distortion |future
+step
+goto 61.38,69.43
+|tip Watch the dialogue.
+'Enter _Binding Chain Portal_ |q Crossing the Wall/Enter Portal |future
+step
+goto 57.72,68.31
+'Enter _Tarnur Mine_ |q Crossing the Wall/Investigate Tarnur Mine
+|tip Manually skip to the next step.
+step
+goto U46_ZQ2_abandonedtun_01_base 24.41,27.26
+'Open _Abandoned Tunnels_ |q Crossing the Wall/Investigate Tarnur Mine
+|tip Manually skip to the next step.
+step
+goto 59.95,31.44 |q Crossing the Wall/Investigate Tarnur Mine
+step
+goto 66.78,26.31
+'Open _Anchor Shrine Cave_ |q Crossing the Wall/Find the Anchor Shrine |future
+|tip Manually skip to the next step.
+step
+goto u47_base_BargeShrine 74.72,42.11 |q Crossing the Wall/Find the Anchor Shrine
+step
+goto 68.48,63.78 |q Crossing the Wall/Find the Anchor Shrine
+step
+goto 19.56,51.66
+'Destroy _Anchor Shrine_ |q Crossing the Wall/Destroy the Anchor Shrine |future
+step
+'Open _Solstice_ Map
+'Travel to _Rampart Camp_ |q Crossing the Wall/Return to the Sunport Rampart Camp
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 53.21,55.64
+talk Prince Azah |q Crossing the Wall/Talk to Prince Azah |future
+step
+goto 54.58,56.28 |q Crossing the Wall/Find Fissure Near Writhing Wall
+step
+goto 55.37,59.20
+'Enter _Fissure Ruins_ |q Crossing the Wall/Enter the Fissure |future
+|tip Manually skip to the next step.
+step
+goto u47_base_3.5FissureCave 48.63,73.45
+|tip Watch the dialogue.
+'Explore _Ruins_ |q Crossing the Wall/Explore the Ruins |future
+step
+goto 31.31,19.10 |q Crossing the Wall/Stop the Ritual
+step
+goto 57.38,15.93 |q Crossing the Wall/Stop the Ritual
+step
+goto 66.10,35.69 |q Crossing the Wall/Stop the Ritual
+step
+goto 52.57,58.61
+'Open _Ritual Plaza_ |q Crossing the Wall/Stop the Ritual
+|tip Manually skip to the next step.
+step
+goto 55.00,73.61
+kill Maldrith Rebuker |q Crossing the Wall/Defeat the Maldrith |future
+step
+goto 60.00,73.45
+'Destroy _Ritual Altar_ |q Crossing the Wall/Destroy the Ritual Altar |future
+step
+goto 59.41,71.91
+talk Darien Gautier |q Crossing the Wall/Talk to Darien Gautier |future
+step
+'Open _Solstice_ Map
+'Travel to _Rampart Camp_ |q Crossing the Wall/Return to Sunport Rampart Camp
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 52.36,55.04 |q Crossing the Wall/Return to Sunport Rampart Camp
+step
+goto 53.03,55.89 |q Crossing the Wall/Talk to Prince Azah |future
+step
+goto 53.50,55.85
+talk Prince Azah |q Crossing the Wall/Talk to Prince Azah
+step
+goto 53.50,55.89
+|tip Watch the dialogue.
+'Activate _Meridian Lens_ |q Crossing the Wall/Activate the Meridian Lens
+step
+goto 53.54,55.77
+talk Prince Azah
+turnin Crossing the Wall
+accept The Worm Turns
+step
+goto 53.78,57.57 |q The Worm Turns/Investigate the Pass
+step
+goto 58.87,55.91
+talk Skordo the Knife |q The Worm Turns/Talk to Skordo the Knife |future
+step
+goto 61.89,55.28
+'Discover _Grand Juncture Pass_ Wayshrine |q The Worm Turns/Talk to Razum-dar |future
+|tip Manually skip to the next step.
+step
+goto 61.59,55.70
+talk Razum-dar |q The Worm Turns/Talk to Razum-dar
+step
+goto 62.66,56.30
+'Destroy _Portal Anchor_ |q The Worm Turns/.*Destroy the Portal Anchors.* |count 1
+step
+goto 63.34,56.37
+'Examine _Prisoner Manifest_ |lorebook Prisoner Manifest/3/57/12
+step
+goto 63.58,56.00
+'Destroy _Portal Anchor_ |q The Worm Turns/.*Destroy the Portal Anchors.* |count 2
+step
+goto 62.82,55.36
+'Destroy _Portal Anchor_ |q The Worm Turns/.*Destroy the Portal Anchors.* |count 3
+step
+goto 62.39,55.35
+'Examine _Shipment Manifest_ |lorebook Shipment Manifest/3/57/13
+step
+goto 63.04,54.31
+'Destroy _Portal Anchor_ |q The Worm Turns/.*Destroy the Portal Anchors.* |count 4
+step
+goto 64.18,54.48
+talk Darien Gautier |q The Worm Turns |future
+|tip Manually skip to the next step.
+step
+goto 64.99,53.64
+|tip Drop down.
+'Destroy _Sentinel_ |q The Worm Turns/.*Capture the Enemy Ballista.* |count 1
+step
+goto 65.49,55.79
+'Destroy _Sentinel_ |q The Worm Turns/.*Capture the Enemy Ballista.* |count 2
+step
+goto 65.47,54.27
+talk Prince Azah |q The Worm Turns/Talk to Prince Azah |future
+step
+goto 64.45,54.15 |q The Worm Turns/Find Walks-in-Ash and Darien
+step
+goto 63.39,51.90 |q The Worm Turns/Find Walks-in-Ash and Darien
+step
+goto 62.38,51.28 |q The Worm Turns/Find Walks-in-Ash and Darien
+step
+goto 63.50,49.68 |q The Worm Turns/Find Walks-in-Ash and Darien
+step
+goto 64.68,51.24
+talk Jeetra |q The Worm Turns/Talk to Jeetra |future
+step
+goto 65.18,50.52 |q The Worm Turns/Light the Signal Flare
+step
+goto 65.67,51.35
+'Ignite _Signal Flare_ |q The Worm Turns/Light the Signal Flare
+step
+goto 66.26,51.36 |q The Worm Turns/Go to the Cave Entrance Beneath the Hold |tip Drop down carefully.
+step
+goto 66.47,53.51 |q The Worm Turns/Go to the Cave Entrance Beneath the Hold
+step
+goto 67.54,53.51
+talk Jeetra |q The Worm Turns/Talk to Jeetra |future
+step
+goto 67.53,53.42
+'Climb _Gristmung Hold_ |q The Worm Turns/Enter Gristmung Hold |future
+|tip Manually skip to the next step.
+step
+goto U48_ZQ4_GristmungFortress_ext 22.37,28.41 |q The Worm Turns/Reach the Main Gate |future |tip Go upstairs.
+step
+goto 47.65,25.36 |q The Worm Turns/Reach the Main Gate
+step
+goto 28.36,66.15 |q The Worm Turns/Reach the Main Gate
+step
+goto 14.12,65.89
+'Activate _Gate Winch_ |q The Worm Turns/Activate the Gate Winches
+step
+goto 15.74,70.51
+talk Skordo the Knife |q The Worm Turns/Talk to Skordo the Knife
+step
+goto 46.75,81.17 |q The Worm Turns/Reach the Central Keep
+step
+goto 65.76,67.98 |q The Worm Turns/Reach the Central Keep
+step
+goto 74.84,74.95
+'Open _Gristmung Hold Central Keep_ |q The Worm Turns/Reach the Central Keep
+step
+goto U48_ZQ4_Gristmung_int01 27.37,94.12 |q The Worm Turns/Search the Central Keep
+step
+goto 29.83,65.95
+'Examine _Report on the Improved Reapers_ |lorebook Report on the Improved Reapers/3/57/14
+step
+goto 35.08,61.73
+'Take _Modified Soul Reaper Core_ |q The Worm Turns/.*Search the Chamber.* |count 2
+step
+goto 31.63,71.83
+talk Darien Gautier |q The Worm Turns/Talk to Darien Gautier
+step
+goto 17.63,77.03 |q The Worm Turns/Find the Prisoners
+step
+goto 17.32,40.65
+talk Jeetra |q The Worm Turns/Talk to Jeetra |future
+step
+goto 41.41,40.78
+|tip Go upstairs.
+'Open _Shackle Room Walkway_ |q The Worm Turns/Find Walks-in-Ash
+|tip Manually skip to the next step.
+step
+goto 42.71,27.70
+talk Walks-in-Ash |q The Worm Turns/Talk to Walks-in-Ash |future
+step
+goto 41.53,18.61
+'Open _Gristmung Hold Central Keep_ |q The Worm Turns/Defeat the Dark Adept
+|tip Manually skip to the next step.
+step
+goto 30.19,28.67
+|tip Follow path around downstairs.
+'Open _Gristmung Hold Shackle Room_ |q The Worm Turns/Defeat the Dark Adept
+|tip Manually skip to the next step.
+step
+goto U48_UI_Maps_ZQ4_Fortress_02 67.91,29.02
+kill Dark Adept Kor-Zakul |q The Worm Turns/Defeat the Dark Adept
+|tip Manually skip to the next step.
+step
+goto 55.40,30.25
+|tip Watch the dialogue.
+'Take _Light of Meridia_ |q The Worm Turns/Take the Light of Meridia
+step
+goto 56.32,29.32
+'Use _Light of Meridia_ |q The Worm Turns/Use the Light of Meridia
+step
+goto 55.53,31.65
+|tip Watch the dialogue.
+talk Darien Gautier |q The Worm Turns/Talk to Darien Gautier
+step
+goto 87.05,33.14
+'Enter _Solstice_ |q The Worm Turns/Rejoin Your Allies
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 71.58,54.40
+|tip Drop down carefully.
+'Discover _Gristmung Hold Camp_ Wayshrine |q The Worm Turns/Rejoin Your Allies
+|tip Manually skip to the next step.
+step
+goto 71.23,53.47
+talk Prince Azah
+turnin The Worm Turns
+accept Hunt for the Great Mage
+step
+goto 71.26,53.51
+talk Baar-Jasa |q Hunt for the Great Mage/Talk to Baar-Jasa
+step
+goto 73.29,52.68 |q Hunt for the Great Mage/Go to the Abandoned Village
+step
+goto 75.17,50.08
+'Open _Abandoned Building_ |q Hunt for the Great Mage/Find the Hidden Cache |future
+|tip Manually skip to the next step.
+step
+goto 75.16,50.26
+|tip Totem in the corner bottom tile needs to be Red.
+'Activate _Decorative Wall Tile_ |q Hunt for the Great Mage/Find the Hidden Cache
+|tip Manually skip to the next step.
+step
+goto 75.09,50.27
+|tip Totem in the corner middle tile needs to be white.
+'Activate _Decorative Wall Tile_ |q Hunt for the Great Mage/Find the Hidden Cache
+|tip Manually skip to the next step.
+step
+goto 74.95,50.21
+|tip Totem in the corner top tile needs to be green.
+'Activate _Decorative Wall Tile_ |q Hunt for the Great Mage/Find the Hidden Cache
+|tip Manually skip to the next step.
+step
+goto 75.02,50.30
+'Search _Totem Stone Block_ |q Hunt for the Great Mage/Find the Hidden Cache
+step
+goto 75.01,50.28
+talk Jeetra |q Hunt for the Great Mage/Talk to Jeetra
+step
+goto 75.16,50.11
+'Open _Solstice_ |q Hunt for the Great Mage/Go to the Kaz-Neesak Mine
+|tip Manually skip to the next step.
+step
+goto 78.79,54.11
+'Discover _Xor-Hist_ Wayshrine |q Hunt for the Great Mage/Go to the Kaz-Neesak Mine
+|tip Manually skip to the next step.
+step
+goto 80.84,52.98 |q Hunt for the Great Mage/Go to the Kaz-Neesak Mine
+step
+goto 82.60,52.92
+'Open _Kaz-Neesak Mine_ |q Hunt for the Great Mage/Collect Map |future
+|tip Manuyally skip to the next step.
+step
+goto U48_ZQ5_bismuthmine_01 61.19,75.66 |q Hunt for the Great Mage/Collect Map
+step
+goto 60.48,46.18 |q Hunt for the Great Mage/Collect Map
+step
+goto 69.00,36.88 |q Hunt for the Great Mage/Collect Map
+step
+goto 66.84,22.14 |q Hunt for the Great Mage/Collect Map
+step
+goto 53.45,27.92
+'Examine _Map of Soul Flayer Harvest Sites_ |q Hunt for the Great Mage/Collect Map
+step
+goto 40.37,27.86
+'Examine _Worm Cult Mine Orders_ |q Hunt for the Great Mage/Collect Documents
+step
+goto 40.23,28.33
+talk Jeetra |q Hunt for the Great Mage/Talk to Jeetra
+step
+'Open _Solstice_ Map
+'Travel to _Xor-Hist_ |q Hunt for the Great Mage/Find the Soul Flayer Harvest Sites
+|tip Manully skip to the next step.
+step
+goto u48_overland_base 79.53,60.56 |q Hunt for the Great Mage/Find the Soul Flayer Harvest Sites
+step
+goto 76.93,62.67 |q Hunt for the Great Mage/Find the Soul Flayer Harvest Sites
+step
+goto 76.93,62.67 |q Hunt for the Great Mage/Find the Soul Flayer Harvest Sites
+step
+goto 76.76,63.73
+'Examinbe _Soul Flayer Perimeter Plan_ |q Hunt for the Great Mage/Investigate the Harvest Site |future
+step
+goto 77.49,63.91
+'Destroy _Unactivated Soul Flayer_ |q Hunt for the Great Mage/.*Destroy Soul Flayers.* |count 1
+step
+goto 76.48,64.56
+'Destroy _Unactivated Soul Flayer_ |q Hunt for the Great Mage/.*Destroy Soul Flayers.* |count 2
+step
+goto 76.93,62.67 |q Hunt for the Great Mage/Find the Other Soul Flayer Harvest Site
+step
+goto 67.32,65.42
+'Discover _Stone Cove_ Wayshrine|q Hunt for the Great Mage/Find the Other Soul Flayer Harvest Site
+|tip Manually skip to the next step.
+step
+goto 66.65,63.96 |q Hunt for the Great Mage/Find the Other Soul Flayer Harvest Site
+step
+goto 65.20,63.82 |q Hunt for the Great Mage |future
+step
+goto 65.50,64.42
+'Destroy _Unactivated Soul Flayer_ |q Hunt for the Great Mage/.*Destroy Soul Flayers.* |count 1
+step
+goto 64.53,66.01
+'Destroy _Unactivated Soul Flayer_ |q Hunt for the Great Mage/.*Destroy Soul Flayers.* |count 2
+step
+goto 64.21,65.64
+'Examine _Burial Site Orders_ |lorebook Burial Site Orders/3/57/18
+step
+'Open _Solstice_ Map
+'Travel to _Gristmung Hold Camp_ |q Hunt for the Great Mage/Return to the Gristmung Fellowship Camp |future
+|tip Manually skip to the next step.
+step
+goto 71.49,53.77
+talk Darien Gautier |q Hunt for the Great Mage/Talk to Darien |future
+step
+goto 71.21,53.47
+talk Prince Azah
+turnin Hunt for the Great Mage
+accept The Deep Tombs of Xul-Haj
+step
+goto 71.25,53.56
+talk Jeetra |q The Deep Tombs of Xul-Haj/Talk to Jeetra
+step
+goto 68.51,51.18 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+step
+goto 65.81,47.34 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+step
+goto 65.24,43.13 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+step
+goto 60.91,40.53
+'Discover _Caterwaul Cove_ Wayshrine |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+|tip Manually skip to the next step.
+step
+goto 63.63,41.66 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+step
+goto 64.35,39.37 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+step
+goto 67.27,37.22 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+step
+goto 70.58,37.06 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+step
+goto 77.17,41.01 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+step
+goto 80.56,39.04 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+step
+goto 83.33,35.19 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+step
+goto 82.14,34.12
+'Discover _Mor Naril Camp_ |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+|tip Manually skip to the next step.
+step
+goto 83.33,35.19 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+step
+goto 80.56,39.04 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+step
+goto 77.17,41.01 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+step
+goto 75.03,38.84 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+step
+goto 73.45,38.75 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+step
+goto 73.74,33.58
+'Examine _Village Report_ |lorebook Village Report/3/57/19
+step
+goto 73.98,33.39
+'Open _Death-Dancer Jeetra's House_ |q The Deep Tombs of Xul-Haj/Find Jeetra
+|tip Manually skip to the next step.
+step
+goto 74.04,33.04
+talk Jeetra |q The Deep Tombs of Xul-Haj/Find Jeetra
+step
+'Open _Solstice_ Map
+'Travel to _Mor Naril Camp_ |q The Deep Tombs of Xul-Haj/Go to Xul-Haj
+|tip Manually skip to the next step.
+step
+goto 81.29,31.04 |q The Deep Tombs of Xul-Haj/Go to Xul-Haj
+step
+goto 79.24,32.77
+'Open _Xul-Haj_ |q The Deep Tombs of Xul-Haj/Enter Xul-Haj |future
+|tip Manually skip to the next step.
+step
+goto U48_UI_Maps_ZQ6_ent_base 47.01,61.19
+talk Jeetra |q The Deep Tombs of Xul-Haj/Talk to Jeetra |future
+step
+goto 52.99,75.37
+|tip Watch the dialogue.
+'Open _Lower Halls_ |q The Deep Tombs of Xul-Haj/Explore Xul-Haj
+|tip Manually skip to the next step.
+step
+goto U48_UI_Maps_ZQ6_main_base 69.12,81.05 |q The Deep Tombs of Xul-Haj/Explore Xul-Haj
+step
+goto 69.30,57.02
+|tip Watch the dialogue.
+talk Ukka-Raza |q The Deep Tombs of Xul-Haj/Talk to the Xul-Haj Spirit |future
+step
+goto 72.28,61.05
+'Open _Wellspring Hallway_ |q The Deep Tombs of Xul-Haj/Reach the Wellspring
+|tip Manually skip to the next step.
+step
+goto U48_UI_Maps_ZQ6_main02_base 88.55,60.88 |q The Deep Tombs of Xul-Haj/Reach the Wellspring
+step
+goto 88.93,50.95 |q The Deep Tombs of Xul-Haj/Reach the Wellspring
+step
+goto 81.75,51.93 |q The Deep Tombs of Xul-Haj/Reach the Wellspring
+'Open _Cistern Chamber_ |q The Deep Tombs of Xul-Haj/Reach the Wellspring
+|tip Manually skip to the next step.
+step
+goto U48_UI_Maps_ZQ6_main_base 68.07,34.56 |q The Deep Tombs of Xul-Haj/Explore Xul-Haj |future
+step
+goto 80.88,22.28
+'Open _Wellspring Chamber_ |q The Deep Tombs of Xul-Haj/Explore Xul-Haj
+|tip Manually skip to the next step.
+step
+goto 85.96,27.72
+talk Jeetra |q The Deep Tombs of Xul-Haj/Talk to Jeetra |future
+|tip Manually skip to the next step.
+step
+goto 83.51,35.09
+|tip Move first sacred stone to this square.
+'Move _Sacred Stones_ |q The Deep Tombs of Xul-Haj/Move the Sacred Stones |future
+|tip Manually skip to the next step.
+step
+goto 87.54,35.26
+|tip Move second sacred stone to this square.
+'Move _Sacred Stones_ |q The Deep Tombs of Xul-Haj/Move the Sacred Stones
+|tip Manually skip to the next step.
+step
+goto 83.16,48.07
+'Open _Cistern Chamber_ |q The Deep Tombs of Xul-Haj/Return to the Cistern Chamber
+|tip Manually skip to the next step.
+step
+goto 75.79,48.60
+'Enter _Flooded Cistern_ |q The Deep Tombs of Xul-Haj/Return to the Cistern Chamber
+|tip Manually skip to the next step.
+step
+goto 61.93,40.35
+'Enter _Cistern Platform_ |q The Deep Tombs of Xul-Haj/Return to the Cistern Chamber
+|tip Manually skip to the next step.
+step
+goto 60.18,38.42
+'Open _Wellspring Chamber_ |q The Deep Tombs of Xul-Haj/Return to the Cistern Chamber
+|tip Manually skip to the next step.
+step
+goto U48_UI_Maps_ZQ6_puzzle_02_base 17.78,44.07 |q The Deep Tombs of Xul-Haj/Return to the Cistern Chamber
+step
+goto 44.85,46.13
+|tip First block is to your right when you drop down.
+|tip Move first sacred stone to this square.
+'Move _Sacred Stone_ |q The Deep Tombs of Xul-Haj |future
+|tip Manually skip to the next step.
+step
+goto 45.36,34.28 |q The Deep Tombs of Xul-Haj/Move the Sacred Stones |future |tip Move first sacred stone to this direction after unlocking first gate.
+step
+goto 57.22,40.46
+|tip Move first sacred stone to this square.
+'Move _Sacred Stone_ |q The Deep Tombs of Xul-Haj/Move the Sacred Stones
+|tip Manually skip to the next step.
+step
+goto 45.10,61.60 |q The Deep Tombs of Xul-Haj/Move the Sacred Stones
+step
+goto 70.36,48.71
+|tip Move second sacred stone to this square.
+'Move _Sacred Stone_ |q The Deep Tombs of Xul-Haj/Move the Sacred Stones
+|tip Manually skip to the next step.
+step
+goto 66.24,35.82 |q The Deep Tombs of Xul-Haj/Search for Darien |tip go upstairs.
+step
+goto 84.54,34.79 |q The Deep Tombs of Xul-Haj/Search for Darien
+step
+goto 84.54,65.72
+'Open _Cistern Chamber_ |q The Deep Tombs of Xul-Haj/Search for Darien
+|tip Manually skip to the next step.
+step
+goto U48_UI_Maps_ZQ6_main_base 73.33,35.79
+'Enter _Flooded Cistern_ |q The Deep Tombs of Xul-Haj/Search for Darien
+|tip Manually skip to the next step.
+step
+goto 52.81,47.37
+'Open _Outer Burial Chamber_ |q The Deep Tombs of Xul-Haj/Search for Darien |future
+|tip Manually skip to the next step.
+step
+goto U48_UI_Maps_ZQ6_dead_base 42.55,46.86
+|tip Kill the Worm Cult.
+talk Darien Gautier |q The Deep Tombs of Xul-Haj/Talk to Darien |future
+step
+goto 43.45,55.12 |q The Deep Tombs of Xul-Haj/Find Vanus Galerion
+step
+goto 30.88,54.76 |q The Deep Tombs of Xul-Haj/Find Vanus Galerion
+step
+goto 30.70,45.78 |q The Deep Tombs of Xul-Haj/Find Vanus Galerion
+step
+goto 19.03,59.07
+'Open _Xul-Haj Funerary Temple_ |q The Deep Tombs of Xul-Haj/Find Vanus Galerion
+|tip Manually skip to the next step.
+step
+goto U48_UI_Maps_ZQ6_ritual_base 49.60,52.78
+kill Worm Cultists
+kill Soul Shriven Behemoth |q The Deep Tombs of Xul-Haj/Stop the Ritual |future
+step
+goto 49.76,54.05
+'Destroy _Shackle_ |q The Deep Tombs of Xul-Haj/Destroy the Shackle
+step
+goto 47.85,53.26
+|tip Watch the dialogue.
+'Use _Solstice_ |q The Deep Tombs of Xul-Haj/Exit Xul-Haj |future
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 79.95,36.21
+talk Ukka-Naza |q The Deep Tombs of Xul-Haj/Talk to Ukka-Naza |future
+step
+goto 79.94,36.24
+talk Vanus Galerion |q The Deep Tombs of Xul-Haj/Talk to Vanus Galerion
+step
+goto 82.55,33.97 |q The Deep Tombs of Xul-Haj/Go to the Mor Naril Fellowship Camp |tip Drop down.
+step
+goto 84.14,36.17
+talk Prince Azah
+turnin The Deep Tombs of Xul-Haj
+accept The Gates of Mor Naril
+step
+goto 81.97,39.94
+talk Razum-dar |q The Gates of Mor Naril/Talk to Razum-dar |future
+step
+goto 79.99,40.60
+'Examine _Mannimarco's Directive_ |lorebook Mannimarco's Directive/3/57/20
+step
+goto 78.68,41.37 |q The Gates of Mor Naril/Investigate the Soul Flayer
+step
+goto 78.69,41.82
+|tip Go upstairs.
+'Search _Worm Cultist_ |lorebook Acolyte's Report/3/57/21
+step
+goto 78.72,41.79
+talk Razum-dar |q The Gates of Mor Naril/Talk to Razum-dar
+step
+goto 84.34,36.95 |q The Gates of Mor Naril/Return to Mor Naril Fellowship Camp
+step
+goto 84.06,36.07
+talk Jeetra |q The Gates of Mor Naril/Talk to Jeetra |future
+step
+goto 75.90,42.34 |q The Gates of Mor Naril/Go to Basking-Stone Refuge
+step
+goto 76.96,46.15 |q The Gates of Mor Naril/Go to Basking-Stone Refuge
+step
+goto 74.25,46.66
+'Enter _Basking-Stone Refuge_ |q The Gates of Mor Naril/Go to Basking-Stone Refuge
+step
+goto U48_CG7_RefugeeCave_Int 56.62,73.13
+|tip Follow the path down.
+|tip Watch the dialogue.
+talk Elder Tso-Nassa |q The Gates of Mor Naril/Talk to Elder Tso-Nassa
+step
+'Open _Solstice_ Map
+'Travel to _Grand Juncture Pass_ |q The Gates of Mor Naril/Enter the Sea and Sword Lodge |future
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 62.02,51.78 |q The Gates of Mor Naril/Enter the Sea and Sword Lodge |future
+step
+goto 61.48,50.53
+'Open _Sea and Sword Lodge_ |q The Gates of Mor Naril/Enter the Sea and Sword Lodge
+|tip Manually skip to the next step.
+step
+goto u48_ssl_delve_base_1 72.05,68.87 |q The Gates of Mor Naril/Find the Library
+step
+goto 51.74,70.70 |q The Gates of Mor Naril/Find a Key |future
+step
+goto 51.26,61.42 |q The Gates of Mor Naril/Find a Key
+step
+goto 61.64,61.75
+'Take _Library Key_ |q The Gates of Mor Naril/Find a Key
+step
+goto 50.86,61.49 |q The Gates of Mor Naril/Enter the Library
+step
+goto 54.44,76.00
+'Open _Lodge Library_ |q The Gates of Mor Naril/Enter the Library
+step
+goto 53.89,88.16 |q The Gates of Mor Naril/Talk to Librarian Tindensea
+step
+goto 51.92,82.43
+|tip Go downstairs.
+talk Librarian Tindensea |q The Gates of Mor Naril/Talk to Librarian Tindensea
+step
+goto 53.09,81.18
+|tip Watch the dialogue.
+'Examine _Chronicles of Kinlord Orlemar_ |lorebook Chronicles of Kinlord Orlemar, Part IV/3/57/23
+step
+goto 53.16,84.07
+'Examine _Guardians of Mor Naril_ |lorebook The Guardians of Mor Naril/3/57/22
+step
+goto 51.30,82.72
+talk Jeetra |q The Gates of Mor Naril/Talk to Jeetra
+step
+'Open _Solstice_ Map
+'Travel to _Caterwaul Cove_ |q The Gates of Mor Naril/Go to Vaedinhill Manor
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 64.44,42.11 |q The Gates of Mor Naril/Go to Vaedinhill Manor
+step
+goto 65.07,43.07 |q The Gates of Mor Naril/Go to Vaedinhill Manor
+step
+goto 64.23,43.22
+talk Jeetra |q The Gates of Mor Naril/Talk to Jeetra |future
+|tip Manually skip to the next step.
+step
+goto 63.69,43.23 |q The Gates of Mor Naril/Locate Vaedinhill Vault |future
+step
+goto 63.38,42.99
+'Open _Vaedinhill Vault_ |q The Gates of Mor Naril/Locate Vaedinhill Vault |future
+|tip Manually skip to the next step.
+step
+goto U48_UI_Maps_ZQ7_villacave 29.75,60.98 |q The Gates of Mor Naril/Locate Vaedinhill Vault
+step
+goto 45.45,38.92 |q The Gates of Mor Naril/Locate Vaedinhill Vault
+step
+goto 49.51,15.59 |q The Gates of Mor Naril/Locate Vaedinhill Vault
+step
+goto 82.96,31.55
+'Activate _Warrior_ |q The Gates of Mor Naril/Open the Vault |future
+'Activate _Scholar_ |q The Gates of Mor Naril/Open the Vault |future
+'Activate _Ruler_ |q The Gates of Mor Naril/Open the Vault |future
+step
+goto 82.47,35.18
+'Open _Vaedinhill Vault_ |q The Gates of Mor Naril/Enter Vaedinhill Vault
+|tip Manually skip to the next step.
+step
+goto 81.03,51.28
+'Examine _Kinlord Orlemar's Notes_ |lorebook Kinlord Orlemar's Notes/3/57/24
+step
+goto 81.38,58.820
+'Take _Eyes of the Colossal_ |q The Gates of Mor Naril/Take the Eyes of the Colossal
+step
+goto 79.79,55.30
+talk Jeetra |q The Gates of Mor Naril/Talk to Jeetra
+step
+'Open _Solstice_ Map
+'Travel to _Mor Naril Camp_ |q The Gates of Mor Naril/Return to the Mor Naril Fellowship Camp
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 84.46,35.65 |q The Gates of Mor Naril/Talk to Elder Tso-Nassa |future
+step
+goto 84.51,36.67 |q The Gates of Mor Naril/Talk to Elder Tso-Nassa |future
+step
+goto 84.85,36.32
+talk Elder Tso-Nassa |q The Gates of Mor Naril/Talk to Elder Tso-Nassa
+step
+goto 84.83,36.36
+talk Prince Azah
+turnin The Gates of Mor Naril
+accept The Final Dark
+step
+goto 84.85,36.45
+talk Skordo the Knife |q The Final Dark/Talk to Skordo the Knife
+step
+goto 84.78,36.46
+talk Walks-in-Ash
+talk Vanus Galerion |q The Final Dark/Talk to Vanus Galerion
+step
+goto 84.63,36.46
+talk Jeetra |q The Final Dark/Talk to Jeetra |future
+|tip Manually skip to the next step.
+step
+goto 84.64,36.22
+talk Darien Gautier
+talk Razum-dar |q The Final Dark/Talk to Razum-dar |future
+|tip Manually skip to the next step.
+step
+goto 84.07,40.98
+'Climb _Mor Naril_ |q The Final Dark/Enter Mor Naril |future
+|tip Manually skip to the next step.
+step
+goto U48_UI_Maps_ZQ8_exterior_fort 89.65,21.00
+talk Darien Gautier |q The Final Dark/Talk to Darien Gautier |future
+step
+goto 71.50,20.52 |q The Final Dark/Reach the Colossal
+step
+goto 78.03,24.16
+|tip Go upstairs.
+talk Elder Tso-Nassa |q The Final Dark/Talk to Elder Tso-Nassa
+step
+goto 78.64,23.29
+'Place _Eyes of the Colossal_ |q The Final Dark/Place the Eyes of the Colossal
+step
+goto 78.64,23.29
+'Attune _Voskrona Colossal_ |q The Final Dark/Take Control of the Voskrona Colossal
+step
+goto 91.78,30.01 |q The Final Dark/Destroy the Soul Flayers |tip Destroy everything in your way.
+step
+goto 89.00,41.52 |q The Final Dark/Destroy the Soul Flayers |tip Destroy everything in your way.
+step
+goto 71.35,55.92
+'Destroy _Gate_ |q The Final Dark/Destroy the Soul Flayers |tip Destroy everything in your way.
+step
+goto 71.35,55.92 |q The Final Dark/Clear the Courtyard
+step
+goto 60.17,71.28 |q The Final Dark/Clear the Courtyard
+step
+goto 55.59,64.31 |q The Final Dark/Clear the Courtyard |tip go upstairs.
+step
+goto 61.13,60.17 |q The Final Dark/Clear the Courtyard
+step
+goto 50.75,33.24 |q The Final Dark/Clear the Courtyard
+step
+goto 54.59,53.16
+talk Prince Azah |q The Final Dark/Talk to Prince Azah |future
+step
+goto 54.90,54.98
+|tip Pick your companion.
+talk Razum-dar |q The Final Dark/Choose an Ally
+talk Skordo the Knife |q The Final Dark/Choose an Ally
+talk Walks-in-Ash |q The Final Dark/Choose an Ally
+step
+goto 53.74,49.49
+'Open _Mor Naril Gardens_ |q The Final Dark/Search Mor Naril
+|tip Manually skip to the next step.
+step
+goto 57.03,38.28
+'Place _Eyes of the Colossal_ |q The Final Dark/Place the Eyes of the Colossal |future
+step
+goto 57.03,38.28
+'Attune _Voskrona Colossal_ |q The Final Dark/Take Control of the Voskrona Colossal
+step
+goto 61.30,30.01 |q The Final Dark/Destroy the Soul Flayers |tip Destroy everything in your way.
+step
+goto 54.63,24.96 |q The Final Dark/Destroy the Soul Flayers |tip Destroy everything in your way.
+step
+goto 61.30,30.01 |q The Final Dark/Talk to Prince Azah
+step
+goto 44.79,29.01
+talk Prince Azah |q The Final Dark/Talk to Prince Azah
+step
+goto 42.49,32.17
+'Open _Mor Naril Priory_ |q The Final Dark/Find Vanus Galerion
+|tip Manually skip to the next step.
+step
+goto U48_UI_Maps_ZQ8_interior_01 45.45,50.94 |q The Final Dark/Find Vanus Galerion
+step
+goto 41.55,22.82 |q The Final Dark/Find Vanus Galerion
+step
+goto U48_UI_Maps_ZQ8_interior_02 21.18,23.11 |q The Final Dark/Find Vanus Galerion
+step
+goto 23.06,48.92 |q The Final Dark/Find Vanus Galerion
+step
+goto 39.19,48.72 |q The Final Dark/Find Vanus Galerion
+step
+goto 39.00,27.20 |q The Final Dark/Find Vanus Galerion
+step
+goto U48_UI_Maps_ZQ8_interior_03 53.66,27.44 |q The Final Dark/Find Vanus Galerion
+step
+goto 53.37,34.80
+'Open _Mor Naril Priory_ |q The Final Dark/Find Vanus Galerion
+|tip Manually skip to the next step.
+step
+goto 54.48,48.91
+talk Vanus Galerion |q The Final Dark/Talk to Vanus Galerion |future
+step
+goto 54.44,48.62
+kill Worm Cult Forces |q The Final Dark/Defend Vanus Galerion
+step
+goto 54.10,50.07
+'Take _Darien's Light_ |q The Final Dark/Take the Light of Meridia
+step
+goto 36.74,49.44
+'Open _Shackle Courtyard_ |q The Final Dark/Find Your Allies
+step
+goto U48_UI_Maps_ZQ8_exterior_fort 15.92,65.30
+kill Cultists
+kill Andruth the Shadow-Wing |q The Final Dark/Defeat the Titan
+step
+goto 20.19,61.39
+talk Darien Gautier |q The Final Dark/Talk to Darien Gautier
+step
+goto 19.56,61.26
+'Use _Light of Meridia_ |q The Final Dark/Use the Light of Meridia
+step
+goto 15.42,65.59
+'Enter _Portal to the Wraithforge_ |q The Final Dark/Reach the Wraithforge
+step
+goto U48_UI_Maps_ZQ8_exterior_platf 64.24,42.02 |q The Final Dark/Stop Mannimarco
+step
+goto 60.27,78.95 |q The Final Dark/Stop Mannimarco
+step
+goto 38.76,44.74
+kill Mannimarco |q The Final Dark/Stop Mannimarco
+step
+goto 38.30,58.23
+|tip Climb hill get in front of colossal.
+'Place _Eyes of the Colossal_ |q The Final Dark/Place the Eyes of the Colossal |future
+step
+goto 38.30,58.23
+'Attune _Voskrona Colossal_ |q The Final Dark/Take Control of the Voskrona Colossal
+step
+goto 38.15,48.60
+kill Krahnoviir |q The Final Dark/Defeat Krahnoviir
+step
+goto 38.51,36.97
+'Destroy _Altar_ |q The Final Dark/Destroy the Altar
+step
+goto 38.76,44.74
+kill Mannimarco |q The Final Dark/Defeat Mannimarco
+step
+goto 38.65,46.03
+|tip Watch the dialogue.
+|tip Stand in Green Circle Press X.
+'Use _Glaive of Meridia_ |q The Final Dark/Use Darien's Power on Mannimarco
+step
+goto 36.36,47.96
+|tip Watch the dialogue.
+'Open _Portal to Sunport_ |q The Final Dark/Escape the Wraithforge |future
+|tip Manually skip to the next step.
+step
+goto u46_Sunport_base 74.20,51.78
+'Open _Vinutilmo Palace_ |q The Final Dark/Return to the Palace |future
+step
+goto 76.09,50.96
+talk Regent Karinwe |q The Final Dark/Talk to Regent Karinwe
+step
+goto 76.12,51.00
+talk Prince Azah
+turnin The Final Dark
+step
+goto 75.69,51.40
+'Open _Palace District_ |q The Golden Knight |future
+|tip Manually skip to the next step.
+step
+goto 70.16,55.03
+talk Darien Gautier
+accept The Golden Knight
+step
+goto 65.67,49.72
+'Open _Central Square_ |q The Golden Knight/Investigate Gristmung Hold
+|tip Manually skip to the next step.
+step
+goto 58.27,49.95
+'Use _Sunport_
+'Travel to _Gristmung Hold Camp_ |q The Golden Knight/Investigate Gristmung Hold
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 69.92,56.17 |q The Golden Knight/Investigate Gristmung Hold
+step
+goto 68.35,55.07 |q The Golden Knight/Investigate Gristmung Hold
+step
+goto 68.52,54.02 |q The Golden Knight/Investigate Gristmung Hold
+step
+goto 67.55,53.43
+'Climb _Gristmung Hold_ |q The Golden Knight/Investigate Gristmung Hold
+|tip Manually skip to the next step.
+step
+goto U48_ZQ4_GristmungFortress_ext 14.37,36.94 |q The Golden Knight/Investigate Gristmung Hold |tip Go upstairs.
+step
+goto 47.27,25.64 |q The Golden Knight/Investigate Gristmung Hold
+step
+goto 21.86,80.63 |q The Golden Knight/Investigate Gristmung Hold
+step
+goto 56.86,79.31 |q The Golden Knight/Investigate Gristmung Hold
+step
+goto 74.84,75.13
+'Open _Gristmung Hold Central Keep_ |q The Golden Knight/Investigate Gristmung Hold
+|tip Manually skip to the next step.
+step
+goto U48_ZQ4_Gristmung_int01 28.53,77.30 |q The Golden Knight |future
+step
+goto 22.12,84.97
+'Examine _Missive to Mor Naril_ |lorebook Missive to Mor Naril/3/57/25
+step
+goto 29.43,65.46
+'Use _Echo Gem_ |q The Golden Knight/Search the Library
+step
+|tip Watch the dialogue.
+talk Darien Gautier |q The Golden Knight/Talk to Darien Gautier |future
+step
+'Open _Solstice_ Map
+'Travel to _Shor's Stand_ |q The Golden Knight/Meet Darien at Broken Light Temple
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 40.11,44.39 |q The Golden Knight/Meet Darien at Broken Light Temple
+step
+goto 39.79,42.45
+talk Acolyte Duria
+accept Mystery of the Broken Temple
+step
+goto 40.70,40.70
+talk Darien Gautier |q The Golden Knight/Talk to Darien
+step
+goto 40.74,40.22
+talk High Priest Eraamine |q Mystery of the Broken Temple/Talk to High Priest Eraamine |future
+step
+goto 42.37,39.29
+'Search _Rubble Pile_ |q Mystery of the Broken Temple/Search Rubble for Lucent Shard
+step
+goto 42.82,39.08
+talk High Priest Eraamine |q Mystery of the Broken Temple/Talk to High Priest Eraamine
+step
+goto 42.56,39.49
+'Use _Large Rubble Pile_ |q Mystery of the Broken Temple/Use the Rod to Collect Rubble
+step
+goto 42.29,39.28
+'Use _Walkway Gap_ |q Mystery of the Broken Temple/Use the Rod to Place Rubble
+step
+goto 41.82,38.83
+'Open _Broken Light Temple_ |q Mystery of the Broken Temple/Enter Broken Light Temple |future
+|tip Manually skip to the next step.
+step
+goto u46_brokenlight_int1_base 45.04,75.19
+|tip Watch the dialogue.
+'Examine _Our Final Act_ |lorebook Our Final Act/3/55/13
+step
+goto 46.79,70.00
+|tip Start in Purity Wing.
+talk High Priest Eraamine |q Mystery of the Broken Temple/Talk to Eraamine |future
+step
+goto 39.39,72.98
+'Open _Purity Wing_ |q Mystery of the Broken Temple/Enter the Purity Wing |future
+|tip Manually skip to the next step.
+step
+goto u46_brokenlight_int2_base 22.97,71.32
+'Use _Large Rubble Pile_ |q Mystery of the Broken Temple/Search for the Ritual Site |future
+|tip Manually skip to the next step.
+step
+goto 30.64,76.57 |q Mystery of the Broken Temple/Search for the Ritual Site
+step
+goto 17.25,75.94 |q Mystery of the Broken Temple/Search for the Ritual Site |tip Go up the ramp.
+step
+goto 22.68,69.82
+'Use _Walkway Gap_ |q Mystery of the Broken Temple/Search for the Ritual Site
+|tip Manually skip to the next step.
+step
+goto 39.53,73.11
+|tip Watch the dialogue.
+talk Tomarion |q Mystery of the Broken Temple/Talk to Tomarion |future
+step
+goto 37.39,64.17 |q Mystery of the Broken Temple/Search for the Ritual Site
+step
+goto 25.97,59.84
+'Open _Path of Catharsis_ |q Mystery of the Broken Temple/Search for the Ritual Site
+|tip Manually skip to the next step.
+step
+goto 18.75,54.76 |q Mystery of the Broken Temple/Search for the Ritual Site
+step
+goto u46_brokenlight_int3_base 32.29,49.87
+'Use _Large Rubble Pile_ |q Mystery of the Broken Temple/Search for the Ritual Site
+|tip Manually skip to the next step.
+step
+goto u46_brokenlight_int2_base 26.02,52.45
+'Use _Walkway Gap_ |q Mystery of the Broken Temple/Search for the Ritual Site
+|tip Manually skip to the next step.
+step
+goto u46_brokenlight_int3_base 31.86,57.69 |q Mystery of the Broken Temple/Search for the Ritual Site
+step
+goto 31.95,40.02 |q Mystery of the Broken Temple/Search for the Ritual Site
+step
+goto 76.55,39.93 |q Mystery of the Broken Temple/Search for the Ritual Site
+step
+goto 76.64,58.11 |q Mystery of the Broken Temple/Search for the Ritual Site
+step
+goto 63.30,58.54
+'Use _Large Rubble Pile_ |q Mystery of the Broken Temple/Search for the Ritual Site
+|tip Manually skip to the next step.
+step
+goto 62.11,71.71 |q Mystery of the Broken Temple/Search for the Ritual Site
+step
+goto u46_brokenlight_int2_base 26.14,53.72 |q Mystery of the Broken Temple/Search for the Ritual Site |tip Drop down.
+step
+goto 25.97,40.05
+'Use _Walkway Gap_ |q Mystery of the Broken Temple/Search for the Ritual Site
+|tip Manually skip to the next step.
+step
+goto 25.97,29.37
+'Open _Purity Ritual Site_ |q Mystery of the Broken Temple/Search for the Ritual Site
+|tip Manually skip to the next step.
+step
+goto 22.79,15.46
+talk Tomarion |q Mystery of the Broken Temple/Talk to High Priest Eraamine |future
+|tip Manually skip to the next step.
+step
+goto 28.97,21.06
+talk High Priest Eraamine |q Mystery of the Broken Temple/Talk to High Priest Eraamine
+step
+goto 26.60,21.29
+.'Activate _Central Ritual Tile_
+.'_North Title_
+.'_South Tile_
+.'_West Tile_ |q Mystery of the Broken Temple/Complete the Ritual
+step
+goto 25.91,14.25
+'Use _Portal to the Great Hall_ |q Mystery of the Broken Temple/Return to the Great Hall
+step
+goto u46_brokenlight_int1_base 54.50,72.75
+'Open _Dawn Wing_ |q Mystery of the Broken Temple/Enter the Dawn Wing
+step
+goto 60.42,73.92
+|tip Watch the dialogue.
+'Examine _Gleaming Amulet of Faith_ |q Mystery of the Broken Temple/Search for Information on the Dawn Wing |future
+step
+goto 60.07,73.86
+talk Sentinel Carisea |q Mystery of the Broken Temple/Talk to Carisea
+step
+goto 65.55,79.11 |q Mystery of the Broken Temple/Use a Rod to Make a Path Across the Bridge
+step
+goto 64.45,72.94
+'Use _Large Rubble Pile_ |q Mystery of the Broken Temple/Use a Rod to Make a Path Across the Bridge
+|tip Manually skip to the next step.
+step
+goto 62.15,73.11
+|tip Go upstairs.
+'Place _Walkway Gap_ |q Mystery of the Broken Temple/Use a Rod to Make a Path Across the Bridge
+|tip Manually skip to the next step.
+step
+goto 69.71,73.23 |q Mystery of the Broken Temple/Search For the Ritual Site |future
+step
+goto 78.30,69.59 |q Mystery of the Broken Temple/Search For the Ritual Site |future
+step
+goto 77.38,62.09 |q Mystery of the Broken Temple/Search For the Ritual Site |future
+step
+goto 65.26,57.47 |q Mystery of the Broken Temple/Search For the Ritual Site
+step
+goto 67.51,46.86
+'Use _Large Rubble Pile_ |q Mystery of the Broken Temple/Search For the Ritual Site
+|tip Manually skip to the next step.
+step
+goto 65.26,57.47 |q Mystery of the Broken Temple/Search For the Ritual Site
+step
+goto 77.67,64.22 |q Mystery of the Broken Temple/Search For the Ritual Site
+step
+goto 77.55,61.68
+'Place _Walkway Gap_ |q Mystery of the Broken Temple/Search For the Ritual Site
+|tip Manually skip to the next step.
+step
+goto 89.61,58.40 |q Mystery of the Broken Temple/Search For the Ritual Site
+step
+goto 87.25,44.32
+'Use _Large Rubble Pile_ |q Mystery of the Broken Temple/Search For the Ritual Site
+|tip Manually skip to the next step.
+step
+goto 89.61,58.40 |q Mystery of the Broken Temple/Search For the Ritual Site
+step
+goto 83.70,58.45 |q Mystery of the Broken Temple/Search For the Ritual Site
+step
+goto 77.50,64.45 |q Mystery of the Broken Temple/Search For the Ritual Site
+step
+goto 77.61,36.99
+'Place _Walkway Gap_ |q Mystery of the Broken Temple/Search For the Ritual Site
+|tip Manually skip to the next step.
+step
+goto 77.73,28.45
+talk Sentinel Carisea |q Mystery of the Broken Temple/Talk To Sentinel Carisea |future
+step
+goto 77.67,26.66
+'Open _Dawn Ritual Site_ |q Mystery of the Broken Temple/Enter the Ritual Site
+step
+goto 77.61,18.70
+kill Sentinel Carisea |q Mystery of the Broken Temple/Defeat Sentinel Carisea
+step
+goto 77.84,21.00
+talk High Priest Eraamine |q Mystery of the Broken Temple/Talk to High Priest Eraamine
+step
+goto 77.50,18.18
+.'Activate _Ritual Panel_
+.'_West Tile_
+.'_East Tile_
+.'_North Tile_ |q Mystery of the Broken Temple/Complete the Ritual
+step
+goto 77.50,11.54
+'Use _Portal to the Great Hall_ |q Mystery of the Broken Temple/Return to the Great Hall
+step
+goto u46_brokenlight_int1_base 47.79,71.37
+talk High Priest Eraamine |q Mystery of the Broken Temple/Talk to High Priest Eraamine
+step
+goto 47.02,68.63
+'Open _Temple Cynosure_ |q Mystery of the Broken Temple/Enter the Cynosure |future
+|tip Manually skip to the next step.
+step
+goto u46_brokenlight_int5_base 56.25,67.31
+'Use _Large Rubble Pile_ |q Mystery of the Broken Temple/Find a Way to Cross the Bridge |future
+|tip Manually skip to the next step.
+step
+goto 52.40,62.50
+'Place _Walkway Gap_ |q Mystery of the Broken Temple/Find a Way to Cross the Bridge |future
+|tip Manually skip to the next step.
+step
+goto 52.08,28.04
+|tip Watch the dialogue.
+kill Sentinel Tomarion |q Mystery of the Broken Temple/Defeat Sentinel Tomarion |future
+step
+goto 44.87,22.76
+'Destroy _Cynosure Orb_ |q Mystery of the Broken Temple/.*Use the Rod to Destroy the Cynosure Orbs.* |count 1
+step
+goto 59.46,21.79
+'Destroy _Cynosure Orb_ |q Mystery of the Broken Temple/.*Use the Rod to Destroy the Cynosure Orbs.* |count 2
+step
+goto 45.83,36.38
+'Destroy _Cynosure Orb_ |q Mystery of the Broken Temple/.*Use the Rod to Destroy the Cynosure Orbs.* |count 3
+step
+goto 58.97,36.38
+'Destroy _Cynosure Orb_ |q Mystery of the Broken Temple/.*Use the Rod to Destroy the Cynosure Orbs.* |count 4
+step
+goto 51.76,20.35
+'Destroy _Cynosure Orb_ |q Mystery of the Broken Temple/.*Use the Rod to Destroy the Cynosure Orbs.* |count 5
+step
+goto 53.04,77.88
+'Open _Temple Great Hall_ |q Mystery of the Broken Temple/Meet Eraamine in the Great Hall |future
+|tip Manually skip to the next step.
+step
+goto u46_brokenlight_int1_base 45.65,76.18
+talk High Priest Eraamine
+turnin Mystery of the Broken Temple
+step
+goto 47.02,68.63
+'Open _Temple Cynosure_ |q The Golden Knight/Investigate the Temple Cynosure |future
+|tip Manually skip to the next step.
+step
+goto u46_brokenlight_int5_base 52.08,30.45
+|tip Watch the dialogue.
+talk Lortharil the Radiant |q The Golden Knight/Talk to Lortharil the Radiant |future
+step
+goto 52.08,30.45
+|tip Watch the dialogue.
+talk Darien Guatier |q The Golden Knight/Save Darien Gautier |future
+step
+goto 52.08,30.45
+|tip Watch the dialogue.
+'Stop _Darien Guatier_ |q The Golden Knight/Stop Darien
+step
+'Open _Solstice_ Map
+'Travel to _Sunport_ |q The Golden Knight/Return to Sunport
+|tip Manually skip to the next step.
+step
+goto u46_Sunport_base 61.34,49.56
+'Open _Palace District_ |q The Golden Knight/Return to Sunport
+|tip Manually skip to the next step.
+step
+goto 80.33,56.10
+talk Vanus Galerion |q The Golden Knight/Talk to Vanus |future
+step
+goto 65.67,49.70
+'Open _Central Square_ |q The Golden Knight/Talk to Darien
+|tip Manually skip to the next step.
+step
+goto 57.96,50.07
+'Use _Sunport_
+'Travel to _Sunport Docks_ |q The Golden Knight/Talk to Darien
+|tip Manually skip to the next step.
+step
+goto 5.10,63.27 |q The Golden Knight/Talk to Darien
+step
+goto u48_overland_base 46.61,50.55
+talk Darien
+turnin The Golden Knight
+step
+'Congraulations _All Main Quest Only Guides Complete._
 step
 ]])
