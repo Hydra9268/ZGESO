@@ -48525,7 +48525,7 @@ goto 58.80,70.53
 |tip Manually skip to the next step.
 step
 goto u48_overland_base 53.59,55.01
-'Discover _Shor's Stand_ Wayshrine_ |q The Gift of Death/Go to Corelanya Crypt
+'Discover _Rampart Camp_ Wayshrine |q The Gift of Death/Go to Corelanya Crypt
 |tip Manually skip to the next step.
 step
 goto 53.59,55.01
@@ -48727,7 +48727,8 @@ goto 76.11,51.80
 'Examine _Gabrielle's Research Notes_ |lorebook Gabrielle's Research Notes/3/55/83
 step
 goto 76.23,51.64
-talk Darien Gautier |q Crossing the Wall/Talk to Darien Gautier
+talk Darien Gautier |q Crossing the Wall |future
+|tip Manually skip to the next step.
 step
 goto 76.07,51.62
 'Open _Vinutilmo Palace_ |q Crossing the Wall/Investigate the North and South Wall
@@ -49003,7 +49004,7 @@ kill Dark Adept Kor-Zakul |q The Worm Turns/Defeat the Dark Adept
 step
 goto 55.40,30.25
 |tip Watch the dialogue.
-'Take _Light of Meridia_ |q The Worm Turns/Take the Light of Meridia
+'Take _Light of Meridia_ |q The Worm Turns/Take the Light of Meridia |future
 step
 goto 56.32,29.32
 'Use _Light of Meridia_ |q The Worm Turns/Use the Light of Meridia
@@ -49035,12 +49036,12 @@ goto 75.17,50.08
 'Open _Abandoned Building_ |q Hunt for the Great Mage/Find the Hidden Cache |future
 |tip Manually skip to the next step.
 step
-goto 75.16,50.26
+goto 75.09,50.27
 |tip Totem in the corner bottom tile needs to be Red.
 'Activate _Decorative Wall Tile_ |q Hunt for the Great Mage/Find the Hidden Cache
 |tip Manually skip to the next step.
 step
-goto 75.09,50.27
+goto 75.16,50.26
 |tip Totem in the corner middle tile needs to be white.
 'Activate _Decorative Wall Tile_ |q Hunt for the Great Mage/Find the Hidden Cache
 |tip Manually skip to the next step.
@@ -49091,9 +49092,9 @@ step
 'Travel to _Xor-Hist_ |q Hunt for the Great Mage/Find the Soul Flayer Harvest Sites
 |tip Manully skip to the next step.
 step
-goto u48_overland_base 79.53,60.56 |q Hunt for the Great Mage/Find the Soul Flayer Harvest Sites
+goto u48_overland_base 79.37,53.84 |q Hunt for the Great Mage/Find the Soul Flayer Harvest Sites
 step
-goto 76.93,62.67 |q Hunt for the Great Mage/Find the Soul Flayer Harvest Sites
+goto 79.53,60.56 |q Hunt for the Great Mage/Find the Soul Flayer Harvest Sites
 step
 goto 76.93,62.67 |q Hunt for the Great Mage/Find the Soul Flayer Harvest Sites
 step
@@ -49227,7 +49228,7 @@ step
 goto U48_UI_Maps_ZQ6_main_base 68.07,34.56 |q The Deep Tombs of Xul-Haj/Explore Xul-Haj |future
 step
 goto 80.88,22.28
-'Open _Wellspring Chamber_ |q The Deep Tombs of Xul-Haj/Explore Xul-Haj
+'Open _Wellspring Chamber_ |q The Deep Tombs of Xul-Haj/Explore Xul-Haj |future
 |tip Manually skip to the next step.
 step
 goto 85.96,27.72
@@ -49249,18 +49250,16 @@ goto 83.16,48.07
 |tip Manually skip to the next step.
 step
 goto 75.79,48.60
-'Enter _Flooded Cistern_ |q The Deep Tombs of Xul-Haj/Return to the Cistern Chamber
-|tip Manually skip to the next step.
+'Enter _Flooded Cistern_ |q The Deep Tombs of Xul-Haj/Return to the Cistern Chamber |future
 step
 goto 61.93,40.35
-'Enter _Cistern Platform_ |q The Deep Tombs of Xul-Haj/Return to the Cistern Chamber
-|tip Manually skip to the next step.
+'Enter _Cistern Platform_ |q The Deep Tombs of Xul-Haj/Explore Xul-Haj
 step
 goto 60.18,38.42
-'Open _Wellspring Chamber_ |q The Deep Tombs of Xul-Haj/Return to the Cistern Chamber
+'Open _Wellspring Chamber_ |q The Deep Tombs of Xul-Haj/Reach the Wellspring
 |tip Manually skip to the next step.
 step
-goto U48_UI_Maps_ZQ6_puzzle_02_base 17.78,44.07 |q The Deep Tombs of Xul-Haj/Return to the Cistern Chamber
+goto U48_UI_Maps_ZQ6_puzzle_02_base 17.78,44.07 |q The Deep Tombs of Xul-Haj |future
 step
 goto 44.85,46.13
 |tip First block is to your right when you drop down.
@@ -49325,7 +49324,8 @@ goto 47.85,53.26
 |tip Manually skip to the next step.
 step
 goto u48_overland_base 79.95,36.21
-talk Ukka-Naza |q The Deep Tombs of Xul-Haj/Talk to Ukka-Naza |future
+talk Ukka-Raza |q The Deep Tombs of Xul-Haj/Talk to Ukka-Raza |future
+|tip Manually skip to the next step.
 step
 goto 79.94,36.24
 talk Vanus Galerion |q The Deep Tombs of Xul-Haj/Talk to Vanus Galerion
@@ -49343,19 +49343,21 @@ step
 goto 79.99,40.60
 'Examine _Mannimarco's Directive_ |lorebook Mannimarco's Directive/3/57/20
 step
-goto 78.68,41.37 |q The Gates of Mor Naril/Investigate the Soul Flayer
+goto 78.68,41.37 |q The Gates of Mor Naril/Investigate the Soul Flayer |future
 step
 goto 78.69,41.82
 |tip Go upstairs.
 'Search _Worm Cultist_ |lorebook Acolyte's Report/3/57/21
 step
 goto 78.72,41.79
-talk Razum-dar |q The Gates of Mor Naril/Talk to Razum-dar
+talk Razum-dar |q The Gates of Mor Naril/Talk to Razum-dar |future
 step
 goto 84.34,36.95 |q The Gates of Mor Naril/Return to Mor Naril Fellowship Camp
 step
 goto 84.06,36.07
 talk Jeetra |q The Gates of Mor Naril/Talk to Jeetra |future
+step
+goto 77.61,40.61 |q The Gates of Mor Naril/Go to Basking-Stone Refuge
 step
 goto 75.90,42.34 |q The Gates of Mor Naril/Go to Basking-Stone Refuge
 step
@@ -49376,10 +49378,10 @@ step
 goto u48_overland_base 62.02,51.78 |q The Gates of Mor Naril/Enter the Sea and Sword Lodge |future
 step
 goto 61.48,50.53
-'Open _Sea and Sword Lodge_ |q The Gates of Mor Naril/Enter the Sea and Sword Lodge
+'Open _Sea and Sword Lodge_ |q The Gates of Mor Naril/Enter the Sea and Sword Lodge |future
 |tip Manually skip to the next step.
 step
-goto u48_ssl_delve_base_1 72.05,68.87 |q The Gates of Mor Naril/Find the Library
+goto u48_ssl_delve_base_1 72.05,68.87 |q The Gates of Mor Naril/Find the Library |future
 step
 goto 51.74,70.70 |q The Gates of Mor Naril/Find a Key |future
 step
@@ -49446,7 +49448,7 @@ goto 81.03,51.28
 'Examine _Kinlord Orlemar's Notes_ |lorebook Kinlord Orlemar's Notes/3/57/24
 step
 goto 81.38,58.820
-'Take _Eyes of the Colossal_ |q The Gates of Mor Naril/Take the Eyes of the Colossal
+'Take _Eyes of the Colossal_ |q The Gates of Mor Naril/Take the Eyes of the Colossal |future
 step
 goto 79.79,55.30
 talk Jeetra |q The Gates of Mor Naril/Talk to Jeetra
@@ -49494,7 +49496,7 @@ goto 71.50,20.52 |q The Final Dark/Reach the Colossal
 step
 goto 78.03,24.16
 |tip Go upstairs.
-talk Elder Tso-Nassa |q The Final Dark/Talk to Elder Tso-Nassa
+talk Elder Tso-Nassa |q The Final Dark/Talk to Elder Tso-Nassa |future
 step
 goto 78.64,23.29
 'Place _Eyes of the Colossal_ |q The Final Dark/Place the Eyes of the Colossal
@@ -49542,7 +49544,9 @@ goto 61.30,30.01 |q The Final Dark/Destroy the Soul Flayers |tip Destroy everyth
 step
 goto 54.63,24.96 |q The Final Dark/Destroy the Soul Flayers |tip Destroy everything in your way.
 step
-goto 61.30,30.01 |q The Final Dark/Talk to Prince Azah
+goto 50.63,33.65 |q The Final Dark |future |tip Destroy everything in your way.
+step
+goto 61.30,30.01 |q The Final Dark/Talk to Prince Azah |future
 step
 goto 44.79,29.01
 talk Prince Azah |q The Final Dark/Talk to Prince Azah
@@ -49698,7 +49702,7 @@ talk Acolyte Duria
 accept Mystery of the Broken Temple
 step
 goto 40.70,40.70
-talk Darien Gautier |q The Golden Knight/Talk to Darien
+talk Darien Gautier |q The Golden Knight/Talk to Darien |future
 step
 goto 40.74,40.22
 talk High Priest Eraamine |q Mystery of the Broken Temple/Talk to High Priest Eraamine |future
