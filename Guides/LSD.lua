@@ -10376,7 +10376,7 @@ goto u48_overland_base 46.94,52.76
 step
 goto 50.30,55.75
 step
-goto 47.52,56.14
+goto 47.64,56.02
 'Use _Skyshard_
 |tip Manually skip to the next step.
 step
@@ -10386,11 +10386,11 @@ step
 step
 goto 54.52,63.63
 step
-goto 57.48,62.43
+goto 57.54,62.88
 step
 goto 56.42,61.95
 step
-goto 56.96,61.65
+goto 57.27,61.63
 'Use _Skyshard_
 |tip Manually skip to the next step.
 step
@@ -10402,7 +10402,7 @@ goto 34.07,68.65
 step
 goto 35.45,69.20
 step
-goto 35.18,69.35
+goto 35.02,69.54
 'Use _Skyshard_
 |tip Manually skip to the next step.
 step
@@ -10414,7 +10414,7 @@ goto 36.69,71.98
 step
 goto 41.91,72.67
 step
-goto 47.52,70.98
+goto 47.62,71.21
 'Enter _Vale of Revelry_
 |tip Manually skip to the next step.
 step
@@ -10422,7 +10422,7 @@ goto u46_base_SanguineHDLV 53.20,77.65
 step
 goto 69.44,58.07
 step
-goto 61.51,44.89
+goto 58.55,44.22
 step
 goto 56.92,63.13
 kill The Wine Sommelier
@@ -10488,11 +10488,11 @@ goto 95.48,45.41
 'Travel _Boat to Solstice_
 |tip Manually skip to the next step.
 step
-goto u48_overland_base 27.83,50.24
+goto u48_overland_base 27.46,49.98
 'Use _Skyshard_
 |tip Manually skip to the next step.
 step
-goto 27.61,45.72
+goto 27.21,45.34
 'Open _Carapace Caverns_
 |tip Manually skip to the next step.
 step
@@ -10543,7 +10543,7 @@ goto 41.21,40.38
 step
 goto 43.14,38.67
 step
-goto 42.33,36.72
+goto 42.28,36.14
 'Use _Skyshard_
 |tip Manually skip to the next step.
 step
