@@ -48156,7 +48156,7 @@ step
 goto 62.03,44.00 |q The Regent of Sunport/Go to Vinutilmo Palace
 step
 goto 58.04,50.16
-'Discover _Sunport_ Wasyrhine |q The Regent of Sunport/Go to Vinutilmo Palace
+'Discover _Sunport_ Waysrhine |q The Regent of Sunport/Go to Vinutilmo Palace
 |tip Manually skip to the next step.
 step
 goto 61.34,49.61
@@ -48850,9 +48850,11 @@ goto 55.00,73.61
 kill Maldrith Rebuker |q Crossing the Wall/Defeat the Maldrith |future
 step
 goto 60.00,73.45
+|tip Watch the dialogue.
 'Destroy _Ritual Altar_ |q Crossing the Wall/Destroy the Ritual Altar |future
 step
 goto 59.41,71.91
+|tip Watch the dialogue.
 talk Darien Gautier |q Crossing the Wall/Talk to Darien Gautier |future
 step
 'Open _Solstice_ Map
@@ -49032,7 +49034,7 @@ talk Baar-Jasa |q Hunt for the Great Mage/Talk to Baar-Jasa
 step
 goto 73.29,52.68 |q Hunt for the Great Mage/Go to the Abandoned Village
 step
-goto 75.17,50.08
+goto 74.86,49.86
 'Open _Abandoned Building_ |q Hunt for the Great Mage/Find the Hidden Cache |future
 |tip Manually skip to the next step.
 step
@@ -49426,7 +49428,7 @@ step
 goto 63.69,43.23 |q The Gates of Mor Naril/Locate Vaedinhill Vault |future
 step
 goto 63.38,42.99
-'Open _Vaedinhill Vault_ |q The Gates of Mor Naril/Locate Vaedinhill Vault |future
+'Open _Vaedinhill Cavern_ |q The Gates of Mor Naril/Locate Vaedinhill Vault |future
 |tip Manually skip to the next step.
 step
 goto U48_UI_Maps_ZQ7_villacave 29.75,60.98 |q The Gates of Mor Naril/Locate Vaedinhill Vault
@@ -49442,7 +49444,6 @@ goto 82.96,31.55
 step
 goto 82.47,35.18
 'Open _Vaedinhill Vault_ |q The Gates of Mor Naril/Enter Vaedinhill Vault
-|tip Manually skip to the next step.
 step
 goto 81.03,51.28
 'Examine _Kinlord Orlemar's Notes_ |lorebook Kinlord Orlemar's Notes/3/57/24
@@ -49509,7 +49510,8 @@ step
 goto 89.00,41.52 |q The Final Dark/Destroy the Soul Flayers |tip Destroy everything in your way.
 step
 goto 71.35,55.92
-'Destroy _Gate_ |q The Final Dark/Destroy the Soul Flayers |tip Destroy everything in your way.
+|tip Destroy everything in your way.
+'Destroy _Gate_ |q The Final Dark/Destroy the Soul Flayers
 step
 goto 71.35,55.92 |q The Final Dark/Clear the Courtyard
 step
@@ -49544,7 +49546,8 @@ goto 61.30,30.01 |q The Final Dark/Destroy the Soul Flayers |tip Destroy everyth
 step
 goto 54.63,24.96 |q The Final Dark/Destroy the Soul Flayers |tip Destroy everything in your way.
 step
-goto 50.63,33.65 |q The Final Dark |future |tip Destroy everything in your way.
+goto 50.63,33.65
+'Destroy _Soul Flayer_ |q The Final Dark/Destroy the Soul Flayers |future
 step
 goto 61.30,30.01 |q The Final Dark/Talk to Prince Azah |future
 step
@@ -49723,7 +49726,10 @@ goto 41.82,38.83
 'Open _Broken Light Temple_ |q Mystery of the Broken Temple/Enter Broken Light Temple |future
 |tip Manually skip to the next step.
 step
-goto u46_brokenlight_int1_base 45.04,75.19
+goto u46_brokenlight_int1_base 46.64,.70.31
+'Find _High Priest Eraamine_ |q Mystery of the Broken Temple/Find High Priest Eraamine
+step
+goto 45.04,75.19
 |tip Watch the dialogue.
 'Examine _Our Final Act_ |lorebook Our Final Act/3/55/13
 step
