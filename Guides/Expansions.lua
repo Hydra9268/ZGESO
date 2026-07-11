@@ -55650,7 +55650,8 @@ step
 goto 49.98,39.75
 |tip Watch the dialogue.
 'Enter _Binding Chain Portal_ |q Crossing the Wall/Enter Portal |future
-stepgoto 27.13,45.47
+step
+goto 27.13,45.47
 talk Loraviel
 accept The Skull of Gandelec
 step
@@ -55731,7 +55732,7 @@ goto 61.64,84.04
 'Open _Anchor Shrine Chamber_ |q Crossing the Wall/Find the Anchor Shrine |future
 |tip Manually skip to the next step.
 step
-u46_carapacecaverns_base 15.08,56.98 |q The Skull of Gandelec/Return to Loraviel
+goto u46_carapacecaverns_base 15.08,56.98 |q The Skull of Gandelec/Return to Loraviel
 step
 goto 11.09,52.33
 'Enter _Solstice_ |q The Skull of Gandelec/Return to Loraviel |future
@@ -56017,11 +56018,229 @@ goto 75.16,50.11
 'Open _Solstice_ |q Hunt for the Great Mage/Go to the Kaz-Neesak Mine
 |tip Manually skip to the next step.
 step
+goto 77.51,50.16
+talk Wuleen-Kur
+accept The Hermit in the Hills
+step
+goto 81.14,51.10
+step
+goto 80.91,50.41
+'Use _Skyshard_ |q Hunt for the Great Mage/Go to the Kaz-Neesak Mine
+|tip Manually skip to the next step.
+step
+goto 70.32,52.72 |q Hunt for the Great Mage/Go to the Kaz-Neesak Mine
+step
 goto 78.79,54.11
 'Discover _Xor-Hist_ Wayshrine |q Hunt for the Great Mage/Go to the Kaz-Neesak Mine
 |tip Manually skip to the next step.
 step
-goto 80.84,52.98 |q Hunt for the Great Mage/Go to the Kaz-Neesak Mine
+goto 79.61,55.07
+talk Mani-Kai
+accept Roots in Stone
+step
+goto 82.48,55.32 |q Roots in Stone/.*Light the Signal Pyres.* |count 1
+step
+goto 81.80,54.78
+'Ignite _Signal Pyre_ |q Roots in Stone/.*Light the Signal Pyres.* |count 1
+step
+goto 82.50,55.34 |q Roots in Stone/.*Light the Signal Pyres.*
+step
+goto 80.73,56.56 |q Roots in Stone/.*Light the Signal Pyres.* |tip Drop down.
+step
+goto 78.50,58.70 |q Roots in Stone/.*Light the Signal Pyres.*
+step
+goto 77.78,58.33
+'Ignite _Signal Pyre_ |q Roots in Stone/.*Light the Signal Pyres.* |count 2
+step
+goto 80.68,61.15 |q Roots in Stone/.*Light the Signal Pyres.*
+step
+goto 82.84,61.65 |q Roots in Stone/.*Light the Signal Pyres.*
+step
+goto 82.59,62.39
+'Ignite _Signal Pyre_ |q Roots in Stone/.*Light the Signal Pyres.* |count 3
+step
+goto 80.31,62.13 |q Roots in Stone/Go to Xor-Hist
+step
+goto 80.48,62.86 |q Roots in Stone/Go to Xor-Hist
+step
+goto 83.14,63.82
+'Use _Skyshard_ |q Roots in Stone/Go to Xor-Hist
+|tip Manually skip to the next step.
+step
+'Open _Solstice_
+'Travel to _Xor-Hist_ |q Roots in Stone/Go to Xor-Hist
+|tip Manually skip to the next step.
+step
+goto 79.66,54.43 |q Roots in Stone/Go to Xor-Hist
+step
+goto 79.21,59.68 |q Roots in Stone/Go to Xor-Hist
+step
+goto 80.21,59.34
+talk Xica-Ilan |q Roots in Stone/Talk to Xica-Ilan |future
+step
+goto 81.05,59.31 |q Roots in Stone/Enter Xor-Hist
+step
+goto 81.09,58.89
+talk Stone-Shaper Tozka |q Roots in Stone/Talk to Stone-Shaper Tozka |future
+step
+goto 81.29,59.05
+'Open _Xor-Hist Courtyard_ |q Roots in Stone/Enter the Hist Courtyard
+step
+goto 82.27,59.03
+talk Mani-Kai |q Roots in Stone/Talk to Mani-Kai
+step
+goto 82.32,59.03
+'Hang _Mani-Kai's Wind Chimes_ |q Roots in Stone/Hang Mani-Kai's Wind Chimes
+step
+goto 82.32,59.03
+talk Mani-Kai |q Roots in Stone/Talk to Mani-Kai
+step
+goto 82.34,59.03
+talk Stone-Shaper Tozka |q Roots in Stone/Talk to Stone-Shaper Tozka
+step
+goto 82.90,59.07
+'Open _Atak's First Root_ |q Roots in Stone/Enter Atak's First Root |future
+|tip Manually skip to the next step.
+step
+goto u48_xorhist 24.47,52.65
+'Examine _Fading Builder's Journal_ |lorebook Fading Builder's Journal I/3/57/2
+step
+goto 20.99,60.88 |q Roots in Stone |future
+step
+goto 29.95,61.51
+'Examine _Fading Builder's Journal II_ |lorebook Fading Builder's Journal II/3/57/3
+step
+goto 28.88,43.20
+'Examine _Fading Builder's Journal III_ |lorebook Fading Builder's Journal III/3/57/4
+step
+goto 38.08,44.53 |q Roots in Stone/Explore the Temple
+step
+goto 38.19,53.80 |q Roots in Stone/Explore the Temple
+step
+goto 55.65,53.43
+talk Mani-Kai |q Roots in Stone/Talk to Mani-Kai |future
+step
+goto 55.69,54.47
+talk Xica-Ilan |q Roots in Stone/Talk to Xica-Ilan
+step
+goto 53.54,40.27
+'Use _Grapple Point_ |q Roots in Stone/.*Release the Counterweights.*
+|tip Manually skip to the next step.
+step
+goto 64.44,39.15
+|tip Go up the steps.
+'Use _Counterweight_ |q Roots in Stone/.*Release the Counterweights.* |count 1
+step
+goto 56.84,18.84 |q Roots in Stone/.*Release the Counterweights.*
+step
+goto 65.63,13.09 |q Roots in Stone/.*Release the Counterweights.*
+step
+goto 71.41,19.10 |q Roots in Stone/.*Release the Counterweights.*
+step
+goto 80.20,27.18
+'Use _Grapple Point_ |q Roots in Stone/.*Release the Counterweights.*
+|tip Manually skip to the next step.
+step
+goto 82.42,29.03
+|tip Go upstairs.
+'Use _Counterweight_ |q Roots in Stone/.*Release the Counterweights.* |count 2
+step
+goto 71.12,31.07
+'Use _Grapple Point_ |q Roots in Stone/.*Release the Counterweights.*
+|tip Manually skip to the next step.
+step
+goto 53.13,36.78 |q Roots in Stone/.*Release the Counterweights.*
+step
+goto 54.62,48.87
+|tip Go downstairs.
+'Use _Grapple Point_ |q Roots in Stone/.*Release the Counterweights.*
+|tip Manually skip to the next step.
+step
+goto 57.73,70.23
+|tip Go down the steps.
+'Use _Grapple Point_ |q Roots in Stone/.*Release the Counterweights.*
+|tip Manually skip to the next step.
+step
+goto 58.25,81.28 |q Roots in Stone/.*Release the Counterweights.*
+step
+goto 73.01,81.02 |q Roots in Stone/.*Release the Counterweights.*
+step
+goto 70.93,67.26
+'Use _Counterweight_ |q Roots in Stone/.*Release the Counterweights.* |count 3
+step
+goto 73.01,81.02 |q Roots in Stone/Reach the Vault
+step
+goto 58.25,81.28 |q Roots in Stone/Reach the Vault
+step
+goto 60.96,63.11
+'Use _Grapple Point_ |q Roots in Stone/Reach the Vault
+|tip Manually skip to the next step.
+step
+goto 63.48,54.36
+'Use _Grapple Point_ |q Roots in Stone/Reach the Vault
+|tip Manually skip to the next step.
+step
+goto 83.50,54.06
+'Use _Grapple Point_ |q Roots in Stone/Reach the Vault
+|tip Manually skip to the next step.
+step
+goto 89.14,53.95
+|tip Go up the stairs.
+'Open _Atak's Great Vault_ |q Roots in Stone/Reach the Vault
+step
+goto u48_xorhist_xanmeer 39.39,45.30
+talk Xica-Ilan |q Roots in Stone/Talk to Xica-Ilan
+step
+goto 41.88,45.20
+'Use _Stone-Nest Idol_ |q Roots in Stone/Release the Builder's Control Stone
+step
+goto 42.44,45.11
+'Take _Builder's Control Stone_ |q Roots in Stone/Take the Builder's Control Stone
+step
+goto 46.31,45.57
+|tip Go upstairs.
+'Use _Builder's Control Stone_ |q Roots in Stone/Awaken the Guardians
+step
+goto 52.21,47.14
+|tip Watch the dialogue.
+talk Mani-Kai |q Roots in Stone/Talk to Mani-Kai
+step
+'Open _Solstice_
+'Travel to _Xor-Hist_ |q Roots in Stone/Return to the Surface |future
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 79.28,53.87 |q Roots in Stone/Return to Xor-Hist |future
+step
+goto 79.15,59.50 |q Roots in Stone/Return to Xor-Hist
+step
+goto 81.29,59.04
+'Open _Xor-Hist Courtyard_ |q Roots in Stone/Return to Xor-Hist |future
+|tip Manually skip to the next step.
+step
+goto 81.76,59.07
+'Use _Builder's Control Stone_ |q Roots in Stone/Use the Builder's Control Stone |future
+step
+goto 82.00,59.06
+kill Soul Shriven Argonian Behemoth |q Roots in Stone/Defeat the Soul-Shriven Behemoth
+step
+goto 82.28,59.01
+|tip Watch the dialogue.
+talk Mani-Kai |q Roots in Stone/Talk to Mani-Kai
+step
+goto 81.33,59.05
+'Open _Xor-Hist_ |q Roots in Stone/Find Stone-Shaper Tozka
+|tip Manually skip to the next step.
+step
+goto 80.59,59.91
+talk Stone-Shaper Tozka |q Roots in Stone/Talk to Stone-Shaper Tozka |future
+step
+goto 80.59,59.93
+talk Mani-Kai
+turnin Roots in Stone
+step
+'Open _Solstice_
+'Travel to _Xor-Hist_ |q Roots in Stone/Return to the Surface |future
+|tip Manually skip to the next step.
 step
 goto 82.60,52.92
 'Open _Kaz-Neesak Mine_ |q Hunt for the Great Mage/Collect Map |future
@@ -56065,6 +56284,92 @@ goto 76.48,64.56
 step
 goto 76.93,62.67 |q Hunt for the Great Mage/Find the Other Soul Flayer Harvest Site
 step
+goto 72.73,65.00 |q To Know the Void |future
+step
+goto 72.90,66.59
+talk Sahmazim
+accept To Know the Void
+step
+goto 73.89,66.72 |q To Know the Void/Enter Xul-Katama, Monastery of the Death-Dancers
+step
+goto 74.15,68.57 |q To Know the Void/Enter Xul-Katama, Monastery of the Death-Dancers
+step
+goto 75.64,68.52
+'Use _Skyshard_ |q To Know the Void/Enter Xul-Katama, Monastery of the Death-Dancers
+|tip Manually skip to the next step.
+step
+goto 74.65,68.44 |q To Know the Void/Enter Xul-Katama, Monastery of the Death-Dancers
+step
+goto 73.89,66.72 |q To Know the Void/Enter Xul-Katama, Monastery of the Death-Dancers
+step
+goto 73.20,66.90 |q To Know the Void/Enter Xul-Katama, Monastery of the Death-Dancers
+step
+goto 72.52,68.40 |q To Know the Void/Enter Xul-Katama, Monastery of the Death-Dancers
+step
+goto 72.18,68.66
+'Open _Xul-Katama_ |q To Know the Void/Enter Xul-Katama, Monastery of the Death-Dancers |future
+|tip Manually skip to the next step.
+step
+goto U48_delve_sithis_crest_01 91.01,34.14 |q To Know the Void/Vos-Toh Stone |future
+step
+goto 74.36,15.10 |q To Know the Void/Vos-Toh Stone
+step
+goto 54.37,15.86 |q To Know the Void/Vos-Toh Stone
+step
+goto 27.15,16.65 |q To Know the Void/Vos-Toh Stone
+step
+goto 26.82,29.88 |q To Know the Void/Vos-Toh Stone
+step
+goto 10.08,30.90
+kill Whisper of the Sacred Stones |q To Know the Void/Vos-Toh Stone
+|tip Manually skip to the next step.
+step
+goto 8.63,20.44 |q To Know the Void/Vos-Toh Stone
+step
+goto 14.64,20.19
+'Take _Vos-Toh Stone Tablet_ |q To Know the Void/Vos-Toh Stone
+|tip Manually skip to the next step.
+step
+goto 15.22,35.29 |q To Know the Void/Vos-Toh Stone
+step
+goto 18.84,52.76
+'Take _Vos-Toh Stone Tablet_ |q To Know the Void/Vos-Toh Stone
+step
+goto 31.19,50.72 |q To Know the Void |future
+step
+goto 33.10,41.76 |q To Know the Void |future
+step
+goto 51.82,40.87
+'Take _Vos-Toh Stone Tablet_ |q To Know the Void |future
+|tip Manually skip to the next step.
+step
+goto 44.55,46.90 |q To Know the Void/Talk to Sahmazim
+step
+goto 61.50,70.94 |q To Know the Void/Talk to Sahmazim
+step
+goto 69.13,55.54 |q To Know the Void/Talk to Sahmazim
+step
+goto 71.89,48.48 |q To Know the Void/Talk to Sahmazim
+step
+goto 79.38,49.20
+'Use _Skyshard_ |q To Know the Void/Talk to Sahmazim
+|tip Manually skip to the next step.
+step
+goto 70.63,48.59 |q To Know the Void/Talk to Sahmazim
+step
+goto 69.87,60.85 |q To Know the Void/Talk to Sahmazim
+step
+goto 95.38,50.07
+|tip Drop down.
+'Open _Solstice_ |q To Know the Void/Talk to Sahmazim
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 73.26,66.77 |q To Know the Void/Talk to Sahmazim
+step
+goto 72.90,66.61
+talk Sahmazim
+turnin To Know the Void
+step
 goto 67.32,65.42
 'Discover _Stone Cove_ Wayshrine|q Hunt for the Great Mage/Find the Other Soul Flayer Harvest Site
 |tip Manually skip to the next step.
@@ -56081,6 +56386,66 @@ goto 64.53,66.01
 step
 goto 64.21,65.64
 'Examine _Burial Site Orders_ |lorebook Burial Site Orders/3/57/18
+step
+goto 64.48,60.89
+talk Ezhkel
+accept An Ambition Fulfilled
+step
+goto 64.48,60.89
+talk Ezhkel |q An Ambition Fulfilled/Talk to Ezhkel
+step
+goto 64.36,60.71
+'Attune _Ogrim_ |q An Ambition Fulfilled/Unlock the Vault
+|tip Manually skip to the next step.
+step
+goto 64.62,60.77
+'Mark _Rusted Lever_ |q An Ambition Fulfilled/Unlock the Vault
+|tip Manually skip to the next step.
+step
+goto 64.33,60.87
+'Attune _Seeker_ |q An Ambition Fulfilled/Unlock the Vault
+|tip Manually skip to the next step.
+step
+goto 64.44,60.68
+'Mark _Elevated Lever_ |q An Ambition Fulfilled/Unlock the Vault
+|tip Manually skip to the next step.
+step
+goto 64.35,60.79
+'Attune _Daedrat_ |q An Ambition Fulfilled/Unlock the Vault
+|tip Manually skip to the next step.
+step
+goto 64.48,61.20
+'Mark _Covered Lever_ |q An Ambition Fulfilled/Unlock the Vault
+step
+goto 64.70,60.90
+'Open _Stone-Nest Repository_ |q An Ambition Fulfilled/Enter the Vault
+step
+goto 64.64,61.08
+'Search _Pilfering Monkey_ |q An Ambition Fulfilled/Retrieve the Keystone |future
+step
+goto 64.45,61.02
+talk Ezhkel |q An Ambition Fulfilled/Talk to Ezhkel
+step
+'Open _Solstice_ Map
+'Travel to _Gristmung Hold Camp_ |q Hunt for the Great Mage/Return to the Gristmung Fellowship Camp |future
+|tip Manually skip to the next step.
+step
+goto 73.41,55.26 |q The Hermit in the Hills/Travel to Hecicla's House |future
+step
+goto 71.70,59.45
+'Open _Hecicla's House_ |q The Hermit in the Hills/Travel to Hecicla's House |future
+|tip Manually skip to the next step.
+step
+goto 71.72,59.55
+talk Hecicla |q The Hermit in the Hills/Talk to Hecicla
+step
+goto 71.69,59.58
+'Use _Cooking Fire_
+'Take _Stone-Soup_ |q The Hermit in the Hills/Prepare Stone-Soup
+step
+goto 71.70,59.54
+talk Hecicla
+turnin The Hermit in the Hills
 step
 'Open _Solstice_ Map
 'Travel to _Gristmung Hold Camp_ |q Hunt for the Great Mage/Return to the Gristmung Fellowship Camp |future
@@ -56103,17 +56468,488 @@ goto 65.81,47.34 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
 step
 goto 65.24,43.13 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
 step
+goto 65.97,42.28
+talk Tesamoril
+accept A Cold Grave
+step
+goto 65.38,41.93
+'Use _Skyshard_ |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+|tip Manually skip to the next step.
+step
 goto 60.91,40.53
 'Discover _Caterwaul Cove_ Wayshrine |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
 |tip Manually skip to the next step.
 step
+goto 60.91,40.53
+'Use _Caterwaul Cove_
+'Travel to _Rampart Camp_ |q A Cold Grave\Find Healer Namreras
+|tip Manually skip to the next step.
+step
+goto 53.12,55.72
+talk Healer Namreras
+turnin A Cold Grave
+step
+goto 53.59,55.00
+'Use _Rampart Camp_
+'Travel to _Caterwaul Cove_ |q Blood on the Water |future
+|tip Manually skip to the next step.
+step
+goto 57.39,40.30 |q Blood on the Water |future
+step
+goto 56.97,41.66
+talk Suraj
+accept Blood on the Water
+step
+goto 57.39,40.30 |q Blood on the Water/Talk to Captain One-Eye
+step
+goto 55.12,38.64
+talk Captain One-Eye |q Blood on the Water/Talk to Captain One-Eye
+step
+goto 54.22,38.37
+'Enter _Seaside Caves_ |q Blood on the Water/Place Rune on the Caterwaul
+|tip Manually skip to the next step.
+step
+goto U48_base_LostFleetCave1B_base 49.55,81.15 |q Blood on the Water/Place Rune on the Caterwaul
+step
+goto 35.32,81.05 |q Blood on the Water/Place Rune on the Caterwaul
+step
+goto 33.84,62.10 |q Blood on the Water/Place Rune on the Caterwaul
+step
+goto 68.31,71.22 |q Blood on the Water/Place Rune on the Caterwaul
+step
+goto 75.66,33.79 |q Blood on the Water/Place Rune on the Caterwaul
+step
+goto 30.64,40.76 |q Blood on the Water/Place Rune on the Caterwaul
+step
+goto 23.15,10.02
+'Enter _Caterwaul Cove_ |q Blood on the Water/Place Rune on the Caterwaul
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 54.11,36.34
+'Use _Grapple Point_ |q Blood on the Water/Place Rune on the Caterwaul
+|tip Manuallky skip to the next step.
+step
+goto 54.22,35.91
+'Place _Caterwaul Cargo_ |q Blood on the Water/Place Rune on the Caterwaul
+step
+goto 54.24,36.85
+'Use _Grapple Point_ |q Blood on the Water/Disembark the Caterwaul
+step
+goto 54.97,36.91
+talk Suraj |q Blood on the Water/Talk to Suraj
+step
+goto 55.05,36.89
+'Enter _Seaside Caves_ |q Blood on the Water/Kill Quartermaster Xynark
+|tip Manually skip to the next step.
+step
+goto U48_base_LostFleetCave1_base 39.16,58.45 |q Blood on the Water/Kill Quartermaster Xynark
+step
+goto 50.96,71.01
+'Use _Grapple Point_ |q Blood on the Water/Kill Quartermaster Xynark
+|tip Manually skip to the next step.
+step
+goto 56.63,72.21
+'Enter _Spacious Cavern_|q Blood on the Water/Kill Quartermaster Xynark
+|tip Manually skip to the next step.
+step
+goto U48_base_LFCave3a_base 53.86,51.70
+'Use _Bonnie Spriggan Ship Bell_
+kill Quartermaster Xnark |q Blood on the Water/Kill Quartermaster Xynark |future
+|tip Manually skip to the next step.
+step
+goto 71.14,51.48
+'Enter _Solstice_ |q Blood on the Water/Talk to Captain One-Eye
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 57.47,35.16
+talk Captain One-Eye |q Blood on the Water/Talk to Captain One-Eye
+step
+goto 57.08,35.17
+talk Argenta |q Blood on the Water/Talk to Argenta |future
+|tip Manually skip to the next step.
+step
+goto 57.53,35.47
+talk Suraj |q Blood on the Water/Talk to Suraj
+step
+goto 56.71,35.53
+'Enter _Seaside Caverns_ |q Blood on the Water/Find the Mutineers
+|tip Manually skip to the next step.
+step
+goto U48_base_LFCave5B_base 77.85,72.54 |q Blood on the Water/Find the Mutineers |tip Go all the way to bottom of ramp.
+step
+goto 61.18,47.69
+|tip Search Supply Crates in this room until you collect all 5.
+'Search _Supply Crate_ |q Blood on the Water/.*Gather Coldharbour's Teeth.*
+step
+goto 66.19,61.31 |q Blood on the Water/Talk to Captain One-Eye
+step
+goto U48_base_LFCave5_base 76.98,81.64 |q Blood on the Water/Talk to Captain One-Eye |tip Follow ramp to the top.
+step
+goto 73.80,89.86
+'Open _Solstice_ |q Blood on the Water/Talk to Captain One-Eye
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 57.78,35.00
+talk Captain One-Eye |q Blood on the Water/Talk to Captain One-Eye
+step
+goto 57.77,35.15
+'Give _Speech to the Bonnie Spriggan Crew_ |q Blood on the Water/Deliver Speech to the Crew
+step
+goto 57.81,34.86
+'Open _Captain's Cabin_ |q Blood on the Water/Sit Below Deck
+|tip Manually skip to the next step.
+step
+goto 57.76,34.47
+'Use _Seat_ |q Blood on the Water/Sit Below Deck |future
+|tip Manually skip to the next step.
+step
+goto Tamriel 65.13,85.17
+'Open _Bonnie Spriggan_ |q Blood on the Water/Join the Fray |future
+step
+goto 65.10,85.16
+kill Captain Velehk Sain |q Blood on the Water/Kill Captain Velehk Sain
+step
+goto 65.10,85.15
+'Ignite _Caterwaul Sails_ |q Blood on the Water/Light the Sails
+step
+goto 65.13,85.16
+'Open _Captain's Cabin_ |q Blood on the Water/Return to Solstice
+|tip Manually skip to the next step.
+step
+goto 65.13,85.18
+'Use _Seat_ |q Blood on the Water/Return to Solstice |future
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 57.80,34.74
+'Open _Bonnie Spriggan_ |q Blood on the Water/Return to Captain One-Eye |future
+|tip Manually skip to the next step.
+step
+goto 57.98,35.61
+talk Captain One-Eye
+turnin Blood on the Water
+step
+'Open _Solstice_
+'Travel to _Caterwaul Cove_ |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+|tip Manually skip to the next step.
+step
 goto 63.63,41.66 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+step
+goto 64.20,40.95
+talk Scout Mihnassi
+accept Lost Among the Ashes
 step
 goto 64.35,39.37 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
 step
-goto 67.27,37.22 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+goto 68.14,37.48
+talk Sirilonwe |q Lost Among the Ashes/Talk to Sirilonwe
+step
+goto 68.16,38.39 |q Lost Among the Ashes/Search the Camp
+step
+goto 68.71,38.25
+'Examine _Terinvel's Notebook_ |lorebook Terinvel's Notebook/3/57/67
+step
+goto 68.80,38.25
+'Examine _An Offer of Protection_ |lorebook An Offer of Protection/3/57/68
+step
+goto 68.77,38.32
+'Examine _Campfire_ |q Lost Among the Ashes/Search the Camp
+step
+goto 68.74,38.34
+talk Sirilonwe |q Lost Among the Ashes |future
+|tip Manually skip to the next step.
+step
+goto 68.08,39.38
+'Enter _Ashbound Hall_ |q Lost Among the Ashes/Enter Ashbound Hall |future
+|tip Manually skip to the next step.
+step
+goto U48_UI_Maps_HOV_01 84.89,88.30
+talk Sirilonwe |q Lost Among the Ashes/Talk to Sirilonwe |future
+step
+goto 85.58,42.09 |q Lost Among the Ashes/Search for Terinvel
+step
+goto 74.78,41.41 |q Lost Among the Ashes/Search for Terinvel
+step
+goto 77.29,30.39
+'Examine _A Trick to the Doors_ |lorebook A Trick to the Doors/3/57/69
+step
+goto 80.48,30.75
+'Examine _Hurriedly Written Note_ |lorebook Hurriedly Written Note/3/57/77
+step
+goto 73.38,32.90
+'Take _Aspect of Brutality_ |q Lost Among the Ashes/Search the Safe Room
+step
+goto 76.07,32.11
+talk Sirilonwe |q Lost Among the Ashes/Talk to Sirilonwe
+step
+goto 72.66,43.95
+'Place _Brutality Plate_ |q Lost Among the Ashes/Place the Aspect
+step
+goto 67.67,42.12
+'Open _The Misty Pass_ |q Lost Among the Ashes/Search for Terinvel
+|tip Manually skip to the next step.
+step
+goto 18.37,41.55 |q Lost Among the Ashes/Find the Source of the Whispers |future
+step
+goto 15.54,46.68
+|tip Watch the dialogue.
+talk Azatha |q Lost Among the Ashes/Talk to Azatha |future
+step
+goto 17.65,73.74 |q Lost Among the Ashes/Find the Map of Ashbound Hall
+step
+goto 38.89,76.07 |q Lost Among the Ashes/Find the Map of Ashbound Hall
+step
+goto 41.94,68.25 |q Lost Among the Ashes/Find the Map of Ashbound Hall
+step
+goto 31.50,68.42
+'Examine _Map of Ashbound Hall_ |q Lost Among the Ashes/Examine the Map |future
+step
+goto 29.28,64.44
+'Examine _Aspect of Conquest_ |q Lost Among the Ashes/Investigate the Brightly Lit Room
+step
+goto 29.85,64.84
+talk Sirilonwe |q Lost Among the Ashes/Talk to Sirilonwe
+step
+goto 43.45,61.18 |q Lost Among the Ashes/Continue the Search for Terinvel
+step
+goto U48_UI_Maps_HOV_06 43.02,51.56
+talk Sirilonwe |q Lost Among the Ashes |future
+|tip Manually skip to the next step.
+step
+goto 43.38,48.83
+'Destroy _Rubble_ |q Lost Among the Ashes/Destroy the Rubble |future
+|tip Manually skip to the next step.
+step
+goto 43.27,32.15
+'Destroy _Rubble_ |q Lost Among the Ashes/Clear the Bridge
+step
+goto 50.52,28.99 |q Lost Among the Ashes/Continue the Search for Terinvel
+step
+goto 49.37,19.09 |q Lost Among the Ashes/Continue the Search for Terinvel
+step
+goto 24.90,13.28
+'Place _Brutality Plate_
+'Place _Domination Plate_
+'Place _Conquest Plate_ |q Lost Among the Ashes/Unseal the Door |future
+step
+goto 26.59,6.10
+'Open _The Broken Walkway_ |q Lost Among the Ashes/Search the Broken Walkway
+|tip Manually skip to the next step.
+step
+goto U48_UI_Maps_HOV_02 11.16,34.21 |q Lost Among the Ashes/Search the Broken Walkway
+step
+goto 50.26,36.53 |q Lost Among the Ashes/Search the Broken Walkway
+step
+goto 79.05,35.32
+'Examine _Terinvel's Lost Note_ |lorebook Terinvel's Lost Note/3/57/76
+step
+goto 79.00,36.53
+'Examine _Hat_ |q Lost Among the Ashes/Investigate the Campsite
+step
+goto 78.53,38.42
+|tip Watch the dialogue.
+talk Sirilonwe |q Lost Among the Ashes/Talk to Sirilonwe |future
+step
+goto 88.26,57.11
+'Open _Crater_ |q Lost Among the Ashes/Find the Crater
+step
+goto U48_UI_Maps_HOV_03 50.40,88.21
+'Open _Brutal Arena_ |q Lost Among the Ashes/Cross the Crater
+step
+goto U48_UI_Maps_HOV_04 44.01,17.98 |q Lost Among the Ashes/Continue Pursuing Terinvel
+step
+goto 46.35,63.60
+'Open _Ritual Chamber_ |q Lost Among the Ashes/Continue Pursuing Terinvel
+|tip Manually skip to the next step.
+step
+goto 40.35,77.19
+|tip Watch the dialogue.
+talk Livanio Deltorius |q Lost Among the Ashes/Talk to Livanio Deltorius |future
+step
+goto 40.35,77.19
+'Search _Ash Pile_ |q Lost Among the Ashes/Search Livanio's Remains
+step
+goto 38.38,76.61
+talk Sirilonwe |q Lost Among the Ashes/Talk to Sirilonwe
+step
+goto 38.60,86.22
+'Open _Ward of the Tormented_ |q Lost Among the Ashes/Reach the Central Courtyard
+|tip Manually skip to the next step.
+step
+goto U48_UI_Maps_HOV_05 60.20,61.05 |q Lost Among the Ashes/Reach the Central Courtyard
+step
+goto 59.49,50.53 |q Lost Among the Ashes/Reach the Central Courtyard
+step
+goto 48.73,45.09 |q Lost Among the Ashes/Reach the Central Courtyard
+step
+goto 45.85,61.40
+'Open _Central Chamber_ |q Lost Among the Ashes/Reach the Central Courtyard
+|tip Manually skip to the next step.
+step
+goto 38.44,57.35
+talk Ormard |q Lost Among the Ashes/Talk to Ormard |future
+step
+goto 37.68,65.37
+'Examine _Aspect of Dread_ |q Lost Among the Ashes/Look for the Aspect of Dread
+step
+goto 37.83,58.24
+talk Sirilonwe |q Lost Among the Ashes/Talk to Sirilonwe
+step
+goto 30.05,52.12
+'Place _Brutality Plate_
+'Place _Domination Plate_
+'Place _Conquest Plate_
+'Place _Corruption Plate_
+'Place _Dread Plate_ |q Lost Among the Ashes/Unseal the Den of Gargoyles
+step
+goto 27.29,50.16
+'Open _Den of Gargoyles_ |q Lost Among the Ashes/Enter the Den of Gargoyles
+step
+goto 16.14,37.86
+kill The Elder |q Lost Among the Ashes/Kill The Elder
+step
+goto 14.44,36.22
+|tip Watch the dialogue.
+'Open _Solstice_ |q Lost Among the Ashes/Use Sirilonwe's Portal |future
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 67.27,36.56
+talk Terinvel Drathan |q Lost Among the Ashes/Talk to Terinvel
+step
+goto 67.31,36.48
+talk Sirilonwe
+turnin Lost Among the Ashes
+step
+goto 68.95,34.60
+talk Carminia
+accept Death Hound's Devotion
+step
+goto 67.03,37.27
+'Pour _Bloodmite_ |q Death Hound's Devotion/Pour Blood Vial for Bloodmite |future
+step
+goto 69.14,34.40
+talk Carminia
+turnin Death Hound's Devotion
+step
+goto 65.62,38.51 |q An Ambition Fulfilled/Enter the Lair of the Black Worm
+step
+goto 65.95,36.35
+talk Ojouna
+accept Dismantling the Worm
+step
+goto 65.95,36.24
+'Enter _Lair of the Black Worm_ |q Dismantling the Worm/Enter the Lair of the Black Worm |future
+|tip Manually skip to the next step.
+step
+goto u46_base_LOTWC 68.77,81.99 |q An Ambition Fulfilled/Acquire a Worm Cult Disguise |future
+step
+goto 67.57,69.72 |q An Ambition Fulfilled/Acquire a Worm Cult Disguise
+step
+goto 58.98,69.17
+'Search _Worm Cult Supply Crate_ |q An Ambition Fulfilled/Acquire a Worm Cult Disguise
+step
+goto 59.80,63.80 |q An Ambition Fulfilled/Meet Ezhkel Outside the Ritual Chamber
+step
+goto u46_base_LOTWC_room 78.47,65.46
+'Dispel _Protective Ward_ |q An Ambition Fulfilled/Dispel the Ward |future
+step
+goto 75.59,70.21
+talk Ezhkel |q An Ambition Fulfilled/Talk to Ezhkel
+step
+goto 74.59,68.34
+'Use _Worm Cultist Garb_ |q An Ambition Fulfilled/Put on Worm Cult Garb
+step
+goto 80.10,63.70
+'Open _Worm Cult Ritual Chamber_ |q An Ambition Fulfilled/Enter the Worm Cult Ritual
+step
+goto 83.68,45.44
+'Kick _Ezhkel_
+kill Ezhkel |q An Ambition Fulfilled/Sacrifice Ezhkel
+step
+goto 83.18,45.44
+kill Worm Cultists |q An Ambition Fulfilled/Kill the Worm Cultists
+step
+goto 83.26,59.16
+'Open _Lair of the Black Worm_ |q An Ambition Fulfilled/Find Ezhkel's Summoning Circle
+|tip Manually skip to the next step.
+step
+goto u46_base_LOTWC 59.80,63.80 |q Dismantling the Worm/.*Stop the Rituals.*
+step
+goto 58.98,69.17 |q Dismantling the Worm/.*Stop the Rituals.*
+step
+goto 70.52,71.25 |q Dismantling the Worm/.*Stop the Rituals.*
+step
+goto 76.02,40.10
+'Deactivate _Ritual Focus_ |q Dismantling the Worm/.*Stop the Rituals.* |count 1
+step
+goto 71.90,33.17 |q Dismantling the Worm/.*Stop the Rituals.* |tip Go downstairs.
+step
+goto 64.03,27.91 |q Dismantling the Worm/.*Stop the Rituals.* |tip Go upstairs.
+step
+goto 51.91,32.05
+'Deactivate _Ritual Focus_ |q Dismantling the Worm/.*Stop the Rituals.* |count 2
+step
+goto 51.46,50.26 |q Dismantling the Worm/.*Stop the Rituals.*
+step
+goto 51.17,58.37
+|tip Climb the rocks. 
+kill Riuzzan the Ravenous |q Dismantling the Worm/.*Stop the Rituals.*
+|tip Manually skip the next step.
+step
+goto 50.06,60.43
+'Deactivate _Ritual Focus_ |q Dismantling the Worm/.*Stop the Rituals.* |count 3
+step
+goto 36.24,54.31 |q Dismantling the Worm/.*Stop the Rituals.*
+step
+goto 28.46,42.64 |q Dismantling the Worm/.*Stop the Rituals.*
+step
+goto 24.36,45.60 |q Dismantling the Worm/.*Stop the Rituals.*
+step
+goto 15.90,61.48 |q Dismantling the Worm/.*Stop the Rituals.*
+step
+goto 16.61,71.23
+'Deactivate _Ritual Focus_ |q Dismantling the Worm/.*Stop the Rituals.* |count 4
+step
+goto 40.80,73.62 |q Dismantling the Worm/Meet Ojouna Outside the Lair of the Black Worm
+step
+goto 36.65,78.93
+|tip Go upstairs.
+'Use _Skyshard_ |q Dismantling the Worm/Meet Ojouna Outside the Lair of the Black Worm
+|tip Manually skip to the next step.
+step
+goto 42.09,80.80
+'Open _Lair of the Black Worm_ |q Dismantling the Worm/Meet Ojouna Outside the Lair of the Black Worm
+|tip Manually skip to the next step.
+step
+goto 46.13,84.26
+'Enter _Solstice_ |q Dismantling the Worm/Meet Ojouna Outside the Lair of the Black Worm
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 65.93,36.35
+talk Ojouna
+turnin Dismantling the Worm
+step
+goto 66.56,37.65 |q An Ambition Fulfilled/Find Ezhkel's Summoning Circle
+step
+goto 67.38,35.72 |q An Ambition Fulfilled/Find Ezhkel's Summoning Circle
+step
+goto 66.13,34.58
+'Activate _Ezhkel's Summoning Circle_ |q An Ambition Fulfilled/Use the Velothi Conjuring Rod |future
+step
+goto 66.10,34.56
+talk Ezhkel
+turnin An Ambition Fulfilled
 step
 goto 70.58,37.06 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+step
+goto 74.79,36.27 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+step
+goto 75.48,35.97
+'Use _Skyshard_ |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+|tip Manually skip to the next step.
+step
+goto 73.71,37.09 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+step
+goto 75.52,39.54 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
 step
 goto 77.17,41.01 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
 step
@@ -56123,6 +56959,230 @@ goto 83.33,35.19 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
 step
 goto 82.14,34.12
 'Discover _Mor Naril Camp_ |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+|tip Manually skip to the next step.
+step
+goto 81.46,30.47
+talk Cariel
+accept Choice and Consequence
+step
+goto 79.87,27.73
+'Throw _Distraction Stones_ |q Choice and Consequence |future
+|tip Manuyally skip to the next step.
+step
+goto 79.86,27.58
+'Throw _Distraction Stones_ |q Choice and Consequence |future
+|tip Manuyally skip to the next step.
+step
+goto 79.62,27.78
+talk Cariel |q Choice and Consequence/Talk to Cariel
+step
+goto 80.36,26.52
+'Examine _Letter to Vicereeve Nirenorwe_ |lorebook Letter to Vicereeve Nirenorwe/3/57/6
+step
+goto 80.37,25.86
+'Examine _Prince Naemon and the Staff of Magnus_ |lorebook Prince Naemon and the Staff of Magnus/3/57/5
+step
+goto 80.81,24.95 |q Choice and Consequence/.*Gather Information in the Worm Cult Camp.*
+step
+goto 81.67,25.36
+'Use _Hiding Spot_ |q Choice and Consequence/.*Gather Information in the Worm Cult Camp.* |count 3
+step
+goto 81.52,27.30
+'Use _Hiding Spot_ |q Choice and Consequence/.*Gather Information in the Worm Cult Camp.* |count 4
+step
+goto 81.21,27.13
+talk Cariel |q Choice and Consequence/Talk to Cariel
+step
+goto 80.72,26.55 |q Choice and Consequence/Steal a Worm Cult Bonelord Disguise
+step
+goto 81.03,25.80
+'Unlock _Bonelord's Chest_ |q Choice and Consequence/Steal a Worm Cult Bonelord Disguise
+step
+goto 81.02,25.81
+'Use _Worm Cult Bonelord Armor_ |q Choice and Consequence/Wear Disguise
+step
+goto 82.11,26.05
+'Open _Aldwilne Citadel Courtyard_ |q Choice and Consequence/Enter the Citadel
+step
+goto 82.52,25.88
+talk Rexus Nerva |q Choice and Consequence/Find Your Way to Dark Adept Vairisse
+|tip Manually skip to the next step.
+step
+goto 82.62,26.78
+'Unlock _Officers Accoutrement Chest_ |q Choice and Consequence/Find Your Way to Dark Adept Vairisse
+step
+goto 82.99,24.93
+'Open _Dark Adept Vairisse's Study_ |q Choice and Consequence/Find Dark Adept Vairisse
+|tip Manually skip to the next step.
+step
+goto u48_villainsfall_int 10.48,18.86 |q Choice and Consequence/Find Dark Adept Vairisse
+step
+goto 40.50,25.24
+talk Dark Adept Vairisse |q Choice and Consequence/Talk to Dark Adept Vairisse |future
+step
+goto 81.38,35.04
+'Open _Prison Cells_ |q Choice and Consequence/Go to the Prisons
+step
+goto 86.89,49.22
+talk Worm Slayer Pomptinus Muco |q Choice and Consequence/Talk to the Torturers
+step
+goto 83.38,50.97
+'Use _Vitrified Soul Crystal_ |q Choice and Consequence/.*Use the Soul Gem on the Captives.*
+step
+goto 81.58,65.89
+'Open _Commander's Quarters_ |q Choice and Consequence/Meet Dark Adept Vairisse
+|tip Manually skip to the next step.
+step
+goto 80.75,88.40
+talk Dark Adept Vairisse |q Choice and Consequence/Talk to Dark Adept Vairisse |future
+step
+goto 80.56,94.88
+'Open _Aldwilne Citadel Courtyard_ |q Choice and Consequence/Leave Dark Adept Vairisse's Study |future
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 83.42,25.17
+talk Cariel |q Choice and Consequence/Talk to Cariel |future
+step
+goto 83.81,25.52
+'Open _Prince Naemon's Quarters_ |q Choice and Consequence/Find Prince Naemon
+|tip Manually skip to the next step.
+step
+goto u48_villainsfall_int2 33.45,45.32
+'Open _Prince Naemon's Quarters_ |q Choice and Consequence/Find Prince Naemon |future
+|tip Manually skip to the next step.
+step
+goto 32.12,50.00
+talk Prince Naemon |q Choice and Consequence/Talk to Prince Naemon |future
+step
+goto 33.25,45.74
+'Open _Prince Naemon Foyer_ |q Choice and Consequence/Talk to Cariel
+|tip Manually skip to the next step.
+step
+goto 26.06,38.35
+'Open _Aldwilne Citadel Courtyard_ |q Choice and Consequence/Talk to Cariel
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 83.21,25.59
+talk Cariel |q Choice and Consequence/Talk to Cariel
+step
+goto 83.43,26.44
+talk Carmana Celatus |q Choice and Consequence/Find a Suitable Cultist
+step
+goto 83.77,26.39
+'Incapacitate _Carmana Celatus_ |q Choice and Consequence/Knock Out the Cultist |future
+step
+goto 83.76,26.32
+talk Cariel |q Choice and Consequence/Talk to Cariel
+step
+goto 83.77,26.36
+'Place _Letter and Amulet_ |q Choice and Consequence/Plant Evidence on Captive |future
+|tip Manually skip to the next step.
+step
+goto 83.77,26.36
+talk Carmana Celatus |q Choice and Consequence/Talk to Cultist
+step
+goto 83.83,26.60
+'Open _Prince Naemon's Quarters_ |q Choice and Consequence/Lead the Cultist to Prince Naemon
+|tip Manually skip to the next step.
+step
+goto u48_villainsfall_int2 33.25,57.33
+'Open _Prince Naemon's Foyer_ |q Choice and Consequence/Lead the Cultist to Prince Naemon
+|tip Manually skip to the next step.
+step
+goto 30.65,48.11
+talk Prince Naemon |q Choice and Consequence/Talk to Prince Naemon |future
+step
+goto 31.39,48.31
+'Search _Captive_ |q Choice and Consequence/Take the Amulet |future
+step
+goto 30.05,48.17
+talk Prince Naemon |q Choice and Consequence/Talk to Prince Naemon
+step
+goto 33.22,45.74
+'Open _Prince Naemon's Foyer_ |q Choice and Consequence/Talk to Cariel
+|tip Manually skip to the next step.
+step
+goto 26.06,38.22
+'Open _Aldwilne Citadel Courtyard_ |q Choice and Consequence/Talk to Cariel
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 83.69,26.65
+talk Cariel |q Choice and Consequence/Talk to Cariel
+step
+goto 83.12,26.65
+'Unlock _Prince's Loyalist's Chest_ |q Choice and Consequence/Steal a Dagger from Prince Naemon's Loyalists
+step
+goto 82.73,27.64
+'Hide _Crate_ 
+'Use _Imprinting CrystaL_ |q Choice and Consequence/Record Cariel Talking to the Dark Adept
+step
+goto 82.47,27.39
+talk Cariel |q Choice and Consequence/Talk to Cariel
+step
+goto 83.81,26.99
+'Throw _Imprinting Crystal_ |q Choice and Consequence/Toss the Crystal Near the Prince's Loyalists
+step
+goto 84.19,27.44 |q Choice and Consequence/.*Sabotage the Shackle Site.*
+step
+goto 84.12,27.13
+'Break _Shackle Equipment_ |q Choice and Consequence/.*Sabotage the Shackle Site.* |count 1
+step
+goto 84.13,27.10
+'Place_ Embellished Dagger_ |q Choice and Consequence/Plant Evidence Near the Shackle Site
+step
+goto 84.31,27.04
+'Break _Shackle Equipment_ |q Choice and Consequence/.*Sabotage the Shackle Site.* |count 2
+step
+goto 84.57,25.83
+'Break _Shackle Equipment_ |q Choice and Consequence/.*Sabotage the Shackle Site.* |count 3
+step
+goto 84.97,26.54
+'Watch _Demonstration_ |q Choice and Consequence/Watch the Demonstration |future
+step
+goto 84.52,25.81
+'Use _Shackle_ |q Choice and Consequence/Start the Equipment
+step
+goto 84.25,26.06
+|tip Watch the dialogue.
+'Open _Aldwilne Citadel Cellar_ |q Choice and Consequence/Find Prince Naemon |future
+|tip Manually skip to the next step.
+step
+goto u48_villainsfall_int2 64.50,49.92
+'Open _Aldwilne Citadel Cellar_ |q Choice and Consequence/Find Prince Naemon
+|tip Manually skip to the next step.
+step
+goto 57.81,52.37
+talk Prince Naemon |q Choice and Consequence/Talk to Prince Naemon |future
+step
+goto 61.70,48.22
+|tip Choose to kill Prince Naemon
+talk Cariel |q Choice and Consequence/Talk to Cariel
+step
+goto 60.01,54.00
+'Open _Aldwilne Citadel Southern Cellar_ |q Choice and Consequence/Find Prince Naemon
+|tip Manually skip to the next step.
+step
+goto 65.74,62.92 |q Choice and Consequence/Find Prince Naemon
+step
+goto 65.88,76.82
+'Open _Prince Naemon's Quarry_ |q Choice and Consequence/Find Prince Naemon
+|tip Manually skip to the next step.
+step
+goto 65.65,86.77
+kill Prince Naemon |q Choice and Consequence/Defeat Prince Naemon |future
+step
+goto 65.65,86.77
+'Take _Staff of Magnus_ |q Choice and Consequence/Take the Staff of Magnus |future
+step
+goto 65.65,86.77
+'Use _Staff of Magnus_ |q Choice and Consequence/Use the Staff of Magnus |future
+step
+goto 66.78,84.46
+talk Cariel
+turnin Choice and Consequence
+step
+'Open _Solstice_ Map
+'Travel to _Mor Naril Camp_ |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
 |tip Manually skip to the next step.
 step
 goto 83.33,35.19 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
@@ -56315,9 +57375,28 @@ talk Jeetra |q The Gates of Mor Naril/Talk to Jeetra |future
 step
 goto 77.61,40.61 |q The Gates of Mor Naril/Go to Basking-Stone Refuge
 step
-goto 75.90,42.34 |q The Gates of Mor Naril/Go to Basking-Stone Refuge
+goto 76.16,43.33 |q The Gates of Mor Naril/Go to Basking-Stone Refuge
 step
-goto 76.96,46.15 |q The Gates of Mor Naril/Go to Basking-Stone Refuge
+goto 75.00,43.14 |q Dubious Intentions |future
+step
+goto 74.54,45.04
+talk Sadryn Omalen
+accept Dubious Intentions
+step
+goto 74.87,43.27
+'Dig _Suspicious Mound of Dirt_ |q Dubious Intentions |future
+|tip Manually skip to the next step.
+step
+goto 74.83,43.26
+'Examine _Golvyni_ |q Dubious Intentions |future
+|tip Manually skip to the next step.
+step
+goto 75.04,43.17
+'Place _Bear-Lizzard Bait_ |q Dubious Intentions/Place Bait
+step
+goto 74.54,45.04
+talk Sadryn Omalen
+turnin Dubious Intentions
 step
 goto 74.25,46.66
 'Enter _Basking-Stone Refuge_ |q The Gates of Mor Naril/Go to Basking-Stone Refuge
@@ -56333,11 +57412,65 @@ step
 step
 goto u48_overland_base 62.02,51.78 |q The Gates of Mor Naril/Enter the Sea and Sword Lodge |future
 step
+goto 61.63,50.66
+talk Master Tanertor
+accept A Traitor's Tyranny
+step
 goto 61.48,50.53
-'Open _Sea and Sword Lodge_ |q The Gates of Mor Naril/Enter the Sea and Sword Lodge |future
+'Open _Sea and Sword Lodge_ |q A Traitor's Tyranny/.*Activate Portal Gates.*
 |tip Manually skip to the next step.
 step
-goto u48_ssl_delve_base_1 72.05,68.87 |q The Gates of Mor Naril/Find the Library |future
+goto u48_ssl_delve_base_1 69.64,43.70 |q A Traitor's Tyranny/.*Activate Portal Gates.*
+step
+goto 72.38,28.06 |q A Traitor's Tyranny/.*Activate Portal Gates.*
+step
+goto 74.61,12.86 |q A Traitor's Tyranny/.*Activate Portal Gates.*
+step
+goto 69.46,24.37
+|tip Go upstairs.
+'Activate _Portal Gate_ |q A Traitor's Tyranny/.*Activate Portal Gates.* |count 1
+step
+goto 69.46,16.04 |q A Traitor's Tyranny/.*Activate Portal Gates.*
+step
+goto 48.34,10.45 |q A Traitor's Tyranny/.*Activate Portal Gates.*
+step
+goto 44.17,18.41 |q A Traitor's Tyranny/.*Activate Portal Gates.*
+step
+goto 48.52,21.26
+|tip Go downstairs.
+'Activate _Portal Gate_ |q A Traitor's Tyranny/.*Activate Portal Gates.* |count 2
+step
+goto 43.73,34.09 |q A Traitor's Tyranny/.*Activate Portal Gates.*
+step
+goto 33.83,33.91 |q A Traitor's Tyranny/.*Activate Portal Gates.*
+step
+goto 39.64,46.69 |q A Traitor's Tyranny/.*Activate Portal Gates.*
+step
+goto 49.62,46.69
+kill Lector Fenworine |q A Traitor's Tyranny/.*Activate Portal Gates.*
+|tip Manually skip to the next step.
+step
+goto 54.59,46.69
+'Take _Staff of the Darkbinders_ |q A Traitor's Tyranny/Retrieve the Staff of the Darkbinders
+step
+goto 38.62,46.69 |q A Traitor's Tyranny/.*Activate Portal Gates.*
+step
+goto 33.36,59.74 |q A Traitor's Tyranny/.*Activate Portal Gates.*
+step
+goto 23.38,55.57 |q A Traitor's Tyranny/.*Activate Portal Gates.*
+step
+goto 16.22,50.60 |q A Traitor's Tyranny/.*Activate Portal Gates.*
+step
+goto 20.57,47.28
+'Use _Skyshard_ |q A Traitor's Tyranny/.*Activate Portal Gates.*
+|tip Manually skip to the next step.
+step
+goto 15.53,52.17 |q A Traitor's Tyranny/.*Activate Portal Gates.*
+step
+goto 33.76,60.21 |q A Traitor's Tyranny/.*Activate Portal Gates.*
+step
+goto 26.36,83.01
+'Activate _Portal Gate_ |q A Traitor's Tyranny/.*Activate Portal Gates.* |count 3
 step
 goto 51.74,70.70 |q The Gates of Mor Naril/Find a Key |future
 step
@@ -56367,11 +57500,25 @@ step
 goto 51.30,82.72
 talk Jeetra |q The Gates of Mor Naril/Talk to Jeetra
 step
+goto  |q A Traitor's Tyranny/Talk to Master Tanertor |tip Go back upstairs to the door fix on next run.
+step
+goto 71.32,68.58 |q A Traitor's Tyranny/Talk to Master Tanertor
+step
+goto 69.67,49.36 |q A Traitor's Tyranny/Talk to Master Tanertor
+step
+goto 79.58,46.47
+'Open _Solstice_ |q A Traitor's Tyranny/Talk to Master Tanertor
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 61.97,50.38
+talk Master Tanertor
+turnin A Traitor's Tyranny
+step
 'Open _Solstice_ Map
 'Travel to _Caterwaul Cove_ |q The Gates of Mor Naril/Go to Vaedinhill Manor
 |tip Manually skip to the next step.
 step
-goto u48_overland_base 64.44,42.11 |q The Gates of Mor Naril/Go to Vaedinhill Manor
+goto 64.44,42.11 |q The Gates of Mor Naril/Go to Vaedinhill Manor
 step
 goto 65.07,43.07 |q The Gates of Mor Naril/Go to Vaedinhill Manor
 step
