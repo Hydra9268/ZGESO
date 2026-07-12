@@ -19155,7 +19155,7 @@ goto 48.92,49.61
 |only Ebonheart Pact
 step
 goto 46.27,41.59
-|tip He is Go downstairs inside the Mages Guild.
+|tip He is downstairs inside the Mages Guild.
 talk Abnur Tharn |q The Tharn Speaks/Talk to Abnur Tharn
 |only Ebonheart Pact
 step
@@ -28860,7 +28860,7 @@ step
 goto 73.83,69.05
 'Enter _Travel to Abah's Landing_ |q Prison Break/Escape No Shira Citadel
 step
-goto abahslanding_base 39.66,39.30 |q Prison Break/Meet Zeira at the Den |tip Go up all the steps.
+goto abahslanding_base 39.66,39.30 |q Prison Break/Meet Zeira at the Den |tip Go all the way upstairs.
 step
 goto abahslanding_base 27.20,33.02
 'Open _Thieves Den_ |q Prison Break/Meet Zeira at the Den
@@ -32729,7 +32729,7 @@ goto dreamingcave02_base 36.28,31.94
 |tip Manually skip to the next step.
 step
 goto artaeum_base 65.92,27.03
-|tip Go down the steps next to the Portal
+|tip Go downstairs next to the Portal
 'Open _The Dreaming Cave_ |q The Dreaming Cave/Meet the Ritemaster in the Dreaming Cave
 |tip Manually skip to the next step.
 step
@@ -33360,7 +33360,7 @@ goto crystaltower_trophy02_base 52.04,48.55
 |tip Go upto third floor.
 'Examine _Ancient Ballista_ |q The Crystal Tower/Find the Broken Ballista
 step
-goto crystaltower_trophy01_base 37.69,61.98 |q The Crystal Tower/Find the Missing Pieces to the Ballista |tip Go down to first floor.
+goto crystaltower_trophy01_base 37.69,61.98 |q The Crystal Tower/Find the Missing Pieces to the Ballista |tip Go downstairs to first floor.
 step
 goto 29.48,86.83
 'Take _Ballista Crank_ |q The Crystal Tower/Find the Missing Pieces to the Ballista
@@ -48628,7 +48628,7 @@ talk Walks-in-Ash |q The Gift of Death/Choose a Champion
 talk Skordo the Knife |q The Gift of Death/Choose a Champion
 step
 goto 40.30,39.40
-|tip Go up the stairs.
+|tip Go upstairs.
 'Take _Bell Mallet_ |q The Gift of Death/Take the Mallet
 step
 goto 40.10,39.43
@@ -49425,8 +49425,6 @@ goto 64.23,43.22
 talk Jeetra |q The Gates of Mor Naril/Talk to Jeetra |future
 |tip Manually skip to the next step.
 step
-goto 63.69,43.23 |q The Gates of Mor Naril/Locate Vaedinhill Vault |future
-step
 goto 63.38,42.99
 'Open _Vaedinhill Cavern_ |q The Gates of Mor Naril/Locate Vaedinhill Vault |future
 |tip Manually skip to the next step.
@@ -49726,7 +49724,7 @@ goto 41.82,38.83
 'Open _Broken Light Temple_ |q Mystery of the Broken Temple/Enter Broken Light Temple |future
 |tip Manually skip to the next step.
 step
-goto u46_brokenlight_int1_base 46.64,.70.31
+goto u46_brokenlight_int1_base 46.64,70.31
 'Find _High Priest Eraamine_ |q Mystery of the Broken Temple/Find High Priest Eraamine
 step
 goto 45.04,75.19

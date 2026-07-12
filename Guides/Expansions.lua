@@ -6989,7 +6989,7 @@ goto 64.99,28.02
 |tip Manually skip to the next step.
 step
 goto 66.98,29.62
-|tip Go up te stairs.
+|tip Go upstairs.
 'Place _Dressing Table_ |q Everyone Has A Price/Plant the Travel Itinerary
 step
 goto 61.41,35.86
@@ -7377,7 +7377,7 @@ step
 goto 73.83,69.05
 'Enter _Travel to Abah's Landing_ |q Prison Break/Escape No Shira Citadel
 step
-goto abahslanding_base 39.66,39.30 |q Prison Break/Meet Zeira at the Den |tip Go up all the steps.
+goto abahslanding_base 39.66,39.30 |q Prison Break/Meet Zeira at the Den |tip Go all the upstairs.
 step
 goto abahslanding_base 27.20,33.02
 'Open _Thieves Den_ |q Prison Break/Meet Zeira at the Den
@@ -18355,12 +18355,12 @@ goto 53.64,53.52
 'Take _Galidor's Ledger_ |q Murder In Lillandril/Read Galidor's Ledger
 step
 goto 52.84,53.04
-|tip Go down to the second floor.
+|tip Go downstairs to the second floor.
 talk Valtarion
 turnin The Hulkynd's Heart
 step
 goto 53.27,51.00
-|tip Go down to the first floor.
+|tip Go downstairs to the first floor.
 'Open _Lillandril_ |q Murder In Lillandril/Talk to Calawende
 |tip Manually skip to the next step.
 step
@@ -19841,7 +19841,7 @@ goto crystaltower_trophy02_base 52.04,48.55
 |tip Go upto third floor.
 'Examine _Ancient Ballista_ |q The Crystal Tower/Find the Broken Ballista
 step
-goto crystaltower_trophy01_base 37.69,61.98 |q The Crystal Tower/Find the Missing Pieces to the Ballista |tip Go down to first floor.
+goto crystaltower_trophy01_base 37.69,61.98 |q The Crystal Tower/Find the Missing Pieces to the Ballista |tip Go downstairs to first floor.
 step
 goto 29.48,86.83
 'Take _Ballista Crank_ |q The Crystal Tower/Find the Missing Pieces to the Ballista
@@ -53213,13 +53213,9 @@ goto 59.27,55.19
 talk Prince Azah
 accept A Guild in Crisis
 |only Aldmeri Dominion
-step 
-goto 54.75,55.63 |q A Guild in Crisis/Rendezvous with Guild Scout in Malabal Tor |future
-|only Aldmeri Dominion
 step
-goto 54.99,40.95
-'Use _Vulkhel Guard_
-'Travel to _Vulkwasten_ in Malabal Tor |q A Guild in Crisis/Rendezvous with Guild Scout in Malabal Tor
+goto 59.71,54.64
+'Travel _Wimi_ |q A Guild in Crisis/Rendezvous with Guild Scout in Malabal Tor |future
 |tip Manually skip to the next step.
 |only Aldmeri Dominion
 step
@@ -53272,14 +53268,10 @@ step
 -- END: EBONHEART PACT FACTION
 
 -- BEGIN: MERGED PROLOGUE FOR ALL FACTIONS
-goto malabaltor_base 57.93,55.31 |q A Guild in Crisis/Rendezvous with Guild Scout in Malabal Tor
-step
-goto 62.83,51.52 |q A Guild in Crisis/Rendezvous with Guild Scout in Malabal Tor
-step
-goto 61.79,47.56 |q A Guild in Crisis/Rendezvous with Guild Scout in Malabal Tor
-step
-goto 58.66,45.71
+goto malabaltor_base 58.68,45.65
 talk Skordo the Knife |q A Guild in Crisis/Rendezvous with Guild Scout in Malabal Tor
+step
+goto 59.80,46.43 |lorebook Guildmaster Merric's Notes/3/10/106
 step
 goto 59.62,42.70
 'Examine _Guildmaster Merric's Notes_ |lorebook Guildmaster Merric's Notes/3/10/106
@@ -53336,7 +53328,7 @@ goto 68.28,37.07
 |tip Manually skip to the next step.
 step
 goto 52.83,36.06
-'Watch the _Fate of Merrick_ |q A Guild in Crisis/Search the Underground Sanctum
+'Watch _Fate of Merrick_ |q A Guild in Crisis/Search the Underground Sanctum
 step
 goto 56.46,20.71
 'Open _Reading Hall_ |q A Guild in Crisis/Follow Prince Azah |future
@@ -53360,7 +53352,6 @@ goto 42.93,37.98
 step
 goto 43.74,36.06
 'Take _Guildmaster Merric's Sword_ |q A Guild in Crisis/Search the Area
-|tip Manually skip to the next step.
 step
 goto 41.72,34.65
 talk Prince Azah |q A Guild in Crisis/Talk to Prince Azah |future
@@ -53615,7 +53606,6 @@ goto 44.68,25.45
 |tip Manually skip to the next step.
 step
 goto 50.91,25.19
-'Mark _Candle_
 'Mark _Valve_ |q Ghosthunters/.*Search the Reanimatorium.* |count 2
 |tip Manually skip to the next step.
 step
@@ -54461,6 +54451,7 @@ goto 91.76,46.44
 |tip Drop down.
 talk Akech-Chun |q Secrets in the Sand/Talk to Akech-Chun
 step
+goto 91.39,47.05
 'Place _Corpse_ |q Secrets in the Sand/Place Akech-Chun's Items |or |future
 '_OR_
 'Burn _Corpse_ |q Secrets in the Sand/Burn Akech-Chun's Corpse |or |future
@@ -54753,8 +54744,8 @@ goto 41.82,38.83
 'Open _Broken Light Temple_ |q Mystery of the Broken Temple/Enter Broken Light Temple |future
 |tip Manually skip to the next step.
 step
-goto u46_brokenlight_int1_base 46.64,.70.31
-'Find _High Priest Eraamine_ |q Mystery of the Broken Temple/Find High Priest Eraamine
+goto u46_brokenlight_int1_base 46.64,70.31
+'Find _High Priest Eraamine_ |q Mystery of the Broken Temple/Find High Priest Eraamine |future
 step
 goto 45.04,75.19
 |tip Watch the dialogue.
@@ -55142,8 +55133,6 @@ accept The Passages Beneath
 step
 goto 71.67,54.88
 talk Walks-In-Ashes |q The Passages Beneath/Talk to Walks-In-Ashes |future
-'Tell her _Prince Azah wants us to find the Worm Cult's Passage Beneath, but we don't have much to go on._
-'Tell her _Where's this worm cult prisoner now?_
 |tip Manually skip to the next step.
 step
 goto 65.67,49.73
@@ -55519,7 +55508,7 @@ talk Walks-in-Ash |q The Gift of Death/Choose a Champion
 talk Skordo the Knife |q The Gift of Death/Choose a Champion
 step
 goto 40.30,39.40
-|tip Go up the stairs.
+|tip Go upstairs.
 'Take _Bell Mallet_ |q The Gift of Death/Take the Mallet
 step
 goto 40.10,39.43
@@ -55686,7 +55675,7 @@ goto 69.62,69.84 |q The Skull of Gandelec/Find the Skull of Gandelec
 step
 goto 50.11,65.63 |q The Skull of Gandelec/Find the Skull of Gandelec
 step
-goto 58.09,76.94 |q The Skull of Gandelec/Find the Skull of Gandelec |tip Go up top.
+goto 58.09,76.94 |q The Skull of Gandelec/Find the Skull of Gandelec |tip Go upstairs.
 step
 goto 57.65,76.94 |q The Skull of Gandelec/Find the Skull of Gandelec
 step
@@ -55711,25 +55700,25 @@ goto 24.61,56.76
 'Take _Skull of Gandelec_
 'Place _Pedestal of the Skull_ |q The Skull of Gandelec/Place the Attuned Dampening Orb |future
 step
+goto 21.29,63.19 |q Crossing the Wall/Find the Anchor Shrine |future
+step
 goto 61.64,84.04
 'Open _Anchor Shrine Chamber_ |q Crossing the Wall/Find the Anchor Shrine |future
 |tip Manually skip to the next step.
 step
 goto u47_base_CarapaceShrine 61.17,50.97 |q Crossing the Wall/Find the Anchor Shrine
 step
-goto 68.93,64.56 |q Crossing the Wall/Find the Anchor Shrine
-step
-goto 44.17,53.88 |q Crossing the Wall/Find the Anchor Shrine
+goto 44.17,53.88 |q Crossing the Wall/Find the Anchor Shrine |tip Go upstairs.
 step
 goto 12.14,46.60
 'Destroy _Anchor Shrine_ |q Crossing the Wall/Destroy the Anchor Shrine |future
 step
-goto 44.17,53.88 |q Crossing the Wall/Find the Anchor Shrine
+goto 67.96,46.12 |q The Skull of Gandelec/Return to Loraviel |future |tip Drop down.
 step
-goto 68.93,64.56 |q Crossing the Wall/Find the Anchor Shrine
+goto 79.61,51.94 |q The Skull of Gandelec/Return to Loraviel |future
 step
-goto 61.64,84.04
-'Open _Anchor Shrine Chamber_ |q Crossing the Wall/Find the Anchor Shrine |future
+goto 91.82,51.46
+'Open _Carapace Cavern_ |q The Skull of Gandelec/Return to Loraviel |future
 |tip Manually skip to the next step.
 step
 goto u46_carapacecaverns_base 15.08,56.98 |q The Skull of Gandelec/Return to Loraviel
@@ -56028,8 +56017,6 @@ goto 80.91,50.41
 'Use _Skyshard_ |q Hunt for the Great Mage/Go to the Kaz-Neesak Mine
 |tip Manually skip to the next step.
 step
-goto 70.32,52.72 |q Hunt for the Great Mage/Go to the Kaz-Neesak Mine
-step
 goto 78.79,54.11
 'Discover _Xor-Hist_ Wayshrine |q Hunt for the Great Mage/Go to the Kaz-Neesak Mine
 |tip Manually skip to the next step.
@@ -56081,7 +56068,9 @@ step
 goto 81.05,59.31 |q Roots in Stone/Enter Xor-Hist
 step
 goto 81.09,58.89
+|tip Watch the dialogue.
 talk Stone-Shaper Tozka |q Roots in Stone/Talk to Stone-Shaper Tozka |future
+|tip Manually skip to the next step.
 step
 goto 81.29,59.05
 'Open _Xor-Hist Courtyard_ |q Roots in Stone/Enter the Hist Courtyard
@@ -56113,7 +56102,7 @@ step
 goto 28.88,43.20
 'Examine _Fading Builder's Journal III_ |lorebook Fading Builder's Journal III/3/57/4
 step
-goto 38.08,44.53 |q Roots in Stone/Explore the Temple
+goto 38.08,44.53 |q Roots in Stone/Explore the Temple |future
 step
 goto 38.19,53.80 |q Roots in Stone/Explore the Temple
 step
@@ -56128,7 +56117,7 @@ goto 53.54,40.27
 |tip Manually skip to the next step.
 step
 goto 64.44,39.15
-|tip Go up the steps.
+|tip Go upstairs.
 'Use _Counterweight_ |q Roots in Stone/.*Release the Counterweights.* |count 1
 step
 goto 56.84,18.84 |q Roots in Stone/.*Release the Counterweights.*
@@ -56157,7 +56146,7 @@ goto 54.62,48.87
 |tip Manually skip to the next step.
 step
 goto 57.73,70.23
-|tip Go down the steps.
+|tip Go downstairs.
 'Use _Grapple Point_ |q Roots in Stone/.*Release the Counterweights.*
 |tip Manually skip to the next step.
 step
@@ -56185,7 +56174,7 @@ goto 83.50,54.06
 |tip Manually skip to the next step.
 step
 goto 89.14,53.95
-|tip Go up the stairs.
+|tip Go upstairs.
 'Open _Atak's Great Vault_ |q Roots in Stone/Reach the Vault
 step
 goto u48_xorhist_xanmeer 39.39,45.30
@@ -56239,8 +56228,10 @@ talk Mani-Kai
 turnin Roots in Stone
 step
 'Open _Solstice_
-'Travel to _Xor-Hist_ |q Roots in Stone/Return to the Surface |future
+'Travel to _Xor-Hist_ |q Hunt for the Great Mage/Collect Map |future
 |tip Manually skip to the next step.
+step
+goto 80.84,52.98 |q Hunt for the Great Mage/Go to the Kaz-Neesak Mine
 step
 goto 82.60,52.92
 'Open _Kaz-Neesak Mine_ |q Hunt for the Great Mage/Collect Map |future
@@ -56370,6 +56361,8 @@ goto 72.90,66.61
 talk Sahmazim
 turnin To Know the Void
 step
+goto 72.74,65.02 |q Hunt for the Great Mage/Find the Other Soul Flayer Harvest Site
+step
 goto 67.32,65.42
 'Discover _Stone Cove_ Wayshrine|q Hunt for the Great Mage/Find the Other Soul Flayer Harvest Site
 |tip Manually skip to the next step.
@@ -56482,7 +56475,7 @@ goto 60.91,40.53
 step
 goto 60.91,40.53
 'Use _Caterwaul Cove_
-'Travel to _Rampart Camp_ |q A Cold Grave\Find Healer Namreras
+'Travel to _Rampart Camp_ |q A Cold Grave/Find Healer Namreras
 |tip Manually skip to the next step.
 step
 goto 53.12,55.72
@@ -56863,7 +56856,7 @@ goto 80.10,63.70
 step
 goto 83.68,45.44
 'Kick _Ezhkel_
-kill Ezhkel |q An Ambition Fulfilled/Sacrifice Ezhkel
+kill Ezhkel |q An Ambition Fulfilled/Sacrifice Ezhkel |future
 step
 goto 83.18,45.44
 kill Worm Cultists |q An Ambition Fulfilled/Kill the Worm Cultists
@@ -57006,10 +56999,6 @@ goto 82.11,26.05
 step
 goto 82.52,25.88
 talk Rexus Nerva |q Choice and Consequence/Find Your Way to Dark Adept Vairisse
-|tip Manually skip to the next step.
-step
-goto 82.62,26.78
-'Unlock _Officers Accoutrement Chest_ |q Choice and Consequence/Find Your Way to Dark Adept Vairisse
 step
 goto 82.99,24.93
 'Open _Dark Adept Vairisse's Study_ |q Choice and Consequence/Find Dark Adept Vairisse
@@ -57027,7 +57016,10 @@ goto 86.89,49.22
 talk Worm Slayer Pomptinus Muco |q Choice and Consequence/Talk to the Torturers
 step
 goto 83.38,50.97
-'Use _Vitrified Soul Crystal_ |q Choice and Consequence/.*Use the Soul Gem on the Captives.*
+|tip If you free the captives then use crystal on guards that attack
+'Use _Vitrified Soul Crystal_ |q Choice and Consequence/.*Use the Soul Gem on the Captives.* |or |future
+'_OR_
+'Use _Vitrified Soul Crystal_ |q Choice and Consequence/.*Capture the Souls of the Worm Slayers.* |or |future
 step
 goto 81.58,65.89
 'Open _Commander's Quarters_ |q Choice and Consequence/Meet Dark Adept Vairisse
@@ -57042,6 +57034,7 @@ goto 80.56,94.88
 step
 goto u48_overland_base 83.42,25.17
 talk Cariel |q Choice and Consequence/Talk to Cariel |future
+|tip Manually skip to the next step.
 step
 goto 83.81,25.52
 'Open _Prince Naemon's Quarters_ |q Choice and Consequence/Find Prince Naemon
@@ -57185,7 +57178,7 @@ step
 'Travel to _Mor Naril Camp_ |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
 |tip Manually skip to the next step.
 step
-goto 83.33,35.19 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+goto u48_overland_base 83.33,35.19 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
 step
 goto 80.56,39.04 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
 step
@@ -57384,12 +57377,8 @@ talk Sadryn Omalen
 accept Dubious Intentions
 step
 goto 74.87,43.27
-'Dig _Suspicious Mound of Dirt_ |q Dubious Intentions |future
-|tip Manually skip to the next step.
-step
-goto 74.83,43.26
-'Examine _Golvyni_ |q Dubious Intentions |future
-|tip Manually skip to the next step.
+'Dig _Suspicious Mound of Dirt_
+'Examine _Golvyni_ |lorebook Golvyni's Journal/3/57/11
 step
 goto 75.04,43.17
 'Place _Bear-Lizzard Bait_ |q Dubious Intentions/Place Bait
@@ -57412,7 +57401,7 @@ step
 step
 goto u48_overland_base 62.02,51.78 |q The Gates of Mor Naril/Enter the Sea and Sword Lodge |future
 step
-goto 61.63,50.66
+goto 61.86,50.66
 talk Master Tanertor
 accept A Traitor's Tyranny
 step
@@ -57472,7 +57461,7 @@ step
 goto 26.36,83.01
 'Activate _Portal Gate_ |q A Traitor's Tyranny/.*Activate Portal Gates.* |count 3
 step
-goto 51.74,70.70 |q The Gates of Mor Naril/Find a Key |future
+goto 54.22,75.48 |q The Gates of Mor Naril/Find the Library
 step
 goto 51.26,61.42 |q The Gates of Mor Naril/Find a Key
 step
@@ -57500,7 +57489,10 @@ step
 goto 51.30,82.72
 talk Jeetra |q The Gates of Mor Naril/Talk to Jeetra
 step
-goto  |q A Traitor's Tyranny/Talk to Master Tanertor |tip Go back upstairs to the door fix on next run.
+goto 54.33,76.43
+|tip Go back upstairs.
+'Open _Sea and Sword Lodge_ |q A Traitor's Tyranny/Talk to Master Tanertor
+|tip Manually skip to the next skip.
 step
 goto 71.32,68.58 |q A Traitor's Tyranny/Talk to Master Tanertor
 step
@@ -57525,8 +57517,6 @@ step
 goto 64.23,43.22
 talk Jeetra |q The Gates of Mor Naril/Talk to Jeetra |future
 |tip Manually skip to the next step.
-step
-goto 63.69,43.23 |q The Gates of Mor Naril/Locate Vaedinhill Vault |future
 step
 goto 63.38,42.99
 'Open _Vaedinhill Cavern_ |q The Gates of Mor Naril/Locate Vaedinhill Vault |future
@@ -57801,11 +57791,18 @@ step
 step
 goto u48_overland_base 40.11,44.39 |q The Golden Knight/Meet Darien at Broken Light Temple
 step
-goto 40.70,40.70
+goto 40.70,40.70 |q The Golden Knight/Meet Darien at Broken Light Temple
+step
+goto 40.74,40.22 |q The Golden Knight/Meet Darien at Broken Light Temple
+step
+goto 42.82,39.08 |q The Golden Knight/Meet Darien at Broken Light Temple
+step
+goto 42.46,39.37
+|tip Go upstairs.
 talk Darien Gautier |q The Golden Knight/Talk to Darien |future
 step
 goto 41.82,38.83
-'Open _Broken Light Temple_ |q Mystery of the Broken Temple/Enter Broken Light Temple |future
+'Open _Broken Light Temple_ |q The Golden Knight/Meet Darien Inside Broken Light Temple |future
 |tip Manually skip to the next step.
 step
 goto u46_brokenlight_int1_base 47.02,68.63

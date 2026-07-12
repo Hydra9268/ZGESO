@@ -21,7 +21,13 @@ Install through the excellent add-on manager <a href="https://minion.mmoui.com/"
 
 <br/>
 
-### Recent Updates
+### 07/13/2026
+### Eastern Solstice
+* Eastern Solstice Main Quest Only
+* Eastern Solstice Full guide
+* Eastern Solstice Skyshard and Delves Guide
+* Eastern Solstice Lorebooks
+
 ### Date Undetermined
 ### Main Quest Rework
 * Aldmeri Dominion Base Game
