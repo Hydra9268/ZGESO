@@ -48332,7 +48332,6 @@ goto 40.19,79.07
 talk Walks-In-Ashes |q The Passages Beneath/Talk to Walks-In-Ashes |future
 |tip Manually skip to the next step.
 step
-goto 38.34,81.78
 'Open _Solstice_ Map
 'Travel to _Sunport_ |q The Passages Beneath/Return to Prince Azah
 |tip Manually skip to the next step.
@@ -49161,26 +49160,6 @@ goto 67.27,37.22 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
 step
 goto 70.58,37.06 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
 step
-goto 77.17,41.01 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
-step
-goto 80.56,39.04 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
-step
-goto 83.33,35.19 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
-step
-goto 82.14,34.12
-'Discover _Mor Naril Camp_ |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
-|tip Manually skip to the next step.
-step
-goto 83.33,35.19 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
-step
-goto 80.56,39.04 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
-step
-goto 77.17,41.01 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
-step
-goto 75.03,38.84 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
-step
-goto 73.45,38.75 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
-step
 goto 73.74,33.58
 'Examine _Village Report_ |lorebook Village Report/3/57/19
 step
@@ -49191,8 +49170,14 @@ step
 goto 74.04,33.04
 talk Jeetra |q The Deep Tombs of Xul-Haj/Find Jeetra
 step
-'Open _Solstice_ Map
-'Travel to _Mor Naril Camp_ |q The Deep Tombs of Xul-Haj/Go to Xul-Haj
+goto 77.17,41.01 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+step
+goto 80.56,39.04 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+step
+goto 83.33,35.19 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+step
+goto 82.14,34.12
+'Discover _Mor Naril Camp_ |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
 |tip Manually skip to the next step.
 step
 goto 81.29,31.04 |q The Deep Tombs of Xul-Haj/Go to Xul-Haj
@@ -49361,9 +49346,9 @@ talk Jeetra |q The Gates of Mor Naril/Talk to Jeetra |future
 step
 goto 77.61,40.61 |q The Gates of Mor Naril/Go to Basking-Stone Refuge
 step
-goto 75.90,42.34 |q The Gates of Mor Naril/Go to Basking-Stone Refuge
+goto 76.16,43.33 |q The Gates of Mor Naril/Go to Basking-Stone Refuge
 step
-goto 76.96,46.15 |q The Gates of Mor Naril/Go to Basking-Stone Refuge
+goto 75.00,43.14 |q The Gates of Mor Naril/Go to Basking-Stone Refuge
 step
 goto 74.25,46.66
 'Enter _Basking-Stone Refuge_ |q The Gates of Mor Naril/Go to Basking-Stone Refuge

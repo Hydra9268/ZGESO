@@ -21,7 +21,7 @@ Install through the excellent add-on manager <a href="https://minion.mmoui.com/"
 
 <br/>
 
-### 07/13/2026
+### 07/18/2026
 ### Eastern Solstice
 * Eastern Solstice Main Quest Only
 * Eastern Solstice Full guide

@@ -53223,19 +53223,18 @@ step
 
 -- START: DAGGERFALL COVENANT FACTION
 'Open _Glenumbra_ Map
-'Travel to _Daggerfall Covenant_ |q A Guild in Crisis |future
+'Travel to _Daggerfall_ |q A Guild in Crisis |future
 |tip Manually skip to the next step.
 |only Daggerfall Covenant
 step
-goto daggerfall_base 59.27,55.19
+goto daggerfall_base 48.34,32.77
 |tip Choose Malabal Tor
 talk Prince Azah
 accept A Guild in Crisis
 |only Daggerfall Covenant
 step
-goto 49.05,20.71
-'Use _Daggerfall_
-'Travel to _Vulkwasten_ in Malabal Tor |q A Guild in Crisis/Rendezvous with Guild Scout in Malabal Tor |future
+goto 48.54,33.24
+'Travel _Wimi_ |q A Guild in Crisis/Rendezvous with Guild Scout in Malabal Tor |future
 |tip Manually skip to the next step.
 |only Daggerfall Covenant
 step 
@@ -53606,6 +53605,7 @@ goto 44.68,25.45
 |tip Manually skip to the next step.
 step
 goto 50.91,25.19
+'Mark _Candle_
 'Mark _Valve_ |q Ghosthunters/.*Search the Reanimatorium.* |count 2
 |tip Manually skip to the next step.
 step
@@ -54995,6 +54995,20 @@ accept Sunport Seeks Adventurers!
 step
 goto 52.22,57.67 |q Sunport Seeks Adventurers!/Talk to Korasephina
 step
+goto 53.04,60.71
+'Examine _Which Guild is for You?_
+accept Guild Listings
+step
+goto 53.31,63.57
+talk Guild Herald Amsaad |q Guild Listings/Talk to Guild Herald Amsaad
+step
+goto 53.31,63.57
+'Examine _Guild Listings_ |q Guild Listings/Review the Guild Listings
+step
+goto 53.31,63.57
+talk Guild Herald Amsaad
+turnin Guild Listings
+step
 goto 56.39,67.08
 talk Korasephina
 turnin Sunport Seeks Adventurers!
@@ -55189,7 +55203,6 @@ goto 40.19,79.07
 talk Walks-In-Ashes |q The Passages Beneath/Talk to Walks-In-Ashes |future
 |tip Manually skip to the next step.
 step
-goto 38.34,81.78
 'Open _Solstice_ Map
 'Travel to _Sunport_ |q The Passages Beneath/Return to Prince Azah
 |tip Manually skip to the next step.
@@ -55683,25 +55696,6 @@ goto 70.51,77.38
 'Use _Skyshard_ |q The Skull of Gandelec/Find the Skull of Gandelec
 |tip Manually skip to the next step.
 step
-goto 58.09,76.94 |q The Skull of Gandelec/Find the Skull of Gandelec
-step
-goto 29.93,62.31 |q The Skull of Gandelec/Find the Skull of Gandelec
-step
-goto 34.15,51.22
-|tip Kill 3 groups of mobs.
-kill Headcracker |q The Skull of Gandelec/Find the Skull of Gandelec |future
-|tip Manually skip to the next step.
-step
-goto 25.28,65.19 |q The Skull of Gandelec/Find the Skull of Gandelec |future
-step
-goto 20.62,62.31 |q The Skull of Gandelec/Find the Skull of Gandelec |future
-step
-goto 24.61,56.76
-'Take _Skull of Gandelec_
-'Place _Pedestal of the Skull_ |q The Skull of Gandelec/Place the Attuned Dampening Orb |future
-step
-goto 21.29,63.19 |q Crossing the Wall/Find the Anchor Shrine |future
-step
 goto 61.64,84.04
 'Open _Anchor Shrine Chamber_ |q Crossing the Wall/Find the Anchor Shrine |future
 |tip Manually skip to the next step.
@@ -55721,7 +55715,22 @@ goto 91.82,51.46
 'Open _Carapace Cavern_ |q The Skull of Gandelec/Return to Loraviel |future
 |tip Manually skip to the next step.
 step
-goto u46_carapacecaverns_base 15.08,56.98 |q The Skull of Gandelec/Return to Loraviel
+goto u46_carapacecaverns_base 34.15,51.22
+|tip Kill 3 groups of mobs.
+kill Headcracker |q The Skull of Gandelec/Find the Skull of Gandelec |future
+|tip Manually skip to the next step.
+step
+goto 25.28,65.19 |q The Skull of Gandelec/Find the Skull of Gandelec |future
+step
+goto 20.62,62.31 |q The Skull of Gandelec/Find the Skull of Gandelec |future
+step
+goto 24.61,56.76
+'Take _Skull of Gandelec_
+'Place _Pedestal of the Skull_ |q The Skull of Gandelec/Place the Attuned Dampening Orb |future
+step
+goto 21.29,63.19 |q Crossing the Wall/Find the Anchor Shrine |future
+step
+goto 15.08,56.98 |q The Skull of Gandelec/Return to Loraviel
 step
 goto 11.09,52.33
 'Enter _Solstice_ |q The Skull of Gandelec/Return to Loraviel |future
@@ -56069,8 +56078,7 @@ goto 81.05,59.31 |q Roots in Stone/Enter Xor-Hist
 step
 goto 81.09,58.89
 |tip Watch the dialogue.
-talk Stone-Shaper Tozka |q Roots in Stone/Talk to Stone-Shaper Tozka |future
-|tip Manually skip to the next step.
+talk Stone-Shaper Tozka |q Roots in Stone/Talk to Stone-Speaker Tozka |future
 step
 goto 81.29,59.05
 'Open _Xor-Hist Courtyard_ |q Roots in Stone/Enter the Hist Courtyard
@@ -56175,10 +56183,10 @@ goto 83.50,54.06
 step
 goto 89.14,53.95
 |tip Go upstairs.
-'Open _Atak's Great Vault_ |q Roots in Stone/Reach the Vault
+'Open _Atak's Great Vault_ |q Roots in Stone/Reach the Vault |future
 step
 goto u48_xorhist_xanmeer 39.39,45.30
-talk Xica-Ilan |q Roots in Stone/Talk to Xica-Ilan
+talk Xica-Ilan |q Roots in Stone/Talk to Xica-Ilan |future
 step
 goto 41.88,45.20
 'Use _Stone-Nest Idol_ |q Roots in Stone/Release the Builder's Control Stone
@@ -56571,7 +56579,12 @@ step
 goto U48_base_LFCave5B_base 77.85,72.54 |q Blood on the Water/Find the Mutineers |tip Go all the way to bottom of ramp.
 step
 goto 61.18,47.69
-|tip Search Supply Crates in this room until you collect all 5.
+'Search _Supply Crate_ |q Blood on the Water/.*Gather Coldharbour's Teeth.* |count 2
+step
+goto 67.36,43.17
+'Search _Supply Crate_ |q Blood on the Water/.*Gather Coldharbour's Teeth.* |count 3
+step
+goto 47.95,30.68
 'Search _Supply Crate_ |q Blood on the Water/.*Gather Coldharbour's Teeth.*
 step
 goto 66.19,61.31 |q Blood on the Water/Talk to Captain One-Eye
@@ -56803,10 +56816,9 @@ step
 goto 14.44,36.22
 |tip Watch the dialogue.
 'Open _Solstice_ |q Lost Among the Ashes/Use Sirilonwe's Portal |future
-|tip Manually skip to the next step.
 step
 goto u48_overland_base 67.27,36.56
-talk Terinvel Drathan |q Lost Among the Ashes/Talk to Terinvel
+talk Terinvel Drathan |q Lost Among the Ashes/Talk to Terinvel |future
 step
 goto 67.31,36.48
 talk Sirilonwe
@@ -56910,11 +56922,12 @@ goto 36.65,78.93
 |tip Manually skip to the next step.
 step
 goto 42.09,80.80
+|tip Go downstairs.
 'Open _Lair of the Black Worm_ |q Dismantling the Worm/Meet Ojouna Outside the Lair of the Black Worm
 |tip Manually skip to the next step.
 step
 goto 46.13,84.26
-'Enter _Solstice_ |q Dismantling the Worm/Meet Ojouna Outside the Lair of the Black Worm
+'Enter _Solstice_ |q Dismantling the Worm/Meet Ojouna Outside the Lair of the Black Worm |future
 |tip Manually skip to the next step.
 step
 goto u48_overland_base 65.93,36.35
@@ -56940,18 +56953,32 @@ goto 75.48,35.97
 'Use _Skyshard_ |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
 |tip Manually skip to the next step.
 step
-goto 73.71,37.09 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+goto 73.74,33.58
+'Examine _Village Report_ |lorebook Village Report/3/57/19
 step
-goto 75.52,39.54 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+goto 73.98,33.39
+'Open _Death-Dancer Jeetra's House_ |q The Deep Tombs of Xul-Haj/Find Jeetra
+|tip Manually skip to the next step.
 step
-goto 77.17,41.01 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+goto 74.04,33.04
+talk Jeetra |q The Deep Tombs of Xul-Haj/Find Jeetra
 step
-goto 80.56,39.04 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+goto 74.00,33.38
+'Open _Solstice_ |q Choice and Consequence |future
+|tip Manually skip to the next step.
 step
-goto 83.33,35.19 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+goto 73.71,37.09 |q Choice and Consequence |future
+step
+goto 75.52,39.54 |q Choice and Consequence |future
+step
+goto 77.17,41.01 |q Choice and Consequence |future
+step
+goto 80.56,39.04 |q Choice and Consequence |future
+step
+goto 83.33,35.19 |q Choice and Consequence |future
 step
 goto 82.14,34.12
-'Discover _Mor Naril Camp_ |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+'Discover _Mor Naril Camp_ |q Choice and Consequence |future
 |tip Manually skip to the next step.
 step
 goto 81.46,30.47
@@ -56978,9 +57005,11 @@ step
 goto 80.81,24.95 |q Choice and Consequence/.*Gather Information in the Worm Cult Camp.*
 step
 goto 81.67,25.36
+|tip Watch the dialogue.
 'Use _Hiding Spot_ |q Choice and Consequence/.*Gather Information in the Worm Cult Camp.* |count 3
 step
 goto 81.52,27.30
+|tip Watch the dialogue.
 'Use _Hiding Spot_ |q Choice and Consequence/.*Gather Information in the Worm Cult Camp.* |count 4
 step
 goto 81.21,27.13
@@ -57175,34 +57204,10 @@ talk Cariel
 turnin Choice and Consequence
 step
 'Open _Solstice_ Map
-'Travel to _Mor Naril Camp_ |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
-|tip Manually skip to the next step.
-step
-goto u48_overland_base 83.33,35.19 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
-step
-goto 80.56,39.04 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
-step
-goto 77.17,41.01 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
-step
-goto 75.03,38.84 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
-step
-goto 73.45,38.75 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
-step
-goto 73.74,33.58
-'Examine _Village Report_ |lorebook Village Report/3/57/19
-step
-goto 73.98,33.39
-'Open _Death-Dancer Jeetra's House_ |q The Deep Tombs of Xul-Haj/Find Jeetra
-|tip Manually skip to the next step.
-step
-goto 74.04,33.04
-talk Jeetra |q The Deep Tombs of Xul-Haj/Find Jeetra
-step
-'Open _Solstice_ Map
 'Travel to _Mor Naril Camp_ |q The Deep Tombs of Xul-Haj/Go to Xul-Haj
 |tip Manually skip to the next step.
 step
-goto 81.29,31.04 |q The Deep Tombs of Xul-Haj/Go to Xul-Haj
+goto u48_overland_base 81.29,31.04 |q The Deep Tombs of Xul-Haj/Go to Xul-Haj
 step
 goto 79.24,32.77
 'Open _Xul-Haj_ |q The Deep Tombs of Xul-Haj/Enter Xul-Haj |future
@@ -57251,12 +57256,11 @@ goto 83.51,35.09
 step
 goto 87.54,35.26
 |tip Move second sacred stone to this square.
-'Move _Sacred Stones_ |q The Deep Tombs of Xul-Haj/Move the Sacred Stones
+'Move _Sacred Stones_ |q The Deep Tombs of Xul-Haj/Move the Sacred Stones |future
 |tip Manually skip to the next step.
 step
 goto 83.16,48.07
-'Open _Cistern Chamber_ |q The Deep Tombs of Xul-Haj/Return to the Cistern Chamber
-|tip Manually skip to the next step.
+'Open _Cistern Chamber_ |q The Deep Tombs of Xul-Haj/Return to the Cistern Chamber |future
 step
 goto 75.79,48.60
 'Enter _Flooded Cistern_ |q The Deep Tombs of Xul-Haj/Return to the Cistern Chamber |future
@@ -57376,12 +57380,13 @@ goto 74.54,45.04
 talk Sadryn Omalen
 accept Dubious Intentions
 step
+goto 75.04,43.17
+'Place _Bear-Lizzard Bait_ |q Dubious Intentions/Place Bait
+|tip Manually skip to the next step.
+step
 goto 74.87,43.27
 'Dig _Suspicious Mound of Dirt_
 'Examine _Golvyni_ |lorebook Golvyni's Journal/3/57/11
-step
-goto 75.04,43.17
-'Place _Bear-Lizzard Bait_ |q Dubious Intentions/Place Bait
 step
 goto 74.54,45.04
 talk Sadryn Omalen
@@ -57506,7 +57511,8 @@ goto u48_overland_base 61.97,50.38
 talk Master Tanertor
 turnin A Traitor's Tyranny
 step
-'Open _Solstice_ Map
+goto 61.91,55.26
+'Use _Grand Juncture Pass_
 'Travel to _Caterwaul Cove_ |q The Gates of Mor Naril/Go to Vaedinhill Manor
 |tip Manually skip to the next step.
 step
