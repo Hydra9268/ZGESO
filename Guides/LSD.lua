@@ -10547,5 +10547,160 @@ goto 42.28,36.14
 'Use _Skyshard_
 |tip Manually skip to the next step.
 step
+goto 80.89,50.33
+'Use _Skyshard_
+|tip Manually skip to the next step.
+step
+goto 83.15,63.81
+'Use _Skyshard_
+|tip Manually skip to the next step.
+step
+goto 75.63,68.51
+'Use _Skyshard_
+|tip Manually skip to the next step.
+step
+goto 72.18,68.66
+'Open _Xul-Katama_
+|tip Manually skip to the next step.
+step
+goto U48_delve_sithis_crest_01 91.01,34.14
+step
+goto 74.36,15.10
+step
+goto 54.37,15.86
+step
+goto 27.15,16.65
+step
+goto 26.82,29.88
+step
+goto 10.08,30.90
+kill Whisper of the Sacred Stones
+|tip Manually skip to the next step.
+step
+goto 15.22,35.29
+step
+goto 18.84,52.76
+step
+goto 31.19,50.72
+step
+goto 33.10,41.76
+step
+goto 51.82,40.87
+step
+goto 44.55,46.90
+step
+goto 61.50,70.94
+step
+goto 69.13,55.54
+step
+goto 71.89,48.48
+step
+goto 79.38,49.20
+'Use _Skyshard_
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 65.38,41.94
+'Use _Skyshard_
+|tip Manually skip to the next step.
+step
+goto 83.26,59.16
+'Open _Lair of the Black Worm_
+|tip Manually skip to the next step.
+step
+goto u46_base_LOTWC 59.80,63.80
+step
+goto 58.98,69.17
+step
+goto 70.52,71.25
+step
+goto 76.02,40.10
+step
+goto 71.90,33.17 |tip Go downstairs.
+step
+goto 64.03,27.91 |tip Go upstairs.
+step
+goto 51.91,32.05
+step
+goto 51.46,50.26
+step
+goto 51.17,58.37
+|tip Climb the rocks. 
+kill Riuzzan the Ravenous
+|tip Manually skip the next step.
+step
+goto 36.24,54.31
+step
+goto 28.46,42.64
+step
+goto 24.36,45.60
+step
+goto 15.90,61.48
+step
+goto 16.61,71.23
+step
+goto 40.80,73.62
+step
+goto 36.65,78.93
+|tip Go upstairs.
+'Use _Skyshard_
+|tip Manually skip to the next step.
+step
+goto 75.44,35.96
+|tip Manually skip to the next step.
+step
+'Open _Solstice_ Map
+'Travel to _Grand Juncture Pass_
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 62.02,51.78
+step
+goto 61.86,50.66
+talk Master Tanertor
+accept A Traitor's Tyranny
+step
+goto 61.48,50.53
+'Open _Sea and Sword Lodge_
+|tip Manually skip to the next step.
+step
+goto u48_ssl_delve_base_1 69.64,43.70
+step
+goto 72.38,28.06
+step
+goto 74.61,12.86
+step
+goto 69.46,24.37 |tip Go upstairs.
+step
+goto 69.46,16.04
+step
+goto 48.34,10.45
+step
+goto 44.17,18.41
+step
+goto 48.52,21.26 |tip Go downstairs.
+step
+goto 43.73,34.09
+step
+goto 33.83,33.91
+step
+goto 39.64,46.69
+step
+goto 49.62,46.69
+kill Lector Fenworine
+|tip Manually skip to the next step.
+step
+goto 54.59,46.69
+step
+goto 38.62,46.69
+step
+goto 33.36,59.74
+step
+goto 23.38,55.57
+step
+goto 16.22,50.60
+step
+goto 20.57,47.28
+'Use _Skyshard_
+|tip Manually skip to the next step.
+step
 'Congradualations _Guild is Now Complete._
 ]])

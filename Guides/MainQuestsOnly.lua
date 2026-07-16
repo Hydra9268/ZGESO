@@ -48876,8 +48876,6 @@ talk Prince Azah
 turnin Crossing the Wall
 accept The Worm Turns
 step
-goto 53.78,57.57 |q The Worm Turns/Investigate the Pass
-step
 goto 58.87,55.91
 talk Skordo the Knife |q The Worm Turns/Talk to Skordo the Knife |future
 step
