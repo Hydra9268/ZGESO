@@ -2,7 +2,7 @@
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-local ZGV = _G.ZGV
+local CGV = _G.CGV
 local debugcolor = "|cff88dd"
 local lastdate = 0
 local mscycle = 0
@@ -11,8 +11,8 @@ local timecolor = mscolors[0]
 local errorlog = ""
 local blockedmsgs = {}
 local tinsert, type, ipairs = table.insert, type, ipairs
-local print = ZGV.print
-local L = ZGV.L
+local print = CGV.print
+local L = CGV.L
 
 -----------------------------------------
 -- LOCAL FUNCTIONS
@@ -21,7 +21,7 @@ local L = ZGV.L
 local flags = {}
 -- Easy setting of flags
 local function SetDebugFlags()
-	flags = ZGV.sv and ZGV.sv.profile and ZGV.sv.profile.debug_flags or flags
+	flags = CGV.sv and CGV.sv.profile and CGV.sv.profile.debug_flags or flags
 	flags.quest = false
 	flags.parser = false
 	flags.viewer = false
@@ -32,7 +32,7 @@ end
 -- DEBUG
 -----------------------------------------
 
-function ZGV:Debug (msg,...)
+function CGV:Debug (msg,...)
 	local GetFrameTimeSeconds, GetGameTimeMilliseconds = _G.GetFrameTimeSeconds, _G.GetGameTimeMilliseconds
 
 	if not msg or type(msg) ~= "string" then
@@ -74,7 +74,7 @@ function ZGV:Debug (msg,...)
 
 	local message = ("|cffee77Z|r: %s%s+%03d|r |c00ddbb#%d: %s%s"):format(timecolor,datestamp,debugms,self.DebugI,debugcolor,formatted_msg)
 
-	if (not ZGV.blockdebug and self.sv and self.sv.profile and self.sv.profile.debug) or flags.forcedisplay or ZGV.DEV then
+	if (not CGV.blockdebug and self.sv and self.sv.profile and self.sv.profile.debug) or flags.forcedisplay or CGV.DEV then
 		print(message)
 	else
 		tinsert(blockedmsgs,message)
@@ -83,12 +83,12 @@ function ZGV:Debug (msg,...)
 end
 
 -- Used in coroutines because they can't print
-function ZGV:BlockDebugOutput()
-	ZGV.blockdebug = true
+function CGV:BlockDebugOutput()
+	CGV.blockdebug = true
 end
 
-function ZGV:UnBlockDebugOutput()
-	ZGV.blockdebug = nil
+function CGV:UnBlockDebugOutput()
+	CGV.blockdebug = nil
 
 	for msg in ipairs(blockedmsgs) do
 		print(msg)
@@ -101,12 +101,12 @@ end
 -- PRINT
 -----------------------------------------
 
-function ZGV:Print(str,...)
+function CGV:Print(str,...)
 	str = string.format(tostring(str),...)
 	-- TODO
-	if (ZGV.Creator) then
+	if (CGV.Creator) then
 		print(L['name'].." |ceeeecc[Creator]|r: "..str)
-	elseif (ZGV.DEV) then
+	elseif (CGV.DEV) then
 		print(L['name'].." |ceeeecc[DEV]|r: "..str)
 	else
 		print(L['name']..": "..str)
@@ -117,7 +117,7 @@ end
 -- ERROR
 -----------------------------------------
 
-function ZGV:Error(str,...)
+function CGV:Error(str,...)
 	str = "|cff0000ERROR|r - "..str
 
 	self:Print(str,...)
@@ -125,16 +125,16 @@ function ZGV:Error(str,...)
 	errorlog = errorlog..str..'\n'
 end
 
-function ZGV:DumpErrorLog()
+function CGV:DumpErrorLog()
 	if #errorlog <= 0 then return end
 
-	ZGV:Dump(errorlog)
+	CGV:Dump(errorlog)
 end
 
 -----------------------------------------
 -- DUMP
 -----------------------------------------
 
-function ZGV:Dump(str,title)
+function CGV:Dump(str,title)
 	self.BugReport:ShowDump(str,title)
 end

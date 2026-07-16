@@ -2,13 +2,13 @@
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-local ZGV = _G.ZGV
-local tinsert,tremove,sort,zginherits,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,table.zginherits,math.min,math.max,math.floor,type,pairs,ipairs
-local CHAIN = ZGV.Utils.ChainCall
-local print = ZGV.print
-local ui = ZGV.UI
-local Backdrop = ZGV.Class:New("Backdrop")
-local SecBackdrop = ZGV.Class:New("SecBackdrop")
+local CGV = _G.CGV
+local tinsert,tremove,sort,cginherits,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,table.cginherits,math.min,math.max,math.floor,type,pairs,ipairs
+local CHAIN = CGV.Utils.ChainCall
+local print = CGV.print
+local ui = CGV.UI
+local Backdrop = CGV.Class:New("Backdrop")
+local SecBackdrop = CGV.Class:New("SecBackdrop")
 local BACKDROP_CENTER_COLOR = {0,0,0,1}
 local BACKDROP_EDGE_COLOR = {HTMLColor("#7d7d7d")}
 local BACKDROP_EDGE_TEXTURE = {nil,16,2,1}

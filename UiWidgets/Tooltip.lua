@@ -2,16 +2,16 @@
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-local ZGV = _G.ZGV
-local CHAIN = ZGV.Utils.ChainCall
-local ui = ZGV.UI
+local CGV = _G.CGV
+local CHAIN = CGV.Utils.ChainCall
+local ui = CGV.UI
 local unpack = unpack
 
 -----------------------------------------
 -- LOCAL VARIABLES
 -----------------------------------------
 
-local Tooltip =  ZGV.Class:New("Tooltip")
+local Tooltip =  CGV.Class:New("Tooltip")
 local headerFont = ui:GetFont(14,true)
 local HEADER_COLOR = {1,1,1}
 local lineFont = ui:GetFont(13)

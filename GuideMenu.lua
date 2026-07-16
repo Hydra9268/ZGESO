@@ -7,7 +7,7 @@
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-local ZGV = _G.ZGV
+local CGV = _G.CGV
 local TOPLEFT, TOPRIGHT, BOTTOMLEFT, BOTTOMRIGHT, CENTER = _G.TOPLEFT, _G.TOPRIGHT, _G.BOTTOMLEFT, _G.BOTTOMRIGHT, _G.CENTER
 local TOP, RIGHT, BOTTOM, LEFT = _G.TOP, _G.RIGHT, _G.BOTTOM, _G.LEFT
 local CT_TEXTURE = _G.CT_TEXTURE
@@ -21,7 +21,7 @@ local GuideMenu = {}
 
 local BUTTON_HIGHLIGHT_TEXTURE = {1,1,1,.2}
 
-local name = "ZygorMenu"
+local name = "CommunityMenu"
 local GUIDEMENU_TAB_ID = "guides"
 local SETTINGS_TAB_ID = "settings"
 
@@ -48,10 +48,10 @@ local GuideStatusColor = {
 }
 
 local tinsert,type,pairs,ipairs,class = table.insert,type,pairs,ipairs,_G.class
-local CHAIN = ZGV.Utils.ChainCall
-local ui = ZGV.UI
+local CHAIN = CGV.Utils.ChainCall
+local ui = CGV.UI
 local wm = _G.WINDOW_MANAGER
-local L = ZGV.L
+local L = CGV.L
 local GuiRoot = _G.GuiRoot
 local titlebar = _G.titlebar
 
@@ -69,9 +69,9 @@ setmetatable(Settings.OptionUI, {
 -- SAVED REFERENCES
 -----------------------------------------
 
-ZGV.Menu = Menu
-ZGV.Settings = Settings
-ZGV.GuideMenu = GuideMenu
+CGV.Menu = Menu
+CGV.Settings = Settings
+CGV.GuideMenu = GuideMenu
 Menu.Settings = Settings
 Menu.GuideMenu = GuideMenu
 
@@ -117,7 +117,7 @@ local function SetIcon(self,nh,nv,h,v,sec)
 	else
 		icon:Hide()
 	end
-	icon:SetTexture(ZGV.DIR.."/Viewer/Skins/Stealth/guideicons-small.dds")
+	icon:SetTexture(CGV.DIR.."/Viewer/Skins/Stealth/guideicons-small.dds")
 	SetTextureBlock(icon,nh,nv,h,v)
 end
 
@@ -147,12 +147,12 @@ function Menu:CreateBaseMenu()
 
 	frame.versionNum = CHAIN(ui:Create("Label",frame,name.."_VerNum",12))
 		:SetPoint(LEFT,frame.version,RIGHT,3,0)
-		:SetText("|cffaa00"..ZGV.version.."|r")
+		:SetText("|cffaa00"..CGV.version.."|r")
 		.__END
 
 	-- Community Leveling Guides logo, upper right, left of close button
 	frame.logo = CHAIN(ui:Create("Logo",frame,name.."_Logo","Logo"))
-		:SetTexture(ZGV.DIR .. "/Viewer/Skins/Stealth/communityguidelogo.dds")
+		:SetTexture(CGV.DIR .. "/Viewer/Skins/Stealth/communityguidelogo.dds")
 		:SetSize(300,40)
 		:SetPoint(TOPRIGHT, titlebar, -5, 10)
 		.__END
@@ -264,7 +264,7 @@ function GuideMenu:Create()
 
 	frame.header = CHAIN(ui:Create("Label",frame,guideMenuName.."_Header",15,"bold"))
 		:SetPoint(TOPLEFT,frame,TOPLEFT,HEADER_PADDING,6)
-		:SetText (ZGV.Utils.faction_names_short[ZGV.Utils.GetFaction()]:upper() .. (ZGV.VETERAN_FACTION and " VETERAN" or "") .. " LEVELING")
+		:SetText (CGV.Utils.faction_names_short[CGV.Utils.GetFaction()]:upper() .. (CGV.VETERAN_FACTION and " VETERAN" or "") .. " LEVELING")
 		.__END
 
 
@@ -277,7 +277,7 @@ function GuideMenu:Create()
 	for i = 1,rows do
 		local buttonName = guideMenuName.."_But"..i
 
-		-- Copy ZGESO_DumpFrameBasic layout. Has working scrollbar.
+		-- Copy CGESO_DumpFrameBasic layout. Has working scrollbar.
 		local button = CHAIN(ui:Create("SecButton",frame.guideBox,buttonName))
 			:SetHeight(ROWHEIGHT)
 			:SetHandler("OnMouseEnter",function(me)
@@ -317,7 +317,7 @@ function GuideMenu:Create()
 		button.icon = CHAIN(ui:Create("Texture",button,buttonName.."_Icon"))
 			:SetPoint(LEFT,button,LEFT,10,0)
 			:SetSize(17,17)
-			:SetTexture(ZGV.DIR.."/Viewer/Skins/Stealth/guideicons-small.dds")
+			:SetTexture(CGV.DIR.."/Viewer/Skins/Stealth/guideicons-small.dds")
 			.__END
 
 		-- TODO blinking star on guide animation?
@@ -365,7 +365,7 @@ function GuideMenu:Create()
 		.__END
 
 		local str = "|cfe6100Note:|r If you change to another guide before completing an active guide, you may lose your progress in the current guide. We |cfe6100do not recommend|r changing guides until you complete the current."
-		ZGV.Viewer:add_tooltip(frame.OkButton,str)
+		CGV.Viewer:add_tooltip(frame.OkButton,str)
 
 end
 
@@ -391,7 +391,7 @@ function GuideMenu:RefreshUI()
 		end
 		local topfolders_seen = {}
 		local folderslash = self.folder == "" and "" or self.folder.."/"
-		for _,guide in pairs(ZGV.registeredguides) do
+		for _,guide in pairs(CGV.registeredguides) do
 			local wholefolder,topfolder = guide.title:match("LEVELING/("..folderslash.."([^/]+))/.+")
 			if not topfolder then
 				wholefolder,topfolder = guide.title:match("Extras/("..folderslash.."([^/]+))/.+")
@@ -404,7 +404,7 @@ function GuideMenu:RefreshUI()
 			end
 		end
 
-		for _,guide in pairs(ZGV.registeredguides) do
+		for _,guide in pairs(CGV.registeredguides) do
 			if (guide.title:match("^LEVELING/"..folderslash.."[^/]+$") or guide.title:match("^Extras/"..folderslash.."[^/]+$")) then
 				table.insert(guides,guide)
 			end
@@ -520,7 +520,7 @@ function GuideMenu:RefreshUI()
 		local s = "\n"
 
 		if g.startlevel and g.startlevel>0 then
-			local formatLevel = ZGV.Utils.FormatLevel
+			local formatLevel = CGV.Utils.FormatLevel
 			if g.endlevel and g.endlevel>0 then
 				s = s .. "|cffeebbLevels:|r ".. formatLevel(g.startlevel) .." to ".. formatLevel(g.endlevel) .. "\n"
 			else
@@ -559,12 +559,12 @@ function GuideMenu:RefreshUI()
 		end
 
 		if g.parse_error then
-			ZGV:Print(g.parse_error)
+			CGV:Print(g.parse_error)
 		end
 	else
 		frame.GuideTitle:SetText("Welcome to the Community Leveling Guides for ESO")
-		frame.GuideImage:SetTexture(ZGV.DIR.."/Viewer/Skins/Stealth/cgeso-highisle.dds")
-		frame.GuideData:SetText("Craglorn, Southern Elsweyr, Western Skyrim, The Reach, Blackwood, Deadlands, High Isles guides authored by |cffaa00snichols7778|r\nSummerset, Murkmire and Elsweyr guides authored by |cffaa00Hydra9268|r\nAdditional support by |cffaa00Sharlikran|r, |cffaa00Krandor1|r\n|c999999Original guide and Addon created by Zygor Guides|r")
+		frame.GuideImage:SetTexture(CGV.DIR.."/Viewer/Skins/Stealth/cgeso-SOTWC.dds")
+		frame.GuideData:SetText("Imperial City, Craglorn, Southern Elsweyr, Dark Heart of Skyrim, Blackwood, The Deadlands, Legacy of the Breton, Shadow Over Morrowind, Gold Coast, Season of the Worm Cult guides authored by |cffaa00snichols7778|r\nSummerset, Murkmire and Elsweyr guides authored by |cffaa00Hydra9268|r\nAdditional support by |cffaa00Sharlikran|r, |cffaa00Krandor1|r\n|c999999Original guide and Addon created by Zygor Guides|r")
 		frame.GuideData:SetPoint(TOPLEFT,frame.GuideImage,0,265)
 		frame.GuideImage:Show()
 		frame.OkButton:Hide()
@@ -661,7 +661,7 @@ function Settings:Create()
 		button.icon = CHAIN(ui:Create("Texture",button,buttonName.."_Icon"))
 			:SetPoint(LEFT,button,LEFT,10,0)
 			:SetSize(17,17)
-			:SetTexture(ZGV.DIR.."/Viewer/Skins/Stealth/guideicons-small.dds")
+			:SetTexture(CGV.DIR.."/Viewer/Skins/Stealth/guideicons-small.dds")
 			.__END
 
 		-- TODO blinking star on guide animation?
@@ -721,7 +721,7 @@ end
 function Settings:CreateDefaultPopup()
 	if self.DefaultPopup then return end
 
-	local popup = CHAIN(ZGV.Popup:New("Zygor_Settings_Reset_Default_Popup"))
+	local popup = CHAIN(CGV.Popup:New("Community_Settings_Reset_Default_Popup"))
 		:SetText(L['static_options'])
 		:SetDimensionConstraints(375) -- Force minWidth to 375 for the buttons to fit nicely
 		.__END
@@ -734,7 +734,7 @@ function Settings:CreateDefaultPopup()
 		:SetPoint(TOP,popup.text,BOTTOM,0,10) -- 10 is BUT_Y_OFFSET from Popup.lua
 		:SetWidth(105)
 		:SetText(L['static_cancel'])
-		:SetFontSize(ZGV.db.profile.fontsize,true) -- TODO change size dynamically?
+		:SetFontSize(CGV.db.profile.fontsize,true) -- TODO change size dynamically?
 		:SetHandler("OnClicked",function(me)
 				local pop = me:GetParent() -- Just hide the popup
 				pop.private:Hide(pop)
@@ -780,7 +780,7 @@ end
 -- Create the UI for a options group from all the options. Puts the frame with all the options in group.frame
 function Settings:CreateOptionsUI(group)
 	if group.frame then return end
-	local name = "ZygorOptionPanel_Group_"..group.title
+	local name = "CommunityOptionPanel_Group_"..group.title
 	local lastobj, lastfrontobj
 
 	local frame = CHAIN(ui:Create("InvisFrame", self.Frame.OptionsScrollBase, name)) -- Frame that contains all option UI components for this group --TODO make it scrollie
@@ -1362,7 +1362,7 @@ end
 function GuideMenu:SetCurrentGuide(guide)
 	local g = (class(guide) == "Guide" and guide) or (class(self.selectedguide) == "Guide" and self.selectedguide)
 	if g then
-		ZGV:SetGuide(g,g.CurrentStepNum)
+		CGV:SetGuide(g,g.CurrentStepNum)
 		Menu:Hide()
 	end
 end
@@ -1471,5 +1471,5 @@ end
 
 function GuideMenu:Debug(...)
 	local str = ...
-	ZGV:Debug("&guidemenu "..str, select(2,...) )
+	CGV:Debug("&guidemenu "..str, select(2,...) )
 end

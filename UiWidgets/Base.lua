@@ -12,12 +12,12 @@
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-local ZGV = _G.ZGV
+local CGV = _G.CGV
 local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs
-local print = ZGV.print
-local CHAIN = ZGV.Utils.ChainCall
-local print = ZGV.print
-local ui = ZGV.UI
+local print = CGV.print
+local CHAIN = CGV.Utils.ChainCall
+local print = CGV.print
+local ui = CGV.UI
 local Base = {}
 
 -----------------------------------------
@@ -145,7 +145,7 @@ function Base:AddTooltip(head,msg,owner,onme,x,y,onpt)
   onpt = onpt or TOP
 
   local enter = function(me)
-    CHAIN(ZGV.Tooltip)
+    CHAIN(CGV.Tooltip)
     :ClearLines()
     :SetWidth(0)
     :SetOwner(owner,onme,x,y,onpt)
@@ -155,7 +155,7 @@ function Base:AddTooltip(head,msg,owner,onme,x,y,onpt)
   end
 
   local exit = function(me)
-    ZGV.Tooltip:Hide()
+    CGV.Tooltip:Hide()
   end
 
   CHAIN(self)

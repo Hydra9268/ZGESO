@@ -29,13 +29,13 @@
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-local ZGV = _G.ZGV
-local tinsert,tremove,sort,zginherits,min,max,floor,type,pairs,ipairs,unpack = table.insert,table.remove,table.sort,table.zginherits,math.min,math.max,math.floor,type,pairs,ipairs,unpack
-local CHAIN = ZGV.Utils.ChainCall
-local print = ZGV.print
-local ui = ZGV.UI
-local Dropdown =  ZGV.Class:New("Dropdown")
-local DropdownItem =  ZGV.Class:New("DropdownItem")
+local CGV = _G.CGV
+local tinsert,tremove,sort,cginherits,min,max,floor,type,pairs,ipairs,unpack = table.insert,table.remove,table.sort,table.cginherits,math.min,math.max,math.floor,type,pairs,ipairs,unpack
+local CHAIN = CGV.Utils.ChainCall
+local print = CGV.print
+local ui = CGV.UI
+local Dropdown =  CGV.Class:New("Dropdown")
+local DropdownItem =  CGV.Class:New("DropdownItem")
 
 local DEFAULT_WIDTH = 100
 local DEFAULT_HEIGHT = 20
@@ -101,7 +101,7 @@ function Dropdown:New(parent,name)
   .__END
 
   dropdown.pullout = CHAIN(ui:Create("Frame",parent,name.."_Pullout",true))		-- TODO parent this to dropdown.
-  --Run into issues of tier/layer/level issues because  if you try to click items in ZgWriter it will click the other dropdowns.
+  --Run into issues of tier/layer/level issues because  if you try to click items in CgWriter it will click the other dropdowns.
   -- I think it is because since both objects are parented to different dropdowns, it can not accurate compare the level of them.
   :SetAnchor(TOPLEFT,dropdown,BOTTOMLEFT)
   :SetSize(DEFAULT_WIDTH,DEFAULT_HEIGHT)
@@ -343,7 +343,7 @@ function Dropdown:AddTooltip(head,msg,owner,onme,x,y,onpt)
   onpt = onpt or TOP
 
   local enter = function(me)
-    CHAIN(ZGV.Tooltip)
+    CHAIN(CGV.Tooltip)
     :ClearLines()
     :SetWidth(0)
     :SetOwner(owner,onme,x,y,onpt)
@@ -353,7 +353,7 @@ function Dropdown:AddTooltip(head,msg,owner,onme,x,y,onpt)
   end
 
   local exit = function(me)
-    ZGV.Tooltip:Hide()
+    CGV.Tooltip:Hide()
   end
 
   CHAIN(self.but)
@@ -488,7 +488,7 @@ end
 --[[
 function buildframestart()
 
-	BuildFrame = CHAIN(ZGV.UI:Create("Frame",GuiRoot,"Build"))
+	BuildFrame = CHAIN(CGV.UI:Create("Frame",GuiRoot,"Build"))
 			:SetPoint(CENTER)
 			:SetSize(250,100)
 	.__END
@@ -527,7 +527,7 @@ function buildframestart()
 
 end
 
-tinsert(ZGV.startups,function(self)
+tinsert(CGV.startups,function(self)
 	buildframestart()
 end)
 

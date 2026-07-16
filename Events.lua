@@ -1,25 +1,25 @@
 --[[
 	:AddEvent(EVENT,function() end)		- > Calls function
-	:AddEvent(Event,"Name")				- > Calls Events:Name or ZGV:Name
+	:AddEvent(Event,"Name")				- > Calls Events:Name or CGV:Name
 	:AddEvent(EVENT,table)				- > Calls table:EVENT
-	:AddEvent(EVENT)					- > Calls Events:EVENT or ZGV:EVENT
+	:AddEvent(EVENT)					- > Calls Events:EVENT or CGV:EVENT
 --]]
 
 -----------------------------------------
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-local ZGV = _G.ZGV
+local CGV = _G.CGV
 local Events = {}
 local GuiRoot, uiTopLevelControl = _G.GuiRoot, _G.CT_TOPLEVELCONTROL
-local eventFrame = ZGV.WM:CreateControl("ZGV_EventFrame",GuiRoot,uiTopLevelControl)
+local eventFrame = CGV.WM:CreateControl("CGV_EventFrame",GuiRoot,uiTopLevelControl)
 local tinsert, tremove, type, pairs, ipairs = table.insert, table.remove, type, pairs, ipairs
 
 -----------------------------------------
 -- SAVED REFERENCES
 -----------------------------------------
 
-ZGV.Events = Events
+CGV.Events = Events
 
 -----------------------------------------
 -- LOCAL FUNCTIONS
@@ -37,16 +37,16 @@ local function EventHandler(event,...)
 			func = hand
 			funcSelf = self
 		elseif type(hand) == "string" then
-			func = self[hand] or ZGV[hand]
-			funcSelf = self[hand] and self or ZGV
+			func = self[hand] or CGV[hand]
+			funcSelf = self[hand] and self or CGV
 			assert(func,"No function "..hand.." in event handler!")
 		elseif type(hand) == "table" then
 			func = hand[eventString]
 			funcSelf = hand
 			assert(func,"No function "..eventString.." in provided table!")
 		elseif hand == true then
-			func = self[eventString] or ZGV[eventString]
-			funcSelf = self[eventString] and self or ZGV
+			func = self[eventString] or CGV[eventString]
+			funcSelf = self[eventString] and self or CGV
 			assert(func,"No function "..eventString.." in event handler!")
 		end
 		func(funcSelf,event,...)
@@ -88,7 +88,7 @@ end
 -- state = true -> Enter Combat
 -- state = false -> Exit Combat
 -- https://i.imgur.com/TzfcjTA.png
-function ZGV:EVENT_PLAYER_COMBAT_STATE(_,state)
+function CGV:EVENT_PLAYER_COMBAT_STATE(_,state)
 	if not state then
 		if self.call_after_combat then
 			self.call_after_combat()
@@ -99,15 +99,15 @@ function ZGV:EVENT_PLAYER_COMBAT_STATE(_,state)
 end
 
 -- EVENT_ACHIEVEMENT_AWARDED (*string* _name_, *integer* _points_, *integer* _id_, *string* _link_)
-function ZGV.EVENT_ACHIEVEMENT_AWARDED(_,_,name,points,id,_)
-	if (ZGV.Creator) then
-		ZGV:Print("achieve %d", id)
-		ZGV:Print("|cd3d3d3(Name: %s)|r", name)
+function CGV.EVENT_ACHIEVEMENT_AWARDED(_,_,name,points,id,_)
+	if (CGV.Creator) then
+		CGV:Print("achieve %d", id)
+		CGV:Print("|cd3d3d3(Name: %s)|r", name)
 	end
 end
 
 -- EVENT_ACHIEVEMENT_UPDATED (*integer* _id_)
-function ZGV.EVENT_ACHIEVEMENT_UPDATED(_,_,id)
+function CGV.EVENT_ACHIEVEMENT_UPDATED(_,_,id)
 	local IgnoreAchievements = {
 		[19] = "Treasure Chest Spotter",
 		[20] = "Treasure Chest Seeker",
@@ -142,41 +142,41 @@ function ZGV.EVENT_ACHIEVEMENT_UPDATED(_,_,id)
 		[1149] = "Writ Upon the Sky",
 	}
 	if not IgnoreAchievements[id] then
-		if (ZGV.Creator or ZGV.DEV) then
+		if (CGV.Creator or CGV.DEV) then
 			local name,desc,_,_,isCompleted,_,_ = _G.GetAchievementInfo(id)
 			local isSkyshardAchievement,_ = string.find(name,"Skyshard")
-			if (ZGV.DEV) then
-				ZGV:Debug("|cd3d3d3Achievement Updated: %d:%s (isCompleted: %s)|r",id,name,tostring(isCompleted))
-				ZGV:Debug("|cd3d3d3- isSkyshardAchievement: %s|r", tostring(isSkyshardAchievement))
-				ZGV:Debug("|cd3d3d3- desc: %s|r", desc)
+			if (CGV.DEV) then
+				CGV:Debug("|cd3d3d3Achievement Updated: %d:%s (isCompleted: %s)|r",id,name,tostring(isCompleted))
+				CGV:Debug("|cd3d3d3- isSkyshardAchievement: %s|r", tostring(isSkyshardAchievement))
+				CGV:Debug("|cd3d3d3- desc: %s|r", desc)
 			end
 			if (isCompleted) then
-				ZGV:Print("achieve %d", id)
-				ZGV:Print("|cd3d3d3(Name: %s)|r", name)
+				CGV:Print("achieve %d", id)
+				CGV:Print("|cd3d3d3(Name: %s)|r", name)
 			else
 				local numCriteria = _G.GetAchievementNumCriteria(id)
-				if (ZGV.DEV) then
-					ZGV:Debug("|cd3d3d3- numCriteria: %d|r", numCriteria)
+				if (CGV.DEV) then
+					CGV:Debug("|cd3d3d3- numCriteria: %d|r", numCriteria)
 				end
 					local progress = _G.GetAchievementProgress(id)
 				if (isSkyshardAchievement) then
-					ZGV:Print("click Skyshard ||achieve %d/#",id)
-					ZGV:Print("|cffff99- Chose a number below for # above:|r")
+					CGV:Print("Use Skyshard ||achieve %d/#",id)
+					CGV:Print("|cffff99- Chose a number below for # above:|r")
 					for i = 1, numCriteria do
 						local criterionDesc,numCompleted,numRequired = _G.GetAchievementCriterion(id,i)
-						if (ZGV.DEV) then
-							ZGV:Debug("|cffff99- # = %d :: %s (Completed: %d/%d)|r", i, criterionDesc, numCompleted, numRequired)
+						if (CGV.DEV) then
+							CGV:Debug("|cffff99- # = %d :: %s (Completed: %d/%d)|r", i, criterionDesc, numCompleted, numRequired)
 						else
 							if (numCompleted == numRequired) then
-								ZGV:Print("|cffff99- # = %d :: %s|r", i, criterionDesc)		
+								CGV:Print("|cffff99- # = %d :: %s|r", i, criterionDesc)		
 							end
 						end
 					end
 				else
 					for i = 1, numCriteria do
 						local criterionDesc,numCompleted,numRequired = _G.GetAchievementCriterion(id,i)
-						if (ZGV.DEV) then
-							ZGV:Debug("|cd3d3d3- Criterion.%d: %s (%d/%d)|r", i, criterionDesc, numCompleted, numRequired)
+						if (CGV.DEV) then
+							CGV:Debug("|cd3d3d3- Criterion.%d: %s (%d/%d)|r", i, criterionDesc, numCompleted, numRequired)
 						end
 					end
 				end
@@ -186,11 +186,10 @@ function ZGV.EVENT_ACHIEVEMENT_UPDATED(_,_,id)
 end
 
 -- EVENT_LORE_BOOK_LEARNED (*luaindex* _categoryIndex_, *luaindex* _collectionIndex_, *luaindex* _bookIndex_, *luaindex* _guildIndex_, *bool* _isMaxRank_)
-function ZGV.EVENT_LORE_BOOK_LEARNED(_,_,cat,col,book,guild,isMaxRank)
-	if (ZGV.Creator) then
+function CGV.EVENT_LORE_BOOK_LEARNED(_,_,cat,col,book,guild,isMaxRank)
+	if (CGV.Creator) then
 		local title,_,_,_ = _G.GetLoreBookInfo(cat,col,book)
-		ZGV:Print("click %s", title)
-		ZGV:Print("lorebook %s/%d/%d/%d",title,cat,col,book)
+		CGV:Print("lorebook %s/%d/%d/%d",title,cat,col,book)
 	end
 end
 
@@ -198,19 +197,19 @@ end
 -- STARTUP
 -----------------------------------------
 
-tinsert(ZGV.startups,function(self)
+tinsert(CGV.startups,function(self)
 		local EVENT_PLAYER_COMBAT_STATE = _G.EVENT_PLAYER_COMBAT_STATE
 		Events:AddEvent(EVENT_PLAYER_COMBAT_STATE)
 	end)
-tinsert(ZGV.startups,function(self)
+tinsert(CGV.startups,function(self)
 	local EVENT_ACHIEVEMENT_AWARDED = _G.EVENT_ACHIEVEMENT_AWARDED
 	Events:AddEvent(EVENT_ACHIEVEMENT_AWARDED)
 end)
-tinsert(ZGV.startups,function(self)
+tinsert(CGV.startups,function(self)
 	local EVENT_ACHIEVEMENT_UPDATED = _G.EVENT_ACHIEVEMENT_UPDATED
 	Events:AddEvent(EVENT_ACHIEVEMENT_UPDATED)
 end)
-tinsert(ZGV.startups,function(self)
+tinsert(CGV.startups,function(self)
 	local EVENT_LORE_BOOK_LEARNED = _G.EVENT_LORE_BOOK_LEARNED
 	Events:AddEvent(EVENT_LORE_BOOK_LEARNED)
 end)

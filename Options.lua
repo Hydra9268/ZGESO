@@ -2,16 +2,16 @@
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-local ZGV = _G.ZGV
+local CGV = _G.CGV
 local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs,class = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs,_G.class
-local print = ZGV.print
-local CHAIN = ZGV.Utils.ChainCall
-local ui = ZGV.UI
-local L = ZGV.L
-local O = ZGV.O
-local SvName = "ZGESOSettings"
-if ZGV.DEV_SV_SUFFIX then
-  SvName = SvName..ZGV.DEV_SV_SUFFIX
+local print = CGV.print
+local CHAIN = CGV.Utils.ChainCall
+local ui = CGV.UI
+local L = CGV.L
+local O = CGV.O
+local SvName = "CGESOSettings"
+if CGV.DEV_SV_SUFFIX then
+  SvName = SvName..CGV.DEV_SV_SUFFIX
 end
 local PROFILE_VERSION = 1
 local CHAR_VERSION = 1
@@ -20,9 +20,9 @@ local DEFAULT_PROFILE = "main"
 
 local INLINE = "inline"
 
-local OptionGroup = ZGV.Class:New("OptionGroup")
+local OptionGroup = CGV.Class:New("OptionGroup")
 local OptionGroup_meta = {__index = OptionGroup}
-local Option = ZGV.Class:New("Option")
+local Option = CGV.Class:New("Option")
 local Option_meta = {__index = Option}
 
 local mostRecentOptGroup
@@ -34,9 +34,9 @@ local GetDisplayName = _G.GetDisplayName
 -- SAVED REFERENCES
 -----------------------------------------
 
-ZGV.sv = SavedVars
-ZGV.db = ZGV.sv
-ZGV.db.rawname = SvName
+CGV.sv = SavedVars
+CGV.db = CGV.sv
+CGV.db.rawname = SvName
 
 -----------------------------------------
 -- DEFAULT OPTION TABLES
@@ -133,9 +133,9 @@ function OptionGroup:New(opt_group_name,data)
 
   mostRecentOptGroup = opt_group -- Used for adding options to a group
 
-  ZGV.Settings:AddOptionGroup(opt_group)--self.opt_groups,opt_group)
+  CGV.Settings:AddOptionGroup(opt_group)--self.opt_groups,opt_group)
 
-  SavedVars.opt_groups = ZGV.Settings.opt_groups
+  SavedVars.opt_groups = CGV.Settings.opt_groups
 end
 
 function OptionGroup:AddOption(opt)
@@ -326,33 +326,33 @@ function SavedVars:InitializeOptions()
   do
     AddOption("showviewer",{
         type = "toggle",
-        set = function(i,v) ZGV.Viewer:ShowIf_GuideViewer(v) end,
+        set = function(i,v) CGV.Viewer:ShowIf_GuideViewer(v) end,
         _default = true,
       })
     AddOption("opacitymain",{
         type = "slider",
         min = 0, max = 1, step = .01, ispercent = true,
-        set = function(i,v) ZGV.Viewer:SetAlpha(v) end,
+        set = function(i,v) CGV.Viewer:SetAlpha(v) end,
         _default = 1,
       })
     AddOption('framescale',{
         type = 'slider',
         min = 0.5, max = 2.0, step = 0.1, ispercent = true,
         column = "two",
-        set = function(i,v) ZGV.Viewer:SetScale(v)  end,
+        set = function(i,v) CGV.Viewer:SetScale(v)  end,
         _default = 1,
       })
     AddOption('fontsize',{			-- TODO make these font settings change more font sizes than just the viewer
         type = 'slider',
         min = 7, max = 16, step = 1,
-        set = function(i,v) ZGV.Viewer:Update()  end,
+        set = function(i,v) CGV.Viewer:Update()  end,
         _default = 13,
       })
     AddOption('fontsecsize',{
         type = 'slider',
         min = 5, max = 14, step = 1,
         column = "two",
-        set = function(i,v) ZGV.Viewer:Update()  end,
+        set = function(i,v) CGV.Viewer:Update()  end,
         _default = 11,
       })
 
@@ -367,12 +367,12 @@ function SavedVars:InitializeOptions()
       })
     AddOption("hideoninventory",{
         type = "toggle",
-        set = function(i,v) ZGV.Viewer:HandleActionLayer() end,
+        set = function(i,v) CGV.Viewer:HandleActionLayer() end,
         _default = false,
       })
     AddOption("hideonguideconv",{
         type = "toggle",
-        set = function(i,v) ZGV.Viewer:HandleActionLayer() end,
+        set = function(i,v) CGV.Viewer:HandleActionLayer() end,
         _default = false,
       })
     AddOption(nil,{
@@ -381,7 +381,7 @@ function SavedVars:InitializeOptions()
         name = O["opt_reset"],
         desc = O["opt_reset_desc"],
         func = function()
-          ZGV.Viewer:ResetAllViewerSettings()
+          CGV.Viewer:ResetAllViewerSettings()
         end,
       })
     AddOption(nil,{
@@ -399,13 +399,13 @@ function SavedVars:InitializeOptions()
   do
     AddOption('arrowshow',{
         type = 'toggle',
-        set = function(i,v) ZGV.Pointer:UpdateArrowVisibility() end,
+        set = function(i,v) CGV.Pointer:UpdateArrowVisibility() end,
         _default=true,
       })
 
     AddOption('arrowfreeze',{
         type = 'toggle',
-        set = function(i,v) ZGV.Pointer:SetupArrow() end,
+        set = function(i,v) CGV.Pointer:SetupArrow() end,
         _default=false,
         column = "two",
       })
@@ -423,20 +423,20 @@ function SavedVars:InitializeOptions()
     AddOption('arrowalpha',{
         type = 'slider',
         min = 0.3, max = 1.0, step = 0.1, ispercent = true,
-        set = function(i,v) ZGV.Pointer:SetupArrow()  end,
+        set = function(i,v) CGV.Pointer:SetupArrow()  end,
         _default = 1.0,
       })
     AddOption('arrowscale',{
         type = 'slider',
         min = 0.5, max = 2.0, step = 0.1, ispercent = true,
-        set = function(i,v)	ZGV.Pointer:SetupArrow()  end,
+        set = function(i,v)	CGV.Pointer:SetupArrow()  end,
         column = "two",
         _default = 1.0,
       })
     AddOption('arrowfontsize',{
         type = 'slider',
         min = 7, max = 16, step = 1,
-        set = function(i,v) ZGV.Pointer:SetFontSize(v)  end,
+        set = function(i,v) CGV.Pointer:SetFontSize(v)  end,
         column = "three",
         _default = 12,
       })
@@ -451,7 +451,7 @@ function SavedVars:InitializeOptions()
         name = O["opt_arrow_reset"],
         desc = O["opt_arrow_reset_desc"],
         func = function()
-          ZGV.Pointer:ResetWaypointerSettings()
+          CGV.Pointer:ResetWaypointerSettings()
         end,
       })
 
@@ -471,16 +471,17 @@ function SavedVars:InitializeOptions()
   do
     AddOption("showmapbutton",{
         type = "toggle",
-        set = function(i,v) if not ZGV.Viewer.MinimapButton then return end ZGV.Viewer.MinimapButton:ShowIf(v) end,
+        set = function(i,v) if not CGV.Viewer.MinimapButton then return end CGV.Viewer.MinimapButton:ShowIf(v) end,
         _default = true,
-      })
+    })
     AddOption("bugreports",{
         type = "toggle",
         name = O["opt_bugreports"],
         desc = O["opt_bugreports_desc"],
         _default = true,
-        set = function(i,v) if ZGV.Viewer.Frame then ZGV.Viewer.Frame.TitleBar.bug:SetHidden(not ZGV.db.profile.bugreports) end end,
-      })
+        set = function(i,v) if CGV.Viewer.Frame then CGV.Viewer.Frame.TitleBar.bug:SetHidden(not CGV.db.profile.bugreports) end end,
+    })
+
 
     -- TODO: [ ] Enable Bug Reporting button on viewer
   end
@@ -512,7 +513,7 @@ function SavedVars:InitializeOptions()
                 me:AddItem(name,name,function(item,value)
                     if SavedVars.raw.curprofile == value then return end
 
-                    SavedVars.ProfilePopup = SavedVars.ProfilePopup or ZGV.Popup:New("ZGESO_Change_Profile_Popup")
+                    SavedVars.ProfilePopup = SavedVars.ProfilePopup or CGV.Popup:New("CGESO_Change_Profile_Popup")
 
                     SavedVars.ProfilePopup.OnAccept = function(me)
                       SavedVars:SetCurrentProfile(value)
@@ -559,19 +560,19 @@ function SavedVars:InitializeOptions()
         desc = O["opt_newprof_desc"],
         func = function()
           if not SavedVars.NewProfilePopup then
-            local popup = _G.ZGESO_New_Profile_Popup or ZGV.Popup:New("ZGESO_New_Profile_Popup")
+            local popup = _G.CGESO_New_Profile_Popup or CGV.Popup:New("CGESO_New_Profile_Popup")
 
             _G.d(popup or "no popup")
 
             -- Only allow alphanumeric characters... Don't want to let users screw up their SV files by naming it with strange characters.
-            popup.edit = CHAIN(_G.ZGESO_New_Profile_Popup_Edit or ui:Create("EditBox",popup,"ZGESO_New_Profile_Popup_Edit"))
+            popup.edit = CHAIN(_G.CGESO_New_Profile_Popup_Edit or ui:Create("EditBox",popup,"CGESO_New_Profile_Popup_Edit"))
             :SetPoint(TOP,popup.text,BOTTOM,0,5)
             :SetText("Set Name")
             :HookHandler("OnMouseDown",function(me) me:SelectAll() end)
             :HookHandler("OnTextChanged",function(me)
                 local text = me:GetText()
 
-                if ZGV.Utils.IsAlphanumeric(text) then
+                if CGV.Utils.IsAlphanumeric(text) then
                   popup.text2:Hide()
                   popup.text2:SetHeight(1)
                 else
@@ -592,7 +593,7 @@ function SavedVars:InitializeOptions()
 
           SavedVars.NewProfilePopup.OnAccept = function(me)
             local name = me.edit:GetText()
-            if not ZGV.Utils.IsAlphanumeric(name) then return end		-- TODO maybe error out? meh just return for now. Should probably disable the button
+            if not CGV.Utils.IsAlphanumeric(name) then return end		-- TODO maybe error out? meh just return for now. Should probably disable the button
 
             local opt = SavedVars:GetOptionObject(nil,O['opt_existing_profiles'])
 
@@ -618,15 +619,15 @@ function SavedVars:InitializeOptions()
         column = "two",
         func = function()
 
-          SavedVars.ResetProfilePopup = SavedVars.ResetProfilePopup or ZGV.Popup:New("Zygor_Reset_Profile_Popup")
+          SavedVars.ResetProfilePopup = SavedVars.ResetProfilePopup or CGV.Popup:New("Community_Reset_Profile_Popup")
 
           SavedVars.ResetProfilePopup.OnAccept = function(me)
             for i,opt_groups in ipairs(SavedVars.opt_groups) do
               opt_groups:SetToDefault()
             end
 
-            ZGV.Viewer:ResetAllViewerSettings()
-            ZGV.Pointer:ResetWaypointerSettings()
+            CGV.Viewer:ResetAllViewerSettings()
+            CGV.Pointer:ResetWaypointerSettings()
           end
 
           SavedVars.ResetProfilePopup:SetText(L['static_reset_profile']:format(SavedVars.raw.curprofile))
@@ -651,7 +652,7 @@ function SavedVars:InitializeOptions()
                     local opt = SavedVars:GetOptionObject(nil,O['opt_delete_profiles'])
                     local dropdown = opt.frame and opt.frame.dropdown
 
-                    SavedVars.DeleteProfilePopup = SavedVars.DeleteProfilePopup or ZGV.Popup:New("Zygor_Delete_Profile_Popup")
+                    SavedVars.DeleteProfilePopup = SavedVars.DeleteProfilePopup or CGV.Popup:New("Community_Delete_Profile_Popup")
 
                     -- Just delete the profile, dd updates properly when next opened.
                     SavedVars.DeleteProfilePopup.OnAccept = function(me)
@@ -692,7 +693,7 @@ function SavedVars:InitializeOptions()
         descStyle = INLINE,
         width = 150,
       })
-    if ZGV.DEV then
+    if CGV.DEV then
       -- TODO breaks for not same faction characters
       AddOption(nil,{
           type = "dropdown",
@@ -707,23 +708,23 @@ function SavedVars:InitializeOptions()
                 me:ClearItems()
 
                 -- Repopulate pullout appropriately. Don't put the current profile in the list.
-                for i,name in ipairs(profiles) do if ZGV.Utils.GetPlayerName() ~= name then
+                for i,name in ipairs(profiles) do if CGV.Utils.GetPlayerName() ~= name then
                   me:AddItem(name,name,function(item,value)
-                      if ZGV.Utils.GetPlayerName() == value then return end
+                      if CGV.Utils.GetPlayerName() == value then return end
                       local opt = SavedVars:GetOptionObject(nil,O['opt_delete_profiles'])
                       local dropdown = opt.frame and opt.frame.dropdown
 
-                      SavedVars.CopyProfilePopup = SavedVars.CopyProfilePopup or ZGV.Popup:New("Zygor_Copy_Profile_Popup")
+                      SavedVars.CopyProfilePopup = SavedVars.CopyProfilePopup or CGV.Popup:New("Community_Copy_Profile_Popup")
 
                       -- Just delete the profile, dd updates properly when next opened.
                       SavedVars.CopyProfilePopup.OnAccept = function(me)
                         local prof = SavedVars.raw.characters[value]
 
-                        local new = table.zgclone(prof)
+                        local new = table.cgclone(prof)
 
                         self.char = new
 
-                        SavedVars.raw.characters[ZGV.Utils.GetPlayerName()] = new
+                        SavedVars.raw.characters[CGV.Utils.GetPlayerName()] = new
                       end
 
                       -- Clear the dd's current item.
@@ -766,7 +767,7 @@ function SavedVars:InitializeOptions()
   end
 
   -- DEVELOPER
-  if ZGV.DEV then
+  if CGV.DEV then
     AddOptionGroup("dev")
     do
       AddOption("debug",{
@@ -776,12 +777,12 @@ function SavedVars:InitializeOptions()
       AddOption("surveymaps",{
           type = "execute",
           name = "Survey maps",
-          func = function() ZGV.Pointer:SurveyAllMaps() end,
+          func = function() CGV.Pointer:SurveyAllMaps() end,
         })
       AddOption("surveymapsdeep",{
           type = "execute",
           name = "Survey maps (deep)",
-          func = function() ZGV.Pointer:SurveyAllMaps(true) end,
+          func = function() CGV.Pointer:SurveyAllMaps(true) end,
         })
     end
   end
@@ -828,15 +829,15 @@ end
 --]]
 
 function SavedVars:Setup()
-  ZGV:Debug("&startup SV: Setting up saved vars...")
+  CGV:Debug("&startup SV: Setting up saved vars...")
   if GetDisplayName()=="" then
-    ZGV.ERROR_GETDISPLAYNAME_FAIL=true
+    CGV.ERROR_GETDISPLAYNAME_FAIL=true
   end
 
-  local fac = ZGV.Utils.GetFaction()
-  local name = ZGV.Utils.GetPlayerName()
+  local fac = CGV.Utils.GetFaction()
+  local name = CGV.Utils.GetPlayerName()
 
-  ZGV:Debug("&startup SV: faction "..(fac or "NONE")..", name "..(name or "NONE"))
+  CGV:Debug("&startup SV: faction "..(fac or "NONE")..", name "..(name or "NONE"))
 
   assert(fac,"No faction known at options load time!")
   assert(name,"No player name known at options load time!")
@@ -844,9 +845,9 @@ function SavedVars:Setup()
   -- If SV does not exist then use ZOS function to create it.
   if not _G[SvName] then
     _G.ZO_SavedVars:New(SvName, 100007, nil, {})
-    ZGV:Debug("&startup SV: Created a new sv file")
+    CGV:Debug("&startup SV: Created a new sv file")
   else
-    ZGV:Debug("&startup SV: loaded SV file properly")
+    CGV:Debug("&startup SV: loaded SV file properly")
   end
 
   local raw, prof,charProf
@@ -878,7 +879,7 @@ function SavedVars:Setup()
   self.faction = self.faction or raw.factions[fac]
 
   -- Store some character information at startup
-  self.char.info.level = ZGV.Utils.GetPlayerPreciseLevel()
+  self.char.info.level = CGV.Utils.GetPlayerPreciseLevel()
   self.char.info.faction = fac
   self.char.info.date = _G.GetDate()	-- TODO format this in a more helpful way?
   self.char.info.time = _G.GetFormattedTime()	-- TODO format this in a more helpful way?
@@ -901,13 +902,13 @@ function SavedVars:Setup()
   SavedVars:SetupAllOptionGroups()
 end
 
--- Creates a new profile in ZGVS.profiles[pname]. Does not assign it to SV.profile. If data is passed uses that, otherwise uses default
+-- Creates a new profile in CGVS.profiles[pname]. Does not assign it to SV.profile. If data is passed uses that, otherwise uses default
 function SavedVars:CreateNewProfile(pname,data)
   if not pname then return end
 
   data = data or defaultAccount
 
-  self.raw.profiles[pname] = table.zgclone(data)
+  self.raw.profiles[pname] = table.cgclone(data)
 
   self.raw.profiles[pname].version = PROFILE_VERSION
 
@@ -936,8 +937,8 @@ function SavedVars:SetCurrentProfile(name)
   -- After we are initalized then we are changing a profile so make sure we update every properly.
   if self.initialized then
     SavedVars:SetupAllOptionGroups()
-    ZGV.Viewer:UpdateViewer()		-- Update Viewer options
-    ZGV.Pointer:UpdateArrowPosition()	-- Update Waypointer
+    CGV.Viewer:UpdateViewer()		-- Update Viewer options
+    CGV.Pointer:UpdateArrowPosition()	-- Update Waypointer
   end
 end
 
@@ -945,20 +946,20 @@ function SavedVars:DeleteProfile(name)
   local raw = self.raw
 
   if name == raw.curprofile then
-    ZGV:Error("Can not delete your current profile. Change profile before deleting.")
+    CGV:Error("Can not delete your current profile. Change profile before deleting.")
     return
   end
 
   raw.profiles[name] = nil
 end
 
--- Creates a new profile in ZGVS.characters[charname]. Does not assign it to SV.char. If data is passed uses that, otherwise uses default
+-- Creates a new profile in CGVS.characters[charname]. Does not assign it to SV.char. If data is passed uses that, otherwise uses default
 function SavedVars:CreateNewCharProfile(cname,data)
   if not cname then return end
 
   data = data or defaultChar
 
-  self.raw.characters[cname] = table.zgclone(data)
+  self.raw.characters[cname] = table.cgclone(data)
 
   self.raw.characters[cname].version = CHAR_VERSION
 
@@ -995,7 +996,7 @@ function SavedVars:GetCharProfiles()
 end
 
 function SavedVars:SetCurrentCharacterProfile()
-  local name = ZGV.Utils.GetPlayerName()
+  local name = CGV.Utils.GetPlayerName()
   local raw = self.raw
   local charProf
 
@@ -1013,7 +1014,7 @@ end
 
 -- Iterates through all options and makes sure they are valid and sets their values
 function SavedVars:SetupAllOptionGroups()
-  for i,opt_group in ipairs(ZGV.Settings.opt_groups) do
+  for i,opt_group in ipairs(CGV.Settings.opt_groups) do
     opt_group:SetupAllValues()
   end
 end
@@ -1066,7 +1067,7 @@ end
 --[[
 function MyObject:Debug(...)
 	local str = ...
-	ZGV:Debug("&myobj "..str, select(2,...) )
+	CGV:Debug("&myobj "..str, select(2,...) )
 end
 ]]--
 

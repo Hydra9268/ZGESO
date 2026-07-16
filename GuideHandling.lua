@@ -2,7 +2,7 @@
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-local ZGV = _G.ZGV
+local CGV = _G.CGV
 local GetZoneNameByIndex = _G.GetZoneNameByIndex
 local GetCurrentMapZoneIndex = _G.GetCurrentMapZoneIndex
 local Viewer
@@ -10,27 +10,27 @@ local LONG_STEP_INTERVAL = 1
 local SHORT_STEP_INTERVAL = .1
 local completeionInterval = LONG_STEP_INTERVAL
 local tinsert,tremove,type,ipairs,class = table.insert,table.remove,type,ipairs,_G.class
-local CHAIN = ZGV.Utils.ChainCall
-local L = ZGV.L
+local CHAIN = CGV.Utils.ChainCall
+local L = CGV.L
 
 -----------------------------------------
 -- SAVED REFERENCES
 -----------------------------------------
 
-ZGV.guidesets = {}
-ZGV.registeredguides = {}	ZGV.rg = ZGV.registeredguides
-ZGV.registered_includes = {}
+CGV.guidesets = {}
+CGV.registeredguides = {}	CGV.rg = CGV.registeredguides
+CGV.registered_includes = {}
 
-ZGV.CurrentGuide = nil
-ZGV.CurrentGuideName = nil
-ZGV.CurrentStep	= nil
-ZGV.CurrentStepNum = nil
+CGV.CurrentGuide = nil
+CGV.CurrentGuideName = nil
+CGV.CurrentStep	= nil
+CGV.CurrentStepNum = nil
 
 -----------------------------------------
 -- CURRENT GUIDE MANAGEMENT FUNCTIONS
 -----------------------------------------
 
-function ZGV:PreviousStep(fast,quiet)
+function CGV:PreviousStep(fast,quiet)
 	if not self.CurrentGuide then return end
 
 	self.LastSkip = -1
@@ -57,7 +57,7 @@ function ZGV:PreviousStep(fast,quiet)
 	self:FocusStep(step,quiet)
 end
 
-function ZGV:SkipStep(fast,quiet)
+function CGV:SkipStep(fast,quiet)
 	if not self.CurrentGuide then return end
 
 	self.LastSkip = 1
@@ -114,7 +114,7 @@ function ZGV:SkipStep(fast,quiet)
 			return
 		elseif self.CurrentGuide.steps and #self.CurrentGuide.steps > 1 then
 			if not self.EndGuidePopup then
-				local popup = ZGV.Popup:New("Zygor_EndGuide_Popup")
+				local popup = CGV.Popup:New("Community_EndGuide_Popup")
 				local BOTTOM = _G.BOTTOM
 
 				popup.declinebutton:Hide()
@@ -137,9 +137,9 @@ end
 
 -- return step = step obj
 -- return backed = num of valid history skips
-function ZGV:GetPreviousValidStep()
+function CGV:GetPreviousValidStep()
 	local step
-	local hist = ZGV.sv.char.stephistory
+	local hist = CGV.sv.char.stephistory
 	local hlen = #hist
 	local stepnum
 	local backed=0
@@ -158,7 +158,7 @@ function ZGV:GetPreviousValidStep()
 			end
 		else
 			-- we broke history or it just ran out, whatever
-			ZGV:Debug("step history broken, omg")
+			CGV:Debug("step history broken, omg")
 
 			-- TODO: Currently, when running out of history, we default to the first valid of the guide. Needs a message / confirmation.
 			local s = self.CurrentGuide:GetFirstValidStep()  -- always returns something, or breaks.
@@ -172,7 +172,7 @@ function ZGV:GetPreviousValidStep()
 	return step,backed
 end
 
-function ZGV:FocusStep(num,quiet)
+function CGV:FocusStep(num,quiet)
 	if type(num) == "string" and self.CurrentGuide.steplabels then
 		local s = num
 		num = self.CurrentGuide.steplabels[num]
@@ -232,7 +232,7 @@ function ZGV:FocusStep(num,quiet)
 	end
 end
 
-function ZGV:FocusStepUnquiet()
+function CGV:FocusStepUnquiet()
 	self:SetWaypoint()
 
 	Viewer:Update(true)
@@ -240,30 +240,30 @@ function ZGV:FocusStepUnquiet()
 	PlaySound(SOUNDS.NOTE_PAGE_TURN)
 end
 
-function ZGV:SetWaypoint(what)
+function CGV:SetWaypoint(what)
 	local set = false
 	local ZO_WorldMap_UpdateMap = _G.ZO_WorldMap_UpdateMap
 	if what == false then
-		ZGV.Pointer:ClearWaypoints()
+		CGV.Pointer:ClearWaypoints()
 		set = true
 	else
-		ZGV.Pointer:ClearWaypoints("way")
+		CGV.Pointer:ClearWaypoints("way")
 		if tonumber(what) then
 			local goal=self.CurrentStep.goals[tonumber(what)]
 			if goal and goal.x then
-				ZGV.Pointer:SetWaypoint(goal.map or nil,goal.floor or 0,goal.x,goal.y,{title=goal:GetText()})
+				CGV.Pointer:SetWaypoint(goal.map or nil,goal.floor or 0,goal.x,goal.y,{title=goal:GetText()})
 				set = true
 			end
 		else
 			-- set up waypoints
 			for gi,goal in ipairs(self.CurrentStep.goals) do
 				if goal.x and goal.y and not goal.force_noway then
-					ZGV.Pointer:SetWaypoint(goal.map or nil,goal.floor or 0,goal.x,goal.y,{title = goal:GetText(),goalnum = gi})
+					CGV.Pointer:SetWaypoint(goal.map or nil,goal.floor or 0,goal.x,goal.y,{title = goal:GetText(),goalnum = gi})
 					set = true
 				end
 			end
 			-- point to first completable
-			ZGV.Pointer:SetArrowToFirstCompletableGoal()
+			CGV.Pointer:SetArrowToFirstCompletableGoal()
 		end
 	end
 	ZO_WorldMap_UpdateMap()
@@ -271,7 +271,7 @@ function ZGV:SetWaypoint(what)
 end
 
 -- TODO skipping always super fast atm
-function ZGV:TryToCompleteStep(force)
+function CGV:TryToCompleteStep(force)
 	if not (self.CurrentStep and self.CurrentGuide) then return end
 	if not self.Frame:IsShown() then return end
 
@@ -371,12 +371,12 @@ end
 -- GEN FUNCTIONS
 -----------------------------------------
 
--- IN: "Zygor's Daggerfall Covenant Leveling Guides"
+-- IN: "Community's Daggerfall Covenant Leveling Guides"
 -- OUT: "LEVELING"
-function ZGV:SanitizeGuideTitle(title)
+function CGV:SanitizeGuideTitle(title)
 	title = title:gsub([[\]],[[/]])
 	title = title:gsub("//","/")
-	title = title :gsub("ZGV's ","")
+	title = title :gsub("CGV's ","")
 	title = title
 	:gsub("^Legacy ","")
 	:gsub("^Aldmeri Dominion ","")
@@ -390,9 +390,9 @@ function ZGV:SanitizeGuideTitle(title)
 	return title
 end
 
-function ZGV:GetGuideByTitle(title)
+function CGV:GetGuideByTitle(title)
 	if not title then return end
-	title = ZGV:SanitizeGuideTitle(title)  -- code-side fix for "common" guides.
+	title = CGV:SanitizeGuideTitle(title)  -- code-side fix for "legacy" guides.
 	for _,v in ipairs(self.registeredguides) do
 		if v.title == title then
 			return v
@@ -400,7 +400,7 @@ function ZGV:GetGuideByTitle(title)
 	end
 end
 
-function ZGV:MaybeSuggestNextGuide() -- TODO Assume all guides must be completed for the time being. Moving to next guides is handled with a |next line
+function CGV:MaybeSuggestNextGuide() -- TODO Assume all guides must be completed for the time being. Moving to next guides is handled with a |next line
 	if true then return end
 	-- And now check if the next guide is up for suggesting.
 	-- However, don't bother suggesting others when we're exclusive and still suggested.
@@ -408,7 +408,7 @@ function ZGV:MaybeSuggestNextGuide() -- TODO Assume all guides must be completed
 
 	-- If we are still suggested and not exclusive then we can try to suggest next guide. Might be better.
 	local nextguide = self.CurrentGuide.next
-	if nextguide and not ZGV.db.char.ignoredguides[nextguide] then
+	if nextguide and not CGV.db.char.ignoredguides[nextguide] then
 		nextguide = self:GetGuideByTitle(nextguide)
 		if nextguide then
 			local nextsuggested = (nextguide:GetStatus()=="SUGGESTED")
@@ -420,7 +420,7 @@ function ZGV:MaybeSuggestNextGuide() -- TODO Assume all guides must be completed
 
 end
 
-function ZGV:FindSuggestedGuides()
+function CGV:FindSuggestedGuides()
 	local suggested = {}
 	for _,guide in ipairs(self.registeredguides) do
 		if guide:GetStatus() == "SUGGESTED" then
@@ -441,10 +441,10 @@ end
 -- SETUP FUNCTIONS
 -----------------------------------------
 
-function ZGV:RegisterGuide(title,data,extra)
+function CGV:RegisterGuide(title,data,extra)
 	title = self:SanitizeGuideTitle(title)
 
-	local guide = ZGV.GuideProto:New(title,data,extra)
+	local guide = CGV.GuideProto:New(title,data,extra)
 
 	if guide then
 		guide:Parse(false)
@@ -453,7 +453,7 @@ function ZGV:RegisterGuide(title,data,extra)
 	tinsert(self.registeredguides,guide)
 end
 
-function ZGV:RegisterInclude(title,text)
+function CGV:RegisterInclude(title,text)
 	self.registered_includes[title] = {text=text}
 
 	self.registered_includes[title].GetParsed = function (self,params)
@@ -464,7 +464,7 @@ function ZGV:RegisterInclude(title,text)
 	end
 end
 
-function ZGV:DoMutex(m)
+function CGV:DoMutex(m)
 	if self.guidesets[m] then
 		return true
 	else
@@ -476,7 +476,7 @@ end
 -- LOAD FUNCTIONS
 -----------------------------------------
 
-function ZGV:SetGuide(name,step)
+function CGV:SetGuide(name,step)
 
 	if not name then
 		self.pause = nil Viewer:Update(true)
@@ -512,17 +512,17 @@ function ZGV:SetGuide(name,step)
 		end  -- safety check
 		local status,msg = guide:GetStatus()
 		-- Use title_short instead of title because matching with backslashes in it seems off?
-		if status == "INVALID" and not ZGV.db.char.goodbadguides[guide.title_short] then
+		if status == "INVALID" and not CGV.db.char.goodbadguides[guide.title_short] then
 			if not self.BadGuidePopup then
-				local popup = ZGV.Popup:New("Zygor_BadGuide_Popup")
+				local popup = CGV.Popup:New("Community_BadGuide_Popup")
 
 				popup.OnAccept = function(me)
-					ZGV.db.char.goodbadguides[me.guide.title_short]=true
-					ZGV:SetGuide(me.guide,me.step)
+					CGV.db.char.goodbadguides[me.guide.title_short]=true
+					CGV:SetGuide(me.guide,me.step)
 				end
 
 				popup.OnDecline = function()
-					ZGV.GuideMenu:Show()
+					CGV.GuideMenu:Show()
 				end
 
 				self.BadGuidePopup = popup
@@ -551,7 +551,7 @@ function ZGV:SetGuide(name,step)
 			guide:SetAsCurrent()
 
 			self.sv.char.stephistory = {}
-			self:Print(L["message_loadedguide"]:format(guide.title))
+			--self:Print(L["message_loadedguide"]:format(guide.title))
 			self:Debug("Guide loaded: "..name)
 			self:FocusStep(step)
 		else
@@ -575,7 +575,7 @@ function ZGV:SetGuide(name,step)
 	Viewer:Update(true)
 end
 
-function ZGV:GuideLoadStartup()
+function CGV:GuideLoadStartup()
 	--self:Debug("&startup GuideLoadStartup starts, SV are" .. (self.sv.char and "" or " NOT") .. " loaded")
 	if not self.guidesloaded then return end -- let the OnGuidesLoaded func call us.
 	if self.guidestartcomplete then return end
@@ -589,8 +589,11 @@ function ZGV:GuideLoadStartup()
 		-- self:Print("Finding proper starter section.")
 		local gs = _G.gs
 		gs = self:FindSuggestedGuides()
+		if gs['LEVELING'] then
+			gs = gs['LEVELING']
+		end
 		if not gs or #gs == 0 then
-			self:SetGuide(ZGV:SanitizeGuideTitle("LEVELING/"..GetZoneNameByIndex(GetCurrentMapZoneIndex())))
+			self:SetGuide(CGV:SanitizeGuideTitle("LEVELING/"..GetZoneNameByIndex(GetCurrentMapZoneIndex())))
 			return
 		elseif #gs == 1 then
 			local g = gs[1]
@@ -606,7 +609,7 @@ end
 -- STARTUP
 -----------------------------------------
 
-tinsert(ZGV.startups,function(self)
-		Viewer = ZGV.Viewer
+tinsert(CGV.startups,function(self)
+		Viewer = CGV.Viewer
 	end)
 

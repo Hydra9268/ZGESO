@@ -13,12 +13,12 @@
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-local ZGV = _G.ZGV
+local CGV = _G.CGV
 local tinsert,type, ipairs = table.insert, type, ipairs
-local Data = ZGV.Data
+local Data = CGV.Data
 
-local MakeExcerpt = ZGV.Utils.MakeExcerpt
-local MatchExcerpt = ZGV.Utils.MatchExcerpt
+local MakeExcerpt = CGV.Utils.MakeExcerpt
+local MatchExcerpt = CGV.Utils.MatchExcerpt
 
 local d = _G.d
 local GetJournalQuestNumSteps = _G.GetJournalQuestNumSteps
@@ -32,15 +32,15 @@ local GetJournalQuestInfo = _G.GetJournalQuestInfo
 local svchardata, savedquests, svcompletedquests
 
 -- Classes
-local Quest = ZGV.Class:New("Quest")
+local Quest = CGV.Class:New("Quest")
 local Quest_mt = { __index = Quest }
-local Quests = ZGV.Class:New("Quests")
+local Quests = CGV.Class:New("Quests")
 local Quests_mt = { __index = Quest }
-local QuestStep = ZGV.Class:New("QuestStep")
+local QuestStep = CGV.Class:New("QuestStep")
 local QuestStep_mt = { __index = QuestStep }
-local QuestCondition = ZGV.Class:New("QuestCondition")
+local QuestCondition = CGV.Class:New("QuestCondition")
 local QuestCondition_mt = { __index = QuestCondition }
-local QuestReward = ZGV.Class:New("QuestReward")
+local QuestReward = CGV.Class:New("QuestReward")
 local QuestReward_mt = { __index = QuestReward }
 
 local PrefixPairs = _G.PrefixPairs
@@ -79,9 +79,9 @@ end
 -- SAVED REFERENCES
 -----------------------------------------
 
-ZGV.Quests = Quests
-ZGV.QuestProto = Quest
-ZGV.completedQuests = {}
+CGV.Quests = Quests
+CGV.QuestProto = Quest
+CGV.completedQuests = {}
 
 Quests.questTypes = questTypes
 Quests.questStepTypes = questStepTypes
@@ -98,7 +98,7 @@ _G['ZQuestCondition']=QuestCondition
 -----------------------------------------
 
 -- Setup a metatable for easier access to completed quests.
-setmetatable(ZGV.completedQuests,{
+setmetatable(CGV.completedQuests,{
 		__index = function(self,ind) return Quests:IsQuestComplete(ind) end,
 		__call = function(self,...) return Quests:IsQuestComplete(...) end
 	})
@@ -137,7 +137,7 @@ function Quests:RemoveQuest(journalIndex)
 end
 
 function Quests:Clear()
-	ZGV.Utils.table_wipe_keys(Quests.journal)
+	CGV.Utils.table_wipe_keys(Quests.journal)
 end
 
 -- Load quest from journal into Quests, so that we can update and check its progress and shit.
@@ -187,13 +187,13 @@ function Quests:SetConditionCoords(journalIndex,stepnum,condnum, typ,m,x,y,r,b1,
 		local cond = step.conditions[condnum]
 		if not cond then return end
 		cond.coords = { pinType = GetByPrefix("MAP_PIN_TYPE",typ) or typ, map = m, x = x, y = y, r = r, b1 = b1, b2 = b2 }
-		--ZGV:Debug(("&quest Got coords for quest |cffffff%s|r step |cffffff%d|r cond |cffffff%d|r: %d %.3f %.3f %.3f %s %s"):format(quest.name,step.num,cond.num,typ,x,y,r, tostring(b1),tostring(b2)))
+		--CGV:Debug(("&quest Got coords for quest |cffffff%s|r step |cffffff%d|r cond |cffffff%d|r: %d %.3f %.3f %.3f %s %s"):format(quest.name,step.num,cond.num,typ,x,y,r, tostring(b1),tostring(b2)))
 	end
 end
 
 --PUBLIC though legacy
 function Quests:IsQuestComplete(questid)
-	return ZGV.QuestTracker:IsQuestComplete(questid)
+	return CGV.QuestTracker:IsQuestComplete(questid)
 end
 
 --PUBLIC
@@ -201,7 +201,7 @@ end
 
 -- v1.1 stripped
 function Quests:GetCompletionStatus(qname,condtxt)
-	ZGV:Debug("&quest GetCompletionS |cffeeaa%s|r / |cffaaee%s|r",qname or "", condtxt or "")
+	CGV:Debug("&quest GetCompletionS |cffeeaa%s|r / |cffaaee%s|r",qname or "", condtxt or "")
 
 	-- QUEST: COMPLETE? Perhaps it's all done?
 	local isComplete = self:IsQuestComplete(qname)
@@ -257,7 +257,7 @@ function Quests:UpdateJournal()
 	self:Clear()
 	for ji = 1,MAX_JOURNAL_QUESTS do
 		if IsValidQuestIndex(ji) then
-			self:GetQuest(ji)		-- This loads all our current quests into ZGV.Quests
+			self:GetQuest(ji)		-- This loads all our current quests into CGV.Quests
 		end
 	end
 end
@@ -283,11 +283,11 @@ function Quest:New(journalIndex)
 	return quest
 end
 
--- /dump ZGV.Quests:GetCompletionStatus("Finding the Family",nil,1)
+-- /dump CGV.Quests:GetCompletionStatus("Finding the Family",nil,1)
 
-local ShowFloatingMessage = ZGV.Utils.ShowFloatingMessage
+local ShowFloatingMessage = CGV.Utils.ShowFloatingMessage
 
--- Create a new Quest object (from current journal data) to put in ZGV.Quests.
+-- Create a new Quest object (from current journal data) to put in CGV.Quests.
 function Quest:FillFromJournal(journalIndex)
 	if not journalIndex then
 		journalIndex = self:GetJournalIndex()
@@ -302,7 +302,7 @@ function Quest:FillFromJournal(journalIndex)
 		return false
 	end
 	if questName ~= self.name then
-		if ZGV.DEV then
+		if CGV.DEV then
 			d("What..? Quest journalIndex="..journalIndex.." has name "..questName..", expected "..(self.name or "?"))
 		end
 		return
@@ -403,7 +403,7 @@ function Quest:Dump_OLD_StageSnapshot(strict)
 		end
 		for ci = 1,GetJournalQuestNumConditions(ji,si) do
 			local conditionText,current,maxv,isFailCondition,isComplete,isCreditShared = GetJournalQuestConditionInfo(ji,si,ci)
-			conditionText = conditionText:gsub(ZGV.Utils.quest_cond_counts,"")
+			conditionText = conditionText:gsub(CGV.Utils.quest_cond_counts,"")
 			tinsert(snap,("S%dC%d %s%s"):format(si,ci,(strict or ((si == 1 and ci == 1) and not trackered)) and "== " or "", MakeExcerpt(conditionText)))
 		end
 	end
@@ -431,7 +431,7 @@ function Quest:DumpQuestStructure()
 		end
 		for ci = 1,GetJournalQuestNumConditions(qi,si) do
 			local conditionText,current,max,isFailCondition,isComplete,isCreditShared = GetJournalQuestConditionInfo(qi,si,ci)
-			conditionText = conditionText:gsub(ZGV.Utils.quest_cond_counts,"")
+			conditionText = conditionText:gsub(CGV.Utils.quest_cond_counts,"")
 			tinsert(ret,("- - Cond %d. |cffeebb%s|r |c888888(%d/%d)|r%s"):format(ci,conditionText,current,max,(isFailCondition and " |cff0000(FAIL)" or "")..(isComplete and " |c00ff00(COMPLETE)" or "")))
 		end
 	end
@@ -474,7 +474,7 @@ end
 -----------------------------------------
 
 function Quest:GetJournalIndex()
-	return Quests:FindQuest(self.name or "") or (ZGV:Debug("Journal for quest "..(self.name or "?").." unknown!?") and nil)
+	return Quests:FindQuest(self.name or "") or (CGV:Debug("Journal for quest "..(self.name or "?").." unknown!?") and nil)
 end
 
 function Quest:GetText()
@@ -593,7 +593,7 @@ function QuestCondition:FillFromJournal(journalIndex, stepIndex, conditionIndex)
 	self.num=conditionIndex
 
 	local conditionText, current, maxval, isFailCondition, isComplete, isCreditShared = GetJournalQuestConditionInfo(journalIndex, stepIndex, conditionIndex)
-	conditionText = conditionText:gsub(ZGV.Utils.quest_cond_counts,"")
+	conditionText = conditionText:gsub(CGV.Utils.quest_cond_counts,"")
 	local condType = _G.GetJournalQuestConditionType(journalIndex, stepIndex, conditionIndex)
 	if conditionText=="" and current==0 and maxval==0 then
 		return false
@@ -646,12 +646,12 @@ end
 
 function Quests:Debug(...)
 	local str = ...
-	ZGV:Debug("&quest "..str, select(2,...) )
+	CGV:Debug("&quest "..str, select(2,...) )
 end
 
 -----------------------------------------
 -- STARTUP
 -----------------------------------------
 
-tinsert(ZGV.startups,function(self)
+tinsert(CGV.startups,function(self)
 	end)

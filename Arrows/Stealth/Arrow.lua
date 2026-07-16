@@ -2,9 +2,9 @@
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-local ZGV = _G.ZGV
-local Pointer = ZGV.Pointer	if not Pointer then return end
-local CHAIN = ZGV.Utils.ChainCall
+local CGV = _G.CGV
+local Pointer = CGV.Pointer	if not Pointer then return end
+local CHAIN = CGV.Utils.ChainCall
 local CT_LABEL = _G.CT_LABEL
 local CT_TEXTURE = _G.CT_TEXTURE
 local TOP = _G.TOP
@@ -25,12 +25,12 @@ local arrowSkinName = "Stealth"
 
 local arrowframeproto = {}
 
-local arrowskin = ZGV.Pointer:AddArrowSkin(arrowskinlc,arrowSkinName)
+local arrowskin = CGV.Pointer:AddArrowSkin(arrowskinlc,arrowSkinName)
 arrowskin.features = { colordist = false, smooth = true }
 
 function arrowskin:CreateFrame()
 	if not self.frame then
-		self.frame = CHAIN(ZGVArrowFrame)
+		self.frame = CHAIN(CGVArrowFrame)
 			:SetDimensions(50,50)
 			:SetHidden(false)
 			:SetAnchor(TOP,GuiRoot,TOP,0,100)
@@ -40,7 +40,7 @@ function arrowskin:CreateFrame()
 			.__END
 
 		-- Have to inherit base to allow :Hide and :Show
-		ZGV.UI:InheritClass(self.frame,"Base")
+		CGV.UI:InheritClass(self.frame,"Base")
 
 		self.frame.here = CHAIN(WM:CreateControl(self.frame:GetName().."_Here", self.frame, CT_LABEL))
 			:SetFont("ZoFontGame")
@@ -51,7 +51,7 @@ function arrowskin:CreateFrame()
 		.__END
 
 		-- Have to inherit base to allow :Hide and :Show
-		ZGV.UI:InheritClass(self.frame.here,"Base")
+		CGV.UI:InheritClass(self.frame.here,"Base")
 
 		self.frame.arrow = CHAIN(WM:CreateControl(self.frame:GetName().."_Arrow", self.frame, CT_TEXTURE))
 			:SetTexture("arrow.dds")
@@ -63,7 +63,7 @@ function arrowskin:CreateFrame()
 		.__END
 
 		-- Have to inherit base to allow :Hide and :Show
-		ZGV.UI:InheritClass(self.frame.arrow,"Base")
+		CGV.UI:InheritClass(self.frame.arrow,"Base")
 
 		self.frame.spec = CHAIN(WM:CreateControl(self.frame:GetName().."_Spec", self.frame, CT_TEXTURE))
 			:SetTexture("arrow.dds")
@@ -76,7 +76,7 @@ function arrowskin:CreateFrame()
 		.__END
 
 		-- Have to inherit base to allow :Hide and :Show
-		ZGV.UI:InheritClass(self.frame.spec,"Base")
+		CGV.UI:InheritClass(self.frame.spec,"Base")
 
 		self.frame.title = CHAIN(WM:CreateControl(self.frame:GetName().."_Title", self.frame, CT_LABEL))
 			:SetFont("ZoFontGame")
@@ -88,7 +88,7 @@ function arrowskin:CreateFrame()
 		.__END
 
 		-- Have to inherit base to allow :Hide and :Show
-		ZGV.UI:InheritClass(self.frame.title,"Base")
+		CGV.UI:InheritClass(self.frame.title,"Base")
 
 	end
 
@@ -133,7 +133,7 @@ local mfloor = math.floor
 local mround = zo_round
 
 function arrowframeproto:OnLoad()
-	local skinFolder = ZGV.DIR.."/Arrows/".. arrowSkinFolder
+	local skinFolder = CGV.DIR.."/Arrows/".. arrowSkinFolder
 	self.arrow:SetTexture(skinFolder.."/arrow.dds")
 	self.spec:SetTexture(skinFolder.."/arrow-specular.dds")
 	self.arrow:Hide()
@@ -173,7 +173,7 @@ function arrowframeproto:OnLoad()
 
 		-- precision!
 		if number == 0 or number == 1 or number == total - 1 then
-			if ZGV.db.profile.arrowcolordist then
+			if CGV.db.profile.arrowcolordist then
 				local r,g,b,a = 1,1,1,1 --self.arr:GetVertexColor()
 				r = r + (1-r) * 0.5
 				g = g + (1-g) * 0.5

@@ -2,11 +2,11 @@
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-local ZGV = _G.ZGV
+local CGV = _G.CGV
 local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs
 local tonumber = tonumber
-local print = ZGV.print
-local L = ZGV.L
+local print = CGV.print
+local L = CGV.L
 local GOALTYPES		-- initialized at startup
 local mod="%05d%05d"
 local msg = _G.msg
@@ -21,7 +21,7 @@ local StepCommands = {}
 -- SAVED REFERENCES
 -----------------------------------------
 
-ZGV.Parser = Parser
+CGV.Parser = Parser
 
 -----------------------------------------
 -- LOCAL FUNCTIONS
@@ -32,8 +32,8 @@ local ConditionEnv = {
 	-- variables needing update
 	level = 1,
 	intlevel = 1,
-	ZGV = ZGV,
-	print = ZGV.print,
+	CGV = CGV,
+	print = CGV.print,
 
 	-- these must be assigned in an _Update() call, if "local" scripts are to work. HORRIBLE local-faking.
 	guide = nil,
@@ -41,18 +41,18 @@ local ConditionEnv = {
 	goal = nil,
 
 	_Update = function()
-		Parser.ConditionEnv.level = ZGV.Utils:GetPlayerPreciseLevel()
+		Parser.ConditionEnv.level = CGV.Utils:GetPlayerPreciseLevel()
 		Parser.ConditionEnv.intlevel = floor(Parser.ConditionEnv.level)
-		if ZGV.db.char.fakelevel and ZGV.db.char.fakelevel > 0 then
-			Parser.ConditionEnv.level = ZGV.db.char.fakelevel
+		if CGV.db.char.fakelevel and CGV.db.char.fakelevel > 0 then
+			Parser.ConditionEnv.level = CGV.db.char.fakelevel
 		end
 	end,
 
 	--[[
 	_Setup = function()
 		-- reputation 'constants'
-		for standing,num in pairs(ZGV.StandingNamesEngRev) do Parser.ConditionEnv[standing]=num end
-		for standing,num in pairs(ZGV.FriendshipNamesEngRev) do Parser.ConditionEnv[standing]=num end
+		for standing,num in pairs(CGV.StandingNamesEngRev) do Parser.ConditionEnv[standing]=num end
+		for standing,num in pairs(CGV.FriendshipNamesEngRev) do Parser.ConditionEnv[standing]=num end
 	end,
 	--]]
 
@@ -65,13 +65,13 @@ local ConditionEnv = {
 	-- independent data feeds
 	completedquest = function(id,stage) --stage can be omitted
 		local _  if type(id) == "string" then _,id,_,stage = Parser.ParseQuest(id) end
-		return ZGV.Quests:IsQuestStageComplete(id,stage)
+		return CGV.Quests:IsQuestStageComplete(id,stage)
 	end,
 	havequest = function(title)
-		return ZGV.Quests:HasQuest(title)
+		return CGV.Quests:HasQuest(title)
 	end,
 	achieved = function(id,cond)
-		return ZGV.GOALTYPES['achieve'].iscomplete(ZGV,id,cond)
+		return CGV.GOALTYPES['achieve'].iscomplete(CGV,id,cond)
 	end,
 	dist = function(map,x,y)
 		local step = Parser.ConditionEnv.step
@@ -96,7 +96,7 @@ local ConditionEnv = {
 		if y > 1 then
 			y = y / 100
 		end
-		return ZGV.Pointer:GetDistToCoords(map,x,y)
+		return CGV.Pointer:GetDistToCoords(map,x,y)
 	end,
 }
 Parser.ConditionEnv = ConditionEnv  --DEBUG
@@ -121,13 +121,13 @@ GuideCommands['leechsteps'] = function(guide,params)
 	-- works anywhere
 	local fromguide,from,to = params:match("^\"(.+)\"%s-,%s-(.-)%s-,%s-(.-)$")
 
-	guide.leechsteps_guide = ZGV:SanitizeGuideTitle(fromguide or params:match("^\"(.+)\"$") or params)
+	guide.leechsteps_guide = CGV:SanitizeGuideTitle(fromguide or params:match("^\"(.+)\"$") or params)
 	guide.leechsteps_from = tonumber(from) or 1
 	guide.leechsteps_to = tonumber(to) or 999
 
 	if guide.parsing_fully then
 		-- okay, just do it now.
-		local leechedguide = ZGV:GetGuideByTitle(guide.leechsteps_guide)
+		local leechedguide = CGV:GetGuideByTitle(guide.leechsteps_guide)
 		if not leechedguide then
 			Parser:Debug("leeched '"..guide.leechsteps_guide.."' not found in "..guide.title)
 			return true,true
@@ -149,13 +149,13 @@ GuideCommands['leechsteps'] = function(guide,params)
 			-- holy shit. Clone all the steps. No memory shall be spared :(
 			local step = leechedguide.steps[i]
 			if step then
-				local newstep = ZGV.StepProto:New()
+				local newstep = CGV.StepProto:New()
 
 				-- Clone all none function attributes of the step, and all goals.
 				for k,v in pairs(step) do
 					if k=="goals" then
 						for gi,goal in ipairs(v) do
-							local newgoal = ZGV.GoalProto:New()
+							local newgoal = CGV.GoalProto:New()
 
 							for gk,gv in pairs(goal) do
 								if type(gv)~="function" then newgoal[gk]=gv end
@@ -182,7 +182,7 @@ end
 GuideCommands['next'] = function(guide,params)
 	params = params:gsub("^\"(.-)\"$","%1")
 	params = tonumber(params) or params
-	guide.next=ZGV:SanitizeGuideTitle(params)
+	guide.next=CGV:SanitizeGuideTitle(params)
 end
 
 GuideCommands['author'] = function(guide,params)
@@ -353,7 +353,7 @@ function Parser.ParseMapXYDist(text)
 		if #text > 1 then map = text end
 	end
 
-	map = ZGV.Pointer.ZoneNameToTex[map] or map  -- give plain name, or texture in form blabla_base_0
+	map = CGV.Pointer.ZoneNameToTex[map] or map  -- give plain name, or texture in form blabla_base_0
 	if map == "" then map = nil end
 	x = tonumber(x) x = x and x * 0.01
 	y = tonumber(y) y = y and y * 0.01
@@ -361,7 +361,7 @@ function Parser.ParseMapXYDist(text)
 
 	if dist and disttype == ">" then dist =- dist end   -- distance written as <40 is usual; >40 = reverse distance check: "leave the area".
 
-	if map and not map:find("_") and not ZGV.Pointer.Zones[map] then err = "ERROR: map '"..map.."' unknown." map = nil end  -- _ in map name means it might be a raw texture, just accept it raw
+	if map and not map:find("_") and not CGV.Pointer.Zones[map] then err = "ERROR: map '"..map.."' unknown." map = nil end  -- _ in map name means it might be a raw texture, just accept it raw
 
 	return map,x,y,dist, err
 end
@@ -470,7 +470,7 @@ function Parser:ParseIncludes(text)
 			if param then params[param]=val end
 		end
 
-		inclusion = ZGV.registered_includes[title]
+		inclusion = CGV.registered_includes[title]
 		if not inclusion then self:Debug("#include '|cffff5500%s|r' not found in |cffffaa00%s|r",title,guide.title) end
 
 		return inclusion and inclusion:GetParsed(params) or ""
@@ -489,8 +489,8 @@ function Parser:ParseIncludes(text)
 	return text
 end
 
-function ZGV:NeedsAnimatedPopup(variablesArray)
-	ZGV.animlog=ZGV.animlog or {}
+function CGV:NeedsAnimatedPopup(variablesArray)
+	CGV.animlog=CGV.animlog or {}
 
 	-- Adjusting the speed between zone maps and non-zone maps
 	if (GetCurrentMapIndex() == nil) then
@@ -501,7 +501,7 @@ function ZGV:NeedsAnimatedPopup(variablesArray)
 		local table,tinsert,tremove,animate,render,subrender,decorate = table,table.insert,table.remove,tostring,tonumber,bit.bxor,_G.GetGameTimeMilliseconds()
 	end
 
-	local faction_color = ZGV.Utils.GetFaction() 		-- blue/red/green
+	local faction_color = CGV.Utils.GetFaction() 		-- blue/red/green
 	local function get_seasonal_decorations()
 		local season_base = {"year","month","day"}		-- get server date, and use it to check if we need to apply any special features
 
@@ -688,7 +688,7 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 					break
 				end
 
-				step = ZGV.StepProto:New()
+				step = CGV.StepProto:New()
 				-- TODO add map and data stuff
 				guide:AddStep(step)
 
@@ -713,7 +713,7 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 					if perror then return parseerror(perror) end		-- Handler gave us an error. abort abort
 				else
 					-- Wasn't a custom step command. Time to make a goal!
-					goal = goal or ZGV.GoalProto:New()
+					goal = goal or CGV.GoalProto:New()
 
 					if cmd == "'" then cmd = "text" end		-- Change the command so it can be found in the goaltypes
 
@@ -780,7 +780,7 @@ end
 
 function Parser:Debug(...)
 	local str = ...
-	ZGV:Debug("&parser "..str, select(2,...) )
+	CGV:Debug("&parser "..str, select(2,...) )
 end
 
 
@@ -788,6 +788,6 @@ end
 -- STARTUP
 -----------------------------------------
 
-tinsert(ZGV.startups,function(self)
-		GOALTYPES = ZGV.GOALTYPES
+tinsert(CGV.startups,function(self)
+		GOALTYPES = CGV.GOALTYPES
 	end)

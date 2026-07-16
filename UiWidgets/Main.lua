@@ -2,17 +2,17 @@
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-local ZGV = _G.ZGV
-local tinsert,tremove,sort,zginherits,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,table.zginherits,math.min,math.max,math.floor,type,pairs,ipairs
-local print = ZGV.print
-local WM = ZGV.WM
+local CGV = _G.CGV
+local tinsert,tremove,sort,cginherits,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,table.cginherits,math.min,math.max,math.floor,type,pairs,ipairs
+local print = CGV.print
+local WM = CGV.WM
 local UI = {}
 local savedwidgets = {}
 local Classes = {}						-- Not available in UI
 
-local FontGName = "ZygorFont"--..size..Reg/Bold
-local FONT = ZGV.DIR.."/Viewer/opensans.ttf"
-local BOLD = ZGV.DIR.."/Viewer/opensansb.ttf"
+local FontGName = "CommunityFont"--..size..Reg/Bold
+local FONT = CGV.DIR.."/Viewer/opensans.ttf"
+local BOLD = CGV.DIR.."/Viewer/opensansb.ttf"
 local extras = "soft-shadow-thin"
 
 local REG_FONTS = {}
@@ -50,7 +50,7 @@ setmetatable(BOLD_FONTS, { __index = function(me,size)
 -- SAVED REFERENCES
 -----------------------------------------
 
-ZGV.UI = UI
+CGV.UI = UI
 UI.Classes = Classes
 UI.savedwidgets = savedwidgets
 
@@ -140,9 +140,9 @@ function UI:InheritClass(obj,class,force)
   local classobj = type(class) == "string" and Classes[class] or class
   assert(classobj, tostring(class).." - Class does not exist")
 
-  zginherits(obj,classobj)
+  cginherits(obj,classobj)
 
-  -- zginherits doesn't overwrite class, but sometimes it is needed
+  -- cginherits doesn't overwrite class, but sometimes it is needed
   if force then
     obj.class = classobj.class
   end

@@ -17,12 +17,12 @@
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-local ZGV = ZGV
-local tinsert,tremove,sort,zginherits,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,table.zginherits,math.min,math.max,math.floor,type,pairs,ipairs
-local CHAIN = ZGV.Utils.ChainCall
-local print = ZGV.print
-local ui = ZGV.UI
-local Label = ZGV.Class:New("Label")
+local CGV = CGV
+local tinsert,tremove,sort,cginherits,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,table.cginherits,math.min,math.max,math.floor,type,pairs,ipairs
+local CHAIN = CGV.Utils.ChainCall
+local print = CGV.print
+local ui = CGV.UI
+local Label = CGV.Class:New("Label")
 local LINE_HEIGHT = 20	-- TODO is a line height really needed?
 local	DEFAULT_SIZE = 13
 

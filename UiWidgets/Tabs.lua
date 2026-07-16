@@ -17,14 +17,14 @@
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-local ZGV = ZGV
-if not ZGV then return end
-local tinsert,tremove,sort,zginherits,min,max,floor,type,pairs,ipairs,unpack = table.insert,table.remove,table.sort,table.zginherits,math.min,math.max,math.floor,type,pairs,ipairs,unpack
-local CHAIN = ZGV.Utils.ChainCall
-local print = ZGV.print
-local ui = ZGV.UI
-local Tabs =  ZGV.Class:New("Tabs")	-- Multiple tabs and their handlers
-local Tab =  ZGV.Class:New("Tab")	-- A single tab
+local CGV = CGV
+if not CGV then return end
+local tinsert,tremove,sort,cginherits,min,max,floor,type,pairs,ipairs,unpack = table.insert,table.remove,table.sort,table.cginherits,math.min,math.max,math.floor,type,pairs,ipairs,unpack
+local CHAIN = CGV.Utils.ChainCall
+local print = CGV.print
+local ui = CGV.UI
+local Tabs =  CGV.Class:New("Tabs")	-- Multiple tabs and their handlers
+local Tab =  CGV.Class:New("Tab")	-- A single tab
 local TabDefaultColor = {HTMLColor("#666666ff")}
 local TabSelectedColor = {HTMLColor("#ffffffff")}
 

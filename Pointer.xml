@@ -1,9 +1,9 @@
 <GuiXml>
 	<Controls>
-		<TopLevelControl name="ZGESO_Pointer_Overlay">
+		<TopLevelControl name="CGESO_Pointer_Overlay">
 			<OnUpdate></OnUpdate>
 		</TopLevelControl>
-		<TopLevelControl name="ZGESO_Pointer_ArrowCtrl">
+		<TopLevelControl name="CGESO_Pointer_ArrowCtrl">
 			<OnUpdate></OnUpdate>
 		</TopLevelControl>
 	</Controls>

@@ -2,13 +2,13 @@
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-local ZGV = ZGV
-if not ZGV then return end
-local tinsert,tremove,sort,zginherits,min,max,floor,type,pairs,ipairs,unpack = table.insert,table.remove,table.sort,table.zginherits,math.min,math.max,math.floor,type,pairs,ipairs,unpack
-local CHAIN = ZGV.Utils.ChainCall
-local print = ZGV.print
-local ui = ZGV.UI
-local ToggleButton =  ZGV.Class:New("ToggleButton")
+local CGV = CGV
+if not CGV then return end
+local tinsert,tremove,sort,cginherits,min,max,floor,type,pairs,ipairs,unpack = table.insert,table.remove,table.sort,table.cginherits,math.min,math.max,math.floor,type,pairs,ipairs,unpack
+local CHAIN = CGV.Utils.ChainCall
+local print = CGV.print
+local ui = CGV.UI
+local ToggleButton =  CGV.Class:New("ToggleButton")
 local DEFAULT_SIZE = 12
 local ACCENT_COLOR = {HTMLColor("#fe6100ff")}
 local BG_COLOR = {.2,.2,.2,1}	-- Copied from SecBackdrop
@@ -176,7 +176,7 @@ function ToggleButton:AddTooltip(head,msg,owner,onme,x,y,onpt)
   onpt = onpt or TOP
 
   local enter = function(me)
-    CHAIN(ZGV.Tooltip)
+    CHAIN(CGV.Tooltip)
     :ClearLines()
     :SetWidth(0)
     :SetOwner(owner,onme,x,y,onpt)
@@ -186,7 +186,7 @@ function ToggleButton:AddTooltip(head,msg,owner,onme,x,y,onpt)
   end
 
   local exit = function(me)
-    ZGV.Tooltip:Hide()
+    CGV.Tooltip:Hide()
   end
 
   CHAIN(self)

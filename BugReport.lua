@@ -2,30 +2,30 @@
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-local ZGV = _G.ZGV
+local CGV = _G.CGV
 local BugReport = {}
 local guiRoot, uiCenter, uiTopLeft, uiBottomRight, uiTopRight, ctEditBox = _G.GuiRoot, _G.CENTER, _G.TOPLEFT, _G.BOTTOMRIGHT, _G.TOPRIGHT, _G.CT_EDITBOX
 local tinsert,type,pairs,ipairs = table.insert,type,pairs,ipairs
-local CHAIN = ZGV.Utils.ChainCall
-local UI, WM = ZGV.UI, _G.WINDOW_MANAGER
+local CHAIN = CGV.Utils.ChainCall
+local UI, WM = CGV.UI, _G.WINDOW_MANAGER
 local getControl = _G.GetControl
 
 -----------------------------------------
 -- SAVED REFERENCES
 -----------------------------------------
 
-ZGV.BugReport = BugReport
+CGV.BugReport = BugReport
 
 -----------------------------------------
 -- PUBLIC FUNCTIONS
--- /run d(ZGV.BugReport:ShowReport())
+-- /run d(CGV.BugReport:ShowReport())
 -----------------------------------------
 
 -----------------------------------------
 -- FUNCTIONS
 -----------------------------------------
 function BugReport:CreateDumpFrameBasic()
-	local name = "ZGESO_DumpFrameBasic"
+	local name = "CGESO_DumpFrameBasic"
 
 	local frame = CHAIN(UI:Create("Frame",guiRoot,name))
 		:SetSize(1024,700)
@@ -166,13 +166,13 @@ function BugReport:GetReport()
 
 	local GetUnitLevel, GetMapPlayerPosition, GetMapTileTexture, GetCurrentMapZoneIndex = _G.GetUnitLevel, _G.GetMapPlayerPosition, _G.GetMapTileTexture, _G.GetCurrentMapZoneIndex
 	local playerX, playerY = GetMapPlayerPosition("player")
-	local step = ZGV.CurrentStep
+	local step = CGV.CurrentStep
 	local t = "" -- text
 
-	t = t .. ("VERSION: %s\n"):format(ZGV.version)
-	t = t .. ("FACTION: %s\n"):format(ZGV.Utils.GetFaction())
+	t = t .. ("VERSION: %s\n"):format(CGV.version)
+	t = t .. ("FACTION: %s\n"):format(CGV.Utils.GetFaction())
 	t = t .. ("LEVEL: %s\n"):format(GetUnitLevel("player"))
-	t = t .. ("GUIDE: %s\n"):format(ZGV.CurrentGuide and ZGV.CurrentGuide.title or "NONE")
+	t = t .. ("GUIDE: %s\n"):format(CGV.CurrentGuide and CGV.CurrentGuide.title or "NONE")
 	t = t .. "\n"
 	t = t .. ("CURRENT LOCATION:\n")
 	t = t .. ("ARTMAP: %s\n MAP ZONE INDEX: #%d\n COORDINATES: %.3f,%.3f\n"):format( GetMapTileTexture(), GetCurrentMapZoneIndex(), playerX * 100, playerY * 100 )
@@ -223,7 +223,7 @@ function BugReport:GetReport()
 
 	if self.report=="" then t = t .. "- no detailed report available -\n" end
 
-	t = t .. "\nDEBUG LOG:\n" .. ZGV.Log:Dump()
+	t = t .. "\nDEBUG LOG:\n" .. CGV.Log:Dump()
 
 	return t
 end
@@ -240,7 +240,7 @@ end
 --[[
 function MyObject:Debug(...)
 	local str = ...
-	ZGV:Debug("&myobj "..str, select(2,...) )
+	CGV:Debug("&myobj "..str, select(2,...) )
 end
 --]]
 
@@ -248,5 +248,5 @@ end
 -- STARTUP
 -----------------------------------------
 
-tinsert(ZGV.startups,function(self)
+tinsert(CGV.startups,function(self)
 end)

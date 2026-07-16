@@ -21,14 +21,14 @@
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-local ZGV = _G.ZGV
-local tinsert,tremove,sort,zginherits,min,max,floor,type,pairs,ipairs,unpack = table.insert,table.remove,table.sort,table.zginherits,math.min,math.max,math.floor,type,pairs,ipairs,unpack
+local CGV = _G.CGV
+local tinsert,tremove,sort,cginherits,min,max,floor,type,pairs,ipairs,unpack = table.insert,table.remove,table.sort,table.cginherits,math.min,math.max,math.floor,type,pairs,ipairs,unpack
 local round = math.round
-local print = ZGV.print
-local CHAIN = ZGV.Utils.ChainCall
-local ui = ZGV.UI
-local L = ZGV.L
-local Popup = ZGV.Class:New("Popup")
+local print = CGV.print
+local CHAIN = CGV.Utils.ChainCall
+local ui = CGV.UI
+local L = CGV.L
+local Popup = CGV.Class:New("Popup")
 Popup.private = {}
 local Popup_mt = { __index = Popup }
 
@@ -59,10 +59,10 @@ local RESIZE_Y_PADDING = LOGO_Y_OFFSET + 5
 -- SAVED REFERENCES
 -----------------------------------------
 
-ZGV.PopupHandler = PopupHandler
-ZGV.Popup = Popup
+CGV.PopupHandler = PopupHandler
+CGV.Popup = Popup
 
-ZGV.PopupHandler.Popup = Popup
+CGV.PopupHandler.Popup = Popup
 PopupHandler.Queue = Queue
 PopupHandler.IsPopupVisible = false
 
@@ -79,7 +79,7 @@ function Popup:New(name,ptype)
   :SetResizeToFitPadding(RESIZE_X_PADDING,RESIZE_Y_PADDING)
   :SetDimensionConstraints(MIN_WIDTH,MIN_HEIGHT,MAX_WIDTH,MAX_HEIGHT)
   --:SetCanDrag(1)
-  :SetAlpha(ZGV.db.profile.opacitymain) --This only gets set once per popup. --TODO it should be able to change dynamically.
+  :SetAlpha(CGV.db.profile.opacitymain) --This only gets set once per popup. --TODO it should be able to change dynamically.
   :SetPoint(unpack(DEFAULT_ANCHOR))
   --[[
 		-- TODO close on escape. Can't do this because once popup get's focus, it doesn't lose it
@@ -96,8 +96,8 @@ function Popup:New(name,ptype)
       me.handler.CurrentPopup = me
     end)
   :SetHandler("OnHide", function(self)
-      for i=1,#ZGV.PopupHandler.Queue do
-        if ZGV.PopupHandler.Queue[i] == self then tremove(ZGV.PopupHandler.Queue,i) end
+      for i=1,#CGV.PopupHandler.Queue do
+        if CGV.PopupHandler.Queue[i] == self then tremove(CGV.PopupHandler.Queue,i) end
       end
       self.private:Close(self)
     end)
@@ -108,16 +108,16 @@ function Popup:New(name,ptype)
   :SetPoint(TOP,0,LOGO_Y_OFFSET)
   .__END
 
-  popup.text = CHAIN(ui:Create("Label",popup,name.."_MainText",ZGV.db.profile.fontsize))	-- TODO make font size dynamically
+  popup.text = CHAIN(ui:Create("Label",popup,name.."_MainText",CGV.db.profile.fontsize))	-- TODO make font size dynamically
   :SetPoint(TOP,popup.logo,BOTTOM,0,TEXT_Y_OFFSET)
   :SetHorizontalAlignment(TEXT_ALIGN_CENTER)
   :SetWidth(TEXT_MAX_WIDTH)
   :SetCanWrap(true)
-  :SetText("This is a Zygor Popup with no text")
+  :SetText("This is a Community Popup with no text")
   .__END
 
   -- This text hides unless needed
-  popup.text2 = CHAIN(ui:Create("Label",popup,name.."_SecText",ZGV.db.profile.fontsize,"bold"))	-- TODO make font size dynamically
+  popup.text2 = CHAIN(ui:Create("Label",popup,name.."_SecText",CGV.db.profile.fontsize,"bold"))	-- TODO make font size dynamically
   :SetPoint(TOP,popup.text,BOTTOM,0,0)
   :SetHorizontalAlignment(TEXT_ALIGN_CENTER)
   :SetWidth(TEXT_MAX_WIDTH)
@@ -127,7 +127,7 @@ function Popup:New(name,ptype)
   .__END
 
   -- This text hides unless needed, too
-  popup.text3 = CHAIN(ui:Create("Label",popup,name.."_SecText2",ZGV.db.profile.fontsize))	-- TODO make font size dynamically
+  popup.text3 = CHAIN(ui:Create("Label",popup,name.."_SecText2",CGV.db.profile.fontsize))	-- TODO make font size dynamically
   :SetPoint(TOP,popup.text2,BOTTOM,0,0)
   :SetHorizontalAlignment(TEXT_ALIGN_CENTER)
   :SetWidth(TEXT_MAX_WIDTH)
@@ -139,7 +139,7 @@ function Popup:New(name,ptype)
   popup.declinebutton = CHAIN(ui:Create("Button",popup,name.."_Decline"))
   :SetPoint(TOPLEFT,popup.text3,BOTTOM,5,BUT_Y_OFFSET)
   :SetText(L['static_decline'])
-  :SetFontSize(ZGV.db.profile.fontsize,true)		-- TODO change size dynamically?
+  :SetFontSize(CGV.db.profile.fontsize,true)		-- TODO change size dynamically?
   :SetHandler("OnClicked",function(me)
       local pop = me:GetParent()
       pop.private:Decline(pop)
@@ -149,7 +149,7 @@ function Popup:New(name,ptype)
   popup.acceptbutton = CHAIN(ui:Create("Button",popup,name.."_Accept"))
   :SetPoint(TOPRIGHT,popup.text3,BOTTOM,-5,BUT_Y_OFFSET)
   :SetText(L['static_accept'])
-  :SetFontSize(ZGV.db.profile.fontsize,true)	-- TODO change size dynamically?
+  :SetFontSize(CGV.db.profile.fontsize,true)	-- TODO change size dynamically?
   :SetHandler("OnClicked",function(me)
       local pop = me:GetParent()
       pop.private:Accept(pop)
@@ -178,8 +178,8 @@ function Popup:New(name,ptype)
 
   popup.private = {}
 
-  zginherits(popup,Popup)										-- Get the class
-  zginherits(popup.private,Popup.private)		-- It doesn't recurse into tables, get this too
+  cginherits(popup,Popup)										-- Get the class
+  cginherits(popup.private,Popup.private)		-- It doesn't recurse into tables, get this too
 
   popup.class = Popup.class		-- Overwrite class
 
@@ -191,7 +191,7 @@ function Popup:New(name,ptype)
 end
 
 function Popup:Show() --Overwrite show... !!!! Real show is saved in SavedShow
-  ZGV.PopupHandler:QueuePush(self)
+  CGV.PopupHandler:QueuePush(self)
 end
 
 function Popup:SetText(text,text2,text3)
@@ -273,7 +273,7 @@ end
 
 function Popup:OnSettings()
   self:Debug("No custom Settings Function was given")
-  ZGV.Settings:OpenSettings() --Opens to notifications where popups are handled.
+  CGV.Settings:OpenSettings() --Opens to notifications where popups are handled.
 end
 
 -----------------------------------------
@@ -323,7 +323,7 @@ function Popup.private:Minimize(popup,time,hideDelay)
 	-- Alpha to 0 to make it appear to disappear. Then hide it a moment later. Hiding it causes another popup to show up.
 	--popup:SetAlpha(0.0)
 	popup:Hide()
-	--ZGV:ScheduleTimer(function() popup:Hide() end, hideDelay or 1.0)
+	--CGV:ScheduleTimer(function() popup:Hide() end, hideDelay or 1.0)
 
 	local onClick = function()
 		popup.shownFromNC=true
@@ -335,7 +335,7 @@ function Popup.private:Minimize(popup,time,hideDelay)
 	local text,tooltipText,priority,poptime,removetime,quiet,OnOpen,data = popup:returnMinimizeSettings()
 	--function Notification.AddButton(id, text, texture, texcoords, onClick, tooltip,  priority, poptime, removetime, quiet,onShow )
 
-	ZGV.NotificationCenter.AddButton(
+	CGV.NotificationCenter.AddButton(
 		popup:GetName(),
 		text,
 		texture,
@@ -360,9 +360,9 @@ function Popup.private:Close(popup)
   popup:OnClose()
 
   -- popup.shownFromNC = nil
-  ZGV.PopupHandler.IsPopupVisible = false --Update this here because  Popup:Hide gets covered by
-  ZGV.PopupHandler.CurrentPopup = nil
-  -- ZGV:ScheduleTimer(function() ZGV.PopupHandler:QueuePop() end,2) --pop the next popup in the queue.
+  CGV.PopupHandler.IsPopupVisible = false --Update this here because  Popup:Hide gets covered by
+  CGV.PopupHandler.CurrentPopup = nil
+  -- CGV:ScheduleTimer(function() CGV.PopupHandler:QueuePop() end,2) --pop the next popup in the queue.
 end
 
 function Popup.private:Settings(popup)
@@ -381,12 +381,12 @@ function PopupHandler:ShowPopup(popup)
   popup:Debug("Showing this popup now.")
 
   -- Don't show minimize button if we not suppose to or no NC
-  --popup.minimize:SetShown( not popup.noMinimize and ZGV.db.profile.n_nc_enabled )
+  --popup.minimize:SetShown( not popup.noMinimize and CGV.db.profile.n_nc_enabled )
 
   --self:TestForPositionAdjustment(popup)
 
   popup:savedShow()														--Show was overwrote and saved here.
-  popup:SetAlpha(ZGV.db.profile.opacitymain)	-- alpha may have been changed.
+  popup:SetAlpha(CGV.db.profile.opacitymain)	-- alpha may have been changed.
 end
 
 function PopupHandler:QueuePop() --popups are shown here.
@@ -399,13 +399,13 @@ function PopupHandler:QueuePop() --popups are shown here.
 
   --[[
 	if not popup.shownFromNC and	-- If shown from NC then don't put it back there.
-	( ZGV.NotificationCenter.ButtonIsShown(popup:GetName()) or --popup is already on the NC bar, so just update it with a toast
-	(ZGV.db.profile.n_nc_no_popups and popup.minimize:IsShown()) ) then --We don't want to see any popups, just send everything to the NC center. Unless you are not allowed.
+	( CGV.NotificationCenter.ButtonIsShown(popup:GetName()) or --popup is already on the NC bar, so just update it with a toast
+	(CGV.db.profile.n_nc_no_popups and popup.minimize:IsShown()) ) then --We don't want to see any popups, just send everything to the NC center. Unless you are not allowed.
 		popup:Debug("Getting automatically sent to Notification Center")
 		popup.private:Minimize(popup,0,3) -- Send to NC with instantly fading it. But wait 3 seconds to show/minimize the next popup.
-	elseif ZGV.db.profile.n_popup_hideall and not ZGV.Frame:IsVisible() then
+	elseif CGV.db.profile.n_popup_hideall and not CGV.Frame:IsVisible() then
 		-- Will suppress all popups if suppose to. BUT if they are still allowing us to send them to the NC then do that first.
-		popup:Debug("Suppressed. ZGVF Hidden")
+		popup:Debug("Suppressed. CGVF Hidden")
 		popup.private:Hide(popup)
 	end
 	--]]
@@ -424,8 +424,8 @@ end
 
 function PopupHandler:Debug(...)
   local str = ...
-  --ZGV:Debug("&popup "..str, select(2,...) )
-  ZGV:Debug("&popup "..str..": "..(select(2,...) or "") ) --little ugly..
+  --CGV:Debug("&popup "..str, select(2,...) )
+  CGV:Debug("&popup "..str..": "..(select(2,...) or "") ) --little ugly..
 end
 
 

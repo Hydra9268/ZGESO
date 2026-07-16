@@ -1,23 +1,23 @@
-if not ZGV then return end
+if not CGV then return end
 
 local GPS = LibGPS3
 
 MEMORYSPAM = false
 
 local Pointer = {}
-ZGV.Pointer = Pointer
+CGV.Pointer = Pointer
 
 local  _G,assert,table,string,tinsert,tonumber,tostring,type,ipairs,pairs,setmetatable,math,abs,ceil = _G,assert,table,string,table.insert,tonumber,tostring,type,ipairs,pairs,setmetatable,math,abs,ceil
 
 local min,max = math.min,math.max
 local wipe = function(tab) for k,v in pairs(tab) do tab[k] = nil end end
 
-local L=ZGV.L
+local L=CGV.L
 local print = d
 
-local BZL=ZGV.BZL
-local BZR=ZGV.BZR
-local CHAIN = ZGV.Utils.ChainCall
+local BZL=CGV.BZL
+local BZR=CGV.BZR
+local CHAIN = CGV.Utils.ChainCall
 
 Pointer.nummanual = 0
 Pointer.antphase = 0
@@ -47,7 +47,7 @@ end
 
 local MapFloorCountCache
 
-function ZGV:SanitizeMapFloor(map,flr)
+function CGV:SanitizeMapFloor(map,flr)
 	do return map,flr end
 end
 
@@ -64,7 +64,7 @@ function Pointer:Startup()
 				local isValidAnchor, point, relativeTo, relativePoint, offsetX, offsetY = me:GetAnchor()
 
 				if isValidAnchor then
-					ZGV.db.profile.arrowanchor = {
+					CGV.db.profile.arrowanchor = {
 						point,
 						relativeTo:GetName(),		-- Can not store userdata. Just put a string in and it will be forced to GuiRoot when setting
 						relativePoint,
@@ -84,26 +84,26 @@ end
 function Pointer:UpdateArrowPosition()
 	local DEFAULT_ANCHOR = { -- Set point using Top so that goals grow downward properly
 		BOTTOM,
-		ZGV.Viewer.name,
+		CGV.Viewer.name,
 		TOP,
 		0,
 		-50,
 	}
 
-	ZGV.db.profile.arrowanchor = ZGV.db.profile.arrowanchor and #ZGV.db.profile.arrowanchor==5 and ZGV.db.profile.arrowanchor or DEFAULT_ANCHOR
-	local point, relativeTo, relativePoint, offsetX, offsetY = unpack(ZGV.db.profile.arrowanchor)
-	relativeTo = (relativeTo=="GuiRoot" and GuiRoot) or (relativeTo==ZGV.Viewer.name and ZGV.Frame)
+	CGV.db.profile.arrowanchor = CGV.db.profile.arrowanchor and #CGV.db.profile.arrowanchor==5 and CGV.db.profile.arrowanchor or DEFAULT_ANCHOR
+	local point, relativeTo, relativePoint, offsetX, offsetY = unpack(CGV.db.profile.arrowanchor)
+	relativeTo = (relativeTo=="GuiRoot" and GuiRoot) or (relativeTo==CGV.Viewer.name and CGV.Frame)
 
 	self.ArrowFrame:ClearAllPoints()
 	self.ArrowFrame:SetPoint(point, relativeTo, relativePoint, offsetX, offsetY)
 end
 
 function Pointer:ResetWaypointerSettings()
-	local opt_group = ZGV.Settings:GetOptionGroupByName("arrow")
+	local opt_group = CGV.Settings:GetOptionGroupByName("arrow")
 
 	opt_group:SetToDefault()	-- Set all options in our setting menu to default.
 
-	ZGV.db.profile.arrowanchor = nil
+	CGV.db.profile.arrowanchor = nil
 
 	self:UpdateArrowPosition()
 end
@@ -113,15 +113,15 @@ __CLASS = __CLASS or {}
 
 Pointer.Icons = {
 	default =	"ESOdot",
-	ESOdot = 	{ icon=ZGV.DIR.."/Arrows/Stealth/arrow-error.dds", size=40, minisize=25, rotates=false, edgeicon=ZGV.DIR.."\\Skins\\minimaparrow-green-edge", edgesize=60, spinner=true, onminimap=always },
-	greendot = 	{ icon=ZGV.DIR.."\\Skins\\minimaparrow-green-dot", size=40, minisize=25, rotates=false, edgeicon=ZGV.DIR.."\\Skins\\minimaparrow-green-edge", edgesize=60, spinner=true, onminimap=always },
-	graydot = 	{ icon=ZGV.DIR.."\\Skins\\minimaparrow-green-dot", size=40, minisize=25, rotates=false, edgeicon=ZGV.DIR.."\\Skins\\minimaparrow-green-edge", edgesize=60, spinner=true, desat=1, onminimap=always },
-	arrow = 	{ icon=ZGV.DIR.."\\Skins\\minimaparrow-path", size=70, minisize=60, rotates=true, edgeicon=ZGV.DIR.."\\Skins\\minimaparrow-path", edgesize=50 },
-	ant =		{ icon=ZGV.DIR.."\\Skins\\minimaparrow-ant", alpha=0.8, size=30, minisize=25, rotates=false, edgeicon=nil, edgesize=1 },
-	ant_g = 	{ icon=ZGV.DIR.."\\Skins\\minimaparrow-ant", r=0.4, g=1, b=0, alpha=0.8, size=30, minisize=25, rotates=false, edgeicon=nil, edgesize=1 },
-	ant_b =   	{ icon=ZGV.DIR.."\\Skins\\minimaparrow-ant", r=0, g=0.7, b=1, alpha=0.8, size=30, minisize=25, rotates=false, edgeicon=nil, edgesize=1 },
-	ant_p =   	{ icon=ZGV.DIR.."\\Skins\\minimaparrow-ant", r=0.8, g=0.3, b=1, alpha=0.8, size=30, minisize=25, rotates=false, edgeicon=nil, edgesize=1 },
-	ant_y =   	{ icon=ZGV.DIR.."\\Skins\\minimaparrow-ant", r=1, g=0.8, b=0, alpha=0.8, size=30, minisize=25, rotates=false, edgeicon=nil, edgesize=1 },
+	ESOdot = 	{ icon=CGV.DIR.."/Arrows/Stealth/arrow-error.dds", size=40, minisize=25, rotates=false, edgeicon=CGV.DIR.."\\Skins\\minimaparrow-green-edge", edgesize=60, spinner=true, onminimap=always },
+	greendot = 	{ icon=CGV.DIR.."\\Skins\\minimaparrow-green-dot", size=40, minisize=25, rotates=false, edgeicon=CGV.DIR.."\\Skins\\minimaparrow-green-edge", edgesize=60, spinner=true, onminimap=always },
+	graydot = 	{ icon=CGV.DIR.."\\Skins\\minimaparrow-green-dot", size=40, minisize=25, rotates=false, edgeicon=CGV.DIR.."\\Skins\\minimaparrow-green-edge", edgesize=60, spinner=true, desat=1, onminimap=always },
+	arrow = 	{ icon=CGV.DIR.."\\Skins\\minimaparrow-path", size=70, minisize=60, rotates=true, edgeicon=CGV.DIR.."\\Skins\\minimaparrow-path", edgesize=50 },
+	ant =		{ icon=CGV.DIR.."\\Skins\\minimaparrow-ant", alpha=0.8, size=30, minisize=25, rotates=false, edgeicon=nil, edgesize=1 },
+	ant_g = 	{ icon=CGV.DIR.."\\Skins\\minimaparrow-ant", r=0.4, g=1, b=0, alpha=0.8, size=30, minisize=25, rotates=false, edgeicon=nil, edgesize=1 },
+	ant_b =   	{ icon=CGV.DIR.."\\Skins\\minimaparrow-ant", r=0, g=0.7, b=1, alpha=0.8, size=30, minisize=25, rotates=false, edgeicon=nil, edgesize=1 },
+	ant_p =   	{ icon=CGV.DIR.."\\Skins\\minimaparrow-ant", r=0.8, g=0.3, b=1, alpha=0.8, size=30, minisize=25, rotates=false, edgeicon=nil, edgesize=1 },
+	ant_y =   	{ icon=CGV.DIR.."\\Skins\\minimaparrow-ant", r=1, g=0.8, b=0, alpha=0.8, size=30, minisize=25, rotates=false, edgeicon=nil, edgesize=1 },
 	none = 		{ icon="", alpha=0.0, size=1, minisize=1, rotates=false, edgeicon=nil, edgesize=1 },
 
 	ant_g_default = { r=0.4, g=1, b=0, alpha=0.8 },
@@ -210,7 +210,7 @@ function Pointer:GetMapMarker (m,f,x,y,data)
 	waypoint.x = x
 	waypoint.y = y
 
-	ZGV.Utils.table_join(waypoint,data)
+	CGV.Utils.table_join(waypoint,data)
 	return waypoint
 end
 
@@ -341,7 +341,7 @@ end
 
 local function FormatDistance(dist)
 	if not dist then return "" end
-	if ZGV.db.profile.arrowmeters then -- only metric!
+	if CGV.db.profile.arrowmeters then -- only metric!
 		local mdist = dist
 		if mdist > 1000 then
 			return L['dist_km']:format(mdist/1000)
@@ -357,16 +357,16 @@ local function FormatDistance(dist)
 		end
 	end
 end
-ZGV.FormatDistance = FormatDistance
+CGV.FormatDistance = FormatDistance
 
 function Pointer:CreateArrowFrame()
 	if not self.ArrowFrameCtrl then
-		self.ArrowFrameCtrl = ZGESO_Pointer_ArrowCtrl
+		self.ArrowFrameCtrl = CGESO_Pointer_ArrowCtrl
 		self.ArrowFrameCtrl:SetHandler("OnUpdate",self.ArrowFrameControl_OnUpdate)
 	end
 
 	if not self.CurrentArrowSkin then
-		self:SetArrowSkin(ZGV.db.profile.arrowskin)
+		self:SetArrowSkin(CGV.db.profile.arrowskin)
 	end
 
 	self:SetupArrow()
@@ -379,23 +379,23 @@ function Pointer:SetupArrow()
 	end
 
 	self.ArrowFrame = CHAIN(self.CurrentArrowSkin:CreateFrame())
-		:SetHandler("OnClick", ZGV.Pointer.ArrowFrame_OnClick)
+		:SetHandler("OnClick", CGV.Pointer.ArrowFrame_OnClick)
 
 		-- freeze?
-		:SetMovable(not ZGV.db.profile.arrowfreeze)
-		:SetMouseEnabled(not ZGV.db.profile.arrowfreeze)
+		:SetMovable(not CGV.db.profile.arrowfreeze)
+		:SetMouseEnabled(not CGV.db.profile.arrowfreeze)
 	.__END
 
 	-- scale
-	local scale = ZGV.db.profile.arrowscale or 1.0
+	local scale = CGV.db.profile.arrowscale or 1.0
 
 	self.ArrowFrame:SetScale(scale)
 
 	-- opacity
-	self.ArrowFrame:SetAlpha(ZGV.db.profile.arrowalpha or 1.0)
+	self.ArrowFrame:SetAlpha(CGV.db.profile.arrowalpha or 1.0)
 
 	-- font
-	self:SetFontSize(ZGV.db.profile.arrowfontsize or 12)
+	self:SetFontSize(CGV.db.profile.arrowfontsize or 12)
 end
 
 function Pointer:UpdateWaypoints()
@@ -415,7 +415,7 @@ function Pointer:SetFontSize(size)
 end
 
 function Pointer.WorldMapButton_OnMouseWheel(self,delta,...)
-	if ZGV.db.profile.debug then
+	if CGV.db.profile.debug then
 		self.waypoint.truesize = (self.waypoint.truesize or 50) * (delta>0 and 1.1 or 0.909090)
 		print(self.waypoint.truesize)
 		self.waypoint:SetIcon(Pointer.Icons.greendot)
@@ -423,7 +423,7 @@ function Pointer.WorldMapButton_OnMouseWheel(self,delta,...)
 end
 
 function Pointer:IsCorpseArrowNeeded() -- small utility against bulky ifs, NB: waypointer-independent
-	return ZGV.db.profile.corpsearrow and UnitIsDeadOrGhost("player") and select(2, IsInInstance()) ~= "pvp" and not IsActiveBattlefieldArena()
+	return CGV.db.profile.corpsearrow and UnitIsDeadOrGhost("player") and select(2, IsInInstance()) ~= "pvp" and not IsActiveBattlefieldArena()
 end
 
 ------------------------------------------- ARROW -----------------
@@ -447,7 +447,7 @@ function Pointer.ArrowFrameControl_OnUpdate(self,msec)
 	-- unthrottled
 	if Pointer.ArrowFrame then
 		local icon=Pointer.ArrowFrame.ArrowIcon
-		if icon and icon:IsVisible() and not ZGV.Pointer.ArrowFrame:IsVisible() then Pointer.ArrowFrame_HideSpellArrow(self) end
+		if icon and icon:IsVisible() and not CGV.Pointer.ArrowFrame:IsVisible() then Pointer.ArrowFrame_HideSpellArrow(self) end
 	end
 
 	-- update waypoints periodically, in case some get stuck on player-out-of-map,-go-away state
@@ -459,7 +459,7 @@ function Pointer.ArrowFrameControl_OnUpdate(self,msec)
 	-- auto-surveyer
 	if Pointer.do_autosurvey then
 		if msec-autosurvey_last >= autosurvey_fps then
-			Pointer:SurveyMap("here",nil,not ZGV.DEV)
+			Pointer:SurveyMap("here",nil,not CGV.DEV)
 			autosurvey_last = msec
 		end
 	end
@@ -543,9 +543,9 @@ end
 local noskip_time = 0
 local dummy_waypoint = { DUMMY = 1 }
 
--- /dump ZGV.Pointer:TranslateCoords("bleakrock_base_0",0.7,0.7,"bleakrockvillage_base_0")
--- /dump ZGV.Pointer:TranslateCoords("deshaan_base",.4053,.7517,"kragenmoor_base")
--- /dump ZGV.Pointer:GetDistToCoords("shimmerene_base",50.50,50.50,"shimmerenewaterworks01_base")
+-- /dump CGV.Pointer:TranslateCoords("bleakrock_base_0",0.7,0.7,"bleakrockvillage_base_0")
+-- /dump CGV.Pointer:TranslateCoords("deshaan_base",.4053,.7517,"kragenmoor_base")
+-- /dump CGV.Pointer:GetDistToCoords("shimmerene_base",50.50,50.50,"shimmerenewaterworks01_base")
 function Pointer:TranslateCoords(map1,x,y,map2)
 	if map1==map2 or not (map1 and map2) then return x,y end
 
@@ -571,9 +571,9 @@ function Pointer:TranslateCoords(map1,x,y,map2)
 	return (x-Z2.xoffset)/Z2.scale,(y-Z2.yoffset)/Z2.scale
 end
 
---/dump ZGV.Pointer:GetDistToCoords(auridon_base,52.50,91.57)
---/dump ZGV.Pointer:GetDistToCoords(shimmerenewaterworks01_base,50.50,50.50)
---/dump ZGV.Pointer:TranslateCoords("auridon_base",52.50,91.57,"vulkhelguard_base")
+--/dump CGV.Pointer:GetDistToCoords(auridon_base,52.50,91.57)
+--/dump CGV.Pointer:GetDistToCoords(shimmerenewaterworks01_base,50.50,50.50)
+--/dump CGV.Pointer:TranslateCoords("auridon_base",52.50,91.57,"vulkhelguard_base")
 function Pointer:GetDistToCoords(m,x,y)
 	local px,py = GetMapPlayerPosition("player")
 	local pmap = Pointer:GetMapTex()
@@ -588,7 +588,7 @@ function Pointer:GetDistToCoords(m,x,y)
 	local di = wx and math.sqrt((px-wx)*(px-wx)+(py-wy)*(py-wy)) or 0
 
 	local parentWorld = zone and zone.parentWorld or "Tamriel"
-	local worldsize = ZGV.MapData.Zones[parentWorld].worldWidth or 10000
+	local worldsize = CGV.MapData.Zones[parentWorld].worldWidth or 10000
 	local dist = worldsize*(scale or 0)*di
 
 	return dist
@@ -604,9 +604,9 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 	local waypoint = ArrowFrame.waypoint
 
 	if not waypoint
-	or not ZGV.db.profile.arrowshow
+	or not CGV.db.profile.arrowshow
 	or GuiRoot:IsHidden()
-	or ( (not ZGV.Frame or ZGV.Frame:IsHidden()) and ZGV.db.profile.hidearrowwithguide and waypoint.type~="manual")
+	or ( (not CGV.Frame or CGV.Frame:IsHidden()) and CGV.db.profile.hidearrowwithguide and waypoint.type~="manual")
 	then
 		if safe then
 			ArrowFrame:Hide()
@@ -648,7 +648,7 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 	self.curdist = dist
 
 	-- trigger rover update if we got 100yd away from current target (are we lost?)
-	if self.initialdist and ZGV.db.profile.pathfinding then
+	if self.initialdist and CGV.db.profile.pathfinding then
 		self.closingdist = min(self.initialdist,self.closingdist or 9999)
 		lastforcedupdate=lastforcedupdate or 0
 		if dist-self.closingdist>100 and GetTime()-lastforcedupdate>120 then
@@ -750,10 +750,10 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 			if #speeds>limit then table.remove(speeds) end
 		else
 			speed=0
-			ZGV.Utils.table_wipe(speeds)
+			CGV.Utils.table_wipe(speeds)
 		end
 
-		if ZGV.db.profile.audiocues and IsFlying() then
+		if CGV.db.profile.audiocues and IsFlying() then
 			local t=GetTime()
 			if lastplayerangle~=playerangle then lastturntime=t end
 			if GetUnitSpeed("player")==0 then laststoptime=t else lastmovetime=t end
@@ -826,7 +826,7 @@ end
 function Pointer.ArrowFrame_Proto_GetDistTxt(self,dist)
 	if not dist or dist=="far" or (tonumber(dist or 0)>9999998) then return Pointer.ArrowFrame_Proto_GetFarText(self)
 	elseif type(dist)=="string" then return dist
-	else  return ZGV.FormatDistance(dist)
+	else  return CGV.FormatDistance(dist)
 	end
 end
 
@@ -847,10 +847,10 @@ function Pointer.ArrowFrame_OnShow(frame)
 end
 
 function Pointer.ArrowFrame_OnClick(frame,button)
-	if ZGV.db.profile.arrowfreeze then return end  -- how did we get the OnClick event, anyway?
+	if CGV.db.profile.arrowfreeze then return end  -- how did we get the OnClick event, anyway?
 	if button=="LeftButton" then
 		if not frame.dragging then
-			ZGV:SetWaypoint()
+			CGV:SetWaypoint()
 		end
 	elseif button=="RightButton" then
 		Pointer.ArrowFrame_ShowMenu()
@@ -858,11 +858,11 @@ function Pointer.ArrowFrame_OnClick(frame,button)
 end
 
 function Pointer.ArrowFrame_SetAlpha(but,v)
-	ZGV:SetOption("Arrow","arrowalpha "..v)
+	CGV:SetOption("Arrow","arrowalpha "..v)
 end
 
 function Pointer.ArrowFrame_SetScale(but,v)
-	ZGV:SetOption("Arrow","arrowscale "..v)
+	CGV:SetOption("Arrow","arrowscale "..v)
 end
 
 Pointer.ArrowSkins = {}
@@ -879,8 +879,8 @@ function Pointer:AddArrowSkin(id,name)
 end
 
 function Pointer:GetSkinPath(skin)
-	if not skin then skin=ZGV.db.options.arrowskin end
-	return ZGV.DIR .. "\\Arrows\\" .. skin .. "\\"
+	if not skin then skin=CGV.db.options.arrowskin end
+	return CGV.DIR .. "\\Arrows\\" .. skin .. "\\"
 end
 
 function Pointer:SetArrowSkin(skin)
@@ -892,7 +892,7 @@ function Pointer:SetArrowSkin(skin)
 	end
 	local skindata = self.ArrowSkins[skin]
 	if not skindata then
-		ZGV:Print("Unknown arrow skin '"..skin.."', falling back to default")
+		CGV:Print("Unknown arrow skin '"..skin.."', falling back to default")
 		return self:SetArrowSkin()
 	end
 
@@ -903,7 +903,7 @@ function Pointer:SetArrowSkin(skin)
 		self.ArrowFrame:Hide()
 	end
 
-	ZGV.db.profile.arrowskin = skin
+	CGV.db.profile.arrowskin = skin
 
 	self.CurrentArrowSkin = skindata
 	self.ArrowSkinDir = self:GetSkinPath(skin,style)
@@ -919,7 +919,7 @@ end
 
 function Pointer:UpdateArrowVisibility()
 	if not self.ArrowFrame then return end
-	if ZGV.db.profile.arrowshow then self.ArrowFrame:Show() else self.ArrowFrame:Hide() end
+	if CGV.db.profile.arrowshow then self.ArrowFrame:Show() else self.ArrowFrame:Hide() end
 end
 
 -- Access tables, actually fronts for using SV data for DEVs before hardcoded zone data before SV data again.
@@ -930,32 +930,32 @@ Pointer.GetMapNameByID2 = function(tex) return Pointer.Zones[tex] and Pointer.Zo
 
 -- start with some cities hardcoded. That's mostly for testing before Data is loaded, or if that fails.
 local function AddMap(name,tex)
-	if ZGV.MapData.ZoneNameToTex[name]~=tex then ZGV.MapData.ZoneNameToTex[name]=tex end
-	ZGV.MapData.Zones[tex] = ZGV.MapData.Zones[tex] or {}
-	ZGV.MapData.Zones[tex].name=name
+	if CGV.MapData.ZoneNameToTex[name]~=tex then CGV.MapData.ZoneNameToTex[name]=tex end
+	CGV.MapData.Zones[tex] = CGV.MapData.Zones[tex] or {}
+	CGV.MapData.Zones[tex].name=name
 end
 
 -- Grab all ESO maps
 function Pointer:InitMaps()
 	-- initialize saved data
 
-	ZGV.db.profile.Zones = ZGV.db.profile.Zones or {}
-	ZGV.db.profile.ZoneNameToTex = ZGV.db.profile.ZoneNameToTex or {}
+	CGV.db.profile.Zones = CGV.db.profile.Zones or {}
+	CGV.db.profile.ZoneNameToTex = CGV.db.profile.ZoneNameToTex or {}
 
 
-	if not ZGV.MapData then
-		ZGV.MapData={Zones={},ZoneNameToTex={}}
-		ZGV:Error("No Map Data. Please report this issue.")
+	if not CGV.MapData then
+		CGV.MapData={Zones={},ZoneNameToTex={}}
+		CGV:Error("No Map Data. Please report this issue.")
 	end
 
 	(function()
 		if GetCVar("language.2")=="en" then return end
-		local mapdata_local = ZGV.MapData.LocalizedMapNames[GetCVar("language.2")]
+		local mapdata_local = CGV.MapData.LocalizedMapNames[GetCVar("language.2")]
 		if not mapdata_local then return end
-		local mapdata_en = ZGV.MapData.LocalizedMapNames['en']
+		local mapdata_en = CGV.MapData.LocalizedMapNames['en']
 		for mapindex,mapname_local in pairs(mapdata_local) do
 			local mapname_en = mapdata_en[mapindex]
-			for maptex,mapdata in pairs(ZGV.MapData.Zones) do
+			for maptex,mapdata in pairs(CGV.MapData.Zones) do
 				if mapdata.name==mapname_en then mapdata.name=mapname_local end
 			end
 		end
@@ -966,10 +966,10 @@ function Pointer:InitMaps()
 	AddMap("Bleakrock Village","bleakrockvillage_base")
 	AddMap("Malabal Tor","malabaltor_base")
 
-	ZGV.MapData.Zones["Tamriel"]=ZGV.MapData.Zones["Tamriel"] or {}
-	ZGV.MapData.Zones["Tamriel"].xoffset=0
-	ZGV.MapData.Zones["Tamriel"].yoffset=0
-	ZGV.MapData.Zones["Tamriel"].scale=1
+	CGV.MapData.Zones["Tamriel"]=CGV.MapData.Zones["Tamriel"] or {}
+	CGV.MapData.Zones["Tamriel"].xoffset=0
+	CGV.MapData.Zones["Tamriel"].yoffset=0
+	CGV.MapData.Zones["Tamriel"].scale=1
 
 	-- this probably shouldn't be accessed before it is initalized
 	Pointer.ZoneNameToTex = {}
@@ -977,52 +977,52 @@ function Pointer:InitMaps()
 
 	setmetatable(Pointer.ZoneNameToTex,{
 		__index=function(z,key)
-			return (ZGV.DEV and ZGV.sv.profile.ZoneNameToTex[key])
-				or ZGV.MapData.ZoneNameToTex[key]
-				or ZGV.sv.profile.ZoneNameToTex[key]
+			return (CGV.DEV and CGV.sv.profile.ZoneNameToTex[key])
+				or CGV.MapData.ZoneNameToTex[key]
+				or CGV.sv.profile.ZoneNameToTex[key]
 			end,
 		__newindex=function(z,key,val)
-			ZGV.sv.profile.ZoneNameToTex[key]=val
+			CGV.sv.profile.ZoneNameToTex[key]=val
 		end}
 	)
 
 	function Pointer.Zones:GetAllMaps()
 		local ret = {SV={},Data={}}
-		for k,v in pairs(ZGV.sv.profile.Zones) do ret.SV[k]=v end
-		for k,v in pairs(ZGV.MapData.Zones) do ret.Data[k]=v end
+		for k,v in pairs(CGV.sv.profile.Zones) do ret.SV[k]=v end
+		for k,v in pairs(CGV.MapData.Zones) do ret.Data[k]=v end
 		return ret
 	end
 	function Pointer.Zones:ClearSV()
-		ZGV.sv.profile.Zones={}
+		CGV.sv.profile.Zones={}
 	end
 
 	-- make it magic!
 	setmetatable(Pointer.Zones,{
 		__index=function(z,key)
 				if not key then return "ERROR" end
-				local zone = (ZGV.DEV and ZGV.sv.profile.Zones[key])
-					or ZGV.MapData.Zones[key]
-					or ZGV.sv.profile.Zones[key]
-				if not zone then  zone = {}  ZGV.sv.profile.Zones[key] = zone  end
+				local zone = (CGV.DEV and CGV.sv.profile.Zones[key])
+					or CGV.MapData.Zones[key]
+					or CGV.sv.profile.Zones[key]
+				if not zone then  zone = {}  CGV.sv.profile.Zones[key] = zone  end
 				return zone
 			end,
 		__newindex=function(z,key,val)
-			ZGV.sv.profile.Zones[key]=val
+			CGV.sv.profile.Zones[key]=val
 		end}
 	)
 
 	-- share names from tex into zones
-	for nm,tx in pairs(ZGV.MapData.ZoneNameToTex) do
-		ZGV.MapData.Zones[tx] = ZGV.MapData.Zones[tx] or {}
-		ZGV.MapData.Zones[tx].name = ZGV.MapData.Zones[tx].name or nm
+	for nm,tx in pairs(CGV.MapData.ZoneNameToTex) do
+		CGV.MapData.Zones[tx] = CGV.MapData.Zones[tx] or {}
+		CGV.MapData.Zones[tx].name = CGV.MapData.Zones[tx].name or nm
 	end
 
 	-- clear redundant SV
-	for nm,tx in pairs(ZGV.MapData.ZoneNameToTex) do
-		if ZGV.sv.profile.ZoneNameToTex[nm]==tx then ZGV.sv.profile.ZoneNameToTex[nm]=nil end
+	for nm,tx in pairs(CGV.MapData.ZoneNameToTex) do
+		if CGV.sv.profile.ZoneNameToTex[nm]==tx then CGV.sv.profile.ZoneNameToTex[nm]=nil end
 	end
-	for tx,dz in pairs(ZGV.MapData.Zones) do if type(dz)=="table" then
-		local sz=ZGV.db.profile.Zones[tx]
+	for tx,dz in pairs(CGV.MapData.Zones) do if type(dz)=="table" then
+		local sz=CGV.db.profile.Zones[tx]
 		if sz then sz.noParent=sz.notTamriel  sz.notTamriel=nil  end  --convert
 		if sz
 		and dz.name==sz.name
@@ -1031,14 +1031,14 @@ function Pointer:InitMaps()
 		and dz.scale==sz.scale
 		and dz.noParent==sz.noParent
 		then
-			ZGV.db.profile.Zones[tx]=nil
+			CGV.db.profile.Zones[tx]=nil
 		end
 	end end
 
 	-- clear recent scout timestamps, just in case.
-	for k,v in pairs(ZGV.db.profile.Zones) do if type(v)=="table" then v.scouttime,v.lx1,v.ly1,v.px1,v.py1=nil end end
+	for k,v in pairs(CGV.db.profile.Zones) do if type(v)=="table" then v.scouttime,v.lx1,v.ly1,v.px1,v.py1=nil end end
 
-	if ZGV.DEV then Pointer:SurveyStats() end
+	if CGV.DEV then Pointer:SurveyStats() end
 
 	SetMapToPlayerLocation() ZO_WorldMap_UpdateMap()
 
@@ -1056,13 +1056,13 @@ function Pointer:SurveyAllMaps(autoclick)
 end
 
 local function DEVd(s,...)
-	if ZGV.DEV then
+	if CGV.DEV then
 		s = "|cff8800Z|cff0000DEV|r: "..tostring(s)
 		d(s,...)
 	end
 end
 
---/dump ZGV.Pointer:SurveyStats()
+--/dump CGV.Pointer:SurveyStats()
 function Pointer:SurveyStats()
 	local function stat(zones)
 		local total,surveyed=0,0
@@ -1073,9 +1073,9 @@ function Pointer:SurveyStats()
 		return total,surveyed
 	end
 
-	local total,surveyed = stat(ZGV.MapData.Zones)
+	local total,surveyed = stat(CGV.MapData.Zones)
 	DEVd(("Map stats - hardcoded |cffffff%d|r known, |cffffff%d|r surveyed"):format(total,surveyed))
-	local total,surveyed = stat(ZGV.db.profile.Zones)
+	local total,surveyed = stat(CGV.db.profile.Zones)
 	DEVd(("Map stats - SV: |cffffff%d|r known, |cffffff%d|r surveyed"):format(total,surveyed))
 end
 
@@ -1106,7 +1106,7 @@ function Pointer:SurveyMap(specific,force,quiet)
 
 	if Z.scale and not force and not Z.lx1 then  return  end
 
-	if ZGV.Utils.Delocalize(GetMapName())=="Tamriel" then qd("Can't survey Tamriel itself.") return end
+	if CGV.Utils.Delocalize(GetMapName())=="Tamriel" then qd("Can't survey Tamriel itself.") return end
 	if Z.noParent then
 		if not knownNoParent[Z] then qd("Can't survey a non-parented map.")  end
 		knownNoParent[Z]=true
@@ -1121,11 +1121,11 @@ function Pointer:SurveyMap(specific,force,quiet)
 
 	-- let's get serious.
 	local Z2={}  for k,v in pairs(Z) do Z2[k]=v end  Z=Z2  --clone
-	ZGV.sv.profile.Zones[tex]=Z  --save
+	CGV.sv.profile.Zones[tex]=Z  --save
 
 	if not Z.name then
-		DEVd(("Surveying |cffffff%s|r (|cffff88%s|r)"):format(tex,ZGV.Utils.Delocalize(GetMapName())))
-		Z.name=ZGV.Utils.Delocalize(GetMapName())
+		DEVd(("Surveying |cffffff%s|r (|cffff88%s|r)"):format(tex,CGV.Utils.Delocalize(GetMapName())))
+		Z.name=CGV.Utils.Delocalize(GetMapName())
 	end
 
 	if not (Z.lx1 and Z.ly1 and Z.px1 and Z.py1) then
@@ -1197,7 +1197,7 @@ function Pointer:SurveyMap(specific,force,quiet)
 	if specific=="here" and quiet then SetMapToPlayerLocation() ZO_WorldMap_UpdateMap() end
 end
 
--- /dump ZGV.Pointer:SurveyClickAllOver(shimmerenewaterworks01_base)
+-- /dump CGV.Pointer:SurveyClickAllOver(shimmerenewaterworks01_base)
 function Pointer:SurveyClickAllOver(map)
 	local starttex = self:GetMapTex()
 	for x=0,1,0.05 do
@@ -1217,36 +1217,38 @@ function Pointer:SurveyClickAllOver(map)
 	end
 end
 
-SLASH_COMMANDS["/zgsurvey"] = function()
-	ZGV.Pointer:SurveyMap(nil,"force") Pointer.do_autosurvey = true
+SLASH_COMMANDS["/cgsurvey"] = function()
+	CGV.Pointer:SurveyMap(nil,"force") Pointer.do_autosurvey = true
 end
 
-SLASH_COMMANDS["/zgpos"] = function(checker)
+SLASH_COMMANDS["/cgpos"] = function(checker)
 	local gps = GPS:GetCurrentMapMeasurement()
     local tex = gps.id
 	if checker == "gps" then
-	local tex = Pointer:GetMapTex()
+		local tex = Pointer:GetMapTex()
 		d(("|cffffff%s|r"):format(tex))
-		d(("xoffset: |c88ff88%.19f|r"):format(gps.offsetX))
-		d(("yoffset: |c88ff88%.19f|r"):format(gps.offsetY))
-		d(("scale: |c88ff88%.19f|r"):format(gps.scaleX))
+		d(("xoffset = |c88ff88%.19f|r"):format(gps.offsetX))
+		d(("yoffset = |c88ff88%.19f|r"):format(gps.offsetY))
+		d(("scale = |c88ff88%.19f|r"):format(gps.scaleX))
+		if _G.GetCurrentMapIndex() ~= nil then
+			d(("GetCurrentMapIndex: |c88ff88%d|r - ESO Global function"):format(_G.GetCurrentMapIndex()))
+		end
 	else
 		local tex = Pointer:GetMapTex()
 		local Z = Pointer.Zones[tex]
-		ZGV.sv.profile.Zones[tex]=Z
+		CGV.sv.profile.Zones[tex]=Z
 		d(("|cffffff%s|r"):format(tex))
-		d(("xoffset: |c88ff88%.19f|r"):format(Z.xoffset))
-		d(("yoffset: |c88ff88%.19f|r"):format(Z.yoffset))
-		d(("scale: |c88ff88%.19f|r"):format(gps.scaleX))
-		--d(("mapindex |c88ff88%d|r"):format(_G.GetCurrentMapIndex()))
+		d(("xoffset = |c88ff88%.19f|r"):format(Z.xoffset))
+		d(("yoffset = |c88ff88%.19f|r"):format(Z.yoffset))
+		d(("scale = |c88ff88%.19f|r"):format(gps.scaleX))
 	end
 end
 
--- /dump ZGV.Pointer:GetDistToCoords(map,x,y)
--- /dump ZGV.Pointer:GetDistToCoords(alinor_base,48.80,54.64)
--- /dump ZGV.Pointer:GetDistToCoords(auridon_base,52.50,91.57)
--- /dump ZGV.Pointer:GetDistToCoords(shimmerenewaterworks01_base,50.50,50.50)
--- /dump ZGV.Pointer:TranslateCoords("auridon_base",52.50,91.57,"vulkhelguard_base")
+-- /dump CGV.Pointer:GetDistToCoords(map,x,y)
+-- /dump CGV.Pointer:GetDistToCoords(alinor_base,48.80,54.64)
+-- /dump CGV.Pointer:GetDistToCoords(auridon_base,52.50,91.57)
+-- /dump CGV.Pointer:GetDistToCoords(shimmerenewaterworks01_base,50.50,50.50)
+-- /dump CGV.Pointer:TranslateCoords("auridon_base",52.50,91.57,"vulkhelguard_base")
 SLASH_COMMANDS["/dump"] = function(text)
 	local f,err = zo_loadstring( ("d(%s)"):format(text) )
 	if f then
@@ -1271,14 +1273,14 @@ local function dist_to_target()
 end
 
 function Pointer:ZONE_CHANGED(map)
-	if not map or map == "" then map = ZGV.Utils.Delocalize(GetMapName()) end
+	if not map or map == "" then map = CGV.Utils.Delocalize(GetMapName()) end
 	local tex=Pointer:GetMapTex()
 	if map~="" and not Pointer.ZoneNameToTex[map] then
-		ZGV.sv.profile.ZoneNameToTex[map]=tex
+		CGV.sv.profile.ZoneNameToTex[map]=tex
 		DEVd(("|cff8800New map |cffffff%s|r has name |cffffff%s|r."):format(tex,map))
 	end
 	if tex and tex~="" and (not Pointer.Zones[tex] or not Pointer.Zones[tex].name) then
-		ZGV.sv.profile.Zones[tex]={name=map}
+		CGV.sv.profile.Zones[tex]={name=map}
 		DEVd(("|cff8800New map |cffffff%s|r coords unknown, initializing."):format(tex))
 	end
 	if tex and tex~="" and not Pointer.Zones[tex].scale then
@@ -1287,9 +1289,9 @@ function Pointer:ZONE_CHANGED(map)
 	end
 end
 
-tinsert(ZGV.startups,function(self)
-	if ZGV.DEV then
-		EVENT_MANAGER:RegisterForEvent("ZGVPointer",EVENT_ZONE_CHANGED,function(a,map,c)
+tinsert(CGV.startups,function(self)
+	if CGV.DEV then
+		EVENT_MANAGER:RegisterForEvent("CGVPointer",EVENT_ZONE_CHANGED,function(a,map,c)
 			Pointer:ZONE_CHANGED(map)
 		end)
 	end
@@ -1302,7 +1304,7 @@ local ant_speed = 1.7  -- ant steps per second
 local flash = nil
 function Pointer:MinimapNodeFlash(s)
 	flash=not flash
-	Minimap:SetBlipTexture(ZGV.DIR.."\\Skins\\objecticons_"..(flash and "on" or "off"))
+	Minimap:SetBlipTexture(CGV.DIR.."\\Skins\\objecticons_"..(flash and "on" or "off"))
 end
 function Pointer:MinimapNodeFlashOff()
 	Minimap:SetBlipTexture("INTERFACE\\MINIMAP\\OBJECTICONS")
@@ -1337,7 +1339,7 @@ end
 -- WAYPOINT CYCLING
 function Pointer:CycleWaypoint(delta,nocycle)
 
-	local CS=ZGV.CurrentStep
+	local CS=CGV.CurrentStep
 	CS.current_waypoint_goal = CS.current_waypoint_goal or (delta>1 and 0 or #CS.goals)
 	local oldgoal = CS.current_waypoint_goal
 	local goal
@@ -1367,25 +1369,25 @@ function Pointer:CycleWaypoint(delta,nocycle)
 		end
 	end end
 
-	zo_callLater(function() ZGV.Viewer:Update() end,1)
+	zo_callLater(function() CGV.Viewer:Update() end,1)
 end
 
 function Pointer:SetArrowToFirstCompletableGoal()
-	local CSg=ZGV.CurrentStep.goals
+	local CSg=CGV.CurrentStep.goals
 	if not CSg or #CSg==0 or #self.waypoints==0 then return end
 	for wi,way in ipairs(self.waypoints) do
 		if way.goalnum and CSg[way.goalnum] and CSg[way.goalnum].status=="incomplete" then
-			ZGV.CurrentStep.current_waypoint_goal = way.goalnum
+			CGV.CurrentStep.current_waypoint_goal = way.goalnum
 			return self:ShowArrow(way)
 		end
 	end
-	ZGV.CurrentStep.current_waypoint_goal = self.waypoints[1].goalnum
+	CGV.CurrentStep.current_waypoint_goal = self.waypoints[1].goalnum
 	return self:ShowArrow(self.waypoints[1])
 end
 
 -- ESO MAPLOCATIONS-BASED POINTERS ARE SO COOL.  ~sinus
 
--- THESE ARE GLOBAL OVERRIDES! AT LEAST ONE BREAKS THE UI: _GetPOIMapInfo_ORIG_ZGV AND function GetPOIMapInfo
+-- THESE ARE GLOBAL OVERRIDES! AT LEAST ONE BREAKS THE UI: _GetPOIMapInfo_ORIG_CGV AND function GetPOIMapInfo
 _GetNumMapLocations = GetNumMapLocations
 function GetNumMapLocations()
 	local num=_GetNumMapLocations()
@@ -1469,7 +1471,7 @@ function GetMapLocationTooltipHeader(num)
 		end
 		local way=localways[num-normal_num]
 		if way then
-			return way.title or "Zygor Guides waypoint"
+			return way.title or "Community Guides waypoint"
 		end
 		return ""
 	end
@@ -1496,16 +1498,16 @@ function GetMapLocationTooltipLineInfo(num,line)
 end
 
 function Pointer:Debug(msg,...)
-	ZGV:Debug("&_SUB &pointer ".. msg, ...)
+	CGV:Debug("&_SUB &pointer ".. msg, ...)
 end
 
-_GetFastTravelNodeInfo_ORIG_ZGV = GetFastTravelNodeInfo
+_GetFastTravelNodeInfo_ORIG_CGV = GetFastTravelNodeInfo
 function GetFastTravelNodeInfo(index,truthful)
 	if truthful
-	  then return _GetFastTravelNodeInfo_ORIG_ZGV(index) end
-	local known,name,x,y,icon,glowIcon,typ,_1,_2,_3 = _GetFastTravelNodeInfo_ORIG_ZGV(index)
-	if ZGV.CurrentStep then
-		for gi,goal in ipairs(ZGV.CurrentStep.goals) do
+	  then return _GetFastTravelNodeInfo_ORIG_CGV(index) end
+	local known,name,x,y,icon,glowIcon,typ,_1,_2,_3 = _GetFastTravelNodeInfo_ORIG_CGV(index)
+	if CGV.CurrentStep then
+		for gi,goal in ipairs(CGV.CurrentStep.goals) do
 			if goal.wayshrine==name then icon="/esoui/art/icons/poi/poi_town_complete.dds" break end
 		end
 	end
@@ -1513,11 +1515,11 @@ function GetFastTravelNodeInfo(index,truthful)
 end
 
 
-if ZGV.DEV then
-	_GetPOIInfo_ORIG_ZGV=GetPOIInfo
+if CGV.DEV then
+	_GetPOIInfo_ORIG_CGV=GetPOIInfo
 	function GetPOIInfo(map,id,truthful)
-		if truthful then return _GetPOIInfo_ORIG_ZGV(map,id) end
-		local text,level,subtextinc,subtextcom = _GetPOIInfo_ORIG_ZGV(map,id)
+		if truthful then return _GetPOIInfo_ORIG_CGV(map,id) end
+		local text,level,subtextinc,subtextcom = _GetPOIInfo_ORIG_CGV(map,id)
 		text = text .. ("|cffaa00 [%03d%03d]"):format(map or GetCurrentMapZoneInfo(),id or 1)
 		return text,level,subtextinc,subtextcom
 	end

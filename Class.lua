@@ -2,17 +2,17 @@
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-local ZGV = _G.ZGV
+local CGV = _G.CGV
 local Class = {}
 local STRICT_CLASSES = false
 local allowed_nils
-local zginherits, type = table.zginherits, type
+local cginherits, type = table.cginherits, type
 
 -----------------------------------------
 -- SAVED REFERENCES
 -----------------------------------------
 
-ZGV.Class = Class
+CGV.Class = Class
 
 -----------------------------------------
 -- LOAD TIME SETUP
@@ -33,7 +33,7 @@ function Class:New(classType)
     class = classType
   }
 
-  -- zginherits sets __UNSTRICT_CLASS to avoid biting its own tail.
+  -- cginherits sets __UNSTRICT_CLASS to avoid biting its own tail.
   if STRICT_CLASSES then
     setmetatable( class, {
         __index = function(tab,ind)
@@ -47,7 +47,7 @@ function Class:New(classType)
       })
   end
 
-  zginherits(class,Class) -- Don't use a metatable because might/probably setup a metatable elsewhere
+  cginherits(class,Class) -- Don't use a metatable because might/probably setup a metatable elsewhere
 
   return class
 end

@@ -2,13 +2,13 @@
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-local ZGV = _G.ZGV
+local CGV = _G.CGV
 local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs,class = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs,class
-local print = ZGV.print
-local CHAIN = ZGV.Utils.ChainCall
-local ui = ZGV.UI
-local L = ZGV.L
-local EditBox = ZGV.Class:New("EditBox")
+local print = CGV.print
+local CHAIN = CGV.Utils.ChainCall
+local ui = CGV.UI
+local L = CGV.L
+local EditBox = CGV.Class:New("EditBox")
 
 local DEFAULT_WIDTH = 150
 local DEFAULT_HEIGHT = 20
@@ -37,7 +37,7 @@ function EditBox:New(parent,name)
   --	:SetHandler("OnTextChanged",function(self)
   -- Input whitelisting
   --		local text = self:GetText()
-  --		hi2:ShowIf(ZGV.Utils.IsAlphanumeric(text))
+  --		hi2:ShowIf(CGV.Utils.IsAlphanumeric(text))
   --	end)
   .__END
 

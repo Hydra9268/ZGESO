@@ -1,10 +1,10 @@
-local ZGV = _G.ZGV
+local CGV = _G.CGV
 
 local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs
-local print = ZGV.print
+local print = CGV.print
 
 local Log = {}
-ZGV.Log = Log
+CGV.Log = Log
 
 Log.entries = {}
 Log.size = 150

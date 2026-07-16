@@ -2,11 +2,11 @@
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-assert(not ZGV, "Two ZGV loaded.")
+assert(not CGV, "Two CGV loaded.")
 local tinsert, tremove, sort, min, max, floor, type, pairs, ipairs = table.insert, table.remove, table.sort, math.min, math.max, math.floor, type, pairs, ipairs
 local GetGameTimeMilliseconds = GetGameTimeMilliseconds
-local ZGV = {}
-ZGV.print = function(...)
+local CGV = {}
+CGV.print = function(...)
   local s = {...}
   local st = ""
   for i, v in ipairs(s) do
@@ -15,51 +15,51 @@ ZGV.print = function(...)
 
   d(st)
 end
-ZGV.startups = {}
-ZGV.inits = {}
+CGV.startups = {}
+CGV.inits = {}
 
-ZGV.DIR = "ZGESO"
+CGV.DIR = "CGESO"
 
-ZGV.L = GuideViewer("Main")
-ZGV.O = GuideViewer("Option")
+CGV.L = GuideViewer("Main")
+CGV.O = GuideViewer("Option")
 
-local print = ZGV.print
-local L = ZGV.L
+local print = CGV.print
+local L = CGV.L
 
 -----------------------------------------
 -- SAVED REFERENCES
 -----------------------------------------
 
 -- global export
-_G['ZGV'] = ZGV
+_G['CGV'] = CGV
 
-ZGV.CFG_LOAD_ALL_FACTIONS = true
+CGV.CFG_LOAD_ALL_FACTIONS = true
 
-ZGV.PRELOG = {}
+CGV.PRELOG = {}
 
 -- LOCALS
 
-ZGV.EM = EVENT_MANAGER
-ZGV.WM = WINDOW_MANAGER
+CGV.EM = EVENT_MANAGER
+CGV.WM = WINDOW_MANAGER
 
 -----------------------------------------
 -- LOAD TIME SETUP
 -----------------------------------------
 
--- LAT:Embed(ZGV)-- Embed AceTimer into ZGV
+-- LAT:Embed(CGV)-- Embed AceTimer into CGV
 
 -----------------------------------------
 -- STARTUP
 -----------------------------------------
 
 collectgarbage("collect")
-ZGV.startup_log = {}
-ZGV.startup_log.load_time_initial = GetGameTimeMilliseconds() / 1000
-ZGV.startup_log.load_memory_initial = collectgarbage("count")
+CGV.startup_log = {}
+CGV.startup_log.load_time_initial = GetGameTimeMilliseconds() / 1000
+CGV.startup_log.load_memory_initial = collectgarbage("count")
 
 -- This gets called every frame on startup, by MasterFrame.
 local last_gettime
-function ZGV:StartupStep()
+function CGV:StartupStep()
   if not last_gettime then
     last_gettime = GetFrameTimeSeconds()
   end
@@ -102,7 +102,7 @@ self.registeredguides = newreg
       return false, "2_parsedguides", self.startup_log['2_parsedguides_n'] .. " " .. (self.db.profile.loadguidesfully and "fully" or "headers")
     end
 
-    self.RegisterGuide = function() ZGV:Print("Too late to RegisterGuide at this point!") end
+    self.RegisterGuide = function() CGV:Print("Too late to RegisterGuide at this point!") end
     self:Debug("Guides loaded. ---------")
 
     return false, "2_parsedguides";
@@ -134,13 +134,12 @@ self.registeredguides = newreg
 
   if not self.startup_log['99_end'] then
     self.pause = true
-    self.loading = nil -- disable startup steps
-    self.guidesloaded = true -- completely disable the startup thread
+    self.loading = nil 
+    self.guidesloaded = true
 
-    self:Print(L['welcome_guides']:format(#self.registeredguides))
     self:GuideLoadStartup()
 
-    --if ZGV.ERROR_GETDISPLAYNAME_FAIL then
+    --if CGV.ERROR_GETDISPLAYNAME_FAIL then
     --self:Error("Couldn't load saved configuration and quest completion history. Please exit the game and try again. We apologize for the inconvenience.")
     --end
 
@@ -149,8 +148,8 @@ self.registeredguides = newreg
 end
 
 local total_t, total_m = 0, 0
-function ZGV.MasterFrameOnUpdate()
-  local self = ZGV
+function CGV.MasterFrameOnUpdate()
+  local self = CGV
   self.startup_log.startup_time_initial = self.startup_log.startup_time_initial or (GetGameTimeMilliseconds() / 1000)
   if self.initialized and self.loading and self.sv then
     collectgarbage("collect")
@@ -168,8 +167,8 @@ function ZGV.MasterFrameOnUpdate()
       self.MasterFrame:SetHandler("OnUpdate", nil)
       self.startup_log["total time"] = total_t
       self.startup_log["total mem"] = total_m
-      self:Debug("Loading time: %.3fs in files + %.3fs cpu / %.3fs real in startup.", ZGV.startup_log['load_time_total'], total_t, t2 - ZGV.startup_log['startup_time_initial'])
-      self:Debug("Memory usage: %d KB in files + %d KB in startup. Total in Lua now: %d KB.", ZGV.startup_log['load_memory_total'], total_m, collectgarbage("count"))
+      self:Debug("Loading time: %.3fs in files + %.3fs cpu / %.3fs real in startup.", CGV.startup_log['load_time_total'], total_t, t2 - CGV.startup_log['startup_time_initial'])
+      self:Debug("Memory usage: %d KB in files + %d KB in startup. Total in Lua now: %d KB.", CGV.startup_log['load_memory_total'], total_m, collectgarbage("count"))
     end
   end
 end
@@ -184,9 +183,9 @@ end
 
 -- TODO Debug messages in here do not get printed. Nothing printed until EVENT_PLAYER_ACTIVATED
 
-local function ZGV_Initialized(eventCode, addOnName)
-  if addOnName ~= ZGV.DIR then ZGV:Debug("&startup Initializing "..addOnName.." but we're "..ZGV.DIR..", awaiting our turn") return end
-  local self = ZGV
+local function CGV_Initialized(eventCode, addOnName)
+  if addOnName ~= CGV.DIR then CGV:Debug("&startup Initializing "..addOnName.." but we're "..CGV.DIR..", awaiting our turn") return end
+  local self = CGV
 
   self:Debug ("&startup Initializing...")
 
@@ -195,13 +194,13 @@ local function ZGV_Initialized(eventCode, addOnName)
   self.sv:Setup() -- Get our saved variables set up first thing
 
   if (self.sv.char.developer) then
-    ZGV.DEV = true
+    CGV.DEV = true
   end
 
   self:RegisterKeyBindings() -- What appears in the ESO > CONTROLS > Keybindings window
 
   if (self.sv.char.creator) then
-    ZGV.Creator = true
+    CGV.Creator = true
   end
 
   -- pre-startup 'modules', if anyone wants to run stuff at addon init, before the troo startups.
@@ -209,31 +208,31 @@ local function ZGV_Initialized(eventCode, addOnName)
     init(self)
   end
 
-  self.EM:UnregisterForEvent("ZGV", EVENT_ADD_ON_LOADED)
-  self.EM:UnregisterForEvent("ZGV", EVENT_PLAYER_ACTIVATED)
+  self.EM:UnregisterForEvent("CGV", EVENT_ADD_ON_LOADED)
+  self.EM:UnregisterForEvent("CGV", EVENT_PLAYER_ACTIVATED)
   self.Events:AddEvent(EVENT_PLAYER_ACTIVATED)
 
 end
-local function ZGV_NotInitialized(eventCode, addOnName)
-  error("ZGV failed to initialize, and player is already activated. ABORTING!")
+local function CGV_NotInitialized(eventCode, addOnName)
+  error("CGV failed to initialize, and player is already activated. ABORTING!")
 end
-ZGV.EM:RegisterForEvent("ZGV", EVENT_ADD_ON_LOADED, ZGV_Initialized)
-ZGV.EM:RegisterForEvent("ZGV", EVENT_PLAYER_ACTIVATED, ZGV_NotInitialized)
+CGV.EM:RegisterForEvent("CGV", EVENT_ADD_ON_LOADED, CGV_Initialized)
+CGV.EM:RegisterForEvent("CGV", EVENT_PLAYER_ACTIVATED, CGV_NotInitialized)
 
 -----------------------------------------
 -- STARTUP (phase 2)
 -----------------------------------------
 
-function ZGV:EVENT_PLAYER_ACTIVATED()
+function CGV:EVENT_PLAYER_ACTIVATED()
   if self.player_activated then return end-- Only the first time
   self:Debug("&startup EVENT_PLAYER_ACTIVATED! Let's go!")
   self.player_activated = true
 
-  ZGV:Startup()
+  CGV:Startup()
 end
 
-function ZGV:Startup()
-  ZGV:GetVersion() -- bad place to get .version, maybe
+function CGV:Startup()
+  CGV:GetVersion() -- bad place to get .version, maybe
 
   -- startup 'modules'
   for i, startup in ipairs(self.startups) do
@@ -241,10 +240,10 @@ function ZGV:Startup()
   end
   -- self.startups = nil
 
-  self.MasterFrame = self.WM:CreateControl("ZGV_MasterFrame", GuiRoot, CT_TOPLEVELCONTROL)
-  self.MasterFrame:SetHandler("OnUpdate", ZGV.MasterFrameOnUpdate)
+  self.MasterFrame = self.WM:CreateControl("CGV_MasterFrame", GuiRoot, CT_TOPLEVELCONTROL)
+  self.MasterFrame:SetHandler("OnUpdate", CGV.MasterFrameOnUpdate)
 
-  if self.Viewer then self.Viewer:CreateZGVF() end
+  if self.Viewer then self.Viewer:CreateCGVF() end
   if self.Pointer then self.Pointer:Startup() end
 
   self.LastSkip = 1
@@ -252,14 +251,14 @@ function ZGV:Startup()
   self.loading = ""
   self.initialized = true
 
-  ZGV:RegisterTipDialog()
+  CGV:RegisterTipDialog()
 
-  ZGV:ShowTips()
+  CGV:ShowTips()
 
 end
 
-function ZGV:RegisterTipDialog()
-  ZO_Dialogs_RegisterCustomDialog("ZYGOR_TIP", {
+function CGV:RegisterTipDialog()
+  ZO_Dialogs_RegisterCustomDialog("COMMUNITY_TIP", {
       title = {text = L['tip_header']},
       mainText = {text = "<<1>>", },
       buttons = {
@@ -278,20 +277,20 @@ function ZGV:RegisterTipDialog()
     })
 end
 
-function ZGV:GetVersion()
-  local dir, title = ZGV.Utils.GetMyAddonInfo()
+function CGV:GetVersion()
+  local dir, title = CGV.Utils.GetMyAddonInfo()
   if title then
-    ZGV.version = title:match("v(%d+)")
-    return ZGV.version
+    CGV.version = title:match("v(%d+)")
+    return CGV.version
   end
 end
 
-function ZGV:ResetTips()
+function CGV:ResetTips()
   self.db.profile.tipshown = {}
 end
 
 local tips = {'keybind'}
-function ZGV:ShowTips()
+function CGV:ShowTips()
   self.db.profile.tipshown = self.db.profile.tipshown or {}
   for i, tip in ipairs(tips) do
     if not self.db.profile.tipshown[tip] then
@@ -302,7 +301,7 @@ function ZGV:ShowTips()
   end
 end
 
-function ZGV:ShowKeybinds()
+function CGV:ShowKeybinds()
   SCENE_MANAGER:Show("gameMenuInGame")
   for i, child in ipairs(ZO_GameMenu_InGame.gameMenu.navigationTree.rootNode.children) do
     if child.data and child.data.name == "Controls" then
@@ -318,9 +317,9 @@ function ZGV:ShowKeybinds()
   end
 end
 
-function ZGV:ShowTip(what)
+function CGV:ShowTip(what)
   if what == "keybind" then
-    ZO_Dialogs_ShowDialog("ZYGOR_TIP", {callback_yes = function() ZGV:ShowKeybinds() end}, {mainTextParams = {L['tip_keybind']}})
+    ZO_Dialogs_ShowDialog("COMMUNITY_TIP", {callback_yes = function() CGV:ShowKeybinds() end}, {mainTextParams = {L['tip_keybind']}})
   end
 end
 

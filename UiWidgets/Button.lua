@@ -2,13 +2,13 @@
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-local ZGV = _G.ZGV
-local tinsert,tremove,sort,zginherits,min,max,floor,type,pairs,ipairs,unpack = table.insert,table.remove,table.sort,table.zginherits,math.min,math.max,math.floor,type,pairs,ipairs,unpack
-local CHAIN = ZGV.Utils.ChainCall
-local ui = ZGV.UI
-local Button = ZGV.Class:New("Button")
-local SecButton = ZGV.Class:New("SecButton")
-local InvisButton = ZGV.Class:New("InvisButton")
+local CGV = _G.CGV
+local tinsert,tremove,sort,cginherits,min,max,floor,type,pairs,ipairs,unpack = table.insert,table.remove,table.sort,table.cginherits,math.min,math.max,math.floor,type,pairs,ipairs,unpack
+local CHAIN = CGV.Utils.ChainCall
+local ui = CGV.UI
+local Button = CGV.Class:New("Button")
+local SecButton = CGV.Class:New("SecButton")
+local InvisButton = CGV.Class:New("InvisButton")
 local DEFAULT_WIDTH = 80
 local DEFAULT_HEIGHT = 20
 local butColor = {HTMLColor("#333333ff")}

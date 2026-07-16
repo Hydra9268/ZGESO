@@ -2,21 +2,21 @@
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-local ZGV = _G.ZGV
+local CGV = _G.CGV
 local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs
-local print = ZGV.print
-local CHAIN = ZGV.Utils.ChainCall
-local ui = ZGV.UI
-local L = ZGV.L
+local print = CGV.print
+local CHAIN = CGV.Utils.ChainCall
+local ui = CGV.UI
+local L = CGV.L
 local GuiRoot = _G.GuiRoot
 local Tooltip = {}
-local name = "Zygor_Tooltip"
+local name = "Community_Tooltip"
 
 -----------------------------------------
 -- SAVED REFERENCES
 -----------------------------------------
 
-ZGV.Tooltip = Tooltip
+CGV.Tooltip = Tooltip
 
 -----------------------------------------
 -- FUNCTIONS
@@ -27,7 +27,7 @@ function Tooltip:Create()
 
 	Tooltip.Frame = tooltip
 
-	-- Set metatable for ZGV.Tooltip to actual Tooltip.
+	-- Set metatable for CGV.Tooltip to actual Tooltip.
 	setmetatable(self,{__index = function(me,func)
 				assert(me.Frame[func],func.." missing in Tooltip")
 
@@ -43,7 +43,7 @@ end
 
 function Tooltip:Debug(...)
 	local str = ...
-	ZGV:Debug("&tooltip "..str, select(2,...) )
+	CGV:Debug("&tooltip "..str, select(2,...) )
 end
 
 
@@ -51,7 +51,7 @@ end
 -- STARTUP
 -----------------------------------------
 
-tinsert(ZGV.startups,function(self)
+tinsert(CGV.startups,function(self)
 		Tooltip:Create()
 	end)
 

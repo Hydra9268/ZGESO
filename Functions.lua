@@ -2,8 +2,8 @@
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-local ZGV = _G.ZGV
-local GPS = LibGPS2
+local CGV = _G.CGV
+local GPS = LibGPS3
 
 local GetAbilityProgressionXPInfoFromAbilityId = _G.GetAbilityProgressionXPInfoFromAbilityId
 local GetAddOnManager = _G.GetAddOnManager
@@ -58,7 +58,7 @@ local tinsert,max,type,pairs,ipairs = table.insert,math.max,type,pairs,ipairs
 -- SAVED REFERENCES
 -----------------------------------------
 
-ZGV.Utils = Utils
+CGV.Utils = Utils
 
 -----------------------------------------
 -- UTIL FUNCTIONS
@@ -86,14 +86,14 @@ function Utils.GetFaction(unitTag,novet,onlyvet)
 	unitTag = unitTag or "player"
 
 	if unitTag == "player" then
-		if ZGV.FAKE_FACTION then
-			return ZGV.FAKE_FACTION
+		if CGV.FAKE_FACTION then
+			return CGV.FAKE_FACTION
 		end
-		if ZGV.VETERAN_FACTION and not novet then
-			return ZGV.VETERAN_FACTION
+		if CGV.VETERAN_FACTION and not novet then
+			return CGV.VETERAN_FACTION
 		end
 		if onlyvet then return
-			ZGV.VETERAN_FACTION or "NOTVET"
+			CGV.VETERAN_FACTION or "NOTVET"
 		end
 	end
 
@@ -149,7 +149,7 @@ function Utils.RaceClassMatch(fit)
 		neg = true
 		fit = fit:sub(5)
 	end
-	local ret = (race == fit or class == fit or faction == fit or race.." "..class == fit or (fit == "VET" and ZGV.VETERAN_FACTION))
+	local ret = (race == fit or class == fit or faction == fit or race.." "..class == fit or (fit == "VET" and CGV.VETERAN_FACTION))
 	if neg then
 		return not ret
 	else
@@ -158,12 +158,12 @@ function Utils.RaceClassMatch(fit)
 end
 
 function Utils.FormatLevel(l,...)
-	if type(l) == "table" then l = ... end	-- dummy proof ZGV.Utils:FormatLevel(5)
+	if type(l) == "table" then l = ... end	-- dummy proof CGV.Utils:FormatLevel(5)
 	return tostring(l)		-- Nothing special atm
 end
 
 function Utils.MapIndex()
-	local gps = GPS:GetCurrentMapMeasurements()
+	local gps = GPS:GetCurrentMapMeasurement()
 	if gps ~= nil then
 		return gps.mapIndex
 	else
@@ -172,8 +172,8 @@ function Utils.MapIndex()
 end
 
 function Utils.GetPlayerPreciseLevel()
-	if ZGV.db.char.fakelevel and ZGV.db.char.fakelevel > 0 then
-		return ZGV.db.char.fakelevel
+	if CGV.db.char.fakelevel and CGV.db.char.fakelevel > 0 then
+		return CGV.db.char.fakelevel
 	else
 		return GetUnitLevel("player") + GetUnitXP("player") / max(GetUnitXPMax("player"),1)
 	end
@@ -185,20 +185,21 @@ function Utils.GetPlayerName()
 end
 
 function Utils.GetMapNameByDDSFile()
-	local texture = ZGV.Pointer:GetMapTex()
+	local texture = CGV.Pointer:GetMapTex()
 	if texture ~= nil then
 		return texture
 	else
 		return 0
 	end
 end
+
 function Utils.GetMapNameByTexture()
 	local _,_,word = string.find( GetMapTileTexture(), "%a+/%a+/(%a+)/" ) -- pattern "Art/maps/mapname <- we want this
 	local name = zo_strformat("<<C:1>>", word) -- Uppercase first letter
 	return name
 end
 
--- /dump d(ZGV.Utils.CheckIfInSkillGuild(1))
+-- /dump d(CGV.Utils.CheckIfInSkillGuild(1))
 -- 1: Dark Brotherhood
 -- 2: Fighters Guild
 -- 3: Mages Guild
@@ -211,7 +212,7 @@ function Utils.CheckIfInSkillGuild(guildSkillIndex)
    return isActive
 end
 
--- /dump d(ZGV.Utils.SkillLines(false,true,false,true,true))
+-- /dump d(CGV.Utils.SkillLines(false,true,false,true,true))
 function Utils.SkillLines(showType,showLineInfo,showLineXP,showSkillAbilities,showAbilityInfo)
     if showType then
         d("Number of Skill Types: "..GetNumSkillTypes().."\n-----------------------------")
@@ -254,15 +255,15 @@ function Utils.SkillLines(showType,showLineInfo,showLineXP,showSkillAbilities,sh
 end
 
 function Utils:IsPlayerInCombat()
-	return ZGV.db.profile.fakecombat or IsUnitInCombat("player")
+	return CGV.db.profile.fakecombat or IsUnitInCombat("player")
 end
 
 function Utils.ShowFloatingMessage(msg,event,font,sound,publicfloat,publictext)
-	if ZGV.DEV or publicfloat then
+	if CGV.DEV or publicfloat then
 		CENTER_SCREEN_ANNOUNCE:AddMessage(event or EVENT_OBJECTIVE_COMPLETED,font or CSA_EVENT_SMALL_TEXT,sound or SOUNDS_QUEST_OBJECTIVE_STARTED,"|cffaa00[|cf8fbffZ|cffaa00]|r "..msg)
 	end
-	if ZGV.DEV or publictext then
-		local print = ZGV.print
+	if CGV.DEV or publictext then
+		local print = CGV.print
 		print(msg)
 	end
 end
@@ -328,7 +329,7 @@ end
 -----------------------------------------
 
 -- Prototype inheritance for tables that will inherit all functions
-function table.zginherits(self,tbl)
+function table.cginherits(self,tbl)
 	self.__UNSTRICT_CLASS = 1
 	for f,fun in pairs(tbl) do
 		if type(fun) == "function" 								-- Functions are the only thing we want to copy
@@ -342,7 +343,7 @@ function table.zginherits(self,tbl)
 	self.__UNSTRICT_CLASS = nil
 end
 
-function table.zgclone(self)
+function table.cgclone(self)
 	local t = {}
 	if type(self) == "table" then
 		-- Note: Be very careful about convert ipairs or pairs into standard for loops
@@ -484,7 +485,7 @@ function Utils.MakeExcerpt(text)
 end
 local MakeExcerpt = Utils.MakeExcerpt
 
--- /zgoo {ZGV.Utils.MatchExcerpt(shortem,lorem)}
+-- /zgoo {CGV.Utils.MatchExcerpt(shortem,lorem)}
 
 function Utils.MatchExcerpt(exc,text)
 	if exc == text then return true end
@@ -530,7 +531,7 @@ function Utils.GetMyAddonInfo()
 	local AM = GetAddOnManager()
 	for i = 1, AM:GetNumAddOns() do
 		local dir,title,_,_1,_2,_3,_4 = AM:GetAddOnInfo(i)
-		if dir == ZGV.DIR then
+		if dir == CGV.DIR then
 			return dir,title,_1,_2,_3,_4
 		end
 	end
@@ -561,21 +562,21 @@ function Utils.IsPOIComplete(map,poi)
 end
 
 function Utils.GetPOIForQuest(questid)
-	if not ZGV._QuestPOIData then return "" end
+	if not CGV._QuestPOIData then return "" end
 	if questid <= 999999 then
 		questid = ("%07d"):format(questid)
 	end
-	local poi = ZGV._QuestPOIData:match("(%d+):[^\n]*"..questid)
+	local poi = CGV._QuestPOIData:match("(%d+):[^\n]*"..questid)
 	return poi
 end
 
 
-ZGV.VETERAN_FACTION = "UNCHECKED"
+CGV.VETERAN_FACTION = "UNCHECKED"
 local function SetVeteran(faction)
-	local prev_check = ZGV.VETERAN_FACTION
-	ZGV.VETERAN_FACTION = faction
-	if prev_check ~= "UNCHECKED" and prev_check ~= ZGV.VETERAN_FACTION then
-		ZGV.VETERAN_FACTION_CHANGED = faction
+	local prev_check = CGV.VETERAN_FACTION
+	CGV.VETERAN_FACTION = faction
+	if prev_check ~= "UNCHECKED" and prev_check ~= CGV.VETERAN_FACTION then
+		CGV.VETERAN_FACTION_CHANGED = faction
 	end
 end
 
@@ -585,11 +586,11 @@ Utils.VETERAN_PROGRESSION={ ['AD'] = {'AD','EP','DC'},
 
 function Utils.GetVeteranFaction()
 	local natural_faction = Utils.GetFaction("player","novet")
-	table.insert(ZGV.PRELOG,"natural faction is "..tostring(natural_faction))
+	table.insert(CGV.PRELOG,"natural faction is "..tostring(natural_faction))
 	local progression = Utils.VETERAN_PROGRESSION[natural_faction]
-	local silver_complete = ZGV.QuestTracker:IsQuestComplete("Cadwell's Silver")
-	local gold_complete = silver_complete and ZGV.QuestTracker:IsQuestComplete("Cadwell's Gold")
-	table.insert(ZGV.PRELOG,"silver "..tostring(silver_complete)..", gold "..tostring(gold_complete))
+	local silver_complete = CGV.QuestTracker:IsQuestComplete("Cadwell's Silver")
+	local gold_complete = silver_complete and CGV.QuestTracker:IsQuestComplete("Cadwell's Gold")
+	table.insert(CGV.PRELOG,"silver "..tostring(silver_complete)..", gold "..tostring(gold_complete))
 
 	if gold_complete then
 		return progression[3],4
@@ -641,9 +642,9 @@ function Utils.GetVeteranStage() -- 0:original, 1:first vet, 2:second vet, 3:ori
 end
 
 function Utils.CheckVeteranFaction()
-	table.insert(ZGV.PRELOG,"Checking quests for Cadwell")
+	table.insert(CGV.PRELOG,"Checking quests for Cadwell")
 	SetVeteran(Utils.GetVeteranFaction())
-	table.insert(ZGV.PRELOG,"Checked. Veteran faction is "..(ZGV.VETERAN_FACTION or "none"))
+	table.insert(CGV.PRELOG,"Checked. Veteran faction is "..(CGV.VETERAN_FACTION or "none"))
 end
 
 -- remove "^Ng,adv" and similar language tags
@@ -658,20 +659,66 @@ function Utils.DistanceOffsetForGoto(dist,selfdist)
 		-- Created Utils.DistanceOffset in functions
 		-- sorting based on preceived popularity
 			
-			if  GetCurrentMapIndex() == Enums.CyrodiilMap or
-			    GetCurrentMapIndex() == Enums.GrahtwoodMap or
+			if  GetCurrentMapIndex() == Enums.BalfieraMap or
+			    GetCurrentMapIndex() == Enums.BetnikhMap or
+			    GetCurrentMapIndex() == Enums.BleakrockIsleMap or
+				GetCurrentMapIndex() == Enums.ClockworkCityMap or
+				GetCurrentMapIndex() == Enums.GalenMap or
 			    GetCurrentMapIndex() == Enums.HighIsleMap or
-			    GetCurrentMapIndex() == Enums.KhenarthisRoostMap then return 2
+				GetCurrentMapIndex() == Enums.ImperialCityMap or
+			    GetCurrentMapIndex() == Enums.KhenarthisRoostMap or
+				GetCurrentMapIndex() == Enums.SolsticeMap then return 2
 			
-		elseif 	GetCurrentMapIndex() == Enums.AuridonMap then return 4
+		elseif 	GetCurrentMapIndex() == Enums.AzkthzandCavernMap or
+				GetCurrentMapIndex() == Enums.BalFoyenMap or
+			    GetCurrentMapIndex() == Enums.BangkoraiMap or
+				GetCurrentMapIndex() == Enums.Blackwood or
+				GetCurrentMapIndex() == Enums.ClockworkCityMap or
+				GetCurrentMapIndex() == Enums.ColdharbourMap or
+			    GetCurrentMapIndex() == Enums.CyrodiilMap or
+				GetCurrentMapIndex() == Enums.DeshaanMap or
+				GetCurrentMapIndex() == Enums.EastmarchMap or
+				GetCurrentMapIndex() == Enums.Eyevea or
+				GetCurrentMapIndex() == Enums.GoldCoastMap or
+				GetCurrentMapIndex() == Enums.HewsBaneMap or
+				GetCurrentMapIndex() == Enums.MurkmireMap or
+				GetCurrentMapIndex() == Enums.NorgTzelMap or
+				GetCurrentMapIndex() == Enums.NorthernElsweyrMap or
+				GetCurrentMapIndex() == Enums.SouthernElsweyrMap or
+				GetCurrentMapIndex() == Enums.StonefallsMap or
+				GetCurrentMapIndex() == Enums.StrosMKaiMap or
+				GetCurrentMapIndex() == Enums.TheReachMap or
+				GetCurrentMapIndex() == Enums.WrothgarMap then return 4
 				
-		elseif  GetCurrentMapIndex() == Enums.GrahtwoodMap then return 5
-		
+		elseif  GetCurrentMapIndex() == Enums.ApocryphaMap or
+		        GetCurrentMapIndex() == Enums.CraglornMap or
+				GetCurrentMapIndex() == Enums.GlenumbraMap or
+			    GetCurrentMapIndex() == Enums.GrahtwoodMap or
+			    GetCurrentMapIndex() == Enums.GreenshadeMap or
+				GetCurrentMapIndex() == Enums.GreymoorCaverns or
+			    GetCurrentMapIndex() == Enums.ReapersMarchMap or
+				GetCurrentMapIndex() == Enums.RivenspireMap or
+				GetCurrentMapIndex() == Enums.ShadowfenMap or
+				GetCurrentMapIndex() == Enums.VvardenfellMap or
+				GetCurrentMapIndex() == Enums.WestWealdMap then return 6
+				
+		elseif 	GetCurrentMapIndex() == Enums.AlikrMap or
+				GetCurrentMapIndex() == Enums.ArtaeumMap or
+		        GetCurrentMapIndex() == Enums.AuridonMap or
+		        GetCurrentMapIndex() == Enums.FargraveMap or
+				GetCurrentMapIndex() == Enums.MalabalTorMap or
+				GetCurrentMapIndex() == Enums.StormhaveMap or
+				GetCurrentMapIndex() == Enums.SummersetMap or
+				GetCurrentMapIndex() == Enums.TheDeadlandsMap or
+				GetCurrentMapIndex() == Enums.TheRiftMap or
+				GetCurrentMapIndex() == Enums.WesternSkyrimMap then return 8
+
+		elseif 	GetCurrentMapIndex() == Enums.TelvanniPeninsulaMap then return 10
+				
 		else return dist or selfdist or 1 -- default value
 		end
 	end
 end
-
 function Utils.DistanceOffsetForIsComplete()
 	if GetCurrentMapIndex() == nil then -- cities, delves, dungeons
 		return 5
@@ -679,15 +726,63 @@ function Utils.DistanceOffsetForIsComplete()
 		-- Create a Utils function in function at the bottom of the file
 		-- sorting based on preceived popularity
 		
-		    if  GetCurrentMapIndex() == Enums.CyrodiilMap or
+		    if  GetCurrentMapIndex() == Enums.BalfieraMap or
+			    GetCurrentMapIndex() == Enums.BetnikhMap or
+			    GetCurrentMapIndex() == Enums.BleakrockIsleMap or
+				GetCurrentMapIndex() == Enums.GalenMap or
 			    GetCurrentMapIndex() == Enums.HighIsleMap or
-			    GetCurrentMapIndex() == Enums.KhenarthisRoostMap then return 2
+				GetCurrentMapIndex() == Enums.ImperialCityMap or
+			    GetCurrentMapIndex() == Enums.KhenarthisRoostMap or 
+				GetCurrentMapIndex() == Enums.SolsticeMap then return 2
 			
-		elseif 	GetCurrentMapIndex() == Enums.AuridonMap then return 4
+		elseif 	GetCurrentMapIndex() == Enums.AzkthzandCavernMap or
+				GetCurrentMapIndex() == Enums.BalFoyenMap or			    
+				GetCurrentMapIndex() == Enums.BangkoraiMap or
+				GetCurrentMapIndex() == Enums.Blackwood or
+				GetCurrentMapIndex() == Enums.ClockworkCityMap or
+				GetCurrentMapIndex() == Enums.ColdharbourMap or
+			    GetCurrentMapIndex() == Enums.CyrodiilMap or
+				GetCurrentMapIndex() == Enums.DeshaanMap or
+				GetCurrentMapIndex() == Enums.EastmarchMap or
+				GetCurrentMapIndex() == Enums.Eyevea or
+				GetCurrentMapIndex() == Enums.GoldCoastMap or
+				GetCurrentMapIndex() == Enums.HewsBaneMap or
+				GetCurrentMapIndex() == Enums.MurkmireMap or
+				GetCurrentMapIndex() == Enums.NorgTzelMap or
+				GetCurrentMapIndex() == Enums.NorthernElsweyrMap or
+				GetCurrentMapIndex() == Enums.SouthernElsweyrMap or
+				GetCurrentMapIndex() == Enums.StonefallsMap or
+				GetCurrentMapIndex() == Enums.StrosMKaiMap or
+				GetCurrentMapIndex() == Enums.TheReachMap or
+				GetCurrentMapIndex() == Enums.WrothgarMap then return 4
 				
-		elseif  GetCurrentMapIndex() == Enums.GrahtwoodMap then return 5		
+		elseif  GetCurrentMapIndex() == Enums.ApocryphaMap or
+		        GetCurrentMapIndex() == Enums.CraglornMap or
+				GetCurrentMapIndex() == Enums.GlenumbraMap or
+			    GetCurrentMapIndex() == Enums.GrahtwoodMap or
+			    GetCurrentMapIndex() == Enums.GreenshadeMap or
+				GetCurrentMapIndex() == Enums.GreymoorCaverns or
+			    GetCurrentMapIndex() == Enums.ReapersMarchMap or
+				GetCurrentMapIndex() == Enums.RivenspireMap or
+				GetCurrentMapIndex() == Enums.ShadowfenMap or
+				GetCurrentMapIndex() == Enums.VvardenfellMap or
+				GetCurrentMapIndex() == Enums.WestWealdMap then return 6
+				
+		elseif 	GetCurrentMapIndex() == Enums.AlikrMap or
+				GetCurrentMapIndex() == Enums.ArtaeumMap or
+		        GetCurrentMapIndex() == Enums.AuridonMap or
+		        GetCurrentMapIndex() == Enums.FargraveMap or
+			    GetCurrentMapIndex() == Enums.MalabalTorMap or
+				GetCurrentMapIndex() == Enums.StormhaveMap or
+				GetCurrentMapIndex() == Enums.SummersetMap or
+				GetCurrentMapIndex() == Enums.TelvanniPeninsulaMap or
+				GetCurrentMapIndex() == Enums.TheDeadlandsMap or
+				GetCurrentMapIndex() == Enums.TheRiftMap or
+				GetCurrentMapIndex() == Enums.WesternSkyrimMap then return 8
+
+		elseif 	GetCurrentMapIndex() == Enums.TelvanniPeninsulaMap then return 10
 			
 		else return dist or selfdist or 1 -- default value
-		end	
+		end
     end
 end

@@ -2,19 +2,19 @@
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-local ZGV = _G.ZGV
+local CGV = _G.CGV
 local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs
-local print = ZGV.print
-local CHAIN = ZGV.Utils.ChainCall
-local ui = ZGV.UI
-local L = ZGV.L
+local print = CGV.print
+local CHAIN = CGV.Utils.ChainCall
+local ui = CGV.UI
+local L = CGV.L
 
 local StepProto = {}
-local Step = ZGV.Class:New("Step")
+local Step = CGV.Class:New("Step")
 local StepProto_mt = { __index=Step }
 local STEPTAGS = {}
 
-ZGV.STEPTAGS = STEPTAGS
+CGV.STEPTAGS = STEPTAGS
 -- for the future, just in case
 
 
@@ -22,7 +22,7 @@ ZGV.STEPTAGS = STEPTAGS
 -- SAVED REFERENCES
 -----------------------------------------
 
-ZGV.StepProto = StepProto
+CGV.StepProto = StepProto
 
 -----------------------------------------
 -- LOAD TIME SETUP
@@ -59,11 +59,11 @@ function Step:AddGoal(goal)
 end
 
 function Step:SetAsCurrent()
-	if not ZGV.CurrentGuide then return end
-	ZGV.CurrentStepNum = self.num
-	ZGV.sv.char.step = self.num
-	ZGV.CurrentStep = ZGV.CurrentGuide.steps[self.num]
-	ZGV.CurrentGuide.CurrentStepNum = self.num
+	if not CGV.CurrentGuide then return end
+	CGV.CurrentStepNum = self.num
+	CGV.sv.char.step = self.num
+	CGV.CurrentStep = CGV.CurrentGuide.steps[self.num]
+	CGV.CurrentGuide.CurrentStepNum = self.num
 
 	for gi,go in ipairs(self.goals) do
 		go.sticky_complete = nil
@@ -160,16 +160,16 @@ end
 
 function Step:AreRequirementsMet()
 	if self.requirement then
-		return ZGV.Utils.RaceClassMatch(self.requirement)
+		return CGV.Utils.RaceClassMatch(self.requirement)
 	end
 
 	if self.condition_visible then
-		ZGV.Parser.ConditionEnv._SetLocal(self.parentGuide,self,nil)
+		CGV.Parser.ConditionEnv._SetLocal(self.parentGuide,self,nil)
 		local ok,ret = pcall(self.condition_visible)
 		if ok then
 			return ret
 		else
-			ZGV:Error("Error in step %s, only if %s: %s", self.num, self.condition_visible_raw or "", ret:gsub("\n.*",""))
+			CGV:Error("Error in step %s, only if %s: %s", self.num, self.condition_visible_raw or "", ret:gsub("\n.*",""))
 		end
 	end
 
@@ -199,7 +199,7 @@ function Step:GetJumpDestination(jump)
 				guide = jump
 			end
 
-			guide = ZGV:SanitizeGuideTitle(guide)
+			guide = CGV:SanitizeGuideTitle(guide)
 			tag = tonumber(tag) or tag or 1
 
 			return tag,guide
@@ -220,16 +220,16 @@ function Step:GetJumpDestination(jump)
 				end
 			end
 			if sign == "+" then
-				ZGV:Debug("Step:GetJumpD: step %d jumping to \"%s\", fore = %d",self.num,jump,tostring(closest_fore))
+				CGV:Debug("Step:GetJumpD: step %d jumping to \"%s\", fore = %d",self.num,jump,tostring(closest_fore))
 				return closest_fore  -- may be nil, so what.
 			elseif sign == "-" then
-				ZGV:Debug("Step:GetJumpD: step %d jumping to \"%s\", back = %d",self.num,jump,tostring(closest_back))
+				CGV:Debug("Step:GetJumpD: step %d jumping to \"%s\", back = %d",self.num,jump,tostring(closest_back))
 				return closest_back  -- likewise.
 			elseif not closest_fore or (closest_back and closest_fore and self.num-closest_back < closest_fore-self.num) then
-				ZGV:Debug("Step:GetJumpD: step %d jumping to \"%s\", closest (back) = %d",self.num,jump,tostring(closest_back))
+				CGV:Debug("Step:GetJumpD: step %d jumping to \"%s\", closest (back) = %d",self.num,jump,tostring(closest_back))
 				return closest_back
 			else
-				ZGV:Debug("Step:GetJumpD: step %d jumping to \"%s\", closest (fore) = %d",self.num,jump,tostring(closest_fore))
+				CGV:Debug("Step:GetJumpD: step %d jumping to \"%s\", closest (fore) = %d",self.num,jump,tostring(closest_fore))
 				return closest_fore
 			end
 		end
@@ -260,16 +260,16 @@ function Step:GetNextStep(nextlabel)
 		local stepobj = self.parentGuide:GetStep(step)
 		-- step is not validated, validate now
 		if not stepobj and nextlabel ~= "+1" then
-			ZGV:Print("|cff4400ERROR!|r Cannot jump from step |cffff88"..self.num.."|r to label '|cffff88"..tostring(nextlabel).."|r'. This is guide |cffff88"..self.parentGuide.title_short.."|r. Please report this.") --, providing a generated Bug Report.")
-			ZGV:Print("Meanwhile, try to navigate to the next step manually, by holding |c55ff00CTRL+ALT|r and skipping the step.")
+			CGV:Print("|cff4400ERROR!|r Cannot jump from step |cffff88"..self.num.."|r to label '|cffff88"..tostring(nextlabel).."|r'. This is guide |cffff88"..self.parentGuide.title_short.."|r. Please report this.") --, providing a generated Bug Report.")
+			CGV:Print("Meanwhile, try to navigate to the next step manually, by holding |c55ff00CTRL+ALT|r and skipping the step.")
 			return self
 		end
 		return stepobj
 	else
-		local gu = ZGV:GetGuideByTitle(guide)
+		local gu = CGV:GetGuideByTitle(guide)
 		if not gu then
-			ZGV:Print("|cff4400ERROR!|r Cannot jump from step |cffff88"..self.num.."|r to guide '|cffff88"..tostring(guide).."|r'. This is guide |cffff88"..self.parentGuide.title_short.."|r. Please report this.") --, providing a generated Bug Report.")
-			ZGV:Print("Meanwhile, try to open another guide by clicking the dropdown arrow on the addon.")
+			CGV:Print("|cff4400ERROR!|r Cannot jump from step |cffff88"..self.num.."|r to guide '|cffff88"..tostring(guide).."|r'. This is guide |cffff88"..self.parentGuide.title_short.."|r. Please report this.") --, providing a generated Bug Report.")
+			CGV:Print("Meanwhile, try to open another guide by clicking the dropdown arrow on the addon.")
 			return self
 		end
 
@@ -321,13 +321,13 @@ function Step:GetNextCompletableStep()
 	-- TODO wipe pls
 	--wipe(visited_steps)
 	--wipe(visited_path)
-	ZGV.Utils.table_wipe_keys(visited_steps)
-	ZGV.Utils.table_wipe_keys(visited_path)
+	CGV.Utils.table_wipe_keys(visited_steps)
+	CGV.Utils.table_wipe_keys(visited_path)
 	visited_steps[step]=1
 	repeat
 		step,stepnum,guide = step:GetNextStep()
 		if step then
-			assert(not visited_steps[step],"LOOPING! started in step ".. self.num..", detected in ".. step.num .." , see ZGV.debug_VPATH")
+			assert(not visited_steps[step],"LOOPING! started in step ".. self.num..", detected in ".. step.num .." , see CGV.debug_VPATH")
 			stepcomplete,steppossible = step:IsComplete()
 
 			visited_steps[step] = 1
@@ -347,5 +347,5 @@ end
 
 function StepProto:Debug(...)
 	local str = ...
-	ZGV:Debug("&step "..str, select(2,...) )
+	CGV:Debug("&step "..str, select(2,...) )
 end

@@ -1,42 +1,42 @@
 <Bindings>
   <Layer name="SI_KEYBINDINGS_LAYER_GENERAL">
-    <Category name="Community Leveling Guides">
-      <Action name="ZYGOR_TOGGLE_GUIDE_VIEWER">
+    <Category name="|cFC6000Community Leveling Guides">
+      <Action name="COMMUNITY_TOGGLE_GUIDE_VIEWER">
         <Down>
-          ZGV.Viewer:Toggle_GuideViewer()
-          --ZGV.Menu:SetTab("settings")
+          CGV.Viewer:Toggle_GuideViewer()
+          --CGV.Menu:SetTab("settings")
         </Down>
       </Action>
-      <Action name="ZYGOR_PREV_STEP">
+      <Action name="COMMUNITY_PREV_STEP">
         <Down>
-          if not ZGV.Viewer.Frame.TitleBar.prevStep then return end
-          ZGV.Viewer.Frame.TitleBar.prevStep:GetHandler("OnMouseDown")(ZGV.Viewer.Frame.TitleBar.prevStep)
-          ZGV.Viewer:PrevStepButton_OnClick(ZGV.Viewer.Frame.TitleBar.prevStep)
-        </Down>
-        <Up>
-          if not ZGV.Viewer.Frame.TitleBar.prevStep then return end
-          ZGV.Viewer.Frame.TitleBar.prevStep:GetHandler("OnMouseUp")(ZGV.Viewer.Frame.TitleBar.prevStep)
-        </Up>
-      </Action>
-      <Action name="ZYGOR_NEXT_STEP">
-        <Down>
-          if not ZGV.Viewer.Frame.TitleBar.nextStep then return end
-          ZGV.Viewer.Frame.TitleBar.nextStep:GetHandler("OnMouseDown")(ZGV.Viewer.Frame.TitleBar.nextStep)
-          ZGV.Viewer:NextStepButton_OnClick(ZGV.Viewer.Frame.TitleBar.nextStep)
+          if not CGV.Viewer.Frame.TitleBar.prevStep then return end
+          CGV.Viewer.Frame.TitleBar.prevStep:GetHandler("OnMouseDown")(CGV.Viewer.Frame.TitleBar.prevStep)
+          CGV.Viewer:PrevStepButton_OnClick(CGV.Viewer.Frame.TitleBar.prevStep)
         </Down>
         <Up>
-          if not ZGV.Viewer.Frame.TitleBar.nextStep then return end
-          ZGV.Viewer.Frame.TitleBar.nextStep:GetHandler("OnMouseUp")(ZGV.Viewer.Frame.TitleBar.nextStep)
+          if not CGV.Viewer.Frame.TitleBar.prevStep then return end
+          CGV.Viewer.Frame.TitleBar.prevStep:GetHandler("OnMouseUp")(CGV.Viewer.Frame.TitleBar.prevStep)
         </Up>
       </Action>
-      <Action name="ZYGOR_FREE_MOUSE">
+      <Action name="COMMUNITY_NEXT_STEP">
+        <Down>
+          if not CGV.Viewer.Frame.TitleBar.nextStep then return end
+          CGV.Viewer.Frame.TitleBar.nextStep:GetHandler("OnMouseDown")(CGV.Viewer.Frame.TitleBar.nextStep)
+          CGV.Viewer:NextStepButton_OnClick(CGV.Viewer.Frame.TitleBar.nextStep)
+        </Down>
+        <Up>
+          if not CGV.Viewer.Frame.TitleBar.nextStep then return end
+          CGV.Viewer.Frame.TitleBar.nextStep:GetHandler("OnMouseUp")(CGV.Viewer.Frame.TitleBar.nextStep)
+        </Up>
+      </Action>
+      <Action name="COMMUNITY_FREE_MOUSE">
         <Down>SetGameCameraUIMode(true)	--Free da mouse!</Down>
       </Action>
-      <Action name="ZYGOR_WAYPOINT_NEXT">
-        <Down>ZGV.Pointer:CycleWaypoint(1)</Down>
+      <Action name="COMMUNITY_WAYPOINT_NEXT">
+        <Down>CGV.Pointer:CycleWaypoint(1)</Down>
       </Action>
-      <Action name="ZYGOR_WAYPOINT_PREV">
-        <Down>ZGV.Pointer:CycleWaypoint(-1)</Down>
+      <Action name="COMMUNITY_WAYPOINT_PREV">
+        <Down>CGV.Pointer:CycleWaypoint(-1)</Down>
       </Action>
     </Category>
   </Layer>

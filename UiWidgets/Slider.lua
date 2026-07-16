@@ -2,14 +2,14 @@
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-local ZGV = ZGV
-if not ZGV then return end
-local tinsert,tremove,sort,zginherits,min,max,floor,type,pairs,ipairs,unpack = table.insert,table.remove,table.sort,table.zginherits,math.min,math.max,math.floor,type,pairs,ipairs,unpack
+local CGV = CGV
+if not CGV then return end
+local tinsert,tremove,sort,cginherits,min,max,floor,type,pairs,ipairs,unpack = table.insert,table.remove,table.sort,table.cginherits,math.min,math.max,math.floor,type,pairs,ipairs,unpack
 local round = zo_round
-local CHAIN = ZGV.Utils.ChainCall
-local print = ZGV.print
-local ui = ZGV.UI
-local Slider =  ZGV.Class:New("Slider")
+local CHAIN = CGV.Utils.ChainCall
+local print = CGV.print
+local ui = CGV.UI
+local Slider =  CGV.Class:New("Slider")
 local VALUE_BOX_SIZE = {50,15}
 local DEFAULT_BAR_HEIGHT = 5
 local LABEL_WIDTH = 50

@@ -2,7 +2,7 @@
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-local ZGV = _G.ZGV
+local CGV = _G.CGV
 local Travel = {}
 local tinsert = table.insert
 
@@ -10,7 +10,7 @@ local tinsert = table.insert
 -- SAVED REFERENCES
 -----------------------------------------
 
-ZGV.Travel = Travel
+CGV.Travel = Travel
 
 -----------------------------------------
 -- FUNCTIONS
@@ -35,7 +35,7 @@ end
 
 function Travel:Debug(...)
 	local str = ...
-	ZGV:Debug("&travel "..str, select(2,...) )
+	CGV:Debug("&travel "..str, select(2,...) )
 end
 
 
@@ -43,7 +43,7 @@ end
 -- STARTUP
 -----------------------------------------
 
-tinsert(ZGV.startups,function(self)
+tinsert(CGV.startups,function(self)
 
 	end)
 

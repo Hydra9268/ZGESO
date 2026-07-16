@@ -15,16 +15,16 @@
 -- LOCALIZED GLOBAL VARIABLES
 -----------------------------------------
 
-local ZGV = _G.ZGV
-local tinsert,tremove,sort,zginherits,min,max,floor,type,pairs,ipairs,unpack = table.insert,table.remove,table.sort,table.zginherits,math.min,math.max,math.floor,type,pairs,ipairs,unpack
-local CHAIN = ZGV.Utils.ChainCall
-local print = ZGV.print
-local ui = ZGV.UI
-local WM = ZGV.WM
-local GuideButton = ZGV.Class:New("GuideButton")
+local CGV = _G.CGV
+local tinsert,tremove,sort,cginherits,min,max,floor,type,pairs,ipairs,unpack = table.insert,table.remove,table.sort,table.cginherits,math.min,math.max,math.floor,type,pairs,ipairs,unpack
+local CHAIN = CGV.Utils.ChainCall
+local print = CGV.print
+local ui = CGV.UI
+local WM = CGV.WM
+local GuideButton = CGV.Class:New("GuideButton")
 local DEFAULT_BUTTON_SIZE = 15
 local NUM_ICONS = 32
-local TEXTURE = ZGV.DIR.."/Viewer/Skins/Stealth/titlebuttons_0.dds"
+local TEXTURE = CGV.DIR.."/Viewer/Skins/Stealth/titlebuttons_0.dds"
 
 -----------------------------------------
 -- LOAD TIME SETUP
@@ -50,7 +50,7 @@ local function CreateTexWithCoordsNum(obj,tx,x,w,y,h)
 end
 
 local function AssignButtonTexture(obj,tx,num,total)
-  ZGV.ChainCall(obj):SetNormalTexture(CreateTexWithCoordsNum(obj,tx,num,total,1,4))
+  CGV.ChainCall(obj):SetNormalTexture(CreateTexWithCoordsNum(obj,tx,num,total,1,4))
   :SetPressedTexture(CreateTexWithCoordsNum(obj,tx,num,total,2,4))
   :SetMouseOverTexture(CreateTexWithCoordsNum(obj,tx,num,total,3,4))
   :SetDisabledTexture(CreateTexWithCoordsNum(obj,tx,num,total,4,4))
@@ -133,7 +133,7 @@ end
 local function Setup_SettingsButton(button)
   CHAIN(button)
   :SetHandler("OnClicked",function(me)
-      ZGV.Settings:OpenSettings()	-- By default opens up to main option page. Can overwrite to open to a specific page.
+      CGV.Settings:OpenSettings()	-- By default opens up to main option page. Can overwrite to open to a specific page.
     end)
   :SetNormalTexture(TEXTURE)
   :SetTextureCoords(TexCoordsForSprite(5,NUM_ICONS,1,1))
@@ -160,7 +160,7 @@ function GuideButton:New(parent,name,butType)
   -- TODO most of this changes once we have textures
   :SetDimensions(DEFAULT_BUTTON_SIZE,DEFAULT_BUTTON_SIZE)
   :SetExcludeFromResizeToFitExtents(true)			-- These are put in corners. Don't resize around them
-  :EnableMouseButton(RIGHT_MOUSE_BUTTON,true)	-- These are ZGV Globals. Not sure what the ZOS one is. Left Button enabled by default
+  :EnableMouseButton(RIGHT_MOUSE_BUTTON,true)	-- These are CGV Globals. Not sure what the ZOS one is. Left Button enabled by default
   .__END
 
   --button.bd = ui:Create("Backdrop",button,name and name.."_BD")
