@@ -48016,7 +48016,9 @@ goto 24.39,60.88
 talk Prince Azah |q The Stirk Fellowship |future
 |tip Manually skip to the next step.
 step
-goto u48_overland_base 47.07,52.56 |q The Stirk Fellowship/.*Find the Alliance Representatives and Gabrielle.*
+goto u48_overland_base 53.59,55.01
+'Discover _Rampart Camp_ Wayshrine |q The Stirk Fellowship/.*Find the Alliance Representatives and Gabrielle.*
+|tip Manually skip to the next step.
 step
 goto 50.55,57.44 |q The Stirk Fellowship/.*Find the Alliance Representatives and Gabrielle.*
 step
@@ -48519,20 +48521,12 @@ goto 65.67,49.75
 'Open _Central Square_ |q The Gift of Death/Go to Corelanya Crypt
 |tip Manually skip to the next step.
 step
-goto 58.80,70.53
-'Open _Solstice_ |q The Gift of Death/Go to Corelanya Crypt
-|tip Manually skip to the next step.
-step
-goto u48_overland_base 53.59,55.01
-'Discover _Rampart Camp_ Wayshrine |q The Gift of Death/Go to Corelanya Crypt
-|tip Manually skip to the next step.
-step
-goto 53.59,55.01
-'Use _Rampart Camp_
+goto 58.27,49.94
+'Use _Sunport_
 'Travel to _Corelanya Manor_ |q The Gift of Death/Go to Corelanya Crypt
 |tip Manually skip to the next step.
 step
-goto 49.72,60.34 |q The Gift of Death/Go to Corelanya Crypt
+goto u48_overland_base 49.72,60.34 |q The Gift of Death/Go to Corelanya Crypt
 step
 goto 50.15,61.57
 'Open _Corelanya Crypt_ |q The Gift of Death/Search Corelanya Crypt |future
@@ -48876,6 +48870,8 @@ talk Prince Azah
 turnin Crossing the Wall
 accept The Worm Turns
 step
+goto 53.78,57.57 |q The Worm Turns/Investigate the Pass
+step
 goto 58.87,55.91
 talk Skordo the Knife |q The Worm Turns/Talk to Skordo the Knife |future
 step
@@ -49158,24 +49154,26 @@ goto 67.27,37.22 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
 step
 goto 70.58,37.06 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
 step
+goto 75.17,39.37 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+step
 goto 73.74,33.58
 'Examine _Village Report_ |lorebook Village Report/3/57/19
 step
 goto 73.98,33.39
-'Open _Death-Dancer Jeetra's House_ |q The Deep Tombs of Xul-Haj/Find Jeetra
+'Open _Death-Dancer Jeetra's House_ |q The Deep Tombs of Xul-Haj/Find Jeetra |future
 |tip Manually skip to the next step.
 step
 goto 74.04,33.04
 talk Jeetra |q The Deep Tombs of Xul-Haj/Find Jeetra
 step
-goto 77.17,41.01 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+goto 77.17,41.01 |q The Deep Tombs of Xul-Haj/Go to Xul-Haj
 step
-goto 80.56,39.04 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+goto 80.56,39.04 |q The Deep Tombs of Xul-Haj/Go to Xul-Haj
 step
-goto 83.33,35.19 |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+goto 83.33,35.19 |q The Deep Tombs of Xul-Haj/Go to Xul-Haj
 step
 goto 82.14,34.12
-'Discover _Mor Naril Camp_ |q The Deep Tombs of Xul-Haj/Go to Jeetra's Village
+'Discover _Mor Naril Camp_ |q The Deep Tombs of Xul-Haj/Go to Xul-Haj
 |tip Manually skip to the next step.
 step
 goto 81.29,31.04 |q The Deep Tombs of Xul-Haj/Go to Xul-Haj
@@ -49360,9 +49358,7 @@ step
 'Travel to _Grand Juncture Pass_ |q The Gates of Mor Naril/Enter the Sea and Sword Lodge |future
 |tip Manually skip to the next step.
 step
-goto u48_overland_base 62.02,51.78 |q The Gates of Mor Naril/Enter the Sea and Sword Lodge |future
-step
-goto 61.48,50.53
+goto u48_overland_base 61.48,50.53
 'Open _Sea and Sword Lodge_ |q The Gates of Mor Naril/Enter the Sea and Sword Lodge |future
 |tip Manually skip to the next step.
 step
@@ -49502,9 +49498,8 @@ goto 55.59,64.31 |q The Final Dark/Clear the Courtyard |tip go upstairs.
 step
 goto 61.13,60.17 |q The Final Dark/Clear the Courtyard
 step
-goto 50.75,33.24 |q The Final Dark/Clear the Courtyard
-step
 goto 54.59,53.16
+|tip Kill Cultists
 talk Prince Azah |q The Final Dark/Talk to Prince Azah |future
 step
 goto 54.90,54.98
@@ -49708,7 +49703,7 @@ goto 41.82,38.83
 |tip Manually skip to the next step.
 step
 goto u46_brokenlight_int1_base 46.64,70.31
-'Find _High Priest Eraamine_ |q Mystery of the Broken Temple/Find High Priest Eraamine
+'Find _High Priest Eraamine_ |q Mystery of the Broken Temple/Find High Priest Eraamine |future
 step
 goto 45.04,75.19
 |tip Watch the dialogue.

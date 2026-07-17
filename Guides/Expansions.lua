@@ -53548,9 +53548,11 @@ goto 24.39,60.88
 talk Prince Azah |q The Stirk Fellowship |future
 |tip Manually skip to the next step.
 step
-goto u48_overland_base 47.07,52.56 |q Ghosthunters |future
+goto u48_overland_base 53.59,55.01
+'Discover _Rampart Camp_ Wayshrine |q The Stirk Fellowship/.*Find the Alliance Representatives and Gabrielle.*
+|tip Manually skip to the next step.
 step
-goto 50.38,55.50 |q Ghosthunters |future
+goto u48_overland_base 50.38,55.50 |q Ghosthunters |future
 step
 goto 47.64,56.04
 'Use _Skyshard_ |q Ghosthunters |future
@@ -55410,20 +55412,12 @@ goto 65.67,49.75
 'Open _Central Square_ |q The Gift of Death/Go to Corelanya Crypt
 |tip Manually skip to the next step.
 step
-goto 58.80,70.53
-'Open _Solstice_ |q The Gift of Death/Go to Corelanya Crypt
-|tip Manually skip to the next step.
-step
-goto u48_overland_base 53.59,55.01
-'Discover _Rampart Camp_ Wayshrine |q The Gift of Death/Go to Corelanya Crypt
-|tip Manually skip to the next step.
-step
-goto 53.59,55.01
-'Use _Rampart Camp_
+goto 58.27,49.94
+'Use _Sunport_
 'Travel to _Corelanya Manor_ |q The Gift of Death/Go to Corelanya Crypt
 |tip Manually skip to the next step.
 step
-goto 49.72,60.34 |q The Gift of Death/Go to Corelanya Crypt
+goto u48_overland_base 49.72,60.34 |q The Gift of Death/Go to Corelanya Crypt
 step
 goto 50.15,61.57
 'Open _Corelanya Crypt_ |q The Gift of Death/Search Corelanya Crypt |future
@@ -57612,9 +57606,8 @@ goto 55.59,64.31 |q The Final Dark/Clear the Courtyard |tip go upstairs.
 step
 goto 61.13,60.17 |q The Final Dark/Clear the Courtyard
 step
-goto 50.75,33.24 |q The Final Dark/Clear the Courtyard
-step
 goto 54.59,53.16
+|tip Kill Cultists
 talk Prince Azah |q The Final Dark/Talk to Prince Azah |future
 step
 goto 54.90,54.98
