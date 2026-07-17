@@ -10547,17 +10547,121 @@ goto 42.28,36.14
 'Use _Skyshard_
 |tip Manually skip to the next step.
 step
-goto 80.89,50.33
+'Open _Solstice_ Map
+'Travel to _Caterwaul Cove_
+|tip Manually skip to the next step.
+step
+goto 65.13,42.77
+step
+goto 65.37,41.97
 'Use _Skyshard_
 |tip Manually skip to the next step.
 step
-goto 83.15,63.81
+goto 63.77,41.63
+step
+goto 65.34,38.44
+step
+goto 65.94,36.23
+'Open _Lair of the Black Worm_
+|tip Manually skip to the next step.
+step
+goto u46_base_LOTWC 68.77,81.99
+step
+goto 67.57,69.72
+step
+goto 48.87,70.67
+step
+goto 42.04,65.19
+step
+goto 51.17,58.37
+|tip Climb the rocks. 
+kill Riuzzan the Ravenous
+|tip Manually skip the next step.
+step
+goto 36.24,54.31
+step
+goto 28.46,42.64
+step
+goto 24.36,45.60
+step
+goto 15.90,61.48
+step
+goto 17.92,69.40
+step
+goto
+goto 40.80,73.62
+step
+goto 36.65,78.93
+|tip Go upstairs.
 'Use _Skyshard_
 |tip Manually skip to the next step.
 step
-goto 75.63,68.51
+'Open _Solstice_
+'Travel to _Grand Juncture Pass_
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 62.02,51.78
+step
+goto 61.48,50.53
+'Open _Sea and Sword Lodge_
+|tip Manually skip to the next step.
+step
+goto u48_ssl_delve_base_1 69.64,43.70
+step
+goto 72.38,28.06
+step
+goto 74.61,12.86
+step
+goto 69.46,16.04 |tip Go upstairs.
+step
+goto 48.34,10.45
+step
+goto 44.17,18.41
+step
+goto 43.73,34.09
+|tip Go downstairs.
+step
+goto 33.83,33.91
+step
+goto 39.64,46.69
+step
+goto 49.62,46.69
+kill Lector Fenworine
+|tip Manually skip to the next step.
+step
+goto 38.62,46.69
+step
+goto 33.36,59.74
+step
+goto 23.38,55.57
+step
+goto 16.22,50.60
+step
+goto 20.57,47.28
 'Use _Skyshard_
 |tip Manually skip to the next step.
+step
+'Open _Solstice_
+'Travel to _Stone Cove_
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 72.73,65.00 |q To Know the Void |future
+step
+goto 73.89,66.72 |q To Know the Void/Enter Xul-Katama, Monastery of the Death-Dancers
+step
+goto 74.15,68.57 |q To Know the Void/Enter Xul-Katama, Monastery of the Death-Dancers
+step
+goto 75.64,68.52
+'Use _Skyshard_ |q To Know the Void/Enter Xul-Katama, Monastery of the Death-Dancers
+|tip Manually skip to the next step.
+step
+goto 74.65,68.44 |q To Know the Void/Enter Xul-Katama, Monastery of the Death-Dancers
+step
+goto 73.89,66.72 |q To Know the Void/Enter Xul-Katama, Monastery of the Death-Dancers
+step
+goto 73.20,66.90 |q To Know the Void/Enter Xul-Katama, Monastery of the Death-Dancers
+step
+goto 72.52,68.40 |q To Know the Void/Enter Xul-Katama, Monastery of the Death-Dancers
 step
 goto 72.18,68.66
 'Open _Xul-Katama_
@@ -10577,17 +10681,7 @@ goto 10.08,30.90
 kill Whisper of the Sacred Stones
 |tip Manually skip to the next step.
 step
-goto 15.22,35.29
-step
-goto 18.84,52.76
-step
-goto 31.19,50.72
-step
-goto 33.10,41.76
-step
-goto 51.82,40.87
-step
-goto 44.55,46.90
+goto 39.30,30.79
 step
 goto 61.50,70.94
 step
@@ -10599,106 +10693,39 @@ goto 79.38,49.20
 'Use _Skyshard_
 |tip Manually skip to the next step.
 step
-goto u48_overland_base 65.38,41.94
+'Open _Solstice_
+'Travel to _Xor-Hist_
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 80.91,50.41
 'Use _Skyshard_
 |tip Manually skip to the next step.
 step
-goto 83.26,59.16
-'Open _Lair of the Black Worm_
-|tip Manually skip to the next step.
+goto 79.60,54.47
 step
-goto u46_base_LOTWC 59.80,63.80
+goto 79.34,60.56
 step
-goto 58.98,69.17
+goto 80.31,62.13
 step
-goto 70.52,71.25
+goto 80.48,62.86
 step
-goto 76.02,40.10
-step
-goto 71.90,33.17 |tip Go downstairs.
-step
-goto 64.03,27.91 |tip Go upstairs.
-step
-goto 51.91,32.05
-step
-goto 51.46,50.26
-step
-goto 51.17,58.37
-|tip Climb the rocks. 
-kill Riuzzan the Ravenous
-|tip Manually skip the next step.
-step
-goto 36.24,54.31
-step
-goto 28.46,42.64
-step
-goto 24.36,45.60
-step
-goto 15.90,61.48
-step
-goto 16.61,71.23
-step
-goto 40.80,73.62
-step
-goto 36.65,78.93
-|tip Go upstairs.
+goto 83.14,63.82
 'Use _Skyshard_
 |tip Manually skip to the next step.
 step
-goto 75.44,35.96
+'Open _Solstice_
+'Travel to _Mor Naril Camp_
 |tip Manually skip to the next step.
 step
-'Open _Solstice_ Map
-'Travel to _Grand Juncture Pass_
-|tip Manually skip to the next step.
+goto 83.33,35.19
 step
-goto u48_overland_base 62.02,51.78
+goto 80.56,39.04
 step
-goto 61.86,50.66
-talk Master Tanertor
-accept A Traitor's Tyranny
+goto 77.17,41.01
 step
-goto 61.48,50.53
-'Open _Sea and Sword Lodge_
-|tip Manually skip to the next step.
+goto 75.52,39.54
 step
-goto u48_ssl_delve_base_1 69.64,43.70
-step
-goto 72.38,28.06
-step
-goto 74.61,12.86
-step
-goto 69.46,24.37 |tip Go upstairs.
-step
-goto 69.46,16.04
-step
-goto 48.34,10.45
-step
-goto 44.17,18.41
-step
-goto 48.52,21.26 |tip Go downstairs.
-step
-goto 43.73,34.09
-step
-goto 33.83,33.91
-step
-goto 39.64,46.69
-step
-goto 49.62,46.69
-kill Lector Fenworine
-|tip Manually skip to the next step.
-step
-goto 54.59,46.69
-step
-goto 38.62,46.69
-step
-goto 33.36,59.74
-step
-goto 23.38,55.57
-step
-goto 16.22,50.60
-step
-goto 20.57,47.28
+goto 75.48,35.97
 'Use _Skyshard_
 |tip Manually skip to the next step.
 step
