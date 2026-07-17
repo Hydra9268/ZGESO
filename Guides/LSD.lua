@@ -7602,7 +7602,7 @@ step
 'Travel to _Cey-Tarn Keep_
 |tip Manually skip to the next step
 step
-goto 27.05,56.10 |q Divine Deputation |future
+goto 27.05,56.10
 step
 goto 28.60,56.92
 'Use _Skyshard_
@@ -9713,9 +9713,9 @@ step
 'Travel to _Ald Isra_
 |tip Manually skip to the next step.
 step
-goto 33.15,63.49 |q The Traitor's Trade |future
+goto 33.15,63.49
 step
-goto 27.35,65.27 |q The Traitor's Trade |future
+goto 27.35,65.27
 step
 goto 24.33,69.04
 'Open _Camonnaruhn_
@@ -10398,6 +10398,8 @@ step
 'Travel to _Vale of Revelry_
 |tip Manually skip to the next step.
 step
+goto 33.43,69.98
+step
 goto 34.07,68.65
 step
 goto 35.45,69.20
@@ -10506,8 +10508,6 @@ goto 57.21,28.16
 step
 goto 71.62,29.05
 step
-goto 74.94,48.34
-step
 goto 86.03,49.45
 step
 goto 88.47,64.94
@@ -10565,20 +10565,17 @@ goto 65.94,36.23
 'Open _Lair of the Black Worm_
 |tip Manually skip to the next step.
 step
-goto u46_base_LOTWC 68.77,81.99
-step
-goto 67.57,69.72
-step
-goto 48.87,70.67
+goto u46_base_LOTWC 48.87,70.67
 step
 goto 42.04,65.19
 step
 goto 51.17,58.37
+|tip Follow path around.
 |tip Climb the rocks. 
 kill Riuzzan the Ravenous
 |tip Manually skip the next step.
 step
-goto 36.24,54.31
+goto 36.24,54.31 |tip Cross bridge.
 step
 goto 28.46,42.64
 step
@@ -10586,9 +10583,8 @@ goto 24.36,45.60
 step
 goto 15.90,61.48
 step
-goto 17.92,69.40
+goto 17.92,69.40 |tip Cross bridge.
 step
-goto
 goto 40.80,73.62
 step
 goto 36.65,78.93
@@ -10618,8 +10614,7 @@ goto 48.34,10.45
 step
 goto 44.17,18.41
 step
-goto 43.73,34.09
-|tip Go downstairs.
+goto 43.73,34.09 |tip Go downstairs.
 step
 goto 33.83,33.91
 step
@@ -10645,23 +10640,23 @@ step
 'Travel to _Stone Cove_
 |tip Manually skip to the next step.
 step
-goto u48_overland_base 72.73,65.00 |q To Know the Void |future
+goto u48_overland_base 72.73,65.00
 step
-goto 73.89,66.72 |q To Know the Void/Enter Xul-Katama, Monastery of the Death-Dancers
+goto 73.89,66.72 
 step
-goto 74.15,68.57 |q To Know the Void/Enter Xul-Katama, Monastery of the Death-Dancers
+goto 74.15,68.57 
 step
 goto 75.64,68.52
-'Use _Skyshard_ |q To Know the Void/Enter Xul-Katama, Monastery of the Death-Dancers
+'Use _Skyshard_ 
 |tip Manually skip to the next step.
 step
-goto 74.65,68.44 |q To Know the Void/Enter Xul-Katama, Monastery of the Death-Dancers
+goto 74.65,68.44 
 step
-goto 73.89,66.72 |q To Know the Void/Enter Xul-Katama, Monastery of the Death-Dancers
+goto 73.89,66.72 
 step
-goto 73.20,66.90 |q To Know the Void/Enter Xul-Katama, Monastery of the Death-Dancers
+goto 73.20,66.90 
 step
-goto 72.52,68.40 |q To Know the Void/Enter Xul-Katama, Monastery of the Death-Dancers
+goto 72.52,68.40 
 step
 goto 72.18,68.66
 'Open _Xul-Katama_
