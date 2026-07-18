@@ -186,7 +186,7 @@ GuideViewer("Main", "enUS", function() local f = {
 			['static_nextguide_anyzone'] = "\nThis is the recommended next zone. However, since ESO has no zone level restrictions anymore, you're free to visit any other zone and load a guide for it manually.",
 			['static_badguide'] = "\nThe selected guide:\n|cffee00%s|r\n is |cffbbaaimproper|r for your character.\n|cff6644%s|r\n\nDo you really want to load it?",
 			["static_endguide"] = "\nYou've reached the end of the current guide.",
-			["static_help"] = "\nYou can set keybindings in Esc-Controls-Keybindings.\n\nPlease visit |cfe6100tinyurl.com/CGESO|r if you need additional assistance.",
+			["static_help"] = "\nYou can set keybindings in Esc-Controls-Keybindings.\n\nPlease visit |cfe6100tinyurl.com/ESOUI-CLG|r if you need additional assistance.",
 
 			['static_profile'] = "Switch to profile %s?",
 			['static_deleteprofile'] = "Delete profile %s?",
