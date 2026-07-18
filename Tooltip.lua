@@ -3,11 +3,8 @@
 -----------------------------------------
 
 local CGV = _G.CGV
-local tinsert,tremove,sort,min,max,floor,type,pairs,ipairs = table.insert,table.remove,table.sort,math.min,math.max,math.floor,type,pairs,ipairs
-local print = CGV.print
-local CHAIN = CGV.Utils.ChainCall
+local tinsert = table.insert
 local ui = CGV.UI
-local L = CGV.L
 local GuiRoot = _G.GuiRoot
 local Tooltip = {}
 local name = "Community_Tooltip"
@@ -25,16 +22,21 @@ CGV.Tooltip = Tooltip
 function Tooltip:Create()
 	local tooltip = ui:Create("Tooltip",GuiRoot,name)
 
-	Tooltip.Frame = tooltip
+	self.Frame = tooltip
 
-	-- Set metatable for CGV.Tooltip to actual Tooltip.
-	setmetatable(self,{__index = function(me,func)
-				assert(me.Frame[func],func.." missing in Tooltip")
+	setmetatable(self, {
+		__index = function(me, methodName)
+			local method = me.Frame[methodName]
+			assert(type(method) == "function", methodName .. " missing in Tooltip")
 
-				return function(me,...)
-					me.Frame[func](me.Frame,...)
-				end
-			end})
+			local wrapper = function(_, ...)
+				return method(me.Frame, ...)
+			end
+
+			rawset(me, methodName, wrapper)
+			return wrapper
+		end,
+	})
 end
 
 -----------------------------------------
@@ -46,12 +48,10 @@ function Tooltip:Debug(...)
 	CGV:Debug("&tooltip "..str, select(2,...) )
 end
 
-
 -----------------------------------------
 -- STARTUP
 -----------------------------------------
 
-tinsert(CGV.startups,function(self)
+tinsert(CGV.startups,function()
 		Tooltip:Create()
 	end)
-
