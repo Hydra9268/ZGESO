@@ -53214,6 +53214,11 @@ talk Prince Azah
 accept A Guild in Crisis
 |only Aldmeri Dominion
 step
+goto 59.27,55.19
+|tip Choose Malabal Tor
+talk Prince Azah |q A Guild in Crisis/Talk to Prince Azah
+|only Aldmeri Dominion
+step
 goto 59.71,54.64
 'Travel _Wimi_ |q A Guild in Crisis/Rendezvous with Guild Scout in Malabal Tor |future
 |tip Manually skip to the next step.
@@ -53231,6 +53236,11 @@ goto daggerfall_base 48.34,32.77
 |tip Choose Malabal Tor
 talk Prince Azah
 accept A Guild in Crisis
+|only Daggerfall Covenant
+step
+goto 48.34,32.77
+|tip Choose Malabal Tor
+talk Prince Azah |q A Guild in Crisis/Talk to Prince Azah
 |only Daggerfall Covenant
 step
 goto 48.54,33.24
@@ -53254,13 +53264,14 @@ goto 68.19,62.41
 talk Prince Azah
 accept A Guild in Crisis
 |only Ebonheart Pact
-step 
-goto 70.40,70.09 |q A Guild in Crisis |q A Guild in Crisis/Rendezvous with Guild Scout in Malabal Tor |future
+step
+goto 68.19,62.41
+|tip Choose Malabal Tor
+talk Prince Azah |q A Guild in Crisis/Talk to Prince Azah
 |only Ebonheart Pact
 step
-goto 58.06,77.77
-'Use _Davon's Watch_
-'Travel to _Vulkwasten_ in Malabal Tor |q A Guild in Crisis/Rendezvous with Guild Scout in Malabal Tor |future
+goto 68.98,62.12
+'Travel _Wimi_ |q A Guild in Crisis/Rendezvous with Guild Scout in Malabal Tor |future
 |tip Manually skip to the next step.
 |only Ebonheart Pact
 step
@@ -53537,15 +53548,24 @@ goto 24.39,60.88
 talk Prince Azah |q The Stirk Fellowship |future
 |tip Manually skip to the next step.
 step
-goto u48_overland_base 47.07,52.56 |q Ghosthunters |future
+goto u48_overland_base 53.59,55.01
+'Discover _Rampart Camp_ Wayshrine |q The Stirk Fellowship/.*Find the Alliance Representatives and Gabrielle.*
+|tip Manually skip to the next step.
 step
-goto 50.38,55.50 |q Ghosthunters |future
+goto u48_overland_base 50.38,55.50 |q Ghosthunters |future
 step
 goto 47.64,56.04
 'Use _Skyshard_ |q Ghosthunters |future
 |tip Manually skip to the next step.
 step
-goto 50.44,55.62 |q Ghosthunters |future
+goto 48.16,57.30
+'Examine _Storm Coming In_
+accept Wealth from the Sea
+step
+goto 48.38,57.24
+'Take _Dried Snow Truffles_ |q Wealth from the Sea/Gather the Crate of Truffles
+step
+goto 50.65,57.62 |q Ghosthunters |future
 step
 goto 49.77,60.32 |q Ghosthunters |future
 step
@@ -53823,17 +53843,15 @@ kill Reveler Bouncer |q Party Pains/Talk to High Priest Caroril
 step
 goto 57.59,51.00 |q Party Pains/Talk to High Priest Caroril
 step
-goto 64.66,52.72 |q Party Pains/Talk to High Priest Caroril |tip Cross Bridge.
+goto 64.66,52.72 |q Party Pains/Talk to High Priest Caroril |tip Go upstairs.
 step
-goto 55.11,51.67 |q Party Pains/Talk to High Priest Caroril
+goto 55.11,51.67 |q Party Pains/Talk to High Priest Caroril |tip Go upstairs.
 step
 goto 46.14,55.01 |q Party Pains/Talk to High Priest Caroril
 step
 goto 46.51,60.27
 'Use _Skyshard_ |q Party Pains/Talk to High Priest Caroril
 |tip Manually skip to the next step.
-step
-goto 43.84,53.49 |q Party Pains/Talk to High Priest Caroril |tip Drop down carefully.
 step
 goto 21.87,55.87
 'Enter _Solstice_ |q Party Pains/Talk to High Priest Caroril
@@ -53990,7 +54008,7 @@ talk to Lervent Penoit |q The Everlasting Fair |future
 |tip Manually skip to the next step.
 step
 goto 37.35,36.57
-|tip They jump around have to chase them.
+|tip They jump around have to chase them find the Rod of Revels.
 'Examine _Jelly_ |q The Everlasting Fair/Find the Rod in Blood 'N Baubles |future
 |tip Manually skip to the next step.
 step
@@ -54106,6 +54124,10 @@ goto 36.51,52.08
 step
 goto 34.61,56.51
 talk Tide-Reader Suhath |q Tides of the Heart/Talk to Tide-Reader Suhath |future
+step
+goto 35.87,52.13
+'Open _Solstice_ |q A Death-Dancer's Duty/.*Recover the Tidal Votives.* |count 2
+|tip Manually skip to the next step.
 step
 goto 51.88,55.14
 'Take _Vutraka's Tidal Votive_ |q A Death-Dancer's Duty/.*Recover the Tidal Votives.* |count 2
@@ -54279,8 +54301,6 @@ goto 57.29,61.62
 |tip Manually skip to the next step.
 step
 goto 57.07,62.17 |q The Stirk Fellowship/.*Find the Alliance Representatives and Gabrielle.*
-step
-goto 57.28,62.01 |q The Stirk Fellowship/.*Find the Alliance Representatives and Gabrielle.*
 step
 goto 58.29,61.77
 'Open _Abandoned Hut_ |q The Stirk Fellowship/.*Find the Alliance Representatives and Gabrielle.*
@@ -54503,6 +54523,8 @@ goto 56.20,59.47
 talk Captain Genevé Delitian
 turnin Slime Pickings
 turnin The Roughest Pearl
+turnin Wealth from the Sea
+accept Striking the Deal
 step
 goto 63.73,48.37
 'Open _Bear Hall_ |q The Stubbornness of Nords/Talk to Speaker Hialf
@@ -54584,8 +54606,6 @@ talk Britt the Bold |q The Stubbornness of Nords/Talk to Britt the Bold
 step 
 goto 65.22,63.41 |q The Stubbornness of Nords/.*Gather the Ingredients.*
 step
-goto 60.83,64.99 |q The Stubbornness of Nords/.*Gather the Ingredients.*
-step
 goto 59.07,66.49
 talk Kjar |q The Stubbornness of Nords/Gather "Buzzers' Treasure" |future
 |tip Manually skip to the next step.
@@ -54654,8 +54674,6 @@ goto 63.70,44.16
 step
 goto 63.94,44.08
 'Take _Cook Pot_ |q The Stubbornness of Nords/Take Stew
-step
-goto 59.39,43.62 |q The Stubbornness of Nords/.*Serve the Feast.*
 step
 goto 56.65,55.58
 'Place _Together Stew_ |q The Stubbornness of Nords/.*Serve the Feast.* |count 1
@@ -55030,6 +55048,10 @@ goto 58.04,50.16
 'Discover _Sunport_ Wayshrine |q The Regent of Sunport/Go to Vinutilmo Palace
 |tip Manually skip to the next step.
 step
+goto 64.50,57.43
+talk Captain Genevé Delitian
+turnin Striking the Deal
+step
 goto 61.34,49.61
 'Open _Palace District_ |q The Regent of Sunport/Go to Vinutilmo Palace
 |tip Manually skip to the next step.
@@ -55239,13 +55261,6 @@ goto 58.33,49.96
 step
 goto u48_overland_base 49.65,45.93 |q The Writhing Wall/Go to Li-Xal Pass
 step
-goto 48.85,44.92
-'Examine _Storm Coming In_
-accept Wealth from the Sea
-step
-goto 48.85,44.92
-'Take _Dried Snow Truffles_ |q Wealth from the Sea/Gather the Crate of Truffles
-step
 goto 50.67,43.20 |q The Writhing Wall/Go to Li-Xal Pass |tip Go around the mountain.
 step
 goto 49.14,41.74 |q The Writhing Wall/Go to Li-Xal Pass
@@ -55331,18 +55346,6 @@ goto 47.21,31.58
 talk Gabrielle Benele |q The Writhing Wall/Talk to Gabrielle Benele
 step
 'Open _Solstice_ Map
-'Travel to _Shor's Stand_ |q The Writhing Wall/Go to Vosgah Shrine
-|tip Manually skip to the next step.
-step
-goto u46_base_shoresstand 73.01,41.10 |q Wealth from the Sea/Find Captain Genevé Delitian
-step
-goto 56.20,59.47
-talk Captain Genevé Delitian
-turnin Wealth from the Sea
-accept Striking the Deal
-step
-goto 67.71,33.50
-'Use _Shor's Stand_
 'Travel to _Vale of Revelry_ |q The Writhing Wall/Go to Vosgah Shrine
 |tip Manually skip to the next step.
 step
@@ -55385,11 +55388,7 @@ step
 'Travel to _Sunport_ |q The Writhing Wall/Return to Vinutilmo Palace
 |tip Manually skip to the next step.
 step
-goto u46_Sunport_base 64.50,57.43
-talk Captain Genevé Delitian
-turnin Striking the Deal
-step
-goto 61.34,49.57
+goto u46_Sunport_base 61.34,49.57
 'Open _Palace District_ |q The Writhing Wall/Return to Vinutilmo Palace
 |tip Manually skip to the next step.
 step
@@ -55413,20 +55412,12 @@ goto 65.67,49.75
 'Open _Central Square_ |q The Gift of Death/Go to Corelanya Crypt
 |tip Manually skip to the next step.
 step
-goto 58.80,70.53
-'Open _Solstice_ |q The Gift of Death/Go to Corelanya Crypt
-|tip Manually skip to the next step.
-step
-goto u48_overland_base 53.59,55.01
-'Discover _Rampart Camp_ Wayshrine |q The Gift of Death/Go to Corelanya Crypt
-|tip Manually skip to the next step.
-step
-goto 53.59,55.01
-'Use _Rampart Camp_
+goto 58.27,49.94
+'Use _Sunport_
 'Travel to _Corelanya Manor_ |q The Gift of Death/Go to Corelanya Crypt
 |tip Manually skip to the next step.
 step
-goto 49.72,60.34 |q The Gift of Death/Go to Corelanya Crypt
+goto u48_overland_base 49.72,60.34 |q The Gift of Death/Go to Corelanya Crypt
 step
 goto 50.15,61.57
 'Open _Corelanya Crypt_ |q The Gift of Death/Search Corelanya Crypt |future
@@ -55829,8 +55820,6 @@ goto 53.54,55.77
 talk Prince Azah
 turnin Crossing the Wall
 accept The Worm Turns
-step
-goto 53.78,57.57 |q The Worm Turns/Investigate the Pass
 step
 goto 58.87,55.91
 talk Skordo the Knife |q The Worm Turns/Talk to Skordo the Knife |future
@@ -56281,8 +56270,6 @@ step
 goto 76.48,64.56
 'Destroy _Unactivated Soul Flayer_ |q Hunt for the Great Mage/.*Destroy Soul Flayers.* |count 2
 step
-goto 76.93,62.67 |q Hunt for the Great Mage/Find the Other Soul Flayer Harvest Site
-step
 goto 72.73,65.00 |q To Know the Void |future
 step
 goto 72.90,66.59
@@ -56438,7 +56425,7 @@ goto 71.70,59.45
 |tip Manually skip to the next step.
 step
 goto 71.72,59.55
-talk Hecicla |q The Hermit in the Hills/Talk to Hecicla
+talk Hecicla |q The Hermit in the Hills/Talk to Hecicla |future
 step
 goto 71.69,59.58
 'Use _Cooking Fire_
@@ -56537,7 +56524,7 @@ goto 54.24,36.85
 'Use _Grapple Point_ |q Blood on the Water/Disembark the Caterwaul
 step
 goto 54.97,36.91
-talk Suraj |q Blood on the Water/Talk to Suraj
+talk Suraj |q Blood on the Water/Talk to Suraj |future
 step
 goto 55.05,36.89
 'Enter _Seaside Caves_ |q Blood on the Water/Kill Quartermaster Xynark
@@ -56814,8 +56801,8 @@ goto 16.14,37.86
 kill The Elder |q Lost Among the Ashes/Kill The Elder
 step
 goto 14.44,36.22
-|tip Watch the dialogue.
 'Open _Solstice_ |q Lost Among the Ashes/Use Sirilonwe's Portal |future
+|tip Manually skip to the next step.
 step
 goto u48_overland_base 67.27,36.56
 talk Terinvel Drathan |q Lost Among the Ashes/Talk to Terinvel |future
@@ -56867,6 +56854,7 @@ goto 80.10,63.70
 'Open _Worm Cult Ritual Chamber_ |q An Ambition Fulfilled/Enter the Worm Cult Ritual
 step
 goto 83.68,45.44
+|tip Watch the dialogue.
 'Kick _Ezhkel_
 kill Ezhkel |q An Ambition Fulfilled/Sacrifice Ezhkel |future
 step
@@ -56957,7 +56945,7 @@ goto 73.74,33.58
 'Examine _Village Report_ |lorebook Village Report/3/57/19
 step
 goto 73.98,33.39
-'Open _Death-Dancer Jeetra's House_ |q The Deep Tombs of Xul-Haj/Find Jeetra
+'Open _Death-Dancer Jeetra's House_ |q The Deep Tombs of Xul-Haj/Find Jeetra |future
 |tip Manually skip to the next step.
 step
 goto 74.04,33.04
@@ -57101,7 +57089,7 @@ goto 83.77,26.36
 |tip Manually skip to the next step.
 step
 goto 83.77,26.36
-talk Carmana Celatus |q Choice and Consequence/Talk to Cultist
+talk Carmana Celatus |q Choice and Consequence/Talk to Cultist |future
 step
 goto 83.83,26.60
 'Open _Prince Naemon's Quarters_ |q Choice and Consequence/Lead the Cultist to Prince Naemon
@@ -57170,7 +57158,7 @@ goto 84.25,26.06
 |tip Manually skip to the next step.
 step
 goto u48_villainsfall_int2 64.50,49.92
-'Open _Aldwilne Citadel Cellar_ |q Choice and Consequence/Find Prince Naemon
+'Open _Aldwilne Citadel Cellar_ |q Choice and Consequence/Find Prince Naemon |future
 |tip Manually skip to the next step.
 step
 goto 57.81,52.37
@@ -57492,7 +57480,7 @@ goto 53.16,84.07
 'Examine _Guardians of Mor Naril_ |lorebook The Guardians of Mor Naril/3/57/22
 step
 goto 51.30,82.72
-talk Jeetra |q The Gates of Mor Naril/Talk to Jeetra
+talk Jeetra |q The Gates of Mor Naril/Talk to Jeetra |future
 step
 goto 54.33,76.43
 |tip Go back upstairs.
@@ -57618,9 +57606,8 @@ goto 55.59,64.31 |q The Final Dark/Clear the Courtyard |tip go upstairs.
 step
 goto 61.13,60.17 |q The Final Dark/Clear the Courtyard
 step
-goto 50.75,33.24 |q The Final Dark/Clear the Courtyard
-step
 goto 54.59,53.16
+|tip Kill Cultists
 talk Prince Azah |q The Final Dark/Talk to Prince Azah |future
 step
 goto 54.90,54.98

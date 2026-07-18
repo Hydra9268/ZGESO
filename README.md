@@ -25,14 +25,7 @@ Install through the excellent add-on manager <a href="https://minion.mmoui.com/"
 
 <br/>
 
-### 07/18/2026
-### Eastern Solstice
-* Eastern Solstice Main Quest Only
-* Eastern Solstice Full guide
-* Eastern Solstice Skyshard and Delves Guide
-* Eastern Solstice Lorebooks
-
-### Date Undetermined
+### Date TBD
 ### Main Quest Rework
 * Aldmeri Dominion Base Game
 * Dagger Fall Covenant Base Game
@@ -58,6 +51,13 @@ Install through the excellent add-on manager <a href="https://minion.mmoui.com/"
 * West Weald
 * Delves, Skyshard, Lorebooks
 * Companion Guide
+
+### 07/17/2026
+### Eastern Solstice
+* Eastern Solstice Main Quest Only
+* Eastern Solstice Full guide
+* Eastern Solstice Skyshard and Delves Guide
+* Eastern Solstice Lorebooks
 
 ### 08/16/2025
 ### Solstice

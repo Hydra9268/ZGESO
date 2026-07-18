@@ -7602,7 +7602,7 @@ step
 'Travel to _Cey-Tarn Keep_
 |tip Manually skip to the next step
 step
-goto 27.05,56.10 |q Divine Deputation |future
+goto 27.05,56.10
 step
 goto 28.60,56.92
 'Use _Skyshard_
@@ -9713,9 +9713,9 @@ step
 'Travel to _Ald Isra_
 |tip Manually skip to the next step.
 step
-goto 33.15,63.49 |q The Traitor's Trade |future
+goto 33.15,63.49
 step
-goto 27.35,65.27 |q The Traitor's Trade |future
+goto 27.35,65.27
 step
 goto 24.33,69.04
 'Open _Camonnaruhn_
@@ -10398,6 +10398,8 @@ step
 'Travel to _Vale of Revelry_
 |tip Manually skip to the next step.
 step
+goto 33.43,69.98
+step
 goto 34.07,68.65
 step
 goto 35.45,69.20
@@ -10506,8 +10508,6 @@ goto 57.21,28.16
 step
 goto 71.62,29.05
 step
-goto 74.94,48.34
-step
 goto 86.03,49.45
 step
 goto 88.47,64.94
@@ -10544,6 +10544,183 @@ step
 goto 43.14,38.67
 step
 goto 42.28,36.14
+'Use _Skyshard_
+|tip Manually skip to the next step.
+step
+'Open _Solstice_ Map
+'Travel to _Caterwaul Cove_
+|tip Manually skip to the next step.
+step
+goto 65.13,42.77
+step
+goto 65.37,41.97
+'Use _Skyshard_
+|tip Manually skip to the next step.
+step
+goto 63.77,41.63
+step
+goto 65.34,38.44
+step
+goto 65.94,36.23
+'Open _Lair of the Black Worm_
+|tip Manually skip to the next step.
+step
+goto u46_base_LOTWC 48.87,70.67
+step
+goto 42.04,65.19
+step
+goto 51.17,58.37
+|tip Follow path around.
+|tip Climb the rocks. 
+kill Riuzzan the Ravenous
+|tip Manually skip the next step.
+step
+goto 36.24,54.31 |tip Cross bridge.
+step
+goto 28.46,42.64
+step
+goto 24.36,45.60
+step
+goto 15.90,61.48
+step
+goto 17.92,69.40 |tip Cross bridge.
+step
+goto 40.80,73.62
+step
+goto 36.65,78.93
+|tip Go upstairs.
+'Use _Skyshard_
+|tip Manually skip to the next step.
+step
+'Open _Solstice_
+'Travel to _Grand Juncture Pass_
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 62.02,51.78
+step
+goto 61.48,50.53
+'Open _Sea and Sword Lodge_
+|tip Manually skip to the next step.
+step
+goto u48_ssl_delve_base_1 69.64,43.70
+step
+goto 72.38,28.06
+step
+goto 74.61,12.86
+step
+goto 69.46,16.04 |tip Go upstairs.
+step
+goto 48.34,10.45
+step
+goto 44.17,18.41
+step
+goto 43.73,34.09 |tip Go downstairs.
+step
+goto 33.83,33.91
+step
+goto 39.64,46.69
+step
+goto 49.62,46.69
+kill Lector Fenworine
+|tip Manually skip to the next step.
+step
+goto 38.62,46.69
+step
+goto 33.36,59.74
+step
+goto 23.38,55.57
+step
+goto 16.22,50.60
+step
+goto 20.57,47.28
+'Use _Skyshard_
+|tip Manually skip to the next step.
+step
+'Open _Solstice_
+'Travel to _Stone Cove_
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 72.73,65.00
+step
+goto 73.89,66.72 
+step
+goto 74.15,68.57 
+step
+goto 75.64,68.52
+'Use _Skyshard_ 
+|tip Manually skip to the next step.
+step
+goto 74.65,68.44 
+step
+goto 73.89,66.72 
+step
+goto 73.20,66.90 
+step
+goto 72.52,68.40 
+step
+goto 72.18,68.66
+'Open _Xul-Katama_
+|tip Manually skip to the next step.
+step
+goto U48_delve_sithis_crest_01 91.01,34.14
+step
+goto 74.36,15.10
+step
+goto 54.37,15.86
+step
+goto 27.15,16.65
+step
+goto 26.82,29.88
+step
+goto 10.08,30.90
+kill Whisper of the Sacred Stones
+|tip Manually skip to the next step.
+step
+goto 39.30,30.79
+step
+goto 61.50,70.94
+step
+goto 69.13,55.54
+step
+goto 71.89,48.48
+step
+goto 79.38,49.20
+'Use _Skyshard_
+|tip Manually skip to the next step.
+step
+'Open _Solstice_
+'Travel to _Xor-Hist_
+|tip Manually skip to the next step.
+step
+goto u48_overland_base 80.91,50.41
+'Use _Skyshard_
+|tip Manually skip to the next step.
+step
+goto 79.60,54.47
+step
+goto 79.34,60.56
+step
+goto 80.31,62.13
+step
+goto 80.48,62.86
+step
+goto 83.14,63.82
+'Use _Skyshard_
+|tip Manually skip to the next step.
+step
+'Open _Solstice_
+'Travel to _Mor Naril Camp_
+|tip Manually skip to the next step.
+step
+goto 83.33,35.19
+step
+goto 80.56,39.04
+step
+goto 77.17,41.01
+step
+goto 75.52,39.54
+step
+goto 75.48,35.97
 'Use _Skyshard_
 |tip Manually skip to the next step.
 step
