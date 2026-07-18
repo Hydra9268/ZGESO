@@ -528,13 +528,19 @@ assert (MatchExcerpt("Blah___bleh___bloh","Blah, this is bleh because bloh"),'Ut
 assert (not MatchExcerpt("Blah___bleh___bloh","bleh, this is bloh because Blah"),'Utils:MatchShortText is confused by order')
 
 function Utils.GetMyAddonInfo()
-	local AM = GetAddOnManager()
-	for i = 1, AM:GetNumAddOns() do
-		local dir,title,_,_1,_2,_3,_4 = AM:GetAddOnInfo(i)
-		if dir == CGV.DIR then
-			return dir,title,_1,_2,_3,_4
+	local addonManager = GetAddOnManager()
+
+	for i = 1, addonManager:GetNumAddOns() do
+		local directory, title, author, description, enabled, state, isOutOfDate =
+			addonManager:GetAddOnInfo(i)
+
+		if directory == CGV.DIR then
+			local version = addonManager:GetAddOnVersion(i)
+
+			return directory, title, version, author, description, enabled, state, isOutOfDate
 		end
 	end
+
 	error("Can't find addon info!")
 end
 

@@ -278,11 +278,12 @@ function CGV:RegisterTipDialog()
 end
 
 function CGV:GetVersion()
-  local dir, title = CGV.Utils.GetMyAddonInfo()
-  if title then
-    CGV.version = title:match("v(%d+)")
+    if not CGV.version then
+        local _, _, version = CGV.Utils.GetMyAddonInfo()
+        CGV.version = tostring(version)
+    end
+
     return CGV.version
-  end
 end
 
 function CGV:ResetTips()
