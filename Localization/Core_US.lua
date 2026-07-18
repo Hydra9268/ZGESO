@@ -199,8 +199,6 @@ GuideViewer("Main", "enUS", function() local f = {
 
 			['tip_header'] = "Leveling Guides Tips",
 			['tip_keybind'] = "Did you know you can bind keys to control the Level Guides Viewer?\n\nIt's far easier to navigate between steps by pressing keys, rather than have to click the buttons with your mouse.\n\nWould you like to set up your keybinds now?",
-
-
 		}
 		--for k,v in pairs(f) do
 		--if type(v)=="string" then  f[k]=v:gsub("<<(.-)>>",COLOR_TIP_MOUSE.."%1"..COLOR_TIP)  end
