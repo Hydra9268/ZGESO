@@ -633,16 +633,21 @@ end
 function Viewer:HelpButton_OnClick()
 	if not self.HelpPopup then
 		local popup = CGV.Popup:New("Community_Help_Popup")
-			popup.declinebutton:Hide()
-			CHAIN(popup.acceptbutton)
+
+		popup:SetMouseEnabled(true)
+		popup:SetMovable(true)
+
+		popup.declinebutton:Hide()
+
+		CHAIN(popup.acceptbutton)
 			:ClearAllPoints()
-			:SetPoint(BOTTOM,popup,BOTTOM,0,-5)
+			:SetPoint(BOTTOM, popup, BOTTOM, 0, -5)
 
 		self.HelpPopup = popup
 	end
 
-	self.HelpPopup:SetText(L['static_help'])
-	self.HelpPopup:SetDimensionConstraints(225,nil,625,nil)
+	self.HelpPopup:SetText(L["static_help"])
+	self.HelpPopup:SetDimensionConstraints(225, nil, 625, nil)
 	self.HelpPopup:Show()
 end
 
