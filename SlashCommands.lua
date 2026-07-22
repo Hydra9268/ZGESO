@@ -76,22 +76,11 @@ end
 
 local function registerSlashCommands()
 	local slashCommands = _G.SLASH_COMMANDS
-	local zo_loadstring = _G.zo_loadstring
 
 	slashCommands["/cgv"] = CGV.SlashCommandHandler
 	slashCommands["/community"] = slashCommands["/cgv"]
 	slashCommands["/run"] = slashCommands["/script"]
 	slashCommands["/re"] = slashCommands["/reloadui"]
-
-	slashCommands["/dump"] = function(text)
-		local func, err = zo_loadstring(("d(%s)"):format(text))
-
-		if func then
-			func()
-		else
-			_G.d("|cffff0000Error:|r " .. err)
-		end
-	end
 end
 
 -----------------------------------------
