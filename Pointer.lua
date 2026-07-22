@@ -1250,12 +1250,17 @@ end
 -- /dump CGV.Pointer:GetDistToCoords(shimmerenewaterworks01_base,50.50,50.50)
 -- /dump CGV.Pointer:TranslateCoords("auridon_base",52.50,91.57,"vulkhelguard_base")
 SLASH_COMMANDS["/dump"] = function(text)
-	local f,err = zo_loadstring( ("d(%s)"):format(text) )
-	if f then
-		f()
-	else
-		local d = _G.d
-		d("|cffff0000Error:|r "..err)
+	local func, compileError = zo_loadstring(("d(%s)"):format(text))
+
+	if not func then
+		d("|cffff0000Compile error:|r " .. compileError)
+		return
+	end
+
+	local success, runtimeError = pcall(func)
+
+	if not success then
+		d("|cffff0000Runtime error:|r " .. runtimeError)
 	end
 end
 
